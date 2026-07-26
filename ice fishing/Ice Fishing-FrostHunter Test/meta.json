@@ -11,7 +11,7 @@
   "path": "ice fishing/Ice Fishing-FrostHunter Test",
   "ok": true,
   "exit_code": 0,
-  "stdout": "Re-analyzed XAPK v2.0 (base+arm64/en/mdpi/zh): AGP 9.1.1, minSdk 32, targetSdk 36, Kotlin/Compose, WebView+Custom Tabs cloak via FrostReceiverActivity / GlassNewActivity, Firebase Messaging, Adjust 5.5.0, C2 wss://zenithpatterncluster.xyz/, no AdMob/OneSignal/Remote Config.",
+  "stdout": "Re-analyzed XAPK v2.0 (base+arm64/en/mdpi/zh): AGP 9.1.1, minSdk 32, targetSdk 36, Kotlin/Compose, WebView+Custom Tabs cloak via FrostReceiverActivity / GlassNewActivity, Firebase Messaging, Adjust 5.5.0, C2 wss://zenithpatterncluster.xyz/, no AdMob/OneSignal/Remote Config. Report regenerated to strict table format.",
   "stderr": "",
   "files": [
     "com.frosthunter.arcticwildlands.frozenexpedition.adventure.xapk",
