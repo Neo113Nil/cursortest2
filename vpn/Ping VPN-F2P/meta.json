@@ -1,0 +1,19 @@
+{
+  "app_id": "com.pingsecure.client.app",
+  "title": "Ping VPN",
+  "developer": "F2P",
+  "score": 4.921466,
+  "icon": "https://play-lh.googleusercontent.com/fcXUt144YO1XN8oWmOM09G8_2V8RKo073DLhoezCm_20S9NvrjDbLyNoyZ8ecg_UWON-WyQkZRcK8UQjldeh",
+  "url": null,
+  "keyword": "vpn",
+  "folder": "Ping VPN-F2P",
+  "path": "vpn/Ping VPN-F2P",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.pingsecure.client.app...\ncom.pingsecure.client.app downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.pingsecure.client.app.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/vpn/Ping VPN-F2P"
+}
