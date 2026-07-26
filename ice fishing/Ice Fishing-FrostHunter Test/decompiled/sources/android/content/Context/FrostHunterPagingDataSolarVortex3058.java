@@ -1,0 +1,11 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public abstract class FrostHunterPagingDataSolarVortex3058 {
+    public static final FrostHunterBroadcastFusionCosmos6323 FrostHunterAlphaAnimationNeoCosmos5761 = FrostHunterCoroutineScopeSpectraHero1877.FrostHunterConstraintSetCloneMasterUltraRogue2633;
+    public static final FrostHunterBroadcastFusionCosmos6323 FrostHunterConstraintSetCloneMasterUltraRogue2633 = FrostHunterCoroutineScopeSpectraHero1877.FrostHunterLifecycleBlazeGammaElite2889;
+    public static final FrostHunterBroadcastFusionCosmos6323 FrostHunterBundlePulseFusionHero2475 = FrostHunterCoroutineScopeSpectraHero1877.FrostHunterServiceEliteCelestialThunder1757;
+    public static final FrostHunterBroadcastFusionCosmos6323 FrostHunterServiceEliteCelestialThunder1757 = FrostHunterCoroutineScopeSpectraHero1877.FrostHunterBundlePulseFusionHero2475;
+    public static final FrostHunterBroadcastFusionCosmos6323 FrostHunterLifecycleBlazeGammaElite2889 = FrostHunterCoroutineScopeSpectraHero1877.FrostHunterAlphaAnimationNeoCosmos5761;
+}

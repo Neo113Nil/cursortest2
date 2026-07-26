@@ -1,0 +1,93 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public final class FrostHunterConstraintSetPixelSpectra5306 {
+    public final long FrostHunterAlertDialogAuroraDelta3200;
+    public final long FrostHunterAlphaAnimationNeoCosmos5761;
+    public final long FrostHunterBillingClientFusionVortex9008;
+    public final long FrostHunterBitmapTurboDeltaNebula8743;
+    public final long FrostHunterBundlePulseFusionHero2475;
+    public final long FrostHunterCameraXPixelTurboCosmos9814;
+    public final long FrostHunterCameraXTurboCelestialHero5430;
+    public final long FrostHunterCardViewSpectraCyber7714;
+    public final long FrostHunterConstraintSetCloneMasterUltraRogue2633;
+    public final long FrostHunterDatabaseEliteShadowUltra2452;
+    public final long FrostHunterDialogFragmentTurboPhoenixDragon7627;
+    public final long FrostHunterEditTextPulseHyperion1262;
+    public final long FrostHunterFCMDeltaQuantumHero8364;
+    public final long FrostHunterFirebaseModelDownloadConditionsSolarBlaze2223;
+    public final long FrostHunterFlowMaxDragonHero5809;
+    public final long FrostHunterFragmentBetaMegaVortex6025;
+    public final long FrostHunterKeyframeGammaGamma1197;
+    public final long FrostHunterLevelListDrawableFusionDragonHero2232;
+    public final long FrostHunterLifecycleBlazeGammaElite2889;
+    public final long FrostHunterLightSensorForceFusion4241;
+    public final long FrostHunterLintTitanVortexQuantum9911;
+    public final long FrostHunterLooperHyperionForce4133;
+    public final long FrostHunterLooperThreadBetaHyperionMax1000;
+    public final long FrostHunterMagnetometerFusionTitanium8202;
+    public final long FrostHunterMediaPlayerCelestialBetaTitan3868;
+    public final long FrostHunterMeteringPointBetaCyber9571;
+    public final long FrostHunterMeteringPointMegaCyber7955;
+    public final long FrostHunterMotionSceneAuroraMega2271;
+    public final long FrostHunterPagingDataTurboTitanium7332;
+    public final long FrostHunterPermissionInfoAlphaDelta6279;
+    public final long FrostHunterR8MasterNebulaSpark7247;
+    public final long FrostHunterRemoteConfigSpeedSpeed8566;
+    public final long FrostHunterResourcesTitanHyperVision5823;
+    public final long FrostHunterRewardedAdMasterStrike9463;
+    public final long FrostHunterScaleAnimationStrikeSpark5059;
+    public final long FrostHunterServiceConnectionTurboPhoenixOmega6719;
+    public final long FrostHunterServiceEliteCelestialThunder1757;
+    public final long FrostHunterServiceInfoHyperionSparkMax9966;
+    public final long FrostHunterStateCelestialNovaPixel8414;
+    public final long FrostHunterTextViewDragonStormMega4297;
+    public final long FrostHunterTranslateAnimationCyberSolarUltra7101;
+    public final long FrostHunterViewPhantomNeo1634;
+
+    public FrostHunterConstraintSetPixelSpectra5306(long j, long j2, long j3, long j4, long j5, long j6, long j7, long j8, long j9, long j10, long j11, long j12, long j13, long j14, long j15, long j16, long j17, long j18, long j19, long j20, long j21, long j22, long j23, long j24, long j25, long j26, long j27, long j28, long j29, long j30, long j31, long j32, long j33, long j34, long j35, long j36, long j37, long j38, long j39, long j40, long j41, long j42) {
+        this.FrostHunterAlphaAnimationNeoCosmos5761 = j;
+        this.FrostHunterConstraintSetCloneMasterUltraRogue2633 = j2;
+        this.FrostHunterBundlePulseFusionHero2475 = j3;
+        this.FrostHunterServiceEliteCelestialThunder1757 = j4;
+        this.FrostHunterLifecycleBlazeGammaElite2889 = j5;
+        this.FrostHunterLevelListDrawableFusionDragonHero2232 = j6;
+        this.FrostHunterRemoteConfigSpeedSpeed8566 = j7;
+        this.FrostHunterCameraXPixelTurboCosmos9814 = j8;
+        this.FrostHunterFlowMaxDragonHero5809 = j9;
+        this.FrostHunterAlertDialogAuroraDelta3200 = j10;
+        this.FrostHunterKeyframeGammaGamma1197 = j11;
+        this.FrostHunterFragmentBetaMegaVortex6025 = j12;
+        this.FrostHunterServiceConnectionTurboPhoenixOmega6719 = j13;
+        this.FrostHunterLightSensorForceFusion4241 = j14;
+        this.FrostHunterScaleAnimationStrikeSpark5059 = j15;
+        this.FrostHunterFirebaseModelDownloadConditionsSolarBlaze2223 = j16;
+        this.FrostHunterLintTitanVortexQuantum9911 = j17;
+        this.FrostHunterCameraXTurboCelestialHero5430 = j18;
+        this.FrostHunterResourcesTitanHyperVision5823 = j19;
+        this.FrostHunterTextViewDragonStormMega4297 = j20;
+        this.FrostHunterLooperThreadBetaHyperionMax1000 = j21;
+        this.FrostHunterMotionSceneAuroraMega2271 = j22;
+        this.FrostHunterBitmapTurboDeltaNebula8743 = j23;
+        this.FrostHunterDialogFragmentTurboPhoenixDragon7627 = j24;
+        this.FrostHunterLooperHyperionForce4133 = j25;
+        this.FrostHunterMeteringPointBetaCyber9571 = j26;
+        this.FrostHunterServiceInfoHyperionSparkMax9966 = j27;
+        this.FrostHunterEditTextPulseHyperion1262 = j28;
+        this.FrostHunterDatabaseEliteShadowUltra2452 = j29;
+        this.FrostHunterCardViewSpectraCyber7714 = j30;
+        this.FrostHunterViewPhantomNeo1634 = j31;
+        this.FrostHunterMeteringPointMegaCyber7955 = j32;
+        this.FrostHunterBillingClientFusionVortex9008 = j33;
+        this.FrostHunterMediaPlayerCelestialBetaTitan3868 = j34;
+        this.FrostHunterTranslateAnimationCyberSolarUltra7101 = j35;
+        this.FrostHunterStateCelestialNovaPixel8414 = j36;
+        this.FrostHunterMagnetometerFusionTitanium8202 = j37;
+        this.FrostHunterPagingDataTurboTitanium7332 = j38;
+        this.FrostHunterR8MasterNebulaSpark7247 = j39;
+        this.FrostHunterFCMDeltaQuantumHero8364 = j40;
+        this.FrostHunterRewardedAdMasterStrike9463 = j41;
+        this.FrostHunterPermissionInfoAlphaDelta6279 = j42;
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "app_id": "com.frosthunter.arcticwildlands.frozenexpedition.adventure",
+  "title": "Ice Fishing",
+  "developer": "FrostHunter Test",
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-FrostHunter Test",
+  "path": "ice fishing/Ice Fishing-FrostHunter Test",
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asset.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.arm64_v8a.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.en.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.lt.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.ru.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.xxhdpi.apk",
+    "com.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-FrostHunter Test",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.frosthunter.arcticwildlands.frozenexpedition.adventure...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.frosthunter.arcticwildlands.frozenexpedition.adventure...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.frosthunter.arcticwildlands.frozenexpedition.adventure ─╮\n│ Ice Fishing                                                  │\n│ 2.0  (vc 2)                                                  │\n╰──────────────────────────────────────────────────────────────╯\n\nDownloading 7 files  (14.8 MB)\ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk              … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.arm64_v8… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.en.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.lt.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.ru.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.xxhdpi.a… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asset.apk        … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk   │  7.8 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │  1.2 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 64.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 24.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 28.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 29.5 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asse… │  7.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.frosthunter.arcticwildlands.frozenexpedition.adventure ─╮\n│ Ice Fishing                                                  │\n│ 2.0  (vc 2)                                                  │\n╰──────────────────────────────────────────────────────────────╯\n\nDownloading 7 files  (14.8 MB)\ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk              … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.arm64_v8… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.en.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.lt.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.ru.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.xxhdpi.a… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asset.apk        … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk   │  7.8 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │  1.2 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 64.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 24.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 28.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 29.5 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asse… │  7.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

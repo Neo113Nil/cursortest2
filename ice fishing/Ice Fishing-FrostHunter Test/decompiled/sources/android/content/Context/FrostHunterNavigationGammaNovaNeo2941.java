@@ -1,0 +1,7 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public interface FrostHunterNavigationGammaNovaNeo2941 extends FrostHunterDrawerLayoutShadowPhoenix9863 {
+    Object FrostHunterBitmapTurboDeltaNebula8743(FrostHunterVectorDrawableMaxAlpha8598 frostHunterVectorDrawableMaxAlpha8598, FrostHunterColorDrawableGammaPulseNeo6855 frostHunterColorDrawableGammaPulseNeo6855, FrostHunterShapeDrawablePhantomMasterGamma8047 frostHunterShapeDrawablePhantomMasterGamma8047);
+}
