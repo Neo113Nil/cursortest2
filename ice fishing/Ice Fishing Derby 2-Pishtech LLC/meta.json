@@ -1,0 +1,19 @@
+{
+  "app_id": "com.pishtech.ifd2",
+  "title": "Ice Fishing Derby 2",
+  "developer": "Pishtech LLC",
+  "score": 4.6568627,
+  "icon": "https://play-lh.googleusercontent.com/ik0ycfpcSqmUxAxllruvYqa_xwFtXayroEh2Lr_CXoxTy1rQQouFTVcrGCJPy9JDVs90xEzLJnxEXv3yduJQAQs",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing Derby 2-Pishtech LLC",
+  "path": "ice fishing/Ice Fishing Derby 2-Pishtech LLC",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.pishtech.ifd2...\ncom.pishtech.ifd2 downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.pishtech.ifd2.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing Derby 2-Pishtech LLC"
+}

@@ -1,0 +1,17 @@
+{
+  "app_id": "com.icecatchpuzzle.puzzleicecatch",
+  "title": "Ice Fishing",
+  "developer": "Okira Digital Lab",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/qJaioXcZ5JVTJ9ay7fzT6rYHZwqlaz8nP4YOcultQ38g9uze9_5t4BCX7h4_Uvhy14_seLEfqxq6HvFF64bm",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-Okira Digital Lab",
+  "path": "ice fishing/Ice Fishing-Okira Digital Lab",
+  "ok": false,
+  "exit_code": 0,
+  "stdout": "Downloading com.icecatchpuzzle.puzzleicecatch...\n",
+  "stderr": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Okira Digital Lab"
+}
