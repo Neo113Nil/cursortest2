@@ -1,0 +1,19 @@
+{
+  "app_id": "com.zennvvarroo.pealkkk",
+  "title": "Ice Fishing",
+  "developer": "TviMas",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/46b_1bH7WjHSUJVWDQD4gwss9JOsJj_NLzycL8-J1NNezQEhyeup2OPvGJatLbFXJnXM2_6_Ext4tClcwQpy",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-TviMas",
+  "path": "ice fishing/Ice Fishing-TviMas",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.zennvvarroo.pealkkk...\ncom.zennvvarroo.pealkkk downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.zennvvarroo.pealkkk.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-TviMas"
+}
