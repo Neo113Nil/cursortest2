@@ -1,0 +1,19 @@
+{
+  "app_id": "games.joker.chicken.go",
+  "title": "Chicken Cross - Farm Cross 2",
+  "developer": "Joker.games",
+  "score": 4.47,
+  "icon": "https://play-lh.googleusercontent.com/a-DHEOVuxtPluH05Db2Hu8-fAE_9-VG4qgtAly38lm_bFUjAtcn7kkNYlyPKOoUcxoTpOlKqXDj5dtwxQqsm",
+  "url": null,
+  "keyword": "chicken road",
+  "folder": "Chicken Cross - Farm Cross 2-Joker.games",
+  "path": "chicken road/Chicken Cross - Farm Cross 2-Joker.games",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading games.joker.chicken.go...\ngames.joker.chicken.go downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "games.joker.chicken.go.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road/Chicken Cross - Farm Cross 2-Joker.games"
+}
