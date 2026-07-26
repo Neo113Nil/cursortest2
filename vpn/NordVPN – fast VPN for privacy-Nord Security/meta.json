@@ -1,0 +1,17 @@
+{
+  "app_id": "com.nordvpn.android",
+  "title": "NordVPN – fast VPN for privacy",
+  "developer": "Nord Security",
+  "score": 4.5866213,
+  "icon": "https://play-lh.googleusercontent.com/8yhQejdntBkaku4Vt-HD9f8Ujcl1EJeE1WX2ypEMEzPxY-8AG9-rLjm8OVKmIpmmBC2uWhlqCzKI8be3XkFlIDQ",
+  "url": null,
+  "keyword": "vpn",
+  "folder": "NordVPN – fast VPN for privacy-Nord Security",
+  "path": "vpn/NordVPN – fast VPN for privacy-Nord Security",
+  "ok": false,
+  "exit_code": 0,
+  "stdout": "Downloading com.nordvpn.android...\n",
+  "stderr": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/vpn/NordVPN – fast VPN for privacy-Nord Security"
+}
