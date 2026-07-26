@@ -1,0 +1,17 @@
+{
+  "app_id": "com.fast.free.unblock.thunder.vpn",
+  "title": "Thunder VPN - Fast, Safe VPN",
+  "developer": "Secure Signal Inc",
+  "score": 4.7685833,
+  "icon": "https://play-lh.googleusercontent.com/r2ZcBL6i-AxAPKeXHdx-Bu2vfGtgZtQcbe5IoAhDbnWj2u5vRg_ho3C48mlANsoxq7So-7WfTcMtMjHr0wrR",
+  "url": null,
+  "keyword": "vpn",
+  "folder": "Thunder VPN - Fast, Safe VPN-Secure Signal Inc",
+  "path": "vpn/Thunder VPN - Fast, Safe VPN-Secure Signal Inc",
+  "ok": false,
+  "exit_code": 0,
+  "stdout": "Downloading com.fast.free.unblock.thunder.vpn...\n",
+  "stderr": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/vpn/Thunder VPN - Fast, Safe VPN-Secure Signal Inc"
+}
