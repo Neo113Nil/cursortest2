@@ -1,0 +1,19 @@
+{
+  "app_id": "com.icefishing.icefishingmoneygame11",
+  "title": "Ice Fishing",
+  "developer": "HkkT Hongkong",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/dcRDgJeScKDwBx_XdJSexDKR-lyA1WsMna6KUFRWUWe0ekA99f4gYPy2H-_7S8lf2j51kBHuO7AGW4A1LPALww",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-HkkT Hongkong",
+  "path": "ice fishing/Ice Fishing-HkkT Hongkong",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.icefishing.icefishingmoneygame11...\ncom.icefishing.icefishingmoneygame11 downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.icefishing.icefishingmoneygame11.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-HkkT Hongkong"
+}
