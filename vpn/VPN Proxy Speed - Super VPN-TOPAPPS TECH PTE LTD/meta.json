@@ -1,0 +1,19 @@
+{
+  "app_id": "com.supervpn.vpn.free.proxy",
+  "title": "VPN Proxy Speed - Super VPN",
+  "developer": "TOPAPPS TECH PTE LTD",
+  "score": 4.860635,
+  "icon": "https://play-lh.googleusercontent.com/sldlDKwCawCAyzU5PV3vERT0EJmnzx8Ey-haP_bq7zqZniU_CaAAK30C9z8Gjv8D__noWTjixFeK6ANpjQlQcw",
+  "url": null,
+  "keyword": "vpn",
+  "folder": "VPN Proxy Speed - Super VPN-TOPAPPS TECH PTE LTD",
+  "path": "vpn/VPN Proxy Speed - Super VPN-TOPAPPS TECH PTE LTD",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.supervpn.vpn.free.proxy...\ncom.supervpn.vpn.free.proxy downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.supervpn.vpn.free.proxy.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/vpn/VPN Proxy Speed - Super VPN-TOPAPPS TECH PTE LTD"
+}
