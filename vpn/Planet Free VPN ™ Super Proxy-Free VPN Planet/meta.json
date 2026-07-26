@@ -1,0 +1,17 @@
+{
+  "app_id": "com.freevpnplanet",
+  "title": "Planet Free VPN ™ Super Proxy",
+  "developer": "Free VPN Planet",
+  "score": 4.5677123,
+  "icon": "https://play-lh.googleusercontent.com/mpEDLvZG82AeSxKoy8mhNA_aw9IjwWymxdDZRGPMOJJKWxdJb69bvg9hZRaU6DWJn-qGRXtds85jqKPfVrIk8g",
+  "url": null,
+  "keyword": "vpn",
+  "folder": "Planet Free VPN ™ Super Proxy-Free VPN Planet",
+  "path": "vpn/Planet Free VPN ™ Super Proxy-Free VPN Planet",
+  "ok": false,
+  "exit_code": 0,
+  "stdout": "Downloading com.freevpnplanet...\n",
+  "stderr": "",
+  "files": [],
+  "target": "/root/play-collector/загрузки/vpn/Planet Free VPN ™ Super Proxy-Free VPN Planet"
+}
