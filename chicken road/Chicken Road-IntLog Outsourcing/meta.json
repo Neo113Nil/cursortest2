@@ -1,0 +1,19 @@
+{
+  "app_id": "com.chickyneer.roadway",
+  "title": "Chicken Road",
+  "developer": "IntLog Outsourcing",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/Ya1rkh5LrpVYqpCoYSrDwy-XZAx_lXF9JrdalqlEkH7eLQBOPKhvRKhJwAbZC3LW5NbA6f8X42Oglg5Wrtg-XnY",
+  "url": null,
+  "keyword": "chicken road",
+  "folder": "Chicken Road-IntLog Outsourcing",
+  "path": "chicken road/Chicken Road-IntLog Outsourcing",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.chickyneer.roadway.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road/Chicken Road-IntLog Outsourcing"
+}
