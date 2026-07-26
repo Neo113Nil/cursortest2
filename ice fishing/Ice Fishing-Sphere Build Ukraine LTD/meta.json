@@ -1,0 +1,19 @@
+{
+  "app_id": "com.icecatchbiger.hookfrostmaster",
+  "title": "Ice Fishing",
+  "developer": "Sphere Build Ukraine LTD",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/482L6RlarVUer5UsrAYb2ptO7uJNOkzsu3bE_yqSeM_J2rmmug6MQ7gGItBO2rklGXpsCRNHJw8_b-3CNd_eI20",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-Sphere Build Ukraine LTD",
+  "path": "ice fishing/Ice Fishing-Sphere Build Ukraine LTD",
+  "ok": true,
+  "exit_code": 0,
+  "stdout": "Downloading com.icecatchbiger.hookfrostmaster...\ncom.icecatchbiger.hookfrostmaster downloaded successfully!\n",
+  "stderr": "",
+  "files": [
+    "com.icecatchbiger.hookfrostmaster.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Sphere Build Ukraine LTD"
+}
