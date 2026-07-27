@@ -7,6 +7,10 @@ import com.android.installreferrer.api.InstallReferrerClient;
 public final /* synthetic */ class DragonRouteGenericSemaphoreZHp9tf1Y7dynpOgPN353819060155832 implements IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990 {
     public final /* synthetic */ int RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
 
+    public /* synthetic */ DragonRouteGenericSemaphoreZHp9tf1Y7dynpOgPN353819060155832(int i) {
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = i;
+    }
+
     @Override // androidx.versionedparcelable.IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990
     public final Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800() {
         switch (this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867) {

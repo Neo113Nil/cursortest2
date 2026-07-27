@@ -1,15 +1,15 @@
 {
-  "app_id": "com.icecatchpuzzle.puzzleicecatch",
+  "app_id": "com.frozenfishquest.questfroztnfish",
   "title": "Ice Fishing",
   "developer": "Okira Digital Lab",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/qJaioXcZ5JVTJ9ay7fzT6rYHZwqlaz8nP4YOcultQ38g9uze9_5t4BCX7h4_Uvhy14_seLEfqxq6HvFF64bm",
+  "icon": "https://play-lh.googleusercontent.com/rLqQRl7e91qPvsThx2FEtq9FCm8zoriDVRAENmfkARNc96MOgjZQx5F2RAB872SYUkndNTSN-emduqBkL73uIFY",
   "url": null,
   "keyword": "ice fishing",
   "folder": "Ice Fishing-Okira Digital Lab",
   "path": "ice fishing/Ice Fishing-Okira Digital Lab",
   "ok": true,
-  "source": "gplaydl",
+  "source": "apkeep:apk-pure",
   "files": [
     "com.icecatchpuzzle.puzzleicecatch-1922-asset.apk",
     "com.icecatchpuzzle.puzzleicecatch-1922-config.arm64_v8a.apk",
@@ -24,29 +24,13 @@
     {
       "method": "apkeep",
       "try": 1,
-      "ok": false,
-      "exit_code": 0,
-      "stdout": "Downloading com.icecatchpuzzle.puzzleicecatch...\n",
-      "stderr": ""
-    },
-    {
-      "method": "apkeep",
-      "try": 2,
-      "ok": false,
-      "exit_code": 0,
-      "stdout": "Downloading com.icecatchpuzzle.puzzleicecatch...\n",
-      "stderr": ""
-    },
-    {
-      "method": "gplaydl",
-      "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "╭─ com.icecatchpuzzle.puzzleicecatch ─╮\n│ Ice Fishing                         │\n│ 1922.0  (vc 1922)                   │\n╰─────────────────────────────────────╯\n\nDownloading 7 files  (11.9 MB)\n  com.icecatchpuzzle.puzzleicecatch-1922.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.arm64_v8a.apk ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.en.apk        ━━ 100% 6… 4… 0:0…\n                                                                      kB k…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.lt.apk        ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-config.ru.apk        ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-config.xxhdpi.apk    ━━ 100% 3… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-asset.apk            ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icecatchpuzzle.puzzleicecatch-1922.apk                  │  6.1 MB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.arm64_v8a.apk │  1.1 MB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.en.apk        │ 64.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.lt.apk        │ 24.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.ru.apk        │ 28.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.xxhdpi.apk    │ 29.5 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-asset.apk            │  6.1 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stdout": "Downloading com.frozenfishquest.questfroztnfish...\n",
       "stderr": ""
     }
   ],
-  "stdout": "╭─ com.icecatchpuzzle.puzzleicecatch ─╮\n│ Ice Fishing                         │\n│ 1922.0  (vc 1922)                   │\n╰─────────────────────────────────────╯\n\nDownloading 7 files  (11.9 MB)\n  com.icecatchpuzzle.puzzleicecatch-1922.apk                  ━━ 100% 6… 1… 0:0…\n                                                                      MB M…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.arm64_v8a.apk ━━ 100% 1… 1… 0:0…\n                                                                      MB M…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.en.apk        ━━ 100% 6… 4… 0:0…\n                                                                      kB k…     \n  com.icecatchpuzzle.puzzleicecatch-1922-config.lt.apk        ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-config.ru.apk        ━━ 100% 2… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-config.xxhdpi.apk    ━━ 100% 3… ?  0:0…\n                                                                      kB        \n  com.icecatchpuzzle.puzzleicecatch-1922-asset.apk            ━━ 100% 4… 1… 0:0…\n                                                                      MB M…     \n\n                            Downloaded files                             \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icecatchpuzzle.puzzleicecatch-1922.apk                  │  6.1 MB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.arm64_v8a.apk │  1.1 MB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.en.apk        │ 64.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.lt.apk        │ 24.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.ru.apk        │ 28.2 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-config.xxhdpi.apk    │ 29.5 KB │\n│ com.icecatchpuzzle.puzzleicecatch-1922-asset.apk            │  6.1 MB │\n└─────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stdout": "Downloading com.frozenfishquest.questfroztnfish...\n",
   "stderr": "",
   "exit_code": 0
 }
