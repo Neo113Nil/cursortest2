@@ -1,0 +1,6 @@
+package b2;
+
+/* renamed from: b2.b, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0518b extends RuntimeException {
+}

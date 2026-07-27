@@ -1,0 +1,36 @@
+{
+  "app_id": "com.chicken.road.kedro.laqer",
+  "title": "Chicken road game",
+  "developer": "Sakura Institute",
+  "developer_id": "Sakura+Institute",
+  "icon": "https://play-lh.googleusercontent.com/NU65Y85gm-p4sVgEi-3S8bF_24Z3q-GwzvIkXk689TgULKn1ojYE1ZH3_4c_4vsHF14eNBux_UDH5dVpMHio",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.kedro.laqer&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 27, 2026",
+  "version": "Varies with device",
+  "summary": "Execute multi lane stopwatch timing and track field events in Chicken road game.",
+  "keyword": "url-app",
+  "folder": "Chicken road game-Sakura Institute",
+  "path": "url-app/Chicken road game-Sakura Institute",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chicken.road.kedro.laqer.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/Chicken road game-Sakura Institute",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.road.kedro.laqer...\ncom.chicken.road.kedro.laqer downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chicken.road.kedro.laqer...\ncom.chicken.road.kedro.laqer downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
