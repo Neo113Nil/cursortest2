@@ -1,0 +1,217 @@
+package com.yandex.varioqub.protobuf.nano;
+
+/* loaded from: classes.dex */
+public final class FieldArray implements Cloneable {
+    private static final FieldData DELETED = new FieldData();
+    private FieldData[] mData;
+    private int[] mFieldNumbers;
+    private boolean mGarbage;
+    private int mSize;
+
+    public FieldArray() {
+        this(10);
+    }
+
+    private boolean arrayEquals(int[] iArr, int[] iArr2, int i2) {
+        for (int i3 = 0; i3 < i2; i3++) {
+            if (iArr[i3] != iArr2[i3]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private int binarySearch(int i2) {
+        int i3 = this.mSize - 1;
+        int i6 = 0;
+        while (i6 <= i3) {
+            int i7 = (i6 + i3) >>> 1;
+            int i8 = this.mFieldNumbers[i7];
+            if (i8 < i2) {
+                i6 = i7 + 1;
+            } else {
+                if (i8 <= i2) {
+                    return i7;
+                }
+                i3 = i7 - 1;
+            }
+        }
+        return ~i6;
+    }
+
+    private void gc() {
+        int i2 = this.mSize;
+        int[] iArr = this.mFieldNumbers;
+        FieldData[] fieldDataArr = this.mData;
+        int i3 = 0;
+        for (int i6 = 0; i6 < i2; i6++) {
+            FieldData fieldData = fieldDataArr[i6];
+            if (fieldData != DELETED) {
+                if (i6 != i3) {
+                    iArr[i3] = iArr[i6];
+                    fieldDataArr[i3] = fieldData;
+                    fieldDataArr[i6] = null;
+                }
+                i3++;
+            }
+        }
+        this.mGarbage = false;
+        this.mSize = i3;
+    }
+
+    private int idealByteArraySize(int i2) {
+        for (int i3 = 4; i3 < 32; i3++) {
+            int i6 = (1 << i3) - 12;
+            if (i2 <= i6) {
+                return i6;
+            }
+        }
+        return i2;
+    }
+
+    private int idealIntArraySize(int i2) {
+        return idealByteArraySize(i2 * 4) / 4;
+    }
+
+    public FieldData dataAt(int i2) {
+        if (this.mGarbage) {
+            gc();
+        }
+        return this.mData[i2];
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof FieldArray)) {
+            return false;
+        }
+        FieldArray fieldArray = (FieldArray) obj;
+        if (size() != fieldArray.size()) {
+            return false;
+        }
+        return arrayEquals(this.mFieldNumbers, fieldArray.mFieldNumbers, this.mSize) && arrayEquals(this.mData, fieldArray.mData, this.mSize);
+    }
+
+    public FieldData get(int i2) {
+        FieldData fieldData;
+        int binarySearch = binarySearch(i2);
+        if (binarySearch < 0 || (fieldData = this.mData[binarySearch]) == DELETED) {
+            return null;
+        }
+        return fieldData;
+    }
+
+    public int hashCode() {
+        if (this.mGarbage) {
+            gc();
+        }
+        int i2 = 17;
+        for (int i3 = 0; i3 < this.mSize; i3++) {
+            i2 = (((i2 * 31) + this.mFieldNumbers[i3]) * 31) + this.mData[i3].hashCode();
+        }
+        return i2;
+    }
+
+    public boolean isEmpty() {
+        return size() == 0;
+    }
+
+    public void put(int i2, FieldData fieldData) {
+        int binarySearch = binarySearch(i2);
+        if (binarySearch >= 0) {
+            this.mData[binarySearch] = fieldData;
+            return;
+        }
+        int i3 = ~binarySearch;
+        int i6 = this.mSize;
+        if (i3 < i6) {
+            FieldData[] fieldDataArr = this.mData;
+            if (fieldDataArr[i3] == DELETED) {
+                this.mFieldNumbers[i3] = i2;
+                fieldDataArr[i3] = fieldData;
+                return;
+            }
+        }
+        if (this.mGarbage && i6 >= this.mFieldNumbers.length) {
+            gc();
+            i3 = ~binarySearch(i2);
+        }
+        int i7 = this.mSize;
+        if (i7 >= this.mFieldNumbers.length) {
+            int idealIntArraySize = idealIntArraySize(i7 + 1);
+            int[] iArr = new int[idealIntArraySize];
+            FieldData[] fieldDataArr2 = new FieldData[idealIntArraySize];
+            int[] iArr2 = this.mFieldNumbers;
+            System.arraycopy(iArr2, 0, iArr, 0, iArr2.length);
+            FieldData[] fieldDataArr3 = this.mData;
+            System.arraycopy(fieldDataArr3, 0, fieldDataArr2, 0, fieldDataArr3.length);
+            this.mFieldNumbers = iArr;
+            this.mData = fieldDataArr2;
+        }
+        int i8 = this.mSize - i3;
+        if (i8 != 0) {
+            int[] iArr3 = this.mFieldNumbers;
+            int i9 = i3 + 1;
+            System.arraycopy(iArr3, i3, iArr3, i9, i8);
+            FieldData[] fieldDataArr4 = this.mData;
+            System.arraycopy(fieldDataArr4, i3, fieldDataArr4, i9, this.mSize - i3);
+        }
+        this.mFieldNumbers[i3] = i2;
+        this.mData[i3] = fieldData;
+        this.mSize++;
+    }
+
+    public void remove(int i2) {
+        int binarySearch = binarySearch(i2);
+        if (binarySearch >= 0) {
+            FieldData[] fieldDataArr = this.mData;
+            FieldData fieldData = fieldDataArr[binarySearch];
+            FieldData fieldData2 = DELETED;
+            if (fieldData != fieldData2) {
+                fieldDataArr[binarySearch] = fieldData2;
+                this.mGarbage = true;
+            }
+        }
+    }
+
+    public int size() {
+        if (this.mGarbage) {
+            gc();
+        }
+        return this.mSize;
+    }
+
+    public FieldArray(int i2) {
+        this.mGarbage = false;
+        int idealIntArraySize = idealIntArraySize(i2);
+        this.mFieldNumbers = new int[idealIntArraySize];
+        this.mData = new FieldData[idealIntArraySize];
+        this.mSize = 0;
+    }
+
+    private boolean arrayEquals(FieldData[] fieldDataArr, FieldData[] fieldDataArr2, int i2) {
+        for (int i3 = 0; i3 < i2; i3++) {
+            if (!fieldDataArr[i3].equals(fieldDataArr2[i3])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /* renamed from: clone, reason: merged with bridge method [inline-methods] */
+    public final FieldArray m44clone() {
+        int size = size();
+        FieldArray fieldArray = new FieldArray(size);
+        System.arraycopy(this.mFieldNumbers, 0, fieldArray.mFieldNumbers, 0, size);
+        for (int i2 = 0; i2 < size; i2++) {
+            FieldData fieldData = this.mData[i2];
+            if (fieldData != null) {
+                fieldArray.mData[i2] = fieldData.m45clone();
+            }
+        }
+        fieldArray.mSize = size;
+        return fieldArray;
+    }
+}

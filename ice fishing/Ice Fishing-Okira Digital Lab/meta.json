@@ -4,7 +4,7 @@
   "developer": "Okira Digital Lab",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/rLqQRl7e91qPvsThx2FEtq9FCm8zoriDVRAENmfkARNc96MOgjZQx5F2RAB872SYUkndNTSN-emduqBkL73uIFY",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.frozenfishquest.questfroztnfish&hl=en&gl=us",
   "keyword": "ice fishing",
   "folder": "Ice Fishing-Okira Digital Lab",
   "path": "ice fishing/Ice Fishing-Okira Digital Lab",
@@ -32,5 +32,7 @@
   ],
   "stdout": "Downloading com.frozenfishquest.questfroztnfish...\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "version": "Varies with device",
+  "updated": "Jul 23, 2026"
 }

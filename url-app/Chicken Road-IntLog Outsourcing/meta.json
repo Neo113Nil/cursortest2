@@ -1,0 +1,36 @@
+{
+  "app_id": "com.chickyneer.roadway",
+  "title": "Chicken Road",
+  "developer": "IntLog Outsourcing",
+  "developer_id": "IntLog+Outsourcing",
+  "icon": "https://play-lh.googleusercontent.com/Ya1rkh5LrpVYqpCoYSrDwy-XZAx_lXF9JrdalqlEkH7eLQBOPKhvRKhJwAbZC3LW5NbA6f8X42Oglg5Wrtg-XnY",
+  "url": "https://play.google.com/store/apps/details?id=com.chickyneer.roadway&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 16, 2026",
+  "version": "Varies with device",
+  "summary": "Your path, your rules! Choose your strategy and enjoy the game dynamics.",
+  "keyword": "url-app",
+  "folder": "Chicken Road-IntLog Outsourcing",
+  "path": "url-app/Chicken Road-IntLog Outsourcing",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chickyneer.roadway.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/Chicken Road-IntLog Outsourcing",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -4,7 +4,7 @@
   "developer": "IntLog Outsourcing",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/Ya1rkh5LrpVYqpCoYSrDwy-XZAx_lXF9JrdalqlEkH7eLQBOPKhvRKhJwAbZC3LW5NbA6f8X42Oglg5Wrtg-XnY",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.chickyneer.roadway&hl=en&gl=us",
   "keyword": "chicken road",
   "folder": "Chicken Road-IntLog Outsourcing",
   "path": "chicken road/Chicken Road-IntLog Outsourcing",
@@ -26,5 +26,7 @@
   ],
   "stdout": "Downloading com.chickyneer.roadway...\ncom.chickyneer.roadway downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "version": "Varies with device",
+  "updated": "Jul 16, 2026"
 }

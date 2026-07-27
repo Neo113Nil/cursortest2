@@ -4,7 +4,7 @@
   "developer": "Joker.games",
   "score": 4.47,
   "icon": "https://play-lh.googleusercontent.com/a-DHEOVuxtPluH05Db2Hu8-fAE_9-VG4qgtAly38lm_bFUjAtcn7kkNYlyPKOoUcxoTpOlKqXDj5dtwxQqsm",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=games.joker.chicken.go&hl=en&gl=us",
   "keyword": "chicken road",
   "folder": "Chicken Cross - Farm Cross 2-Joker.games",
   "path": "chicken road/Chicken Cross - Farm Cross 2-Joker.games",
@@ -26,5 +26,8 @@
   ],
   "stdout": "Downloading games.joker.chicken.go...\ngames.joker.chicken.go downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "released": "Aug 12, 2025",
+  "updated": "2026-07-24",
+  "version": "7.286.0"
 }

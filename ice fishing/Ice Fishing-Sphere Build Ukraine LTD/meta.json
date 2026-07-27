@@ -4,7 +4,7 @@
   "developer": "Sphere Build Ukraine LTD",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/482L6RlarVUer5UsrAYb2ptO7uJNOkzsu3bE_yqSeM_J2rmmug6MQ7gGItBO2rklGXpsCRNHJw8_b-3CNd_eI20",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.icecatchbiger.hookfrostmaster&hl=en&gl=us",
   "keyword": "ice fishing",
   "folder": "Ice Fishing-Sphere Build Ukraine LTD",
   "path": "ice fishing/Ice Fishing-Sphere Build Ukraine LTD",
@@ -26,5 +26,8 @@
   ],
   "stdout": "Downloading com.icecatchbiger.hookfrostmaster...\ncom.icecatchbiger.hookfrostmaster downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "released": "May 28, 2026",
+  "version": "Varies with device",
+  "updated": "Jul 13, 2026"
 }

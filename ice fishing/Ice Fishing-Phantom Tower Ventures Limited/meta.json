@@ -4,7 +4,7 @@
   "developer": "Phantom Tower Ventures Limited",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/k1iPWDlFMhispWy5QOcJGmhXZT5_OBxiOEwzWkvp62nLMZ-6egWnSKYBIewAhsKRhiLlwDgtRXJPmk-Ipsv7xPg",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.frosthunter.arcticwildlands.frozenexpedition.adventure&hl=en&gl=us",
   "keyword": "ice fishing",
   "folder": "Ice Fishing-Phantom Tower Ventures Limited",
   "path": "ice fishing/Ice Fishing-Phantom Tower Ventures Limited",
@@ -48,5 +48,7 @@
   ],
   "stdout": "╭─ com.frosthunter.arcticwildlands.frozenexpedition.adventure ─╮\n│ Ice Fishing                                                  │\n│ 2.0  (vc 2)                                                  │\n╰──────────────────────────────────────────────────────────────╯\n\nDownloading 7 files  (14.8 MB)\ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk              … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.arm64_v8… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.en.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.lt.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.ru.apk    … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-config.xxhdpi.a… … \ncom.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asset.apk        … \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2.apk   │  7.8 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │  1.2 MB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 64.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 24.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 28.2 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-conf… │ 29.5 KB │\n│ com.frosthunter.arcticwildlands.frozenexpedition.adventure-2-asse… │  7.8 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "version": "Varies with device",
+  "updated": "Jun 26, 2026"
 }

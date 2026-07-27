@@ -4,7 +4,7 @@
   "developer": "Ebrahim Elwahsh",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/nFoTk16NppZk6V683CN8W6JxehlUl2O8FS8BX4Nf5gYdeMlEqC_NrXIjdMCeEWWRGIkqe9IIBMhquikrzR69yj8",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingliveapp&hl=en&gl=us",
   "keyword": "ice fishing",
   "folder": "Ice Fishing-Ebrahim Elwahsh",
   "path": "ice fishing/Ice Fishing-Ebrahim Elwahsh",
@@ -26,5 +26,7 @@
   ],
   "stdout": "Downloading com.icefishing.icefishingliveapp...\ncom.icefishing.icefishingliveapp downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "version": "Varies with device",
+  "updated": "Jun 15, 2026"
 }

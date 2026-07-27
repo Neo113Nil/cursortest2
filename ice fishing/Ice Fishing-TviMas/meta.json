@@ -4,7 +4,7 @@
   "developer": "TviMas",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/46b_1bH7WjHSUJVWDQD4gwss9JOsJj_NLzycL8-J1NNezQEhyeup2OPvGJatLbFXJnXM2_6_Ext4tClcwQpy",
-  "url": null,
+  "url": "https://play.google.com/store/apps/details?id=com.zennvvarroo.pealkkk",
   "keyword": "ice fishing",
   "folder": "Ice Fishing-TviMas",
   "path": "ice fishing/Ice Fishing-TviMas",
@@ -26,5 +26,6 @@
   ],
   "stdout": "Downloading com.zennvvarroo.pealkkk...\ncom.zennvvarroo.pealkkk downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "_store_enriched": true
 }
