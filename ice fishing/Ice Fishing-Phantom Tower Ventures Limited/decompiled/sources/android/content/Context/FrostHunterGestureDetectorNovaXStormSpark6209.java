@@ -1,0 +1,11 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public interface FrostHunterGestureDetectorNovaXStormSpark6209 {
+    FrostHunterGestureDetectorNovaXStormSpark6209 FrostHunterAlphaAnimationNeoCosmos5761(FrostHunterPaintFlagsDrawFilterUltraTurboEclipse9896 frostHunterPaintFlagsDrawFilterUltraTurboEclipse9896, Object obj);
+
+    FrostHunterGestureDetectorNovaXStormSpark6209 FrostHunterConstraintSetCloneMasterUltraRogue2633(FrostHunterPaintFlagsDrawFilterUltraTurboEclipse9896 frostHunterPaintFlagsDrawFilterUltraTurboEclipse9896, long j);
+
+    FrostHunterGestureDetectorNovaXStormSpark6209 FrostHunterServiceEliteCelestialThunder1757(FrostHunterPaintFlagsDrawFilterUltraTurboEclipse9896 frostHunterPaintFlagsDrawFilterUltraTurboEclipse9896, int i);
+}

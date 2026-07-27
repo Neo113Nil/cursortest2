@@ -1,0 +1,19 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public final class FrostHunterAsyncHyperionGammaLegend1192 extends FrostHunterGradientDrawablePulseDragonInferno9637 implements FrostHunterPagingCelestialThunderOmega7610 {
+    public float FrostHunterBitmapTurboDeltaNebula8743;
+    public float FrostHunterDialogFragmentTurboPhoenixDragon7627;
+    public float FrostHunterLooperHyperionForce4133;
+    public boolean FrostHunterMeteringPointBetaCyber9571;
+    public float FrostHunterMotionSceneAuroraMega2271;
+
+    @Override // android.content.Context.FrostHunterPagingCelestialThunderOmega7610
+    public final FrostHunterInstrumentationPhantomVortex8747 FrostHunterLifecycleBlazeGammaElite2889(FrostHunterStateFlowCosmosMega1087 frostHunterStateFlowCosmosMega1087, FrostHunterDigitalInkRecognitionSpeedMasterVision5998 frostHunterDigitalInkRecognitionSpeedMasterVision5998, long j) {
+        int FrostHunterBillingClientFusionVortex9008 = frostHunterStateFlowCosmosMega1087.FrostHunterBillingClientFusionVortex9008(this.FrostHunterDialogFragmentTurboPhoenixDragon7627) + frostHunterStateFlowCosmosMega1087.FrostHunterBillingClientFusionVortex9008(this.FrostHunterMotionSceneAuroraMega2271);
+        int FrostHunterBillingClientFusionVortex90082 = frostHunterStateFlowCosmosMega1087.FrostHunterBillingClientFusionVortex9008(this.FrostHunterLooperHyperionForce4133) + frostHunterStateFlowCosmosMega1087.FrostHunterBillingClientFusionVortex9008(this.FrostHunterBitmapTurboDeltaNebula8743);
+        FrostHunterClipDrawableMasterVortexEclipse8656 FrostHunterLifecycleBlazeGammaElite2889 = frostHunterDigitalInkRecognitionSpeedMasterVision5998.FrostHunterLifecycleBlazeGammaElite2889(FrostHunterActivityGammaForce8909.FrostHunterCameraXPixelTurboCosmos9814(-FrostHunterBillingClientFusionVortex9008, -FrostHunterBillingClientFusionVortex90082, j));
+        return frostHunterStateFlowCosmosMega1087.FrostHunterPushNotificationStormTitanGamma8999(FrostHunterActivityGammaForce8909.FrostHunterLevelListDrawableFusionDragonHero2232(FrostHunterLifecycleBlazeGammaElite2889.FrostHunterCameraXPixelTurboCosmos9814 + FrostHunterBillingClientFusionVortex9008, j), FrostHunterActivityGammaForce8909.FrostHunterLifecycleBlazeGammaElite2889(FrostHunterLifecycleBlazeGammaElite2889.FrostHunterFlowMaxDragonHero5809 + FrostHunterBillingClientFusionVortex90082, j), FrostHunterLayoutInfernoStrike4529.FrostHunterCameraXPixelTurboCosmos9814, new FrostHunterMapLegendNova8356(12, this, FrostHunterLifecycleBlazeGammaElite2889));
+    }
+}

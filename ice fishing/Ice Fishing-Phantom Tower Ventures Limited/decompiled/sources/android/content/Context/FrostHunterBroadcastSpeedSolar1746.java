@@ -1,0 +1,17 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public final class FrostHunterBroadcastSpeedSolar1746 {
+    public static final FrostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345 FrostHunterBundlePulseFusionHero2475 = new FrostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345(FrostHunterRewardedAdHyperStrike1151.FrostHunterDialogFragmentTurboPhoenixDragon7627, 0);
+    public final FrostHunterTraceHyperionAuroraNebula9947 FrostHunterAlphaAnimationNeoCosmos5761;
+    public final FrostHunterContentObserverShadowShadow6344 FrostHunterConstraintSetCloneMasterUltraRogue2633;
+
+    public FrostHunterBroadcastSpeedSolar1746(FrostHunterTraceHyperionAuroraNebula9947 frostHunterTraceHyperionAuroraNebula9947) {
+        this.FrostHunterAlphaAnimationNeoCosmos5761 = frostHunterTraceHyperionAuroraNebula9947;
+        FrostHunterCountDownTimerCyberVisionTitanium9970 frostHunterCountDownTimerCyberVisionTitanium9970 = FrostHunterFilterGammaEliteForce5538.FrostHunterAlphaAnimationNeoCosmos5761;
+        FrostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345 frostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345 = FrostHunterBundlePulseFusionHero2475;
+        frostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345.getClass();
+        this.FrostHunterConstraintSetCloneMasterUltraRogue2633 = FrostHunterCardViewHyperionAurora3829.FrostHunterAlphaAnimationNeoCosmos5761(FrostHunterBannerAdTitanVisionDragon3523.FrostHunterRewardedAdMasterStrike9463(frostHunterFirebaseModelDownloadConditionsCelestialCosmosSpark3345, frostHunterCountDownTimerCyberVisionTitanium9970).FrostHunterFragmentBetaMegaVortex6025(FrostHunterFCMThunderTitanium1373.FrostHunterCameraXPixelTurboCosmos9814).FrostHunterFragmentBetaMegaVortex6025(new FrostHunterAnalyticsEliteTurbo5870(null)));
+    }
+}

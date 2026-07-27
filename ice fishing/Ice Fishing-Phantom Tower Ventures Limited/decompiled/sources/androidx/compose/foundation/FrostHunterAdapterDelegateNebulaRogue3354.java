@@ -1,0 +1,20 @@
+package androidx.compose.foundation;
+
+import android.content.Context.FrostHunterAlarmManagerVisionStrikeEpic2390;
+import android.content.Context.FrostHunterCombineBlazeLegendGamma9228;
+import android.content.Context.FrostHunterDrawerLayoutUltraStrike3303;
+import android.content.Context.FrostHunterFlowCollectorPrimeHero2428;
+import android.content.Context.FrostHunterFocusMeteringActionShadowStorm1839;
+import android.content.Context.FrostHunterLocationManagerPixelVortex2935;
+import android.content.Context.FrostHunterMLKitNeoStrikeMax4530;
+import android.content.Context.FrostHunterNavigationViewSpectraBlazeOmega1546;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public abstract class FrostHunterAdapterDelegateNebulaRogue3354 {
+    public static final FrostHunterMLKitNeoStrikeMax4530 FrostHunterAlphaAnimationNeoCosmos5761 = new FrostHunterMLKitNeoStrikeMax4530(new FrostHunterNavigationViewSpectraBlazeOmega1546(12));
+
+    public static final FrostHunterCombineBlazeLegendGamma9228 FrostHunterAlphaAnimationNeoCosmos5761(FrostHunterCombineBlazeLegendGamma9228 frostHunterCombineBlazeLegendGamma9228, FrostHunterLocationManagerPixelVortex2935 frostHunterLocationManagerPixelVortex2935, FrostHunterFocusMeteringActionShadowStorm1839 frostHunterFocusMeteringActionShadowStorm1839) {
+        return frostHunterFocusMeteringActionShadowStorm1839 == null ? frostHunterCombineBlazeLegendGamma9228 : frostHunterFocusMeteringActionShadowStorm1839 instanceof FrostHunterAlarmManagerVisionStrikeEpic2390 ? frostHunterCombineBlazeLegendGamma9228.FrostHunterServiceEliteCelestialThunder1757(new IndicationModifierElement(frostHunterLocationManagerPixelVortex2935, (FrostHunterAlarmManagerVisionStrikeEpic2390) frostHunterFocusMeteringActionShadowStorm1839)) : FrostHunterDrawerLayoutUltraStrike3303.FrostHunterBitmapTurboDeltaNebula8743(frostHunterCombineBlazeLegendGamma9228, new FrostHunterFlowCollectorPrimeHero2428(frostHunterFocusMeteringActionShadowStorm1839, frostHunterLocationManagerPixelVortex2935));
+    }
+}

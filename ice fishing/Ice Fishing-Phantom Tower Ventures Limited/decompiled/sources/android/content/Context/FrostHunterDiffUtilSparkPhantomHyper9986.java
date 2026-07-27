@@ -1,0 +1,26 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public final class FrostHunterDiffUtilSparkPhantomHyper9986 {
+    public final int FrostHunterAlphaAnimationNeoCosmos5761;
+
+    public static String FrostHunterAlphaAnimationNeoCosmos5761(int i) {
+        return i == 1 ? "Left" : i == 2 ? "Right" : i == 3 ? "Center" : i == 4 ? "Justify" : i == 5 ? "Start" : i == 6 ? "End" : i == Integer.MIN_VALUE ? "Unspecified" : "Invalid";
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof FrostHunterDiffUtilSparkPhantomHyper9986) {
+            return this.FrostHunterAlphaAnimationNeoCosmos5761 == ((FrostHunterDiffUtilSparkPhantomHyper9986) obj).FrostHunterAlphaAnimationNeoCosmos5761;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.FrostHunterAlphaAnimationNeoCosmos5761);
+    }
+
+    public final String toString() {
+        return FrostHunterAlphaAnimationNeoCosmos5761(this.FrostHunterAlphaAnimationNeoCosmos5761);
+    }
+}

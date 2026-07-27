@@ -1,0 +1,12 @@
+package android.content.Context;
+
+/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
+/* loaded from: classes.dex */
+public final class FrostHunterPaintThunderVisionAlpha4064 {
+    public static final /* synthetic */ FrostHunterPaintThunderVisionAlpha4064 FrostHunterAlphaAnimationNeoCosmos5761 = new FrostHunterPaintThunderVisionAlpha4064();
+    public static final FrostHunterBundleShadowStrike1123 FrostHunterConstraintSetCloneMasterUltraRogue2633 = FrostHunterBundleShadowStrike1123.FrostHunterBitmapTurboDeltaNebula8743;
+    public static final FrostHunterBindingAdapterUltraSpectraOmega2451 FrostHunterBundlePulseFusionHero2475 = FrostHunterBindingAdapterUltraSpectraOmega2451.FrostHunterBitmapTurboDeltaNebula8743;
+    public static final FrostHunterBindingAdapterUltraSpectraOmega2451 FrostHunterServiceEliteCelestialThunder1757 = FrostHunterBindingAdapterUltraSpectraOmega2451.FrostHunterDialogFragmentTurboPhoenixDragon7627;
+    public static final FrostHunterBindingAdapterUltraSpectraOmega2451 FrostHunterLifecycleBlazeGammaElite2889 = FrostHunterBindingAdapterUltraSpectraOmega2451.FrostHunterMotionSceneAuroraMega2271;
+    public static final FrostHunterBindingAdapterUltraSpectraOmega2451 FrostHunterLevelListDrawableFusionDragonHero2232 = FrostHunterBindingAdapterUltraSpectraOmega2451.FrostHunterLooperThreadBetaHyperionMax1000;
+}
