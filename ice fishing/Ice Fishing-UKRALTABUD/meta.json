@@ -1,0 +1,30 @@
+{
+  "app_id": "com.icedrifter.arcticquest",
+  "title": "Ice Fishing",
+  "developer": "UKRALTABUD",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/uEkWz8Krnq75XZF9hZTBVRiaY_dCpkj1E_DXe7JVl_yYOxNsw_QaXsKR1bkA8uMxw3n6k2s9WMOgu-8iU8JGzOU",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-UKRALTABUD",
+  "path": "ice fishing/Ice Fishing-UKRALTABUD",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.icedrifter.arcticquest.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-UKRALTABUD",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.icedrifter.arcticquest...\ncom.icedrifter.arcticquest downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.icedrifter.arcticquest...\ncom.icedrifter.arcticquest downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

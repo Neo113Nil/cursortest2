@@ -1,0 +1,39 @@
+package e0;
+
+import io.flutter.embedding.engine.FlutterJNI;
+import java.nio.ByteBuffer;
+import java.util.concurrent.atomic.AtomicBoolean;
+import m0.InterfaceC0207e;
+
+/* renamed from: e0.g, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0131g implements InterfaceC0207e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final FlutterJNI f1856a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final int f1857b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final AtomicBoolean f1858c = new AtomicBoolean(false);
+
+    public C0131g(FlutterJNI flutterJNI, int i2) {
+        this.f1856a = flutterJNI;
+        this.f1857b = i2;
+    }
+
+    @Override // m0.InterfaceC0207e
+    public final void a(ByteBuffer byteBuffer) {
+        if (this.f1858c.getAndSet(true)) {
+            throw new IllegalStateException("Reply already submitted");
+        }
+        int i2 = this.f1857b;
+        FlutterJNI flutterJNI = this.f1856a;
+        if (byteBuffer == null) {
+            flutterJNI.invokePlatformMessageEmptyResponseCallback(i2);
+        } else {
+            flutterJNI.invokePlatformMessageResponseCallback(i2, byteBuffer, byteBuffer.position());
+        }
+    }
+}

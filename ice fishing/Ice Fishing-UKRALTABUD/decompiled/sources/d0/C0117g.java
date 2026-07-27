@@ -1,0 +1,26 @@
+package d0;
+
+/* renamed from: d0.g, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0117g implements InterfaceC0112b {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ C0113c f1822a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ C0119i f1823b;
+
+    public C0117g(C0119i c0119i, C0113c c0113c) {
+        this.f1823b = c0119i;
+        this.f1822a = c0113c;
+    }
+
+    @Override // d0.InterfaceC0112b
+    public final void b() {
+        this.f1823b.f1830a.remove(this.f1822a);
+    }
+
+    @Override // d0.InterfaceC0112b
+    public final void a() {
+    }
+}
