@@ -1,0 +1,5 @@
+package com.onesignal.notifications.activities;
+
+/* loaded from: classes2.dex */
+public final class NotificationOpenedActivity extends a {
+}

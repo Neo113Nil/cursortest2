@@ -1,0 +1,56 @@
+package com.instagram.common.viewpoint.core;
+
+import java.util.Arrays;
+import java.util.Locale;
+
+/* renamed from: com.facebook.ads.redexgen.X.Xj, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public final class C1357Xj {
+    public static byte[] A02;
+    public long A00;
+    public long A01;
+
+    static {
+        A01();
+    }
+
+    public static String A00(int i, int i6, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A02, i, i + i6);
+        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 16);
+        }
+        return new String(copyOfRange);
+    }
+
+    public static void A01() {
+        A02 = new byte[]{-52, -15, -7, -28, -17, -20, -25, -93, -15, -8, -16, -27, -24, -11, -93, -14, -23, -93, -15, -28, -15, -14, -10, -24, -26, -14, -15, -25, -10, -93, -23, -14, -11, -93, -9, -21, -24, -93, -9, -20, -16, -24, -11, -67, -93, -88, -25};
+    }
+
+    public C1357Xj(long j6) {
+        if (j6 < 0) {
+            throw new IllegalArgumentException(String.format(Locale.US, A00(0, 47, 115), Long.valueOf(j6)));
+        }
+        this.A01 = j6;
+        this.A00 = System.nanoTime() + j6;
+    }
+
+    public final synchronized void A02() {
+        this.A00 = System.nanoTime();
+        notifyAll();
+    }
+
+    public final synchronized void A03() {
+        this.A00 = System.nanoTime() + this.A01;
+    }
+
+    public final synchronized void A04() throws InterruptedException {
+        while (!A05()) {
+            long max = Math.max(this.A00 - System.nanoTime(), 1L);
+            wait(max / 1000000, (int) (max % 1000000));
+        }
+    }
+
+    public final synchronized boolean A05() {
+        return System.nanoTime() >= this.A00;
+    }
+}

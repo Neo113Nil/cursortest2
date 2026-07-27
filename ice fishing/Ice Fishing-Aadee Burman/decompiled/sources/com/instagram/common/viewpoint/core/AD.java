@@ -1,0 +1,162 @@
+package com.instagram.common.viewpoint.core;
+
+import android.os.Bundle;
+import android.os.SystemClock;
+import android.text.TextUtils;
+import com.facebook.ads.AdError;
+import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
+import java.io.IOException;
+import java.util.Arrays;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public final class AD extends C2381pz {
+    public static byte[] A07;
+    public static final AnonymousClass23<AD> A08;
+    public static final String A09;
+    public static final String A0A;
+    public static final String A0B;
+    public static final String A0C;
+    public static final String A0D;
+    public static final String A0E;
+    public final boolean A00;
+    public final int A01;
+    public final int A02;
+    public final int A03;
+    public final C2400qI A04;
+    public final C3C A05;
+    public final String A06;
+
+    public static /* synthetic */ AD A00(Bundle bundle) {
+        return new AD(bundle);
+    }
+
+    public static String A05(int i, int i6, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
+        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 61);
+        }
+        return new String(copyOfRange);
+    }
+
+    public static void A07() {
+        A07 = new byte[]{120, -67, -54, -54, -57, -54, -124, 120, -63, -58, -68, -67, -48, -107, -83, -95, -25, -16, -13, -18, -30, -11, -66, -37, -49, 21, 30, 33, 28, 16, 35, 14, 34, 36, 31, 31, 30, 33, 35, 20, 19, -20, -21, -47, -45, -26, -18, -16, -11, -26, -95, -26, -13, -13, -16, -13, -53, -25, -19, -22, -37, -35, -104, -35, -22, -22, -25, -22, -50, -25, -34, -15, -23, -34, -36, -19, -34, -35, -103, -21, -18, -25, -19, -30, -26, -34, -103, -34, -21, -21, -24, -21};
+    }
+
+    static {
+        A07();
+        A08 = new AnonymousClass23() { // from class: com.facebook.ads.redexgen.X.ot
+            @Override // com.instagram.common.viewpoint.core.AnonymousClass23
+            public final AnonymousClass24 A6f(Bundle bundle) {
+                return AD.A00(bundle);
+            }
+        };
+        A0E = C5C.A0h(1001);
+        A0D = C5C.A0h(AdError.LOAD_TOO_FREQUENTLY_ERROR_CODE);
+        A0C = C5C.A0h(1003);
+        A0A = C5C.A0h(1004);
+        A0B = C5C.A0h(1005);
+        A09 = C5C.A0h(1006);
+    }
+
+    public AD(int i, Throwable th, int i6) {
+        this(i, th, null, i6, null, -1, null, 4, false);
+    }
+
+    public AD(int i, Throwable th, String str, int i6, String str2, int i9, C2400qI c2400qI, int i10, boolean z3) {
+        this(A06(i, th, str, str2, i9, c2400qI, i10), th, i6, i, str2, i9, c2400qI, i10, null, SystemClock.elapsedRealtime(), z3);
+    }
+
+    public AD(Bundle bundle) {
+        super(bundle);
+        C2400qI A6f;
+        this.A03 = bundle.getInt(A0E, 2);
+        this.A06 = bundle.getString(A0D);
+        this.A02 = bundle.getInt(A0C, -1);
+        Bundle bundle2 = bundle.getBundle(A0A);
+        if (bundle2 == null) {
+            A6f = null;
+        } else {
+            A6f = C2400qI.A0b.A6f(bundle2);
+        }
+        this.A04 = A6f;
+        this.A01 = bundle.getInt(A0B, 4);
+        this.A00 = bundle.getBoolean(A09, false);
+        this.A05 = null;
+    }
+
+    public AD(String str, Throwable th, int i, int i6, String str2, int i9, C2400qI c2400qI, int i10, C3C c3c, long j6, boolean z3) {
+        super(str, th, i, j6);
+        AbstractC06243y.A07(!z3 || i6 == 1);
+        AbstractC06243y.A07(th != null || i6 == 3);
+        this.A03 = i6;
+        this.A06 = str2;
+        this.A02 = i9;
+        this.A04 = c2400qI;
+        this.A01 = i10;
+        this.A05 = c3c;
+        this.A00 = z3;
+    }
+
+    public static AD A01(IOException iOException, int i) {
+        return new AD(0, iOException, i);
+    }
+
+    @Deprecated
+    public static AD A02(RuntimeException runtimeException) {
+        return A03(runtimeException, 1000);
+    }
+
+    public static AD A03(RuntimeException runtimeException, int i) {
+        return new AD(2, runtimeException, i);
+    }
+
+    public static AD A04(Throwable th, String str, int i, C2400qI c2400qI, int i6, boolean z3, int i9) {
+        int i10 = i6;
+        if (c2400qI == null) {
+            i10 = 4;
+        }
+        return new AD(1, th, null, i9, str, i, c2400qI, i10, z3);
+    }
+
+    public static String A06(@MetaExoPlayerCustomization(type = {"NEW_METHOD_ARGS"}, value = "Throwable cause - linked with Error reporting") int i, Throwable th, String str, String str2, int i6, C2400qI c2400qI, int i9) {
+        String message;
+        String A05;
+        if (str == null) {
+            message = th == null ? null : th.getMessage();
+        } else {
+            message = str;
+        }
+        if (message != null) {
+            return message;
+        }
+        switch (i) {
+            case 0:
+                A05 = A05(56, 12, 59);
+                break;
+            case 1:
+                StringBuilder append = new StringBuilder().append(str2);
+                String message2 = A05(0, 14, 27);
+                StringBuilder append2 = append.append(message2).append(i6);
+                String message3 = A05(14, 9, 68);
+                StringBuilder append3 = append2.append(message3).append(c2400qI);
+                String message4 = A05(23, 19, 114);
+                StringBuilder append4 = append3.append(message4);
+                String message5 = C5C.A0g(i9);
+                A05 = append4.append(message5).toString();
+                break;
+            case 2:
+            default:
+                A05 = A05(68, 24, 60);
+                break;
+            case 3:
+                A05 = A05(44, 12, 68);
+                break;
+        }
+        if (!TextUtils.isEmpty(str)) {
+            StringBuilder append5 = new StringBuilder().append(A05);
+            String message6 = A05(42, 2, 116);
+            return append5.append(message6).append(str).toString();
+        }
+        return A05;
+    }
+}

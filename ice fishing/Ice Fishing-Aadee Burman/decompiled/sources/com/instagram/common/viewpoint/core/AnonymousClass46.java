@@ -1,0 +1,89 @@
+package com.instagram.common.viewpoint.core;
+
+import android.util.Pair;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+/* renamed from: com.facebook.ads.redexgen.X.46, reason: invalid class name */
+/* loaded from: assets/audience_network/classes2.dex */
+public abstract class AnonymousClass46 {
+    public static byte[] A00;
+    public static String[] A01 = {"iRbt0o504Arwoby5JHXaSNdVCCanqX3Z", "ASbg6tg4kzyOiw5fOrTV48A6bdNu61QQ", "VJNj5t4vCwi8aTooUiCSn6hrJqJmgDCA", "jF3QiYzhpB2jmiLUWXOlRV8C8MCMW37s", "04l0YgLQyX7hnS2Tq5aYjCPcYldth61t", "viWvpQwMaKSmF6BaYaPf73TpnglWhe5o", "UZSp3mVbJo9", "8WqjnkkE7kcSKcejfHJHrMyyjo529bht"};
+    public static final byte[] A02;
+    public static final String[] A03;
+
+    public static String A02(int i, int i6, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i6);
+        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 74);
+        }
+        return new String(copyOfRange);
+    }
+
+    public static void A05() {
+        A00 = new byte[]{-49, -58, -47, -45, -7, -5, -84, -74, 13, 34, 15, -35, -38, -47, -36, -34, 4, -47, -36, -34, 4, -47, -36, -34, 4, -43, -29, -48, -98, -101, -110, -32, -110, -47, -101, -110, -59, -101, -110, -48, -110, -47};
+    }
+
+    static {
+        A05();
+        A02 = new byte[]{0, 0, 0, 1};
+        A03 = new String[]{A02(0, 0, 27), A02(5, 1, 112), A02(6, 1, 32), A02(7, 1, 41)};
+    }
+
+    public static Pair<Integer, Integer> A00(byte[] bArr) {
+        C06474v c06474v = new C06474v(bArr);
+        c06474v.A0f(9);
+        int sampleRate = c06474v.A0I();
+        c06474v.A0f(20);
+        return Pair.create(Integer.valueOf(c06474v.A0L()), Integer.valueOf(sampleRate));
+    }
+
+    public static String A01(int i, int i6, int i9) {
+        return String.format(A02(8, 17, 98), Integer.valueOf(i), Integer.valueOf(i6), Integer.valueOf(i9));
+    }
+
+    public static String A03(int i, boolean z3, int i6, int i9, int[] iArr, int i10) {
+        StringBuilder sb = new StringBuilder(C5C.A0n(A02(25, 17, 35), A03[i], Integer.valueOf(i6), Integer.valueOf(i9), Character.valueOf(z3 ? 'H' : 'L'), Integer.valueOf(i10)));
+        int length = iArr.length;
+        while (length > 0 && iArr[length - 1] == 0) {
+            length--;
+        }
+        for (int i11 = 0; i11 < length; i11++) {
+            sb.append(String.format(A02(0, 5, 87), Integer.valueOf(iArr[i11])));
+        }
+        return sb.toString();
+    }
+
+    public static List<byte[]> A04(boolean z3) {
+        byte[] bArr = new byte[1];
+        if (z3) {
+            bArr[0] = 1;
+        } else {
+            bArr[0] = 0;
+        }
+        return Collections.singletonList(bArr);
+    }
+
+    public static boolean A06(List<byte[]> list) {
+        if (list.size() != 1 || list.get(0).length != 1) {
+            return false;
+        }
+        byte b9 = list.get(0)[0];
+        if (A01[6].length() != 11) {
+            throw new RuntimeException();
+        }
+        A01[6] = "7rG63N7qIw7";
+        return b9 == 1;
+    }
+
+    public static byte[] A07(byte[] bArr, int i, int i6) {
+        byte[] bArr2 = new byte[A02.length + i6];
+        byte[] bArr3 = A02;
+        byte[] nalUnit = A02;
+        System.arraycopy(bArr3, 0, bArr2, 0, nalUnit.length);
+        byte[] nalUnit2 = A02;
+        System.arraycopy(bArr, i, bArr2, nalUnit2.length, i6);
+        return bArr2;
+    }
+}

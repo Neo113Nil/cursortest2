@@ -1,0 +1,13 @@
+package com.instagram.common.viewpoint.core;
+
+/* renamed from: com.facebook.ads.redexgen.X.Lm, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public interface InterfaceC1059Lm {
+    void AB4(Throwable th);
+
+    void ABI(Throwable th);
+
+    void AHU(String str, int i, String str2, Long l9, Long l10, LX lx);
+
+    void AHV(String str, boolean z3, LX lx);
+}

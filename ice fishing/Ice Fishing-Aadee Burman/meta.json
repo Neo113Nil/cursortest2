@@ -1,0 +1,30 @@
+{
+  "app_id": "com.icefishing.icefishinglive2",
+  "title": "Ice Fishing",
+  "developer": "Aadee Burman",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/LA34qyOflaR25IMnGFXY0MI15CXV7co2NVl0j6guY_7_gOezsgLOLtmea7Hov31MTdRRPjn2Eu29MVeUH9bQDg",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-Aadee Burman",
+  "path": "ice fishing/Ice Fishing-Aadee Burman",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.icefishing.icefishinglive2.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Aadee Burman",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.icefishing.icefishinglive2...\ncom.icefishing.icefishinglive2 downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.icefishing.icefishinglive2...\ncom.icefishing.icefishinglive2 downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,344 @@
+package com.instagram.common.viewpoint.core;
+
+import android.os.Build;
+import android.view.animation.Interpolator;
+import android.widget.OverScroller;
+import com.anythink.core.common.s.a.c;
+import java.util.Arrays;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public class RJ implements Runnable {
+    public static byte[] A07;
+    public static String[] A08 = {"YAUr0vF6CX8YQIb3U2BTwiKsPx4egdml", "mCzYZBoaiKXOzjUHkKBQEDESozpM1xd6", "icS38dGHdjVFjizVfUSTymHnsbTrfSoO", "cz24QPO5JMZmQB4F0QhCndjSq8meDVtx", "FtYcbE5Uq8HUJyIzKb3J4QjvmALEd3tS", "OczTw8YbFDCs0vVm57WwAmFlfg0gTpir", "toWNn3QT1tQgvY3MKWHjSENw", "YozzgSFsuZbL3IkC1bDOEp8MFgumFV8x"};
+    public OverScroller A01;
+    public int A02;
+    public int A03;
+    public final /* synthetic */ C7M A06;
+    public Interpolator A00 = C7M.A1A;
+    public boolean A04 = false;
+    public boolean A05 = false;
+
+    public static String A02(int i, int i6, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A07, i, i + i6);
+        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+            byte b9 = copyOfRange[i10];
+            if (A08[6].length() == 25) {
+                throw new RuntimeException();
+            }
+            String[] strArr = A08;
+            strArr[1] = "lXzWc938MQZaj6BgS1Y9BEfSDAuAR6qF";
+            strArr[5] = "B8zmNNge3ag7Hwi7A1PWi4fqxiL6HNqU";
+            copyOfRange[i10] = (byte) ((b9 - i9) - 123);
+        }
+        return new String(copyOfRange);
+    }
+
+    public static void A03() {
+        byte[] bArr = {c.f16317b, 68, 14, 65, 81, 96, 93, 90, 90};
+        String[] strArr = A08;
+        if (strArr[1].charAt(2) != strArr[5].charAt(2)) {
+            throw new RuntimeException();
+        }
+        String[] strArr2 = A08;
+        strArr2[7] = "TeOjcoFpg61NRcWtZ7RqEgvJb0vCzhPX";
+        strArr2[0] = "wzSzDJFWC0w6xe3VuPJPH24U0YXOvF2u";
+        A07 = bArr;
+    }
+
+    static {
+        A03();
+    }
+
+    public RJ(C7M c7m) {
+        this.A06 = c7m;
+        this.A01 = new OverScroller(c7m.getContext(), C7M.A1A);
+    }
+
+    private float A00(float f3) {
+        return (float) Math.sin((f3 - 0.5f) * 0.47123894f);
+    }
+
+    private int A01(int i, int i6, int i9, int i10) {
+        int absDx;
+        int containerSize = Math.abs(i);
+        int delta = Math.abs(i6);
+        int duration = containerSize > delta ? 1 : 0;
+        int halfContainerSize = (int) Math.sqrt((i9 * i9) + (i10 * i10));
+        int absDx2 = (int) Math.sqrt((i * i) + (i6 * i6));
+        C7M c7m = this.A06;
+        int width = duration != 0 ? c7m.getWidth() : c7m.getHeight();
+        int velocity = width / 2;
+        float A00 = velocity + (velocity * A00(Math.min(1.0f, (absDx2 * 1.0f) / width)));
+        if (halfContainerSize > 0) {
+            absDx = Math.round(Math.abs(A00 / halfContainerSize) * 1000.0f) * 4;
+        } else {
+            if (duration == 0) {
+                containerSize = delta;
+            }
+            absDx = (int) (((containerSize / width) + 1.0f) * 300.0f);
+        }
+        int min = Math.min(absDx, 2000);
+        int absDx3 = A08[2].charAt(23);
+        if (absDx3 != 110) {
+            throw new RuntimeException();
+        }
+        String[] strArr = A08;
+        strArr[7] = "0orcdyFTKXkoGK9yWPRw9CMcRo5SNB9j";
+        strArr[0] = "sq5WBRFpbSiYOu42pzh1wsqhDGiHcevd";
+        return min;
+    }
+
+    private final void A04() {
+        this.A05 = false;
+        this.A04 = true;
+    }
+
+    private final void A05() {
+        this.A04 = false;
+        if (this.A05) {
+            A07();
+        }
+    }
+
+    private final void A06(int i, int i6, int i9, int i10) {
+        A0B(i, i6, A01(i, i6, i9, i10));
+    }
+
+    public final void A07() {
+        if (this.A04) {
+            this.A05 = true;
+        } else {
+            this.A06.removeCallbacks(this);
+            Ph.A0D(this.A06, this);
+        }
+    }
+
+    public final void A08() {
+        this.A06.removeCallbacks(this);
+        this.A01.abortAnimation();
+    }
+
+    public final void A09(int i, int i6) {
+        this.A06.setScrollState(2);
+        this.A03 = 0;
+        this.A02 = 0;
+        this.A01.fling(0, 0, i, i6, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        A07();
+    }
+
+    public final void A0A(int i, int i6) {
+        A06(i, i6, 0, 0);
+    }
+
+    public final void A0B(int i, int i6, int i9) {
+        A0C(i, i6, i9, C7M.A1A);
+    }
+
+    public final void A0C(int i, int i6, int i9, Interpolator interpolator) {
+        if (this.A00 != interpolator) {
+            this.A00 = interpolator;
+            this.A01 = new OverScroller(this.A06.getContext(), interpolator);
+        }
+        this.A06.setScrollState(2);
+        this.A03 = 0;
+        this.A02 = 0;
+        this.A01.startScroll(0, 0, i, i6, i9);
+        if (Build.VERSION.SDK_INT < 23) {
+            OverScroller overScroller = this.A01;
+            if (A08[2].charAt(23) != 'n') {
+                throw new RuntimeException();
+            }
+            String[] strArr = A08;
+            strArr[1] = "88zIldbbkktihn9hTQ4sgRWvKPoy0Har";
+            strArr[5] = "wazVAycqzf9kUc8ZZnvbPZ6jaLgaodB2";
+            overScroller.computeScrollOffset();
+        }
+        A07();
+    }
+
+    public final void A0D(int i, int i6, Interpolator interpolator) {
+        int A01 = A01(i, i6, 0, 0);
+        if (interpolator == null) {
+            interpolator = C7M.A1A;
+        }
+        A0C(i, i6, A01, interpolator);
+        if (A08[6].length() == 25) {
+            throw new RuntimeException();
+        }
+        A08[3] = "4ylqCkbib8Hqjgb9G4JU7JWl2ANwoVnp";
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        int[] iArr;
+        boolean awakenScrollBars;
+        boolean z3;
+        if (this.A06.A06 == null) {
+            A08();
+            return;
+        }
+        A04();
+        this.A06.A1K();
+        OverScroller overScroller = this.A01;
+        RF rf = this.A06.A06.A02;
+        if (overScroller.computeScrollOffset()) {
+            iArr = this.A06.A16;
+            int overscrollX = overScroller.getCurrX();
+            int velY = overScroller.getCurrY();
+            int vresult = overscrollX - this.A02;
+            int velX = velY - this.A03;
+            int i = 0;
+            int i6 = 0;
+            this.A02 = overscrollX;
+            this.A03 = velY;
+            int i9 = 0;
+            int i10 = 0;
+            if (this.A06.A1w(vresult, velX, iArr, null, 1)) {
+                vresult -= iArr[0];
+                velX -= iArr[1];
+            }
+            if (this.A06.A04 != null) {
+                this.A06.A1L();
+                this.A06.A1M();
+                P4.A01(A02(0, 9, 115));
+                C7M c7m = this.A06;
+                RH rh = this.A06.A0s;
+                String[] strArr = A08;
+                if (strArr[7].charAt(6) != strArr[0].charAt(6)) {
+                    throw new RuntimeException();
+                }
+                String[] strArr2 = A08;
+                strArr2[1] = "nozOsXlmQMzJhvkopjwZaheFFVNTeY58";
+                strArr2[5] = "LtzfvJebeScyRtmgs1USyUey2pVvSmq5";
+                c7m.A1j(rh);
+                if (vresult != 0) {
+                    R2 r22 = this.A06.A06;
+                    RA ra = this.A06.A0r;
+                    C7M c7m2 = this.A06;
+                    if (A08[4].charAt(19) != '9') {
+                        A08[4] = "aF9lT9JucYAVgVWisB0rNkK4be7J2iGb";
+                        i = r22.A1f(vresult, ra, c7m2.A0s);
+                        i9 = vresult - i;
+                    } else {
+                        i = r22.A1f(vresult, ra, c7m2.A0s);
+                        i9 = vresult - i;
+                    }
+                }
+                if (velX != 0) {
+                    R2 r23 = this.A06.A06;
+                    RA ra2 = this.A06.A0r;
+                    if (A08[4].charAt(19) != 57) {
+                        String[] strArr3 = A08;
+                        strArr3[7] = "UcFH7yF8zZNprQitZtXhkmlCMHIdnioP";
+                        strArr3[0] = "hCBROqFKcvdbLIHuO2wEis8Nwj1iktft";
+                        i6 = r23.A1g(velX, ra2, this.A06.A0s);
+                        i10 = velX - i6;
+                    } else {
+                        i6 = r23.A1g(velX, ra2, this.A06.A0s);
+                        i10 = velX - i6;
+                    }
+                }
+                P4.A00();
+                this.A06.A1Q();
+                this.A06.A1N();
+                this.A06.A1p(false);
+                if (rf != null && !rf.A0E() && rf.A0F()) {
+                    int x9 = this.A06.A0s.A03();
+                    if (x9 == 0) {
+                        rf.A09();
+                    } else if (rf.A07() >= x9) {
+                        rf.A0A(x9 - 1);
+                        rf.A04(vresult - i9, velX - i10);
+                    } else {
+                        int y7 = vresult - i9;
+                        if (A08[4].charAt(19) != 57) {
+                            String[] strArr4 = A08;
+                            strArr4[1] = "2vzJUgZGYJyf60lr7OoRSSfYHAbPRQwN";
+                            strArr4[5] = "FZzkKBCO3vggmWhfitA4hZZwekV7eOzC";
+                            rf.A04(y7, velX - i10);
+                        } else {
+                            rf.A04(y7, velX - i10);
+                        }
+                    }
+                }
+            }
+            if (!this.A06.A0v.isEmpty()) {
+                this.A06.invalidate();
+            }
+            if (this.A06.getOverScrollMode() != 2) {
+                C7M c7m3 = this.A06;
+                String[] strArr5 = A08;
+                if (strArr5[7].charAt(6) != strArr5[0].charAt(6)) {
+                    throw new RuntimeException();
+                }
+                A08[6] = "k";
+                c7m3.A1b(vresult, velX);
+            }
+            int dy = i;
+            int hresult = i6;
+            if (!this.A06.A1v(dy, hresult, i9, i10, null, 1) && (i9 != 0 || i10 != 0)) {
+                int x10 = (int) overScroller.getCurrVelocity();
+                int dx = 0;
+                if (i9 != overscrollX) {
+                    if (i9 < 0) {
+                        dx = -x10;
+                    } else {
+                        dx = i9 > 0 ? x10 : 0;
+                    }
+                }
+                if (i10 != velY) {
+                    if (i10 < 0) {
+                        x10 = -x10;
+                    } else if (i10 <= 0) {
+                        x10 = 0;
+                    }
+                } else {
+                    x10 = 0;
+                }
+                if (this.A06.getOverScrollMode() != 2) {
+                    this.A06.A1a(dx, x10);
+                }
+                if ((dx != 0 || i9 == overscrollX || overScroller.getFinalX() == 0) && (x10 != 0 || i10 == velY || overScroller.getFinalY() == 0)) {
+                    overScroller.abortAnimation();
+                }
+            }
+            if (i != 0 || i6 != 0) {
+                C7M c7m4 = this.A06;
+                if (A08[6].length() != 25) {
+                    A08[3] = "MhQkdHLAPY6K0mrvY0I8ZqPtgRA1J8Gx";
+                    c7m4.A1d(i, i6);
+                } else {
+                    A08[6] = "5ZFiatMajPEhKsDar8BqfzNMKoQTJ";
+                    c7m4.A1d(i, i6);
+                }
+            }
+            awakenScrollBars = this.A06.awakenScrollBars();
+            if (!awakenScrollBars) {
+                this.A06.invalidate();
+            }
+            boolean z6 = (vresult == 0 && velX == 0) || (vresult != 0 && this.A06.A06.A22() && i == vresult) || (velX != 0 && this.A06.A06.A23() && i6 == velX);
+            if (overScroller.isFinished() || (!z6 && !this.A06.A1t(1))) {
+                this.A06.setScrollState(0);
+                z3 = C7M.A1E;
+                if (z3) {
+                    this.A06.A02.A02();
+                }
+                this.A06.A1Z(1);
+            } else {
+                A07();
+                if (this.A06.A03 != null) {
+                    this.A06.A03.A0B(this.A06, vresult, velX);
+                }
+            }
+        }
+        if (rf != null) {
+            if (rf.A0E()) {
+                rf.A04(0, 0);
+            }
+            if (!this.A05) {
+                rf.A09();
+            }
+        }
+        A05();
+    }
+}

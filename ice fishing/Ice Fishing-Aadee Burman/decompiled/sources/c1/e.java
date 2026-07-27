@@ -1,0 +1,124 @@
+package c1;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/* loaded from: classes.dex */
+public final class e {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final e f5518c = new e("COMPOSITION");
+
+    /* renamed from: a, reason: collision with root package name */
+    public final List f5519a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public f f5520b;
+
+    public e(String... strArr) {
+        this.f5519a = Arrays.asList(strArr);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:19:0x0088 A[RETURN] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean a(int i, String str) {
+        List list = this.f5519a;
+        if (i < list.size()) {
+            boolean z3 = i == list.size() - 1;
+            String str2 = (String) list.get(i);
+            if (!str2.equals("**")) {
+                boolean z6 = str2.equals(str) || str2.equals("*");
+                if ((z3 || (i == list.size() - 2 && ((String) list.get(list.size() - 1)).equals("**"))) && z6) {
+                    return true;
+                }
+            } else {
+                if (z3 || !((String) list.get(i + 1)).equals(str)) {
+                    if (!z3) {
+                        int i6 = i + 1;
+                        if (i6 >= list.size() - 1) {
+                            return ((String) list.get(i6)).equals(str);
+                        }
+                    }
+                    return true;
+                }
+                if (i == list.size() - 2 || (i == list.size() - 3 && ((String) list.get(list.size() - 1)).equals("**"))) {
+                }
+            }
+        }
+        return false;
+    }
+
+    public final int b(int i, String str) {
+        if ("__container".equals(str)) {
+            return 0;
+        }
+        List list = this.f5519a;
+        if (((String) list.get(i)).equals("**")) {
+            return (i != list.size() - 1 && ((String) list.get(i + 1)).equals(str)) ? 2 : 0;
+        }
+        return 1;
+    }
+
+    public final boolean c(int i, String str) {
+        if ("__container".equals(str)) {
+            return true;
+        }
+        List list = this.f5519a;
+        if (i >= list.size()) {
+            return false;
+        }
+        return ((String) list.get(i)).equals(str) || ((String) list.get(i)).equals("**") || ((String) list.get(i)).equals("*");
+    }
+
+    public final boolean d(int i, String str) {
+        if ("__container".equals(str)) {
+            return true;
+        }
+        List list = this.f5519a;
+        return i < list.size() - 1 || ((String) list.get(i)).equals("**");
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && e.class == obj.getClass()) {
+            e eVar = (e) obj;
+            if (!this.f5519a.equals(eVar.f5519a)) {
+                return false;
+            }
+            f fVar = this.f5520b;
+            f fVar2 = eVar.f5520b;
+            if (fVar != null) {
+                return fVar.equals(fVar2);
+            }
+            if (fVar2 == null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int hashCode = this.f5519a.hashCode() * 31;
+        f fVar = this.f5520b;
+        return hashCode + (fVar != null ? fVar.hashCode() : 0);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("KeyPath{keys=");
+        sb.append(this.f5519a);
+        sb.append(",resolved=");
+        sb.append(this.f5520b != null);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public e(e eVar) {
+        this.f5519a = new ArrayList(eVar.f5519a);
+        this.f5520b = eVar.f5520b;
+    }
+}

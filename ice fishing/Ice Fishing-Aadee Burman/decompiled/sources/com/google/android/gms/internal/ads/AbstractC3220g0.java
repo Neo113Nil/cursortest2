@@ -1,0 +1,6 @@
+package com.google.android.gms.internal.ads;
+
+/* renamed from: com.google.android.gms.internal.ads.g0, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public abstract class AbstractC3220g0 {
+}

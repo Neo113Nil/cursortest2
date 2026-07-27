@@ -1,0 +1,43 @@
+package com.instagram.common.viewpoint.core;
+
+import android.os.Bundle;
+import com.facebook.ads.androidx.media3.common.text.Cue;
+import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
+import java.util.List;
+
+/* renamed from: com.facebook.ads.redexgen.X.pR, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public final class C2348pR implements AnonymousClass24 {
+    public final long A00;
+
+    @MetaExoPlayerCustomization("Oculus does not work well with Google Guava")
+    public final List<C2350pT> A01;
+    public static final C2348pR A03 = new C2348pR(MetaExoPlayerCustomizedCollections.A01(), 0);
+    public static final String A04 = C5C.A0h(0);
+    public static final String A05 = C5C.A0h(1);
+    public static final AnonymousClass23<C2348pR> A02 = new AnonymousClass23() { // from class: com.facebook.ads.redexgen.X.pS
+        @Override // com.instagram.common.viewpoint.core.AnonymousClass23
+        public final AnonymousClass24 A6f(Bundle bundle) {
+            C2348pR A00;
+            A00 = C2348pR.A00(bundle);
+            return A00;
+        }
+    };
+
+    @MetaExoPlayerCustomization("Oculus does not work well with Google Guava")
+    public C2348pR(List<C2350pT> list, long j6) {
+        this.A01 = MetaExoPlayerCustomizedCollections.A03((C2350pT[]) list.toArray(new C2350pT[0]));
+        this.A00 = j6;
+    }
+
+    public static final C2348pR A00(Bundle bundle) {
+        List A01;
+        List<Cue> cues = bundle.getParcelableArrayList(A04);
+        if (cues == null) {
+            A01 = MetaExoPlayerCustomizedCollections.A01();
+        } else {
+            A01 = AnonymousClass44.A01(C2350pT.A0I, cues);
+        }
+        return new C2348pR(A01, bundle.getLong(A05));
+    }
+}
