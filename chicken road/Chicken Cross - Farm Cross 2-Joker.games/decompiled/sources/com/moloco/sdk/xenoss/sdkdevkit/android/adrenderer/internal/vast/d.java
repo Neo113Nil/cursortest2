@@ -1,0 +1,26 @@
+package com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast;
+
+import com.moloco.sdk.internal.x;
+import kotlin.coroutines.Continuation;
+
+/* loaded from: classes7.dex */
+public interface d {
+
+    public static final class a {
+        public static /* synthetic */ Object a(d dVar, String str, String str2, boolean z, Continuation continuation, int i, Object obj) {
+            if (obj != null) {
+                throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: invoke");
+            }
+            if ((i & 2) != 0) {
+                str2 = "UNKNOWN_MTID";
+            }
+            return dVar.a(str, str2, z, continuation);
+        }
+    }
+
+    com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.media.stream.c a(String str);
+
+    Object a(com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.render.a aVar, long j, Continuation<? super x<com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.render.a, com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.errors.k>> continuation);
+
+    Object a(String str, String str2, boolean z, Continuation<? super x<com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.vast.render.a, com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.errors.k>> continuation);
+}

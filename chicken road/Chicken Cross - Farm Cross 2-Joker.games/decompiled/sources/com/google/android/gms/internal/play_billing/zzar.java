@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.play_billing;
+
+import android.os.Bundle;
+import android.os.IInterface;
+import android.os.RemoteException;
+
+/* compiled from: com.android.billingclient:billing@@8.3.0 */
+/* loaded from: classes8.dex */
+public interface zzar extends IInterface {
+    void zza(Bundle bundle) throws RemoteException;
+}

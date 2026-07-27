@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes9.dex */
+final /* synthetic */ class zzhqx implements zzhoc {
+    static final /* synthetic */ zzhqx zza = new zzhqx();
+
+    private /* synthetic */ zzhqx() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhoc
+    public final /* synthetic */ zzhow zza(zzhfj zzhfjVar) {
+        return zzhqy.zzb((zzhpz) zzhfjVar);
+    }
+}

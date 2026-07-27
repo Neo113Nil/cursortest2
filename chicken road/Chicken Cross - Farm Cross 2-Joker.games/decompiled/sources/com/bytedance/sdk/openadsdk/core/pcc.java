@@ -1,0 +1,27 @@
+package com.bytedance.sdk.openadsdk.core;
+
+import android.util.Base64;
+import kotlin.text.Typography;
+
+/* loaded from: classes4.dex */
+public final class pcc {
+    private static final String pcc = gm();
+    private static final String sf = lu.oo().oo();
+
+    public static String pcc() {
+        return new String(Base64.decode(pcc, 0)).substring(2);
+    }
+
+    public static String sf() {
+        return new String(Base64.decode(sf, 0)).substring(2);
+    }
+
+    private static String gm() {
+        char[] cArr = {203, Typography.paragraph, 168, Typography.degree, 207, 148, 149, 178, 205, Typography.paragraph, 149, 166, 134, 178, 184, Typography.degree, 206, Typography.registered, 187, 178, 150, 185, Typography.section, 166};
+        char[] cArr2 = new char[24];
+        for (int i = 23; i >= 0; i--) {
+            cArr2[23 - i] = (char) (cArr[i] ^ 255);
+        }
+        return new String(cArr2);
+    }
+}

@@ -1,0 +1,14 @@
+package com.unity3d.ads.core.domain;
+
+import com.unity3d.ads.adplayer.WebViewContainer;
+import com.unity3d.ads.core.data.model.AdObject;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlinx.coroutines.CoroutineScope;
+
+/* compiled from: GetWebViewContainerUseCase.kt */
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J\u001e\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H¦B¢\u0006\u0002\u0010\b¨\u0006\t"}, d2 = {"Lcom/unity3d/ads/core/domain/GetWebViewContainerUseCase;", "", "invoke", "Lcom/unity3d/ads/adplayer/WebViewContainer;", "adPlayerScope", "Lkotlinx/coroutines/CoroutineScope;", "adObject", "Lcom/unity3d/ads/core/data/model/AdObject;", "(Lkotlinx/coroutines/CoroutineScope;Lcom/unity3d/ads/core/data/model/AdObject;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "unity-ads_defaultRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public interface GetWebViewContainerUseCase {
+    Object invoke(CoroutineScope coroutineScope, AdObject adObject, Continuation<? super WebViewContainer> continuation);
+}

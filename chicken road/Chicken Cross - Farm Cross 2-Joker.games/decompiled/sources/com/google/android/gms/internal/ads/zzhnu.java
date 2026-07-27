@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes9.dex */
+final /* synthetic */ class zzhnu implements zzhmz {
+    static final /* synthetic */ zzhnu zza = new zzhnu();
+
+    private /* synthetic */ zzhnu() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhmz
+    public final /* synthetic */ zzhow zza(zzhes zzhesVar, zzhfr zzhfrVar) {
+        return ((zzhne) zzhesVar).zzc(zzhfrVar);
+    }
+}

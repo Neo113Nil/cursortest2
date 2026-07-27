@@ -1,0 +1,12 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes9.dex */
+public abstract class zzhyo extends zzhes {
+    @Override // com.google.android.gms.internal.ads.zzhes
+    public /* bridge */ /* synthetic */ zzhfj zza() {
+        throw null;
+    }
+
+    public abstract zzich zze();
+}

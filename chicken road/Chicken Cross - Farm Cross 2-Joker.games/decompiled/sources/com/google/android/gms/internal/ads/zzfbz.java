@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes9.dex */
+public final class zzfbz implements zzfdg {
+    private final Bundle zza;
+
+    public zzfbz(Bundle bundle) {
+        this.zza = bundle;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdg
+    public final /* bridge */ /* synthetic */ void zza(Object obj) {
+        Bundle bundle = (Bundle) obj;
+        Bundle bundle2 = this.zza;
+        if (bundle2 != null) {
+            bundle.putAll(bundle2);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.IBinder;
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.internal.ads.zzbeu;
+import com.google.android.gms.internal.ads.zzbew;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@25.4.0 */
+/* loaded from: classes9.dex */
+public final class zzcq extends zzbeu implements zzcs {
+    zzcq(IBinder iBinder) {
+        super(iBinder, "com.google.android.gms.ads.internal.client.IFullScreenContentCallback");
+    }
+
+    @Override // com.google.android.gms.ads.internal.client.zzcs
+    public final void zza(zze zzeVar) throws RemoteException {
+        Parcel zzcZ = zzcZ();
+        zzbew.zzc(zzcZ, zzeVar);
+        zzdb(1, zzcZ);
+    }
+
+    @Override // com.google.android.gms.ads.internal.client.zzcs
+    public final void zzb() throws RemoteException {
+        zzdb(2, zzcZ());
+    }
+
+    @Override // com.google.android.gms.ads.internal.client.zzcs
+    public final void zzc() throws RemoteException {
+        zzdb(3, zzcZ());
+    }
+
+    @Override // com.google.android.gms.ads.internal.client.zzcs
+    public final void zzd() throws RemoteException {
+        zzdb(4, zzcZ());
+    }
+
+    @Override // com.google.android.gms.ads.internal.client.zzcs
+    public final void zze() throws RemoteException {
+        zzdb(5, zzcZ());
+    }
+}

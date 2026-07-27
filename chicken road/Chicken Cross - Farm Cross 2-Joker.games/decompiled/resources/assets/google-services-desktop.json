@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "57429449866",
+    "project_id": "joker-chicken-go",
+    "storage_bucket": "joker-chicken-go.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57429449866:android:cc8ac052eb796a43c5a173",
+        "android_client_info": {
+          "package_name": "games.joker.chicken.go"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBs0IrfQq7vm3ubZH2GOZ7ORVJmFd5atdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
