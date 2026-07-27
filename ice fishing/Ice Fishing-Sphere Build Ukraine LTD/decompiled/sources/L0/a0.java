@@ -1,0 +1,761 @@
+package L0;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+
+/* loaded from: classes.dex */
+public class a0 implements Q, e0 {
+
+    /* renamed from: e, reason: collision with root package name */
+    public static final AtomicReferenceFieldUpdater f646e = AtomicReferenceFieldUpdater.newUpdater(a0.class, Object.class, "_state");
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final AtomicReferenceFieldUpdater f647f = AtomicReferenceFieldUpdater.newUpdater(a0.class, Object.class, "_parentHandle");
+    private volatile Object _parentHandle;
+    private volatile Object _state;
+
+    public a0(boolean z2) {
+        this._state = z2 ? AbstractC0064w.f691i : AbstractC0064w.f690h;
+    }
+
+    public static C0052j M(Q0.l lVar) {
+        while (lVar.m()) {
+            Q0.l h2 = lVar.h();
+            if (h2 == null) {
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = Q0.l.f896f;
+                Object obj = atomicReferenceFieldUpdater.get(lVar);
+                while (true) {
+                    lVar = (Q0.l) obj;
+                    if (!lVar.m()) {
+                        break;
+                    }
+                    obj = atomicReferenceFieldUpdater.get(lVar);
+                }
+            } else {
+                lVar = h2;
+            }
+        }
+        while (true) {
+            lVar = lVar.l();
+            if (!lVar.m()) {
+                if (lVar instanceof C0052j) {
+                    return (C0052j) lVar;
+                }
+                if (lVar instanceof b0) {
+                    return null;
+                }
+            }
+        }
+    }
+
+    public static String S(Object obj) {
+        if (!(obj instanceof Y)) {
+            return obj instanceof M ? ((M) obj).b() ? "Active" : "New" : obj instanceof C0056n ? "Cancelled" : "Completed";
+        }
+        Y y2 = (Y) obj;
+        return y2.e() ? "Cancelling" : y2.f() ? "Completing" : "Active";
+    }
+
+    public final CancellationException A() {
+        CancellationException cancellationException;
+        Object E2 = E();
+        if (!(E2 instanceof Y)) {
+            if (E2 instanceof M) {
+                throw new IllegalStateException(("Job is still new or active: " + this).toString());
+            }
+            if (!(E2 instanceof C0056n)) {
+                return new S(getClass().getSimpleName().concat(" has completed normally"), null, this);
+            }
+            Throwable th = ((C0056n) E2).f671a;
+            cancellationException = th instanceof CancellationException ? (CancellationException) th : null;
+            return cancellationException == null ? new S(v(), th, this) : cancellationException;
+        }
+        Throwable d2 = ((Y) E2).d();
+        if (d2 == null) {
+            throw new IllegalStateException(("Job is still new or active: " + this).toString());
+        }
+        String concat = getClass().getSimpleName().concat(" is cancelling");
+        cancellationException = d2 instanceof CancellationException ? (CancellationException) d2 : null;
+        if (cancellationException != null) {
+            return cancellationException;
+        }
+        if (concat == null) {
+            concat = v();
+        }
+        return new S(concat, d2, this);
+    }
+
+    public boolean B() {
+        return true;
+    }
+
+    public boolean C() {
+        return this instanceof C0054l;
+    }
+
+    public final b0 D(M m2) {
+        b0 c2 = m2.c();
+        if (c2 != null) {
+            return c2;
+        }
+        if (m2 instanceof F) {
+            return new b0();
+        }
+        if (m2 instanceof V) {
+            Q((V) m2);
+            return null;
+        }
+        throw new IllegalStateException(("State should have list: " + m2).toString());
+    }
+
+    public final Object E() {
+        while (true) {
+            Object obj = f646e.get(this);
+            if (!(obj instanceof Q0.r)) {
+                return obj;
+            }
+            ((Q0.r) obj).a(this);
+        }
+    }
+
+    public boolean F(Throwable th) {
+        return false;
+    }
+
+    public final void H(Q q2) {
+        int R2;
+        c0 c0Var = c0.f651e;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f647f;
+        if (q2 == null) {
+            atomicReferenceFieldUpdater.set(this, c0Var);
+            return;
+        }
+        a0 a0Var = (a0) q2;
+        do {
+            R2 = a0Var.R(a0Var.E());
+            if (R2 == 0) {
+                break;
+            }
+        } while (R2 != 1);
+        InterfaceC0051i interfaceC0051i = (InterfaceC0051i) AbstractC0064w.e(a0Var, true, new C0052j(this), 2);
+        atomicReferenceFieldUpdater.set(this, interfaceC0051i);
+        if (E() instanceof M) {
+            return;
+        }
+        interfaceC0051i.d();
+        atomicReferenceFieldUpdater.set(this, c0Var);
+    }
+
+    public final D I(boolean z2, boolean z3, D0.l lVar) {
+        V v2;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        Throwable th;
+        if (z2) {
+            v2 = lVar instanceof T ? (T) lVar : null;
+            if (v2 == null) {
+                v2 = new O(lVar);
+            }
+        } else {
+            v2 = lVar instanceof V ? (V) lVar : null;
+            if (v2 == null) {
+                v2 = new P(0, lVar);
+            }
+        }
+        v2.f631h = this;
+        while (true) {
+            Object E2 = E();
+            if (E2 instanceof F) {
+                F f2 = (F) E2;
+                if (f2.f614e) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f646e;
+                    while (!atomicReferenceFieldUpdater2.compareAndSet(this, E2, v2)) {
+                        if (atomicReferenceFieldUpdater2.get(this) != E2) {
+                            break;
+                        }
+                    }
+                    return v2;
+                }
+                b0 b0Var = new b0();
+                M l2 = f2.f614e ? b0Var : new L(b0Var);
+                do {
+                    atomicReferenceFieldUpdater = f646e;
+                    if (atomicReferenceFieldUpdater.compareAndSet(this, f2, l2)) {
+                        break;
+                    }
+                } while (atomicReferenceFieldUpdater.get(this) == f2);
+            } else {
+                if (!(E2 instanceof M)) {
+                    if (z3) {
+                        C0056n c0056n = E2 instanceof C0056n ? (C0056n) E2 : null;
+                        lVar.i(c0056n != null ? c0056n.f671a : null);
+                    }
+                    return c0.f651e;
+                }
+                b0 c2 = ((M) E2).c();
+                if (c2 == null) {
+                    E0.i.c(E2, "null cannot be cast to non-null type kotlinx.coroutines.JobNode");
+                    Q((V) E2);
+                } else {
+                    D d2 = c0.f651e;
+                    if (z2 && (E2 instanceof Y)) {
+                        synchronized (E2) {
+                            try {
+                                th = ((Y) E2).d();
+                                if (th != null) {
+                                    if ((lVar instanceof C0052j) && !((Y) E2).f()) {
+                                    }
+                                }
+                                if (p((M) E2, c2, v2)) {
+                                    if (th == null) {
+                                        return v2;
+                                    }
+                                    d2 = v2;
+                                }
+                            } catch (Throwable th2) {
+                                throw th2;
+                            }
+                        }
+                    } else {
+                        th = null;
+                    }
+                    if (th != null) {
+                        if (z3) {
+                            lVar.i(th);
+                        }
+                        return d2;
+                    }
+                    if (p((M) E2, c2, v2)) {
+                        return v2;
+                    }
+                }
+            }
+        }
+    }
+
+    public boolean J() {
+        return this instanceof C0045c;
+    }
+
+    public final boolean K(Object obj) {
+        Object T;
+        do {
+            T = T(E(), obj);
+            if (T == AbstractC0064w.f685c) {
+                return false;
+            }
+            if (T == AbstractC0064w.f686d) {
+                return true;
+            }
+        } while (T == AbstractC0064w.f687e);
+        q(T);
+        return true;
+    }
+
+    public final Object L(Object obj) {
+        Object T;
+        do {
+            T = T(E(), obj);
+            if (T == AbstractC0064w.f685c) {
+                String str = "Job " + this + " is already complete or completing, but is being completed with " + obj;
+                C0056n c0056n = obj instanceof C0056n ? (C0056n) obj : null;
+                throw new IllegalStateException(str, c0056n != null ? c0056n.f671a : null);
+            }
+        } while (T == AbstractC0064w.f687e);
+        return T;
+    }
+
+    public final void N(b0 b0Var, Throwable th) {
+        Object k2 = b0Var.k();
+        E0.i.c(k2, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode{ kotlinx.coroutines.internal.LockFreeLinkedListKt.Node }");
+        C0058p c0058p = null;
+        for (Q0.l lVar = (Q0.l) k2; !lVar.equals(b0Var); lVar = lVar.l()) {
+            if (lVar instanceof T) {
+                V v2 = (V) lVar;
+                try {
+                    v2.o(th);
+                } catch (Throwable th2) {
+                    if (c0058p != null) {
+                        o.g.a(c0058p, th2);
+                    } else {
+                        c0058p = new C0058p("Exception in completion handler " + v2 + " for " + this, th2);
+                    }
+                }
+            }
+        }
+        if (c0058p != null) {
+            G(c0058p);
+        }
+        u(th);
+    }
+
+    public final void Q(V v2) {
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        b0 b0Var = new b0();
+        v2.getClass();
+        Q0.l.f896f.lazySet(b0Var, v2);
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = Q0.l.f895e;
+        atomicReferenceFieldUpdater2.lazySet(b0Var, v2);
+        loop0: while (true) {
+            if (v2.k() == v2) {
+                while (!atomicReferenceFieldUpdater2.compareAndSet(v2, v2, b0Var)) {
+                    if (atomicReferenceFieldUpdater2.get(v2) != v2) {
+                        break;
+                    }
+                }
+                b0Var.j(v2);
+                break loop0;
+            }
+            break;
+        }
+        Q0.l l2 = v2.l();
+        do {
+            atomicReferenceFieldUpdater = f646e;
+            if (atomicReferenceFieldUpdater.compareAndSet(this, v2, l2)) {
+                return;
+            }
+        } while (atomicReferenceFieldUpdater.get(this) == v2);
+    }
+
+    public final int R(Object obj) {
+        boolean z2 = obj instanceof F;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f646e;
+        if (z2) {
+            if (((F) obj).f614e) {
+                return 0;
+            }
+            F f2 = AbstractC0064w.f691i;
+            while (!atomicReferenceFieldUpdater.compareAndSet(this, obj, f2)) {
+                if (atomicReferenceFieldUpdater.get(this) != obj) {
+                    return -1;
+                }
+            }
+            return 1;
+        }
+        if (!(obj instanceof L)) {
+            return 0;
+        }
+        b0 b0Var = ((L) obj).f623e;
+        while (!atomicReferenceFieldUpdater.compareAndSet(this, obj, b0Var)) {
+            if (atomicReferenceFieldUpdater.get(this) != obj) {
+                return -1;
+            }
+        }
+        return 1;
+    }
+
+    public final Object T(Object obj, Object obj2) {
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        if (!(obj instanceof M)) {
+            return AbstractC0064w.f685c;
+        }
+        if (((obj instanceof F) || (obj instanceof V)) && !(obj instanceof C0052j) && !(obj2 instanceof C0056n)) {
+            M m2 = (M) obj;
+            Object n2 = obj2 instanceof M ? new N((M) obj2) : obj2;
+            do {
+                atomicReferenceFieldUpdater = f646e;
+                if (atomicReferenceFieldUpdater.compareAndSet(this, m2, n2)) {
+                    O(obj2);
+                    x(m2, obj2);
+                    return obj2;
+                }
+            } while (atomicReferenceFieldUpdater.get(this) == m2);
+            return AbstractC0064w.f687e;
+        }
+        M m3 = (M) obj;
+        b0 D2 = D(m3);
+        if (D2 == null) {
+            return AbstractC0064w.f687e;
+        }
+        C0052j c0052j = null;
+        Y y2 = m3 instanceof Y ? (Y) m3 : null;
+        if (y2 == null) {
+            y2 = new Y(D2, null);
+        }
+        synchronized (y2) {
+            if (y2.f()) {
+                return AbstractC0064w.f685c;
+            }
+            Y.f637f.set(y2, 1);
+            if (y2 != m3) {
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f646e;
+                while (!atomicReferenceFieldUpdater2.compareAndSet(this, m3, y2)) {
+                    if (atomicReferenceFieldUpdater2.get(this) != m3) {
+                        return AbstractC0064w.f687e;
+                    }
+                }
+            }
+            boolean e2 = y2.e();
+            C0056n c0056n = obj2 instanceof C0056n ? (C0056n) obj2 : null;
+            if (c0056n != null) {
+                y2.a(c0056n.f671a);
+            }
+            Throwable d2 = y2.d();
+            if (e2) {
+                d2 = null;
+            }
+            if (d2 != null) {
+                N(D2, d2);
+            }
+            C0052j c0052j2 = m3 instanceof C0052j ? (C0052j) m3 : null;
+            if (c0052j2 == null) {
+                b0 c2 = m3.c();
+                if (c2 != null) {
+                    c0052j = M(c2);
+                }
+            } else {
+                c0052j = c0052j2;
+            }
+            if (c0052j != null) {
+                while (AbstractC0064w.e(c0052j.f661i, false, new X(this, y2, c0052j, obj2), 1) == c0.f651e) {
+                    c0052j = M(c0052j);
+                    if (c0052j == null) {
+                    }
+                }
+                return AbstractC0064w.f686d;
+            }
+            return z(y2, obj2);
+        }
+    }
+
+    @Override // L0.Q
+    public void a(CancellationException cancellationException) {
+        if (cancellationException == null) {
+            cancellationException = new S(v(), null, this);
+        }
+        t(cancellationException);
+    }
+
+    @Override // L0.Q
+    public boolean b() {
+        Object E2 = E();
+        return (E2 instanceof M) && ((M) E2).b();
+    }
+
+    @Override // v0.i
+    public final v0.i f(v0.i iVar) {
+        E0.i.e(iVar, "context");
+        return iVar == v0.j.f3014e ? this : (v0.i) iVar.m(this, new v0.b(1));
+    }
+
+    @Override // v0.i
+    public final v0.i g(v0.h hVar) {
+        return o.g.u(this, hVar);
+    }
+
+    @Override // v0.g
+    public final v0.h getKey() {
+        return C0062u.f682f;
+    }
+
+    @Override // v0.i
+    public final v0.g i(v0.h hVar) {
+        return o.g.m(this, hVar);
+    }
+
+    @Override // v0.i
+    public final Object m(Object obj, D0.p pVar) {
+        return pVar.f(obj, this);
+    }
+
+    public final boolean p(M m2, b0 b0Var, V v2) {
+        char c2;
+        Z z2 = new Z(v2, this, m2);
+        do {
+            Q0.l h2 = b0Var.h();
+            if (h2 == null) {
+                AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = Q0.l.f896f;
+                Object obj = atomicReferenceFieldUpdater.get(b0Var);
+                while (true) {
+                    h2 = (Q0.l) obj;
+                    if (!h2.m()) {
+                        break;
+                    }
+                    obj = atomicReferenceFieldUpdater.get(h2);
+                }
+            }
+            Q0.l.f896f.lazySet(v2, h2);
+            AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = Q0.l.f895e;
+            atomicReferenceFieldUpdater2.lazySet(v2, b0Var);
+            z2.f642c = b0Var;
+            while (true) {
+                if (atomicReferenceFieldUpdater2.compareAndSet(h2, b0Var, z2)) {
+                    c2 = z2.a(h2) == null ? (char) 1 : (char) 2;
+                } else if (atomicReferenceFieldUpdater2.get(h2) != b0Var) {
+                    c2 = 0;
+                    break;
+                }
+            }
+            if (c2 == 1) {
+                return true;
+            }
+        } while (c2 != 2);
+        return false;
+    }
+
+    public void r(Object obj) {
+        q(obj);
+    }
+
+    public final boolean s(Object obj) {
+        A.j jVar;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        Object obj2 = AbstractC0064w.f685c;
+        if (C()) {
+            do {
+                Object E2 = E();
+                if (!(E2 instanceof M) || ((E2 instanceof Y) && ((Y) E2).f())) {
+                    obj2 = AbstractC0064w.f685c;
+                    break;
+                }
+                obj2 = T(E2, new C0056n(y(obj), false));
+            } while (obj2 == AbstractC0064w.f687e);
+            if (obj2 == AbstractC0064w.f686d) {
+                return true;
+            }
+        }
+        if (obj2 == AbstractC0064w.f685c) {
+            Throwable th = null;
+            loop1: while (true) {
+                Object E3 = E();
+                if (!(E3 instanceof Y)) {
+                    if (!(E3 instanceof M)) {
+                        jVar = AbstractC0064w.f688f;
+                        break;
+                    }
+                    if (th == null) {
+                        th = y(obj);
+                    }
+                    M m2 = (M) E3;
+                    if (m2.b()) {
+                        b0 D2 = D(m2);
+                        if (D2 == null) {
+                            continue;
+                        } else {
+                            Y y2 = new Y(D2, th);
+                            do {
+                                atomicReferenceFieldUpdater = f646e;
+                                if (atomicReferenceFieldUpdater.compareAndSet(this, m2, y2)) {
+                                    N(D2, th);
+                                    jVar = AbstractC0064w.f685c;
+                                    break loop1;
+                                }
+                            } while (atomicReferenceFieldUpdater.get(this) == m2);
+                        }
+                    } else {
+                        Object T = T(E3, new C0056n(th, false));
+                        if (T == AbstractC0064w.f685c) {
+                            throw new IllegalStateException(("Cannot happen in " + E3).toString());
+                        }
+                        if (T != AbstractC0064w.f687e) {
+                            obj2 = T;
+                            break;
+                        }
+                    }
+                } else {
+                    synchronized (E3) {
+                        try {
+                            Y y3 = (Y) E3;
+                            y3.getClass();
+                            if (Y.f639h.get(y3) == AbstractC0064w.f689g) {
+                                jVar = AbstractC0064w.f688f;
+                            } else {
+                                boolean e2 = ((Y) E3).e();
+                                if (th == null) {
+                                    th = y(obj);
+                                }
+                                ((Y) E3).a(th);
+                                Throwable d2 = e2 ? null : ((Y) E3).d();
+                                if (d2 != null) {
+                                    N(((Y) E3).f640e, d2);
+                                }
+                                jVar = AbstractC0064w.f685c;
+                            }
+                        } catch (Throwable th2) {
+                            throw th2;
+                        }
+                    }
+                }
+            }
+            obj2 = jVar;
+        }
+        if (obj2 != AbstractC0064w.f685c && obj2 != AbstractC0064w.f686d) {
+            if (obj2 == AbstractC0064w.f688f) {
+                return false;
+            }
+            q(obj2);
+        }
+        return true;
+    }
+
+    public void t(CancellationException cancellationException) {
+        s(cancellationException);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName() + '{' + S(E()) + '}');
+        sb.append('@');
+        sb.append(AbstractC0064w.b(this));
+        return sb.toString();
+    }
+
+    public final boolean u(Throwable th) {
+        if (J()) {
+            return true;
+        }
+        boolean z2 = th instanceof CancellationException;
+        InterfaceC0051i interfaceC0051i = (InterfaceC0051i) f647f.get(this);
+        return (interfaceC0051i == null || interfaceC0051i == c0.f651e) ? z2 : interfaceC0051i.e(th) || z2;
+    }
+
+    public String v() {
+        return "Job was cancelled";
+    }
+
+    public boolean w(Throwable th) {
+        if (th instanceof CancellationException) {
+            return true;
+        }
+        return s(th) && B();
+    }
+
+    public final void x(M m2, Object obj) {
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f647f;
+        InterfaceC0051i interfaceC0051i = (InterfaceC0051i) atomicReferenceFieldUpdater.get(this);
+        if (interfaceC0051i != null) {
+            interfaceC0051i.d();
+            atomicReferenceFieldUpdater.set(this, c0.f651e);
+        }
+        C0058p c0058p = null;
+        C0056n c0056n = obj instanceof C0056n ? (C0056n) obj : null;
+        Throwable th = c0056n != null ? c0056n.f671a : null;
+        if (m2 instanceof V) {
+            try {
+                ((V) m2).o(th);
+                return;
+            } catch (Throwable th2) {
+                G(new C0058p("Exception in completion handler " + m2 + " for " + this, th2));
+                return;
+            }
+        }
+        b0 c2 = m2.c();
+        if (c2 != null) {
+            Object k2 = c2.k();
+            E0.i.c(k2, "null cannot be cast to non-null type kotlinx.coroutines.internal.LockFreeLinkedListNode{ kotlinx.coroutines.internal.LockFreeLinkedListKt.Node }");
+            for (Q0.l lVar = (Q0.l) k2; !lVar.equals(c2); lVar = lVar.l()) {
+                if (lVar instanceof V) {
+                    V v2 = (V) lVar;
+                    try {
+                        v2.o(th);
+                    } catch (Throwable th3) {
+                        if (c0058p != null) {
+                            o.g.a(c0058p, th3);
+                        } else {
+                            c0058p = new C0058p("Exception in completion handler " + v2 + " for " + this, th3);
+                        }
+                    }
+                }
+            }
+            if (c0058p != null) {
+                G(c0058p);
+            }
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r1v11, types: [java.lang.Throwable] */
+    /* JADX WARN: Type inference failed for: r1v7, types: [java.lang.Throwable] */
+    public final Throwable y(Object obj) {
+        CancellationException cancellationException;
+        if (obj instanceof Throwable) {
+            return (Throwable) obj;
+        }
+        a0 a0Var = (a0) ((e0) obj);
+        Object E2 = a0Var.E();
+        if (E2 instanceof Y) {
+            cancellationException = ((Y) E2).d();
+        } else if (E2 instanceof C0056n) {
+            cancellationException = ((C0056n) E2).f671a;
+        } else {
+            if (E2 instanceof M) {
+                throw new IllegalStateException(("Cannot be cancelling child in this state: " + E2).toString());
+            }
+            cancellationException = null;
+        }
+        CancellationException cancellationException2 = cancellationException instanceof CancellationException ? cancellationException : null;
+        if (cancellationException2 == null) {
+            cancellationException2 = new S("Parent job is ".concat(S(E2)), cancellationException, a0Var);
+        }
+        return cancellationException2;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public final Object z(Y y2, Object obj) {
+        Throwable th = null;
+        C0056n c0056n = obj instanceof C0056n ? (C0056n) obj : null;
+        Throwable th2 = c0056n != null ? c0056n.f671a : null;
+        synchronized (y2) {
+            y2.e();
+            ArrayList<Throwable> g2 = y2.g(th2);
+            if (!g2.isEmpty()) {
+                Iterator it = g2.iterator();
+                while (true) {
+                    if (!it.hasNext()) {
+                        break;
+                    }
+                    Object next = it.next();
+                    if (!(((Throwable) next) instanceof CancellationException)) {
+                        th = next;
+                        break;
+                    }
+                }
+                th = th;
+                if (th == null) {
+                    th = (Throwable) g2.get(0);
+                }
+            } else if (y2.e()) {
+                th = new S(v(), null, this);
+            }
+            if (th != null && g2.size() > 1) {
+                Set newSetFromMap = Collections.newSetFromMap(new IdentityHashMap(g2.size()));
+                for (Throwable th3 : g2) {
+                    if (th3 != th && th3 != th && !(th3 instanceof CancellationException) && newSetFromMap.add(th3)) {
+                        o.g.a(th, th3);
+                    }
+                }
+            }
+        }
+        if (th != null && th != th2) {
+            obj = new C0056n(th, false);
+        }
+        if (th != null && (u(th) || F(th))) {
+            E0.i.c(obj, "null cannot be cast to non-null type kotlinx.coroutines.CompletedExceptionally");
+            C0056n.f670b.compareAndSet((C0056n) obj, 0, 1);
+        }
+        O(obj);
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f646e;
+        Object n2 = obj instanceof M ? new N((M) obj) : obj;
+        while (!atomicReferenceFieldUpdater.compareAndSet(this, y2, n2) && atomicReferenceFieldUpdater.get(this) == y2) {
+        }
+        x(y2, obj);
+        return obj;
+    }
+
+    public void G(C0058p c0058p) {
+        throw c0058p;
+    }
+
+    public void O(Object obj) {
+    }
+
+    public void q(Object obj) {
+    }
+
+    public void P() {
+    }
+}
