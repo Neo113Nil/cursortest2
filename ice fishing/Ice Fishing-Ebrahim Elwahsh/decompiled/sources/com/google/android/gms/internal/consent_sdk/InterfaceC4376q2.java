@@ -1,0 +1,6 @@
+package com.google.android.gms.internal.consent_sdk;
+
+/* renamed from: com.google.android.gms.internal.consent_sdk.q2, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public interface InterfaceC4376q2 extends InterfaceC4379r2 {
+}

@@ -1,0 +1,269 @@
+package com.instagram.common.viewpoint.core;
+
+import android.os.Bundle;
+import com.anythink.basead.exoplayer.b;
+import com.anythink.core.common.s.a.c;
+import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/* renamed from: com.facebook.ads.redexgen.X.qS, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public final class C2407qS implements AnonymousClass24 {
+    public static byte[] A06;
+    public static String[] A07 = {"HSHJbKu4LLVwlp8kAtKM", "V6sGPCPiRhBLh6", "pDYVgvWCLxIG9LT", "RWHl9GQtcXYH3V7mNtlpSVait36OCwJs", "0F7", "tg3oN59jNUBk8XSE4kwfd", "NBkHOFenkRKh7SKHrVJVIcIm0kDLsOxD", "OSER18TpRPMUQAQSprsMKIJx0xqzVeT1"};
+    public static final C2407qS A08;
+    public static final AnonymousClass23<C2407qS> A09;
+    public static final C2408qT A0A;
+    public static final String A0B;
+    public static final String A0C;
+    public static final String A0D;
+    public static final String A0E;
+    public final int A00;
+    public final int A01;
+    public final long A02;
+    public final long A03;
+    public final Object A04;
+
+    @MetaExoPlayerCustomization("Change back to private after AdsMediaSource fully upgraded")
+    public final C2408qT[] A05;
+
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 10
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+     */
+    public static C2407qS A00(Bundle bundle) {
+        C2408qT[] c2408qTArr;
+        ArrayList parcelableArrayList = bundle.getParcelableArrayList(A0B);
+        if (parcelableArrayList == null) {
+            c2408qTArr = new C2408qT[0];
+        } else {
+            c2408qTArr = new C2408qT[parcelableArrayList.size()];
+            for (int i = 0; i < parcelableArrayList.size(); i++) {
+                c2408qTArr[i] = C2408qT.A09.A6f((Bundle) parcelableArrayList.get(i));
+            }
+        }
+        return new C2407qS(null, c2408qTArr, bundle.getLong(A0C, A08.A02), bundle.getLong(A0D, A08.A03), bundle.getInt(A0E, A08.A01));
+    }
+
+    public static String A02(int i, int i4, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A06, i, i + i4);
+        for (int i10 = 0; i10 < copyOfRange.length; i10++) {
+            int i11 = copyOfRange[i10] ^ i9;
+            String[] strArr = A07;
+            if (strArr[5].length() == strArr[1].length()) {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A07;
+            strArr2[5] = "7EQT2aPGHNOftenQ9VAvD";
+            strArr2[1] = "79Hg5O6oUNL8gh";
+            copyOfRange[i10] = (byte) (i11 ^ 28);
+        }
+        return new String(copyOfRange);
+    }
+
+    public static void A03() {
+        A06 = new byte[]{70, 74, c.f16476c, 51, 114, 119, 84, 97, 124, 102, 99, 96, 46, 72, 116, 120, 57, 60, 10, 61, 43, 45, 53, 61, 8, 55, 43, 49, 44, 49, 55, 54, 13, 43, 101, 47, 35, 98, 103, 112, 62, 88, 13, 1, 69, 84, 83, c.f16475b, 85, 72, 78, 79, 116, 82, 28, 1, 36, 16, 44, 33, 57, 34, 33, 35, 43, 19, 52, 33, 52, 37, 104, 33, 36, 51, 9, 36, 125, 80, 36, 29, 24, 84, 15, 8, 29, 8, 25, 65, 91, 94, 125, 72, 85, 79, 74, 18, 78, 83, 87, 95, 111, 73, 7};
+    }
+
+    static {
+        A03();
+        A08 = new C2407qS(null, new C2408qT[0], 0L, b.f6539b, 0);
+        A0A = new C2408qT(0L).A06(0);
+        A0B = C5C.A0h(1);
+        A0C = C5C.A0h(2);
+        A0D = C5C.A0h(3);
+        A0E = C5C.A0h(4);
+        A09 = new AnonymousClass23() { // from class: com.facebook.ads.redexgen.X.qV
+            @Override // com.instagram.common.viewpoint.core.AnonymousClass23
+            public final AnonymousClass24 A6f(Bundle bundle) {
+                C2407qS A00;
+                A00 = C2407qS.A00(bundle);
+                return A00;
+            }
+        };
+    }
+
+    public C2407qS(Object obj, C2408qT[] c2408qTArr, long j9, long j10, int i) {
+        this.A04 = obj;
+        this.A02 = j9;
+        this.A03 = j10;
+        this.A00 = c2408qTArr.length + i;
+        this.A05 = c2408qTArr;
+        this.A01 = i;
+    }
+
+    private boolean A04(long j9, long j10, int i) {
+        if (j9 == Long.MIN_VALUE) {
+            return false;
+        }
+        long j11 = A07(i).A03;
+        if (j11 != Long.MIN_VALUE) {
+            return j9 < j11;
+        }
+        if (A07[3].charAt(17) != 't') {
+            throw new RuntimeException();
+        }
+        String[] strArr = A07;
+        strArr[5] = "6w59Aw8BMojzvOgPymJyT";
+        strArr[1] = "Ceso9EO8QL9NfZ";
+        return j10 == b.f6539b || j9 < j10;
+    }
+
+    public final int A05(long j9, long j10) {
+        if (j9 == Long.MIN_VALUE || (j10 != b.f6539b && j9 >= j10)) {
+            return -1;
+        }
+        int index = this.A01;
+        while (index < this.A00 && ((A07(index).A03 != Long.MIN_VALUE && A07(index).A03 <= j9) || !A07(index).A08())) {
+            index++;
+        }
+        if (index < this.A00) {
+            return index;
+        }
+        return -1;
+    }
+
+    public final int A06(long j9, long j10) {
+        int i = this.A00 - 1;
+        while (i >= 0 && A04(j9, j10, i)) {
+            i--;
+        }
+        if (i < 0 || !A07(i).A07()) {
+            return -1;
+        }
+        return i;
+    }
+
+    public final C2408qT A07(int i) {
+        if (i < this.A01) {
+            return A0A;
+        }
+        return this.A05[i - this.A01];
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        C2407qS c2407qS = (C2407qS) obj;
+        if (C5C.A1E(this.A04, c2407qS.A04) && this.A00 == c2407qS.A00 && this.A02 == c2407qS.A02 && this.A03 == c2407qS.A03 && this.A01 == c2407qS.A01) {
+            C2408qT[] c2408qTArr = this.A05;
+            String[] strArr = A07;
+            if (strArr[5].length() == strArr[1].length()) {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A07;
+            strArr2[5] = "16faulxPxX0sTjyZsuY2d";
+            strArr2[1] = "99yT7gYz4zzQy1";
+            if (Arrays.equals(c2408qTArr, c2407qS.A05)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int result = this.A00;
+        int i = result * 31;
+        int result2 = this.A04 == null ? 0 : this.A04.hashCode();
+        int i4 = (((i + result2) * 31) + ((int) this.A02)) * 31;
+        int result3 = (int) this.A03;
+        int result4 = (((i4 + result3) * 31) + this.A01) * 31;
+        int result5 = Arrays.hashCode(this.A05);
+        return result4 + result5;
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(A02(55, 22, 92));
+        sb.append(this.A04);
+        sb.append(A02(14, 21, 68));
+        sb.append(this.A02);
+        sb.append(A02(2, 12, 15));
+        int i = 0;
+        while (true) {
+            C2408qT[] c2408qTArr = this.A05;
+            String[] strArr = A07;
+            String str = strArr[0];
+            String str2 = strArr[2];
+            int i4 = str.length();
+            if (i4 == str2.length()) {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A07;
+            strArr2[0] = "HwwbQlKsFzrVvgzZA70k";
+            strArr2[2] = "CWSfdfe0R8gD4PU";
+            int length = c2408qTArr.length;
+            String A02 = A02(77, 2, 17);
+            if (i < length) {
+                sb.append(A02(88, 15, 38));
+                sb.append(this.A05[i].A03);
+                sb.append(A02(35, 7, 31));
+                int i9 = 0;
+                while (true) {
+                    int length2 = this.A05[i].A05.length;
+                    String A022 = A02(0, 2, 118);
+                    if (i9 < length2) {
+                        sb.append(A02(79, 9, 96));
+                        int i10 = this.A05[i].A05[i9];
+                        switch (i10) {
+                            case 0:
+                                sb.append('_');
+                                break;
+                            case 1:
+                                sb.append('R');
+                                break;
+                            case 2:
+                                sb.append('S');
+                                break;
+                            case 3:
+                                sb.append('P');
+                                break;
+                            case 4:
+                                sb.append('!');
+                                break;
+                            default:
+                                sb.append('?');
+                                break;
+                        }
+                        sb.append(A02(42, 13, 61));
+                        sb.append(this.A05[i].A06[i9]);
+                        sb.append(')');
+                        int i11 = this.A05[i].A05.length;
+                        if (i9 < i11 - 1) {
+                            sb.append(A022);
+                        }
+                        i9++;
+                    } else {
+                        sb.append(A02);
+                        String[] strArr3 = A07;
+                        String str3 = strArr3[5];
+                        String str4 = strArr3[1];
+                        int i12 = str3.length();
+                        if (i12 == str4.length()) {
+                            throw new RuntimeException();
+                        }
+                        String[] strArr4 = A07;
+                        strArr4[0] = "tpRIwkkikLxaZqXNkXQj";
+                        strArr4[2] = "ureQIhKfJpTfNVp";
+                        if (i < this.A05.length - 1) {
+                            sb.append(A022);
+                        }
+                        i++;
+                    }
+                }
+            } else {
+                sb.append(A02);
+                return sb.toString();
+            }
+        }
+    }
+}

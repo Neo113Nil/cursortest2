@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.icefishing.icefishingliveapp.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.icefishing.icefishingliveapp.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9183 (0%)\nINFO  - progress: 1369 of 9183 (14%)\nINFO  - progress: 1416 of 9183 (15%)\nINFO  - progress: 1486 of 9183 (16%)\nINFO  - progress: 1907 of 9183 (20%)\nINFO  - progress: 2417 of 9183 (26%)\nINFO  - progress: 2821 of 9183 (30%)\nINFO  - progress: 3093 of 9183 (33%)\nINFO  - progress: 3425 of 9183 (37%)\nINFO  - progress: 3733 of 9183 (40%)\nINFO  - progress: 4270 of 9183 (46%)\nINFO  - progress: 4597 of 9183 (50%)\nINFO  - progress: 4866 of 9183 (52%)\nINFO  - progress: 5055 of 9183 (55%)\nINFO  - progress: 5215 of 9183 (56%)\nINFO  - progress: 5412 of 9183 (58%)\nINFO  - progress: 5709 of 9183 (62%)\nINFO  - progress: 6024 of 9183 (65%)\nINFO  - progress: 6296 of 9183 (68%)\nINFO  - progress: 6540 of 9183 (71%)\nINFO  - progress: 6855 of 9183 (74%)\nINFO  - progress: 7061 of 9183 (76%)\nINFO  - progress: 7227 of 9183 (78%)\nINFO  - progress: 7456 of 9183 (81%)\nINFO  - progress: 7655 of 9183 (83%)\nINFO  - progress: 7969 of 9183 (86%)\nINFO  - progress: 8351 of 9183 (90%)\nINFO  - progress: 8795 of 9183 (95%)\nINFO  - progress: 8974 of 9183 (97%)\nINFO  - progress: 9181 of 9183 (99%)\n                                                             \nERROR - finished with errors, count: 23\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Ebrahim Elwahsh/decompiled",
+    "skipped": false,
+    "base_apk": "com.icefishing.icefishingliveapp.apk"
+  },
+  "analysis_files": [
+    "com.icefishing.icefishingliveapp.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.icefishing.icefishingliveapp.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A3/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/A5/",
+    "decompiled/sources/A6/",
+    "decompiled/sources/A7/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/B3/",
+    "decompiled/sources/B4/",
+    "decompiled/sources/B5/",
+    "decompiled/sources/B6/",
+    "decompiled/sources/B7/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C1/"
+  ]
+}

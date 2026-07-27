@@ -1,0 +1,10 @@
+package m;
+
+import android.graphics.Typeface;
+
+/* loaded from: classes.dex */
+public abstract class U {
+    public static Typeface a(Typeface typeface, int i, boolean z8) {
+        return Typeface.create(typeface, i, z8);
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="anythink_random_answers">
+        <item>Flower Shop</item>
+        <item>Star</item>
+        <item>Zoo</item>
+        <item>Giraffe</item>
+        <item>Koala</item>
+        <item>Sandwich Cookies</item>
+        <item>Potato Chips</item>
+        <item>Penguin</item>
+        <item>parking lot</item>
+        <item>Snack Bundle</item>
+    </array>
+</resources>
