@@ -1,0 +1,9 @@
+package io.appmetrica.analytics.impl;
+
+/* renamed from: io.appmetrica.analytics.impl.si, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public abstract class AbstractC0834si {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final C0860ti f8312a = new C0860ti(new C0946x0());
+}

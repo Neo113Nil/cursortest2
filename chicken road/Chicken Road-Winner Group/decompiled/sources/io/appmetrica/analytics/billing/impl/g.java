@@ -1,0 +1,26 @@
+package io.appmetrica.analytics.billing.impl;
+
+import io.appmetrica.analytics.billing.internal.config.BillingConfig;
+import io.appmetrica.analytics.coreapi.internal.data.Converter;
+
+/* loaded from: classes.dex */
+public final class g implements Converter {
+    @Override // io.appmetrica.analytics.coreapi.internal.data.Converter
+    /* renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final s fromModel(BillingConfig billingConfig) {
+        s sVar = new s();
+        sVar.f5177a = billingConfig.getSendFrequencySeconds();
+        sVar.f5178b = billingConfig.getFirstCollectingInappMaxAgeSeconds();
+        return sVar;
+    }
+
+    @Override // io.appmetrica.analytics.coreapi.internal.data.Converter
+    public final Object toModel(Object obj) {
+        s sVar = (s) obj;
+        return new BillingConfig(sVar.f5177a, sVar.f5178b);
+    }
+
+    public final BillingConfig a(s sVar) {
+        return new BillingConfig(sVar.f5177a, sVar.f5178b);
+    }
+}

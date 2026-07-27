@@ -1,0 +1,91 @@
+package io.appmetrica.analytics.billingv8.impl;
+
+import com.android.billingclient.api.Purchase;
+import e2.AbstractC0292g;
+import e2.AbstractC0294i;
+import io.appmetrica.analytics.billinginterface.internal.BillingInfo;
+import io.appmetrica.analytics.billinginterface.internal.ProductType;
+import io.appmetrica.analytics.billinginterface.internal.library.UtilsProvider;
+import io.appmetrica.analytics.coreutils.internal.executors.SafeRunnable;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import m0.AbstractC1115c;
+import m0.C1113a;
+import m0.C1120h;
+
+/* loaded from: classes.dex */
+public final class g extends SafeRunnable {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ i f5310a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ C1120h f5311b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ List f5312c;
+
+    public g(i iVar, C1120h c1120h, List list) {
+        this.f5310a = iVar;
+        this.f5311b = c1120h;
+        this.f5312c = list;
+    }
+
+    @Override // io.appmetrica.analytics.coreutils.internal.executors.SafeRunnable
+    public final void runSafety() {
+        i iVar = this.f5310a;
+        C1120h c1120h = this.f5311b;
+        List<Purchase> list = this.f5312c;
+        iVar.getClass();
+        if (c1120h.f10046a != 0) {
+            iVar.f.onUpdateFinished();
+        } else {
+            LinkedHashMap linkedHashMap = new LinkedHashMap();
+            for (Purchase purchase : list) {
+                Iterator it = purchase.a().iterator();
+                while (it.hasNext()) {
+                    String str = (String) it.next();
+                    String str2 = iVar.f5319d;
+                    BillingInfo billingInfo = new BillingInfo(kotlin.jvm.internal.j.a(str2, "inapp") ? ProductType.INAPP : kotlin.jvm.internal.j.a(str2, "subs") ? ProductType.SUBS : ProductType.UNKNOWN, str, purchase.b(), purchase.f2540c.optLong("purchaseTime"), 0L);
+                    linkedHashMap.put(billingInfo.productId, billingInfo);
+                }
+            }
+            Map<String, BillingInfo> billingInfoToUpdate = iVar.f5318c.getUpdatePolicy().getBillingInfoToUpdate(iVar.f5316a, linkedHashMap, iVar.f5318c.getBillingInfoManager());
+            if (billingInfoToUpdate.isEmpty()) {
+                m.a(linkedHashMap, billingInfoToUpdate, iVar.f5319d, iVar.f5318c.getBillingInfoManager());
+                iVar.f.onUpdateFinished();
+            } else {
+                List<String> f0 = AbstractC0292g.f0(billingInfoToUpdate.keySet());
+                n nVar = iVar.f;
+                h hVar = new h(linkedHashMap, billingInfoToUpdate, iVar);
+                String str3 = iVar.f5319d;
+                AbstractC1115c abstractC1115c = iVar.f5317b;
+                UtilsProvider utilsProvider = iVar.f5318c;
+                d dVar = iVar.f5320e;
+                f fVar = new f(str3, abstractC1115c, utilsProvider, hVar, list, dVar, nVar);
+                dVar.f5300b.add(fVar);
+                if (iVar.f5317b.b()) {
+                    AbstractC1115c abstractC1115c2 = iVar.f5317b;
+                    io.flutter.plugin.editing.k kVar = new io.flutter.plugin.editing.k();
+                    ArrayList arrayList = new ArrayList(AbstractC0294i.U(f0));
+                    for (String str4 : f0) {
+                        C1113a c1113a = new C1113a();
+                        c1113a.f10005a = str4;
+                        c1113a.f10006b = iVar.f5319d;
+                        arrayList.add(c1113a.a());
+                    }
+                    kVar.h(arrayList);
+                    abstractC1115c2.c(kVar.e(), fVar);
+                } else {
+                    iVar.f5320e.a(fVar);
+                    nVar.onUpdateFinished();
+                }
+            }
+        }
+        i iVar2 = this.f5310a;
+        iVar2.f5320e.a(iVar2);
+    }
+}

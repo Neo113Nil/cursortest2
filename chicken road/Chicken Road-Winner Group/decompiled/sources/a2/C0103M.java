@@ -1,0 +1,19 @@
+package a2;
+
+import java.io.ObjectInputStream;
+import java.io.ObjectStreamClass;
+import java.util.Set;
+
+/* renamed from: a2.M, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0103M extends ObjectInputStream {
+    @Override // java.io.ObjectInputStream
+    public final Class resolveClass(ObjectStreamClass objectStreamClass) {
+        Set E3 = F2.b.E("java.util.Arrays$ArrayList", "java.util.ArrayList", "java.lang.String", "[Ljava.lang.String;");
+        String name = objectStreamClass != null ? objectStreamClass.getName() : null;
+        if (name == null || E3.contains(name)) {
+            return super.resolveClass(objectStreamClass);
+        }
+        throw new ClassNotFoundException(objectStreamClass.getName());
+    }
+}

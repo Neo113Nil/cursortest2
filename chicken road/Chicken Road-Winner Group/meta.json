@@ -1,0 +1,30 @@
+{
+  "app_id": "com.chicken.jump.road.pump",
+  "title": "Chicken Road",
+  "developer": "Winner Group",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/dvNlvN9B7W6lIU4eAYa1OIiS168cuo1Y7_oh-F2BGQXqAP7cJuoZOuiYulNe0nrRjCBzyeNeKl19JvO92Qu4qNE",
+  "url": null,
+  "keyword": "chicken road",
+  "folder": "Chicken Road-Winner Group",
+  "path": "chicken road/Chicken Road-Winner Group",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chicken.jump.road.pump.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road/Chicken Road-Winner Group",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.jump.road.pump...\ncom.chicken.jump.road.pump downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chicken.jump.road.pump...\ncom.chicken.jump.road.pump downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
