@@ -1,0 +1,30 @@
+{
+  "app_id": "com.catchingfish.fishcatcherpro",
+  "title": "Ice Fishing",
+  "developer": "Royal Tide Entertainment Limited",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/uQ2-dwqJudTw29WMhjHxHjstDNqjIP2qXfC3qxx2v50v2ORgnsmMIfSsWZWPgl0_n_oL3ij29awNQp7XpVV_Ww",
+  "url": null,
+  "keyword": "ice fishing",
+  "folder": "Ice Fishing-Royal Tide Entertainment Limited",
+  "path": "ice fishing/Ice Fishing-Royal Tide Entertainment Limited",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.catchingfish.fishcatcherpro.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Royal Tide Entertainment Limited",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.catchingfish.fishcatcherpro...\ncom.catchingfish.fishcatcherpro downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.catchingfish.fishcatcherpro...\ncom.catchingfish.fishcatcherpro downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

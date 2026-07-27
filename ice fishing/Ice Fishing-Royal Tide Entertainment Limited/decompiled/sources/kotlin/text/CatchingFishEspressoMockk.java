@@ -1,0 +1,80 @@
+package kotlin.text;
+
+/* loaded from: classes.dex */
+public abstract class CatchingFishEspressoMockk {
+    public static final long CatchingFish;
+    public static final long CatchingFishAnimationMockk;
+    public static final long CatchingFishCardViewRealm;
+    public static final long CatchingFishCardViewView;
+    public static final long CatchingFishCloudMessaging;
+    public static final long CatchingFishCoroutine;
+    public static final long CatchingFishCoroutineFlow;
+    public static final long CatchingFishCustomView;
+    public static final long CatchingFishDaggerHiltFAB;
+    public static final long CatchingFishDaggerWebsocket;
+    public static final long CatchingFishEspressoTesting;
+    public static final long CatchingFishFragmentFactory;
+    public static final long CatchingFishFragmentHandler;
+    public static final long CatchingFishGsonAppCompat;
+    public static final long CatchingFishJetpackCompose;
+    public static final long CatchingFishJobScheduler;
+    public static final long CatchingFishLayout;
+    public static final long CatchingFishMVPRobolectric;
+    public static final long CatchingFishMutableLiveData;
+    public static final long CatchingFishNavigation;
+    public static final long CatchingFishOkHttp;
+    public static final long CatchingFishParcelableFAB;
+    public static final long CatchingFishParcelableFlux;
+    public static final long CatchingFishPayPal;
+    public static final long CatchingFishPayPalService;
+    public static final long CatchingFishReduxKtor;
+    public static final long CatchingFishRoomDatabase;
+    public static final long CatchingFishSensorManager;
+    public static final long CatchingFishSnackbar;
+    public static final long CatchingFishSpannableWidget;
+    public static final long CatchingFishStateLiveData;
+    public static final long CatchingFishUnitTesting;
+    public static final long CatchingFishViewModelFAB;
+    public static final long CatchingFishViewModelScope;
+    public static final long CatchingFishWorkManager;
+
+    static {
+        long j = CatchingFishFABJUnitMVI.CatchingFishParcelableFlux;
+        CatchingFishParcelableFAB = j;
+        CatchingFishSnackbar = CatchingFishFABJUnitMVI.CatchingFishDaggerWebsocket;
+        CatchingFishCoroutine = CatchingFishFABJUnitMVI.CatchingFishViewModelScope;
+        CatchingFishReduxKtor = CatchingFishFABJUnitMVI.CatchingFishDaggerHiltFAB;
+        CatchingFishDaggerWebsocket = CatchingFishFABJUnitMVI.CatchingFishSensorManager;
+        CatchingFishWorkManager = CatchingFishFABJUnitMVI.CatchingFishOkHttp;
+        long j2 = CatchingFishFABJUnitMVI.CatchingFishLayout;
+        CatchingFishViewModelScope = j2;
+        CatchingFishViewModelFAB = CatchingFishFABJUnitMVI.CatchingFishSnackbar;
+        CatchingFishLayout = CatchingFishFABJUnitMVI.CatchingFishParcelableFAB;
+        CatchingFishFragmentHandler = CatchingFishFABJUnitMVI.CatchingFishFragmentFactory;
+        CatchingFishCloudMessaging = CatchingFishFABJUnitMVI.CatchingFishCustomView;
+        CatchingFishEspressoTesting = CatchingFishFABJUnitMVI.CatchingFishCameraXIntent;
+        CatchingFishOkHttp = CatchingFishFABJUnitMVI.CatchingFishDagger;
+        CatchingFishUnitTesting = j2;
+        CatchingFishAnimationMockk = CatchingFishFABJUnitMVI.CatchingFishGsonAppCompat;
+        CatchingFishStateLiveData = CatchingFishFABJUnitMVI.CatchingFishRecyclerView;
+        CatchingFishRoomDatabase = CatchingFishFABJUnitMVI.CatchingFishParcelable;
+        CatchingFishNavigation = CatchingFishFABJUnitMVI.CatchingFishCardViewRealm;
+        CatchingFish = CatchingFishFABJUnitMVI.CatchingFishCardViewView;
+        CatchingFishJetpackCompose = CatchingFishFABJUnitMVI.CatchingFishPayPalService;
+        CatchingFishCoroutineFlow = CatchingFishFABJUnitMVI.CatchingFishEspressoMockk;
+        CatchingFishDaggerHiltFAB = CatchingFishFABJUnitMVI.CatchingFishViewModelFAB;
+        CatchingFishSpannableWidget = CatchingFishFABJUnitMVI.CatchingFishGradleManifest;
+        CatchingFishParcelableFlux = CatchingFishFABJUnitMVI.CatchingFishLayoutInflater;
+        CatchingFishGsonAppCompat = j;
+        CatchingFishCardViewRealm = j;
+        CatchingFishPayPal = CatchingFishFABJUnitMVI.CatchingFishCoroutineFlow;
+        CatchingFishCardViewView = CatchingFishFABJUnitMVI.CatchingFishJetpackCompose;
+        CatchingFishMVPRobolectric = CatchingFishFABJUnitMVI.CatchingFish;
+        CatchingFishCustomView = CatchingFishFABJUnitMVI.CatchingFishSpannableWidget;
+        CatchingFishFragmentFactory = CatchingFishFABJUnitMVI.CatchingFishFragmentHandler;
+        CatchingFishMutableLiveData = CatchingFishFABJUnitMVI.CatchingFishNavigation;
+        CatchingFishJobScheduler = CatchingFishFABJUnitMVI.CatchingFishMVPRobolectric;
+        CatchingFishPayPalService = CatchingFishFABJUnitMVI.CatchingFishStateFlow;
+        CatchingFishSensorManager = CatchingFishFABJUnitMVI.CatchingFishAnimation;
+    }
+}
