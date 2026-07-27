@@ -1,0 +1,44 @@
+package androidx.versionedparcelable;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class JadeCircuitUnificationCallbackD6hc0PEv0JBP528Vd091825199888171 {
+    public static final XenoGridBufferMutexLelHGPQ0QGRhGHE4lh22887976441143 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public static final XenoGridBufferMutexLelHGPQ0QGRhGHE4lh22887976441143 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(8, UltraBufferLibraryInjectionPo2F9kPZDuSGaFZES183405060953321.WhiteFieldUnificationOverridingEBdwjF0noilpOVdrsu81945136372121, UltraBufferLibraryInjectionPo2F9kPZDuSGaFZES183405060953321.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798);
+    public static final XenoGridBufferMutexLelHGPQ0QGRhGHE4lh22887976441143 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, null, 5);
+
+    static {
+        DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, null, 5);
+        Map map = JadeCircuitHashmapExceptionHzBDdrKoKUlNP0fNnf10343699916531.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, new HeliosRuntimeInterpreterAbstractionD8NqH2xjb1aL5zW8Ba75162730414863(4294967297L), 1);
+        RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, new ObsidianEngineObserverSubroutineYQE4DRRczbpRBk6UYB37722402666729(4294967297L), 1);
+    }
+
+    public static final KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865, CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648 cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648) {
+        return new KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620(new XenoGridRepositoryDecoderChQrAxn0Y7AgnLb4NA29810627358763((EmeraldStackGatewayPostfixTSoOSuQ5T90KR4vNav66461819558978) null, new NovaLayerBitfieldJITC4SgxYuwnocpF5bq6j83244445017995(new ArcticByteDispatcherOperatorBuD5xDdMAiCX5g2Z3876751938825494(dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865, 2), cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648), (VertexLinkMiddlewareExecutorZmt09y6uEIL0CNkhE258633761405768) null, (CosmicForgeRouterArrayUciABkiibfvFW3ZK2o66002090592700) null, (LinkedHashMap) null, 125));
+    }
+
+    public static UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648 cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648, int i) {
+        UltraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 = cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648;
+        if ((i & 1) != 0) {
+            ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 = DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, null, 5);
+        }
+        return new UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556(new XenoGridRepositoryDecoderChQrAxn0Y7AgnLb4NA29810627358763(new EmeraldStackGatewayPostfixTSoOSuQ5T90KR4vNav66461819558978(ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587), (NovaLayerBitfieldJITC4SgxYuwnocpF5bq6j83244445017995) null, (VertexLinkMiddlewareExecutorZmt09y6uEIL0CNkhE258633761405768) null, (CosmicForgeRouterArrayUciABkiibfvFW3ZK2o66002090592700) null, (LinkedHashMap) null, 126));
+    }
+
+    public static KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648 cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648, int i) {
+        UltraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 = cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648;
+        if ((i & 1) != 0) {
+            ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587 = DeltaSignalNormalizationJITQ7KMe5q3hsuA9VOtI478044089954652.DeltaSignalPrefixDelegateOKrpGQ6v30XWLJQ9fy84286487006325(0.0f, 400.0f, null, 5);
+        }
+        return new KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620(new XenoGridRepositoryDecoderChQrAxn0Y7AgnLb4NA29810627358763(new EmeraldStackGatewayPostfixTSoOSuQ5T90KR4vNav66461819558978(ultraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587), (NovaLayerBitfieldJITC4SgxYuwnocpF5bq6j83244445017995) null, (VertexLinkMiddlewareExecutorZmt09y6uEIL0CNkhE258633761405768) null, (CosmicForgeRouterArrayUciABkiibfvFW3ZK2o66002090592700) null, (LinkedHashMap) null, 126));
+    }
+
+    public static final UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865, CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648 cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648) {
+        return new UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556(new XenoGridRepositoryDecoderChQrAxn0Y7AgnLb4NA29810627358763((EmeraldStackGatewayPostfixTSoOSuQ5T90KR4vNav66461819558978) null, new NovaLayerBitfieldJITC4SgxYuwnocpF5bq6j83244445017995(new ArcticByteDispatcherOperatorBuD5xDdMAiCX5g2Z3876751938825494(dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865, 3), cosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648), (VertexLinkMiddlewareExecutorZmt09y6uEIL0CNkhE258633761405768) null, (CosmicForgeRouterArrayUciABkiibfvFW3ZK2o66002090592700) null, (LinkedHashMap) null, 125));
+    }
+}

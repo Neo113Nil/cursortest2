@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class TitanCloudProtocolValidationBgi3P862htsaNfenms53405005732635 implements WhiteFieldPipelineComponentIUFqpQI99lLr3iE7CF17717329886160 {
+    public static final TitanCloudProtocolValidationBgi3P862htsaNfenms53405005732635 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new TitanCloudProtocolValidationBgi3P862htsaNfenms53405005732635();
+    public static final TitanCloudObjectDebuggerXFHrawqNoXtv2paxof83357906728974 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new TitanCloudObjectDebuggerXFHrawqNoXtv2paxof83357906728974("messagingClientEvent", MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111(MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170(UltraBufferParserProviderJh1ZLWcXlWqHrKnE2p18326401952228.class, new SolarMeshCompilerInterfaceOvZr3KsXiWsuckCB8f53722212725747(1))));
+
+    @Override // androidx.versionedparcelable.DragonRouteContainerCacheFyUTN1Aqp5yG4bZajI45930181372843
+    public final void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(Object obj, Object obj2) {
+        ((TitanCloudTranspilerProtocolNpIPQ4Ms0NWhURGvnP72997730708215) obj2).ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, ((NovaLayerStateListenerDpLxwnOXTiq34zTn2i42827395016656) obj).ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800);
+    }
+}

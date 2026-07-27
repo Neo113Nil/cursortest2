@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class UltraBufferProcessorAPIOZpeFFKTLIvzzHrgYr42897693968838 {
+    public static final CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new CosmicForgeDelegateTokenO4JUTtbLMq26rwM4rZ10929111415648(15, 0, EmeraldStackComponentImmutableBbTvGSD5joaPO4tLCP82925958162785.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365);
+}

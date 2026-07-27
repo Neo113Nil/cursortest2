@@ -1,0 +1,9 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class YellowLoopSessionVectorJTn1fpA0XiptHj6Hjn52504668913037 {
+    public static final LunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new LunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893(21);
+    public static final YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310(22);
+    public static final VertexLinkPipelineResourceDYqVJxsG5HMc015KYK27808645358516 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = new VertexLinkPipelineResourceDYqVJxsG5HMc015KYK27808645358516(21);
+}

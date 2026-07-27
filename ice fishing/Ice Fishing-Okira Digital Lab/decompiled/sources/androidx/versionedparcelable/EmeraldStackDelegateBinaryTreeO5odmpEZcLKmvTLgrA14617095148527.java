@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class EmeraldStackDelegateBinaryTreeO5odmpEZcLKmvTLgrA14617095148527 implements WhiteFieldPipelineComponentIUFqpQI99lLr3iE7CF17717329886160 {
+    public static final EmeraldStackDelegateBinaryTreeO5odmpEZcLKmvTLgrA14617095148527 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new EmeraldStackDelegateBinaryTreeO5odmpEZcLKmvTLgrA14617095148527();
+    public static final TitanCloudObjectDebuggerXFHrawqNoXtv2paxof83357906728974 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = TitanCloudObjectDebuggerXFHrawqNoXtv2paxof83357906728974.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800("logRequest");
+
+    @Override // androidx.versionedparcelable.DragonRouteContainerCacheFyUTN1Aqp5yG4bZajI45930181372843
+    public final void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(Object obj, Object obj2) {
+        ((TitanCloudTranspilerProtocolNpIPQ4Ms0NWhURGvnP72997730708215) obj2).ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, ((QuantumStreamInterpreterSyntaxJBS9I3qOqxvwVeq5V047156003074706) ((JadeCircuitPostfixPipelineODL8DWyEPGe1ZmLWuY97735369608959) obj)).ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800);
+    }
+}

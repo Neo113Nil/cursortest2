@@ -1,0 +1,17 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class YellowLoopArrayRequestSIVgyszhgfeLpnQtkm45938782081377 {
+    public static final IronMatrixDispatcherControllerJJ8tC0J69FhoqHoGIB25067319323292 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036;
+    public static final int AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = 5;
+    public static final float ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = 12.0f;
+    public static final float RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = 8.0f;
+    public static final float LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = 24.0f;
+    public static final float YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = 1.0f;
+    public static final float TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = 8.0f;
+    public static final long BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541(14);
+    public static final ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public static final long NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541(20);
+    public static final long ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.IronMatrixPipelineVectorCmhq21DucJNfG3zCVW67482589553900(4294967296L, 0.1f);
+}

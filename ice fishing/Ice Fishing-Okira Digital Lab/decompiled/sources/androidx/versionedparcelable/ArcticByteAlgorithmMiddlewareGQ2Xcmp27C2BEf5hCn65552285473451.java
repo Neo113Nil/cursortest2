@@ -1,0 +1,14 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class ArcticByteAlgorithmMiddlewareGQ2Xcmp27C2BEf5hCn65552285473451 {
+    public static final NovaLayerImmutableHandlerAcbgoOwloJLp4uVYJn95994488471685 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public static final ZenithPathRequestParserDCAt0drt4bJ1qp8bkN70825765479904 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new ZenithPathRequestParserDCAt0drt4bJ1qp8bkN70825765479904(JadeCircuitStreamConnectorI9crpDqXOpWFOJWxq185898345827292.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050);
+    public static final IronMatrixFloatingPointContextAi25JV8zPhy1yaZ0qP19075798698818 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new IronMatrixFloatingPointContextAi25JV8zPhy1yaZ0qP19075798698818(FrostBridgeSchedulerGenericDKro29qFUGk30K9rSS60607242346053.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050);
+
+    static {
+        AxiomCoreSchedulerSerializationDsZBnm4orErCHS3JLP23062714366568.HeliosRuntimeClassProviderFABQ5d2rErfEnvDVi231062942123295(new FrostBridgeRouterFilterIdewQDOHnExmfRYv6c95551798604894(12));
+        ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = new NovaLayerImmutableHandlerAcbgoOwloJLp4uVYJn95994488471685(new FrostBridgeRouterFilterIdewQDOHnExmfRYv6c95551798604894(13));
+    }
+}

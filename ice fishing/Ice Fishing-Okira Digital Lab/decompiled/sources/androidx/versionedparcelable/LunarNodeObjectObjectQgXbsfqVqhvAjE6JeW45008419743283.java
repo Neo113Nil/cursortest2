@@ -1,0 +1,24 @@
+package androidx.versionedparcelable;
+
+import java.util.List;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class LunarNodeObjectObjectQgXbsfqVqhvAjE6JeW45008419743283 {
+    public final int LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public QuantumStreamProxyAttributeFEUN1cc6xdWEj9Um4T20319402462937 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+
+    public LunarNodeObjectObjectQgXbsfqVqhvAjE6JeW45008419743283(int i) {
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = i;
+    }
+
+    public abstract RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(JadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743 jadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743, RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050);
+
+    public abstract QuantumStreamProxyAttributeFEUN1cc6xdWEj9Um4T20319402462937 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(QuantumStreamProxyAttributeFEUN1cc6xdWEj9Um4T20319402462937 quantumStreamProxyAttributeFEUN1cc6xdWEj9Um4T20319402462937, List list);
+
+    public void AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(JadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743 jadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743) {
+    }
+
+    public void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(JadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743 jadeCircuitHeuristicEngineVPAKLuqlnM72Vu7gdM41717747528743) {
+    }
+}

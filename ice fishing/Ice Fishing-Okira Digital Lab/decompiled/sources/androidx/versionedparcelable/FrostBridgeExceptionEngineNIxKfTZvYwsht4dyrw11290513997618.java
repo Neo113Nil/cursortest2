@@ -1,0 +1,36 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class FrostBridgeExceptionEngineNIxKfTZvYwsht4dyrw11290513997618 implements ArcticByteTokenValidationPsQcqncMU2MoRGOiUK81720037598573 {
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+    public final CrimsonRouteArrayJITAJrZQj8e8nBEHkuuUJ68295223607484 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new CrimsonRouteArrayJITAJrZQj8e8nBEHkuuUJ68295223607484(this);
+    public final EmeraldStackMutexBinaryTreeTQMtiHC6RtdLdaZ26X28092130515888 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = new EmeraldStackMutexBinaryTreeTQMtiHC6RtdLdaZ26X28092130515888();
+
+    public FrostBridgeExceptionEngineNIxKfTZvYwsht4dyrw11290513997618(DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865;
+        Boolean bool = Boolean.FALSE;
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(bool);
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(bool);
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(bool);
+    }
+
+    @Override // androidx.versionedparcelable.ArcticByteTokenValidationPsQcqncMU2MoRGOiUK81720037598573
+    public final Object ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(VertexLinkSubroutineGenericJ6LMFqAIrpyGH82pqd21860461242160 vertexLinkSubroutineGenericJ6LMFqAIrpyGH82pqd21860461242160, BlazePulseStreamAlgorithmFFSSndCCEv1yyjbdko74710144599257 blazePulseStreamAlgorithmFFSSndCCEv1yyjbdko74710144599257, MysticCacheNamespaceAnnotationMKDWKqbLTM3IrVfk0Y57523902441665 mysticCacheNamespaceAnnotationMKDWKqbLTM3IrVfk0Y57523902441665) {
+        Object PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 = ObsidianEngineTranspilerWorkerEHoOsrsySnsoA9iWxm35468870095129.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036(new KryptonFlowMapperSubroutineQdlf4HcdLYpjBj00Tz60373101320225(this, vertexLinkSubroutineGenericJ6LMFqAIrpyGH82pqd21860461242160, blazePulseStreamAlgorithmFFSSndCCEv1yyjbdko74710144599257, null, 5), mysticCacheNamespaceAnnotationMKDWKqbLTM3IrVfk0Y57523902441665);
+        return PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 == BlazePulseBuilderIteratorPBZI8aDyzrDZbG6CQq54561361173102.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 ? PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 : AxiomCoreResolverAbstractionEJ1gjjFA6j8B9UV1YX42911071710133.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    }
+
+    @Override // androidx.versionedparcelable.ArcticByteTokenValidationPsQcqncMU2MoRGOiUK81720037598573
+    public final boolean AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365() {
+        return ((Boolean) this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.getValue()).booleanValue();
+    }
+
+    @Override // androidx.versionedparcelable.ArcticByteTokenValidationPsQcqncMU2MoRGOiUK81720037598573
+    public final float LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(float f) {
+        return ((Number) this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(Float.valueOf(f))).floatValue();
+    }
+}

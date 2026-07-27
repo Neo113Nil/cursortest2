@@ -1,0 +1,10 @@
+package androidx.compose.ui.input.pointer;
+
+import androidx.versionedparcelable.BlueKernelFrameworkFilterQxEeFq9MSyNZAHuMag79391056798063;
+import androidx.versionedparcelable.KryptonFlowSerializationInterfaceEjlKC7p1tBmbafduKE90903082581716;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface PointerInputEventHandler {
+    Object invoke(KryptonFlowSerializationInterfaceEjlKC7p1tBmbafduKE90903082581716 kryptonFlowSerializationInterfaceEjlKC7p1tBmbafduKE90903082581716, BlueKernelFrameworkFilterQxEeFq9MSyNZAHuMag79391056798063 blueKernelFrameworkFilterQxEeFq9MSyNZAHuMag79391056798063);
+}

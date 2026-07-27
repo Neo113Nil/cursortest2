@@ -1,0 +1,16 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class MysticCacheInterpreterTemplatingFakPG7NtJpjDe23vnQ25463803573597 {
+    public final RapidLogicInheritanceBinaryTreeDTdbO326SfRS9GbvnD80313569862337 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public boolean LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final SolarMeshPrefixBinaryB7ogdfuvDl6fjFeD8U65103330587223 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public final Object ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = new Object();
+    public final GoldenVectorComponentContextTRUkXGjgx9ss0j2d4f91910937845310 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = new GoldenVectorComponentContextTRUkXGjgx9ss0j2d4f91910937845310(new CrimsonRouteConnectorFrameworkWZOXM3g3Xj3znXSQwS75735149933056[16]);
+
+    public MysticCacheInterpreterTemplatingFakPG7NtJpjDe23vnQ25463803573597(SolarMeshPrefixBinaryB7ogdfuvDl6fjFeD8U65103330587223 solarMeshPrefixBinaryB7ogdfuvDl6fjFeD8U65103330587223, RapidLogicInheritanceBinaryTreeDTdbO326SfRS9GbvnD80313569862337 rapidLogicInheritanceBinaryTreeDTdbO326SfRS9GbvnD80313569862337) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = solarMeshPrefixBinaryB7ogdfuvDl6fjFeD8U65103330587223;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = rapidLogicInheritanceBinaryTreeDTdbO326SfRS9GbvnD80313569862337;
+    }
+}

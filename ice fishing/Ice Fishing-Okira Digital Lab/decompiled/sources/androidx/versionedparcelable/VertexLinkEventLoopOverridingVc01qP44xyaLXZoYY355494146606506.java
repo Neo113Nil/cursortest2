@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class VertexLinkEventLoopOverridingVc01qP44xyaLXZoYY355494146606506 {
+    public static final ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654(-1759434350, false, IronMatrixGenericChannelHmHCOhlIewLdBl4k2w70485826352892.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571);
+}

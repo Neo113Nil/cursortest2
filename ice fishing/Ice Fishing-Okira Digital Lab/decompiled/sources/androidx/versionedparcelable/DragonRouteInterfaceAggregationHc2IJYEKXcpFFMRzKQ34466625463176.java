@@ -1,0 +1,25 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class DragonRouteInterfaceAggregationHc2IJYEKXcpFFMRzKQ34466625463176 {
+    public static final YellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB35943579541256 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    static {
+        SolarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521 solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521 = EmeraldStackJITKeyValueMUOOUj5JXITWGs26bJ75634097813965.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        int i = solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        ArcticByteForeachHeuristicBXVJOrB4aU5pYRdR1u87505372637638 arcticByteForeachHeuristicBXVJOrB4aU5pYRdR1u87505372637638 = new ArcticByteForeachHeuristicBXVJOrB4aU5pYRdR1u87505372637638(solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521, solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521, 1);
+        int i2 = solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        JadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299 jadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299 = EmeraldStackJITKeyValueMUOOUj5JXITWGs26bJ75634097813965.LunarNodeSerializationAsyncGqWKwJIpkuU32gfKfa39621176469764;
+        int i3 = (jadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 << 6) | i2;
+        IronMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862 ironMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862 = new IronMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862(solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521, jadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299, 0);
+        int i4 = (i2 << 6) | jadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        IronMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862 ironMatrixContextProtocolMhIcsUCxht7l8a0DBh459545836208622 = new IronMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862(jadeCircuitRegistryCacheTbor4xFSsFBqcGx5aN39200185190299, solarMeshOverloadingDebuggerWopHfWYPxF2O1TZ3J674480582016521, 0);
+        YellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB35943579541256 yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB35943579541256 = ObsidianEngineOperatorLibraryQae7Tz16PErweD9SHB63157304758588.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        YellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB35943579541256 yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB359435795412562 = new YellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB35943579541256();
+        yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB359435795412562.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(i | (i << 6), arcticByteForeachHeuristicBXVJOrB4aU5pYRdR1u87505372637638);
+        yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB359435795412562.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(i3, ironMatrixContextProtocolMhIcsUCxht7l8a0DBh45954583620862);
+        yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB359435795412562.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(i4, ironMatrixContextProtocolMhIcsUCxht7l8a0DBh459545836208622);
+        ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = yellowLoopFloatingPointOperatorKlyjAlwPv5t4899pAB359435795412562;
+    }
+}

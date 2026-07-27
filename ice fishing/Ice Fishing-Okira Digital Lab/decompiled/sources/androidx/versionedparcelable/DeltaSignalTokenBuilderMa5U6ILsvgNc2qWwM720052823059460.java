@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class DeltaSignalTokenBuilderMa5U6ILsvgNc2qWwM720052823059460 {
+    public static final WhiteFieldContextPipelineHTrRHxsucQ8kWhEwyB51867318516600 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public static final ZenithPathListenerRequestWzIOH0aJoZlyOf0HCw64706389160825 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new ZenithPathListenerRequestWzIOH0aJoZlyOf0HCw64706389160825(new DragonRouteGenericSemaphoreZHp9tf1Y7dynpOgPN353819060155832(3));
+
+    static {
+        long ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = FrostBridgeEncoderKeyValueYxK8vgqxL64ZCoF7R598699436254235.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(4282550004L);
+        AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new WhiteFieldContextPipelineHTrRHxsucQ8kWhEwyB51867318516600(ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495, GoldenVectorAbstractionProtocolEKVA1LdyMjXz4lDg5E34897787669736.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495, 0.4f));
+    }
+}

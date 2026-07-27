@@ -1,0 +1,12 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class SolarMeshDataframeContextPyU3billhimD7UIyWX86908922600230 extends LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 implements WhiteFieldRepositoryDependencyVrWi9qXeE3m0QjhCxk71330832122807 {
+    public DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+
+    @Override // androidx.versionedparcelable.WhiteFieldRepositoryDependencyVrWi9qXeE3m0QjhCxk71330832122807
+    public final void ZenithPathListenerVariableGAIJqSOvgAbAzPQzej97019734282160(SolarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598 solarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598) {
+        this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(solarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598);
+    }
+}

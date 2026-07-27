@@ -1,0 +1,11 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface MysticCacheBuilderLoaderOl3VeytxOTd8uCUSFE30319190214924 {
+    CosmicForgeConnectorRepositoryK3toUz9jyCSxcbNksk23919164703399 CrimsonRouteContainerEncryptionBYDjKqEkgoJPSxosOH53474174893070(HeliosRuntimeCoroutineRequestMXOsp9UIzhyRbOR5d240229001560428 heliosRuntimeCoroutineRequestMXOsp9UIzhyRbOR5d240229001560428);
+
+    long UltraBufferRepositoryHandlerYQBOEcfJ7PEfKEXa2P32463876231503(HeliosRuntimeCoroutineRequestMXOsp9UIzhyRbOR5d240229001560428 heliosRuntimeCoroutineRequestMXOsp9UIzhyRbOR5d240229001560428);
+
+    HeliosRuntimeAbstractionOverloadingQ2L3e4i4RXo1iMSekg81740944577805 VertexLinkAlgorithmInterfaceHTcMMXNUWFINFZt9nU87408307089159();
+}

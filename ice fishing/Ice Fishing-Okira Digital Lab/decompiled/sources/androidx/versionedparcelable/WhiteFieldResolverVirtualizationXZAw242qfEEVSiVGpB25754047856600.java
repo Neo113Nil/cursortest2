@@ -1,0 +1,8 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class WhiteFieldResolverVirtualizationXZAw242qfEEVSiVGpB25754047856600 extends YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214 {
+    public final RapidLogicEngineSubroutineMOEKLPYpeS8ArfD9Cy81139804520505 ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 = new RapidLogicEngineSubroutineMOEKLPYpeS8ArfD9Cy81139804520505();
+    public final RapidLogicEngineSubroutineMOEKLPYpeS8ArfD9Cy81139804520505 ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 = new RapidLogicEngineSubroutineMOEKLPYpeS8ArfD9Cy81139804520505();
+}

@@ -1,0 +1,79 @@
+package androidx.versionedparcelable;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 {
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+    public static final ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+    public static final /* synthetic */ ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709[] ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111;
+
+    /* JADX INFO: Fake field, exist only in values array */
+    ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 EF1;
+
+    static {
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Background", 0);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017092 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Error", 1);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017093 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("ErrorContainer", 2);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017094 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("InverseOnSurface", 3);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017095 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("InversePrimary", 4);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017096 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("InverseSurface", 5);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017097 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnBackground", 6);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017098 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnError", 7);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017099 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnErrorContainer", 8);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170910 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnPrimary", 9);
+        RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170910;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170911 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnPrimaryContainer", 10);
+        LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170911;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170912 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnPrimaryFixed", 11);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170913 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnPrimaryFixedVariant", 12);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170914 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSecondary", 13);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170915 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSecondaryContainer", 14);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170916 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSecondaryFixed", 15);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170917 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSecondaryFixedVariant", 16);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170918 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSurface", 17);
+        YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170918;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170919 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnSurfaceVariant", 18);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170920 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnTertiary", 19);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170921 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnTertiaryContainer", 20);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170922 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnTertiaryFixed", 21);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170923 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OnTertiaryFixedVariant", 22);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170924 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Outline", 23);
+        TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170924;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170925 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("OutlineVariant", 24);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170926 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Primary", 25);
+        BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170926;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170927 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("PrimaryContainer", 26);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170928 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("PrimaryFixed", 27);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170929 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("PrimaryFixedDim", 28);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170930 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Scrim", 29);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170931 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Secondary", 30);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170932 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SecondaryContainer", 31);
+        UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170932;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170933 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SecondaryFixed", 32);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170934 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SecondaryFixedDim", 33);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170935 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Surface", 34);
+        NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170935;
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170936 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceBright", 35);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170937 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceContainer", 36);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170938 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceContainerHigh", 37);
+        ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170939 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceContainerHighest", 38);
+        ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 = zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170939;
+        ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 = new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709[]{zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017092, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017093, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017094, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017095, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017096, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017097, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017098, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP531710004017099, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170910, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170911, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170912, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170913, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170914, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170915, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170916, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170917, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170918, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170919, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170920, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170921, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170922, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170923, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170924, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170925, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170926, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170927, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170928, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170929, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170930, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170931, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170932, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170933, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170934, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170935, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170936, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170937, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170938, zenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP5317100040170939, new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceContainerLow", 39), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceContainerLowest", 40), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceDim", 41), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceTint", 42), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("SurfaceVariant", 43), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("Tertiary", 44), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("TertiaryContainer", 45), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("TertiaryFixed", 46), new ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709("TertiaryFixedDim", 47)};
+    }
+
+    public static ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709 valueOf(String str) {
+        return (ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709) Enum.valueOf(ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709.class, str);
+    }
+
+    public static ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709[] values() {
+        return (ZenithPathIteratorFilterCmbBKdEHJ8VJM1A5wP53171000401709[]) ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111.clone();
+    }
+}

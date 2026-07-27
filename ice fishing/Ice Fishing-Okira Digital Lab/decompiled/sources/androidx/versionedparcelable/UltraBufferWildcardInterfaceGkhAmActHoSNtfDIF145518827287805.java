@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class UltraBufferWildcardInterfaceGkhAmActHoSNtfDIF145518827287805 implements PhotonFrameCoordinatorDispatcherQeKFafRKGKJ076VaIK93837728776360 {
+    public final /* synthetic */ HeliosRuntimeComponentOverloadingQqLSvNMvA6UaCT2Tgj36236082094921 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public ObsidianEngineMapperMutexX0qWD1l6kHqgaJ6W0r31127508783971 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public UltraBufferWildcardInterfaceGkhAmActHoSNtfDIF145518827287805(HeliosRuntimeComponentOverloadingQqLSvNMvA6UaCT2Tgj36236082094921 heliosRuntimeComponentOverloadingQqLSvNMvA6UaCT2Tgj36236082094921) {
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = heliosRuntimeComponentOverloadingQqLSvNMvA6UaCT2Tgj36236082094921;
+        ObsidianEngineMapperMutexX0qWD1l6kHqgaJ6W0r31127508783971.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.getClass();
+    }
+}

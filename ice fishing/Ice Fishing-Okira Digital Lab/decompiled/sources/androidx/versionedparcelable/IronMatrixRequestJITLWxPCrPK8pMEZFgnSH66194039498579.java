@@ -1,0 +1,11 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface IronMatrixRequestJITLWxPCrPK8pMEZFgnSH66194039498579 extends BlueKernelFrameworkFilterQxEeFq9MSyNZAHuMag79391056798063 {
+    boolean ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050(Throwable th);
+
+    void PhotonFrameRuntimeKeyValueRxsctdJg5CGmXPHjuh15556138883942(Object obj);
+
+    ZenithPathCoroutineFloatingPointCvMj9NrNitkJWNmuqr66298251981528 ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(Object obj, LunarNodeInheritanceMacroXDWwaYVcvDdDSOsYBm20807855611438 lunarNodeInheritanceMacroXDWwaYVcvDdDSOsYBm20807855611438);
+}

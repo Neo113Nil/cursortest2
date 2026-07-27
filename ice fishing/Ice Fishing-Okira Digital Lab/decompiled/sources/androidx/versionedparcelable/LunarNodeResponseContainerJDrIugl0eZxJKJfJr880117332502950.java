@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface LunarNodeResponseContainerJDrIugl0eZxJKJfJr880117332502950 {
+    void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(Object obj, ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654 zenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654, ZenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156 zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156, int i);
+}

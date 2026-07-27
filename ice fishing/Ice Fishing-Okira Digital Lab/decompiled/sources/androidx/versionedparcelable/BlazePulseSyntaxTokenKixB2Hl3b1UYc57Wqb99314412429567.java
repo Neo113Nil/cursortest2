@@ -1,0 +1,17 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class BlazePulseSyntaxTokenKixB2Hl3b1UYc57Wqb99314412429567 {
+    public static final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    static {
+        LunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983 lunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983 = new LunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983(50.0f);
+        ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976(lunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983, lunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983, lunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983, lunarNodeOperatorResourceHoYsF0FOdAjgLTmgnR78601979016983);
+    }
+
+    public static final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(float f) {
+        ObsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007 obsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007 = new ObsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007(f);
+        return new WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976(obsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007, obsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007, obsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007, obsidianEngineKeyValueBinaryNeWd2tYgOtJY0nZR7I27706454824007);
+    }
+}

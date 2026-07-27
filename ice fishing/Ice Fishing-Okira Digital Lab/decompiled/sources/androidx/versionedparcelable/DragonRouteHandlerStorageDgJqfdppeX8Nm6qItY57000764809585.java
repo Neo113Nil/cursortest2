@@ -1,0 +1,14 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class DragonRouteHandlerStorageDgJqfdppeX8Nm6qItY57000764809585 {
+    public final LunarNodeGatewayMapperAnweFRRc1N2hzgCbgB87747711891249 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public JadeCircuitKeyValueConstructorWlJqIUAwsEhEyj4JUu80356684322993 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public DragonRouteHandlerStorageDgJqfdppeX8Nm6qItY57000764809585(JadeCircuitKeyValueConstructorWlJqIUAwsEhEyj4JUu80356684322993 jadeCircuitKeyValueConstructorWlJqIUAwsEhEyj4JUu80356684322993) {
+        LunarNodeGatewayMapperAnweFRRc1N2hzgCbgB87747711891249 lunarNodeGatewayMapperAnweFRRc1N2hzgCbgB87747711891249 = HeliosRuntimeRepositoryInterpreterLhRAxAJOYI7jbF4JAv11940507633863.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = jadeCircuitKeyValueConstructorWlJqIUAwsEhEyj4JUu80356684322993;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = lunarNodeGatewayMapperAnweFRRc1N2hzgCbgB87747711891249;
+    }
+}

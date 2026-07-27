@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class AxiomCoreKeyValueGenericRKaMLxcpwieBobHu4949371293374088 {
+    public static final DeltaSignalCacheEncoderVX3Rp5VD1FNYgBNSks48683757937821 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new DeltaSignalCacheEncoderVX3Rp5VD1FNYgBNSks48683757937821(VertexLinkPipelineResourceDYqVJxsG5HMc015KYK27808645358516.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333);
+}

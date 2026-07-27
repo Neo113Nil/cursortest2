@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class MysticCachePacketCompilerNEifRgCRqN9qUd33k328913853476500 {
+    public final /* synthetic */ TitanCloudRequestClosureGLoujpy5zmV9nLzwJl23652991240343 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final TitanCloudVariablePacketKVpG5OIHsleFvF18BE41318980564817 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public MysticCachePacketCompilerNEifRgCRqN9qUd33k328913853476500(TitanCloudRequestClosureGLoujpy5zmV9nLzwJl23652991240343 titanCloudRequestClosureGLoujpy5zmV9nLzwJl23652991240343) {
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = titanCloudRequestClosureGLoujpy5zmV9nLzwJl23652991240343;
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834(new ZenithPathEncryptionPolymorphismHMxtIV1kvN80Zp8zK696772031032441(9, titanCloudRequestClosureGLoujpy5zmV9nLzwJl23652991240343));
+    }
+}

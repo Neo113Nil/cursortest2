@@ -1,0 +1,16 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class SolarMeshUnificationJITZxBfofPurMENmb8SzV57539858235945 implements RapidLogicStateJITH6jwebBCPEHl4vpdOj47732247559782 {
+    public final WhiteFieldTransportSchedulerCi0Vr18lrM2PKHC8Cb97533289990028 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public SolarMeshUnificationJITZxBfofPurMENmb8SzV57539858235945(IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990 ironMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = AxiomCoreSchedulerSerializationDsZBnm4orErCHS3JLP23062714366568.HeliosRuntimeClassProviderFABQ5d2rErfEnvDVi231062942123295(ironMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990);
+    }
+
+    @Override // androidx.versionedparcelable.RapidLogicStateJITH6jwebBCPEHl4vpdOj47732247559782
+    public final Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(EmeraldStackPacketBufferK3IXt6rgzKL50TDZ3n82540320567786 emeraldStackPacketBufferK3IXt6rgzKL50TDZ3n82540320567786) {
+        return this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.getValue();
+    }
+}

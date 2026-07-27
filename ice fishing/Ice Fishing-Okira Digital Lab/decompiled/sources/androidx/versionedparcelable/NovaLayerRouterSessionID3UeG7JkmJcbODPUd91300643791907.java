@@ -1,0 +1,14 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class NovaLayerRouterSessionID3UeG7JkmJcbODPUd91300643791907 {
+    public static final DragonRouteSemaphoreContextSBXAAN9XipvjzbdqYj90200486636108 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    static {
+        ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168 zenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168 = ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+        long UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541(16);
+        long UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo988031659995412 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541(24);
+        ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new DragonRouteSemaphoreContextSBXAAN9XipvjzbdqYj90200486636108(null, null, null, new ObsidianEngineMonitorTemplatingANOqFYGC9WhTljMTLt16936794921923(0L, UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541, zenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168, VertexLinkResolverContextQq9FLX81OXHnUzzWZJ56859481302022.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800, KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195(0.5d), 0, UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo988031659995412, 16645977), null, null, null, null, null, 32255);
+    }
+}

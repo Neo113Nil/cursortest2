@@ -1,0 +1,17 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class ZenithPathFunctionCompressionLFpj8qaVbILKchrzaq49126181952078 {
+    public final /* synthetic */ TitanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public ZenithPathFunctionCompressionLFpj8qaVbILKchrzaq49126181952078(WhiteFieldUnificationPacketKMRYRz2LDmPHRHuEu398081511456452 whiteFieldUnificationPacketKMRYRz2LDmPHRHuEu398081511456452, TitanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575 titanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = titanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575;
+    }
+
+    public final void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800() {
+        TitanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575 titanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575 = this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        titanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(false);
+        titanCloudDecoderObserverXTPQ8s25TWrr8CxfVO13379136997575.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(false);
+    }
+}

@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class NovaLayerObserverPrefixZisoseMORWUViq7plJ64232919557980 extends LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 implements AxiomCoreAdapterConstructorF5czgAB36aqweIOgNF75163631755978 {
+    public static final YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310 SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571 = new YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310(25);
+}

@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class GoldenVectorExecutorAsyncAx5CXdh40ddlPdYiF142011527329212 {
+    public static final ObsidianEngineMonitorTemplatingANOqFYGC9WhTljMTLt16936794921923 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = ObsidianEngineMonitorTemplatingANOqFYGC9WhTljMTLt16936794921923.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(ObsidianEngineMonitorTemplatingANOqFYGC9WhTljMTLt16936794921923.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, 0, null, null, 0, 0, new IronMatrixClosureRequestD9a6CR0v0hhABLliYH51887459272740(QuantumStreamCryptographyAnnotationAcaIHXE6edY6Odq6ez83881767599539.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, 0, 0), 15204351);
+}

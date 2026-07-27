@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class XenoGridContainerBitfieldG3y7ocXjNPP1YaGBPP44141240312523 implements SolarMeshCacheTranspilerQuBCcFEcdcnwChf61a10217658519649 {
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(new ObsidianEngineObserverSubroutineYQE4DRRczbpRBk6UYB37722402666729(0));
+}

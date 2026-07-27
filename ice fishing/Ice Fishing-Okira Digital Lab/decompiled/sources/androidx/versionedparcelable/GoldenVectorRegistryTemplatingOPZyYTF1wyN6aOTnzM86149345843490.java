@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface GoldenVectorRegistryTemplatingOPZyYTF1wyN6aOTnzM86149345843490 {
+    int BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818();
+
+    boolean CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170(LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 lunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892);
+
+    void ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050(PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870, long j, BlazePulseModuleHeuristicQVHiTrrB9F2duHs5hM99942905585660 blazePulseModuleHeuristicQVHiTrrB9F2duHs5hM99942905585660, int i, boolean z);
+
+    boolean ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870);
+}

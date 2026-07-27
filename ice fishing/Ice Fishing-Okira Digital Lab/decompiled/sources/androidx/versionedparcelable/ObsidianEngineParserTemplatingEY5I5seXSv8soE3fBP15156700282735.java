@@ -1,0 +1,58 @@
+package androidx.versionedparcelable;
+
+import java.util.List;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class ObsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735 extends CosmicForgeChannelConnectorQ2uQT2ZLWQL7CN0BCU96648502277127 {
+    public final float BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+    public final float CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927;
+    public final float CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170;
+    public final float EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111;
+    public final List LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final float NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480;
+    public final float ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050;
+    public final int ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834;
+    public final float PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036;
+    public final String RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public final KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public final KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+    public final int YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+    public final int ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111;
+
+    public ObsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735(String str, List list, int i, KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510, float f, KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW467408772495102, float f2, float f3, int i2, int i3, float f4, float f5, float f6, float f7) {
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = str;
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = list;
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = i;
+        this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510;
+        this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = f;
+        this.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW467408772495102;
+        this.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 = f2;
+        this.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 = f3;
+        this.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 = i2;
+        this.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 = i3;
+        this.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 = f4;
+        this.EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111 = f5;
+        this.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 = f6;
+        this.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = f7;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || ObsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.class != obj.getClass()) {
+            return false;
+        }
+        ObsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735 obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735 = (ObsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735) obj;
+        return this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.equals(obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333, obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333) && this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339, obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339) && this.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 && this.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 && this.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 && this.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 && this.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 && this.EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111 && this.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 && this.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 && this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 == obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119, obsidianEngineParserTemplatingEY5I5seXSv8soE3fBP15156700282735.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119);
+    }
+
+    public final int hashCode() {
+        int hashCode = (this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119.hashCode() + (this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.hashCode() * 31)) * 31;
+        KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 = this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+        int AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818, (hashCode + (kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 != null ? kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510.hashCode() : 0)) * 31, 31);
+        KryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW46740877249510 kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW467408772495102 = this.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+        return Integer.hashCode(this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170) + MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(this.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(this.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050, MysticCacheBitwiseClassXy5v8026BQuXVZ72LW55346204310625.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(this.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480, (AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 + (kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW467408772495102 != null ? kryptonFlowPipelineStorageZtxxLXRZAXCtnBoDwW467408772495102.hashCode() : 0)) * 31, 31), 31), 31), 31), 31), 31), 31), 31);
+    }
+}

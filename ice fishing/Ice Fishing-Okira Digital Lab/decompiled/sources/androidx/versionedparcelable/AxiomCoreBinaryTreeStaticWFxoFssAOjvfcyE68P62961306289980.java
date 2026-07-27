@@ -1,0 +1,32 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class AxiomCoreBinaryTreeStaticWFxoFssAOjvfcyE68P62961306289980 extends SolarMeshConstructorConnectorRV4u3gudQVU41W4dp291425943411883 implements BlazePulseStreamAlgorithmFFSSndCCEv1yyjbdko74710144599257 {
+    public final /* synthetic */ KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620 BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+    public final /* synthetic */ AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final /* synthetic */ ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654 NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480;
+    public final /* synthetic */ int ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050;
+    public final /* synthetic */ CosmicForgeWorkerVirtualizationZ6FxuvbmO45w5SRDHO10283389962998 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public final /* synthetic */ UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+    public final /* synthetic */ DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public AxiomCoreBinaryTreeStaticWFxoFssAOjvfcyE68P62961306289980(AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145, DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865, CosmicForgeWorkerVirtualizationZ6FxuvbmO45w5SRDHO10283389962998 cosmicForgeWorkerVirtualizationZ6FxuvbmO45w5SRDHO10283389962998, KryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620 kryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620, UltraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556 ultraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556, ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654 zenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654, int i) {
+        super(2);
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145;
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865;
+        this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = cosmicForgeWorkerVirtualizationZ6FxuvbmO45w5SRDHO10283389962998;
+        this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = kryptonFlowUnificationBootstrapL6oFwQWepkAkhyPdsq46926086199620;
+        this.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = ultraBufferClassProcessorY4Kj9ziqmjpc9upNkA45239544776556;
+        this.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 = zenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654;
+        this.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 = i;
+    }
+
+    @Override // androidx.versionedparcelable.BlazePulseStreamAlgorithmFFSSndCCEv1yyjbdko74710144599257
+    public final Object YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(Object obj, Object obj2) {
+        ((Number) obj2).intValue();
+        YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119, this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170, this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333, this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818, this.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339, this.NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480, (ZenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156) obj, XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.DeltaSignalBitfieldObjectCMqXqcyA4RTHNuPUiO99443717390150(this.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 | 1));
+        return AxiomCoreResolverAbstractionEJ1gjjFA6j8B9UV1YX42911071710133.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    }
+}

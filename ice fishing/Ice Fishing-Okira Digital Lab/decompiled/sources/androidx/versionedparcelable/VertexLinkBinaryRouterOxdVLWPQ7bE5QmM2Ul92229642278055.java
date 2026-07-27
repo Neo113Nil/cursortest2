@@ -1,0 +1,21 @@
+package androidx.versionedparcelable;
+
+import java.util.List;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class VertexLinkBinaryRouterOxdVLWPQ7bE5QmM2Ul92229642278055 implements GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841 {
+    public final /* synthetic */ HeliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final /* synthetic */ SolarMeshImmutableJITRB5juBh5dyw0W028YF96021664176836 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public VertexLinkBinaryRouterOxdVLWPQ7bE5QmM2Ul92229642278055(SolarMeshImmutableJITRB5juBh5dyw0W028YF96021664176836 solarMeshImmutableJITRB5juBh5dyw0W028YF96021664176836, HeliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422 heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = solarMeshImmutableJITRB5juBh5dyw0W028YF96021664176836;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422;
+    }
+
+    @Override // androidx.versionedparcelable.GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841
+    public final CosmicForgeFilterMutexXuulnyQgylGzinGUJ544225966544934 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, List list, long j) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.setParentLayoutDirection(this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365);
+        return axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718.JadeCircuitRequestVectorU92hbmiG49qeUp5Zc526346803062437(0, 0, ZenithPathClassRegistryTikLDp7rebsiLius2r62452628353528.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, UltraBufferLibraryInjectionPo2F9kPZDuSGaFZES183405060953321.ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050);
+    }
+}

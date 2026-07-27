@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface ZenithPathObjectGatewayXduJfihU3wtHzG5quE25382798333858 extends KryptonFlowStateStaticAdx0wRot0T8yPlG6kU35044772919246 {
+    void CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927(ZenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893 zenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893, Throwable th);
+}

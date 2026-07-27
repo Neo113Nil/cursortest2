@@ -1,0 +1,25 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class IronMatrixCoordinatorRequestSAfuZr9gIdXgnRL7Hf75988623464614 implements SolarMeshHandlerMutexHh7aZZaEt5oqfOHtG819236442583306 {
+    public IronMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public VertexLinkDebuggerCallbackWD0CDHUh1zRkIw7WLn89277135133301 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = YellowLoopObserverMacroJFTEe2n8YRXorwgZDZ47084730441310.CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983;
+
+    @Override // androidx.versionedparcelable.SolarMeshHandlerMutexHh7aZZaEt5oqfOHtG819236442583306
+    public final float AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365() {
+        return this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365().AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365();
+    }
+
+    @Override // androidx.versionedparcelable.SolarMeshHandlerMutexHh7aZZaEt5oqfOHtG819236442583306
+    public final float NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480() {
+        return this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365().NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480();
+    }
+
+    public final IronMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865) {
+        IronMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406 ironMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406 = new IronMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406(20, false);
+        ironMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865;
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = ironMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406;
+        return ironMatrixLambdaInterpreterAMM06uChcWEtStW0Ed29200995437406;
+    }
+}

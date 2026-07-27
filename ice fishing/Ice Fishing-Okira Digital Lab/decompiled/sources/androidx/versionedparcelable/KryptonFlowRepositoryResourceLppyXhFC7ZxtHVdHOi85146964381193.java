@@ -1,0 +1,52 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class KryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193 implements JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285 {
+    public final JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public KryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193(JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285 jadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285, JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285 jadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU908453264442852) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = jadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = jadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU908453264442852;
+    }
+
+    @Override // androidx.versionedparcelable.JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285
+    public final int ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718) {
+        return Math.max(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718), this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718));
+    }
+
+    @Override // androidx.versionedparcelable.JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285
+    public final int AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, HeliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422 heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422) {
+        return Math.max(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422), this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422));
+    }
+
+    @Override // androidx.versionedparcelable.JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285
+    public final int ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, HeliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422 heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422) {
+        return Math.max(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422), this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, heliosRuntimeVariableInheritanceMn6y0Y6u9gAylmwc5F75136047155422));
+    }
+
+    @Override // androidx.versionedparcelable.JadeCircuitInheritanceFunctionBjsmdbfKYbyeGhFSjU90845326444285
+    public final int RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718) {
+        return Math.max(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718), this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718));
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof KryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193)) {
+            return false;
+        }
+        KryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193 kryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193 = (KryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193) obj;
+        return YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(kryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800, this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(kryptonFlowRepositoryResourceLppyXhFC7ZxtHVdHOi85146964381193.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365);
+    }
+
+    public final int hashCode() {
+        return (this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.hashCode() * 31) + this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.hashCode();
+    }
+
+    public final String toString() {
+        return "(" + this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 + " ∪ " + this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 + ')';
+    }
+}

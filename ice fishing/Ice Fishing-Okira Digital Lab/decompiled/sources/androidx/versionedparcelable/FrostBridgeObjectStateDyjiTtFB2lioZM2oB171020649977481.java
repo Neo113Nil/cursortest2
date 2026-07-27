@@ -1,0 +1,56 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class FrostBridgeObjectStateDyjiTtFB2lioZM2oB171020649977481 {
+    public static final /* synthetic */ int ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = 0;
+
+    static {
+        AxiomCoreSchedulerSerializationDsZBnm4orErCHS3JLP23062714366568.YellowLoopEncoderRouterINqff2SYTbtqZyuhu243435970216181(new DragonRouteGenericSemaphoreZHp9tf1Y7dynpOgPN353819060155832(4));
+    }
+
+    public static final AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(Object obj, String str, ZenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156 zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156, int i) {
+        Object HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382();
+        LunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893 lunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893 = FrostBridgeOverloadingResourceIxC9Y1qKFbINFw1oCV76442936757458.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        if (HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 == lunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893) {
+            HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 = new AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145(new YellowLoopResourceWildcardKo7bCI6FbmFR8NbZLA16849417760412(19, obj), null, str);
+            zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.JadeCircuitRequestVectorU92hbmiG49qeUp5Zc526346803062437(HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382);
+        }
+        AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 = (AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145) HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382;
+        axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(obj, zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156, (i & 8) | 48 | (i & 14));
+        Object HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382();
+        if (HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 == lunarNodeParserPrefixQvvoM9Gn4PS0umBVaE26925484917893) {
+            HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 = new FrostBridgeImmutableVirtualizationB3hiLNxVoyuE5nYPYb42863173102046(6, axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145);
+            zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.JadeCircuitRequestVectorU92hbmiG49qeUp5Zc526346803062437(HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822);
+        }
+        XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145, (DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865) HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822, zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156);
+        return axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145;
+    }
+
+    public static final SolarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145, RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050, String str, ZenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156 zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156, int i, int i2) {
+        KryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840 kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840;
+        if ((i2 & 2) != 0) {
+            str = "DeferredAnimation";
+        }
+        boolean YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145);
+        Object HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382();
+        Object obj = FrostBridgeOverloadingResourceIxC9Y1qKFbINFw1oCV76442936757458.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        if (YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 || HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 == obj) {
+            HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382 = new SolarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145, rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050, str);
+            zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.JadeCircuitRequestVectorU92hbmiG49qeUp5Zc526346803062437(HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382);
+        }
+        SolarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495 solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495 = (SolarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495) HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382;
+        boolean YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh961339147901702 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145) | zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495);
+        Object HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 = zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM638868795906382();
+        if (YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh961339147901702 || HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 == obj) {
+            HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822 = new JadeCircuitSchedulerCompressionYXYHvpPIby7qI1Smme42614025685565(22, axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145, solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495);
+            zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156.JadeCircuitRequestVectorU92hbmiG49qeUp5Zc526346803062437(HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822);
+        }
+        XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495, (DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865) HeliosRuntimeSchedulerResourceVlNZWtcxQsT7tCIuM6388687959063822, zenithPathTemplatingDecoderNsEpUWIJZnd3k8tqtE14741837270156);
+        if (axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333() && (kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840 = (KryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840) solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.getValue()) != null) {
+            AxiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx85044665577145 axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx850446655771452 = solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+            kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx850446655771452.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170().ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800()), kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx850446655771452.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170().ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495()), (UltraBufferMonitorJITTf2A7UJFukjA9SX89a88369900957587) kryptonFlowProtocolSerializationECvwp2VkmjSl2Q18tL99754472942840.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(axiomCoreIteratorEncoderLc4iXlp5uGhrGMukIx850446655771452.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170()));
+        }
+        return solarMeshRouterContextNd5ZMSCAsQiXjrhbw323820501743495;
+    }
+}

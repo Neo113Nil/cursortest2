@@ -1,0 +1,13 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class TitanCloudPacketVirtualizationVyXIUEvBTxOVqBGxkR40791578428730 {
+    public final GoldenVectorGatewayRuntimeI7DwhoTnhMrfKy0weH92248331482519 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final ArcticBytePostfixTransportBjpMuzKM1CjnY40crF16296077417079 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+
+    public TitanCloudPacketVirtualizationVyXIUEvBTxOVqBGxkR40791578428730(ArcticBytePostfixTransportBjpMuzKM1CjnY40crF16296077417079 arcticBytePostfixTransportBjpMuzKM1CjnY40crF16296077417079, GoldenVectorGatewayRuntimeI7DwhoTnhMrfKy0weH92248331482519 goldenVectorGatewayRuntimeI7DwhoTnhMrfKy0weH92248331482519) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = arcticBytePostfixTransportBjpMuzKM1CjnY40crF16296077417079;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = goldenVectorGatewayRuntimeI7DwhoTnhMrfKy0weH92248331482519;
+    }
+}

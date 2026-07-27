@@ -1,0 +1,50 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+final class VertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542 extends ObsidianEngineDebuggerClassEzfpLSun3mqVK8TaHZ54101395349003 {
+    public final QuantumStreamDataframePostfixPAGSpXg9qm3Rg1m9PK80069975598245 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public final MysticCacheLoaderContextNvpDHBpEqGPGzOi3o094094045972338 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public final YellowLoopStaticLibraryZ77KjfQmSBlTKfx9rS11444824511866 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+
+    public VertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542(RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050, MysticCacheLoaderContextNvpDHBpEqGPGzOi3o094094045972338 mysticCacheLoaderContextNvpDHBpEqGPGzOi3o094094045972338, QuantumStreamDataframePostfixPAGSpXg9qm3Rg1m9PK80069975598245 quantumStreamDataframePostfixPAGSpXg9qm3Rg1m9PK80069975598245, YellowLoopStaticLibraryZ77KjfQmSBlTKfx9rS11444824511866 yellowLoopStaticLibraryZ77KjfQmSBlTKfx9rS11444824511866) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = mysticCacheLoaderContextNvpDHBpEqGPGzOi3o094094045972338;
+        this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = quantumStreamDataframePostfixPAGSpXg9qm3Rg1m9PK80069975598245;
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = yellowLoopStaticLibraryZ77KjfQmSBlTKfx9rS11444824511866;
+    }
+
+    @Override // androidx.versionedparcelable.ObsidianEngineDebuggerClassEzfpLSun3mqVK8TaHZ54101395349003
+    public final LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119() {
+        return new MysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800, this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495, this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867);
+    }
+
+    @Override // androidx.versionedparcelable.ObsidianEngineDebuggerClassEzfpLSun3mqVK8TaHZ54101395349003
+    public final void YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 lunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892) {
+        MysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860 mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860 = (MysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860) lunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892;
+        mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = null;
+        RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 = this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050;
+        rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860;
+        rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 ? HeliosRuntimeJSONMiddlewareNR4Kv536zfnq3EJqKR88486654411944.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 : HeliosRuntimeJSONMiddlewareNR4Kv536zfnq3EJqKR88486654411944.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541 = this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+        mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.PhotonFrameRuntimeKeyValueRxsctdJg5CGmXPHjuh15556138883942 = this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        mysticCachePipelineWildcardAWLZJF05w3T5tV08YG33018554779860.CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983 = this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof VertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542)) {
+            return false;
+        }
+        VertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542 vertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542 = (VertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542) obj;
+        return this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 == vertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 && this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 == vertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 && this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 == vertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 && this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 == vertexLinkMutexRepositoryDBx7sBLr7xMfEkJSZf18459408453542.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    }
+
+    public final int hashCode() {
+        return this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.hashCode() + ((this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495.hashCode() + ((this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.hashCode() + (this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.hashCode() * 31)) * 31)) * 31);
+    }
+}

@@ -1,0 +1,26 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class BlueKernelControllerPolymorphismQff3T8OCvFMhrl5lpF45735435797720 extends SolarMeshConstructorConnectorRV4u3gudQVU41W4dp291425943411883 implements IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990 {
+    public final /* synthetic */ ObsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final /* synthetic */ CrimsonRouteSyntaxAbstractionJyYSLfFXdh4a3LeSOH90795751755356 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public final /* synthetic */ ObsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public BlueKernelControllerPolymorphismQff3T8OCvFMhrl5lpF45735435797720(ObsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793 obsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793, ObsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233 obsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233, CrimsonRouteSyntaxAbstractionJyYSLfFXdh4a3LeSOH90795751755356 crimsonRouteSyntaxAbstractionJyYSLfFXdh4a3LeSOH90795751755356) {
+        super(0);
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = obsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793;
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = obsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233;
+        this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = crimsonRouteSyntaxAbstractionJyYSLfFXdh4a3LeSOH90795751755356;
+    }
+
+    @Override // androidx.versionedparcelable.IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990
+    public final Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800() {
+        ObsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233 obsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233 = this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+        ObsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793 obsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793 = this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        obsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793.removeOnAttachStateChangeListener(obsidianEngineDispatcherAbstractionP3TvnGL4exgnh4LoXY55797557717233);
+        XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.LunarNodeSerializationAsyncGqWKwJIpkuU32gfKfa39621176469764(obsidianEngineFilterAggregationMwoCYvY5d7rp57F83K91690367207793).ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.remove(this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333);
+        return AxiomCoreResolverAbstractionEJ1gjjFA6j8B9UV1YX42911071710133.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    }
+}

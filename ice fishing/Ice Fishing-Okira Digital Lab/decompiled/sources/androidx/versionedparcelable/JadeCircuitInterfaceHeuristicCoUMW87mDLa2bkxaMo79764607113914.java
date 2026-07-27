@@ -1,0 +1,52 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class JadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914 {
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public final WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+
+    public JadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914() {
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389762 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389763 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389764 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389765 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389766 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389767 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+        WhiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976 whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389768 = TitanCloudCallbackFrameworkW3PYPcO5AsxTomacID90935875289587.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS635666081438976;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389762;
+        this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389763;
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389764;
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389765;
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389766;
+        this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389767;
+        this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = whiteFieldKeyValueLoaderJiS3Ysn7xcSkv6hsS6356660814389768;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof JadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914)) {
+            return false;
+        }
+        JadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914 jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914 = (JadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914) obj;
+        return YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333) && YellowLoopStoragePayloadVFtu5CxYzqP8AEqxI345075376816214.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818, jadeCircuitInterfaceHeuristicCoUMW87mDLa2bkxaMo79764607113914.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818);
+    }
+
+    public final int hashCode() {
+        return this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818.hashCode() + ((this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333.hashCode() + ((this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170.hashCode() + ((this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119.hashCode() + ((this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867.hashCode() + ((this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495.hashCode() + ((this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365.hashCode() + (this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800.hashCode() * 31)) * 31)) * 31)) * 31)) * 31)) * 31)) * 31);
+    }
+
+    public final String toString() {
+        return "Shapes(extraSmall=" + this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 + ", small=" + this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 + ", medium=" + this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 + ", large=" + this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 + ", largeIncreased=" + this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 + ", extraLarge=" + this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 + ", extralargeIncreased=" + this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 + ", extraExtraLarge=" + this.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 + ')';
+    }
+}

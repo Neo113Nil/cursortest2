@@ -1,0 +1,16 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class KryptonFlowServiceCryptographyQ8EWX7n1gsVFdgrI8f41066330604366 extends LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 implements PhotonFrameUnificationSerializationMS11J4HUb0IhT9acuF47546556839259 {
+    public LunarNodeInheritanceMacroXDWwaYVcvDdDSOsYBm20807855611438 SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+
+    @Override // androidx.versionedparcelable.PhotonFrameUnificationSerializationMS11J4HUb0IhT9acuF47546556839259
+    public final CosmicForgeFilterMutexXuulnyQgylGzinGUJ544225966544934 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777 frostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777, long j) {
+        return (CosmicForgeFilterMutexXuulnyQgylGzinGUJ544225966544934) this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, frostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777, new RapidLogicClassHashmapUkiMfiTek9XuaGg5hE27197262227279(j));
+    }
+
+    public final String toString() {
+        return "LayoutModifierImpl(measureBlock=" + this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571 + ')';
+    }
+}

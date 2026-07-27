@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class YellowLoopExecutorSessionIRliZs5gJf8hihIlxA20902175643284 implements HeliosRuntimeStorageResponseTnLl2KjugcNdLrK4BZ92632889825332 {
+    public static final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(new HeliosRuntimePostfixSessionZip78mnLwhnwpR4JYk91468496834126(0));
+}

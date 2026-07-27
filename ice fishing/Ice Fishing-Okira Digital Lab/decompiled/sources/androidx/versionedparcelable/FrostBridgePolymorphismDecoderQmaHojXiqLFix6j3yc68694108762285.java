@@ -1,0 +1,30 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class FrostBridgePolymorphismDecoderQmaHojXiqLFix6j3yc68694108762285 extends LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892 implements AxiomCoreReflectionTemplatingGTww0PEijBKgYjHZ9g71575199186557 {
+    public boolean RapidLogicStorageAnnotationHOiHqBJG1x2ry2gvMq67606915343598;
+    public final XenoGridDecryptionExecutorYMiJmygDCB6HoLlpFM89670568267337 SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+    public boolean UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541;
+    public boolean XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195;
+
+    public FrostBridgePolymorphismDecoderQmaHojXiqLFix6j3yc68694108762285(XenoGridDecryptionExecutorYMiJmygDCB6HoLlpFM89670568267337 xenoGridDecryptionExecutorYMiJmygDCB6HoLlpFM89670568267337) {
+        this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571 = xenoGridDecryptionExecutorYMiJmygDCB6HoLlpFM89670568267337;
+    }
+
+    @Override // androidx.versionedparcelable.LunarNodeComponentCallbackXzghVuKUJT1emfX28v18100114172892
+    public final void MysticCacheAlgorithmCryptographySl3Q5nDQu51nkjBl9t59084703863528() {
+        XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(QuantumStreamExceptionInterpreterGWB80ZBYVt7QWYIVyy33164133352058(), null, new QuantumStreamDecoderDependencyX04xs7I7TwffCcogsc60589878423565(this, (BlueKernelFrameworkFilterQxEeFq9MSyNZAHuMag79391056798063) null, 0), 3);
+    }
+
+    @Override // androidx.versionedparcelable.AxiomCoreReflectionTemplatingGTww0PEijBKgYjHZ9g71575199186557
+    public final void ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050(KryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340 kryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340) {
+        kryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800();
+        LunarNodeImmutableFactoryHqssLAC04AzGC4WL6Q86916502771629 lunarNodeImmutableFactoryHqssLAC04AzGC4WL6Q86916502771629 = kryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+        if (this.RapidLogicStorageAnnotationHOiHqBJG1x2ry2gvMq67606915343598) {
+            PhotonFrameObserverEncoderYu0qPD0Qr0WGzkQp5g11636508510086.VertexLinkPrefixEncryptionS88BTFa1Wv6v7n9U5W75564685177482(kryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340, GoldenVectorAbstractionProtocolEKVA1LdyMjXz4lDg5E34897787669736.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(GoldenVectorAbstractionProtocolEKVA1LdyMjXz4lDg5E34897787669736.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, 0.3f), 0L, lunarNodeImmutableFactoryHqssLAC04AzGC4WL6Q86916502771629.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(), 122);
+        } else if (this.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 || this.UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541) {
+            PhotonFrameObserverEncoderYu0qPD0Qr0WGzkQp5g11636508510086.VertexLinkPrefixEncryptionS88BTFa1Wv6v7n9U5W75564685177482(kryptonFlowObjectPayloadDHGy669DMb0imB7kjJ39011199631340, GoldenVectorAbstractionProtocolEKVA1LdyMjXz4lDg5E34897787669736.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(GoldenVectorAbstractionProtocolEKVA1LdyMjXz4lDg5E34897787669736.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365, 0.1f), 0L, lunarNodeImmutableFactoryHqssLAC04AzGC4WL6Q86916502771629.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(), 122);
+        }
+    }
+}

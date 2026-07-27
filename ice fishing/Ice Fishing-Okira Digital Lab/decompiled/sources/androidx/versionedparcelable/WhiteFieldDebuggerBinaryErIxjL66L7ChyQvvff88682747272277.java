@@ -1,0 +1,11 @@
+package androidx.versionedparcelable;
+
+import android.graphics.Typeface;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface WhiteFieldDebuggerBinaryErIxjL66L7ChyQvvff88682747272277 {
+    Typeface ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168 zenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168, int i);
+
+    Typeface LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(DeltaSignalAlgorithmCoordinatorA3Mgbm6IAHyWDnuxYg53634494030236 deltaSignalAlgorithmCoordinatorA3Mgbm6IAHyWDnuxYg53634494030236, ZenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168 zenithPathPayloadContextZzTkjLMOSyD5xYX6cC91508866797168, int i);
+}

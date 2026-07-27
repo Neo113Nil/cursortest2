@@ -1,0 +1,25 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class NovaLayerDependencyIteratorElZZ4V7AU1Pu8npOxI20847331344044 {
+    public final long ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public final Object AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public final IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public long TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public KryptonFlowManagerAliasFCyrMZa8bxQAIpB4UT13653125962317 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+    public long BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = Long.MIN_VALUE;
+    public final CrimsonRouteProxyParserYwog3BCfcwfHwK4ku572237178265488 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(Boolean.TRUE);
+
+    public NovaLayerDependencyIteratorElZZ4V7AU1Pu8npOxI20847331344044(Object obj, RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050, KryptonFlowManagerAliasFCyrMZa8bxQAIpB4UT13653125962317 kryptonFlowManagerAliasFCyrMZa8bxQAIpB4UT13653125962317, long j, Object obj2, long j2, IronMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990 ironMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990) {
+        this.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = rapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050;
+        this.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = obj2;
+        this.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = j2;
+        this.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = ironMatrixChannelRepositoryIvDj9K48YedSIPZdCQ56534941073990;
+        this.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = KryptonFlowStaticInjectionPV4lXh9ffrgFgYPPPd42535495641289.MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798(obj);
+        this.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = XenoGridProcessorProcessorNcBZZjQOb3tKNLhyLo99586204685692.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036(kryptonFlowManagerAliasFCyrMZa8bxQAIpB4UT13653125962317);
+        this.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = j;
+    }
+}

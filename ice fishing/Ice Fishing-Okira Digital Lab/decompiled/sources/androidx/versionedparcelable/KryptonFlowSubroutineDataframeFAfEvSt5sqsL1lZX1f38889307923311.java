@@ -1,0 +1,14 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface KryptonFlowSubroutineDataframeFAfEvSt5sqsL1lZX1f38889307923311 extends JadeCircuitResourceValidationAVt47hTUQWsszZEf2t61060163808152 {
+    default void ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(DeltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014 deltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014) {
+    }
+
+    default void LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(DeltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014 deltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014) {
+    }
+
+    default void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(DeltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014 deltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014) {
+    }
+}

@@ -1,0 +1,83 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public abstract class XenoGridTranspilerOverridingPiVKtGd8bMxMy2TH9j25177803030709 {
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 GoldenVectorTokenTranspilerLl4tongY1X2lje9BiG49744242518178;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 LunarNodeAsyncCompressionXhW6Mr3UFps5CRaeph11269602575390;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 LunarNodeSerializationAsyncGqWKwJIpkuU32gfKfa39621176469764;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 PhotonFrameRuntimeKeyValueRxsctdJg5CGmXPHjuh15556138883942;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 RapidLogicStorageAnnotationHOiHqBJG1x2ry2gvMq67606915343598;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+    public static final ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127 UltraBufferRepositoryHandlerYQBOEcfJ7PEfKEXa2P32463876231503;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 WhiteFieldUnificationOverridingEBdwjF0noilpOVdrsu81945136372121;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+    public static final RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050 ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111;
+
+    static {
+        int i = 11;
+        int i2 = 4;
+        new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(11), new TitanCloudAsyncProxyPEMV3JKPvjZfSRvKkh63833371754750(28));
+        int i3 = 10;
+        ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(18), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i3));
+        int i4 = 0;
+        AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i4), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(22));
+        int i5 = 7;
+        ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i5), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(24));
+        int i6 = 9;
+        RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i6), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(25));
+        LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(16), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i5));
+        YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(27), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(18));
+        int i7 = 8;
+        TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i7), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(26));
+        BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i3), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(27));
+        UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i), new TitanCloudAsyncProxyPEMV3JKPvjZfSRvKkh63833371754750(27));
+        NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(12), new TitanCloudAsyncProxyPEMV3JKPvjZfSRvKkh63833371754750(29));
+        ObsidianEngineArrayExceptionQfzuWPsbR7V1emEwQB68147360471050 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(13), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i4));
+        ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(14), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(1));
+        ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(15), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(2));
+        CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(17), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(3));
+        new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(19), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i2));
+        EmeraldStackInterfaceRequestBY5AOpJzA3NBvb5ccp93821256879111 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(20), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(5));
+        PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(AxiomCoreTemplatingStateFVRin6YVERtMDS5hbu98826662968475.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, XenoGridForeachSessionNygsxDUGI36Kp9f4Hq97217265380126.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867);
+        CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(21), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(6));
+        SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(22), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i7));
+        RapidLogicStorageAnnotationHOiHqBJG1x2ry2gvMq67606915343598 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(23), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i6));
+        XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(24), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(i));
+        UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(25), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(12));
+        PhotonFrameRuntimeKeyValueRxsctdJg5CGmXPHjuh15556138883942 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(26), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(13));
+        CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(28), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(14));
+        LunarNodeSerializationAsyncGqWKwJIpkuU32gfKfa39621176469764 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new AxiomCoreAliasOperatorXmA9queRSoTfhmGE7Q58494720271236(29), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(15));
+        LunarNodeAsyncCompressionXhW6Mr3UFps5CRaeph11269602575390 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(1), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(16));
+        KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(2), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(17));
+        WhiteFieldUnificationOverridingEBdwjF0noilpOVdrsu81945136372121 = new RapidLogicContainerRegistryGCNadTX0MU1bK7i1kJ74237922128050(4, new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(3), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(19));
+        MysticCacheParserHashmapNCNANojYkqCJuUmK2O16057626810798 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(i2), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(20));
+        GoldenVectorTokenTranspilerLl4tongY1X2lje9BiG49744242518178 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(5), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(21));
+        UltraBufferRepositoryHandlerYQBOEcfJ7PEfKEXa2P32463876231503 = new ObsidianEngineServiceObjectJGwsyVfWhN0rr2x71g26733527710127(new LunarNodeShimDispatcherAfPrLPxzRErMKZBD3x98982314431846(6), new CrimsonRouteChannelBuilderB1sX0SYFGY55OJlu1M38117688077800(23));
+    }
+
+    public static final Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(Object obj, XenoGridBinaryTranspilerBt6xnBav5GJsAcick624488329641860 xenoGridBinaryTranspilerBt6xnBav5GJsAcick624488329641860, AxiomCoreConnectorTransportBW6q9xkU9TuzvVxceh77223599786706 axiomCoreConnectorTransportBW6q9xkU9TuzvVxceh77223599786706) {
+        Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB375741376928002;
+        return (obj == null || (ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB375741376928002 = xenoGridBinaryTranspilerBt6xnBav5GJsAcick624488329641860.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(axiomCoreConnectorTransportBW6q9xkU9TuzvVxceh77223599786706, obj)) == null) ? Boolean.FALSE : ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB375741376928002;
+    }
+}

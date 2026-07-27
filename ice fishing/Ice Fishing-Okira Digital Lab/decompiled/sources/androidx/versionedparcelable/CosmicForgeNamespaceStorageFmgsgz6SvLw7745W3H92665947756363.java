@@ -1,0 +1,7 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface CosmicForgeNamespaceStorageFmgsgz6SvLw7745W3H92665947756363 {
+    Object ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(MysticCacheBuilderLoaderOl3VeytxOTd8uCUSFE30319190214924 mysticCacheBuilderLoaderOl3VeytxOTd8uCUSFE30319190214924, DragonRouteSchedulerLibraryOZm4eqRQ42kx8w1WSm99328934700265 dragonRouteSchedulerLibraryOZm4eqRQ42kx8w1WSm99328934700265);
+}

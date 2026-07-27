@@ -1,0 +1,23 @@
+package androidx.versionedparcelable;
+
+import java.util.concurrent.CancellationException;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface XenoGridChannelImmutableSVMgzqCT1tixwfqDGX39021956810978 extends KryptonFlowStateStaticAdx0wRot0T8yPlG6kU35044772919246 {
+    DragonRouteExecutorShimAIKZ3b0pcrxvGSzWm191655718865706 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(HeliosRuntimeDecoderSyntaxH1a6vFuVKchHkTf7r997883197317993 heliosRuntimeDecoderSyntaxH1a6vFuVKchHkTf7r997883197317993);
+
+    boolean AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365();
+
+    Object BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(MysticCacheNamespaceAnnotationMKDWKqbLTM3IrVfk0Y57523902441665 mysticCacheNamespaceAnnotationMKDWKqbLTM3IrVfk0Y57523902441665);
+
+    CancellationException CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170();
+
+    PhotonFrameEncryptionBootstrapVc3TMC7O2k3VbHImZq68709810142411 CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983(DragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865 dragonRouteMultithreadingControllerJZnCtXJgzUmpVbAfL848868216870865);
+
+    void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(CancellationException cancellationException);
+
+    PhotonFrameEncryptionBootstrapVc3TMC7O2k3VbHImZq68709810142411 UltraBufferFunctionRuntimeRG2tUFUKPrWlc8CAHo98803165999541(boolean z, boolean z2, EmeraldStackResourceAbstractionUuYOmyF8shg5R5J3dm59059295741350 emeraldStackResourceAbstractionUuYOmyF8shg5R5J3dm59059295741350);
+
+    boolean start();
+}

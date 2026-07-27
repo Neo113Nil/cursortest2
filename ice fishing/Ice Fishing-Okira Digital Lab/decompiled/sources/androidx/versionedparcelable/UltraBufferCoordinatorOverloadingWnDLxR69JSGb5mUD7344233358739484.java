@@ -1,0 +1,92 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public final class UltraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484 extends KryptonFlowGatewayMonitorHjHsJkIJ6JD44n8mZQ69357159486191 {
+    @Override // androidx.versionedparcelable.KryptonFlowGatewayMonitorHjHsJkIJ6JD44n8mZQ69357159486191
+    public final void HeliosRuntimeForeachContextQOjsKhNEdc06rYZqTE45221891760803() {
+        FrostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.ZenithPathConstructorPrefixQEI28Ir4W3yzE2EuDo23499830707914.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927;
+        frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.getClass();
+        frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.ArcticByteIteratorEncryptionTdU5ixOhuGHV28rZqJ77676505692041();
+    }
+
+    @Override // androidx.versionedparcelable.FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777
+    public final KryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804 LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(long j) {
+        GoldenVectorBootstrapTokenJNQ3AneRNCi6XvgcKj43332915784329(j);
+        SolarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598 solarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+        GoldenVectorComponentContextTRUkXGjgx9ss0j2d4f91910937845310 KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216 = solarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216();
+        Object[] objArr = KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+        int i = KryptonFlowJSONControllerMMV4nnkiUvsQudoSQI12761857557216.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+        for (int i2 = 0; i2 < i; i2++) {
+            FrostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 = ((PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870) objArr[i2]).ZenithPathConstructorPrefixQEI28Ir4W3yzE2EuDo23499830707914.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927;
+            frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.getClass();
+            frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.ObsidianEngineTokenDecoderIG41scEIZAujyeJD0i27475043832834 = UltraBufferRuntimeArrayHa8JRjnDMndiwwcTsy51412614099225.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170;
+        }
+        PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 = solarMeshKeyValueTransportHsJgqzaGaOYjqC6uE889864183596598.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571;
+        KryptonFlowGatewayMonitorHjHsJkIJ6JD44n8mZQ69357159486191.ZenithPathAsyncImmutableUytrJVc68tJnrIgopv32090368554878(this, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.WhiteFieldUnificationOverridingEBdwjF0noilpOVdrsu81945136372121.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(this, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(), j));
+        return this;
+    }
+
+    @Override // androidx.versionedparcelable.XenoGridListenerTranspilerK71Zztj9zIj39Bq9zu96184493756760
+    public final int PhotonFrameRouterExceptionQjAvXXEXJ8u2ZI6OgX41663540814107(JadeCircuitOverridingPipelineHPMNpHNsrgISrg3Hhu14151784701820 jadeCircuitOverridingPipelineHPMNpHNsrgISrg3Hhu14151784701820) {
+        FrostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.ZenithPathConstructorPrefixQEI28Ir4W3yzE2EuDo23499830707914.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927;
+        frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.getClass();
+        TitanCloudResponseObserverPZMkALv0g2ss2UlgrX15817495775573 titanCloudResponseObserverPZMkALv0g2ss2UlgrX15817495775573 = frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339;
+        IronMatrixAliasLoaderAdXgYFceVvTecj6Vf467711711381017 ironMatrixAliasLoaderAdXgYFceVvTecj6Vf467711711381017 = titanCloudResponseObserverPZMkALv0g2ss2UlgrX15817495775573.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867;
+        NovaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382 novaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382 = frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195;
+        if (ironMatrixAliasLoaderAdXgYFceVvTecj6Vf467711711381017 == IronMatrixAliasLoaderAdXgYFceVvTecj6Vf467711711381017.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119) {
+            novaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867 = true;
+            if (novaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382.AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365) {
+                titanCloudResponseObserverPZMkALv0g2ss2UlgrX15817495775573.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170 = true;
+                titanCloudResponseObserverPZMkALv0g2ss2UlgrX15817495775573.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333 = true;
+            }
+        } else {
+            novaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119 = true;
+        }
+        UltraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484 ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484 = frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036().VertexLinkProviderDependencyKKfth2vVCV2iqzAPu071258294892353;
+        if (ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484 != null) {
+            ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 = true;
+        }
+        frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.WhiteFieldUnificationOverridingEBdwjF0noilpOVdrsu81945136372121();
+        UltraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD7344233358739484 ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD73442333587394842 = frostBridgeAdapterProviderXAAUEWgXtlL6GFJbNb65025680724087.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036().VertexLinkProviderDependencyKKfth2vVCV2iqzAPu071258294892353;
+        if (ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD73442333587394842 != null) {
+            ultraBufferCoordinatorOverloadingWnDLxR69JSGb5mUD73442333587394842.CosmicForgeLambdaPrimitiveYEpIvDzOQ3Qs7wr2vn11323896047170 = false;
+        }
+        Integer num = (Integer) novaLayerObserverInjectionWQqG0ssNXLlK2gSE8C10814016376382.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333.get(jadeCircuitOverridingPipelineHPMNpHNsrgISrg3Hhu14151784701820);
+        int intValue = num != null ? num.intValue() : Integer.MIN_VALUE;
+        this.CosmicForgeResolverDataframeXWDcbZzy0pzi2voCnW56344202290983.TitanCloudBinaryTreePayloadZY1E16F4U4Ga1z3HTz13447927155333(intValue, jadeCircuitOverridingPipelineHPMNpHNsrgISrg3Hhu14151784701820);
+        return intValue;
+    }
+
+    @Override // androidx.versionedparcelable.FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777
+    public final int VertexLinkConcurrencyStaticXTUmw59Mhm3MI1tqli38584037615936(int i) {
+        YellowLoopResourceWildcardKo7bCI6FbmFR8NbZLA16849417760412 XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195();
+        GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841 CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927();
+        PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 = (PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870) XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        return CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathListenerVariableGAIJqSOvgAbAzPQzej97019734282160.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(), i);
+    }
+
+    @Override // androidx.versionedparcelable.FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777
+    public final int VertexLinkProviderDependencyKKfth2vVCV2iqzAPu071258294892353(int i) {
+        YellowLoopResourceWildcardKo7bCI6FbmFR8NbZLA16849417760412 XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195();
+        GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841 CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927();
+        PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 = (PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870) XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        return CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathListenerVariableGAIJqSOvgAbAzPQzej97019734282160.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(), i);
+    }
+
+    @Override // androidx.versionedparcelable.FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777
+    public final int YellowLoopEncoderRouterINqff2SYTbtqZyuhu243435970216181(int i) {
+        YellowLoopResourceWildcardKo7bCI6FbmFR8NbZLA16849417760412 XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195();
+        GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841 CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927();
+        PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 = (PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870) XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        return CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927.ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathListenerVariableGAIJqSOvgAbAzPQzej97019734282160.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(), i);
+    }
+
+    @Override // androidx.versionedparcelable.FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777
+    public final int YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(int i) {
+        YellowLoopResourceWildcardKo7bCI6FbmFR8NbZLA16849417760412 XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195 = this.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.SolarMeshComponentDependencyAJmUjPhyXkQUviGZT247902093054571.XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195();
+        GoldenVectorResponseSemaphoreWzVedXtGkniJ4xYHFb85602063020841 CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927 = XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927();
+        PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870 = (PhotonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870) XenoGridVectorHashmapRiVZttryRmb3kjjndT78819484033195.LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119;
+        return CosmicForgeBinaryTreeBinaryU8A2vaX9upfIaxNx3r99356828111927.YellowLoopLoaderNormalizationXExSefUEDQMYB80fAh96133914790170(photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathListenerVariableGAIJqSOvgAbAzPQzej97019734282160.RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867, photonFrameGatewayRegistryFHftqQUS8T03y9qWeo72112553481870.ZenithPathAsyncProxyYsuqZe7hEIApTFZo9S80308228701111(), i);
+    }
+}

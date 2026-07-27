@@ -1,0 +1,15 @@
+package androidx.versionedparcelable;
+
+/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
+/* loaded from: classes.dex */
+public interface JadeCircuitUnificationKeyValueP0HCYNnBGhIMp6yKWc93816026078917 {
+    int AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(KryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804 kryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804);
+
+    int BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818(KryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804 kryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804);
+
+    long LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(int i, int i2, int i3, boolean z);
+
+    CosmicForgeFilterMutexXuulnyQgylGzinGUJ544225966544934 NovaLayerAlgorithmBinaryTreeGxb6K7UbuUZYJfSwmB11271590397480(KryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804[] kryptonFlowReflectionDelegateIDQ3uZq8cmHcm2oepw19555331519804Arr, AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, int[] iArr, int i, int i2);
+
+    void RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(int i, AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, int[] iArr, int[] iArr2);
+}
