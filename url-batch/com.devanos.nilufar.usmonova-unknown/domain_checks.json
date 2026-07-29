@@ -1,0 +1,50 @@
+{
+  "all_custom_domains": [
+    "ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app"
+  ],
+  "checked": [
+    {
+      "domain": "ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app",
+      "virustotal": {
+        "ok": false,
+        "error": "домен не найден в VirusTotal"
+      },
+      "redirects_to": "нет (без редиректа)",
+      "redirect_chain": [
+        "https://ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app/"
+      ],
+      "page_output": "Firebase error. Please ensure that you have the URL of your Firebase Realtime Database instance configured correctly.",
+      "parked_at": "нет",
+      "final_url": "https://ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app/",
+      "http_status": 404,
+      "table_rows": [
+        {
+          "param": "Домен",
+          "value": "ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app"
+        },
+        {
+          "param": "VirusTotal",
+          "value": "ошибка: домен не найден в VirusTotal"
+        },
+        {
+          "param": "Куда редиректит",
+          "value": "нет (без редиректа)"
+        },
+        {
+          "param": "Цепочка редиректов",
+          "value": "https://ranoaudio-mix-default-rtdb.europe-west1.firebasedatabase.app/"
+        },
+        {
+          "param": "Что выводит (кратко)",
+          "value": "Firebase error. Please ensure that you have the URL of your Firebase Realtime Database instance configured correctly."
+        },
+        {
+          "param": "Где припаркован",
+          "value": "нет"
+        }
+      ]
+    }
+  ],
+  "count": 1,
+  "vt_configured": true
+}

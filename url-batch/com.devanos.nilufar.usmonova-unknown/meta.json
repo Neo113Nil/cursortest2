@@ -1,0 +1,37 @@
+{
+  "app_id": "com.devanos.nilufar.usmonova",
+  "title": "com.devanos.nilufar.usmonova",
+  "developer": "unknown",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.devanos.nilufar.usmonova",
+  "score": null,
+  "released": "",
+  "updated": "",
+  "version": "",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "com.devanos.nilufar.usmonova-unknown",
+  "path": "url-batch/com.devanos.nilufar.usmonova-unknown",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.devanos.nilufar.usmonova.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/com.devanos.nilufar.usmonova-unknown",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.devanos.nilufar.usmonova...\ncom.devanos.nilufar.usmonova downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.devanos.nilufar.usmonova...\ncom.devanos.nilufar.usmonova downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "_store_enriched": true
+}

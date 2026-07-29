@@ -1,0 +1,363 @@
+package o;
+
+import com.google.firebase.messaging.Constants;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+
+/* renamed from: o.vD, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C2076vD extends AbstractC1309jb {
+    public final int n;
+
+    /* renamed from: o, reason: collision with root package name */
+    public int f232o;
+    public C0244Jh p;
+    public C1968tb q;
+    public ArrayList r;
+    public final ArrayList s;
+    public final OT t;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public C2076vD(C1450lk c1450lk, C0827cE c0827cE, OT ot) {
+        super(ot, c1450lk, c0827cE, IS.e);
+        if (c0827cE == null) {
+            F(2);
+            throw null;
+        }
+        if (ot == null) {
+            F(4);
+            throw null;
+        }
+        this.s = new ArrayList();
+        this.t = ot;
+        this.n = 2;
+    }
+
+    public static /* synthetic */ void F(int i) {
+        String str;
+        int i2;
+        switch (i) {
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 15:
+            case 17:
+            case 18:
+            case 19:
+                str = "@NotNull method %s.%s must not return null";
+                break;
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 9:
+            case 12:
+            case 14:
+            case 16:
+            default:
+                str = "Argument for @NotNull parameter '%s' of %s.%s must not be null";
+                break;
+        }
+        switch (i) {
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 15:
+            case 17:
+            case 18:
+            case 19:
+                i2 = 2;
+                break;
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 9:
+            case 12:
+            case 14:
+            case 16:
+            default:
+                i2 = 3;
+                break;
+        }
+        Object[] objArr = new Object[i2];
+        switch (i) {
+            case 1:
+                objArr[0] = "kind";
+                break;
+            case 2:
+                objArr[0] = "name";
+                break;
+            case 3:
+                objArr[0] = Constants.ScionAnalytics.PARAM_SOURCE;
+                break;
+            case 4:
+                objArr[0] = "storageManager";
+                break;
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 15:
+            case 17:
+            case 18:
+            case 19:
+                objArr[0] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/MutableClassDescriptor";
+                break;
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+                objArr[0] = "modality";
+                break;
+            case 9:
+                objArr[0] = "visibility";
+                break;
+            case 12:
+                objArr[0] = "supertype";
+                break;
+            case 14:
+                objArr[0] = "typeParameters";
+                break;
+            case 16:
+                objArr[0] = "kotlinTypeRefiner";
+                break;
+            default:
+                objArr[0] = "containingDeclaration";
+                break;
+        }
+        switch (i) {
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+                objArr[1] = "getAnnotations";
+                break;
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 9:
+            case 12:
+            case 14:
+            case 16:
+            default:
+                objArr[1] = "kotlin/reflect/jvm/internal/impl/descriptors/impl/MutableClassDescriptor";
+                break;
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+                objArr[1] = "getModality";
+                break;
+            case 8:
+                objArr[1] = "getKind";
+                break;
+            case 10:
+                objArr[1] = "getVisibility";
+                break;
+            case 11:
+                objArr[1] = "getTypeConstructor";
+                break;
+            case 13:
+                objArr[1] = "getConstructors";
+                break;
+            case 15:
+                objArr[1] = "getDeclaredTypeParameters";
+                break;
+            case 17:
+                objArr[1] = "getUnsubstitutedMemberScope";
+                break;
+            case 18:
+                objArr[1] = "getStaticScope";
+                break;
+            case 19:
+                objArr[1] = "getSealedSubclasses";
+                break;
+        }
+        switch (i) {
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 15:
+            case 17:
+            case 18:
+            case 19:
+                break;
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+                objArr[2] = "setModality";
+                break;
+            case 9:
+                objArr[2] = "setVisibility";
+                break;
+            case 12:
+                objArr[2] = "addSupertype";
+                break;
+            case 14:
+                objArr[2] = "setTypeParameterDescriptors";
+                break;
+            case 16:
+                objArr[2] = "getUnsubstitutedMemberScope";
+                break;
+            default:
+                objArr[2] = "<init>";
+                break;
+        }
+        String format = String.format(str, objArr);
+        switch (i) {
+            case C1161hJ.STRING_FIELD_NUMBER /* 5 */:
+            case C1161hJ.DOUBLE_FIELD_NUMBER /* 7 */:
+            case 8:
+            case 10:
+            case 11:
+            case 13:
+            case 15:
+            case 17:
+            case 18:
+            case 19:
+                throw new IllegalStateException(format);
+            case C1161hJ.STRING_SET_FIELD_NUMBER /* 6 */:
+            case 9:
+            case 12:
+            case 14:
+            case 16:
+            default:
+                throw new IllegalArgumentException(format);
+        }
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final int B() {
+        int i = this.n;
+        if (i != 0) {
+            return i;
+        }
+        F(8);
+        throw null;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final boolean D() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final Collection E() {
+        Set set = Collections.EMPTY_SET;
+        if (set != null) {
+            return set;
+        }
+        F(13);
+        throw null;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final boolean K() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final Collection U() {
+        List list = Collections.EMPTY_LIST;
+        if (list != null) {
+            return list;
+        }
+        F(19);
+        throw null;
+    }
+
+    @Override // o.OB
+    public final boolean X() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib, o.OB
+    public final int g() {
+        int i = this.f232o;
+        if (i != 0) {
+            return i;
+        }
+        F(7);
+        throw null;
+    }
+
+    @Override // o.W3
+    public final InterfaceC1738q4 getAnnotations() {
+        return C0460Rq.t;
+    }
+
+    @Override // o.InterfaceC1245ib, o.InterfaceC1446lg, o.OB
+    public final C0244Jh getVisibility() {
+        C0244Jh c0244Jh = this.p;
+        if (c0244Jh != null) {
+            return c0244Jh;
+        }
+        F(10);
+        throw null;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final LY h0() {
+        return null;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final C0981eb i0() {
+        return null;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final boolean j() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final WB j0() {
+        return VB.b;
+    }
+
+    @Override // o.InterfaceC0004Ab
+    public final boolean k() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final boolean m() {
+        return false;
+    }
+
+    @Override // o.InterfaceC1245ib, o.InterfaceC0004Ab
+    public final List p() {
+        ArrayList arrayList = this.r;
+        if (arrayList != null) {
+            return arrayList;
+        }
+        F(15);
+        throw null;
+    }
+
+    @Override // o.OB
+    public final boolean p0() {
+        return false;
+    }
+
+    public final String toString() {
+        return AbstractC1184hg.F0(this);
+    }
+
+    @Override // o.YC
+    public final WB u(C1398ky c1398ky) {
+        return VB.b;
+    }
+
+    @Override // o.InterfaceC1245ib
+    public final boolean y0() {
+        return false;
+    }
+
+    @Override // o.InterfaceC2364zb
+    public final SW z() {
+        C1968tb c1968tb = this.q;
+        if (c1968tb != null) {
+            return c1968tb;
+        }
+        F(11);
+        throw null;
+    }
+}

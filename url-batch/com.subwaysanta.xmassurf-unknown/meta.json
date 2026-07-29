@@ -32,5 +32,7 @@
   ],
   "stdout": "Downloading com.subwaysanta.xmassurf...\ncom.subwaysanta.xmassurf downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "_store_enriched": true,
+  "cloaking": "да"
 }

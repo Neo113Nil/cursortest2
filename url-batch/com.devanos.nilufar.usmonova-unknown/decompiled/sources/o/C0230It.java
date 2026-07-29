@@ -1,0 +1,29 @@
+package o;
+
+import java.io.IOException;
+
+/* renamed from: o.It, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public class C0230It extends IOException {
+    public boolean h;
+
+    public static C0230It a() {
+        return new C0230It("Protocol message had invalid UTF-8.");
+    }
+
+    public static C0178Gt b() {
+        return new C0178Gt("Protocol message tag had invalid wire type.");
+    }
+
+    public static C0230It c() {
+        return new C0230It("CodedInputStream encountered a malformed varint.");
+    }
+
+    public static C0230It d() {
+        return new C0230It("CodedInputStream encountered an embedded string or message which claimed to have negative size.");
+    }
+
+    public static C0230It e() {
+        return new C0230It("While parsing a protocol message, the input ended unexpectedly in the middle of a field.  This could mean either that the input has been truncated or that an embedded message misreported its own length.");
+    }
+}
