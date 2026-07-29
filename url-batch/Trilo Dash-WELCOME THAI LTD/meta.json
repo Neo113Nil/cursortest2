@@ -32,5 +32,6 @@
   ],
   "stdout": "Downloading com.techno_world.pencil.sketch.camera...\ncom.techno_world.pencil.sketch.camera downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет"
 }
