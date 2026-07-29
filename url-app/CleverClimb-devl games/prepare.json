@@ -1,0 +1,35 @@
+{
+  "ok": true,
+  "apks": [
+    "com.dancingbogo.skyrolline.apk"
+  ],
+  "base_apk": "com.dancingbogo.skyrolline.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 7006 (0%)\nINFO  - progress: 742 of 7006 (10%)\nINFO  - progress: 1372 of 7006 (19%)\nINFO  - progress: 1986 of 7006 (28%)\nINFO  - progress: 2134 of 7006 (30%)\nINFO  - progress: 2142 of 7006 (30%)\nINFO  - progress: 2168 of 7006 (30%)\nINFO  - progress: 2231 of 7006 (31%)\nINFO  - progress: 2599 of 7006 (37%)\nINFO  - progress: 2729 of 7006 (38%)\nINFO  - progress: 2788 of 7006 (39%)\nINFO  - progress: 2865 of 7006 (40%)\nINFO  - progress: 3057 of 7006 (43%)\nINFO  - progress: 3290 of 7006 (46%)\nINFO  - progress: 3314 of 7006 (47%)\nINFO  - progress: 3351 of 7006 (47%)\nINFO  - progress: 3394 of 7006 (48%)\nINFO  - progress: 3446 of 7006 (49%)\nINFO  - progress: 3484 of 7006 (49%)\nINFO  - progress: 3534 of 7006 (50%)\nINFO  - progress: 3552 of 7006 (50%)\nINFO  - progress: 3625 of 7006 (51%)\nINFO  - progress: 3658 of 7006 (52%)\nINFO  - progress: 3700 of 7006 (52%)\nINFO  - progress: 3718 of 7006 (53%)\nINFO  - progress: 3766 of 7006 (53%)\nINFO  - progress: 3805 of 7006 (54%)\nINFO  - progress: 3918 of 7006 (55%)\nINFO  - progress: 4249 of 7006 (60%)\nINFO  - progress: 4281 of 7006 (61%)\nINFO  - progress: 4324 of 7006 (61%)\nINFO  - progress: 4339 of 7006 (61%)\nINFO  - progress: 4355 of 7006 (62%)\nINFO  - progress: 4450 of 7006 (63%)\nINFO  - progress: 4597 of 7006 (65%)\nINFO  - progress: 4677 of 7006 (66%)\nINFO  - progress: 4696 of 7006 (67%)\nINFO  - progress: 4708 of 7006 (67%)\nINFO  - progress: 4745 of 7006 (67%)\nINFO  - progress: 4772 of 7006 (68%)\nINFO  - progress: 4795 of 7006 (68%)\nINFO  - progress: 4826 of 7006 (68%)\nINFO  - progress: 4860 of 7006 (69%)\nINFO  - progress: 4888 of 7006 (69%)\nINFO  - progress: 4912 of 7006 (70%)\nINFO  - progress: 4950 of 7006 (70%)\nINFO  - progress: 5053 of 7006 (72%)\nINFO  - progress: 5336 of 7006 (76%)\nINFO  - progress: 5661 of 7006 (80%)\nINFO  - progress: 5810 of 7006 (82%)\nINFO  - progress: 5838 of 7006 (83%)\nINFO  - progress: 5853 of 7006 (83%)\nINFO  - progress: 5869 of 7006 (83%)\nINFO  - progress: 5881 of 7006 (83%)\nINFO  - progress: 5896 of 7006 (84%)\nINFO  - progress: 5907 of 7006 (84%)\nINFO  - progress: 5925 of 7006 (84%)\nINFO  - progress: 5936 of 7006 (84%)\nINFO  - progress: 5954 of 7006 (84%)\nINFO  - progress: 5974 of 7006 (85%)\nINFO  - progress: 5984 of 7006 (85%)\nINFO  - progress: 6009 of 7006 (85%)\nINFO  - progress: 6310 of 7006 (90%)\nINFO  - progress: 6758 of 7006 (96%)\n                                                             \nERROR - finished with errors, count: 9\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-app/CleverClimb-devl games/decompiled",
+    "skipped": false,
+    "base_apk": "com.dancingbogo.skyrolline.apk"
+  },
+  "analysis_files": [
+    "com.dancingbogo.skyrolline.apk",
+    "apk/com.dancingbogo.skyrolline.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/b/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/c/",
+    "decompiled/sources/cmplay/",
+    "decompiled/sources/com/",
+    "decompiled/sources/d/",
+    "decompiled/sources/org/",
+    "decompiled/sources/umeng/"
+  ]
+}
