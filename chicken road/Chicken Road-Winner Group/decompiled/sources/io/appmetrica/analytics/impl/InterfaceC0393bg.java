@@ -1,7 +1,0 @@
-package io.appmetrica.analytics.impl;
-
-/* renamed from: io.appmetrica.analytics.impl.bg, reason: case insensitive filesystem */
-/* loaded from: classes.dex */
-public interface InterfaceC0393bg {
-    void a();
-}
