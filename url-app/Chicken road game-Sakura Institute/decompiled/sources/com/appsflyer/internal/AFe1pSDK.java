@@ -1,9 +1,0 @@
-package com.appsflyer.internal;
-
-/* loaded from: classes.dex */
-public final class AFe1pSDK implements AFe1iSDK<String> {
-    @Override // com.appsflyer.internal.AFe1iSDK
-    public final /* bridge */ /* synthetic */ String AFInAppEventType(String str) {
-        return str;
-    }
-}
