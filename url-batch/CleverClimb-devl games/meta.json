@@ -32,5 +32,6 @@
   ],
   "stdout": "Downloading com.dancingbogo.skyrolline...\ncom.dancingbogo.skyrolline downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет"
 }
