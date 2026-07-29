@@ -50,5 +50,6 @@
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
   "version": "Varies with device",
-  "updated": "Jun 26, 2026"
+  "updated": "Jun 26, 2026",
+  "cloaking": "да"
 }

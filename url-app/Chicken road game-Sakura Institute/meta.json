@@ -32,5 +32,6 @@
   ],
   "stdout": "Downloading com.chicken.road.kedro.laqer...\ncom.chicken.road.kedro.laqer downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да"
 }
