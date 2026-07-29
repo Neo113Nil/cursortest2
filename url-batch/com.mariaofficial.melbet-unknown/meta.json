@@ -1,0 +1,37 @@
+{
+  "app_id": "com.mariaofficial.melbet",
+  "title": "com.mariaofficial.melbet",
+  "developer": "unknown",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.mariaofficial.melbet",
+  "score": null,
+  "released": "",
+  "updated": "",
+  "version": "",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "com.mariaofficial.melbet-unknown",
+  "path": "url-batch/com.mariaofficial.melbet-unknown",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.mariaofficial.melbet.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/com.mariaofficial.melbet-unknown",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.mariaofficial.melbet...\ncom.mariaofficial.melbet downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.mariaofficial.melbet...\ncom.mariaofficial.melbet downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0,
+  "_store_enriched": true
+}
