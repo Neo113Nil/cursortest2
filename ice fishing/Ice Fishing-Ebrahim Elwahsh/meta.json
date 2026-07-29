@@ -1,7 +1,7 @@
 {
   "app_id": "com.icefishing.icefishingliveapp",
   "title": "Ice Fishing",
-  "developer": "Ebrahim Elwahsh",
+  "developer": "SYSTEMS COMPANY",
   "score": null,
   "icon": "https://play-lh.googleusercontent.com/nFoTk16NppZk6V683CN8W6JxehlUl2O8FS8BX4Nf5gYdeMlEqC_NrXIjdMCeEWWRGIkqe9IIBMhquikrzR69yj8",
   "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingliveapp&hl=en&gl=us",
@@ -29,5 +29,6 @@
   "exit_code": 0,
   "version": "Varies with device",
   "updated": "Jun 15, 2026",
-  "cloaking": "да"
+  "cloaking": "да",
+  "_store_enriched": true
 }

@@ -29,5 +29,6 @@
   "exit_code": 0,
   "version": "Varies with device",
   "updated": "Jul 16, 2026",
-  "cloaking": "да"
+  "cloaking": "да",
+  "_store_enriched": true
 }
