@@ -1,0 +1,6 @@
+{
+  "update_type": 1002,
+  "report_url":"https://ms.cmcm.com/app",
+  "receiver_on": ["*"],
+  "receiver_off": ["running_with_duration", "bluetooth" , "location"]
+}

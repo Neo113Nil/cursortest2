@@ -1,0 +1,39 @@
+{
+ "poslist": [{
+  "adtype": 1000,
+  "info": [{
+   "name": "ABI",
+   "parameter": "ca-app-pub-6693792149034582/8712350007",
+   "weight": 4
+  }, {
+   "name": "abi_h",
+   "parameter": "ca-app-pub-6693792149034582/1629380008",
+   "weight": 7
+  }, {
+   "name": "abi_x",
+   "parameter": "ca-mb-app-pub-7828425564722982/2013100002",
+   "weight": 3
+  }, {
+   "name": "abi_xh",
+   "parameter": "ca-mb-app-pub-7828425564722982/4649370005",
+   "weight": 6
+  }, {
+   "name": "cm",
+   "parameter": "3918297",
+   "weight": 0
+  }, {
+   "name": "fbi_h",
+   "parameter": "116185018000941_412159000533834",
+   "weight": 5
+  }, {
+     "name": "mv",
+     "parameter": "29629;453be707000939dc327bcdd597191d39;30581",
+     "weight": 2
+ },{
+      "name": "ir",
+      "parameter": "RS_Orion_intersitial",
+      "weight": 1
+  }],
+  "placeid": 3918297
+ }]
+}

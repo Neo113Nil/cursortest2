@@ -1,0 +1,65 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.gms.internal.ads.zzbfc;
+import java.io.IOException;
+
+/* loaded from: classes2.dex */
+public abstract class zzbfc<M extends zzbfc<M>> extends zzbfi {
+    protected zzbfe zzebk;
+
+    @Override // com.google.android.gms.internal.ads.zzbfi
+    public /* synthetic */ Object clone() throws CloneNotSupportedException {
+        zzbfc zzbfcVar = (zzbfc) super.clone();
+        zzbfg.zza(this, zzbfcVar);
+        return zzbfcVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbfi
+    public void zza(zzbfa zzbfaVar) throws IOException {
+        if (this.zzebk == null) {
+            return;
+        }
+        for (int i = 0; i < this.zzebk.size(); i++) {
+            this.zzebk.zzdg(i).zza(zzbfaVar);
+        }
+    }
+
+    protected final boolean zza(zzbez zzbezVar, int i) throws IOException {
+        int position = zzbezVar.getPosition();
+        if (!zzbezVar.zzbq(i)) {
+            return false;
+        }
+        int i2 = i >>> 3;
+        zzbfk zzbfkVar = new zzbfk(i, zzbezVar.zzab(position, zzbezVar.getPosition() - position));
+        zzbff zzbffVar = null;
+        if (this.zzebk == null) {
+            this.zzebk = new zzbfe();
+        } else {
+            zzbffVar = this.zzebk.zzdf(i2);
+        }
+        if (zzbffVar == null) {
+            zzbffVar = new zzbff();
+            this.zzebk.zza(i2, zzbffVar);
+        }
+        zzbffVar.zza(zzbfkVar);
+        return true;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbfi
+    /* renamed from: zzago */
+    public final /* synthetic */ zzbfi clone() throws CloneNotSupportedException {
+        return (zzbfc) clone();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbfi
+    protected int zzr() {
+        if (this.zzebk == null) {
+            return 0;
+        }
+        int i = 0;
+        for (int i2 = 0; i2 < this.zzebk.size(); i2++) {
+            i += this.zzebk.zzdg(i2).zzr();
+        }
+        return i;
+    }
+}

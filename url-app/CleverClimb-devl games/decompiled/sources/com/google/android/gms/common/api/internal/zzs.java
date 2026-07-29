@@ -1,0 +1,26 @@
+package com.google.android.gms.common.api.internal;
+
+import java.util.concurrent.locks.Lock;
+
+/* loaded from: classes.dex */
+final class zzs implements Runnable {
+    private final /* synthetic */ zzr zzgc;
+
+    zzs(zzr zzrVar) {
+        this.zzgc = zzrVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        Lock lock;
+        Lock lock2;
+        lock = this.zzgc.zzga;
+        lock.lock();
+        try {
+            this.zzgc.zzaa();
+        } finally {
+            lock2 = this.zzgc.zzga;
+            lock2.unlock();
+        }
+    }
+}

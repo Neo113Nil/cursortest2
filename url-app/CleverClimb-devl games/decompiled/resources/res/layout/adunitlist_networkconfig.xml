@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/card_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CardView.Padding">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:id="@+id/tv_network_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/TextMarginsStandard"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_sdk"
+                android:paddingRight="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SDK"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_network_name"
+                style="@style/TextMarginsStandard"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_adapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adapter"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_sdk"
+                app:layout_constraintStart_toEndOf="@+id/tv_sdk"
+                style="@style/TextPaddingSmall"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_manifest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manifest"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_sdk"
+                app:layout_constraintStart_toEndOf="@+id/tv_adapter"
+                style="@style/TextPaddingSmall"/>
+            <TextView
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tv_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test Result"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tv_sdk"
+                app:layout_constraintStart_toEndOf="@+id/tv_manifest"
+                style="@style/TextPaddingSmall"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
