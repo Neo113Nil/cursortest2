@@ -1,5 +1,0 @@
-package com.youappi.sdk.net.model;
-
-/* loaded from: classes2.dex */
-public class RewardedVideoList extends ProductItem<RewardedVideoItem> {
-}
