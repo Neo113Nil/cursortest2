@@ -1,0 +1,60 @@
+rollingsky_public:5 type:string user_id:string ver:int channel:string pkg_name:string child_channel:string mcc:short mnc:short language_setting:string brand:string model:string country_setting:string osver:string x86:string installtime:int imei:string appflyer_id:string gp_channel:string advertising_id:string uuid:string
+rollingsky_infocera_sactive:83 extra:string
+rollingsky_infocera_active:84 extra:string
+rollingsky_infocera_exception_info:85 err_code:int msg:string
+rollingsky_infocera_activity_info:86 activity_name:string resume_time:int64 pause_time:int64
+rollingsky_infocera_abtest:87 expid:string event:string msg:string
+rollingsky_games_active:104 uptime:int64 network:byte
+rollingsky_games_businessdata:105 uptime:int64 action:byte network:byte
+rollingsky_games_gameshow:107 uptime:int64 network:byte survival_time:int type1:byte firstplay:byte
+rollingsky_neituisdk_app:202 uptime:int64 player_time:string network:byte source:byte action:byte scenes:byte pkgname:string pro_id:int remark:string scene:byte priority:int sdk_version:int
+rollingsky_cloud_magic:201 uptime:int64 player_time:string network:byte magic_ver:string action:byte remark:string error_url:string
+rollingsky_games_levelnum:185 uptime:int64 network:byte level:byte score:byte diamond:byte first100:byte crown:byte session:int64
+rollingsky_games_score:196 uptime:int64 network:byte level1:byte level2:byte level3:byte level4:byte level5:byte level6:byte level7:byte level8:byte level9:byte level10:byte level11:byte level12:byte level13:byte level14:byte level15:byte level16:byte level17:byte level18:byte level19:byte level20:byte level21:byte
+rollingsky_games_diamond:195 uptime:int64 network:byte level1:byte level2:byte level3:byte level4:byte level5:byte level6:byte level7:byte level8:byte level9:byte level10:byte level11:byte level12:byte level13:byte level14:byte level15:byte level16:byte level17:byte level18:byte level19:byte level20:byte level21:byte
+rollingsky_games_complete:113 uptime:int64 network:byte level:byte times:short
+rollingsky_games_ads:224 uptime:int64 network:byte scenes:short action:byte source:int64
+rollingsky_games_neigou:134 uptime:int64 network:byte purchasetime:int64 purchasetoken:string signature:string scenes:short action:byte
+rollingsky_games_chooselevel:116 uptime:int64 network:byte choose:byte
+rollingsky_games_notification:118 uptime:int64 network:byte style0:byte action:byte
+rollingsky_games_gameshow1:119 uptime:int64 network:byte source0:byte
+rollingsky_games_levelshield:182 uptime:int64 network:byte level1:byte level2:byte level3:byte level4:byte level5:byte level6:byte level7:byte level8:byte level9:byte level10:byte level11:byte level12:byte level13:byte level14:byte level15:byte level16:byte level17:byte level18:byte
+rollingsky_games_sheilduse:156 uptime:int64 network:byte sheild_use:byte scenes:byte
+rollingsky_games_sheildown:157 uptime:int64 network:byte sheild_own:byte ticketown:byte actiown:byte ballown:byte
+rollingsky_games_shopenter:132 uptime:int64 network:byte scenes:byte action:byte vipshow:byte
+rollingsky_games_adsource:130 uptime:int64 network:byte scenes:byte source:int64
+rollingsky_games_loadsdcard:135 uptime:int64 network:byte errornum:short errorreason:string
+rollingsky_games_database:136 uptime:int64 network:byte localdata_table:byte localdata_modify:byte unmz:byte storage:byte
+rollingsky_games_checkbuy:137 uptime:int64 network:byte action:byte orderid:string productid:string remark:string
+rollingsky_games_unlock:138 uptime:int64 network:byte level:byte action:byte
+rollingsky_games_result:183 uptime:int64 network:byte scenes:byte action:byte level:byte
+rollingsky_games_update:147 uptime:int64 network:byte level:byte scenes:byte action:byte reason:byte dataver:string
+rollingsky_games_restore:148 uptime:int64 network:byte action:byte dataver:string
+rollingsky_games_levelnum2:149 uptime:int64 network:byte level:byte
+rollingsky_games_prizelevel:153 uptime:int64 network:byte level:byte action:byte
+rollingsky_games_activation:154 uptime:int64 network:byte level:byte action:byte
+rollingsky_games_unlockbonus:161 uptime:int64 network:byte level:byte leftballs:int64 bonusballs:byte
+rollingsky_games_bgmuse:162 uptime:int64 network:byte level:byte action:byte
+rollingsky_games_backupdata:172 uptime:int64 network:byte scenes:byte reason:int64 reason1:string action:byte
+rollingsky_games_crown:194 uptime:int64 network:byte level16:byte level17:byte level18:byte level19:byte level20:byte level21:byte
+rollingsky_games_sharedata:177 uptime:int64 network:byte scenes:byte type1:byte area1:byte action:byte
+rollingsky_games_mailbox:178 uptime:int64 network:byte proid:int64 aciton:byte
+rollingsky_games_levelsource:184 uptime:int64 network:byte level:byte aciton:byte
+rollingsky_games_pops:218 uptime:int64 network:byte popstate:byte action:byte level:byte needs:byte minilevel:int64
+rollingsky_games_levellist:190 uptime:int64 network:byte action:byte level:byte
+rollingsky_games_dayscore:207 uptime:int64 network:byte allscore:int64 alldiamond:int64 allcrown:int64 allkey:int64 allshield:int64 allheart:int64 allcharacter:int64 fragscarab:int64
+rollingsky_games_role:199 level:short role:short source:byte scenes:short action:byte
+rollingsky_games_adtrack:203 uptime:int64 network:byte adtype:byte action:byte errorcode:byte source:int64 scenes:byte
+rollingsky_resourcevalue:204 role:short
+rollingsky_games_activity:205 entrance:short item:short button:short
+rollingsky_games_nativead:206 uptime:int64 network:byte action:byte adrequest:byte errorcode:byte
+rollingsky_games_rolechips:208 uptime:int64 network:byte action:byte scenes:byte ptype:byte
+rollingsky_games_activity1:210 uptime:int64 network:byte scenes:short action:short source:short
+rollingsky_games_gemuse:214 uptime:int64 network:byte prop:short source:short
+rollingsky_games_gemown:213 uptime:int64 network:byte gemowns:short gemuses:short
+rollingsky_games_modelevelnum:215 uptime:int64 network:byte level:byte score:byte diamond:byte crown:byte mode:byte
+rollingsky_games_minilevelnum:217 uptime:int64 network:byte minilevel:int64 score:byte diomand:byte crown:byte session:int64 level:byte
+rollingsky_games_startpage:219 uptime:int64 network:byte minilevel:int64 level:int64 prop:byte action:byte
+rollingsky_games_bunus:220 uptime:int64 network:byte minilevel:int64 level:int64 bonus:byte action:byte
+rollingsky_games_revive:222 uptime:int64 network:byte minilevel:int64 level:int64 action:byte score:byte
+rollingsky_games_weekmatch:223 level:short score:short diomand:byte crown:byte

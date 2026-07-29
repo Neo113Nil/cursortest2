@@ -1,0 +1,36 @@
+{
+  "app_id": "com.dancingbogo.skyrolline",
+  "title": "CleverClimb",
+  "developer": "devl games",
+  "developer_id": "devl+games",
+  "icon": "https://play-lh.googleusercontent.com/krc0neId_dW9sB34z-gQ4F_KeHYowfBRJHLhOypsWfsk5Jp6EbtO82UJMJcm9vKEWK7jOe-iaB3njcl4CQ3ao8Y",
+  "url": "https://play.google.com/store/apps/details?id=com.dancingbogo.skyrolline&hl=en&gl=us",
+  "score": 4.13,
+  "released": "Dec 14, 2020",
+  "updated": "Jul 2, 2026",
+  "version": "Varies with device",
+  "summary": "Keep the ball balanced. Tilt your device.",
+  "keyword": "url-batch",
+  "folder": "CleverClimb-devl games",
+  "path": "url-batch/CleverClimb-devl games",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.dancingbogo.skyrolline.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/CleverClimb-devl games",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.dancingbogo.skyrolline...\ncom.dancingbogo.skyrolline downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.dancingbogo.skyrolline...\ncom.dancingbogo.skyrolline downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

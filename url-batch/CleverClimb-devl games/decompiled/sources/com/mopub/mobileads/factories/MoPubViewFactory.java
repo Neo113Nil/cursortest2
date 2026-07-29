@@ -1,0 +1,24 @@
+package com.mopub.mobileads.factories;
+
+import android.content.Context;
+import com.mopub.common.VisibleForTesting;
+import com.mopub.mobileads.MoPubView;
+
+/* loaded from: classes2.dex */
+public class MoPubViewFactory {
+    protected static MoPubViewFactory instance = new MoPubViewFactory();
+
+    @VisibleForTesting
+    @Deprecated
+    public static void setInstance(MoPubViewFactory moPubViewFactory) {
+        instance = moPubViewFactory;
+    }
+
+    public static MoPubView create(Context context) {
+        return instance.internalCreate(context);
+    }
+
+    protected MoPubView internalCreate(Context context) {
+        return new MoPubView(context);
+    }
+}
