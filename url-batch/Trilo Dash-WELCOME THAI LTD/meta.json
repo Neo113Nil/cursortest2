@@ -1,0 +1,36 @@
+{
+  "app_id": "com.techno_world.pencil.sketch.camera",
+  "title": "Trilo Dash",
+  "developer": "WELCOME THAI LTD",
+  "developer_id": "WELCOME+THAI+LTD",
+  "icon": "https://play-lh.googleusercontent.com/AUSaZj8Uhe1ihVyGr0arq2JQjIbYCoqGqQdhQhhGOF0RrEhO7evKKP72Dv421PGQJyRjlL5s2l6DyaXgf8omZA",
+  "url": "https://play.google.com/store/apps/details?id=com.techno_world.pencil.sketch.camera&hl=en&gl=us",
+  "score": null,
+  "released": "May 27, 2015",
+  "updated": "2026-06-19",
+  "version": "9.8.7",
+  "summary": "Roll the ball on narrow paths, collect cubes, and avoid falling down.",
+  "keyword": "url-batch",
+  "folder": "Trilo Dash-WELCOME THAI LTD",
+  "path": "url-batch/Trilo Dash-WELCOME THAI LTD",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.techno_world.pencil.sketch.camera.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Trilo Dash-WELCOME THAI LTD",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.techno_world.pencil.sketch.camera...\ncom.techno_world.pencil.sketch.camera downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.techno_world.pencil.sketch.camera...\ncom.techno_world.pencil.sketch.camera downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,64 @@
+package com.google.android.gms.ads.internal.util;
+
+import android.app.Activity;
+import android.graphics.Rect;
+import android.text.TextUtils;
+import android.view.DisplayCutout;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowInsets;
+import android.view.WindowManager;
+import com.google.android.gms.internal.ads.zzbhy;
+import java.util.Locale;
+import javax.annotation.ParametersAreNonnullByDefault;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.0.0 */
+@ParametersAreNonnullByDefault
+/* loaded from: classes.dex */
+public class zzx extends zzv {
+    static final /* synthetic */ WindowInsets zzj(Activity activity, View view, WindowInsets windowInsets) {
+        if (com.google.android.gms.ads.internal.zzt.zzo().zzh().zzm() == null) {
+            DisplayCutout displayCutout = windowInsets.getDisplayCutout();
+            String str = "";
+            if (displayCutout != null) {
+                zzg zzh = com.google.android.gms.ads.internal.zzt.zzo().zzh();
+                for (Rect rect : displayCutout.getBoundingRects()) {
+                    String format = String.format(Locale.US, "%d,%d,%d,%d", Integer.valueOf(rect.left), Integer.valueOf(rect.top), Integer.valueOf(rect.right), Integer.valueOf(rect.bottom));
+                    if (!TextUtils.isEmpty(str)) {
+                        str = str.concat("|");
+                    }
+                    str = str.concat(String.valueOf(format));
+                }
+                zzh.zzC(str);
+            } else {
+                com.google.android.gms.ads.internal.zzt.zzo().zzh().zzC("");
+            }
+        }
+        zzm(false, activity);
+        return view.onApplyWindowInsets(windowInsets);
+    }
+
+    private static final void zzm(boolean z, Activity activity) {
+        Window window = activity.getWindow();
+        WindowManager.LayoutParams attributes = window.getAttributes();
+        int i = attributes.layoutInDisplayCutoutMode;
+        int i2 = true != z ? 2 : 1;
+        if (i2 != i) {
+            attributes.layoutInDisplayCutoutMode = i2;
+            window.setAttributes(attributes);
+        }
+    }
+
+    @Override // com.google.android.gms.ads.internal.util.zzaa
+    public final void zzi(final Activity activity) {
+        if (((Boolean) com.google.android.gms.ads.internal.client.zzay.zzc().zzb(zzbhy.zzaZ)).booleanValue() && com.google.android.gms.ads.internal.zzt.zzo().zzh().zzm() == null && !activity.isInMultiWindowMode()) {
+            zzm(true, activity);
+            activity.getWindow().getDecorView().setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() { // from class: com.google.android.gms.ads.internal.util.zzw
+                @Override // android.view.View.OnApplyWindowInsetsListener
+                public final WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
+                    return zzx.zzj(activity, view, windowInsets);
+                }
+            });
+        }
+    }
+}
