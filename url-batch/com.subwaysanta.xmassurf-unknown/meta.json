@@ -1,0 +1,36 @@
+{
+  "app_id": "com.subwaysanta.xmassurf",
+  "title": "com.subwaysanta.xmassurf",
+  "developer": "unknown",
+  "developer_id": "",
+  "icon": "",
+  "url": "https://play.google.com/store/apps/details?id=com.subwaysanta.xmassurf",
+  "score": null,
+  "released": "",
+  "updated": "",
+  "version": "",
+  "summary": "",
+  "keyword": "url-batch",
+  "folder": "com.subwaysanta.xmassurf-unknown",
+  "path": "url-batch/com.subwaysanta.xmassurf-unknown",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.subwaysanta.xmassurf.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/com.subwaysanta.xmassurf-unknown",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.subwaysanta.xmassurf...\ncom.subwaysanta.xmassurf downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.subwaysanta.xmassurf...\ncom.subwaysanta.xmassurf downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -33,5 +33,6 @@
   "stdout": "Downloading com.mariaofficial.melbet...\ncom.mariaofficial.melbet downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "_store_enriched": true
+  "_store_enriched": true,
+  "cloaking": "да"
 }

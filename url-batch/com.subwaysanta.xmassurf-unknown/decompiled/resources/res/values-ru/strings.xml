@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AUTH_REQUIRE_TITLE">Требуется Авторизация</string>
+    <string name="CAMERA">Камера</string>
+    <string name="CHOOSE_IMAGE">Выберите изображение</string>
+    <string name="DOWNLOAD_COMPLETED">Загрузка завершена</string>
+    <string name="DOWNLOAD_DESCRIPTION">Сохраните файл в папке \"Загрузки\"</string>
+    <string name="DOWNLOAD_STARTED">Загрузка началась</string>
+    <string name="EXTERNAL_WRITE_PERMISSION_LACK">Нет разрешения на запись во внешнее хранилище.</string>
+    <string name="INVALID_URL">Неверная ссылка</string>
+    <string name="LOADING">загрузка…</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST">Разрешить \'%1$s\' доступ к %2$s?</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST_TITLE">Запрос разрешения</string>
+    <string name="MICROPHONE">Микрофон</string>
+    <string name="PASSWORD">пароль</string>
+    <string name="SAVE_IMAGE">Сохранить изображение</string>
+    <string name="USERNAME">имя пользователя</string>
+    <string name="copy_toast_msg">Ссылка скопирована в буфер обмена.</string>
+    <string name="fallback_menu_item_copy_link">Копировать ссылку</string>
+    <string name="fallback_menu_item_open_in_browser">Открыть в браузере</string>
+    <string name="fallback_menu_item_share_link">Отправить ссылку</string>
+    <string name="status_bar_notification_info_overflow">&gt;999</string>
+</resources>
