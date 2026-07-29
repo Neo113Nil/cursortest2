@@ -32,5 +32,6 @@
   ],
   "stdout": "Downloading com.luckyreads.bookshelf...\ncom.luckyreads.bookshelf downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да"
 }
