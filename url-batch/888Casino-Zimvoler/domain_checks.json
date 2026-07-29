@@ -422,7 +422,7 @@
       "redirect_chain": [
         "https://blue-limit-83a7.serg-savwork.workers.dev/"
       ],
-      "page_output": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1785327612407}",
+      "page_output": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1785327811984}",
       "parked_at": "регистратор: CloudFlare, Inc.",
       "final_url": "https://blue-limit-83a7.serg-savwork.workers.dev/",
       "http_status": 200,
@@ -813,7 +813,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1785327612407}"
+          "value": "{\"status\":\"ok\",\"version\":\"1.0.0\",\"ts\":1785327811984}"
         },
         {
           "param": "Где припаркован",
