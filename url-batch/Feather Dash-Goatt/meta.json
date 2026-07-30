@@ -1,0 +1,61 @@
+{
+  "app_id": "com.feathherdashh.dashgame",
+  "title": "Feather Dash",
+  "developer": "Goatt",
+  "developer_id": "7514267258297458242",
+  "icon": "https://play-lh.googleusercontent.com/lQqgC9qQO0wnKO3IHrB9GqQYcOdCkjdx7SqKgE-osj63_HurdBM6PsbblIJLnBx3o_D68kQJb8W_pRuT16df",
+  "url": "https://play.google.com/store/apps/details?id=com.feathherdashh.dashgame&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 8, 2026",
+  "updated": "Jul 14, 2026",
+  "version": "Varies with device",
+  "summary": "Dash, jump, dodge traffic, and collect golden feathers in a fast countryside",
+  "keyword": "url-batch",
+  "folder": "Feather Dash-Goatt",
+  "path": "url-batch/Feather Dash-Goatt",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.feathherdashh.dashgame-2-asset.apk",
+    "com.feathherdashh.dashgame-2-config.arm64_v8a.apk",
+    "com.feathherdashh.dashgame-2-config.en.apk",
+    "com.feathherdashh.dashgame-2-config.lt.apk",
+    "com.feathherdashh.dashgame-2-config.ru.apk",
+    "com.feathherdashh.dashgame-2-config.xxhdpi.apk",
+    "com.feathherdashh.dashgame-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Feather Dash-Goatt",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.feathherdashh.dashgame...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.feathherdashh.dashgame...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.feathherdashh.dashgame ─╮\n│ Feather Dash                 │\n│ 1.0.1  (vc 2)                │\n╰──────────────────────────────╯\n\nDownloading 7 files  (39.7 MB)\n  com.feathherdashh.dashgame-2.apk                  ━━━━━ 100% 21.5… 11.8 0:00:…\n                                                               MB    MB/s       \n  com.feathherdashh.dashgame-2-config.arm64_v8a.apk ━━━━━ 100% 53.6… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.en.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.lt.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.ru.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.xxhdpi.apk    ━━━━━ 100% 30.2… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-asset.apk            ━━━━━ 100% 20.0… 11.0 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.feathherdashh.dashgame-2.apk                  │ 20.5 MB │\n│ com.feathherdashh.dashgame-2-config.arm64_v8a.apk │ 52.3 KB │\n│ com.feathherdashh.dashgame-2-config.en.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.lt.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.ru.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.xxhdpi.apk    │ 29.5 KB │\n│ com.feathherdashh.dashgame-2-asset.apk            │ 20.5 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.feathherdashh.dashgame ─╮\n│ Feather Dash                 │\n│ 1.0.1  (vc 2)                │\n╰──────────────────────────────╯\n\nDownloading 7 files  (39.7 MB)\n  com.feathherdashh.dashgame-2.apk                  ━━━━━ 100% 21.5… 11.8 0:00:…\n                                                               MB    MB/s       \n  com.feathherdashh.dashgame-2-config.arm64_v8a.apk ━━━━━ 100% 53.6… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.en.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.lt.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.ru.apk        ━━━━━ 100% 20.7… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-config.xxhdpi.apk    ━━━━━ 100% 30.2… ?    0:00:…\n                                                               kB               \n  com.feathherdashh.dashgame-2-asset.apk            ━━━━━ 100% 20.0… 11.0 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.feathherdashh.dashgame-2.apk                  │ 20.5 MB │\n│ com.feathherdashh.dashgame-2-config.arm64_v8a.apk │ 52.3 KB │\n│ com.feathherdashh.dashgame-2-config.en.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.lt.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.ru.apk        │ 20.2 KB │\n│ com.feathherdashh.dashgame-2-config.xxhdpi.apk    │ 29.5 KB │\n│ com.feathherdashh.dashgame-2-asset.apk            │ 20.5 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

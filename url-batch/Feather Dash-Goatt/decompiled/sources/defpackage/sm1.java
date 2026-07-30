@@ -1,0 +1,14 @@
+package defpackage;
+
+/* compiled from: r8-map-id-dd5e919efaf02f4d8ff55d6a5e2559a4e7180bda542179c0d9d8fc6a077876b4 */
+/* loaded from: classes.dex */
+public interface sm1 extends tm1 {
+    @Override // defpackage.qm1
+    default long b(v7 v7Var, v7 v7Var2, v7 v7Var3) {
+        return (l() + g()) * 1000000;
+    }
+
+    int g();
+
+    int l();
+}
