@@ -191,12 +191,14 @@ public final class SnapFlingBehavior implements TargetedFlingBehavior {
     /* JADX INFO: Access modifiers changed from: private */
     public final Object runApproach(ScrollScope scrollScope, float f, float f2, Function1<? super Float, Unit> function1, Continuation<? super AnimationResult<Float, AnimationVector1D>> continuation) {
         TargetApproachAnimation targetApproachAnimation;
+        Object approach;
         if (isDecayApproachPossible(f, f2)) {
             targetApproachAnimation = new DecayApproachAnimation(this.decayAnimationSpec);
         } else {
             targetApproachAnimation = new TargetApproachAnimation(this.snapAnimationSpec);
         }
-        return SnapFlingBehaviorKt.approach(scrollScope, f, f2, targetApproachAnimation, function1, continuation);
+        approach = SnapFlingBehaviorKt.approach(scrollScope, f, f2, targetApproachAnimation, function1, continuation);
+        return approach;
     }
 
     private final boolean isDecayApproachPossible(float offset, float velocity) {

@@ -1,15 +1,15 @@
 {
-  "app_id": "com.chicken.road.cerman.fixs",
+  "app_id": "com.chicken.road.whale",
   "title": "Chicken road game",
   "developer": "Sakura Institute",
   "developer_id": "Sakura+Institute",
-  "icon": "https://play-lh.googleusercontent.com/YI2QgW7y-K97q4OZfoZT45Dou-nEar3dPuLd9kAe6MhS0gPFEiaj4N_JVUynnJoLQUtOt4J0X07ILHXKBReo",
-  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.cerman.fixs&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/DfyU5mP_QvH8VnQtH-MHgThyZY0sCvSgjC1WDBTfnqG_zCi6eaEDJkE47cS4LyBJ8Z9hDNGQjM4sT4SlbqaI",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.whale&hl=en&gl=us",
   "score": null,
   "released": "",
   "updated": "Jul 27, 2026",
   "version": "Varies with device",
-  "summary": "Analyze flock metrics and egg production trends in Chicken road game.",
+  "summary": "Monitor weekly meal metrics and track local grocery items in Chicken road game.",
   "keyword": "url-batch",
   "folder": "Chicken road game-Sakura Institute",
   "path": "url-batch/Chicken road game-Sakura Institute",
@@ -27,11 +27,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+      "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+  "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }
