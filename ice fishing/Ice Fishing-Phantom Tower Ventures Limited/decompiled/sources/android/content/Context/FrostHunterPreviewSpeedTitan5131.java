@@ -1,7 +1,0 @@
-package android.content.Context;
-
-/* compiled from: r8-map-id-ad53bc00775cc49f3760de3ef5ee15f0f7d4eb373264baa1785c3fa1a15d54ed */
-/* loaded from: classes.dex */
-public abstract class FrostHunterPreviewSpeedTitan5131 {
-    public static final FrostHunterScaleGestureDetectorSolarOlympian1087 FrostHunterAlphaAnimationNeoCosmos5761 = new FrostHunterScaleGestureDetectorSolarOlympian1087(FrostHunterAnimatorSparkThunderEclipse9255.FrostHunterAlertDialogAuroraDelta3200, FrostHunterAnimatorSparkThunderEclipse9255.FrostHunterFragmentBetaMegaVortex6025, FrostHunterRemoteModelManagerCyberLegend2797.FrostHunterMotionSceneAuroraMega2271());
-}
