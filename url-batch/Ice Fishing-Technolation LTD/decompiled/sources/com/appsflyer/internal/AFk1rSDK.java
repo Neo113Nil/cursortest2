@@ -1,0 +1,199 @@
+package com.appsflyer.internal;
+
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewCompat;
+import java.io.BufferedInputStream;
+import java.io.FilterInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import kotlin.UByte;
+
+/* loaded from: classes.dex */
+public final class AFk1rSDK extends FilterInputStream {
+    private static final short getMonetizationNetwork = (short) ((Math.sqrt(5.0d) - 1.0d) * Math.pow(2.0d, 15.0d));
+    private byte[] AFAdRevenueData;
+    private int AFInAppEventType;
+    private int areAllFieldsValid;
+    private int component1;
+    private int component2;
+    private int component3;
+    private int component4;
+    private int copy;
+    private final int copydefault;
+    private final int equals;
+    private int getCurrencyIso4217Code;
+    private byte[] getMediationNetwork;
+    private byte[] getRevenue;
+    private int hashCode;
+    private int toString;
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final boolean markSupported() {
+        return false;
+    }
+
+    public AFk1rSDK(InputStream inputStream, int[] iArr, int i, byte[] bArr, int i2, int i3) throws IOException {
+        this(inputStream, iArr, i, bArr, i2, i3, (byte) 0);
+    }
+
+    private AFk1rSDK(InputStream inputStream, int[] iArr, int i, byte[] bArr, int i2, int i3, byte b) throws IOException {
+        super(new BufferedInputStream(inputStream, 4096));
+        this.component3 = Integer.MAX_VALUE;
+        this.AFInAppEventType = 1;
+        this.getMediationNetwork = new byte[8];
+        this.AFAdRevenueData = new byte[8];
+        this.getRevenue = new byte[8];
+        this.getCurrencyIso4217Code = 8;
+        this.component4 = 8;
+        this.component2 = Math.min(Math.max(i2, 5), 16);
+        this.component1 = i3;
+        if (i3 == 3) {
+            System.arraycopy(bArr, 0, this.AFAdRevenueData, 0, 8);
+        }
+        long j = (iArr[1] & 4294967295L) | ((iArr[0] & 4294967295L) << 32);
+        if (i != 0) {
+            int i4 = (int) j;
+            this.areAllFieldsValid = i4;
+            this.copy = i4 * i;
+            this.toString = i ^ i4;
+            this.hashCode = (int) (j >> 32);
+        } else {
+            this.areAllFieldsValid = (int) j;
+            long j2 = j >> 3;
+            short s = getMonetizationNetwork;
+            this.copy = (int) ((s * j2) >> 32);
+            this.toString = (int) (j >> 32);
+            this.hashCode = (int) (j2 + s);
+        }
+        this.equals = 100;
+        this.copydefault = 100;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int read() throws IOException {
+        getMonetizationNetwork();
+        int i = this.getCurrencyIso4217Code;
+        if (i >= this.component4) {
+            return -1;
+        }
+        byte[] bArr = this.getMediationNetwork;
+        this.getCurrencyIso4217Code = i + 1;
+        return bArr[i] & UByte.MAX_VALUE;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int read(byte[] bArr, int i, int i2) throws IOException {
+        int i3 = i + i2;
+        for (int i4 = i; i4 < i3; i4++) {
+            getMonetizationNetwork();
+            int i5 = this.getCurrencyIso4217Code;
+            if (i5 >= this.component4) {
+                if (i4 == i) {
+                    return -1;
+                }
+                return i2 - (i3 - i4);
+            }
+            byte[] bArr2 = this.getMediationNetwork;
+            this.getCurrencyIso4217Code = i5 + 1;
+            bArr[i4] = bArr2[i5];
+        }
+        return i2;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final long skip(long j) throws IOException {
+        long j2 = 0;
+        while (j2 < j && read() != -1) {
+            j2++;
+        }
+        return j2;
+    }
+
+    @Override // java.io.FilterInputStream, java.io.InputStream
+    public final int available() throws IOException {
+        getMonetizationNetwork();
+        return this.component4 - this.getCurrencyIso4217Code;
+    }
+
+    private void AFAdRevenueData() {
+        if (this.component1 == 3) {
+            byte[] bArr = this.getMediationNetwork;
+            System.arraycopy(bArr, 0, this.getRevenue, 0, bArr.length);
+        }
+        byte[] bArr2 = this.getMediationNetwork;
+        int i = ((bArr2[0] << 24) & ViewCompat.MEASURED_STATE_MASK) + ((bArr2[1] << 16) & 16711680) + ((bArr2[2] << 8) & MotionEventCompat.ACTION_POINTER_INDEX_MASK) + (bArr2[3] & UByte.MAX_VALUE);
+        int i2 = ((-16777216) & (bArr2[4] << 24)) + (16711680 & (bArr2[5] << 16)) + (65280 & (bArr2[6] << 8)) + (bArr2[7] & UByte.MAX_VALUE);
+        int i3 = 0;
+        while (true) {
+            int i4 = this.component2;
+            if (i3 >= i4) {
+                break;
+            }
+            short s = getMonetizationNetwork;
+            i2 -= ((((i4 - i3) * s) + i) ^ ((i << 4) + this.toString)) ^ ((i >>> 5) + this.hashCode);
+            i -= (((i2 << 4) + this.areAllFieldsValid) ^ ((s * (i4 - i3)) + i2)) ^ ((i2 >>> 5) + this.copy);
+            i3++;
+        }
+        byte[] bArr3 = this.getMediationNetwork;
+        bArr3[0] = (byte) (i >> 24);
+        bArr3[1] = (byte) (i >> 16);
+        bArr3[2] = (byte) (i >> 8);
+        bArr3[3] = (byte) i;
+        bArr3[4] = (byte) (i2 >> 24);
+        bArr3[5] = (byte) (i2 >> 16);
+        bArr3[6] = (byte) (i2 >> 8);
+        bArr3[7] = (byte) i2;
+        if (this.component1 == 3) {
+            for (int i5 = 0; i5 < 8; i5++) {
+                byte[] bArr4 = this.getMediationNetwork;
+                bArr4[i5] = (byte) (bArr4[i5] ^ this.AFAdRevenueData[i5]);
+            }
+            byte[] bArr5 = this.getRevenue;
+            System.arraycopy(bArr5, 0, this.AFAdRevenueData, 0, bArr5.length);
+        }
+    }
+
+    private int getMonetizationNetwork() throws IOException {
+        if (this.component3 == Integer.MAX_VALUE) {
+            this.component3 = ((FilterInputStream) this).in.read();
+        }
+        if (this.getCurrencyIso4217Code == 8) {
+            byte[] bArr = this.getMediationNetwork;
+            int i = this.component3;
+            bArr[0] = (byte) i;
+            if (i < 0) {
+                throw new IllegalStateException("unexpected block size");
+            }
+            int i2 = 1;
+            do {
+                int read = ((FilterInputStream) this).in.read(this.getMediationNetwork, i2, 8 - i2);
+                if (read <= 0) {
+                    break;
+                }
+                i2 += read;
+            } while (i2 < 8);
+            if (i2 < 8) {
+                throw new IllegalStateException("unexpected block size");
+            }
+            int i3 = this.equals;
+            if (i3 == this.copydefault) {
+                AFAdRevenueData();
+            } else {
+                if (this.AFInAppEventType <= i3) {
+                    AFAdRevenueData();
+                }
+                int i4 = this.AFInAppEventType;
+                if (i4 < this.copydefault) {
+                    this.AFInAppEventType = i4 + 1;
+                } else {
+                    this.AFInAppEventType = 1;
+                }
+            }
+            int read2 = ((FilterInputStream) this).in.read();
+            this.component3 = read2;
+            this.getCurrencyIso4217Code = 0;
+            this.component4 = read2 < 0 ? 8 - (this.getMediationNetwork[7] & UByte.MAX_VALUE) : 8;
+        }
+        return this.component4;
+    }
+}

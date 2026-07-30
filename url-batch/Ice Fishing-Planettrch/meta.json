@@ -57,5 +57,116 @@
   ],
   "stdout": "╭─ com.polarvoyage.glacialoceans.icepathfinder.quest ─╮\n│ Ice Fishing                                         │\n│ 4.0  (vc 4)                                         │\n╰─────────────────────────────────────────────────────╯\n\nDownloading 7 files  (12.3 MB)\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4.apk                  100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk 100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk    100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk            100%  …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk            │  6.6 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_… │  1.2 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi… │ 16.3 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk      │  6.6 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Firebase Messaging, Firebase Installations, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com. polarvoyage.glacialoceans.icepathfinder.quest.DYNAMIC_RECEIVER_NOT_EXPORTED_ PERMISSION, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin ~2.2 / kotlin-stdlib, kotlinx-coroutines, Jetpack Compose (foundation/material3/ui/animation), AndroidX (core, lifecycle, startup, datastore, emoji2, profileinstaller, graphics), OkHttp3 (HTTP + WebSocket), Coil3, Adjust android5.5.0, Firebase Messaging 24.1.2 / Installations / Common / Data Transport, Google Play Services, Play Install Referrer, Pairip (com.pairip.application / licensecheck), ExoPlayer-style media (merged), R8 obfuscation (p000createpolar)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "umbrapatterncluster.life"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore playerStore (ключ player_info) — кэш ссылки оффера; SharedPreferences polar_settings — music/sound/vibration/timer/best_score_* белой игры; служебные prefs Firebase/GMS/Adjust (messaging, appid, HeartBeat, AdjustIoActivityState и др.)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "PolarTransferTag, Screens, Content, EntryBundle, Filled, UrlEnvelope, RawEnvelope, CipherBundle, RequestTracker, RequestEndpoint, RequestCipher, GO, STOP, WALLET, player_info, playerStore, silentPhaseNavigator, umbrapatterncluster, redirect, User-Agent"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "gdpr.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "ssrv.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "subscription.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер для рекламы на этом телефоне",
+      "номер для уведомлений → код, по которому приложению можно слать сообщения",
+      "метка установки → откуда установили приложение из магазина",
+      "номер пользователя в сервисе учёта установок → внутренний идентификатор в Adjust",
+      "данные о источнике установки → что сервис учёта установок знает про этот запуск"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер для рекламы на этом телефоне\n• номер для уведомлений → код, по которому приложению можно слать сообщения\n• метка установки → откуда установили приложение из магазина\n• номер пользователя в сервисе учёта установок → внутренний идентификатор в Adjust\n• данные о источнике установки → что сервис учёта установок знает про этот запуск\n\nКак собираются: При запуске на экране заставки приложение само считывает эти сведения с телефона и из сервиса учёта установок. Если сохранённой ссылки ещё нет, всё собирается в один пакет и перед отправкой шифруется.\n\nКуда отправляются: Этот зашифрованный пакет тихо уходит на сервер по адресу umbrapatterncluster.life (постоянное защищённое соединение). Отдельно сведения об установке уходят в сервис Adjust.\n\nЧто возвращается: Сервер присылает либо ссылку на внешнюю страницу, либо пустой ответ. Непустая ссылка означает «боевой» путь; пустой ответ — белый путь.\n\nКак показывается оффер или белая версия: Если пришла ссылка — её открывают во встроенном окне браузера внутри приложения (страница оффера). Если ссылки нет — остаётся обычное приложение."
+  }
 }
