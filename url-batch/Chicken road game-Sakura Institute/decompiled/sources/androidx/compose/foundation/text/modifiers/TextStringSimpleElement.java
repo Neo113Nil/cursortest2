@@ -1,254 +1,80 @@
 package androidx.compose.foundation.text.modifiers;
 
-import a0.m;
-import a2.k0;
-import f2.d;
-import j1.c;
-import l.h;
-import r1.f;
-import r1.s0;
-import r4.a;
-import r6.k;
-import s0.n;
-import z.g;
+import androidx.compose.ui.graphics.ColorProducer;
+import androidx.compose.ui.node.ModifierNodeElement;
+import androidx.compose.ui.platform.InspectorInfo;
+import androidx.compose.ui.text.TextStyle;
+import androidx.compose.ui.text.font.FontFamily;
+import androidx.compose.ui.text.style.TextOverflow;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
+/* compiled from: TextStringSimpleElement.kt */
+@Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001BQ\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\b\b\u0002\u0010\t\u001a\u00020\n\u0012\b\b\u0002\u0010\u000b\u001a\u00020\f\u0012\b\b\u0002\u0010\r\u001a\u00020\u000e\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u000e\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0002\u0010\u0012J\b\u0010\u0014\u001a\u00020\u0002H\u0016J\u0013\u0010\u0015\u001a\u00020\f2\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017H\u0096\u0002J\b\u0010\u0018\u001a\u00020\u000eH\u0016J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u0002H\u0016J\f\u0010\u001c\u001a\u00020\u001a*\u00020\u001dH\u0016R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\u00020\nX\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0013R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001e"}, d2 = {"Landroidx/compose/foundation/text/modifiers/TextStringSimpleElement;", "Landroidx/compose/ui/node/ModifierNodeElement;", "Landroidx/compose/foundation/text/modifiers/TextStringSimpleNode;", "text", "", "style", "Landroidx/compose/ui/text/TextStyle;", "fontFamilyResolver", "Landroidx/compose/ui/text/font/FontFamily$Resolver;", "overflow", "Landroidx/compose/ui/text/style/TextOverflow;", "softWrap", "", "maxLines", "", "minLines", "color", "Landroidx/compose/ui/graphics/ColorProducer;", "(Ljava/lang/String;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/ui/text/font/FontFamily$Resolver;IZIILandroidx/compose/ui/graphics/ColorProducer;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "I", "create", "equals", "other", "", "hashCode", "update", "", "node", "inspectableProperties", "Landroidx/compose/ui/platform/InspectorInfo;", "foundation_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
-public final class TextStringSimpleElement extends s0 {
+public final class TextStringSimpleElement extends ModifierNodeElement<TextStringSimpleNode> {
+    public static final int $stable = 0;
+    private final ColorProducer color;
+    private final FontFamily.Resolver fontFamilyResolver;
+    private final int maxLines;
+    private final int minLines;
+    private final int overflow;
+    private final boolean softWrap;
+    private final TextStyle style;
+    private final String text;
 
-    /* renamed from: a, reason: collision with root package name */
-    public final String f687a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public final k0 f688b;
-
-    /* renamed from: c, reason: collision with root package name */
-    public final d f689c;
-
-    /* renamed from: d, reason: collision with root package name */
-    public final int f690d;
-
-    /* renamed from: e, reason: collision with root package name */
-    public final boolean f691e;
-
-    /* renamed from: f, reason: collision with root package name */
-    public final int f692f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final int f693g;
-
-    public TextStringSimpleElement(String str, k0 k0Var, d dVar, int i7, boolean z8, int i8, int i9) {
-        this.f687a = str;
-        this.f688b = k0Var;
-        this.f689c = dVar;
-        this.f690d = i7;
-        this.f691e = z8;
-        this.f692f = i8;
-        this.f693g = i9;
+    public /* synthetic */ TextStringSimpleElement(String str, TextStyle textStyle, FontFamily.Resolver resolver, int i, boolean z, int i2, int i3, ColorProducer colorProducer, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, textStyle, resolver, i, z, i2, i3, colorProducer);
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void inspectableProperties(InspectorInfo inspectorInfo) {
+    }
+
+    public /* synthetic */ TextStringSimpleElement(String str, TextStyle textStyle, FontFamily.Resolver resolver, int i, boolean z, int i2, int i3, ColorProducer colorProducer, int i4, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, textStyle, resolver, (i4 & 8) != 0 ? TextOverflow.INSTANCE.m6237getClipgIe3tQ8() : i, (i4 & 16) != 0 ? true : z, (i4 & 32) != 0 ? Integer.MAX_VALUE : i2, (i4 & 64) != 0 ? 1 : i3, (i4 & 128) != 0 ? null : colorProducer, null);
+    }
+
+    private TextStringSimpleElement(String str, TextStyle textStyle, FontFamily.Resolver resolver, int i, boolean z, int i2, int i3, ColorProducer colorProducer) {
+        this.text = str;
+        this.style = textStyle;
+        this.fontFamilyResolver = resolver;
+        this.overflow = i;
+        this.softWrap = z;
+        this.maxLines = i2;
+        this.minLines = i3;
+        this.color = colorProducer;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    /* renamed from: create */
+    public TextStringSimpleNode getNode() {
+        return new TextStringSimpleNode(this.text, this.style, this.fontFamilyResolver, this.overflow, this.softWrap, this.maxLines, this.minLines, this.color, null);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void update(TextStringSimpleNode node) {
+        node.doInvalidations(node.updateDraw(this.color, this.style), node.updateText(this.text), node.m1322updateLayoutRelatedArgsHuAbxIM(this.style, this.minLines, this.maxLines, this.softWrap, this.fontFamilyResolver, this.overflow));
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public boolean equals(Object other) {
+        if (this == other) {
             return true;
         }
-        if (!(obj instanceof TextStringSimpleElement)) {
+        if (!(other instanceof TextStringSimpleElement)) {
             return false;
         }
-        TextStringSimpleElement textStringSimpleElement = (TextStringSimpleElement) obj;
-        return k.a(this.f687a, textStringSimpleElement.f687a) && k.a(this.f688b, textStringSimpleElement.f688b) && k.a(this.f689c, textStringSimpleElement.f689c) && this.f690d == textStringSimpleElement.f690d && this.f691e == textStringSimpleElement.f691e && this.f692f == textStringSimpleElement.f692f && this.f693g == textStringSimpleElement.f693g;
+        TextStringSimpleElement textStringSimpleElement = (TextStringSimpleElement) other;
+        return Intrinsics.areEqual(this.color, textStringSimpleElement.color) && Intrinsics.areEqual(this.text, textStringSimpleElement.text) && Intrinsics.areEqual(this.style, textStringSimpleElement.style) && Intrinsics.areEqual(this.fontFamilyResolver, textStringSimpleElement.fontFamilyResolver) && TextOverflow.m6230equalsimpl0(this.overflow, textStringSimpleElement.overflow) && this.softWrap == textStringSimpleElement.softWrap && this.maxLines == textStringSimpleElement.maxLines && this.minLines == textStringSimpleElement.minLines;
     }
 
-    public final int hashCode() {
-        return (((m.e(h.c(this.f690d, (this.f689c.hashCode() + ((this.f688b.hashCode() + (this.f687a.hashCode() * 31)) * 31)) * 31, 31), 31, this.f691e) + this.f692f) * 31) + this.f693g) * 31;
-    }
-
-    @Override // r1.s0
-    public final n l() {
-        g gVar = new g();
-        gVar.f9974s = this.f687a;
-        gVar.f9975t = this.f688b;
-        gVar.f9976u = this.f689c;
-        gVar.f9977v = this.f690d;
-        gVar.f9978w = this.f691e;
-        gVar.f9979x = this.f692f;
-        gVar.f9980y = this.f693g;
-        return gVar;
-    }
-
-    /* JADX WARN: Removed duplicated region for block: B:11:0x003f  */
-    /* JADX WARN: Removed duplicated region for block: B:14:0x0048  */
-    /* JADX WARN: Removed duplicated region for block: B:17:0x0051  */
-    /* JADX WARN: Removed duplicated region for block: B:20:0x005e  */
-    /* JADX WARN: Removed duplicated region for block: B:23:0x0067  */
-    /* JADX WARN: Removed duplicated region for block: B:28:0x00ad  */
-    /* JADX WARN: Removed duplicated region for block: B:41:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Removed duplicated region for block: B:43:0x0069  */
-    /* JADX WARN: Removed duplicated region for block: B:44:0x002b  */
-    /* JADX WARN: Removed duplicated region for block: B:8:0x0029  */
-    @Override // r1.s0
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
-    public final void m(n nVar) {
-        boolean z8;
-        String str;
-        String str2;
-        boolean z9;
-        int i7;
-        int i8;
-        int i9;
-        int i10;
-        boolean z10;
-        boolean z11;
-        d dVar;
-        d dVar2;
-        int i11;
-        int i12;
-        g gVar = (g) nVar;
-        gVar.getClass();
-        k0 k0Var = gVar.f9975t;
-        boolean z12 = true;
-        k0 k0Var2 = this.f688b;
-        if (k0Var2 == k0Var) {
-            k0Var2.getClass();
-        } else if (!k0Var2.f412a.b(k0Var.f412a)) {
-            z8 = true;
-            str = gVar.f9974s;
-            str2 = this.f687a;
-            if (k.a(str, str2)) {
-                gVar.f9974s = str2;
-                gVar.C = null;
-                z9 = true;
-            } else {
-                z9 = false;
-            }
-            boolean z13 = !gVar.f9975t.c(k0Var2);
-            gVar.f9975t = k0Var2;
-            i7 = gVar.f9980y;
-            i8 = this.f693g;
-            if (i7 != i8) {
-                gVar.f9980y = i8;
-                z13 = true;
-            }
-            i9 = gVar.f9979x;
-            i10 = this.f692f;
-            if (i9 != i10) {
-                gVar.f9979x = i10;
-                z13 = true;
-            }
-            z10 = gVar.f9978w;
-            z11 = this.f691e;
-            if (z10 != z11) {
-                gVar.f9978w = z11;
-                z13 = true;
-            }
-            dVar = gVar.f9976u;
-            dVar2 = this.f689c;
-            if (!k.a(dVar, dVar2)) {
-                gVar.f9976u = dVar2;
-                z13 = true;
-            }
-            i11 = gVar.f9977v;
-            i12 = this.f690d;
-            if (i11 != i12) {
-                z12 = z13;
-            } else {
-                gVar.f9977v = i12;
-            }
-            if (!z9 || z12) {
-                z.d A0 = gVar.A0();
-                String str3 = gVar.f9974s;
-                k0 k0Var3 = gVar.f9975t;
-                d dVar3 = gVar.f9976u;
-                int i13 = gVar.f9977v;
-                boolean z14 = gVar.f9978w;
-                int i14 = gVar.f9979x;
-                int i15 = gVar.f9980y;
-                A0.f9950a = str3;
-                A0.f9951b = k0Var3;
-                A0.f9952c = dVar3;
-                A0.f9953d = i13;
-                A0.f9954e = z14;
-                A0.f9955f = i14;
-                A0.f9956g = i15;
-                A0.f9959j = null;
-                A0.f9963n = null;
-                A0.f9964o = null;
-                A0.f9966q = -1;
-                A0.f9967r = -1;
-                A0.f9965p = a.z(0, 0, 0, 0);
-                A0.f9961l = c.G(0, 0);
-                A0.f9960k = false;
-            }
-            if (gVar.f8116r) {
-                return;
-            }
-            if (z9 || (z8 && gVar.B != null)) {
-                f.o(gVar);
-            }
-            if (z9 || z12) {
-                f.n(gVar);
-                f.m(gVar);
-            }
-            if (z8) {
-                f.m(gVar);
-                return;
-            }
-            return;
-        }
-        z8 = false;
-        str = gVar.f9974s;
-        str2 = this.f687a;
-        if (k.a(str, str2)) {
-        }
-        boolean z132 = !gVar.f9975t.c(k0Var2);
-        gVar.f9975t = k0Var2;
-        i7 = gVar.f9980y;
-        i8 = this.f693g;
-        if (i7 != i8) {
-        }
-        i9 = gVar.f9979x;
-        i10 = this.f692f;
-        if (i9 != i10) {
-        }
-        z10 = gVar.f9978w;
-        z11 = this.f691e;
-        if (z10 != z11) {
-        }
-        dVar = gVar.f9976u;
-        dVar2 = this.f689c;
-        if (!k.a(dVar, dVar2)) {
-        }
-        i11 = gVar.f9977v;
-        i12 = this.f690d;
-        if (i11 != i12) {
-        }
-        if (!z9) {
-        }
-        z.d A02 = gVar.A0();
-        String str32 = gVar.f9974s;
-        k0 k0Var32 = gVar.f9975t;
-        d dVar32 = gVar.f9976u;
-        int i132 = gVar.f9977v;
-        boolean z142 = gVar.f9978w;
-        int i142 = gVar.f9979x;
-        int i152 = gVar.f9980y;
-        A02.f9950a = str32;
-        A02.f9951b = k0Var32;
-        A02.f9952c = dVar32;
-        A02.f9953d = i132;
-        A02.f9954e = z142;
-        A02.f9955f = i142;
-        A02.f9956g = i152;
-        A02.f9959j = null;
-        A02.f9963n = null;
-        A02.f9964o = null;
-        A02.f9966q = -1;
-        A02.f9967r = -1;
-        A02.f9965p = a.z(0, 0, 0, 0);
-        A02.f9961l = c.G(0, 0);
-        A02.f9960k = false;
-        if (gVar.f8116r) {
-        }
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public int hashCode() {
+        int hashCode = ((((((((((((this.text.hashCode() * 31) + this.style.hashCode()) * 31) + this.fontFamilyResolver.hashCode()) * 31) + TextOverflow.m6231hashCodeimpl(this.overflow)) * 31) + Boolean.hashCode(this.softWrap)) * 31) + this.maxLines) * 31) + this.minLines) * 31;
+        ColorProducer colorProducer = this.color;
+        return hashCode + (colorProducer != null ? colorProducer.hashCode() : 0);
     }
 }

@@ -1,169 +1,115 @@
 package androidx.compose.foundation.gestures;
 
-import a0.m;
-import b1.b;
-import l1.d0;
-import m.w0;
-import o.e;
-import o.f1;
-import o.i;
-import o.j0;
-import o.k;
-import o.x0;
-import o.y0;
-import p.j;
-import r1.f;
-import r1.s0;
-import s0.n;
+import androidx.compose.foundation.OverscrollEffect;
+import androidx.compose.foundation.interaction.MutableInteractionSource;
+import androidx.compose.ui.node.ModifierNodeElement;
+import androidx.compose.ui.platform.InspectorInfo;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
+/* compiled from: Scrollable.kt */
+@Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001BM\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\u0006\u0010\t\u001a\u00020\n\u0012\u0006\u0010\u000b\u001a\u00020\n\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\u0002\u0010\u0012J\b\u0010\"\u001a\u00020\u0002H\u0016J\u0013\u0010#\u001a\u00020\n2\b\u0010$\u001a\u0004\u0018\u00010%H\u0096\u0002J\b\u0010&\u001a\u00020'H\u0016J\u0010\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020\u0002H\u0016J\f\u0010+\u001a\u00020)*\u00020,H\u0016R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0011¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0013\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0011\u0010\u000b\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0016R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010!¨\u0006-"}, d2 = {"Landroidx/compose/foundation/gestures/ScrollableElement;", "Landroidx/compose/ui/node/ModifierNodeElement;", "Landroidx/compose/foundation/gestures/ScrollableNode;", "state", "Landroidx/compose/foundation/gestures/ScrollableState;", "orientation", "Landroidx/compose/foundation/gestures/Orientation;", "overscrollEffect", "Landroidx/compose/foundation/OverscrollEffect;", "enabled", "", "reverseDirection", "flingBehavior", "Landroidx/compose/foundation/gestures/FlingBehavior;", "interactionSource", "Landroidx/compose/foundation/interaction/MutableInteractionSource;", "bringIntoViewSpec", "Landroidx/compose/foundation/gestures/BringIntoViewSpec;", "(Landroidx/compose/foundation/gestures/ScrollableState;Landroidx/compose/foundation/gestures/Orientation;Landroidx/compose/foundation/OverscrollEffect;ZZLandroidx/compose/foundation/gestures/FlingBehavior;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/foundation/gestures/BringIntoViewSpec;)V", "getBringIntoViewSpec", "()Landroidx/compose/foundation/gestures/BringIntoViewSpec;", "getEnabled", "()Z", "getFlingBehavior", "()Landroidx/compose/foundation/gestures/FlingBehavior;", "getInteractionSource", "()Landroidx/compose/foundation/interaction/MutableInteractionSource;", "getOrientation", "()Landroidx/compose/foundation/gestures/Orientation;", "getOverscrollEffect", "()Landroidx/compose/foundation/OverscrollEffect;", "getReverseDirection", "getState", "()Landroidx/compose/foundation/gestures/ScrollableState;", "create", "equals", "other", "", "hashCode", "", "update", "", "node", "inspectableProperties", "Landroidx/compose/ui/platform/InspectorInfo;", "foundation_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
-final class ScrollableElement extends s0 {
+final class ScrollableElement extends ModifierNodeElement<ScrollableNode> {
+    private final BringIntoViewSpec bringIntoViewSpec;
+    private final boolean enabled;
+    private final FlingBehavior flingBehavior;
+    private final MutableInteractionSource interactionSource;
+    private final Orientation orientation;
+    private final OverscrollEffect overscrollEffect;
+    private final boolean reverseDirection;
+    private final ScrollableState state;
 
-    /* renamed from: a, reason: collision with root package name */
-    public final y0 f606a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public final j0 f607b;
-
-    /* renamed from: c, reason: collision with root package name */
-    public final w0 f608c;
-
-    /* renamed from: d, reason: collision with root package name */
-    public final boolean f609d;
-
-    /* renamed from: e, reason: collision with root package name */
-    public final boolean f610e;
-
-    /* renamed from: f, reason: collision with root package name */
-    public final k f611f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final j f612g;
-
-    public ScrollableElement(w0 w0Var, k kVar, j0 j0Var, y0 y0Var, j jVar, boolean z8, boolean z9) {
-        this.f606a = y0Var;
-        this.f607b = j0Var;
-        this.f608c = w0Var;
-        this.f609d = z8;
-        this.f610e = z9;
-        this.f611f = kVar;
-        this.f612g = jVar;
+    public final ScrollableState getState() {
+        return this.state;
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
+    public final Orientation getOrientation() {
+        return this.orientation;
+    }
+
+    public final OverscrollEffect getOverscrollEffect() {
+        return this.overscrollEffect;
+    }
+
+    public final boolean getEnabled() {
+        return this.enabled;
+    }
+
+    public final boolean getReverseDirection() {
+        return this.reverseDirection;
+    }
+
+    public final FlingBehavior getFlingBehavior() {
+        return this.flingBehavior;
+    }
+
+    public final MutableInteractionSource getInteractionSource() {
+        return this.interactionSource;
+    }
+
+    public final BringIntoViewSpec getBringIntoViewSpec() {
+        return this.bringIntoViewSpec;
+    }
+
+    public ScrollableElement(ScrollableState scrollableState, Orientation orientation, OverscrollEffect overscrollEffect, boolean z, boolean z2, FlingBehavior flingBehavior, MutableInteractionSource mutableInteractionSource, BringIntoViewSpec bringIntoViewSpec) {
+        this.state = scrollableState;
+        this.orientation = orientation;
+        this.overscrollEffect = overscrollEffect;
+        this.enabled = z;
+        this.reverseDirection = z2;
+        this.flingBehavior = flingBehavior;
+        this.interactionSource = mutableInteractionSource;
+        this.bringIntoViewSpec = bringIntoViewSpec;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    /* renamed from: create */
+    public ScrollableNode getNode() {
+        return new ScrollableNode(this.state, this.overscrollEffect, this.flingBehavior, this.orientation, this.enabled, this.reverseDirection, this.interactionSource, this.bringIntoViewSpec);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void update(ScrollableNode node) {
+        node.update(this.state, this.orientation, this.overscrollEffect, this.enabled, this.reverseDirection, this.flingBehavior, this.interactionSource, this.bringIntoViewSpec);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public int hashCode() {
+        int hashCode = ((this.state.hashCode() * 31) + this.orientation.hashCode()) * 31;
+        OverscrollEffect overscrollEffect = this.overscrollEffect;
+        int hashCode2 = (((((hashCode + (overscrollEffect != null ? overscrollEffect.hashCode() : 0)) * 31) + Boolean.hashCode(this.enabled)) * 31) + Boolean.hashCode(this.reverseDirection)) * 31;
+        FlingBehavior flingBehavior = this.flingBehavior;
+        int hashCode3 = (hashCode2 + (flingBehavior != null ? flingBehavior.hashCode() : 0)) * 31;
+        MutableInteractionSource mutableInteractionSource = this.interactionSource;
+        int hashCode4 = (hashCode3 + (mutableInteractionSource != null ? mutableInteractionSource.hashCode() : 0)) * 31;
+        BringIntoViewSpec bringIntoViewSpec = this.bringIntoViewSpec;
+        return hashCode4 + (bringIntoViewSpec != null ? bringIntoViewSpec.hashCode() : 0);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public boolean equals(Object other) {
+        if (this == other) {
             return true;
         }
-        if (!(obj instanceof ScrollableElement)) {
+        if (!(other instanceof ScrollableElement)) {
             return false;
         }
-        ScrollableElement scrollableElement = (ScrollableElement) obj;
-        return r6.k.a(this.f606a, scrollableElement.f606a) && this.f607b == scrollableElement.f607b && r6.k.a(this.f608c, scrollableElement.f608c) && this.f609d == scrollableElement.f609d && this.f610e == scrollableElement.f610e && r6.k.a(this.f611f, scrollableElement.f611f) && r6.k.a(this.f612g, scrollableElement.f612g);
+        ScrollableElement scrollableElement = (ScrollableElement) other;
+        return Intrinsics.areEqual(this.state, scrollableElement.state) && this.orientation == scrollableElement.orientation && Intrinsics.areEqual(this.overscrollEffect, scrollableElement.overscrollEffect) && this.enabled == scrollableElement.enabled && this.reverseDirection == scrollableElement.reverseDirection && Intrinsics.areEqual(this.flingBehavior, scrollableElement.flingBehavior) && Intrinsics.areEqual(this.interactionSource, scrollableElement.interactionSource) && Intrinsics.areEqual(this.bringIntoViewSpec, scrollableElement.bringIntoViewSpec);
     }
 
-    public final int hashCode() {
-        int hashCode = (this.f607b.hashCode() + (this.f606a.hashCode() * 31)) * 31;
-        w0 w0Var = this.f608c;
-        int e9 = m.e(m.e((hashCode + (w0Var != null ? w0Var.hashCode() : 0)) * 31, 31, this.f609d), 31, this.f610e);
-        k kVar = this.f611f;
-        int hashCode2 = (e9 + (kVar != null ? kVar.hashCode() : 0)) * 31;
-        j jVar = this.f612g;
-        return (hashCode2 + (jVar != null ? jVar.hashCode() : 0)) * 31;
-    }
-
-    @Override // r1.s0
-    public final n l() {
-        boolean z8 = this.f610e;
-        return new x0(this.f608c, this.f611f, this.f607b, this.f606a, this.f612g, this.f609d, z8);
-    }
-
-    @Override // r1.s0
-    public final void m(n nVar) {
-        boolean z8;
-        d0 d0Var;
-        x0 x0Var = (x0) nVar;
-        f1 f1Var = x0Var.H;
-        boolean z9 = x0Var.f6794w;
-        boolean z10 = this.f609d;
-        boolean z11 = true;
-        boolean z12 = false;
-        if (z9 != z10) {
-            x0Var.I.f6422a = z10;
-            x0Var.F.f6710s = z10;
-            z8 = true;
-        } else {
-            z8 = false;
-        }
-        k kVar = this.f611f;
-        k kVar2 = kVar == null ? x0Var.G : kVar;
-        b bVar = x0Var.E;
-        y0 y0Var = f1Var.f6609a;
-        y0 y0Var2 = this.f606a;
-        if (!r6.k.a(y0Var, y0Var2)) {
-            f1Var.f6609a = y0Var2;
-            z12 = true;
-        }
-        w0 w0Var = this.f608c;
-        f1Var.f6610b = w0Var;
-        j0 j0Var = f1Var.f6612d;
-        j0 j0Var2 = this.f607b;
-        if (j0Var != j0Var2) {
-            f1Var.f6612d = j0Var2;
-            z12 = true;
-        }
-        boolean z13 = f1Var.f6613e;
-        boolean z14 = this.f610e;
-        if (z13 != z14) {
-            f1Var.f6613e = z14;
-        } else {
-            z11 = z12;
-        }
-        f1Var.f6611c = kVar2;
-        f1Var.f6614f = bVar;
-        i iVar = x0Var.J;
-        iVar.f6635s = j0Var2;
-        iVar.f6637u = z14;
-        x0Var.C = w0Var;
-        x0Var.D = kVar;
-        e eVar = e.f6595i;
-        j0 j0Var3 = f1Var.f6612d;
-        j0 j0Var4 = j0.f6657f;
-        if (j0Var3 != j0Var4) {
-            j0Var4 = j0.f6658g;
-        }
-        x0Var.f6793v = eVar;
-        boolean z15 = true;
-        if (x0Var.f6794w != z10) {
-            x0Var.f6794w = z10;
-            if (!z10) {
-                x0Var.G0();
-                d0 d0Var2 = x0Var.B;
-                if (d0Var2 != null) {
-                    x0Var.B0(d0Var2);
-                }
-                x0Var.B = null;
-            }
-            z11 = true;
-        }
-        j jVar = x0Var.f6795x;
-        j jVar2 = this.f612g;
-        if (!r6.k.a(jVar, jVar2)) {
-            x0Var.G0();
-            x0Var.f6795x = jVar2;
-        }
-        if (x0Var.f6792u != j0Var4) {
-            x0Var.f6792u = j0Var4;
-        } else {
-            z15 = z11;
-        }
-        if (z15 && (d0Var = x0Var.B) != null) {
-            d0Var.C0();
-        }
-        if (z8) {
-            x0Var.L = null;
-            x0Var.M = null;
-            f.o(x0Var);
-        }
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void inspectableProperties(InspectorInfo inspectorInfo) {
+        inspectorInfo.setName("scrollable");
+        inspectorInfo.getProperties().set("orientation", this.orientation);
+        inspectorInfo.getProperties().set("state", this.state);
+        inspectorInfo.getProperties().set("overscrollEffect", this.overscrollEffect);
+        inspectorInfo.getProperties().set("enabled", Boolean.valueOf(this.enabled));
+        inspectorInfo.getProperties().set("reverseDirection", Boolean.valueOf(this.reverseDirection));
+        inspectorInfo.getProperties().set("flingBehavior", this.flingBehavior);
+        inspectorInfo.getProperties().set("interactionSource", this.interactionSource);
+        inspectorInfo.getProperties().set("bringIntoViewSpec", this.bringIntoViewSpec);
     }
 }

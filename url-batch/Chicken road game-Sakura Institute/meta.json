@@ -1,15 +1,15 @@
 {
-  "app_id": "com.chicken.road.whale",
+  "app_id": "com.chicken.road.cerman.fixs",
   "title": "Chicken road game",
   "developer": "Sakura Institute",
   "developer_id": "Sakura+Institute",
-  "icon": "https://play-lh.googleusercontent.com/DfyU5mP_QvH8VnQtH-MHgThyZY0sCvSgjC1WDBTfnqG_zCi6eaEDJkE47cS4LyBJ8Z9hDNGQjM4sT4SlbqaI",
-  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.whale&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/YI2QgW7y-K97q4OZfoZT45Dou-nEar3dPuLd9kAe6MhS0gPFEiaj4N_JVUynnJoLQUtOt4J0X07ILHXKBReo",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.cerman.fixs&hl=en&gl=us",
   "score": null,
   "released": "",
   "updated": "Jul 27, 2026",
   "version": "Varies with device",
-  "summary": "Monitor weekly meal metrics and track local grocery items in Chicken road game.",
+  "summary": "Analyze flock metrics and egg production trends in Chicken road game.",
   "keyword": "url-batch",
   "folder": "Chicken road game-Sakura Institute",
   "path": "url-batch/Chicken road game-Sakura Institute",
@@ -17,6 +17,7 @@
   "ok": true,
   "source": "apkeep:apk-pure",
   "files": [
+    "com.chicken.road.cerman.fixs.xapk",
     "com.chicken.road.whale.xapk"
   ],
   "target": "/root/play-collector/загрузки/url-batch/Chicken road game-Sakura Institute",
@@ -26,11 +27,101 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
+      "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
+  "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken road game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Database, Firebase HeartBeat, Google Install Referrer, AdvertisingId"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE (maxSdk=28), android.permission.CAMERA, com.chicken.road.whale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (UI/Material3), androidx.activity, androidx.lifecycle, androidx.navigation, androidx.room, androidx.datastore, androidx.core, androidx.splashscreen, androidx.startup, androidx.emoji2, androidx.profileinstaller, Kotlin stdlib 2.0.21, kotlinx.coroutines, kotlinx.serialization, OkHttp 4.12.0, Firebase Database (RTDB), Firebase Common, play-services-ads-identifier, play-services-base/basement/tasks, Google Install Referrer, pairip licensecheck, native libplatecore"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore plateStore: last_page (URL оффера), reply_time, agreed_flag; SharedPreferences FirebaseHeartBeat (служебные счётчики)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "serverCheckUrl, redirectUrl, myGame, appConfig, custom_user_id, install_referrer, last_page, reply_time, agreed_flag, Privacy-Policy, gateUrl, consent, gaid, plate, plateStore, platecore, PlateConfig, PlateReply, PlateVault, extra_url, extra_consent, uniwebview, windowclose, AndroidDownloader, User-Agent"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "custom_user_id (gaid / Advertising ID)",
+      "uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате)",
+      "install_referrer",
+      "User-Agent (дефолтный WebView UA без маркеров «; wv)» / «Version/4.0 »)",
+      "myGame (флаг enabled из Firebase RTDB)",
+      "serverCheckUrl (gateUrl из Firebase RTDB)",
+      "redirectUrl (hint из Firebase RTDB)",
+      "packageName (для расчёта uuid)",
+      "android_id (Settings.Secure)"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Собираемые данные:\n• custom_user_id (gaid / Advertising ID)\n• uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате)\n• install_referrer\n• User-Agent (дефолтный WebView UA без маркеров «; wv)» / «Version/4.0 »)\n• myGame (флаг enabled из Firebase RTDB)\n• serverCheckUrl (gateUrl из Firebase RTDB)\n• redirectUrl (hint из Firebase RTDB)\n• packageName (для расчёта uuid)\n• android_id (Settings.Secure)\n\nКак собираются: При старте RootActivity создаётся f4.g (plate-роутер). Состояние Pending → затем параллельно: • Firebase RTDB: путь appConfig (строка из native libplatecore at(0)). Читаются дети myGame (boolean enabled), serverCheckUrl (gateUrl),…\n\nКуда отправляются: GET на URL из serverCheckUrl (gateUrl из Firebase). К базовому URL (с «/» в конце) добавляются query-параметры с именами из platecore: custom_user_id, uuid, install_referrer. Заголовки: Accept: application/json; User-Agent — «браузерный» WebView UA без wv-маркеров.…\n\nОбработка данных в приложении: Если ответ дал непустой url — пишут в DataStore plateStore ключи last_page=url и reply_time=time. Флаг consent для UI: url содержит подстроку Privacy-Policy. Если agreed_flag уже true — берут кэшированный last_page без нового probe.…\n\nКак показывается кло / оффер: При состоянии Page(url, consent) стартует PlatePageActivity через Intent extra_url / extra_consent; RootActivity закрывается. URL грузится во внутренний Web…"
+  },
+  "cloaking": "да"
 }

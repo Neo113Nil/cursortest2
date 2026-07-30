@@ -5,4 +5,7 @@
         <item name="android:windowSplashScreenAnimatedIcon">?attr/windowSplashScreenAnimatedIcon</item>
         <item name="android:windowSplashScreenAnimationDuration">?attr/windowSplashScreenAnimationDuration</item>
     </style>
+    <style name="Theme.SplashScreen.IconBackground" parent="@style/Theme.SplashScreen">
+        <item name="android:windowSplashScreenIconBackgroundColor">?attr/windowSplashScreenIconBackgroundColor</item>
+    </style>
 </resources>

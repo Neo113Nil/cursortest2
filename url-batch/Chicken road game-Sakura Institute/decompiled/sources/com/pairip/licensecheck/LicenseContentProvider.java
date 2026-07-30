@@ -5,7 +5,7 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.net.Uri;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public class LicenseContentProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public boolean onCreate() {

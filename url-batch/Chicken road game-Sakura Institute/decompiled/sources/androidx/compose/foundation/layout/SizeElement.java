@@ -1,75 +1,77 @@
 package androidx.compose.foundation.layout;
 
-import a0.m;
-import m2.e;
-import q.o0;
-import r1.s0;
-import s0.n;
+import androidx.compose.ui.node.ModifierNodeElement;
+import androidx.compose.ui.platform.InspectorInfo;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
+/* compiled from: Size.kt */
+@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\b\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001BN\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0004\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0017\u0010\n\u001a\u0013\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r0\u000b¢\u0006\u0002\b\u000e¢\u0006\u0002\u0010\u000fJ\b\u0010\u0011\u001a\u00020\u0002H\u0016J\u0013\u0010\u0012\u001a\u00020\t2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0096\u0002J\b\u0010\u0015\u001a\u00020\u0016H\u0016J\u0010\u0010\u0017\u001a\u00020\r2\u0006\u0010\u0018\u001a\u00020\u0002H\u0016J\f\u0010\u0019\u001a\u00020\r*\u00020\fH\u0016R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u001f\u0010\n\u001a\u0013\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r0\u000b¢\u0006\u0002\b\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\u00020\u0004X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0010R\u0016\u0010\u0006\u001a\u00020\u0004X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0010R\u0016\u0010\u0005\u001a\u00020\u0004X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0010R\u0016\u0010\u0003\u001a\u00020\u0004X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0010\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001a"}, d2 = {"Landroidx/compose/foundation/layout/SizeElement;", "Landroidx/compose/ui/node/ModifierNodeElement;", "Landroidx/compose/foundation/layout/SizeNode;", "minWidth", "Landroidx/compose/ui/unit/Dp;", "minHeight", "maxWidth", "maxHeight", "enforceIncoming", "", "inspectorInfo", "Lkotlin/Function1;", "Landroidx/compose/ui/platform/InspectorInfo;", "", "Lkotlin/ExtensionFunctionType;", "(FFFFZLkotlin/jvm/functions/Function1;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "F", "create", "equals", "other", "", "hashCode", "", "update", "node", "inspectableProperties", "foundation-layout_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 /* loaded from: classes.dex */
-final class SizeElement extends s0 {
+final class SizeElement extends ModifierNodeElement<SizeNode> {
+    private final boolean enforceIncoming;
+    private final Function1<InspectorInfo, Unit> inspectorInfo;
+    private final float maxHeight;
+    private final float maxWidth;
+    private final float minHeight;
+    private final float minWidth;
 
-    /* renamed from: a, reason: collision with root package name */
-    public final float f627a;
-
-    /* renamed from: b, reason: collision with root package name */
-    public final float f628b;
-
-    /* renamed from: c, reason: collision with root package name */
-    public final float f629c;
-
-    /* renamed from: d, reason: collision with root package name */
-    public final float f630d;
-
-    /* renamed from: e, reason: collision with root package name */
-    public final boolean f631e;
-
-    public SizeElement(float f9, float f10, float f11, float f12, boolean z8) {
-        this.f627a = f9;
-        this.f628b = f10;
-        this.f629c = f11;
-        this.f630d = f12;
-        this.f631e = z8;
+    public /* synthetic */ SizeElement(float f, float f2, float f3, float f4, boolean z, Function1 function1, DefaultConstructorMarker defaultConstructorMarker) {
+        this(f, f2, f3, f4, z, function1);
     }
 
-    public final boolean equals(Object obj) {
-        if (this == obj) {
+    public /* synthetic */ SizeElement(float f, float f2, float f3, float f4, boolean z, Function1 function1, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? Dp.INSTANCE.m6319getUnspecifiedD9Ej5fM() : f, (i & 2) != 0 ? Dp.INSTANCE.m6319getUnspecifiedD9Ej5fM() : f2, (i & 4) != 0 ? Dp.INSTANCE.m6319getUnspecifiedD9Ej5fM() : f3, (i & 8) != 0 ? Dp.INSTANCE.m6319getUnspecifiedD9Ej5fM() : f4, z, function1, null);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    private SizeElement(float f, float f2, float f3, float f4, boolean z, Function1<? super InspectorInfo, Unit> function1) {
+        this.minWidth = f;
+        this.minHeight = f2;
+        this.maxWidth = f3;
+        this.maxHeight = f4;
+        this.enforceIncoming = z;
+        this.inspectorInfo = function1;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    /* renamed from: create */
+    public SizeNode getNode() {
+        return new SizeNode(this.minWidth, this.minHeight, this.maxWidth, this.maxHeight, this.enforceIncoming, null);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void update(SizeNode node) {
+        node.m742setMinWidth0680j_4(this.minWidth);
+        node.m741setMinHeight0680j_4(this.minHeight);
+        node.m740setMaxWidth0680j_4(this.maxWidth);
+        node.m739setMaxHeight0680j_4(this.maxHeight);
+        node.setEnforceIncoming(this.enforceIncoming);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public void inspectableProperties(InspectorInfo inspectorInfo) {
+        this.inspectorInfo.invoke(inspectorInfo);
+    }
+
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public boolean equals(Object other) {
+        if (this == other) {
             return true;
         }
-        if (!(obj instanceof SizeElement)) {
+        if (!(other instanceof SizeElement)) {
             return false;
         }
-        SizeElement sizeElement = (SizeElement) obj;
-        return e.a(this.f627a, sizeElement.f627a) && e.a(this.f628b, sizeElement.f628b) && e.a(this.f629c, sizeElement.f629c) && e.a(this.f630d, sizeElement.f630d) && this.f631e == sizeElement.f631e;
+        SizeElement sizeElement = (SizeElement) other;
+        return Dp.m6304equalsimpl0(this.minWidth, sizeElement.minWidth) && Dp.m6304equalsimpl0(this.minHeight, sizeElement.minHeight) && Dp.m6304equalsimpl0(this.maxWidth, sizeElement.maxWidth) && Dp.m6304equalsimpl0(this.maxHeight, sizeElement.maxHeight) && this.enforceIncoming == sizeElement.enforceIncoming;
     }
 
-    public final int hashCode() {
-        return Boolean.hashCode(this.f631e) + m.a(this.f630d, m.a(this.f629c, m.a(this.f628b, Float.hashCode(this.f627a) * 31, 31), 31), 31);
-    }
-
-    @Override // r1.s0
-    public final n l() {
-        o0 o0Var = new o0();
-        o0Var.f7320s = this.f627a;
-        o0Var.f7321t = this.f628b;
-        o0Var.f7322u = this.f629c;
-        o0Var.f7323v = this.f630d;
-        o0Var.f7324w = this.f631e;
-        return o0Var;
-    }
-
-    @Override // r1.s0
-    public final void m(n nVar) {
-        o0 o0Var = (o0) nVar;
-        o0Var.f7320s = this.f627a;
-        o0Var.f7321t = this.f628b;
-        o0Var.f7322u = this.f629c;
-        o0Var.f7323v = this.f630d;
-        o0Var.f7324w = this.f631e;
-    }
-
-    public /* synthetic */ SizeElement(float f9, float f10, float f11, float f12, int i7) {
-        this((i7 & 1) != 0 ? Float.NaN : f9, (i7 & 2) != 0 ? Float.NaN : f10, (i7 & 4) != 0 ? Float.NaN : f11, (i7 & 8) != 0 ? Float.NaN : f12, true);
+    @Override // androidx.compose.ui.node.ModifierNodeElement
+    public int hashCode() {
+        return (((((((Dp.m6305hashCodeimpl(this.minWidth) * 31) + Dp.m6305hashCodeimpl(this.minHeight)) * 31) + Dp.m6305hashCodeimpl(this.maxWidth)) * 31) + Dp.m6305hashCodeimpl(this.maxHeight)) * 31) + Boolean.hashCode(this.enforceIncoming);
     }
 }

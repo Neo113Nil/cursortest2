@@ -1,28 +1,138 @@
 package androidx.core.app;
 
 import android.app.PendingIntent;
+import android.app.RemoteAction;
+import android.graphics.drawable.Icon;
+import android.os.Build;
 import androidx.core.graphics.drawable.IconCompat;
-import d4.d;
+import androidx.core.util.Preconditions;
+import androidx.versionedparcelable.VersionedParcelable;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
-public final class RemoteActionCompat implements d {
+/* loaded from: classes3.dex */
+public final class RemoteActionCompat implements VersionedParcelable {
+    public PendingIntent mActionIntent;
+    public CharSequence mContentDescription;
+    public boolean mEnabled;
+    public IconCompat mIcon;
+    public boolean mShouldShowIcon;
+    public CharSequence mTitle;
 
-    /* renamed from: a, reason: collision with root package name */
-    public IconCompat f749a;
+    public RemoteActionCompat(IconCompat iconCompat, CharSequence charSequence, CharSequence charSequence2, PendingIntent pendingIntent) {
+        this.mIcon = (IconCompat) Preconditions.checkNotNull(iconCompat);
+        this.mTitle = (CharSequence) Preconditions.checkNotNull(charSequence);
+        this.mContentDescription = (CharSequence) Preconditions.checkNotNull(charSequence2);
+        this.mActionIntent = (PendingIntent) Preconditions.checkNotNull(pendingIntent);
+        this.mEnabled = true;
+        this.mShouldShowIcon = true;
+    }
 
-    /* renamed from: b, reason: collision with root package name */
-    public CharSequence f750b;
+    public RemoteActionCompat() {
+    }
 
-    /* renamed from: c, reason: collision with root package name */
-    public CharSequence f751c;
+    public RemoteActionCompat(RemoteActionCompat remoteActionCompat) {
+        Preconditions.checkNotNull(remoteActionCompat);
+        this.mIcon = remoteActionCompat.mIcon;
+        this.mTitle = remoteActionCompat.mTitle;
+        this.mContentDescription = remoteActionCompat.mContentDescription;
+        this.mActionIntent = remoteActionCompat.mActionIntent;
+        this.mEnabled = remoteActionCompat.mEnabled;
+        this.mShouldShowIcon = remoteActionCompat.mShouldShowIcon;
+    }
 
-    /* renamed from: d, reason: collision with root package name */
-    public PendingIntent f752d;
+    public static RemoteActionCompat createFromRemoteAction(RemoteAction remoteAction) {
+        Preconditions.checkNotNull(remoteAction);
+        RemoteActionCompat remoteActionCompat = new RemoteActionCompat(IconCompat.createFromIcon(Api26Impl.getIcon(remoteAction)), Api26Impl.getTitle(remoteAction), Api26Impl.getContentDescription(remoteAction), Api26Impl.getActionIntent(remoteAction));
+        remoteActionCompat.setEnabled(Api26Impl.isEnabled(remoteAction));
+        if (Build.VERSION.SDK_INT >= 28) {
+            remoteActionCompat.setShouldShowIcon(Api28Impl.shouldShowIcon(remoteAction));
+        }
+        return remoteActionCompat;
+    }
 
-    /* renamed from: e, reason: collision with root package name */
-    public boolean f753e;
+    public void setEnabled(boolean z) {
+        this.mEnabled = z;
+    }
 
-    /* renamed from: f, reason: collision with root package name */
-    public boolean f754f;
+    public boolean isEnabled() {
+        return this.mEnabled;
+    }
+
+    public void setShouldShowIcon(boolean z) {
+        this.mShouldShowIcon = z;
+    }
+
+    public boolean shouldShowIcon() {
+        return this.mShouldShowIcon;
+    }
+
+    public IconCompat getIcon() {
+        return this.mIcon;
+    }
+
+    public CharSequence getTitle() {
+        return this.mTitle;
+    }
+
+    public CharSequence getContentDescription() {
+        return this.mContentDescription;
+    }
+
+    public PendingIntent getActionIntent() {
+        return this.mActionIntent;
+    }
+
+    public RemoteAction toRemoteAction() {
+        RemoteAction createRemoteAction = Api26Impl.createRemoteAction(this.mIcon.toIcon(), this.mTitle, this.mContentDescription, this.mActionIntent);
+        Api26Impl.setEnabled(createRemoteAction, isEnabled());
+        if (Build.VERSION.SDK_INT >= 28) {
+            Api28Impl.setShouldShowIcon(createRemoteAction, shouldShowIcon());
+        }
+        return createRemoteAction;
+    }
+
+    static class Api28Impl {
+        private Api28Impl() {
+        }
+
+        static boolean shouldShowIcon(RemoteAction remoteAction) {
+            return remoteAction.shouldShowIcon();
+        }
+
+        static void setShouldShowIcon(RemoteAction remoteAction, boolean z) {
+            remoteAction.setShouldShowIcon(z);
+        }
+    }
+
+    static class Api26Impl {
+        private Api26Impl() {
+        }
+
+        static CharSequence getContentDescription(RemoteAction remoteAction) {
+            return remoteAction.getContentDescription();
+        }
+
+        static PendingIntent getActionIntent(RemoteAction remoteAction) {
+            return remoteAction.getActionIntent();
+        }
+
+        static CharSequence getTitle(RemoteAction remoteAction) {
+            return remoteAction.getTitle();
+        }
+
+        static Icon getIcon(RemoteAction remoteAction) {
+            return remoteAction.getIcon();
+        }
+
+        static boolean isEnabled(RemoteAction remoteAction) {
+            return remoteAction.isEnabled();
+        }
+
+        static RemoteAction createRemoteAction(Icon icon, CharSequence charSequence, CharSequence charSequence2, PendingIntent pendingIntent) {
+            return new RemoteAction(icon, charSequence, charSequence2, pendingIntent);
+        }
+
+        static void setEnabled(RemoteAction remoteAction, boolean z) {
+            remoteAction.setEnabled(z);
+        }
+    }
 }

@@ -1,55 +1,57 @@
 package com.google.android.gms.common.api;
 
-import a8.m;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.text.TextUtils;
+import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import n4.a;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
-public final class Scope extends a implements ReflectedParcelable {
-    public static final Parcelable.Creator<Scope> CREATOR = new d4.a(5);
+/* compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* loaded from: classes3.dex */
+public final class Scope extends AbstractSafeParcelable implements ReflectedParcelable {
+    public static final Parcelable.Creator<Scope> CREATOR = new zza();
+    final int zza;
+    private final String zzb;
 
-    /* renamed from: f, reason: collision with root package name */
-    public final int f1772f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final String f1773g;
-
-    public Scope(String str, int i7) {
-        if (TextUtils.isEmpty(str)) {
-            throw new IllegalArgumentException("scopeUri must not be null or empty");
-        }
-        this.f1772f = i7;
-        this.f1773g = str;
+    Scope(int i, String str) {
+        Preconditions.checkNotEmpty(str, "scopeUri must not be null or empty");
+        this.zza = i;
+        this.zzb = str;
     }
 
-    public final boolean equals(Object obj) {
+    public boolean equals(Object obj) {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Scope)) {
-            return false;
+        if (obj instanceof Scope) {
+            return this.zzb.equals(((Scope) obj).zzb);
         }
-        return this.f1773g.equals(((Scope) obj).f1773g);
+        return false;
     }
 
-    public final int hashCode() {
-        return this.f1773g.hashCode();
+    public String getScopeUri() {
+        return this.zzb;
     }
 
-    public final String toString() {
-        return this.f1773g;
+    public int hashCode() {
+        return this.zzb.hashCode();
+    }
+
+    public String toString() {
+        return this.zzb;
     }
 
     @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i7) {
-        int R = m.R(parcel, 20293);
-        m.T(parcel, 1, 4);
-        parcel.writeInt(this.f1772f);
-        m.P(parcel, 2, this.f1773g);
-        m.S(parcel, R);
+    public void writeToParcel(Parcel parcel, int i) {
+        int i2 = this.zza;
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeInt(parcel, 1, i2);
+        SafeParcelWriter.writeString(parcel, 2, getScopeUri(), false);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+
+    public Scope(String str) {
+        this(1, str);
     }
 }

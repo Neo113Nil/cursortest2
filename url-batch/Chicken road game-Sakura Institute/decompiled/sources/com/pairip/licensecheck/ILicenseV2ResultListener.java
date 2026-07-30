@@ -8,7 +8,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.RemoteException;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public interface ILicenseV2ResultListener extends IInterface {
     public static final String DESCRIPTOR = "com.android.vending.licensing.ILicenseV2ResultListener";
 
@@ -41,9 +41,9 @@ public interface ILicenseV2ResultListener extends IInterface {
             return true;
         }
 
-        private static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c4) {
+        private static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c) {
             if (parcel.readInt() != 0) {
-                return c4.createFromParcel(parcel);
+                return c.createFromParcel(parcel);
             }
             return null;
         }
