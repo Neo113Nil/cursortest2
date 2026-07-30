@@ -1,0 +1,16 @@
+package com.google.android.gms.internal.auth;
+
+import java.util.Iterator;
+
+/* loaded from: classes3.dex */
+final class zzgm implements Iterable {
+    zzgm() {
+    }
+
+    @Override // java.lang.Iterable
+    public final Iterator iterator() {
+        Iterator it;
+        it = zzgn.zza;
+        return it;
+    }
+}

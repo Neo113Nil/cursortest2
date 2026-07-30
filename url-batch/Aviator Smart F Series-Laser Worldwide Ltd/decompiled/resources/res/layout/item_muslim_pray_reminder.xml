@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/iv_pray_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="0x7f08046b"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"
+        android:id="@+id/tv_pray_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/iv_pray_time"/>
+    <com.crrepa.band.my.device.muslim.view.SwitchButton
+        android:id="@+id/sbtn_prayer_reminder"
+        android:layout_width="44dp"
+        android:layout_height="30dp"
+        app:kswAnimationDuration="300"
+        app:kswBackDrawable="@drawable/muslim_switch_button_back_color"
+        app:kswThumbDrawable="@drawable/selector_switch_button_thumb"
+        app:kswThumbHeight="28dp"
+        app:kswThumbMargin="1dp"
+        app:kswThumbWidth="28dp"
+        style="@style/SwitchButoonStyle"/>
+    <View
+        android:layout_alignParentBottom="true"
+        style="@style/BorderView"/>
+</RelativeLayout>

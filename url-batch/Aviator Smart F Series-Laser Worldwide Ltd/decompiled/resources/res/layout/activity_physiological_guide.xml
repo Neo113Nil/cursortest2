@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/color_physiological_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height">
+        <ImageView
+            android:id="@+id/iv_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_w"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"/>
+        <TextView
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/physiological_guide_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"/>
+    <Button
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/white"
+        android:id="@+id/btn_physiological_start"
+        android:background="@drawable/select_physiological_button"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"/>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_cricket_cwc_type"
+        android:background="@drawable/shape_cricket_tab_half_bottom_corner"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabIndicatorColor="@color/translucent"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="20dp"
+        app:tabPaddingStart="20dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="@color/main"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/assist_7_B3"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_cricket_cwc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"/>
+</LinearLayout>

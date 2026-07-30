@@ -1,0 +1,18 @@
+package com.google.android.gms.common.server.response;
+
+import androidx.annotation.Nullable;
+import java.io.BufferedReader;
+
+/* loaded from: classes3.dex */
+final class zad implements zai {
+    zad() {
+    }
+
+    @Override // com.google.android.gms.common.server.response.zai
+    @Nullable
+    public final /* synthetic */ Object zaa(FastParser fastParser, BufferedReader bufferedReader) {
+        double zaj;
+        zaj = fastParser.zaj(bufferedReader);
+        return Double.valueOf(zaj);
+    }
+}

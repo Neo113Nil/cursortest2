@@ -1,0 +1,36 @@
+package com.google.android.exoplayer2.offline;
+
+import java.io.Closeable;
+
+@Deprecated
+/* loaded from: classes3.dex */
+public interface DownloadCursor extends Closeable {
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    void close();
+
+    int getCount();
+
+    Download getDownload();
+
+    int getPosition();
+
+    boolean isAfterLast();
+
+    boolean isBeforeFirst();
+
+    boolean isClosed();
+
+    boolean isFirst();
+
+    boolean isLast();
+
+    boolean moveToFirst();
+
+    boolean moveToLast();
+
+    boolean moveToNext();
+
+    boolean moveToPosition(int i8);
+
+    boolean moveToPrevious();
+}

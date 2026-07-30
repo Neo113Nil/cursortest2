@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/color_gps_finish_path_slow"
+        android:endColor="@color/color_gps_finish_path_fast"
+        android:angle="0"
+        android:centerColor="@color/color_gps_finish_path_normal"/>
+    <corners android:radius="2dp"/>
+</shape>

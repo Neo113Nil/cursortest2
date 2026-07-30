@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.fido;
+
+import android.app.PendingIntent;
+import android.os.IInterface;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.api.Status;
+
+/* loaded from: classes3.dex */
+public interface zzv extends IInterface {
+    void zzb(Status status, @Nullable PendingIntent pendingIntent);
+}

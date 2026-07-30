@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sleep_time_segment_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.crrepa.band.my.health.widgets.segmentedbar.SegmentedBarView
+        android:id="@+id/sleep_time_distributed_bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        app:sbv_bar_height="60dp"
+        app:sbv_descriptionAlign="Both"
+        app:sbv_descriptionTopAlign="Center"
+        app:sbv_segment_bg="false"
+        app:sbv_segment_gap_width="0dp"
+        app:sbv_segment_rule="scale"
+        app:sbv_show_description_text="false"
+        app:sbv_show_description_top_text="false"
+        app:sbv_show_segment_text="false"
+        app:sbv_side_style="normal"
+        app:sbv_side_text_style="oneSided"
+        app:sbv_sliderType="Sign"/>
+    <TextView
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/grey"
+        android:id="@+id/tv_start_sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sleep_time_distributed_bar"/>
+    <TextView
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/grey"
+        android:id="@+id/tv_stop_sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sleep_time_distributed_bar"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

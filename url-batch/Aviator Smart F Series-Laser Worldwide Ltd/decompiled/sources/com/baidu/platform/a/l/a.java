@@ -1,0 +1,13 @@
+package com.baidu.platform.a.l;
+
+import com.baidu.mapapi.search.weather.OnGetWeatherResultListener;
+import com.baidu.mapapi.search.weather.WeatherSearchOption;
+
+/* loaded from: classes2.dex */
+public interface a {
+    void a(OnGetWeatherResultListener onGetWeatherResultListener);
+
+    boolean a(WeatherSearchOption weatherSearchOption);
+
+    void destroy();
+}

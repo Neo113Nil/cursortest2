@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/tv_num"
+        android:background="@drawable/shape_training_path_replay_km_flag"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:minWidth="20dp"
+        android:layout_centerInParent="true"
+        android:paddingHorizontal="2dp"/>
+</RelativeLayout>

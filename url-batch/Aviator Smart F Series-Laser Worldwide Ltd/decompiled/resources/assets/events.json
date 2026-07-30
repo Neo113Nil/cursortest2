@@ -1,0 +1,58 @@
+{
+  "clientContext": [
+    {
+      "header": {
+        "name": "AlertsState",
+        "namespace": "ai.dueros.device_interface.alerts"
+      },
+      "payload": {
+        "activeAlerts": [],
+        "allAlerts": []
+      }
+    },
+    {
+      "header": {
+        "name": "VolumeState",
+        "namespace": "ai.dueros.device_interface.speaker_ controller"
+      },
+      "payload": {
+        "muted": false,
+        "volume": 80
+      }
+    },
+    {
+      "header": {
+        "name": "PlaybackState",
+        "namespace": "ai.dueros.device_interface.video_ player"
+      },
+      "payload": {
+        "offsetInMilliseconds": 0,
+        "playerActivity": "FINISHED",
+        "token": ""
+      }
+    },
+    {
+      "header": {
+        "name": "SpeechState",
+        "namespace": "ai.dueros.device_interface.voice_ou tput"
+      },
+      "payload": {
+        "offsetInMilliseconds": 0,
+        "playerActivity": "FINISHED",
+        "token": ""
+      }
+    }
+  ],
+  "event": {
+    "header": {
+      "name": "ListenStarted",
+      "namespace": "ai.dueros.device_interface.voice_input",
+      "messageId": "123",
+      "dialogRequestId": "123"
+    },
+    "payload": {
+      "format": "AUDIO_L16_RATE_16000_CHANNELS_1",
+      "profile": ""
+    }
+  }
+}

@@ -1,0 +1,13 @@
+package com.google.android.exoplayer2.extractor.mkv;
+
+import com.google.android.exoplayer2.extractor.ExtractorInput;
+
+@Deprecated
+/* loaded from: classes3.dex */
+interface EbmlReader {
+    void init(EbmlProcessor ebmlProcessor);
+
+    boolean read(ExtractorInput extractorInput);
+
+    void reset();
+}
