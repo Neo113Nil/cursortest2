@@ -30,5 +30,88 @@
   "version": "Varies with device",
   "updated": "Jul 16, 2026",
   "cloaking": "да",
-  "_store_enriched": true
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppMetrica (apiKey 6328603), OneSignal, Firebase Messaging / Installations, Varioqub (Yandex Remote Config), Play Install Referrer, Advertising ID"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, com.android.vending.BILLING, android.permission.ACCESS_WIFI_STATE, com.chickyneer.roadway.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.FOREGROUND_SERVICE, com.google.android.gms.per…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Flutter, Kotlin 2.1.0, kotlinx-coroutines, AndroidX (AppCompat, Browser/Custom Tabs, Core/Core-KTX, Activity, Fragment, Lifecycle, DataStore Preferences, Preference, Window, Work, Room, ProfileInstaller, Startup), OneSignal 5.x (onesignal_flutter), Firebase Messaging / Installations / Components / Encoders, Play Services (Cloud Messaging, Ads Identifier, AppSet, Base, Basement, Location, Tasks), Google Play Billing 7.1.1, Install Referrer, AppMetrica 7.x (appmetrica_plugin flutter-3.4.0), Varioqub (varioqub_plugin + AppMetrica adapter), OkHttp, OpenTelemetry (OneSignal), audioplayers_android, device_info_plus, network_info_plus, flutter_custom_tabs_android, in_app_purchase_android, jni / jni_flutter, shared_preferences_android, vibration, pairip (licensecheck / Application)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "FlutterSharedPreferences: crossing_balance, audio_sound_on / audio_music_on / volumes, journey_consent_accepted_v1 (18+), welcome_bonus_claimed_v1, free_spins_count, wheel_last_spin_date, wager_history, exchange_payment_method / exchange_payment_detail / exchange_usd_wallet / exchange_lifetime_winnings_total, wallet_pay, NOT_A_FIRST_LAUNCH, NOTIFICATION_ENABLED, settings_notifications_on, coin_pack_purchased, lane_crossed; также OneSignal prefs, AppMetrica / app_set_id_storage, com.google.firebase.messaging, androidx.work"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, externalOffer, app_link, launchUrl, url, withdraw, payout, bet, FREE SPINS, CASH OUT, BTC, usdt, trc20, 18+, Watch Ad, REWARDED, Privacy Policy, journey_consent_accepted_v1 Собираемые данные • device_model / model / manufacturer / brand / fingerprint (device_info_plus) • isPhysicalDevice • advertisingId (GAID, permission AD_ID) • packageName (com.chickyneer.roadway) • app version / build • locale / language • network info (network_info_plus) • install referrer • AppMetrica device id / uuid (apiKey 6328603 / client appmetrica.6328603) • onesignalId / push subscription token (OneSignal App ID d203c2b9-b4fa-4376-9225-63a63c248848) • Firebase Installation / FCM token (app id 1:754795614042:android:c682b8144a8dd52bc1ad63) • app_link (строка из Varioqub getString — URL оффера) • NOT_A_FIRST_LAUNCH / APP_OPEN • journey_consent_accepted_v1"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "device_model / model / manufacturer / brand / fingerprint (device_info_plus)",
+      "isPhysicalDevice",
+      "advertisingId (GAID, permission AD_ID)",
+      "packageName (com.chickyneer.roadway)",
+      "app version / build",
+      "locale / language",
+      "network info (network_info_plus)",
+      "install referrer",
+      "AppMetrica device id / uuid (apiKey 6328603 / client appmetrica.6328603)",
+      "onesignalId / push subscription token (OneSignal App ID d203c2b9-b4fa-4376-9225-63a63c248848)",
+      "Firebase Installation / FCM token (app id 1:754795614042:android:c682b8144a8dd52bc1ad63)",
+      "app_link (строка из Varioqub getString — URL оффера)",
+      "NOT_A_FIRST_LAUNCH / APP_OPEN",
+      "journey_consent_accepted_v1"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Собираемые данные:\n• device_model / model / manufacturer / brand / fingerprint (device_info_plus)\n• isPhysicalDevice\n• advertisingId (GAID, permission AD_ID)\n• packageName (com.chickyneer.roadway)\n• app version / build\n• locale / language\n• network info (network_info_plus)\n• install referrer\n• AppMetrica device id / uuid (apiKey 6328603 / client appmetrica.6328603)\n• onesignalId / push subscription token (OneSignal App ID d203c2b9-b4fa-4376-9225-63a63c248848)\n• Firebase Installation / FCM token (app id 1:754795614042:android:c682b8144a8dd52bc1ad63)\n• app_link (строка из Varioqub getString — URL оффера)\n• NOT_A_FIRST_LAUNCH / APP_OPEN\n• journey_consent_accepted_v1\n\nСнаружи это Flutter-игра «Chicken Road»: курица на дороге, ставки, монеты, колесо бонусов, магазин и экран «обмен/вывод». Обман в том, что при старте приложение умеет не остаться в этой белой игре, а спросить у удалённого конфига Яндекса (Varioqub), показать ли игру или сразу открыть внешнюю ссылку. «Нужный» пользователь уходит на внешний оффер/лендинг (конкретный казино-URL в APK не зашит — его присылает сервер).…\n\nКуда отправляется запрос: Свой шлюз решения — Varioqub (Yandex UaaS / Remote Config), не отдельный самописный gate. Endpoint: https://app.uaas.yandex.ru/v1/app?client_id=%s, client_id в сборке: appmetrica.6328603 (тот же номер, что AppMetrica apiKey 6328603).…\n\nКак приходит ответ: Varioqub отдаёт набор клю…"
+  }
 }
