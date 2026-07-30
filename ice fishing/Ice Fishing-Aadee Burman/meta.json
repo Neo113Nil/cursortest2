@@ -59,7 +59,15 @@
       },
       {
         "param": "Custom Tabs",
-        "value": "да OneSignal да Firebase да AdMob да Remote Config нет"
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, TopOn/AnyThink, Meta Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase Messaging / Installations, Google Advertising ID / Ad Services"
       },
       {
         "param": "Permissions",
@@ -76,10 +84,17 @@
       {
         "param": "Есть ли клоака",
         "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "splash_redirect, splash_link_all, link1, link2, link3, redirect, offer, myoffer, qureka, web_url, Applink, deposit, Win Coins, livetv, banner_native_all, adposition Собираемые данные • в коде не видно"
       }
     ],
     "domains": [],
+    "collected_data": [
+      "в коде не видно"
+    ],
     "cloaking": "да",
-    "cloaking_brief": ""
+    "cloaking_brief": "Собираемые данные:\n• в коде не видно\n\nСнаружи это каталог мини-игр про зимнюю рыбалку (Ice Fishing) с HTML5-играми Gamezop. Обман в том, что при запуске приложение скачивает удалённый JSON с GitHub и по флагам из файла решает: оставить человека в «белой» игре или открыть внешние оффер-ссылки. «Нужный» пользователь уходит в Chrome Custom Tabs на один из URL из полей link1/link2/link3 (сейчас в live-конфиге: qureka / gamescritique / djdvk — квизы и промо).…\n\nКуда отправляется запрос: Свой шлюз решения — статический remote config на GitHub (не Firebase Remote Config). URL зашит в ApplinkActivity: https://raw.githubusercontent.com/smtpatel9211/PandyaTech/refs/heads/main/com.icefishing.icefishinglive2.…\n\nКак приходит ответ: GitHub возвращает JSON. Клиент кладёт его в MyPref.response и парсит: splash_link_all, splash_redirect, banner_native_all, adposition, link1, link2, link3, livetv, ключи TopOn/AdMob/Facebook Ads. splash_redirect=1 включает редиректы;…\n\nКак показывается целевая страница: Боевой URL открывают через Chrome Custom Tabs (C4799l.g / C4799l.h, пакет com.android.chrome; fallback — Intent VIEW). Случайно выбирается link1, link2 или link3. Белые HTML5-игры Gamezop грузятся в MWebActivity (WebView).…"
   }
 }

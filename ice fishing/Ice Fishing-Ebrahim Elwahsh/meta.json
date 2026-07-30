@@ -30,56 +30,5 @@
   "version": "Varies with device",
   "updated": "Jun 15, 2026",
   "cloaking": "да",
-  "_store_enriched": true,
-  "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "Ice Fishing"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "8.9.0"
-      },
-      {
-        "param": "minSdk",
-        "value": "24"
-      },
-      {
-        "param": "targetSdk",
-        "value": "35"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да 2.1.0"
-      },
-      {
-        "param": "Web View",
-        "value": "да"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "да OneSignal да Firebase да AdMob да Remote Config нет"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_APP_BADGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.anddoes.launcher.permission.UPDATE_COUNT, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.gms.permission.AD_ID, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.icefishing.icefishingliveapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.icefishing.icefishingliveapp.permission.C2D_MESSAGE, com.majeur.launcher.permission.UPDATE_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, com.sec.android.provider.badge.permission.READ, com.sec.a…"
-      },
-      {
-        "param": "Libraries",
-        "value": "Kotlin 2.1.0 / kotlin-stdlib, kotlinx-coroutines 1.8.0 (core/android/play-services), AndroidX AppCompat 1.7.1, AndroidX Activity/activity-ktx 1.10.1, AndroidX Core/Core-KTX 1.13.0, AndroidX Fragment/fragment-ktx 1.6.1, AndroidX Browser 1.8.0 (Custom Tabs), AndroidX WebKit 1.12.1, AndroidX ConstraintLayout 2.2.1, AndroidX CardView 1.0.0, AndroidX RecyclerView 1.1.0, AndroidX Navigation 2.6.0, AndroidX Work 2.8.1, AndroidX Room 2.5.0, AndroidX DataStore 1.0.0, AndroidX Lifecycle/Process/ViewModel/LiveData, AndroidX Emoji2 1.3.0, AndroidX Startup 1.2.0, AndroidX ProfileInstaller 1.4.0, AndroidX Window 1.0.0, Material Components 1.12.0, Google Play Services Ads (AdMob) 25.3.0, Play Services Ads Identifier 18.0.0, Play Services Base 18.0.1 / Basement 18.9.0 / Tasks 18.2.0, Play Services Cloud Messaging 17.2.0 / Stats 17.0.2 / AppSet 16.0.1, User Messaging Platform (UMP/Consent) 4.0.0, Firebase Messaging + Installations + Common/KTX + Datatransport/CCT, OneSignal Android SDK (sdk version label 5.9.4 in code), TopOn / AnyThink Mediation SDK (com.anythink.*), Meta Audience Network (Facebook Ads), Glide (com.bumptech.glide), OkHttp / Okio, Volley-style HTTP queue (l1/m1), Lottie (com.airbnb…"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "MyPref: полный JSON remote-конфига (response), adposition, interstitial_id, AppOpenID, app_AppOpenAdStatus; HeartRate: флаг IsFirstTimeLaunch; OneSignal prefs/OneSignal.db: push-подписка и конфиг SDK; com.google.android.gms.appid: FCM/Firebase instance id; UMP/consent prefs: согласие на рекламу"
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      }
-    ],
-    "domains": [],
-    "cloaking": "да",
-    "cloaking_brief": ""
-  }
+  "_store_enriched": true
 }
