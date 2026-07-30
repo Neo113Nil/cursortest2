@@ -1,0 +1,61 @@
+{
+  "app_id": "com.icefish.app",
+  "title": "Ice Fishing",
+  "developer": "Technolation LTD",
+  "developer_id": "Technolation+LTD",
+  "icon": "https://play-lh.googleusercontent.com/ndLoDtJM9wjWe3v0ZOxE6BpZAkaqmiyN5y2IGyR9Rs502aCRN1JkTnKW0eCPdx9tbo-fHoM97aLQUFoUmTppmg",
+  "url": "https://play.google.com/store/apps/details?id=com.icefish.app&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 18, 2026",
+  "updated": "Jun 19, 2026",
+  "version": "Varies with device",
+  "summary": "Rescue trapped fish, break frozen blocks, and climb the leaderboards.",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Technolation LTD",
+  "path": "url-batch/Ice Fishing-Technolation LTD",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.icefish.app-2-asset.apk",
+    "com.icefish.app-2-config.arm64_v8a.apk",
+    "com.icefish.app-2-config.en.apk",
+    "com.icefish.app-2-config.lt.apk",
+    "com.icefish.app-2-config.ru.apk",
+    "com.icefish.app-2-config.xxhdpi.apk",
+    "com.icefish.app-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Technolation LTD",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icefish.app...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icefish.app...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.icefish.app ─╮\n│ Ice Fishing       │\n│ 1.1  (vc 2)       │\n╰───────────────────╯\n\nDownloading 7 files  (156.4 MB)\n  com.icefish.app-2.apk                  ━━━━━━━━ 100% 80.7/80… 12.8     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.arm64_v8a.apk ━━━━━━━━ 100% 13.9/13… 11.9     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.en.apk        ━━━━━━━━ 100% 45.5/45… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.lt.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.ru.apk        ━━━━━━━━ 100% 33.2/33… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.6/66… 2.4 MB/s 0:00:00\n                                                       kB                       \n  com.icefish.app-2-asset.apk            ━━━━━━━━ 100% 69.4/69… 10.7     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icefish.app-2.apk                  │ 76.9 MB │\n│ com.icefish.app-2-config.arm64_v8a.apk │ 13.2 MB │\n│ com.icefish.app-2-config.en.apk        │ 44.4 KB │\n│ com.icefish.app-2-config.lt.apk        │ 28.4 KB │\n│ com.icefish.app-2-config.ru.apk        │ 32.4 KB │\n│ com.icefish.app-2-config.xxhdpi.apk    │ 65.0 KB │\n│ com.icefish.app-2-asset.apk            │ 76.9 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.icefish.app ─╮\n│ Ice Fishing       │\n│ 1.1  (vc 2)       │\n╰───────────────────╯\n\nDownloading 7 files  (156.4 MB)\n  com.icefish.app-2.apk                  ━━━━━━━━ 100% 80.7/80… 12.8     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.arm64_v8a.apk ━━━━━━━━ 100% 13.9/13… 11.9     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.en.apk        ━━━━━━━━ 100% 45.5/45… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.lt.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.ru.apk        ━━━━━━━━ 100% 33.2/33… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.6/66… 2.4 MB/s 0:00:00\n                                                       kB                       \n  com.icefish.app-2-asset.apk            ━━━━━━━━ 100% 69.4/69… 10.7     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icefish.app-2.apk                  │ 76.9 MB │\n│ com.icefish.app-2-config.arm64_v8a.apk │ 13.2 MB │\n│ com.icefish.app-2-config.en.apk        │ 44.4 KB │\n│ com.icefish.app-2-config.lt.apk        │ 28.4 KB │\n│ com.icefish.app-2-config.ru.apk        │ 32.4 KB │\n│ com.icefish.app-2-config.xxhdpi.apk    │ 65.0 KB │\n│ com.icefish.app-2-asset.apk            │ 76.9 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
