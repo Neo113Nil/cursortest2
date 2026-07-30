@@ -32,5 +32,111 @@
   ],
   "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Smart F Series"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.6.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~1.8"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Google Play Install Referrer, Google Advertising ID"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_BACKGROUND_LOCATION, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_LOCATION_EXTRA_COMMANDS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.ACTIVITY_RECOGNITION, android.permission.ANSWER_PHONE_CALLS, android.permission.BLUETOOTH, android.permission.BLUETOOTH_ADMIN, android.permission.BLUETOOTH_CONNECT, android.permission.BLUETOOTH_SCAN, android.permission.BROADCAST_STICKY, android.permission.CALL_PHONE, android.permission.CAMERA, android.permission.CHANGE_WIFI_STATE, android.permission.FLASHLIGHT, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE, android.permission.INTERNET, android.permission.MEDIA_PROJECTION, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.READ_CALENDAR, android.permission.READ_CALL_LOG, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_MEDIA_AUDIO, android.permission.READ_MEDIA_VISUAL_USER_SELECTED, android.permission.READ_PHONE_STATE, android.permission.READ_SMS, android.permiss…"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.6.0; Kotlin ~1.8 / kotlinx-coroutines 1.7.3; AndroidX AppCompat 1.7.1, Core 1.13.0, Activity, Fragment, Lifecycle, RecyclerView, ConstraintLayout, Multidex, DataBinding/ViewBinding, Material 1.13.0; OkHttp 4.11.0-SNAPSHOT; Okio; Retrofit2; RxJava2 / RxAndroid; Gson 2.10.1; GreenDAO; EventBus; AgentWeb (com.just.agentweb); Glide/Picasso; Lottie; MPAndroidChart; ZXing / king.zxing; uCrop; FileDownloader; Blankj UtilCode; Hutool; FFmpegKit; ExoPlayer2; Firebase Analytics 21.2.2 / Common / Installations / Components; Google Play Services Ads Identifier 18.0.0, Auth, Fitness, Location, Maps 19.0.0, Measurement, Base/Basement/Tasks; Play Install Referrer; Baidu Maps / Location / AR / mshield; CRREPA BLE (com.crrepa.*); Moyoung DaFit (com.moyoung.*); Realtek / Realsil BLE-DFU; JieLi audio/watchface; Sifli watchfacelibrary; OpenWearPlay / OpenHarmony bridge; Artillery CTC AI (ASR/TTS); BouncyCastle; CommonMark; Aho-Corasick; PermissionsDispatcher; FloatWindow; CalendarView; RatingDialog; Logger; Material Dialogs Подозрительные домены 183.233.197.205, acdn1.moyoung.com, ai.azure.com, aip.baidubce.com, aispace.baidu.com, altair.moyoung.com, aomedia.org, api-cdn.moyoung.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "config: UUID устройства, дни использования, языки сервера, цели тренировок, AI-настройки, флаги GPS/спорта; crp: адрес браслета и URL/MD5 прошивки; oauth_prefs: токены Moyoung AI; GalleryPhotoPickerPrefs / artillery_man_help / camera: UI и AI/камера; служебные prefs Firebase / GMS / Baidu Maps"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "whitelist, blacklist, bridge, redirect, User-Agent, license, WebView"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "183.233.197.205",
+        "redirects_to": "нет",
+        "parked_at": "нет"
+      },
+      {
+        "domain": "acdn1.moyoung.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "ai.azure.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "aip.baidubce.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "aispace.baidu.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Information Technology (Shanghai) Co., Ltd."
+      },
+      {
+        "domain": "altair.moyoung.com",
+        "redirects_to": "https://altair.moyoung.com/admin → https://altair.moyoung.com/admin/ → https://altair.moyoung.com/static/ding-login.html?redirect=/admin/",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api-cdn.moyoung.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
