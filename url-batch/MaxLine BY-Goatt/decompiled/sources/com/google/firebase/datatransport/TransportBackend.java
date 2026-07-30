@@ -1,0 +1,10 @@
+package com.google.firebase.datatransport;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+/* compiled from: r8-map-id-f637039a30e7f02c20533c4f80288990fc1f8a3fc9c006e2afe538d0c6568abe */
+@Target({ElementType.PARAMETER, ElementType.METHOD, ElementType.FIELD})
+/* loaded from: classes.dex */
+public @interface TransportBackend {
+}

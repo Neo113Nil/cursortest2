@@ -1,0 +1,13 @@
+package com.appsflyer.internal;
+
+/* compiled from: r8-map-id-f637039a30e7f02c20533c4f80288990fc1f8a3fc9c006e2afe538d0c6568abe */
+/* loaded from: classes.dex */
+public interface AFc1vSDK {
+    void AFInAppEventType();
+
+    void AFKeystoreWrapper();
+
+    void values();
+
+    void values(Throwable th, String str);
+}

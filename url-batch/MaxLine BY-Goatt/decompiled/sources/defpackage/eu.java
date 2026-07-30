@@ -1,0 +1,162 @@
+package defpackage;
+
+import java.util.LinkedHashMap;
+
+/* compiled from: r8-map-id-f637039a30e7f02c20533c4f80288990fc1f8a3fc9c006e2afe538d0c6568abe */
+/* loaded from: classes.dex */
+public final class eu {
+    public static final nj b;
+    public static final zo0 c;
+    public static final LinkedHashMap d;
+    public static final eu e;
+    public static final eu f;
+    public static final eu g;
+    public static final eu h;
+    public static final eu i;
+    public static final eu j;
+    public static final eu k;
+    public static final eu l;
+    public static final eu m;
+    public static final eu n;
+    public static final eu o;
+    public static final eu p;
+    public static final eu q;
+    public static final eu r;
+    public static final eu s;
+    public static final eu t;
+    public final String a;
+
+    static {
+        nj njVar = new nj(12);
+        b = njVar;
+        c = new zo0(7);
+        d = new LinkedHashMap();
+        nj.b(njVar, "SSL_RSA_WITH_NULL_MD5");
+        nj.b(njVar, "SSL_RSA_WITH_NULL_SHA");
+        nj.b(njVar, "SSL_RSA_EXPORT_WITH_RC4_40_MD5");
+        nj.b(njVar, "SSL_RSA_WITH_RC4_128_MD5");
+        nj.b(njVar, "SSL_RSA_WITH_RC4_128_SHA");
+        nj.b(njVar, "SSL_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        nj.b(njVar, "SSL_RSA_WITH_DES_CBC_SHA");
+        e = nj.b(njVar, "SSL_RSA_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_DSS_WITH_DES_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_RSA_WITH_DES_CBC_SHA");
+        nj.b(njVar, "SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "SSL_DH_anon_EXPORT_WITH_RC4_40_MD5");
+        nj.b(njVar, "SSL_DH_anon_WITH_RC4_128_MD5");
+        nj.b(njVar, "SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA");
+        nj.b(njVar, "SSL_DH_anon_WITH_DES_CBC_SHA");
+        nj.b(njVar, "SSL_DH_anon_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_KRB5_WITH_DES_CBC_SHA");
+        nj.b(njVar, "TLS_KRB5_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_KRB5_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_KRB5_WITH_DES_CBC_MD5");
+        nj.b(njVar, "TLS_KRB5_WITH_3DES_EDE_CBC_MD5");
+        nj.b(njVar, "TLS_KRB5_WITH_RC4_128_MD5");
+        nj.b(njVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA");
+        nj.b(njVar, "TLS_KRB5_EXPORT_WITH_RC4_40_SHA");
+        nj.b(njVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5");
+        nj.b(njVar, "TLS_KRB5_EXPORT_WITH_RC4_40_MD5");
+        f = nj.b(njVar, "TLS_RSA_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA");
+        g = nj.b(njVar, "TLS_RSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_RSA_WITH_NULL_SHA256");
+        nj.b(njVar, "TLS_RSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_RSA_WITH_AES_256_CBC_SHA256");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA256");
+        nj.b(njVar, "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        nj.b(njVar, "TLS_PSK_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_PSK_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_PSK_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_PSK_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_RSA_WITH_SEED_CBC_SHA");
+        h = nj.b(njVar, "TLS_RSA_WITH_AES_128_GCM_SHA256");
+        i = nj.b(njVar, "TLS_RSA_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256");
+        nj.b(njVar, "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_128_GCM_SHA256");
+        nj.b(njVar, "TLS_DH_anon_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_EMPTY_RENEGOTIATION_INFO_SCSV");
+        nj.b(njVar, "TLS_FALLBACK_SCSV");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_NULL_SHA");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_NULL_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_NULL_SHA");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_RSA_WITH_NULL_SHA");
+        nj.b(njVar, "TLS_ECDHE_RSA_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        j = nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA");
+        k = nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_anon_WITH_NULL_SHA");
+        nj.b(njVar, "TLS_ECDH_anon_WITH_RC4_128_SHA");
+        nj.b(njVar, "TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_anon_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_ECDH_anon_WITH_AES_256_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384");
+        nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384");
+        l = nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256");
+        m = nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256");
+        nj.b(njVar, "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384");
+        n = nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256");
+        o = nj.b(njVar, "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256");
+        nj.b(njVar, "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384");
+        nj.b(njVar, "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA");
+        nj.b(njVar, "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA");
+        p = nj.b(njVar, "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        q = nj.b(njVar, "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256");
+        nj.b(njVar, "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        nj.b(njVar, "TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256");
+        r = nj.b(njVar, "TLS_AES_128_GCM_SHA256");
+        s = nj.b(njVar, "TLS_AES_256_GCM_SHA384");
+        t = nj.b(njVar, "TLS_CHACHA20_POLY1305_SHA256");
+        nj.b(njVar, "TLS_AES_128_CCM_SHA256");
+        nj.b(njVar, "TLS_AES_128_CCM_8_SHA256");
+    }
+
+    public eu(String str) {
+        this.a = str;
+    }
+
+    public final String toString() {
+        return this.a;
+    }
+}

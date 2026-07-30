@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "id": "ultrasonic",
+      "title": { "ru": "Нельзя в ультразвук и пар", "en": "No ultrasonic or steam" },
+      "note": {
+        "ru": "Эти камни трескаются или мутнеют от ультразвуковой и паровой чистки. Только мягкая ткань и, если можно, чуть тёплая мыльная вода.",
+        "en": "These stones crack or dull under ultrasonic and steam cleaning. Use a soft cloth and, where allowed, mildly warm soapy water only."
+      },
+      "slugs": ["emerald", "opal", "turquoise", "amber", "pearl", "tanzanite", "malachite", "kunzite", "topaz"]
+    },
+    {
+      "id": "sunlight",
+      "title": { "ru": "Выцветают на солнце", "en": "Fade in sunlight" },
+      "note": {
+        "ru": "Долгий солнечный свет и нагрев ослабляют цвет. Носите и храните вдали от прямого солнца.",
+        "en": "Prolonged sunlight and heat can weaken the colour. Wear and store away from direct sun."
+      },
+      "slugs": ["amethyst", "rose_quartz", "kunzite", "citrine", "topaz"]
+    },
+    {
+      "id": "water",
+      "title": { "ru": "Боятся воды и химии", "en": "Sensitive to water and chemicals" },
+      "note": {
+        "ru": "Пористые и органические материалы впитывают воду, косметику и кислоты. Снимайте перед душем, уборкой и косметическими процедурами.",
+        "en": "Porous and organic materials absorb water, cosmetics and acids. Remove before showering, cleaning or applying cosmetics."
+      },
+      "slugs": ["turquoise", "amber", "pearl", "malachite", "opal", "pyrite"]
+    }
+  ],
+  "storage": [
+    {
+      "title": { "ru": "Храните раздельно", "en": "Store pieces separately" },
+      "body": {
+        "ru": "Твёрдые камни царапают мягкие. Держите украшения в отдельных мешочках или ячейках, чтобы они не тёрлись друг о друга.",
+        "en": "Hard stones scratch softer ones. Keep pieces in separate pouches or compartments so they do not rub together."
+      }
+    },
+    {
+      "title": { "ru": "Серебро — без воздуха", "en": "Keep silver airtight" },
+      "body": {
+        "ru": "Серебро тускнеет от воздуха и серы. Храните в закрытом пакете с застёжкой, можно с антитускнеющей полоской.",
+        "en": "Silver tarnishes in air and sulphur. Store in a sealed zip bag, ideally with an anti-tarnish strip."
+      }
+    },
+    {
+      "title": { "ru": "Жемчуг и янтарь — «последними надеть»", "en": "Pearls and amber go on last" },
+      "body": {
+        "ru": "Наносите духи и косметику до украшений, снимайте органику первой. Протирайте мягкой тканью после носки.",
+        "en": "Apply perfume and cosmetics before jewellery and take organic gems off first. Wipe with a soft cloth after wear."
+      }
+    }
+  ]
+}

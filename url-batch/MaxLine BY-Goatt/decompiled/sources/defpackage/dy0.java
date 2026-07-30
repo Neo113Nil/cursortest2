@@ -1,0 +1,11 @@
+package defpackage;
+
+/* compiled from: r8-map-id-f637039a30e7f02c20533c4f80288990fc1f8a3fc9c006e2afe538d0c6568abe */
+/* loaded from: classes.dex */
+public final class dy0 implements a41 {
+    public final cy0 a;
+
+    public dy0(cy0 cy0Var) {
+        this.a = cy0Var;
+    }
+}

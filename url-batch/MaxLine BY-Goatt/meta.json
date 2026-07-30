@@ -1,0 +1,59 @@
+{
+  "app_id": "com.majelw.libystne",
+  "title": "MaxLine BY",
+  "developer": "Goatt",
+  "developer_id": "7514267258297458242",
+  "icon": "https://play-lh.googleusercontent.com/NSeg98sreFq5Uys9r2BUanzdKyTm2y_PlWPNG9MBwrSTRG3rRzf92A4jJ3tidOwUCiOKs2OgXym0Iiu7mL02XLE",
+  "url": "https://play.google.com/store/apps/details?id=com.majelw.libystne&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 30, 2026",
+  "updated": "Jul 30, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to the world of MaxLine Belarus",
+  "keyword": "url-batch",
+  "folder": "MaxLine BY-Goatt",
+  "path": "url-batch/MaxLine BY-Goatt",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.majelw.libystne-1-asset.apk",
+    "com.majelw.libystne-1-config.arm64_v8a.apk",
+    "com.majelw.libystne-1-config.en.apk",
+    "com.majelw.libystne-1-config.xxhdpi.apk",
+    "com.majelw.libystne-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/MaxLine BY-Goatt",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.majelw.libystne...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.majelw.libystne...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.majelw.libystne ─╮\n│ MaxLine BY            │\n│ 1.0  (vc 1)           │\n╰───────────────────────╯\n\nDownloading 5 files  (27.5 MB)\n  com.majelw.libystne-1.apk                  ━━━━━━━ 100% 16.2/1… 7.6    0:00:00\n                                                          MB      MB/s          \n  com.majelw.libystne-1-config.arm64_v8a.apk ━━━━━━━ 100% 78.2/7… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.en.apk        ━━━━━━━ 100% 102.6/… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.xxhdpi.apk    ━━━━━━━ 100% 125.7/… 3.3    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-asset.apk            ━━━━━━━ 100% 12.4/1… 13.1   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                       ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.majelw.libystne-1.apk                  │  15.4 MB │\n│ com.majelw.libystne-1-config.arm64_v8a.apk │  76.3 KB │\n│ com.majelw.libystne-1-config.en.apk        │ 100.2 KB │\n│ com.majelw.libystne-1-config.xxhdpi.apk    │ 122.7 KB │\n│ com.majelw.libystne-1-asset.apk            │  15.4 MB │\n└────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.majelw.libystne ─╮\n│ MaxLine BY            │\n│ 1.0  (vc 1)           │\n╰───────────────────────╯\n\nDownloading 5 files  (27.5 MB)\n  com.majelw.libystne-1.apk                  ━━━━━━━ 100% 16.2/1… 7.6    0:00:00\n                                                          MB      MB/s          \n  com.majelw.libystne-1-config.arm64_v8a.apk ━━━━━━━ 100% 78.2/7… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.en.apk        ━━━━━━━ 100% 102.6/… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.xxhdpi.apk    ━━━━━━━ 100% 125.7/… 3.3    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-asset.apk            ━━━━━━━ 100% 12.4/1… 13.1   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                       ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.majelw.libystne-1.apk                  │  15.4 MB │\n│ com.majelw.libystne-1-config.arm64_v8a.apk │  76.3 KB │\n│ com.majelw.libystne-1-config.en.apk        │ 100.2 KB │\n│ com.majelw.libystne-1-config.xxhdpi.apk    │ 122.7 KB │\n│ com.majelw.libystne-1-asset.apk            │  15.4 MB │\n└────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

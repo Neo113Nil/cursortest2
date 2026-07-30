@@ -1,0 +1,30 @@
+package defpackage;
+
+import java.io.Serializable;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: r8-map-id-f637039a30e7f02c20533c4f80288990fc1f8a3fc9c006e2afe538d0c6568abe */
+/* loaded from: classes.dex */
+public final class ba2 implements Serializable {
+    public final Throwable m;
+
+    public ba2(Throwable th) {
+        th.getClass();
+        this.m = th;
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof ba2) {
+            return Intrinsics.b(this.m, ((ba2) obj).m);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.m.hashCode();
+    }
+
+    public final String toString() {
+        return "Failure(" + this.m + ')';
+    }
+}
