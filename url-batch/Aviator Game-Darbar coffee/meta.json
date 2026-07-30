@@ -1,0 +1,61 @@
+{
+  "app_id": "com.aviatorvaangu.aviapp46",
+  "title": "Aviator Game",
+  "developer": "Darbar coffee",
+  "developer_id": "Darbar+coffee",
+  "icon": "https://play-lh.googleusercontent.com/LyF9g1iYfP3J2ope0WY9EPdSwYDBkam3evsAZej7DZRKVq1_AHl-qKMHb7el_QB1y19gW7-udyWO5PU8HZVJ4g",
+  "url": "https://play.google.com/store/apps/details?id=com.aviatorvaangu.aviapp46&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jun 5, 2026",
+  "version": "Varies with device",
+  "summary": "designed for players who enjoy timing, strategy, and fast-paced gameplay.",
+  "keyword": "url-batch",
+  "folder": "Aviator Game-Darbar coffee",
+  "path": "url-batch/Aviator Game-Darbar coffee",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.aviatorvaangu.aviapp46-1-asset.apk",
+    "com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk",
+    "com.aviatorvaangu.aviapp46-1-config.en.apk",
+    "com.aviatorvaangu.aviapp46-1-config.lt.apk",
+    "com.aviatorvaangu.aviapp46-1-config.ru.apk",
+    "com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk",
+    "com.aviatorvaangu.aviapp46-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator Game-Darbar coffee",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorvaangu.aviapp46...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aviatorvaangu.aviapp46...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.aviatorvaangu.aviapp46 ─╮\n│ Aviator Game                 │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 7 files  (28.6 MB)\n  com.aviatorvaangu.aviapp46-1.apk                  ━━━━━ 100% 22.0… 41.6 0:00:…\n                                                               MB    MB/s       \n  com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.en.apk        ━━━━━ 100% 61.6… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.lt.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.ru.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    ━━━━━ 100% 17.1… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-asset.apk            ━━━━━ 100% 7.8/… 9.9  0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviatorvaangu.aviapp46-1.apk                  │ 21.0 MB │\n│ com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.en.apk        │ 60.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.lt.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.ru.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    │ 16.7 KB │\n│ com.aviatorvaangu.aviapp46-1-asset.apk            │ 21.0 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.aviatorvaangu.aviapp46 ─╮\n│ Aviator Game                 │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 7 files  (28.6 MB)\n  com.aviatorvaangu.aviapp46-1.apk                  ━━━━━ 100% 22.0… 41.6 0:00:…\n                                                               MB    MB/s       \n  com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.en.apk        ━━━━━ 100% 61.6… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.lt.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.ru.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    ━━━━━ 100% 17.1… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-asset.apk            ━━━━━ 100% 7.8/… 9.9  0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviatorvaangu.aviapp46-1.apk                  │ 21.0 MB │\n│ com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.en.apk        │ 60.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.lt.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.ru.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    │ 16.7 KB │\n│ com.aviatorvaangu.aviapp46-1-asset.apk            │ 21.0 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}
