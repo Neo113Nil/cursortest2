@@ -32,5 +32,79 @@
   ],
   "stdout": "Downloading org.game.play.aviator.gameplay...\norg.game.play.aviator.gameplay downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, Facebook Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Remote Config, Google Install Referrer, Facebook App Events"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.WAKE_LOCK, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.FOREGROUND_SERVICE, org.game.play.aviator.gameplay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.20 / kotlin-stdlib, kotlinx-coroutines 1.9.0, AndroidX (AppCompat, Activity, Browser/Custom Tabs, WebKit, Fragment, Lifecycle, WorkManager, Room, DataStore, Material, ViewPager2, Emoji2, Startup, Multidex, ProfileInstaller, Privacy Sandbox Ads), Glide (com.bumptech.glide), Facebook SDK / Audience Network / Gaming Services, Google Play Services Ads 24.9.0, User Messaging Platform 3.2.0, Firebase Analytics 21.2.2, Firebase Crashlytics, Firebase Remote Config, Firebase Installations / Sessions / ABT / Datatransport, Play Install Referrer, Android Browser Helper (TWA), com.pesonal.adsdk, Pairip (com.pairip.application / licensecheck), Okio, Gson"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "fb.gg"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "prefs пакета org.game.play.aviator.gameplay: installReferrer, флаги рекламы/редиректа (app_adShowStatus, app_privacyPolicyLink, app_needInternet, app_updateAppDialogStatus, app_versionCode, app_redirectOtherAppStatus, app_newPackageName, app_howShowAd, app_adPlatformSequence, app_alernateAdShow, admob_AdStatus, facebook_AdStatus), счётчики гайд-экранов (screen_*_count), IABTCF_gdprApplies, isUserConsent; ad_pref: need_internet; UMP *_preferences: IABTCF_VendorConsents"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, redirectLink, onRedirect, app_redirectOtherAppStatus, gclid, AviatorCamp, CustomLink, isEncrypt, user_agent_string, WebView, onResumeDirectUrlOpen, partialCustomTabUrl, partialCustomTabShow, game_url, game_show, AvitorGameLink, appInsideCustomTabShow, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "fb.gg",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Снаружи это каталог мини-игр «Aviator» (обложки, гайды, кнопка Play). Обман в том, что после сплэша судьбу пользователя решает не сама игра, а JSON из Firebase Remote Config (удалённая конфигурация Google): для «рекламного» трафика подставляют другой ключ и другой набор ссылок. «Нужный» пользователь получает ссылки из CustomLink.redirectLink / game_url — их открывают в Custom Tabs (встроенный Chrome-браузер), Trusted Web Activity или WebView, а не обязательно обычный геймплей. Главный шлюз решения — fetch Firebase Remote Config с ключами Aviator / AviatorCamp (или ключ из SHA подписи APK). Зачем эти данные installReferrer → понять, пришёл ли пользователь с Google Ads (есть ли gclid) и выбрать «боевой» или обычный конфиг. gclid → локальный триггер: если в referrer есть gclid, читают ключ AviatorCamp вместо Aviator.…"
+  }
 }
