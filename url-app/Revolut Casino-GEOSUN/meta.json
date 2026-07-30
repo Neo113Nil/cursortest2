@@ -1,0 +1,61 @@
+{
+  "app_id": "com.aurifaber.valuta.rotatus.signum.modulus",
+  "title": "Revolut Casino",
+  "developer": "GEOSUN",
+  "developer_id": "GEOSUN",
+  "icon": "https://play-lh.googleusercontent.com/1fOhlgf37CBf_guJL5Kx4WeQf1v3pKZN0rc1wxUrqR5tdmb5MypUWK8dDGP6Pc1C0JZ-I8GKVenjE6eGlEr_SA",
+  "url": "https://play.google.com/store/apps/details?id=com.aurifaber.valuta.rotatus.signum.modulus&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 7, 2026",
+  "updated": "2026-07-07",
+  "version": "1.0",
+  "summary": "Revolut Casino: Functional Tool for Mobile Devices",
+  "keyword": "url-app",
+  "folder": "Revolut Casino-GEOSUN",
+  "path": "url-app/Revolut Casino-GEOSUN",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-asset.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-config.arm64_v8a.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-config.en.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-config.lt.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-config.ru.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1-config.xxhdpi.apk",
+    "com.aurifaber.valuta.rotatus.signum.modulus-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/Revolut Casino-GEOSUN",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aurifaber.valuta.rotatus.signum.modulus...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.aurifaber.valuta.rotatus.signum.modulus...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.aurifaber.valuta.rotatus.signum.modulus ─╮\n│ Revolut Casino                                │\n│ 1.0  (vc 1)                                   │\n╰───────────────────────────────────────────────╯\n\nDownloading 7 files  (17.9 MB)\n  com.aurifaber.valuta.rotatus.signum.modulus-1.apk                  ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.arm64_v8a.apk ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.en.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.lt.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.ru.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.xxhdpi.apk    ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-asset.apk            ━ 100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aurifaber.valuta.rotatus.signum.modulus-1.apk                  │  1.9 MB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.arm64_v8a.apk │ 14.5 MB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.en.apk        │ 28.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.lt.apk        │ 20.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.ru.apk        │ 20.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.xxhdpi.apk    │ 64.9 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-asset.apk            │  1.9 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.aurifaber.valuta.rotatus.signum.modulus ─╮\n│ Revolut Casino                                │\n│ 1.0  (vc 1)                                   │\n╰───────────────────────────────────────────────╯\n\nDownloading 7 files  (17.9 MB)\n  com.aurifaber.valuta.rotatus.signum.modulus-1.apk                  ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.arm64_v8a.apk ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.en.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.lt.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.ru.apk        ━ 100%  ? …\n  com.aurifaber.valuta.rotatus.signum.modulus-1-config.xxhdpi.apk    ━ 100%  … …\n                                                                             …  \n  com.aurifaber.valuta.rotatus.signum.modulus-1-asset.apk            ━ 100%  … …\n                                                                             …  \n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aurifaber.valuta.rotatus.signum.modulus-1.apk                  │  1.9 MB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.arm64_v8a.apk │ 14.5 MB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.en.apk        │ 28.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.lt.apk        │ 20.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.ru.apk        │ 20.4 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-config.xxhdpi.apk    │ 64.9 KB │\n│ com.aurifaber.valuta.rotatus.signum.modulus-1-asset.apk            │  1.9 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}

@@ -34,5 +34,83 @@
   "stderr": "",
   "exit_code": 0,
   "_store_enriched": true,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Bclic App"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity IL2CPP (UnityEngine + native libil2cpp/libunity/libmain), UniWebView (com.onevcat.uniwebview), UniTask (Cysharp; UniTask/Addressables/DOTween/Linq/TextMeshPro), TextMeshPro, DOTween, Kotlin stdlib 1.6.21, AndroidX Browser 1.2.0 (Custom Tabs), AndroidX Core 1.1.0, AndroidX Lifecycle Runtime 2.0.0, AndroidX Interpolator 1.0.0, AndroidX VersionedParcelable 1.1.0, android.support.customtabs / support-v4 shims, bitter.jnibridge, org.fmod (FMOD), com.google.common.util.concurrent (ListenableFuture)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "g6games-10a78c7f.surge.sh, longinus-zymurgy.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Unity PlayerPrefs (обёртка над SharedPreferences): Get/Set/HasKey/DeleteKey; в загрузчике AppLoaderNewVer хранятся флаги/состояние шлюза и WebView (hasSapphireWebViewStarted, isEmberLoadingActive, resolvedGatewayUrl/targetGatewayUrl и связанные поля). Точные имена ключей prefs в IL2CPP открытым списком не выписаны."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gateway, probe, fallback, redirect, webview, bridge, User-Agent, privacy, ActivateSapphireWebView, OpenFallbackGameScene, GatewayProbeUrl, resolvedGatewayUrl, targetGatewayUrl, gatewayPayloadText, OpenPrivacy"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "g6games-10a78c7f.surge.sh",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Porkbun LLC"
+      },
+      {
+        "domain": "longinus-zymurgy.com",
+        "redirects_to": "https://play.google.com/store/apps/details?id=com.subwaysanta.xmassurf",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Снаружи это выглядит как обычная мобильная Unity-игра (package com.subwaysanta.xmassurf, на устройстве подпись «Bclic App», категория game в манифесте). Но при запуске приложение не сразу отдаёт геймплей: сначала тихо «опрашивает шлюз» (gateway probe — короткий запрос к своему серверу) на домене longinus-zymurgy.com. Обман в том, что модератору и «не тому» посетителю показывают безопасную картину: снаружи шлюз отвечает редиректом на карточку Google Play, внутри APK есть запасная игровая сцена (OpenFallbackGameScene) и кнопка/экран Privacy (OpenPrivacy) с URL на g6games-…surge.sh. «Нужному» пользователю открывают встроенный браузер (WebView / «Sapphire WebView») с URL, который пришёл с шлюза. Путь «боевого» пользователя заканчивается на динамической ссылке из ответа шлюза (resolvedGatewayUrl / targetGatewayUrl).…"
+  }
 }

@@ -1,0 +1,14 @@
+package c0;
+
+import android.media.ImageReader;
+
+/* renamed from: c0.c, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public abstract /* synthetic */ class AbstractC0101c {
+    public static /* synthetic */ ImageReader.Builder c(int i2, int i3) {
+        return new ImageReader.Builder(i2, i3);
+    }
+
+    public static /* synthetic */ void h() {
+    }
+}

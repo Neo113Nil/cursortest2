@@ -1,0 +1,17 @@
+package c0;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+/* loaded from: classes.dex */
+public final class H {
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final AtomicLong f1673b = new AtomicLong(0);
+
+    /* renamed from: a, reason: collision with root package name */
+    public final long f1674a;
+
+    public H(long j2) {
+        this.f1674a = j2;
+    }
+}

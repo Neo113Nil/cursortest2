@@ -31,5 +31,56 @@
   "updated": "2026-02-01",
   "version": "1.74",
   "cloaking": "нет",
-  "_store_enriched": true
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing Derby 2"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "нет"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет OneSignal нет Firebase нет AdMob нет Remote Config нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.VIBRATE, android.permission.ACCESS_NETWORK_STATE, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Gideros Mobile (libgideros.so, Lua/liblua.so, libgvfs.so); Gideros plugins: IAB/Google Play Billing (libiab.so), JSON (libjson.so), LFS (liblfs.so); Google Play Billing Library 7.0.0; Google Play Services Base 18.3.0; Google Play Services Basement 18.3.0; Google Play Services Location 19.0.0; Google Play Services Places Placereport 17.0.0; Google Play Services Tasks 18.1.0; Google Data Transport (transport-api 3.0.0, transport-runtime 3.1.8, transport-backend-cct 3.1.8); Firebase Encoders 17.0.0 / JSON 18.0.0 / Proto 16.0.0 (только encoders, без Firebase App/Analytics); AndroidX Activity 1.2.3, Core 1.2.0, Fragment 1.1.0, Lifecycle 2.3.1, SavedState 1.1.0, Loader 1.0.0, CustomView 1.0.0, ViewPager 1.0.0, Tracing 1.0.0, VersionedParcelable 1.1.0, Arch Core 2.1.0; Google Play Licensing / Pairip licensecheck (com.pairip.licensecheck); Native: libc++_shared.so Domains https://www.pishtech.com/ifd2server/derbyv2.php, https://www.pishtech.com/ifd2server/ifd2gamebu.php, https://www.pishtech.com/ifd2server/ifd2gamerec.php, https://www.pishtech.com/ifd2server/ifd2otc.php, https://www.pishtech.com/ifd2status.php, https://www.pishtech.com/applog.php, https://www.pishtech.com/emdeb.php, https:…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Android SharedPreferences приложением практически не используются (ссылки есть только в AndroidX / Play Services). Игровые настройки и прогресс хранятся в файловой системе Gideros Documents (|D|): основной сейв |D|gsdf.txt (save_data, user_id, IAP/receipts, options/vibration, installation_id IIDIFD2, прогресс дерби/free fishing, gems, покупки Lake Pass / Derby Pro); также |D|lakes/, |D|bait, |T|lures, |D|heartbeatp.txt, |D|brdcmb.txt (breadcrumb), кэш текстур/карт озёр и GUI. Есть облачный бэкап/restore через pishtech.com."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      }
+    ],
+    "domains": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

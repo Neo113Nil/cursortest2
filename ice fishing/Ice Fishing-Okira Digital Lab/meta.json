@@ -36,5 +36,56 @@
   "version": "Varies with device",
   "updated": "Jul 23, 2026",
   "cloaking": "да",
-  "_store_enriched": true
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.1.x"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет OneSignal нет Firebase да AdMob нет Remote Config нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.CAMERA, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.icecatchpuzzle.puzzleicecatch.D YNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin (~2.1.x; atomics.kotlin_builtins + Compose UI 1.10.4), kotlinx-coroutines 1.9.0 (core/android/play-services), Jetpack Compose UI/Foundation/Animation/Runtime 1.10.4, Material3 1.4.0, Material Ripple 1.10.4, AndroidX Activity/Activity-Compose/Activity-KTX 1.12.4, Core/Core-KTX 1.17.0, Lifecycle 2.10.0, Fragment 1.8.9, Browser 1.10.0, Emoji2 1.4.0, Startup 1.2.0, ProfileInstaller 1.4.0, SavedState 1.4.0, Window 1.5.0, NavigationEvent 1.0.2, OkHttp3, Adjust SDK android5.5.0 (com.adjust.sdk), Google Play Install Referrer API (com.android.installreferrer), Firebase Messaging + Installations + Common/KTX + Datatransport/CCT, Play Services Base 18.1.0, Basement 18.3.0, Cloud Messaging 17.2.0, Tasks 18.1.0, Stats 17.0.2, Pairip licensecheck / Application wrapper (Play Integrity Protection) Domains 164.92.203.58:123 (UDP cloaking probe), https://app.adjust.com, https://app.adjust.io, https://gdpr.adjust.com, https://gdpr.adjust.io, https://ssrv.adjust.com, https://ssrv.adjust.io, https://subscription.adjust.com, https://subscription.adjust.io, adjust.com, adj.st, go.link, adjust.net.in, adjust.cn, adjust.world, adjust.io, https://firebaseinstallations.googleapis.com/v1/, https://ice-…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "com.icecatchpuzzle.puzzleicecatch: ключ url5 — сохранённый URL оффера после успешного ответа cloaking-сервера; ice_fish_match: ключ km3 — JSON игрового прогресса (имя, vibro, лучший счёт, scores); adjust_preferences — состояние Adjust (install_tracked, raw_referrers, deeplink_url, push_token, gdpr_forget_me и др.); com.google.firebase.messaging / com.google.android.gms.appid / FirebaseHeartBeat* — FCM-токены и heartbeat Firebase"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      }
+    ],
+    "domains": [],
+    "cloaking": "да",
+    "cloaking_brief": ""
+  }
 }

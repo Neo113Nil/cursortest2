@@ -30,5 +30,56 @@
   "version": "Varies with device",
   "updated": "Jul 8, 2026",
   "cloaking": "да",
-  "_store_enriched": true
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да OneSignal нет Firebase да AdMob нет Remote Config нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.catchingfish.fishcatcherpro.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "• Android Gradle Plugin 8.11.2 / Gradle 8.13 • Kotlin 2.0.21, kotlinx-coroutines 1.9.0 • Jetpack Compose UI/Foundation/Animation ~1.7.0–1.9.2, Material3 1.3.0 • AndroidX Activity/Activity-Compose/Activity-KTX 1.13.0, AppCompat 1.7.1, Core 1.18.0, Lifecycle 2.10.0, Fragment 1.5.4 • AndroidX Browser 1.10.0 (Custom Tabs) • AndroidX DataStore Preferences 1.1.7, Room 2.8.4, Material 1.13.0 • OkHttp 3.14.9 (WebSocket/HTTP) • Adjust SDK android5.5.0 (com.adjust.sdk, libsigner.so) • Firebase Messaging 25.0.1, Firebase Installations, Firebase Firestore (в зависимостях), Firebase Common/KTX, Datatransport/CCT • Google Play Services (base/basement 18.9.0, cloud-messaging 17.2.0, ads-identifier 18.1.0, tasks 18.4.0) • Google Play Install Referrer API • Pairip licensecheck / Application wrapper (Play Integrity Protection) • Native libnative_params.so (XorDecoder, скрытые строки/ключи) Domains https://ultraweavekernel.digital/, https://app.adjust.com, https://app.adjust.io, https://gdpr.adjust.com, https://gdpr.adjust.io, https://ssrv.adjust.com, https://ssrv.adjust.io, https://subscription.adjust.com, https://subscription.adjust.io, https://firebaseinstallations.googleapis.com/v1/, https://catc…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "SharedPreferences com.catchingfish.fishcatcherpro: ключ url — сохранённый URL оффера после ответа cloaking-сервера. com.catchingfish.fishcatcherpro_preferences — preferences Application. Белая игра: музыка/переключатель (SettingsMusicActivity, MediaPlayer thunder). Adjust SDK файлы состояния (AdjustIoActivityState / attribution / event metadata). Firebase/GMS: com.google.android.gms.appid (FCM token), FirebaseHeartBeat*, com.google.firebase.messaging. Jetpack DataStore Preferences (androidx.datastore 1.1.7) присутствует в стеке. WebView cookies через CookieManager.flush()."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      }
+    ],
+    "domains": [],
+    "cloaking": "да",
+    "cloaking_brief": ""
+  }
 }
