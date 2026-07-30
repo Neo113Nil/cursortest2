@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.gms.ads.nativead.NativeAd;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.9.0 */
+/* loaded from: classes3.dex */
+public final class zzbxh extends zzbmf {
+    private final NativeAd.OnNativeAdLoadedListener zza;
+
+    public zzbxh(NativeAd.OnNativeAdLoadedListener onNativeAdLoadedListener) {
+        this.zza = onNativeAdLoadedListener;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbmg
+    public final void zze(zzbmm zzbmmVar) {
+        this.zza.onNativeAdLoaded(new zzbxc(zzbmmVar));
+    }
+}

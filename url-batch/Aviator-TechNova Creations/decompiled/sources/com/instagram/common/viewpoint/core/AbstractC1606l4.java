@@ -1,0 +1,43 @@
+package com.instagram.common.viewpoint.core;
+
+import com.facebook.ads.androidx.media3.common.Metadata;
+import java.nio.ByteBuffer;
+
+/* renamed from: com.facebook.ads.redexgen.X.l4, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network.dex */
+public abstract class AbstractC1606l4 implements HK {
+    public static String[] A00 = {"S2ZlE7yw63A48uwr9dQcAEYhUnBJ4Yn0", "jzjCSZ", "gN1GhDNq1ONaTY", "QUbV6eP7CXYOE5n4wRXfJJIvrecH4qk8", "luywBeNRakBazgpsmb", "EdZTTUAmlRsHtXkkAmykmZcXBm9Gnzxa", "aBS20hcvH8Cg0VDZoQaxMtYiCLoGsxgc", "2I8VYTEH9eD6qwDjwvQqiLyn0yln2Tpt"};
+
+    public abstract Metadata A0R(C02648z c02648z, ByteBuffer byteBuffer);
+
+    /* JADX WARN: Removed duplicated region for block: B:12:0x003f A[ORIG_RETURN, RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0041  */
+    @Override // com.instagram.common.viewpoint.core.HK
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Metadata A5g(C02648z c02648z) {
+        boolean z;
+        ByteBuffer byteBuffer = (ByteBuffer) C3M.A01(c02648z.A02);
+        if (byteBuffer.position() == 0 && byteBuffer.hasArray()) {
+            int arrayOffset = byteBuffer.arrayOffset();
+            String[] strArr = A00;
+            if (strArr[7].charAt(18) == strArr[3].charAt(18)) {
+                throw new RuntimeException();
+            }
+            A00[1] = "EqsX6PhC";
+            if (arrayOffset == 0) {
+                z = true;
+                C3M.A07(z);
+                if (c02648z.A04()) {
+                    return A0R(c02648z, byteBuffer);
+                }
+                return null;
+            }
+        }
+        z = false;
+        C3M.A07(z);
+        if (c02648z.A04()) {
+        }
+    }
+}

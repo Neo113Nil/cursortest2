@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "apks": [
+    "org.game.play.aviator.gameplay.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "org.game.play.aviator.gameplay.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 12635 (0%)\nINFO  - progress: 1085 of 12635 (8%)\nINFO  - progress: 1085 of 12635 (8%)\nINFO  - progress: 1098 of 12635 (8%)\nINFO  - progress: 1147 of 12635 (9%)\nINFO  - progress: 1233 of 12635 (9%)\nINFO  - progress: 1404 of 12635 (11%)\nINFO  - progress: 1828 of 12635 (14%)\nINFO  - progress: 2330 of 12635 (18%)\nINFO  - progress: 2821 of 12635 (22%)\nINFO  - progress: 3239 of 12635 (25%)\nINFO  - progress: 3693 of 12635 (29%)\nINFO  - progress: 4162 of 12635 (32%)\nINFO  - progress: 4492 of 12635 (35%)\nINFO  - progress: 4771 of 12635 (37%)\nINFO  - progress: 5079 of 12635 (40%)\nINFO  - progress: 5521 of 12635 (43%)\nINFO  - progress: 5821 of 12635 (46%)\nINFO  - progress: 6072 of 12635 (48%)\nINFO  - progress: 6359 of 12635 (50%)\nINFO  - progress: 6654 of 12635 (52%)\nINFO  - progress: 6716 of 12635 (53%)\nINFO  - progress: 6821 of 12635 (53%)\nINFO  - progress: 7275 of 12635 (57%)\nINFO  - progress: 7542 of 12635 (59%)\nINFO  - progress: 7919 of 12635 (62%)\nINFO  - progress: 8239 of 12635 (65%)\nINFO  - progress: 8707 of 12635 (68%)\nINFO  - progress: 8923 of 12635 (70%)\nINFO  - progress: 9069 of 12635 (71%)\nINFO  - progress: 9218 of 12635 (72%)\nINFO  - progress: 9439 of 12635 (74%)\nINFO  - progress: 9573 of 12635 (75%)\nINFO  - progress: 9649 of 12635 (76%)\nINFO  - progress: 9649 of 12635 (76%)\nINFO  - progress: 9895 of 12635 (78%)\nINFO  - progress: 10225 of 12635 (80%)\nINFO  - progress: 10649 of 12635 (84%)\nINFO  - progress: 10896 of 12635 (86%)\nINFO  - progress: 11113 of 12635 (87%)\nINFO  - progress: 11205 of 12635 (88%)\nINFO  - progress: 11244 of 12635 (88%)\nINFO  - progress: 11652 of 12635 (92%)\nINFO  - progress: 11864 of 12635 (93%)\nINFO  - progress: 12373 of 12635 (97%)\n                                                             \nERROR - finished with errors, count: 23\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Aviator-TechNova Creations/decompiled",
+    "skipped": false,
+    "base_apk": "org.game.play.aviator.gameplay.apk"
+  },
+  "analysis_files": [
+    "org.game.play.aviator.gameplay.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/org.game.play.aviator.gameplay.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/a/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

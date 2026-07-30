@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.9.0 */
+/* loaded from: classes3.dex */
+final /* synthetic */ class zzhby implements zzhkt {
+    static final /* synthetic */ zzhby zza = new zzhby();
+
+    private /* synthetic */ zzhby() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhkt
+    public final /* synthetic */ Object zza(zzhaz zzhazVar) {
+        zzhfr zzhfrVar = (zzhfr) zzhazVar;
+        int i = zzhcf.zza;
+        return zzhgw.zzd() ? zzhhr.zzb(zzhfrVar) : zzhyd.zzb(zzhfrVar);
+    }
+}

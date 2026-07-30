@@ -1,0 +1,54 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.content.pm.ApplicationInfo;
+import com.google.android.gms.ads.internal.util.client.VersionInfoParcel;
+import com.google.android.gms.common.wrappers.Wrappers;
+import com.google.android.gms.dynamite.DynamiteModule;
+import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.Callable;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.9.0 */
+/* loaded from: classes3.dex */
+public final class zzfal implements zzfax {
+    private final zzgzy zza;
+    private final Context zzb;
+    private final VersionInfoParcel zzc;
+    private final String zzd;
+
+    zzfal(zzgzy zzgzyVar, Context context, VersionInfoParcel versionInfoParcel, String str) {
+        this.zza = zzgzyVar;
+        this.zzb = context;
+        this.zzc = versionInfoParcel;
+        this.zzd = str;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfax
+    public final ListenableFuture zza() {
+        return this.zza.submit(new Callable() { // from class: com.google.android.gms.internal.ads.zzfak
+            @Override // java.util.concurrent.Callable
+            public final /* synthetic */ Object call() {
+                return zzfal.this.zzc();
+            }
+        });
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfax
+    public final int zzb() {
+        return 35;
+    }
+
+    final /* synthetic */ zzfam zzc() {
+        Context context = this.zzb;
+        boolean isCallerInstantApp = Wrappers.packageManager(context).isCallerInstantApp();
+        com.google.android.gms.ads.internal.zzt.zzc();
+        boolean zzJ = com.google.android.gms.ads.internal.util.zzs.zzJ(context);
+        String str = this.zzc.afmaVersion;
+        com.google.android.gms.ads.internal.zzt.zzc();
+        boolean zzK = com.google.android.gms.ads.internal.util.zzs.zzK();
+        com.google.android.gms.ads.internal.zzt.zzc();
+        ApplicationInfo applicationInfo = context.getApplicationInfo();
+        return new zzfam(isCallerInstantApp, zzJ, str, zzK, applicationInfo == null ? 0 : applicationInfo.targetSdkVersion, DynamiteModule.getRemoteVersion(context, ModuleDescriptor.MODULE_ID), DynamiteModule.getLocalVersion(context, ModuleDescriptor.MODULE_ID), this.zzd);
+    }
+}

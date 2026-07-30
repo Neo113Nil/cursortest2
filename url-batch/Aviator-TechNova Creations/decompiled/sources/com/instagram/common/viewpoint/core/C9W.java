@@ -1,0 +1,2397 @@
+package com.instagram.common.viewpoint.core;
+
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
+import android.os.SystemClock;
+import android.util.Log;
+import android.util.Pair;
+import com.facebook.ads.AdError;
+import com.facebook.ads.androidx.media3.common.Timeline;
+import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
+import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomizations;
+import com.google.common.base.Ascii;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import org.objectweb.asm.Opcodes;
+
+/* renamed from: com.facebook.ads.redexgen.X.9W, reason: invalid class name */
+/* loaded from: assets/audience_network.dex */
+public final class C9W implements Handler.Callback, InterfaceC1685mN, EJ, CK, InterfaceC01875n, InterfaceC02256z {
+    public static byte[] A0x;
+    public static String[] A0y = {"EvYOBb0fNCsu7OcAaOZNwoEPwn2", "8jIqnMhTOhQ3fU", "vmW", "edZR1F4oYcKYyzs7tUfX3dHGMGqqrKBY", "TI8UsWNSVk9Jh7srInWeHwVEqkc209d4", "AVB8fiMNMM9Dy8Zuh880FwllBoFt5PF1", "1mkHXRje2n0Pvvw2j", "LF2w13BN71krhrKRtprOb2x3jYcy1FYO"};
+    public int A00;
+    public int A01;
+    public int A02;
+    public int A03;
+    public long A04;
+    public long A06;
+    public AnonymousClass67 A07;
+    public C6B A08;
+    public C02236x A0A;
+
+    @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
+    public InterfaceC1746nM A0B;
+    public C7I A0C;
+    public CL A0D;
+    public boolean A0G;
+    public boolean A0H;
+    public boolean A0I;
+    public boolean A0K;
+    public boolean A0M;
+    public boolean A0N;
+    public boolean A0O;
+    public boolean A0P;
+    public boolean A0Q;
+    public boolean A0R;
+    public boolean A0S;
+    public boolean A0T;
+    public boolean A0U;
+    public boolean A0V;
+    public InterfaceC1746nM[] A0W;
+    public final long A0Y;
+    public final long A0Z;
+    public final Handler A0a;
+    public final HandlerThread A0b;
+    public final C1807oN A0c;
+    public final C1805oL A0d;
+    public final C3T A0e;
+    public final InterfaceC01433v A0f;
+    public final C1754nU A0g;
+    public final C6A A0h;
+    public final C6S A0i;
+    public final C1740nG A0k;
+    public final EK A0l;
+    public final EL A0m;
+    public final EU A0n;
+    public final AnonymousClass91 A0o;
+    public final ArrayList<AnonymousClass69> A0p;
+    public final boolean A0q;
+    public final boolean A0r;
+    public final boolean A0s;
+    public final boolean A0t;
+    public final boolean A0u;
+    public final InterfaceC1746nM[] A0v;
+    public final C7D[] A0w;
+    public long A05 = -9223372036854775807L;
+
+    @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
+    public EnumC1412hX A0E = EnumC1412hX.A09;
+
+    @MetaExoPlayerCustomization("D63737392: Added for negative testing")
+    public boolean A0J = false;
+
+    @MetaExoPlayerCustomization("D63737392: Added for negative testing")
+    public C02206u A09 = null;
+
+    @MetaExoPlayerCustomization("D63737392: Added for negative testing")
+    public boolean A0L = false;
+
+    @MetaExoPlayerCustomization("D71523094: Added for negative testing")
+    public Integer A0F = null;
+    public final C02026c A0j = new C02026c();
+
+    @MetaExoPlayerCustomization
+    public final int A0X = A00();
+
+    public static String A0D(int i, int i2, int i3) {
+        byte[] copyOfRange = Arrays.copyOfRange(A0x, i, i + i2);
+        for (int i4 = 0; i4 < copyOfRange.length; i4++) {
+            byte b = copyOfRange[i4];
+            if (A0y[1].length() == 31) {
+                throw new RuntimeException();
+            }
+            String[] strArr = A0y;
+            strArr[2] = "wOV";
+            strArr[6] = "lGv9KfQpa0xBFnWlu";
+            copyOfRange[i4] = (byte) ((b - i3) - 57);
+        }
+        return new String(copyOfRange);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:216:0x037e, code lost:
+    
+        if (r3 == 1) goto L170;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:217:0x0380, code lost:
+    
+        r8 = true;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:219:0x0393, code lost:
+    
+        if (r3 == 1) goto L170;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:230:0x03ab, code lost:
+    
+        r24.A0R = r24.A0P;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:231:0x03bb, code lost:
+    
+        if (com.instagram.common.viewpoint.core.C9W.A0y[5].charAt(1) == 'q') goto L220;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:232:0x03bd, code lost:
+    
+        r2 = com.instagram.common.viewpoint.core.C9W.A0y;
+        r2[4] = "Uyz0TdICBPSSMiRUHh3H6S4m2yqjGOAg";
+        r2[3] = "3B1Lhsj2yRloVQBWBzqqqLZ9kauiXzuH";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:233:0x03cb, code lost:
+    
+        if (r24.A0B == null) goto L193;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:235:0x03d4, code lost:
+    
+        if (r24.A0B.A9F() != 1) goto L193;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:236:0x03d6, code lost:
+    
+        r8 = true;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:237:0x03d7, code lost:
+    
+        A0W(2, r8);
+        A0O();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:239:0x044b, code lost:
+    
+        throw new java.lang.RuntimeException();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:23:0x00bf, code lost:
+    
+        if (r7 == false) goto L24;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:25:0x00c9, code lost:
+    
+        if (r24.A0A.A0C == (-1)) goto L31;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x00cb, code lost:
+    
+        r16 = com.instagram.common.viewpoint.core.AbstractC00941w.A01(r24.A0A.A0C - r24.A0A.A02);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:27:0x00e9, code lost:
+    
+        if (com.instagram.common.viewpoint.core.C9W.A0y[7].charAt(12) == '2') goto L231;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x00eb, code lost:
+    
+        com.instagram.common.viewpoint.core.C9W.A0y[5] = "BlhxJ9uFvDlxNeph5MIqggmIWIv4QApO";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:29:0x00f2, code lost:
+    
+        if (r16 <= 1000) goto L31;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:32:0x0210, code lost:
+    
+        throw new java.lang.RuntimeException();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:34:0x01bc, code lost:
+    
+        if (r7 == false) goto L24;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:39:0x01dc, code lost:
+    
+        if (r24.A0H != false) goto L82;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:40:0x01de, code lost:
+    
+        r8 = r9.A9h();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:41:0x01ef, code lost:
+    
+        if (com.instagram.common.viewpoint.core.C9W.A0y[7].charAt(12) == '2') goto L232;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:42:0x01f1, code lost:
+    
+        com.instagram.common.viewpoint.core.C9W.A0y[5] = "gun24np1Fz9ULZxkMCl3omnFVmny067U";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:43:0x01f8, code lost:
+    
+        if (r8 == false) goto L31;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:46:0x0216, code lost:
+    
+        throw new java.lang.RuntimeException();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:47:0x01fa, code lost:
+    
+        r9.AId();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:49:0x0201, code lost:
+    
+        if (r24.A0H != false) goto L82;
+     */
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException: Index 25 out of bounds for length 25
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+     */
+    /* JADX WARN: Removed duplicated region for block: B:136:0x028a  */
+    /* JADX WARN: Removed duplicated region for block: B:153:0x02c8  */
+    /* JADX WARN: Removed duplicated region for block: B:158:0x02f7  */
+    /* JADX WARN: Removed duplicated region for block: B:178:0x03f7  */
+    @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0F() throws C9Y, IOException {
+        String[] strArr;
+        long AJt = this.A0e.AJt();
+        A0P();
+        if (!this.A0j.A0N()) {
+            A0I();
+            A0a(AJt, 10L);
+            return;
+        }
+        C6Y A0F = this.A0j.A0F();
+        C6Y A0G = this.A0j.A0G();
+        C4S.A02(A0D(353, 10, 65));
+        A0Q();
+        long elapsedRealtime = SystemClock.elapsedRealtime() * 1000;
+        A0F.A07.A5s(this.A0A.A0C - this.A0Y, this.A0r);
+        boolean z = false;
+        boolean z2 = true;
+        boolean z3 = true;
+        boolean z4 = this.A0W.length > 1;
+        InterfaceC1746nM[] interfaceC1746nMArr = this.A0W;
+        int length = interfaceC1746nMArr.length;
+        int i = 0;
+        while (true) {
+            String A0D = A0D(223, 35, 31);
+            String A0D2 = A0D(0, 21, 22);
+            if (i < length) {
+                InterfaceC1746nM interfaceC1746nM = interfaceC1746nMArr[i];
+                interfaceC1746nM.AHn(this.A06, elapsedRealtime);
+                if (A0G.A00.A05) {
+                    boolean z5 = this.A0O;
+                    if (A0y[0].length() == 16) {
+                        break;
+                    }
+                    String[] strArr2 = A0y;
+                    strArr2[4] = "S4Fyq0ZfVTRLxRTM4wwKz81RK4qT5SRq";
+                    strArr2[3] = "dt9NVxX1YAgTPnpY37Axx0Ou68rzEGgN";
+                    if (z5) {
+                        if (!interfaceC1746nM.A9h()) {
+                            boolean z6 = this.A0H;
+                            if (A0y[0].length() != 16) {
+                                A0y[5] = "eiShONRNAduVJjGMnbACFBBBapCf3AHm";
+                            } else {
+                                String[] strArr3 = A0y;
+                                strArr3[4] = "JgPz5rm3gJhJD0DUOH89UMmPp4ssm19B";
+                                strArr3[3] = "EHDY1dQAFQsMAYBzgGAEpHtmXIGNI89a";
+                            }
+                        }
+                        interfaceC1746nM.AId();
+                    } else if (A0y[5].charAt(1) != 'q') {
+                        String[] strArr4 = A0y;
+                        strArr4[4] = "usLdHWXdVdc1eYm8Xo8iItMQczfdPoTF";
+                        strArr4[3] = "jdYe6RXL6unoORbHA5yicze0YAqR3j0n";
+                    }
+                }
+                if (!(interfaceC1746nM instanceof C00710z)) {
+                    z4 = z4 && interfaceC1746nM.AAG();
+                }
+                z2 = z2 && interfaceC1746nM.AAG();
+                boolean z7 = interfaceC1746nM.AAV() || interfaceC1746nM.AAG() || A17(interfaceC1746nM);
+                if (!z7) {
+                    z = true;
+                    try {
+                        interfaceC1746nM.ABv();
+                    } catch (C1762nc e) {
+                        if (!e.getClass().equals(C1762nc.class)) {
+                            throw e;
+                        }
+                        if (!this.A0N) {
+                            throw e;
+                        }
+                        if (this.A05 == -9223372036854775807L) {
+                            Log.w(A0D2, A0D + e.getMessage());
+                            this.A05 = System.currentTimeMillis();
+                            if (this.A0q) {
+                                this.A0a.obtainMessage(4, e).sendToTarget();
+                            }
+                        } else if (System.currentTimeMillis() - this.A05 > this.A0Z) {
+                            throw e;
+                        }
+                    }
+                    this.A0B = interfaceC1746nM;
+                    if (A0y[7].charAt(12) == '2') {
+                        break;
+                    } else {
+                        A0y[5] = "qlbqZn2WmIl9Oup3QtCZToOsAISM7SD4";
+                    }
+                }
+                z3 = z3 && z7;
+                i++;
+            } else {
+                if (!z3) {
+                    A0I();
+                }
+                if (this.A0Q && z4 && !z2) {
+                    for (InterfaceC1746nM interfaceC1746nM2 : this.A0W) {
+                        if (interfaceC1746nM2 instanceof C00710z) {
+                            interfaceC1746nM2.AHn(9223372036854775806L, 9223372036854775806L);
+                            z2 = interfaceC1746nM2.AAG();
+                        }
+                    }
+                }
+                long j = A0F.A00.A00;
+                boolean z8 = false;
+                if (z2 && (j == -9223372036854775807L || j <= this.A0A.A0C)) {
+                    C6Z c6z = A0F.A00;
+                    String[] strArr5 = A0y;
+                    if (strArr5[2].length() == strArr5[6].length()) {
+                        throw new RuntimeException();
+                    }
+                    String[] strArr6 = A0y;
+                    strArr6[2] = "uQd";
+                    strArr6[6] = "zdLpoimG1uHaXVEOP";
+                    if (c6z.A05) {
+                        A0V(4);
+                        A0O();
+                        if (this.A0A.A00 == 2) {
+                            for (InterfaceC1746nM interfaceC1746nM3 : this.A0W) {
+                                z = true;
+                                try {
+                                    interfaceC1746nM3.ABv();
+                                } catch (C1762nc e2) {
+                                    if (!e2.getClass().equals(C1762nc.class)) {
+                                        throw e2;
+                                    }
+                                    boolean z9 = this.A0N;
+                                    if (A0y[1].length() != 31) {
+                                        A0y[0] = "ROTBjRrt9pmtd4l9PrsJpq4cigEOLmNk";
+                                        if (!z9) {
+                                            throw e2;
+                                        }
+                                        if (this.A05 == -9223372036854775807L) {
+                                            long currentTimeMillis = System.currentTimeMillis() - this.A05;
+                                            long j2 = this.A0Z;
+                                            if (A0y[5].charAt(1) != 'q') {
+                                                A0y[1] = "nYRcp";
+                                                if (currentTimeMillis <= j2) {
+                                                }
+                                            } else {
+                                                A0y[0] = "0hUy";
+                                                if (currentTimeMillis <= j2) {
+                                                }
+                                            }
+                                            throw e2;
+                                        }
+                                        Log.w(A0D2, A0D + e2.getMessage());
+                                        this.A05 = System.currentTimeMillis();
+                                        if (this.A0q) {
+                                            this.A0a.obtainMessage(4, e2).sendToTarget();
+                                        }
+                                    } else {
+                                        if (!z9) {
+                                            throw e2;
+                                        }
+                                        if (this.A05 == -9223372036854775807L) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        boolean z10 = this.A0P;
+                        strArr = A0y;
+                        if (strArr[4].charAt(1) != strArr[3].charAt(1)) {
+                            A0y[0] = "CfnO3oWhmhBZYFdKQQ3";
+                            if ((z10 && this.A0A.A00 == 3) || this.A0A.A00 == 2) {
+                                A0a(AJt, this.A0X);
+                            } else if (this.A0W.length == 0 || this.A0A.A00 == 4) {
+                                this.A0f.AHj(2);
+                            } else {
+                                A0a(AJt, 1000L);
+                            }
+                            if (!z) {
+                                this.A05 = -9223372036854775807L;
+                            }
+                            C4S.A00();
+                            return;
+                        }
+                    }
+                }
+                if (this.A0A.A00 == 2 && A19(z3)) {
+                    if (this.A0J && !this.A0L) {
+                        this.A0L = true;
+                        this.A0F = A0B();
+                        if (this.A0F != null && this.A0F.intValue() > 0) {
+                            A0a(AJt, this.A0F.intValue());
+                            return;
+                        }
+                    }
+                    if (this.A0B != null) {
+                        int A9F = this.A0B.A9F();
+                        if (A0y[5].charAt(1) != 'q') {
+                            A0y[1] = "FUTTGuZgInj0HgAB4TKGqFNOnZ8TLHiw";
+                        }
+                    }
+                    A0t(this.A0E, z8);
+                    if (this.A0P) {
+                        A0N();
+                    }
+                    this.A0B = null;
+                } else if (this.A0A.A00 == 3) {
+                    if (this.A0W.length == 0) {
+                    }
+                }
+                if (this.A0A.A00 == 2) {
+                }
+                boolean z102 = this.A0P;
+                strArr = A0y;
+                if (strArr[4].charAt(1) != strArr[3].charAt(1)) {
+                }
+            }
+        }
+        throw new RuntimeException();
+    }
+
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException
+     */
+    /* JADX WARN: Removed duplicated region for block: B:100:0x01bb  */
+    /* JADX WARN: Removed duplicated region for block: B:103:0x01d1  */
+    /* JADX WARN: Removed duplicated region for block: B:112:0x0223 A[SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:115:0x020f  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0P() throws C9Y, IOException {
+        if (this.A0D == null) {
+            return;
+        }
+        if (this.A02 > 0) {
+            this.A0D.ABu();
+            return;
+        }
+        A0J();
+        C6Y A0E = this.A0j.A0E();
+        if (A0E != null && !A0E.A0R()) {
+            boolean z = this.A0A.A0A;
+            if (A0y[1].length() != 31) {
+                A0y[5] = "JakbFE5sCqyiHPWhcmq5QKrahWaBlD8R";
+                if (!z) {
+                    A0w(false);
+                }
+            }
+            throw new RuntimeException();
+        }
+        A0y(false);
+        if (this.A0j.A0N()) {
+            C6Y A0F = this.A0j.A0F();
+            C6Y A0G = this.A0j.A0G();
+            boolean z2 = false;
+            while (this.A0P && A0F != A0G && this.A06 >= A0F.A0I().A0H(this.A0K)) {
+                if (z2) {
+                    A0H();
+                }
+                int i = A0F.A00.A07 ? 0 : 3;
+                C6Y c6y = A0F;
+                A0F = this.A0j.A0B();
+                A0g(c6y);
+                C02236x c02236x = this.A0A;
+                C1683mL c1683mL = A0F.A00.A04;
+                long j = A0F.A00.A03;
+                if (A0y[7].charAt(12) == '2') {
+                    throw new RuntimeException();
+                }
+                String[] strArr = A0y;
+                strArr[4] = "OGZbExKcucXIKKZQBdHGOATJ9dYdrwhN";
+                strArr[3] = "TJxPjvISq11gHqp4fguKhlEOGAavfVmH";
+                this.A0A = c02236x.A06(c1683mL, j, A0F.A00.A02, A01());
+                this.A0h.A04(i);
+                A0Q();
+                z2 = true;
+            }
+            C6Z c6z = A0G.A00;
+            String[] strArr2 = A0y;
+            if (strArr2[4].charAt(1) != strArr2[3].charAt(1)) {
+                A0y[7] = "WHxPanRASNJPtq4bnE3dJm5Kco7OvEcN";
+                if (c6z.A05) {
+                    for (int i2 = 0; i2 < this.A0v.length; i2++) {
+                        InterfaceC1746nM interfaceC1746nM = this.A0v[i2];
+                        InterfaceC0357Cr interfaceC0357Cr = A0G.A09[i2];
+                        if (interfaceC0357Cr != null && interfaceC1746nM.A95() == interfaceC0357Cr && interfaceC1746nM.A9h()) {
+                            interfaceC1746nM.AId();
+                        }
+                    }
+                    return;
+                }
+                if (A0G.A0I() == null) {
+                    return;
+                }
+                C6Y A0I = A0G.A0I();
+                String[] strArr3 = A0y;
+                if (strArr3[4].charAt(1) != strArr3[3].charAt(1)) {
+                    A0y[7] = "aMxVvZtAQBe9jxU0Z4NX1LXmsoJEfXr7";
+                    if (A0I.A02) {
+                        for (int i3 = 0; i3 < this.A0v.length; i3++) {
+                            InterfaceC1746nM interfaceC1746nM2 = this.A0v[i3];
+                            InterfaceC0357Cr interfaceC0357Cr2 = A0G.A09[i3];
+                            if (interfaceC1746nM2.A95() != interfaceC0357Cr2) {
+                                return;
+                            }
+                            if (interfaceC0357Cr2 != null && !interfaceC1746nM2.A9h()) {
+                                return;
+                            }
+                        }
+                        EL A0K = A0G.A0K();
+                        C6Y A0C = this.A0j.A0C();
+                        EL A0K2 = A0C.A0K();
+                        boolean z3 = A0C.A07.AGg() != -9223372036854775807L;
+                        for (int i4 = 0; i4 < this.A0v.length; i4++) {
+                            InterfaceC1746nM interfaceC1746nM3 = this.A0v[i4];
+                            if (A0K.A00(i4)) {
+                                if (z3) {
+                                    interfaceC1746nM3.AId();
+                                } else {
+                                    boolean AAE = interfaceC1746nM3.AAE();
+                                    if (A0y[0].length() != 16) {
+                                        A0y[1] = "9mAYXkFxI0mZazBGslnkswropOC4T";
+                                        if (AAE) {
+                                            continue;
+                                        }
+                                        InterfaceC1646lj interfaceC1646lj = A0K2.A04[i4];
+                                        boolean A00 = A0K2.A00(i4);
+                                        boolean z4 = this.A0w[i4].A9F() != -2;
+                                        C7G c7g = A0K.A03[i4];
+                                        C7G c7g2 = A0K2.A03[i4];
+                                        if (A0y[1].length() != 31) {
+                                            throw new RuntimeException();
+                                        }
+                                        A0y[1] = "R6UwS9N6ly40SGlMhcEQ765TyuQep";
+                                        if (A00 && c7g2.equals(c7g) && !z4) {
+                                            C1836or[] A1A = A1A(interfaceC1646lj);
+                                            Log.e(A0D(0, 21, 22), A0D(392, 13, 67));
+                                            interfaceC1746nM3.AHq(A1A, A0C.A09[i4], A0C.A0H(this.A0K), A0C.A0B());
+                                        } else {
+                                            interfaceC1746nM3.AId();
+                                        }
+                                    } else {
+                                        A0y[0] = "RavyRccOc8FddTyMpAZEZ";
+                                        if (AAE) {
+                                            continue;
+                                        }
+                                        InterfaceC1646lj interfaceC1646lj2 = A0K2.A04[i4];
+                                        boolean A002 = A0K2.A00(i4);
+                                        if (this.A0w[i4].A9F() != -2) {
+                                        }
+                                        C7G c7g3 = A0K.A03[i4];
+                                        C7G c7g22 = A0K2.A03[i4];
+                                        if (A0y[1].length() != 31) {
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        return;
+                    }
+                    return;
+                }
+            }
+            throw new RuntimeException();
+        }
+    }
+
+    public static void A0R() {
+        A0x = new byte[]{-108, -57, -66, -97, -69, -80, -56, -76, -63, -104, -68, -65, -69, -104, -67, -61, -76, -63, -67, -80, -69, -15, 36, Ascii.ESC, -4, Ascii.CAN, Ascii.CR, 37, 17, Ascii.RS, -11, Ascii.EM, Ascii.FS, Ascii.CAN, -11, Ascii.SUB, 32, 17, Ascii.RS, Ascii.SUB, Ascii.CR, Ascii.CAN, -26, -12, Ascii.CR, Ascii.SUB, 16, Ascii.CAN, 17, Ascii.RS, -87, -57, -50, -49, -46, -55, -50, -57, Byte.MIN_VALUE, -51, -59, -45, -45, -63, -57, -59, -45, Byte.MIN_VALUE, -45, -59, -50, -44, Byte.MIN_VALUE, -63, -58, -44, -59, -46, Byte.MIN_VALUE, -46, -59, -52, -59, -63, -45, -59, -114, -107, -70, -64, -79, -66, -70, -83, -72, 108, -66, -63, -70, -64, -75, -71, -79, 108, -79, -66, -66, -69, -66, 122, -54, -26, -37, -13, -36, -37, -35, -27, -102, -33, -20, -20, -23, -20, -88, -114, -86, -97, -73, -96, -97, -95, -87, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -96, -77, -92, -92, -93, -80, -93, -94, -126, -77, -80, -97, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, 106, 94, -84, -93, -74, -78, -118, -83, -97, -94, -114, -83, -79, -89, -78, -89, -83, -84, -117, -79, 120, 94, 99, -94, -76, -48, -42, -45, -60, -58, -127, -58, -45, -45, -48, -45, -113, -72, -39, -44, -43, -123, -53, -58, -50, -47, -54, -55, -109, -78, -97, -91, -84, -67, -59, -56, -57, -54, -71, -54, -63, -60, -47, 120, -63, -65, -58, -57, -54, -63, -58, -65, 120, -53, -52, -54, -67, -71, -59, 120, -67, -54, -54, -57, -54, -110, 120, -108, -78, -71, -87, -82, -89, 96, -76, -81, 96, -77, -91, -82, -92, 96, -83, -91, -77, -77, -95, -89, -91, 96, -81, -82, 96, -95, 96, -92, -91, -95, -92, 96, -76, -88, -78, -91, -95, -92, 110, 5, Ascii.RS, Ascii.NAK, 40, 32, Ascii.NAK, 19, 36, Ascii.NAK, Ascii.DC4, -48, Ascii.NAK, 34, 34, Ascii.US, 34, -48, Ascii.DC4, Ascii.NAK, Ascii.FS, Ascii.EM, 38, Ascii.NAK, 34, Ascii.EM, Ascii.RS, Ascii.ETB, -48, Ascii.GS, Ascii.NAK, 35, 35, 17, Ascii.ETB, Ascii.NAK, -48, Ascii.US, Ascii.RS, -48, Ascii.NAK, 40, 36, Ascii.NAK, 34, Ascii.RS, 17, Ascii.FS, -48, 36, Ascii.CAN, 34, Ascii.NAK, 17, Ascii.DC4, -34, -34, -23, -51, -23, -25, -33, -47, -23, -20, -27, 37, Ascii.GS, Ascii.FS, 33, Ascii.EM, 8, Ascii.GS, 42, 33, 39, Ascii.FS, 1, Ascii.FS, -70, -81, -68, -77, -71, -82, -102, -71, -67, -77, -66, -77, -71, -72, -97, -67, -18, -31, -20, -24, -35, -33, -31, -49, -16, -18, -31, -35, -23};
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:100:0x0231, code lost:
+    
+        r1 = 0;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:101:0x0233, code lost:
+    
+        r14.A0A = r14.A0A.A06(r3, A06(r3, r1), r10, A01());
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:102:0x0244, code lost:
+    
+        return;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:103:0x0245, code lost:
+    
+        r1 = r10;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:104:0x0250, code lost:
+    
+        r9 = r14.A0j;
+        r3 = r14.A06;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:105:0x025f, code lost:
+    
+        if (com.instagram.common.viewpoint.core.C9W.A0y[1].length() == 31) goto L102;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:106:0x0261, code lost:
+    
+        r6 = com.instagram.common.viewpoint.core.C9W.A0y;
+        r6[4] = "30gHr5wufVP7jVH5IRZCDYCZy2V5u0Zf";
+        r6[3] = "xPVmpg9j3VPOmOyowbQUJ4kDfZKAMzov";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:107:0x0271, code lost:
+    
+        if (r9.A0Q(r5, r8, r3) != false) goto L100;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:108:0x0273, code lost:
+    
+        A0x(false);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:109:0x0276, code lost:
+    
+        A0v(false);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:110:0x0279, code lost:
+    
+        return;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:112:0x027f, code lost:
+    
+        throw new java.lang.RuntimeException();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:114:0x024d, code lost:
+    
+        if (r8.A00() != false) goto L84;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:95:0x0219, code lost:
+    
+        if (r8.A00() != false) goto L84;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:96:0x021b, code lost:
+    
+        r3 = r14.A0j.A0K(r5, java.lang.Integer.valueOf(r4), r10);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:97:0x0229, code lost:
+    
+        if (r3.equals(r8) != false) goto L95;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:99:0x022f, code lost:
+    
+        if (r3.A00() == false) goto L91;
+     */
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 16
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0e(AnonymousClass68 anonymousClass68) throws C9Y {
+        C1683mL c1683mL;
+        if (anonymousClass68.A01 != this.A0D) {
+            return;
+        }
+        Timeline timeline = this.A0A.A03;
+        Timeline timeline2 = anonymousClass68.A00;
+        this.A0A = this.A0A.A04(timeline2);
+        A0M();
+        if (this.A02 > 0) {
+            this.A0h.A03(this.A02);
+            this.A02 = 0;
+            if (this.A08 != null) {
+                Pair<Object, Long> A09 = A09(this.A08, true);
+                this.A08 = null;
+                if (A09 == null) {
+                    A0G();
+                    return;
+                }
+                Object obj = A09.first;
+                long longValue = ((Long) A09.second).longValue();
+                C1683mL A0K = this.A0j.A0K(timeline2, obj, longValue);
+                this.A0A = this.A0A.A06(A0K, A0K.A00() ? 0L : longValue, longValue, this.A0A.A0D);
+                return;
+            }
+            if (A0y[1].length() == 31) {
+                throw new RuntimeException();
+            }
+            String[] strArr = A0y;
+            strArr[2] = "O4I";
+            strArr[6] = "ahZa31gq0LeVPqA4e";
+            if (0 != 0) {
+                throw new NullPointerException(A0D(376, 16, 17));
+            }
+            if (this.A0A.A02 == -9223372036854775807L) {
+                if (timeline2.A0N()) {
+                    A0G();
+                    return;
+                }
+                Pair<Object, Long> A08 = A08(timeline2, timeline2.A0B(this.A0V), -9223372036854775807L);
+                Object obj2 = A08.first;
+                long longValue2 = ((Long) A08.second).longValue();
+                C1683mL A0K2 = this.A0j.A0K(timeline2, obj2, longValue2);
+                C02236x c02236x = this.A0A;
+                String[] strArr2 = A0y;
+                if (strArr2[2].length() == strArr2[6].length()) {
+                    throw new RuntimeException();
+                }
+                A0y[0] = "JR6dPBbFHW2aBR0iQ91GP51A";
+                this.A0A = c02236x.A06(A0K2, A0K2.A00() ? 0L : longValue2, longValue2, this.A0A.A0D);
+                return;
+            }
+            return;
+        }
+        Object obj3 = this.A0A.A05.A04;
+        long j = this.A0A.A01;
+        if (timeline.A0N()) {
+            if (timeline2.A0N()) {
+                return;
+            }
+            C1683mL A0K3 = this.A0j.A0K(timeline2, obj3, j);
+            this.A0A = this.A0A.A06(A0K3, A0K3.A00() ? 0L : j, j, this.A0A.A0D);
+            return;
+        }
+        C6Y A0D = this.A0j.A0D();
+        Object obj4 = A0D == null ? this.A0A.A05.A04 : A0D.A08;
+        int A0A = timeline2.A0A(obj4);
+        if (A0A == -1) {
+            Object A0C = A0C(obj4, timeline, timeline2);
+            if (A0C == null) {
+                A0G();
+                return;
+            }
+            Pair<Object, Long> A082 = A08(timeline2, timeline2.A0J(A0C, this.A0c).A00, -9223372036854775807L);
+            Object obj5 = A082.first;
+            long longValue3 = ((Long) A082.second).longValue();
+            C1683mL A0K4 = this.A0j.A0K(timeline2, obj5, longValue3);
+            if (A0D != null) {
+                while (A0D.A0I() != null) {
+                    A0D = A0D.A0I();
+                    if (A0D.A00.A04.equals(A0K4)) {
+                        C02026c c02026c = this.A0j;
+                        String[] strArr3 = A0y;
+                        if (strArr3[4].charAt(1) != strArr3[3].charAt(1)) {
+                            A0y[0] = "lm8nmDAIswUHpj0OrSP7ctv";
+                            A0D.A00 = c02026c.A0I(timeline2, A0D.A00);
+                        } else {
+                            A0D.A00 = c02026c.A0I(timeline2, A0D.A00);
+                        }
+                    }
+                }
+            }
+            long A06 = A06(A0K4, A0K4.A00() ? 0L : longValue3);
+            C02236x c02236x2 = this.A0A;
+            long A01 = A01();
+            String[] strArr4 = A0y;
+            if (strArr4[4].charAt(1) == strArr4[3].charAt(1)) {
+                throw new RuntimeException();
+            }
+            String[] strArr5 = A0y;
+            strArr5[2] = "HJD";
+            strArr5[6] = "HIUAzKTwmQi0tOVOF";
+            this.A0A = c02236x2.A06(A0K4, A06, longValue3, A01);
+            return;
+        }
+        C02236x c02236x3 = this.A0A;
+        String[] strArr6 = A0y;
+        if (strArr6[4].charAt(1) != strArr6[3].charAt(1)) {
+            String[] strArr7 = A0y;
+            strArr7[4] = "QYIV2IuM2tD6Cg4Dd0tvfiQK4IQ6icHf";
+            strArr7[3] = "hXYkHU7O6zP410ynmzMqamHjkcWcTxII";
+            c1683mL = c02236x3.A05;
+        } else {
+            c1683mL = c02236x3.A05;
+        }
+    }
+
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException: Index 22 out of bounds for length 20
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+     */
+    /* JADX WARN: Removed duplicated region for block: B:19:0x00d9  */
+    /* JADX WARN: Removed duplicated region for block: B:22:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0f(C6B c6b) throws C9Y {
+        long longValue;
+        C1683mL A0K;
+        long longValue2;
+        boolean z;
+        this.A0h.A03(1);
+        Pair<Object, Long> A09 = A09(c6b, true);
+        if (A09 == null) {
+            A0K = A0A();
+            longValue2 = -9223372036854775807L;
+            longValue = -9223372036854775807L;
+            z = true;
+        } else {
+            Object obj = A09.first;
+            longValue = ((Long) A09.second).longValue();
+            A0K = this.A0j.A0K(this.A0A.A03, obj, longValue);
+            if (A0K.A00()) {
+                longValue2 = 0;
+                z = true;
+            } else {
+                longValue2 = ((Long) A09.second).longValue();
+                z = c6b.A01 == -9223372036854775807L;
+            }
+        }
+        try {
+            try {
+                if (this.A0D != null && this.A02 <= 0) {
+                    try {
+                        if (longValue2 == -9223372036854775807L) {
+                            A0V(4);
+                            A13(false, true, false);
+                        } else {
+                            long j = longValue2;
+                            if (A0K.equals(this.A0A.A05)) {
+                                C6Y A0F = this.A0j.A0F();
+                                if (A0F != null && j != 0) {
+                                    j = A0F.A07.A6j(j, this.A0C);
+                                }
+                                if (AbstractC00941w.A01(j) == AbstractC00941w.A01(this.A0A.A0C)) {
+                                    this.A0A = this.A0A.A06(A0K, this.A0A.A0C, longValue, A01());
+                                    if (z) {
+                                        this.A0h.A04(2);
+                                        return;
+                                    }
+                                    return;
+                                }
+                            }
+                            long A06 = A06(A0K, j);
+                            z |= longValue2 != A06;
+                            longValue2 = A06;
+                        }
+                        this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
+                        if (z) {
+                            return;
+                        }
+                        this.A0h.A04(2);
+                        return;
+                    } catch (Throwable th) {
+                        th = th;
+                        this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
+                        if (z) {
+                            this.A0h.A04(2);
+                        }
+                        throw th;
+                    }
+                }
+                this.A08 = c6b;
+                this.A07 = null;
+                this.A0A = this.A0A.A06(A0K, longValue2, longValue, A01());
+                if (z) {
+                }
+            } catch (Throwable th2) {
+                th = th2;
+            }
+        } catch (Throwable th3) {
+            th = th3;
+        }
+    }
+
+    static {
+        A0R();
+    }
+
+    public C9W(InterfaceC1746nM[] interfaceC1746nMArr, EK ek, EL el, C6S c6s, EU eu, boolean z, int i, boolean z2, Handler handler, C3T c3t, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, boolean z8, long j, boolean z9, int i2, boolean z10, boolean z11, boolean z12, boolean z13, boolean z14, boolean z15, C02387m c02387m) {
+        this.A0v = interfaceC1746nMArr;
+        this.A0l = ek;
+        this.A0m = el;
+        this.A0i = c6s;
+        this.A0n = eu;
+        this.A0P = z;
+        this.A03 = i;
+        this.A0V = z2;
+        this.A0a = handler;
+        this.A0e = c3t;
+        this.A0U = z3;
+        this.A0H = z4;
+        this.A0G = z5;
+        this.A0M = z6;
+        this.A0I = z7;
+        this.A0T = z8;
+        this.A0Z = j;
+        this.A0q = z9;
+        this.A00 = i2;
+        this.A0u = z11;
+        this.A0s = z10;
+        this.A0O = z12;
+        this.A0Q = z13;
+        this.A0K = z14;
+        this.A0t = z15;
+        this.A0N = j > 0;
+        this.A0Y = c6s.A6s(c02387m);
+        this.A0r = c6s.AI3(c02387m);
+        this.A0C = C7I.A03;
+        this.A0A = new C02236x(Timeline.A02, -9223372036854775807L, C1673mA.A06, el);
+        this.A0h = new C6A();
+        this.A0w = new C7D[interfaceC1746nMArr.length];
+        for (int i3 = 0; i3 < interfaceC1746nMArr.length; i3++) {
+            interfaceC1746nMArr[i3].AA1(i3, c02387m);
+            this.A0w[i3] = interfaceC1746nMArr[i3].A75();
+        }
+        this.A0g = new C1754nU(this, c3t);
+        this.A0k = new C1740nG(c3t);
+        this.A0o = z11 ? new AnonymousClass91(c3t) : null;
+        this.A0p = new ArrayList<>();
+        this.A0W = new InterfaceC1746nM[0];
+        this.A0d = new C1805oL();
+        this.A0c = new C1807oN();
+        ek.A02(this, eu);
+        this.A0b = new HandlerThread(A0D(21, 29, Opcodes.DREM), -16);
+        this.A0b.start();
+        this.A0f = c3t.A5H(this.A0b.getLooper(), this);
+    }
+
+    @MetaExoPlayerCustomization
+    private int A00() {
+        int exoplayerThreadPollingIntervalMs = MetaExoPlayerUpgradeConfig.A00(EnumC1436i3.A04);
+        if (exoplayerThreadPollingIntervalMs > 0) {
+            return exoplayerThreadPollingIntervalMs;
+        }
+        return 10;
+    }
+
+    private long A01() {
+        return A04(this.A0A.A0B);
+    }
+
+    private final long A02() {
+        long loadingPeriodStartPositionUs;
+        C6Y A0E = this.A0j.A0E();
+        if (A0E == null) {
+            loadingPeriodStartPositionUs = 0;
+        } else {
+            loadingPeriodStartPositionUs = A05(A0E);
+        }
+        if (A0E == null || loadingPeriodStartPositionUs == -9223372036854775807L) {
+            return 0L;
+        }
+        return A0E.A0C(loadingPeriodStartPositionUs);
+    }
+
+    private final long A03() {
+        long A0C;
+        C6Y A0F = this.A0j.A0F();
+        if (A0F == null) {
+            A0C = 0;
+        } else {
+            A0C = A0F.A0C(A0F.A0D(this.A06));
+        }
+        return A0C + A02();
+    }
+
+    private long A04(long j) {
+        C6Y A0E = this.A0j.A0E();
+        if (A0E == null) {
+            return 0L;
+        }
+        return j - A0E.A0D(this.A06);
+    }
+
+    private final long A05(C6Y c6y) {
+        long j = Long.MAX_VALUE;
+        InterfaceC0357Cr[] interfaceC0357CrArr = c6y.A09;
+        for (int i = 0; i < interfaceC0357CrArr.length; i++) {
+            if (interfaceC0357CrArr[i] instanceof InterfaceC0358Cs) {
+                long periodStartPositionUs = ((InterfaceC0358Cs) interfaceC0357CrArr[i]).A81();
+                j = Math.min(j, periodStartPositionUs);
+            }
+        }
+        if (j == Long.MAX_VALUE) {
+            return -9223372036854775807L;
+        }
+        return j;
+    }
+
+    private long A06(C1683mL c1683mL, long j) throws C9Y {
+        return A07(false, c1683mL, j, this.A0j.A0F() != this.A0j.A0G());
+    }
+
+    private long A07(boolean z, C1683mL c1683mL, long j, boolean z2) throws C9Y {
+        A0O();
+        this.A0R = false;
+        A0V(2);
+        C6Y A0F = this.A0j.A0F();
+        C6Y c6y = A0F;
+        while (true) {
+            if (c6y == null) {
+                break;
+            }
+            if (A18(c1683mL, j, c6y)) {
+                this.A0j.A0S(c6y);
+                break;
+            }
+            c6y = this.A0j.A0B();
+        }
+        if (A0F != c6y || z2) {
+            for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+                A0l(interfaceC1746nM);
+            }
+            this.A0W = new InterfaceC1746nM[0];
+            if (A0y[1].length() == 31) {
+                throw new RuntimeException();
+            }
+            String[] strArr = A0y;
+            strArr[4] = "70t8rv27mnV5UL6KHl8v284ienTbIO4o";
+            strArr[3] = "4hBvGCC7ZdKRW68bijyzpqxjpy9h3CGi";
+            A0F = null;
+        }
+        if (c6y != null) {
+            A0g(A0F);
+            if (c6y.A01) {
+                j = c6y.A07.AIO(j, z);
+                c6y.A07.A5s(j - this.A0Y, this.A0r);
+            }
+            A0Y(j);
+            A0w(this.A0G);
+        } else {
+            this.A0j.A0M(true);
+            A0Y(j);
+        }
+        A0v(false);
+        this.A0f.AIQ(2);
+        return j;
+    }
+
+    private Pair<Object, Long> A08(Timeline timeline, int i, long j) {
+        return timeline.A0D(this.A0d, this.A0c, i, j);
+    }
+
+    private Pair<Object, Long> A09(C6B c6b, boolean z) {
+        Timeline timeline = this.A0A.A03;
+        Timeline timeline2 = c6b.A02;
+        if (timeline.A0N()) {
+            return null;
+        }
+        if (timeline2.A0N()) {
+            timeline2 = timeline;
+        }
+        try {
+            Pair<Object, Long> periodPosition = timeline2.A0E(this.A0d, this.A0c, c6b.A00, c6b.A01);
+            if (timeline == timeline2) {
+                return periodPosition;
+            }
+            int A0A = timeline.A0A(periodPosition.first);
+            if (A0A != -1) {
+                return periodPosition;
+            }
+            if (!z || A0C(periodPosition.first, timeline2, timeline) == null) {
+                return null;
+            }
+            return A08(timeline, timeline.A0H(A0A, this.A0c).A00, -9223372036854775807L);
+        } catch (IndexOutOfBoundsException unused) {
+            throw new C2E(timeline, c6b.A00, c6b.A01);
+        }
+    }
+
+    private C1683mL A0A() {
+        Timeline timeline = this.A0A.A03;
+        if (timeline.A0N()) {
+            return C02236x.A0E;
+        }
+        return new C1683mL(timeline.A0M(timeline.A0K(timeline.A0B(this.A0V), this.A0d).A00));
+    }
+
+    @MetaExoPlayerCustomization(type = {"NEW_METHOD"}, value = "D71523094: Added for negative testing")
+    private final Integer A0B() {
+        C02196t playbackLatencyConfig;
+        if (this.A09 == null || (playbackLatencyConfig = this.A09.A02()) == null) {
+            String[] strArr = A0y;
+            if (strArr[2].length() != strArr[6].length()) {
+                A0y[7] = "1rqbEBrQgQNr61xUccdMybR9UEwvq3L8";
+                return null;
+            }
+        } else {
+            int A00 = playbackLatencyConfig.A00();
+            if (A0y[0].length() != 16) {
+                String[] strArr2 = A0y;
+                strArr2[2] = "KUZ";
+                strArr2[6] = "wQAKuizVIm50S6vdz";
+                return Integer.valueOf(A00);
+            }
+        }
+        throw new RuntimeException();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x0020, code lost:
+    
+        return null;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private Object A0C(Object obj, Timeline timeline, Timeline timeline2) {
+        int A0A = timeline.A0A(obj);
+        int i = -1;
+        int maxIterations = timeline.A06();
+        for (int newPeriodIndex = 0; newPeriodIndex < maxIterations && i == -1 && (A0A = timeline.A09(A0A, this.A0c, this.A0d, this.A03, this.A0V)) != -1; newPeriodIndex++) {
+            i = timeline2.A0A(timeline.A0M(A0A));
+        }
+        return timeline2.A0M(i);
+    }
+
+    private void A0E() {
+        C6Y A0E = this.A0j.A0E();
+        if (A0E == null) {
+            return;
+        }
+        A0E.A07.A4k(A0E.A0D(this.A06));
+    }
+
+    private void A0G() {
+        A0V(4);
+        A13(false, true, false);
+    }
+
+    private void A0H() {
+        int i;
+        boolean z;
+        int i2;
+        if (this.A0h.A06(this.A0A)) {
+            Handler handler = this.A0a;
+            i = this.A0h.A01;
+            z = this.A0h.A03;
+            if (z) {
+                i2 = this.A0h.A00;
+            } else {
+                i2 = -1;
+            }
+            handler.obtainMessage(0, i, i2, this.A0A).sendToTarget();
+            this.A0h.A05(this.A0A);
+        }
+    }
+
+    private void A0I() throws IOException {
+        C6Y A0E = this.A0j.A0E();
+        C6Y readingPeriodHolder = this.A0j.A0G();
+        if (A0E != null && !A0E.A02) {
+            if (readingPeriodHolder != null) {
+                C6Y loadingPeriodHolder = readingPeriodHolder.A0I();
+                if (loadingPeriodHolder != A0E) {
+                    return;
+                }
+            }
+            for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+                if (!interfaceC1746nM.A9h()) {
+                    return;
+                }
+            }
+            A0E.A07.ABt();
+        }
+    }
+
+    private void A0J() throws IOException {
+        this.A0j.A0L(this.A06);
+        if (this.A0j.A0O()) {
+            C6Z A0H = this.A0j.A0H(this.A06, this.A0A);
+            if (A0H == null) {
+                this.A0D.ABu();
+                return;
+            }
+            this.A0j.A0J(this.A0w, this.A0t ? 60000000L : 0L, this.A0l, this.A0i.A6n(), this.A0D, A0H, this.A0m).AGL(this, A0H.A03);
+            A0y(true);
+            A0v(false);
+        }
+    }
+
+    private void A0K() {
+        A13(true, true, true);
+        this.A0i.AEu(C02387m.A03);
+        A0V(1);
+        this.A0b.quit();
+        synchronized (this) {
+            this.A0S = true;
+            notifyAll();
+        }
+    }
+
+    private void A0L() throws C9Y {
+        boolean z;
+        if (!this.A0j.A0N()) {
+            return;
+        }
+        float f = this.A0g.A8e().A01;
+        C6Y periodHolder = this.A0j.A0G();
+        boolean z2 = true;
+        for (C6Y A0F = this.A0j.A0F(); A0F != null && A0F.A02; A0F = A0F.A0I()) {
+            EL A0L = A0F.A0L(f, this.A0A.A03);
+            if (A0L != null) {
+                if (z2) {
+                    C6Y A0F2 = this.A0j.A0F();
+                    boolean A0S = this.A0j.A0S(A0F2);
+                    boolean[] zArr = new boolean[this.A0v.length];
+                    long A0G = A0F2.A0G(A0L, this.A0A.A0C, A0S, zArr);
+                    if (this.A0A.A00 != 4 && A0G != this.A0A.A0C) {
+                        this.A0A = this.A0A.A06(this.A0A.A05, A0G, this.A0A.A01, A01());
+                        this.A0h.A04(4);
+                        A0Y(A0G);
+                    }
+                    int i = 0;
+                    boolean[] zArr2 = new boolean[this.A0v.length];
+                    for (int i2 = 0; i2 < this.A0v.length; i2++) {
+                        InterfaceC1746nM interfaceC1746nM = this.A0v[i2];
+                        zArr2[i2] = interfaceC1746nM.A92() != 0;
+                        InterfaceC0357Cr interfaceC0357Cr = A0F2.A09[i2];
+                        if (interfaceC0357Cr != null) {
+                            i++;
+                        }
+                        if (zArr2[i2]) {
+                            InterfaceC0357Cr A95 = interfaceC1746nM.A95();
+                            if (A0y[7].charAt(12) == '2') {
+                                throw new RuntimeException();
+                            }
+                            A0y[1] = "PyyQ9suxdi7C";
+                            if (interfaceC0357Cr != A95) {
+                                A0l(interfaceC1746nM);
+                            } else if (zArr[i2]) {
+                                interfaceC1746nM.AI2(this.A06);
+                            }
+                        }
+                    }
+                    this.A0A = this.A0A.A07(A0F2.A0J(), A0F2.A0K());
+                    A14(zArr2, i);
+                    z = false;
+                } else {
+                    this.A0j.A0S(A0F);
+                    if (A0F.A02) {
+                        z = false;
+                        A0F.A0F(A0L, Math.max(A0F.A00.A03, A0F.A0D(this.A06)), false);
+                    } else {
+                        z = false;
+                    }
+                }
+                A0v(true);
+                if (this.A0A.A00 != 4) {
+                    A0w(z);
+                    A0Q();
+                    this.A0f.AIQ(2);
+                    return;
+                }
+                return;
+            }
+            if (A0F == periodHolder) {
+                z2 = false;
+            }
+        }
+    }
+
+    private void A0M() {
+        for (int size = this.A0p.size() - 1; size >= 0; size--) {
+            if (!A16(this.A0p.get(size))) {
+                this.A0p.get(size).A03.A0A(false);
+                this.A0p.remove(size);
+            }
+        }
+        Collections.sort(this.A0p);
+    }
+
+    private void A0N() throws C9Y {
+        this.A0R = false;
+        this.A0g.A05();
+        this.A0k.A00();
+        if (this.A0u) {
+            this.A0o.A00();
+        }
+        for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+            interfaceC1746nM.start();
+        }
+    }
+
+    private void A0O() throws C9Y {
+        this.A0g.A06();
+        this.A0k.A01();
+        if (this.A0u) {
+            this.A0o.A01();
+        }
+        for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+            A0m(interfaceC1746nM);
+        }
+    }
+
+    private void A0Q() throws C9Y {
+        if (!this.A0j.A0N()) {
+            return;
+        }
+        C6Y A0F = this.A0j.A0F();
+        long AGg = A0F.A07.AGg();
+        if (AGg != -9223372036854775807L) {
+            A0Y(AGg);
+            if (AGg != this.A0A.A0C) {
+                this.A0A = this.A0A.A06(this.A0A.A05, AGg, this.A0A.A01, A01());
+                this.A0h.A04(4);
+            }
+        } else {
+            C1754nU c1754nU = this.A0g;
+            C6Y playingPeriodHolder = this.A0j.A0G();
+            this.A06 = c1754nU.A04(A0F != playingPeriodHolder);
+            long A0D = A0F.A0D(this.A06);
+            A0Z(this.A0A.A0C, A0D);
+            this.A0A.A0C = A0D;
+        }
+        C6Y playingPeriodHolder2 = this.A0j.A0E();
+        this.A0A.A0B = playingPeriodHolder2.A09();
+        this.A0A.A0D = A01();
+        this.A0A.A0D = A0F.A0C(this.A0A.A0C);
+    }
+
+    private void A0S(byte b) {
+        C6Y A0E = this.A0j.A0E();
+        if (A0E != null && this.A0U) {
+            A0E.A07.AJq(b);
+        }
+    }
+
+    private void A0T(float f) {
+        for (C6Y A0D = this.A0j.A0D(); A0D != null && A0D.A02; A0D = A0D.A0I()) {
+            for (InterfaceC1646lj interfaceC1646lj : A0D.A0K().A04) {
+                if (interfaceC1646lj != null) {
+                    interfaceC1646lj.AEc(f);
+                }
+            }
+        }
+    }
+
+    private void A0U(int i) throws C9Y {
+        this.A03 = i;
+        if (!this.A0j.A0P(this.A0A.A03, i)) {
+            if (A0y[0].length() == 16) {
+                throw new RuntimeException();
+            }
+            A0y[5] = "F0pbcDG7mrKSFF2ySsjJdp1en5xQxzay";
+            A0x(true);
+        }
+        A0v(false);
+    }
+
+    private void A0V(int i) {
+        if (this.A0A.A00 != i) {
+            this.A0A = this.A0A.A01(i);
+            if (i == 2) {
+                this.A04 = System.currentTimeMillis();
+            } else {
+                this.A04 = -1L;
+            }
+        }
+    }
+
+    private void A0W(int i, boolean z) {
+        if (this.A0A.A00 != i) {
+            C02236x A03 = this.A0A.A03(i, z);
+            if (A0y[1].length() == 31) {
+                throw new RuntimeException();
+            }
+            A0y[1] = "pTubBuiOOGTe";
+            this.A0A = A03;
+            if (i == 2) {
+                this.A04 = System.currentTimeMillis();
+            } else {
+                this.A04 = -1L;
+            }
+        }
+    }
+
+    private void A0X(int i, boolean playing, int i2) throws C9Y {
+        C6Y A0F = this.A0j.A0F();
+        InterfaceC1746nM interfaceC1746nM = this.A0v[i];
+        this.A0W[i2] = interfaceC1746nM;
+        if (interfaceC1746nM.A92() == 0) {
+            C6Y A0G = this.A0j.A0G();
+            C6Y playingPeriodHolder = this.A0j.A0F();
+            boolean z = A0G == playingPeriodHolder;
+            C7G c7g = A0F.A0K().A03[i];
+            C1836or[] A1A = A1A(A0F.A0K().A04[i]);
+            boolean z2 = this.A0P && this.A0A.A00 == 3;
+            interfaceC1746nM.A6D(c7g, A1A, A0F.A09[i], this.A06, !playing && z2, z, A0G.A0H(this.A0K), A0F.A0B());
+            this.A0g.A09(interfaceC1746nM);
+            if (z2) {
+                interfaceC1746nM.start();
+            }
+        }
+    }
+
+    private void A0Y(long j) throws C9Y {
+        long A0E;
+        if (this.A0j.A0N()) {
+            A0E = this.A0j.A0F().A0E(j);
+        } else {
+            A0E = (this.A0t ? 60000000 : 0) + j;
+        }
+        this.A06 = A0E;
+        this.A0g.A07(this.A06);
+        for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+            long j2 = this.A06;
+            String[] strArr = A0y;
+            if (strArr[2].length() == strArr[6].length()) {
+                throw new RuntimeException();
+            }
+            A0y[5] = "3LWS1la82nevxXslk8B3HGv7gilut34u";
+            interfaceC1746nM.AI2(j2);
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:34:0x00cb, code lost:
+    
+        if (r5 >= r4) goto L39;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:35:0x00cd, code lost:
+    
+        r5 = r3.A00;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:36:0x00dc, code lost:
+    
+        if (com.instagram.common.viewpoint.core.C9W.A0y[7].charAt(12) == '2') goto L92;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:37:0x00de, code lost:
+    
+        com.instagram.common.viewpoint.core.C9W.A0y[7] = "Pqus3FB2V0wQm49ac7wvllFxwdLgqwrG";
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:38:0x00e5, code lost:
+    
+        if (r5 != r4) goto L87;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:40:0x00eb, code lost:
+    
+        if (r3.A01 > r8) goto L88;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:84:0x0114, code lost:
+    
+        throw new java.lang.RuntimeException();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:85:0x00ed, code lost:
+    
+        r0 = r7.A01;
+        r7.A01 = r0 + 1;
+        r1 = r7.A01;
+        r0 = r7.A0p.size();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:86:0x00fb, code lost:
+    
+        if (r1 >= r0) goto L91;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:88:0x0108, code lost:
+    
+        r3 = null;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:92:0x00fd, code lost:
+    
+        r1 = r7.A0p;
+        r0 = r7.A01;
+        r3 = r1.get(r0);
+        r3 = r3;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:94:0x010a, code lost:
+    
+        if (r5 >= r4) goto L39;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0Z(long j, long j2) throws C9Y {
+        AnonymousClass69 anonymousClass69;
+        AnonymousClass69 nextInfo;
+        if (this.A0p.isEmpty() || this.A0A.A05.A00()) {
+            return;
+        }
+        C02236x c02236x = this.A0A;
+        if (A0y[0].length() != 16) {
+            String[] strArr = A0y;
+            strArr[4] = "N4EB4VnnGuurJLGLQe09RRoMwim7ZTwR";
+            strArr[3] = "el7QB6NOzA9v772mMpBH3ujflXdKxCpX";
+            if (c02236x.A02 == j) {
+                j--;
+            }
+            int A0A = this.A0A.A03.A0A(this.A0A.A05.A04);
+            int currentPeriodIndex = this.A01;
+            if (currentPeriodIndex > 0) {
+                ArrayList<AnonymousClass69> arrayList = this.A0p;
+                int currentPeriodIndex2 = this.A01;
+                int i = currentPeriodIndex2 - 1;
+                if (A0y[1].length() != 31) {
+                    String[] strArr2 = A0y;
+                    strArr2[2] = "q3c";
+                    strArr2[6] = "HlTr3zIzL5MxTNWEN";
+                    anonymousClass69 = arrayList.get(i);
+                }
+            } else {
+                anonymousClass69 = null;
+            }
+            while (anonymousClass69 != null && (anonymousClass69.A00 > A0A || (anonymousClass69.A00 == A0A && anonymousClass69.A01 > j))) {
+                int currentPeriodIndex3 = this.A01;
+                this.A01 = currentPeriodIndex3 - 1;
+                int currentPeriodIndex4 = this.A01;
+                if (currentPeriodIndex4 > 0) {
+                    ArrayList<AnonymousClass69> arrayList2 = this.A0p;
+                    int currentPeriodIndex5 = this.A01;
+                    anonymousClass69 = arrayList2.get(currentPeriodIndex5 - 1);
+                } else {
+                    anonymousClass69 = null;
+                }
+            }
+            int i2 = this.A01;
+            int currentPeriodIndex6 = this.A0p.size();
+            if (i2 < currentPeriodIndex6) {
+                ArrayList<AnonymousClass69> arrayList3 = this.A0p;
+                int currentPeriodIndex7 = this.A01;
+                nextInfo = arrayList3.get(currentPeriodIndex7);
+            } else {
+                nextInfo = null;
+            }
+            while (nextInfo != null && nextInfo.A02 != null) {
+                int i3 = nextInfo.A00;
+                if (A0y[5].charAt(1) != 'q') {
+                    A0y[1] = "urcr7rEa5cce4ZESz6";
+                }
+            }
+            while (nextInfo != null) {
+                Object obj = nextInfo.A02;
+                if (A0y[1].length() != 31) {
+                    String[] strArr3 = A0y;
+                    strArr3[2] = "ENU";
+                    strArr3[6] = "SOUOSvSypycWuSHSN";
+                    if (obj == null) {
+                        return;
+                    }
+                    int currentPeriodIndex8 = nextInfo.A00;
+                    if (currentPeriodIndex8 == A0A && nextInfo.A01 > j && nextInfo.A01 <= j2) {
+                        A0j(nextInfo.A03);
+                        if (nextInfo.A03.A0B() || nextInfo.A03.A0D()) {
+                            ArrayList<AnonymousClass69> arrayList4 = this.A0p;
+                            int currentPeriodIndex9 = this.A01;
+                            arrayList4.remove(currentPeriodIndex9);
+                        } else {
+                            int currentPeriodIndex10 = this.A01;
+                            this.A01 = currentPeriodIndex10 + 1;
+                        }
+                        int i4 = this.A01;
+                        int currentPeriodIndex11 = this.A0p.size();
+                        if (i4 < currentPeriodIndex11) {
+                            ArrayList<AnonymousClass69> arrayList5 = this.A0p;
+                            int currentPeriodIndex12 = this.A01;
+                            AnonymousClass69 nextInfo2 = arrayList5.get(currentPeriodIndex12);
+                            nextInfo = nextInfo2;
+                        } else {
+                            nextInfo = null;
+                        }
+                    } else {
+                        return;
+                    }
+                }
+            }
+            return;
+        }
+        throw new RuntimeException();
+    }
+
+    private void A0a(long j, long j2) {
+        this.A0f.AHj(2);
+        this.A0f.AIR(2, j + j2);
+    }
+
+    private void A0b(C1820ob c1820ob) {
+        this.A0g.AIt(c1820ob);
+        if (this.A0o != null) {
+            this.A0o.AIt(c1820ob);
+        }
+        if (this.A0k != null) {
+            this.A0k.AIt(c1820ob);
+        }
+    }
+
+    private void A0c(AnonymousClass67 anonymousClass67) throws C9Y {
+        throw new NullPointerException(A0D(376, 16, 17));
+    }
+
+    private void A0d(AnonymousClass67 anonymousClass67, boolean z) throws C9Y {
+        this.A0h.A03(1);
+        throw new NullPointerException(A0D(363, 13, 127));
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:20:0x0070, code lost:
+    
+        if (r8.A00(r6) != false) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:22:0x0076, code lost:
+    
+        if (r7.AAE() == false) goto L40;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:24:0x0080, code lost:
+    
+        if (r7.A95() != r10.A09[r6]) goto L41;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x0082, code lost:
+    
+        A0l(r7);
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:31:0x008c, code lost:
+    
+        if (r8.A00(r6) != false) goto L23;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A0g(C6Y c6y) throws C9Y {
+        C6Y A0F = this.A0j.A0F();
+        if (A0F == null || c6y == A0F) {
+            return;
+        }
+        int i = 0;
+        boolean[] zArr = new boolean[this.A0v.length];
+        String[] strArr = A0y;
+        String str = strArr[4];
+        String str2 = strArr[3];
+        int enabledRendererCount = str.charAt(1);
+        if (enabledRendererCount == str2.charAt(1)) {
+            throw new RuntimeException();
+        }
+        A0y[0] = "";
+        int i2 = 0;
+        while (i2 < this.A0v.length) {
+            InterfaceC1746nM interfaceC1746nM = this.A0v[i2];
+            zArr[i2] = interfaceC1746nM.A92() != 0;
+            if (A0F.A0K().A00(i2)) {
+                i++;
+            }
+            if (zArr[i2]) {
+                EL A0K = A0F.A0K();
+                int enabledRendererCount2 = A0y[5].charAt(1);
+                if (enabledRendererCount2 != 113) {
+                    String[] strArr2 = A0y;
+                    strArr2[4] = "5yNp1I7g7IY9vjHrSpd0TTAHnxoP5q4N";
+                    strArr2[3] = "spEmpaFlzQc3LcHeWE04rIrq6t30lchN";
+                }
+            }
+            i2++;
+        }
+        this.A0A = this.A0A.A07(A0F.A0J(), A0F.A0K());
+        A14(zArr, i);
+    }
+
+    private void A0h(AnonymousClass71 anonymousClass71) throws C9Y {
+        if (anonymousClass71.A0D()) {
+            return;
+        }
+        try {
+            anonymousClass71.A05().A9a(anonymousClass71.A01(), anonymousClass71.A09());
+        } finally {
+            anonymousClass71.A0A(true);
+        }
+    }
+
+    private void A0i(AnonymousClass71 anonymousClass71) throws C9Y {
+        if (anonymousClass71.A02() == -9223372036854775807L) {
+            A0j(anonymousClass71);
+            return;
+        }
+        if (this.A0D == null || this.A02 > 0) {
+            this.A0p.add(new AnonymousClass69(anonymousClass71));
+            return;
+        }
+        AnonymousClass69 anonymousClass69 = new AnonymousClass69(anonymousClass71);
+        if (A16(anonymousClass69)) {
+            this.A0p.add(anonymousClass69);
+            Collections.sort(this.A0p);
+        } else {
+            anonymousClass71.A0A(false);
+        }
+    }
+
+    private void A0j(AnonymousClass71 anonymousClass71) throws C9Y {
+        if (anonymousClass71.A03() == this.A0f.A8J()) {
+            A0h(anonymousClass71);
+            if (this.A0A.A00 == 3 || this.A0A.A00 == 2) {
+                this.A0f.AIQ(2);
+                return;
+            }
+            return;
+        }
+        this.A0f.ACA(15, anonymousClass71).A02();
+    }
+
+    private void A0k(final AnonymousClass71 anonymousClass71) {
+        Looper A03 = anonymousClass71.A03();
+        if (!A03.getThread().isAlive()) {
+            Log.w(A0D(220, 3, 37), A0D(258, 40, 7));
+            anonymousClass71.A0A(false);
+        } else {
+            this.A0e.A5H(A03, null).A03(new Runnable() { // from class: com.facebook.ads.redexgen.X.65
+                @Override // java.lang.Runnable
+                public final void run() {
+                    C9W.this.A1E(anonymousClass71);
+                }
+            });
+        }
+    }
+
+    private void A0l(InterfaceC1746nM interfaceC1746nM) throws C9Y {
+        this.A0g.A08(interfaceC1746nM);
+        A0m(interfaceC1746nM);
+        interfaceC1746nM.A5p();
+    }
+
+    private void A0m(InterfaceC1746nM interfaceC1746nM) throws C9Y {
+        if (interfaceC1746nM.A92() == 2) {
+            interfaceC1746nM.stop();
+        }
+    }
+
+    private void A0n(C7I c7i) {
+        this.A0C = c7i;
+    }
+
+    private void A0o(InterfaceC1684mM interfaceC1684mM) {
+        if (!this.A0j.A0T(interfaceC1684mM)) {
+            return;
+        }
+        this.A0j.A0L(this.A06);
+        A0w(false);
+    }
+
+    private void A0p(InterfaceC1684mM interfaceC1684mM) throws C9Y {
+        byte b;
+        if (!this.A0j.A0T(interfaceC1684mM)) {
+            return;
+        }
+        C6Y A0E = this.A0j.A0E();
+        A0E.A0N(this.A0g.A8e().A01, this.A0A.A03);
+        A0s(A0E.A0J(), A0E.A0K());
+        if (!this.A0j.A0N()) {
+            C6Y loadingPeriodHolder = this.A0j.A0B();
+            A0Y(loadingPeriodHolder.A00.A03);
+            A0g(null);
+        }
+        if (this.A0M || this.A0P) {
+            b = 0;
+        } else {
+            b = 2;
+        }
+        A0S(b);
+        A10(this.A0P);
+        if (A0y[7].charAt(12) == '2') {
+            throw new RuntimeException();
+        }
+        A0y[5] = "0JHOWU68jltYXS7XBlXTYuPeT3LWkLA2";
+        A0w(false);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @Override // com.instagram.common.viewpoint.core.InterfaceC0360Cu
+    /* renamed from: A0q, reason: merged with bridge method [inline-methods] */
+    public final void ACs(InterfaceC1684mM interfaceC1684mM) {
+        this.A0f.ACA(10, interfaceC1684mM).A02();
+    }
+
+    private void A0r(CL cl, boolean z, boolean z2) {
+        this.A02++;
+        A13(true, z, z2);
+        this.A0i.AEj(C02387m.A03);
+        this.A0D = cl;
+        A0V(2);
+        cl.AGN(this, null);
+        this.A0f.AIQ(2);
+    }
+
+    private void A0s(C1673mA c1673mA, EL el) {
+        this.A0i.AFV(new C6R(C02387m.A03, this.A0A.A03, this.A0A.A04, this.A0A.A0C, A01(), this.A0g.A8e().A01, this.A0P, this.A0R, -9223372036854775807L, this.A04), c1673mA, el.A04);
+    }
+
+    @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")
+    private void A0t(EnumC1412hX enumC1412hX, boolean z) {
+        if (this.A0A.A00 != 3) {
+            this.A0A = this.A0A.A02(3, enumC1412hX, z);
+            this.A04 = -1L;
+        }
+    }
+
+    @MetaExoPlayerCustomization(type = {"NEW_METHOD"}, value = "D63737392: Added for negative testing")
+    private void A0u(String str) {
+        boolean z = false;
+        if (str == null) {
+            this.A0J = false;
+            this.A09 = null;
+            return;
+        }
+        if (str != null && str.length() > 0) {
+            z = true;
+        }
+        this.A0J = z;
+        this.A09 = new C02206u(str);
+    }
+
+    private void A0v(boolean z) {
+        C1683mL c1683mL;
+        C6Y A0E = this.A0j.A0E();
+        if (A0E == null) {
+            C02236x c02236x = this.A0A;
+            if (A0y[1].length() == 31) {
+                throw new RuntimeException();
+            }
+            String[] strArr = A0y;
+            strArr[2] = "b0w";
+            strArr[6] = "WyMJg745VdMbfing6";
+            c1683mL = c02236x.A05;
+        } else {
+            c1683mL = A0E.A00.A04;
+        }
+        C1683mL loadingMediaPeriodId = this.A0A.A04;
+        boolean loadingMediaPeriodChanged = !loadingMediaPeriodId.equals(c1683mL);
+        if (loadingMediaPeriodChanged) {
+            this.A0A = this.A0A.A05(c1683mL);
+        }
+        if ((loadingMediaPeriodChanged || z) && A0E != null && A0E.A02) {
+            A0s(A0E.A0J(), A0E.A0K());
+        }
+    }
+
+    @MetaExoPlayerCustomization("Customized Buffered Duration MS D23157182")
+    private void A0w(boolean z) {
+        long A0C;
+        C6Y A0E = this.A0j.A0E();
+        long A0A = A0E.A0A();
+        if (A0A == Long.MIN_VALUE) {
+            A0y(false);
+            return;
+        }
+        long A0D = A0E.A0D(this.A06);
+        if (!this.A0s || A0E == this.A0j.A0F() || this.A0j.A0F() == null) {
+            A0C = A0E.A0C(A0D);
+            if (this.A0O) {
+                for (C6Y A0F = this.A0j.A0F(); A0F != null && A0F != A0E; A0F = A0F.A0I()) {
+                    long nextLoadPositionUs = this.A06;
+                    A0C += A0F.A0C(A0F.A0D(nextLoadPositionUs));
+                }
+            }
+        } else {
+            A0C = A02();
+        }
+        Timeline timeline = this.A0A.A03;
+        C1683mL c1683mL = A0E.A00.A04;
+        float f = this.A0g.A8e().A01;
+        boolean z2 = this.A0P || z;
+        boolean z3 = this.A0R;
+        long nextLoadPositionUs2 = this.A04;
+        boolean AJB = this.A0i.AJB(new C6R(null, timeline, c1683mL, A0D, A0C, f, z2, z3, -9223372036854775807L, nextLoadPositionUs2));
+        if (this.A0T && this.A0P && this.A0R && !AJB && this.A0A.A00 == 2) {
+            Long valueOf = Long.valueOf(A0D / 1000);
+            Long valueOf2 = Long.valueOf(A0C / 1000);
+            Long valueOf3 = Long.valueOf(A0A / 1000);
+            String[] strArr = A0y;
+            if (strArr[4].charAt(1) == strArr[3].charAt(1)) {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A0y;
+            strArr2[2] = "Frr";
+            strArr2[6] = "mfKzHFhLmxUYLc6Gx";
+            this.A0a.obtainMessage(5, AbstractC01484a.A0n(A0D(Opcodes.LUSHR, 70, 5), valueOf, valueOf2, valueOf3)).sendToTarget();
+            this.A0T = false;
+        }
+        A0y(AJB);
+        if (AJB) {
+            A0E.A0O(this.A06);
+        }
+    }
+
+    private void A0x(boolean z) throws C9Y {
+        C1683mL c1683mL = this.A0j.A0F().A00.A04;
+        long A07 = A07(false, c1683mL, this.A0A.A0C, true);
+        if (A07 != this.A0A.A0C) {
+            this.A0A = this.A0A.A06(c1683mL, A07, this.A0A.A01, A01());
+            if (z) {
+                C6A c6a = this.A0h;
+                String[] strArr = A0y;
+                if (strArr[4].charAt(1) == strArr[3].charAt(1)) {
+                    throw new RuntimeException();
+                }
+                A0y[5] = "dnthUoDEzHvBWSE2tp3YAJwgKJx1FOWZ";
+                c6a.A04(4);
+            }
+        }
+    }
+
+    private void A0y(boolean z) {
+        if (this.A0A.A0A != z) {
+            this.A0A = this.A0A.A08(z);
+        }
+    }
+
+    private void A0z(boolean z) throws C9Y {
+        try {
+            this.A0R = false;
+            this.A0P = z;
+            A10(z);
+            if (!z) {
+                A0O();
+                A0Q();
+                A0S((byte) 2);
+                if (this.A0I) {
+                    A0E();
+                }
+            } else {
+                A0S((byte) 0);
+                if (this.A0A.A00 != 3) {
+                    if (this.A0A.A00 == 2) {
+                        this.A0f.AIQ(2);
+                    }
+                } else {
+                    A0N();
+                    this.A0f.AIQ(2);
+                }
+            }
+        } finally {
+            this.A0a.obtainMessage(3, Boolean.valueOf(z)).sendToTarget();
+        }
+    }
+
+    @MetaExoPlayerCustomization("D19875605 Prevent further error loading once pausing video")
+    private void A10(boolean z) {
+        C6Y loadingPeriod = this.A0j.A0E();
+        if (loadingPeriod == null) {
+            return;
+        }
+        loadingPeriod.A07.AIs(z);
+    }
+
+    private void A11(boolean z) throws C9Y {
+        this.A0V = z;
+        if (!this.A0j.A0R(this.A0A.A03, z)) {
+            A0x(true);
+        }
+        A0v(false);
+    }
+
+    private void A12(boolean z, boolean z2) {
+        A13(true, z, z);
+        this.A0h.A03(this.A02 + (z2 ? 1 : 0));
+        this.A02 = 0;
+        this.A0i.AFN(C02387m.A03);
+        A0V(1);
+    }
+
+    private void A13(boolean z, boolean z2, boolean z3) {
+        long j;
+        C1673mA c1673mA;
+        EL el;
+        this.A0f.AHj(2);
+        this.A0R = false;
+        this.A0g.A06();
+        this.A0k.A01();
+        if (this.A0u) {
+            this.A0o.A01();
+        }
+        this.A06 = this.A0t ? 60000000L : 0L;
+        for (InterfaceC1746nM interfaceC1746nM : this.A0W) {
+            try {
+                A0l(interfaceC1746nM);
+            } catch (C9Y | RuntimeException e) {
+                Log.e(A0D(0, 21, 22), A0D(208, 12, 44), e);
+            }
+        }
+        this.A0W = new InterfaceC1746nM[0];
+        this.A0j.A0M(!z2);
+        A0y(false);
+        if (z2) {
+            this.A08 = null;
+        }
+        if (z3) {
+            Iterator<AnonymousClass69> it = this.A0p.iterator();
+            while (it.hasNext()) {
+                it.next().A03.A0A(false);
+            }
+            this.A0p.clear();
+            this.A01 = 0;
+        }
+        C1683mL A0A = z2 ? A0A() : this.A0A.A05;
+        long j2 = -9223372036854775807L;
+        if (z2) {
+            j = -9223372036854775807L;
+        } else {
+            C02236x c02236x = this.A0A;
+            if (A0y[5].charAt(1) != 'q') {
+                String[] strArr = A0y;
+                strArr[4] = "7gx390g1msf1u5QKnR2KjvR4WQmRx8YK";
+                strArr[3] = "VlC7tbQkEF507tv73u1W2v85d7ApXXNM";
+                j = c02236x.A0C;
+            } else {
+                A0y[5] = "C79IK8sPJjEkg2u4SoGimfUAaE3F5yew";
+                j = c02236x.A0C;
+            }
+        }
+        if (!z2) {
+            C02236x c02236x2 = this.A0A;
+            if (A0y[5].charAt(1) == 'q') {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A0y;
+            strArr2[2] = "uSR";
+            strArr2[6] = "FwoZ6mA9qzJ4hrvJt";
+            j2 = c02236x2.A01;
+        }
+        Timeline timeline = z3 ? Timeline.A02 : this.A0A.A03;
+        int i = this.A0A.A00;
+        if (z3) {
+            c1673mA = C1673mA.A06;
+        } else {
+            C02236x c02236x3 = this.A0A;
+            if (A0y[7].charAt(12) == '2') {
+                throw new RuntimeException();
+            }
+            A0y[5] = "yizxhFEcEwEbIh7DB6ScCbr86G64zHmf";
+            c1673mA = c02236x3.A06;
+        }
+        if (z3) {
+            el = this.A0m;
+        } else {
+            el = this.A0A.A07;
+        }
+        this.A0A = new C02236x(timeline, A0A, j, j2, i, false, c1673mA, el, A0A, j, 0L, j);
+        if (z && this.A0D != null) {
+            this.A0D.AH1(this);
+            this.A0D = null;
+        }
+    }
+
+    /* JADX WARN: Incorrect condition in loop: B:3:0x000f */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private void A14(boolean[] zArr, int i) throws C9Y {
+        this.A0W = new InterfaceC1746nM[i];
+        int enabledRendererCount = 0;
+        C6Y A0F = this.A0j.A0F();
+        for (int i2 = 0; i2 < enabledRendererCount; i2++) {
+            if (A0F.A0K().A00(i2)) {
+                A0X(i2, zArr[i2], enabledRendererCount);
+                enabledRendererCount++;
+            }
+        }
+    }
+
+    private boolean A15() {
+        C6Y playingPeriodHolder = this.A0j.A0F();
+        C6Y A0I = playingPeriodHolder.A0I();
+        long j = playingPeriodHolder.A00.A00;
+        return j == -9223372036854775807L || this.A0A.A0C < j || (A0I != null && (A0I.A02 || A0I.A00.A04.A00()));
+    }
+
+    private boolean A16(AnonymousClass69 anonymousClass69) {
+        if (anonymousClass69.A02 == null) {
+            Pair<Object, Long> A09 = A09(new C6B(anonymousClass69.A03.A04(), anonymousClass69.A03.A00(), AbstractC00941w.A00(anonymousClass69.A03.A02())), false);
+            if (A09 == null) {
+                return false;
+            }
+            int A0A = this.A0A.A03.A0A(A09.first);
+            if (A0y[5].charAt(1) != 'q') {
+                A0y[5] = "NfGCtpMsHKBVYsn3O7a8Zqq9gxyOlhFa";
+                anonymousClass69.A01(A0A, ((Long) A09.second).longValue(), A09.first);
+                return true;
+            }
+            throw new RuntimeException();
+        }
+        int A0A2 = this.A0A.A03.A0A(anonymousClass69.A02);
+        if (A0A2 == -1) {
+            return false;
+        }
+        anonymousClass69.A00 = A0A2;
+        return true;
+    }
+
+    private boolean A17(InterfaceC1746nM interfaceC1746nM) {
+        C6Y A0G = this.A0j.A0G();
+        C6Y readingPeriodHolder = A0G.A0I();
+        if (readingPeriodHolder != null) {
+            C6Y readingPeriodHolder2 = A0G.A0I();
+            if (readingPeriodHolder2.A02 && interfaceC1746nM.A9h()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean A18(C1683mL c1683mL, long j, C6Y c6y) {
+        if (!c1683mL.equals(c6y.A00.A04)) {
+            return false;
+        }
+        boolean z = c6y.A02;
+        if (A0y[1].length() == 31) {
+            throw new RuntimeException();
+        }
+        A0y[1] = "z9";
+        if (z) {
+            this.A0A.A03.A0J(this.A0A.A05.A04, this.A0c);
+            int A07 = this.A0c.A07(j);
+            if (A07 != -1) {
+                long A0D = this.A0c.A0D(A07);
+                C6Z c6z = c6y.A00;
+                if (A0y[5].charAt(1) == 'q') {
+                    A0y[5] = "RcBDfVPYXZ1IWswHj8kiKJAUw6BsFYM7";
+                    if (A0D == c6z.A01) {
+                        return true;
+                    }
+                    return false;
+                }
+                String[] strArr = A0y;
+                strArr[4] = "w6QknFDGuvwfcqywG7nwGfdAAoNokq6y";
+                strArr[3] = "I5j8Ais0ITqpKL2oROmKoI7QN1W2GqI7";
+                if (A0D == c6z.A01) {
+                    return true;
+                }
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:40:0x00a8  */
+    @MetaExoPlayerCustomizations({@MetaExoPlayerCustomization("Customized Buffered Duration MS D23157182"), @MetaExoPlayerCustomization("D18870411: Adding start stall debug reason")})
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private boolean A19(boolean z) {
+        boolean z2;
+        long A0C;
+        boolean z3;
+        if (this.A0W.length == 0) {
+            return A15();
+        }
+        if (!z) {
+            if (this.A0B != null) {
+                this.A0E = this.A0B.A91();
+            }
+            return false;
+        }
+        if (!this.A0A.A0A) {
+            return true;
+        }
+        C6Y A0E = this.A0j.A0E();
+        if (A0E.A0R()) {
+            C6Z c6z = A0E.A00;
+            if (A0y[7].charAt(12) == '2') {
+                throw new RuntimeException();
+            }
+            A0y[5] = "JVFQROlQoWGuZTJ8G1Kf7NjovTqMHrup";
+            if (c6z.A05) {
+                z2 = true;
+                if (this.A0s || this.A0j.A0F() == this.A0j.A0E() || this.A0j.A0F() == null) {
+                    A0C = A0E.A0C(A0E.A0D(this.A06));
+                } else {
+                    A0C = A03();
+                }
+                z3 = !z2 || this.A0i.AJE(A0C, this.A0g.A8e().A01, this.A0R, this.A00 <= 0 && (this.A04 > 0L ? 1 : (this.A04 == 0L ? 0 : -1)) > 0 && ((System.currentTimeMillis() - this.A04) > ((long) this.A00) ? 1 : ((System.currentTimeMillis() - this.A04) == ((long) this.A00) ? 0 : -1)) < 0, -9223372036854775807L);
+                if (!z3) {
+                    this.A0E = EnumC1412hX.A04;
+                }
+                return z3;
+            }
+        }
+        z2 = false;
+        if (this.A0s) {
+        }
+        A0C = A0E.A0C(A0E.A0D(this.A06));
+        if (z2) {
+        }
+        if (!z3) {
+        }
+        return z3;
+    }
+
+    public static C1836or[] A1A(EE ee) {
+        int length = ee != null ? ee.length() : 0;
+        C1836or[] c1836orArr = new C1836or[length];
+        for (int i = 0; i < length; i++) {
+            c1836orArr[i] = ee.A83(i);
+        }
+        return c1836orArr;
+    }
+
+    public final Looper A1B() {
+        return this.A0b.getLooper();
+    }
+
+    /* JADX WARN: Incorrect condition in loop: B:10:0x0010 */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final synchronized void A1C() {
+        if (this.A0S) {
+            return;
+        }
+        this.A0f.AIQ(7);
+        boolean z = false;
+        while (!wasInterrupted) {
+            try {
+                wait();
+            } catch (InterruptedException unused) {
+                z = true;
+            }
+        }
+        if (z) {
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    public final void A1D(Timeline timeline, int i, long j) {
+        this.A0f.ACA(3, new C6B(timeline, i, j)).A02();
+    }
+
+    public final /* synthetic */ void A1E(AnonymousClass71 anonymousClass71) {
+        try {
+            A0h(anonymousClass71);
+        } catch (C9Y e) {
+            Log.e(A0D(0, 21, 22), A0D(298, 55, Opcodes.DNEG), e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    public final void A1F(CL cl, boolean z, boolean z2) {
+        this.A0f.AC9(0, z ? 1 : 0, z2 ? 1 : 0, cl).A02();
+    }
+
+    public final void A1G(boolean z) {
+        this.A0f.AC8(1, z ? 1 : 0, 0).A02();
+    }
+
+    public final void A1H(boolean z) {
+        this.A0f.AC8(6, z ? 1 : 0, 0).A02();
+    }
+
+    @Override // com.instagram.common.viewpoint.core.InterfaceC01875n
+    public final void AEb(C1820ob c1820ob) {
+        this.A0a.obtainMessage(1, c1820ob).sendToTarget();
+        A0T(c1820ob.A01);
+    }
+
+    @Override // com.instagram.common.viewpoint.core.InterfaceC1685mN
+    public final void AEk(InterfaceC1684mM interfaceC1684mM) {
+        this.A0f.ACA(9, interfaceC1684mM).A02();
+    }
+
+    @Override // com.instagram.common.viewpoint.core.CK
+    public final void AFI(CL cl, Timeline timeline) {
+        this.A0f.ACA(8, new AnonymousClass68(cl, timeline)).A02();
+    }
+
+    @Override // com.instagram.common.viewpoint.core.EJ
+    public final void AFT() {
+        this.A0f.AIQ(11);
+    }
+
+    @Override // com.instagram.common.viewpoint.core.InterfaceC02256z
+    public final synchronized void AIS(AnonymousClass71 anonymousClass71) {
+        if (this.A0S) {
+            Log.w(A0D(0, 21, 22), A0D(50, 37, 39));
+            anonymousClass71.A0A(false);
+        } else {
+            this.A0f.ACA(14, anonymousClass71).A02();
+        }
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    @Override // android.os.Handler.Callback
+    public final boolean handleMessage(Message message) {
+        String A0D = A0D(0, 21, 22);
+        try {
+        } catch (C9Y e) {
+            Log.e(A0D, A0D(110, 15, 65), e);
+            A12(false, false);
+            this.A0a.obtainMessage(2, e).sendToTarget();
+            A0H();
+        } catch (IOException e2) {
+            Log.e(A0D, A0D(Opcodes.MONITOREXIT, 13, 40), e2);
+            A12(false, false);
+            this.A0a.obtainMessage(2, C9Y.A01(e2, AdError.SERVER_ERROR_CODE)).sendToTarget();
+            A0H();
+        } catch (RuntimeException e3) {
+            Log.e(A0D, A0D(87, 23, 19), e3);
+            A12(false, false);
+            this.A0a.obtainMessage(2, C9Y.A02(e3)).sendToTarget();
+            A0H();
+        }
+        switch (message.what) {
+            case 0:
+                A0r((CL) message.obj, message.arg1 != 0, message.arg2 != 0);
+                A0H();
+                return true;
+            case 1:
+                A0z(message.arg1 != 0);
+                A0H();
+                return true;
+            case 2:
+                A0F();
+                A0H();
+                return true;
+            case 3:
+                A0f((C6B) message.obj);
+                A0H();
+                return true;
+            case 4:
+                A0b((C1820ob) message.obj);
+                A0H();
+                return true;
+            case 5:
+                A0n((C7I) message.obj);
+                A0H();
+                return true;
+            case 6:
+                A12(message.arg1 != 0, true);
+                A0H();
+                return true;
+            case 7:
+                A0K();
+                return true;
+            case 8:
+                A0e((AnonymousClass68) message.obj);
+                A0H();
+                return true;
+            case 9:
+                A0p((InterfaceC1684mM) message.obj);
+                A0H();
+                return true;
+            case 10:
+                A0o((InterfaceC1684mM) message.obj);
+                A0H();
+                return true;
+            case 11:
+                A0L();
+                A0H();
+                return true;
+            case 12:
+                A0U(message.arg1);
+                A0H();
+                return true;
+            case 13:
+                A11(message.arg1 != 0);
+                A0H();
+                return true;
+            case 14:
+                A0i((AnonymousClass71) message.obj);
+                A0H();
+                return true;
+            case 15:
+                A0k((AnonymousClass71) message.obj);
+                A0H();
+                return true;
+            case 16:
+                A0H();
+                return true;
+            case 17:
+                A0d(null, false);
+                throw null;
+            case 18:
+                A0c(null);
+                throw null;
+            case 19:
+                A0u((String) message.obj);
+                A0H();
+                return true;
+            default:
+                return false;
+        }
+    }
+}

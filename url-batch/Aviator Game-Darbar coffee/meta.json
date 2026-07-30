@@ -57,5 +57,84 @@
   ],
   "stdout": "╭─ com.aviatorvaangu.aviapp46 ─╮\n│ Aviator Game                 │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 7 files  (28.6 MB)\n  com.aviatorvaangu.aviapp46-1.apk                  ━━━━━ 100% 22.0… 41.6 0:00:…\n                                                               MB    MB/s       \n  com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.en.apk        ━━━━━ 100% 61.6… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.lt.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.ru.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    ━━━━━ 100% 17.1… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-asset.apk            ━━━━━ 100% 7.8/… 9.9  0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviatorvaangu.aviapp46-1.apk                  │ 21.0 MB │\n│ com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.en.apk        │ 60.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.lt.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.ru.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    │ 16.7 KB │\n│ com.aviatorvaangu.aviapp46-1-asset.apk            │ 21.0 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Aviator Game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.0"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Qureka"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "com.aviatorvaangu.aviapp46.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.2.0 / kotlin-stdlib, kotlinx-coroutines 1.9.0, Jetpack Compose (UI 1.10.4) / Material3 1.4.0, AndroidX (Activity 1.13.0, Browser 1.9.0 Custom Tabs, Core 1.18.0, Lifecycle 2.10.0, Emoji2, Startup, ProfileInstaller, Window, SavedState), Pairip (com.pairip.application / licensecheck), Guava (com.google.common.util.concurrent)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "1242.mark.qureka.com, config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "нет"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "AdUrl, SPONSORED, jackpot, cash out, bankroll, stake, multipliers, odds, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "1242.mark.qureka.com",
+        "redirects_to": "https://1242.mark.qureka.com/intro",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

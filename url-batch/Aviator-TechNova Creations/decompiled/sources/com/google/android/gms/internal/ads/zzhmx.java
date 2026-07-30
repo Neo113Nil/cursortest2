@@ -1,0 +1,14 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.9.0 */
+/* loaded from: classes3.dex */
+public final class zzhmx {
+    public static final zzhmk zza = (zzhmk) zzhlm.zza(zzhmw.zza);
+    public static final zzhmk zzb;
+    public static final zzhlw zzc;
+
+    static {
+        zzb = (zzhmk) zzhlm.zza(zzhmu.zza);
+        zzc = (zzhlw) zzhlm.zza(zzhmv.zza);
+    }
+}

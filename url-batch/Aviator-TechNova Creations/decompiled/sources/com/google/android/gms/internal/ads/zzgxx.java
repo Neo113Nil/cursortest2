@@ -1,0 +1,82 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.firebase.analytics.FirebaseAnalytics;
+import java.io.Serializable;
+import java.util.Arrays;
+import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.9.0 */
+/* loaded from: classes3.dex */
+public final class zzgxx implements Serializable {
+    private static final zzgxx zza = new zzgxx(new int[0], 0, 0);
+    private final int[] zzb;
+    private final int zzc;
+
+    private zzgxx(int[] iArr, int i, int i2) {
+        this.zzb = iArr;
+        this.zzc = i2;
+    }
+
+    public static zzgxx zza() {
+        return zza;
+    }
+
+    public static zzgxx zzb(int[] iArr) {
+        int[] copyOf = Arrays.copyOf(iArr, iArr.length);
+        return new zzgxx(copyOf, 0, copyOf.length);
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof zzgxx)) {
+            return false;
+        }
+        zzgxx zzgxxVar = (zzgxx) obj;
+        int i = this.zzc;
+        if (i != zzgxxVar.zzc) {
+            return false;
+        }
+        for (int i2 = 0; i2 < i; i2++) {
+            if (zzd(i2) != zzgxxVar.zzd(i2)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public final int hashCode() {
+        int i = 1;
+        for (int i2 = 0; i2 < this.zzc; i2++) {
+            i = (i * 31) + Integer.hashCode(this.zzb[i2]);
+        }
+        return i;
+    }
+
+    public final String toString() {
+        int i = this.zzc;
+        if (i == 0) {
+            return "[]";
+        }
+        StringBuilder sb = new StringBuilder(i * 5);
+        sb.append(AbstractJsonLexerKt.BEGIN_LIST);
+        int[] iArr = this.zzb;
+        sb.append(iArr[0]);
+        for (int i2 = 1; i2 < i; i2++) {
+            sb.append(", ");
+            sb.append(iArr[i2]);
+        }
+        sb.append(AbstractJsonLexerKt.END_LIST);
+        return sb.toString();
+    }
+
+    public final int zzc() {
+        return this.zzc;
+    }
+
+    public final int zzd(int i) {
+        zzgrc.zzm(i, this.zzc, FirebaseAnalytics.Param.INDEX);
+        return this.zzb[i];
+    }
+}

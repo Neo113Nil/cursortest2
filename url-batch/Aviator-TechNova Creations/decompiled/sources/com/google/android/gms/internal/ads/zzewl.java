@@ -1,0 +1,33 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.exifinterface.media.ExifInterface;
+import java.util.List;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.9.0 */
+/* loaded from: classes3.dex */
+public final class zzewl implements zzikg {
+    private final zzikp zza;
+    private final zzikp zzb;
+    private final zzikp zzc;
+
+    private zzewl(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3) {
+        this.zza = zzikpVar;
+        this.zzb = zzikpVar2;
+        this.zzc = zzikpVar3;
+    }
+
+    public static zzewl zza(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3) {
+        return new zzewl(zzikpVar, zzikpVar2, zzikpVar3);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzikv, com.google.android.gms.internal.ads.zziku
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        Object zzb = ((zzesp) this.zza).zzb();
+        Object obj = (zzevl) this.zzb.zzb();
+        if (true == ((List) this.zzc.zzb()).contains(ExifInterface.GPS_MEASUREMENT_2D)) {
+            zzb = obj;
+        }
+        zziko.zzb(zzb);
+        return (zzfax) zzb;
+    }
+}
