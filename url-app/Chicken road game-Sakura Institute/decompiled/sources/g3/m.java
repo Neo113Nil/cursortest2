@@ -1,0 +1,14 @@
+package g3;
+
+/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
+/* loaded from: classes.dex */
+public final class m implements f7.g {
+
+    /* renamed from: f, reason: collision with root package name */
+    public static final m f4168f = new m();
+
+    @Override // f7.g
+    public final /* bridge */ /* synthetic */ Object k(Object obj, h6.d dVar) {
+        return d6.z.f2639a;
+    }
+}
