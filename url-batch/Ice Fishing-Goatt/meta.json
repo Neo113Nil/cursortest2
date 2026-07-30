@@ -1,0 +1,61 @@
+{
+  "app_id": "com.chicken.road.kedbags",
+  "title": "Ice Fishing",
+  "developer": "Goatt",
+  "developer_id": "7514267258297458242",
+  "icon": "https://play-lh.googleusercontent.com/4JAfXwrndCIvYdItvZpeu99DP5FcwHvPWQdEORrjFhLS2dcQsPs9bpitpm6Uq7wYKAmBqzhc5_WpTczqoJQu8w",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.kedbags&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 29, 2026",
+  "updated": "Jul 19, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing  — magical relic collection with memory game",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Goatt",
+  "path": "url-batch/Ice Fishing-Goatt",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.chicken.road.kedbags-2-asset.apk",
+    "com.chicken.road.kedbags-2-config.arm64_v8a.apk",
+    "com.chicken.road.kedbags-2-config.en.apk",
+    "com.chicken.road.kedbags-2-config.lt.apk",
+    "com.chicken.road.kedbags-2-config.ru.apk",
+    "com.chicken.road.kedbags-2-config.xxhdpi.apk",
+    "com.chicken.road.kedbags-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Goatt",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.road.kedbags...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.road.kedbags...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.chicken.road.kedbags ─╮\n│ Ice Fishing                │\n│ 1.1  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 7 files  (27.3 MB)\n  com.chicken.road.kedbags-2.apk                  ━━━━━ 100% 20.9… 16.5   0:00:…\n                                                             MB    MB/s         \n  com.chicken.road.kedbags-2-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.en.apk        ━━━━━ 100% 61.6… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.lt.apk        ━━━━━ 100% 24.8… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.ru.apk        ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.xxhdpi.apk    ━━━━━ 100% 30.2… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-asset.apk            ━━━━━ 100% 7.5/… 26.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.chicken.road.kedbags-2.apk                  │ 20.0 MB │\n│ com.chicken.road.kedbags-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.chicken.road.kedbags-2-config.en.apk        │ 60.2 KB │\n│ com.chicken.road.kedbags-2-config.lt.apk        │ 24.2 KB │\n│ com.chicken.road.kedbags-2-config.ru.apk        │ 28.2 KB │\n│ com.chicken.road.kedbags-2-config.xxhdpi.apk    │ 29.5 KB │\n│ com.chicken.road.kedbags-2-asset.apk            │ 20.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.chicken.road.kedbags ─╮\n│ Ice Fishing                │\n│ 1.1  (vc 2)                │\n╰────────────────────────────╯\n\nDownloading 7 files  (27.3 MB)\n  com.chicken.road.kedbags-2.apk                  ━━━━━ 100% 20.9… 16.5   0:00:…\n                                                             MB    MB/s         \n  com.chicken.road.kedbags-2-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.en.apk        ━━━━━ 100% 61.6… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.lt.apk        ━━━━━ 100% 24.8… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.ru.apk        ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-config.xxhdpi.apk    ━━━━━ 100% 30.2… ?      0:00:…\n                                                             kB                 \n  com.chicken.road.kedbags-2-asset.apk            ━━━━━ 100% 7.5/… 26.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.chicken.road.kedbags-2.apk                  │ 20.0 MB │\n│ com.chicken.road.kedbags-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.chicken.road.kedbags-2-config.en.apk        │ 60.2 KB │\n│ com.chicken.road.kedbags-2-config.lt.apk        │ 24.2 KB │\n│ com.chicken.road.kedbags-2-config.ru.apk        │ 28.2 KB │\n│ com.chicken.road.kedbags-2-config.xxhdpi.apk    │ 29.5 KB │\n│ com.chicken.road.kedbags-2-asset.apk            │ 20.0 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
