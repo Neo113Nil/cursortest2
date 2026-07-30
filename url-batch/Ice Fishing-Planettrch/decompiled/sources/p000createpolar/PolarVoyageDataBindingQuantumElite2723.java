@@ -1,0 +1,93 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public final class PolarVoyageDataBindingQuantumElite2723 {
+    public final long PolarVoyageActivityInfoBetaQuantum8726;
+    public final long PolarVoyageAlarmManagerShadowHyperBeta8339;
+    public final long PolarVoyageAlertDialogCyberHeroQuantum3938;
+    public final long PolarVoyageAnimatorSetSparkUltraMax8233;
+    public final long PolarVoyageBarcodeScannerInfernoSolarSpark7767;
+    public final long PolarVoyageBitmapMaxTitanTitan7960;
+    public final long PolarVoyageBitmapVisionAuroraPixel4705;
+    public final long PolarVoyageBottomSheetOmegaNeo1907;
+    public final long PolarVoyageCameraPixelBlaze2629;
+    public final long PolarVoyageCameraViewSpectraMaxSpectra2824;
+    public final long PolarVoyageCanvasElitePhoenix4750;
+    public final long PolarVoyageCardViewAlphaVortexCelestial9747;
+    public final long PolarVoyageConfigurationMaxSpectraForce5418;
+    public final long PolarVoyageContentProviderHyperSpark3838;
+    public final long PolarVoyageDiffUtilDragonSpeedEclipse6225;
+    public final long PolarVoyageDiffUtilTurboStrike5735;
+    public final long PolarVoyageDisplayMetricsVortexDragon9516;
+    public final long PolarVoyageDrawableDeltaHyperion5742;
+    public final long PolarVoyageFCMCelestialCosmosPixel3711;
+    public final long PolarVoyageFirebaseModelInterpreterPhantomUltraSolar4149;
+    public final long PolarVoyageFlingGestureEclipsePrimeMax1376;
+    public final long PolarVoyageGuidelineStormSolar2850;
+    public final long PolarVoyageItemDecorationUltraDeltaEpic7485;
+    public final long PolarVoyageKotlinBetaPulseBeta3653;
+    public final long PolarVoyageLayerDrawableShadowTitaniumOmega1942;
+    public final long PolarVoyageLifecycleCameraControllerDragonOmegaUltra1803;
+    public final long PolarVoyageLifecycleOlympianOmega3762;
+    public final long PolarVoyageLooperThreadAlphaPrime1279;
+    public final long PolarVoyageMotionLayoutForceEpicAurora7183;
+    public final long PolarVoyageMotionLayoutTransitionHeroVision4068;
+    public final long PolarVoyageMotionLayoutTransitionUltraAlphaCyber5587;
+    public final long PolarVoyageNavigationViewHyperHyperHyperion1793;
+    public final long PolarVoyagePackageManagerCelestialPhoenix8393;
+    public final long PolarVoyageRemoteModelManagerOlympianCelestial9141;
+    public final long PolarVoyageRotateAnimationCyberCelestialDelta4768;
+    public final long PolarVoyageSnackbarGammaEclipse2140;
+    public final long PolarVoyageStrictModeLegendEpic1532;
+    public final long PolarVoyageTextInputEditTextNebulaHero6651;
+    public final long PolarVoyageToolbarEclipseInfernoHero6368;
+    public final long PolarVoyageViewBindingPulseHeroSpeed5705;
+    public final long PolarVoyageViewRogueMaster4778;
+    public final long PolarVoyageZipVortexCelestial6185;
+
+    public PolarVoyageDataBindingQuantumElite2723(long j, long j2, long j3, long j4, long j5, long j6, long j7, long j8, long j9, long j10, long j11, long j12, long j13, long j14, long j15, long j16, long j17, long j18, long j19, long j20, long j21, long j22, long j23, long j24, long j25, long j26, long j27, long j28, long j29, long j30, long j31, long j32, long j33, long j34, long j35, long j36, long j37, long j38, long j39, long j40, long j41, long j42) {
+        this.PolarVoyageZipVortexCelestial6185 = j;
+        this.PolarVoyageMotionLayoutTransitionHeroVision4068 = j2;
+        this.PolarVoyageKotlinBetaPulseBeta3653 = j3;
+        this.PolarVoyageBarcodeScannerInfernoSolarSpark7767 = j4;
+        this.PolarVoyageBitmapVisionAuroraPixel4705 = j5;
+        this.PolarVoyageDiffUtilTurboStrike5735 = j6;
+        this.PolarVoyageTextInputEditTextNebulaHero6651 = j7;
+        this.PolarVoyageItemDecorationUltraDeltaEpic7485 = j8;
+        this.PolarVoyageStrictModeLegendEpic1532 = j9;
+        this.PolarVoyageRotateAnimationCyberCelestialDelta4768 = j10;
+        this.PolarVoyageBottomSheetOmegaNeo1907 = j11;
+        this.PolarVoyageViewRogueMaster4778 = j12;
+        this.PolarVoyageCameraPixelBlaze2629 = j13;
+        this.PolarVoyageDrawableDeltaHyperion5742 = j14;
+        this.PolarVoyageSnackbarGammaEclipse2140 = j15;
+        this.PolarVoyageContentProviderHyperSpark3838 = j16;
+        this.PolarVoyageRemoteModelManagerOlympianCelestial9141 = j17;
+        this.PolarVoyageNavigationViewHyperHyperHyperion1793 = j18;
+        this.PolarVoyageAnimatorSetSparkUltraMax8233 = j19;
+        this.PolarVoyageBitmapMaxTitanTitan7960 = j20;
+        this.PolarVoyageDisplayMetricsVortexDragon9516 = j21;
+        this.PolarVoyageLayerDrawableShadowTitaniumOmega1942 = j22;
+        this.PolarVoyageMotionLayoutForceEpicAurora7183 = j23;
+        this.PolarVoyageAlertDialogCyberHeroQuantum3938 = j24;
+        this.PolarVoyageCameraViewSpectraMaxSpectra2824 = j25;
+        this.PolarVoyagePackageManagerCelestialPhoenix8393 = j26;
+        this.PolarVoyageLooperThreadAlphaPrime1279 = j27;
+        this.PolarVoyageActivityInfoBetaQuantum8726 = j28;
+        this.PolarVoyageLifecycleOlympianOmega3762 = j29;
+        this.PolarVoyageDiffUtilDragonSpeedEclipse6225 = j30;
+        this.PolarVoyageFCMCelestialCosmosPixel3711 = j31;
+        this.PolarVoyageViewBindingPulseHeroSpeed5705 = j32;
+        this.PolarVoyageCardViewAlphaVortexCelestial9747 = j33;
+        this.PolarVoyageFlingGestureEclipsePrimeMax1376 = j34;
+        this.PolarVoyageFirebaseModelInterpreterPhantomUltraSolar4149 = j35;
+        this.PolarVoyageToolbarEclipseInfernoHero6368 = j36;
+        this.PolarVoyageAlarmManagerShadowHyperBeta8339 = j37;
+        this.PolarVoyageGuidelineStormSolar2850 = j38;
+        this.PolarVoyageConfigurationMaxSpectraForce5418 = j39;
+        this.PolarVoyageCanvasElitePhoenix4750 = j40;
+        this.PolarVoyageLifecycleCameraControllerDragonOmegaUltra1803 = j41;
+        this.PolarVoyageMotionLayoutTransitionUltraAlphaCyber5587 = j42;
+    }
+}

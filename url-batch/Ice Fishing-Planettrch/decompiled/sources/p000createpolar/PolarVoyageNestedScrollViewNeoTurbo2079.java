@@ -1,0 +1,17 @@
+package p000createpolar;
+
+import java.io.IOException;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public interface PolarVoyageNestedScrollViewNeoTurbo2079 {
+    void PolarVoyageBitmapMaxTitanTitan7960(int i, PolarVoyageCombineBlazePulse1497 polarVoyageCombineBlazePulse1497, PolarVoyageTextViewStormLegend8893 polarVoyageTextViewStormLegend8893);
+
+    void PolarVoyageLayerDrawableShadowTitaniumOmega1942(int i, PolarVoyageCombineBlazePulse1497 polarVoyageCombineBlazePulse1497, PolarVoyageFlowCollectorDeltaPhantomInferno9298 polarVoyageFlowCollectorDeltaPhantomInferno9298, PolarVoyageTextViewStormLegend8893 polarVoyageTextViewStormLegend8893, int i2);
+
+    void PolarVoyageLooperThreadAlphaPrime1279(int i, PolarVoyageCombineBlazePulse1497 polarVoyageCombineBlazePulse1497, PolarVoyageFlowCollectorDeltaPhantomInferno9298 polarVoyageFlowCollectorDeltaPhantomInferno9298, PolarVoyageTextViewStormLegend8893 polarVoyageTextViewStormLegend8893);
+
+    void PolarVoyageMotionLayoutForceEpicAurora7183(int i, PolarVoyageCombineBlazePulse1497 polarVoyageCombineBlazePulse1497, PolarVoyageFlowCollectorDeltaPhantomInferno9298 polarVoyageFlowCollectorDeltaPhantomInferno9298, PolarVoyageTextViewStormLegend8893 polarVoyageTextViewStormLegend8893);
+
+    void PolarVoyagePackageManagerCelestialPhoenix8393(int i, PolarVoyageCombineBlazePulse1497 polarVoyageCombineBlazePulse1497, PolarVoyageFlowCollectorDeltaPhantomInferno9298 polarVoyageFlowCollectorDeltaPhantomInferno9298, PolarVoyageTextViewStormLegend8893 polarVoyageTextViewStormLegend8893, IOException iOException, boolean z);
+}

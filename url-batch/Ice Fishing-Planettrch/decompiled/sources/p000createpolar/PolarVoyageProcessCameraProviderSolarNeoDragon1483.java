@@ -1,0 +1,11 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public final class PolarVoyageProcessCameraProviderSolarNeoDragon1483 extends PolarVoyageRewardedAdPixelMaxEclipse6420 {
+    public final PolarVoyageRunnableNovaXOlympian7121 PolarVoyageMotionLayoutForceEpicAurora7183 = new PolarVoyageRunnableNovaXOlympian7121();
+
+    public final void PolarVoyageGuidelineStormSolar2850(PolarVoyageBroadcastReceiverStormSpeed8368 polarVoyageBroadcastReceiverStormSpeed8368, PolarVoyageFCMVisionPrime8878 polarVoyageFCMVisionPrime8878, PolarVoyageAnimatedVectorDrawableFusionMaxHyper7310 polarVoyageAnimatedVectorDrawableFusionMaxHyper7310, PolarVoyageClipboardManagerQuantumCelestialAlpha6291 polarVoyageClipboardManagerQuantumCelestialAlpha6291) {
+        this.PolarVoyageMotionLayoutForceEpicAurora7183.PolarVoyageConfigurationMaxSpectraForce5418(polarVoyageBroadcastReceiverStormSpeed8368, polarVoyageFCMVisionPrime8878, polarVoyageAnimatedVectorDrawableFusionMaxHyper7310, polarVoyageClipboardManagerQuantumCelestialAlpha6291);
+    }
+}

@@ -1,0 +1,13 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public interface PolarVoyageEventNebulaCelestialOlympian6822 {
+    PolarVoyageEventNebulaCelestialOlympian6822 PolarVoyageAlertDialogCyberHeroQuantum3938(PolarVoyageCameraViewThunderVortex2772 polarVoyageCameraViewThunderVortex2772);
+
+    Object PolarVoyageContentProviderHyperSpark3838(PolarVoyageObjectDetectionThunderHyperInferno3620 polarVoyageObjectDetectionThunderHyperInferno3620, Object obj);
+
+    PolarVoyageEventNebulaCelestialOlympian6822 PolarVoyageDiffUtilTurboStrike5735(PolarVoyageEventNebulaCelestialOlympian6822 polarVoyageEventNebulaCelestialOlympian6822);
+
+    PolarVoyageIntentServiceStrikeHyper8903 PolarVoyageDrawableDeltaHyperion5742(PolarVoyageCameraViewThunderVortex2772 polarVoyageCameraViewThunderVortex2772);
+}

@@ -1,0 +1,38 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public final class PolarVoyageHandlerOmegaMaster3329 implements PolarVoyageScrollViewShadowCyberInferno3272 {
+    public static final PolarVoyageHandlerOmegaMaster3329 PolarVoyageZipVortexCelestial6185 = new PolarVoyageHandlerOmegaMaster3329();
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageMotionLayoutTransitionHeroVision4068 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("sdkVersion");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageKotlinBetaPulseBeta3653 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("model");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageBarcodeScannerInfernoSolarSpark7767 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("hardware");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageBitmapVisionAuroraPixel4705 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("device");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageDiffUtilTurboStrike5735 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("product");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageTextInputEditTextNebulaHero6651 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("osBuild");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageItemDecorationUltraDeltaEpic7485 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("manufacturer");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageStrictModeLegendEpic1532 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("fingerprint");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageRotateAnimationCyberCelestialDelta4768 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("locale");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageBottomSheetOmegaNeo1907 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("country");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageViewRogueMaster4778 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("mccMnc");
+    public static final PolarVoyageBitmapPrimeStorm5891 PolarVoyageCameraPixelBlaze2629 = PolarVoyageBitmapPrimeStorm5891.PolarVoyageZipVortexCelestial6185("applicationBuild");
+
+    @Override // p000createpolar.PolarVoyageCoroutineScopeLegendOmega3754
+    public final void PolarVoyageZipVortexCelestial6185(Object obj, Object obj2) {
+        PolarVoyageApplicationInfoPrimeTitan8919 polarVoyageApplicationInfoPrimeTitan8919 = (PolarVoyageApplicationInfoPrimeTitan8919) obj;
+        PolarVoyageNavigationViewPrimeElite2875 polarVoyageNavigationViewPrimeElite2875 = (PolarVoyageNavigationViewPrimeElite2875) obj2;
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageMotionLayoutTransitionHeroVision4068, ((PolarVoyageAuthTitanSparkNeo2382) polarVoyageApplicationInfoPrimeTitan8919).PolarVoyageZipVortexCelestial6185);
+        PolarVoyageAuthTitanSparkNeo2382 polarVoyageAuthTitanSparkNeo2382 = (PolarVoyageAuthTitanSparkNeo2382) polarVoyageApplicationInfoPrimeTitan8919;
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageKotlinBetaPulseBeta3653, polarVoyageAuthTitanSparkNeo2382.PolarVoyageMotionLayoutTransitionHeroVision4068);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageBarcodeScannerInfernoSolarSpark7767, polarVoyageAuthTitanSparkNeo2382.PolarVoyageKotlinBetaPulseBeta3653);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageBitmapVisionAuroraPixel4705, polarVoyageAuthTitanSparkNeo2382.PolarVoyageBarcodeScannerInfernoSolarSpark7767);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageDiffUtilTurboStrike5735, polarVoyageAuthTitanSparkNeo2382.PolarVoyageBitmapVisionAuroraPixel4705);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageTextInputEditTextNebulaHero6651, polarVoyageAuthTitanSparkNeo2382.PolarVoyageDiffUtilTurboStrike5735);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageItemDecorationUltraDeltaEpic7485, polarVoyageAuthTitanSparkNeo2382.PolarVoyageTextInputEditTextNebulaHero6651);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageStrictModeLegendEpic1532, polarVoyageAuthTitanSparkNeo2382.PolarVoyageItemDecorationUltraDeltaEpic7485);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageRotateAnimationCyberCelestialDelta4768, polarVoyageAuthTitanSparkNeo2382.PolarVoyageStrictModeLegendEpic1532);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageBottomSheetOmegaNeo1907, polarVoyageAuthTitanSparkNeo2382.PolarVoyageRotateAnimationCyberCelestialDelta4768);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageViewRogueMaster4778, polarVoyageAuthTitanSparkNeo2382.PolarVoyageBottomSheetOmegaNeo1907);
+        polarVoyageNavigationViewPrimeElite2875.PolarVoyageBitmapVisionAuroraPixel4705(PolarVoyageCameraPixelBlaze2629, polarVoyageAuthTitanSparkNeo2382.PolarVoyageViewRogueMaster4778);
+    }
+}
