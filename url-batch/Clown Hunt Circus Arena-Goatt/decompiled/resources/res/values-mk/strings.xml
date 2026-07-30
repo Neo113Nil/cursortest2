@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Овозможи</string>
+    <string name="common_google_play_services_enable_text">„Услуги на Google Play“ мора да се овозможи за %1$s.</string>
+    <string name="common_google_play_services_enable_title">Овозможи ги услугите на Google Play</string>
+    <string name="common_google_play_services_install_button">Инсталирај</string>
+    <string name="common_google_play_services_install_text">Инсталирајте ја „Услуги на Google Play“ за да продолжите да ја користите апликацијата %1$s.</string>
+    <string name="common_google_play_services_install_title">Инсталирајте ја „Услуги на Google Play“</string>
+    <string name="common_google_play_services_notification_channel_name">Достапност на услугите на Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Грешка на услугите на Google Play</string>
+    <string name="common_google_play_services_signin_required_text">Апликацијата %1$s не можеше да се поврзе со „Услуги на Google Play“. Најавете се на сметката на Google.</string>
+    <string name="common_google_play_services_signin_required_title">Потребно е да се најавите</string>
+    <string name="common_google_play_services_try_again_text">Апликацијата %1$s не можеше да се поврзе со „Услуги на Google Play“. Обидете се повторно.</string>
+    <string name="common_google_play_services_try_again_title">Обидете се повторно</string>
+    <string name="common_google_play_services_unknown_issue">%1$s има проблеми со услугите на Google Play. Обидете се повторно.</string>
+    <string name="common_google_play_services_unsupported_text">Апликацијата %1$s не може да се извршува бидејќи вашиот уред не ја поддржува „Услуги на Google Play“. Користете поддржан уред.</string>
+    <string name="common_google_play_services_unsupported_title">Уредот не е компатибилен</string>
+    <string name="common_google_play_services_update_button">Ажурирај</string>
+    <string name="common_google_play_services_update_text">Ажурирајте ја „Услуги на Google Play“ за да ја користите апликацијата %1$s.</string>
+    <string name="common_google_play_services_update_title">Ажурирај ги услугите на Google Play</string>
+    <string name="common_google_play_services_updating_client_title">„Услуги на Google Play“ се ажурира</string>
+    <string name="common_google_play_services_updating_text">Апликацијата %1$s ќе биде достапна откако ќе заврши ажурирањето на „Услуги на Google Play“.</string>
+    <string name="common_google_play_services_wear_update_text">Ажурирајте ја „Услуги на Google Play“ за да ја користите апликацијата %1$s.</string>
+    <string name="common_open_on_phone">Отвори на телефонот</string>
+    <string name="common_signin_button_text">Најавете се</string>
+    <string name="common_signin_button_text_long">Најави се со Google</string>
+    <string name="copy_toast_msg">Линкот е копиран во привремена меморија</string>
+    <string name="fallback_menu_item_copy_link">Копирај го линкот</string>
+    <string name="fallback_menu_item_open_in_browser">Отвори во прелистувач</string>
+    <string name="fallback_menu_item_share_link">Сподели линк</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

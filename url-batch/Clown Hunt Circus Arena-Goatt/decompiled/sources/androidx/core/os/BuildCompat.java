@@ -1,0 +1,77 @@
+package androidx.core.os;
+
+import android.os.Build;
+import java.util.Locale;
+
+/* loaded from: classes.dex */
+public class BuildCompat {
+
+    public @interface PrereleaseSdkCheck {
+    }
+
+    @Deprecated
+    public static boolean isAtLeastN() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastNMR1() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastO() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastOMR1() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastP() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastQ() {
+        return true;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastR() {
+        return true;
+    }
+
+    private BuildCompat() {
+    }
+
+    protected static boolean isAtLeastPreReleaseCodename(String str, String str2) {
+        return !"REL".equals(str2) && str2.toUpperCase(Locale.ROOT).compareTo(str.toUpperCase(Locale.ROOT)) >= 0;
+    }
+
+    @Deprecated
+    public static boolean isAtLeastS() {
+        return Build.VERSION.SDK_INT >= 31 || isAtLeastPreReleaseCodename("S", Build.VERSION.CODENAME);
+    }
+
+    @Deprecated
+    public static boolean isAtLeastSv2() {
+        if (Build.VERSION.SDK_INT < 32) {
+            return Build.VERSION.SDK_INT >= 31 && isAtLeastPreReleaseCodename("Sv2", Build.VERSION.CODENAME);
+        }
+        return true;
+    }
+
+    public static boolean isAtLeastT() {
+        if (Build.VERSION.SDK_INT < 33) {
+            return Build.VERSION.SDK_INT >= 32 && isAtLeastPreReleaseCodename("Tiramisu", Build.VERSION.CODENAME);
+        }
+        return true;
+    }
+
+    public static boolean isAtLeastU() {
+        return Build.VERSION.SDK_INT >= 33 && isAtLeastPreReleaseCodename("UpsideDownCake", Build.VERSION.CODENAME);
+    }
+}

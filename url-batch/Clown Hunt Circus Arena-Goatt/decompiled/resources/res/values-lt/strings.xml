@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Įgalinti</string>
+    <string name="common_google_play_services_enable_text">„Google Play“ paslaugos turi būti įgalintos, kad būtų galima naudoti „%1$s“.</string>
+    <string name="common_google_play_services_enable_title">Įgalinkite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_install_button">Įdiegti</string>
+    <string name="common_google_play_services_install_text">Įdiekite „Google Play“ paslaugas, kad galėtumėte toliau naudoti „%1$s“.</string>
+    <string name="common_google_play_services_install_title">Įdiekite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_notification_channel_name">„Google Play“ paslaugų pasiekiamumas</string>
+    <string name="common_google_play_services_notification_ticker">„Google Play“ paslaugų klaida</string>
+    <string name="common_google_play_services_signin_required_text">„%1$s“ nepavyko prisijungti prie „Google Play“ paslaugų. Prisijunkite prie „Google“ paskyros.</string>
+    <string name="common_google_play_services_signin_required_title">Būtina prisijungti</string>
+    <string name="common_google_play_services_try_again_text">„%1$s“ nepavyko prisijungti prie „Google Play“ paslaugų. Bandykite dar kartą.</string>
+    <string name="common_google_play_services_try_again_title">Bandykite dar kartą</string>
+    <string name="common_google_play_services_unknown_issue">Naudojant programą „%1$s“ kilo problemų dėl „Google Play“ paslaugų. Bandykite dar kartą.</string>
+    <string name="common_google_play_services_unsupported_text">„%1$s“ negalima paleisti, nes jūsų įrenginys nepalaiko „Google Play“ paslaugų. Naudokite palaikomą įrenginį.</string>
+    <string name="common_google_play_services_unsupported_title">Įrenginys nesuderinamas</string>
+    <string name="common_google_play_services_update_button">Atnaujinti</string>
+    <string name="common_google_play_services_update_text">Atnaujinkite „Google Play“ paslaugas, kad galėtumėte naudoti „%1$s“.</string>
+    <string name="common_google_play_services_update_title">Atnaujinkite „Google Play“ paslaugas</string>
+    <string name="common_google_play_services_updating_client_title">„Google Play“ paslaugos atnaujinamos</string>
+    <string name="common_google_play_services_updating_text">„%1$s“ bus pasiekiama, kai bus baigtas „Google Play“ paslaugų atnaujinimas.</string>
+    <string name="common_google_play_services_wear_update_text">Atnaujinkite „Google Play“ paslaugas, kad galėtumėte naudoti „%1$s“.</string>
+    <string name="common_open_on_phone">Atidaryti telefone</string>
+    <string name="common_signin_button_text">Prisijungti</string>
+    <string name="common_signin_button_text_long">Prisijungti naudojant „Google“</string>
+    <string name="copy_toast_msg">Nuoroda nukopijuota į iškarpinę</string>
+    <string name="fallback_menu_item_copy_link">Kopijuoti nuorodą</string>
+    <string name="fallback_menu_item_open_in_browser">Atidaryti naršyklėje</string>
+    <string name="fallback_menu_item_share_link">Bendrinti nuorodą</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

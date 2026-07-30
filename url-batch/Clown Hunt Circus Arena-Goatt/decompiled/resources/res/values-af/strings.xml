@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Aktiveer</string>
+    <string name="common_google_play_services_enable_text">Google Play Dienste moet vir %1$s geaktiveer wees.</string>
+    <string name="common_google_play_services_enable_title">Aktiveer Google Play Dienste</string>
+    <string name="common_google_play_services_install_button">Installeer</string>
+    <string name="common_google_play_services_install_text">Installeer Google Play Dienste om aan te hou om %1$s te gebruik.</string>
+    <string name="common_google_play_services_install_title">Installeer Google Play Dienste</string>
+    <string name="common_google_play_services_notification_channel_name">Beskikbaarheid van Google Play Dienste</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Services-fout</string>
+    <string name="common_google_play_services_signin_required_text">%1$s kon nie aan Google Play Dienste koppel nie. Meld by jou Google-rekening aan.</string>
+    <string name="common_google_play_services_signin_required_title">Aanmelding word vereis</string>
+    <string name="common_google_play_services_try_again_text">%1$s kon nie aan Google Play Dienste koppel nie. Probeer asseblief weer.</string>
+    <string name="common_google_play_services_try_again_title">Probeer asseblief weer</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ondervind probleme met Google Play Dienste. Probeer asseblief weer.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s kan nie loop nie omdat jou toestel nie Google Play Dienste steun nie. Gebruik ’n gesteunde toestel.</string>
+    <string name="common_google_play_services_unsupported_title">Toestel is nie versoenbaar nie</string>
+    <string name="common_google_play_services_update_button">Dateer op</string>
+    <string name="common_google_play_services_update_text">Dateer Google Play Dienste op om %1$s te gebruik.</string>
+    <string name="common_google_play_services_update_title">Dateer Google Play Dienste op</string>
+    <string name="common_google_play_services_updating_client_title">Google Play Dienste dateer tans op</string>
+    <string name="common_google_play_services_updating_text">%1$s sal beskikbaar wees sodra die Google Play Dienste-opdatering voltooi is.</string>
+    <string name="common_google_play_services_wear_update_text">Dateer Google Play Dienste op om %1$s te gebruik.</string>
+    <string name="common_open_on_phone">Maak oop op foon</string>
+    <string name="common_signin_button_text">Meld aan</string>
+    <string name="common_signin_button_text_long">Meld aan met Google</string>
+    <string name="copy_toast_msg">Skakel is na knipbord gekopieer</string>
+    <string name="fallback_menu_item_copy_link">Kopieer skakel</string>
+    <string name="fallback_menu_item_open_in_browser">Maak in blaaier oop</string>
+    <string name="fallback_menu_item_share_link">Deel skakel</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

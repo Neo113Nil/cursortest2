@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "502086844613",
+    "project_id": "clownhunt-ef354",
+    "storage_bucket": "clownhunt-ef354.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:502086844613:android:bfc610316cff9e724db0ac",
+        "android_client_info": {
+          "package_name": "com.clownunt.circsarena"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTBDjTpk6YCwPiuLvmFqitGnMNdQMowFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

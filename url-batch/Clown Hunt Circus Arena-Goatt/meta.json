@@ -1,0 +1,57 @@
+{
+  "app_id": "com.clownunt.circsarena",
+  "title": "Clown Hunt Circus Arena",
+  "developer": "Goatt",
+  "developer_id": "7514267258297458242",
+  "icon": "https://play-lh.googleusercontent.com/5XBC_WmYHcA-HoBkt-rG2h-r3vY6sz103wWC2FoRuyRrZJOokc8iEa6O1r_GbQxgg191MdKFfV7yQoWV7gykb_4",
+  "url": "https://play.google.com/store/apps/details?id=com.clownunt.circsarena&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 1, 2026",
+  "updated": "Jul 8, 2026",
+  "version": "Varies with device",
+  "summary": "Place banana peels, time your throws, and clear each level.",
+  "keyword": "url-batch",
+  "folder": "Clown Hunt Circus Arena-Goatt",
+  "path": "url-batch/Clown Hunt Circus Arena-Goatt",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.clownunt.circsarena-1-asset.apk",
+    "com.clownunt.circsarena-1-config.arm64_v8a.apk",
+    "com.clownunt.circsarena-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Clown Hunt Circus Arena-Goatt",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.clownunt.circsarena...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.clownunt.circsarena...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.clownunt.circsarena ─╮\n│ Clown Hunt: Circus Arena  │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 3 files  (82.3 MB)\n  com.clownunt.circsarena-1.apk                  ━━━━━━ 100% 37.1… 15.1   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 23.5… 33.0   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-asset.apk            ━━━━━━ 100% 25.7… 39.2   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.clownunt.circsarena-1.apk                  │ 35.4 MB │\n│ com.clownunt.circsarena-1-config.arm64_v8a.apk │ 22.4 MB │\n│ com.clownunt.circsarena-1-asset.apk            │ 35.4 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.clownunt.circsarena ─╮\n│ Clown Hunt: Circus Arena  │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 3 files  (82.3 MB)\n  com.clownunt.circsarena-1.apk                  ━━━━━━ 100% 37.1… 15.1   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 23.5… 33.0   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-asset.apk            ━━━━━━ 100% 25.7… 39.2   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.clownunt.circsarena-1.apk                  │ 35.4 MB │\n│ com.clownunt.circsarena-1-config.arm64_v8a.apk │ 22.4 MB │\n│ com.clownunt.circsarena-1-asset.apk            │ 35.4 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
