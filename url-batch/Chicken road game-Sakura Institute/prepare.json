@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "apks": [
+    "com.chicken.road.whale.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.zh.apk"
+  ],
+  "base_apk": "com.chicken.road.whale.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2271 (0%)\nINFO  - progress: 145 of 2271 (6%)\nINFO  - progress: 444 of 2271 (19%)\nINFO  - progress: 588 of 2271 (25%)\nINFO  - progress: 744 of 2271 (32%)\nINFO  - progress: 912 of 2271 (40%)\nINFO  - progress: 1136 of 2271 (50%)\nINFO  - progress: 1188 of 2271 (52%)\nINFO  - progress: 1327 of 2271 (58%)\nINFO  - progress: 1507 of 2271 (66%)\nINFO  - progress: 1728 of 2271 (76%)\nINFO  - progress: 2028 of 2271 (89%)\n                                                             \nERROR - finished with errors, count: 14\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Chicken road game-Sakura Institute/decompiled",
+    "skipped": false,
+    "base_apk": "com.chicken.road.whale.apk"
+  },
+  "analysis_files": [
+    "com.chicken.road.whale.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.chicken.road.whale.apk",
+    "apk/config.zh.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/a/",
+    "decompiled/sources/a0/",
+    "decompiled/sources/a1/",
+    "decompiled/sources/a2/",
+    "decompiled/sources/a4/",
+    "decompiled/sources/a5/",
+    "decompiled/sources/a6/",
+    "decompiled/sources/a7/",
+    "decompiled/sources/a8/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/b/",
+    "decompiled/sources/b1/",
+    "decompiled/sources/b2/",
+    "decompiled/sources/b3/",
+    "decompiled/sources/b4/",
+    "decompiled/sources/b5/",
+    "decompiled/sources/b6/",
+    "decompiled/sources/b7/",
+    "decompiled/sources/b8/"
+  ]
+}
