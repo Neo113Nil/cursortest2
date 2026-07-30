@@ -65,27 +65,54 @@
       },
       {
         "param": "Custom Tabs",
-        "value": "нет OneSignal нет Firebase да AdMob нет Remote Config нет"
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Firebase Messaging"
       },
       {
         "param": "Permissions",
-        "value": "android.permission.CAMERA, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.icecatchpuzzle.puzzleicecatch.D YNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.CAMERA, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.icecatchpuzzle.puzzleicecatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
-        "value": "Kotlin (~2.1.x; atomics.kotlin_builtins + Compose UI 1.10.4), kotlinx-coroutines 1.9.0 (core/android/play-services), Jetpack Compose UI/Foundation/Animation/Runtime 1.10.4, Material3 1.4.0, Material Ripple 1.10.4, AndroidX Activity/Activity-Compose/Activity-KTX 1.12.4, Core/Core-KTX 1.17.0, Lifecycle 2.10.0, Fragment 1.8.9, Browser 1.10.0, Emoji2 1.4.0, Startup 1.2.0, ProfileInstaller 1.4.0, SavedState 1.4.0, Window 1.5.0, NavigationEvent 1.0.2, OkHttp3, Adjust SDK android5.5.0 (com.adjust.sdk), Google Play Install Referrer API (com.android.installreferrer), Firebase Messaging + Installations + Common/KTX + Datatransport/CCT, Play Services Base 18.1.0, Basement 18.3.0, Cloud Messaging 17.2.0, Tasks 18.1.0, Stats 17.0.2, Pairip licensecheck / Application wrapper (Play Integrity Protection) Domains 164.92.203.58:123 (UDP cloaking probe), https://app.adjust.com, https://app.adjust.io, https://gdpr.adjust.com, https://gdpr.adjust.io, https://ssrv.adjust.com, https://ssrv.adjust.io, https://subscription.adjust.com, https://subscription.adjust.io, adjust.com, adj.st, go.link, adjust.net.in, adjust.cn, adjust.world, adjust.io, https://firebaseinstallations.googleapis.com/v1/, https://ice-…"
+        "value": "Kotlin (~2.1.x; atomics.kotlin_builtins + Compose UI 1.10.4), kotlinx-coroutines 1.9.0 (core/android/play-services), Jetpack Compose UI/Foundation/Animation/Runtime 1.10.4, Material3 1.4.0, Material Ripple 1.10.4, AndroidX Activity/Activity-Compose/Activity-KTX 1.12.4, Core/Core-KTX 1.17.0, Lifecycle 2.10.0, Fragment 1.8.9, Browser 1.10.0, Emoji2 1.4.0, Startup 1.2.0, ProfileInstaller 1.4.0, SavedState 1.4.0, Window 1.5.0, NavigationEvent 1.0.2, OkHttp3, Adjust SDK android5.5.0 (com.adjust.sdk), Google Play Install Referrer API (com.android.installreferrer), Firebase Messaging + Installations + Common/KTX + Datatransport/CCT, Play Services Base/Basement/Cloud Messaging/Tasks/Stats, Pairip licensecheck / Application wrapper (Play Integrity Protection)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
       },
       {
         "param": "SharedPreferences",
-        "value": "com.icecatchpuzzle.puzzleicecatch: ключ url5 — сохранённый URL оффера после успешного ответа cloaking-сервера; ice_fish_match: ключ km3 — JSON игрового прогресса (имя, vibro, лучший счёт, scores); adjust_preferences — состояние Adjust (install_tracked, raw_referrers, deeplink_url, push_token, gdpr_forget_me и др.); com.google.firebase.messaging / com.google.android.gms.appid / FirebaseHeartBeat* — FCM-токены и heartbeat Firebase"
+        "value": "com.icecatchpuzzle.puzzleicecatch: ключ url5 — сохранённый URL оффера после успешного ответа cloaking-сервера; ice_fish_match: ключ km3 — JSON игрового прогресса (name, vibro, best, scores); adjust_preferences / adjust_keys — состояние Adjust; com.google.firebase.messaging / com.google.android.gms.appid / FirebaseHeartBeat* — FCM-токены и heartbeat Firebase"
       },
       {
         "param": "Есть ли клоака",
         "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "ProbeParams, url5, localhost, loadUrl, clickLabel, trackerToken, network, campaign, WebView, User-Agent, about: Собираемые данные • adId (Google Advertising ID) • adjustId (Adjust ADID) • installReferrer (Google Play Install Referrer) • fcmToken (Firebase Cloud Messaging token) • adjustSuffix (trackerToken, trackerName, network, campaign, adgroup, creative, clickLabel, costType, costAmount, costCurrency, fbInstallReferrer + поля из jsonResponse) • deviceModel (Build.MODEL) • deviceBrand (Build.BRAND) • bundleId (packageName = com.icecatchpuzzle.puzzleicecatch)"
       }
     ],
     "domains": [],
+    "collected_data": [
+      "adId (Google Advertising ID)",
+      "adjustId (Adjust ADID)",
+      "installReferrer (Google Play Install Referrer)",
+      "fcmToken (Firebase Cloud Messaging token)",
+      "adjustSuffix (trackerToken, trackerName, network, campaign, adgroup, creative, clickLabel, costType,",
+      "costAmount, costCurrency, fbInstallReferrer + поля из jsonResponse)",
+      "deviceModel (Build.MODEL)",
+      "deviceBrand (Build.BRAND)",
+      "bundleId (packageName = com.icecatchpuzzle.puzzleicecatch)"
+    ],
     "cloaking": "да",
-    "cloaking_brief": ""
+    "cloaking_brief": "Собираемые данные:\n• adId (Google Advertising ID)\n• adjustId (Adjust ADID)\n• installReferrer (Google Play Install Referrer)\n• fcmToken (Firebase Cloud Messaging token)\n• adjustSuffix (trackerToken, trackerName, network, campaign, adgroup, creative, clickLabel, costType,\n• costAmount, costCurrency, fbInstallReferrer + поля из jsonResponse)\n• deviceModel (Build.MODEL)\n• deviceBrand (Build.BRAND)\n• bundleId (packageName = com.icecatchpuzzle.puzzleicecatch)\n\nСнаружи это puzzle/аркада про подлёдную рыбалку (package com.icecatchpuzzle.puzzleicecatch), но при старте приложение само решает: показать обычную игру или веб-оффер. «Нужный» пользователь попадает на http/https-страницу из ответа сервера (конкретный казино/лендинг в APK не зашит — URL приходит снаружи). Судьбу решает UDP-probe (необычный сетевой опрос) на IP 164.92.203.58, порт 123: туда уходит «паспорт» установки (см.…\n\nКуда отправляется запрос: Не HTTPS API, а UDP DatagramSocket на 164.92.203.58:123 (таймаут 15000 мс, буфер ответа до 65507 байт). Payload: поля ProbeParams как UTF-8 строки с \\n, length-prefixed shorts → GZIP → обёртка type 228 → 48-байтный NTP/STUN-подобный заголовок (magic 1229870147).…\n\nКак приходит ответ: Сервер отвечает бинарным UDP-пакетом. Клиент парсит TLV с offset 48: тип 176 → length-prefixed UTF-8 строки. Если пакет короткий — весь payload читают как текст и принимают, только если он начинается с h…"
   }
 }

@@ -52,56 +52,5 @@
   "version": "Varies with device",
   "updated": "Jun 26, 2026",
   "cloaking": "да",
-  "_store_enriched": true,
-  "brief_report": {
-    "table": [
-      {
-        "param": "Название приложения",
-        "value": "Ice Fishing"
-      },
-      {
-        "param": "Android Gradle Plugin",
-        "value": "9.1.1"
-      },
-      {
-        "param": "minSdk",
-        "value": "32"
-      },
-      {
-        "param": "targetSdk",
-        "value": "36"
-      },
-      {
-        "param": "Kotlin",
-        "value": "да, 2.1.0"
-      },
-      {
-        "param": "Web View",
-        "value": "да"
-      },
-      {
-        "param": "Custom Tabs",
-        "value": "да OneSignal нет Firebase да AdMob нет Remote Config нет"
-      },
-      {
-        "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.VIBRATE, android.permission.POST_NOTIFICATIONS, android.permission.CAMERA, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.frosthunter.arcticwildlands.frozenexpedition.adventure.DYNAMIC_RECEIVER_NOT_EXPORTE D_PERMISSION, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
-      },
-      {
-        "param": "Libraries",
-        "value": "• Adjust SDK android5.5.0 (com.adjust.sdk, libsigner.so) • OkHttp 5.3.2 (WebSocket/HTTP) • Coil3 (compose) • Jetpack Compose UI/Foundation/Animation 1.9.4, Material3 1.3.0, Material Icons/Ripple 1.7.0 • AndroidX Activity/Activity-Compose 1.13.0, Fragment 1.8.9, Lifecycle 2.10.0, Core 1.18.0 • AndroidX Browser 1.10.0 (Custom Tabs) • AndroidX DataStore Preferences 1.2.1 • AndroidX Media3 1.10.1 • AndroidX Emoji2, Startup, ProfileInstaller, AppCompat Resources, NavigationEvent • kotlinx-coroutines 1.10.2 • Firebase Messaging 24.1.2, Firebase Installations, Firebase Common/KTX, Datatransport/CCT • Google Play Services (base/basement/tasks/cloudmessaging/auth/stats) • Google Play Install Referrer API • Pairip licensecheck (Play Integrity Protection wrapper) • Native libfrost_assemble.so (скрытые строки/ключи) Параметр Значение Domains wss://zenithpatterncluster.xyz/, https://app.adjust.com, https://app.adjust.io, https://gdpr.adjust.com, https://gdpr.adjust.io, https://ssrv.adjust.com, https://ssrv.adjust.io, https://subscription.adjust.com, https://subscription.adjust.io, https://firebaseinstallations.googleapis.com/v1/, https://frost-hunter.firebasestorage.app, https://pay.google.com,…"
-      },
-      {
-        "param": "SharedPreferences",
-        "value": "Jetpack DataStore Preferences файл entry_storage.preferences_pb: ключи silentFluxInterpreter (GAID), prismOrbitCoordinator (install referrer), temporalScopeNavigator (FCM token), radialPayloadCompiler (Adjust ID); также кэш оффер-URL для повторного входа. Adjust SDK файлы AdjustIoActivityState / AdjustAttribution / AdjustEventMetadata / AdjustGlobalCallbackParameters / AdjustGlobalPartnerParameters. Firebase Messaging SharedPreferences com.google.android.gms.appid (FCM token). Оффер-URL дополнительно передаётся Intent-extra receiverGameInfoTag."
-      },
-      {
-        "param": "Есть ли клоака",
-        "value": "да"
-      }
-    ],
-    "domains": [],
-    "cloaking": "да",
-    "cloaking_brief": ""
-  }
+  "_store_enriched": true
 }
