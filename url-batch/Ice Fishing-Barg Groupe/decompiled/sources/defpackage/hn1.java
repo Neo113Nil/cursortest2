@@ -1,0 +1,16 @@
+package defpackage;
+
+/* compiled from: r8-map-id-99198b194f64cf930afe678846937ee242c378eb2e5d7167669b3ca844d0162b */
+/* loaded from: classes.dex */
+public final class hn1 extends ct {
+    public /* synthetic */ Object dgRBjINgWbAK;
+    public int x50lh2ztY7Y5;
+
+    @Override // defpackage.nc
+    public final Object RfyTYNmI9Srp(Object obj) {
+        this.dgRBjINgWbAK = obj;
+        this.x50lh2ztY7Y5 |= Integer.MIN_VALUE;
+        jn1.PxuCJdSBwIXG(null, null, this);
+        return su.rtx2ld2ELZv4;
+    }
+}

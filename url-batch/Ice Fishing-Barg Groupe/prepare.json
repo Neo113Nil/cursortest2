@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "apks": [
+    "com.ice.fishing.grenza-2-config.lt.apk",
+    "com.ice.fishing.grenza-2-asset.apk",
+    "com.ice.fishing.grenza-2-config.arm64_v8a.apk",
+    "com.ice.fishing.grenza-2-config.en.apk",
+    "com.ice.fishing.grenza-2.apk",
+    "com.ice.fishing.grenza-2-config.xxhdpi.apk",
+    "com.ice.fishing.grenza-2-config.ru.apk"
+  ],
+  "base_apk": "com.ice.fishing.grenza-2.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2248 (0%)\nINFO  - progress: 264 of 2248 (11%)\nINFO  - progress: 529 of 2248 (23%)\nINFO  - progress: 618 of 2248 (27%)\nINFO  - progress: 814 of 2248 (36%)\nINFO  - progress: 1078 of 2248 (47%)\nINFO  - progress: 1223 of 2248 (54%)\nINFO  - progress: 1407 of 2248 (62%)\nINFO  - progress: 1530 of 2248 (68%)\nINFO  - progress: 1818 of 2248 (80%)\nINFO  - progress: 2051 of 2248 (91%)\n                                                             \nERROR - finished with errors, count: 24\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Ice Fishing-Barg Groupe/decompiled",
+    "skipped": false,
+    "base_apk": "com.ice.fishing.grenza-2.apk"
+  },
+  "analysis_files": [
+    "com.ice.fishing.grenza-2-config.lt.apk",
+    "com.ice.fishing.grenza-2-asset.apk",
+    "com.ice.fishing.grenza-2-config.arm64_v8a.apk",
+    "com.ice.fishing.grenza-2-config.en.apk",
+    "com.ice.fishing.grenza-2.apk",
+    "com.ice.fishing.grenza-2-config.xxhdpi.apk",
+    "com.ice.fishing.grenza-2-config.ru.apk",
+    "apk/com.ice.fishing.grenza-2-config.lt.apk",
+    "apk/com.ice.fishing.grenza-2-asset.apk",
+    "apk/com.ice.fishing.grenza-2-config.arm64_v8a.apk",
+    "apk/com.ice.fishing.grenza-2-config.en.apk",
+    "apk/com.ice.fishing.grenza-2.apk",
+    "apk/com.ice.fishing.grenza-2-config.xxhdpi.apk",
+    "apk/com.ice.fishing.grenza-2-config.ru.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/"
+  ]
+}

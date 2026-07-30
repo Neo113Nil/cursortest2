@@ -1,0 +1,15 @@
+package defpackage;
+
+import android.graphics.Path;
+
+/* compiled from: r8-map-id-99198b194f64cf930afe678846937ee242c378eb2e5d7167669b3ca844d0162b */
+/* loaded from: classes.dex */
+public abstract class t4 {
+    public static final r4 PxuCJdSBwIXG() {
+        return new r4(new Path());
+    }
+
+    public static final void lS5Rgt96tfkO(String str) {
+        throw new IllegalStateException(str);
+    }
+}
