@@ -1,8 +1,0 @@
-package p000createpolar;
-
-/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
-/* loaded from: classes.dex */
-public abstract class PolarVoyageRotateAnimationEclipseHyperionLegend3900 {
-    public static final PolarVoyageScaleGestureDetectorForceMegaStorm2716 PolarVoyageZipVortexCelestial6185 = new PolarVoyageScaleGestureDetectorForceMegaStorm2716(PolarVoyageFirestoreRoguePhoenixDelta6836.PolarVoyageSnackbarGammaEclipse2140);
-    public static final PolarVoyageScaleGestureDetectorForceMegaStorm2716 PolarVoyageMotionLayoutTransitionHeroVision4068 = new PolarVoyageScaleGestureDetectorForceMegaStorm2716(PolarVoyageNotificationManagerBetaNova2869.PolarVoyageSnackbarGammaEclipse2140);
-}

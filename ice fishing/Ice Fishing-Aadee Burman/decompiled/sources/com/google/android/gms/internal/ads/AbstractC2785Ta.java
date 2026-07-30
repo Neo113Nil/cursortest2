@@ -1,9 +1,0 @@
-package com.google.android.gms.internal.ads;
-
-/* renamed from: com.google.android.gms.internal.ads.Ta, reason: case insensitive filesystem */
-/* loaded from: classes2.dex */
-public abstract class AbstractC2785Ta {
-
-    /* renamed from: a, reason: collision with root package name */
-    public static final C3493l5 f27740a = C3493l5.j("gads:parallel_rendering:max_renderers", 0);
-}
