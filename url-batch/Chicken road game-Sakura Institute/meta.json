@@ -39,7 +39,7 @@
     "table": [
       {
         "param": "Название приложения",
-        "value": "Chicken Road Game"
+        "value": "Chicken road game"
       },
       {
         "param": "Android Gradle Plugin",
@@ -55,7 +55,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да, 2.0.21"
+        "value": "да 2.0.21"
       },
       {
         "param": "Web View",
@@ -71,23 +71,19 @@
       },
       {
         "param": "Аналитика",
-        "value": "AppsFlyer, Firebase Realtime Database"
+        "value": "AppsFlyer, Firebase Realtime Database, Install Referrer"
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE (maxSdk=28), android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
       },
       {
         "param": "Libraries",
-        "value": "Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines, kotlinx-serialization-json, Jetpack Compose / Material3, AndroidX (Activity, Core, Lifecycle, Navigation Compose, DataStore Preferences, Room, Emoji2, SplashScreen, Startup, ProfileInstaller, SavedState, SQLite, Fragment, CustomView, Graphics Path), OkHttp3 / Okio, AppsFlyer 6.14.0, Firebase (Realtime Database, common/ktx), Google Play Services (Base, Basement, Tasks, Ads Identifier), Play Install Referrer, Pairip (com.pairip.application / licensecheck), native roostio / platecore"
-      },
-      {
-        "param": "Подозрительные домены",
-        "value": "config.ru"
+        "value": "androidx.compose (UI/Material3), androidx.activity, androidx.navigation, androidx.lifecycle, androidx.datastore, androidx.room, androidx.core, androidx.startup, androidx.fragment, androidx.profileinstaller, com.appsflyer (af-android-sdk 6.14.0), com.google.firebase (common, database), com.google.android.gms (base, tasks, ads-identifier), com.android.installreferrer, okhttp3, okio, kotlinx.coroutines, kotlinx.serialization, com.pairip (licensecheck), kotlin-stdlib Подозрительные домены config.ru"
       },
       {
         "param": "SharedPreferences",
-        "value": "DataStore Preferences app_state: сохранённый URL оффера (pageUrl), метка времени, флаг согласия (agreed); SharedPreferences appsflyer-data у AppsFlyer"
+        "value": "DataStore app_state: URL страницы (page), метка времени, флаг согласия Privacy Policy (agreed)"
       },
       {
         "param": "Есть ли клоака",
@@ -95,7 +91,7 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "bridge, uniwebview, checkUrl, User-Agent, consent, installReferrer, WebView, gaid, pageUrl, active, roostio, license check"
+        "value": "uniwebview, checkUrl, serverCheckUrl, myGame, consent, referrer, gaid, bridge"
       }
     ],
     "domains": [
@@ -106,6 +102,6 @@
       }
     ],
     "cloaking": "да",
-    "cloaking_brief": "Снаружи это приложение для учёта куриной фермы: поголовье, корм, яйца, прививки, статистика (пакет com.chicken.road.cerman.fixs, на витрине — Chicken road game / Sakura Institute). Но при каждом запуске перед показом «фермы» срабатывает скрытый модуль roost: приложение тихо читает удалённый конфиг из Firebase Realtime Database и, если флаг включён, спрашивает у своего checkUrl, можно ли этому устройству показать внешнюю страницу. Модератору и «неподходящему» трафику сервер не отдаёт ссылку — человек остаётся в обычном интерфейсе фермы. «Нужному» пользователю приходит URL, и приложение открывает его в полноэкранном WebView (встроенном браузере). Финальный сайт в APK не зашит: он приезжает динамически с checkUrl, поэтому конкретный оффер (казино, беттинг и т.п.) из статического кода не виден."
+    "cloaking_brief": "Снаружи приложение выглядит как безобидный трекер курятника / «Chicken Road Game»: на экране — Compose-интерфейс про кур, корм, яйца, прививки и статистику. Внутри при каждом запуске тихо работает отдельный модуль roost: он спрашивает у Firebase и у своего проверочного сервера, показывать ли эту «белую» игру или открыть внешнюю ссылку в полноэкранном WebView (встроенный браузер внутри приложения). Обман в том, что модератору магазина и «неподходящему» трафику показывают обычную ферму-утилиту, а «нужному» пользователю сервер может отдать другой URL — тогда человек сразу попадает на внешнюю страницу (оффер / лендинг / политику с кнопкой Accept). Финальный адрес не зашит в APK: его каждый раз присылает удалённый check-сервер (сейчас в конфиге Firebase это https://cerman.space), в ответе JSON вида {url, time}."
   }
 }
