@@ -79,7 +79,7 @@
       },
       {
         "param": "Kotlin",
-        "value": "да, ~2.1.x"
+        "value": "да, 2.2.0"
       },
       {
         "param": "Web View",
@@ -103,7 +103,7 @@
       },
       {
         "param": "Libraries",
-        "value": "Kotlin ~2.1.x / kotlin-stdlib, kotlinx-coroutines 1.9.0, Jetpack Compose 1.10.4 / Material3, AndroidX (Activity, Core, Lifecycle, DataStore Preferences, Emoji2, Startup, ProfileInstaller, Window, SavedState, Graphics Path, VersionedParcelable), AppsFlyer 6.18.0, Firebase Messaging / Installations / Datatransport / Encoders, Google Play Services (Base, Basement, Tasks, Cloud Messaging, Ads Identifier, Stats), Play Install Referrer, Pairip (com.pairip.application / licensecheck), org.jetbrains.annotations"
+        "value": "Kotlin 2.2.0 / kotlin-stdlib, kotlinx-coroutines 1.9.0, Jetpack Compose 1.10.4 / Material3, AndroidX (Activity, Core, Lifecycle, DataStore Preferences, Emoji2, Startup, ProfileInstaller, Window, SavedState, Graphics Path, VersionedParcelable), AppsFlyer 6.18.0, Firebase Messaging / Installations / Datatransport / Encoders, Google Play Services (Base, Basement, Tasks, Cloud Messaging, Ads Identifier, Stats), Play Install Referrer, Pairip (com.pairip.application / licensecheck), org.jetbrains.annotations"
       },
       {
         "param": "Подозрительные домены",
