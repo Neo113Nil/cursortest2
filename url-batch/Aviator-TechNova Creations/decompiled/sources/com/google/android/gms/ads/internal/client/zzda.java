@@ -1,0 +1,144 @@
+package com.google.android.gms.ads.internal.client;
+
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+import com.google.android.gms.dynamic.IObjectWrapper;
+import com.google.android.gms.internal.ads.zzbct;
+import com.google.android.gms.internal.ads.zzbcu;
+import com.google.android.gms.internal.ads.zzbqm;
+import com.google.android.gms.internal.ads.zzbqn;
+import com.google.android.gms.internal.ads.zzbts;
+import com.google.android.gms.internal.ads.zzbtt;
+import java.util.List;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@24.9.0 */
+/* loaded from: classes3.dex */
+public abstract class zzda extends zzbct implements zzdb {
+    public zzda() {
+        super("com.google.android.gms.ads.internal.client.IMobileAdsSettingManager");
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzbct
+    protected final boolean zzdd(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        zzdn zzdlVar;
+        switch (i) {
+            case 1:
+                zze();
+                parcel2.writeNoException();
+                return true;
+            case 2:
+                float readFloat = parcel.readFloat();
+                zzbcu.zzh(parcel);
+                zzf(readFloat);
+                parcel2.writeNoException();
+                return true;
+            case 3:
+                String readString = parcel.readString();
+                zzbcu.zzh(parcel);
+                zzg(readString);
+                parcel2.writeNoException();
+                return true;
+            case 4:
+                boolean zza = zzbcu.zza(parcel);
+                zzbcu.zzh(parcel);
+                zzh(zza);
+                parcel2.writeNoException();
+                return true;
+            case 5:
+                IObjectWrapper asInterface = IObjectWrapper.Stub.asInterface(parcel.readStrongBinder());
+                String readString2 = parcel.readString();
+                zzbcu.zzh(parcel);
+                zzi(asInterface, readString2);
+                parcel2.writeNoException();
+                return true;
+            case 6:
+                String readString3 = parcel.readString();
+                IObjectWrapper asInterface2 = IObjectWrapper.Stub.asInterface(parcel.readStrongBinder());
+                zzbcu.zzh(parcel);
+                zzj(readString3, asInterface2);
+                parcel2.writeNoException();
+                return true;
+            case 7:
+                float zzk = zzk();
+                parcel2.writeNoException();
+                parcel2.writeFloat(zzk);
+                return true;
+            case 8:
+                boolean zzl = zzl();
+                parcel2.writeNoException();
+                int i3 = zzbcu.zza;
+                parcel2.writeInt(zzl ? 1 : 0);
+                return true;
+            case 9:
+                String zzm = zzm();
+                parcel2.writeNoException();
+                parcel2.writeString(zzm);
+                return true;
+            case 10:
+                String readString4 = parcel.readString();
+                zzbcu.zzh(parcel);
+                zzn(readString4);
+                parcel2.writeNoException();
+                return true;
+            case 11:
+                zzbtt zzf = zzbts.zzf(parcel.readStrongBinder());
+                zzbcu.zzh(parcel);
+                zzo(zzf);
+                parcel2.writeNoException();
+                return true;
+            case 12:
+                zzbqn zzc = zzbqm.zzc(parcel.readStrongBinder());
+                zzbcu.zzh(parcel);
+                zzp(zzc);
+                parcel2.writeNoException();
+                return true;
+            case 13:
+                List zzq = zzq();
+                parcel2.writeNoException();
+                parcel2.writeTypedList(zzq);
+                return true;
+            case 14:
+                zzfv zzfvVar = (zzfv) zzbcu.zzb(parcel, zzfv.CREATOR);
+                zzbcu.zzh(parcel);
+                zzr(zzfvVar);
+                parcel2.writeNoException();
+                return true;
+            case 15:
+                zzs();
+                parcel2.writeNoException();
+                return true;
+            case 16:
+                IBinder readStrongBinder = parcel.readStrongBinder();
+                if (readStrongBinder == null) {
+                    zzdlVar = null;
+                } else {
+                    IInterface queryLocalInterface = readStrongBinder.queryLocalInterface("com.google.android.gms.ads.internal.client.IOnAdInspectorClosedListener");
+                    zzdlVar = queryLocalInterface instanceof zzdn ? (zzdn) queryLocalInterface : new zzdl(readStrongBinder);
+                }
+                zzbcu.zzh(parcel);
+                zzt(zzdlVar);
+                parcel2.writeNoException();
+                return true;
+            case 17:
+                boolean zza2 = zzbcu.zza(parcel);
+                zzbcu.zzh(parcel);
+                zzu(zza2);
+                parcel2.writeNoException();
+                return true;
+            case 18:
+                String readString5 = parcel.readString();
+                zzbcu.zzh(parcel);
+                zzv(readString5);
+                parcel2.writeNoException();
+                return true;
+            case 19:
+                zzw();
+                parcel2.writeNoException();
+                return true;
+            default:
+                return false;
+        }
+    }
+}

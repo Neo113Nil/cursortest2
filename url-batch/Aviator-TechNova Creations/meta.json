@@ -1,0 +1,36 @@
+{
+  "app_id": "org.game.play.aviator.gameplay",
+  "title": "Aviator",
+  "developer": "TechNova Creations",
+  "developer_id": "TechNova+Creations",
+  "icon": "https://play-lh.googleusercontent.com/TEZ7kYU7VK-eWLBmpLOwiz54QJFbWuPpkPWrCRJShVZp03m40RYoTzQLjpqnRPX_pezjrwplRefWm49RQfBbwg",
+  "url": "https://play.google.com/store/apps/details?id=org.game.play.aviator.gameplay&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 23, 2026",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Pilot your fighter jet through the cosmic vortex and destroy alien invaders",
+  "keyword": "url-batch",
+  "folder": "Aviator-TechNova Creations",
+  "path": "url-batch/Aviator-TechNova Creations",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "org.game.play.aviator.gameplay.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator-TechNova Creations",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading org.game.play.aviator.gameplay...\norg.game.play.aviator.gameplay downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading org.game.play.aviator.gameplay...\norg.game.play.aviator.gameplay downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
