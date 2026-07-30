@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public abstract class XenoGridLoaderNormalizationQY8rVZqjR8F5lUDWr041280525715985 {
-    public static final BlazePulseConstructorGenericMnFV73f06TzE1qXKr540300927128381 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new BlazePulseConstructorGenericMnFV73f06TzE1qXKr540300927128381(0);
-}

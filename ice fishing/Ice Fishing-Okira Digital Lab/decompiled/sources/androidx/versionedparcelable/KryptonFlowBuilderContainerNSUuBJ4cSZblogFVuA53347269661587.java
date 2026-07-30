@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public abstract class KryptonFlowBuilderContainerNSUuBJ4cSZblogFVuA53347269661587 {
-    public static final ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new ZenithPathOperatorProcessorWqZVGhPZVMaza26LFS87964487012654(-1131826196, false, IronMatrixGenericChannelHmHCOhlIewLdBl4k2w70485826352892.PhotonFrameFilterJITAeT2SDHL9pSK7KtI7w36828414417036);
-}

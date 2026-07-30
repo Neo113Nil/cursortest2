@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface ObsidianEnginePacketHashmapV1H0zIMkv2CgfQneqP65795279991845 extends JadeCircuitResourceValidationAVt47hTUQWsszZEf2t61060163808152 {
-    void AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365(DeltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014 deltaSignalAbstractionDecoderL8YZ8FPiOBh30NoZVz36821379779014, NovaLayerStateAnnotationXKDio9YaHeDJRrC7C094134972672073 novaLayerStateAnnotationXKDio9YaHeDJRrC7C094134972672073);
-}

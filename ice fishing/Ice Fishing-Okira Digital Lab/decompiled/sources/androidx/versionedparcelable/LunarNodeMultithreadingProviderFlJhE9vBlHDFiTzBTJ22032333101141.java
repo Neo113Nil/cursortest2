@@ -1,8 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public abstract class LunarNodeMultithreadingProviderFlJhE9vBlHDFiTzBTJ22032333101141 {
-    public static final LunarNodeInterpreterDataframeHfmXLfoz2mEFkpPxeY47459064979541 ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800 = new LunarNodeInterpreterDataframeHfmXLfoz2mEFkpPxeY47459064979541("TestTagsAsResourceId", false, ArcticByteDebuggerComponentSvXprZLmXlgTXimUcN28764554864019.UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339);
-    public static final LunarNodeInterpreterDataframeHfmXLfoz2mEFkpPxeY47459064979541 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = new LunarNodeInterpreterDataframeHfmXLfoz2mEFkpPxeY47459064979541("AccessibilityClassName", true, ArcticByteDebuggerComponentSvXprZLmXlgTXimUcN28764554864019.BlueKernelVectorOverridingCkQwH0H0St1c1Z9Vfg22608212869818);
-}

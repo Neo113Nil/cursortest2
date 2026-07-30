@@ -1,9 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface ZenithPathAttributeCoordinatorA8DUX3TfAHILQZUlO556214483721391 {
-    PhotonFrameUnificationSessionPRU24CljKWR4Ce1DNk85676651143248 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365();
-
-    void ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800(PhotonFrameUnificationSessionPRU24CljKWR4Ce1DNk85676651143248 photonFrameUnificationSessionPRU24CljKWR4Ce1DNk85676651143248);
-}

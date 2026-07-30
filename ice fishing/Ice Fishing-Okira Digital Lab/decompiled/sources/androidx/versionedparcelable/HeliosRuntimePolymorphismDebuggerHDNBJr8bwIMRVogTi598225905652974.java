@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public abstract class HeliosRuntimePolymorphismDebuggerHDNBJr8bwIMRVogTi598225905652974 extends FrostBridgeConstructorFrameworkI1tSYlrLgkT9XmqzJ762894018470983 implements HeliosRuntimeClosureIteratorJWr00QBPRS866EpEHR37082290750388 {
-    public static final /* synthetic */ int AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = 0;
-}

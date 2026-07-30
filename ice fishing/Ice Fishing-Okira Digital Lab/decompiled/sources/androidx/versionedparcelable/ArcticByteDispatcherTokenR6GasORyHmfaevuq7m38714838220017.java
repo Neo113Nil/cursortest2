@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface ArcticByteDispatcherTokenR6GasORyHmfaevuq7m38714838220017 extends MysticCacheDecryptionVirtualizationXk0OuECC1cb9aylKX923453243577995 {
-    MysticCacheDecryptionVirtualizationXk0OuECC1cb9aylKX923453243577995 UltraBufferProtocolShimPREYZ8knP0yoZyOmOf89330452059339(ZenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893 zenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893, int i, WhiteFieldInterpreterShimIjzQ1PzaYXqKkU7hPI81550123803253 whiteFieldInterpreterShimIjzQ1PzaYXqKkU7hPI81550123803253);
-}

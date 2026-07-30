@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface HeliosRuntimeResourceMonitorPpl9fPbnEY0fd5SheJ13516953355176 extends BlazePulseFrameworkAbstractionHVFJE1XPTMCOG9VNlA97058770194726 {
-    CosmicForgeFilterMutexXuulnyQgylGzinGUJ544225966544934 ArcticByteRequestImmutableAAtAvRNARCRXiKMiKD24089578966495(AxiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718 axiomCoreContainerFactoryVXzJMkyufLYYJp8iJR87064821634718, FrostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777 frostBridgeEventLoopNormalizationBXDoMBYCKdU0Kz3vHD50860974827777, long j);
-}

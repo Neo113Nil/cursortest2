@@ -1,7 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface BlazePulseHeuristicReflectionAjE3uSLXRdITwAE2k393161190765519 {
-    public static final NovaLayerDelegateAlgorithmLXMVKmMpPR9Soj24Vm90234110714257 AxiomCoreDependencyProtocolDJZgU5JiH0LdBAomet42425495227365 = NovaLayerDelegateAlgorithmLXMVKmMpPR9Soj24Vm90234110714257.ObsidianEngineAlgorithmBinaryVTE4hXGvz1xtAgnOMB37574137692800;
-}

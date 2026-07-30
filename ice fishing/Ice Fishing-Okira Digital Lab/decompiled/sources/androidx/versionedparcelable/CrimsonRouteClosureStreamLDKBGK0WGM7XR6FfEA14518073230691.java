@@ -1,9 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface CrimsonRouteClosureStreamLDKBGK0WGM7XR6FfEA14518073230691 {
-    void LunarNodeJITInjectionBmCwVs348RBWiJCxWw58088460475119(long j, ArcticByteRequestKeyValueV79VHzJlpMRG4Itq5w98101914719514 arcticByteRequestKeyValueV79VHzJlpMRG4Itq5w98101914719514);
-
-    PhotonFrameEncryptionBootstrapVc3TMC7O2k3VbHImZq68709810142411 RapidLogicProcessorJSONAxioGw9PE7dRCUvtTj89514691193867(long j, VertexLinkInheritanceConnectorEX6Q4SIGRdZPMdKQyz69486094761481 vertexLinkInheritanceConnectorEX6Q4SIGRdZPMdKQyz69486094761481, ZenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893 zenithPathPrefixBinaryTreeWiopqXIKz9omZoY5vl97749504905893);
-}

@@ -1,9 +1,0 @@
-package androidx.versionedparcelable;
-
-/* compiled from: r8-map-id-30b448d4aea92b7ca08aa98ecb87d6bc49bf391f2fd37f06e0a9b205a292647a */
-/* loaded from: classes.dex */
-public interface NovaLayerContainerWorkerHBFO3zyiSxarsoZZwQ51432211626757 extends PhotonFrameAsyncSchedulerZzzfwoQmbKsTM2aC4C65436717618782 {
-    void LunarNodeSerializationAsyncGqWKwJIpkuU32gfKfa39621176469764();
-
-    void YellowLoopEncoderRouterINqff2SYTbtqZyuhu243435970216181(XenoGridSingletonArrayCuOkXptCuErlhFUdyx75976631528604 xenoGridSingletonArrayCuOkXptCuErlhFUdyx75976631528604, HeliosRuntimeModuleWorkerA0rT12TxwrYf7QL06n42668500141591 heliosRuntimeModuleWorkerA0rT12TxwrYf7QL06n42668500141591);
-}
