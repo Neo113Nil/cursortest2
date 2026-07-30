@@ -1,0 +1,36 @@
+{
+  "app_id": "com.chicken.road.cerman.fixs",
+  "title": "Chicken road game",
+  "developer": "Sakura Institute",
+  "developer_id": "Sakura+Institute",
+  "icon": "https://play-lh.googleusercontent.com/YI2QgW7y-K97q4OZfoZT45Dou-nEar3dPuLd9kAe6MhS0gPFEiaj4N_JVUynnJoLQUtOt4J0X07ILHXKBReo",
+  "url": "https://play.google.com/store/apps/details?id=com.chicken.road.cerman.fixs&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 27, 2026",
+  "version": "Varies with device",
+  "summary": "Analyze flock metrics and egg production trends in Chicken road game.",
+  "keyword": "url-batch",
+  "folder": "Chicken road game-Sakura Institute",
+  "path": "url-batch/Chicken road game-Sakura Institute",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.chicken.road.cerman.fixs.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken road game-Sakura Institute",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
