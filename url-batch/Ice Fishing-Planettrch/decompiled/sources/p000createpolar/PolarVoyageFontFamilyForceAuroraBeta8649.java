@@ -1,0 +1,11 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public abstract class PolarVoyageFontFamilyForceAuroraBeta8649 {
+    public static final PolarVoyageCanvasTitaniumThunder3928 PolarVoyageZipVortexCelestial6185 = PolarVoyageConfigurationTurboQuantum6457.PolarVoyageMotionLayoutTransitionHeroVision4068;
+    public static final PolarVoyageCanvasTitaniumThunder3928 PolarVoyageMotionLayoutTransitionHeroVision4068 = PolarVoyageConfigurationTurboQuantum6457.PolarVoyageBitmapVisionAuroraPixel4705;
+    public static final PolarVoyageCanvasTitaniumThunder3928 PolarVoyageKotlinBetaPulseBeta3653 = PolarVoyageConfigurationTurboQuantum6457.PolarVoyageBarcodeScannerInfernoSolarSpark7767;
+    public static final PolarVoyageCanvasTitaniumThunder3928 PolarVoyageBarcodeScannerInfernoSolarSpark7767 = PolarVoyageConfigurationTurboQuantum6457.PolarVoyageKotlinBetaPulseBeta3653;
+    public static final PolarVoyageCanvasTitaniumThunder3928 PolarVoyageBitmapVisionAuroraPixel4705 = PolarVoyageConfigurationTurboQuantum6457.PolarVoyageZipVortexCelestial6185;
+}

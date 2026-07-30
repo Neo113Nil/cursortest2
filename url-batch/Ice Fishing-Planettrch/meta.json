@@ -1,0 +1,61 @@
+{
+  "app_id": "com.polarvoyage.glacialoceans.icepathfinder.quest",
+  "title": "Ice Fishing",
+  "developer": "Planettrch",
+  "developer_id": "Planettrch",
+  "icon": "https://play-lh.googleusercontent.com/PXdoEwd7BpjEmqqAWICyEhhkDjP5whwgj52XQEVBTX_rdPj2zihSr0o65yVyEaaab3ou5HM2YfcgsWkFGKY1",
+  "url": "https://play.google.com/store/apps/details?id=com.polarvoyage.glacialoceans.icepathfinder.quest&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 29, 2026",
+  "version": "Varies with device",
+  "summary": "Master the ice, catch rare fish, and survive the frozen challenge!",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Planettrch",
+  "path": "url-batch/Ice Fishing-Planettrch",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk",
+    "com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Planettrch",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.polarvoyage.glacialoceans.icepathfinder.quest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.polarvoyage.glacialoceans.icepathfinder.quest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.polarvoyage.glacialoceans.icepathfinder.quest ─╮\n│ Ice Fishing                                         │\n│ 4.0  (vc 4)                                         │\n╰─────────────────────────────────────────────────────╯\n\nDownloading 7 files  (12.3 MB)\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4.apk                  100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk 100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk    100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk            100%  …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk            │  6.6 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_… │  1.2 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi… │ 16.3 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk      │  6.6 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.polarvoyage.glacialoceans.icepathfinder.quest ─╮\n│ Ice Fishing                                         │\n│ 4.0  (vc 4)                                         │\n╰─────────────────────────────────────────────────────╯\n\nDownloading 7 files  (12.3 MB)\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4.apk                  100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_v8a.apk 100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk        100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi.apk    100%  …\ncom.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk            100%  …\n\n                                Downloaded files                                \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                               ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4.apk            │  6.6 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.arm64_… │  1.2 MB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.en.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.lt.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.ru.apk  │ 20.2 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-config.xxhdpi… │ 16.3 KB │\n│ com.polarvoyage.glacialoceans.icepathfinder.quest-4-asset.apk      │  6.6 MB │\n└────────────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,13 @@
+package p000createpolar;
+
+/* compiled from: r8-map-id-8b11a357a473f42949ec352239e0d5cff1c9f920f781009416889c17ee09d569 */
+/* loaded from: classes.dex */
+public interface PolarVoyageEventAlphaPulse6297 {
+    int PolarVoyageBarcodeScannerInfernoSolarSpark7767(PolarVoyageAnalyticsStormStormSpectra5259 polarVoyageAnalyticsStormStormSpectra5259, PolarVoyageOnLongClickListenerRogueDeltaNova6437 polarVoyageOnLongClickListenerRogueDeltaNova6437);
+
+    int PolarVoyageKotlinBetaPulseBeta3653(PolarVoyageAnalyticsStormStormSpectra5259 polarVoyageAnalyticsStormStormSpectra5259);
+
+    int PolarVoyageMotionLayoutTransitionHeroVision4068(PolarVoyageAnalyticsStormStormSpectra5259 polarVoyageAnalyticsStormStormSpectra5259);
+
+    int PolarVoyageZipVortexCelestial6185(PolarVoyageAnalyticsStormStormSpectra5259 polarVoyageAnalyticsStormStormSpectra5259, PolarVoyageOnLongClickListenerRogueDeltaNova6437 polarVoyageOnLongClickListenerRogueDeltaNova6437);
+}
