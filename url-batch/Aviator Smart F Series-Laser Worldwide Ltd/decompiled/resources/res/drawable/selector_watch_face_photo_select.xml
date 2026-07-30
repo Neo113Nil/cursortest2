@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:state_checked="true"
-        android:drawable="@drawable/shape_stroke_1dp_ffffff_solid_17e6d3"/>
-    <item android:drawable="@drawable/shape_stroke_1dp_ffffff"/>
-</selector>
