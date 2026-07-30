@@ -1,0 +1,61 @@
+{
+  "app_id": "com.ice.fishing.grenza",
+  "title": "Ice Fishing",
+  "developer": "Barg Groupe",
+  "developer_id": "Barg+Groupe",
+  "icon": "https://play-lh.googleusercontent.com/YowPteZMx1D-7va4pj-Wy0YkjNG8jBZgksOKY7-kQlAz7V0YvydqPFOMpVQrTaUaULbdGgRkHq9WR_pPmCcf",
+  "url": "https://play.google.com/store/apps/details?id=com.ice.fishing.grenza&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 17, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing catalog: dish details, rating filters, facts, and tic-tac-toe.",
+  "keyword": "url-batch",
+  "folder": "Ice Fishing-Barg Groupe",
+  "path": "url-batch/Ice Fishing-Barg Groupe",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ice.fishing.grenza-2-asset.apk",
+    "com.ice.fishing.grenza-2-config.arm64_v8a.apk",
+    "com.ice.fishing.grenza-2-config.en.apk",
+    "com.ice.fishing.grenza-2-config.lt.apk",
+    "com.ice.fishing.grenza-2-config.ru.apk",
+    "com.ice.fishing.grenza-2-config.xxhdpi.apk",
+    "com.ice.fishing.grenza-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Ice Fishing-Barg Groupe",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ice.fishing.grenza...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ice.fishing.grenza...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ice.fishing.grenza ─╮\n│ Ice Fishing              │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.8 MB)\n  com.ice.fishing.grenza-2.apk                  ━━━━━━ 100% 3.7/3… 27.4   0:00:…\n                                                            MB     MB/s         \n  com.ice.fishing.grenza-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-asset.apk            ━━━━━━ 100% 2.3/2… 9.2    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ice.fishing.grenza-2.apk                  │  3.6 MB │\n│ com.ice.fishing.grenza-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.ice.fishing.grenza-2-config.en.apk        │ 24.2 KB │\n│ com.ice.fishing.grenza-2-config.lt.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.ru.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.ice.fishing.grenza-2-asset.apk            │  3.6 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.ice.fishing.grenza ─╮\n│ Ice Fishing              │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.8 MB)\n  com.ice.fishing.grenza-2.apk                  ━━━━━━ 100% 3.7/3… 27.4   0:00:…\n                                                            MB     MB/s         \n  com.ice.fishing.grenza-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-asset.apk            ━━━━━━ 100% 2.3/2… 9.2    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ice.fishing.grenza-2.apk                  │  3.6 MB │\n│ com.ice.fishing.grenza-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.ice.fishing.grenza-2-config.en.apk        │ 24.2 KB │\n│ com.ice.fishing.grenza-2-config.lt.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.ru.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.ice.fishing.grenza-2-asset.apk            │  3.6 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}

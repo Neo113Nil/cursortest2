@@ -42,15 +42,15 @@
       },
       {
         "param": "Android Gradle Plugin",
-        "value": "8.13.2"
+        "value": "8.5.2"
       },
       {
         "param": "minSdk",
-        "value": "25"
+        "value": "26"
       },
       {
         "param": "targetSdk",
-        "value": "36"
+        "value": "35"
       },
       {
         "param": "Kotlin",
@@ -70,23 +70,23 @@
       },
       {
         "param": "Аналитика",
-        "value": "Firebase Database, Firebase HeartBeat, Google Install Referrer, AdvertisingId"
+        "value": "AppsFlyer, Firebase Database, Firebase HeartBeat, Google Install Referrer, AdvertisingId"
       },
       {
         "param": "Permissions",
-        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE (maxSdk=28), android.permission.CAMERA, com.chicken.road.whale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE (maxSdk=28), android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
       },
       {
         "param": "Libraries",
-        "value": "androidx.compose (UI/Material3), androidx.activity, androidx.lifecycle, androidx.navigation, androidx.room, androidx.datastore, androidx.core, androidx.splashscreen, androidx.startup, androidx.emoji2, androidx.profileinstaller, Kotlin stdlib 2.0.21, kotlinx.coroutines, kotlinx.serialization, OkHttp 4.12.0, Firebase Database (RTDB), Firebase Common, play-services-ads-identifier, play-services-base/basement/tasks, Google Install Referrer, pairip licensecheck, native libplatecore"
+        "value": "androidx.compose (UI/Material3 1.7.2/1.3.0), androidx.activity 1.9.2, androidx.lifecycle 2.8.7, androidx.navigation 2.8.0, androidx.room 2.6.1, androidx.datastore 1.1.1, androidx.core 1.13.1, androidx.splashscreen, androidx.startup, androidx.emoji2, androidx.profileinstaller, Kotlin stdlib 2.0.21, kotlinx.coroutines 1.9.0, kotlinx.serialization, OkHttp 4.12.0, AppsFlyer, Firebase Database (RTDB), Firebase Common, play-services-ads-identifier, play-services-base/basement/tasks, Google Install Referrer, pairip licensecheck, native libroostio"
       },
       {
         "param": "Подозрительные домены",
-        "value": "config.ru, dispatchers.io"
+        "value": "нет"
       },
       {
         "param": "SharedPreferences",
-        "value": "DataStore plateStore: last_page (URL оффера), reply_time, agreed_flag; SharedPreferences FirebaseHeartBeat (служебные счётчики)"
+        "value": "DataStore app_state: privacy_policy_url (кэш URL оффера), response_time, consent_accepted; SharedPreferences FirebaseHeartBeat (служебные счётчики)"
       },
       {
         "param": "Есть ли клоака",
@@ -94,14 +94,34 @@
       },
       {
         "param": "Подозрительные слова",
-        "value": "serverCheckUrl, redirectUrl, myGame, appConfig, custom_user_id, install_referrer, last_page, reply_time, agreed_flag, Privacy-Policy, gateUrl, consent, gaid, plate, plateStore, platecore, PlateConfig, PlateReply, PlateVault, extra_url, extra_consent, uniwebview, windowclose, AndroidDownloader, User-Agent"
+        "value": "appConfig, myGame, serverCheckUrl, title, Privacy-Policy, custom_user_id, uuid, install_referrer, apps_id, privacy_policy_url, response_time, consent_accepted, extra_url, extra_consent, uniwebview, windowclose, AndroidDownloader, User-Agent, redirect, consent, gate, offer Собираемые данные • custom_user_id (gaid / Advertising ID) • uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате) • install_referrer • apps_id (AppsFlyer UID) • User-Agent (WebView UA без маркеров «; wv)» / «Version/4.0 ») • myGame (флаг active из Firebase RTDB) • serverCheckUrl (gate URL из Firebase RTDB) • title (AppsFlyer dev key из Firebase RTDB) • packageName (для расчёта uuid) • android_id (Settings.Secure)"
       }
     ],
     "domains": [
       {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "bfore.ai",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Key-Systems GmbH"
+      },
+      {
+        "domain": "cakhiatv1.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
         "domain": "config.ru",
         "redirects_to": "нет",
         "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "desenmascara.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
       },
       {
         "domain": "dispatchers.io",
@@ -113,15 +133,16 @@
       "custom_user_id (gaid / Advertising ID)",
       "uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате)",
       "install_referrer",
-      "User-Agent (дефолтный WebView UA без маркеров «; wv)» / «Version/4.0 »)",
-      "myGame (флаг enabled из Firebase RTDB)",
-      "serverCheckUrl (gateUrl из Firebase RTDB)",
-      "redirectUrl (hint из Firebase RTDB)",
+      "apps_id (AppsFlyer UID)",
+      "User-Agent (WebView UA без маркеров «; wv)» / «Version/4.0 »)",
+      "myGame (флаг active из Firebase RTDB)",
+      "serverCheckUrl (gate URL из Firebase RTDB)",
+      "title (AppsFlyer dev key из Firebase RTDB)",
       "packageName (для расчёта uuid)",
       "android_id (Settings.Secure)"
     ],
     "cloaking": "да",
-    "cloaking_brief": "Собираемые данные:\n• custom_user_id (gaid / Advertising ID)\n• uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате)\n• install_referrer\n• User-Agent (дефолтный WebView UA без маркеров «; wv)» / «Version/4.0 »)\n• myGame (флаг enabled из Firebase RTDB)\n• serverCheckUrl (gateUrl из Firebase RTDB)\n• redirectUrl (hint из Firebase RTDB)\n• packageName (для расчёта uuid)\n• android_id (Settings.Secure)\n\nКак собираются: При старте RootActivity создаётся f4.g (plate-роутер). Состояние Pending → затем параллельно: • Firebase RTDB: путь appConfig (строка из native libplatecore at(0)). Читаются дети myGame (boolean enabled), serverCheckUrl (gateUrl),…\n\nКуда отправляются: GET на URL из serverCheckUrl (gateUrl из Firebase). К базовому URL (с «/» в конце) добавляются query-параметры с именами из platecore: custom_user_id, uuid, install_referrer. Заголовки: Accept: application/json; User-Agent — «браузерный» WebView UA без wv-маркеров.…\n\nОбработка данных в приложении: Если ответ дал непустой url — пишут в DataStore plateStore ключи last_page=url и reply_time=time. Флаг consent для UI: url содержит подстроку Privacy-Policy. Если agreed_flag уже true — берут кэшированный last_page без нового probe.…\n\nКак показывается кло / оффер: При состоянии Page(url, consent) стартует PlatePageActivity через Intent extra_url / extra_consent; RootActivity закрывается. URL грузится во внутренний Web…"
+    "cloaking_brief": "Собираемые данные:\n• custom_user_id (gaid / Advertising ID)\n• uuid (deviceUuid = SHA-256(android_id + packageName) в UUID-формате)\n• install_referrer\n• apps_id (AppsFlyer UID)\n• User-Agent (WebView UA без маркеров «; wv)» / «Version/4.0 »)\n• myGame (флаг active из Firebase RTDB)\n• serverCheckUrl (gate URL из Firebase RTDB)\n• title (AppsFlyer dev key из Firebase RTDB)\n• packageName (для расчёта uuid)\n• android_id (Settings.Secure)\n\nКак собираются: При старте MainActivity создаётся RoostGate. Сначала RoostFeed грузит Firebase RTDB по пути appConfig (строка из native libroostio.at(0)): дети myGame (boolean active), serverCheckUrl (checkUrl), title (AppsFlyer key).…\n\nКуда отправляются: Конфиг: чтение Firebase RTDB https://chicken-3453-default-rtdb.europe-west1.firebasedatabase.app (путь appConfig). Probe: GET на URL из serverCheckUrl (с «/» на конце). Query: custom_user_id, uuid, install_referrer, и при наличии — apps_id. Заголовки: Accept: application/json;…\n\nОбработка данных в приложении: Ответ JSON RoostReply {url, time}. Если url непустой — пишут в DataStore app_state: privacy_policy_url=url, response_time=time. Флаг consent для UI: url содержит подстроку Privacy-Policy. Если consent_accepted уже true — сразу Home (белая игра), без нового probe.…\n\nКак показывается кло / оффер: При Page(url, consent) стартует RoostPageActivity (Intent extra_url / extra_consent); MainActivity зак…"
   },
   "cloaking": "да"
 }

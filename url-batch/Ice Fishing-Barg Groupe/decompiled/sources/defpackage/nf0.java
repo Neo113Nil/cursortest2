@@ -1,0 +1,19 @@
+package defpackage;
+
+/* compiled from: r8-map-id-99198b194f64cf930afe678846937ee242c378eb2e5d7167669b3ca844d0162b */
+/* loaded from: classes.dex */
+public final class nf0 {
+    public int PxuCJdSBwIXG;
+
+    public nf0(int i) {
+        this.PxuCJdSBwIXG = i;
+    }
+
+    public final boolean PxuCJdSBwIXG() {
+        return this.PxuCJdSBwIXG != Integer.MIN_VALUE;
+    }
+
+    public final String toString() {
+        return super.toString() + "{ location = " + this.PxuCJdSBwIXG + " }";
+    }
+}
