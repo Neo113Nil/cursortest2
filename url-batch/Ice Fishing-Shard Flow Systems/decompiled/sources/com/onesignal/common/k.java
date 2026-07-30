@@ -1,0 +1,24 @@
+package com.onesignal.common;
+
+import java.io.File;
+
+/* loaded from: classes.dex */
+public final class k {
+    public static final k INSTANCE = new k();
+
+    private k() {
+    }
+
+    public final boolean isRooted() {
+        String[] strArr = {"/sbin/", "/system/bin/", "/system/xbin/", "/data/local/xbin/", "/data/local/bin/", "/system/sd/xbin/", "/system/bin/failsafe/", "/data/local/"};
+        for (int i2 = 0; i2 < 8; i2++) {
+            try {
+                if (new File(strArr[i2] + "su").exists()) {
+                    return true;
+                }
+            } catch (Throwable unused) {
+            }
+        }
+        return false;
+    }
+}

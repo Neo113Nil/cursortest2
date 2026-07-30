@@ -1,0 +1,58 @@
+package P0;
+
+import androidx.work.impl.WorkDatabase;
+import com.appsflyer.attribution.RequestError;
+import h0.AbstractC0467m;
+
+/* loaded from: classes.dex */
+public final class h extends AbstractC0467m {
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ int f2199d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public /* synthetic */ h(WorkDatabase workDatabase, int i2) {
+        super(workDatabase);
+        this.f2199d = i2;
+    }
+
+    @Override // h0.AbstractC0467m
+    public final String c() {
+        switch (this.f2199d) {
+            case 0:
+                return "DELETE FROM SystemIdInfo where work_spec_id=? AND generation=?";
+            case 1:
+                return "DELETE FROM SystemIdInfo where work_spec_id=?";
+            case 2:
+                return "DELETE from WorkProgress where work_spec_id=?";
+            case 3:
+                return "DELETE FROM WorkProgress";
+            case 4:
+                return "UPDATE workspec SET schedule_requested_at=? WHERE id=?";
+            case 5:
+                return "UPDATE workspec SET schedule_requested_at=-1 WHERE state NOT IN (2, 3, 5)";
+            case 6:
+                return "DELETE FROM workspec WHERE state IN (2, 3, 5) AND (SELECT COUNT(*)=0 FROM dependency WHERE     prerequisite_id=id AND     work_spec_id NOT IN         (SELECT id FROM workspec WHERE state IN (2, 3, 5)))";
+            case S.j.DOUBLE_FIELD_NUMBER /* 7 */:
+                return "UPDATE workspec SET generation=generation+1 WHERE id=?";
+            case S.j.BYTES_FIELD_NUMBER /* 8 */:
+                return "UPDATE OR ABORT `WorkSpec` SET `id` = ?,`state` = ?,`worker_class_name` = ?,`input_merger_class_name` = ?,`input` = ?,`output` = ?,`initial_delay` = ?,`interval_duration` = ?,`flex_duration` = ?,`run_attempt_count` = ?,`backoff_policy` = ?,`backoff_delay_duration` = ?,`last_enqueue_time` = ?,`minimum_retention_duration` = ?,`schedule_requested_at` = ?,`run_in_foreground` = ?,`out_of_quota_policy` = ?,`period_count` = ?,`generation` = ?,`required_network_type` = ?,`requires_charging` = ?,`requires_device_idle` = ?,`requires_battery_not_low` = ?,`requires_storage_not_low` = ?,`trigger_content_update_delay` = ?,`trigger_max_content_delay` = ?,`content_uri_triggers` = ? WHERE `id` = ?";
+            case 9:
+                return "DELETE FROM workspec WHERE id=?";
+            case 10:
+                return "UPDATE workspec SET state=? WHERE id=?";
+            case RequestError.STOP_TRACKING /* 11 */:
+                return "UPDATE workspec SET period_count=period_count+1 WHERE id=?";
+            case 12:
+                return "UPDATE workspec SET output=? WHERE id=?";
+            case 13:
+                return "UPDATE workspec SET last_enqueue_time=? WHERE id=?";
+            case 14:
+                return "UPDATE workspec SET run_attempt_count=run_attempt_count+1 WHERE id=?";
+            case 15:
+                return "UPDATE workspec SET run_attempt_count=0 WHERE id=?";
+            default:
+                return "DELETE FROM worktag WHERE work_spec_id=?";
+        }
+    }
+}

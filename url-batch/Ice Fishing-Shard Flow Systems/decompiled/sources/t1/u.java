@@ -1,0 +1,82 @@
+package t1;
+
+import android.os.Handler;
+import android.os.Looper;
+import android.text.TextUtils;
+
+/* loaded from: classes.dex */
+public abstract class u {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final Object f8001a = new Object();
+
+    /* renamed from: b, reason: collision with root package name */
+    public static boolean f8002b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public static int f8003c;
+
+    public static void a(String str, boolean z7) {
+        if (!z7) {
+            throw new IllegalArgumentException(String.valueOf(str));
+        }
+    }
+
+    public static void b(Handler handler) {
+        Looper myLooper = Looper.myLooper();
+        if (myLooper != handler.getLooper()) {
+            String name = myLooper != null ? myLooper.getThread().getName() : "null current looper";
+            String name2 = handler.getLooper().getThread().getName();
+            StringBuilder sb = new StringBuilder(String.valueOf(name).length() + String.valueOf(name2).length() + 35 + 1);
+            sb.append("Must be called on ");
+            sb.append(name2);
+            sb.append(" thread, but got ");
+            sb.append(name);
+            sb.append(".");
+            throw new IllegalStateException(sb.toString());
+        }
+    }
+
+    public static void c(String str) {
+        if (TextUtils.isEmpty(str)) {
+            throw new IllegalArgumentException("Given String is empty or null");
+        }
+    }
+
+    public static void d(String str, String str2) {
+        if (TextUtils.isEmpty(str)) {
+            throw new IllegalArgumentException(str2);
+        }
+    }
+
+    public static void e(String str) {
+        if (Looper.getMainLooper() == Looper.myLooper()) {
+            throw new IllegalStateException(str);
+        }
+    }
+
+    public static void f(Object obj) {
+        if (obj == null) {
+            throw new NullPointerException("null reference");
+        }
+    }
+
+    public static void g(Object obj, String str) {
+        if (obj == null) {
+            throw new NullPointerException(str);
+        }
+    }
+
+    public static void h(String str, boolean z7) {
+        if (!z7) {
+            throw new IllegalStateException(String.valueOf(str));
+        }
+    }
+
+    public static boolean i(Object obj, Object obj2) {
+        if (obj != obj2) {
+            return obj != null && obj.equals(obj2);
+        }
+        return true;
+    }
+}

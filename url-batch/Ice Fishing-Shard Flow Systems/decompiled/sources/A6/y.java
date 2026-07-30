@@ -1,0 +1,157 @@
+package A6;
+
+import f6.InterfaceC0406a;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.BiFunction;
+import java.util.function.Function;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+
+/* loaded from: classes.dex */
+public final class y extends l implements Map<String, l>, InterfaceC0406a {
+    public static final x Companion = new x();
+
+    /* renamed from: d, reason: collision with root package name */
+    public final Map f141d;
+
+    public y(Map content) {
+        Intrinsics.checkNotNullParameter(content, "content");
+        this.f141d = content;
+    }
+
+    @Override // java.util.Map
+    public final void clear() {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l compute(String str, BiFunction<? super String, ? super l, ? extends l> biFunction) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l computeIfAbsent(String str, Function<? super String, ? extends l> function) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l computeIfPresent(String str, BiFunction<? super String, ? super l, ? extends l> biFunction) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final boolean containsKey(Object obj) {
+        if (!(obj instanceof String)) {
+            return false;
+        }
+        String key = (String) obj;
+        Intrinsics.checkNotNullParameter(key, "key");
+        return this.f141d.containsKey(key);
+    }
+
+    @Override // java.util.Map
+    public final boolean containsValue(Object obj) {
+        if (!(obj instanceof l)) {
+            return false;
+        }
+        l value = (l) obj;
+        Intrinsics.checkNotNullParameter(value, "value");
+        return this.f141d.containsValue(value);
+    }
+
+    @Override // java.util.Map
+    public final Set<Map.Entry<String, l>> entrySet() {
+        return this.f141d.entrySet();
+    }
+
+    @Override // java.util.Map
+    public final boolean equals(Object obj) {
+        return Intrinsics.a(this.f141d, obj);
+    }
+
+    @Override // java.util.Map
+    public final l get(Object obj) {
+        if (!(obj instanceof String)) {
+            return null;
+        }
+        String key = (String) obj;
+        Intrinsics.checkNotNullParameter(key, "key");
+        return (l) this.f141d.get(key);
+    }
+
+    @Override // java.util.Map
+    public final int hashCode() {
+        return this.f141d.hashCode();
+    }
+
+    @Override // java.util.Map
+    public final boolean isEmpty() {
+        return this.f141d.isEmpty();
+    }
+
+    @Override // java.util.Map
+    public final Set<String> keySet() {
+        return this.f141d.keySet();
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l merge(String str, l lVar, BiFunction<? super l, ? super l, ? extends l> biFunction) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l put(String str, l lVar) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final void putAll(Map<? extends String, ? extends l> map) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l putIfAbsent(String str, l lVar) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final l remove(Object obj) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ l replace(String str, l lVar) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final void replaceAll(BiFunction<? super String, ? super l, ? extends l> biFunction) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final int size() {
+        return this.f141d.size();
+    }
+
+    public final String toString() {
+        return CollectionsKt.s(this.f141d.entrySet(), ",", "{", "}", o.f129i, 24);
+    }
+
+    @Override // java.util.Map
+    public final Collection<l> values() {
+        return this.f141d.values();
+    }
+
+    @Override // java.util.Map
+    public final boolean remove(Object obj, Object obj2) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+
+    @Override // java.util.Map
+    public final /* bridge */ /* synthetic */ boolean replace(String str, l lVar, l lVar2) {
+        throw new UnsupportedOperationException("Operation is not supported for read-only collection");
+    }
+}
