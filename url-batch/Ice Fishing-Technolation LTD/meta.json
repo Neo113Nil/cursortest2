@@ -57,5 +57,92 @@
   ],
   "stdout": "╭─ com.icefish.app ─╮\n│ Ice Fishing       │\n│ 1.1  (vc 2)       │\n╰───────────────────╯\n\nDownloading 7 files  (156.4 MB)\n  com.icefish.app-2.apk                  ━━━━━━━━ 100% 80.7/80… 18.8     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.arm64_v8a.apk ━━━━━━━━ 100% 13.9/13… 12.6     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.en.apk        ━━━━━━━━ 100% 45.5/45… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.lt.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.ru.apk        ━━━━━━━━ 100% 33.2/33… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.6/66… 2.6 MB/s 0:00:00\n                                                       kB                       \n  com.icefish.app-2-asset.apk            ━━━━━━━━ 100% 69.4/69… 39.5     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icefish.app-2.apk                  │ 76.9 MB │\n│ com.icefish.app-2-config.arm64_v8a.apk │ 13.2 MB │\n│ com.icefish.app-2-config.en.apk        │ 44.4 KB │\n│ com.icefish.app-2-config.lt.apk        │ 28.4 KB │\n│ com.icefish.app-2-config.ru.apk        │ 32.4 KB │\n│ com.icefish.app-2-config.xxhdpi.apk    │ 65.0 KB │\n│ com.icefish.app-2-asset.apk            │ 76.9 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Amplitude"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.icefish.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native 0.79.2 (Hermes, New Architecture), Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines, AndroidX (appcompat, activity, core, lifecycle, startup, emoji2, profileinstaller, webkit, recyclerview, coordinatorlayout, swiperefreshlayout, viewpager/viewpager2), Material Components, OkHttp3 / Okio, AppsFlyer (RNAppsFlyer / PCAppsFlyer), Amplitude React Native, react-native-webview (RNCWebView), AsyncStorage (RNCAsyncStorage), react-native-gesture-handler, react-native-screens, react-native-safe-area-context, react-native-linear-gradient (BV), react-native-masked-view, Facebook Soloader / Fresco / Yoga (RN stack), Google Play Services (basement/tasks), Play Install Referrer, Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "com.icefish.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AsyncStorage (SQLite RKStorage): @cachedBlackUrl (кэш ссылки оффера), @showWebView (показывать встроенный браузер или белую игру), @is_first_open (флаг первого запуска); AppsFlyer SharedPreferences (appsflyer-data / атрибуция)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "MASTER_ANDROID, fetchBlackUrl, @cachedBlackUrl, @showWebView, app404_android, makeDecision, buildLink, manager-config-up, manager-config-rd, OriginWhitelist, whitelist, @is_first_open, af_attribution, gclid, appsflyer_id, WebView"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "com.icefish.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [
+      "язык телефона → на каком языке настроен телефон",
+      "рекламный номер устройства → служебный номер для рекламы на этом телефоне",
+      "имя пакета → техническое имя этого приложения",
+      "номер установки из сервиса учёта установок → внутренний код этой копии приложения",
+      "метки рекламной кампании → откуда пришёл пользователь (кампания, источник, рекламный клик)",
+      "служебный ключ приложения → внутренний код, по которому сервер узнаёт это приложение"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• язык телефона → на каком языке настроен телефон\n• рекламный номер устройства → служебный номер для рекламы на этом телефоне\n• имя пакета → техническое имя этого приложения\n• номер установки из сервиса учёта установок → внутренний код этой копии приложения\n• метки рекламной кампании → откуда пришёл пользователь (кампания, источник, рекламный клик)\n• служебный ключ приложения → внутренний код, по которому сервер узнаёт это приложение\n\nКак собираются: При запуске приложение само считывает эти сведения с телефона и из сервиса учёта установок, затем готовит их для запроса. Одновременно при старте оно спрашивает удалённый список адресов для своего служебного ключа.\n\nКуда отправляются: Приложение тихо запрашивает список адресов с сайта pincode69.github.io (если не ответит — запасной адрес apps-cmyk.github.io). Сведения об установке и рекламные метки также уходят в сервисы учёта установок и аналитики и дописываются в открываемую ссылку.\n\nЧто возвращается: Сервер присылает либо ссылку на внешнюю страницу, либо пустой ответ. Непустая ссылка — «боевой» путь; пустой ответ — белый путь. Дополнительно страница по ссылке проверяется: если сайт отвечает «не найдено» или не открывается — приложение остаётся на белой версии.\n\nКак показывается оффер или белая версия: Если пришла рабочая ссылка — её открывают во встроенном окне браузера внутри приложения (страница оффера). Если ссылки нет или страница не открывается — остаётся обычное приложение."
+  }
 }

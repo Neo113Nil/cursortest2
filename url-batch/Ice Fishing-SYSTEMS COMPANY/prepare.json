@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.icefishing.icefishingliveapp.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.icefishing.icefishingliveapp.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9183 (0%)\nINFO  - progress: 1369 of 9183 (14%)\nINFO  - progress: 1397 of 9183 (15%)\nINFO  - progress: 1437 of 9183 (15%)\nINFO  - progress: 1671 of 9183 (18%)\nINFO  - progress: 2119 of 9183 (23%)\nINFO  - progress: 2693 of 9183 (29%)\nINFO  - progress: 3029 of 9183 (32%)\nINFO  - progress: 3292 of 9183 (35%)\nINFO  - progress: 3550 of 9183 (38%)\nINFO  - progress: 3802 of 9183 (41%)\nINFO  - progress: 4287 of 9183 (46%)\nINFO  - progress: 4623 of 9183 (50%)\nINFO  - progress: 4839 of 9183 (52%)\nINFO  - progress: 5041 of 9183 (54%)\nINFO  - progress: 5235 of 9183 (57%)\nINFO  - progress: 5519 of 9183 (60%)\nINFO  - progress: 5777 of 9183 (62%)\nINFO  - progress: 6141 of 9183 (66%)\nINFO  - progress: 6383 of 9183 (69%)\nINFO  - progress: 6744 of 9183 (73%)\nINFO  - progress: 6900 of 9183 (75%)\nINFO  - progress: 7088 of 9183 (77%)\nINFO  - progress: 7118 of 9183 (77%)\nINFO  - progress: 7142 of 9183 (77%)\nINFO  - progress: 7164 of 9183 (78%)\nINFO  - progress: 7187 of 9183 (78%)\nINFO  - progress: 7238 of 9183 (78%)\nINFO  - progress: 7258 of 9183 (79%)\nINFO  - progress: 7277 of 9183 (79%)\nINFO  - progress: 7287 of 9183 (79%)\nINFO  - progress: 7324 of 9183 (79%)\nINFO  - progress: 7346 of 9183 (79%)\nINFO  - progress: 7390 of 9183 (80%)\nINFO  - progress: 7424 of 9183 (80%)\nINFO  - progress: 7698 of 9183 (83%)\nINFO  - progress: 8039 of 9183 (87%)\nINFO  - progress: 8333 of 9183 (90%)\nINFO  - progress: 8587 of 9183 (93%)\nINFO  - progress: 8907 of 9183 (96%)\nINFO  - progress: 9153 of 9183 (99%)\n                                                             \nERROR - finished with errors, count: 23\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Ice Fishing-SYSTEMS COMPANY/decompiled",
+    "skipped": false,
+    "base_apk": "com.icefishing.icefishingliveapp.apk"
+  },
+  "analysis_files": [
+    "com.icefishing.icefishingliveapp.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.icefishing.icefishingliveapp.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A3/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/A5/",
+    "decompiled/sources/A6/",
+    "decompiled/sources/A7/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/B3/",
+    "decompiled/sources/B4/",
+    "decompiled/sources/B5/",
+    "decompiled/sources/B6/",
+    "decompiled/sources/B7/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C1/"
+  ]
+}

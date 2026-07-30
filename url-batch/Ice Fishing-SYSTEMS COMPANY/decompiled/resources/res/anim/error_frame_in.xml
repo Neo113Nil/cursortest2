@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:sweet="http://schemas.android.com/apk/res-auto"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:shareInterpolator="true">
+    <alpha
+        android:duration="400"
+        android:fromAlpha="0"
+        android:toAlpha="1"/>
+    <id.ionbit.ionalert.Rotate3dAnimation
+        android:duration="400"
+        sweet:ion_fromDeg="100"
+        sweet:ion_pivotX="50%"
+        sweet:ion_pivotY="50%"
+        sweet:ion_rollType="ion_x"
+        sweet:ion_toDeg="0"/>
+</set>

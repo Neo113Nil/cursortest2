@@ -1,0 +1,29 @@
+package K7;
+
+import java.util.List;
+import java.util.Map;
+
+/* loaded from: classes2.dex */
+public interface b extends a {
+    Object call(Object... objArr);
+
+    Object callBy(Map map);
+
+    String getName();
+
+    List getParameters();
+
+    m getReturnType();
+
+    List getTypeParameters();
+
+    n getVisibility();
+
+    boolean isAbstract();
+
+    boolean isFinal();
+
+    boolean isOpen();
+
+    boolean isSuspend();
+}

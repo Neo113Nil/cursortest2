@@ -1,0 +1,72 @@
+package androidx.emoji2.text;
+
+import android.os.Build;
+import android.text.Editable;
+import android.text.SpanWatcher;
+import android.text.Spannable;
+import android.text.TextWatcher;
+import java.util.concurrent.atomic.AtomicInteger;
+
+/* loaded from: classes.dex */
+public final class s implements TextWatcher, SpanWatcher {
+
+    /* renamed from: n, reason: collision with root package name */
+    public final Object f4911n;
+
+    /* renamed from: u, reason: collision with root package name */
+    public final AtomicInteger f4912u = new AtomicInteger(0);
+
+    public s(Object obj) {
+        this.f4911n = obj;
+    }
+
+    @Override // android.text.TextWatcher
+    public final void afterTextChanged(Editable editable) {
+        ((TextWatcher) this.f4911n).afterTextChanged(editable);
+    }
+
+    @Override // android.text.TextWatcher
+    public final void beforeTextChanged(CharSequence charSequence, int i, int i4, int i9) {
+        ((TextWatcher) this.f4911n).beforeTextChanged(charSequence, i, i4, i9);
+    }
+
+    @Override // android.text.SpanWatcher
+    public final void onSpanAdded(Spannable spannable, Object obj, int i, int i4) {
+        if (this.f4912u.get() <= 0 || !(obj instanceof v)) {
+            ((SpanWatcher) this.f4911n).onSpanAdded(spannable, obj, i, i4);
+        }
+    }
+
+    @Override // android.text.SpanWatcher
+    public final void onSpanChanged(Spannable spannable, Object obj, int i, int i4, int i9, int i10) {
+        int i11;
+        int i12;
+        if (this.f4912u.get() <= 0 || !(obj instanceof v)) {
+            if (Build.VERSION.SDK_INT < 28) {
+                if (i > i4) {
+                    i = 0;
+                }
+                if (i9 > i10) {
+                    i11 = i;
+                    i12 = 0;
+                    ((SpanWatcher) this.f4911n).onSpanChanged(spannable, obj, i11, i4, i12, i10);
+                }
+            }
+            i11 = i;
+            i12 = i9;
+            ((SpanWatcher) this.f4911n).onSpanChanged(spannable, obj, i11, i4, i12, i10);
+        }
+    }
+
+    @Override // android.text.SpanWatcher
+    public final void onSpanRemoved(Spannable spannable, Object obj, int i, int i4) {
+        if (this.f4912u.get() <= 0 || !(obj instanceof v)) {
+            ((SpanWatcher) this.f4911n).onSpanRemoved(spannable, obj, i, i4);
+        }
+    }
+
+    @Override // android.text.TextWatcher
+    public final void onTextChanged(CharSequence charSequence, int i, int i4, int i9) {
+        ((TextWatcher) this.f4911n).onTextChanged(charSequence, i, i4, i9);
+    }
+}

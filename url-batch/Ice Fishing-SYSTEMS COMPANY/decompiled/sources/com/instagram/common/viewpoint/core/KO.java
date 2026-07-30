@@ -1,0 +1,267 @@
+package com.instagram.common.viewpoint.core;
+
+import android.text.Spannable;
+import android.text.SpannableStringBuilder;
+import android.text.style.AbsoluteSizeSpan;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StrikethroughSpan;
+import android.text.style.StyleSpan;
+import android.text.style.TypefaceSpan;
+import android.text.style.UnderlineSpan;
+import com.anythink.core.common.s.a.c;
+import java.util.ArrayDeque;
+import java.util.Arrays;
+import java.util.Map;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public abstract class KO {
+    public static byte[] A00;
+    public static String[] A01 = {"KgPme38LEDVaM0D12Uwlfvq6nYMDVVkT", "a5g98XiYqimDBheiX8ybcf7PetcT8W7U", "dRcctykKkiCtpnpKZqpaePhb1Qg1PkeN", "6JMbAfNKE0NkFS9oLsx1Zln6Fen7GSJu", "0ohFdoD3UqF2FgjtvUgt7lzB", "HqtC3No697vYpZ7G6OCOOOlSljo", "Ih90XUpH", "6OUjWPhHhDm3iVNi78UT7lOYQX351vXz"};
+
+    /* JADX WARN: Failed to parse debug info
+    java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+     */
+    public static KM A00(KM km, Map<String, KT> map) {
+        while (km != null) {
+            KT A02 = A02(km.A04, km.A0H(), map);
+            if (A02 != null && A02.A09() == 1) {
+                return km;
+            }
+            km = km.A03;
+        }
+        return null;
+    }
+
+    public static String A03(int i, int i4, int i9) {
+        byte[] copyOfRange = Arrays.copyOfRange(A00, i, i + i4);
+        int i10 = 0;
+        while (true) {
+            int length = copyOfRange.length;
+            String[] strArr = A01;
+            if (strArr[3].charAt(23) != strArr[0].charAt(23)) {
+                throw new RuntimeException();
+            }
+            A01[6] = "lLmUOaES";
+            if (i10 >= length) {
+                return new String(copyOfRange);
+            }
+            copyOfRange[i10] = (byte) ((copyOfRange[i10] - i9) - 115);
+            i10++;
+        }
+    }
+
+    public static void A05() {
+        if (A01[2].charAt(10) == 'x') {
+            throw new RuntimeException();
+        }
+        String[] strArr = A01;
+        strArr[1] = "BbbzftLMD2m3WHwPv0bAANWrbX2mWIyE";
+        strArr[7] = "7lYjBODxVBmaGubq4OQdXtxLEf46a0ab";
+        A00 = new byte[]{-117, -75, -78, -103, -40, -30, -62, -40, -30, c.f16475b, 88, 86, 93, 93, 86, 91, 84, 13, 95, 98, 79, 102, 65, 82, 101, 97, 13, 91, 92, 81, 82, 13, 100, 86, 97, 85, 92, 98, 97, 13, 82, 101, 78, 80, 97, 89, 102, 13, 92, 91, 82, 13, 97, 82, 101, 97, 13, 80, 85, 86, 89, 81, 27, -10, 22, 15, 14, -12, 7, 16, 6, 7, 20, -9, 22, 11, 14, 73, 14, -9, 74, 102, 30, 48, -6, -5, 75, 25};
+    }
+
+    static {
+        A05();
+    }
+
+    public static KM A01(KM km, Map<String, KT> map) {
+        ArrayDeque arrayDeque = new ArrayDeque();
+        arrayDeque.push(km);
+        while (!arrayDeque.isEmpty()) {
+            KM km2 = (KM) arrayDeque.pop();
+            KT kt = km2.A04;
+            String[] A0H = km2.A0H();
+            if (A01[6].length() != 8) {
+                throw new RuntimeException();
+            }
+            A01[6] = "prCmMBcG";
+            KT A02 = A02(kt, A0H, map);
+            if (A02 != null && A02.A09() == 3) {
+                return km2;
+            }
+            for (int A0C = km2.A0C() - 1; A0C >= 0; A0C--) {
+                arrayDeque.push(km2.A0D(A0C));
+            }
+        }
+        return null;
+    }
+
+    public static KT A02(KT kt, String[] strArr, Map<String, KT> map) {
+        int i = 0;
+        if (kt == null) {
+            if (strArr == null) {
+                return null;
+            }
+            if (strArr.length == 1) {
+                return map.get(strArr[0]);
+            }
+            if (strArr.length > 1) {
+                KT kt2 = new KT();
+                int length = strArr.length;
+                while (i < length) {
+                    kt2.A0O(map.get(strArr[i]));
+                    i++;
+                }
+                return kt2;
+            }
+        } else {
+            if (strArr != null && strArr.length == 1) {
+                String str = strArr[0];
+                String[] strArr2 = A01;
+                if (strArr2[1].charAt(10) != strArr2[7].charAt(10)) {
+                    throw new RuntimeException();
+                }
+                A01[5] = "FXnyxRIFGSjHG1Q4pZ8iBycDDGv";
+                return kt.A0O(map.get(str));
+            }
+            if (strArr != null) {
+                int length2 = strArr.length;
+                if (A01[2].charAt(10) == 'x') {
+                    throw new RuntimeException();
+                }
+                A01[5] = "6UN5UNrVzg6BSs5KXnnHYvLLh5S";
+                if (length2 > 1) {
+                    int length3 = strArr.length;
+                    while (i < length3) {
+                        KT kt3 = map.get(strArr[i]);
+                        if (A01[5].length() != 27) {
+                            throw new RuntimeException();
+                        }
+                        A01[2] = "LBM9N0gh5w8sQTAl6eCIViVepwnbqV6U";
+                        kt.A0O(kt3);
+                        i++;
+                    }
+                    return kt;
+                }
+            }
+        }
+        return kt;
+    }
+
+    public static String A04(String str) {
+        String A03 = A03(1, 2, 53);
+        String A032 = A03(0, 1, 14);
+        String replaceAll = str.replaceAll(A03, A032);
+        String out = A03(4, 5, 69);
+        String replaceAll2 = replaceAll.replaceAll(out, A032);
+        String A033 = A03(3, 1, 6);
+        String replaceAll3 = replaceAll2.replaceAll(A032, A033);
+        String out2 = A03(77, 11, 123);
+        return replaceAll3.replaceAll(out2, A033);
+    }
+
+    public static void A06(Spannable spannable, int i, int i4, KT kt, KM km, Map<String, KT> map, int i9) {
+        KM A012;
+        KT A02;
+        int i10;
+        int i11;
+        int i12;
+        if (kt.A0A() != -1) {
+            spannable.setSpan(new StyleSpan(kt.A0A()), i, i4, 33);
+        }
+        if (kt.A0b()) {
+            spannable.setSpan(new StrikethroughSpan(), i, i4, 33);
+        }
+        if (kt.A0c()) {
+            spannable.setSpan(new UnderlineSpan(), i, i4, 33);
+        }
+        if (kt.A0a()) {
+            AbstractC06183t.A00(spannable, new ForegroundColorSpan(kt.A06()), i, i4, 33);
+        }
+        boolean A0Z = kt.A0Z();
+        if (A01[5].length() == 27) {
+            A01[2] = "DOLHbyxdL1TIGmJ49PhqpcsDL7xIVQFO";
+            if (A0Z) {
+                AbstractC06183t.A00(spannable, new BackgroundColorSpan(kt.A05()), i, i4, 33);
+            }
+            if (kt.A0W() != null) {
+                AbstractC06183t.A00(spannable, new TypefaceSpan(kt.A0W()), i, i4, 33);
+            }
+            if (kt.A0D() != null) {
+                KI ki = (KI) AbstractC06233y.A01(kt.A0D());
+                if (ki.A01 == -1) {
+                    String[] strArr = A01;
+                    if (strArr[1].charAt(10) == strArr[7].charAt(10)) {
+                        A01[5] = "2MSbzH5cEcM3iPzp1Bk7CXgbIPr";
+                        if (i9 == 2 || i9 == 1) {
+                            i10 = 3;
+                        } else {
+                            i10 = 1;
+                        }
+                        i11 = 1;
+                    }
+                } else {
+                    i10 = ki.A01;
+                    i11 = ki.A00;
+                }
+                if (ki.A02 == -2) {
+                    i12 = 1;
+                } else {
+                    i12 = ki.A02;
+                }
+                AbstractC06183t.A00(spannable, new C2344pO(i10, i11, i12), i, i4, 33);
+            }
+            switch (kt.A09()) {
+                case 2:
+                    KM A002 = A00(km, map);
+                    if (A002 != null && (A012 = A01(A002, map)) != null) {
+                        if (A012.A0C() == 1) {
+                            KM containerNode = A012.A0D(0);
+                            if (containerNode.A08 != null) {
+                                KM containerNode2 = A012.A0D(0);
+                                String str = (String) C5C.A0f(containerNode2.A08);
+                                KT A022 = A02(A012.A04, A012.A0H(), map);
+                                int A08 = A022 != null ? A022.A08() : -1;
+                                if (A08 == -1 && (A02 = A02(A002.A04, A002.A0H(), map)) != null) {
+                                    A08 = A02.A08();
+                                }
+                                spannable.setSpan(new C2345pP(str, A08), i, i4, 33);
+                                break;
+                            }
+                        }
+                        AbstractC06314g.A06(A03(63, 14, 47), A03(9, 54, 122));
+                        break;
+                    }
+                    break;
+                case 3:
+                case 4:
+                    spannable.setSpan(new KF(), i, i4, 33);
+                    break;
+            }
+            if (kt.A0Y()) {
+                AbstractC06183t.A00(spannable, new C2346pQ(), i, i4, 33);
+            }
+            switch (kt.A07()) {
+                case 1:
+                    AbstractC06183t.A00(spannable, new AbsoluteSizeSpan((int) kt.A03(), true), i, i4, 33);
+                    return;
+                case 2:
+                    AbstractC06183t.A00(spannable, new RelativeSizeSpan(kt.A03()), i, i4, 33);
+                    return;
+                case 3:
+                    AbstractC06183t.A00(spannable, new RelativeSizeSpan(kt.A03() / 100.0f), i, i4, 33);
+                    return;
+                default:
+                    return;
+            }
+        }
+        throw new RuntimeException();
+    }
+
+    public static void A07(SpannableStringBuilder spannableStringBuilder) {
+        int length = spannableStringBuilder.length() - 1;
+        while (length >= 0 && spannableStringBuilder.charAt(length) == ' ') {
+            length--;
+        }
+        if (length >= 0 && spannableStringBuilder.charAt(length) != '\n') {
+            spannableStringBuilder.append('\n');
+        }
+    }
+}
