@@ -1,8 +1,0 @@
-package h1;
-
-/* loaded from: classes.dex */
-public abstract class t {
-
-    /* renamed from: a, reason: collision with root package name */
-    public static final S0.s f38198a = S0.s.i("nm", "sy", "pt", "p", com.anythink.expressad.foundation.d.d.bv, "or", "os", "ir", "is", "hd", "d");
-}
