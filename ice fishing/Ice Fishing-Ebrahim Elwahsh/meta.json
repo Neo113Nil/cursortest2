@@ -30,5 +30,75 @@
   "version": "Varies with device",
   "updated": "Jun 15, 2026",
   "cloaking": "да",
-  "_store_enriched": true
+  "_store_enriched": true,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, TopOn/AnyThink, Meta Audience Network"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal, Firebase Messaging / Installations, Google Advertising ID / Ad Services"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.FOREGROUND_SERVICE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_APP_BADGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.VIBRATE, android.permission.WAKE_LOCK, com.anddoes.launcher.permission.UPDATE_COUNT, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.gms.permission.AD_ID, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, com.icefishing.icefishingliveapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.icefishing.icefishingliveapp.permission.C2D_MESSAGE, com.majeur.launcher.permission.UPDATE_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, com.sec.android.provider.badge.permission.READ, com.sec.a…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.1.0 / kotlin-stdlib, kotlinx-coroutines 1.8.0 (core/android/play-services), AndroidX AppCompat 1.7.1, AndroidX Activity/activity-ktx 1.10.1, AndroidX Core/Core-KTX 1.13.0, AndroidX Fragment/fragment-ktx 1.6.1, AndroidX Browser 1.8.0 (Custom Tabs), AndroidX WebKit 1.12.1, AndroidX ConstraintLayout 2.2.1, AndroidX CardView 1.0.0, AndroidX RecyclerView 1.1.0, AndroidX Navigation 2.6.0, AndroidX Work 2.8.1, AndroidX Room 2.5.0, AndroidX DataStore 1.0.0, AndroidX Lifecycle/Process/ViewModel/LiveData, AndroidX Emoji2 1.3.0, AndroidX Startup 1.2.0, AndroidX ProfileInstaller 1.4.0, AndroidX Window 1.0.0, Material Components 1.12.0, Google Play Services Ads (AdMob) 25.3.0, Play Services Ads Identifier 18.0.0, Play Services Base 18.0.1 / Basement 18.9.0 / Tasks 18.2.0, Play Services Cloud Messaging 17.2.0 / Stats 17.0.2 / AppSet 16.0.1, User Messaging Platform (UMP/Consent) 4.0.0, Firebase Messaging + Installations + Common/KTX + Datatransport/CCT, OneSignal Android SDK 5.9.4, TopOn / AnyThink Mediation SDK (com.anythink.*), Meta Audience Network (Facebook Ads), Glide (com.bumptech.glide), OkHttp 5.2.1 / Okio, Volley-style HTTP queue (l1/m1), Lottie (com.airbnb.lottie), OpenTelemetr…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "MyPref: JSON remote-конфига (response), adposition, interstitial_id; HeartRate: флаг IsFirstTimeLaunch (первый запуск → Intro); UMP Consent SharedPreferences: consent_status, consent_type, stored_info, privacy_options_requirement_status, is_pub_misconfigured, written_values; также стандартные prefs OneSignal / Firebase Messaging / AdMob SDK"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "splash_redirect, link_redirect, splash_inter, link1, link2, link3, redirect, offer, myoffer, qureka, web_url, Applink, Win Coins, livetv, adposition, Play & Win Coins Собираемые данные • в коде не видно"
+      }
+    ],
+    "domains": [],
+    "collected_data": [
+      "в коде не видно"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Собираемые данные:\n• в коде не видно\n\nСнаружи это каталог мини-игр про зимнюю рыбалку (Ice Fishing) с HTML5-играми Gamezop. Обман в том, что при запуске приложение скачивает удалённый JSON с GitHub и по флагам из файла решает: оставить человека в «белой» игре или открыть внешние оффер-ссылки. «Нужный» пользователь уходит в Chrome Custom Tabs на один из URL из полей link1/link2/link3 (сейчас в live-конфиге: gamescritique / qureka / djdvk — квизы и промо).…\n\nКуда отправляется запрос: Свой шлюз решения — статический remote config на GitHub (не Firebase Remote Config). URL зашит в ApplinkActivity: https://raw.githubusercontent.com/smtpatel9211/2026/refs/heads/main/com.icefishing.icefishingliveapp.…\n\nКак приходит ответ: GitHub возвращает JSON. Клиент кладёт его в MyPref.response и парсит: splash_inter, splash_redirect, link_redirect, adposition, link1, link2, link3, livetv, ключи TopOn/AdMob/Facebook Ads. splash_redirect=1 включает редиректы; при splash_inter≠1 сразу вызывается k4.m.g();…\n\nКак показывается целевая страница: Боевой URL открывают через Chrome Custom Tabs (k4.m.g / k4.m.h, пакет com.android.chrome; fallback — Intent VIEW). Случайно выбирается link1, link2 или link3. Белые HTML5-игры Gamezop грузятся в MWebActivity (WebView) по extra web_url.…"
+  }
 }
