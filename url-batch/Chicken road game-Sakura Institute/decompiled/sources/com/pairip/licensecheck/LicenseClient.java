@@ -20,12 +20,14 @@ import android.os.Process;
 import android.os.RemoteException;
 import android.os.SystemClock;
 import android.util.Log;
+import androidx.core.view.accessibility.AccessibilityEventCompat;
 import com.pairip.licensecheck.ILicenseV2ResultListener;
 import com.pairip.licensecheck.LicenseActivity;
 import com.pairip.licensecheck.LicenseClient;
 import java.util.Objects;
+import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public class LicenseClient implements ServiceConnection {
     private static final String BACKGROUND_SERVICE_INTERFACE_CLASS_NAME = "com.android.vending.licensing.IBackgroundLicensingService";
     private static final int ERROR_INVALID_PACKAGE_NAME = 3;
@@ -50,10 +52,10 @@ public class LicenseClient implements ServiceConnection {
     protected static boolean eventualShutdownEnabled = true;
     public static boolean gracefulShutdownEnabled = true;
     private static final Handler handler;
-    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoFSaqJbKfhihJwuv2qEuanT/M+yBPBEzNniUpMmdnVKyYOGd62UjvqZz0Q/cQ6PDPAf9XispPOUx4/jJOpaK0eOujOmIEz4IZe8x95ts6anP7Lyl6oCmx0BCTS+UXVWwixhlQvWy14/ssHEswt8gLljGxvEz0NPEwFh6Sz0kBUElGGpYWeQP780CKhZ+SLoiwEB+5HKUMDjbEdeP6UaaQdLitroUe+mlQhx2OkXt1Mc2xdmDyzeV/E3MpzJCWUY8Et+U2pwfLW+KjDx9UbUoMnJH3EMNuiSzwQL8VUdkYyzzavRRa+EfCJZ6MCI9ac9MdzEFNDMYzxXDIYj2vCFEZQIDAQAB";
+    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmLgfBIiEWZD6hI0GoygLUk9vMlOthJmYx5avC+zKxuTA7Zy+bMiufC+8d6ELZwjyBq82TFwONsqwjOCncxwhQaJ4LX6ewfTMP/J3VEgakdriTnnPMkbftYuoPR6rHmeTZfNibFEb4ILbV1WWOdN541arYlW7LtbyO8InIYl+HXbBBA3gvSYKwA5CxgBeW5RBXruavAGQXaFakbymPJVrbuOqOCl0sjPjhblPu1FBIiPRN7p88JzCsxms+DlOrI7dlaSzFsXR1+gF/Q8XYbCn3lymM7ZMUv2BLlOco/DK7ahLiMnn4RgF/OINBJnQwzk0/FlKC/n0KuzOsWiYB0WmkQIDAQAB";
     protected static boolean localCheckEnabled = true;
     protected static ImmediateTaskExecutor mainThreadRunner = null;
-    protected static String packageName = "com.chicken.road.whale";
+    protected static String packageName = "com.chicken.road.cerman.fixs";
     protected static boolean repeatedCheckEnabled = true;
     protected static Bundle responsePayload;
     private final Context context;
@@ -115,7 +117,7 @@ public class LicenseClient implements ServiceConnection {
         if (Build.VERSION.SDK_INT >= 28) {
             return Process.isIsolated();
         }
-        int myUid = Process.myUid() % PER_USER_RANGE;
+        int myUid = Process.myUid() % 100000;
         return myUid >= FIRST_ISOLATED_UID && myUid <= LAST_ISOLATED_UID;
     }
 
@@ -151,8 +153,8 @@ public class LicenseClient implements ServiceConnection {
         } else {
             try {
                 LicenseResponseHelper.validateResponse(responsePayload, packageName);
-            } catch (LicenseCheckException e9) {
-                handleError(e9);
+            } catch (LicenseCheckException e) {
+                handleError(e);
             }
         }
     }
@@ -169,11 +171,11 @@ public class LicenseClient implements ServiceConnection {
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public /* synthetic */ void lambda$initializeLicenseCheck$1(boolean z8) {
-        if (z8) {
+    public /* synthetic */ void lambda$initializeLicenseCheck$1(boolean z) {
+        if (z) {
             licenseCheckState = LicenseCheckState.LOCAL_CHECK_OK;
         }
-        lambda$retryOrThrow$0(z8 && backgroundLicensingServiceEnabled);
+        lambda$retryOrThrow$0(z && backgroundLicensingServiceEnabled);
     }
 
     private boolean performLocalInstallerCheck() {
@@ -189,15 +191,15 @@ public class LicenseClient implements ServiceConnection {
             }
             PackageInfo packageInfo = packageManager.getPackageInfo(packageName, 0);
             if (packageInfo != null && packageInfo.applicationInfo != null) {
-                int i7 = packageInfo.applicationInfo.flags;
-                if ((i7 & 1) == 0 && (i7 & 128) == 0) {
+                int i = packageInfo.applicationInfo.flags;
+                if ((i & 1) == 0 && (i & 128) == 0) {
                     InstallSourceInfo installSourceInfo = packageManager.getInstallSourceInfo(packageName);
                     if (installSourceInfo == null) {
                         Log.i(TAG, "Local install check bypassed due to install source info not found.");
                         return false;
                     }
                     String installingPackageName = installSourceInfo.getInstallingPackageName();
-                    if (installingPackageName != null && installingPackageName.equals(SERVICE_PACKAGE)) {
+                    if (installingPackageName != null && installingPackageName.equals("com.android.vending")) {
                         return true;
                     }
                     Log.i(TAG, "Local install check failed due to wrong installer.");
@@ -208,8 +210,8 @@ public class LicenseClient implements ServiceConnection {
             }
             Log.i(TAG, "Local install check bypassed due to app package info not found.");
             return false;
-        } catch (Exception e9) {
-            Log.w(TAG, "Could not obtain package info for local installer check.", e9);
+        } catch (Exception e) {
+            Log.w(TAG, "Could not obtain package info for local installer check.", e);
             return false;
         }
     }
@@ -231,12 +233,12 @@ public class LicenseClient implements ServiceConnection {
             str2 = SERVICE_INTERFACE_CLASS_NAME;
         }
         try {
-            if (this.context.bindService(new Intent(str2).setPackage(SERVICE_PACKAGE).setAction(str2), this, 1)) {
+            if (this.context.bindService(new Intent(str2).setPackage("com.android.vending").setAction(str2), this, 1)) {
                 return;
             }
             retryOrThrow(new LicenseCheckException("Could not bind with the licensing service: ".concat(str2)), useBackgroundService, useBackgroundService);
-        } catch (SecurityException e9) {
-            retryOrThrow(new LicenseCheckException("Not allowed to bind with the licensing service: ".concat(str2), e9), useBackgroundService, useBackgroundService);
+        } catch (SecurityException e) {
+            retryOrThrow(new LicenseCheckException("Not allowed to bind with the licensing service: ".concat(str2), e), useBackgroundService, useBackgroundService);
         }
     }
 
@@ -269,10 +271,10 @@ public class LicenseClient implements ServiceConnection {
     public /* synthetic */ void lambda$onServiceConnected$0(IBinder iBinder) {
         try {
             checkLicenseInternal(iBinder);
-        } catch (RemoteException e9) {
-            handleError(new LicenseCheckException("Error when getting interface descriptor.", e9));
-        } catch (LicenseCheckException e10) {
-            handleError(e10);
+        } catch (RemoteException e) {
+            handleError(new LicenseCheckException("Error when getting interface descriptor.", e));
+        } catch (LicenseCheckException e2) {
+            handleError(e2);
         }
     }
 
@@ -280,8 +282,8 @@ public class LicenseClient implements ServiceConnection {
     public /* synthetic */ void lambda$onServiceConnected$1(IBinder iBinder) {
         try {
             reportSuccessfulLicenseCheck(iBinder);
-        } catch (Exception e9) {
-            Log.e(TAG, "Error while reporting license check: " + Log.getStackTraceString(e9));
+        } catch (Exception e) {
+            Log.e(TAG, "Error while reporting license check: " + Log.getStackTraceString(e));
         }
     }
 
@@ -312,10 +314,10 @@ public class LicenseClient implements ServiceConnection {
                 if (!licensingServiceBinder.transact(2, obtain, obtain2, 0)) {
                     handleError(new LicenseCheckException("Licensing service could not process request."));
                 }
-            } catch (DeadObjectException e9) {
-                retryOrThrow(new LicenseCheckException("Licensing service process died.", e9));
-            } catch (RemoteException e10) {
-                handleError(new LicenseCheckException("Error when calling licensing service.", e10));
+            } catch (DeadObjectException e) {
+                retryOrThrow(new LicenseCheckException("Licensing service process died.", e));
+            } catch (RemoteException e2) {
+                handleError(new LicenseCheckException("Error when calling licensing service.", e2));
             }
         } finally {
             obtain.recycle();
@@ -348,11 +350,11 @@ public class LicenseClient implements ServiceConnection {
                             }
                         });
                     }
-                } catch (RemoteException e9) {
-                    Log.e(TAG, "Error when calling licensing service." + String.valueOf(e9));
+                } catch (RemoteException e) {
+                    Log.e(TAG, "Error when calling licensing service." + String.valueOf(e));
                 }
-            } catch (DeadObjectException e10) {
-                retryOrThrow(new LicenseCheckException("Licensing service process died.", e10), true, backgroundLicensingServiceEnabled);
+            } catch (DeadObjectException e2) {
+                retryOrThrow(new LicenseCheckException("Licensing service process died.", e2), true, backgroundLicensingServiceEnabled);
             }
         } finally {
             obtain.recycle();
@@ -388,16 +390,16 @@ public class LicenseClient implements ServiceConnection {
     }
 
     private void retryOrThrow(LicenseCheckException error, boolean ignoreErrorOnFinalFailure, final boolean useBackgroundService) {
-        int i7 = this.retryNum;
-        if (i7 < 3) {
-            this.retryNum = i7 + 1;
+        int i = this.retryNum;
+        if (i < 3) {
+            this.retryNum = i + 1;
             this.delayedTaskExecutor.schedule(new Runnable() { // from class: com.pairip.licensecheck.LicenseClient$$ExternalSyntheticLambda1
                 @Override // java.lang.Runnable
                 public final void run() {
                     LicenseClient.this.lambda$retryOrThrow$0(useBackgroundService);
                 }
             }, 1000L);
-            Log.d(TAG, String.format("Retry #%d. License check failed with error '%s'. Next try in %ds...", Integer.valueOf(this.retryNum), error == null ? "null" : error.getMessage(), 1L));
+            Log.d(TAG, String.format("Retry #%d. License check failed with error '%s'. Next try in %ds...", Integer.valueOf(this.retryNum), error == null ? AbstractJsonLexerKt.NULL : error.getMessage(), 1L));
         } else {
             if (ignoreErrorOnFinalFailure) {
                 Log.e(TAG, "Retry limit reached for: " + String.valueOf(error));
@@ -429,8 +431,8 @@ public class LicenseClient implements ServiceConnection {
                     LicenseClient.this.lambda$processResponse$0(repeatedCheckMetadata, responsePayload2);
                 }
             });
-        } catch (LicenseCheckException e9) {
-            handleError(e9);
+        } catch (LicenseCheckException e) {
+            handleError(e);
         }
     }
 
@@ -452,8 +454,8 @@ public class LicenseClient implements ServiceConnection {
             this.waitingForRepeatedCheck = true;
             try {
                 this.context.unbindService(this);
-            } catch (RuntimeException e9) {
-                Log.e(TAG, "Failed to unbind service for repeated license check.", e9);
+            } catch (RuntimeException e) {
+                Log.e(TAG, "Failed to unbind service for repeated license check.", e);
             }
         }
         this.delayedTaskExecutor.schedule(new Runnable() { // from class: com.pairip.licensecheck.LicenseClient$$ExternalSyntheticLambda9
@@ -508,7 +510,7 @@ public class LicenseClient implements ServiceConnection {
         if (gracefulShutdownEnabled) {
             intent.addFlags(65536);
         } else {
-            intent.addFlags(67108864);
+            intent.addFlags(AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL);
             intent.addFlags(32768);
         }
         intent.addFlags(268435456);

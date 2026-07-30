@@ -9,7 +9,7 @@ import android.content.DialogInterface;
 import android.os.Build;
 import android.util.Log;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public class LicenseActivity extends Activity {
     public static final String ACTIVITY_TYPE_ARG_NAME = "activitytype";
     public static final String PAYWALL_INTENT_ARG_NAME = "paywallintent";
@@ -33,8 +33,8 @@ public class LicenseActivity extends Activity {
                 }
                 showErrorDialog();
             }
-        } catch (Exception e9) {
-            logAndShowErrorDialog("Couldn't process license activity correctly.", e9);
+        } catch (Exception e) {
+            logAndShowErrorDialog("Couldn't process license activity correctly.", e);
         }
     }
 
@@ -61,8 +61,8 @@ public class LicenseActivity extends Activity {
                 pendingIntent.send();
             }
             closeApp();
-        } catch (PendingIntent.CanceledException e9) {
-            logAndShowErrorDialog("Paywall intent unexpectedly cancelled.", e9);
+        } catch (PendingIntent.CanceledException e) {
+            logAndShowErrorDialog("Paywall intent unexpectedly cancelled.", e);
         }
     }
 
@@ -89,17 +89,17 @@ public class LicenseActivity extends Activity {
         try {
             new AlertDialog.Builder(this).setTitle("Something went wrong").setMessage("Check that Google Play is enabled on your device and that you're using an up-to-date version before opening the app. If the problem persists try reinstalling the app.").setPositiveButton("Close", new DialogInterface.OnClickListener() { // from class: com.pairip.licensecheck.LicenseActivity$$ExternalSyntheticLambda2
                 @Override // android.content.DialogInterface.OnClickListener
-                public final void onClick(DialogInterface dialogInterface, int i7) {
-                    LicenseActivity.this.lambda$showErrorDialog$1(dialogInterface, i7);
+                public final void onClick(DialogInterface dialogInterface, int i) {
+                    LicenseActivity.this.lambda$showErrorDialog$1(dialogInterface, i);
                 }
             }).setCancelable(false).show();
-        } catch (RuntimeException e9) {
-            Log.d(TAG, "Couldn't show the error dialog. " + Log.getStackTraceString(e9));
+        } catch (RuntimeException e) {
+            Log.d(TAG, "Couldn't show the error dialog. " + Log.getStackTraceString(e));
         }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    public /* synthetic */ void lambda$showErrorDialog$1(DialogInterface dialogInterface, int i7) {
+    public /* synthetic */ void lambda$showErrorDialog$1(DialogInterface dialogInterface, int i) {
         closeApp();
     }
 
@@ -122,8 +122,8 @@ public class LicenseActivity extends Activity {
             for (ActivityManager.AppTask appTask : activityManager.getAppTasks()) {
                 try {
                     appTask.finishAndRemoveTask();
-                } catch (RuntimeException e9) {
-                    Log.e(TAG, "Failed to gracefully clear task=" + appTask.getTaskInfo().id, e9);
+                } catch (RuntimeException e) {
+                    Log.e(TAG, "Failed to gracefully clear task=" + appTask.getTaskInfo().id, e);
                 }
             }
         }

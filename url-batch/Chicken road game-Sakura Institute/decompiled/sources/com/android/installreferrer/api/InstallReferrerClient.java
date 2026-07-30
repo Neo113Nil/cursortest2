@@ -1,14 +1,13 @@
 package com.android.installreferrer.api;
 
 import android.content.Context;
+import android.os.RemoteException;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
+/* loaded from: classes3.dex */
 public abstract class InstallReferrerClient {
 
-    /* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
     public static final class Builder {
         private final Context mContext;
 
@@ -25,7 +24,6 @@ public abstract class InstallReferrerClient {
         }
     }
 
-    /* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
     @Retention(RetentionPolicy.SOURCE)
     public @interface InstallReferrerResponse {
         public static final int DEVELOPER_ERROR = 3;
@@ -42,7 +40,7 @@ public abstract class InstallReferrerClient {
 
     public abstract void endConnection();
 
-    public abstract ReferrerDetails getInstallReferrer();
+    public abstract ReferrerDetails getInstallReferrer() throws RemoteException;
 
     public abstract boolean isReady();
 

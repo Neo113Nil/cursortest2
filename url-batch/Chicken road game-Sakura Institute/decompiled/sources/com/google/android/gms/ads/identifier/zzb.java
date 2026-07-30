@@ -4,17 +4,17 @@ import java.lang.ref.WeakReference;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
+/* compiled from: com.google.android.gms:play-services-ads-identifier@@17.1.0 */
+/* loaded from: classes3.dex */
 final class zzb extends Thread {
     final CountDownLatch zza = new CountDownLatch(1);
     boolean zzb = false;
     private final WeakReference<AdvertisingIdClient> zzc;
     private final long zzd;
 
-    public zzb(AdvertisingIdClient advertisingIdClient, long j8) {
+    public zzb(AdvertisingIdClient advertisingIdClient, long j) {
         this.zzc = new WeakReference<>(advertisingIdClient);
-        this.zzd = j8;
+        this.zzd = j;
         start();
     }
 

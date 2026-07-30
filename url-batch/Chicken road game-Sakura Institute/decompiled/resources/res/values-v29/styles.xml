@@ -7,10 +7,4 @@
     </style>
     <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen">
     </style>
-    <style name="Theme.Platora" parent="@android:style/Theme.Material.Light.NoActionBar">
-        <item name="android:windowBackground">@color/pm_bg</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:forceDarkAllowed">false</item>
-    </style>
 </resources>

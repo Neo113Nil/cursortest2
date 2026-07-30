@@ -1,6 +1,20 @@
 package com.google.android.gms.common;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
-public abstract class GooglePlayServicesManifestException extends IllegalStateException {
+/* compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* loaded from: classes3.dex */
+public class GooglePlayServicesManifestException extends IllegalStateException {
+    private final int zza;
+
+    public GooglePlayServicesManifestException(int i, String str) {
+        super(str);
+        this.zza = i;
+    }
+
+    public int getActualVersion() {
+        return this.zza;
+    }
+
+    public int getExpectedVersion() {
+        return GoogleApiAvailabilityLight.GOOGLE_PLAY_SERVICES_VERSION_CODE;
+    }
 }

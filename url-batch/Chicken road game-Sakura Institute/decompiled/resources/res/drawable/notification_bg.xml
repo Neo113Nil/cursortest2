@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_mediumAnimTime">
     <item
         android:state_pressed="true"
-        android:drawable="0x7f060025"/>
+        android:drawable="0x7f060024"/>
     <item
         android:state_pressed="false"
-        android:drawable="0x7f060024"/>
+        android:drawable="0x7f060023"/>
 </selector>

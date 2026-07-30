@@ -1,142 +1,152 @@
 package com.google.android.gms.common.api;
 
-import a0.m;
+import android.app.Activity;
 import android.app.PendingIntent;
+import android.content.IntentSender;
 import android.os.Parcel;
 import android.os.Parcelable;
-import androidx.room.c;
-import com.android.installreferrer.api.InstallReferrerClient;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.IntentSenderRequest;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.internal.Objects;
+import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.ReflectedParcelable;
-import j3.i;
-import j4.b;
-import java.util.Arrays;
-import m4.o;
-import n4.a;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import com.google.errorprone.annotations.CheckReturnValue;
+import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
-public final class Status extends a implements ReflectedParcelable {
-    public static final Parcelable.Creator<Status> CREATOR = new d4.a(6);
+/* compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* loaded from: classes3.dex */
+public final class Status extends AbstractSafeParcelable implements Result, ReflectedParcelable {
+    private final int zzb;
+    private final String zzc;
+    private final PendingIntent zzd;
+    private final ConnectionResult zze;
+    public static final Status RESULT_SUCCESS_CACHE = new Status(-1);
+    public static final Status RESULT_SUCCESS = new Status(0);
+    public static final Status RESULT_INTERRUPTED = new Status(14);
+    public static final Status RESULT_INTERNAL_ERROR = new Status(8);
+    public static final Status RESULT_TIMEOUT = new Status(15);
+    public static final Status RESULT_CANCELED = new Status(16);
+    public static final Status zza = new Status(17);
+    public static final Status RESULT_DEAD_CLIENT = new Status(18);
+    public static final Parcelable.Creator<Status> CREATOR = new zzb();
 
-    /* renamed from: f, reason: collision with root package name */
-    public final int f1774f;
-
-    /* renamed from: g, reason: collision with root package name */
-    public final String f1775g;
-
-    /* renamed from: h, reason: collision with root package name */
-    public final PendingIntent f1776h;
-
-    /* renamed from: i, reason: collision with root package name */
-    public final b f1777i;
-
-    public Status(int i7, String str, PendingIntent pendingIntent, b bVar) {
-        this.f1774f = i7;
-        this.f1775g = str;
-        this.f1776h = pendingIntent;
-        this.f1777i = bVar;
+    public Status(int i) {
+        this(i, (String) null);
     }
 
-    public final boolean equals(Object obj) {
+    Status(int i, String str, PendingIntent pendingIntent, ConnectionResult connectionResult) {
+        this.zzb = i;
+        this.zzc = str;
+        this.zzd = pendingIntent;
+        this.zze = connectionResult;
+    }
+
+    public Status(ConnectionResult connectionResult, String str) {
+        this(connectionResult, str, 17);
+    }
+
+    public boolean equals(Object obj) {
         if (!(obj instanceof Status)) {
             return false;
         }
         Status status = (Status) obj;
-        return this.f1774f == status.f1774f && o.f(this.f1775g, status.f1775g) && o.f(this.f1776h, status.f1776h) && o.f(this.f1777i, status.f1777i);
+        return this.zzb == status.zzb && Objects.equal(this.zzc, status.zzc) && Objects.equal(this.zzd, status.zzd) && Objects.equal(this.zze, status.zze);
     }
 
-    public final int hashCode() {
-        return Arrays.hashCode(new Object[]{Integer.valueOf(this.f1774f), this.f1775g, this.f1776h, this.f1777i});
+    public ConnectionResult getConnectionResult() {
+        return this.zze;
     }
 
-    public final String toString() {
-        c cVar = new c(this);
-        String str = this.f1775g;
-        if (str == null) {
-            int i7 = this.f1774f;
-            switch (i7) {
-                case InstallReferrerClient.InstallReferrerResponse.SERVICE_DISCONNECTED /* -1 */:
-                    str = "SUCCESS_CACHE";
-                    break;
-                case InstallReferrerClient.InstallReferrerResponse.OK /* 0 */:
-                    str = "SUCCESS";
-                    break;
-                case 1:
-                case q.c.f7259c /* 9 */:
-                case 11:
-                case 12:
-                default:
-                    str = m.i("unknown status code: ", i7);
-                    break;
-                case 2:
-                    str = "SERVICE_VERSION_UPDATE_REQUIRED";
-                    break;
-                case 3:
-                    str = "SERVICE_DISABLED";
-                    break;
-                case 4:
-                    str = "SIGN_IN_REQUIRED";
-                    break;
-                case 5:
-                    str = "INVALID_ACCOUNT";
-                    break;
-                case 6:
-                    str = "RESOLUTION_REQUIRED";
-                    break;
-                case i.DOUBLE_FIELD_NUMBER /* 7 */:
-                    str = "NETWORK_ERROR";
-                    break;
-                case 8:
-                    str = "INTERNAL_ERROR";
-                    break;
-                case q.c.f7261e /* 10 */:
-                    str = "DEVELOPER_ERROR";
-                    break;
-                case 13:
-                    str = "ERROR";
-                    break;
-                case 14:
-                    str = "INTERRUPTED";
-                    break;
-                case q.c.f7263g /* 15 */:
-                    str = "TIMEOUT";
-                    break;
-                case 16:
-                    str = "CANCELED";
-                    break;
-                case 17:
-                    str = "API_NOT_CONNECTED";
-                    break;
-                case 18:
-                    str = "DEAD_CLIENT";
-                    break;
-                case 19:
-                    str = "REMOTE_EXCEPTION";
-                    break;
-                case 20:
-                    str = "CONNECTION_SUSPENDED_DURING_CALL";
-                    break;
-                case 21:
-                    str = "RECONNECTION_TIMED_OUT_DURING_UPDATE";
-                    break;
-                case 22:
-                    str = "RECONNECTION_TIMED_OUT";
-                    break;
-            }
+    public PendingIntent getResolution() {
+        return this.zzd;
+    }
+
+    @Override // com.google.android.gms.common.api.Result
+    public Status getStatus() {
+        return this;
+    }
+
+    @ResultIgnorabilityUnspecified
+    public int getStatusCode() {
+        return this.zzb;
+    }
+
+    public String getStatusMessage() {
+        return this.zzc;
+    }
+
+    public boolean hasResolution() {
+        return this.zzd != null;
+    }
+
+    public int hashCode() {
+        return Objects.hashCode(Integer.valueOf(this.zzb), this.zzc, this.zzd, this.zze);
+    }
+
+    public boolean isCanceled() {
+        return this.zzb == 16;
+    }
+
+    public boolean isInterrupted() {
+        return this.zzb == 14;
+    }
+
+    @CheckReturnValue
+    public boolean isSuccess() {
+        return this.zzb <= 0;
+    }
+
+    public void startResolutionForResult(Activity activity, int i) throws IntentSender.SendIntentException {
+        if (hasResolution()) {
+            PendingIntent pendingIntent = this.zzd;
+            Preconditions.checkNotNull(pendingIntent);
+            activity.startIntentSenderForResult(pendingIntent.getIntentSender(), i, null, 0, 0, 0);
         }
-        cVar.l(str, "statusCode");
-        cVar.l(this.f1776h, "resolution");
-        return cVar.toString();
+    }
+
+    public String toString() {
+        Objects.ToStringHelper stringHelper = Objects.toStringHelper(this);
+        stringHelper.add("statusCode", zza());
+        stringHelper.add("resolution", this.zzd);
+        return stringHelper.toString();
     }
 
     @Override // android.os.Parcelable
-    public final void writeToParcel(Parcel parcel, int i7) {
-        int R = a8.m.R(parcel, 20293);
-        a8.m.T(parcel, 1, 4);
-        parcel.writeInt(this.f1774f);
-        a8.m.P(parcel, 2, this.f1775g);
-        a8.m.O(parcel, 3, this.f1776h, i7);
-        a8.m.O(parcel, 4, this.f1777i, i7);
-        a8.m.S(parcel, R);
+    public void writeToParcel(Parcel parcel, int i) {
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeInt(parcel, 1, getStatusCode());
+        SafeParcelWriter.writeString(parcel, 2, getStatusMessage(), false);
+        SafeParcelWriter.writeParcelable(parcel, 3, this.zzd, i, false);
+        SafeParcelWriter.writeParcelable(parcel, 4, getConnectionResult(), i, false);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+
+    public final String zza() {
+        String str = this.zzc;
+        return str != null ? str : CommonStatusCodes.getStatusCodeString(this.zzb);
+    }
+
+    public Status(int i, String str) {
+        this(i, str, (PendingIntent) null);
+    }
+
+    @Deprecated
+    public Status(ConnectionResult connectionResult, String str, int i) {
+        this(i, str, connectionResult.getResolution(), connectionResult);
+    }
+
+    public Status(int i, String str, PendingIntent pendingIntent) {
+        this(i, str, pendingIntent, null);
+    }
+
+    public void startResolutionForResult(ActivityResultLauncher<IntentSenderRequest> activityResultLauncher) {
+        if (hasResolution()) {
+            PendingIntent pendingIntent = this.zzd;
+            Preconditions.checkNotNull(pendingIntent);
+            activityResultLauncher.launch(new IntentSenderRequest.Builder(pendingIntent.getIntentSender()).build());
+        }
     }
 }

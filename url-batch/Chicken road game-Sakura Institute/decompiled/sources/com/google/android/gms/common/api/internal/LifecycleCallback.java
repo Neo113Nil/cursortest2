@@ -1,37 +1,71 @@
 package com.google.android.gms.common.api.internal;
 
 import android.app.Activity;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.Bundle;
-import l4.e;
-import l4.f;
+import com.google.android.gms.common.internal.Preconditions;
+import java.io.FileDescriptor;
+import java.io.PrintWriter;
 
-/* compiled from: r8-map-id-3718d86f024053e6fa1584ac4fc5ef8b7a782884c1fb644516f65396fe794720 */
-/* loaded from: classes.dex */
+/* compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* loaded from: classes3.dex */
 public class LifecycleCallback {
-    private static f getChimeraLifecycleFragmentImpl(e eVar) {
+    protected final LifecycleFragment mLifecycleFragment;
+
+    protected LifecycleCallback(LifecycleFragment lifecycleFragment) {
+        this.mLifecycleFragment = lifecycleFragment;
+    }
+
+    private static LifecycleFragment getChimeraLifecycleFragmentImpl(LifecycleActivity lifecycleActivity) {
         throw new IllegalStateException("Method not available in SDK.");
     }
 
-    public final Activity a() {
-        throw null;
+    public static LifecycleFragment getFragment(Activity activity) {
+        return getFragment(new LifecycleActivity(activity));
     }
 
-    public void d() {
+    public void dump(String str, FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr) {
     }
 
-    public void f() {
+    public Activity getActivity() {
+        Activity lifecycleActivity = this.mLifecycleFragment.getLifecycleActivity();
+        Preconditions.checkNotNull(lifecycleActivity);
+        return lifecycleActivity;
     }
 
-    public void g() {
+    public void onActivityResult(int i, int i2, Intent intent) {
     }
 
-    public void c(Bundle bundle) {
+    public void onCreate(Bundle bundle) {
     }
 
-    public void e(Bundle bundle) {
+    public void onDestroy() {
     }
 
-    public void b(int i7, int i8, Intent intent) {
+    public void onResume() {
+    }
+
+    public void onSaveInstanceState(Bundle bundle) {
+    }
+
+    public void onStart() {
+    }
+
+    public void onStop() {
+    }
+
+    public static LifecycleFragment getFragment(ContextWrapper contextWrapper) {
+        throw new UnsupportedOperationException();
+    }
+
+    protected static LifecycleFragment getFragment(LifecycleActivity lifecycleActivity) {
+        if (lifecycleActivity.zzd()) {
+            return zzd.zzc(lifecycleActivity.zzb());
+        }
+        if (lifecycleActivity.zzc()) {
+            return zzb.zzc(lifecycleActivity.zza());
+        }
+        throw new IllegalArgumentException("Can't get fragment for unexpected activity.");
     }
 }

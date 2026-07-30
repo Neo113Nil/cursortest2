@@ -14,7 +14,7 @@ import java.security.spec.X509EncodedKeySpec;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public class LicenseResponseHelper {
     private static final String KEY_FACTORY_ALGORITHM = "RSA";
     private static final String PAYLOAD_LICENSE_DATA = "LICENSE_DATA";
@@ -38,8 +38,8 @@ public class LicenseResponseHelper {
             if (!base64ToJson2.getString(PAYLOAD_PACKAGE_NAME).equals(packageName)) {
                 throw new LicenseCheckException("Package name doesn't match.");
             }
-        } catch (JSONException e9) {
-            throw new LicenseCheckException("Could not decode json", e9);
+        } catch (JSONException e) {
+            throw new LicenseCheckException("Could not decode json", e);
         }
     }
 
@@ -50,10 +50,10 @@ public class LicenseResponseHelper {
                 return new RepeatedCheckMetadata(base64ToJson.getLong(PAYLOAD_REPEATED_CHECK_DURATION_TO_RETRY_MILLIS), base64ToJson.getLong(PAYLOAD_REPEATED_CHECK_TIME_TO_RETRY_MILLIS));
             }
             return null;
-        } catch (IllegalArgumentException e9) {
-            throw new LicenseCheckException("Invalid repeated check payload", e9);
-        } catch (JSONException e10) {
-            throw new LicenseCheckException("Could not decode json", e10);
+        } catch (IllegalArgumentException e) {
+            throw new LicenseCheckException("Invalid repeated check payload", e);
+        } catch (JSONException e2) {
+            throw new LicenseCheckException("Could not decode json", e2);
         }
     }
 
@@ -72,8 +72,8 @@ public class LicenseResponseHelper {
     private static JSONObject base64ToJson(String input) throws LicenseCheckException {
         try {
             return new JSONObject(new String(Base64.decode(input, 8), UTF_8));
-        } catch (IllegalArgumentException | JSONException e9) {
-            throw new LicenseCheckException("Invalid response", e9);
+        } catch (IllegalArgumentException | JSONException e) {
+            throw new LicenseCheckException("Invalid response", e);
         }
     }
 
@@ -86,26 +86,26 @@ public class LicenseResponseHelper {
             } else {
                 throw new LicenseCheckException("Signature verification failed.");
             }
-        } catch (IllegalArgumentException e9) {
-            throw new LicenseCheckException("Could not base64 decode returned signature", e9);
-        } catch (InvalidKeyException e10) {
-            throw new LicenseCheckException("Could not sign data with the public key", e10);
-        } catch (NoSuchAlgorithmException e11) {
-            throw new LicenseCheckException(String.format("Could not find %s algorithm on the device", signatureAlgorithm), e11);
-        } catch (SignatureException e12) {
-            throw new LicenseCheckException("Could not parse returned signature.", e12);
+        } catch (IllegalArgumentException e) {
+            throw new LicenseCheckException("Could not base64 decode returned signature", e);
+        } catch (InvalidKeyException e2) {
+            throw new LicenseCheckException("Could not sign data with the public key", e2);
+        } catch (NoSuchAlgorithmException e3) {
+            throw new LicenseCheckException(String.format("Could not find %s algorithm on the device", signatureAlgorithm), e3);
+        } catch (SignatureException e4) {
+            throw new LicenseCheckException("Could not parse returned signature.", e4);
         }
     }
 
     private static PublicKey getPublicKey() throws LicenseCheckException {
         try {
             return KeyFactory.getInstance(KEY_FACTORY_ALGORITHM).generatePublic(new X509EncodedKeySpec(Base64.decode(LicenseClient.getLicensePubKey(), 0)));
-        } catch (IllegalArgumentException e9) {
-            throw new LicenseCheckException("Could not decode public key", e9);
-        } catch (NoSuchAlgorithmException e10) {
-            throw new LicenseCheckException(String.format("%s algorithm not found on device", KEY_FACTORY_ALGORITHM), e10);
-        } catch (InvalidKeySpecException e11) {
-            throw new LicenseCheckException("Could not create key specification from the public key", e11);
+        } catch (IllegalArgumentException e) {
+            throw new LicenseCheckException("Could not decode public key", e);
+        } catch (NoSuchAlgorithmException e2) {
+            throw new LicenseCheckException(String.format("%s algorithm not found on device", KEY_FACTORY_ALGORITHM), e2);
+        } catch (InvalidKeySpecException e3) {
+            throw new LicenseCheckException("Could not create key specification from the public key", e3);
         }
     }
 

@@ -1,6 +1,6 @@
 package com.pairip.licensecheck;
 
-/* loaded from: classes.dex */
+/* loaded from: classes2.dex */
 public class RepeatedCheckMetadata {
     private final long durationToRetryMillis;
     private final long timeToRetryMillis;
