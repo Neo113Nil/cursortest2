@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_enable_text">%1$s ପାଇଁ Google Play ସର୍ଭିସେସକୁ ସକ୍ଷମ କରାଯିବା ଆବଶ୍ୟକ।</string>
+    <string name="common_google_play_services_enable_title">Google Play ସେବାଗୁଡ଼ିକ ସକ୍ଷମ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_install_button">ଇନ୍‍ଷ୍ଟଲ୍‍ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_install_text">%1$sକୁ ବ୍ୟବହାର କରିବା ଜାରି ରଖିବା ପାଇଁ Google Play ସର୍ଭିସେସକୁ ଇନଷ୍ଟଲ କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_install_title">Google Play ସର୍ଭିସେସ ଇନଷ୍ଟଲ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play ସେବାଗୁଡ଼ିକର ଉପଲବ୍ଧତା</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ସେବା ସମ୍ପର୍କିତ ସମସ୍ୟା</string>
+    <string name="common_google_play_services_signin_required_text">Google Play ସର୍ଭିସେସ ସହିତ %1$s କନେକ୍ଟ କରିପାରିଲା ନାହିଁ। ଦୟାକରି ଆପଣଙ୍କ Google ଆକାଉଣ୍ଟରେ ସାଇନ-ଇନ କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_signin_required_title">ସାଇନ-ଇନ କରିବା ଆବଶ୍ୟକ</string>
+    <string name="common_google_play_services_try_again_text">Google Play ସର୍ଭିସେସ ସହିତ %1$s କନେକ୍ଟ କରିପାରିଲା ନାହିଁ। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_try_again_title">ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ</string>
+    <string name="common_google_play_services_unknown_issue">%1$sର Google Play ସେବା ସହ ଏକ ସମସ୍ୟା ରହିଛି। ଦୟାକରି ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_unsupported_text">ଆପଣଙ୍କ ଡିଭାଇସ Google Play ସର୍ଭିସେସକୁ ସପୋର୍ଟ କରୁନଥିବା ଯୋଗୁଁ %1$s ଚାଲିପାରିବ ନାହିଁ। ଦୟାକରି ଏକ ସପୋର୍ଟ କରୁଥିବା ଡିଭାଇସ ବ୍ୟବହାର କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_unsupported_title">ଡିଭାଇସଟି କମ୍ପାଟିବଲ ନୁହେଁ</string>
+    <string name="common_google_play_services_update_button">ଅପଡେଟ୍‍ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_update_text">%1$sକୁ ବ୍ୟବହାର କରିବାକୁ Google Play ସର୍ଭିସେସକୁ ଅପଡେଟ କରନ୍ତୁ।</string>
+    <string name="common_google_play_services_update_title">Google Play ସେବାଗୁଡ଼ିକ ଅପଡେଟ୍ କରନ୍ତୁ</string>
+    <string name="common_google_play_services_updating_client_title">Google Play ସର୍ଭିସେସକୁ ଅପଡେଟ କରାଯାଉଛି</string>
+    <string name="common_google_play_services_updating_text">Google Play ସର୍ଭିସେସର ଅପଡେଟ ସମ୍ପୂର୍ଣ୍ଣ ହେବା ପରେ %1$s ଉପଲବ୍ଧ ହେବ।</string>
+    <string name="common_google_play_services_wear_update_text">%1$sକୁ ବ୍ୟବହାର କରିବାକୁ Google Play ସର୍ଭିସେସକୁ ଅପଡେଟ କରନ୍ତୁ।</string>
+    <string name="common_open_on_phone">ଫୋନ୍‌ରେ ଖୋଲନ୍ତୁ</string>
+    <string name="common_signin_button_text">ସାଇନ୍‌-ଇନ୍ କରନ୍ତୁ</string>
+    <string name="common_signin_button_text_long">Google ସହ ସାଇନ୍‌-ଇନ୍ କରନ୍ତୁ</string>
+    <string name="copy_toast_msg">ଲିଙ୍କକୁ କ୍ଲିପ୍‍‍ବୋର୍ଡରେ କପି କରାଯାଇଛି</string>
+    <string name="fallback_menu_item_copy_link">ଲିଙ୍କ୍ କପି କରନ୍ତୁ</string>
+    <string name="fallback_menu_item_open_in_browser">ବ୍ରାଉଜର୍‌ରେ ଖୋଲନ୍ତୁ</string>
+    <string name="fallback_menu_item_share_link">ଲିଙ୍କ୍ ସେୟାର୍ କରନ୍ତୁ</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

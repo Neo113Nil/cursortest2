@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">הפעל</string>
+    <string name="common_google_play_services_enable_text">‏צריך להפעיל את Google Play Services באפליקציית %1$s.</string>
+    <string name="common_google_play_services_enable_title">‏הפעל את שירותי Google Play</string>
+    <string name="common_google_play_services_install_button">התקן</string>
+    <string name="common_google_play_services_install_text">‏כדי להמשיך להשתמש באפליקציית %1$s, צריך להתקין את Google Play Services.</string>
+    <string name="common_google_play_services_install_title">‏נדרשת התקנה של Google Play Services</string>
+    <string name="common_google_play_services_notification_channel_name">‏זמינות של שירותי Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏שגיאה בשירותי Google Play</string>
+    <string name="common_google_play_services_signin_required_text">‏לא הצלחנו לחבר את אפליקציית %1$s ל-Google Play Services. צריך להיכנס לחשבון Google.</string>
+    <string name="common_google_play_services_signin_required_title">נדרשת כניסה לחשבון</string>
+    <string name="common_google_play_services_try_again_text">‏לא הצלחנו לחבר את אפליקציית %1$s ל-Google Play Services. כדאי לנסות שוב.</string>
+    <string name="common_google_play_services_try_again_title">ניסיון חוזר</string>
+    <string name="common_google_play_services_unknown_issue">‏%1$s נתקלה בבעיה בשירותי Google Play. נסה שוב.</string>
+    <string name="common_google_play_services_unsupported_text">‏אפליקציית %1$s לא יכולה לפעול כי המכשיר שלך לא תומך ב-Google Play Services. צריך להשתמש במכשיר תואם.</string>
+    <string name="common_google_play_services_unsupported_title">המכשיר לא תואם</string>
+    <string name="common_google_play_services_update_button">עדכון</string>
+    <string name="common_google_play_services_update_text">‏כדי להשתמש באפליקציית %1$s, צריך לעדכן את Google Play Services.</string>
+    <string name="common_google_play_services_update_title">‏עדכון שירותי Google Play</string>
+    <string name="common_google_play_services_updating_client_title">‏‫Google Play Services: עדכון בהורדה</string>
+    <string name="common_google_play_services_updating_text">‏אפליקציית %1$s תהיה זמינה אחרי שהעדכון של Google Play Services יסתיים.</string>
+    <string name="common_google_play_services_wear_update_text">‏כדי להשתמש באפליקציה %1$s, צריך לעדכן את Google Play Services.</string>
+    <string name="common_open_on_phone">פתח בטלפון</string>
+    <string name="common_signin_button_text">כניסה</string>
+    <string name="common_signin_button_text_long">‏היכנס באמצעות Google</string>
+    <string name="copy_toast_msg">הקישור הועתק ללוח</string>
+    <string name="fallback_menu_item_copy_link">העתקת הקישור</string>
+    <string name="fallback_menu_item_open_in_browser">פתיחה בדפדפן</string>
+    <string name="fallback_menu_item_share_link">לשיתוף הקישור</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

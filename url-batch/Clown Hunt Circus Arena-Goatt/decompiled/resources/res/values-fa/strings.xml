@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">فعال کردن</string>
+    <string name="common_google_play_services_enable_text">‏«خدمات Google Play» باید برای %1$s فعال شود.</string>
+    <string name="common_google_play_services_enable_title">‏‫فعال کردن «خدمات Google Play»</string>
+    <string name="common_google_play_services_install_button">نصب</string>
+    <string name="common_google_play_services_install_text">‏برای ادامه استفاده از %1$s، «خدمات Google Play» را نصب کنید.</string>
+    <string name="common_google_play_services_install_title">‏نصب کردن «خدمات Google Play»</string>
+    <string name="common_google_play_services_notification_channel_name">‏دردسترس بودن خدمات Google Play</string>
+    <string name="common_google_play_services_notification_ticker">‏خطا در خدمات Google Play</string>
+    <string name="common_google_play_services_signin_required_text">‏اتصال %1$s به «خدمات Google Play» ممکن نبود. لطفاً به سیستم «حساب Google» خود وارد شوید.</string>
+    <string name="common_google_play_services_signin_required_title">ورود به سیستم لازم است</string>
+    <string name="common_google_play_services_try_again_text">‏اتصال %1$s به «خدمات Google Play» ممکن نبود. لطفاً دوباره امتحان کنید.</string>
+    <string name="common_google_play_services_try_again_title">لطفاً دوباره امتحان کنید</string>
+    <string name="common_google_play_services_unknown_issue">‏%1$s برای استفاده از خدمات Google Play با مشکل روبرو است. لطفاً دوباره امتحان کنید.</string>
+    <string name="common_google_play_services_unsupported_text">‏اجرای %1$s ممکن نیست زیرا دستگاهتان از «خدمات Google Play» پشتیبانی نمی‌کند. لطفاً از دستگاه پشتیبانی‌شده استفاده کنید.</string>
+    <string name="common_google_play_services_unsupported_title">دستگاه سازگار نیست</string>
+    <string name="common_google_play_services_update_button">به‌روزرسانی</string>
+    <string name="common_google_play_services_update_text">‏برای استفاده از %1$s، «خدمات Google Play» را به‌روز کنید.</string>
+    <string name="common_google_play_services_update_title">‏‫به‌روزرسانی «خدمات Google Play»</string>
+    <string name="common_google_play_services_updating_client_title">‏«خدمات Google Play» درحال به‌روزرسانی</string>
+    <string name="common_google_play_services_updating_text">‏پس‌از تکمیل به‌روزرسانی «خدمات Google Play»، %1$s دردسترس خواهد بود.</string>
+    <string name="common_google_play_services_wear_update_text">‏برای استفاده از «%1$s»، «خدمات Google Play» را به‌روز کنید.</string>
+    <string name="common_open_on_phone">باز کردن در تلفن</string>
+    <string name="common_signin_button_text">ورود به سیستم</string>
+    <string name="common_signin_button_text_long">‏ورود به سیستم با Google‎</string>
+    <string name="copy_toast_msg">پیوند در بریده‌دان کپی شد</string>
+    <string name="fallback_menu_item_copy_link">کپی پیوند</string>
+    <string name="fallback_menu_item_open_in_browser">بازکردن در مرورگر</string>
+    <string name="fallback_menu_item_share_link">هم‌رسانی پیوند</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

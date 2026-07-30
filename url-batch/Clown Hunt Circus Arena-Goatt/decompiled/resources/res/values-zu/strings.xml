@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Nika amandla</string>
+    <string name="common_google_play_services_enable_text">Amasevisi eGoogle Play kufanele avulwe ku-%1$s.</string>
+    <string name="common_google_play_services_enable_title">Nika amandla amasevisi we-Google Play</string>
+    <string name="common_google_play_services_install_button">Faka</string>
+    <string name="common_google_play_services_install_text">Faka amasevisi eGoogle Play ukuze uqhubeke usebenzisa i-%1$s.</string>
+    <string name="common_google_play_services_install_title">Faka amasevisi eGoogle Play</string>
+    <string name="common_google_play_services_notification_channel_name">Ukungatholakali kwamasevisi e-Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Iphutha lamasevisi we-Google Play</string>
+    <string name="common_google_play_services_signin_required_text">I-%1$s ayikwazanga ukuxhuma kumasevisi eGoogle Play. Sicela ungene ngemvume ku-akhawunti yakho yeGoogle.</string>
+    <string name="common_google_play_services_signin_required_title">Ukungena ngemvume kuyadingeka</string>
+    <string name="common_google_play_services_try_again_text">I-%1$s ayikwazanga ukuxhuma kumasevisi eGoogle Play. Sicela uzame futhi.</string>
+    <string name="common_google_play_services_try_again_title">Sicela uzame futhi</string>
+    <string name="common_google_play_services_unknown_issue">%1$s inenkinga ngamasevisi e-Google Play. Sicela uzame futhi.</string>
+    <string name="common_google_play_services_unsupported_text">I-%1$s ayikwazi ukuqalisa ngoba idivayisi yakho ayiwaseki amasevisi eGoogle Play. Sicela usebenzise idivayisi esekelwe.</string>
+    <string name="common_google_play_services_unsupported_title">Idivayisi ayihambelani</string>
+    <string name="common_google_play_services_update_button">Isibuyekezo</string>
+    <string name="common_google_play_services_update_text">Buyekeza amasevisi eGoogle Play ukuze usebenzise i-%1$s.</string>
+    <string name="common_google_play_services_update_title">Buyekeza amasevisi we-Google Play</string>
+    <string name="common_google_play_services_updating_client_title">Ibuyekeza amasevisi eGoogle Play</string>
+    <string name="common_google_play_services_updating_text">I-%1$s izotholakala uma ukubuyekezwa kwamasevisi eGoogle Play sekuqedile.</string>
+    <string name="common_google_play_services_wear_update_text">Buyekeza amasevisi eGoogle Play ukuze usebenzise i-%1$s.</string>
+    <string name="common_open_on_phone">Vula kufoni</string>
+    <string name="common_signin_button_text">Ngena ngemvume</string>
+    <string name="common_signin_button_text_long">Ngena ngemvume nge-Google</string>
+    <string name="copy_toast_msg">Isixhumanisi sikopishelwe ku-clipboard</string>
+    <string name="fallback_menu_item_copy_link">Kopisha isixhumanisi</string>
+    <string name="fallback_menu_item_open_in_browser">Vula kusiphequluli</string>
+    <string name="fallback_menu_item_share_link">Yabelana ngesixhumanisi</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

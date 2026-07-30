@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Luba</string>
+    <string name="common_google_play_services_enable_text">Google Play teenused peavad olema rakenduse %1$s jaoks lubatud.</string>
+    <string name="common_google_play_services_enable_title">Google Play teenuste lubamine</string>
+    <string name="common_google_play_services_install_button">Installi</string>
+    <string name="common_google_play_services_install_text">Rakenduse %1$s kasutamise jätkamiseks installige Google Play teenused.</string>
+    <string name="common_google_play_services_install_title">Installige Google Play teenused</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play teenuste saadavalolek</string>
+    <string name="common_google_play_services_notification_ticker">Viga Google Play teenustes</string>
+    <string name="common_google_play_services_signin_required_text">%1$s ei saanud Google Play teenustega ühendust luua. Logige oma Google\'i kontole sisse.</string>
+    <string name="common_google_play_services_signin_required_title">Peate sisse logima</string>
+    <string name="common_google_play_services_try_again_text">%1$s ei saanud Google Play teenustega ühendust luua. Proovige uuesti.</string>
+    <string name="common_google_play_services_try_again_title">Proovige uuesti</string>
+    <string name="common_google_play_services_unknown_issue">Rakendusel %1$s on probleeme Google Play teenustega. Proovige uuesti.</string>
+    <string name="common_google_play_services_unsupported_text">Rakendust %1$s ei saa käivitada, kuna teie seade ei toeta Google Play teenuseid. Kasutage toetatud seadet.</string>
+    <string name="common_google_play_services_unsupported_title">Seade ei ühildu</string>
+    <string name="common_google_play_services_update_button">Värskenda</string>
+    <string name="common_google_play_services_update_text">Värskendage rakenduse %1$s kasutamiseks Google Play teenuseid.</string>
+    <string name="common_google_play_services_update_title">Google Play teenuste värskendamine</string>
+    <string name="common_google_play_services_updating_client_title">Google Play teenuste värskendamine</string>
+    <string name="common_google_play_services_updating_text">Saate rakendust %1$s kasutada pärast Google Play teenuste värskendamise lõppu.</string>
+    <string name="common_google_play_services_wear_update_text">Värskendage rakenduse %1$s kasutamiseks Google Play teenuseid.</string>
+    <string name="common_open_on_phone">Ava telefonis</string>
+    <string name="common_signin_button_text">Logi sisse</string>
+    <string name="common_signin_button_text_long">Logi sisse Google\'i kontoga</string>
+    <string name="copy_toast_msg">Link kopeeriti lõikelauale</string>
+    <string name="fallback_menu_item_copy_link">Kopeeri link</string>
+    <string name="fallback_menu_item_open_in_browser">Ava brauseris</string>
+    <string name="fallback_menu_item_share_link">Jaga linki</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

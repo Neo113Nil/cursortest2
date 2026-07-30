@@ -1,0 +1,141 @@
+package com.google.android.gms.common.internal;
+
+import android.content.Context;
+import android.content.ServiceConnection;
+import android.os.Build;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.UserHandle;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.stats.ConnectionTracker;
+import com.onevcat.uniwebview.UniWebViewInterface;
+import java.util.HashMap;
+import java.util.concurrent.Executor;
+
+/* compiled from: com.google.android.gms:play-services-basement@@18.10.0 */
+/* loaded from: classes.dex */
+final class zzq extends GmsClientSupervisor {
+    private final HashMap zzb = new HashMap();
+    private final Context zzc;
+    private volatile Handler zzd;
+    private final zzp zze;
+    private final ConnectionTracker zzf;
+    private final long zzg;
+    private final long zzh;
+    private volatile Executor zzi;
+
+    zzq(Context context, Looper looper, Executor executor) {
+        zzp zzpVar = new zzp(this, null);
+        this.zze = zzpVar;
+        this.zzc = context.getApplicationContext();
+        this.zzd = new com.google.android.gms.internal.common.zzg(looper, zzpVar);
+        this.zzf = ConnectionTracker.getInstance();
+        this.zzg = UniWebViewInterface.RUN_SYNC_WAIT_TIME_MS;
+        this.zzh = 300000L;
+        this.zzi = executor;
+    }
+
+    @Override // com.google.android.gms.common.internal.GmsClientSupervisor
+    protected final ConnectionResult zza(zzn zznVar, ServiceConnection serviceConnection, String str, Executor executor) {
+        ConnectionResult connectionResult;
+        Preconditions.checkNotNull(serviceConnection, "ServiceConnection must not be null");
+        HashMap hashMap = this.zzb;
+        synchronized (hashMap) {
+            zzo zzoVar = (zzo) hashMap.get(zznVar);
+            if (executor == null) {
+                executor = this.zzi;
+            }
+            if (zzoVar == null) {
+                zzoVar = new zzo(this, zznVar);
+                zzoVar.zzb(serviceConnection, serviceConnection, str);
+                UserHandle zze = zznVar.zze();
+                connectionResult = (zze == null || Build.VERSION.SDK_INT < 33) ? zzoVar.zzj(str, executor) : zzoVar.zzk(str, zze);
+                hashMap.put(zznVar, zzoVar);
+            } else {
+                this.zzd.removeMessages(0, zznVar);
+                if (zzoVar.zzf(serviceConnection)) {
+                    String obj = zznVar.toString();
+                    StringBuilder sb = new StringBuilder(obj.length() + 81);
+                    sb.append("Trying to bind a GmsServiceConnection that was already connected before.  config=");
+                    sb.append(obj);
+                    throw new IllegalStateException(sb.toString());
+                }
+                zzoVar.zzb(serviceConnection, serviceConnection, str);
+                int zze2 = zzoVar.zze();
+                if (zze2 == 1) {
+                    serviceConnection.onServiceConnected(zzoVar.zzi(), zzoVar.zzh());
+                } else if (zze2 == 2) {
+                    UserHandle zze3 = zznVar.zze();
+                    connectionResult = (zze3 == null || Build.VERSION.SDK_INT < 33) ? zzoVar.zzj(str, executor) : zzoVar.zzk(str, zze3);
+                }
+                connectionResult = null;
+            }
+            if (zzoVar.zzd()) {
+                return ConnectionResult.RESULT_SUCCESS;
+            }
+            if (connectionResult == null) {
+                connectionResult = new ConnectionResult(-1);
+            }
+            return connectionResult;
+        }
+    }
+
+    @Override // com.google.android.gms.common.internal.GmsClientSupervisor
+    protected final void zzc(zzn zznVar, ServiceConnection serviceConnection, String str) {
+        Preconditions.checkNotNull(serviceConnection, "ServiceConnection must not be null");
+        HashMap hashMap = this.zzb;
+        synchronized (hashMap) {
+            zzo zzoVar = (zzo) hashMap.get(zznVar);
+            if (zzoVar == null) {
+                String obj = zznVar.toString();
+                StringBuilder sb = new StringBuilder(obj.length() + 50);
+                sb.append("Nonexistent connection status for service config: ");
+                sb.append(obj);
+                throw new IllegalStateException(sb.toString());
+            }
+            if (!zzoVar.zzf(serviceConnection)) {
+                String obj2 = zznVar.toString();
+                StringBuilder sb2 = new StringBuilder(obj2.length() + 76);
+                sb2.append("Trying to unbind a GmsServiceConnection  that was not bound before.  config=");
+                sb2.append(obj2);
+                throw new IllegalStateException(sb2.toString());
+            }
+            zzoVar.zzc(serviceConnection, str);
+            if (zzoVar.zzg()) {
+                this.zzd.sendMessageDelayed(this.zzd.obtainMessage(0, zznVar), this.zzg);
+            }
+        }
+    }
+
+    final void zzd(Looper looper) {
+        synchronized (this.zzb) {
+            this.zzd = new com.google.android.gms.internal.common.zzg(looper, this.zze);
+        }
+    }
+
+    final void zze(Executor executor) {
+        synchronized (this.zzb) {
+            this.zzi = executor;
+        }
+    }
+
+    final /* synthetic */ HashMap zzf() {
+        return this.zzb;
+    }
+
+    final /* synthetic */ Context zzg() {
+        return this.zzc;
+    }
+
+    final /* synthetic */ Handler zzh() {
+        return this.zzd;
+    }
+
+    final /* synthetic */ ConnectionTracker zzi() {
+        return this.zzf;
+    }
+
+    final /* synthetic */ long zzj() {
+        return this.zzh;
+    }
+}

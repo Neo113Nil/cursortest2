@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Уключыць</string>
+    <string name="common_google_play_services_enable_text">Каб карыстацца праграмай \"%1$s\", трэба ўключыць сэрвісы Google Play.</string>
+    <string name="common_google_play_services_enable_title">Уключыць службы Google Play</string>
+    <string name="common_google_play_services_install_button">Усталяваць</string>
+    <string name="common_google_play_services_install_text">Каб працягваць карыстацца праграмай \"%1$s\", усталюйце сэрвісы Google Play.</string>
+    <string name="common_google_play_services_install_title">Усталюйце сэрвісы Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Даступнасць сэрвісаў Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Памылка службаў Google Play</string>
+    <string name="common_google_play_services_signin_required_text">Праграме \"%1$s\" не ўдалося падключыцца да сэрвісаў Google Play. Увайдзіце ва ўліковы запіс Google.</string>
+    <string name="common_google_play_services_signin_required_title">Патрабуецца ўваход</string>
+    <string name="common_google_play_services_try_again_text">Праграме \"%1$s\" не ўдалося падключыцца да сэрвісаў Google Play. Паўтарыце спробу.</string>
+    <string name="common_google_play_services_try_again_title">Паўтарыце спробу</string>
+    <string name="common_google_play_services_unknown_issue">У праграмы %1$s узніклі праблемы са службамі Google Play. Паўтарыце спробу.</string>
+    <string name="common_google_play_services_unsupported_text">Праграма \"%1$s\" не запускаецца, бо сэрвісы Google Play не падтрымліваюцца на вашай прыладзе. Выкарыстоўвайце сумяшчальную прыладу.</string>
+    <string name="common_google_play_services_unsupported_title">Несумяшчальнасць з прыладай</string>
+    <string name="common_google_play_services_update_button">Абнавіць</string>
+    <string name="common_google_play_services_update_text">Каб карыстацца праграмай \"%1$s\", абнавіце сэрвісы Google Play.</string>
+    <string name="common_google_play_services_update_title">Абнаўленне службаў Google Play</string>
+    <string name="common_google_play_services_updating_client_title">Сэрвісы Google Play абнаўляюцца</string>
+    <string name="common_google_play_services_updating_text">Вы зможаце карыстацца праграмай \"%1$s\" пасля завяршэння абнаўлення сэрвісаў Google Play.</string>
+    <string name="common_google_play_services_wear_update_text">Каб карыстацца праграмай \"%1$s\", абнавіце сэрвісы Google Play.</string>
+    <string name="common_open_on_phone">Адкрыць на тэлефоне</string>
+    <string name="common_signin_button_text">Увайсцi</string>
+    <string name="common_signin_button_text_long">Увайсці праз Google</string>
+    <string name="copy_toast_msg">Спасылка скапіравана ў буфер абмену</string>
+    <string name="fallback_menu_item_copy_link">Скапіраваць спасылку</string>
+    <string name="fallback_menu_item_open_in_browser">Адкрыць у браўзеры</string>
+    <string name="fallback_menu_item_share_link">Абагуліць спасылку</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

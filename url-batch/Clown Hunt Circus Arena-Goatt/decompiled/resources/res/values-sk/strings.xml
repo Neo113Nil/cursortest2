@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="common_google_play_services_enable_button">Povoliť</string>
+    <string name="common_google_play_services_enable_text">Pre aplikáciu %1$s musíte povoliť Služby Google Play.</string>
+    <string name="common_google_play_services_enable_title">Povoliť služby Google Play</string>
+    <string name="common_google_play_services_install_button">Inštalovať</string>
+    <string name="common_google_play_services_install_text">Ak chcete aplikáciu %1$s ďalej používať, nainštalujte si Služby Google Play.</string>
+    <string name="common_google_play_services_install_title">Nainštalujte si Služby Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Dostupnosť služieb Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Chyba služieb Google Play</string>
+    <string name="common_google_play_services_signin_required_text">Aplikácii %1$s sa nepodarilo pripojiť k Službám Google Play. Prihláste sa do svojho účtu Google.</string>
+    <string name="common_google_play_services_signin_required_title">Vyžaduje sa prihlásenie</string>
+    <string name="common_google_play_services_try_again_text">Aplikácii %1$s sa nepodarilo pripojiť k Službám Google Play. Skúste to znova.</string>
+    <string name="common_google_play_services_try_again_title">Skúste to znova</string>
+    <string name="common_google_play_services_unknown_issue">Aplikácia %1$s má problémy so službami Google Play. Skúste to znova.</string>
+    <string name="common_google_play_services_unsupported_text">Aplikácia %1$s sa nedá spustiť, pretože vaše zariadenie nepodporuje Služby Google Play. Použite podporované zariadenie.</string>
+    <string name="common_google_play_services_unsupported_title">Zariadenie nie je kompatibilné</string>
+    <string name="common_google_play_services_update_button">Aktualizovať</string>
+    <string name="common_google_play_services_update_text">Ak chcete aplikáciu %1$s používať, aktualizujte Služby Google Play.</string>
+    <string name="common_google_play_services_update_title">Aktualizácia služieb Google Play</string>
+    <string name="common_google_play_services_updating_client_title">Služby Google Play sa aktualizujú</string>
+    <string name="common_google_play_services_updating_text">Aplikácia %1$s bude k dispozícii po dokončení aktualizácie Služieb Google Play.</string>
+    <string name="common_google_play_services_wear_update_text">Ak chcete používať aplikáciu %1$s, aktualizujte Služby Google Play.</string>
+    <string name="common_open_on_phone">Otvoriť v telefóne</string>
+    <string name="common_signin_button_text">Prihlásiť sa</string>
+    <string name="common_signin_button_text_long">Prihlásiť sa do účtu Google</string>
+    <string name="copy_toast_msg">Odkaz bol skopírovaný do schránky</string>
+    <string name="fallback_menu_item_copy_link">Kopírovať odkaz</string>
+    <string name="fallback_menu_item_open_in_browser">Otvoriť v prehliadači</string>
+    <string name="fallback_menu_item_share_link">Zdieľať odkaz</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

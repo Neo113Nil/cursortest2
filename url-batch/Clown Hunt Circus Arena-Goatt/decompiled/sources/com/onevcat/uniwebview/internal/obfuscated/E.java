@@ -1,0 +1,44 @@
+package com.onevcat.uniwebview.internal.obfuscated;
+
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.Transformation;
+import kotlin.jvm.internal.Intrinsics;
+
+/* loaded from: classes.dex */
+public final class E extends Animation {
+    public final View a;
+    public final int b;
+    public final int c;
+    public final int d;
+    public final int e;
+    public final int f;
+    public final int g;
+
+    public E(View view, int i, int i2, int i3, int i4) {
+        Intrinsics.checkNotNullParameter(view, "view");
+        this.a = view;
+        this.b = i;
+        this.c = i3;
+        this.d = i2 - i;
+        this.e = i4 - i3;
+        this.f = view.getWidth();
+        this.g = view.getHeight();
+    }
+
+    @Override // android.view.animation.Animation
+    public final void applyTransformation(float f, Transformation transformation) {
+        if (f != 1.0f || isFillEnabled()) {
+            if (this.e != 0) {
+                this.a.getLayoutParams().height = (int) ((this.e * f) + this.c);
+            }
+            if (this.d != 0) {
+                this.a.getLayoutParams().width = (int) ((this.d * f) + this.b);
+            }
+        } else {
+            this.a.getLayoutParams().height = this.g;
+            this.a.getLayoutParams().width = this.f;
+        }
+        this.a.requestLayout();
+    }
+}
