@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="26dp"
+    android:paddingEnd="26dp">
+    <include
+        android:id="@+id/include_last_statistics"
+        layout="@layout/band_last_statistics"/>
+    <include
+        android:id="@+id/include_hr_extremes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        layout="@layout/view_heart_rate_extremes"/>
+    <include
+        android:id="@+id/include_hr_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        layout="@layout/heart_rate_chart_view"/>
+</LinearLayout>

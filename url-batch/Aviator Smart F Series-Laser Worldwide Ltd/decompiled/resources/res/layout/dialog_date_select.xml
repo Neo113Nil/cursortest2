@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/cancel"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:id="@+id/tv_done"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/done"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"/>
+    <View
+        android:layout_marginTop="39dp"
+        style="@style/BorderView"/>
+    <com.crrepa.band.my.profile.userinfo.wheelpicker.widgets.WheelDatePicker
+        android:id="@+id/wp_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>

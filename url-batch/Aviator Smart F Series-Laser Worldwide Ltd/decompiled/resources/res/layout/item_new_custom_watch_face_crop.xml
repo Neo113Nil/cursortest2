@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="71dp"
+    android:layout_height="71dp">
+    <com.moyoung.dafit.module.common.widgets.roundedimageview.RoundedImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="71dp"
+        android:layout_height="71dp"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="8dp"/>
+    <View
+        android:id="@+id/mask"
+        android:background="#88000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="3dp"
+        android:src="0x7f0805b2"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+package com.crrepa.ble.spp.hisilicon.receive;
+
+/* loaded from: classes3.dex */
+public interface CmdConstants {
+    public static final byte COMMAND_MAP_BAIDU = 3;
+    public static final byte COMMAND_NOTIFY = 5;
+    public static final byte COMMAND_REQUEST = 3;
+    public static final byte COMMAND_STOP = 6;
+    public static final byte COMMAND_VOICE_BAIDU = 1;
+    public static final byte MODEL_FILE = 6;
+    public static final byte MODEL_MSGCENTER = 13;
+    public static final byte TYPE_NOTIFY = 1;
+    public static final byte TYPE_REQUEST = 1;
+    public static final byte TYPE_REQUEST_GEO_LOCATION = 16;
+    public static final byte TYPE_REQUEST_LICENSE = 14;
+    public static final byte TYPE_REQUEST_NAVIGATION_END = 66;
+    public static final byte TYPE_REQUEST_NAVIGATION_INIT = 18;
+    public static final byte TYPE_REQUEST_POI_SEARCH = 10;
+    public static final byte TYPE_REQUEST_REVERSE_GEO_CODE = 60;
+    public static final byte TYPE_REQUEST_ROUTE_CYCLING = 52;
+    public static final byte TYPE_REQUEST_ROUTE_TRANSIT = 56;
+    public static final byte TYPE_REQUEST_ROUTE_WALKING = 54;
+    public static final byte TYPE_REQUEST_SUG_SEARCH = 50;
+    public static final byte TYPE_REQUEST_SVG = 3;
+    public static final byte TYPE_SEND_ARRIVE_DEST = 49;
+    public static final byte TYPE_SEND_GEO_LOCATION = 17;
+    public static final byte TYPE_SEND_GPS_STATUS_CHANGE = 41;
+    public static final byte TYPE_SEND_LICENSE_RESULT = 15;
+    public static final byte TYPE_SEND_NAVIGATION_END = 67;
+    public static final byte TYPE_SEND_NAVIGATION_INIT_RESULT = 19;
+    public static final byte TYPE_SEND_NAVIGATION_START = 27;
+    public static final byte TYPE_SEND_POI_SEARCH = 11;
+    public static final byte TYPE_SEND_REMAIN_DISTANCE_UPDATE = 37;
+    public static final byte TYPE_SEND_REMAIN_ROUTE_UPDATE = 39;
+    public static final byte TYPE_SEND_REMAIN_TIME_UPDATE = 35;
+    public static final byte TYPE_SEND_REVERSE_GEO_CODE = 61;
+    public static final byte TYPE_SEND_RE_ROUTE_COMPLETE = 47;
+    public static final byte TYPE_SEND_ROAD_GUIDE_ICON_UPDATE = 33;
+    public static final byte TYPE_SEND_ROAD_GUIDE_TEXT_UPDATE = 31;
+    public static final byte TYPE_SEND_ROUTE_CYCLING = 53;
+    public static final byte TYPE_SEND_ROUTE_FAR_AWAY = 43;
+    public static final byte TYPE_SEND_ROUTE_PLAN_FAIL = 25;
+    public static final byte TYPE_SEND_ROUTE_PLAN_START = 21;
+    public static final byte TYPE_SEND_ROUTE_PLAN_SUCCESS = 23;
+    public static final byte TYPE_SEND_ROUTE_PLAN_YAWING = 45;
+    public static final byte TYPE_SEND_ROUTE_TRANSIT = 57;
+    public static final byte TYPE_SEND_ROUTE_WALKING = 55;
+    public static final byte TYPE_SEND_SUG_SEARCH = 51;
+    public static final byte TYPE_SEND_SVG_UPDATE = 2;
+    public static final byte TYPE_STOP_ACK = 2;
+    public static final byte TYPE_VOICE_RESULT = 2;
+}

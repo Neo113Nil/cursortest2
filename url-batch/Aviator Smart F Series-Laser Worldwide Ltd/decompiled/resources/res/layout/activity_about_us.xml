@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/band_data_appbar"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/ll_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="0x7f080175"/>
+                <TextView
+                    android:textSize="@dimen/text_size_26"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"/>
+                <TextView
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/grey"
+                    android:id="@+id/tv_app_verison"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:layout_below="@+id/ll_logo">
+                <RelativeLayout
+                    android:id="@+id/app_score"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <View style="@style/BorderView"/>
+                    <TextView
+                        android:text="@string/app_score"
+                        style="@style/SettingItemText"/>
+                    <include layout="@layout/continue_arrow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_beta_firmware_update"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <View
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        style="@style/BorderView"/>
+                    <TextView
+                        android:text="@string/firmware_update_beta"
+                        style="@style/SettingItemText"/>
+                    <include layout="@layout/continue_arrow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/privacy_policy"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <View style="@style/BorderView"/>
+                    <TextView
+                        android:text="@string/privacy_policy"
+                        style="@style/SettingItemText"/>
+                    <include layout="@layout/continue_arrow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/software_license"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <View style="@style/BorderView"/>
+                    <TextView
+                        android:text="@string/software_license"
+                        style="@style/SettingItemText"/>
+                    <include layout="@layout/continue_arrow"/>
+                </RelativeLayout>
+                <View
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    style="@style/BorderView"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

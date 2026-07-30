@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_delete_history"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/iv_delete_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="0x7f08066b"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/assist_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/navigation_delete_history"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_delete_history"/>
+    </RelativeLayout>
+</RelativeLayout>

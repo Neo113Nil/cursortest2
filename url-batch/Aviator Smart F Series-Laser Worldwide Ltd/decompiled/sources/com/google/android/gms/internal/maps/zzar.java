@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.maps;
+
+import android.os.IInterface;
+import com.google.android.gms.maps.model.FeatureStyle;
+import javax.annotation.Nullable;
+
+/* loaded from: classes3.dex */
+public interface zzar extends IInterface {
+    @Nullable
+    FeatureStyle zzb(zzp zzpVar);
+}

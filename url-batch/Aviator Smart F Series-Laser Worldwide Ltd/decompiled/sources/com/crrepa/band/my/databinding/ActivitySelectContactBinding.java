@@ -1,0 +1,91 @@
+package com.crrepa.band.my.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
+import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
+import com.crrepa.band.aviator.R;
+import me.yokeyword.indexablerv.IndexableLayout;
+
+/* loaded from: classes2.dex */
+public final class ActivitySelectContactBinding implements ViewBinding {
+
+    @NonNull
+    public final IndexableLayout contactIndexableLayout;
+
+    @NonNull
+    private final LinearLayout rootView;
+
+    @NonNull
+    public final SearchView searchview;
+
+    @NonNull
+    public final TextView tvCancel;
+
+    @NonNull
+    public final TextView tvDone;
+
+    @NonNull
+    public final TextView tvTitle;
+
+    private ActivitySelectContactBinding(@NonNull LinearLayout linearLayout, @NonNull IndexableLayout indexableLayout, @NonNull SearchView searchView, @NonNull TextView textView, @NonNull TextView textView2, @NonNull TextView textView3) {
+        this.rootView = linearLayout;
+        this.contactIndexableLayout = indexableLayout;
+        this.searchview = searchView;
+        this.tvCancel = textView;
+        this.tvDone = textView2;
+        this.tvTitle = textView3;
+    }
+
+    @NonNull
+    public static ActivitySelectContactBinding bind(@NonNull View view) {
+        int i8 = R.id.contact_indexableLayout;
+        IndexableLayout indexableLayout = (IndexableLayout) ViewBindings.findChildViewById(view, R.id.contact_indexableLayout);
+        if (indexableLayout != null) {
+            i8 = R.id.searchview;
+            SearchView searchView = (SearchView) ViewBindings.findChildViewById(view, R.id.searchview);
+            if (searchView != null) {
+                i8 = R.id.tv_cancel;
+                TextView textView = (TextView) ViewBindings.findChildViewById(view, R.id.tv_cancel);
+                if (textView != null) {
+                    i8 = R.id.tv_done;
+                    TextView textView2 = (TextView) ViewBindings.findChildViewById(view, R.id.tv_done);
+                    if (textView2 != null) {
+                        i8 = R.id.tv_title;
+                        TextView textView3 = (TextView) ViewBindings.findChildViewById(view, R.id.tv_title);
+                        if (textView3 != null) {
+                            return new ActivitySelectContactBinding((LinearLayout) view, indexableLayout, searchView, textView, textView2, textView3);
+                        }
+                    }
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i8)));
+    }
+
+    @NonNull
+    public static ActivitySelectContactBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    @NonNull
+    public static ActivitySelectContactBinding inflate(@NonNull LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, boolean z7) {
+        View inflate = layoutInflater.inflate(R.layout.activity_select_contact, viewGroup, false);
+        if (z7) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+}

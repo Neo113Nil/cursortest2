@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="160dp">
+    <CheckBox
+        android:id="@+id/cb_delete_watch_face"
+        android:background="@color/translucent"
+        android:clickable="false"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:button="@null"
+        android:drawableStart="@drawable/selector_download_watch_face_check"/>
+    <com.moyoung.dafit.module.common.widgets.roundedimageview.RoundedImageView
+        android:id="@+id/iv_watch_face"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:textSize="@dimen/text_size_14"
+        android:textColor="@color/black"
+        android:id="@+id/tv_watch_face_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"/>
+</LinearLayout>

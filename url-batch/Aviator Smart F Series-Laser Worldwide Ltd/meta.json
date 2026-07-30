@@ -1,0 +1,36 @@
+{
+  "app_id": "com.crrepa.band.aviator",
+  "title": "Aviator Smart F Series",
+  "developer": "Laser Worldwide Ltd",
+  "developer_id": "Laser+Worldwide+Ltd.",
+  "icon": "https://play-lh.googleusercontent.com/TloH2SYqKPGOLlitth9_8CIM_wCbL8FLvVBkcvINmNTYBevgJz2HMTOPChYC-UVBE0AlawGRB_iJmFJBhpSSK6Y",
+  "url": "https://play.google.com/store/apps/details?id=com.crrepa.band.aviator&hl=en&gl=us",
+  "score": 3.6,
+  "released": "Sep 7, 2023",
+  "updated": "2025-11-25",
+  "version": "v2.9.2-2",
+  "summary": "Reach for the skies",
+  "keyword": "url-batch",
+  "folder": "Aviator Smart F Series-Laser Worldwide Ltd",
+  "path": "url-batch/Aviator Smart F Series-Laser Worldwide Ltd",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.crrepa.band.aviator.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator Smart F Series-Laser Worldwide Ltd",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.crrepa.band.aviator...\ncom.crrepa.band.aviator downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

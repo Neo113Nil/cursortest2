@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.moyoung.dafit.module.common.widgets.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <View style="@style/BorderView"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_tab"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_tab_height"
+        app:tabIndicatorHeight="0dp"/>
+</LinearLayout>

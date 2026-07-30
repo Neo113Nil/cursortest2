@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingLeft="26dp"
+        android:paddingTop="20dp"
+        android:paddingRight="26dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_strava"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="0x7f080273"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/assist_13_00"
+                android:id="@+id/tv_strava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/strava_title"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
