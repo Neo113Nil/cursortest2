@@ -33,5 +33,79 @@
   ],
   "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road Game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.5.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Realtime Database"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines, kotlinx-serialization-json, Jetpack Compose / Material3, AndroidX (Activity, Core, Lifecycle, Navigation Compose, DataStore Preferences, Room, Emoji2, SplashScreen, Startup, ProfileInstaller, SavedState, SQLite, Fragment, CustomView, Graphics Path), OkHttp3 / Okio, AppsFlyer 6.14.0, Firebase (Realtime Database, common/ktx), Google Play Services (Base, Basement, Tasks, Ads Identifier), Play Install Referrer, Pairip (com.pairip.application / licensecheck), native roostio / platecore"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore Preferences app_state: сохранённый URL оффера (pageUrl), метка времени, флаг согласия (agreed); SharedPreferences appsflyer-data у AppsFlyer"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "bridge, uniwebview, checkUrl, User-Agent, consent, installReferrer, WebView, gaid, pageUrl, active, roostio, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Снаружи это приложение для учёта куриной фермы: поголовье, корм, яйца, прививки, статистика (пакет com.chicken.road.cerman.fixs, на витрине — Chicken road game / Sakura Institute). Но при каждом запуске перед показом «фермы» срабатывает скрытый модуль roost: приложение тихо читает удалённый конфиг из Firebase Realtime Database и, если флаг включён, спрашивает у своего checkUrl, можно ли этому устройству показать внешнюю страницу. Модератору и «неподходящему» трафику сервер не отдаёт ссылку — человек остаётся в обычном интерфейсе фермы. «Нужному» пользователю приходит URL, и приложение открывает его в полноэкранном WebView (встроенном браузере). Финальный сайт в APK не зашит: он приезжает динамически с checkUrl, поэтому конкретный оффер (казино, беттинг и т.п.) из статического кода не виден."
+  }
 }
