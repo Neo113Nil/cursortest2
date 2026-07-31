@@ -1,0 +1,67 @@
+package com.yandex.mobile.ads.impl;
+
+import android.content.Context;
+import com.monetization.ads.nativeads.ExtendedNativeAdView;
+import com.yandex.mobile.ads.R;
+import j2.AbstractC3185a;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+/* loaded from: classes3.dex */
+public final class kq0 implements td0 {
+
+    /* renamed from: a, reason: collision with root package name */
+    @NotNull
+    private final q00<ExtendedNativeAdView> f28303a;
+
+    /* renamed from: b, reason: collision with root package name */
+    @NotNull
+    private final mp1 f28304b;
+
+    /* renamed from: c, reason: collision with root package name */
+    @NotNull
+    private final nq1 f28305c;
+
+    /* renamed from: d, reason: collision with root package name */
+    @NotNull
+    private final iq f28306d;
+
+    public kq0(@NotNull sp adTypeSpecificBinder, @NotNull mp1 reporter, @NotNull nq1 resourceUtils, @NotNull iq commonComponentsBinderProvider) {
+        Intrinsics.checkNotNullParameter(adTypeSpecificBinder, "adTypeSpecificBinder");
+        Intrinsics.checkNotNullParameter(reporter, "reporter");
+        Intrinsics.checkNotNullParameter(resourceUtils, "resourceUtils");
+        Intrinsics.checkNotNullParameter(commonComponentsBinderProvider, "commonComponentsBinderProvider");
+        this.f28303a = adTypeSpecificBinder;
+        this.f28304b = reporter;
+        this.f28305c = resourceUtils;
+        this.f28306d = commonComponentsBinderProvider;
+    }
+
+    @Override // com.yandex.mobile.ads.impl.td0
+    @NotNull
+    public final nq0<ExtendedNativeAdView> a(@NotNull Context context, @NotNull C2360y7<?> adResponse, @NotNull f61 nativeAdPrivate, @NotNull mr contentCloseListener, @NotNull dt nativeAdEventListener, @NotNull C1792a1 eventController) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(adResponse, "adResponse");
+        Intrinsics.checkNotNullParameter(nativeAdPrivate, "nativeAdPrivate");
+        Intrinsics.checkNotNullParameter(contentCloseListener, "contentCloseListener");
+        Intrinsics.checkNotNullParameter(nativeAdEventListener, "nativeAdEventListener");
+        Intrinsics.checkNotNullParameter(eventController, "eventController");
+        ct adAssets = nativeAdPrivate.getAdAssets();
+        nq1 nq1Var = this.f28305c;
+        int i4 = R.dimen.monetization_ads_internal_landscape_vertical_icon_size;
+        nq1Var.getClass();
+        Intrinsics.checkNotNullParameter(context, "context");
+        pq pqVar = new pq(adAssets, AbstractC3185a.c(context.getResources().getDimension(i4)));
+        iq iqVar = this.f28306d;
+        q00<ExtendedNativeAdView> q00Var = this.f28303a;
+        mp1 mp1Var = this.f28304b;
+        iqVar.getClass();
+        nq nqVar = new nq(pqVar, iq.a(nativeAdPrivate, contentCloseListener, nativeAdEventListener, q00Var, mp1Var), new fu0(adAssets, new p41(), new gu0(adAssets)), new fh1(adAssets, new v31(), new y31()), new yi2(), new bn(nativeAdPrivate, new y31()));
+        ct adAssets2 = nativeAdPrivate.getAdAssets();
+        nq1 nq1Var2 = this.f28305c;
+        int i5 = R.dimen.monetization_ads_internal_landscape_vertical_media_content_min_width;
+        nq1Var2.getClass();
+        Intrinsics.checkNotNullParameter(context, "context");
+        return new nq0<>(R.layout.monetization_ads_internal_native_interstitial_landscape_vetrical_media, nqVar, new oq(new ef1(2), new mu0(adAssets2, AbstractC3185a.c(context.getResources().getDimension(i5)), new gu0(adAssets2))));
+    }
+}

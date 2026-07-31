@@ -1,0 +1,51 @@
+package com.google.android.material;
+
+/* loaded from: classes.dex */
+public abstract class R$id {
+    public static int cancel_button = 2131296378;
+    public static int circle_center = 2131296402;
+    public static int confirm_button = 2131296411;
+    public static int coordinator = 2131296417;
+    public static int design_bottom_sheet = 2131296448;
+    public static int design_menu_item_action_area_stub = 2131296450;
+    public static int design_menu_item_text = 2131296451;
+    public static int material_clock_display = 2131296604;
+    public static int material_clock_face = 2131296605;
+    public static int material_clock_hand = 2131296606;
+    public static int material_clock_period_toggle = 2131296609;
+    public static int material_hour_tv = 2131296611;
+    public static int material_label = 2131296612;
+    public static int material_minute_tv = 2131296614;
+    public static int material_value_index = 2131296622;
+    public static int month_grid = 2131296636;
+    public static int month_navigation_fragment_toggle = 2131296638;
+    public static int month_navigation_next = 2131296639;
+    public static int month_navigation_previous = 2131296640;
+    public static int month_title = 2131296641;
+    public static int mtrl_anchor_parent = 2131296643;
+    public static int mtrl_calendar_day_selector_frame = 2131296644;
+    public static int mtrl_calendar_days_of_week = 2131296645;
+    public static int mtrl_calendar_frame = 2131296646;
+    public static int mtrl_calendar_main_pane = 2131296647;
+    public static int mtrl_calendar_months = 2131296648;
+    public static int mtrl_calendar_year_selector_frame = 2131296651;
+    public static int mtrl_card_checked_layer_id = 2131296652;
+    public static int mtrl_picker_header_selection_text = 2131296658;
+    public static int mtrl_picker_header_toggle = 2131296660;
+    public static int mtrl_picker_text_input_date = 2131296661;
+    public static int mtrl_picker_text_input_range_end = 2131296662;
+    public static int mtrl_picker_text_input_range_start = 2131296663;
+    public static int mtrl_picker_title_text = 2131296664;
+    public static int row_index_key = 2131296767;
+    public static int selection_type = 2131296808;
+    public static int snackbar_action = 2131296817;
+    public static int snackbar_text = 2131296818;
+    public static int text_input_error_icon = 2131296892;
+    public static int textinput_counter = 2131296894;
+    public static int textinput_error = 2131296895;
+    public static int textinput_helper_text = 2131296896;
+    public static int textinput_placeholder = 2131296897;
+    public static int textinput_prefix_text = 2131296898;
+    public static int textinput_suffix_text = 2131296899;
+    public static int touch_outside = 2131296915;
+}

@@ -1,0 +1,10 @@
+package kotlin.text;
+
+import kotlin.Metadata;
+
+@Metadata
+/* loaded from: classes3.dex */
+public final class CharsKt extends a {
+    private CharsKt() {
+    }
+}

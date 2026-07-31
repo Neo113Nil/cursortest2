@@ -1,0 +1,28 @@
+package com.google.android.gms.common.api;
+
+import android.util.Log;
+import com.google.android.gms.common.api.Result;
+
+/* loaded from: classes.dex */
+public abstract class ResultCallbacks<R extends Result> implements ResultCallback<R> {
+    public abstract void onFailure(Status status);
+
+    @Override // com.google.android.gms.common.api.ResultCallback
+    public final void onResult(R r4) {
+        Status status = r4.getStatus();
+        if (status.isSuccess()) {
+            onSuccess(r4);
+            return;
+        }
+        onFailure(status);
+        if (r4 instanceof Releasable) {
+            try {
+                ((Releasable) r4).release();
+            } catch (RuntimeException e4) {
+                Log.w("ResultCallbacks", "Unable to release ".concat(String.valueOf(r4)), e4);
+            }
+        }
+    }
+
+    public abstract void onSuccess(R r4);
+}

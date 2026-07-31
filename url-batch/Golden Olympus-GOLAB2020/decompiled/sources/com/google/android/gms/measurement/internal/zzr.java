@@ -1,0 +1,160 @@
+package com.google.android.gms.measurement.internal;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.text.TextUtils;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
+import java.util.List;
+
+/* loaded from: classes.dex */
+public final class zzr extends AbstractSafeParcelable {
+    public static final Parcelable.Creator<zzr> CREATOR = new zzs();
+    public final String zzA;
+    public final int zzB;
+    public final long zzC;
+    public final String zzD;
+    public final String zzE;
+    public final long zzF;
+    public final int zzG;
+    public final String zza;
+    public final String zzb;
+    public final String zzc;
+    public final String zzd;
+    public final long zze;
+    public final long zzf;
+    public final String zzg;
+    public final boolean zzh;
+    public final boolean zzi;
+    public final long zzj;
+    public final String zzk;
+    public final long zzl;
+    public final int zzm;
+    public final boolean zzn;
+    public final boolean zzo;
+    public final String zzp;
+    public final Boolean zzq;
+    public final long zzr;
+    public final List zzs;
+    public final String zzt;
+    public final String zzu;
+    public final String zzv;
+    public final String zzw;
+    public final boolean zzx;
+    public final long zzy;
+    public final int zzz;
+
+    zzr(String str, String str2, String str3, long j4, String str4, long j5, long j6, String str5, boolean z4, boolean z5, String str6, long j7, int i4, boolean z6, boolean z7, String str7, Boolean bool, long j8, List list, String str8, String str9, String str10, String str11, boolean z8, long j9, int i5, String str12, int i6, long j10, String str13, String str14, long j11, int i7) {
+        Preconditions.checkNotEmpty(str);
+        this.zza = str;
+        this.zzb = true == TextUtils.isEmpty(str2) ? null : str2;
+        this.zzc = str3;
+        this.zzj = j4;
+        this.zzd = str4;
+        this.zze = j5;
+        this.zzf = j6;
+        this.zzg = str5;
+        this.zzh = z4;
+        this.zzi = z5;
+        this.zzk = str6;
+        this.zzl = j7;
+        this.zzm = i4;
+        this.zzn = z6;
+        this.zzo = z7;
+        this.zzp = str7;
+        this.zzq = bool;
+        this.zzr = j8;
+        this.zzs = list;
+        this.zzt = str8;
+        this.zzu = str9;
+        this.zzv = str10;
+        this.zzw = str11;
+        this.zzx = z8;
+        this.zzy = j9;
+        this.zzz = i5;
+        this.zzA = str12;
+        this.zzB = i6;
+        this.zzC = j10;
+        this.zzD = str13;
+        this.zzE = str14;
+        this.zzF = j11;
+        this.zzG = i7;
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i4) {
+        String str = this.zza;
+        int beginObjectHeader = SafeParcelWriter.beginObjectHeader(parcel);
+        SafeParcelWriter.writeString(parcel, 2, str, false);
+        SafeParcelWriter.writeString(parcel, 3, this.zzb, false);
+        SafeParcelWriter.writeString(parcel, 4, this.zzc, false);
+        SafeParcelWriter.writeString(parcel, 5, this.zzd, false);
+        SafeParcelWriter.writeLong(parcel, 6, this.zze);
+        SafeParcelWriter.writeLong(parcel, 7, this.zzf);
+        SafeParcelWriter.writeString(parcel, 8, this.zzg, false);
+        SafeParcelWriter.writeBoolean(parcel, 9, this.zzh);
+        SafeParcelWriter.writeBoolean(parcel, 10, this.zzi);
+        SafeParcelWriter.writeLong(parcel, 11, this.zzj);
+        SafeParcelWriter.writeString(parcel, 12, this.zzk, false);
+        SafeParcelWriter.writeLong(parcel, 14, this.zzl);
+        SafeParcelWriter.writeInt(parcel, 15, this.zzm);
+        SafeParcelWriter.writeBoolean(parcel, 16, this.zzn);
+        SafeParcelWriter.writeBoolean(parcel, 18, this.zzo);
+        SafeParcelWriter.writeString(parcel, 19, this.zzp, false);
+        SafeParcelWriter.writeBooleanObject(parcel, 21, this.zzq, false);
+        SafeParcelWriter.writeLong(parcel, 22, this.zzr);
+        SafeParcelWriter.writeStringList(parcel, 23, this.zzs, false);
+        SafeParcelWriter.writeString(parcel, 24, this.zzt, false);
+        SafeParcelWriter.writeString(parcel, 25, this.zzu, false);
+        SafeParcelWriter.writeString(parcel, 26, this.zzv, false);
+        SafeParcelWriter.writeString(parcel, 27, this.zzw, false);
+        SafeParcelWriter.writeBoolean(parcel, 28, this.zzx);
+        SafeParcelWriter.writeLong(parcel, 29, this.zzy);
+        SafeParcelWriter.writeInt(parcel, 30, this.zzz);
+        SafeParcelWriter.writeString(parcel, 31, this.zzA, false);
+        SafeParcelWriter.writeInt(parcel, 32, this.zzB);
+        SafeParcelWriter.writeLong(parcel, 34, this.zzC);
+        SafeParcelWriter.writeString(parcel, 35, this.zzD, false);
+        SafeParcelWriter.writeString(parcel, 36, this.zzE, false);
+        SafeParcelWriter.writeLong(parcel, 37, this.zzF);
+        SafeParcelWriter.writeInt(parcel, 38, this.zzG);
+        SafeParcelWriter.finishObjectHeader(parcel, beginObjectHeader);
+    }
+
+    zzr(String str, String str2, String str3, String str4, long j4, long j5, String str5, boolean z4, boolean z5, long j6, String str6, long j7, int i4, boolean z6, boolean z7, String str7, Boolean bool, long j8, List list, String str8, String str9, String str10, String str11, boolean z8, long j9, int i5, String str12, int i6, long j10, String str13, String str14, long j11, int i7) {
+        this.zza = str;
+        this.zzb = str2;
+        this.zzc = str3;
+        this.zzj = j6;
+        this.zzd = str4;
+        this.zze = j4;
+        this.zzf = j5;
+        this.zzg = str5;
+        this.zzh = z4;
+        this.zzi = z5;
+        this.zzk = str6;
+        this.zzl = j7;
+        this.zzm = i4;
+        this.zzn = z6;
+        this.zzo = z7;
+        this.zzp = str7;
+        this.zzq = bool;
+        this.zzr = j8;
+        this.zzs = list;
+        this.zzt = str8;
+        this.zzu = str9;
+        this.zzv = str10;
+        this.zzw = str11;
+        this.zzx = z8;
+        this.zzy = j9;
+        this.zzz = i5;
+        this.zzA = str12;
+        this.zzB = i6;
+        this.zzC = j10;
+        this.zzD = str13;
+        this.zzE = str14;
+        this.zzF = j11;
+        this.zzG = i7;
+    }
+}

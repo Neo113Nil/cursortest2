@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/sdk_pay_component_horizontal_padding"
+    android:layout_marginRight="@dimen/sdk_pay_component_horizontal_padding"
+    android:minHeight="@dimen/sdk_pay_bottom_sheet_dialog_content_min_height"
+    android:layout_marginHorizontal="@dimen/sdk_pay_component_horizontal_padding">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/sdk_pay_pay_title_layout"/>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sdk_pay_spacer_m"
+        layout="@layout/sdk_pay_product_details_layout"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/sdk_pay_payment_progress_layout"/>
+    </FrameLayout>
+</LinearLayout>

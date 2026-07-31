@@ -1,0 +1,77 @@
+package com.ironsource.mediationsdk;
+
+import com.ironsource.mediationsdk.model.NetworkSettings;
+import io.appmetrica.analytics.coreutils.internal.StringUtils;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
+
+/* loaded from: classes2.dex */
+public class h {
+
+    /* renamed from: c, reason: collision with root package name */
+    public static final int f17572c = -1;
+
+    /* renamed from: d, reason: collision with root package name */
+    public static final int f17573d = 0;
+
+    /* renamed from: a, reason: collision with root package name */
+    private ConcurrentHashMap<String, ArrayList<a>> f17574a = new ConcurrentHashMap<>();
+
+    /* renamed from: b, reason: collision with root package name */
+    private int f17575b;
+
+    public enum a {
+        ISAuctionPerformanceDidntAttemptToLoad,
+        ISAuctionPerformanceFailedToLoad,
+        ISAuctionPerformanceLoadedSuccessfully,
+        ISAuctionPerformanceFailedToShow,
+        ISAuctionPerformanceShowedSuccessfully,
+        ISAuctionPerformanceNotPartOfWaterfall
+    }
+
+    public h(List<NetworkSettings> list, int i4) {
+        this.f17575b = i4;
+        for (NetworkSettings networkSettings : list) {
+            this.f17574a.put(networkSettings.getProviderName(), new ArrayList<>());
+        }
+    }
+
+    public String a(String str) {
+        ArrayList<a> arrayList = this.f17574a.get(str);
+        String str2 = "";
+        if (arrayList != null && !arrayList.isEmpty()) {
+            Iterator<a> it = arrayList.iterator();
+            StringBuilder sb = new StringBuilder();
+            while (true) {
+                sb.append(str2);
+                sb.append(it.next().ordinal());
+                str2 = sb.toString();
+                if (!it.hasNext()) {
+                    break;
+                }
+                str2 = str2 + StringUtils.COMMA;
+                sb = new StringBuilder();
+            }
+        }
+        return str2;
+    }
+
+    public void a(ConcurrentHashMap<String, a> concurrentHashMap) {
+        if (this.f17575b == 0) {
+            return;
+        }
+        for (String str : this.f17574a.keySet()) {
+            a aVar = a.ISAuctionPerformanceNotPartOfWaterfall;
+            if (concurrentHashMap.containsKey(str)) {
+                aVar = concurrentHashMap.get(str);
+            }
+            ArrayList<a> arrayList = this.f17574a.get(str);
+            if (this.f17575b != -1 && arrayList.size() == this.f17575b) {
+                arrayList.remove(0);
+            }
+            arrayList.add(aVar);
+        }
+    }
+}

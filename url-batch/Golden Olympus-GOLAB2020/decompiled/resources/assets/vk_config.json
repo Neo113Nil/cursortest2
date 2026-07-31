@@ -1,0 +1,18 @@
+{
+  "Infos": [
+    {
+      "client_id": "53904350",
+      "redirect_scheme": "https",
+      "redirect_host": "alb.zolotoiolimp.ru",
+      "redirect_path": "/vk-callback"
+    },
+    {
+      "client_id": "54478319",
+      "redirect_scheme": "https",
+      "redirect_host": "alb.zolotoiolimp.ru",
+      "redirect_path": "/vk-callback"
+    }
+  ]
+}
+
+

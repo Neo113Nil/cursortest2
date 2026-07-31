@@ -1,0 +1,19 @@
+package io.appmetrica.analytics.impl;
+
+import androidx.annotation.NonNull;
+import java.util.List;
+
+/* loaded from: classes3.dex */
+public final class Rn extends Ja {
+    public Rn(Ei ei) {
+        super(ei);
+    }
+
+    @Override // io.appmetrica.analytics.impl.Ja
+    public final void a(@NonNull List<AbstractC2601eh> list) {
+        list.add(this.f37826a.f37452a);
+        list.add(this.f37826a.f37453b);
+        list.add(this.f37826a.f37465n);
+        list.add(this.f37826a.f37455d);
+    }
+}

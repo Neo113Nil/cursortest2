@@ -1,0 +1,36 @@
+{
+  "app_id": "com.GoLab2020.GoldenOlymGoogle",
+  "title": "Golden Olympus",
+  "developer": "GOLAB2020",
+  "developer_id": "GOLAB2020",
+  "icon": "https://play-lh.googleusercontent.com/ZG_vJPMMv0tfnTxDCgQ-DrKpGMCnrZfO9hf-XWEDaO438t9G09N6b2dwIy0F9Tu1mHckFayY_rvu86NB7sB1AA",
+  "url": "https://play.google.com/store/apps/details?id=com.GoLab2020.GoldenOlymGoogle&hl=en&gl=us",
+  "score": null,
+  "released": "Mar 5, 2026",
+  "updated": "2026-06-24",
+  "version": "2.51.051",
+  "summary": "Play for free with no Ads",
+  "keyword": "url-batch",
+  "folder": "Golden Olympus-GOLAB2020",
+  "path": "url-batch/Golden Olympus-GOLAB2020",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.GoLab2020.GoldenOlymGoogle.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Golden Olympus-GOLAB2020",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.GoLab2020.GoldenOlymGoogle...\ncom.GoLab2020.GoldenOlymGoogle downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.GoLab2020.GoldenOlymGoogle...\ncom.GoLab2020.GoldenOlymGoogle downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

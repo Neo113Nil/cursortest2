@@ -1,0 +1,42 @@
+package com.google.android.recaptcha.internal;
+
+/* loaded from: classes.dex */
+public final class zztd extends zzmx implements zzoj {
+    private zztd() {
+        throw null;
+    }
+
+    public final zztd zze(int i4) {
+        zzn();
+        ((zzte) this.zza).zzg = i4;
+        return this;
+    }
+
+    public final zztd zzf(int i4) {
+        zzn();
+        ((zzte) this.zza).zzk = i4;
+        return this;
+    }
+
+    public final zztd zzq(int i4) {
+        zzn();
+        zzte.zzM((zzte) this.zza, i4);
+        return this;
+    }
+
+    public final zztd zzr(int i4) {
+        zzn();
+        zzte.zzN((zzte) this.zza, i4);
+        return this;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    /* synthetic */ zztd(zztj zztjVar) {
+        super(r1);
+        zzte zzteVar;
+        zzteVar = zzte.zzb;
+    }
+}

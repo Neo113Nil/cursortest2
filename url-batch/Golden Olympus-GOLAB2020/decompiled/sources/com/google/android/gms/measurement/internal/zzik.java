@@ -1,0 +1,119 @@
+package com.google.android.gms.measurement.internal;
+
+import android.os.Process;
+import com.google.android.gms.common.internal.Preconditions;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.Semaphore;
+import ru.rustore.sdk.user.profile.UserProfileProvider;
+
+/* loaded from: classes.dex */
+final class zzik extends Thread {
+    final /* synthetic */ zzil zza;
+    private final Object zzb;
+    private final BlockingQueue zzc;
+    private boolean zzd = false;
+
+    public zzik(zzil zzilVar, String str, BlockingQueue blockingQueue) {
+        this.zza = zzilVar;
+        Preconditions.checkNotNull(str);
+        Preconditions.checkNotNull(blockingQueue);
+        this.zzb = new Object();
+        this.zzc = blockingQueue;
+        setName(str);
+    }
+
+    private final void zzb() {
+        Object obj;
+        Semaphore semaphore;
+        Object obj2;
+        zzik zzikVar;
+        zzik zzikVar2;
+        zzil zzilVar = this.zza;
+        obj = zzilVar.zzh;
+        synchronized (obj) {
+            try {
+                if (!this.zzd) {
+                    semaphore = zzilVar.zzi;
+                    semaphore.release();
+                    obj2 = zzilVar.zzh;
+                    obj2.notifyAll();
+                    zzikVar = zzilVar.zzb;
+                    if (this == zzikVar) {
+                        zzilVar.zzb = null;
+                    } else {
+                        zzikVar2 = zzilVar.zzc;
+                        if (this == zzikVar2) {
+                            zzilVar.zzc = null;
+                        } else {
+                            zzilVar.zzu.zzaW().zze().zza("Current scheduler thread is neither worker nor network");
+                        }
+                    }
+                    this.zzd = true;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    private final void zzc(InterruptedException interruptedException) {
+        this.zza.zzu.zzaW().zzk().zzb(String.valueOf(getName()).concat(" was interrupted"), interruptedException);
+    }
+
+    @Override // java.lang.Thread, java.lang.Runnable
+    public final void run() {
+        Semaphore semaphore;
+        Object obj;
+        boolean z4 = false;
+        while (!z4) {
+            try {
+                semaphore = this.zza.zzi;
+                semaphore.acquire();
+                z4 = true;
+            } catch (InterruptedException e4) {
+                zzc(e4);
+            }
+        }
+        try {
+            int threadPriority = Process.getThreadPriority(Process.myTid());
+            while (true) {
+                BlockingQueue blockingQueue = this.zzc;
+                zzij zzijVar = (zzij) blockingQueue.poll();
+                if (zzijVar != null) {
+                    Process.setThreadPriority(true != zzijVar.zza ? 10 : threadPriority);
+                    zzijVar.run();
+                } else {
+                    Object obj2 = this.zzb;
+                    synchronized (obj2) {
+                        if (blockingQueue.peek() == null) {
+                            zzil.zzs(this.zza);
+                            try {
+                                obj2.wait(UserProfileProvider.SERVICE_CONNECTION_TIMEOUT_MS);
+                            } catch (InterruptedException e5) {
+                                zzc(e5);
+                            }
+                        }
+                    }
+                    obj = this.zza.zzh;
+                    synchronized (obj) {
+                        if (this.zzc.peek() == null) {
+                            zzb();
+                            zzb();
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (Throwable th) {
+            zzb();
+            throw th;
+        }
+    }
+
+    public final void zza() {
+        Object obj = this.zzb;
+        synchronized (obj) {
+            obj.notifyAll();
+        }
+    }
+}

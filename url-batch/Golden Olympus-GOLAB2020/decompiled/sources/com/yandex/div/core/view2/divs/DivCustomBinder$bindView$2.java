@@ -1,0 +1,40 @@
+package com.yandex.div.core.view2.divs;
+
+import O1.C1039s4;
+import android.view.View;
+import com.yandex.div.core.DivCustomContainerViewAdapter;
+import com.yandex.div.core.state.DivStatePath;
+import com.yandex.div.core.view2.Div2View;
+import com.yandex.div.json.expressions.ExpressionResolver;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.s;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata
+/* loaded from: classes2.dex */
+final class DivCustomBinder$bindView$2 extends s implements Function0<View> {
+    final /* synthetic */ C1039s4 $divValue;
+    final /* synthetic */ Div2View $divView;
+    final /* synthetic */ DivStatePath $path;
+    final /* synthetic */ ExpressionResolver $resolver;
+    final /* synthetic */ DivCustomBinder this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    DivCustomBinder$bindView$2(DivCustomBinder divCustomBinder, C1039s4 c1039s4, Div2View div2View, ExpressionResolver expressionResolver, DivStatePath divStatePath) {
+        super(0);
+        this.this$0 = divCustomBinder;
+        this.$divValue = c1039s4;
+        this.$divView = div2View;
+        this.$resolver = expressionResolver;
+        this.$path = divStatePath;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    @NotNull
+    public final View invoke() {
+        DivCustomContainerViewAdapter divCustomContainerViewAdapter;
+        divCustomContainerViewAdapter = this.this$0.divCustomContainerViewAdapter;
+        return divCustomContainerViewAdapter.createView(this.$divValue, this.$divView, this.$resolver, this.$path);
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="sdk_pay_days_count">
+        <item quantity="one">day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="sdk_pay_months_count">
+        <item quantity="one">month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="sdk_pay_years_count">
+        <item quantity="one">year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+</resources>

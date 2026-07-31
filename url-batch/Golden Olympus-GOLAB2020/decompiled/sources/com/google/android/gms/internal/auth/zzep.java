@@ -1,0 +1,144 @@
+package com.google.android.gms.internal.auth;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+/* loaded from: classes.dex */
+final class zzep {
+    private static final zzep zzb = new zzep(true);
+    final zzgu zza = new zzgk(16);
+    private boolean zzc;
+    private boolean zzd;
+
+    private zzep() {
+    }
+
+    public static zzep zza() {
+        throw null;
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x0045 A[RETURN] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private static final void zzd(zzeo zzeoVar, Object obj) {
+        boolean z4;
+        zzeoVar.zzb();
+        zzez.zze(obj);
+        zzhn zzhnVar = zzhn.zza;
+        zzho zzhoVar = zzho.INT;
+        switch (r0.zza()) {
+            case INT:
+                z4 = obj instanceof Integer;
+                if (z4) {
+                    return;
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case LONG:
+                z4 = obj instanceof Long;
+                if (z4) {
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case FLOAT:
+                z4 = obj instanceof Float;
+                if (z4) {
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case DOUBLE:
+                z4 = obj instanceof Double;
+                if (z4) {
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case BOOLEAN:
+                z4 = obj instanceof Boolean;
+                if (z4) {
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case STRING:
+                z4 = obj instanceof String;
+                if (z4) {
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case BYTE_STRING:
+                if ((obj instanceof zzee) || (obj instanceof byte[])) {
+                    return;
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case ENUM:
+                if ((obj instanceof Integer) || (obj instanceof zzew)) {
+                    return;
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            case MESSAGE:
+                if ((obj instanceof zzfw) || (obj instanceof zzfb)) {
+                    return;
+                }
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+            default:
+                throw new IllegalArgumentException(String.format("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", Integer.valueOf(zzeoVar.zza()), zzeoVar.zzb().zza(), obj.getClass().getName()));
+        }
+    }
+
+    public final /* bridge */ /* synthetic */ Object clone() {
+        zzep zzepVar = new zzep();
+        for (int i4 = 0; i4 < this.zza.zzb(); i4++) {
+            Map.Entry zzg = this.zza.zzg(i4);
+            zzepVar.zzc((zzeo) zzg.getKey(), zzg.getValue());
+        }
+        for (Map.Entry entry : this.zza.zzc()) {
+            zzepVar.zzc((zzeo) entry.getKey(), entry.getValue());
+        }
+        zzepVar.zzd = this.zzd;
+        return zzepVar;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof zzep) {
+            return this.zza.equals(((zzep) obj).zza);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.zza.hashCode();
+    }
+
+    public final void zzb() {
+        if (this.zzc) {
+            return;
+        }
+        this.zza.zza();
+        this.zzc = true;
+    }
+
+    public final void zzc(zzeo zzeoVar, Object obj) {
+        if (!zzeoVar.zzc()) {
+            zzd(zzeoVar, obj);
+        } else {
+            if (!(obj instanceof List)) {
+                throw new IllegalArgumentException("Wrong object type used with protocol message reflection.");
+            }
+            ArrayList arrayList = new ArrayList();
+            arrayList.addAll((List) obj);
+            int size = arrayList.size();
+            for (int i4 = 0; i4 < size; i4++) {
+                zzd(zzeoVar, arrayList.get(i4));
+            }
+            obj = arrayList;
+        }
+        if (obj instanceof zzfb) {
+            this.zzd = true;
+        }
+        this.zza.put(zzeoVar, obj);
+    }
+
+    private zzep(boolean z4) {
+        zzb();
+        zzb();
+    }
+}

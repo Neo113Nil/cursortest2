@@ -1,0 +1,62 @@
+package com.google.android.gms.internal.play_billing;
+
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
+
+/* loaded from: classes.dex */
+final class zzcw implements Runnable {
+    final Future zza;
+    final zzcv zzb;
+
+    zzcw(Future future, zzcv zzcvVar) {
+        this.zza = future;
+        this.zzb = zzcvVar;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // java.lang.Runnable
+    public final void run() {
+        Object obj;
+        Throwable zza;
+        Future future = this.zza;
+        if ((future instanceof zzdi) && (zza = zzdj.zza((zzdi) future)) != null) {
+            this.zzb.zza(zza);
+            return;
+        }
+        try {
+            if (!future.isDone()) {
+                throw new IllegalStateException(zzbm.zzb("Future was expected to be done: %s", future));
+            }
+            boolean z4 = false;
+            Future future2 = future;
+            while (true) {
+                try {
+                    obj = future2.get();
+                    break;
+                } catch (InterruptedException unused) {
+                    z4 = true;
+                    future2 = future2;
+                } catch (Throwable th) {
+                    if (z4) {
+                        Thread.currentThread().interrupt();
+                    }
+                    throw th;
+                }
+            }
+            if (z4) {
+                Thread.currentThread().interrupt();
+            }
+            this.zzb.zzb(obj);
+        } catch (ExecutionException e4) {
+            this.zzb.zza(e4.getCause());
+        } catch (Throwable th2) {
+            this.zzb.zza(th2);
+        }
+    }
+
+    public final String toString() {
+        zzbf zza = zzbh.zza(this);
+        zza.zza(this.zzb);
+        return zza.toString();
+    }
+}

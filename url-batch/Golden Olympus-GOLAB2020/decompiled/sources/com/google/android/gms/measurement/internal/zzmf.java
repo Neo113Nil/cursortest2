@@ -1,0 +1,30 @@
+package com.google.android.gms.measurement.internal;
+
+/* loaded from: classes.dex */
+public enum zzmf {
+    GOOGLE_ANALYTICS(0),
+    GOOGLE_SIGNAL(1),
+    SGTM(2),
+    SGTM_CLIENT(3),
+    GOOGLE_SIGNAL_PENDING(4),
+    UNKNOWN(99);
+
+    private final int zzh;
+
+    zzmf(int i4) {
+        this.zzh = i4;
+    }
+
+    public static zzmf zzb(int i4) {
+        for (zzmf zzmfVar : values()) {
+            if (zzmfVar.zzh == i4) {
+                return zzmfVar;
+            }
+        }
+        return UNKNOWN;
+    }
+
+    public final int zza() {
+        return this.zzh;
+    }
+}

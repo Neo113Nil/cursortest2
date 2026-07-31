@@ -1,0 +1,15 @@
+package io.appmetrica.analytics.impl;
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import androidx.annotation.NonNull;
+import io.appmetrica.analytics.coreutils.internal.services.SafePackageManager;
+import io.appmetrica.analytics.coreutils.internal.system.SystemServiceUtils;
+
+/* loaded from: classes3.dex */
+public final class L5 {
+    public final Te a(@NonNull Context context) {
+        SafePackageManager safePackageManager = Ue.f38360a;
+        return (Te) SystemServiceUtils.accessSystemServiceSafelyOrDefault((ConnectivityManager) context.getSystemService("connectivity"), "getting connection type", "ConnectivityManager", Te.UNDEFINED, new Se());
+    }
+}

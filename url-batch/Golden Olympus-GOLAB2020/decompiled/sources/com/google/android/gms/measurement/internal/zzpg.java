@@ -1,0 +1,32 @@
+package com.google.android.gms.measurement.internal;
+
+/* loaded from: classes.dex */
+abstract class zzpg extends zzoz {
+    private boolean zza;
+
+    zzpg(zzpv zzpvVar) {
+        super(zzpvVar);
+        this.zzg.zzad();
+    }
+
+    protected final void zzav() {
+        if (!zzax()) {
+            throw new IllegalStateException("Not initialized");
+        }
+    }
+
+    public final void zzaw() {
+        if (this.zza) {
+            throw new IllegalStateException("Can't initialize twice");
+        }
+        zzb();
+        this.zzg.zzV();
+        this.zza = true;
+    }
+
+    final boolean zzax() {
+        return this.zza;
+    }
+
+    protected abstract boolean zzb();
+}

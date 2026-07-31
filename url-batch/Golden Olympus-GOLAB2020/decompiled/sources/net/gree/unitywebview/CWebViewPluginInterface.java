@@ -1,0 +1,52 @@
+package net.gree.unitywebview;
+
+import android.app.Activity;
+import android.webkit.JavascriptInterface;
+import com.unity3d.player.UnityPlayer;
+
+/* loaded from: classes3.dex */
+class CWebViewPluginInterface {
+    private String mGameObject;
+    private CWebViewPlugin mPlugin;
+
+    public CWebViewPluginInterface(CWebViewPlugin cWebViewPlugin, String str) {
+        this.mPlugin = cWebViewPlugin;
+        this.mGameObject = str;
+    }
+
+    @JavascriptInterface
+    public void call(String str) {
+        call("CallFromJS", str);
+    }
+
+    @JavascriptInterface
+    public void saveDataURL(final String str, final String str2) {
+        Activity activity = UnityPlayer.currentActivity;
+        if (CWebViewPlugin.isDestroyed(activity)) {
+            return;
+        }
+        activity.runOnUiThread(new Runnable() { // from class: net.gree.unitywebview.CWebViewPluginInterface.2
+            @Override // java.lang.Runnable
+            public void run() {
+                if (CWebViewPluginInterface.this.mPlugin.IsInitialized()) {
+                    CWebViewPluginInterface.this.mPlugin.SaveDataURL(str, str2);
+                }
+            }
+        });
+    }
+
+    public void call(final String str, final String str2) {
+        Activity activity = UnityPlayer.currentActivity;
+        if (CWebViewPlugin.isDestroyed(activity)) {
+            return;
+        }
+        activity.runOnUiThread(new Runnable() { // from class: net.gree.unitywebview.CWebViewPluginInterface.1
+            @Override // java.lang.Runnable
+            public void run() {
+                if (CWebViewPluginInterface.this.mPlugin.IsInitialized()) {
+                    CWebViewPluginInterface.this.mPlugin.MyUnitySendMessage(CWebViewPluginInterface.this.mGameObject, str, str2);
+                }
+            }
+        });
+    }
+}

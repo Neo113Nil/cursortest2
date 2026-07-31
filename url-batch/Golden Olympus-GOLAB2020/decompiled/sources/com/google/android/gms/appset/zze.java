@@ -1,0 +1,16 @@
+package com.google.android.gms.appset;
+
+import com.google.android.gms.common.Feature;
+import io.appmetrica.analytics.networktasks.internal.CommonUrlParts;
+
+/* loaded from: classes.dex */
+public final class zze {
+    public static final Feature zza;
+    public static final Feature[] zzb;
+
+    static {
+        Feature feature = new Feature(CommonUrlParts.APP_SET_ID, 1L);
+        zza = feature;
+        zzb = new Feature[]{feature};
+    }
+}

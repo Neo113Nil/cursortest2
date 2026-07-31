@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.GoLab2020.GoldenOlymGoogle.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.GoLab2020.GoldenOlymGoogle.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 14166 (0%)\nINFO  - progress: 1610 of 14166 (11%)\nINFO  - progress: 1670 of 14166 (11%)\nINFO  - progress: 1691 of 14166 (11%)\nINFO  - progress: 1743 of 14166 (12%)\nINFO  - progress: 1814 of 14166 (12%)\nINFO  - progress: 2366 of 14166 (16%)\nINFO  - progress: 3054 of 14166 (21%)\nINFO  - progress: 3501 of 14166 (24%)\nINFO  - progress: 4144 of 14166 (29%)\nINFO  - progress: 4979 of 14166 (35%)\nINFO  - progress: 5471 of 14166 (38%)\nINFO  - progress: 5911 of 14166 (41%)\nINFO  - progress: 6373 of 14166 (44%)\nINFO  - progress: 6918 of 14166 (48%)\nINFO  - progress: 7297 of 14166 (51%)\nINFO  - progress: 8066 of 14166 (56%)\nINFO  - progress: 8487 of 14166 (59%)\nINFO  - progress: 9031 of 14166 (63%)\nINFO  - progress: 9424 of 14166 (66%)\nINFO  - progress: 9771 of 14166 (68%)\nINFO  - progress: 10153 of 14166 (71%)\nINFO  - progress: 10472 of 14166 (73%)\nINFO  - progress: 10755 of 14166 (75%)\nINFO  - progress: 11309 of 14166 (79%)\nINFO  - progress: 11746 of 14166 (82%)\nINFO  - progress: 12219 of 14166 (86%)\nINFO  - progress: 12668 of 14166 (89%)\nINFO  - progress: 12992 of 14166 (91%)\nINFO  - progress: 13378 of 14166 (94%)\nINFO  - progress: 13705 of 14166 (96%)\nINFO  - progress: 13930 of 14166 (98%)\n                                                             \nERROR - finished with errors, count: 47\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Golden Olympus-GOLAB2020/decompiled",
+    "skipped": false,
+    "base_apk": "com.GoLab2020.GoldenOlymGoogle.apk"
+  },
+  "analysis_files": [
+    "com.GoLab2020.GoldenOlymGoogle.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.GoLab2020.GoldenOlymGoogle.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B0/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/C1/",
+    "decompiled/sources/C2/",
+    "decompiled/sources/C3/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/D2/",
+    "decompiled/sources/E/",
+    "decompiled/sources/E0/",
+    "decompiled/sources/E2/",
+    "decompiled/sources/E3/",
+    "decompiled/sources/F/"
+  ]
+}

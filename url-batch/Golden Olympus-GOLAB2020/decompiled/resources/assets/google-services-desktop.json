@@ -1,0 +1,465 @@
+{
+  "project_info": {
+    "project_number": "563117818603",
+    "firebase_url": "https://api-project-51605401.firebaseio.com",
+    "project_id": "api-project-51605401",
+    "storage_bucket": "api-project-51605401.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:653dc8bef6edfa8ecef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingBluestackGlobal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-tb0oj21fso0h6qi7msntfaoudrsqdf1h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingBluestackGlobal",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:360f36801a151110cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingBluestackRussia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-kq85967tqt7mpm9eectlu5bpeov8h8tf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingBluestackRussia",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:ff35129e70af5fd3cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingGlobal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-8tvvb4jvfsh96u4vds85nm142la0j4ai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingGlobal",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-ur7590t1hsnilgreqjjks23qmdoj11l2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingGlobal",
+            "certificate_hash": "70b52724e089888d9cee061380bbd34b1fd72760"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9929175073468185~1385521280"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:573614b027e28fa7cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingKor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-0ri084evckddn92n289ujvs4g57m7022.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingKor",
+            "certificate_hash": "5f2290edf6820fe0f8aec8aa196cd80bd6ad7a95"
+          }
+        },
+        {
+          "client_id": "563117818603-ofcc9fdnsj6l9n02ksvje110ilmoj1hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingKor",
+            "certificate_hash": "db78f7e0858d7be5a18c8ec756237d23d09a4793"
+          }
+        },
+        {
+          "client_id": "563117818603-rc1iuecvnvopijo1tc77jbkt19bofcnr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingKor",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-9929175073468185~5324766291"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:fbfe37d6312ac29acef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingRuCIS4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-gid5s9bn58nhdiabft1uiibqbs5k2utr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuCIS4",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-i50epta7moo5caercmh47k17kj3b0utb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuCIS4",
+            "certificate_hash": "52bded0ae60b1dadf1aa032d37cd372019812bb4"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:589be0beaf0049c1cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingRuLocal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-oq12pterpeg5u38osbf3qvcfisp6hhas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuLocal",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:2d8de3069d737e20cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingRuLocal4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-5mva1jq1ro1cduu7v59i7ggt23k6d9di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuLocal4",
+            "certificate_hash": "3dab334b69ae9ab61d7682b9c16c125180e083d9"
+          }
+        },
+        {
+          "client_id": "563117818603-ln9l78a0877te2b3r1hrcmt99umk5fbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuLocal4",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:7dd1799967195338cef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.GoldWingRuStore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-6vns0c15gj4c27tnlpljd5qqb87icb7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.GoldWingRuStore",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563117818603:android:9d586bb2a47b26fccef4ae",
+        "android_client_info": {
+          "package_name": "com.MocaTree.OneStroe.GoldWingKor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563117818603-m3aepq46pe85656q9e7jc2dlvf8bt3ro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.OneStroe.GoldWingKor",
+            "certificate_hash": "db78f7e0858d7be5a18c8ec756237d23d09a4793"
+          }
+        },
+        {
+          "client_id": "563117818603-rbtl0l659fe4cl67lgevaml74pmu3kpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.OneStroe.GoldWingKor",
+            "certificate_hash": "2191bf277885dde41313bd8fb50969d25ea205fd"
+          }
+        },
+        {
+          "client_id": "563117818603-s7b00bl7151sn1qfpcruhu4l00hbonpq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.MocaTree.OneStroe.GoldWingKor",
+            "certificate_hash": "5f2290edf6820fe0f8aec8aa196cd80bd6ad7a95"
+          }
+        },
+        {
+          "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfza064MNcxC_-9mRbU7eyD_AFx6hFc6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563117818603-v9bk6sn2v8jai9r6a22toals5req2i1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "563117818603-216rn5s89uf4qlihgvcgbqdejcb71v26.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Mocatree.GoldWingGlobal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
