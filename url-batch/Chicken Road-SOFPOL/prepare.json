@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "apks": [
+    "com.snovikpovik.vuevnxsj.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.zh.apk"
+  ],
+  "base_apk": "com.snovikpovik.vuevnxsj.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2284 (0%)\nINFO  - progress: 576 of 2284 (25%)\nINFO  - progress: 820 of 2284 (35%)\nINFO  - progress: 991 of 2284 (43%)\nINFO  - progress: 1172 of 2284 (51%)\nINFO  - progress: 1268 of 2284 (55%)\nINFO  - progress: 1442 of 2284 (63%)\nINFO  - progress: 1629 of 2284 (71%)\nINFO  - progress: 1795 of 2284 (78%)\nINFO  - progress: 1931 of 2284 (84%)\nINFO  - progress: 2208 of 2284 (96%)\n                                                             \nERROR - finished with errors, count: 9\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Chicken Road-SOFPOL/decompiled",
+    "skipped": false,
+    "base_apk": "com.snovikpovik.vuevnxsj.apk"
+  },
+  "analysis_files": [
+    "com.snovikpovik.vuevnxsj.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.zh.apk",
+    "apk/config.en.apk",
+    "apk/com.snovikpovik.vuevnxsj.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/a/",
+    "decompiled/sources/a0/",
+    "decompiled/sources/a1/",
+    "decompiled/sources/a2/",
+    "decompiled/sources/a3/",
+    "decompiled/sources/a4/",
+    "decompiled/sources/a5/",
+    "decompiled/sources/a6/",
+    "decompiled/sources/a7/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/b/",
+    "decompiled/sources/b0/",
+    "decompiled/sources/b1/",
+    "decompiled/sources/b2/",
+    "decompiled/sources/b3/",
+    "decompiled/sources/b4/",
+    "decompiled/sources/b5/",
+    "decompiled/sources/b6/",
+    "decompiled/sources/b7/"
+  ]
+}
