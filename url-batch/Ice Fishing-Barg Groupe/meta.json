@@ -58,5 +58,110 @@
   "stdout": "╭─ com.ice.fishing.grenza ─╮\n│ Ice Fishing              │\n│ 1.1  (vc 2)              │\n╰──────────────────────────╯\n\nDownloading 7 files  (5.8 MB)\n  com.ice.fishing.grenza-2.apk                  ━━━━━━ 100% 3.7/3… 26.3   0:00:…\n                                                            MB     MB/s         \n  com.ice.fishing.grenza-2-config.arm64_v8a.apk ━━━━━━ 100% 41.2/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.en.apk        ━━━━━━ 100% 24.8/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.lt.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.ru.apk        ━━━━━━ 100% 20.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-config.xxhdpi.apk    ━━━━━━ 100% 16.7/… ?      0:00:…\n                                                            kB                  \n  com.ice.fishing.grenza-2-asset.apk            ━━━━━━ 100% 2.3/2… 18.1   0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ice.fishing.grenza-2.apk                  │  3.6 MB │\n│ com.ice.fishing.grenza-2-config.arm64_v8a.apk │ 40.2 KB │\n│ com.ice.fishing.grenza-2-config.en.apk        │ 24.2 KB │\n│ com.ice.fishing.grenza-2-config.lt.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.ru.apk        │ 20.2 KB │\n│ com.ice.fishing.grenza-2-config.xxhdpi.apk    │ 16.3 KB │\n│ com.ice.fishing.grenza-2-asset.apk            │  3.6 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.1"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Advertising ID, Google Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.gms.permission.AD_ID, com.ice.fishing.grenza.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.2.1; Kotlin ~2.1 / kotlin-stdlib; kotlinx-coroutines 1.9.0; kotlinx-serialization; Jetpack Compose 1.11.4 / Material3 1.4.0; AndroidX Activity 1.13.0, Browser 1.9.0 (Custom Tabs), Core 1.19.0, Lifecycle 2.11.0, Navigation 2.9.8, Room 2.8.4, SQLite 2.6.2, Emoji2 1.4.0, Startup 1.2.0, ProfileInstaller 1.4.0, Window 1.5.0, SavedState 1.4.0, Hilt Navigation Compose 1.4.0; Dagger/Hilt 2.60.1; OkHttp 5.4.0; Google Play Services Ads Identifier 18.2.0 / Base 18.5.0 / Basement 18.4.0 / Tasks 18.2.0; Play Install Referrer; Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io, eternalsiegeapplication.space, lineheightstyle.alignment.top, theme.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Room DB app_db: таблица gate_config (id, valueSaved, customTab, customTabLink) — кэш решения и ссылки оффера; таблица items — данные белой оболочки; SharedPreferences com.google.android.gms.signin — служебные prefs GMS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "{{OFFER_URL}}, offer, customTab, customTabLink, GateConfig, openTab, tabUrl, Settled, User-Agent, anatoliaTable, WebSocket, spiceLantern, bazaarSaffron, copperPlatter, tableStory, scoreVisible, valueSaved, eternalsiegeapplication, license check"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "eternalsiegeapplication.space",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "lineheightstyle.alignment.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "theme.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер телефона для рекламы (Advertising ID); по",
+      "нему удалённый сервер может отличить одно устройство от другого и решить, что именно",
+      "показать",
+      "метка установки из магазина → строка «откуда поставили» приложение (install referrer из Google",
+      "Play); часто используется, чтобы понять канал установки и отфильтровать «чужой» трафик",
+      "системный номер устройства → постоянный код телефона в системе Android (android_id); ещё",
+      "один устойчивый идентификатор, если рекламный номер пустой или сброшен",
+      "строка «как представился браузер» → стандартная подпись браузера телефона (User-Agent);",
+      "приложение подставляет её в заголовок сетевого запроса, чтобы соединение выглядело как",
+      "обычный браузерный клиент"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы (Advertising ID); по\n• нему удалённый сервер может отличить одно устройство от другого и решить, что именно\n• показать\n• метка установки из магазина → строка «откуда поставили» приложение (install referrer из Google\n• Play); часто используется, чтобы понять канал установки и отфильтровать «чужой» трафик\n• системный номер устройства → постоянный код телефона в системе Android (android_id); ещё\n• один устойчивый идентификатор, если рекламный номер пустой или сброшен\n• строка «как представился браузер» → стандартная подпись браузера телефона (User-Agent);\n• приложение подставляет её в заголовок сетевого запроса, чтобы соединение выглядело как\n• обычный браузерный клиент\n\nКак собираются: Сразу после открытия приложения, ещё до того как человеку покажут обычные экраны, программа сама запускает тихую проверку. Она параллельно спрашивает у системы Android рекламный номер устройства, у сервиса установки Google Play — метку установки, и у защищённых настроек телефона — системный номер устройства. Отдельного окна с разрешением для этих действий нет: человек обычно ничего не замечает. Строку «как представился браузер» приложение берёт из настроек встроенного браузерного движка телефона в момент подготовки сетевого клиента. Если такое решение уже сохраняли раньше в локальной базе приложения,…\n\nКуда отправляются: Собранные сведения уходят в интернет на адрес https://eternalsiegeapplication.space/api/anatoliaTable. Это не показ рекламного баннера на экране, а тихая проверка «что показать этому че…"
+  }
 }
