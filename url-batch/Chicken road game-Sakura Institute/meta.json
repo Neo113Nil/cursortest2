@@ -33,5 +33,94 @@
   "stdout": "Downloading com.chicken.road.cerman.fixs...\ncom.chicken.road.cerman.fixs downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken road game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.5.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Realtime Database, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, android.permission.POST_NOTIFICATIONS, com.chicken.road.cerman.fixs.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (Material3 1.3.0 / Compose UI 1.7.2), androidx.room 2.6.1, androidx.datastore 1.1.1, androidx.navigation 2.8.0, androidx.lifecycle 2.8.7, androidx.core 1.13.1, androidx.activity 1.9.2, androidx.core.splashscreen 1.0.1, androidx.fragment 1.8.5, androidx.startup, androidx.emoji2, okhttp3, okio, kotlinx.coroutines 1.9.0, kotlinx.serialization, Firebase Database, Firebase Common, AppsFlyer 6.14.0, play-services-ads-identifier 18.1.0, play-services-base/basement/tasks, installreferrer, pairip licensecheck, native roostio"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore Preferences app_state: сохраняет url страницы оффера, метку времени ответа и флаг согласия (consent/agreed)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "checkUrl, active, consent, gaid, deviceUuid, install_referrer, appsId, referrer, uniwebview, bridge, User-Agent, tidyAgent, cleanUserAgent, RoostGate, RoostReply, RoostConfig, roostio, extra_url, extra_consent, Privacy Policy, loadUrl, offer url, time"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер телефона для рекламы (GAID); по нему",
+      "сервер отличает одно устройство от другого",
+      "свой номер устройства → постоянный код, который приложение собирает из системного",
+      "идентификатора телефона и технического имени программы",
+      "источник установки → откуда поставили приложение (метка из магазина Google Play /",
+      "рекламной ссылки)",
+      "номер AppsFlyer → служебный номер учёта установок; уходит в проверку, если его удалось",
+      "получить",
+      "строка «как представился браузер» → текст, которым телефон обычно представляется",
+      "сайтам; перед отправкой приложение ещё подчищает пометку встроенного окна",
+      "техническое имя приложения → имя этой программы в системе; участвует в расчёте своего",
+      "номера устройства",
+      "системный идентификатор телефона → внутренний код устройства Android; сам по себе в",
+      "запрос не кладётся, но из него делают свой номер устройства"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы (GAID); по нему\n• сервер отличает одно устройство от другого\n• свой номер устройства → постоянный код, который приложение собирает из системного\n• идентификатора телефона и технического имени программы\n• источник установки → откуда поставили приложение (метка из магазина Google Play /\n• рекламной ссылки)\n• номер AppsFlyer → служебный номер учёта установок; уходит в проверку, если его удалось\n• получить\n• строка «как представился браузер» → текст, которым телефон обычно представляется\n• сайтам; перед отправкой приложение ещё подчищает пометку встроенного окна\n• техническое имя приложения → имя этой программы в системе; участвует в расчёте своего\n• номера устройства\n• системный идентификатор телефона → внутренний код устройства Android; сам по себе в\n• запрос не кладётся, но из него делают свой номер устройства\n\nКак собираются: Сразу после открытия, ещё на экране заставки, приложение само запускает скрытую проверку. Человек ничего специально не нажимает и отдельного окна с разрешением на эти сведения обычно не видит. Рекламный номер и системный идентификатор приложение читает из служб Android на телефоне. Источник установки оно спрашивает у магазина Google Play. Строку браузера берёт из настроек встроенного окна сайта и перед отправкой немного подчищает. Если в удалённой настройке есть ключ учёта установок, приложение тихо запускает AppsFlyer и забирает его номер. Параллельно оно читает из облачной базы Firebase,…\n\nКуда отправляются: Сначала настройки схемы приходят из Firebase Realti…"
+  }
 }
