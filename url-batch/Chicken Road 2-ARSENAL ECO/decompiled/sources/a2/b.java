@@ -1,0 +1,58 @@
+package a2;
+
+import com.onesignal.core.internal.http.impl.e;
+import o5.InterfaceC0564d;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public abstract class b {
+    public static /* synthetic */ Object delete$default(c cVar, String str, e eVar, InterfaceC0564d interfaceC0564d, int i7, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: delete");
+        }
+        if ((i7 & 2) != 0) {
+            eVar = null;
+        }
+        return cVar.delete(str, eVar, interfaceC0564d);
+    }
+
+    public static /* synthetic */ Object get$default(c cVar, String str, e eVar, InterfaceC0564d interfaceC0564d, int i7, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: get");
+        }
+        if ((i7 & 2) != 0) {
+            eVar = null;
+        }
+        return cVar.get(str, eVar, interfaceC0564d);
+    }
+
+    public static /* synthetic */ Object patch$default(c cVar, String str, JSONObject jSONObject, e eVar, InterfaceC0564d interfaceC0564d, int i7, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: patch");
+        }
+        if ((i7 & 4) != 0) {
+            eVar = null;
+        }
+        return cVar.patch(str, jSONObject, eVar, interfaceC0564d);
+    }
+
+    public static /* synthetic */ Object post$default(c cVar, String str, JSONObject jSONObject, e eVar, InterfaceC0564d interfaceC0564d, int i7, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: post");
+        }
+        if ((i7 & 4) != 0) {
+            eVar = null;
+        }
+        return cVar.post(str, jSONObject, eVar, interfaceC0564d);
+    }
+
+    public static /* synthetic */ Object put$default(c cVar, String str, JSONObject jSONObject, e eVar, InterfaceC0564d interfaceC0564d, int i7, Object obj) {
+        if (obj != null) {
+            throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: put");
+        }
+        if ((i7 & 4) != 0) {
+            eVar = null;
+        }
+        return cVar.put(str, jSONObject, eVar, interfaceC0564d);
+    }
+}
