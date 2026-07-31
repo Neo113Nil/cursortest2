@@ -58,5 +58,108 @@
   "stdout": "╭─ com.icefish.app ─╮\n│ Ice Fishing       │\n│ 1.1  (vc 2)       │\n╰───────────────────╯\n\nDownloading 7 files  (156.4 MB)\n  com.icefish.app-2.apk                  ━━━━━━━━ 100% 80.7/80… 18.8     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.arm64_v8a.apk ━━━━━━━━ 100% 13.9/13… 12.6     0:00:00\n                                                       MB       MB/s            \n  com.icefish.app-2-config.en.apk        ━━━━━━━━ 100% 45.5/45… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.lt.apk        ━━━━━━━━ 100% 29.1/29… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.ru.apk        ━━━━━━━━ 100% 33.2/33… ?        0:00:00\n                                                       kB                       \n  com.icefish.app-2-config.xxhdpi.apk    ━━━━━━━━ 100% 66.6/66… 2.6 MB/s 0:00:00\n                                                       kB                       \n  com.icefish.app-2-asset.apk            ━━━━━━━━ 100% 69.4/69… 39.5     0:00:00\n                                                       MB       MB/s            \n\n                  Downloaded files                  \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icefish.app-2.apk                  │ 76.9 MB │\n│ com.icefish.app-2-config.arm64_v8a.apk │ 13.2 MB │\n│ com.icefish.app-2-config.en.apk        │ 44.4 KB │\n│ com.icefish.app-2-config.lt.apk        │ 28.4 KB │\n│ com.icefish.app-2-config.ru.apk        │ 32.4 KB │\n│ com.icefish.app-2-config.xxhdpi.apk    │ 65.0 KB │\n│ com.icefish.app-2-asset.apk            │ 76.9 MB │\n└────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Amplitude"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.icefish.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native 0.79.2 (Hermes, New Architecture), Kotlin 2.0.21 / kotlin-stdlib, kotlinx-coroutines, AndroidX (appcompat, activity, core, lifecycle, startup, emoji2, profileinstaller, webkit, recyclerview, coordinatorlayout, swiperefreshlayout, viewpager/viewpager2), Material Components, OkHttp3 / Okio, AppsFlyer 6.17.6 (RN plugin 6.17.9 / RNAppsFlyer / PCAppsFlyer), Amplitude React Native, react-native-webview (RNCWebView), AsyncStorage (RNCAsyncStorage), react-native-gesture-handler, react-native-screens, react-native-safe-area-context, react-native-linear-gradient (BV), react-native-masked-view, Facebook Soloader / Fresco / Yoga (RN stack), Google Play Services (basement/tasks), Play Install Referrer, Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "com.icefish.app"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AsyncStorage (SQLite RKStorage): @cachedBlackUrl (кэш ссылки оффера), @showWebView (флаг встроенного окна сайта или обычного приложения), @is_first_open (флаг первого запуска); AppsFlyer SharedPreferences (appsflyer-data / атрибуция)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "MASTER_ANDROID, fetchBlackUrl, @cachedBlackUrl, @showWebView, app404_android, makeDecision, buildLink, manager-config-up, manager-config-rd, OriginWhitelist, whitelist, @is_first_open, af_attribution, af_attribution_error, gclid, appsflyer_id, media_source, campaign, af_status, af_channel, af_adset, handleLoadEnd, handleHttpError, WebView, license check, first_open, organic"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "com.icefish.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [
+      "служебный ключ приложения → внутренний код этой программы в удалённом списке",
+      "настроек; по нему приложение понимает, какую именно ссылку взять для себя",
+      "ключ учёта установок → секретный код сервиса, который считает, откуда пришла",
+      "установка",
+      "имя приложения в системе → техническое имя этой программы на телефоне",
+      "номер установки → уникальный номер этой копии приложения; по нему отличают одно",
+      "устройство от другого",
+      "статус установки из рекламы → пометка, пришёл ли человек сам или по рекламе",
+      "источник рекламы → откуда пришла установка (рекламная сеть или пометка «пришёл",
+      "сам»)",
+      "название рекламной кампании → имя кампании, из которой пришёл человек",
+      "номер рекламной кампании → служебный код кампании",
+      "рекламная группа → название группы объявлений",
+      "номер рекламной группы → служебный код группы объявлений",
+      "канал рекламы → через какой канал или площадку пришла установка",
+      "набор объявлений и его номер → дополнительные метки рекламного набора",
+      "рекламный клик Google → служебный номер клика по рекламе Google, если установка с",
+      "него",
+      "части названия кампании (до шести кусков) → имя кампании режут на куски и",
+      "дописывают в ссылку как отдельные пометки",
+      "рекламный номер устройства → служебный номер телефона для рекламы; сервис учёта",
+      "установок забирает его при старте",
+      "метка первого запуска → помнит, открывали ли программу на этом телефоне впервые"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• служебный ключ приложения → внутренний код этой программы в удалённом списке\n• настроек; по нему приложение понимает, какую именно ссылку взять для себя\n• ключ учёта установок → секретный код сервиса, который считает, откуда пришла\n• установка\n• имя приложения в системе → техническое имя этой программы на телефоне\n• номер установки → уникальный номер этой копии приложения; по нему отличают одно\n• устройство от другого\n• статус установки из рекламы → пометка, пришёл ли человек сам или по рекламе\n• источник рекламы → откуда пришла установка (рекламная сеть или пометка «пришёл\n• сам»)\n• название рекламной кампании → имя кампании, из которой пришёл человек\n• номер рекламной кампании → служебный код кампании\n• рекламная группа → название группы объявлений\n• номер рекламной группы → служебный код группы объявлений\n• канал рекламы → через какой канал или площадку пришла установка\n• набор объявлений и его номер → дополнительные метки рекламного набора\n• рекламный клик Google → служебный номер клика по рекламе Google, если установка с\n• него\n• части названия кампании (до шести кусков) → имя кампании режут на куски и\n• дописывают в ссылку как отдельные пометки\n• рекламный номер устройства → служебный номер телефона для рекламы; сервис учёта\n• установок забирает его при старте\n• метка первого запуска → помнит, открывали ли программу на этом телефоне впервые\n\nКак собираются: Сразу после открытия, ещё до нажатий пользователя, программа сама запускает скрытую проверку. Она без спроса читает из памяти телефона сохранённые ранее флаги и ссылку, затем тихо ходит в…"
+  }
 }
