@@ -1,0 +1,57 @@
+{
+  "app_id": "gbcorp.c313.olympusgods1000.game",
+  "title": "Gates of Olympus 1000",
+  "developer": "WESTON COMPANIES Labs",
+  "developer_id": "WESTON+COMPANIES+Labs",
+  "icon": "https://play-lh.googleusercontent.com/jRd7WGaSRbutaVNKjFLUEgcOGtMl-29O2cTR3sgQgmrZNtsi-ShOitFl9kzPzT1-_zcB_4rwHbT5JaVXPuai",
+  "url": "https://play.google.com/store/apps/details?id=gbcorp.c313.olympusgods1000.game&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 19, 2026",
+  "updated": "2026-06-30",
+  "version": "1.4",
+  "summary": "Quick login to spark your joy with the Gates of Olympus 1000 App!",
+  "keyword": "url-batch",
+  "folder": "Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "path": "url-batch/Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "gbcorp.c313.olympusgods1000.game-4-asset.apk",
+    "gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk",
+    "gbcorp.c313.olympusgods1000.game-4.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Gates of Olympus 1000-WESTON COMPANIES Labs",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading gbcorp.c313.olympusgods1000.game...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading gbcorp.c313.olympusgods1000.game...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ gbcorp.c313.olympusgods1000.game ─╮\n│ Gates of Olympus 1000              │\n│ 1.4  (vc 4)                        │\n╰────────────────────────────────────╯\n\nDownloading 3 files  (58.5 MB)\n  gbcorp.c313.olympusgods1000.game-4.apk                  ━━━ 100% 25… 14.9 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk ━━━ 100% 21… 12.4 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-asset.apk            ━━━ 100% 15… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ gbcorp.c313.olympusgods1000.game-4.apk                  │ 23.9 MB │\n│ gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk │ 20.3 MB │\n│ gbcorp.c313.olympusgods1000.game-4-asset.apk            │ 23.9 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g90467755@gmail.com                   │\n│ GSF ID : 3ba9e9a3a9fb29bd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ gbcorp.c313.olympusgods1000.game ─╮\n│ Gates of Olympus 1000              │\n│ 1.4  (vc 4)                        │\n╰────────────────────────────────────╯\n\nDownloading 3 files  (58.5 MB)\n  gbcorp.c313.olympusgods1000.game-4.apk                  ━━━ 100% 25… 14.9 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk ━━━ 100% 21… 12.4 0:0…\n                                                                   MB  MB/s     \n  gbcorp.c313.olympusgods1000.game-4-asset.apk            ━━━ 100% 15… 12.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                           \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                    ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ gbcorp.c313.olympusgods1000.game-4.apk                  │ 23.9 MB │\n│ gbcorp.c313.olympusgods1000.game-4-config.arm64_v8a.apk │ 20.3 MB │\n│ gbcorp.c313.olympusgods1000.game-4-asset.apk            │ 23.9 MB │\n└─────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : g90467755@gmail.com                   │\n│ GSF ID : 3ba9e9a3a9fb29bd                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0
+}

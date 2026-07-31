@@ -1,0 +1,14 @@
+package com.google.android.gms.common.api.internal;
+
+import java.util.Objects;
+
+/* compiled from: com.google.android.gms:play-services-base@@18.9.0 */
+/* loaded from: classes.dex */
+final class zact {
+    final /* synthetic */ zacu zaa;
+
+    zact(zacu zacuVar) {
+        Objects.requireNonNull(zacuVar);
+        this.zaa = zacuVar;
+    }
+}

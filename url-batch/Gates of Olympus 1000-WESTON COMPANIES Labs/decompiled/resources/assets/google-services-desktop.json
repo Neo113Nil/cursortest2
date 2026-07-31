@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719229648402",
+    "project_id": "gates-of-olympus-1000-a2d68",
+    "storage_bucket": "gates-of-olympus-1000-a2d68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719229648402:android:2787ae7ed467bda7e562cb",
+        "android_client_info": {
+          "package_name": "gbcorp.c313.olympusgods1000.game"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT_vm-r1TJqilg9mhO3T6NNV8Hhb7EtLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

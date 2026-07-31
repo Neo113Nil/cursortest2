@@ -1,0 +1,202 @@
+package com.appsflyer.internal;
+
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
+import android.os.Handler;
+import android.os.HandlerThread;
+import com.appsflyer.AFLogger;
+import java.util.BitSet;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ExecutorService;
+
+/* loaded from: classes.dex */
+public final class AFj1pSDK implements AFj1lSDK {
+    private static final BitSet component2;
+    boolean AFAdRevenueData;
+    private final Map<AFj1nSDK, AFj1nSDK> areAllFieldsValid;
+    private final SensorManager component1;
+    private final Map<AFj1nSDK, Map<String, Object>> component3;
+    private final ExecutorService component4;
+    private boolean copy;
+    private final Runnable equals;
+    final Runnable getCurrencyIso4217Code;
+    final Runnable getMediationNetwork;
+    final Object getMonetizationNetwork;
+    final Handler getRevenue;
+
+    static {
+        BitSet bitSet = new BitSet(6);
+        component2 = bitSet;
+        bitSet.set(1);
+        bitSet.set(2);
+        bitSet.set(4);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void component3() {
+        synchronized (this.getMonetizationNetwork) {
+            this.getRevenue.post(new AFj1pSDK$$ExternalSyntheticLambda0(this));
+        }
+    }
+
+    private AFj1pSDK(SensorManager sensorManager, Handler handler, ExecutorService executorService) {
+        this.getMonetizationNetwork = new Object();
+        BitSet bitSet = component2;
+        this.areAllFieldsValid = new HashMap(bitSet.size());
+        this.component3 = new ConcurrentHashMap(bitSet.size());
+        this.getMediationNetwork = new Runnable() { // from class: com.appsflyer.internal.AFj1pSDK.2
+            @Override // java.lang.Runnable
+            public final void run() {
+                synchronized (AFj1pSDK.this.getMonetizationNetwork) {
+                    AFj1pSDK.this.getRevenue();
+                    AFj1pSDK.this.getRevenue.postDelayed(AFj1pSDK.this.getCurrencyIso4217Code, 150L);
+                    AFj1pSDK.this.AFAdRevenueData = true;
+                }
+            }
+        };
+        this.getCurrencyIso4217Code = new Runnable() { // from class: com.appsflyer.internal.AFj1pSDK$$ExternalSyntheticLambda1
+            @Override // java.lang.Runnable
+            public final void run() {
+                AFj1pSDK.this.component3();
+            }
+        };
+        this.equals = new Runnable() { // from class: com.appsflyer.internal.AFj1pSDK.5
+            @Override // java.lang.Runnable
+            public final void run() {
+                synchronized (AFj1pSDK.this.getMonetizationNetwork) {
+                    if (AFj1pSDK.this.AFAdRevenueData) {
+                        AFj1pSDK.this.getRevenue.removeCallbacks(AFj1pSDK.this.getMediationNetwork);
+                        AFj1pSDK.this.getRevenue.removeCallbacks(AFj1pSDK.this.getCurrencyIso4217Code);
+                        AFj1pSDK.this.getCurrencyIso4217Code();
+                        AFj1pSDK.this.AFAdRevenueData = false;
+                    }
+                }
+            }
+        };
+        this.component1 = sensorManager;
+        this.getRevenue = handler;
+        this.component4 = executorService;
+    }
+
+    private static boolean getCurrencyIso4217Code(int i) {
+        return i >= 0 && component2.get(i);
+    }
+
+    @Override // com.appsflyer.internal.AFj1lSDK
+    public final void AFAdRevenueData() {
+        this.getRevenue.post(this.equals);
+        this.getRevenue.post(this.getMediationNetwork);
+    }
+
+    @Override // com.appsflyer.internal.AFj1lSDK
+    public final synchronized void getMonetizationNetwork() {
+        this.getRevenue.post(this.equals);
+    }
+
+    final void getRevenue() {
+        this.getRevenue.post(new Runnable() { // from class: com.appsflyer.internal.AFj1pSDK$$ExternalSyntheticLambda2
+            @Override // java.lang.Runnable
+            public final void run() {
+                AFj1pSDK.this.component2();
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void component2() {
+        try {
+            for (Sensor sensor : this.component1.getSensorList(-1)) {
+                if (getCurrencyIso4217Code(sensor.getType())) {
+                    AFj1nSDK aFj1nSDK = new AFj1nSDK(sensor, this.component4);
+                    if (!this.areAllFieldsValid.containsKey(aFj1nSDK)) {
+                        this.areAllFieldsValid.put(aFj1nSDK, aFj1nSDK);
+                    }
+                    this.component1.registerListener(this.areAllFieldsValid.get(aFj1nSDK), sensor, 1, this.getRevenue);
+                }
+            }
+        } catch (Throwable th) {
+            AFLogger.afErrorLogForExcManagerOnly("registerListeners error", th);
+        }
+        this.copy = true;
+    }
+
+    final void getCurrencyIso4217Code() {
+        this.getRevenue.post(new AFj1pSDK$$ExternalSyntheticLambda0(this));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public /* synthetic */ void component4() {
+        try {
+            if (!this.areAllFieldsValid.isEmpty()) {
+                for (AFj1nSDK aFj1nSDK : this.areAllFieldsValid.values()) {
+                    this.component1.unregisterListener(aFj1nSDK);
+                    aFj1nSDK.AFAdRevenueData(this.component3, true);
+                }
+            }
+        } catch (Throwable th) {
+            AFLogger.afErrorLogForExcManagerOnly("error while unregistering listeners", th);
+        }
+        this.copy = false;
+    }
+
+    private List<Map<String, Object>> component1() {
+        synchronized (this.getMonetizationNetwork) {
+            Iterator<AFj1nSDK> it = this.areAllFieldsValid.values().iterator();
+            while (it.hasNext()) {
+                it.next().AFAdRevenueData(this.component3, true);
+            }
+            if (this.component3.isEmpty()) {
+                return new CopyOnWriteArrayList(Collections.emptyList());
+            }
+            return new CopyOnWriteArrayList(this.component3.values());
+        }
+    }
+
+    private List<Map<String, Object>> areAllFieldsValid() {
+        synchronized (this.getMonetizationNetwork) {
+            if (!this.areAllFieldsValid.isEmpty() && this.copy) {
+                Iterator<AFj1nSDK> it = this.areAllFieldsValid.values().iterator();
+                while (it.hasNext()) {
+                    it.next().AFAdRevenueData(this.component3, false);
+                }
+            }
+            if (this.component3.isEmpty()) {
+                return new CopyOnWriteArrayList(Collections.emptyList());
+            }
+            return new CopyOnWriteArrayList(this.component3.values());
+        }
+    }
+
+    @Override // com.appsflyer.internal.AFj1lSDK
+    public final Map<String, Object> getMediationNetwork() {
+        ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
+        List<Map<String, Object>> areAllFieldsValid = areAllFieldsValid();
+        if (!areAllFieldsValid.isEmpty()) {
+            concurrentHashMap.put("sensors", areAllFieldsValid);
+            return concurrentHashMap;
+        }
+        List<Map<String, Object>> component1 = component1();
+        if (!component1.isEmpty()) {
+            concurrentHashMap.put("sensors", component1);
+        }
+        return concurrentHashMap;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public AFj1pSDK(Context context, ExecutorService executorService) {
+        this(r3, new Handler(r0.getLooper()), executorService);
+        SensorManager sensorManager = (SensorManager) context.getApplicationContext().getSystemService("sensor");
+        HandlerThread handlerThread = new HandlerThread("internal");
+        handlerThread.start();
+    }
+}
