@@ -33,5 +33,98 @@
   "stdout": "Downloading com.chicken.road.whale...\ncom.chicken.road.whale downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken road game"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Realtime Database, Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.gms.permission.AD_ID, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.CAMERA, com.chicken.road.whale.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.compose (Material3 1.3.1 / Compose UI 1.7.5), androidx.room 2.6.1, androidx.datastore 1.1.1, androidx.navigation, androidx.lifecycle, androidx.core 1.13.1, androidx.activity 1.9.3, androidx.appcompat/fragment/startup, okhttp3 4.12.0, kotlinx.coroutines 1.9.0, kotlinx.serialization, Firebase Database 21.0.0, play-services-ads-identifier 18.1.0, play-services-base 18.1.0, installreferrer, pairip licensecheck, native libplatecore"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore plateStore: last_page (ссылка оффера), reply_time (время ответа), agreed_flag (флаг согласия); также FirebaseHeartBeat*"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "gateUrl, gate, hint, consent, PlateConfig, PlateReply, platecore, gaid, deviceUuid, referrer, extra_url, Privacy-Policy, serverCheckUrl, custom_user_id, install_referrer, myGame, appConfig, redirectUrl, last_page, reply_time, agreed_flag, TraceIds, loadUrl, uniwebview"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер телефона для рекламы; по нему сервер отличает",
+      "одно устройство от другого",
+      "свой номер устройства → постоянный код, который приложение собирает из системного",
+      "идентификатора телефона и технического имени программы и приводит к короткому виду",
+      "системный идентификатор телефона → внутренний номер Android, из которого собирают свой номер",
+      "устройства выше",
+      "имя приложения в системе → техническое имя этой программы в телефоне; тоже участвует в расчёте",
+      "своего номера устройства",
+      "источник установки → откуда приложение поставили (метка магазина или рекламы)",
+      "строка браузера → как телефон представляется сайтам; уходит отдельной служебной строкой вместе",
+      "с запросом, при этом приложение чуть подчищает пометку про встроенное окно",
+      "пометка «нужен ответ в виде данных» → служебный признак в запросе, что ждут не картинку, а ответ",
+      "со ссылкой"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы; по нему сервер отличает\n• одно устройство от другого\n• свой номер устройства → постоянный код, который приложение собирает из системного\n• идентификатора телефона и технического имени программы и приводит к короткому виду\n• системный идентификатор телефона → внутренний номер Android, из которого собирают свой номер\n• устройства выше\n• имя приложения в системе → техническое имя этой программы в телефоне; тоже участвует в расчёте\n• своего номера устройства\n• источник установки → откуда приложение поставили (метка магазина или рекламы)\n• строка браузера → как телефон представляется сайтам; уходит отдельной служебной строкой вместе\n• с запросом, при этом приложение чуть подчищает пометку про встроенное окно\n• пометка «нужен ответ в виде данных» → служебный признак в запросе, что ждут не картинку, а ответ\n• со ссылкой\n\nКак собираются: Сразу после запуска главного экрана приложение само, без отдельного окна с вопросом к человеку, начинает тихую проверку. Сначала оно читает из удалённой базы настроек Google (Firebase), включён ли сейчас «боевой» режим и какой адрес проверки использовать. Имена настроек и путь к ним спрятаны во встроенной библиотеке platecore, поэтому в открытом виде в коде их не видно. Если проверка включена, приложение незаметно спрашивает у системы Android рекламный номер устройства, системный идентификатор телефона и техническое имя программы; из последних двух собирает свой постоянный номер устройства. Параллельно через сервис магазина Google Play читается метка устан…"
+  }
 }
