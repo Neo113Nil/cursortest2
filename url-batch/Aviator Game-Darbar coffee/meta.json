@@ -58,5 +58,23 @@
   "stdout": "╭─ com.aviatorvaangu.aviapp46 ─╮\n│ Aviator Game                 │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 7 files  (28.6 MB)\n  com.aviatorvaangu.aviapp46-1.apk                  ━━━━━ 100% 22.0… 34.4 0:00:…\n                                                               MB    MB/s       \n  com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk ━━━━━ 100% 41.2… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.en.apk        ━━━━━ 100% 61.6… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.lt.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.ru.apk        ━━━━━ 100% 24.8… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    ━━━━━ 100% 17.1… ?    0:00:…\n                                                               kB               \n  com.aviatorvaangu.aviapp46-1-asset.apk            ━━━━━ 100% 7.8/… 11.9 0:00:…\n                                                               MB    MB/s       \n\n                       Downloaded files                        \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                              ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.aviatorvaangu.aviapp46-1.apk                  │ 21.0 MB │\n│ com.aviatorvaangu.aviapp46-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.en.apk        │ 60.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.lt.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.ru.apk        │ 24.2 KB │\n│ com.aviatorvaangu.aviapp46-1-config.xxhdpi.apk    │ 16.7 KB │\n│ com.aviatorvaangu.aviapp46-1-asset.apk            │ 21.0 MB │\n└───────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "нет"
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [],
+    "domains": [
+      {
+        "domain": "1242.mark.qureka.com",
+        "redirects_to": "https://1242.mark.qureka.com/intro",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
