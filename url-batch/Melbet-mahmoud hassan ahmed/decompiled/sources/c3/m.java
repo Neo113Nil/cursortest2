@@ -1,0 +1,13 @@
+package c3;
+
+import android.content.Context;
+import android.location.Location;
+import android.os.Bundle;
+import androidx.annotation.RecentlyNonNull;
+
+/* loaded from: classes.dex */
+public class m extends c {
+    public m(@RecentlyNonNull Context context, @RecentlyNonNull String str, @RecentlyNonNull Bundle bundle, @RecentlyNonNull Bundle bundle2, boolean z6, Location location, int i7, int i8, String str2, @RecentlyNonNull String str3) {
+        super(context, str, bundle, bundle2, z6, location, i7, i8, str2, str3);
+    }
+}

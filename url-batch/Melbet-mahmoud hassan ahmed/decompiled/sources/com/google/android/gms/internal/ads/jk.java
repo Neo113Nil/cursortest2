@@ -1,0 +1,6 @@
+package com.google.android.gms.internal.ads;
+
+/* loaded from: classes.dex */
+public interface jk {
+    void c(Cif cif, Object obj);
+}
