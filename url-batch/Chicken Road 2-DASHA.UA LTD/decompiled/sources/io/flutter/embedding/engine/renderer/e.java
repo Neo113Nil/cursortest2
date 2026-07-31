@@ -1,0 +1,54 @@
+package io.flutter.embedding.engine.renderer;
+
+import android.media.Image;
+import android.media.ImageReader;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
+import java.util.ArrayDeque;
+
+/* loaded from: classes.dex */
+public final class e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final ImageReader f543a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final ArrayDeque f544b = new ArrayDeque();
+
+    /* renamed from: c, reason: collision with root package name */
+    public boolean f545c = false;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ FlutterRenderer$ImageReaderSurfaceProducer f546d;
+
+    public e(FlutterRenderer$ImageReaderSurfaceProducer flutterRenderer$ImageReaderSurfaceProducer, ImageReader imageReader) {
+        this.f546d = flutterRenderer$ImageReaderSurfaceProducer;
+        this.f543a = imageReader;
+        imageReader.setOnImageAvailableListener(new ImageReader.OnImageAvailableListener() { // from class: io.flutter.embedding.engine.renderer.d
+            @Override // android.media.ImageReader.OnImageAvailableListener
+            public final void onImageAvailable(ImageReader imageReader2) {
+                Image image;
+                boolean z2;
+                e eVar = e.this;
+                eVar.getClass();
+                try {
+                    image = imageReader2.acquireLatestImage();
+                } catch (IllegalStateException e2) {
+                    Log.e("ImageReaderSurfaceProducer", "onImageAvailable acquireLatestImage failed: " + e2);
+                    image = null;
+                }
+                if (image == null) {
+                    return;
+                }
+                FlutterRenderer$ImageReaderSurfaceProducer flutterRenderer$ImageReaderSurfaceProducer2 = eVar.f546d;
+                z2 = flutterRenderer$ImageReaderSurfaceProducer2.released;
+                if (z2 || eVar.f545c) {
+                    image.close();
+                } else {
+                    flutterRenderer$ImageReaderSurfaceProducer2.onImage(imageReader2, image);
+                }
+            }
+        }, new Handler(Looper.getMainLooper()));
+    }
+}
