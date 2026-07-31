@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="copy_toast_msg">Linkul a fost copiat în clipboard</string>
+    <string name="fallback_menu_item_copy_link">Copiați linkul</string>
+    <string name="fallback_menu_item_open_in_browser">Deschideți în browser</string>
+    <string name="fallback_menu_item_share_link">Trimiteți linkul</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

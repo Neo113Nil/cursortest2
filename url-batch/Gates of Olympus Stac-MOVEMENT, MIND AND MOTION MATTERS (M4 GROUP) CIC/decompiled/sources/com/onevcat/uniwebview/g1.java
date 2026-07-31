@@ -1,0 +1,29 @@
+package com.onevcat.uniwebview;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Lambda;
+
+/* loaded from: classes.dex */
+public final class g1 extends Lambda implements Function1 {
+    public final /* synthetic */ String a;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public g1(String str) {
+        super(1);
+        this.a = str;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public final Object invoke(Object obj) {
+        s0 it = (s0) obj;
+        Intrinsics.checkNotNullParameter(it, "it");
+        b0 b0Var = it.p;
+        String domain = this.a;
+        b0Var.getClass();
+        Intrinsics.checkNotNullParameter(domain, "domain");
+        b0Var.d.h.add(domain);
+        return Unit.INSTANCE;
+    }
+}

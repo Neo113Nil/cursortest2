@@ -1,0 +1,28 @@
+package com.unity3d.player;
+
+import android.app.Activity;
+import android.os.SystemClock;
+import android.view.KeyEvent;
+import androidx.core.view.InputDeviceCompat;
+
+/* loaded from: classes.dex */
+final class H0 implements Runnable {
+    final /* synthetic */ UnityPlayer a;
+
+    H0(UnityPlayer unityPlayer) {
+        this.a = unityPlayer;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        Activity activity;
+        Activity activity2;
+        long uptimeMillis = SystemClock.uptimeMillis();
+        KeyEvent keyEvent = new KeyEvent(uptimeMillis, uptimeMillis, 0, 4, 1, 0, -1, 0, 0, InputDeviceCompat.SOURCE_KEYBOARD);
+        KeyEvent keyEvent2 = new KeyEvent(uptimeMillis, uptimeMillis + 1, 1, 4, 1, 0, -1, 0, 0, InputDeviceCompat.SOURCE_KEYBOARD);
+        activity = this.a.mActivity;
+        activity.dispatchKeyEvent(keyEvent);
+        activity2 = this.a.mActivity;
+        activity2.dispatchKeyEvent(keyEvent2);
+    }
+}

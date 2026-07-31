@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="copy_toast_msg">Tengill afritaður á klippiborð</string>
+    <string name="fallback_menu_item_copy_link">Afrita tengil</string>
+    <string name="fallback_menu_item_open_in_browser">Opna í vafra</string>
+    <string name="fallback_menu_item_share_link">Deila tengli</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

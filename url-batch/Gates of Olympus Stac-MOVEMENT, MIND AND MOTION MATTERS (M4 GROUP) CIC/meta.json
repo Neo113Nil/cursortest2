@@ -1,0 +1,57 @@
+{
+  "app_id": "com.apybaraglowquest",
+  "title": "Gates of Olympus Stac",
+  "developer": "MOVEMENT, MIND AND MOTION MATTERS (M4 GROUP) CIC",
+  "developer_id": "MOVEMENT,+MIND+AND+MOTION+MATTERS+(M4+GROUP)+CIC",
+  "icon": "https://play-lh.googleusercontent.com/xNeVW5H2u0IoMCQcSwkDDWRZHYfzy-QoftzQpLf1Z6RSZoCb0Tk20EoCOXfpZN7YRkl-qzpI3D_-0e-BIyeV4QI",
+  "url": "https://play.google.com/store/apps/details?id=com.apybaraglowquest&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Stack the pieces and keep the tower balanced.",
+  "keyword": "url-batch",
+  "folder": "Gates of Olympus Stac-MOVEMENT, MIND AND MOTION MATTERS (M4 GROUP) CIC",
+  "path": "url-batch/Gates of Olympus Stac-MOVEMENT, MIND AND MOTION MATTERS (M4 GROUP) CIC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.apybaraglowquest-3-asset.apk",
+    "com.apybaraglowquest-3-config.arm64_v8a.apk",
+    "com.apybaraglowquest-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Gates of Olympus Stac-MOVEMENT, MIND AND MOTION MATTERS (M4 GROUP) CIC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.apybaraglowquest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.apybaraglowquest...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.apybaraglowquest ─╮\n│ Gates of Olympus Stac  │\n│ 0.3  (vc 3)            │\n╰────────────────────────╯\n\nDownloading 3 files  (60.1 MB)\n  com.apybaraglowquest-3.apk                  ━━━━━━ 100% 23.9/2… 14.0   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-config.arm64_v8a.apk ━━━━━━ 100% 19.2/1… 12.8   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-asset.apk            ━━━━━━ 100% 19.9/1… 13.6   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.apybaraglowquest-3.apk                  │ 22.7 MB │\n│ com.apybaraglowquest-3-config.arm64_v8a.apk │ 18.3 MB │\n│ com.apybaraglowquest-3-asset.apk            │ 22.7 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.apybaraglowquest ─╮\n│ Gates of Olympus Stac  │\n│ 0.3  (vc 3)            │\n╰────────────────────────╯\n\nDownloading 3 files  (60.1 MB)\n  com.apybaraglowquest-3.apk                  ━━━━━━ 100% 23.9/2… 14.0   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-config.arm64_v8a.apk ━━━━━━ 100% 19.2/1… 12.8   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-asset.apk            ━━━━━━ 100% 19.9/1… 13.6   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.apybaraglowquest-3.apk                  │ 22.7 MB │\n│ com.apybaraglowquest-3-config.arm64_v8a.apk │ 18.3 MB │\n│ com.apybaraglowquest-3-asset.apk            │ 22.7 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

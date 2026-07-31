@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AUTH_REQUIRE_TITLE">Erlaubnis benötigt</string>
+    <string name="CAMERA">Kamera</string>
+    <string name="CHOOSE_IMAGE">Bild auswählen</string>
+    <string name="DOWNLOAD_COMPLETED">Download abgeschlossen</string>
+    <string name="DOWNLOAD_DESCRIPTION">Speichern Sie die Datei im Ordner \"Downloads\"</string>
+    <string name="DOWNLOAD_STARTED">Der Download wurde gestartet.</string>
+    <string name="EXTERNAL_WRITE_PERMISSION_LACK">Keine Schreibberechtigung für externen Speicher.</string>
+    <string name="INVALID_URL">ungültige URL</string>
+    <string name="LOADING">Wird geladen…</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST">\'%1$s\' den Zugriff auf %2$s erlauben?</string>
+    <string name="MEDIA_CAPTURE_PERMISSION_REQUEST_TITLE">Berechtigungsanfrage</string>
+    <string name="MICROPHONE">Mikrofon</string>
+    <string name="PASSWORD">Passwort</string>
+    <string name="SAVE_IMAGE">Bild speichern</string>
+    <string name="USERNAME">Nutzername</string>
+    <string name="copy_toast_msg">Link in Zwischenablage kopiert</string>
+    <string name="fallback_menu_item_copy_link">Link kopieren</string>
+    <string name="fallback_menu_item_open_in_browser">Im Browser öffnen</string>
+    <string name="fallback_menu_item_share_link">Link teilen</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>
