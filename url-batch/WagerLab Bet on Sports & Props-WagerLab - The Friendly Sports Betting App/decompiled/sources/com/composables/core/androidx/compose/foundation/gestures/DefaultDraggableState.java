@@ -1,0 +1,49 @@
+package com.composables.core.androidx.compose.foundation.gestures;
+
+import androidx.compose.foundation.MutatePriority;
+import androidx.compose.foundation.MutatorMutex;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CoroutineScopeKt;
+
+/* compiled from: Draggable.kt */
+@Metadata(d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0002\u0018\u00002\u00020\u0001B\u001b\u0012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0004\b\u0006\u0010\u0007J?\u0010\u000e\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u00102'\u0010\u0011\u001a#\b\u0001\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00050\u0013\u0012\u0006\u0012\u0004\u0018\u00010\u00140\u0012¢\u0006\u0002\b\u0015H\u0096@¢\u0006\u0002\u0010\u0016J\u0010\u0010\u0017\u001a\u00020\u00052\u0006\u0010\u0018\u001a\u00020\u0004H\u0016R\u001d\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019"}, d2 = {"Lcom/composables/core/androidx/compose/foundation/gestures/DefaultDraggableState;", "Lcom/composables/core/androidx/compose/foundation/gestures/DraggableState;", "onDelta", "Lkotlin/Function1;", "", "", "<init>", "(Lkotlin/jvm/functions/Function1;)V", "getOnDelta", "()Lkotlin/jvm/functions/Function1;", "dragScope", "Lcom/composables/core/androidx/compose/foundation/gestures/DragScope;", "scrollMutex", "Landroidx/compose/foundation/MutatorMutex;", "drag", "dragPriority", "Landroidx/compose/foundation/MutatePriority;", "block", "Lkotlin/Function2;", "Lkotlin/coroutines/Continuation;", "", "Lkotlin/ExtensionFunctionType;", "(Landroidx/compose/foundation/MutatePriority;Lkotlin/jvm/functions/Function2;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "dispatchRawDelta", "delta", "core_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes3.dex */
+final class DefaultDraggableState implements DraggableState {
+    private final DragScope dragScope;
+    private final Function1<Float, Unit> onDelta;
+    private final MutatorMutex scrollMutex;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public DefaultDraggableState(Function1<? super Float, Unit> onDelta) {
+        Intrinsics.checkNotNullParameter(onDelta, "onDelta");
+        this.onDelta = onDelta;
+        this.dragScope = new DragScope() { // from class: com.composables.core.androidx.compose.foundation.gestures.DefaultDraggableState$dragScope$1
+            @Override // com.composables.core.androidx.compose.foundation.gestures.DragScope
+            public void dragBy(float pixels) {
+                DefaultDraggableState.this.getOnDelta().invoke(Float.valueOf(pixels));
+            }
+        };
+        this.scrollMutex = new MutatorMutex();
+    }
+
+    public final Function1<Float, Unit> getOnDelta() {
+        return this.onDelta;
+    }
+
+    @Override // com.composables.core.androidx.compose.foundation.gestures.DraggableState
+    public Object drag(MutatePriority mutatePriority, Function2<? super DragScope, ? super Continuation<? super Unit>, ? extends Object> function2, Continuation<? super Unit> continuation) {
+        Object coroutineScope = CoroutineScopeKt.coroutineScope(new DefaultDraggableState$drag$2(this, mutatePriority, function2, null), continuation);
+        return coroutineScope == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? coroutineScope : Unit.INSTANCE;
+    }
+
+    @Override // com.composables.core.androidx.compose.foundation.gestures.DraggableState
+    public void dispatchRawDelta(float delta) {
+        this.onDelta.invoke(Float.valueOf(delta));
+    }
+}

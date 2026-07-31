@@ -1,0 +1,1179 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.layout.Arrangement;
+import androidx.compose.foundation.layout.BoxKt;
+import androidx.compose.foundation.layout.BoxScopeInstance;
+import androidx.compose.foundation.layout.ColumnKt;
+import androidx.compose.foundation.layout.ColumnScope;
+import androidx.compose.foundation.layout.ColumnScopeInstance;
+import androidx.compose.foundation.layout.PaddingKt;
+import androidx.compose.foundation.layout.PaddingValues;
+import androidx.compose.material3.internal.ProvideContentColorTextStyleKt;
+import androidx.compose.material3.tokens.DialogTokens;
+import androidx.compose.runtime.Applier;
+import androidx.compose.runtime.ComposablesKt;
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.CompositionLocalKt;
+import androidx.compose.runtime.CompositionLocalMap;
+import androidx.compose.runtime.ProvidableCompositionLocal;
+import androidx.compose.runtime.ProvidedValue;
+import androidx.compose.runtime.RecomposeScopeImplKt;
+import androidx.compose.runtime.ScopeUpdateScope;
+import androidx.compose.runtime.Updater;
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import androidx.compose.ui.Alignment;
+import androidx.compose.ui.ComposedModifierKt;
+import androidx.compose.ui.Modifier;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.Shape;
+import androidx.compose.ui.layout.MeasurePolicy;
+import androidx.compose.ui.node.ComposeUiNode;
+import androidx.compose.ui.unit.Dp;
+import androidx.compose.ui.window.DialogProperties;
+import androidx.media3.common.C;
+import androidx.profileinstaller.ProfileVerifier;
+import com.revenuecat.purchases.common.diagnostics.DiagnosticsEntry;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.ReplaceWith;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: AlertDialog.kt */
+@Metadata(d1 = {"\u0000L\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001aB\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0011\u0010\b\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\tH\u0007¢\u0006\u0002\u0010\n\u001aB\u0010\u000b\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0011\u0010\b\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\tH\u0007¢\u0006\u0002\u0010\n\u001aÄ\u0001\u0010\f\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\u0011\u0010\r\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\t2\u0006\u0010\u0004\u001a\u00020\u00052\u0013\u0010\u000e\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0013\u0010\u000f\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0013\u0010\u0010\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0013\u0010\u0011\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0006\u001a\u00020\u0007H\u0001¢\u0006\u0004\b\u001b\u0010\u001c\u001a£\u0001\u0010\u001d\u001a\u00020\u00012\u0011\u0010\u001e\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\t2\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u0013\u0010\u000f\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0013\u0010\u0010\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0013\u0010\u0011\u001a\u000f\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u0003¢\u0006\u0002\b\t2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001f\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u0015H\u0001¢\u0006\u0004\b \u0010!\u001a2\u0010\"\u001a\u00020\u00012\u0006\u0010#\u001a\u00020\u001a2\u0006\u0010$\u001a\u00020\u001a2\u0011\u0010\b\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\tH\u0001¢\u0006\u0004\b%\u0010&\"\u0016\u0010'\u001a\u00020\u001aX\u0080\u0004¢\u0006\n\n\u0002\u0010*\u001a\u0004\b(\u0010)\"\u0016\u0010+\u001a\u00020\u001aX\u0080\u0004¢\u0006\n\n\u0002\u0010*\u001a\u0004\b,\u0010)\"\u0010\u0010-\u001a\u00020\u001aX\u0082\u0004¢\u0006\u0004\n\u0002\u0010*\"\u0010\u0010.\u001a\u00020\u001aX\u0082\u0004¢\u0006\u0004\n\u0002\u0010*\"\u000e\u0010/\u001a\u000200X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u00101\u001a\u000200X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u00102\u001a\u000200X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u00103\u001a\u000200X\u0082\u0004¢\u0006\u0002\n\u0000\"\u001a\u00104\u001a\b\u0012\u0004\u0012\u00020605X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b7\u00108¨\u00069"}, d2 = {"BasicAlertDialog", "", "onDismissRequest", "Lkotlin/Function0;", "modifier", "Landroidx/compose/ui/Modifier;", DiagnosticsEntry.PROPERTIES_KEY, "Landroidx/compose/ui/window/DialogProperties;", "content", "Landroidx/compose/runtime/Composable;", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/window/DialogProperties;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "AlertDialog", "AlertDialogImpl", "confirmButton", "dismissButton", "icon", "title", "text", "shape", "Landroidx/compose/ui/graphics/Shape;", "containerColor", "Landroidx/compose/ui/graphics/Color;", "iconContentColor", "titleContentColor", "textContentColor", "tonalElevation", "Landroidx/compose/ui/unit/Dp;", "AlertDialogImpl-wrnwzgE", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;JJJJFLandroidx/compose/ui/window/DialogProperties;Landroidx/compose/runtime/Composer;II)V", "AlertDialogContent", "buttons", "buttonContentColor", "AlertDialogContent-4hvqGtA", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;JFJJJJLandroidx/compose/runtime/Composer;III)V", "AlertDialogFlowRow", "mainAxisSpacing", "crossAxisSpacing", "AlertDialogFlowRow-ixp7dh8", "(FFLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "DialogMinWidth", "getDialogMinWidth", "()F", "F", "DialogMaxWidth", "getDialogMaxWidth", "ButtonsMainAxisSpacing", "ButtonsCrossAxisSpacing", "DialogPadding", "Landroidx/compose/foundation/layout/PaddingValues;", "IconPadding", "TitlePadding", "TextPadding", "LocalBasicAlertDialogOverride", "Landroidx/compose/runtime/ProvidableCompositionLocal;", "Landroidx/compose/material3/BasicAlertDialogOverride;", "getLocalBasicAlertDialogOverride", "()Landroidx/compose/runtime/ProvidableCompositionLocal;", "material3"}, k = 2, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class AlertDialogKt {
+    private static final PaddingValues DialogPadding;
+    private static final PaddingValues IconPadding;
+    private static final PaddingValues TextPadding;
+    private static final PaddingValues TitlePadding;
+    private static final float DialogMinWidth = Dp.m8401constructorimpl(280);
+    private static final float DialogMaxWidth = Dp.m8401constructorimpl(560);
+    private static final float ButtonsMainAxisSpacing = Dp.m8401constructorimpl(8);
+    private static final float ButtonsCrossAxisSpacing = Dp.m8401constructorimpl(12);
+    private static final ProvidableCompositionLocal<BasicAlertDialogOverride> LocalBasicAlertDialogOverride = CompositionLocalKt.compositionLocalOf$default(null, new Function0() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda5
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            BasicAlertDialogOverride LocalBasicAlertDialogOverride$lambda$7;
+            LocalBasicAlertDialogOverride$lambda$7 = AlertDialogKt.LocalBasicAlertDialogOverride$lambda$7();
+            return LocalBasicAlertDialogOverride$lambda$7;
+        }
+    }, 1, null);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit AlertDialog$lambda$2(Function0 function0, Modifier modifier, DialogProperties dialogProperties, Function2 function2, int i, int i2, Composer composer, int i3) {
+        AlertDialog(function0, modifier, dialogProperties, function2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit AlertDialogContent_4hvqGtA$lambda$4(Function2 function2, Modifier modifier, Function2 function22, Function2 function23, Function2 function24, Shape shape, long j, float f, long j2, long j3, long j4, long j5, int i, int i2, int i3, Composer composer, int i4) {
+        m2291AlertDialogContent4hvqGtA(function2, modifier, function22, function23, function24, shape, j, f, j2, j3, j4, j5, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2), i3);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit AlertDialogFlowRow_ixp7dh8$lambda$6(float f, float f2, Function2 function2, int i, Composer composer, int i2) {
+        m2292AlertDialogFlowRowixp7dh8(f, f2, function2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1));
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit AlertDialogImpl_wrnwzgE$lambda$3(Function0 function0, Function2 function2, Modifier modifier, Function2 function22, Function2 function23, Function2 function24, Function2 function25, Shape shape, long j, long j2, long j3, long j4, float f, DialogProperties dialogProperties, int i, int i2, Composer composer, int i3) {
+        m2293AlertDialogImplwrnwzgE(function0, function2, modifier, function22, function23, function24, function25, shape, j, j2, j3, j4, f, dialogProperties, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), RecomposeScopeImplKt.updateChangedFlags(i2));
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit BasicAlertDialog$lambda$1(Function0 function0, Modifier modifier, DialogProperties dialogProperties, Function2 function2, int i, int i2, Composer composer, int i3) {
+        BasicAlertDialog(function0, modifier, dialogProperties, function2, composer, RecomposeScopeImplKt.updateChangedFlags(i | 1), i2);
+        return Unit.INSTANCE;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x004b  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x0067  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0081  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x008c  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x00e2  */
+    /* JADX WARN: Removed duplicated region for block: B:35:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:37:0x00d7  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x0083  */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x006a  */
+    /* JADX WARN: Removed duplicated region for block: B:46:0x004e  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void BasicAlertDialog(final Function0<Unit> function0, Modifier modifier, DialogProperties dialogProperties, final Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, final int i, final int i2) {
+        int i3;
+        Modifier modifier2;
+        int i4;
+        DialogProperties dialogProperties2;
+        Modifier.Companion companion;
+        ScopeUpdateScope endRestartGroup;
+        Composer startRestartGroup = composer.startRestartGroup(24925658);
+        ComposerKt.sourceInformation(startRestartGroup, "C(BasicAlertDialog)N(onDismissRequest,modifier,properties,content)144@6884L7,*151@7127L18:AlertDialog.kt#uh7d8r");
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+        } else if ((i & 6) == 0) {
+            i3 = (startRestartGroup.changedInstance(function0) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        int i5 = i2 & 2;
+        if (i5 != 0) {
+            i3 |= 48;
+        } else if ((i & 48) == 0) {
+            modifier2 = modifier;
+            i3 |= startRestartGroup.changed(modifier2) ? 32 : 16;
+            i4 = i2 & 4;
+            if (i4 == 0) {
+                i3 |= 384;
+            } else if ((i & 384) == 0) {
+                dialogProperties2 = dialogProperties;
+                i3 |= startRestartGroup.changed(dialogProperties2) ? 256 : 128;
+                if ((i2 & 8) != 0) {
+                    i3 |= 3072;
+                } else if ((i & 3072) == 0) {
+                    i3 |= startRestartGroup.changedInstance(function2) ? 2048 : 1024;
+                }
+                if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+                    startRestartGroup.skipToGroupEnd();
+                    companion = modifier2;
+                } else {
+                    companion = i5 != 0 ? Modifier.INSTANCE : modifier2;
+                    if (i4 != 0) {
+                        dialogProperties2 = new DialogProperties(false, false, false, 7, (DefaultConstructorMarker) null);
+                    }
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventStart(24925658, i3, -1, "androidx.compose.material3.BasicAlertDialog (AlertDialog.kt:143)");
+                    }
+                    ProvidableCompositionLocal<BasicAlertDialogOverride> providableCompositionLocal = LocalBasicAlertDialogOverride;
+                    ComposerKt.sourceInformationMarkerStart(startRestartGroup, 2023513938, "CC(<get-current>):CompositionLocal.kt#9igjgp");
+                    Object consume = startRestartGroup.consume(providableCompositionLocal);
+                    ComposerKt.sourceInformationMarkerEnd(startRestartGroup);
+                    ((BasicAlertDialogOverride) consume).BasicAlertDialog(new BasicAlertDialogOverrideScope(function0, companion, dialogProperties2, function2), startRestartGroup, 0);
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventEnd();
+                    }
+                }
+                final DialogProperties dialogProperties3 = dialogProperties2;
+                endRestartGroup = startRestartGroup.endRestartGroup();
+                if (endRestartGroup != null) {
+                    final Modifier modifier3 = companion;
+                    endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda3
+                        @Override // kotlin.jvm.functions.Function2
+                        public final Object invoke(Object obj, Object obj2) {
+                            Unit BasicAlertDialog$lambda$1;
+                            BasicAlertDialog$lambda$1 = AlertDialogKt.BasicAlertDialog$lambda$1(Function0.this, modifier3, dialogProperties3, function2, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                            return BasicAlertDialog$lambda$1;
+                        }
+                    });
+                    return;
+                }
+                return;
+            }
+            dialogProperties2 = dialogProperties;
+            if ((i2 & 8) != 0) {
+            }
+            if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+            }
+            final DialogProperties dialogProperties32 = dialogProperties2;
+            endRestartGroup = startRestartGroup.endRestartGroup();
+            if (endRestartGroup != null) {
+            }
+        }
+        modifier2 = modifier;
+        i4 = i2 & 4;
+        if (i4 == 0) {
+        }
+        dialogProperties2 = dialogProperties;
+        if ((i2 & 8) != 0) {
+        }
+        if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+        }
+        final DialogProperties dialogProperties322 = dialogProperties2;
+        endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:10:0x004e  */
+    /* JADX WARN: Removed duplicated region for block: B:14:0x006a  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0087  */
+    /* JADX WARN: Removed duplicated region for block: B:20:0x0092  */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00d7  */
+    /* JADX WARN: Removed duplicated region for block: B:36:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:39:0x00cb  */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x0089  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x006f  */
+    /* JADX WARN: Removed duplicated region for block: B:48:0x0051  */
+    @Deprecated(message = "Use BasicAlertDialog instead", replaceWith = @ReplaceWith(expression = "BasicAlertDialog(onDismissRequest, modifier, properties, content)", imports = {}))
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void AlertDialog(final Function0<Unit> function0, Modifier modifier, DialogProperties dialogProperties, final Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, final int i, final int i2) {
+        Function0<Unit> function02;
+        int i3;
+        Modifier modifier2;
+        int i4;
+        Function2<? super Composer, ? super Integer, Unit> function22;
+        final DialogProperties dialogProperties2;
+        final Modifier modifier3;
+        ScopeUpdateScope endRestartGroup;
+        Composer startRestartGroup = composer.startRestartGroup(402506956);
+        ComposerKt.sourceInformation(startRestartGroup, "C(AlertDialog)N(onDismissRequest,modifier,properties,content)215@9651L65:AlertDialog.kt#uh7d8r");
+        if ((i2 & 1) != 0) {
+            i3 = i | 6;
+            function02 = function0;
+        } else if ((i & 6) == 0) {
+            function02 = function0;
+            i3 = (startRestartGroup.changedInstance(function02) ? 4 : 2) | i;
+        } else {
+            function02 = function0;
+            i3 = i;
+        }
+        int i5 = i2 & 2;
+        if (i5 != 0) {
+            i3 |= 48;
+        } else if ((i & 48) == 0) {
+            modifier2 = modifier;
+            i3 |= startRestartGroup.changed(modifier2) ? 32 : 16;
+            i4 = i2 & 4;
+            if (i4 == 0) {
+                i3 |= 384;
+            } else if ((i & 384) == 0) {
+                i3 |= startRestartGroup.changed(dialogProperties) ? 256 : 128;
+                if ((i2 & 8) != 0) {
+                    i3 |= 3072;
+                    function22 = function2;
+                } else {
+                    function22 = function2;
+                    if ((i & 3072) == 0) {
+                        i3 |= startRestartGroup.changedInstance(function22) ? 2048 : 1024;
+                    }
+                }
+                if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+                    startRestartGroup.skipToGroupEnd();
+                    dialogProperties2 = dialogProperties;
+                    modifier3 = modifier2;
+                } else {
+                    Modifier modifier4 = i5 != 0 ? Modifier.INSTANCE : modifier2;
+                    DialogProperties dialogProperties3 = i4 != 0 ? new DialogProperties(false, false, false, 7, (DefaultConstructorMarker) null) : dialogProperties;
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventStart(402506956, i3, -1, "androidx.compose.material3.AlertDialog (AlertDialog.kt:215)");
+                    }
+                    BasicAlertDialog(function02, modifier4, dialogProperties3, function22, startRestartGroup, i3 & 8190, 0);
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventEnd();
+                    }
+                    modifier3 = modifier4;
+                    dialogProperties2 = dialogProperties3;
+                }
+                endRestartGroup = startRestartGroup.endRestartGroup();
+                if (endRestartGroup != null) {
+                    endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda0
+                        @Override // kotlin.jvm.functions.Function2
+                        public final Object invoke(Object obj, Object obj2) {
+                            Unit AlertDialog$lambda$2;
+                            AlertDialog$lambda$2 = AlertDialogKt.AlertDialog$lambda$2(Function0.this, modifier3, dialogProperties2, function2, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                            return AlertDialog$lambda$2;
+                        }
+                    });
+                    return;
+                }
+                return;
+            }
+            if ((i2 & 8) != 0) {
+            }
+            if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+            }
+            endRestartGroup = startRestartGroup.endRestartGroup();
+            if (endRestartGroup != null) {
+            }
+        }
+        modifier2 = modifier;
+        i4 = i2 & 4;
+        if (i4 == 0) {
+        }
+        if ((i2 & 8) != 0) {
+        }
+        if (!startRestartGroup.shouldExecute((i3 & 1171) != 1170, i3 & 1)) {
+        }
+        endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+        }
+    }
+
+    /* renamed from: AlertDialogImpl-wrnwzgE, reason: not valid java name */
+    public static final void m2293AlertDialogImplwrnwzgE(final Function0<Unit> function0, final Function2<? super Composer, ? super Integer, Unit> function2, final Modifier modifier, final Function2<? super Composer, ? super Integer, Unit> function22, final Function2<? super Composer, ? super Integer, Unit> function23, final Function2<? super Composer, ? super Integer, Unit> function24, final Function2<? super Composer, ? super Integer, Unit> function25, final Shape shape, final long j, final long j2, final long j3, final long j4, final float f, final DialogProperties dialogProperties, Composer composer, final int i, final int i2) {
+        int i3;
+        Function2<? super Composer, ? super Integer, Unit> function26;
+        Function2<? super Composer, ? super Integer, Unit> function27;
+        Function2<? super Composer, ? super Integer, Unit> function28;
+        int i4;
+        float f2;
+        Composer startRestartGroup = composer.startRestartGroup(-867616355);
+        ComposerKt.sourceInformation(startRestartGroup, "C(AlertDialogImpl)N(onDismissRequest,confirmButton,modifier,dismissButton,icon,title,text,shape,containerColor:c#ui.graphics.Color,iconContentColor:c#ui.graphics.Color,titleContentColor:c#ui.graphics.Color,textContentColor:c#ui.graphics.Color,tonalElevation:c#ui.unit.Dp,properties)265@11313L1110,261@11182L1241:AlertDialog.kt#uh7d8r");
+        if ((i & 6) == 0) {
+            i3 = (startRestartGroup.changedInstance(function0) ? 4 : 2) | i;
+        } else {
+            i3 = i;
+        }
+        if ((i & 48) == 0) {
+            function26 = function2;
+            i3 |= startRestartGroup.changedInstance(function26) ? 32 : 16;
+        } else {
+            function26 = function2;
+        }
+        if ((i & 384) == 0) {
+            i3 |= startRestartGroup.changed(modifier) ? 256 : 128;
+        }
+        if ((i & 3072) == 0) {
+            function27 = function22;
+            i3 |= startRestartGroup.changedInstance(function27) ? 2048 : 1024;
+        } else {
+            function27 = function22;
+        }
+        if ((i & 24576) == 0) {
+            function28 = function23;
+            i3 |= startRestartGroup.changedInstance(function28) ? 16384 : 8192;
+        } else {
+            function28 = function23;
+        }
+        if ((i & ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE) == 0) {
+            i3 |= startRestartGroup.changedInstance(function24) ? 131072 : 65536;
+        }
+        if ((i & 1572864) == 0) {
+            i3 |= startRestartGroup.changedInstance(function25) ? 1048576 : 524288;
+        }
+        if ((i & 12582912) == 0) {
+            i3 |= startRestartGroup.changed(shape) ? 8388608 : 4194304;
+        }
+        if ((i & 100663296) == 0) {
+            i3 |= startRestartGroup.changed(j) ? 67108864 : 33554432;
+        }
+        if ((i & 805306368) == 0) {
+            i3 |= startRestartGroup.changed(j2) ? C.BUFFER_FLAG_LAST_SAMPLE : 268435456;
+        }
+        if ((i2 & 6) == 0) {
+            i4 = i2 | (startRestartGroup.changed(j3) ? 4 : 2);
+        } else {
+            i4 = i2;
+        }
+        if ((i2 & 48) == 0) {
+            i4 |= startRestartGroup.changed(j4) ? 32 : 16;
+        }
+        if ((i2 & 384) == 0) {
+            f2 = f;
+            i4 |= startRestartGroup.changed(f2) ? 256 : 128;
+        } else {
+            f2 = f;
+        }
+        if ((i2 & 3072) == 0) {
+            i4 |= startRestartGroup.changed(dialogProperties) ? 2048 : 1024;
+        }
+        int i5 = i4;
+        if (!startRestartGroup.shouldExecute(((i3 & 306783379) == 306783378 && (i5 & 1171) == 1170) ? false : true, i3 & 1)) {
+            startRestartGroup.skipToGroupEnd();
+        } else {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(-867616355, i3, i5, "androidx.compose.material3.AlertDialogImpl (AlertDialog.kt:260)");
+            }
+            final Function2<? super Composer, ? super Integer, Unit> function29 = function26;
+            final Function2<? super Composer, ? super Integer, Unit> function210 = function27;
+            final float f3 = f2;
+            final Function2<? super Composer, ? super Integer, Unit> function211 = function28;
+            BasicAlertDialog(function0, modifier, dialogProperties, ComposableLambdaKt.rememberComposableLambda(527420759, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogImpl$1
+                @Override // kotlin.jvm.functions.Function2
+                public /* bridge */ /* synthetic */ Unit invoke(Composer composer2, Integer num) {
+                    invoke(composer2, num.intValue());
+                    return Unit.INSTANCE;
+                }
+
+                public final void invoke(Composer composer2, int i6) {
+                    ComposerKt.sourceInformation(composer2, "C267@11365L295,286@12252L5,266@11323L1094:AlertDialog.kt#uh7d8r");
+                    if (!composer2.shouldExecute((i6 & 3) != 2, i6 & 1)) {
+                        composer2.skipToGroupEnd();
+                        return;
+                    }
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventStart(527420759, i6, -1, "androidx.compose.material3.AlertDialogImpl.<anonymous> (AlertDialog.kt:266)");
+                    }
+                    final Function2<Composer, Integer, Unit> function212 = function210;
+                    final Function2<Composer, Integer, Unit> function213 = function29;
+                    AlertDialogKt.m2291AlertDialogContent4hvqGtA(ComposableLambdaKt.rememberComposableLambda(1367541877, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogImpl$1.1
+                        @Override // kotlin.jvm.functions.Function2
+                        public /* bridge */ /* synthetic */ Unit invoke(Composer composer3, Integer num) {
+                            invoke(composer3, num.intValue());
+                            return Unit.INSTANCE;
+                        }
+
+                        public final void invoke(Composer composer3, int i7) {
+                            float f4;
+                            float f5;
+                            ComposerKt.sourceInformation(composer3, "C271@11547L99,268@11383L263:AlertDialog.kt#uh7d8r");
+                            if (composer3.shouldExecute((i7 & 3) != 2, i7 & 1)) {
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventStart(1367541877, i7, -1, "androidx.compose.material3.AlertDialogImpl.<anonymous>.<anonymous> (AlertDialog.kt:268)");
+                                }
+                                f4 = AlertDialogKt.ButtonsMainAxisSpacing;
+                                f5 = AlertDialogKt.ButtonsCrossAxisSpacing;
+                                final Function2<Composer, Integer, Unit> function214 = function212;
+                                final Function2<Composer, Integer, Unit> function215 = function213;
+                                AlertDialogKt.m2292AlertDialogFlowRowixp7dh8(f4, f5, ComposableLambdaKt.rememberComposableLambda(-459506658, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt.AlertDialogImpl.1.1.1
+                                    @Override // kotlin.jvm.functions.Function2
+                                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer4, Integer num) {
+                                        invoke(composer4, num.intValue());
+                                        return Unit.INSTANCE;
+                                    }
+
+                                    public final void invoke(Composer composer4, int i8) {
+                                        ComposerKt.sourceInformation(composer4, "C273@11613L15:AlertDialog.kt#uh7d8r");
+                                        if (!composer4.shouldExecute((i8 & 3) != 2, i8 & 1)) {
+                                            composer4.skipToGroupEnd();
+                                            return;
+                                        }
+                                        if (ComposerKt.isTraceInProgress()) {
+                                            ComposerKt.traceEventStart(-459506658, i8, -1, "androidx.compose.material3.AlertDialogImpl.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:272)");
+                                        }
+                                        Function2<Composer, Integer, Unit> function216 = function214;
+                                        if (function216 == null) {
+                                            composer4.startReplaceGroup(-1102039173);
+                                        } else {
+                                            composer4.startReplaceGroup(795734342);
+                                            ComposerKt.sourceInformation(composer4, "272@11584L8");
+                                            function216.invoke(composer4, 0);
+                                        }
+                                        composer4.endReplaceGroup();
+                                        function215.invoke(composer4, 0);
+                                        if (ComposerKt.isTraceInProgress()) {
+                                            ComposerKt.traceEventEnd();
+                                        }
+                                    }
+                                }, composer3, 54), composer3, 438);
+                                if (ComposerKt.isTraceInProgress()) {
+                                    ComposerKt.traceEventEnd();
+                                    return;
+                                }
+                                return;
+                            }
+                            composer3.skipToGroupEnd();
+                        }
+                    }, composer2, 54), null, function211, function24, function25, shape, j, f3, ColorSchemeKt.getValue(DialogTokens.INSTANCE.getActionLabelTextColor(), composer2, 6), j2, j3, j4, composer2, 6, 0, 2);
+                    if (ComposerKt.isTraceInProgress()) {
+                        ComposerKt.traceEventEnd();
+                    }
+                }
+            }, startRestartGroup, 54), startRestartGroup, (i3 & 14) | 3072 | ((i3 >> 3) & 112) | ((i5 >> 3) & 896), 0);
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        }
+        ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda2
+                @Override // kotlin.jvm.functions.Function2
+                public final Object invoke(Object obj, Object obj2) {
+                    Unit AlertDialogImpl_wrnwzgE$lambda$3;
+                    AlertDialogImpl_wrnwzgE$lambda$3 = AlertDialogKt.AlertDialogImpl_wrnwzgE$lambda$3(Function0.this, function2, modifier, function22, function23, function24, function25, shape, j, j2, j3, j4, f, dialogProperties, i, i2, (Composer) obj, ((Integer) obj2).intValue());
+                    return AlertDialogImpl_wrnwzgE$lambda$3;
+                }
+            });
+        }
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:104:0x00c9  */
+    /* JADX WARN: Removed duplicated region for block: B:10:0x0050  */
+    /* JADX WARN: Removed duplicated region for block: B:111:0x00a8  */
+    /* JADX WARN: Removed duplicated region for block: B:118:0x008a  */
+    /* JADX WARN: Removed duplicated region for block: B:125:0x006e  */
+    /* JADX WARN: Removed duplicated region for block: B:132:0x0055  */
+    /* JADX WARN: Removed duplicated region for block: B:13:0x006b  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x0087  */
+    /* JADX WARN: Removed duplicated region for block: B:21:0x00a5  */
+    /* JADX WARN: Removed duplicated region for block: B:25:0x00c4  */
+    /* JADX WARN: Removed duplicated region for block: B:28:0x00e2  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0101  */
+    /* JADX WARN: Removed duplicated region for block: B:35:0x011f  */
+    /* JADX WARN: Removed duplicated region for block: B:38:0x013a  */
+    /* JADX WARN: Removed duplicated region for block: B:41:0x0159  */
+    /* JADX WARN: Removed duplicated region for block: B:45:0x017d  */
+    /* JADX WARN: Removed duplicated region for block: B:50:0x018f  */
+    /* JADX WARN: Removed duplicated region for block: B:61:0x01fe  */
+    /* JADX WARN: Removed duplicated region for block: B:64:? A[RETURN, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:66:0x01f4  */
+    /* JADX WARN: Removed duplicated region for block: B:68:0x015c  */
+    /* JADX WARN: Removed duplicated region for block: B:75:0x013f  */
+    /* JADX WARN: Removed duplicated region for block: B:83:0x0124  */
+    /* JADX WARN: Removed duplicated region for block: B:90:0x0106  */
+    /* JADX WARN: Removed duplicated region for block: B:97:0x00e5  */
+    /* renamed from: AlertDialogContent-4hvqGtA, reason: not valid java name */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void m2291AlertDialogContent4hvqGtA(final Function2<? super Composer, ? super Integer, Unit> function2, Modifier modifier, final Function2<? super Composer, ? super Integer, Unit> function22, final Function2<? super Composer, ? super Integer, Unit> function23, final Function2<? super Composer, ? super Integer, Unit> function24, final Shape shape, final long j, final float f, final long j2, final long j3, final long j4, final long j5, Composer composer, final int i, final int i2, final int i3) {
+        int i4;
+        Modifier modifier2;
+        final Function2<? super Composer, ? super Integer, Unit> function25;
+        Function2<? super Composer, ? super Integer, Unit> function26;
+        Function2<? super Composer, ? super Integer, Unit> function27;
+        long j6;
+        int i5;
+        final Modifier modifier3;
+        ScopeUpdateScope endRestartGroup;
+        Composer startRestartGroup = composer.startRestartGroup(1378716401);
+        ComposerKt.sourceInformation(startRestartGroup, "C(AlertDialogContent)N(buttons,modifier,icon,title,text,shape,containerColor:c#ui.graphics.Color,tonalElevation:c#ui.unit.Dp,buttonContentColor:c#ui.graphics.Color,iconContentColor:c#ui.graphics.Color,titleContentColor:c#ui.graphics.Color,textContentColor:c#ui.graphics.Color)314@12992L2065,309@12852L2205:AlertDialog.kt#uh7d8r");
+        if ((i3 & 1) != 0) {
+            i4 = i | 6;
+        } else if ((i & 6) == 0) {
+            i4 = (startRestartGroup.changedInstance(function2) ? 4 : 2) | i;
+        } else {
+            i4 = i;
+        }
+        int i6 = i3 & 2;
+        if (i6 != 0) {
+            i4 |= 48;
+        } else if ((i & 48) == 0) {
+            modifier2 = modifier;
+            i4 |= startRestartGroup.changed(modifier2) ? 32 : 16;
+            if ((i3 & 4) == 0) {
+                i4 |= 384;
+                function25 = function22;
+            } else {
+                function25 = function22;
+                if ((i & 384) == 0) {
+                    i4 |= startRestartGroup.changedInstance(function25) ? 256 : 128;
+                }
+            }
+            if ((i3 & 8) == 0) {
+                i4 |= 3072;
+            } else if ((i & 3072) == 0) {
+                function26 = function23;
+                i4 |= startRestartGroup.changedInstance(function26) ? 2048 : 1024;
+                if ((i3 & 16) != 0) {
+                    i4 |= 24576;
+                } else if ((i & 24576) == 0) {
+                    function27 = function24;
+                    i4 |= startRestartGroup.changedInstance(function27) ? 16384 : 8192;
+                    if ((i3 & 32) == 0) {
+                        i4 |= ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE;
+                    } else if ((i & ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE) == 0) {
+                        i4 |= startRestartGroup.changed(shape) ? 131072 : 65536;
+                        if ((i3 & 64) != 0) {
+                            i4 |= 1572864;
+                            j6 = j;
+                        } else {
+                            j6 = j;
+                            if ((i & 1572864) == 0) {
+                                i4 |= startRestartGroup.changed(j6) ? 1048576 : 524288;
+                            }
+                        }
+                        if ((i3 & 128) != 0) {
+                            i4 |= 12582912;
+                        } else if ((i & 12582912) == 0) {
+                            i4 |= startRestartGroup.changed(f) ? 8388608 : 4194304;
+                            if ((i3 & 256) == 0) {
+                                i4 |= 100663296;
+                            } else if ((i & 100663296) == 0) {
+                                i4 |= startRestartGroup.changed(j2) ? 67108864 : 33554432;
+                            }
+                            if ((i3 & 512) == 0) {
+                                i4 |= 805306368;
+                            } else if ((i & 805306368) == 0) {
+                                i4 |= startRestartGroup.changed(j3) ? C.BUFFER_FLAG_LAST_SAMPLE : 268435456;
+                            }
+                            if ((i3 & 1024) == 0) {
+                                i5 = i2 | 6;
+                            } else if ((i2 & 6) == 0) {
+                                i5 = i2 | (startRestartGroup.changed(j4) ? 4 : 2);
+                            } else {
+                                i5 = i2;
+                            }
+                            if ((i3 & 2048) == 0) {
+                                i5 |= 48;
+                            } else if ((i2 & 48) == 0) {
+                                i5 |= startRestartGroup.changed(j5) ? 32 : 16;
+                                if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+                                    startRestartGroup.skipToGroupEnd();
+                                    modifier3 = modifier2;
+                                } else {
+                                    Modifier modifier4 = i6 != 0 ? Modifier.INSTANCE : modifier2;
+                                    if (ComposerKt.isTraceInProgress()) {
+                                        ComposerKt.traceEventStart(1378716401, i4, i5, "androidx.compose.material3.AlertDialogContent (AlertDialog.kt:308)");
+                                    }
+                                    final Function2<? super Composer, ? super Integer, Unit> function28 = function26;
+                                    final Function2<? super Composer, ? super Integer, Unit> function29 = function27;
+                                    int i7 = i4 >> 12;
+                                    SurfaceKt.m3409SurfaceT9BRK9s(modifier4, shape, j6, 0L, f, 0.0f, null, ComposableLambdaKt.rememberComposableLambda(-652798794, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogContent$1
+                                        @Override // kotlin.jvm.functions.Function2
+                                        public /* bridge */ /* synthetic */ Unit invoke(Composer composer2, Integer num) {
+                                            invoke(composer2, num.intValue());
+                                            return Unit.INSTANCE;
+                                        }
+
+                                        public final void invoke(Composer composer2, int i8) {
+                                            PaddingValues paddingValues;
+                                            Function2<Composer, Integer, Unit> function210;
+                                            String str;
+                                            int i9;
+                                            ComposerKt.sourceInformation(composer2, "C315@13002L2049:AlertDialog.kt#uh7d8r");
+                                            if (!composer2.shouldExecute((i8 & 3) != 2, i8 & 1)) {
+                                                composer2.skipToGroupEnd();
+                                                return;
+                                            }
+                                            if (ComposerKt.isTraceInProgress()) {
+                                                ComposerKt.traceEventStart(-652798794, i8, -1, "androidx.compose.material3.AlertDialogContent.<anonymous> (AlertDialog.kt:315)");
+                                            }
+                                            Modifier.Companion companion = Modifier.INSTANCE;
+                                            paddingValues = AlertDialogKt.DialogPadding;
+                                            Modifier padding = PaddingKt.padding(companion, paddingValues);
+                                            final Function2<Composer, Integer, Unit> function211 = function25;
+                                            final Function2<Composer, Integer, Unit> function212 = function28;
+                                            final Function2<Composer, Integer, Unit> function213 = function29;
+                                            long j7 = j3;
+                                            long j8 = j4;
+                                            long j9 = j5;
+                                            long j10 = j2;
+                                            Function2<Composer, Integer, Unit> function214 = function2;
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -483455358, "CC(Column)P(2,3,1)87@4442L61,88@4508L133:Column.kt#2w3rfo");
+                                            MeasurePolicy columnMeasurePolicy = ColumnKt.columnMeasurePolicy(Arrangement.INSTANCE.getTop(), Alignment.INSTANCE.getStart(), composer2, 0);
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -1323940314, "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh");
+                                            int currentCompositeKeyHash = ComposablesKt.getCurrentCompositeKeyHash(composer2, 0);
+                                            CompositionLocalMap currentCompositionLocalMap = composer2.getCurrentCompositionLocalMap();
+                                            Modifier materializeModifier = ComposedModifierKt.materializeModifier(composer2, padding);
+                                            Function0<ComposeUiNode> constructor = ComposeUiNode.INSTANCE.getConstructor();
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -692256719, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+                                            if (!(composer2.getApplier() instanceof Applier)) {
+                                                ComposablesKt.invalidApplier();
+                                            }
+                                            composer2.startReusableNode();
+                                            if (composer2.getInserting()) {
+                                                composer2.createNode(constructor);
+                                            } else {
+                                                composer2.useNode();
+                                            }
+                                            Composer m4976constructorimpl = Updater.m4976constructorimpl(composer2);
+                                            Updater.m4983setimpl(m4976constructorimpl, columnMeasurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                            Updater.m4983setimpl(m4976constructorimpl, currentCompositionLocalMap, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+                                            Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                                            if (m4976constructorimpl.getInserting() || !Intrinsics.areEqual(m4976constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                                                m4976constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                                                m4976constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+                                            }
+                                            Updater.m4983setimpl(m4976constructorimpl, materializeModifier, ComposeUiNode.INSTANCE.getSetModifier());
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -384672921, "C89@4556L9:Column.kt#2w3rfo");
+                                            final ColumnScopeInstance columnScopeInstance = ColumnScopeInstance.INSTANCE;
+                                            ComposerKt.sourceInformationMarkerStart(composer2, 346139169, "C358@14708L333:AlertDialog.kt#uh7d8r");
+                                            if (function211 == null) {
+                                                composer2.startReplaceGroup(346092326);
+                                            } else {
+                                                composer2.startReplaceGroup(346092327);
+                                                ComposerKt.sourceInformation(composer2, "*317@13165L165,317@13095L235");
+                                                CompositionLocalKt.CompositionLocalProvider(ContentColorKt.getLocalContentColor().provides(Color.m5647boximpl(j7)), ComposableLambdaKt.rememberComposableLambda(-1128150638, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogContent$1$1$1$1
+                                                    @Override // kotlin.jvm.functions.Function2
+                                                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer3, Integer num) {
+                                                        invoke(composer3, num.intValue());
+                                                        return Unit.INSTANCE;
+                                                    }
+
+                                                    public final void invoke(Composer composer3, int i10) {
+                                                        PaddingValues paddingValues2;
+                                                        ComposerKt.sourceInformation(composer3, "C318@13187L125:AlertDialog.kt#uh7d8r");
+                                                        if (!composer3.shouldExecute((i10 & 3) != 2, i10 & 1)) {
+                                                            composer3.skipToGroupEnd();
+                                                            return;
+                                                        }
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventStart(-1128150638, i10, -1, "androidx.compose.material3.AlertDialogContent.<anonymous>.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:318)");
+                                                        }
+                                                        ColumnScope columnScope = ColumnScope.this;
+                                                        Modifier.Companion companion2 = Modifier.INSTANCE;
+                                                        paddingValues2 = AlertDialogKt.IconPadding;
+                                                        Modifier align = columnScope.align(PaddingKt.padding(companion2, paddingValues2), Alignment.INSTANCE.getCenterHorizontally());
+                                                        Function2<Composer, Integer, Unit> function215 = function211;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, 733328855, "CC(Box)P(2,1,3)71@3423L130:Box.kt#2w3rfo");
+                                                        MeasurePolicy maybeCachedBoxMeasurePolicy = BoxKt.maybeCachedBoxMeasurePolicy(Alignment.INSTANCE.getTopStart(), false);
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -1323940314, "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh");
+                                                        int currentCompositeKeyHash2 = ComposablesKt.getCurrentCompositeKeyHash(composer3, 0);
+                                                        CompositionLocalMap currentCompositionLocalMap2 = composer3.getCurrentCompositionLocalMap();
+                                                        Modifier materializeModifier2 = ComposedModifierKt.materializeModifier(composer3, align);
+                                                        Function0<ComposeUiNode> constructor2 = ComposeUiNode.INSTANCE.getConstructor();
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -692256719, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+                                                        if (!(composer3.getApplier() instanceof Applier)) {
+                                                            ComposablesKt.invalidApplier();
+                                                        }
+                                                        composer3.startReusableNode();
+                                                        if (composer3.getInserting()) {
+                                                            composer3.createNode(constructor2);
+                                                        } else {
+                                                            composer3.useNode();
+                                                        }
+                                                        Composer m4976constructorimpl2 = Updater.m4976constructorimpl(composer3);
+                                                        Updater.m4983setimpl(m4976constructorimpl2, maybeCachedBoxMeasurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                                        Updater.m4983setimpl(m4976constructorimpl2, currentCompositionLocalMap2, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+                                                        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2 = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                                                        if (m4976constructorimpl2.getInserting() || !Intrinsics.areEqual(m4976constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                                                            m4976constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                                                            m4976constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                                                        }
+                                                        Updater.m4983setimpl(m4976constructorimpl2, materializeModifier2, ComposeUiNode.INSTANCE.getSetModifier());
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -2146730711, "C72@3468L9:Box.kt#2w3rfo");
+                                                        BoxScopeInstance boxScopeInstance = BoxScopeInstance.INSTANCE;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -1288652187, "C319@13284L6:AlertDialog.kt#uh7d8r");
+                                                        function215.invoke(composer3, 0);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        composer3.endNode();
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventEnd();
+                                                        }
+                                                    }
+                                                }, composer2, 54), composer2, ProvidedValue.$stable | 48);
+                                            }
+                                            composer2.endReplaceGroup();
+                                            if (function212 == null) {
+                                                composer2.startReplaceGroup(346396529);
+                                                composer2.endReplaceGroup();
+                                                function210 = function214;
+                                                str = "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh";
+                                                i9 = -692256719;
+                                            } else {
+                                                composer2.startReplaceGroup(346396530);
+                                                ComposerKt.sourceInformation(composer2, "*326@13528L5,327@13553L569,324@13386L736");
+                                                function210 = function214;
+                                                str = "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh";
+                                                i9 = -692256719;
+                                                ProvideContentColorTextStyleKt.m3942ProvideContentColorTextStyle3JVO9M(j8, TypographyKt.getValue(DialogTokens.INSTANCE.getHeadlineFont(), composer2, 6), ComposableLambdaKt.rememberComposableLambda(71284337, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogContent$1$1$2$1
+                                                    @Override // kotlin.jvm.functions.Function2
+                                                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer3, Integer num) {
+                                                        invoke(composer3, num.intValue());
+                                                        return Unit.INSTANCE;
+                                                    }
+
+                                                    public final void invoke(Composer composer3, int i10) {
+                                                        PaddingValues paddingValues2;
+                                                        Alignment.Horizontal centerHorizontally;
+                                                        ComposerKt.sourceInformation(composer3, "C328@13575L529:AlertDialog.kt#uh7d8r");
+                                                        if (!composer3.shouldExecute((i10 & 3) != 2, i10 & 1)) {
+                                                            composer3.skipToGroupEnd();
+                                                            return;
+                                                        }
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventStart(71284337, i10, -1, "androidx.compose.material3.AlertDialogContent.<anonymous>.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:328)");
+                                                        }
+                                                        ColumnScope columnScope = ColumnScope.this;
+                                                        Modifier.Companion companion2 = Modifier.INSTANCE;
+                                                        paddingValues2 = AlertDialogKt.TitlePadding;
+                                                        Modifier padding2 = PaddingKt.padding(companion2, paddingValues2);
+                                                        if (function211 == null) {
+                                                            centerHorizontally = Alignment.INSTANCE.getStart();
+                                                        } else {
+                                                            centerHorizontally = Alignment.INSTANCE.getCenterHorizontally();
+                                                        }
+                                                        Modifier align = columnScope.align(padding2, centerHorizontally);
+                                                        Function2<Composer, Integer, Unit> function215 = function212;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, 733328855, "CC(Box)P(2,1,3)71@3423L130:Box.kt#2w3rfo");
+                                                        MeasurePolicy maybeCachedBoxMeasurePolicy = BoxKt.maybeCachedBoxMeasurePolicy(Alignment.INSTANCE.getTopStart(), false);
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -1323940314, "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh");
+                                                        int currentCompositeKeyHash2 = ComposablesKt.getCurrentCompositeKeyHash(composer3, 0);
+                                                        CompositionLocalMap currentCompositionLocalMap2 = composer3.getCurrentCompositionLocalMap();
+                                                        Modifier materializeModifier2 = ComposedModifierKt.materializeModifier(composer3, align);
+                                                        Function0<ComposeUiNode> constructor2 = ComposeUiNode.INSTANCE.getConstructor();
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -692256719, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+                                                        if (!(composer3.getApplier() instanceof Applier)) {
+                                                            ComposablesKt.invalidApplier();
+                                                        }
+                                                        composer3.startReusableNode();
+                                                        if (composer3.getInserting()) {
+                                                            composer3.createNode(constructor2);
+                                                        } else {
+                                                            composer3.useNode();
+                                                        }
+                                                        Composer m4976constructorimpl2 = Updater.m4976constructorimpl(composer3);
+                                                        Updater.m4983setimpl(m4976constructorimpl2, maybeCachedBoxMeasurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                                        Updater.m4983setimpl(m4976constructorimpl2, currentCompositionLocalMap2, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+                                                        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2 = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                                                        if (m4976constructorimpl2.getInserting() || !Intrinsics.areEqual(m4976constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                                                            m4976constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                                                            m4976constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                                                        }
+                                                        Updater.m4983setimpl(m4976constructorimpl2, materializeModifier2, ComposeUiNode.INSTANCE.getSetModifier());
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -2146730711, "C72@3468L9:Box.kt#2w3rfo");
+                                                        BoxScopeInstance boxScopeInstance = BoxScopeInstance.INSTANCE;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, 1971616197, "C339@14075L7:AlertDialog.kt#uh7d8r");
+                                                        function215.invoke(composer3, 0);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        composer3.endNode();
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventEnd();
+                                                        }
+                                                    }
+                                                }, composer2, 54), composer2, 384);
+                                                composer2.endReplaceGroup();
+                                            }
+                                            if (function213 == null) {
+                                                composer2.startReplaceGroup(347174009);
+                                            } else {
+                                                composer2.startReplaceGroup(347174010);
+                                                ComposerKt.sourceInformation(composer2, "*344@14225L5,348@14391L290,345@14247L434");
+                                                ProvideContentColorTextStyleKt.m3942ProvideContentColorTextStyle3JVO9M(j9, TypographyKt.getValue(DialogTokens.INSTANCE.getSupportingTextFont(), composer2, 6), ComposableLambdaKt.rememberComposableLambda(705583346, true, new Function2<Composer, Integer, Unit>() { // from class: androidx.compose.material3.AlertDialogKt$AlertDialogContent$1$1$3$1
+                                                    @Override // kotlin.jvm.functions.Function2
+                                                    public /* bridge */ /* synthetic */ Unit invoke(Composer composer3, Integer num) {
+                                                        invoke(composer3, num.intValue());
+                                                        return Unit.INSTANCE;
+                                                    }
+
+                                                    public final void invoke(Composer composer3, int i10) {
+                                                        PaddingValues paddingValues2;
+                                                        ComposerKt.sourceInformation(composer3, "C349@14413L250:AlertDialog.kt#uh7d8r");
+                                                        if (!composer3.shouldExecute((i10 & 3) != 2, i10 & 1)) {
+                                                            composer3.skipToGroupEnd();
+                                                            return;
+                                                        }
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventStart(705583346, i10, -1, "androidx.compose.material3.AlertDialogContent.<anonymous>.<anonymous>.<anonymous>.<anonymous> (AlertDialog.kt:349)");
+                                                        }
+                                                        ColumnScope columnScope = ColumnScope.this;
+                                                        Modifier weight = columnScope.weight(Modifier.INSTANCE, 1.0f, false);
+                                                        paddingValues2 = AlertDialogKt.TextPadding;
+                                                        Modifier align = columnScope.align(PaddingKt.padding(weight, paddingValues2), Alignment.INSTANCE.getStart());
+                                                        Function2<Composer, Integer, Unit> function215 = function213;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, 733328855, "CC(Box)P(2,1,3)71@3423L130:Box.kt#2w3rfo");
+                                                        MeasurePolicy maybeCachedBoxMeasurePolicy = BoxKt.maybeCachedBoxMeasurePolicy(Alignment.INSTANCE.getTopStart(), false);
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -1323940314, "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh");
+                                                        int currentCompositeKeyHash2 = ComposablesKt.getCurrentCompositeKeyHash(composer3, 0);
+                                                        CompositionLocalMap currentCompositionLocalMap2 = composer3.getCurrentCompositionLocalMap();
+                                                        Modifier materializeModifier2 = ComposedModifierKt.materializeModifier(composer3, align);
+                                                        Function0<ComposeUiNode> constructor2 = ComposeUiNode.INSTANCE.getConstructor();
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -692256719, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+                                                        if (!(composer3.getApplier() instanceof Applier)) {
+                                                            ComposablesKt.invalidApplier();
+                                                        }
+                                                        composer3.startReusableNode();
+                                                        if (composer3.getInserting()) {
+                                                            composer3.createNode(constructor2);
+                                                        } else {
+                                                            composer3.useNode();
+                                                        }
+                                                        Composer m4976constructorimpl2 = Updater.m4976constructorimpl(composer3);
+                                                        Updater.m4983setimpl(m4976constructorimpl2, maybeCachedBoxMeasurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                                        Updater.m4983setimpl(m4976constructorimpl2, currentCompositionLocalMap2, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+                                                        Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2 = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                                                        if (m4976constructorimpl2.getInserting() || !Intrinsics.areEqual(m4976constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                                                            m4976constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                                                            m4976constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                                                        }
+                                                        Updater.m4983setimpl(m4976constructorimpl2, materializeModifier2, ComposeUiNode.INSTANCE.getSetModifier());
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, -2146730711, "C72@3468L9:Box.kt#2w3rfo");
+                                                        BoxScopeInstance boxScopeInstance = BoxScopeInstance.INSTANCE;
+                                                        ComposerKt.sourceInformationMarkerStart(composer3, 517290885, "C354@14635L6:AlertDialog.kt#uh7d8r");
+                                                        function215.invoke(composer3, 0);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        composer3.endNode();
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        ComposerKt.sourceInformationMarkerEnd(composer3);
+                                                        if (ComposerKt.isTraceInProgress()) {
+                                                            ComposerKt.traceEventEnd();
+                                                        }
+                                                    }
+                                                }, composer2, 54), composer2, 384);
+                                            }
+                                            composer2.endReplaceGroup();
+                                            Modifier align = columnScopeInstance.align(Modifier.INSTANCE, Alignment.INSTANCE.getEnd());
+                                            ComposerKt.sourceInformationMarkerStart(composer2, 733328855, "CC(Box)P(2,1,3)71@3423L130:Box.kt#2w3rfo");
+                                            MeasurePolicy maybeCachedBoxMeasurePolicy = BoxKt.maybeCachedBoxMeasurePolicy(Alignment.INSTANCE.getTopStart(), false);
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -1323940314, str);
+                                            int currentCompositeKeyHash2 = ComposablesKt.getCurrentCompositeKeyHash(composer2, 0);
+                                            CompositionLocalMap currentCompositionLocalMap2 = composer2.getCurrentCompositionLocalMap();
+                                            Modifier materializeModifier2 = ComposedModifierKt.materializeModifier(composer2, align);
+                                            Function0<ComposeUiNode> constructor2 = ComposeUiNode.INSTANCE.getConstructor();
+                                            ComposerKt.sourceInformationMarkerStart(composer2, i9, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+                                            if (!(composer2.getApplier() instanceof Applier)) {
+                                                ComposablesKt.invalidApplier();
+                                            }
+                                            composer2.startReusableNode();
+                                            if (composer2.getInserting()) {
+                                                composer2.createNode(constructor2);
+                                            } else {
+                                                composer2.useNode();
+                                            }
+                                            Composer m4976constructorimpl2 = Updater.m4976constructorimpl(composer2);
+                                            Updater.m4983setimpl(m4976constructorimpl2, maybeCachedBoxMeasurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+                                            Updater.m4983setimpl(m4976constructorimpl2, currentCompositionLocalMap2, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+                                            Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash2 = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+                                            if (m4976constructorimpl2.getInserting() || !Intrinsics.areEqual(m4976constructorimpl2.rememberedValue(), Integer.valueOf(currentCompositeKeyHash2))) {
+                                                m4976constructorimpl2.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash2));
+                                                m4976constructorimpl2.apply(Integer.valueOf(currentCompositeKeyHash2), setCompositeKeyHash2);
+                                            }
+                                            Updater.m4983setimpl(m4976constructorimpl2, materializeModifier2, ComposeUiNode.INSTANCE.getSetModifier());
+                                            ComposerKt.sourceInformationMarkerStart(composer2, -2146730711, "C72@3468L9:Box.kt#2w3rfo");
+                                            BoxScopeInstance boxScopeInstance = BoxScopeInstance.INSTANCE;
+                                            ComposerKt.sourceInformationMarkerStart(composer2, 200047666, "C359@14821L5,360@14843L184:AlertDialog.kt#uh7d8r");
+                                            ProvideContentColorTextStyleKt.m3942ProvideContentColorTextStyle3JVO9M(j10, TypographyKt.getValue(DialogTokens.INSTANCE.getActionLabelTextFont(), composer2, 6), function210, composer2, 0);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            composer2.endNode();
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            composer2.endNode();
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            ComposerKt.sourceInformationMarkerEnd(composer2);
+                                            if (ComposerKt.isTraceInProgress()) {
+                                                ComposerKt.traceEventEnd();
+                                            }
+                                        }
+                                    }, startRestartGroup, 54), startRestartGroup, ((i4 >> 3) & 14) | 12582912 | (i7 & 112) | (i7 & 896) | ((i4 >> 9) & 57344), 104);
+                                    if (ComposerKt.isTraceInProgress()) {
+                                        ComposerKt.traceEventEnd();
+                                    }
+                                    modifier3 = modifier4;
+                                }
+                                endRestartGroup = startRestartGroup.endRestartGroup();
+                                if (endRestartGroup != null) {
+                                    endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda1
+                                        @Override // kotlin.jvm.functions.Function2
+                                        public final Object invoke(Object obj, Object obj2) {
+                                            Unit AlertDialogContent_4hvqGtA$lambda$4;
+                                            AlertDialogContent_4hvqGtA$lambda$4 = AlertDialogKt.AlertDialogContent_4hvqGtA$lambda$4(Function2.this, modifier3, function22, function23, function24, shape, j, f, j2, j3, j4, j5, i, i2, i3, (Composer) obj, ((Integer) obj2).intValue());
+                                            return AlertDialogContent_4hvqGtA$lambda$4;
+                                        }
+                                    });
+                                    return;
+                                }
+                                return;
+                            }
+                            if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+                            }
+                            endRestartGroup = startRestartGroup.endRestartGroup();
+                            if (endRestartGroup != null) {
+                            }
+                        }
+                        if ((i3 & 256) == 0) {
+                        }
+                        if ((i3 & 512) == 0) {
+                        }
+                        if ((i3 & 1024) == 0) {
+                        }
+                        if ((i3 & 2048) == 0) {
+                        }
+                        if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+                        }
+                        endRestartGroup = startRestartGroup.endRestartGroup();
+                        if (endRestartGroup != null) {
+                        }
+                    }
+                    if ((i3 & 64) != 0) {
+                    }
+                    if ((i3 & 128) != 0) {
+                    }
+                    if ((i3 & 256) == 0) {
+                    }
+                    if ((i3 & 512) == 0) {
+                    }
+                    if ((i3 & 1024) == 0) {
+                    }
+                    if ((i3 & 2048) == 0) {
+                    }
+                    if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+                    }
+                    endRestartGroup = startRestartGroup.endRestartGroup();
+                    if (endRestartGroup != null) {
+                    }
+                }
+                function27 = function24;
+                if ((i3 & 32) == 0) {
+                }
+                if ((i3 & 64) != 0) {
+                }
+                if ((i3 & 128) != 0) {
+                }
+                if ((i3 & 256) == 0) {
+                }
+                if ((i3 & 512) == 0) {
+                }
+                if ((i3 & 1024) == 0) {
+                }
+                if ((i3 & 2048) == 0) {
+                }
+                if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+                }
+                endRestartGroup = startRestartGroup.endRestartGroup();
+                if (endRestartGroup != null) {
+                }
+            }
+            function26 = function23;
+            if ((i3 & 16) != 0) {
+            }
+            function27 = function24;
+            if ((i3 & 32) == 0) {
+            }
+            if ((i3 & 64) != 0) {
+            }
+            if ((i3 & 128) != 0) {
+            }
+            if ((i3 & 256) == 0) {
+            }
+            if ((i3 & 512) == 0) {
+            }
+            if ((i3 & 1024) == 0) {
+            }
+            if ((i3 & 2048) == 0) {
+            }
+            if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+            }
+            endRestartGroup = startRestartGroup.endRestartGroup();
+            if (endRestartGroup != null) {
+            }
+        }
+        modifier2 = modifier;
+        if ((i3 & 4) == 0) {
+        }
+        if ((i3 & 8) == 0) {
+        }
+        function26 = function23;
+        if ((i3 & 16) != 0) {
+        }
+        function27 = function24;
+        if ((i3 & 32) == 0) {
+        }
+        if ((i3 & 64) != 0) {
+        }
+        if ((i3 & 128) != 0) {
+        }
+        if ((i3 & 256) == 0) {
+        }
+        if ((i3 & 512) == 0) {
+        }
+        if ((i3 & 1024) == 0) {
+        }
+        if ((i3 & 2048) == 0) {
+        }
+        if (!startRestartGroup.shouldExecute((i4 & 306783379) == 306783378 || (i5 & 19) != 18, i4 & 1)) {
+        }
+        endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+        }
+    }
+
+    /* renamed from: AlertDialogFlowRow-ixp7dh8, reason: not valid java name */
+    public static final void m2292AlertDialogFlowRowixp7dh8(final float f, final float f2, final Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, final int i) {
+        int i2;
+        Composer startRestartGroup = composer.startRestartGroup(-917637668);
+        ComposerKt.sourceInformation(startRestartGroup, "C(AlertDialogFlowRow)N(mainAxisSpacing:c#ui.unit.Dp,crossAxisSpacing:c#ui.unit.Dp,content)380@15332L3365,380@15316L3381:AlertDialog.kt#uh7d8r");
+        if ((i & 6) == 0) {
+            i2 = (startRestartGroup.changed(f) ? 4 : 2) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i & 48) == 0) {
+            i2 |= startRestartGroup.changed(f2) ? 32 : 16;
+        }
+        if ((i & 384) == 0) {
+            i2 |= startRestartGroup.changedInstance(function2) ? 256 : 128;
+        }
+        if (!startRestartGroup.shouldExecute((i2 & 147) != 146, i2 & 1)) {
+            startRestartGroup.skipToGroupEnd();
+        } else {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(-917637668, i2, -1, "androidx.compose.material3.AlertDialogFlowRow (AlertDialog.kt:379)");
+            }
+            ComposerKt.sourceInformationMarkerStart(startRestartGroup, -1381494879, "CC(remember):AlertDialog.kt#9igjgp");
+            boolean z = ((i2 & 14) == 4) | ((i2 & 112) == 32);
+            AlertDialogKt$AlertDialogFlowRow$1$1 rememberedValue = startRestartGroup.rememberedValue();
+            if (z || rememberedValue == Composer.INSTANCE.getEmpty()) {
+                rememberedValue = new AlertDialogKt$AlertDialogFlowRow$1$1(f, f2);
+                startRestartGroup.updateRememberedValue(rememberedValue);
+            }
+            MeasurePolicy measurePolicy = (MeasurePolicy) rememberedValue;
+            ComposerKt.sourceInformationMarkerEnd(startRestartGroup);
+            int i3 = (i2 >> 6) & 14;
+            ComposerKt.sourceInformationMarkerStart(startRestartGroup, -1323940314, "CC(Layout)P(!1,2)79@3206L23,82@3357L359:Layout.kt#80mrfh");
+            Modifier.Companion companion = Modifier.INSTANCE;
+            int currentCompositeKeyHash = ComposablesKt.getCurrentCompositeKeyHash(startRestartGroup, 0);
+            CompositionLocalMap currentCompositionLocalMap = startRestartGroup.getCurrentCompositionLocalMap();
+            Modifier materializeModifier = ComposedModifierKt.materializeModifier(startRestartGroup, companion);
+            Function0<ComposeUiNode> constructor = ComposeUiNode.INSTANCE.getConstructor();
+            int i4 = ((i3 << 6) & 896) | 6;
+            ComposerKt.sourceInformationMarkerStart(startRestartGroup, -692256719, "CC(ReusableComposeNode)P(1,2)355@14017L9:Composables.kt#9igjgp");
+            if (!(startRestartGroup.getApplier() instanceof Applier)) {
+                ComposablesKt.invalidApplier();
+            }
+            startRestartGroup.startReusableNode();
+            if (startRestartGroup.getInserting()) {
+                startRestartGroup.createNode(constructor);
+            } else {
+                startRestartGroup.useNode();
+            }
+            Composer m4976constructorimpl = Updater.m4976constructorimpl(startRestartGroup);
+            Updater.m4983setimpl(m4976constructorimpl, measurePolicy, ComposeUiNode.INSTANCE.getSetMeasurePolicy());
+            Updater.m4983setimpl(m4976constructorimpl, currentCompositionLocalMap, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
+            Function2<ComposeUiNode, Integer, Unit> setCompositeKeyHash = ComposeUiNode.INSTANCE.getSetCompositeKeyHash();
+            if (m4976constructorimpl.getInserting() || !Intrinsics.areEqual(m4976constructorimpl.rememberedValue(), Integer.valueOf(currentCompositeKeyHash))) {
+                m4976constructorimpl.updateRememberedValue(Integer.valueOf(currentCompositeKeyHash));
+                m4976constructorimpl.apply(Integer.valueOf(currentCompositeKeyHash), setCompositeKeyHash);
+            }
+            Updater.m4983setimpl(m4976constructorimpl, materializeModifier, ComposeUiNode.INSTANCE.getSetModifier());
+            function2.invoke(startRestartGroup, Integer.valueOf((i4 >> 6) & 14));
+            startRestartGroup.endNode();
+            ComposerKt.sourceInformationMarkerEnd(startRestartGroup);
+            ComposerKt.sourceInformationMarkerEnd(startRestartGroup);
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        }
+        ScopeUpdateScope endRestartGroup = startRestartGroup.endRestartGroup();
+        if (endRestartGroup != null) {
+            endRestartGroup.updateScope(new Function2() { // from class: androidx.compose.material3.AlertDialogKt$$ExternalSyntheticLambda4
+                @Override // kotlin.jvm.functions.Function2
+                public final Object invoke(Object obj, Object obj2) {
+                    Unit AlertDialogFlowRow_ixp7dh8$lambda$6;
+                    AlertDialogFlowRow_ixp7dh8$lambda$6 = AlertDialogKt.AlertDialogFlowRow_ixp7dh8$lambda$6(f, f2, function2, i, (Composer) obj, ((Integer) obj2).intValue());
+                    return AlertDialogFlowRow_ixp7dh8$lambda$6;
+                }
+            });
+        }
+    }
+
+    public static final float getDialogMinWidth() {
+        return DialogMinWidth;
+    }
+
+    public static final float getDialogMaxWidth() {
+        return DialogMaxWidth;
+    }
+
+    public static final ProvidableCompositionLocal<BasicAlertDialogOverride> getLocalBasicAlertDialogOverride() {
+        return LocalBasicAlertDialogOverride;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final BasicAlertDialogOverride LocalBasicAlertDialogOverride$lambda$7() {
+        return DefaultBasicAlertDialogOverride.INSTANCE;
+    }
+
+    static {
+        float f = 24;
+        DialogPadding = PaddingKt.m830PaddingValues0680j_4(Dp.m8401constructorimpl(f));
+        float f2 = 16;
+        IconPadding = PaddingKt.m834PaddingValuesa9UjIt4$default(0.0f, 0.0f, 0.0f, Dp.m8401constructorimpl(f2), 7, null);
+        TitlePadding = PaddingKt.m834PaddingValuesa9UjIt4$default(0.0f, 0.0f, 0.0f, Dp.m8401constructorimpl(f2), 7, null);
+        TextPadding = PaddingKt.m834PaddingValuesa9UjIt4$default(0.0f, 0.0f, 0.0f, Dp.m8401constructorimpl(f), 7, null);
+    }
+}

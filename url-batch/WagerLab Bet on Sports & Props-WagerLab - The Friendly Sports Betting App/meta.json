@@ -1,0 +1,36 @@
+{
+  "app_id": "com.socialbet.android",
+  "title": "WagerLab Bet on Sports & Props",
+  "developer": "WagerLab - The Friendly Sports Betting App",
+  "developer_id": "WagerLab+-+The+Friendly+Sports+Betting+App",
+  "icon": "https://play-lh.googleusercontent.com/3HY-ldg4pD1iuO3Kwuc7MKzQ4_AJUBlmQhMdEkbBZwYTcFdl1hA-PH_wjTLQv32XsdAZSY7i9OaZFael8GgH",
+  "url": "https://play.google.com/store/apps/details?id=com.socialbet.android&hl=en&gl=us",
+  "score": 4.12,
+  "released": "Aug 11, 2019",
+  "updated": "2026-07-09",
+  "version": "7.09",
+  "summary": "Bet on sports, props, odds & scores - Free sportsbook for betting action network",
+  "keyword": "url-batch",
+  "folder": "WagerLab Bet on Sports & Props-WagerLab - The Friendly Sports Betting App",
+  "path": "url-batch/WagerLab Bet on Sports & Props-WagerLab - The Friendly Sports Betting App",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.socialbet.android.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/WagerLab Bet on Sports & Props-WagerLab - The Friendly Sports Betting App",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.socialbet.android...\ncom.socialbet.android downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.socialbet.android...\ncom.socialbet.android downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

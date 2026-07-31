@@ -1,0 +1,621 @@
+package com.revenuecat.purchases.common;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import com.revenuecat.purchases.LogHandler;
+import com.revenuecat.purchases.LogLevel;
+import com.revenuecat.purchases.backup.RevenueCatBackupAgent;
+import com.revenuecat.purchases.common.LogWrapperKt;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import kotlin.Lazy;
+import kotlin.LazyKt;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.SetsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+
+/* compiled from: SharedPreferencesManager.kt */
+@Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000 \u00182\u00020\u0001:\u0001\u0018B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\u000e\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007¢\u0006\u0002\u0010\bJ\b\u0010\t\u001a\u00020\nH\u0002J\u000e\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\fH\u0002J\u0006\u0010\u000e\u001a\u00020\u0005J\b\u0010\u000f\u001a\u00020\u0010H\u0002J \u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\u00052\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\rH\u0002J\b\u0010\u0016\u001a\u00020\nH\u0002J\b\u0010\u0017\u001a\u00020\nH\u0002R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0019²\u0006\n\u0010\u0012\u001a\u00020\u0005X\u008a\u0084\u0002²\u0006\n\u0010\u0012\u001a\u00020\u0005X\u008a\u0084\u0002"}, d2 = {"Lcom/revenuecat/purchases/common/SharedPreferencesManager;", "", "context", "Landroid/content/Context;", "revenueCatSharedPreferences", "Landroid/content/SharedPreferences;", "legacySharedPreferences", "Lkotlin/Lazy;", "(Landroid/content/Context;Landroid/content/SharedPreferences;Lkotlin/Lazy;)V", "ensureMigrated", "", "getRevenueCatKeysToMigrate", "", "", "getSharedPreferences", "hasRevenueCatVersion", "", "migratePreferenceValue", "legacyPrefs", "editor", "Landroid/content/SharedPreferences$Editor;", "key", "performMigration", "updateSharedPreferencesVersion", "Companion", "purchases_defaultsBc8Release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public final class SharedPreferencesManager {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+    public static final int EXPECTED_VERSION = 1;
+    public static final String EXPECTED_VERSION_KEY = "com.revenuecat.purchases.shared_preferences_version";
+    public static final String SHARED_PREFERENCES_PREFIX = "com.revenuecat.purchases.";
+    private final Lazy<SharedPreferences> legacySharedPreferences;
+    private final SharedPreferences revenueCatSharedPreferences;
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public SharedPreferencesManager(Context context, SharedPreferences revenueCatSharedPreferences, Lazy<? extends SharedPreferences> legacySharedPreferences) {
+        Intrinsics.checkNotNullParameter(context, "context");
+        Intrinsics.checkNotNullParameter(revenueCatSharedPreferences, "revenueCatSharedPreferences");
+        Intrinsics.checkNotNullParameter(legacySharedPreferences, "legacySharedPreferences");
+        this.revenueCatSharedPreferences = revenueCatSharedPreferences;
+        this.legacySharedPreferences = legacySharedPreferences;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public /* synthetic */ SharedPreferencesManager(final Context context, SharedPreferences sharedPreferences, Lazy lazy, int i, DefaultConstructorMarker defaultConstructorMarker) {
+        this(context, sharedPreferences, (i & 4) != 0 ? LazyKt.lazy(new Function0<SharedPreferences>() { // from class: com.revenuecat.purchases.common.SharedPreferencesManager.1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(0);
+            }
+
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // kotlin.jvm.functions.Function0
+            public final SharedPreferences invoke() {
+                return PreferenceManager.getDefaultSharedPreferences(context);
+            }
+        }) : lazy);
+        if ((i & 2) != 0) {
+            sharedPreferences = context.getSharedPreferences(RevenueCatBackupAgent.REVENUECAT_PREFS_FILE_NAME, 0);
+            Intrinsics.checkNotNullExpressionValue(sharedPreferences, "context.getSharedPrefere…ntext.MODE_PRIVATE,\n    )");
+        }
+    }
+
+    /* compiled from: SharedPreferencesManager.kt */
+    @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0016\u0010\u0003\u001a\u00020\u00048\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\u0005\u0010\u0002R\u0016\u0010\u0006\u001a\u00020\u00078\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\b\u0010\u0002R\u0016\u0010\t\u001a\u00020\u00078\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\n\u0010\u0002¨\u0006\u000b"}, d2 = {"Lcom/revenuecat/purchases/common/SharedPreferencesManager$Companion;", "", "()V", "EXPECTED_VERSION", "", "getEXPECTED_VERSION$annotations", "EXPECTED_VERSION_KEY", "", "getEXPECTED_VERSION_KEY$annotations", "SHARED_PREFERENCES_PREFIX", "getSHARED_PREFERENCES_PREFIX$annotations", "purchases_defaultsBc8Release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public static /* synthetic */ void getEXPECTED_VERSION$annotations() {
+        }
+
+        public static /* synthetic */ void getEXPECTED_VERSION_KEY$annotations() {
+        }
+
+        public static /* synthetic */ void getSHARED_PREFERENCES_PREFIX$annotations() {
+        }
+
+        private Companion() {
+        }
+    }
+
+    public final SharedPreferences getSharedPreferences() {
+        synchronized (this) {
+            ensureMigrated();
+            Unit unit = Unit.INSTANCE;
+        }
+        return this.revenueCatSharedPreferences;
+    }
+
+    private final void ensureMigrated() {
+        if (hasRevenueCatVersion()) {
+            return;
+        }
+        Set<String> keySet = this.legacySharedPreferences.getValue().getAll().keySet();
+        if (!(keySet instanceof Collection) || !keySet.isEmpty()) {
+            Iterator<T> it = keySet.iterator();
+            while (true) {
+                if (!it.hasNext()) {
+                    break;
+                }
+                String key = (String) it.next();
+                Intrinsics.checkNotNullExpressionValue(key, "key");
+                if (StringsKt.startsWith$default(key, SHARED_PREFERENCES_PREFIX, false, 2, (Object) null)) {
+                    performMigration();
+                    break;
+                }
+            }
+        }
+        updateSharedPreferencesVersion();
+    }
+
+    private final void performMigration() {
+        LogHandler currentLogHandler;
+        String str;
+        String invoke;
+        final LogIntent logIntent = LogIntent.DEBUG;
+        Function0<String> function0 = new Function0<String>() { // from class: com.revenuecat.purchases.common.SharedPreferencesManager$performMigration$$inlined$log$1
+            {
+                super(0);
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final String invoke() {
+                return CollectionsKt.joinToString$default(LogIntent.this.getEmojiList(), "", null, null, 0, null, null, 62, null) + " Starting shared preferences migration from legacy to RevenueCat-specific preferences";
+            }
+        };
+        switch (LogWrapperKt.WhenMappings.$EnumSwitchMapping$0[logIntent.ordinal()]) {
+            case 1:
+                LogLevel logLevel = LogLevel.DEBUG;
+                currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel) <= 0) {
+                    str = "[Purchases] - " + logLevel.name();
+                    invoke = function0.invoke();
+                    currentLogHandler.d(str, invoke);
+                    break;
+                }
+                break;
+            case 2:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                break;
+            case 3:
+                LogLevel logLevel2 = LogLevel.WARN;
+                LogHandler currentLogHandler2 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel2) <= 0) {
+                    currentLogHandler2.w("[Purchases] - " + logLevel2.name(), function0.invoke());
+                    break;
+                }
+                break;
+            case 4:
+                LogLevel logLevel3 = LogLevel.INFO;
+                LogHandler currentLogHandler3 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel3) <= 0) {
+                    currentLogHandler3.i("[Purchases] - " + logLevel3.name(), function0.invoke());
+                    break;
+                }
+                break;
+            case 5:
+                LogLevel logLevel4 = LogLevel.DEBUG;
+                currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel4) <= 0) {
+                    str = "[Purchases] - " + logLevel4.name();
+                    invoke = function0.invoke();
+                    currentLogHandler.d(str, invoke);
+                    break;
+                }
+                break;
+            case 6:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                break;
+            case 7:
+                LogLevel logLevel5 = LogLevel.INFO;
+                LogHandler currentLogHandler4 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel5) <= 0) {
+                    currentLogHandler4.i("[Purchases] - " + logLevel5.name(), function0.invoke());
+                    break;
+                }
+                break;
+            case 8:
+                LogLevel logLevel6 = LogLevel.DEBUG;
+                currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel6) <= 0) {
+                    str = "[Purchases] - " + logLevel6.name();
+                    invoke = function0.invoke();
+                    currentLogHandler.d(str, invoke);
+                    break;
+                }
+                break;
+            case 9:
+                LogLevel logLevel7 = LogLevel.DEBUG;
+                currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel7) <= 0) {
+                    str = "[Purchases] - " + logLevel7.name();
+                    invoke = function0.invoke();
+                    currentLogHandler.d(str, invoke);
+                    break;
+                }
+                break;
+            case 10:
+                LogLevel logLevel8 = LogLevel.WARN;
+                LogHandler currentLogHandler5 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel8) <= 0) {
+                    currentLogHandler5.w("[Purchases] - " + logLevel8.name(), function0.invoke());
+                    break;
+                }
+                break;
+            case 11:
+                LogLevel logLevel9 = LogLevel.WARN;
+                LogHandler currentLogHandler6 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel9) <= 0) {
+                    currentLogHandler6.w("[Purchases] - " + logLevel9.name(), function0.invoke());
+                    break;
+                }
+                break;
+            case 12:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                break;
+        }
+        List<String> revenueCatKeysToMigrate = getRevenueCatKeysToMigrate();
+        Lazy<SharedPreferences> lazy = this.legacySharedPreferences;
+        SharedPreferences.Editor editor = this.revenueCatSharedPreferences.edit();
+        Intrinsics.checkNotNullExpressionValue(editor, "editor");
+        Iterator<String> it = revenueCatKeysToMigrate.iterator();
+        while (it.hasNext()) {
+            migratePreferenceValue(performMigration$lambda$3(lazy), editor, it.next());
+        }
+        editor.apply();
+        final LogIntent logIntent2 = LogIntent.DEBUG;
+        Function0<String> function02 = new Function0<String>() { // from class: com.revenuecat.purchases.common.SharedPreferencesManager$performMigration$$inlined$log$2
+            {
+                super(0);
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final String invoke() {
+                return CollectionsKt.joinToString$default(LogIntent.this.getEmojiList(), "", null, null, 0, null, null, 62, null) + " Finished shared preferences migration from legacy to RevenueCat-specific preferences";
+            }
+        };
+        switch (LogWrapperKt.WhenMappings.$EnumSwitchMapping$0[logIntent2.ordinal()]) {
+            case 1:
+                LogLevel logLevel10 = LogLevel.DEBUG;
+                LogHandler currentLogHandler7 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel10) <= 0) {
+                    currentLogHandler7.d("[Purchases] - " + logLevel10.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 2:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function02.invoke(), null);
+                break;
+            case 3:
+                LogLevel logLevel11 = LogLevel.WARN;
+                LogHandler currentLogHandler8 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel11) <= 0) {
+                    currentLogHandler8.w("[Purchases] - " + logLevel11.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 4:
+                LogLevel logLevel12 = LogLevel.INFO;
+                LogHandler currentLogHandler9 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel12) <= 0) {
+                    currentLogHandler9.i("[Purchases] - " + logLevel12.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 5:
+                LogLevel logLevel13 = LogLevel.DEBUG;
+                LogHandler currentLogHandler10 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel13) <= 0) {
+                    currentLogHandler10.d("[Purchases] - " + logLevel13.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 6:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function02.invoke(), null);
+                break;
+            case 7:
+                LogLevel logLevel14 = LogLevel.INFO;
+                LogHandler currentLogHandler11 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel14) <= 0) {
+                    currentLogHandler11.i("[Purchases] - " + logLevel14.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 8:
+                LogLevel logLevel15 = LogLevel.DEBUG;
+                LogHandler currentLogHandler12 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel15) <= 0) {
+                    currentLogHandler12.d("[Purchases] - " + logLevel15.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 9:
+                LogLevel logLevel16 = LogLevel.DEBUG;
+                LogHandler currentLogHandler13 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel16) <= 0) {
+                    currentLogHandler13.d("[Purchases] - " + logLevel16.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 10:
+                LogLevel logLevel17 = LogLevel.WARN;
+                LogHandler currentLogHandler14 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel17) <= 0) {
+                    currentLogHandler14.w("[Purchases] - " + logLevel17.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 11:
+                LogLevel logLevel18 = LogLevel.WARN;
+                LogHandler currentLogHandler15 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel18) <= 0) {
+                    currentLogHandler15.w("[Purchases] - " + logLevel18.name(), function02.invoke());
+                    break;
+                }
+                break;
+            case 12:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function02.invoke(), null);
+                break;
+        }
+    }
+
+    private static final SharedPreferences performMigration$lambda$3(Lazy<? extends SharedPreferences> lazy) {
+        return lazy.getValue();
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    private final List<String> getRevenueCatKeysToMigrate() {
+        Set<String> keySet = getRevenueCatKeysToMigrate$lambda$6(this.legacySharedPreferences).getAll().keySet();
+        ArrayList arrayList = new ArrayList();
+        for (Object obj : keySet) {
+            String key = (String) obj;
+            Intrinsics.checkNotNullExpressionValue(key, "key");
+            if (StringsKt.startsWith$default(key, SHARED_PREFERENCES_PREFIX, false, 2, (Object) null)) {
+                arrayList.add(obj);
+            }
+        }
+        final ArrayList arrayList2 = arrayList;
+        final LogIntent logIntent = LogIntent.DEBUG;
+        Function0<String> function0 = new Function0<String>() { // from class: com.revenuecat.purchases.common.SharedPreferencesManager$getRevenueCatKeysToMigrate$$inlined$log$1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            {
+                super(0);
+            }
+
+            @Override // kotlin.jvm.functions.Function0
+            public final String invoke() {
+                return CollectionsKt.joinToString$default(LogIntent.this.getEmojiList(), "", null, null, 0, null, null, 62, null) + ' ' + ("Found " + arrayList2.size() + " RevenueCat keys to migrate: " + arrayList2);
+            }
+        };
+        switch (LogWrapperKt.WhenMappings.$EnumSwitchMapping$0[logIntent.ordinal()]) {
+            case 1:
+                LogLevel logLevel = LogLevel.DEBUG;
+                LogHandler currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel) <= 0) {
+                    currentLogHandler.d("[Purchases] - " + logLevel.name(), function0.invoke());
+                }
+                return arrayList2;
+            case 2:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                return arrayList2;
+            case 3:
+                LogLevel logLevel2 = LogLevel.WARN;
+                LogHandler currentLogHandler2 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel2) <= 0) {
+                    currentLogHandler2.w("[Purchases] - " + logLevel2.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 4:
+                LogLevel logLevel3 = LogLevel.INFO;
+                LogHandler currentLogHandler3 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel3) <= 0) {
+                    currentLogHandler3.i("[Purchases] - " + logLevel3.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 5:
+                LogLevel logLevel4 = LogLevel.DEBUG;
+                LogHandler currentLogHandler4 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel4) <= 0) {
+                    currentLogHandler4.d("[Purchases] - " + logLevel4.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 6:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                return arrayList2;
+            case 7:
+                LogLevel logLevel5 = LogLevel.INFO;
+                LogHandler currentLogHandler5 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel5) <= 0) {
+                    currentLogHandler5.i("[Purchases] - " + logLevel5.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 8:
+                LogLevel logLevel6 = LogLevel.DEBUG;
+                LogHandler currentLogHandler6 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel6) <= 0) {
+                    currentLogHandler6.d("[Purchases] - " + logLevel6.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 9:
+                LogLevel logLevel7 = LogLevel.DEBUG;
+                LogHandler currentLogHandler7 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel7) <= 0) {
+                    currentLogHandler7.d("[Purchases] - " + logLevel7.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 10:
+                LogLevel logLevel8 = LogLevel.WARN;
+                LogHandler currentLogHandler8 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel8) <= 0) {
+                    currentLogHandler8.w("[Purchases] - " + logLevel8.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 11:
+                LogLevel logLevel9 = LogLevel.WARN;
+                LogHandler currentLogHandler9 = LogWrapperKt.getCurrentLogHandler();
+                if (Config.INSTANCE.getLogLevel().compareTo(logLevel9) <= 0) {
+                    currentLogHandler9.w("[Purchases] - " + logLevel9.name(), function0.invoke());
+                    return arrayList2;
+                }
+                return arrayList2;
+            case 12:
+                LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                return arrayList2;
+            default:
+                return arrayList2;
+        }
+    }
+
+    private static final SharedPreferences getRevenueCatKeysToMigrate$lambda$6(Lazy<? extends SharedPreferences> lazy) {
+        return lazy.getValue();
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Code restructure failed: missing block: B:67:0x0255, code lost:
+    
+        return false;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private final boolean migratePreferenceValue(SharedPreferences legacyPrefs, SharedPreferences.Editor editor, final String key) {
+        LogHandler currentLogHandler;
+        String str;
+        String invoke;
+        try {
+            final Object obj = legacyPrefs.getAll().get(key);
+            if (!(obj instanceof String)) {
+                if (!(obj instanceof Boolean)) {
+                    if (!(obj instanceof Integer)) {
+                        if (!(obj instanceof Long)) {
+                            if (!(obj instanceof Float)) {
+                                if (!(obj instanceof Set)) {
+                                    final LogIntent logIntent = LogIntent.WARNING;
+                                    Function0<String> function0 = new Function0<String>() { // from class: com.revenuecat.purchases.common.SharedPreferencesManager$migratePreferenceValue$$inlined$log$1
+                                        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                                        {
+                                            super(0);
+                                        }
+
+                                        @Override // kotlin.jvm.functions.Function0
+                                        public final String invoke() {
+                                            Class<?> cls;
+                                            StringBuilder append = new StringBuilder().append(CollectionsKt.joinToString$default(LogIntent.this.getEmojiList(), "", null, null, 0, null, null, 62, null)).append(' ');
+                                            StringBuilder append2 = new StringBuilder("Unknown preference type for key ").append(key).append(": ");
+                                            Object obj2 = obj;
+                                            return append.append(append2.append((obj2 == null || (cls = obj2.getClass()) == null) ? null : cls.getSimpleName()).toString()).toString();
+                                        }
+                                    };
+                                    switch (LogWrapperKt.WhenMappings.$EnumSwitchMapping$0[logIntent.ordinal()]) {
+                                        case 1:
+                                            LogLevel logLevel = LogLevel.DEBUG;
+                                            currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel) <= 0) {
+                                                str = "[Purchases] - " + logLevel.name();
+                                                invoke = function0.invoke();
+                                                currentLogHandler.d(str, invoke);
+                                                break;
+                                            }
+                                            break;
+                                        case 2:
+                                            LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                                            break;
+                                        case 3:
+                                            LogLevel logLevel2 = LogLevel.WARN;
+                                            LogHandler currentLogHandler2 = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel2) <= 0) {
+                                                currentLogHandler2.w("[Purchases] - " + logLevel2.name(), function0.invoke());
+                                                break;
+                                            }
+                                            break;
+                                        case 4:
+                                            LogLevel logLevel3 = LogLevel.INFO;
+                                            LogHandler currentLogHandler3 = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel3) <= 0) {
+                                                currentLogHandler3.i("[Purchases] - " + logLevel3.name(), function0.invoke());
+                                                break;
+                                            }
+                                            break;
+                                        case 5:
+                                            LogLevel logLevel4 = LogLevel.DEBUG;
+                                            currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel4) <= 0) {
+                                                str = "[Purchases] - " + logLevel4.name();
+                                                invoke = function0.invoke();
+                                                currentLogHandler.d(str, invoke);
+                                                break;
+                                            }
+                                            break;
+                                        case 6:
+                                            LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                                            break;
+                                        case 7:
+                                            LogLevel logLevel5 = LogLevel.INFO;
+                                            LogHandler currentLogHandler4 = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel5) <= 0) {
+                                                currentLogHandler4.i("[Purchases] - " + logLevel5.name(), function0.invoke());
+                                                break;
+                                            }
+                                            break;
+                                        case 8:
+                                            LogLevel logLevel6 = LogLevel.DEBUG;
+                                            currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel6) <= 0) {
+                                                str = "[Purchases] - " + logLevel6.name();
+                                                invoke = function0.invoke();
+                                                currentLogHandler.d(str, invoke);
+                                                break;
+                                            }
+                                            break;
+                                        case 9:
+                                            LogLevel logLevel7 = LogLevel.DEBUG;
+                                            currentLogHandler = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel7) <= 0) {
+                                                str = "[Purchases] - " + logLevel7.name();
+                                                invoke = function0.invoke();
+                                                currentLogHandler.d(str, invoke);
+                                                break;
+                                            }
+                                            break;
+                                        case 10:
+                                            LogLevel logLevel8 = LogLevel.WARN;
+                                            LogHandler currentLogHandler5 = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel8) <= 0) {
+                                                currentLogHandler5.w("[Purchases] - " + logLevel8.name(), function0.invoke());
+                                                break;
+                                            }
+                                            break;
+                                        case 11:
+                                            LogLevel logLevel9 = LogLevel.WARN;
+                                            LogHandler currentLogHandler6 = LogWrapperKt.getCurrentLogHandler();
+                                            if (Config.INSTANCE.getLogLevel().compareTo(logLevel9) <= 0) {
+                                                currentLogHandler6.w("[Purchases] - " + logLevel9.name(), function0.invoke());
+                                                break;
+                                            }
+                                            break;
+                                        case 12:
+                                            LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", function0.invoke(), null);
+                                            break;
+                                    }
+                                } else {
+                                    Set<String> set = obj instanceof Set ? (Set) obj : null;
+                                    if (set == null) {
+                                        set = SetsKt.emptySet();
+                                    }
+                                    editor.putStringSet(key, set);
+                                    return true;
+                                }
+                            } else {
+                                editor.putFloat(key, ((Number) obj).floatValue());
+                                return true;
+                            }
+                        } else {
+                            editor.putLong(key, ((Number) obj).longValue());
+                            return true;
+                        }
+                    } else {
+                        editor.putInt(key, ((Number) obj).intValue());
+                        return true;
+                    }
+                } else {
+                    editor.putBoolean(key, ((Boolean) obj).booleanValue());
+                    return true;
+                }
+            } else {
+                editor.putString(key, (String) obj);
+                return true;
+            }
+        } catch (ClassCastException e) {
+            LogWrapperKt.getCurrentLogHandler().e("[Purchases] - ERROR", "Failed to migrate preference with key due to type casting: " + key, e);
+            return false;
+        }
+    }
+
+    private final boolean hasRevenueCatVersion() {
+        return this.revenueCatSharedPreferences.contains(EXPECTED_VERSION_KEY);
+    }
+
+    private final void updateSharedPreferencesVersion() {
+        SharedPreferences.Editor editor = this.revenueCatSharedPreferences.edit();
+        Intrinsics.checkNotNullExpressionValue(editor, "editor");
+        editor.putInt(EXPECTED_VERSION_KEY, 1);
+        editor.apply();
+    }
+}

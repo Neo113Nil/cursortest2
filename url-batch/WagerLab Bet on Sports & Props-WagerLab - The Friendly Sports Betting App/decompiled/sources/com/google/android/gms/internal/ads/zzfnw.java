@@ -1,0 +1,43 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.HashSet;
+import org.json.JSONObject;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes5.dex */
+public final class zzfnw extends zzfns {
+    public zzfnw(zzfnl zzfnlVar, HashSet hashSet, JSONObject jSONObject, long j) {
+        super(zzfnlVar, hashSet, jSONObject, j);
+    }
+
+    private final void zzc(String str) {
+        zzfmh zza = zzfmh.zza();
+        if (zza != null) {
+            for (zzfln zzflnVar : zza.zze()) {
+                if (this.zza.contains(zzflnVar.zzh())) {
+                    zzflnVar.zzg().zzi(str, this.zzc);
+                }
+            }
+        }
+    }
+
+    @Override // android.os.AsyncTask
+    protected final /* synthetic */ Object doInBackground(Object[] objArr) {
+        return this.zzb.toString();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfnt, android.os.AsyncTask
+    protected final /* synthetic */ void onPostExecute(Object obj) {
+        String str = (String) obj;
+        zzc(str);
+        super.onPostExecute(str);
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.google.android.gms.internal.ads.zzfnt
+    /* renamed from: zza */
+    public final void onPostExecute(String str) {
+        zzc(str);
+        super.onPostExecute(str);
+    }
+}

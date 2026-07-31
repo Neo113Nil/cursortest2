@@ -1,0 +1,27 @@
+package io.intercom.android.sdk.blocks.lib;
+
+import java.util.Locale;
+
+/* loaded from: classes8.dex */
+public enum VideoProvider {
+    YOUTUBE,
+    VIMEO,
+    WISTIA,
+    LOOM,
+    VIDYARD,
+    BRIGHTCOVE,
+    JWPLAYER,
+    MICROSOFTSTREAM,
+    SYNTHESIA,
+    GUIDDE,
+    DESCRIPT,
+    UNKNOWN;
+
+    public static VideoProvider videoValueOf(String str) {
+        try {
+            return valueOf(str.toUpperCase(Locale.ENGLISH));
+        } catch (IllegalArgumentException unused) {
+            return UNKNOWN;
+        }
+    }
+}

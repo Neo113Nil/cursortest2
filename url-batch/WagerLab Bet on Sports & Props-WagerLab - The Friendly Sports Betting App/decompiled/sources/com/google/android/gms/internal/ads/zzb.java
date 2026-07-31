@@ -1,0 +1,58 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.media3.common.C;
+import java.util.Arrays;
+import java.util.Objects;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes5.dex */
+public final class zzb {
+    public static final zzb zza = new zzb(null, new zza[0], 0, C.TIME_UNSET, 0);
+    private static final zza zze = new zza(0).zzb(0);
+    private final zza[] zzf;
+    public final long zzc = 0;
+    public final int zzb = 0;
+    public final int zzd = 0;
+
+    static {
+        String str = zzeo.zza;
+        Integer.toString(1, 36);
+        Integer.toString(2, 36);
+        Integer.toString(3, 36);
+        Integer.toString(4, 36);
+    }
+
+    private zzb(Object obj, zza[] zzaVarArr, long j, long j2, int i) {
+        this.zzf = zzaVarArr;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null && getClass() == obj.getClass()) {
+            zzb zzbVar = (zzb) obj;
+            if (Objects.equals(null, null) && Arrays.equals(this.zzf, zzbVar.zzf)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return (((int) C.TIME_UNSET) * 961) + Arrays.hashCode(this.zzf);
+    }
+
+    public final String toString() {
+        return "AdPlaybackState(adsId=null, adResumePositionUs=0, adGroups=[])";
+    }
+
+    public final zza zza(int i) {
+        return i < 0 ? zze : this.zzf[i];
+    }
+
+    public final boolean zzb(int i) {
+        zza(-1);
+        return false;
+    }
+}

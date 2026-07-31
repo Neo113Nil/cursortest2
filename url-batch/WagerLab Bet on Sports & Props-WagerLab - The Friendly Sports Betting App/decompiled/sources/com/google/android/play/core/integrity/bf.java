@@ -1,0 +1,45 @@
+package com.google.android.play.core.integrity;
+
+import android.os.RemoteException;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* compiled from: com.google.android.play:integrity@@1.4.0 */
+/* loaded from: classes4.dex */
+final class bf extends bm {
+
+    /* renamed from: a, reason: collision with root package name */
+    final /* synthetic */ long f740a;
+    final /* synthetic */ TaskCompletionSource b;
+    final /* synthetic */ bn c;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    bf(bn bnVar, TaskCompletionSource taskCompletionSource, int i, long j, TaskCompletionSource taskCompletionSource2) {
+        super(bnVar, taskCompletionSource);
+        this.f740a = j;
+        this.b = taskCompletionSource2;
+        this.c = bnVar;
+    }
+
+    @Override // com.google.android.play.integrity.internal.t
+    protected final void b() {
+        com.google.android.play.integrity.internal.s sVar;
+        if (bn.l(this.c)) {
+            super.a(new StandardIntegrityException(-2, null));
+            return;
+        }
+        if (bn.k(this.c, 0)) {
+            super.a(new StandardIntegrityException(-14, null));
+            return;
+        }
+        try {
+            bn bnVar = this.c;
+            ((com.google.android.play.integrity.internal.i) bnVar.f745a.e()).e(bn.b(bnVar, this.f740a, 0), new bl(this.c, this.b));
+        } catch (RemoteException e) {
+            bn bnVar2 = this.c;
+            long j = this.f740a;
+            sVar = bnVar2.b;
+            sVar.c(e, "warmUpIntegrityToken(%s)", Long.valueOf(j));
+            this.b.trySetException(new StandardIntegrityException(-100, e));
+        }
+    }
+}

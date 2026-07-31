@@ -1,0 +1,35 @@
+package coil3.intercept;
+
+import com.facebook.gamingservices.cloudgaming.internal.SDKConstants;
+import com.facebook.react.uimanager.ViewProps;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+
+/* compiled from: EngineInterceptor.kt */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+@DebugMetadata(c = "coil3.intercept.EngineInterceptorKt", f = "EngineInterceptor.kt", i = {0, 0, 0, 0, 0, 0}, l = {52}, m = ViewProps.TRANSFORM, n = {"result", "request", SDKConstants.PARAM_GAME_REQUESTS_OPTIONS, "eventListener", "$this$foldIndices$iv", "i$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$4", "I$0"})
+/* loaded from: classes3.dex */
+final class EngineInterceptorKt$transform$1 extends ContinuationImpl {
+    int I$0;
+    int I$1;
+    Object L$0;
+    Object L$1;
+    Object L$2;
+    Object L$3;
+    Object L$4;
+    int label;
+    /* synthetic */ Object result;
+
+    EngineInterceptorKt$transform$1(Continuation<? super EngineInterceptorKt$transform$1> continuation) {
+        super(continuation);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        return EngineInterceptorKt.transform(null, null, null, null, null, this);
+    }
+}

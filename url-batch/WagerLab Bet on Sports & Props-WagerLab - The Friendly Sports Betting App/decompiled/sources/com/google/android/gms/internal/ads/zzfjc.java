@@ -1,0 +1,55 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes5.dex */
+public final class zzfjc extends zzhih implements zzhjt {
+    private static final zzfjc zzb;
+    private static volatile zzhka zzc;
+    private zzhit zza = zzbM();
+
+    static {
+        zzfjc zzfjcVar = new zzfjc();
+        zzb = zzfjcVar;
+        zzhih.zzbu(zzfjc.class, zzfjcVar);
+    }
+
+    private zzfjc() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhih
+    protected final Object zzdh(zzhig zzhigVar, Object obj, Object obj2) {
+        zzhka zzhkaVar;
+        int ordinal = zzhigVar.ordinal();
+        if (ordinal == 0) {
+            return (byte) 1;
+        }
+        if (ordinal == 2) {
+            return zzbv(zzb, "\u0004\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b", new Object[]{"zza", zzfja.class});
+        }
+        if (ordinal == 3) {
+            return new zzfjc();
+        }
+        byte[] bArr = null;
+        if (ordinal == 4) {
+            return new zzfjb(bArr);
+        }
+        if (ordinal == 5) {
+            return zzb;
+        }
+        if (ordinal != 6) {
+            throw null;
+        }
+        zzhka zzhkaVar2 = zzc;
+        if (zzhkaVar2 != null) {
+            return zzhkaVar2;
+        }
+        synchronized (zzfjc.class) {
+            zzhkaVar = zzc;
+            if (zzhkaVar == null) {
+                zzhkaVar = new zzhic(zzb);
+                zzc = zzhkaVar;
+            }
+        }
+        return zzhkaVar;
+    }
+}

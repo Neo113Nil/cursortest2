@@ -1,0 +1,188 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.media3.exoplayer.audio.SilenceSkippingAudioProcessor;
+import java.io.EOFException;
+import java.io.IOException;
+
+/* compiled from: com.google.android.gms:play-services-ads@@24.6.0 */
+/* loaded from: classes5.dex */
+final class zzaiy implements zzajf {
+    private final zzaje zza;
+    private final long zzb;
+    private final long zzc;
+    private final zzajj zzd;
+    private int zze;
+    private long zzf;
+    private long zzg;
+    private long zzh;
+    private long zzi;
+    private long zzj;
+    private long zzk;
+    private long zzl;
+
+    public zzaiy(zzajj zzajjVar, long j, long j2, long j3, long j4, boolean z) {
+        zzghc.zza(j >= 0 && j2 > j);
+        this.zzd = zzajjVar;
+        this.zzb = j;
+        this.zzc = j2;
+        if (j3 == j2 - j || z) {
+            this.zzf = j4;
+            this.zze = 4;
+        } else {
+            this.zze = 0;
+        }
+        this.zza = new zzaje();
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzajf
+    public final void zzb(long j) {
+        long j2 = this.zzf - 1;
+        String str = zzeo.zza;
+        this.zzh = Math.max(0L, Math.min(j, j2));
+        this.zze = 2;
+        this.zzi = this.zzb;
+        this.zzj = this.zzc;
+        this.zzk = 0L;
+        this.zzl = this.zzf;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzajf
+    public final /* bridge */ /* synthetic */ zzadv zzc() {
+        byte[] bArr = null;
+        if (this.zzf != 0) {
+            return new zzaix(this, bArr);
+        }
+        return null;
+    }
+
+    final /* synthetic */ long zzd() {
+        return this.zzb;
+    }
+
+    final /* synthetic */ long zze() {
+        return this.zzc;
+    }
+
+    final /* synthetic */ zzajj zzf() {
+        return this.zzd;
+    }
+
+    final /* synthetic */ long zzg() {
+        return this.zzf;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:23:0x00bb A[RETURN] */
+    /* JADX WARN: Removed duplicated region for block: B:24:0x00bc  */
+    @Override // com.google.android.gms.internal.ads.zzajf
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final long zza(zzacv zzacvVar) throws IOException {
+        long j;
+        long j2;
+        long max;
+        int i = this.zze;
+        if (i == 0) {
+            long zzn = zzacvVar.zzn();
+            this.zzg = zzn;
+            this.zze = 1;
+            long j3 = this.zzc - 65307;
+            if (j3 > zzn) {
+                return j3;
+            }
+        } else if (i != 1) {
+            if (i == 2) {
+                long j4 = this.zzi;
+                long j5 = this.zzj;
+                if (j4 == j5) {
+                    max = -1;
+                    j2 = -1;
+                } else {
+                    long zzn2 = zzacvVar.zzn();
+                    zzaje zzajeVar = this.zza;
+                    if (zzajeVar.zzb(zzacvVar, j5)) {
+                        zzajeVar.zzc(zzacvVar, false);
+                        zzacvVar.zzl();
+                        long j6 = this.zzh;
+                        j = 2;
+                        long j7 = zzajeVar.zzb;
+                        long j8 = j6 - j7;
+                        int i2 = zzajeVar.zzd + zzajeVar.zze;
+                        if (j8 < 0 || j8 >= 72000) {
+                            if (j8 < 0) {
+                                this.zzj = zzn2;
+                                this.zzl = j7;
+                            } else {
+                                this.zzi = zzacvVar.zzn() + i2;
+                                this.zzk = j7;
+                            }
+                            long j9 = this.zzj;
+                            long j10 = this.zzi;
+                            long j11 = j9 - j10;
+                            if (j11 < SilenceSkippingAudioProcessor.DEFAULT_MINIMUM_SILENCE_DURATION_US) {
+                                this.zzj = j10;
+                                j2 = -1;
+                                max = j10;
+                            } else {
+                                long zzn3 = zzacvVar.zzn() - (i2 * (j8 <= 0 ? 2L : 1L));
+                                j2 = -1;
+                                String str = zzeo.zza;
+                                max = Math.max(j10, Math.min(zzn3 + ((j8 * j11) / (this.zzl - this.zzk)), j9 - 1));
+                            }
+                        } else {
+                            max = -1;
+                            j2 = -1;
+                        }
+                        if (max == j2) {
+                            return max;
+                        }
+                        this.zze = 3;
+                    } else {
+                        max = this.zzi;
+                        if (max == zzn2) {
+                            throw new IOException("No ogg page can be found.");
+                        }
+                        j2 = -1;
+                    }
+                }
+                j = 2;
+                if (max == j2) {
+                }
+            } else {
+                if (i != 3) {
+                    return -1L;
+                }
+                j2 = -1;
+                j = 2;
+            }
+            while (true) {
+                zzaje zzajeVar2 = this.zza;
+                zzajeVar2.zzb(zzacvVar, j2);
+                zzajeVar2.zzc(zzacvVar, false);
+                if (zzajeVar2.zzb > this.zzh) {
+                    zzacvVar.zzl();
+                    this.zze = 4;
+                    return -(this.zzk + j);
+                }
+                zzacvVar.zzf(zzajeVar2.zzd + zzajeVar2.zze);
+                this.zzi = zzacvVar.zzn();
+                this.zzk = zzajeVar2.zzb;
+                j2 = -1;
+            }
+        }
+        zzaje zzajeVar3 = this.zza;
+        zzajeVar3.zza();
+        if (!zzajeVar3.zzb(zzacvVar, -1L)) {
+            throw new EOFException();
+        }
+        zzajeVar3.zzc(zzacvVar, false);
+        zzacvVar.zzf(zzajeVar3.zzd + zzajeVar3.zze);
+        long j12 = zzajeVar3.zzb;
+        while ((zzajeVar3.zza & 4) != 4 && zzajeVar3.zzb(zzacvVar, -1L) && zzacvVar.zzn() < this.zzc && zzajeVar3.zzc(zzacvVar, true) && zzacy.zzd(zzacvVar, zzajeVar3.zzd + zzajeVar3.zze)) {
+            j12 = zzajeVar3.zzb;
+        }
+        this.zzf = j12;
+        this.zze = 4;
+        return this.zzg;
+    }
+}
