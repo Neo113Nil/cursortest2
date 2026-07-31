@@ -1,0 +1,61 @@
+{
+  "app_id": "com.gates.olympus.miruv",
+  "title": "Gates of Olympus",
+  "developer": "IZO",
+  "developer_id": "IZO",
+  "icon": "https://play-lh.googleusercontent.com/ved-4gtSkghTDuqrWf9aW2JypgQUDxPUtg0h7t9HMzkS0SQJ0uD1X9P8YHT5_vG1V-RRHtG8Bq-dntGjPbw0",
+  "url": "https://play.google.com/store/apps/details?id=com.gates.olympus.miruv&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Track wood joint strengths and bookmark favorites in Gates of Olympus.",
+  "keyword": "url-batch",
+  "folder": "Gates of Olympus-IZO",
+  "path": "url-batch/Gates of Olympus-IZO",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gates.olympus.miruv-2-asset.apk",
+    "com.gates.olympus.miruv-2-config.arm64_v8a.apk",
+    "com.gates.olympus.miruv-2-config.en.apk",
+    "com.gates.olympus.miruv-2-config.lt.apk",
+    "com.gates.olympus.miruv-2-config.ru.apk",
+    "com.gates.olympus.miruv-2-config.xxhdpi.apk",
+    "com.gates.olympus.miruv-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Gates of Olympus-IZO",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gates.olympus.miruv...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gates.olympus.miruv...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gates.olympus.miruv ─╮\n│ Gates of Olympus          │\n│ 1.1  (vc 2)               │\n╰───────────────────────────╯\n\nDownloading 7 files  (11.3 MB)\n  com.gates.olympus.miruv-2.apk                  ━━━━━━ 100% 6.5/… 13.6   0:00:…\n                                                             MB    MB/s         \n  com.gates.olympus.miruv-2-config.arm64_v8a.apk ━━━━━━ 100% 74.3… 3.2    0:00:…\n                                                             kB    MB/s         \n  com.gates.olympus.miruv-2-config.en.apk        ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.lt.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.ru.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.xxhdpi.apk    ━━━━━━ 100% 21.4… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-asset.apk            ━━━━━━ 100% 5.2/… 12.8   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gates.olympus.miruv-2.apk                  │  6.2 MB │\n│ com.gates.olympus.miruv-2-config.arm64_v8a.apk │ 72.6 KB │\n│ com.gates.olympus.miruv-2-config.en.apk        │ 32.4 KB │\n│ com.gates.olympus.miruv-2-config.lt.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.ru.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.xxhdpi.apk    │ 20.9 KB │\n│ com.gates.olympus.miruv-2-asset.apk            │  6.2 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.gates.olympus.miruv ─╮\n│ Gates of Olympus          │\n│ 1.1  (vc 2)               │\n╰───────────────────────────╯\n\nDownloading 7 files  (11.3 MB)\n  com.gates.olympus.miruv-2.apk                  ━━━━━━ 100% 6.5/… 13.6   0:00:…\n                                                             MB    MB/s         \n  com.gates.olympus.miruv-2-config.arm64_v8a.apk ━━━━━━ 100% 74.3… 3.2    0:00:…\n                                                             kB    MB/s         \n  com.gates.olympus.miruv-2-config.en.apk        ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.lt.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.ru.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.xxhdpi.apk    ━━━━━━ 100% 21.4… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-asset.apk            ━━━━━━ 100% 5.2/… 12.8   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gates.olympus.miruv-2.apk                  │  6.2 MB │\n│ com.gates.olympus.miruv-2-config.arm64_v8a.apk │ 72.6 KB │\n│ com.gates.olympus.miruv-2-config.en.apk        │ 32.4 KB │\n│ com.gates.olympus.miruv-2-config.lt.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.ru.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.xxhdpi.apk    │ 20.9 KB │\n│ com.gates.olympus.miruv-2-asset.apk            │  6.2 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

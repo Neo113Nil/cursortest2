@@ -1,0 +1,38 @@
+package E;
+
+import android.os.Build;
+import android.view.View;
+import android.view.ViewGroup;
+
+/* loaded from: classes.dex */
+public abstract class D {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final boolean f613a = Z1.i.a(Build.DEVICE, "layoutlib");
+
+    public static final s a(ViewGroup viewGroup) {
+        int childCount = viewGroup.getChildCount();
+        for (int i3 = 0; i3 < childCount; i3++) {
+            View childAt = viewGroup.getChildAt(i3);
+            if (childAt instanceof s) {
+                return (s) childAt;
+            }
+        }
+        s sVar = new s(viewGroup.getContext());
+        viewGroup.addView(sVar);
+        return sVar;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v3, types: [android.view.ViewParent] */
+    public static final ViewGroup b(View view) {
+        while (!(view instanceof ViewGroup)) {
+            ?? parent = view.getParent();
+            if (!(parent instanceof View)) {
+                throw new IllegalArgumentException(("Couldn't find a valid parent for " + view + ". Are you overriding LocalView and providing a View that is not attached to the view hierarchy?").toString());
+            }
+            view = parent;
+        }
+        return (ViewGroup) view;
+    }
+}
