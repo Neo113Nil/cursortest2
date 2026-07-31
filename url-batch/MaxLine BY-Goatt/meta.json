@@ -56,5 +56,116 @@
   "stdout": "╭─ com.majelw.libystne ─╮\n│ MaxLine BY            │\n│ 1.0  (vc 1)           │\n╰───────────────────────╯\n\nDownloading 5 files  (27.5 MB)\n  com.majelw.libystne-1.apk                  ━━━━━━━ 100% 16.2/1… 7.6    0:00:00\n                                                          MB      MB/s          \n  com.majelw.libystne-1-config.arm64_v8a.apk ━━━━━━━ 100% 78.2/7… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.en.apk        ━━━━━━━ 100% 102.6/… 2.8    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-config.xxhdpi.apk    ━━━━━━━ 100% 125.7/… 3.3    0:00:00\n                                                          kB      MB/s          \n  com.majelw.libystne-1-asset.apk            ━━━━━━━ 100% 12.4/1… 13.1   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓\n┃ File                                       ┃     Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩\n│ com.majelw.libystne-1.apk                  │  15.4 MB │\n│ com.majelw.libystne-1-config.arm64_v8a.apk │  76.3 KB │\n│ com.majelw.libystne-1-config.en.apk        │ 100.2 KB │\n│ com.majelw.libystne-1-config.xxhdpi.apk    │ 122.7 KB │\n│ com.majelw.libystne-1-asset.apk            │  15.4 MB │\n└────────────────────────────────────────────┴──────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "MaxLine BY"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.2.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.10"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Analytics, Firebase Cloud Messaging, Facebook App Events, Google Play Install Referrer, Google Advertising ID"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_CUSTOM_AUDIENCE, android.permission.ACCESS_ADSERVICES_TOPICS, com.majelw.libystne.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.2.1; Kotlin 2.2.10 / kotlin-stdlib; kotlinx-coroutines 1.9.0; Jetpack Compose 1.9.2 / Material3 1.3.0; AndroidX Activity 1.13.0, AppCompat 1.7.0, Browser 1.9.0 (Custom Tabs), Core 1.18.0, Lifecycle 2.10.0, Navigation 2.8.4, Room 2.7.1, DataStore 1.1.7, Startup, ProfileInstaller, SavedState; Coil; OkHttp; AppsFlyer 6.12.1; Facebook SDK 18.3.0; Firebase Analytics 23.0.0 / Messaging 25.0.1 / Installations / Datatransport; Google Play Services Ads Identifier 18.0.0, Measurement, Cloud Messaging, Base/Basement/Tasks; Play Install Referrer; Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "aippslotys.shop, config.ru, mindat.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "prefs: сохранённый ответ сервера (policy — ссылка оффера); settings: тема и язык; template_session: флаги main_entered / photo_pick_in_progress; служебные prefs AppsFlyer / Firebase / Facebook / GMS"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "policy, campaign, media_source, slot, aippslotys, ANALYTICS_HOST, welcome_screen, no_policy, license check, Organic, non-organic, push_id, adset, af_ad, deep_link_value, af_status"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "debug.firebase.analytics.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Namecamp Limited"
+      },
+      {
+        "domain": "fb.gg",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "maxlineby.onelink.me",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "mindat.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Network Solutions, LLC"
+      }
+    ],
+    "collected_data": [
+      "название рекламной кампании → как служба отслеживания установок называет кампанию, с",
+      "которой человек попал в приложение; по этому сервер понимает, к какой рекламе относится",
+      "установка",
+      "источник рекламы → откуда пришла установка (магазин, рекламная сеть и т.п.); помогает",
+      "серверу отличить «свой» трафик от случайного",
+      "рекламный набор → служебная метка группы объявлений из службы отслеживания установок;",
+      "нужна серверу для разбора рекламы",
+      "объявление → служебная метка конкретного объявления",
+      "язык телефона → на каком языке настроен телефон; по языку часто решают, показывать ли",
+      "внешнюю страницу или обычное приложение",
+      "идентификатор пользователя в службе отслеживания → служебный номер установки; по нему",
+      "отличают одно устройство от другого",
+      "номер для уведомлений → служебный номер, по которому можно присылать уведомления на",
+      "этот телефон; уходит и в проверку, и отдельно при регистрации на сервере",
+      "имя приложения в системе → техническое имя программы (com.majelw.libystne) зашито в адрес",
+      "запроса, чтобы сервер знал, о каком приложении речь"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• название рекламной кампании → как служба отслеживания установок называет кампанию, с\n• которой человек попал в приложение; по этому сервер понимает, к какой рекламе относится\n• установка\n• источник рекламы → откуда пришла установка (магазин, рекламная сеть и т.п.); помогает\n• серверу отличить «свой» трафик от случайного\n• рекламный набор → служебная метка группы объявлений из службы отслеживания установок;\n• нужна серверу для разбора рекламы\n• объявление → служебная метка конкретного объявления\n• язык телефона → на каком языке настроен телефон; по языку часто решают, показывать ли\n• внешнюю страницу или обычное приложение\n• идентификатор пользователя в службе отслеживания → служебный номер установки; по нему\n• отличают одно устройство от другого\n• номер для уведомлений → служебный номер, по которому можно присылать уведомления на\n• этот телефон; уходит и в проверку, и отдельно при регистрации на сервере\n• имя приложения в системе → техническое имя программы (com.majelw.libystne) зашито в адрес\n• запроса, чтобы сервер знал, о каком приложении речь\n\nКак собираются: Сразу после открытия, если есть интернет, приложение само поднимает службу отслеживания установок и ждёт от неё ответ про кампанию. Человек этого обычно не замечает: отдельного окна с вопросом «можно ли собрать данные?» для этой проверки нет. Язык телефона приложение читает из настроек системы Android в момент сборки запроса. Номер для уведомлений оно запрашивает у сервисов Google в фоне и запоминает внутри себя. Служебный номер установки берётся у той же службы отслеживания, как только о…"
+  }
 }
