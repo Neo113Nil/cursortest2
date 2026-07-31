@@ -1,0 +1,64 @@
+package androidx.compose.material.icons.filled;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.SolidColor;
+import androidx.compose.ui.graphics.StrokeCap;
+import androidx.compose.ui.graphics.StrokeJoin;
+import androidx.compose.ui.graphics.vector.ImageVector;
+import androidx.compose.ui.graphics.vector.PathBuilder;
+import androidx.compose.ui.graphics.vector.VectorKt;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: FolderOff.kt */
+@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"_folderOff", "Landroidx/compose/ui/graphics/vector/ImageVector;", "FolderOff", "Landroidx/compose/material/icons/Icons$Filled;", "getFolderOff", "(Landroidx/compose/material/icons/Icons$Filled;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class FolderOffKt {
+    private static ImageVector _folderOff;
+
+    public static final ImageVector getFolderOff(Icons.Filled filled) {
+        ImageVector imageVector = _folderOff;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Filled.FolderOff", Dp.m8227constructorimpl(24.0f), Dp.m8227constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m5419getBlack0d7_KjU(), null);
+        int m5769getButtKaPHkGw = StrokeCap.INSTANCE.m5769getButtKaPHkGw();
+        int m5779getBevelLxFBmk8 = StrokeJoin.INSTANCE.m5779getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(20.0f, 6.0f);
+        pathBuilder.horizontalLineToRelative(-8.0f);
+        pathBuilder.lineToRelative(-2.0f, -2.0f);
+        pathBuilder.horizontalLineTo(6.83f);
+        pathBuilder.lineToRelative(14.93f, 14.93f);
+        pathBuilder.curveTo(21.91f, 18.65f, 22.0f, 18.34f, 22.0f, 18.0f);
+        pathBuilder.verticalLineTo(8.0f);
+        pathBuilder.curveTo(22.0f, 6.9f, 21.1f, 6.0f, 20.0f, 6.0f);
+        pathBuilder.close();
+        ImageVector.Builder.m6131addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, m5769getButtKaPHkGw, m5779getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null);
+        int defaultFillType2 = VectorKt.getDefaultFillType();
+        SolidColor solidColor2 = new SolidColor(Color.INSTANCE.m5419getBlack0d7_KjU(), null);
+        int m5769getButtKaPHkGw2 = StrokeCap.INSTANCE.m5769getButtKaPHkGw();
+        int m5779getBevelLxFBmk82 = StrokeJoin.INSTANCE.m5779getBevelLxFBmk8();
+        PathBuilder pathBuilder2 = new PathBuilder();
+        pathBuilder2.moveTo(2.1f, 2.1f);
+        pathBuilder2.lineTo(0.69f, 3.51f);
+        pathBuilder2.lineToRelative(1.56f, 1.56f);
+        pathBuilder2.curveTo(2.1f, 5.35f, 2.01f, 5.66f, 2.01f, 6.0f);
+        pathBuilder2.lineTo(2.0f, 18.0f);
+        pathBuilder2.curveToRelative(0.0f, 1.1f, 0.9f, 2.0f, 2.0f, 2.0f);
+        pathBuilder2.horizontalLineToRelative(13.17f);
+        pathBuilder2.lineToRelative(3.31f, 3.31f);
+        pathBuilder2.lineToRelative(1.41f, -1.41f);
+        pathBuilder2.lineTo(2.1f, 2.1f);
+        pathBuilder2.close();
+        ImageVector build = ImageVector.Builder.m6131addPathoIyEayM$default(builder, pathBuilder2.getNodes(), defaultFillType2, "", solidColor2, 1.0f, null, 1.0f, 1.0f, m5769getButtKaPHkGw2, m5779getBevelLxFBmk82, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _folderOff = build;
+        Intrinsics.checkNotNull(build);
+        return build;
+    }
+}

@@ -1,0 +1,22 @@
+package com.google.android.gms.measurement.internal;
+
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@22.0.2 */
+/* loaded from: classes3.dex */
+final class zzjr extends zzat {
+    private final /* synthetic */ zziv zza;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    zzjr(zziv zzivVar, zzil zzilVar) {
+        super(zzilVar);
+        this.zza = zzivVar;
+    }
+
+    @Override // com.google.android.gms.measurement.internal.zzat
+    public final void zzb() {
+        zzat zzatVar;
+        if (this.zza.zzu.zzah()) {
+            zzatVar = this.zza.zzp;
+            zzatVar.zza(2000L);
+        }
+    }
+}

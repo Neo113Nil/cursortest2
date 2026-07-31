@@ -1,0 +1,92 @@
+package androidx.compose.material.icons.rounded;
+
+import androidx.compose.material.icons.Icons;
+import androidx.compose.ui.graphics.Color;
+import androidx.compose.ui.graphics.SolidColor;
+import androidx.compose.ui.graphics.StrokeCap;
+import androidx.compose.ui.graphics.StrokeJoin;
+import androidx.compose.ui.graphics.vector.ImageVector;
+import androidx.compose.ui.graphics.vector.PathBuilder;
+import androidx.compose.ui.graphics.vector.VectorKt;
+import androidx.compose.ui.unit.Dp;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: AutoFixOff.kt */
+@Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u0010\u0010\u0000\u001a\u0004\u0018\u00010\u0001X\u0082\u000e¢\u0006\u0002\n\u0000\"\u0015\u0010\u0002\u001a\u00020\u0001*\u00020\u00038F¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006\u0006"}, d2 = {"_autoFixOff", "Landroidx/compose/ui/graphics/vector/ImageVector;", "AutoFixOff", "Landroidx/compose/material/icons/Icons$Rounded;", "getAutoFixOff", "(Landroidx/compose/material/icons/Icons$Rounded;)Landroidx/compose/ui/graphics/vector/ImageVector;", "material-icons-extended_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class AutoFixOffKt {
+    private static ImageVector _autoFixOff;
+
+    public static final ImageVector getAutoFixOff(Icons.Rounded rounded) {
+        ImageVector imageVector = _autoFixOff;
+        if (imageVector != null) {
+            Intrinsics.checkNotNull(imageVector);
+            return imageVector;
+        }
+        ImageVector.Builder builder = new ImageVector.Builder("Rounded.AutoFixOff", Dp.m8227constructorimpl(24.0f), Dp.m8227constructorimpl(24.0f), 24.0f, 24.0f, 0L, 0, false, 96, null);
+        int defaultFillType = VectorKt.getDefaultFillType();
+        SolidColor solidColor = new SolidColor(Color.INSTANCE.m5419getBlack0d7_KjU(), null);
+        int m5769getButtKaPHkGw = StrokeCap.INSTANCE.m5769getButtKaPHkGw();
+        int m5779getBevelLxFBmk8 = StrokeJoin.INSTANCE.m5779getBevelLxFBmk8();
+        PathBuilder pathBuilder = new PathBuilder();
+        pathBuilder.moveTo(22.0f, 3.55f);
+        pathBuilder.lineToRelative(-1.06f, -0.49f);
+        pathBuilder.lineTo(20.45f, 2.0f);
+        pathBuilder.curveToRelative(-0.18f, -0.39f, -0.73f, -0.39f, -0.91f, 0.0f);
+        pathBuilder.lineToRelative(-0.49f, 1.06f);
+        pathBuilder.lineTo(18.0f, 3.55f);
+        pathBuilder.curveToRelative(-0.39f, 0.18f, -0.39f, 0.73f, 0.0f, 0.91f);
+        pathBuilder.lineToRelative(1.06f, 0.49f);
+        pathBuilder.lineTo(19.55f, 6.0f);
+        pathBuilder.curveToRelative(0.18f, 0.39f, 0.73f, 0.39f, 0.91f, 0.0f);
+        pathBuilder.lineToRelative(0.49f, -1.06f);
+        pathBuilder.lineTo(22.0f, 4.45f);
+        pathBuilder.curveTo(22.39f, 4.28f, 22.39f, 3.72f, 22.0f, 3.55f);
+        pathBuilder.close();
+        ImageVector.Builder.m6131addPathoIyEayM$default(builder, pathBuilder.getNodes(), defaultFillType, "", solidColor, 1.0f, null, 1.0f, 1.0f, m5769getButtKaPHkGw, m5779getBevelLxFBmk8, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null);
+        int defaultFillType2 = VectorKt.getDefaultFillType();
+        SolidColor solidColor2 = new SolidColor(Color.INSTANCE.m5419getBlack0d7_KjU(), null);
+        int m5769getButtKaPHkGw2 = StrokeCap.INSTANCE.m5769getButtKaPHkGw();
+        int m5779getBevelLxFBmk82 = StrokeJoin.INSTANCE.m5779getBevelLxFBmk8();
+        PathBuilder pathBuilder2 = new PathBuilder();
+        pathBuilder2.moveTo(14.17f, 8.42f);
+        pathBuilder2.lineToRelative(1.41f, 1.41f);
+        pathBuilder2.lineToRelative(-1.46f, 1.46f);
+        pathBuilder2.lineToRelative(1.41f, 1.41f);
+        pathBuilder2.lineToRelative(2.17f, -2.17f);
+        pathBuilder2.curveToRelative(0.39f, -0.39f, 0.39f, -1.02f, 0.0f, -1.41f);
+        pathBuilder2.lineToRelative(-2.83f, -2.83f);
+        pathBuilder2.curveToRelative(-0.39f, -0.39f, -1.02f, -0.39f, -1.41f, 0.0f);
+        pathBuilder2.lineToRelative(-2.17f, 2.17f);
+        pathBuilder2.lineToRelative(1.41f, 1.41f);
+        pathBuilder2.lineTo(14.17f, 8.42f);
+        pathBuilder2.close();
+        ImageVector.Builder.m6131addPathoIyEayM$default(builder, pathBuilder2.getNodes(), defaultFillType2, "", solidColor2, 1.0f, null, 1.0f, 1.0f, m5769getButtKaPHkGw2, m5779getBevelLxFBmk82, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null);
+        int defaultFillType3 = VectorKt.getDefaultFillType();
+        SolidColor solidColor3 = new SolidColor(Color.INSTANCE.m5419getBlack0d7_KjU(), null);
+        int m5769getButtKaPHkGw3 = StrokeCap.INSTANCE.m5769getButtKaPHkGw();
+        int m5779getBevelLxFBmk83 = StrokeJoin.INSTANCE.m5779getBevelLxFBmk8();
+        PathBuilder pathBuilder3 = new PathBuilder();
+        pathBuilder3.moveTo(2.1f, 4.93f);
+        pathBuilder3.lineToRelative(6.36f, 6.36f);
+        pathBuilder3.lineToRelative(-6.17f, 6.17f);
+        pathBuilder3.curveToRelative(-0.39f, 0.39f, -0.39f, 1.02f, 0.0f, 1.41f);
+        pathBuilder3.lineToRelative(2.83f, 2.83f);
+        pathBuilder3.curveToRelative(0.39f, 0.39f, 1.02f, 0.39f, 1.41f, 0.0f);
+        pathBuilder3.lineToRelative(6.17f, -6.17f);
+        pathBuilder3.lineToRelative(6.36f, 6.36f);
+        pathBuilder3.curveToRelative(0.39f, 0.39f, 1.02f, 0.39f, 1.41f, 0.0f);
+        pathBuilder3.horizontalLineToRelative(0.0f);
+        pathBuilder3.curveToRelative(0.39f, -0.39f, 0.39f, -1.02f, 0.0f, -1.41f);
+        pathBuilder3.lineTo(3.51f, 3.51f);
+        pathBuilder3.curveToRelative(-0.39f, -0.39f, -1.02f, -0.39f, -1.41f, 0.0f);
+        pathBuilder3.lineToRelative(0.0f, 0.0f);
+        pathBuilder3.curveTo(1.71f, 3.91f, 1.71f, 4.54f, 2.1f, 4.93f);
+        pathBuilder3.close();
+        ImageVector build = ImageVector.Builder.m6131addPathoIyEayM$default(builder, pathBuilder3.getNodes(), defaultFillType3, "", solidColor3, 1.0f, null, 1.0f, 1.0f, m5769getButtKaPHkGw3, m5779getBevelLxFBmk83, 1.0f, 0.0f, 0.0f, 0.0f, 14336, null).build();
+        _autoFixOff = build;
+        Intrinsics.checkNotNull(build);
+        return build;
+    }
+}

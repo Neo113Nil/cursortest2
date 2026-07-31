@@ -1,0 +1,43 @@
+package androidx.compose.material3;
+
+import androidx.compose.foundation.gestures.TapGestureDetectorKt;
+import androidx.compose.ui.geometry.Offset;
+import androidx.compose.ui.input.pointer.PointerInputEventHandler;
+import androidx.compose.ui.input.pointer.PointerInputScope;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+
+/* compiled from: ModalBottomSheet.kt */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+final class ModalBottomSheetKt$Scrim$dismissSheet$1$1 implements PointerInputEventHandler {
+    final /* synthetic */ Function0<Unit> $onDismissRequest;
+
+    ModalBottomSheetKt$Scrim$dismissSheet$1$1(Function0<Unit> function0) {
+        this.$onDismissRequest = function0;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit invoke$lambda$0(Function0 function0, Offset offset) {
+        function0.invoke();
+        return Unit.INSTANCE;
+    }
+
+    @Override // androidx.compose.ui.input.pointer.PointerInputEventHandler
+    public final Object invoke(PointerInputScope pointerInputScope, Continuation<? super Unit> continuation) {
+        final Function0<Unit> function0 = this.$onDismissRequest;
+        Object detectTapGestures$default = TapGestureDetectorKt.detectTapGestures$default(pointerInputScope, null, null, null, new Function1() { // from class: androidx.compose.material3.ModalBottomSheetKt$Scrim$dismissSheet$1$1$$ExternalSyntheticLambda0
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit invoke$lambda$0;
+                invoke$lambda$0 = ModalBottomSheetKt$Scrim$dismissSheet$1$1.invoke$lambda$0(Function0.this, (Offset) obj);
+                return invoke$lambda$0;
+            }
+        }, continuation, 7, null);
+        return detectTapGestures$default == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? detectTapGestures$default : Unit.INSTANCE;
+    }
+}

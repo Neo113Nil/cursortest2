@@ -1,0 +1,6 @@
+package com.appsflyer.internal;
+
+/* loaded from: classes3.dex */
+public final class AFi1bSDK {
+    public static String AFKeystoreWrapper = "https://%sapp.%s";
+}

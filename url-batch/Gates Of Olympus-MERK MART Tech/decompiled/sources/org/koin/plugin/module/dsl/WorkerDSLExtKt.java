@@ -1,0 +1,28 @@
+package org.koin.plugin.module.dsl;
+
+import androidx.exifinterface.media.ExifInterface;
+import androidx.work.ListenableWorker;
+import kotlin.Metadata;
+import kotlin.NotImplementedError;
+import kotlin.jvm.internal.Intrinsics;
+import org.koin.core.definition.KoinDefinition;
+import org.koin.core.module.KoinDslMarker;
+import org.koin.core.module.Module;
+import org.koin.dsl.ScopeDSL;
+
+/* compiled from: WorkerDSLExt.kt */
+@Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u001c\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003*\u00020\u0004H\u0007\u001a\u001c\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003*\u00020\u0005H\u0007¨\u0006\u0006"}, d2 = {"worker", "Lorg/koin/core/definition/KoinDefinition;", ExifInterface.GPS_DIRECTION_TRUE, "Landroidx/work/ListenableWorker;", "Lorg/koin/core/module/Module;", "Lorg/koin/dsl/ScopeDSL;", "koin-androidx-workmanager_release"}, k = 2, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class WorkerDSLExtKt {
+    @KoinDslMarker
+    public static final <T extends ListenableWorker> KoinDefinition<T> worker(Module module) {
+        Intrinsics.checkNotNullParameter(module, "<this>");
+        throw new NotImplementedError("An operation is not implemented: The Koin Compiler plugin is missing. Please fix your setup to use 'io.insert-koin.compiler.plugin' Koin Gradle Plugin.");
+    }
+
+    @KoinDslMarker
+    public static final <T extends ListenableWorker> KoinDefinition<T> worker(ScopeDSL scopeDSL) {
+        Intrinsics.checkNotNullParameter(scopeDSL, "<this>");
+        throw new NotImplementedError("An operation is not implemented: The Koin Compiler plugin is missing. Please fix your setup to use 'io.insert-koin.compiler.plugin' Koin Gradle Plugin.");
+    }
+}

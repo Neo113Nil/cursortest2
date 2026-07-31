@@ -1,0 +1,69 @@
+package androidx.compose.runtime;
+
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+
+/* compiled from: Composition.kt */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+public final class ComposableSingletons$CompositionKt {
+    public static final ComposableSingletons$CompositionKt INSTANCE = new ComposableSingletons$CompositionKt();
+    private static Function2<Composer, Integer, Unit> lambda$954879418 = ComposableLambdaKt.composableLambdaInstance(954879418, false, new Function2() { // from class: androidx.compose.runtime.ComposableSingletons$CompositionKt$$ExternalSyntheticLambda0
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(Object obj, Object obj2) {
+            Unit lambda_954879418$lambda$0;
+            lambda_954879418$lambda$0 = ComposableSingletons$CompositionKt.lambda_954879418$lambda$0((Composer) obj, ((Integer) obj2).intValue());
+            return lambda_954879418$lambda$0;
+        }
+    });
+    private static Function2<Composer, Integer, Unit> lambda$1918065384 = ComposableLambdaKt.composableLambdaInstance(1918065384, false, new Function2() { // from class: androidx.compose.runtime.ComposableSingletons$CompositionKt$$ExternalSyntheticLambda1
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(Object obj, Object obj2) {
+            Unit lambda_1918065384$lambda$0;
+            lambda_1918065384$lambda$0 = ComposableSingletons$CompositionKt.lambda_1918065384$lambda$0((Composer) obj, ((Integer) obj2).intValue());
+            return lambda_1918065384$lambda$0;
+        }
+    });
+
+    public final Function2<Composer, Integer, Unit> getLambda$1918065384$runtime() {
+        return lambda$1918065384;
+    }
+
+    public final Function2<Composer, Integer, Unit> getLambda$954879418$runtime() {
+        return lambda$954879418;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit lambda_954879418$lambda$0(Composer composer, int i) {
+        ComposerKt.sourceInformation(composer, "C:Composition.kt#9igjgp");
+        if (composer.shouldExecute((i & 3) != 2, i & 1)) {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(954879418, i, -1, "androidx.compose.runtime.ComposableSingletons$CompositionKt.lambda$954879418.<anonymous> (Composition.kt:620)");
+            }
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        } else {
+            composer.skipToGroupEnd();
+        }
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit lambda_1918065384$lambda$0(Composer composer, int i) {
+        ComposerKt.sourceInformation(composer, "C:Composition.kt#9igjgp");
+        if (composer.shouldExecute((i & 3) != 2, i & 1)) {
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventStart(1918065384, i, -1, "androidx.compose.runtime.ComposableSingletons$CompositionKt.lambda$1918065384.<anonymous> (Composition.kt:857)");
+            }
+            if (ComposerKt.isTraceInProgress()) {
+                ComposerKt.traceEventEnd();
+            }
+        } else {
+            composer.skipToGroupEnd();
+        }
+        return Unit.INSTANCE;
+    }
+}
