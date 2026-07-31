@@ -54,5 +54,137 @@
   "stdout": "╭─ com.apybaraglowquest ─╮\n│ Gates of Olympus Stac  │\n│ 0.3  (vc 3)            │\n╰────────────────────────╯\n\nDownloading 3 files  (60.1 MB)\n  com.apybaraglowquest-3.apk                  ━━━━━━ 100% 23.9/2… 14.0   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-config.arm64_v8a.apk ━━━━━━ 100% 19.2/1… 12.8   0:00:00\n                                                          MB      MB/s          \n  com.apybaraglowquest-3-asset.apk            ━━━━━━ 100% 19.9/1… 13.6   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                     \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                        ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.apybaraglowquest-3.apk                  │ 22.7 MB │\n│ com.apybaraglowquest-3-config.arm64_v8a.apk │ 18.3 MB │\n│ com.apybaraglowquest-3-asset.apk            │ 22.7 MB │\n└─────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Gates of Olympus Stac"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "7.4.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.6.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust, Unity Remote Config, Google Advertising ID, Google Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.VIBRATE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2022.3 player; AGP 7.4.2; Kotlin 1.6 / kotlin-stdlib; AndroidX Core 1.1.0, Browser 1.2.0 (Custom Tabs), Lifecycle 2.0.0, Interpolator, VersionedParcelable; Adjust SDK (com.adjust.sdk); UniWebView (com.onevcat.uniwebview); NativeShare (com.yasirkula.unity); ImaginationOverflow Android Install Referrer; Play Install Referrer API; Google Play / Finsky AIDLs; Unity Services Core 1.14.0, Remote Config 4.0.2, Authentication 2.7.4; DOTween; Cinemachine; Newtonsoft.Json; Pairip (com.pairip.application / licensecheck); Module1573520 (Assembly-CSharp); bitter.jnibridge; org.fmod"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "adjust_preferences: deeplink_url, deeplink_url_cached, deeplink_referrer, deeplink_click_time, raw_referrers, control_params, push_token, install_tracked, gdpr_forget_me, preinstall_*; adjust_keys: encrypted_key; RemoteConfigCache.json — кэш ответа удалённой конфигурации Unity"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "organic, Module1573520, CloudFetcher, ClientDataFetcher, LaunchController, LaunchWebView, ConfigString, userAttributes, appAttributes, remotePayload, ApplyFetchedConfig, ComputeLink, FinalizeUrl, AttachParameters, link, OnProfileReceived, ADID, adid, campaign, referrer, AdjustToken, UniWebView, Remote Config, webview, targetUrl, baseUrl, IpForCheck, PlayerPrefs, redirect"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "gdpr.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "james.newtonking.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "nuget.org",
+        "redirects_to": "https://www.nuget.org/",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "ssrv.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "subscription.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер телефона для рекламы; по нему сервер и сервис",
+      "учёта установок отличают одно устройство от другого",
+      "флаг разрешения рекламного номера → разрешил ли человек системе отдавать рекламный номер или",
+      "запретил отслеживание",
+      "внутренний номер установки → служебный идентификатор этой установки приложения на телефоне",
+      "токен Adjust → служебный ключ приложения в сервисе учёта установок; нужен, чтобы запросить,",
+      "откуда человек пришёл",
+      "данные атрибуции → откуда установка: рекламная кампания или «органика» (обычная установка без",
+      "рекламного следа)",
+      "название кампании → имя рекламной кампании, если установка пришла с рекламы",
+      "установочный referrer → служебная строка из магазина приложений о том, по какой ссылке или",
+      "кампании поставили программу",
+      "имя приложения в системе → техническое имя этой программы на телефоне (com.apybaraglowquest)",
+      "версия приложения → номер версии программы, установленной на телефоне",
+      "язык телефона → на каком языке настроен телефон; часто по языку решают, кому что показать",
+      "страна → страна или регион, которые система сообщает о телефоне",
+      "модель телефона → какая марка и модель устройства у человека",
+      "производитель устройства → кто сделал телефон",
+      "тип устройства → телефон, планшет или другой форм-фактор",
+      "версия Android → какая версия системы стоит на телефоне",
+      "уровень API Android → числовая версия возможностей системы",
+      "сборка системы → точное имя сборки Android на устройстве",
+      "тип процессора → архитектура чипа телефона",
+      "имя железа → служебное аппаратное имя устройства",
+      "тип сети → через что сейчас интернет: мобильная сеть или Wi‑Fi",
+      "код страны оператора → служебный код страны сотовой сети",
+      "код сети оператора → служебный код сотового оператора",
+      "ширина и высота экрана → разрешение экрана телефона",
+      "плотность и формат экрана → насколько плотный экран и какой у него формат",
+      "дата установки и обновления → когда программу поставили и когда обновляли",
+      "признаки для удалённой настройки → набор свойств пользователя и приложения, которые уходят в",
+      "облачную конфигурацию Unity, чтобы решить, что показать дальше"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы; по нему сервер и сервис\n• учёта установок отличают одно устройство от другого\n• флаг разрешения рекламного номера → разрешил ли человек системе отдавать рекламный номер или\n• запретил отслеживание\n• внутренний номер установки → служебный идентификатор этой установки приложения на телефоне\n• токен Adjust → служебный ключ приложения в сервисе учёта установок; нужен, чтобы запросить,\n• откуда человек пришёл\n• данные атрибуции → откуда установка: рекламная кампания или «органика» (обычная установка без\n• рекламного следа)\n• название кампании → имя рекламной кампании, если установка пришла с рекламы\n• установочный referrer → служебная строка из магазина приложений о том, по какой ссылке или\n• кампании поставили программу\n• имя приложения в системе → техническое имя этой программы на телефоне (com.apybaraglowquest)\n• версия приложения → номер версии программы, установленной на телефоне\n• язык телефона → на каком языке настроен телефон; часто по языку решают, кому что показать\n• страна → страна или регион, которые система сообщает о телефоне\n• модель телефона → какая марка и модель устройства у человека\n• производитель устройства → кто сделал телефон\n• тип устройства → телефон, планшет или другой форм-фактор\n• версия Android → какая версия системы стоит на телефоне\n• уровень API Android → числовая версия возможностей системы\n• сборка системы → точное имя сборки Android на устройстве\n• тип процессора → архитектура чипа телефона\n• имя железа → служебное аппаратное имя устройства\n• тип сети…"
+  }
 }
