@@ -54,5 +54,5 @@
   "stdout": "╭─ com.clownunt.circsarena ─╮\n│ Clown Hunt: Circus Arena  │\n│ 1.0  (vc 1)               │\n╰───────────────────────────╯\n\nDownloading 3 files  (82.3 MB)\n  com.clownunt.circsarena-1.apk                  ━━━━━━ 100% 37.1… 15.1   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-config.arm64_v8a.apk ━━━━━━ 100% 23.5… 33.0   0:00:…\n                                                             MB    MB/s         \n  com.clownunt.circsarena-1-asset.apk            ━━━━━━ 100% 25.7… 39.2   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.clownunt.circsarena-1.apk                  │ 35.4 MB │\n│ com.clownunt.circsarena-1-config.arm64_v8a.apk │ 22.4 MB │\n│ com.clownunt.circsarena-1-asset.apk            │ 35.4 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "нет"
+  "cloaking": "да"
 }
