@@ -1,0 +1,61 @@
+{
+  "app_id": "com.gatesof.olympus.martu.marku",
+  "title": "Gates of Olympus",
+  "developer": "Muhammad Saddique1986",
+  "developer_id": "Muhammad+Saddique1986",
+  "icon": "https://play-lh.googleusercontent.com/twq_VyN-wL_wWvcoNJ_wc3-WoWh46tGgePZpgaDkmTTgehJ06e-nkJGAu4tfoh_Kriq_dBhNaOij6R0eJ-F3zQ",
+  "url": "https://play.google.com/store/apps/details?id=com.gatesof.olympus.martu.marku&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Jul 22, 2026",
+  "version": "Varies with device",
+  "summary": "Your barber logbook to track clients, cuts, and totals is Gates of Olympus.",
+  "keyword": "url-batch",
+  "folder": "Gates of Olympus-Muhammad Saddique1986",
+  "path": "url-batch/Gates of Olympus-Muhammad Saddique1986",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gatesof.olympus.martu.marku-2-asset.apk",
+    "com.gatesof.olympus.martu.marku-2-config.arm64_v8a.apk",
+    "com.gatesof.olympus.martu.marku-2-config.en.apk",
+    "com.gatesof.olympus.martu.marku-2-config.lt.apk",
+    "com.gatesof.olympus.martu.marku-2-config.ru.apk",
+    "com.gatesof.olympus.martu.marku-2-config.xxhdpi.apk",
+    "com.gatesof.olympus.martu.marku-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Gates of Olympus-Muhammad Saddique1986",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gatesof.olympus.martu.marku...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gatesof.olympus.martu.marku...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gatesof.olympus.martu.marku ─╮\n│ Gates of Olympus                  │\n│ 1.1  (vc 2)                       │\n╰───────────────────────────────────╯\n\nDownloading 7 files  (11.4 MB)\n  com.gatesof.olympus.martu.marku-2.apk                  ━━━━ 100% 6.… 31.5 0:0…\n                                                                   MB  MB/s     \n  com.gatesof.olympus.martu.marku-2-config.arm64_v8a.apk ━━━━ 100% 74… 2.6  0:0…\n                                                                   kB  MB/s     \n  com.gatesof.olympus.martu.marku-2-config.en.apk        ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.lt.apk        ━━━━ 100% 20… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.ru.apk        ━━━━ 100% 20… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.xxhdpi.apk    ━━━━ 100% 21… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-asset.apk            ━━━━ 100% 5.… 15.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gatesof.olympus.martu.marku-2.apk                  │  6.3 MB │\n│ com.gatesof.olympus.martu.marku-2-config.arm64_v8a.apk │ 72.6 KB │\n│ com.gatesof.olympus.martu.marku-2-config.en.apk        │ 32.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.lt.apk        │ 20.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.ru.apk        │ 20.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.xxhdpi.apk    │ 20.9 KB │\n│ com.gatesof.olympus.martu.marku-2-asset.apk            │  6.3 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.gatesof.olympus.martu.marku ─╮\n│ Gates of Olympus                  │\n│ 1.1  (vc 2)                       │\n╰───────────────────────────────────╯\n\nDownloading 7 files  (11.4 MB)\n  com.gatesof.olympus.martu.marku-2.apk                  ━━━━ 100% 6.… 31.5 0:0…\n                                                                   MB  MB/s     \n  com.gatesof.olympus.martu.marku-2-config.arm64_v8a.apk ━━━━ 100% 74… 2.6  0:0…\n                                                                   kB  MB/s     \n  com.gatesof.olympus.martu.marku-2-config.en.apk        ━━━━ 100% 33… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.lt.apk        ━━━━ 100% 20… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.ru.apk        ━━━━ 100% 20… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-config.xxhdpi.apk    ━━━━ 100% 21… ?    0:0…\n                                                                   kB           \n  com.gatesof.olympus.martu.marku-2-asset.apk            ━━━━ 100% 5.… 15.3 0:0…\n                                                                   MB  MB/s     \n\n                          Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                   ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gatesof.olympus.martu.marku-2.apk                  │  6.3 MB │\n│ com.gatesof.olympus.martu.marku-2-config.arm64_v8a.apk │ 72.6 KB │\n│ com.gatesof.olympus.martu.marku-2-config.en.apk        │ 32.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.lt.apk        │ 20.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.ru.apk        │ 20.4 KB │\n│ com.gatesof.olympus.martu.marku-2-config.xxhdpi.apk    │ 20.9 KB │\n│ com.gatesof.olympus.martu.marku-2-asset.apk            │  6.3 MB │\n└────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -32,5 +32,130 @@
   ],
   "stdout": "Downloading gbcorp.c312.merkmarker.info...\ngbcorp.c312.merkmarker.info downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Gates Of Olympus"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.3.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer, Firebase Analytics, Firebase Cloud Messaging, Google Advertising ID, Google Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, com.google.android.gms.permission.AD_ID, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, gbcorp.c312.merkmarker.info.DYNAMIC_RECE IVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.13.2; Kotlin 2.3.20 / kotlin-stdlib; kotlinx-coroutines 1.10.2; Jetpack Compose UI 1.10.6 / Material3 1.4.0; AndroidX Activity, Core, Lifecycle, Navigation Compose, Room 2.8.4, WorkManager 2.11.1, DataStore, Startup, Emoji2, ProfileInstaller, Window, Privacy Sandbox Ads; Koin; Retrofit2; OkHttp 4.12.0; Gson; Coil3; AppsFlyer 6.12.6; Firebase Analytics / Messaging / Installations; Google Play Services (ads-identifier, measurement, basement, tasks, cloud-messaging); Play Install Referrer; Pairip (com.pairip.application / licensecheck); gbcorp.c312.gtsly NativeLib (libgtsly / gtsly.dat)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "b2129550.smushcdn.com, cms.equiterre.org, forksoverknives.com, gbcorp.c312.merkmarker.info, i3.wp.com, img.odcdn.com.br, moldovapickles.com, silvercreeknursery.ca"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "SharedPreferences prefix_prefs: stored_url (ссылка оффера или access_denied), fcm_token, install_referrer; DataStore mrkmr_prefs: onboardedState (флаг онбординга белой оболочки); Room mrkmr_db — корзина/заказы белого магазина"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "access_denied, stored_url, onNavigateToWebview, webview, af_status, appsInfo, install, refresh, visit, target_url, linkUrl, recordId, referrer, emulatorCheck, loadDynamicScreen, NativeLib, GTSLY, hkoqqqpni.click, prefix_prefs, withlink, push/visit"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "b2129550.smushcdn.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "cms.equiterre.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "forksoverknives.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "gbcorp.c312.merkmarker.info",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "i3.wp.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "img.odcdn.com.br",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "moldovapickles.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "silvercreeknursery.ca",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Grape Inc."
+      }
+    ],
+    "collected_data": [
+      "имя приложения в системе → техническое имя этой программы на телефоне; сервер понимает, от",
+      "какого приложения пришёл запрос",
+      "токен для пуш-уведомлений → служебный номер, по которому на этот телефон можно присылать",
+      "уведомления",
+      "рекламный номер устройства → уникальный служебный номер телефона для рекламы; по нему",
+      "отличают одно устройство от другого",
+      "идентификатор установки из рекламной системы → отдельный служебный номер этой установки",
+      "приложения",
+      "метка установки из магазина → откуда поставили приложение и с какими рекламными пометками",
+      "(строка из Google Play)",
+      "язык телефона → на каком языке настроен телефон; по этому часто решают, кому что показать",
+      "часовой пояс → в каком часовом поясе живёт человек; помогает понять регион",
+      "данные о источнике установки → пришёл ли человек сам или по рекламе, и связанные пометки",
+      "перехода"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• имя приложения в системе → техническое имя этой программы на телефоне; сервер понимает, от\n• какого приложения пришёл запрос\n• токен для пуш-уведомлений → служебный номер, по которому на этот телефон можно присылать\n• уведомления\n• рекламный номер устройства → уникальный служебный номер телефона для рекламы; по нему\n• отличают одно устройство от другого\n• идентификатор установки из рекламной системы → отдельный служебный номер этой установки\n• приложения\n• метка установки из магазина → откуда поставили приложение и с какими рекламными пометками\n• (строка из Google Play)\n• язык телефона → на каком языке настроен телефон; по этому часто решают, кому что показать\n• часовой пояс → в каком часовом поясе живёт человек; помогает понять регион\n• данные о источнике установки → пришёл ли человек сам или по рекламе, и связанные пометки\n• перехода\n\nКак собираются: Сразу после запуска приложение само, без отдельного объяснения человеку, поднимает служебные модули: сбор сведений о рекламном источнике установки, метку из магазина приложений и номер для пуш-уведомлений. Это происходит в фоне, пока на экране ещё крутится подготовительный экран с индикатором загрузки. Язык телефона и часовой пояс приложение читает из системных настроек Android в момент подготовки запроса. Рекламный номер устройства запрашивается у сервисов Google на телефоне. Метку установки берёт у Google Play. Человек обычно этого не замечает: отдельного окна с разрешением на такой сбор нет. Тихий запрос на проверку уходит не в первую секунду,…\n\nКуда отправляются: Собранные сведения незаметно ухо…"
+  }
 }

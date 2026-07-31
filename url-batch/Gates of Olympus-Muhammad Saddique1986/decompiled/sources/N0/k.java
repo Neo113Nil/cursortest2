@@ -1,0 +1,31 @@
+package N0;
+
+/* loaded from: classes.dex */
+public final class k {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final int f3552a;
+
+    public static final boolean a(int i3, int i4) {
+        return i3 == i4;
+    }
+
+    public static String b(int i3) {
+        return a(i3, 1) ? "Ltr" : a(i3, 2) ? "Rtl" : a(i3, 3) ? "Content" : a(i3, 4) ? "ContentOrLtr" : a(i3, 5) ? "ContentOrRtl" : a(i3, Integer.MIN_VALUE) ? "Unspecified" : "Invalid";
+    }
+
+    public final boolean equals(Object obj) {
+        if (obj instanceof k) {
+            return this.f3552a == ((k) obj).f3552a;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.f3552a);
+    }
+
+    public final String toString() {
+        return b(this.f3552a);
+    }
+}

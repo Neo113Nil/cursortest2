@@ -1,0 +1,88 @@
+package m;
+
+/* loaded from: classes.dex */
+public final class V {
+
+    /* renamed from: a, reason: collision with root package name */
+    public float f6688a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public double f6689b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public boolean f6690c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public double f6691d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public double f6692e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public double f6693f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public float f6694g;
+
+    public final long a(float f3, float f4, long j3) {
+        double cos;
+        double d3;
+        if (!this.f6690c) {
+            if (this.f6688a == Float.MAX_VALUE) {
+                throw new IllegalStateException("Error: Final position of the spring must be set before the animation starts");
+            }
+            float f5 = this.f6694g;
+            double d4 = f5;
+            double d5 = d4 * d4;
+            if (f5 > 1.0f) {
+                double d6 = this.f6689b;
+                double d7 = d5 - 1;
+                this.f6691d = (Math.sqrt(d7) * d6) + ((-f5) * d6);
+                double d8 = -this.f6694g;
+                double d9 = this.f6689b;
+                this.f6692e = (d8 * d9) - (Math.sqrt(d7) * d9);
+            } else if (f5 >= 0.0f && f5 < 1.0f) {
+                this.f6693f = Math.sqrt(1 - d5) * this.f6689b;
+            }
+            this.f6690c = true;
+        }
+        float f6 = f3 - this.f6688a;
+        double d10 = j3 / 1000.0d;
+        float f7 = this.f6694g;
+        if (f7 > 1.0f) {
+            double d11 = f6;
+            double d12 = this.f6692e;
+            double d13 = ((d12 * d11) - f4) / (d12 - this.f6691d);
+            double d14 = d11 - d13;
+            d3 = (Math.exp(this.f6691d * d10) * d13) + (Math.exp(d12 * d10) * d14);
+            double d15 = this.f6692e;
+            double exp = Math.exp(d15 * d10) * d14 * d15;
+            double d16 = this.f6691d;
+            cos = (Math.exp(d16 * d10) * d13 * d16) + exp;
+        } else if (f7 == 1.0f) {
+            double d17 = this.f6689b;
+            double d18 = f6;
+            double d19 = (d17 * d18) + f4;
+            double d20 = (d19 * d10) + d18;
+            d3 = Math.exp((-d17) * d10) * d20;
+            double exp2 = Math.exp((-this.f6689b) * d10) * d20;
+            double d21 = -this.f6689b;
+            cos = (exp2 * d21) + (Math.exp(d21 * d10) * d19);
+        } else {
+            double d22 = 1 / this.f6693f;
+            double d23 = this.f6689b;
+            double d24 = f6;
+            double d25 = ((f7 * d23 * d24) + f4) * d22;
+            double exp3 = Math.exp((-f7) * d23 * d10) * ((Math.sin(this.f6693f * d10) * d25) + (Math.cos(this.f6693f * d10) * d24));
+            double d26 = this.f6689b;
+            double d27 = (-d26) * exp3 * this.f6694g;
+            double exp4 = Math.exp((-r7) * d26 * d10);
+            double d28 = this.f6693f;
+            double sin = Math.sin(d28 * d10) * (-d28) * d24;
+            double d29 = this.f6693f;
+            cos = (((Math.cos(d29 * d10) * d25 * d29) + sin) * exp4) + d27;
+            d3 = exp3;
+        }
+        return (Float.floatToRawIntBits((float) (d3 + this.f6688a)) << 32) | (Float.floatToRawIntBits((float) cos) & 4294967295L);
+    }
+}
