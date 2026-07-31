@@ -1,0 +1,27 @@
+package com.ironsource.adqualitysdk.sdk.i;
+
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.doubleclick.PublisherAdView;
+import java.util.ArrayList;
+
+/* renamed from: com.ironsource.adqualitysdk.sdk.i.Ⅽ, reason: contains not printable characters */
+/* loaded from: classes5.dex */
+public final class C1121 implements InterfaceC0595 {
+
+    /* renamed from: ﾒ, reason: contains not printable characters */
+    public final /* synthetic */ C0624 f2868;
+
+    public C1121(C0624 c0624) {
+        this.f2868 = c0624;
+    }
+
+    @Override // com.ironsource.adqualitysdk.sdk.i.InterfaceC0595
+    /* renamed from: ﾒ */
+    public final Object mo3938(ArrayList arrayList, C1189 c1189) {
+        this.f2868.getClass();
+        PublisherAdView publisherAdView = (PublisherAdView) AbstractC1100.m4401(arrayList, 0, PublisherAdView.class);
+        this.f2868.getClass();
+        publisherAdView.setAdListener((AdListener) AbstractC1100.m4401(arrayList, 1, AdListener.class));
+        return null;
+    }
+}

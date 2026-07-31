@@ -1,0 +1,6 @@
+package androidx.media3.common.util;
+
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: classes15.dex */
+public abstract /* synthetic */ class Util$$ExternalSyntheticApiModelOutline3 {
+}

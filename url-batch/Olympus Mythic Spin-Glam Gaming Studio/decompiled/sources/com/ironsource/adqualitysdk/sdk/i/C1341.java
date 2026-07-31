@@ -1,0 +1,25 @@
+package com.ironsource.adqualitysdk.sdk.i;
+
+import com.fyber.fairbid.mediation.MediationManager;
+import java.util.ArrayList;
+
+/* renamed from: com.ironsource.adqualitysdk.sdk.i.ﾋ, reason: contains not printable characters */
+/* loaded from: classes15.dex */
+public final class C1341 implements InterfaceC0595 {
+
+    /* renamed from: ﾒ, reason: contains not printable characters */
+    public final /* synthetic */ C1161 f3694;
+
+    public C1341(C1161 c1161) {
+        this.f3694 = c1161;
+    }
+
+    @Override // com.ironsource.adqualitysdk.sdk.i.InterfaceC0595
+    /* renamed from: ﾒ */
+    public final Object mo3938(ArrayList arrayList, C1189 c1189) {
+        C1161 c1161 = this.f3694;
+        MediationManager mediationManager = (MediationManager) arrayList.get(0);
+        c1161.getClass();
+        return mediationManager.getPlacementsHandler();
+    }
+}

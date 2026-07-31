@@ -1,0 +1,111 @@
+package androidx.compose.foundation.gestures;
+
+import androidx.compose.runtime.MutableState;
+import androidx.compose.runtime.State;
+import androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.functions.Function3;
+import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.CoroutineScope;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: Scrollable.kt */
+@Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+@DebugMetadata(c = "androidx.compose.foundation.gestures.ScrollableKt$pointerScrollable$4", f = "Scrollable.kt", l = {}, m = "invokeSuspend")
+/* loaded from: classes9.dex */
+final class ScrollableKt$pointerScrollable$4 extends SuspendLambda implements Function3 {
+    final /* synthetic */ MutableState<NestedScrollDispatcher> $nestedScrollDispatcher;
+    final /* synthetic */ State<ScrollingLogic> $scrollLogic;
+    /* synthetic */ float F$0;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    ScrollableKt$pointerScrollable$4(MutableState<NestedScrollDispatcher> mutableState, State<ScrollingLogic> state, Continuation continuation) {
+        super(3, continuation);
+        this.$nestedScrollDispatcher = mutableState;
+        this.$scrollLogic = state;
+    }
+
+    @Override // kotlin.jvm.functions.Function3
+    public /* bridge */ /* synthetic */ Object invoke(Object obj, Object obj2, Object obj3) {
+        return invoke((CoroutineScope) obj, ((Number) obj2).floatValue(), (Continuation) obj3);
+    }
+
+    @Nullable
+    public final Object invoke(@NotNull CoroutineScope coroutineScope, float f, @Nullable Continuation continuation) {
+        ScrollableKt$pointerScrollable$4 scrollableKt$pointerScrollable$4 = new ScrollableKt$pointerScrollable$4(this.$nestedScrollDispatcher, this.$scrollLogic, continuation);
+        scrollableKt$pointerScrollable$4.F$0 = f;
+        return scrollableKt$pointerScrollable$4.invokeSuspend(Unit.INSTANCE);
+    }
+
+    /* compiled from: Scrollable.kt */
+    @Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
+    @DebugMetadata(c = "androidx.compose.foundation.gestures.ScrollableKt$pointerScrollable$4$1", f = "Scrollable.kt", l = {258}, m = "invokeSuspend")
+    /* renamed from: androidx.compose.foundation.gestures.ScrollableKt$pointerScrollable$4$1, reason: invalid class name */
+    static final class AnonymousClass1 extends SuspendLambda implements Function2 {
+        final /* synthetic */ State<ScrollingLogic> $scrollLogic;
+        final /* synthetic */ float $velocity;
+        int label;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        AnonymousClass1(State<ScrollingLogic> state, float f, Continuation continuation) {
+            super(2, continuation);
+            this.$scrollLogic = state;
+            this.$velocity = f;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        @NotNull
+        public final Continuation create(@Nullable Object obj, @NotNull Continuation continuation) {
+            return new AnonymousClass1(this.$scrollLogic, this.$velocity, continuation);
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        @Nullable
+        public final Object invoke(@NotNull CoroutineScope coroutineScope, @Nullable Continuation continuation) {
+            return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        @Nullable
+        public final Object invokeSuspend(@NotNull Object obj) {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                ScrollingLogic scrollingLogic = (ScrollingLogic) this.$scrollLogic.getValue();
+                float f = this.$velocity;
+                this.label = 1;
+                if (scrollingLogic.onDragStopped(f, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else {
+                if (i != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+            }
+            return Unit.INSTANCE;
+        }
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    public final Object invokeSuspend(@NotNull Object obj) {
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label != 0) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        ResultKt.throwOnFailure(obj);
+        BuildersKt__Builders_commonKt.launch$default(((NestedScrollDispatcher) this.$nestedScrollDispatcher.getValue()).getCoroutineScope(), null, null, new AnonymousClass1(this.$scrollLogic, this.F$0, null), 3, null);
+        return Unit.INSTANCE;
+    }
+}

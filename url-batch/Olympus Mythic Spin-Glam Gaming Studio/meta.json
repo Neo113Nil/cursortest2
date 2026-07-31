@@ -1,0 +1,36 @@
+{
+  "app_id": "com.olypt7turol.tundr.roler",
+  "title": "Olympus Mythic Spin",
+  "developer": "Glam Gaming Studio",
+  "developer_id": "Glam+Gaming+Studio",
+  "icon": "https://play-lh.googleusercontent.com/2XqYBaelFF2w_7abStIHZuf_OicWaGMSimiE3Vj1ZDkPgozy88mqmLj0ez2aolKlFxoYZlakD0UlGHnaeCJqcr4",
+  "url": "https://play.google.com/store/apps/details?id=com.olypt7turol.tundr.roler&hl=en&gl=us",
+  "score": 3.1875,
+  "released": "Nov 27, 2025",
+  "updated": "2026-06-30",
+  "version": "1.0.3",
+  "summary": "Spin and collect on a mythic adventure across Olympus.",
+  "keyword": "url-batch",
+  "folder": "Olympus Mythic Spin-Glam Gaming Studio",
+  "path": "url-batch/Olympus Mythic Spin-Glam Gaming Studio",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.olypt7turol.tundr.roler.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Olympus Mythic Spin-Glam Gaming Studio",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.olypt7turol.tundr.roler...\ncom.olypt7turol.tundr.roler downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.olypt7turol.tundr.roler...\ncom.olypt7turol.tundr.roler downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

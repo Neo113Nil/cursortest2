@@ -1,0 +1,75 @@
+package yads;
+
+/* loaded from: classes4.dex */
+public final class m73 {
+    public long a;
+    public long b;
+    public long c;
+    public final ThreadLocal d = new ThreadLocal();
+
+    public m73(long j) {
+        c(j);
+    }
+
+    public final synchronized long a() {
+        long j;
+        j = this.a;
+        if (j == Long.MAX_VALUE || j == 9223372036854775806L) {
+            j = -9223372036854775807L;
+        }
+        return j;
+    }
+
+    public final synchronized long b() {
+        return this.b;
+    }
+
+    public final synchronized void c(long j) {
+        this.a = j;
+        this.b = j == Long.MAX_VALUE ? 0L : -9223372036854775807L;
+        this.c = -9223372036854775807L;
+    }
+
+    public final synchronized long a(long j) {
+        if (j == -9223372036854775807L) {
+            return -9223372036854775807L;
+        }
+        try {
+            if (this.b == -9223372036854775807L) {
+                long j2 = this.a;
+                if (j2 == 9223372036854775806L) {
+                    Long l = (Long) this.d.get();
+                    l.getClass();
+                    j2 = l.longValue();
+                }
+                this.b = j2 - j;
+                notifyAll();
+            }
+            this.c = j;
+            return j + this.b;
+        } catch (Throwable th) {
+            throw th;
+        }
+    }
+
+    public final synchronized long b(long j) {
+        if (j == -9223372036854775807L) {
+            return -9223372036854775807L;
+        }
+        try {
+            long j2 = this.c;
+            if (j2 != -9223372036854775807L) {
+                long j3 = (j2 * 90000) / 1000000;
+                long j4 = (4294967296L + j3) / 8589934592L;
+                long j5 = ((j4 - 1) * 8589934592L) + j;
+                j += j4 * 8589934592L;
+                if (Math.abs(j5 - j3) < Math.abs(j - j3)) {
+                    j = j5;
+                }
+            }
+            return a((j * 1000000) / 90000);
+        } catch (Throwable th) {
+            throw th;
+        }
+    }
+}

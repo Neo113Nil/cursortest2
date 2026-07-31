@@ -1,0 +1,53 @@
+package com.moloco.sdk.xenoss.sdkdevkit.android.adrenderer.internal.mraid;
+
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes12.dex */
+public final class t {
+    public static final t b = new t("Loading", 0, "loading");
+    public static final t c = new t("Default", 1, "default");
+    public static final t d = new t("Resized", 2, "resized");
+    public static final t e = new t("Expanded", 3, "expanded");
+    public static final t f = new t("Hidden", 4, "hidden");
+    public static final /* synthetic */ t[] g;
+    public static final /* synthetic */ EnumEntries h;
+
+    @NotNull
+    public final String a;
+
+    static {
+        t[] a = a();
+        g = a;
+        h = EnumEntriesKt.enumEntries(a);
+    }
+
+    public t(String str, int i, String str2) {
+        this.a = str2;
+    }
+
+    public static final /* synthetic */ t[] a() {
+        return new t[]{b, c, d, e, f};
+    }
+
+    @NotNull
+    public static EnumEntries b() {
+        return h;
+    }
+
+    public static t valueOf(String str) {
+        return (t) Enum.valueOf(t.class, str);
+    }
+
+    public static t[] values() {
+        return (t[]) g.clone();
+    }
+
+    @NotNull
+    public final String c() {
+        return this.a;
+    }
+}

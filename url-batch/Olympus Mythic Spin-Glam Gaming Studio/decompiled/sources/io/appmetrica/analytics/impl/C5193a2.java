@@ -1,0 +1,6 @@
+package io.appmetrica.analytics.impl;
+
+/* renamed from: io.appmetrica.analytics.impl.a2, reason: case insensitive filesystem */
+/* loaded from: classes11.dex */
+public final class C5193a2 extends Throwable {
+}

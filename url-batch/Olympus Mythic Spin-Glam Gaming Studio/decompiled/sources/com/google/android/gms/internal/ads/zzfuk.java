@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.gms.common.util.Clock;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes14.dex */
+public final class zzfuk implements zzinw {
+    private final zziof zza;
+    private final zziof zzb;
+    private final zziof zzc;
+    private final zziof zzd;
+
+    private zzfuk(zziof zziofVar, zziof zziofVar2, zziof zziofVar3, zziof zziofVar4) {
+        this.zza = zziofVar;
+        this.zzb = zziofVar2;
+        this.zzc = zziofVar3;
+        this.zzd = zziofVar4;
+    }
+
+    public static zzfuk zza(zziof zziofVar, zziof zziofVar2, zziof zziofVar3, zziof zziofVar4) {
+        return new zzfuk(zziofVar, zziofVar2, zziofVar3, zziofVar4);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zziol, com.google.android.gms.internal.ads.zziok
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzfuj((zzfve) this.zza.zzb(), ((zzfug) this.zzb).zzb(), ((zzcok) this.zzc).zza(), (Clock) this.zzd.zzb());
+    }
+}

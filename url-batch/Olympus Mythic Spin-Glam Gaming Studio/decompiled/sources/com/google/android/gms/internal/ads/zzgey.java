@@ -1,0 +1,148 @@
+package com.google.android.gms.internal.ads;
+
+import android.app.Activity;
+import android.content.Context;
+import android.view.View;
+import java.util.Map;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes4.dex */
+final class zzgey implements zzgib {
+    private final zzgeo zzA;
+    private final zzgeu zzB;
+    final zziof zza;
+    final zziof zzb;
+    final zziof zzc;
+    final zziof zzd;
+    final zziof zze;
+    final zziof zzf;
+    final zziof zzg;
+    final zziof zzh;
+    final zziof zzi;
+    final zziof zzj;
+    final zziof zzk;
+    final zziof zzl;
+    final zziof zzm;
+    final zziof zzn;
+    final zziof zzo;
+    final zziof zzp;
+    final zziof zzq;
+    final zziof zzr;
+    final zziof zzs;
+    final zziof zzt;
+    final zziof zzu;
+    final zziof zzv;
+    final zziof zzw;
+    final zziof zzx;
+    final zziof zzy;
+    final zziof zzz;
+
+    zzgey(zzgeo zzgeoVar, zzgeu zzgeuVar, Context context, View view, Activity activity, String str, Map map, zzaya zzayaVar, zzgff zzgffVar) {
+        this.zzA = zzgeoVar;
+        this.zzB = zzgeuVar;
+        zzinw zza = zzinx.zza(zzgffVar);
+        this.zza = zza;
+        zzinw zzc = zzinx.zzc(str);
+        this.zzb = zzc;
+        zzinw zza2 = zzinx.zza(zzayaVar);
+        this.zzc = zza2;
+        zziof zziofVar = zzgeuVar.zzb;
+        zziof zziofVar2 = zzgeoVar.zza;
+        zziof zziofVar3 = zzgeoVar.zzu;
+        zzgjm zza3 = zzgjm.zza(zza2, zziofVar, zziofVar2, zziofVar3);
+        this.zzd = zza3;
+        zzgjk zza4 = zzgjk.zza(zza2, zziofVar, zziofVar3);
+        this.zze = zza4;
+        zzinw zza5 = zzinx.zza(map);
+        this.zzf = zza5;
+        zziof zziofVar4 = zzgeuVar.zzb;
+        zziof zziofVar5 = zzgeoVar.zzu;
+        zzgjs zza6 = zzgjs.zza(zza2, zziofVar4, zza5, zziofVar5);
+        this.zzg = zza6;
+        zzgjo zza7 = zzgjo.zza(zza2, zziofVar4, zzgeoVar.zzj, zziofVar5);
+        this.zzh = zza7;
+        zzgkc zza8 = zzgkc.zza(zza2, zziofVar4, zza, zza5, zziofVar5);
+        this.zzi = zza8;
+        zzgjq zza9 = zzgjq.zza(zza2, zziofVar4, zziofVar5);
+        this.zzj = zza9;
+        zzinw zza10 = zzinx.zza(context);
+        this.zzk = zza10;
+        zziof zziofVar6 = zzgeuVar.zzb;
+        zziof zziofVar7 = zzgeoVar.zzu;
+        zzgjy zza11 = zzgjy.zza(zza2, zziofVar6, zza, zza10, zza5, zziofVar7);
+        this.zzl = zza11;
+        zziof zziofVar8 = zzgeoVar.zza;
+        zziof zziofVar9 = zzgeoVar.zzj;
+        zzgji zza12 = zzgji.zza(zza2, zziofVar6, zza5, zziofVar8, zza, zziofVar9, zziofVar7);
+        this.zzm = zza12;
+        zzgju zza13 = zzgju.zza(zza2, zziofVar6, zziofVar8, zziofVar7);
+        this.zzn = zza13;
+        zzgjw zza14 = zzgjw.zza(zza2, zziofVar6, zza5, zziofVar8, zziofVar7);
+        this.zzo = zza14;
+        zzgjg zza15 = zzgjg.zza(zza2, zza5, zziofVar9, zziofVar7);
+        this.zzp = zza15;
+        zzioh zza16 = zzioi.zza(11, 0);
+        zza16.zza(zza3);
+        zza16.zza(zza4);
+        zza16.zza(zza6);
+        zza16.zza(zza7);
+        zza16.zza(zza8);
+        zza16.zza(zza9);
+        zza16.zza(zza11);
+        zza16.zza(zza12);
+        zza16.zza(zza13);
+        zza16.zza(zza14);
+        zza16.zza(zza15);
+        zzioi zzc2 = zza16.zzc();
+        this.zzq = zzc2;
+        zzinw zzc3 = zzinx.zzc(view);
+        this.zzr = zzc3;
+        zzinw zzc4 = zzinx.zzc(activity);
+        this.zzs = zzc4;
+        zziof zziofVar10 = zzgeuVar.zzb;
+        zziof zziofVar11 = zzgeoVar.zzu;
+        zzgje zza17 = zzgje.zza(zza2, zziofVar10, zzc3, zzc4, zziofVar11);
+        this.zzt = zza17;
+        zziof zza18 = zzinv.zza(zzgic.zza(zza10));
+        this.zzu = zza18;
+        zzgkg zza19 = zzgkg.zza(zza2, zziofVar10, zza18, zzc3, zziofVar11);
+        this.zzv = zza19;
+        zzioh zza20 = zzioi.zza(11, 0);
+        zza20.zza(zza3);
+        zza20.zza(zza4);
+        zza20.zza(zza7);
+        zza20.zza(zza17);
+        zza20.zza(zza19);
+        zza20.zza(zza8);
+        zza20.zza(zza9);
+        zza20.zza(zza11);
+        zza20.zza(zza12);
+        zza20.zza(zza13);
+        zza20.zza(zza14);
+        zzioi zzc5 = zza20.zzc();
+        this.zzw = zzc5;
+        zzgke zza21 = zzgke.zza(zza2, zzgeuVar.zzb, zza5, zza18, zzgeoVar.zzu);
+        this.zzx = zza21;
+        zzioh zza22 = zzioi.zza(12, 0);
+        zza22.zza(zza3);
+        zza22.zza(zza4);
+        zza22.zza(zza7);
+        zza22.zza(zza17);
+        zza22.zza(zza19);
+        zza22.zza(zza8);
+        zza22.zza(zza9);
+        zza22.zza(zza11);
+        zza22.zza(zza12);
+        zza22.zza(zza13);
+        zza22.zza(zza14);
+        zza22.zza(zza21);
+        zzioi zzc6 = zza22.zzc();
+        this.zzy = zzc6;
+        this.zzz = zzinv.zza(zzghz.zza(zzgeoVar.zzx, zzgeoVar.zzG, zzgeuVar.zzb, zza, zzc, zza2, zzc2, zzc5, zzc6, zzgeoVar.zzu));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgib
+    public final zzghy zza() {
+        return (zzghy) this.zzz.zzb();
+    }
+}

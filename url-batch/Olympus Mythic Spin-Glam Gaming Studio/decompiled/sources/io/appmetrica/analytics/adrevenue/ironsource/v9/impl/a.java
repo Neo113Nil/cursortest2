@@ -1,0 +1,14 @@
+package io.appmetrica.analytics.adrevenue.ironsource.v9.impl;
+
+import com.pubmatic.sdk.common.POBCommonConstants;
+import io.appmetrica.analytics.modulesapi.internal.client.adrevenue.AdRevenueConstants;
+import java.util.HashMap;
+
+/* loaded from: classes13.dex */
+public final class a extends HashMap {
+    public a(String str) {
+        put(AdRevenueConstants.ORIGINAL_SOURCE_KEY, "ad-revenue-ironsource-v9");
+        put(AdRevenueConstants.ORIGINAL_AD_TYPE_KEY, str == null ? POBCommonConstants.NULL_VALUE : str);
+        put("source", "ironsource");
+    }
+}

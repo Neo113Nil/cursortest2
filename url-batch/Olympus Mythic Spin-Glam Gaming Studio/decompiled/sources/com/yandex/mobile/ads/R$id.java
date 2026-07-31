@@ -1,0 +1,57 @@
+package com.yandex.mobile.ads;
+
+/* loaded from: classes12.dex */
+public abstract class R$id {
+    public static int adtune_background_view = 2131361888;
+    public static int adtune_content_container = 2131361889;
+    public static int adtune_drag_view_container = 2131361890;
+    public static int adtune_webview_container = 2131361891;
+    public static int age = 2131361893;
+    public static int age_divider = 2131361894;
+    public static int body = 2131362025;
+    public static int call_to_action = 2131362057;
+    public static int close = 2131362083;
+    public static int domain = 2131362176;
+    public static int dot_indicator = 2131362177;
+    public static int favicon = 2131362261;
+    public static int feedback = 2131362264;
+    public static int icon = 2131362351;
+    public static int icon_large = 2131362356;
+    public static int icon_placeholder = 2131362359;
+    public static int icon_small = 2131362360;
+    public static int item_ad_unit_format = 2131362602;
+    public static int item_ad_unit_id = 2131362603;
+    public static int item_button = 2131362604;
+    public static int item_divider = 2131362605;
+    public static int item_info_first = 2131362606;
+    public static int item_info_second = 2131362608;
+    public static int item_logo = 2131362609;
+    public static int item_mediation_adapter = 2131362610;
+    public static int item_name = 2131362611;
+    public static int item_subtitle = 2131362612;
+    public static int item_switch = 2131362613;
+    public static int item_text = 2131362614;
+    public static int item_title = 2131362615;
+    public static int item_warning_button = 2131362617;
+    public static int left_scroll_control_button = 2131362634;
+    public static int loading_view = 2131362647;
+    public static int media = 2131362864;
+    public static int media_container = 2131362866;
+    public static int navigation_icon = 2131362943;
+    public static int price = 2131363058;
+    public static int rating = 2131363070;
+    public static int rating_container = 2131363073;
+    public static int rating_text = 2131363074;
+    public static int recycler_view = 2131363077;
+    public static int review_count = 2131363081;
+    public static int right_scroll_control_button = 2131363087;
+    public static int sponsored = 2131363154;
+    public static int title = 2131363222;
+    public static int toolbar_navigation_button = 2131363226;
+    public static int toolbar_share_button = 2131363227;
+    public static int toolbar_title = 2131363228;
+    public static int video_count_down_control = 2131363264;
+    public static int video_mute_control = 2131363266;
+    public static int video_progress_control = 2131363267;
+    public static int warning = 2131363279;
+}

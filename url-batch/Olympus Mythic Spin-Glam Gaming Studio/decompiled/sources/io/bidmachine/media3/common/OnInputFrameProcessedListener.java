@@ -1,0 +1,9 @@
+package io.bidmachine.media3.common;
+
+import io.bidmachine.media3.common.util.UnstableApi;
+
+@UnstableApi
+/* loaded from: classes5.dex */
+public interface OnInputFrameProcessedListener {
+    void onInputFrameProcessed(int i, long j) throws VideoFrameProcessingException;
+}

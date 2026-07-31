@@ -1,0 +1,448 @@
+package org.chromium.base;
+
+import android.app.Activity;
+import android.content.res.Resources;
+import android.os.Looper;
+import android.os.MessageQueue;
+import android.util.Printer;
+import android.view.View;
+import android.view.ViewGroup;
+import com.vungle.ads.internal.protos.Sdk;
+import internal.org.jni_zero.CalledByNative;
+import java.util.ArrayList;
+import java.util.Iterator;
+import org.chromium.base.TraceEvent;
+import org.chromium.base.task.PostTask;
+
+/* loaded from: classes9.dex */
+public class TraceEvent implements AutoCloseable {
+    private static volatile boolean sEnabled;
+    private static boolean sEventNameFilteringEnabled;
+    private static volatile boolean sUiThreadReady;
+    private final String mName;
+
+    interface Natives {
+        void addViewDump(int i, int i2, boolean z, boolean z2, String str, String str2, long j);
+
+        void begin(String str, String str2);
+
+        void beginToplevel(String str);
+
+        void end(String str, long j);
+
+        void endToplevel();
+
+        void finishAsync(long j);
+
+        void initViewHierarchyDump(long j, Object obj);
+
+        void instant(String str, String str2);
+
+        void registerEnabledObserver();
+
+        long startActivityDump(String str, long j);
+
+        boolean viewHierarchyDumpEnabled();
+    }
+
+    static class BasicLooperMonitor implements Printer {
+        private static final int SHORTEST_LOG_PREFIX_LENGTH = 18;
+        private String mCurrentTarget;
+
+        BasicLooperMonitor() {
+        }
+
+        @Override // android.util.Printer
+        public void println(String str) {
+            if (str.startsWith(">")) {
+                beginHandling(str);
+            } else {
+                endHandling(str);
+            }
+        }
+
+        void beginHandling(String str) {
+            boolean enabled = EarlyTraceEvent.enabled();
+            if (TraceEvent.sEnabled || enabled) {
+                this.mCurrentTarget = getTraceEventName(str);
+                if (TraceEvent.sEnabled) {
+                    TraceEventJni.get().beginToplevel(this.mCurrentTarget);
+                } else {
+                    EarlyTraceEvent.begin(this.mCurrentTarget, true);
+                }
+            }
+        }
+
+        void endHandling(String str) {
+            boolean enabled = EarlyTraceEvent.enabled();
+            if ((TraceEvent.sEnabled || enabled) && this.mCurrentTarget != null) {
+                if (TraceEvent.sEnabled) {
+                    TraceEventJni.get().endToplevel();
+                } else {
+                    EarlyTraceEvent.end(this.mCurrentTarget, true);
+                }
+            }
+            this.mCurrentTarget = null;
+        }
+
+        static String getTraceEventName(String str) {
+            if (TraceEvent.sEventNameFilteringEnabled) {
+                return "Looper.dispatch: EVENT_NAME_FILTERED";
+            }
+            return "Looper.dispatch: " + getTarget(str) + "(" + getTargetName(str) + ")";
+        }
+
+        private static String getTarget(String str) {
+            int indexOf = str.indexOf(40, SHORTEST_LOG_PREFIX_LENGTH);
+            int indexOf2 = indexOf == -1 ? -1 : str.indexOf(41, indexOf);
+            return indexOf2 != -1 ? str.substring(indexOf + 1, indexOf2) : "";
+        }
+
+        private static String getTargetName(String str) {
+            int indexOf = str.indexOf(Sdk.SDKError.Reason.INVALID_METRICS_ENDPOINT_VALUE, SHORTEST_LOG_PREFIX_LENGTH);
+            int indexOf2 = indexOf == -1 ? -1 : str.indexOf(58, indexOf);
+            if (indexOf2 == -1) {
+                indexOf2 = str.length();
+            }
+            return indexOf != -1 ? str.substring(indexOf + 2, indexOf2) : "";
+        }
+    }
+
+    private static final class IdleTracingLooperMonitor extends BasicLooperMonitor implements MessageQueue.IdleHandler {
+        private boolean mIdleMonitorAttached;
+        private long mLastIdleStartedAt;
+        private long mLastWorkStartedAt;
+        private int mNumIdlesSeen;
+        private int mNumTasksSeen;
+        private int mNumTasksSinceLastIdle;
+
+        private IdleTracingLooperMonitor() {
+        }
+
+        private final void syncIdleMonitoring() {
+            if (TraceEvent.sEnabled && !this.mIdleMonitorAttached) {
+                this.mLastIdleStartedAt = TimeUtils.elapsedRealtimeMillis();
+                Looper.myQueue().addIdleHandler(this);
+                this.mIdleMonitorAttached = true;
+                android.util.Log.v("TraceEvt_LooperMonitor", "attached idle handler");
+                return;
+            }
+            if (!this.mIdleMonitorAttached || TraceEvent.sEnabled) {
+                return;
+            }
+            Looper.myQueue().removeIdleHandler(this);
+            this.mIdleMonitorAttached = false;
+            android.util.Log.v("TraceEvt_LooperMonitor", "detached idle handler");
+        }
+
+        @Override // org.chromium.base.TraceEvent.BasicLooperMonitor
+        final void beginHandling(String str) {
+            if (this.mNumTasksSinceLastIdle == 0) {
+                TraceEvent.end("Looper.queueIdle");
+            }
+            this.mLastWorkStartedAt = TimeUtils.elapsedRealtimeMillis();
+            syncIdleMonitoring();
+            super.beginHandling(str);
+        }
+
+        @Override // org.chromium.base.TraceEvent.BasicLooperMonitor
+        final void endHandling(String str) {
+            long elapsedRealtimeMillis = TimeUtils.elapsedRealtimeMillis() - this.mLastWorkStartedAt;
+            if (elapsedRealtimeMillis > 16) {
+                traceAndLog(5, "observed a task that took " + elapsedRealtimeMillis + "ms: " + str);
+            }
+            super.endHandling(str);
+            syncIdleMonitoring();
+            this.mNumTasksSeen++;
+            this.mNumTasksSinceLastIdle++;
+        }
+
+        private static void traceAndLog(int i, String str) {
+            TraceEvent.instant("TraceEvent.LooperMonitor:IdleStats", str);
+            android.util.Log.println(i, "TraceEvt_LooperMonitor", str);
+        }
+
+        @Override // android.os.MessageQueue.IdleHandler
+        public final boolean queueIdle() {
+            long elapsedRealtimeMillis = TimeUtils.elapsedRealtimeMillis();
+            if (this.mLastIdleStartedAt == 0) {
+                this.mLastIdleStartedAt = elapsedRealtimeMillis;
+            }
+            long j = elapsedRealtimeMillis - this.mLastIdleStartedAt;
+            this.mNumIdlesSeen++;
+            TraceEvent.begin("Looper.queueIdle", this.mNumTasksSinceLastIdle + " tasks since last idle.");
+            if (j > 48) {
+                traceAndLog(3, this.mNumTasksSeen + " tasks and " + this.mNumIdlesSeen + " idles processed so far, " + this.mNumTasksSinceLastIdle + " tasks bursted and " + j + "ms elapsed since last idle");
+            }
+            this.mLastIdleStartedAt = elapsedRealtimeMillis;
+            this.mNumTasksSinceLastIdle = 0;
+            return true;
+        }
+    }
+
+    private static final class LooperMonitorHolder {
+        private static final BasicLooperMonitor sInstance;
+
+        static {
+            BasicLooperMonitor basicLooperMonitor;
+            if (CommandLine.getInstance().hasSwitch("enable-idle-tracing")) {
+                basicLooperMonitor = new IdleTracingLooperMonitor();
+            } else {
+                basicLooperMonitor = new BasicLooperMonitor();
+            }
+            sInstance = basicLooperMonitor;
+        }
+    }
+
+    private TraceEvent(String str, String str2) {
+        this.mName = str;
+        begin(str, str2);
+    }
+
+    @Override // java.lang.AutoCloseable
+    public void close() {
+        end(this.mName);
+    }
+
+    public static TraceEvent scoped(String str, String str2) {
+        if (EarlyTraceEvent.enabled() || enabled()) {
+            return new TraceEvent(str, str2);
+        }
+        return null;
+    }
+
+    public static TraceEvent scoped(String str) {
+        return scoped(str, null);
+    }
+
+    @CalledByNative
+    public static void setEnabled(boolean z) {
+        if (z) {
+            EarlyTraceEvent.disable();
+        }
+        if (sEnabled != z) {
+            sEnabled = z;
+            ThreadUtils.getUiThreadLooper().setMessageLogging(z ? LooperMonitorHolder.sInstance : null);
+        }
+        if (sEnabled) {
+            EarlyTraceEvent.dumpActivityStartupEvents();
+        }
+        if (sUiThreadReady) {
+            ViewHierarchyDumper.updateEnabledState();
+        }
+    }
+
+    @CalledByNative
+    public static void setEventNameFilteringEnabled(boolean z) {
+        sEventNameFilteringEnabled = z;
+    }
+
+    public static void onNativeTracingReady() {
+        TraceEventJni.get().registerEnabledObserver();
+    }
+
+    static void onUiThreadReady() {
+        sUiThreadReady = true;
+        if (sEnabled) {
+            ViewHierarchyDumper.updateEnabledState();
+        }
+    }
+
+    public static boolean enabled() {
+        return sEnabled;
+    }
+
+    public static void instant(String str, String str2) {
+        if (sEnabled) {
+            TraceEventJni.get().instant(str, str2);
+        }
+    }
+
+    public static void snapshotViewHierarchy() {
+        if (sEnabled && TraceEventJni.get().viewHierarchyDumpEnabled()) {
+            begin("instantAndroidViewHierarchy");
+            final ArrayList snapshotViewHierarchyState = snapshotViewHierarchyState();
+            if (snapshotViewHierarchyState.isEmpty()) {
+                end("instantAndroidViewHierarchy");
+                return;
+            }
+            final long hashCode = snapshotViewHierarchyState.hashCode();
+            PostTask.postTask(0, new Runnable() { // from class: org.chromium.base.TraceEvent$$ExternalSyntheticLambda0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    TraceEvent.lambda$snapshotViewHierarchy$0(hashCode, snapshotViewHierarchyState);
+                }
+            });
+            end("instantAndroidViewHierarchy", null, hashCode);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static /* synthetic */ void lambda$snapshotViewHierarchy$0(long j, ArrayList arrayList) {
+        TraceEventJni.get().initViewHierarchyDump(j, arrayList);
+    }
+
+    public static void finishAsync(String str, long j) {
+        EarlyTraceEvent.finishAsync(str, j);
+        if (sEnabled) {
+            TraceEventJni.get().finishAsync(j);
+        }
+    }
+
+    public static void begin(String str) {
+        begin(str, null);
+    }
+
+    public static void begin(String str, String str2) {
+        EarlyTraceEvent.begin(str, false);
+        if (sEnabled) {
+            TraceEventJni.get().begin(str, str2);
+        }
+    }
+
+    public static void end(String str) {
+        end(str, null);
+    }
+
+    public static void end(String str, String str2) {
+        end(str, str2, 0L);
+    }
+
+    public static void end(String str, String str2, long j) {
+        EarlyTraceEvent.end(str, false);
+        if (sEnabled) {
+            TraceEventJni.get().end(str2, j);
+        }
+    }
+
+    public static ArrayList snapshotViewHierarchyState() {
+        if (!ApplicationStatus.isInitialized()) {
+            return new ArrayList();
+        }
+        ArrayList arrayList = new ArrayList(2);
+        for (Activity activity : ApplicationStatus.getRunningActivities()) {
+            arrayList.add(new ActivityInfo(activity.getClass().getName()));
+            ViewHierarchyDumper.dumpView((ActivityInfo) arrayList.get(arrayList.size() - 1), 0, activity.getWindow().getDecorView().getRootView());
+        }
+        return arrayList;
+    }
+
+    @CalledByNative
+    public static void dumpViewHierarchy(long j, Object obj) {
+        String str;
+        if (ApplicationStatus.isInitialized()) {
+            Iterator it = ((ArrayList) obj).iterator();
+            while (it.hasNext()) {
+                ActivityInfo activityInfo = (ActivityInfo) it.next();
+                long startActivityDump = TraceEventJni.get().startActivityDump(activityInfo.mActivityName, j);
+                Iterator it2 = activityInfo.mViews.iterator();
+                while (it2.hasNext()) {
+                    ViewInfo viewInfo = (ViewInfo) it2.next();
+                    try {
+                        if (viewInfo.mRes != null) {
+                            if (viewInfo.mId != 0 && viewInfo.mId != -1) {
+                                str = viewInfo.mRes.getResourceName(viewInfo.mId);
+                            }
+                            str = "__no_id__";
+                        } else {
+                            str = "__no_resources__";
+                        }
+                    } catch (Resources.NotFoundException unused) {
+                        str = "__name_not_found__";
+                    }
+                    TraceEventJni.get().addViewDump(viewInfo.mId, viewInfo.mParentId, viewInfo.mIsShown, viewInfo.mIsDirty, viewInfo.mClassName, str, startActivityDump);
+                }
+            }
+        }
+    }
+
+    public static class ViewInfo {
+        private final String mClassName;
+        private final int mId;
+        private final boolean mIsDirty;
+        private final boolean mIsShown;
+        private final int mParentId;
+        private final Resources mRes;
+
+        public ViewInfo(int i, int i2, boolean z, boolean z2, String str, Resources resources) {
+            this.mId = i;
+            this.mParentId = i2;
+            this.mIsShown = z;
+            this.mIsDirty = z2;
+            this.mClassName = str;
+            this.mRes = resources;
+        }
+    }
+
+    public static class ActivityInfo {
+        public String mActivityName;
+        public ArrayList mViews = new ArrayList(Sdk.SDKError.Reason.INVALID_METRICS_ENDPOINT_VALUE);
+
+        public ActivityInfo(String str) {
+            this.mActivityName = str;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    static final class ViewHierarchyDumper implements MessageQueue.IdleHandler {
+        private static ViewHierarchyDumper sInstance;
+        private long mLastDumpTs;
+
+        private ViewHierarchyDumper() {
+        }
+
+        @Override // android.os.MessageQueue.IdleHandler
+        public final boolean queueIdle() {
+            long elapsedRealtimeMillis = TimeUtils.elapsedRealtimeMillis();
+            long j = this.mLastDumpTs;
+            if (j != 0 && elapsedRealtimeMillis - j <= 1000) {
+                return true;
+            }
+            this.mLastDumpTs = elapsedRealtimeMillis;
+            TraceEvent.snapshotViewHierarchy();
+            return true;
+        }
+
+        public static void updateEnabledState() {
+            PostTask.runOrPostTask(7, new Runnable() { // from class: org.chromium.base.TraceEvent$ViewHierarchyDumper$$ExternalSyntheticLambda0
+                @Override // java.lang.Runnable
+                public final void run() {
+                    TraceEvent.ViewHierarchyDumper.lambda$updateEnabledState$0();
+                }
+            });
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static /* synthetic */ void lambda$updateEnabledState$0() {
+            setEnabled(TraceEventJni.get().viewHierarchyDumpEnabled());
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static void dumpView(ActivityInfo activityInfo, int i, View view) {
+            ThreadUtils.assertOnUiThread();
+            int id = view.getId();
+            activityInfo.mViews.add(new ViewInfo(id, i, view.isShown(), view.isDirty(), view.getClass().getSimpleName(), view.getResources()));
+            if (view instanceof ViewGroup) {
+                ViewGroup viewGroup = (ViewGroup) view;
+                for (int i2 = 0; i2 < viewGroup.getChildCount(); i2++) {
+                    dumpView(activityInfo, id, viewGroup.getChildAt(i2));
+                }
+            }
+        }
+
+        private static void setEnabled(boolean z) {
+            ThreadUtils.assertOnUiThread();
+            ViewHierarchyDumper viewHierarchyDumper = sInstance;
+            if (viewHierarchyDumper == null && z) {
+                sInstance = new ViewHierarchyDumper();
+                Looper.myQueue().addIdleHandler(sInstance);
+            } else {
+                if (viewHierarchyDumper == null || z) {
+                    return;
+                }
+                Looper.myQueue().removeIdleHandler(sInstance);
+                sInstance = null;
+            }
+        }
+    }
+}

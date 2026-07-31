@@ -1,0 +1,5 @@
+package androidx.room.ktx;
+
+/* loaded from: classes14.dex */
+public final class R {
+}

@@ -1,0 +1,128 @@
+package androidx.compose.ui.platform;
+
+import android.content.Context;
+import android.view.View;
+import androidx.compose.runtime.Recomposer;
+import androidx.lifecycle.LifecycleOwner;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Ref$ObjectRef;
+import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Job;
+import kotlinx.coroutines.flow.StateFlow;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: WindowRecomposer.android.kt */
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 6, 0}, xi = 48)
+@DebugMetadata(c = "androidx.compose.ui.platform.WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1", f = "WindowRecomposer.android.kt", l = {391}, m = "invokeSuspend")
+/* loaded from: classes9.dex */
+final class WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1 extends SuspendLambda implements Function2 {
+    final /* synthetic */ LifecycleOwner $lifecycleOwner;
+    final /* synthetic */ Recomposer $recomposer;
+    final /* synthetic */ WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2 $self;
+    final /* synthetic */ Ref$ObjectRef<MotionDurationScaleImpl> $systemDurationScaleSettingConsumer;
+    final /* synthetic */ View $this_createLifecycleAwareWindowRecomposer;
+    private /* synthetic */ Object L$0;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1(Ref$ObjectRef<MotionDurationScaleImpl> ref$ObjectRef, Recomposer recomposer, LifecycleOwner lifecycleOwner, WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2 windowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2, View view, Continuation continuation) {
+        super(2, continuation);
+        this.$systemDurationScaleSettingConsumer = ref$ObjectRef;
+        this.$recomposer = recomposer;
+        this.$lifecycleOwner = lifecycleOwner;
+        this.$self = windowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2;
+        this.$this_createLifecycleAwareWindowRecomposer = view;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @NotNull
+    public final Continuation create(@Nullable Object obj, @NotNull Continuation continuation) {
+        WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1 windowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1 = new WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1(this.$systemDurationScaleSettingConsumer, this.$recomposer, this.$lifecycleOwner, this.$self, this.$this_createLifecycleAwareWindowRecomposer, continuation);
+        windowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1.L$0 = obj;
+        return windowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    @Nullable
+    public final Object invoke(@NotNull CoroutineScope coroutineScope, @Nullable Continuation continuation) {
+        return ((WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0088  */
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    @Nullable
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object invokeSuspend(@NotNull Object obj) {
+        Job job;
+        Job job2;
+        StateFlow animationScaleFlowFor;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                MotionDurationScaleImpl motionDurationScaleImpl = this.$systemDurationScaleSettingConsumer.element;
+                if (motionDurationScaleImpl != null) {
+                    Context applicationContext = this.$this_createLifecycleAwareWindowRecomposer.getContext().getApplicationContext();
+                    Intrinsics.checkNotNullExpressionValue(applicationContext, "context.applicationContext");
+                    animationScaleFlowFor = WindowRecomposer_androidKt.getAnimationScaleFlowFor(applicationContext);
+                    motionDurationScaleImpl.setScaleFactor(((Number) animationScaleFlowFor.getValue()).floatValue());
+                    job2 = BuildersKt__Builders_commonKt.launch$default(coroutineScope, null, null, new WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1$1$1(animationScaleFlowFor, motionDurationScaleImpl, null), 3, null);
+                } else {
+                    job2 = null;
+                }
+                try {
+                    Recomposer recomposer = this.$recomposer;
+                    this.L$0 = job2;
+                    this.label = 1;
+                    if (recomposer.runRecomposeAndApplyChanges(this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    job = job2;
+                } catch (Throwable th) {
+                    job = job2;
+                    th = th;
+                    if (job != null) {
+                        Job.DefaultImpls.cancel$default(job, null, 1, null);
+                    }
+                    this.$lifecycleOwner.getLifecycle().removeObserver(this.$self);
+                    throw th;
+                }
+            } catch (Throwable th2) {
+                th = th2;
+                job = null;
+            }
+        } else if (i == 1) {
+            job = (Job) this.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Throwable th3) {
+                th = th3;
+                if (job != null) {
+                }
+                this.$lifecycleOwner.getLifecycle().removeObserver(this.$self);
+                throw th;
+            }
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        if (job != null) {
+            Job.DefaultImpls.cancel$default(job, null, 1, null);
+        }
+        this.$lifecycleOwner.getLifecycle().removeObserver(this.$self);
+        return Unit.INSTANCE;
+    }
+}

@@ -1,0 +1,9 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.coreutils.internal.collection.CollectionUtils;
+import java.util.List;
+
+/* loaded from: classes10.dex */
+public interface J5 {
+    public static final List a = CollectionUtils.createSortedListWithoutRepetitions("key", "value", "type");
+}

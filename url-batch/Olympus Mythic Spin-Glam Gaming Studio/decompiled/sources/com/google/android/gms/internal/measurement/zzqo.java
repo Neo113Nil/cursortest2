@@ -1,0 +1,41 @@
+package com.google.android.gms.internal.measurement;
+
+import com.google.common.base.Supplier;
+import com.google.common.base.Suppliers;
+
+/* compiled from: com.google.android.gms:play-services-measurement-impl@@22.4.0 */
+/* loaded from: classes14.dex */
+public final class zzqo implements Supplier {
+    private static final zzqo zza = new zzqo();
+    private final Supplier zzb = Suppliers.ofInstance(new zzqq());
+
+    public static double zza() {
+        return zza.get().zza();
+    }
+
+    public static long zzb() {
+        return zza.get().zzb();
+    }
+
+    public static long zzc() {
+        return zza.get().zzc();
+    }
+
+    public static long zzd() {
+        return zza.get().zzd();
+    }
+
+    public static String zzf() {
+        return zza.get().zze();
+    }
+
+    public static boolean zzg() {
+        return zza.get().zzf();
+    }
+
+    @Override // com.google.common.base.Supplier
+    /* renamed from: zze, reason: merged with bridge method [inline-methods] */
+    public final zzqp get() {
+        return (zzqp) this.zzb.get();
+    }
+}

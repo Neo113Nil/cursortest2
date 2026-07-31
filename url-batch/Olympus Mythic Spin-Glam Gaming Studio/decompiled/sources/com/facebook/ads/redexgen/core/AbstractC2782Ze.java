@@ -1,0 +1,88 @@
+package com.facebook.ads.redexgen.core;
+
+import android.view.View;
+import com.facebook.ads.NativeAdLayout;
+import com.mobilefuse.sdk.identity.EidRequestBuilder;
+
+/* renamed from: com.facebook.ads.redexgen.X.Ze, reason: case insensitive filesystem */
+/* loaded from: assets/audience_network/classes2.dex */
+public abstract class AbstractC2782Ze {
+    public static String[] A00 = {"B", "b", "N7Y4O4Xp0bXRpwQYmrnUbbD5XPNn0nfl", "PsTgqcCc8jcMoxm2RXWy1mA6rhf59", "zMLnehec4ICfDGOtTSDp3symXOGZpaRx", "AnvCnC9uV", "JoTWE5M61fQkMjrwCjPz5KG5vu8cqeKb", "O6aKPphMSjoWO4xDWlhiQ7T2kp0fs"};
+    public static final int A01 = (int) (XX.A02 * 200.0f);
+    public static final int A03 = (int) (XX.A02 * 200.0f);
+    public static final int A02 = (int) (XX.A02 * 50.0f);
+
+    public static NF A00(NativeAdLayout nativeAdLayout) {
+        if (nativeAdLayout == null) {
+            return NF.A04;
+        }
+        if (A03(nativeAdLayout)) {
+            return NF.A05;
+        }
+        return NF.A03;
+    }
+
+    public static AbstractC2781Zd A01(C3218gi c3218gi, VA va, String str, View view) {
+        if (view == null) {
+            return null;
+        }
+        int w = view.getWidth();
+        int height = view.getHeight();
+        if (w >= A01 && height >= A01) {
+            return new MC(c3218gi, va, str);
+        }
+        if (w >= A03) {
+            int i = A02;
+            String[] strArr = A00;
+            if (strArr[6].charAt(28) == strArr[4].charAt(28)) {
+                throw new RuntimeException();
+            }
+            String[] strArr2 = A00;
+            strArr2[7] = "MXaU9iKOIfaGo19ccmM4SYJQh1BEv";
+            strArr2[3] = "urarsFS1owFx4szCeqq2cq67A77KP";
+            if (height >= i) {
+                return new MD(c3218gi, va, str);
+            }
+        }
+        return null;
+    }
+
+    public static ME A02(C3218gi c3218gi, VA va, String str, C2488Nm c2488Nm, InterfaceC2760Yi interfaceC2760Yi, InterfaceC2759Yh interfaceC2759Yh) {
+        return new ME(c3218gi, va, str, c2488Nm, interfaceC2760Yi, interfaceC2759Yh);
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:4:0x000e, code lost:
+    
+        if (r4 < r0) goto L6;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static boolean A03(NativeAdLayout nativeAdLayout) {
+        int width = nativeAdLayout.getWidth();
+        int height = nativeAdLayout.getHeight();
+        int w = A01;
+        if (width >= w) {
+            int w2 = A01;
+        }
+        int i = A03;
+        String[] strArr = A00;
+        String str = strArr[1];
+        String str2 = strArr[0];
+        int h = str.length();
+        int w3 = str2.length();
+        if (h != w3) {
+            throw new RuntimeException();
+        }
+        String[] strArr2 = A00;
+        strArr2[1] = EidRequestBuilder.REQUEST_FIELD_EMAIL;
+        strArr2[0] = "I";
+        if (width >= i) {
+            int w4 = A02;
+            if (height >= w4) {
+                return false;
+            }
+        }
+        return true;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338880556217",
+    "project_id": "slotanew",
+    "storage_bucket": "slotanew.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338880556217:android:9370986e52d0b6ec22ff68",
+        "android_client_info": {
+          "package_name": "com.lpprh20oprlk.kklip.gall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6H0KszyCFX_hrJFOGHGwkGFfLLZzZJDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

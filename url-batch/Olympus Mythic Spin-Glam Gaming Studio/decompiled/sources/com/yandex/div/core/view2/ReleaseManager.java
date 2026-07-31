@@ -1,0 +1,139 @@
+package com.yandex.div.core.view2;
+
+import android.view.View;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleEventObserver;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.ViewTreeLifecycleOwner;
+import com.yandex.div.core.dagger.DivScope;
+import com.yandex.div.core.expression.RuntimeStoreProvider;
+import com.yandex.div.internal.Log;
+import java.util.HashMap;
+import java.util.Set;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.collections.SetsKt;
+import org.jetbrains.annotations.NotNull;
+
+/* compiled from: ReleaseManager.kt */
+@Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0011\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u000f\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001a\u0010\u000e\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u000f\u001a\u00020\u00072\u0006\u0010\u0010\u001a\u00020\tH\u0012J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0010\u001a\u00020\tH\u0016R6\u0010\u0005\u001a*\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\t0\b0\u0006j\u0014\u0012\u0004\u0012\u00020\u0007\u0012\n\u0012\b\u0012\u0004\u0012\u00020\t0\b`\nX\u0092\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0001X\u0092\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0092\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0092\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/yandex/div/core/view2/ReleaseManager;", "", "runtimeStoreProvider", "Lcom/yandex/div/core/expression/RuntimeStoreProvider;", "(Lcom/yandex/div/core/expression/RuntimeStoreProvider;)V", "divToRelease", "Ljava/util/HashMap;", "Landroidx/lifecycle/LifecycleOwner;", "", "Lcom/yandex/div/core/view2/Div2View;", "Lkotlin/collections/HashMap;", "monitor", "observer", "Landroidx/lifecycle/LifecycleEventObserver;", "addLifecycleListener", "lifecycleOwner", "divView", "observeDivLifecycle", "", "Companion", "div_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
+@DivScope
+/* loaded from: classes13.dex */
+public class ReleaseManager {
+
+    @NotNull
+    public static final String NOT_ATTACHED_TO_LIFECYCLE_WARNING = "Attempt to bind a Div2View, which has no LifecycleOwner. Release event will not be caught! If you're using some long-lived resources, like a video player, call cleanup explicitly when you don't need Div2View anymore";
+
+    @NotNull
+    public static final String TAG = "ReleaseManager";
+
+    @NotNull
+    private final HashMap<LifecycleOwner, Set<Div2View>> divToRelease = new HashMap<>();
+
+    @NotNull
+    private final Object monitor = new Object();
+
+    @NotNull
+    private final LifecycleEventObserver observer = new LifecycleEventObserver() { // from class: com.yandex.div.core.view2.ReleaseManager$$ExternalSyntheticLambda0
+        @Override // androidx.lifecycle.LifecycleEventObserver
+        public final void onStateChanged(LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
+            ReleaseManager.observer$lambda$2(ReleaseManager.this, lifecycleOwner, event);
+        }
+    };
+
+    @NotNull
+    private final RuntimeStoreProvider runtimeStoreProvider;
+
+    /* compiled from: ReleaseManager.kt */
+    @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
+    public /* synthetic */ class WhenMappings {
+        public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+
+        static {
+            int[] iArr = new int[Lifecycle.Event.values().length];
+            try {
+                iArr[Lifecycle.Event.ON_DESTROY.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            $EnumSwitchMapping$0 = iArr;
+        }
+    }
+
+    public ReleaseManager(@NotNull RuntimeStoreProvider runtimeStoreProvider) {
+        this.runtimeStoreProvider = runtimeStoreProvider;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void observer$lambda$2(ReleaseManager releaseManager, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
+        synchronized (releaseManager.monitor) {
+            try {
+                if (WhenMappings.$EnumSwitchMapping$0[event.ordinal()] == 1) {
+                    Set<Div2View> set = releaseManager.divToRelease.get(lifecycleOwner);
+                    if (set != null) {
+                        for (Div2View div2View : set) {
+                            div2View.cleanup();
+                            releaseManager.runtimeStoreProvider.cleanupRuntime$div_release(div2View);
+                        }
+                    }
+                    releaseManager.divToRelease.remove(lifecycleOwner);
+                }
+                Unit unit = Unit.INSTANCE;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public void observeDivLifecycle(@NotNull final Div2View divView) {
+        LifecycleOwner lifecycleOwner = divView.getContext().getLifecycleOwner();
+        if (lifecycleOwner != null) {
+            addLifecycleListener(lifecycleOwner, divView);
+            return;
+        }
+        if (divView.isAttachedToWindow()) {
+            LifecycleOwner lifecycleOwner2 = ViewTreeLifecycleOwner.get(divView);
+            if (lifecycleOwner2 != null) {
+                addLifecycleListener(lifecycleOwner2, divView);
+                return;
+            } else {
+                Log.w(TAG, NOT_ATTACHED_TO_LIFECYCLE_WARNING);
+                return;
+            }
+        }
+        divView.addOnAttachStateChangeListener(new View.OnAttachStateChangeListener() { // from class: com.yandex.div.core.view2.ReleaseManager$observeDivLifecycle$$inlined$doOnAttach$1
+            @Override // android.view.View.OnAttachStateChangeListener
+            public void onViewDetachedFromWindow(@NotNull View view) {
+            }
+
+            @Override // android.view.View.OnAttachStateChangeListener
+            public void onViewAttachedToWindow(@NotNull View view) {
+                divView.removeOnAttachStateChangeListener(this);
+                LifecycleOwner lifecycleOwner3 = ViewTreeLifecycleOwner.get(divView);
+                if (lifecycleOwner3 != null) {
+                    this.addLifecycleListener(lifecycleOwner3, divView);
+                } else {
+                    Log.w(ReleaseManager.TAG, ReleaseManager.NOT_ATTACHED_TO_LIFECYCLE_WARNING);
+                }
+            }
+        });
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public Object addLifecycleListener(LifecycleOwner lifecycleOwner, Div2View divView) {
+        Object obj;
+        synchronized (this.monitor) {
+            try {
+                if (this.divToRelease.containsKey(lifecycleOwner)) {
+                    Set<Div2View> set = this.divToRelease.get(lifecycleOwner);
+                    obj = set != null ? Boolean.valueOf(set.add(divView)) : null;
+                } else {
+                    this.divToRelease.put(lifecycleOwner, SetsKt.mutableSetOf(divView));
+                    lifecycleOwner.getLifecycle().addObserver(this.observer);
+                    obj = Unit.INSTANCE;
+                }
+            } finally {
+            }
+        }
+        return obj;
+    }
+}

@@ -1,0 +1,42 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes10.dex */
+public final class zzfay implements zzfdg {
+    private final String zza;
+    private final boolean zzb;
+    private final boolean zzc;
+    private final boolean zzd;
+    private final boolean zze;
+
+    public zzfay(String str, boolean z, boolean z2, boolean z3, boolean z4) {
+        this.zza = str;
+        this.zzb = z;
+        this.zzc = z2;
+        this.zzd = z3;
+        this.zze = z4;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfdg
+    public final /* bridge */ /* synthetic */ void zza(Object obj) {
+        Bundle bundle = (Bundle) obj;
+        String str = this.zza;
+        if (!str.isEmpty()) {
+            bundle.putString("inspector_extras", str);
+        }
+        boolean z = this.zzb;
+        bundle.putInt("test_mode", z ? 1 : 0);
+        boolean z2 = this.zzc;
+        bundle.putInt("linked_device", z2 ? 1 : 0);
+        if (z || z2) {
+            if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzkL)).booleanValue()) {
+                bundle.putInt("risd", !this.zzd ? 1 : 0);
+            }
+            if (((Boolean) com.google.android.gms.ads.internal.client.zzba.zzc().zzd(zzbjg.zzkP)).booleanValue()) {
+                bundle.putBoolean("collect_response_logs", this.zze);
+            }
+        }
+    }
+}

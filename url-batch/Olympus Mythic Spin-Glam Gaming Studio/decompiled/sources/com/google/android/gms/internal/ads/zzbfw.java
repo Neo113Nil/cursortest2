@@ -1,0 +1,222 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.VisibleForTesting;
+import java.util.ArrayList;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes3.dex */
+public final class zzbfw {
+    private final int zza;
+    private final int zzb;
+    private final int zzc;
+    private final boolean zzd;
+    private final zzbgl zze;
+    private final zzbgs zzf;
+    private int zzn;
+    private final Object zzg = new Object();
+    private final ArrayList zzh = new ArrayList();
+    private final ArrayList zzi = new ArrayList();
+    private final ArrayList zzj = new ArrayList();
+    private int zzk = 0;
+    private int zzl = 0;
+    private int zzm = 0;
+    private String zzo = "";
+    private String zzp = "";
+    private String zzq = "";
+
+    public zzbfw(int i, int i2, int i3, int i4, int i5, int i6, int i7, boolean z) {
+        this.zza = i;
+        this.zzb = i2;
+        this.zzc = i3;
+        this.zzd = z;
+        this.zze = new zzbgl(i4);
+        this.zzf = new zzbgs(i5, i6, i7);
+    }
+
+    private final void zzm(@Nullable String str, boolean z, float f, float f2, float f3, float f4) {
+        if (str != null) {
+            if (str.length() < this.zzc) {
+                return;
+            }
+            synchronized (this.zzg) {
+                try {
+                    this.zzh.add(str);
+                    this.zzk += str.length();
+                    if (z) {
+                        this.zzi.add(str);
+                        this.zzj.add(new zzbgh(f, f2, f3, f4, r10.size() - 1));
+                    }
+                } catch (Throwable th) {
+                    throw th;
+                }
+            }
+        }
+    }
+
+    private static final String zzn(ArrayList arrayList, int i) {
+        if (arrayList.isEmpty()) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        int size = arrayList.size();
+        int i2 = 0;
+        while (i2 < size) {
+            sb.append((String) arrayList.get(i2));
+            sb.append(' ');
+            i2++;
+            if (sb.length() > 100) {
+                break;
+            }
+        }
+        sb.deleteCharAt(sb.length() - 1);
+        String sb2 = sb.toString();
+        return sb2.length() < 100 ? sb2 : sb2.substring(0, 100);
+    }
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof zzbfw)) {
+            return false;
+        }
+        if (obj == this) {
+            return true;
+        }
+        String str = ((zzbfw) obj).zzo;
+        return str != null && str.equals(this.zzo);
+    }
+
+    public final int hashCode() {
+        return this.zzo.hashCode();
+    }
+
+    public final String toString() {
+        ArrayList arrayList = this.zzh;
+        int i = this.zzl;
+        int i2 = this.zzn;
+        int i3 = this.zzk;
+        String zzn = zzn(arrayList, 100);
+        String zzn2 = zzn(this.zzi, 100);
+        String str = this.zzo;
+        String str2 = this.zzp;
+        String str3 = this.zzq;
+        int length = String.valueOf(i).length();
+        int length2 = String.valueOf(i2).length();
+        int length3 = String.valueOf(i3).length();
+        int length4 = String.valueOf(zzn).length();
+        int length5 = String.valueOf(zzn2).length();
+        int length6 = String.valueOf(str).length();
+        StringBuilder sb = new StringBuilder(length + 32 + length2 + 14 + length3 + 8 + length4 + 14 + length5 + 12 + length6 + 20 + String.valueOf(str2).length() + 32 + String.valueOf(str3).length());
+        sb.append("ActivityContent fetchId: ");
+        sb.append(i);
+        sb.append(" score:");
+        sb.append(i2);
+        sb.append(" total_length:");
+        sb.append(i3);
+        sb.append("\n text: ");
+        sb.append(zzn);
+        sb.append("\n viewableText");
+        sb.append(zzn2);
+        sb.append("\n signture: ");
+        sb.append(str);
+        sb.append("\n viewableSignture: ");
+        sb.append(str2);
+        sb.append("\n viewableSignatureForVertical: ");
+        sb.append(str3);
+        return sb.toString();
+    }
+
+    public final boolean zza() {
+        boolean z;
+        synchronized (this.zzg) {
+            z = this.zzm == 0;
+        }
+        return z;
+    }
+
+    public final String zzb() {
+        return this.zzo;
+    }
+
+    public final String zzc() {
+        return this.zzq;
+    }
+
+    public final void zzd() {
+        synchronized (this.zzg) {
+            this.zzm--;
+        }
+    }
+
+    public final void zze() {
+        synchronized (this.zzg) {
+            this.zzm++;
+        }
+    }
+
+    public final void zzf(String str, boolean z, float f, float f2, float f3, float f4) {
+        zzm(str, z, f, f2, f3, f4);
+        synchronized (this.zzg) {
+            try {
+                if (this.zzm < 0) {
+                    int i = com.google.android.gms.ads.internal.util.zze.zza;
+                    com.google.android.gms.ads.internal.util.client.zzo.zzd("ActivityContent: negative number of WebViews.");
+                }
+                zzi();
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public final void zzg(String str, boolean z, float f, float f2, float f3, float f4) {
+        zzm(str, z, f, f2, f3, f4);
+    }
+
+    public final void zzh() {
+        synchronized (this.zzg) {
+            try {
+                int zzj = zzj(this.zzk, this.zzl);
+                if (zzj > this.zzn) {
+                    this.zzn = zzj;
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public final void zzi() {
+        synchronized (this.zzg) {
+            try {
+                int zzj = zzj(this.zzk, this.zzl);
+                if (zzj > this.zzn) {
+                    this.zzn = zzj;
+                    if (!com.google.android.gms.ads.internal.zzt.zzh().zzp().zzc()) {
+                        zzbgl zzbglVar = this.zze;
+                        this.zzo = zzbglVar.zza(this.zzh);
+                        this.zzp = zzbglVar.zza(this.zzi);
+                    }
+                    if (!com.google.android.gms.ads.internal.zzt.zzh().zzp().zze()) {
+                        this.zzq = this.zzf.zza(this.zzi, this.zzj);
+                    }
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    @VisibleForTesting
+    final int zzj(int i, int i2) {
+        return this.zzd ? this.zzb : (i * this.zza) + (i2 * this.zzb);
+    }
+
+    public final void zzk(int i) {
+        this.zzl = i;
+    }
+
+    @VisibleForTesting
+    final int zzl() {
+        return this.zzk;
+    }
+}

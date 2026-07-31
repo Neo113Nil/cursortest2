@@ -1,0 +1,45 @@
+package com.unity3d.ads.core.utils;
+
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.BuildersKt__Builders_commonKt;
+import kotlinx.coroutines.CompletableJob;
+import kotlinx.coroutines.CoroutineDispatcher;
+import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.CoroutineScopeKt;
+import kotlinx.coroutines.Job;
+import kotlinx.coroutines.SupervisorKt;
+import org.jetbrains.annotations.NotNull;
+
+/* compiled from: CommonCoroutineTimer.kt */
+@Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J&\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\r2\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u0010H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/unity3d/ads/core/utils/CommonCoroutineTimer;", "Lcom/unity3d/ads/core/utils/CoroutineTimer;", "dispatcher", "Lkotlinx/coroutines/CoroutineDispatcher;", "<init>", "(Lkotlinx/coroutines/CoroutineDispatcher;)V", "job", "Lkotlinx/coroutines/CompletableJob;", "scope", "Lkotlinx/coroutines/CoroutineScope;", "start", "Lkotlinx/coroutines/Job;", "delayStartMillis", "", "repeatMillis", "action", "Lkotlin/Function0;", "", "unity-ads_defaultRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final class CommonCoroutineTimer implements CoroutineTimer {
+
+    @NotNull
+    private final CoroutineDispatcher dispatcher;
+
+    @NotNull
+    private final CompletableJob job;
+
+    @NotNull
+    private final CoroutineScope scope;
+
+    public CommonCoroutineTimer(@NotNull CoroutineDispatcher dispatcher) {
+        Intrinsics.checkNotNullParameter(dispatcher, "dispatcher");
+        this.dispatcher = dispatcher;
+        CompletableJob SupervisorJob$default = SupervisorKt.SupervisorJob$default(null, 1, null);
+        this.job = SupervisorJob$default;
+        this.scope = CoroutineScopeKt.CoroutineScope(dispatcher.plus(SupervisorJob$default));
+    }
+
+    @Override // com.unity3d.ads.core.utils.CoroutineTimer
+    @NotNull
+    public Job start(long delayStartMillis, long repeatMillis, @NotNull Function0 action) {
+        Job launch$default;
+        Intrinsics.checkNotNullParameter(action, "action");
+        launch$default = BuildersKt__Builders_commonKt.launch$default(this.scope, this.dispatcher, null, new CommonCoroutineTimer$start$1(delayStartMillis, action, repeatMillis, null), 2, null);
+        return launch$default;
+    }
+}

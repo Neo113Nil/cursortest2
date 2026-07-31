@@ -1,0 +1,151 @@
+package com.vungle.ads.fpd;
+
+import java.util.Map;
+import kotlin.Deprecated;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.UnknownFieldException;
+import kotlinx.serialization.builtins.BuiltinSerializersKt;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeDecoder;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.internal.GeneratedSerializer;
+import kotlinx.serialization.internal.LinkedHashMapSerializer;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+import kotlinx.serialization.internal.StringSerializer;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(bv = {}, d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001J\u001a\u0010\u0005\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00040\u0003HÖ\u0001¢\u0006\u0004\b\u0005\u0010\u0006J\u0011\u0010\t\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007HÖ\u0001J\u0019\u0010\u000e\u001a\u00020\r2\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\f\u001a\u00020\u0002HÖ\u0001R\u0014\u0010\u0012\u001a\u00020\u000f8VXÖ\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u0013"}, d2 = {"com/vungle/ads/fpd/FirstPartyData.$serializer", "Lkotlinx/serialization/internal/GeneratedSerializer;", "Lcom/vungle/ads/fpd/FirstPartyData;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "", "serialize", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "vungle-ads_release"}, k = 1, mv = {1, 7, 1})
+@Deprecated
+/* loaded from: classes8.dex */
+public final class FirstPartyData$$serializer implements GeneratedSerializer {
+
+    @NotNull
+    public static final FirstPartyData$$serializer INSTANCE;
+    public static final /* synthetic */ SerialDescriptor descriptor;
+
+    static {
+        FirstPartyData$$serializer firstPartyData$$serializer = new FirstPartyData$$serializer();
+        INSTANCE = firstPartyData$$serializer;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.vungle.ads.fpd.FirstPartyData", firstPartyData$$serializer, 6);
+        pluginGeneratedSerialDescriptor.addElement("model_version", true);
+        pluginGeneratedSerialDescriptor.addElement("session_context", true);
+        pluginGeneratedSerialDescriptor.addElement("demographic", true);
+        pluginGeneratedSerialDescriptor.addElement("location", true);
+        pluginGeneratedSerialDescriptor.addElement("revenue", true);
+        pluginGeneratedSerialDescriptor.addElement("custom_data", true);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    @Override // kotlinx.serialization.internal.GeneratedSerializer
+    @NotNull
+    public KSerializer[] childSerializers() {
+        StringSerializer stringSerializer = StringSerializer.INSTANCE;
+        return new KSerializer[]{stringSerializer, BuiltinSerializersKt.getNullable(SessionContext$$serializer.INSTANCE), BuiltinSerializersKt.getNullable(Demographic$$serializer.INSTANCE), BuiltinSerializersKt.getNullable(Location$$serializer.INSTANCE), BuiltinSerializersKt.getNullable(Revenue$$serializer.INSTANCE), BuiltinSerializersKt.getNullable(new LinkedHashMapSerializer(stringSerializer, stringSerializer))};
+    }
+
+    @Override // kotlinx.serialization.DeserializationStrategy
+    @NotNull
+    public FirstPartyData deserialize(@NotNull Decoder decoder) {
+        int i;
+        String str;
+        Object obj;
+        Object obj2;
+        Object obj3;
+        Object obj4;
+        Object obj5;
+        Intrinsics.checkNotNullParameter(decoder, "decoder");
+        SerialDescriptor descriptor2 = getDescriptor();
+        CompositeDecoder beginStructure = decoder.beginStructure(descriptor2);
+        boolean z = true;
+        String str2 = null;
+        if (beginStructure.decodeSequentially()) {
+            String decodeStringElement = beginStructure.decodeStringElement(descriptor2, 0);
+            obj = beginStructure.decodeNullableSerializableElement(descriptor2, 1, SessionContext$$serializer.INSTANCE, null);
+            obj2 = beginStructure.decodeNullableSerializableElement(descriptor2, 2, Demographic$$serializer.INSTANCE, null);
+            obj3 = beginStructure.decodeNullableSerializableElement(descriptor2, 3, Location$$serializer.INSTANCE, null);
+            obj4 = beginStructure.decodeNullableSerializableElement(descriptor2, 4, Revenue$$serializer.INSTANCE, null);
+            StringSerializer stringSerializer = StringSerializer.INSTANCE;
+            obj5 = beginStructure.decodeNullableSerializableElement(descriptor2, 5, new LinkedHashMapSerializer(stringSerializer, stringSerializer), null);
+            str = decodeStringElement;
+            i = 63;
+        } else {
+            boolean z2 = true;
+            int i2 = 0;
+            Object obj6 = null;
+            Object obj7 = null;
+            Object obj8 = null;
+            Object obj9 = null;
+            Object obj10 = null;
+            while (z2) {
+                int decodeElementIndex = beginStructure.decodeElementIndex(descriptor2);
+                switch (decodeElementIndex) {
+                    case -1:
+                        z2 = false;
+                        z = z;
+                    case 0:
+                        str2 = beginStructure.decodeStringElement(descriptor2, 0);
+                        i2 |= 1;
+                        z = z;
+                    case 1:
+                        obj6 = beginStructure.decodeNullableSerializableElement(descriptor2, 1, SessionContext$$serializer.INSTANCE, obj6);
+                        i2 |= 2;
+                        z = true;
+                    case 2:
+                        obj7 = beginStructure.decodeNullableSerializableElement(descriptor2, 2, Demographic$$serializer.INSTANCE, obj7);
+                        i2 |= 4;
+                        z = true;
+                    case 3:
+                        obj8 = beginStructure.decodeNullableSerializableElement(descriptor2, 3, Location$$serializer.INSTANCE, obj8);
+                        i2 |= 8;
+                        z = true;
+                    case 4:
+                        obj9 = beginStructure.decodeNullableSerializableElement(descriptor2, 4, Revenue$$serializer.INSTANCE, obj9);
+                        i2 |= 16;
+                        z = true;
+                    case 5:
+                        StringSerializer stringSerializer2 = StringSerializer.INSTANCE;
+                        obj10 = beginStructure.decodeNullableSerializableElement(descriptor2, 5, new LinkedHashMapSerializer(stringSerializer2, stringSerializer2), obj10);
+                        i2 |= 32;
+                        z = true;
+                    default:
+                        throw new UnknownFieldException(decodeElementIndex);
+                }
+            }
+            i = i2;
+            str = str2;
+            obj = obj6;
+            obj2 = obj7;
+            obj3 = obj8;
+            obj4 = obj9;
+            obj5 = obj10;
+        }
+        beginStructure.endStructure(descriptor2);
+        return new FirstPartyData(i, str, (SessionContext) obj, (Demographic) obj2, (Location) obj3, (Revenue) obj4, (Map) obj5, null);
+    }
+
+    @Override // kotlinx.serialization.KSerializer, kotlinx.serialization.SerializationStrategy, kotlinx.serialization.DeserializationStrategy
+    @NotNull
+    public SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    @Override // kotlinx.serialization.SerializationStrategy
+    public void serialize(@NotNull Encoder encoder, @NotNull FirstPartyData value) {
+        Intrinsics.checkNotNullParameter(encoder, "encoder");
+        Intrinsics.checkNotNullParameter(value, "value");
+        SerialDescriptor descriptor2 = getDescriptor();
+        CompositeEncoder beginStructure = encoder.beginStructure(descriptor2);
+        FirstPartyData.write$Self(value, beginStructure, descriptor2);
+        beginStructure.endStructure(descriptor2);
+    }
+
+    @Override // kotlinx.serialization.internal.GeneratedSerializer
+    @NotNull
+    public KSerializer[] typeParametersSerializers() {
+        return GeneratedSerializer.DefaultImpls.typeParametersSerializers(this);
+    }
+}

@@ -1,0 +1,33 @@
+package io.appmetrica.analytics.impl;
+
+import io.appmetrica.analytics.coreapi.internal.identifiers.IdentifierStatus;
+
+/* loaded from: classes15.dex */
+public abstract /* synthetic */ class P {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[IdentifierStatus.values().length];
+        a = iArr;
+        try {
+            iArr[IdentifierStatus.OK.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            a[IdentifierStatus.FEATURE_DISABLED.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            a[IdentifierStatus.IDENTIFIER_PROVIDER_UNAVAILABLE.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            a[IdentifierStatus.INVALID_ADV_ID.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            a[IdentifierStatus.FORBIDDEN_BY_CLIENT_CONFIG.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+    }
+}

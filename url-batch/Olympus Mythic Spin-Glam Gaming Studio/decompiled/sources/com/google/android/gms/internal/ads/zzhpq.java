@@ -1,0 +1,44 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes6.dex */
+public final class zzhpq extends zzhqb {
+    private final zzhpz zza;
+    private final zzicj zzb;
+    private final zzich zzc;
+    private final Integer zzd;
+
+    /* synthetic */ zzhpq(zzhpz zzhpzVar, zzicj zzicjVar, zzich zzichVar, Integer num, byte[] bArr) {
+        this.zza = zzhpzVar;
+        this.zzb = zzicjVar;
+        this.zzc = zzichVar;
+        this.zzd = num;
+    }
+
+    public static zzhpp zzc() {
+        return new zzhpp(null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhqb, com.google.android.gms.internal.ads.zzhes
+    public final /* synthetic */ zzhfj zza() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhes
+    public final Integer zzb() {
+        return this.zzd;
+    }
+
+    public final zzicj zzd() {
+        return this.zzb;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhqb
+    public final zzich zze() {
+        return this.zzc;
+    }
+
+    public final zzhpz zzf() {
+        return this.zza;
+    }
+}

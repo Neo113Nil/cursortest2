@@ -1,0 +1,14 @@
+package com.google.android.gms.internal.auth;
+
+import android.content.Context;
+
+/* compiled from: com.google.android.gms:play-services-auth-base@@18.0.4 */
+/* loaded from: classes4.dex */
+abstract class zzda {
+    zzda() {
+    }
+
+    abstract Context zza();
+
+    abstract zzdj zzb();
+}

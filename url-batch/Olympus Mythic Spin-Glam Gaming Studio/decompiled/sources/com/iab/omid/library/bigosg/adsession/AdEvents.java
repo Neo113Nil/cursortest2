@@ -1,0 +1,51 @@
+package com.iab.omid.library.bigosg.adsession;
+
+import androidx.annotation.NonNull;
+import com.iab.omid.library.bigosg.adsession.media.VastProperties;
+import com.iab.omid.library.bigosg.utils.g;
+
+/* loaded from: classes6.dex */
+public final class AdEvents {
+    private final a adSession;
+
+    private AdEvents(a aVar) {
+        this.adSession = aVar;
+    }
+
+    public static AdEvents createAdEvents(AdSession adSession) {
+        a aVar = (a) adSession;
+        g.a(adSession, "AdSession is null");
+        g.g(aVar);
+        g.b(aVar);
+        AdEvents adEvents = new AdEvents(aVar);
+        aVar.d().a(adEvents);
+        return adEvents;
+    }
+
+    public final void impressionOccurred() {
+        g.b(this.adSession);
+        g.e(this.adSession);
+        if (!this.adSession.h()) {
+            try {
+                this.adSession.start();
+            } catch (Exception unused) {
+            }
+        }
+        if (this.adSession.h()) {
+            this.adSession.m();
+        }
+    }
+
+    public final void loaded() {
+        g.a(this.adSession);
+        g.e(this.adSession);
+        this.adSession.n();
+    }
+
+    public final void loaded(@NonNull VastProperties vastProperties) {
+        g.a(vastProperties, "VastProperties is null");
+        g.a(this.adSession);
+        g.e(this.adSession);
+        this.adSession.a(vastProperties.a());
+    }
+}

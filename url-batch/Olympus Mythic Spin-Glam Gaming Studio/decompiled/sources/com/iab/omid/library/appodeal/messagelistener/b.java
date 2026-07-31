@@ -1,0 +1,12 @@
+package com.iab.omid.library.appodeal.messagelistener;
+
+import org.json.JSONObject;
+
+/* loaded from: classes4.dex */
+public interface b {
+    String getListenerName();
+
+    void onMessageReceived(String str, JSONObject jSONObject);
+
+    void onWebMessageListenerUnsupported();
+}

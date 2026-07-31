@@ -1,0 +1,41 @@
+package com.moloco.sdk.internal.ilrd.model;
+
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: classes12.dex */
+public final class a {
+    public static final a a = new a("MAX", 0);
+    public static final a b = new a("LEVELPLAY", 1);
+    public static final /* synthetic */ a[] c;
+    public static final /* synthetic */ EnumEntries d;
+
+    static {
+        a[] a2 = a();
+        c = a2;
+        d = EnumEntriesKt.enumEntries(a2);
+    }
+
+    public a(String str, int i) {
+    }
+
+    public static final /* synthetic */ a[] a() {
+        return new a[]{a, b};
+    }
+
+    @NotNull
+    public static EnumEntries b() {
+        return d;
+    }
+
+    public static a valueOf(String str) {
+        return (a) Enum.valueOf(a.class, str);
+    }
+
+    public static a[] values() {
+        return (a[]) c.clone();
+    }
+}

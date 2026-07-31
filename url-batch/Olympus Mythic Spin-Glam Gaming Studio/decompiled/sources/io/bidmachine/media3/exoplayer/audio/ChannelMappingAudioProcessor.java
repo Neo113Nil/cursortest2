@@ -1,0 +1,86 @@
+package io.bidmachine.media3.exoplayer.audio;
+
+import androidx.annotation.Nullable;
+import io.bidmachine.media3.common.audio.AudioProcessor;
+import io.bidmachine.media3.common.util.Assertions;
+import io.bidmachine.media3.common.util.Util;
+import java.nio.ByteBuffer;
+import java.util.Arrays;
+
+/* loaded from: classes5.dex */
+final class ChannelMappingAudioProcessor extends io.bidmachine.media3.common.audio.BaseAudioProcessor {
+
+    @Nullable
+    private int[] outputChannels;
+
+    @Nullable
+    private int[] pendingOutputChannels;
+
+    ChannelMappingAudioProcessor() {
+    }
+
+    public void setChannelMap(@Nullable int[] iArr) {
+        this.pendingOutputChannels = iArr;
+    }
+
+    @Override // io.bidmachine.media3.common.audio.BaseAudioProcessor
+    public AudioProcessor.AudioFormat onConfigure(AudioProcessor.AudioFormat audioFormat) throws AudioProcessor.UnhandledAudioFormatException {
+        int[] iArr = this.pendingOutputChannels;
+        if (iArr == null) {
+            return AudioProcessor.AudioFormat.NOT_SET;
+        }
+        int i = audioFormat.encoding;
+        if (i != 2 && i != 4) {
+            throw new AudioProcessor.UnhandledAudioFormatException(audioFormat);
+        }
+        boolean z = audioFormat.channelCount != iArr.length;
+        int i2 = 0;
+        while (i2 < iArr.length) {
+            int i3 = iArr[i2];
+            if (i3 >= audioFormat.channelCount) {
+                throw new AudioProcessor.UnhandledAudioFormatException("Channel map (" + Arrays.toString(iArr) + ") trying to access non-existent input channel.", audioFormat);
+            }
+            z |= i3 != i2;
+            i2++;
+        }
+        if (z) {
+            return new AudioProcessor.AudioFormat(audioFormat.sampleRate, iArr.length, audioFormat.encoding);
+        }
+        return AudioProcessor.AudioFormat.NOT_SET;
+    }
+
+    @Override // io.bidmachine.media3.common.audio.AudioProcessor
+    public void queueInput(ByteBuffer byteBuffer) {
+        int[] iArr = (int[]) Assertions.checkNotNull(this.outputChannels);
+        int position = byteBuffer.position();
+        int limit = byteBuffer.limit();
+        ByteBuffer replaceOutputBuffer = replaceOutputBuffer(((limit - position) / this.inputAudioFormat.bytesPerFrame) * this.outputAudioFormat.bytesPerFrame);
+        while (position < limit) {
+            for (int i : iArr) {
+                int byteDepth = (Util.getByteDepth(this.inputAudioFormat.encoding) * i) + position;
+                int i2 = this.inputAudioFormat.encoding;
+                if (i2 == 2) {
+                    replaceOutputBuffer.putShort(byteBuffer.getShort(byteDepth));
+                } else if (i2 == 4) {
+                    replaceOutputBuffer.putFloat(byteBuffer.getFloat(byteDepth));
+                } else {
+                    throw new IllegalStateException("Unexpected encoding: " + this.inputAudioFormat.encoding);
+                }
+            }
+            position += this.inputAudioFormat.bytesPerFrame;
+        }
+        byteBuffer.position(limit);
+        replaceOutputBuffer.flip();
+    }
+
+    @Override // io.bidmachine.media3.common.audio.BaseAudioProcessor
+    protected void onFlush() {
+        this.outputChannels = this.pendingOutputChannels;
+    }
+
+    @Override // io.bidmachine.media3.common.audio.BaseAudioProcessor
+    protected void onReset() {
+        this.outputChannels = null;
+        this.pendingOutputChannels = null;
+    }
+}

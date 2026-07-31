@@ -1,0 +1,57 @@
+package com.google.android.gms.ads.internal.adaptersettings;
+
+import androidx.annotation.Nullable;
+import com.google.android.gms.ads.internal.client.zzba;
+import com.google.android.gms.common.annotation.KeepForSdk;
+import com.google.android.gms.internal.ads.zzbip;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@25.4.0 */
+/* loaded from: classes11.dex */
+class AdapterSettings {
+
+    @Nullable
+    private static volatile AdapterSettings instance;
+    private final zzbip adapterSettingsInternal = zzba.zzd();
+
+    AdapterSettings() {
+    }
+
+    @KeepForSdk
+    private boolean getBoolean(String str, boolean z) {
+        return this.adapterSettingsInternal.zzf(str, z);
+    }
+
+    @KeepForSdk
+    private float getFloat(String str, float f) {
+        return this.adapterSettingsInternal.zze(str, f);
+    }
+
+    public static AdapterSettings getInstance() {
+        if (instance == null) {
+            synchronized (AdapterSettings.class) {
+                try {
+                    if (instance == null) {
+                        instance = new AdapterSettings();
+                    }
+                } finally {
+                }
+            }
+        }
+        return instance;
+    }
+
+    @KeepForSdk
+    private int getInt(String str, int i) {
+        return this.adapterSettingsInternal.zzd(str, i);
+    }
+
+    @KeepForSdk
+    private long getLong(String str, long j) {
+        return this.adapterSettingsInternal.zzc(str, j);
+    }
+
+    @KeepForSdk
+    private String getString(String str, String str2) {
+        return this.adapterSettingsInternal.zzb(str, str2);
+    }
+}

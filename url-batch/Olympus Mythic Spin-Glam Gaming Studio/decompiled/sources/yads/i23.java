@@ -1,0 +1,126 @@
+package yads;
+
+import android.os.SystemClock;
+import com.inmobi.media.core.config.models.AdConfig;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.util.Arrays;
+
+/* loaded from: classes4.dex */
+public abstract class i23 {
+    public static final Object a = new Object();
+    public static final Object b = new Object();
+    public static boolean c;
+    public static long d;
+
+    public static long a() {
+        DatagramSocket datagramSocket;
+        long j;
+        synchronized (b) {
+        }
+        InetAddress byName = InetAddress.getByName("time.android.com");
+        DatagramSocket datagramSocket2 = new DatagramSocket();
+        try {
+            datagramSocket2.setSoTimeout(10000);
+            byte[] bArr = new byte[48];
+            DatagramPacket datagramPacket = new DatagramPacket(bArr, 48, byName, 123);
+            bArr[0] = 27;
+            long currentTimeMillis = System.currentTimeMillis();
+            long elapsedRealtime = SystemClock.elapsedRealtime();
+            if (currentTimeMillis == 0) {
+                Arrays.fill(bArr, 40, 48, (byte) 0);
+                j = currentTimeMillis;
+                datagramSocket = datagramSocket2;
+            } else {
+                long j2 = currentTimeMillis / 1000;
+                long j3 = currentTimeMillis - (j2 * 1000);
+                long j4 = j2 + 2208988800L;
+                j = currentTimeMillis;
+                bArr[40] = (byte) (j4 >> 24);
+                bArr[41] = (byte) (j4 >> 16);
+                datagramSocket = datagramSocket2;
+                try {
+                    bArr[42] = (byte) (j4 >> 8);
+                    bArr[43] = (byte) j4;
+                    long j5 = (j3 * 4294967296L) / 1000;
+                    bArr[44] = (byte) (j5 >> 24);
+                    bArr[45] = (byte) (j5 >> 16);
+                    bArr[46] = (byte) (j5 >> 8);
+                    bArr[47] = (byte) (Math.random() * 255.0d);
+                } catch (Throwable th) {
+                    th = th;
+                    Throwable th2 = th;
+                    try {
+                        datagramSocket.close();
+                        throw th2;
+                    } catch (Throwable th3) {
+                        th2.addSuppressed(th3);
+                        throw th2;
+                    }
+                }
+            }
+            datagramSocket.send(datagramPacket);
+            datagramSocket.receive(new DatagramPacket(bArr, 48));
+            long elapsedRealtime2 = SystemClock.elapsedRealtime();
+            long j6 = (elapsedRealtime2 - elapsedRealtime) + j;
+            byte b2 = bArr[0];
+            int i = bArr[1] & AdConfig.NETWORK_LOAD_LIMIT_DISABLED;
+            long b3 = b(bArr, 24);
+            long b4 = b(bArr, 32);
+            long b5 = b(bArr, 40);
+            a((byte) ((b2 >> 6) & 3), (byte) (b2 & 7), i, b5);
+            long j7 = (j6 + (((b5 - j6) + (b4 - b3)) / 2)) - elapsedRealtime2;
+            datagramSocket.close();
+            return j7;
+        } catch (Throwable th4) {
+            th = th4;
+            datagramSocket = datagramSocket2;
+        }
+    }
+
+    public static long b(byte[] bArr, int i) {
+        long a2 = a(bArr, i);
+        long a3 = a(bArr, i + 4);
+        if (a2 == 0 && a3 == 0) {
+            return 0L;
+        }
+        return ((a3 * 1000) / 4294967296L) + ((a2 - 2208988800L) * 1000);
+    }
+
+    public static long a(byte[] bArr, int i) {
+        int i2 = bArr[i];
+        int i3 = bArr[i + 1];
+        int i4 = bArr[i + 2];
+        int i5 = bArr[i + 3];
+        if ((i2 & 128) == 128) {
+            i2 = (i2 & 127) + 128;
+        }
+        if ((i3 & 128) == 128) {
+            i3 = (i3 & 127) + 128;
+        }
+        if ((i4 & 128) == 128) {
+            i4 = (i4 & 127) + 128;
+        }
+        if ((i5 & 128) == 128) {
+            i5 = (i5 & 127) + 128;
+        }
+        return (i2 << 24) + (i3 << 16) + (i4 << 8) + i5;
+    }
+
+    public static void a(byte b2, byte b3, int i, long j) {
+        if (b2 == 3) {
+            throw new IOException("SNTP: Unsynchronized server");
+        }
+        if (b3 != 4 && b3 != 5) {
+            throw new IOException(gg2.a(b3, "SNTP: Untrusted mode: "));
+        }
+        if (i == 0 || i > 15) {
+            throw new IOException(gg2.a(i, "SNTP: Untrusted stratum: "));
+        }
+        if (j == 0) {
+            throw new IOException("SNTP: Zero transmitTime");
+        }
+    }
+}

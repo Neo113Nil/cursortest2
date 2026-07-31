@@ -1,0 +1,26 @@
+package io.bidmachine.protobuf.headerbidding;
+
+import com.explorestack.protobuf.MessageLite;
+import com.explorestack.protobuf.MessageOrBuilder;
+import io.bidmachine.protobuf.headerbidding.HeaderBiddingPlacement;
+import java.util.List;
+
+/* loaded from: classes3.dex */
+public interface HeaderBiddingPlacementOrBuilder extends MessageOrBuilder {
+    HeaderBiddingPlacement.AdUnit getAdUnits(int i);
+
+    int getAdUnitsCount();
+
+    List<HeaderBiddingPlacement.AdUnit> getAdUnitsList();
+
+    HeaderBiddingPlacement.AdUnitOrBuilder getAdUnitsOrBuilder(int i);
+
+    List<? extends HeaderBiddingPlacement.AdUnitOrBuilder> getAdUnitsOrBuilderList();
+
+    @Override // com.explorestack.protobuf.MessageOrBuilder
+    /* renamed from: getDefaultInstanceForType */
+    /* synthetic */ MessageLite mo3244getDefaultInstanceForType();
+
+    @Override // com.explorestack.protobuf.MessageOrBuilder
+    /* synthetic */ boolean isInitialized();
+}

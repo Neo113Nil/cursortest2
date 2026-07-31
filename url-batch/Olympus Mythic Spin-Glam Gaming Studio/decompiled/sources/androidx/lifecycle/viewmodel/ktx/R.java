@@ -1,0 +1,5 @@
+package androidx.lifecycle.viewmodel.ktx;
+
+/* loaded from: classes4.dex */
+public final class R {
+}

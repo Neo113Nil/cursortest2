@@ -1,0 +1,32 @@
+package com.ogury.core.internal.datastore.datastore.core;
+
+import kotlin.Metadata;
+
+/* compiled from: r8-map-id-f6b89802f4bb37a88df877e1128ae5b0c949df87377d83c36e528e9a9b869b70 */
+@Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\b\u0002\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B\u0015\u0012\u0006\u0010\u0003\u001a\u00028\u0000\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0006\u0010\f\u001a\u00020\rR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0013\u0010\u0003\u001a\u00028\u0000¢\u0006\n\n\u0002\u0010\u000b\u001a\u0004\b\t\u0010\n¨\u0006\u000e"}, d2 = {"Lcom/ogury/core/internal/datastore/datastore/core/Data;", "T", "Lcom/ogury/core/internal/datastore/datastore/core/State;", "value", "hashCode", "", "(Ljava/lang/Object;I)V", "getHashCode", "()I", "getValue", "()Ljava/lang/Object;", "Ljava/lang/Object;", "checkHashCode", "", "sdk-core_prodRelease"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* loaded from: classes5.dex */
+final class Data<T> extends State<T> {
+    private final int hashCode;
+    private final T value;
+
+    public Data(T t, int i) {
+        super(null);
+        this.value = t;
+        this.hashCode = i;
+    }
+
+    public final void checkHashCode() {
+        T t = this.value;
+        if ((t != null ? t.hashCode() : 0) != this.hashCode) {
+            throw new IllegalStateException("Data in DataStore was mutated but DataStore is only compatible with Immutable types.");
+        }
+    }
+
+    public final int getHashCode() {
+        return this.hashCode;
+    }
+
+    public final T getValue() {
+        return this.value;
+    }
+}

@@ -1,0 +1,16 @@
+package com.smaato.sdk.ng.utils;
+
+import android.content.Context;
+import android.graphics.Point;
+import android.view.Display;
+import android.view.WindowManager;
+
+/* loaded from: classes10.dex */
+public class ScreenDimensionsUtils {
+    public Point getScreenDimensionsToPoint(Context context) {
+        Display defaultDisplay = ((WindowManager) context.getSystemService("window")).getDefaultDisplay();
+        Point point = new Point();
+        defaultDisplay.getSize(point);
+        return point;
+    }
+}

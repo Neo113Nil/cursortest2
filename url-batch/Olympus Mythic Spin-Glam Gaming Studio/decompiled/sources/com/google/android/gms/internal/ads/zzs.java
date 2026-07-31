@@ -1,0 +1,38 @@
+package com.google.android.gms.internal.ads;
+
+import android.util.SparseBooleanArray;
+import androidx.annotation.Nullable;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes6.dex */
+public final class zzs {
+    private final SparseBooleanArray zza;
+
+    public final boolean equals(@Nullable Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof zzs) {
+            return this.zza.equals(((zzs) obj).zza);
+        }
+        return false;
+    }
+
+    public final boolean zza(int i) {
+        return this.zza.get(i);
+    }
+
+    public final int zzb() {
+        return this.zza.size();
+    }
+
+    public final int zzc(int i) {
+        SparseBooleanArray sparseBooleanArray = this.zza;
+        zzguk.zzm(i, sparseBooleanArray.size(), "index");
+        return sparseBooleanArray.keyAt(i);
+    }
+
+    public final int hashCode() {
+        return this.zza.hashCode();
+    }
+}

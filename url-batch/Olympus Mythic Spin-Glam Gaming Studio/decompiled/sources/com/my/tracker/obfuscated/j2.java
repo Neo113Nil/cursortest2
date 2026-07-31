@@ -1,0 +1,141 @@
+package com.my.tracker.obfuscated;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteStatement;
+import java.io.Closeable;
+
+/* loaded from: classes10.dex */
+final class j2 {
+    private final String[] a = new String[1];
+    private final SQLiteDatabase b;
+    private final SQLiteStatement c;
+    private final SQLiteStatement d;
+    private final SQLiteStatement e;
+    private final SQLiteStatement f;
+
+    static abstract class a implements Closeable {
+        final Cursor a;
+
+        a(Cursor cursor) {
+            this.a = cursor;
+        }
+
+        final boolean b() {
+            return this.a.moveToNext();
+        }
+
+        @Override // java.io.Closeable, java.lang.AutoCloseable
+        public final void close() {
+            try {
+                this.a.close();
+            } catch (Throwable th) {
+                x2.b("TimeSpentDataBaseSQL: AbstractReader error: error while closing cursor", th);
+            }
+        }
+
+        protected void finalize() {
+            super.finalize();
+            close();
+        }
+    }
+
+    static final class b extends a {
+        b(Cursor cursor) {
+            super(cursor);
+        }
+
+        byte[] m() {
+            return this.a.getBlob(2);
+        }
+
+        long n() {
+            return this.a.getLong(0);
+        }
+    }
+
+    private j2(SQLiteDatabase sQLiteDatabase) {
+        this.b = sQLiteDatabase;
+        this.d = sQLiteDatabase.compileStatement("SELECT COUNT(*) FROM table_tick_packet");
+        this.c = sQLiteDatabase.compileStatement("INSERT OR IGNORE INTO table_tick_packet(timestamp, content) VALUES (?, ?)");
+        this.e = sQLiteDatabase.compileStatement("DELETE FROM table_tick_packet WHERE packet_id = ?");
+        this.f = sQLiteDatabase.compileStatement("DELETE FROM table_tick_packet WHERE packet_id IN (SELECT packet_id FROM table_tick_packet ORDER BY timestamp ASC LIMIT ?)");
+    }
+
+    static j2 a(String str, Context context) {
+        String format = String.format("mytracker_timespent_%s.db", str);
+        SQLiteDatabase openOrCreateDatabase = context.openOrCreateDatabase(format, 0, null);
+        if (openOrCreateDatabase == null) {
+            throw new Exception("TimeSpentDataBaseSQL: context.openOrCreateDatabase failed");
+        }
+        if (openOrCreateDatabase.getVersion() != 1) {
+            openOrCreateDatabase.close();
+            context.deleteDatabase(format);
+            openOrCreateDatabase = context.openOrCreateDatabase(format, 0, null);
+            openOrCreateDatabase.setVersion(1);
+            openOrCreateDatabase.execSQL("CREATE TABLE IF NOT EXISTS table_tick_packet(packet_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, timestamp INTEGER NOT NULL, content BLOB NOT NULL)");
+            openOrCreateDatabase.execSQL("CREATE INDEX IF NOT EXISTS table_tick_packettimestamp ON table_tick_packet(timestamp)");
+        }
+        return new j2(openOrCreateDatabase);
+    }
+
+    b b(int i) {
+        this.a[0] = String.valueOf(i);
+        return new b(this.b.rawQuery("SELECT packet_id, timestamp, content FROM table_tick_packet ORDER BY timestamp DESC LIMIT ?", this.a));
+    }
+
+    long a(long j, byte[] bArr) {
+        this.b.beginTransaction();
+        try {
+            this.c.clearBindings();
+            this.c.bindLong(1, j);
+            this.c.bindBlob(2, bArr);
+            long executeInsert = this.c.executeInsert();
+            if (executeInsert >= 0) {
+                this.b.setTransactionSuccessful();
+                x2.a("TimeSpentDataBaseSQL: 1 tick packet (packetId = " + executeInsert + ") inserted to database (reason: store tick packet)");
+                return executeInsert;
+            }
+            throw new Exception("TimeSpentDataBaseSQL: sql insert failed");
+        } finally {
+            this.b.endTransaction();
+        }
+    }
+
+    int a() {
+        return (int) this.d.simpleQueryForLong();
+    }
+
+    void a(long[] jArr) {
+        this.b.beginTransaction();
+        try {
+            int i = 0;
+            for (long j : jArr) {
+                i += a(j);
+            }
+            x2.a("TimeSpentDataBaseSQL: " + i + " tick packet(s) removed from database (reason: delete " + jArr.length + " tick packets)");
+            this.b.setTransactionSuccessful();
+            this.b.endTransaction();
+        } catch (Throwable th) {
+            this.b.endTransaction();
+            throw th;
+        }
+    }
+
+    int a(int i) {
+        this.f.clearBindings();
+        this.f.bindLong(1, i);
+        int executeUpdateDelete = this.f.executeUpdateDelete();
+        x2.a("TimeSpentDataBaseSQL: " + executeUpdateDelete + " oldest tick packet(s) removed from database (reason: delete " + i + " oldest tick packets)");
+        return executeUpdateDelete;
+    }
+
+    int a(long j) {
+        this.e.clearBindings();
+        this.e.bindLong(1, j);
+        int executeUpdateDelete = this.e.executeUpdateDelete();
+        x2.a("TimeSpentDataBaseSQL: " + executeUpdateDelete + " tick packet removed from database (reason: delete tick packet with packetId = " + j + ")");
+        return executeUpdateDelete;
+    }
+}

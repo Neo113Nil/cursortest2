@@ -1,0 +1,23 @@
+package com.ironsource.adqualitysdk.sdk.i;
+
+import com.google.android.gms.ads.reward.RewardItem;
+import java.util.ArrayList;
+
+/* renamed from: com.ironsource.adqualitysdk.sdk.i.ᔲ, reason: contains not printable characters */
+/* loaded from: classes9.dex */
+public final class C0896 implements InterfaceC0595 {
+
+    /* renamed from: ﾒ, reason: contains not printable characters */
+    public final /* synthetic */ C0624 f2190;
+
+    public C0896(C0624 c0624) {
+        this.f2190 = c0624;
+    }
+
+    @Override // com.ironsource.adqualitysdk.sdk.i.InterfaceC0595
+    /* renamed from: ﾒ */
+    public final Object mo3938(ArrayList arrayList, C1189 c1189) {
+        this.f2190.getClass();
+        return ((RewardItem) AbstractC1100.m4401(arrayList, 0, RewardItem.class)).getType();
+    }
+}

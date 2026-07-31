@@ -1,0 +1,17 @@
+package io.appmetrica.analytics.impl;
+
+import androidx.annotation.NonNull;
+
+/* loaded from: classes6.dex */
+public final class Ah extends AbstractC5208ah {
+    public Ah(C5532n5 c5532n5) {
+        super(c5532n5);
+    }
+
+    @Override // io.appmetrica.analytics.impl.AbstractC5208ah
+    public final boolean a(@NonNull C5326f6 c5326f6) {
+        E9 e9 = this.a.n;
+        e9.a(c5326f6, C5470kl.a(e9.c.b(c5326f6), c5326f6.i));
+        return false;
+    }
+}

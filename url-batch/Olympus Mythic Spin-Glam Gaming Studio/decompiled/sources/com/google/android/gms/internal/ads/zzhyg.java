@@ -1,0 +1,46 @@
+package com.google.android.gms.internal.ads;
+
+import java.math.BigInteger;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes6.dex */
+public final class zzhyg extends zzhyo {
+    private final zzhyc zza;
+    private final BigInteger zzb;
+    private final zzich zzc;
+    private final Integer zzd;
+
+    /* synthetic */ zzhyg(zzhyc zzhycVar, BigInteger bigInteger, zzich zzichVar, Integer num, byte[] bArr) {
+        this.zza = zzhycVar;
+        this.zzb = bigInteger;
+        this.zzc = zzichVar;
+        this.zzd = num;
+    }
+
+    public static zzhyf zzc() {
+        return new zzhyf(null);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhyo, com.google.android.gms.internal.ads.zzhes
+    public final /* synthetic */ zzhfj zza() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhes
+    public final Integer zzb() {
+        return this.zzd;
+    }
+
+    public final BigInteger zzd() {
+        return this.zzb;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzhyo
+    public final zzich zze() {
+        return this.zzc;
+    }
+
+    public final zzhyc zzf() {
+        return this.zza;
+    }
+}

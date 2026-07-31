@@ -1,0 +1,338 @@
+package com.ironsource.mediationsdk.ads.nativead;
+
+import android.app.Activity;
+import com.ironsource.C4548ac;
+import com.ironsource.C4593cc;
+import com.ironsource.C4684hd;
+import com.ironsource.C4782n4;
+import com.ironsource.environment.ContextProvider;
+import com.ironsource.environment.thread.IronSourceThreadManager;
+import com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface;
+import com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdInterface;
+import com.ironsource.mediationsdk.ads.nativead.internal.InternalNativeAdListener;
+import com.ironsource.mediationsdk.adunit.adapter.internal.nativead.AdapterNativeAdViewBinder;
+import com.ironsource.mediationsdk.adunit.adapter.utility.AdInfo;
+import com.ironsource.mediationsdk.logger.IronLog;
+import com.ironsource.mediationsdk.logger.IronSourceError;
+import com.ironsource.mediationsdk.p;
+import com.ironsource.mediationsdk.utils.ErrorBuilder;
+import com.ironsource.mediationsdk.utils.IronSourceConstants;
+import java.util.UUID;
+import java.util.concurrent.atomic.AtomicBoolean;
+import kotlin.Unit;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* loaded from: classes3.dex */
+public final class LevelPlayNativeAd implements NativeAdInterface, NativeAdDataInterface, InternalNativeAdListener {
+
+    @Nullable
+    private String a;
+
+    @Nullable
+    private C4684hd b;
+
+    @Nullable
+    private LevelPlayNativeAdListener c;
+
+    @Nullable
+    private C4548ac d;
+
+    @Nullable
+    private AdapterNativeAdData e;
+
+    @Nullable
+    private AdapterNativeAdViewBinder f;
+
+    @NotNull
+    private final AtomicBoolean g;
+
+    public static final class Builder {
+
+        @Nullable
+        private String a;
+
+        @Nullable
+        private LevelPlayNativeAdListener b;
+
+        @NotNull
+        public final LevelPlayNativeAd build() {
+            return new LevelPlayNativeAd(this, null);
+        }
+
+        @Nullable
+        public final LevelPlayNativeAdListener getMListener$mediationsdk_release() {
+            return this.b;
+        }
+
+        @Nullable
+        public final String getMPlacementName$mediationsdk_release() {
+            return this.a;
+        }
+
+        public final void setMListener$mediationsdk_release(@Nullable LevelPlayNativeAdListener levelPlayNativeAdListener) {
+            this.b = levelPlayNativeAdListener;
+        }
+
+        public final void setMPlacementName$mediationsdk_release(@Nullable String str) {
+            this.a = str;
+        }
+
+        @NotNull
+        public final Builder withActivity(@Nullable Activity activity) {
+            ContextProvider.getInstance().updateActivity(activity);
+            IronLog.INTERNAL.verbose("activity is updated to: " + (activity != null ? activity.hashCode() : 0));
+            return this;
+        }
+
+        @NotNull
+        public final Builder withListener(@NotNull LevelPlayNativeAdListener listener) {
+            Intrinsics.checkNotNullParameter(listener, "listener");
+            this.b = listener;
+            return this;
+        }
+
+        @NotNull
+        public final Builder withPlacementName(@Nullable String str) {
+            this.a = str;
+            return this;
+        }
+    }
+
+    public /* synthetic */ LevelPlayNativeAd(Builder builder, DefaultConstructorMarker defaultConstructorMarker) {
+        this(builder);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void a(LevelPlayNativeAd this$0) {
+        Unit unit;
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        this$0.b();
+        C4548ac c4548ac = this$0.d;
+        if (c4548ac != null) {
+            c4548ac.a(this$0.b);
+            unit = Unit.INSTANCE;
+        } else {
+            unit = null;
+        }
+        if (unit == null) {
+            this$0.a();
+        }
+    }
+
+    private final void b() {
+        if (this.g.compareAndSet(false, true)) {
+            C4548ac c = p.h().c();
+            this.d = c;
+            if (c != null) {
+                c.a(this);
+                C4593cc i = p.h().i(this.a);
+                Intrinsics.checkNotNullExpressionValue(i, "getInstance().getNativeAdPlacement(mPlacementName)");
+                this.b = new C4684hd(i);
+            }
+        }
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdInterface
+    public void destroyAd() {
+        IronLog.API.info(String.valueOf(this));
+        try {
+            C4548ac c4548ac = this.d;
+            if (c4548ac != null) {
+                c4548ac.J();
+            }
+        } catch (Throwable th) {
+            C4782n4.d().a(th);
+            IronLog.API.error("destroyNativeAd()");
+        }
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface
+    @Nullable
+    public String getAdvertiser() {
+        AdapterNativeAdData adapterNativeAdData = this.e;
+        if (adapterNativeAdData != null) {
+            return adapterNativeAdData.getAdvertiser();
+        }
+        return null;
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface
+    @Nullable
+    public String getBody() {
+        AdapterNativeAdData adapterNativeAdData = this.e;
+        if (adapterNativeAdData != null) {
+            return adapterNativeAdData.getBody();
+        }
+        return null;
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface
+    @Nullable
+    public String getCallToAction() {
+        AdapterNativeAdData adapterNativeAdData = this.e;
+        if (adapterNativeAdData != null) {
+            return adapterNativeAdData.getCallToAction();
+        }
+        return null;
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface
+    @Nullable
+    public NativeAdDataInterface.Image getIcon() {
+        AdapterNativeAdData adapterNativeAdData = this.e;
+        if (adapterNativeAdData != null) {
+            return adapterNativeAdData.getIcon();
+        }
+        return null;
+    }
+
+    @Nullable
+    public final AdapterNativeAdViewBinder getNativeAdViewBinder() {
+        return this.f;
+    }
+
+    @Nullable
+    public final UUID getObjectId() {
+        C4548ac c4548ac = this.d;
+        if (c4548ac != null) {
+            return c4548ac.h();
+        }
+        return null;
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdDataInterface
+    @Nullable
+    public String getTitle() {
+        AdapterNativeAdData adapterNativeAdData = this.e;
+        if (adapterNativeAdData != null) {
+            return adapterNativeAdData.getTitle();
+        }
+        return null;
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.interfaces.NativeAdInterface
+    public void loadAd() {
+        IronLog.API.info(String.valueOf(this));
+        String initError = p.h().b();
+        Intrinsics.checkNotNullExpressionValue(initError, "initError");
+        if (initError.length() <= 0) {
+            IronSourceThreadManager.INSTANCE.getInitHandler().post(new Runnable() { // from class: com.ironsource.mediationsdk.ads.nativead.LevelPlayNativeAd$$ExternalSyntheticLambda1
+                @Override // java.lang.Runnable
+                public final void run() {
+                    LevelPlayNativeAd.a(LevelPlayNativeAd.this);
+                }
+            });
+            return;
+        }
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdLoadFailed(this, ErrorBuilder.buildInitFailedError("loadAd(): " + initError, IronSourceConstants.NATIVE_AD_UNIT));
+        }
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.internal.InternalNativeAdListener
+    public void onNativeAdClicked(@Nullable final AdInfo adInfo) {
+        IronLog.CALLBACK.info(String.valueOf(this));
+        IronSourceThreadManager.postOnUiThreadTask$default(IronSourceThreadManager.INSTANCE, new Runnable() { // from class: com.ironsource.mediationsdk.ads.nativead.LevelPlayNativeAd$$ExternalSyntheticLambda0
+            @Override // java.lang.Runnable
+            public final void run() {
+                LevelPlayNativeAd.a(LevelPlayNativeAd.this, adInfo);
+            }
+        }, 0L, 2, null);
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.internal.InternalNativeAdListener
+    public void onNativeAdImpression(@Nullable final AdInfo adInfo) {
+        IronLog.CALLBACK.info(String.valueOf(this));
+        IronSourceThreadManager.postOnUiThreadTask$default(IronSourceThreadManager.INSTANCE, new Runnable() { // from class: com.ironsource.mediationsdk.ads.nativead.LevelPlayNativeAd$$ExternalSyntheticLambda3
+            @Override // java.lang.Runnable
+            public final void run() {
+                LevelPlayNativeAd.b(LevelPlayNativeAd.this, adInfo);
+            }
+        }, 0L, 2, null);
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.internal.InternalNativeAdListener
+    public void onNativeAdLoadFailed(@Nullable final IronSourceError ironSourceError) {
+        IronLog.CALLBACK.info(String.valueOf(this));
+        IronSourceThreadManager.postOnUiThreadTask$default(IronSourceThreadManager.INSTANCE, new Runnable() { // from class: com.ironsource.mediationsdk.ads.nativead.LevelPlayNativeAd$$ExternalSyntheticLambda2
+            @Override // java.lang.Runnable
+            public final void run() {
+                LevelPlayNativeAd.a(LevelPlayNativeAd.this, ironSourceError);
+            }
+        }, 0L, 2, null);
+    }
+
+    @Override // com.ironsource.mediationsdk.ads.nativead.internal.InternalNativeAdListener
+    public void onNativeAdLoaded(@Nullable final AdInfo adInfo, @NotNull final AdapterNativeAdData adapterNativeAdData, @NotNull final AdapterNativeAdViewBinder nativeAdViewBinder) {
+        Intrinsics.checkNotNullParameter(adapterNativeAdData, "adapterNativeAdData");
+        Intrinsics.checkNotNullParameter(nativeAdViewBinder, "nativeAdViewBinder");
+        IronLog.CALLBACK.info(String.valueOf(this));
+        IronSourceThreadManager.postOnUiThreadTask$default(IronSourceThreadManager.INSTANCE, new Runnable() { // from class: com.ironsource.mediationsdk.ads.nativead.LevelPlayNativeAd$$ExternalSyntheticLambda4
+            @Override // java.lang.Runnable
+            public final void run() {
+                LevelPlayNativeAd.a(LevelPlayNativeAd.this, adapterNativeAdData, nativeAdViewBinder, adInfo);
+            }
+        }, 0L, 2, null);
+    }
+
+    public final void setListener(@Nullable LevelPlayNativeAdListener levelPlayNativeAdListener) {
+        this.c = levelPlayNativeAdListener;
+    }
+
+    private LevelPlayNativeAd(Builder builder) {
+        this.g = new AtomicBoolean(false);
+        this.a = builder.getMPlacementName$mediationsdk_release();
+        this.c = builder.getMListener$mediationsdk_release();
+    }
+
+    private final void a() {
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdLoadFailed(this, ErrorBuilder.buildInitFailedError("init() has failed", IronSourceConstants.NATIVE_AD_UNIT));
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void b(LevelPlayNativeAd this$0, AdInfo adInfo) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this$0.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdImpression(this$0, adInfo);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void a(LevelPlayNativeAd this$0, AdapterNativeAdData adapterNativeAdData, AdapterNativeAdViewBinder nativeAdViewBinder, AdInfo adInfo) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        Intrinsics.checkNotNullParameter(adapterNativeAdData, "$adapterNativeAdData");
+        Intrinsics.checkNotNullParameter(nativeAdViewBinder, "$nativeAdViewBinder");
+        this$0.e = adapterNativeAdData;
+        this$0.f = nativeAdViewBinder;
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this$0.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdLoaded(this$0, adInfo);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void a(LevelPlayNativeAd this$0, IronSourceError ironSourceError) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this$0.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdLoadFailed(this$0, ironSourceError);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void a(LevelPlayNativeAd this$0, AdInfo adInfo) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        LevelPlayNativeAdListener levelPlayNativeAdListener = this$0.c;
+        if (levelPlayNativeAdListener != null) {
+            levelPlayNativeAdListener.onAdClicked(this$0, adInfo);
+        }
+    }
+}
