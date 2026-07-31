@@ -1,0 +1,137 @@
+package io.appmetrica.analytics.impl;
+
+import android.content.ContentValues;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage;
+import io.appmetrica.analytics.coreutils.internal.time.SystemTimeProvider;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+
+/* renamed from: io.appmetrica.analytics.impl.tn, reason: case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C0538tn implements TempCacheStorage {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final InterfaceC0671z6 f1504a;
+    public final String b;
+    public final SystemTimeProvider c = new SystemTimeProvider();
+
+    public C0538tn(InterfaceC0671z6 interfaceC0671z6, String str) {
+        this.f1504a = interfaceC0671z6;
+        this.b = str;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r3v1 */
+    @Override // io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage
+    /* renamed from: a, reason: merged with bridge method [inline-methods] */
+    public final List<TempCacheStorage.Entry> get(String str, int i) {
+        Cursor cursor;
+        SQLiteDatabase sQLiteDatabase;
+        SQLiteDatabase sQLiteDatabase2;
+        C0588vn c0588vn;
+        ArrayList arrayList = new ArrayList();
+        Cursor cursor2 = null;
+        try {
+            sQLiteDatabase = this.f1504a.a();
+            sQLiteDatabase2 = sQLiteDatabase;
+        } catch (Throwable unused) {
+            cursor = null;
+        }
+        if (sQLiteDatabase != 0) {
+            try {
+                cursor = sQLiteDatabase.query(false, this.b, null, "scope=?", new String[]{str}, null, null, "id", String.valueOf(i));
+                if (cursor != null) {
+                    while (cursor.moveToNext()) {
+                        try {
+                            try {
+                                c0588vn = new C0588vn(cursor.getLong(cursor.getColumnIndexOrThrow("id")), cursor.getString(cursor.getColumnIndexOrThrow("scope")), cursor.getLong(cursor.getColumnIndexOrThrow("timestamp")), cursor.getBlob(cursor.getColumnIndexOrThrow("data")));
+                            } catch (Throwable unused2) {
+                                c0588vn = null;
+                            }
+                            if (c0588vn != null) {
+                                arrayList.add(c0588vn);
+                            }
+                        } catch (Throwable unused3) {
+                            cursor2 = sQLiteDatabase;
+                            sQLiteDatabase = cursor2;
+                            cursor2 = cursor;
+                            sQLiteDatabase2 = sQLiteDatabase;
+                            mo.a(cursor2);
+                            this.f1504a.a(sQLiteDatabase2);
+                            return arrayList;
+                        }
+                    }
+                }
+            } catch (Throwable unused4) {
+                cursor = null;
+            }
+            cursor2 = cursor;
+            sQLiteDatabase2 = sQLiteDatabase;
+        }
+        mo.a(cursor2);
+        this.f1504a.a(sQLiteDatabase2);
+        return arrayList;
+    }
+
+    @Override // io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage
+    public final long put(String str, long j, byte[] bArr) {
+        SQLiteDatabase sQLiteDatabase;
+        SQLiteDatabase sQLiteDatabase2 = null;
+        try {
+            sQLiteDatabase = this.f1504a.a();
+            if (sQLiteDatabase != null) {
+                try {
+                    ContentValues contentValues = new ContentValues();
+                    contentValues.put("scope", str);
+                    contentValues.put("timestamp", Long.valueOf(j));
+                    contentValues.put("data", bArr);
+                    long insertOrThrow = sQLiteDatabase.insertOrThrow(this.b, null, contentValues);
+                    this.f1504a.a(sQLiteDatabase);
+                    return insertOrThrow;
+                } catch (Throwable unused) {
+                    sQLiteDatabase2 = sQLiteDatabase;
+                    sQLiteDatabase = sQLiteDatabase2;
+                    this.f1504a.a(sQLiteDatabase);
+                    return -1L;
+                }
+            }
+        } catch (Throwable unused2) {
+        }
+        this.f1504a.a(sQLiteDatabase);
+        return -1L;
+    }
+
+    @Override // io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage
+    public final void remove(long j) {
+        a("id=?", new String[]{String.valueOf(j)});
+    }
+
+    @Override // io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage
+    public final void removeOlderThan(String str, long j) {
+        a("scope=? AND timestamp<?", new String[]{str, String.valueOf(this.c.currentTimeMillis() - j)});
+    }
+
+    @Override // io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage
+    public final TempCacheStorage.Entry get(String str) {
+        return (TempCacheStorage.Entry) CollectionsKt.firstOrNull((List) get(str, 1));
+    }
+
+    public final void a(String str, String[] strArr) {
+        SQLiteDatabase sQLiteDatabase;
+        try {
+            sQLiteDatabase = this.f1504a.a();
+            if (sQLiteDatabase != null) {
+                try {
+                    sQLiteDatabase.delete(this.b, str, strArr);
+                } catch (Throwable unused) {
+                }
+            }
+        } catch (Throwable unused2) {
+            sQLiteDatabase = null;
+        }
+        this.f1504a.a(sQLiteDatabase);
+    }
+}

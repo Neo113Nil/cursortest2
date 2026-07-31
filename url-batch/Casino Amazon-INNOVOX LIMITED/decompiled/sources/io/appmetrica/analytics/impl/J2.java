@@ -1,0 +1,673 @@
+package io.appmetrica.analytics.impl;
+
+import android.content.Context;
+import android.text.TextUtils;
+import android.util.SparseArray;
+import io.appmetrica.analytics.AdRevenue;
+import io.appmetrica.analytics.ModuleEvent;
+import io.appmetrica.analytics.Revenue;
+import io.appmetrica.analytics.coreutils.internal.WrapUtils;
+import io.appmetrica.analytics.coreutils.internal.io.Base64Utils;
+import io.appmetrica.analytics.coreutils.internal.logger.LoggerStorage;
+import io.appmetrica.analytics.ecommerce.ECommerceEvent;
+import io.appmetrica.analytics.internal.CounterConfiguration;
+import io.appmetrica.analytics.logger.appmetrica.internal.PublicLogger;
+import io.appmetrica.analytics.plugins.IPluginReporter;
+import io.appmetrica.analytics.plugins.PluginErrorDetails;
+import io.appmetrica.analytics.profile.UserProfile;
+import io.appmetrica.analytics.profile.UserProfileUpdate;
+import io.appmetrica.analytics.protobuf.nano.MessageNano;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import kotlin.NoWhenBranchMatchedException;
+import kotlin.collections.CollectionsKt;
+import org.json.JSONObject;
+
+/* loaded from: classes3.dex */
+public abstract class J2 implements Ea {
+    public static final HashSet n = new HashSet(Arrays.asList(1, 13));
+    public static final H2 o = new H2();
+
+    /* renamed from: a, reason: collision with root package name */
+    protected final Context f899a;
+    protected final Gh b;
+    protected final PublicLogger c;
+    protected final Sn d;
+    protected final Fg e;
+    protected final C0596w6 f;
+    public final C0110d0 g;
+    protected final C0633xi h;
+    public C0427pb i;
+    public final Df j;
+    public final N9 k;
+    public final Ke l;
+    public final C0210gn m;
+
+    public J2(Context context, C0633xi c0633xi, Gh gh, N9 n9, C0496s6 c0496s6, Sn sn, Fg fg, C0596w6 c0596w6, C0110d0 c0110d0, Ke ke) {
+        Context applicationContext = context.getApplicationContext();
+        this.f899a = applicationContext;
+        this.h = c0633xi;
+        this.b = gh;
+        this.k = n9;
+        this.d = sn;
+        this.e = fg;
+        this.f = c0596w6;
+        this.g = c0110d0;
+        this.l = ke;
+        PublicLogger orCreatePublicLogger = LoggerStorage.getOrCreatePublicLogger(gh.b().getApiKey());
+        this.c = orCreatePublicLogger;
+        if (Z2.a(gh.b().isLogEnabled())) {
+            orCreatePublicLogger.setEnabled(true);
+        }
+        this.j = c0496s6;
+        this.m = new C0210gn(applicationContext);
+    }
+
+    public void a(String str, String str2) {
+        if (TextUtils.isEmpty(str)) {
+            this.c.warning("Invalid Error Environment (key,value) pair: (%s,%s).", str, str2);
+            return;
+        }
+        this.c.info("Put error environment pair <%s, %s>", str, str2);
+        Gh gh = this.b;
+        synchronized (gh) {
+            E8 e8 = gh.c;
+            e8.b.b(e8.f823a, str, str2);
+        }
+    }
+
+    public final void b(Map<String, String> map) {
+        if (mo.a((Map) map)) {
+            return;
+        }
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            a(entry.getKey(), entry.getValue());
+        }
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void clearAppEnvironment() {
+        String str;
+        this.c.info("Clear app environment", new Object[0]);
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        Q5 n2 = N3.n();
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str = gh.f;
+        }
+        c0633xi.a(new C0607wh(n2, false, 1, null, new Gh(cf, counterConfiguration, e8, str)));
+    }
+
+    public final void d(String str) {
+        if (this.b.f()) {
+            return;
+        }
+        this.h.d.c();
+        C0427pb c0427pb = this.i;
+        c0427pb.f1431a.removeCallbacks(c0427pb.c, c0427pb.b.b.b.getApiKey());
+        this.b.e = true;
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3("", str, 3, 0, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    public final void e(String str) {
+        this.h.d.b();
+        C0427pb c0427pb = this.i;
+        C0427pb.a(c0427pb.f1431a, c0427pb.b, c0427pb.c);
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3("", str, 6400, 0, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.b.e = false;
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final IPluginReporter getPluginExtension() {
+        return this;
+    }
+
+    public String j() {
+        return "[BaseReporter]";
+    }
+
+    public void k() {
+        String str;
+        C0480rf c0480rf;
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        C0580vf c0580vf = gh.d;
+        synchronized (gh) {
+            str = gh.f;
+        }
+        PublicLogger orCreatePublicLogger = LoggerStorage.getOrCreatePublicLogger(gh.b.getApiKey());
+        Set set = AbstractC0624x9.f1563a;
+        JSONObject jSONObject = new JSONObject();
+        if (c0580vf != null && (c0480rf = c0580vf.f1535a) != null) {
+            try {
+                jSONObject.put("preloadInfo", c0480rf.c());
+            } catch (Throwable unused) {
+            }
+        }
+        String jSONObject2 = jSONObject.toString();
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(jSONObject2, "", 6144, 0, orCreatePublicLogger);
+        n3.c(str);
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void pauseSession() {
+        this.c.info("Pause session", new Object[0]);
+        d(null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void putAppEnvironmentValue(String str, String str2) {
+        String str3;
+        if (TextUtils.isEmpty(str)) {
+            this.c.warning("Invalid App Environment (key,value) pair: (%s,%s).", str, str2);
+            return;
+        }
+        this.c.info("Put app environment: <%s, %s>", str, str2);
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        Q5 b = N3.b(str, str2);
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str3 = gh.f;
+        }
+        c0633xi.a(new C0607wh(b, false, 1, null, new Gh(cf, counterConfiguration, e8, str3)));
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportAdRevenue(AdRevenue adRevenue) {
+        reportAdRevenue(adRevenue, false);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportAnr(Map<Thread, StackTraceElement[]> map) {
+        StackTraceElement[] stackTraceElementArr;
+        C0135e0 c0135e0 = new C0135e0(new C0161f0(this, map));
+        C0351ma c0351ma = new C0351ma();
+        C0496s6 c0496s6 = C0088c4.l().f1189a;
+        Thread a2 = c0135e0.a();
+        Map map2 = null;
+        try {
+            stackTraceElementArr = c0135e0.b();
+            if (stackTraceElementArr == null) {
+                try {
+                    stackTraceElementArr = a2.getStackTrace();
+                } catch (SecurityException unused) {
+                }
+            }
+        } catch (SecurityException unused2) {
+            stackTraceElementArr = null;
+        }
+        C0638xn c0638xn = (C0638xn) c0351ma.apply(a2, stackTraceElementArr);
+        ArrayList arrayList = new ArrayList();
+        TreeMap treeMap = new TreeMap(new Cn());
+        try {
+            map2 = c0135e0.c();
+        } catch (SecurityException unused3) {
+        }
+        if (map2 != null) {
+            treeMap.putAll(map2);
+        }
+        for (Map.Entry entry : treeMap.entrySet()) {
+            Thread thread = (Thread) entry.getKey();
+            if (thread != a2 && thread != null) {
+                arrayList.add((C0638xn) c0351ma.apply(thread, (StackTraceElement[]) entry.getValue()));
+            }
+        }
+        a(new V(c0638xn, arrayList, c0496s6.a()));
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportECommerce(ECommerceEvent eCommerceEvent) {
+        String str;
+        this.c.info("E-commerce event received: " + eCommerceEvent.getPublicDescription(), new Object[0]);
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        for (Ei ei : eCommerceEvent.toProto()) {
+            N3 n3 = new N3(LoggerStorage.getOrCreatePublicLogger(gh.b.getApiKey()));
+            EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+            n3.d = 41000;
+            n3.b = n3.e(Base64Utils.compressBase64(MessageNano.toByteArray((MessageNano) ei.f829a)));
+            n3.g = ei.b.getBytesTruncated();
+            Cf cf = new Cf(gh.f884a);
+            CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+            E8 e8 = gh.c;
+            synchronized (gh) {
+                str = gh.f;
+            }
+            c0633xi.a(new C0607wh(n3, false, 1, null, new Gh(cf, counterConfiguration, e8, str)));
+        }
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportError(String str, Throwable th) {
+        Eg eg = new Eg(str, a(th));
+        C0633xi c0633xi = this.h;
+        byte[] byteArray = MessageNano.toByteArray(this.e.fromModel(eg));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, str, 5892, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.c.info("Error received: %s", WrapUtils.wrapToTag(str));
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportEvent(String str) {
+        this.c.info("Event received: " + WrapUtils.wrapToTag(str), new Object[0]);
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3("", str, 1, 0, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportRevenue(Revenue revenue) {
+        String str;
+        Oi oi = I2.f883a;
+        oi.getClass();
+        ro a2 = oi.a(revenue);
+        if (!a2.f1473a) {
+            this.c.warning("Passed revenue is not valid. Reason: " + a2.b, new Object[0]);
+            return;
+        }
+        C0633xi c0633xi = this.h;
+        Pi pi = new Pi(revenue, this.c);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        N3 a3 = N3.a(LoggerStorage.getOrCreatePublicLogger(gh.b.getApiKey()), pi);
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str = gh.f;
+        }
+        c0633xi.a(new C0607wh(a3, false, 1, null, new Gh(cf, counterConfiguration, e8, str)));
+        this.c.info("Revenue received for productID: " + WrapUtils.wrapToTag(revenue.productID) + " of quantity: " + WrapUtils.wrapToTag(revenue.quantity) + " with price (in micros): " + revenue.priceMicros + " " + revenue.currency, new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportUnhandledException(Throwable th) {
+        Rn a2 = Un.a(th, new V(null, null, this.j.a()), null, (String) this.k.b.a(), (Boolean) this.k.c.a());
+        C0633xi c0633xi = this.h;
+        c0633xi.a(c0633xi.a(a2, this.b));
+        this.c.info("Unhandled exception received: " + a2, new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportUserProfile(UserProfile userProfile) {
+        String str;
+        C0159eo c0159eo = new C0159eo(C0159eo.c);
+        Iterator<UserProfileUpdate<? extends InterfaceC0185fo>> it = userProfile.getUserProfileUpdates().iterator();
+        while (it.hasNext()) {
+            InterfaceC0185fo userProfileUpdatePatcher = it.next().getUserProfileUpdatePatcher();
+            userProfileUpdatePatcher.a(this.c);
+            userProfileUpdatePatcher.a(c0159eo);
+        }
+        C0288jo c0288jo = new C0288jo();
+        ArrayList arrayList = new ArrayList();
+        for (int i = 0; i < c0159eo.f1243a.size(); i++) {
+            SparseArray sparseArray = c0159eo.f1243a;
+            Iterator it2 = ((HashMap) sparseArray.get(sparseArray.keyAt(i))).values().iterator();
+            while (it2.hasNext()) {
+                arrayList.add((C0211go) it2.next());
+            }
+        }
+        c0288jo.f1329a = (C0211go[]) arrayList.toArray(new C0211go[arrayList.size()]);
+        ro a2 = o.a(c0288jo);
+        if (!a2.f1473a) {
+            this.c.warning("UserInfo wasn't sent because " + a2.b, new Object[0]);
+            return;
+        }
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        Q5 a3 = N3.a(c0288jo);
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str = gh.f;
+        }
+        c0633xi.a(new C0607wh(a3, false, 1, null, new Gh(cf, counterConfiguration, e8, str)));
+        this.c.info("User profile received", new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void resumeSession() {
+        e(null);
+        this.c.info("Resume session", new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter, io.appmetrica.analytics.IModuleReporter
+    public final void sendEventsBuffer() {
+        this.c.info("Send event buffer", new Object[0]);
+        C0633xi c0633xi = this.h;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        N3 n3 = new N3("", "", 256, 0, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void setDataSendingEnabled(boolean z) {
+        this.b.b.setDataSendingEnabled(z);
+        this.c.info("Updated data sending enabled: %s", Boolean.valueOf(z));
+    }
+
+    @Override // io.appmetrica.analytics.IModuleReporter
+    public final void setSessionExtra(String str, byte[] bArr) {
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3("", null, 8193, 0, publicLogger);
+        if (bArr == null) {
+            bArr = new byte[0];
+        }
+        n3.p = Collections.singletonMap(str, bArr);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void setUserProfileID(String str) {
+        String str2;
+        C0633xi c0633xi = this.h;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        N3 n3 = new N3(LoggerStorage.getOrCreatePublicLogger(gh.b.getApiKey()));
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        n3.d = 40962;
+        n3.c(str);
+        n3.b = n3.e(str);
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str2 = gh.f;
+        }
+        c0633xi.a(new C0607wh(n3, false, 1, null, new Gh(cf, counterConfiguration, e8, str2)));
+        this.c.info("Set user profile ID: " + WrapUtils.wrapToTag(str), new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.IModuleReporter
+    public final void reportAdRevenue(AdRevenue adRevenue, boolean z) {
+        String str;
+        C0633xi c0633xi = this.h;
+        E e = new E(adRevenue, z, this.m, this.c);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        N3 a2 = N3.a(LoggerStorage.getOrCreatePublicLogger(gh.b.getApiKey()), e);
+        Cf cf = new Cf(gh.f884a);
+        CounterConfiguration counterConfiguration = new CounterConfiguration(gh.b);
+        E8 e8 = gh.c;
+        synchronized (gh) {
+            str = gh.f;
+        }
+        c0633xi.a(new C0607wh(a2, false, 1, null, new Gh(cf, counterConfiguration, e8, str)));
+        this.c.info("AdRevenue Received: AdRevenue{adRevenue=" + adRevenue.adRevenue + ", currency='" + WrapUtils.wrapToTag(adRevenue.currency.getCurrencyCode()) + "', adType=" + WrapUtils.wrapToTag(adRevenue.adType) + ", adNetwork='" + WrapUtils.wrapToTag(adRevenue.adNetwork) + "', adUnitId='" + WrapUtils.wrapToTag(adRevenue.adUnitId) + "', adUnitName='" + WrapUtils.wrapToTag(adRevenue.adUnitName) + "', adPlacementId='" + WrapUtils.wrapToTag(adRevenue.adPlacementId) + "', adPlacementName='" + WrapUtils.wrapToTag(adRevenue.adPlacementName) + "', precision='" + WrapUtils.wrapToTag(adRevenue.precision) + "', payload=" + AbstractC0224hb.b(adRevenue.payload) + ", autoCollected=" + z + "}", new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.impl.Ea
+    public final void b(String str, String str2) {
+        this.c.info("Event received: " + WrapUtils.wrapToTag(str) + ". With value: " + WrapUtils.wrapToTag(str2), new Object[0]);
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(str2, str, 1, 0, publicLogger);
+        n3.l = EnumC0375n9.JS;
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    public final void a(Map<String, String> map) {
+        if (mo.a((Map) map)) {
+            return;
+        }
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            putAppEnvironmentValue(entry.getKey(), entry.getValue());
+        }
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportEvent(String str, String str2) {
+        this.c.info("Event received: " + WrapUtils.wrapToTag(str) + ". With value: " + WrapUtils.wrapToTag(str2), new Object[0]);
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(str2, str, 1, 0, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportError(String str, String str2) {
+        reportError(str, str2, (Throwable) null);
+    }
+
+    public final Rn a(Throwable th) {
+        Throwable th2;
+        StackTraceElement[] stackTraceElementArr;
+        if (th == null) {
+            stackTraceElementArr = null;
+            th2 = null;
+        } else if (th instanceof O1) {
+            stackTraceElementArr = th.getStackTrace();
+            th2 = null;
+        } else {
+            th2 = th;
+            stackTraceElementArr = null;
+        }
+        return Un.a(th2, new V(null, null, this.j.a()), stackTraceElementArr != null ? Arrays.asList(stackTraceElementArr) : null, (String) this.k.b.a(), (Boolean) this.k.c.a());
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportError(String str, String str2, Throwable th) {
+        C0571v6 c0571v6 = new C0571v6(new Eg(str2, a(th)), str);
+        C0633xi c0633xi = this.h;
+        byte[] byteArray = MessageNano.toByteArray(this.f.fromModel(c0571v6));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, str2, 5896, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.c.info("Error received: id: %s, message: %s", WrapUtils.wrapToTag(str), WrapUtils.wrapToTag(str2));
+    }
+
+    @Override // io.appmetrica.analytics.impl.Ea
+    public final void b(String str) {
+        C0633xi c0633xi = this.h;
+        Q5 a2 = Q5.a(str);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(a2, gh), gh, 1, (Map) null);
+    }
+
+    @Override // io.appmetrica.analytics.plugins.IPluginReporter
+    public final void reportUnhandledException(PluginErrorDetails pluginErrorDetails) {
+        Rn a2 = this.l.a(pluginErrorDetails);
+        C0633xi c0633xi = this.h;
+        Hn hn = a2.f1032a;
+        String str = hn != null ? (String) WrapUtils.getOrDefault(hn.f880a, "") : "";
+        byte[] byteArray = MessageNano.toByteArray(this.d.fromModel(a2));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, str, 5891, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.c.info("Crash from plugin received: %s", WrapUtils.wrapToTag(pluginErrorDetails.getMessage()));
+    }
+
+    @Override // io.appmetrica.analytics.impl.Ea
+    public final boolean b() {
+        return this.b.f();
+    }
+
+    @Override // io.appmetrica.analytics.IReporter
+    public final void reportEvent(String str, Map<String, Object> map) {
+        C0633xi c0633xi = this.h;
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        c0633xi.a(new N3("", str, 1, 0, publicLogger), this.b, 1, map);
+        this.c.info("Event received: " + WrapUtils.wrapToTag(str) + ". With value: " + WrapUtils.wrapToTag(map == null ? null : map.toString()), new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.impl.Sa, io.appmetrica.analytics.impl.Va
+    public final void a(Rn rn) {
+        C0633xi c0633xi = this.h;
+        C0607wh a2 = c0633xi.a(rn, this.b);
+        Gh gh = a2.e;
+        Ql ql = c0633xi.e;
+        if (ql != null) {
+            gh.b.setUuid(((Pl) ql).g());
+        } else {
+            gh.getClass();
+        }
+        c0633xi.c.b(a2);
+        this.c.info("Unhandled exception received: " + rn, new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.plugins.IPluginReporter
+    public final void reportError(PluginErrorDetails pluginErrorDetails, String str) {
+        Rn rn;
+        Ke ke = this.l;
+        if (pluginErrorDetails != null) {
+            rn = ke.a(pluginErrorDetails);
+        } else {
+            ke.getClass();
+            rn = null;
+        }
+        Eg eg = new Eg(str, rn);
+        C0633xi c0633xi = this.h;
+        byte[] byteArray = MessageNano.toByteArray(this.e.fromModel(eg));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, str, 5896, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.c.info("Error from plugin received: %s", WrapUtils.wrapToTag(str));
+    }
+
+    @Override // io.appmetrica.analytics.IModuleReporter
+    public final void reportEvent(ModuleEvent moduleEvent) {
+        EnumC0375n9 enumC0375n9;
+        if (n.contains(Integer.valueOf(moduleEvent.getType()))) {
+            return;
+        }
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        String value = moduleEvent.getValue();
+        String name = moduleEvent.getName();
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(value, name, 8192, moduleEvent.getType(), publicLogger);
+        int i = F8.f842a[moduleEvent.getCategory().ordinal()];
+        if (i == 1) {
+            enumC0375n9 = EnumC0375n9.NATIVE;
+        } else {
+            if (i != 2) {
+                throw new NoWhenBranchMatchedException();
+            }
+            enumC0375n9 = EnumC0375n9.SYSTEM;
+        }
+        n3.l = enumC0375n9;
+        n3.c = AbstractC0224hb.b(moduleEvent.getEnvironment());
+        if (moduleEvent.getExtras() != null) {
+            n3.p = moduleEvent.getExtras();
+        }
+        this.h.a(n3, this.b, moduleEvent.getServiceDataReporterType(), moduleEvent.getAttributes());
+    }
+
+    @Override // io.appmetrica.analytics.impl.Sa, io.appmetrica.analytics.impl.InterfaceC0187g0
+    public final void a(V v) {
+        C0084c0 c0084c0 = new C0084c0(v, (String) this.k.b.a(), (Boolean) this.k.c.a());
+        C0633xi c0633xi = this.h;
+        byte[] byteArray = MessageNano.toByteArray(this.g.fromModel(c0084c0));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, "", 5968, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        PublicLogger publicLogger2 = this.c;
+        StringBuilder sb = new StringBuilder("ANR was reported ");
+        C0638xn c0638xn = v.f1082a;
+        publicLogger2.info(sb.append(c0638xn != null ? "Thread[name=" + c0638xn.f1571a + ",tid={" + c0638xn.c + ", priority=" + c0638xn.b + ", group=" + c0638xn.d + "}] at " + CollectionsKt.joinToString$default(c0638xn.f, "\n", null, null, 0, null, null, 62, null) : null).toString(), new Object[0]);
+    }
+
+    @Override // io.appmetrica.analytics.plugins.IPluginReporter
+    public final void reportError(String str, String str2, PluginErrorDetails pluginErrorDetails) {
+        Rn rn;
+        Ke ke = this.l;
+        if (pluginErrorDetails != null) {
+            rn = ke.a(pluginErrorDetails);
+        } else {
+            ke.getClass();
+            rn = null;
+        }
+        C0571v6 c0571v6 = new C0571v6(new Eg(str2, rn), str);
+        C0633xi c0633xi = this.h;
+        byte[] byteArray = MessageNano.toByteArray(this.f.fromModel(c0571v6));
+        PublicLogger publicLogger = this.c;
+        Set set = AbstractC0624x9.f1563a;
+        EnumC0095cb enumC0095cb = EnumC0095cb.EVENT_TYPE_UNDEFINED;
+        N3 n3 = new N3(byteArray, str2, 5896, publicLogger);
+        Gh gh = this.b;
+        c0633xi.getClass();
+        c0633xi.a(C0633xi.a(n3, gh), gh, 1, (Map) null);
+        this.c.info("Error with identifier: %s from plugin received: %s", str, WrapUtils.wrapToTag(str2));
+    }
+}

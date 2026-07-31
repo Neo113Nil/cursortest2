@@ -1,0 +1,110 @@
+package io.appmetrica.analytics.internal;
+
+import android.content.ContentProvider;
+import android.content.ContentValues;
+import android.content.Context;
+import android.content.UriMatcher;
+import android.database.Cursor;
+import android.net.Uri;
+import io.appmetrica.analytics.coreutils.internal.StringUtils;
+import io.appmetrica.analytics.impl.AbstractC0206gj;
+import io.appmetrica.analytics.impl.B5;
+import io.appmetrica.analytics.impl.C0171fa;
+import io.appmetrica.analytics.impl.C0228hf;
+import io.appmetrica.analytics.impl.C0444q3;
+import io.appmetrica.analytics.impl.C0468r3;
+import io.appmetrica.analytics.impl.C5;
+import io.appmetrica.analytics.impl.Cif;
+import io.appmetrica.analytics.logger.appmetrica.internal.ImportantLogger;
+import java.util.concurrent.CountDownLatch;
+
+/* loaded from: classes3.dex */
+public class PreloadInfoContentProvider extends ContentProvider {
+
+    /* renamed from: a, reason: collision with root package name */
+    private boolean f1607a = false;
+    private final UriMatcher b = new UriMatcher(-1);
+
+    private void a(C5 c5, ContentValues contentValues) {
+        Context context = getContext();
+        Context applicationContext = context == null ? null : context.getApplicationContext();
+        if (applicationContext != null) {
+            try {
+                Object invoke = c5.f789a.invoke(contentValues);
+                if (invoke != null) {
+                    c5.c.b(applicationContext);
+                    if (((Boolean) c5.b.invoke(invoke)).booleanValue()) {
+                        AbstractC0206gj.a("Successfully saved " + c5.d, new Object[0]);
+                    } else {
+                        AbstractC0206gj.a("Did not save " + c5.d + " because data is already present", new Object[0]);
+                    }
+                }
+            } catch (Throwable th) {
+                ImportantLogger.INSTANCE.info("AppMetrica-Attribution", String.format("Unexpected error occurred", new Object[0]) + "\n" + StringUtils.throwableToString(th), new Object[0]);
+            }
+        }
+    }
+
+    @Override // android.content.ContentProvider
+    public int delete(Uri uri, String str, String[] strArr) {
+        AbstractC0206gj.a("Deleting is not supported", new Object[0]);
+        return -1;
+    }
+
+    public synchronized void disable() {
+        this.f1607a = true;
+    }
+
+    @Override // android.content.ContentProvider
+    public String getType(Uri uri) {
+        return null;
+    }
+
+    @Override // android.content.ContentProvider
+    public Uri insert(Uri uri, ContentValues contentValues) {
+        synchronized (this) {
+            if (this.f1607a) {
+                return null;
+            }
+            if (contentValues != null) {
+                int match = this.b.match(uri);
+                if (match == 1) {
+                    a(new C5(new C0228hf(), new Cif(), C0171fa.d, "preload info"), contentValues);
+                } else if (match != 2) {
+                    AbstractC0206gj.a("Bad content provider uri.", new Object[0]);
+                } else {
+                    a(new C5(new C0444q3(), new C0468r3(), C0171fa.d, "clids"), contentValues);
+                }
+            }
+            CountDownLatch countDownLatch = B5.f772a;
+            if (countDownLatch != null) {
+                countDownLatch.countDown();
+            }
+            return null;
+        }
+    }
+
+    @Override // android.content.ContentProvider
+    public boolean onCreate() {
+        Context context = getContext();
+        Context applicationContext = context == null ? null : context.getApplicationContext();
+        String str = (applicationContext != null ? applicationContext.getPackageName() : "") + ".appmetrica.preloadinfo.retail";
+        this.b.addURI(str, "preloadinfo", 1);
+        this.b.addURI(str, "clids", 2);
+        B5.f772a = new CountDownLatch(1);
+        B5.b = this;
+        return true;
+    }
+
+    @Override // android.content.ContentProvider
+    public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
+        AbstractC0206gj.a("Query is not supported", new Object[0]);
+        return null;
+    }
+
+    @Override // android.content.ContentProvider
+    public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
+        AbstractC0206gj.a("Updating is not supported", new Object[0]);
+        return -1;
+    }
+}

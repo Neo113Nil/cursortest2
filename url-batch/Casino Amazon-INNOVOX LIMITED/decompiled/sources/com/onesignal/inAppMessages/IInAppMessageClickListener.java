@@ -1,0 +1,13 @@
+package com.onesignal.inAppMessages;
+
+import androidx.core.app.NotificationCompat;
+import com.facebook.react.uimanager.ViewProps;
+import com.onesignal.core.BuildConfig;
+import kotlin.Metadata;
+
+/* compiled from: IInAppMessageClickListener.kt */
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&¨\u0006\u0006"}, d2 = {"Lcom/onesignal/inAppMessages/IInAppMessageClickListener;", "", ViewProps.ON_CLICK, "", NotificationCompat.CATEGORY_EVENT, "Lcom/onesignal/inAppMessages/IInAppMessageClickEvent;", BuildConfig.LIBRARY_PACKAGE_NAME}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* loaded from: classes3.dex */
+public interface IInAppMessageClickListener {
+    void onClick(IInAppMessageClickEvent event);
+}

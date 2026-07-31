@@ -1,0 +1,10 @@
+package io.github.hyochan.openiap;
+
+/* loaded from: classes3.dex */
+public final class BuildConfig {
+    public static final String BUILD_TYPE = "release";
+    public static final boolean DEBUG = false;
+    public static final String FLAVOR = "play";
+    public static final String LIBRARY_PACKAGE_NAME = "io.github.hyochan.openiap";
+    public static final String OPENIAP_STORE = "play";
+}

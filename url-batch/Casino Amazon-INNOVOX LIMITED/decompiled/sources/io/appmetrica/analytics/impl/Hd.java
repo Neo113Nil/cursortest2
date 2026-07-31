@@ -1,0 +1,19 @@
+package io.appmetrica.analytics.impl;
+
+import android.os.Process;
+
+/* loaded from: classes3.dex */
+public final class Hd implements InterfaceC0079bl {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final int f872a;
+
+    public Hd(int i) {
+        this.f872a = i;
+    }
+
+    @Override // io.appmetrica.analytics.impl.InterfaceC0079bl
+    public final boolean a(String str) {
+        return this.f872a != Process.myPid();
+    }
+}

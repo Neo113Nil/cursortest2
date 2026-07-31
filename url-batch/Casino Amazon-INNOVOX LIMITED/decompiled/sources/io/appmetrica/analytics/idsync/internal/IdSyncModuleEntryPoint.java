@@ -1,0 +1,108 @@
+package io.appmetrica.analytics.idsync.internal;
+
+import com.onesignal.core.internal.config.ConfigModelStoreKt;
+import io.appmetrica.analytics.coreapi.internal.data.Converter;
+import io.appmetrica.analytics.coreapi.internal.data.JsonParser;
+import io.appmetrica.analytics.idsync.impl.C0026c;
+import io.appmetrica.analytics.idsync.impl.C0027d;
+import io.appmetrica.analytics.idsync.impl.C0028e;
+import io.appmetrica.analytics.idsync.impl.h;
+import io.appmetrica.analytics.idsync.internal.model.IdSyncConfig;
+import io.appmetrica.analytics.modulesapi.internal.service.ModuleRemoteConfig;
+import io.appmetrica.analytics.modulesapi.internal.service.ModuleServiceEntryPoint;
+import io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration;
+import io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigUpdateListener;
+import io.appmetrica.analytics.modulesapi.internal.service.ServiceContext;
+import java.util.List;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.TuplesKt;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.MapsKt;
+
+@Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u00012\b\u0012\u0004\u0012\u00020\u00020\u0003B\u0007¢\u0006\u0004\b\u0018\u0010\u0019J \u0010\t\u001a\u00020\b2\u0006\u0010\u0005\u001a\u00020\u00042\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0006H\u0016J\u0018\u0010\u000b\u001a\u00020\b2\u000e\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0006H\u0016R\u001a\u0010\u0011\u001a\u00020\f8\u0016X\u0096D¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010R \u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00020\u00128\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016¨\u0006\u001a"}, d2 = {"Lio/appmetrica/analytics/idsync/internal/IdSyncModuleEntryPoint;", "Lio/appmetrica/analytics/modulesapi/internal/service/ModuleServiceEntryPoint;", "Lio/appmetrica/analytics/idsync/internal/model/IdSyncConfig;", "Lio/appmetrica/analytics/modulesapi/internal/service/RemoteConfigUpdateListener;", "Lio/appmetrica/analytics/modulesapi/internal/service/ServiceContext;", "serviceContext", "Lio/appmetrica/analytics/modulesapi/internal/service/ModuleRemoteConfig;", "initialConfig", "", "initServiceSide", ConfigModelStoreKt.CONFIG_NAME_SPACE, "onRemoteConfigUpdated", "", "d", "Ljava/lang/String;", "getIdentifier", "()Ljava/lang/String;", "identifier", "Lio/appmetrica/analytics/modulesapi/internal/service/RemoteConfigExtensionConfiguration;", "e", "Lio/appmetrica/analytics/modulesapi/internal/service/RemoteConfigExtensionConfiguration;", "getRemoteConfigExtensionConfiguration", "()Lio/appmetrica/analytics/modulesapi/internal/service/RemoteConfigExtensionConfiguration;", "remoteConfigExtensionConfiguration", "<init>", "()V", "id-sync_release"}, k = 1, mv = {1, 6, 0})
+/* loaded from: classes3.dex */
+public final class IdSyncModuleEntryPoint extends ModuleServiceEntryPoint<IdSyncConfig> implements RemoteConfigUpdateListener<IdSyncConfig> {
+
+    /* renamed from: a, reason: collision with root package name */
+    private final C0027d f749a;
+    private final C0026c b;
+    private h c;
+
+    /* renamed from: d, reason: from kotlin metadata */
+    private final String identifier;
+    private final IdSyncModuleEntryPoint$remoteConfigExtensionConfiguration$1 e;
+
+    /* JADX WARN: Type inference failed for: r0v2, types: [io.appmetrica.analytics.idsync.internal.IdSyncModuleEntryPoint$remoteConfigExtensionConfiguration$1] */
+    public IdSyncModuleEntryPoint() {
+        C0028e c0028e = new C0028e();
+        this.f749a = new C0027d(c0028e);
+        this.b = new C0026c(c0028e);
+        this.identifier = "id-sync";
+        this.e = new RemoteConfigExtensionConfiguration<IdSyncConfig>() { // from class: io.appmetrica.analytics.idsync.internal.IdSyncModuleEntryPoint$remoteConfigExtensionConfiguration$1
+            @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration
+            public Map<String, Integer> getBlocks() {
+                return MapsKt.mapOf(TuplesKt.to("is", 1));
+            }
+
+            @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration
+            public List<String> getFeatures() {
+                return CollectionsKt.listOf("is");
+            }
+
+            @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration
+            public JsonParser<IdSyncConfig> getJsonParser() {
+                C0026c c0026c;
+                c0026c = IdSyncModuleEntryPoint.this.b;
+                return c0026c;
+            }
+
+            @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration
+            public Converter<IdSyncConfig, byte[]> getProtobufConverter() {
+                C0027d c0027d;
+                c0027d = IdSyncModuleEntryPoint.this.f749a;
+                return c0027d;
+            }
+
+            @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigExtensionConfiguration
+            public RemoteConfigUpdateListener<IdSyncConfig> getRemoteConfigUpdateListener() {
+                return IdSyncModuleEntryPoint.this;
+            }
+        };
+    }
+
+    @Override // io.appmetrica.analytics.modulesapi.internal.service.ModuleServiceEntryPoint
+    public String getIdentifier() {
+        return this.identifier;
+    }
+
+    @Override // io.appmetrica.analytics.modulesapi.internal.service.ModuleServiceEntryPoint
+    public RemoteConfigExtensionConfiguration<IdSyncConfig> getRemoteConfigExtensionConfiguration() {
+        return this.e;
+    }
+
+    @Override // io.appmetrica.analytics.modulesapi.internal.service.ModuleServiceEntryPoint
+    public void initServiceSide(ServiceContext serviceContext, ModuleRemoteConfig<IdSyncConfig> initialConfig) {
+        synchronized (this) {
+            if (this.c == null) {
+                h hVar = new h(serviceContext, initialConfig.getIdentifiers());
+                this.c = hVar;
+                IdSyncConfig featuresConfig = initialConfig.getFeaturesConfig();
+                if (featuresConfig != null) {
+                    hVar.a(featuresConfig, initialConfig.getIdentifiers());
+                }
+            }
+            Unit unit = Unit.INSTANCE;
+        }
+    }
+
+    @Override // io.appmetrica.analytics.modulesapi.internal.service.RemoteConfigUpdateListener
+    public synchronized void onRemoteConfigUpdated(ModuleRemoteConfig<IdSyncConfig> config) {
+        h hVar;
+        IdSyncConfig featuresConfig = config.getFeaturesConfig();
+        if (featuresConfig != null && (hVar = this.c) != null) {
+            hVar.a(featuresConfig, config.getIdentifiers());
+        }
+    }
+}
