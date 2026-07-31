@@ -58,5 +58,95 @@
   "stdout": "╭─ com.gates.olympus.miruv ─╮\n│ Gates of Olympus          │\n│ 1.1  (vc 2)               │\n╰───────────────────────────╯\n\nDownloading 7 files  (11.3 MB)\n  com.gates.olympus.miruv-2.apk                  ━━━━━━ 100% 6.5/… 13.6   0:00:…\n                                                             MB    MB/s         \n  com.gates.olympus.miruv-2-config.arm64_v8a.apk ━━━━━━ 100% 74.3… 3.2    0:00:…\n                                                             kB    MB/s         \n  com.gates.olympus.miruv-2-config.en.apk        ━━━━━━ 100% 33.2… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.lt.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.ru.apk        ━━━━━━ 100% 20.9… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-config.xxhdpi.apk    ━━━━━━ 100% 21.4… ?      0:00:…\n                                                             kB                 \n  com.gates.olympus.miruv-2-asset.apk            ━━━━━━ 100% 5.2/… 12.8   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gates.olympus.miruv-2.apk                  │  6.2 MB │\n│ com.gates.olympus.miruv-2-config.arm64_v8a.apk │ 72.6 KB │\n│ com.gates.olympus.miruv-2-config.en.apk        │ 32.4 KB │\n│ com.gates.olympus.miruv-2-config.lt.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.ru.apk        │ 20.4 KB │\n│ com.gates.olympus.miruv-2-config.xxhdpi.apk    │ 20.9 KB │\n│ com.gates.olympus.miruv-2-asset.apk            │  6.2 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
   "exit_code": 0,
-  "cloaking": "да"
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Gates of Olympus"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WRITE_EXTERNAL_STORAGE (maxSdkVersion=28), android.permission.CAMERA, android.permission.VIBRATE, com.gates.olympus.miruv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 8.7.2; Kotlin 2.0.21 / kotlin-stdlib; kotlinx-coroutines 1.9.0; kotlinx-serialization; Jetpack Compose UI 1.7.5 / Material3 1.3.1; AndroidX Activity 1.9.3, Core 1.13.1, Lifecycle 2.8.7, Navigation Compose 2.8.3, Room 2.6.1, DataStore Preferences 1.1.1, SplashScreen 1.0.1, Emoji2 1.3.0, Fragment 1.8.5, Startup 1.1.1, ProfileInstaller 1.3.1, SavedState, SQLite 2.4.0; OkHttp 4.12.0 / Okio; Pairip (com.pairip.application / licensecheck); libtenonjni.so (TenonLocker); android.webkit.WebView"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "miruv.space, config.ru, lineheightstyle.alignment.top"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "DataStore tenonStore: сохраняет ссылку ответа сервера (policy_link), время ответа (checked_at) и флаг ok_given — что человек уже подтвердил уход с экрана Privacy Policy в обычное приложение; Room miruv.db — локальные данные белой оболочки"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "TenonLocker, tenonjni, TenonReply, policy_link, checked_at, ok_given, Privacy-Policy, consent, extra_url, extra_consent, uuid, User-Agent, android_id, WebView, uniwebview, license check, slot, cleartextTrafficPermitted"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "lineheightstyle.alignment.top",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "служебный номер телефона → постоянный код устройства в системе Android; по нему",
+      "вместе с именем приложения собирают уникальный номер для проверки",
+      "имя приложения в системе → техническое имя этой программы на телефоне; его",
+      "подмешивают в тот же уникальный номер",
+      "идентификатор для проверки → короткий код, который приложение само считает из",
+      "номера телефона и имени программы (через SHA-256, в виде похожем на UUID); именно его",
+      "отправляют на сервер в параметре uuid",
+      "строка браузера телефона → как телефон представляется сайтам; её незаметно",
+      "добавляют к запросу в заголовке User-Agent",
+      "заголовок Accept → служебная пометка, что приложение ждёт ответ в формате JSON"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• служебный номер телефона → постоянный код устройства в системе Android; по нему\n• вместе с именем приложения собирают уникальный номер для проверки\n• имя приложения в системе → техническое имя этой программы на телефоне; его\n• подмешивают в тот же уникальный номер\n• идентификатор для проверки → короткий код, который приложение само считает из\n• номера телефона и имени программы (через SHA-256, в виде похожем на UUID); именно его\n• отправляют на сервер в параметре uuid\n• строка браузера телефона → как телефон представляется сайтам; её незаметно\n• добавляют к запросу в заголовке User-Agent\n• заголовок Accept → служебная пометка, что приложение ждёт ответ в формате JSON\n\nКак собираются: Сразу после запуска, пока ещё идёт короткая заставка, приложение само, без отдельного окна с вопросом, читает служебный номер телефона из настроек Android и своё системное имя. Из этих двух значений оно считает идентификатор для проверки. Строку браузера берёт из встроенного браузерного движка телефона в момент подготовки запроса. Человек этого обычно не замечает: отдельного разрешения под этот шаг не показывают. Если человек раньше уже нажимал «Accept» на экране с политикой конфиденциальности внутри внешней страницы, приложение запоминает это у себя (флаг ok_given) и при следующих запусках тихую проверку больше не делает — сразу остаётся обычное приложение.…\n\nКуда отправляются: Собранный идентификатор незаметно уходит в интернет на адрес https://miruv.space/ с параметром uuid. По коду видно, что это не показ рекламы на экране, а тихая проверка «что показать этому чел…"
+  }
 }
