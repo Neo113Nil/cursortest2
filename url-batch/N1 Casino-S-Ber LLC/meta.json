@@ -1,0 +1,60 @@
+{
+  "app_id": "com.derinko.gbini.n1casino",
+  "title": "N1 Casino",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "https://play-lh.googleusercontent.com/P2k2D6RP49KWI9vgqhVJwUhxLbDzwPzPh3XusMEKS-cj561LBVNkDFt7kk-pylzLHd2IxPlhmXSantgrff3LHQ",
+  "url": "https://play.google.com/store/apps/details?id=com.derinko.gbini.n1casino&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 27, 2026",
+  "updated": "Jun 28, 2026",
+  "version": "Varies with device",
+  "summary": "N1 Casino  Create, pin, search, and manage notes in one simple place.",
+  "keyword": "url-batch",
+  "folder": "N1 Casino-S-Ber LLC",
+  "path": "url-batch/N1 Casino-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.derinko.gbini.n1casino-1-asset.apk",
+    "com.derinko.gbini.n1casino-1-config.en.apk",
+    "com.derinko.gbini.n1casino-1-config.lt.apk",
+    "com.derinko.gbini.n1casino-1-config.ru.apk",
+    "com.derinko.gbini.n1casino-1-config.xxhdpi.apk",
+    "com.derinko.gbini.n1casino-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/N1 Casino-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.derinko.gbini.n1casino...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.derinko.gbini.n1casino...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.derinko.gbini.n1casino ─╮\n│ N1 Casino                    │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (5.0 MB)\n  com.derinko.gbini.n1casino-1.apk               ━━━━━━ 100% 3.3/… 10.1   0:00:…\n                                                             MB    MB/s         \n  com.derinko.gbini.n1casino-1-config.en.apk     ━━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.lt.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.ru.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.xxhdpi.apk ━━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-asset.apk         ━━━━━━ 100% 1.9/… 15.9   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.derinko.gbini.n1casino-1.apk               │  3.1 MB │\n│ com.derinko.gbini.n1casino-1-config.en.apk     │ 40.2 KB │\n│ com.derinko.gbini.n1casino-1-config.lt.apk     │ 28.2 KB │\n│ com.derinko.gbini.n1casino-1-config.ru.apk     │ 28.2 KB │\n│ com.derinko.gbini.n1casino-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.derinko.gbini.n1casino-1-asset.apk         │  3.1 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.derinko.gbini.n1casino ─╮\n│ N1 Casino                    │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (5.0 MB)\n  com.derinko.gbini.n1casino-1.apk               ━━━━━━ 100% 3.3/… 10.1   0:00:…\n                                                             MB    MB/s         \n  com.derinko.gbini.n1casino-1-config.en.apk     ━━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.lt.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.ru.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-config.xxhdpi.apk ━━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.derinko.gbini.n1casino-1-asset.apk         ━━━━━━ 100% 1.9/… 15.9   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.derinko.gbini.n1casino-1.apk               │  3.1 MB │\n│ com.derinko.gbini.n1casino-1-config.en.apk     │ 40.2 KB │\n│ com.derinko.gbini.n1casino-1-config.lt.apk     │ 28.2 KB │\n│ com.derinko.gbini.n1casino-1-config.ru.apk     │ 28.2 KB │\n│ com.derinko.gbini.n1casino-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.derinko.gbini.n1casino-1-asset.apk         │  3.1 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
