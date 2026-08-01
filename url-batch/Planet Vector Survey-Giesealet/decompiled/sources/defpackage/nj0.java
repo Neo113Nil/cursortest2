@@ -15,8 +15,6 @@ public final /* synthetic */ class nj0 implements ru {
 
     @Override // defpackage.ru
     public final Object b(Object obj, Object obj2, Object obj3) {
-        ky0 RelayPrimaryButton$lambda$14;
-        ky0 RelaySecondaryButton$lambda$16;
         int i = this.d;
         String str = this.e;
         hm0 hm0Var = (hm0) obj;
@@ -24,11 +22,9 @@ public final /* synthetic */ class nj0 implements ru {
         int intValue = ((Integer) obj3).intValue();
         switch (i) {
             case 0:
-                RelayPrimaryButton$lambda$14 = RelayComponentsKt.RelayPrimaryButton$lambda$14(str, hm0Var, ihVar, intValue);
-                return RelayPrimaryButton$lambda$14;
+                return RelayComponentsKt.RelayPrimaryButton$lambda$14(str, hm0Var, ihVar, intValue);
             default:
-                RelaySecondaryButton$lambda$16 = RelayComponentsKt.RelaySecondaryButton$lambda$16(str, hm0Var, ihVar, intValue);
-                return RelaySecondaryButton$lambda$16;
+                return RelayComponentsKt.RelaySecondaryButton$lambda$16(str, hm0Var, ihVar, intValue);
         }
     }
 }
