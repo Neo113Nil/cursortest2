@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "apks": [
+    "com.fishingboathandbook.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.fishingboathandbook.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 4677 (0%)\nINFO  - progress: 708 of 4677 (15%)\nINFO  - progress: 763 of 4677 (16%)\nINFO  - progress: 814 of 4677 (17%)\nINFO  - progress: 1147 of 4677 (24%)\nINFO  - progress: 1533 of 4677 (32%)\nINFO  - progress: 1656 of 4677 (35%)\nINFO  - progress: 1801 of 4677 (38%)\nINFO  - progress: 2016 of 4677 (43%)\nINFO  - progress: 2433 of 4677 (52%)\nINFO  - progress: 2570 of 4677 (54%)\nINFO  - progress: 2599 of 4677 (55%)\nINFO  - progress: 2652 of 4677 (56%)\nINFO  - progress: 2678 of 4677 (57%)\nINFO  - progress: 2744 of 4677 (58%)\nINFO  - progress: 2779 of 4677 (59%)\nINFO  - progress: 2793 of 4677 (59%)\nINFO  - progress: 2882 of 4677 (61%)\nINFO  - progress: 3091 of 4677 (66%)\nINFO  - progress: 3323 of 4677 (71%)\nINFO  - progress: 3368 of 4677 (72%)\nINFO  - progress: 3420 of 4677 (73%)\nINFO  - progress: 3459 of 4677 (73%)\nINFO  - progress: 3500 of 4677 (74%)\nINFO  - progress: 3607 of 4677 (77%)\nINFO  - progress: 3646 of 4677 (77%)\nINFO  - progress: 3650 of 4677 (78%)\nINFO  - progress: 3669 of 4677 (78%)\nINFO  - progress: 3702 of 4677 (79%)\nINFO  - progress: 3736 of 4677 (79%)\nINFO  - progress: 3752 of 4677 (80%)\nINFO  - progress: 3759 of 4677 (80%)\nINFO  - progress: 3770 of 4677 (80%)\nINFO  - progress: 3868 of 4677 (82%)\nINFO  - progress: 4068 of 4677 (86%)\nINFO  - progress: 4098 of 4677 (87%)\nINFO  - progress: 4100 of 4677 (87%)\nINFO  - progress: 4111 of 4677 (87%)\nINFO  - progress: 4117 of 4677 (88%)\nINFO  - progress: 4133 of 4677 (88%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4168 of 4677 (89%)\nINFO  - progress: 4189 of 4677 (89%)\nINFO  - progress: 4412 of 4677 (94%)\nINFO  - progress: 4563 of 4677 (97%)\nINFO  - progress: 4636 of 4677 (99%)\nINFO  - progress: 4674 of 4677 (99%)\n                                                             \nERROR - finished with errors, count: 3\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Fishing Boat Handbook-Giesealet/decompiled",
+    "skipped": false,
+    "base_apk": "com.fishingboathandbook.apk"
+  },
+  "analysis_files": [
+    "com.fishingboathandbook.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.fishingboathandbook.apk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/com/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

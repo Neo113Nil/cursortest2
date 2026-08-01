@@ -1,0 +1,36 @@
+{
+  "app_id": "com.fishingboathandbook",
+  "title": "Fishing Boat Handbook",
+  "developer": "Giesealet",
+  "developer_id": "5644484772063866391",
+  "icon": "https://play-lh.googleusercontent.com/jQhTweLRFbIirk0wRgKCgAPUVdCpwz-6BQpG3jnPTaEMnnKbhQKmfqhFTGvxF0RlEb4_nWll_-tEPW-vZXyO",
+  "url": "https://play.google.com/store/apps/details?id=com.fishingboathandbook&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 24, 2026",
+  "updated": "2026-06-24",
+  "version": "1.0",
+  "summary": "Learn about fishing boats, compare boat types, explore fishing locations",
+  "keyword": "url-batch",
+  "folder": "Fishing Boat Handbook-Giesealet",
+  "path": "url-batch/Fishing Boat Handbook-Giesealet",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.fishingboathandbook.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Fishing Boat Handbook-Giesealet",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.fishingboathandbook...\ncom.fishingboathandbook downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.fishingboathandbook...\ncom.fishingboathandbook downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
