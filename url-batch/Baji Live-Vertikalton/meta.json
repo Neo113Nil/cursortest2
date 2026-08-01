@@ -1,0 +1,36 @@
+{
+  "app_id": "com.playwall.bouncefield",
+  "title": "Baji Live",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/zuc0_a0o3RtDSGTNDRqjA6H3HLouCGcdgs8KQSUc0nz-fzlAFIgn2e8s9muT38sykUDF7owl19qfZGhCwEX_7w",
+  "url": "https://play.google.com/store/apps/details?id=com.playwall.bouncefield&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Baji Live - Tap to turn 90 degrees and dodge neon corner zones",
+  "keyword": "url-batch",
+  "folder": "Baji Live-Vertikalton",
+  "path": "url-batch/Baji Live-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.playwall.bouncefield.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Baji Live-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.playwall.bouncefield...\ncom.playwall.bouncefield downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.playwall.bouncefield...\ncom.playwall.bouncefield downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
