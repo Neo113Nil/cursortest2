@@ -1,0 +1,71 @@
+{
+  "app_id": "com.ionia.reidopitaco.libya",
+  "title": "Rei Do Pitaco",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "https://play-lh.googleusercontent.com/ESmU6Hqzr3W5cNMngT14FLXLzBkXqEV39q9M_jVvHTG67fN2IOXyHiWl-Wt9fHcGsLzIIcCU59HLqHFqMfw3RQ",
+  "url": "https://play.google.com/store/apps/details?id=com.ionia.reidopitaco.libya&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 28, 2026",
+  "updated": "Jun 28, 2026",
+  "version": "Varies with device",
+  "summary": "Rei Do Pitaco  habit tracker with progress and achievements",
+  "keyword": "url-batch",
+  "folder": "Rei Do Pitaco-S-Ber LLC",
+  "path": "url-batch/Rei Do Pitaco-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.ionia.reidopitaco.libya-1-asset.apk",
+    "com.ionia.reidopitaco.libya-1-config.en.apk",
+    "com.ionia.reidopitaco.libya-1-config.lt.apk",
+    "com.ionia.reidopitaco.libya-1-config.ru.apk",
+    "com.ionia.reidopitaco.libya-1-config.xxhdpi.apk",
+    "com.ionia.reidopitaco.libya-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Rei Do Pitaco-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ionia.reidopitaco.libya...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.ionia.reidopitaco.libya...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Delivery failed (HTTP 429).\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.ionia.reidopitaco.libya ─╮\n│ Rei Do Pitaco                 │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (5.6 MB)\n  com.ionia.reidopitaco.libya-1.apk               ━━━━━ 100% 3.5/… 16.2   0:00:…\n                                                             MB    MB/s         \n  com.ionia.reidopitaco.libya-1-config.en.apk     ━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.lt.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.ru.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.xxhdpi.apk ━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-asset.apk         ━━━━━ 100% 2.2/… 11.9   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ionia.reidopitaco.libya-1.apk               │  3.4 MB │\n│ com.ionia.reidopitaco.libya-1-config.en.apk     │ 40.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.lt.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.ru.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.ionia.reidopitaco.libya-1-asset.apk         │  3.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert87@gmail.com                   │\n│ GSF ID : 324f5ab813ede7a9                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.ionia.reidopitaco.libya ─╮\n│ Rei Do Pitaco                 │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (5.6 MB)\n  com.ionia.reidopitaco.libya-1.apk               ━━━━━ 100% 3.5/… 16.2   0:00:…\n                                                             MB    MB/s         \n  com.ionia.reidopitaco.libya-1-config.en.apk     ━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.lt.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.ru.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.xxhdpi.apk ━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-asset.apk         ━━━━━ 100% 2.2/… 11.9   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ionia.reidopitaco.libya-1.apk               │  3.4 MB │\n│ com.ionia.reidopitaco.libya-1-config.en.apk     │ 40.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.lt.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.ru.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.ionia.reidopitaco.libya-1-asset.apk         │  3.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert87@gmail.com                   │\n│ GSF ID : 324f5ab813ede7a9                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0
+}
