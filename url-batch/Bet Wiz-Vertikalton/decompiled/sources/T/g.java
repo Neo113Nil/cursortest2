@@ -1,0 +1,76 @@
+package T;
+
+import android.graphics.Rect;
+import android.view.View;
+import f0.C0112w;
+import f0.I;
+
+/* loaded from: classes.dex */
+public abstract class g {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f797a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final Object f798b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final Object f799c;
+
+    public g(I i) {
+        this.f797a = Integer.MIN_VALUE;
+        this.f799c = new Rect();
+        this.f798b = i;
+    }
+
+    public static g a(I i, int i2) {
+        if (i2 == 0) {
+            return new C0112w(i, 0);
+        }
+        if (i2 == 1) {
+            return new C0112w(i, 1);
+        }
+        throw new IllegalArgumentException("invalid orientation");
+    }
+
+    public abstract int b(View view);
+
+    public abstract int c(View view);
+
+    public abstract int d(View view);
+
+    public abstract int e(View view);
+
+    public abstract int f();
+
+    public abstract int g();
+
+    public abstract int h();
+
+    public abstract int i();
+
+    public abstract int j();
+
+    public abstract int k();
+
+    public abstract int l();
+
+    public int m() {
+        if (Integer.MIN_VALUE == this.f797a) {
+            return 0;
+        }
+        return l() - this.f797a;
+    }
+
+    public abstract int n(View view);
+
+    public abstract int o(View view);
+
+    public abstract void p(int i);
+
+    public g(i iVar) {
+        this.f797a = 0;
+        this.f799c = new d();
+        this.f798b = iVar;
+    }
+}
