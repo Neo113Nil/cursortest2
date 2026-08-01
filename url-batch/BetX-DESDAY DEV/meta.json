@@ -1,0 +1,60 @@
+{
+  "app_id": "com.luckyarcade.spinthrow",
+  "title": "BetX",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "https://play-lh.googleusercontent.com/wXrBsvPxS3VaCwtSeLBJ27tHydy2Yo5usDWA9Fq9A4-xqRMkH51naGs--ydHtRoY8e4Vidfv2VONPRpk4Hy6",
+  "url": "https://play.google.com/store/apps/details?id=com.luckyarcade.spinthrow&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 22, 2026",
+  "updated": "Jul 23, 2026",
+  "version": "Varies with device",
+  "summary": "Live sports updates, scores, fixtures & team insights with BetX.",
+  "keyword": "url-batch",
+  "folder": "BetX-DESDAY DEV",
+  "path": "url-batch/BetX-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.luckyarcade.spinthrow-1-asset.apk",
+    "com.luckyarcade.spinthrow-1-config.en.apk",
+    "com.luckyarcade.spinthrow-1-config.lt.apk",
+    "com.luckyarcade.spinthrow-1-config.ru.apk",
+    "com.luckyarcade.spinthrow-1-config.xxhdpi.apk",
+    "com.luckyarcade.spinthrow-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BetX-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckyarcade.spinthrow...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckyarcade.spinthrow...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.luckyarcade.spinthrow ─╮\n│ BetX                        │\n│ 1.0  (vc 1)                 │\n╰─────────────────────────────╯\n\nDownloading 6 files  (5.9 MB)\n  com.luckyarcade.spinthrow-1.apk               ━━━━━━ 100% 3.7/3… 17.2   0:00:…\n                                                            MB     MB/s         \n  com.luckyarcade.spinthrow-1-config.en.apk     ━━━━━━ 100% 45.5/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.lt.apk     ━━━━━━ 100% 29.1/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.ru.apk     ━━━━━━ 100% 29.1/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.xxhdpi.apk ━━━━━━ 100% 66.5/… 2.1    0:00:…\n                                                            kB     MB/s         \n  com.luckyarcade.spinthrow-1-asset.apk         ━━━━━━ 100% 2.4/2… 8.5    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckyarcade.spinthrow-1.apk               │  3.5 MB │\n│ com.luckyarcade.spinthrow-1-config.en.apk     │ 44.4 KB │\n│ com.luckyarcade.spinthrow-1-config.lt.apk     │ 28.4 KB │\n│ com.luckyarcade.spinthrow-1-config.ru.apk     │ 28.4 KB │\n│ com.luckyarcade.spinthrow-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckyarcade.spinthrow-1-asset.apk         │  3.5 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.luckyarcade.spinthrow ─╮\n│ BetX                        │\n│ 1.0  (vc 1)                 │\n╰─────────────────────────────╯\n\nDownloading 6 files  (5.9 MB)\n  com.luckyarcade.spinthrow-1.apk               ━━━━━━ 100% 3.7/3… 17.2   0:00:…\n                                                            MB     MB/s         \n  com.luckyarcade.spinthrow-1-config.en.apk     ━━━━━━ 100% 45.5/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.lt.apk     ━━━━━━ 100% 29.1/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.ru.apk     ━━━━━━ 100% 29.1/… ?      0:00:…\n                                                            kB                  \n  com.luckyarcade.spinthrow-1-config.xxhdpi.apk ━━━━━━ 100% 66.5/… 2.1    0:00:…\n                                                            kB     MB/s         \n  com.luckyarcade.spinthrow-1-asset.apk         ━━━━━━ 100% 2.4/2… 8.5    0:00:…\n                                                            MB     MB/s         \n\n                     Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                          ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckyarcade.spinthrow-1.apk               │  3.5 MB │\n│ com.luckyarcade.spinthrow-1-config.en.apk     │ 44.4 KB │\n│ com.luckyarcade.spinthrow-1-config.lt.apk     │ 28.4 KB │\n│ com.luckyarcade.spinthrow-1-config.ru.apk     │ 28.4 KB │\n│ com.luckyarcade.spinthrow-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckyarcade.spinthrow-1-asset.apk         │  3.5 MB │\n└───────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

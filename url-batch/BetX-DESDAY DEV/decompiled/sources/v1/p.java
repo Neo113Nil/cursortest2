@@ -1,0 +1,152 @@
+package v1;
+
+import java.nio.ByteBuffer;
+
+/* loaded from: classes.dex */
+public final class p implements g {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final u f4506a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final f f4507b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public boolean f4508c;
+
+    public p(u uVar) {
+        X0.f.e(uVar, "sink");
+        this.f4506a = uVar;
+        this.f4507b = new f();
+    }
+
+    @Override // v1.u
+    public final y a() {
+        return this.f4506a.a();
+    }
+
+    @Override // v1.u, java.io.Closeable, java.lang.AutoCloseable
+    public final void close() {
+        u uVar = this.f4506a;
+        if (this.f4508c) {
+            return;
+        }
+        try {
+            f fVar = this.f4507b;
+            long j2 = fVar.f4488b;
+            if (j2 > 0) {
+                uVar.d(fVar, j2);
+            }
+            th = null;
+        } catch (Throwable th) {
+            th = th;
+        }
+        try {
+            uVar.close();
+        } catch (Throwable th2) {
+            if (th == null) {
+                th = th2;
+            }
+        }
+        this.f4508c = true;
+        if (th != null) {
+            throw th;
+        }
+    }
+
+    @Override // v1.u
+    public final void d(f fVar, long j2) {
+        X0.f.e(fVar, "source");
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        this.f4507b.d(fVar, j2);
+        g();
+    }
+
+    @Override // v1.g
+    public final g e(String str) {
+        X0.f.e(str, "string");
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        this.f4507b.x(str);
+        g();
+        return this;
+    }
+
+    @Override // v1.u, java.io.Flushable
+    public final void flush() {
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        f fVar = this.f4507b;
+        long j2 = fVar.f4488b;
+        u uVar = this.f4506a;
+        if (j2 > 0) {
+            uVar.d(fVar, j2);
+        }
+        uVar.flush();
+    }
+
+    public final g g() {
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        f fVar = this.f4507b;
+        long j2 = fVar.f4488b;
+        if (j2 == 0) {
+            j2 = 0;
+        } else {
+            r rVar = fVar.f4487a;
+            X0.f.b(rVar);
+            r rVar2 = rVar.f4518g;
+            X0.f.b(rVar2);
+            if (rVar2.f4514c < 8192 && rVar2.f4516e) {
+                j2 -= r6 - rVar2.f4513b;
+            }
+        }
+        if (j2 > 0) {
+            this.f4506a.d(fVar, j2);
+        }
+        return this;
+    }
+
+    public final g h(int i) {
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        this.f4507b.u(i);
+        g();
+        return this;
+    }
+
+    public final g i(int i) {
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        this.f4507b.w(i);
+        g();
+        return this;
+    }
+
+    @Override // java.nio.channels.Channel
+    public final boolean isOpen() {
+        return !this.f4508c;
+    }
+
+    public final String toString() {
+        return "buffer(" + this.f4506a + ')';
+    }
+
+    @Override // java.nio.channels.WritableByteChannel
+    public final int write(ByteBuffer byteBuffer) {
+        X0.f.e(byteBuffer, "source");
+        if (this.f4508c) {
+            throw new IllegalStateException("closed");
+        }
+        int write = this.f4507b.write(byteBuffer);
+        g();
+        return write;
+    }
+}
