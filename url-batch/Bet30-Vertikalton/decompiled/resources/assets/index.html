@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+    <meta name="theme-color" content="#07070c">
+    <title>Win Laser</title>
+    <style>
+        :root{
+          --bg:#05050a;--panel:rgba(14,16,25,.82);--line:rgba(255,82,116,.2);
+          --red:#ff315d;--orange:#ff7849;--cyan:#57e9ff;--violet:#8d66ff;
+          --text:#f8f7fb;--muted:#9e9bab;--green:#67ffb5;
+        }
+        *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+        html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#030306;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;touch-action:none}
+        button{font:inherit}
+        .app{position:relative;width:100%;height:100%;max-width:560px;margin:auto;overflow:hidden;background:
+         radial-gradient(circle at 50% -15%,rgba(143,42,72,.28),transparent 42%),
+         linear-gradient(#0c0b14,#040408 68%)}
+        .screen{position:absolute;inset:0;display:none;flex-direction:column;padding:max(18px,env(safe-area-inset-top)) 18px max(18px,env(safe-area-inset-bottom))}
+        .screen.active{display:flex;animation:fade .25s ease}
+        @keyframes fade{from{opacity:0;transform:scale(.985)}to{opacity:1;transform:scale(1)}}
+        .glass{background:linear-gradient(180deg,rgba(26,27,43,.87),rgba(10,10,17,.82));border:1px solid rgba(255,255,255,.08);box-shadow:0 22px 55px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.06);backdrop-filter:blur(14px)}
+        .hero{height:40%;min-height:255px;border-radius:30px;position:relative;overflow:hidden;padding:24px;display:flex;flex-direction:column;justify-content:flex-end}
+        .hero:before{content:"";position:absolute;inset:0;background:
+         linear-gradient(90deg,transparent 49.4%,rgba(255,49,93,.45) 50%,transparent 50.6%),
+         linear-gradient(25deg,transparent 48.8%,rgba(255,49,93,.35) 49.4%,transparent 50%),
+         radial-gradient(circle at 70% 34%,rgba(255,49,93,.35),transparent 10%),
+         repeating-linear-gradient(90deg,transparent 0 47px,rgba(87,233,255,.035) 48px 49px),
+         linear-gradient(145deg,rgba(117,28,62,.35),transparent 55%)}
+        .hero:after{content:"";position:absolute;left:-10%;right:-10%;bottom:-15%;height:48%;background:
+         repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 46px),
+         repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 34px);
+         transform:perspective(220px) rotateX(55deg);transform-origin:bottom;opacity:.6}
+        .hero>*{position:relative;z-index:2}
+        .eyebrow{font-size:10px;font-weight:900;letter-spacing:.22em;color:#ff6687;text-transform:uppercase}
+        .logo{font-weight:1000;letter-spacing:-.065em;text-transform:uppercase;font-size:clamp(46px,13vw,74px);line-height:.9;text-shadow:0 0 30px rgba(255,49,93,.3)}
+        .logo span{background:linear-gradient(135deg,#fff 5%,#ff6a89 40%,#ff315d 60%,#9b6bff 92%);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .subtitle{font-size:13px;line-height:1.5;color:#c8c4cf;max-width:340px;margin:12px 0 0}
+        .section-title{font-size:18px;font-weight:1000;margin:20px 2px 10px}
+        .mode-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+        .mode-btn,.primary,.secondary,.icon-btn{border:0;color:white;cursor:pointer}
+        .mode-btn{padding:13px 6px;border-radius:16px;background:rgba(17,18,29,.9);border:1px solid rgba(255,255,255,.08);font-weight:900;font-size:12px}
+        .mode-btn small{display:block;color:var(--muted);font-size:9px;margin-top:4px}
+        .mode-btn.active{background:linear-gradient(145deg,rgba(255,49,93,.3),rgba(93,38,115,.35));border-color:rgba(255,91,124,.6);box-shadow:0 0 24px rgba(255,49,93,.14)}
+        .actions{display:grid;gap:11px;margin-top:17px}
+        .primary,.secondary{padding:15px;border-radius:18px;font-weight:1000;letter-spacing:.04em}
+        .primary{background:linear-gradient(135deg,#ff4268,#ff764d 55%,#9964ff);box-shadow:0 12px 30px rgba(255,49,93,.25)}
+        .secondary{background:rgba(16,17,28,.92);border:1px solid rgba(255,255,255,.09)}
+        .stats{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+        .stat{border-radius:16px;text-align:center;padding:12px 5px}
+        .stat b{display:block;font-size:18px}.stat span{font-size:8px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+
+        #game{padding-left:0;padding-right:0;padding-bottom:0}
+        .game-top{padding:0 16px;position:relative;z-index:20}
+        .topbar{display:flex;align-items:center;justify-content:space-between}
+        .game-title{font-size:15px;font-weight:1000;letter-spacing:.04em}
+        .icon-btn{width:42px;height:42px;border-radius:14px;background:rgba(14,15,25,.88);border:1px solid rgba(255,255,255,.08);font-size:18px}
+        .hud{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin-top:11px}
+        .hud-card{border-radius:13px;padding:8px 3px;text-align:center}
+        .hud-card b{font-size:15px;display:block}.hud-card span{font-size:7px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+        .arena{position:absolute;inset:0;overflow:hidden;background:
+         radial-gradient(circle at 50% 35%,rgba(95,15,39,.22),transparent 32%),
+         linear-gradient(180deg,#10101b 0%,#090910 58%,#030306 100%)}
+        .wall-grid{position:absolute;inset:0 0 38%;opacity:.28;background:
+         linear-gradient(90deg,transparent 49.7%,rgba(87,233,255,.12) 50%,transparent 50.3%),
+         repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 1px,transparent 1px 58px),
+         repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 58px)}
+        .floor{position:absolute;left:-18%;right:-18%;bottom:-3%;height:49%;background:
+         linear-gradient(rgba(255,49,93,.06),transparent 34%),
+         repeating-linear-gradient(90deg,rgba(255,255,255,.055) 0 1px,transparent 1px 55px),
+         repeating-linear-gradient(0deg,rgba(255,255,255,.045) 0 1px,transparent 1px 43px);
+         transform:perspective(280px) rotateX(58deg);transform-origin:bottom}
+        .floor:after{content:"";position:absolute;left:48%;width:4%;top:0;bottom:0;background:linear-gradient(rgba(255,49,93,.18),transparent);filter:blur(9px)}
+        .smoke{position:absolute;border-radius:50%;filter:blur(28px);background:rgba(150,156,184,.11);animation:drift 8s ease-in-out infinite alternate;pointer-events:none}
+        .s1{width:180px;height:90px;left:-50px;bottom:12%}.s2{width:220px;height:110px;right:-70px;bottom:24%;animation-delay:-4s}
+        @keyframes drift{to{transform:translate(42px,-22px) scale(1.2);opacity:.4}}
+        .playfield{position:absolute;left:15px;right:15px;top:125px;bottom:max(20px,env(safe-area-inset-bottom));border-radius:26px;border:1px solid rgba(255,255,255,.06);overflow:hidden;box-shadow:inset 0 0 80px rgba(0,0,0,.34)}
+        .player{position:absolute;width:44px;height:54px;left:50%;top:75%;transform:translate(-50%,-50%);z-index:8;filter:drop-shadow(0 0 10px rgba(87,233,255,.4))}
+        .player .head{position:absolute;width:16px;height:16px;left:14px;top:0;border-radius:50%;background:linear-gradient(145deg,#e8fcff,#57e9ff 60%,#2158a7);box-shadow:0 0 12px #57e9ff}
+        .player .body{position:absolute;width:25px;height:30px;left:9.5px;top:15px;border-radius:10px 10px 7px 7px;background:linear-gradient(145deg,#273349,#0a101b);border:1px solid rgba(87,233,255,.55)}
+        .player .body:after{content:"";position:absolute;left:5px;right:5px;top:8px;height:3px;border-radius:2px;background:#57e9ff;box-shadow:0 0 8px #57e9ff}
+        .player .legs{position:absolute;left:12px;top:42px;width:20px;height:12px;border-left:6px solid #19253a;border-right:6px solid #19253a}
+        .player.hit{animation:playerHit .35s}
+        @keyframes playerHit{20%,60%{filter:drop-shadow(0 0 18px red) brightness(2);transform:translate(-50%,-50%) rotate(-7deg)}40%,80%{transform:translate(-50%,-50%) rotate(7deg)}}
+        .warning,.laser{position:absolute;z-index:4;pointer-events:none;transform-origin:center}
+        .warning{background:rgba(255,81,112,.18);box-shadow:0 0 10px rgba(255,49,93,.3);animation:warnPulse .22s infinite alternate}
+        .warning:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 12px,rgba(255,255,255,.34) 13px 18px)}
+        @keyframes warnPulse{to{opacity:.28}}
+        .laser{background:#fff;box-shadow:0 0 4px #fff,0 0 10px var(--red),0 0 25px var(--red),0 0 48px rgba(255,0,54,.85)}
+        .laser:after{content:"";position:absolute;inset:-12px;background:rgba(255,31,79,.22);filter:blur(12px)}
+        .message{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:12;padding:9px 15px;border-radius:999px;background:rgba(8,9,15,.72);border:1px solid rgba(255,255,255,.08);font-size:11px;font-weight:900;color:#ddd8df;white-space:nowrap}
+        .flash{position:absolute;inset:0;background:rgba(255,35,70,.28);opacity:0;pointer-events:none;z-index:30}
+        .flash.go{animation:flash .32s ease}
+        @keyframes flash{0%{opacity:.85}100%{opacity:0}}
+        .shake{animation:shake .32s linear}
+        @keyframes shake{0%,100%{transform:translate(0)}20%{transform:translate(-5px,2px)}40%{transform:translate(5px,-3px)}60%{transform:translate(-4px,-2px)}80%{transform:translate(4px,3px)}}
+        .result-card{margin:auto 0;padding:25px;border-radius:28px;text-align:center}
+        .result-icon{width:92px;height:92px;margin:0 auto 15px;border-radius:28px;display:grid;place-items:center;font-size:42px;background:radial-gradient(circle at 32% 25%,#fff,#ff6c87 20%,#ff315d 55%,#4c194f);box-shadow:0 0 42px rgba(255,49,93,.28)}
+        .result-card h1{margin:0 0 5px;font-size:34px}.result-card p{margin:0;color:var(--muted)}
+        .result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:19px 0}
+        .result-stat{padding:15px;border-radius:16px;background:rgba(5,6,11,.55);border:1px solid rgba(255,255,255,.07)}
+        .result-stat b{display:block;font-size:22px}.result-stat span{font-size:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.12em}
+        .result-actions{display:grid;gap:10px}
+        @media(max-height:700px){
+         .screen{padding-top:max(10px,env(safe-area-inset-top));padding-bottom:max(10px,env(safe-area-inset-bottom))}
+         .hero{height:37%;min-height:205px;padding:18px}.logo{font-size:48px}.subtitle{font-size:11px;margin-top:7px}
+         .section-title{margin-top:12px}.actions{margin-top:11px}.primary,.secondary{padding:12px}.stats .stat{padding:8px 3px}
+         .playfield{top:106px}.hud{margin-top:7px}.hud-card{padding:6px 2px}.message{bottom:10px}
+        }
+    </style>
+</head>
+<body>
+<div class="app" id="app">
+    <section class="screen active" id="home">
+        <div class="hero glass">
+            <div class="eyebrow">Cyber evasion protocol</div>
+            <div class="logo"><span>Win Laser</span></div>
+            <p class="subtitle">Move through a hostile laser chamber, read every warning line, and survive the cyberpunk security grid.</p>
+        </div>
+        <div class="section-title">Select difficulty</div>
+        <div class="mode-grid">
+            <button class="mode-btn" data-mode="easy">Easy<small>Slow lasers</small></button>
+            <button class="mode-btn active" data-mode="normal">Normal<small>Mixed patterns</small></button>
+            <button class="mode-btn" data-mode="hard">Hard<small>Rapid grid</small></button>
+        </div>
+        <div class="actions">
+            <button class="primary" id="startBtn">ENTER THE CHAMBER</button>
+            <button class="secondary" id="practiceBtn">PRACTICE MODE</button>
+        </div>
+        <div class="stats">
+            <div class="stat glass"><b id="bestTime">0s</b><span>Best survival</span></div>
+            <div class="stat glass"><b id="bestScore">0</b><span>Best score</span></div>
+            <div class="stat glass"><b id="sessions">0</b><span>Sessions</span></div>
+        </div>
+    </section>
+
+    <section class="screen" id="game">
+        <div class="arena" id="arena">
+            <div class="wall-grid"></div><div class="floor"></div>
+            <div class="smoke s1"></div><div class="smoke s2"></div>
+            <div class="playfield" id="playfield">
+                <div class="player" id="player"><div class="head"></div><div class="body"></div><div class="legs"></div></div>
+            </div>
+            <div class="flash" id="flash"></div>
+        </div>
+        <div class="game-top">
+            <div class="topbar">
+                <button class="icon-btn" id="exitBtn">‹</button>
+                <div class="game-title">LASER ROOM · <span id="modeLabel">NORMAL</span></div>
+                <button class="icon-btn" id="pauseBtn">Ⅱ</button>
+            </div>
+            <div class="hud">
+                <div class="hud-card glass"><b id="score">0</b><span>Score</span></div>
+                <div class="hud-card glass"><b id="timer">45</b><span>Time</span></div>
+                <div class="hud-card glass"><b id="dodges">0</b><span>Dodges</span></div>
+                <div class="hud-card glass"><b id="lives">● ● ●</b><span>Lives</span></div>
+            </div>
+        </div>
+        <div class="message" id="message">Drag anywhere to move</div>
+    </section>
+
+    <section class="screen" id="result">
+        <div class="eyebrow">Chamber report</div>
+        <div class="result-card glass">
+            <div class="result-icon">⚡</div>
+            <h1 id="resultTitle">Protocol Complete</h1>
+            <p id="resultText">You escaped the security grid.</p>
+            <div class="result-grid">
+                <div class="result-stat"><b id="finalScore">0</b><span>Score</span></div>
+                <div class="result-stat"><b id="finalTime">0s</b><span>Survival</span></div>
+                <div class="result-stat"><b id="finalDodges">0</b><span>Dodges</span></div>
+                <div class="result-stat"><b id="finalHits">0</b><span>Laser hits</span></div>
+            </div>
+            <div class="result-actions">
+                <button class="primary" id="againBtn">TRY AGAIN</button>
+                <button class="secondary" id="homeBtn">BACK TO HOME</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    (() => {
+      const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+      const screens={home:$('#home'),game:$('#game'),result:$('#result')};
+      const cfg={
+        easy:{duration:50,warning:1150,active:850,gap:[750,1200],label:'EASY'},
+        normal:{duration:45,warning:850,active:700,gap:[520,900],label:'NORMAL'},
+        hard:{duration:40,warning:600,active:600,gap:[320,650],label:'HARD'}
+      };
+      let selected='normal',practice=false,running=false,paused=false;
+      let score=0,lives=3,dodges=0,hits=0,timeLeft=45,totalTime=45,startTime=0;
+      let clock=null,spawnTimer=null,currentHazard=null,invincible=false;
+      let px=.5,py=.75;
+      const store=JSON.parse(localStorage.getItem('winLaserStats')||'{"bestTime":0,"bestScore":0,"sessions":0}');
+
+      const show=id=>{Object.values(screens).forEach(s=>s.classList.remove('active'));screens[id].classList.add('active')};
+      const save=()=>localStorage.setItem('winLaserStats',JSON.stringify(store));
+      const vib=p=>navigator.vibrate&&navigator.vibrate(p);
+
+      function refreshHome(){
+        $('#bestTime').textContent=Math.round(store.bestTime||0)+'s';
+        $('#bestScore').textContent=store.bestScore||0;
+        $('#sessions').textContent=store.sessions||0;
+      }
+
+      $$('.mode-btn').forEach(b=>b.onclick=()=>{
+        selected=b.dataset.mode;
+        $$('.mode-btn').forEach(x=>x.classList.toggle('active',x===b));
+      });
+
+      function setPlayer(x,y){
+        px=Math.max(.055,Math.min(.945,x));py=Math.max(.07,Math.min(.93,y));
+        $('#player').style.left=(px*100)+'%';$('#player').style.top=(py*100)+'%';
+      }
+
+      function pointerMove(e){
+        if(!running||paused)return;
+        const r=$('#playfield').getBoundingClientRect();
+        setPlayer((e.clientX-r.left)/r.width,(e.clientY-r.top)/r.height);
+      }
+      $('#playfield').addEventListener('pointerdown',e=>{e.preventDefault();$('#playfield').setPointerCapture?.(e.pointerId);pointerMove(e)});
+      $('#playfield').addEventListener('pointermove',e=>{if(e.buttons||e.pointerType==='touch')pointerMove(e)});
+
+      function updateHUD(){
+        $('#score').textContent=Math.max(0,Math.round(score));
+        $('#timer').textContent=practice?'∞':Math.ceil(timeLeft);
+        $('#dodges').textContent=dodges;
+        $('#lives').textContent=practice?'∞':Array.from({length:3},(_,i)=>i<lives?'●':'○').join(' ');
+      }
+
+      function clearHazard(){
+        if(currentHazard){
+          clearTimeout(currentHazard.t1);clearTimeout(currentHazard.t2);
+          currentHazard.el?.remove();currentHazard=null;
+        }
+      }
+      function stopTimers(){clearInterval(clock);clearTimeout(spawnTimer);clearHazard()}
+
+      function startGame(isPractice){
+        practice=isPractice;running=true;paused=false;score=0;lives=3;dodges=0;hits=0;
+        totalTime=practice?999:cfg[selected].duration;timeLeft=totalTime;startTime=performance.now();
+        setPlayer(.5,.78);$('#modeLabel').textContent=practice?'PRACTICE':cfg[selected].label;
+        $('#pauseBtn').textContent='Ⅱ';$('#message').textContent='Drag anywhere to move';updateHUD();show('game');
+        clock=setInterval(()=>{
+          if(!running||paused)return;
+          if(!practice){timeLeft=Math.max(0,timeLeft-.1);if(timeLeft<=0)return endGame()}
+          score+=.65;updateHUD();
+        },100);
+        spawnNext(900);
+      }
+
+      function spawnNext(delay){
+        clearTimeout(spawnTimer);
+        spawnTimer=setTimeout(()=>{if(running&&!paused)createHazard()},delay);
+      }
+
+      function createHazard(){
+        clearHazard();
+        const pf=$('#playfield'), c=cfg[selected];
+        const type=Math.random();
+        const el=document.createElement('div');el.className='warning';
+        let data={};
+        if(type<.42){
+          const vertical=Math.random()<.5;
+          const pos=.12+Math.random()*.76;
+          data={kind:vertical?'v':'h',pos,thick:.055};
+          if(vertical){Object.assign(el.style,{left:(pos*100)+'%',top:'0',bottom:'0',width:'6px',transform:'translateX(-50%)'})}
+          else{Object.assign(el.style,{top:(pos*100)+'%',left:'0',right:'0',height:'6px',transform:'translateY(-50%)'})}
+        }else if(type<.78){
+          const vertical=Math.random()<.5, gap=.26, center=.24+Math.random()*.52;
+          data={kind:vertical?'vgap':'hgap',center,gap,thick:.06};
+          if(vertical){
+            el.innerHTML='<i></i><i></i>';
+            Object.assign(el.style,{inset:'0',background:'none',boxShadow:'none'});
+            const [a,b]=el.children;
+            [a,b].forEach(i=>{i.style.position='absolute';i.style.top='0';i.style.bottom='0';i.style.width='6px';i.style.background='rgba(255,81,112,.2)';i.style.boxShadow='0 0 10px rgba(255,49,93,.3)'});
+            a.style.left=((center-gap/2)*100)+'%';b.style.left=((center+gap/2)*100)+'%';
+          }else{
+            el.innerHTML='<i></i><i></i>';
+            Object.assign(el.style,{inset:'0',background:'none',boxShadow:'none'});
+            const [a,b]=el.children;
+            [a,b].forEach(i=>{i.style.position='absolute';i.style.left='0';i.style.right='0';i.style.height='6px';i.style.background='rgba(255,81,112,.2)';i.style.boxShadow='0 0 10px rgba(255,49,93,.3)'});
+            a.style.top=((center-gap/2)*100)+'%';b.style.top=((center+gap/2)*100)+'%';
+          }
+        }else{
+          const diag=Math.random()<.5?1:-1;
+          data={kind:'diag',diag,offset:(Math.random()-.5)*.35,thick:.06};
+          Object.assign(el.style,{left:'-20%',top:'50%',width:'140%',height:'6px',transform:`rotate(${diag*32}deg) translateY(${data.offset*300}px)`});
+        }
+        pf.appendChild(el);
+        $('#message').textContent='WARNING — MOVE';
+        currentHazard={el,data,t1:setTimeout(()=>activateHazard(el,data),c.warning)};
+      }
+
+      function activateHazard(el,data){
+        if(!running||paused)return;
+        el.className='laser';
+        if(el.children.length)[...el.children].forEach(i=>{i.style.background='#fff';i.style.boxShadow='0 0 4px #fff,0 0 12px #ff315d,0 0 30px #ff315d'});
+        $('#message').textContent='LASER ACTIVE';
+        $('#arena').classList.remove('shake');void $('#arena').offsetWidth;$('#arena').classList.add('shake');
+        $('#flash').classList.remove('go');void $('#flash').offsetWidth;$('#flash').classList.add('go');
+        vib(25);
+        checkCollision(data);
+        currentHazard.t2=setTimeout(()=>{
+          if(!running)return;
+          checkCollision(data);
+          if(!invincible){dodges++;score+=120}
+          clearHazard();updateHUD();$('#message').textContent='Keep moving';
+          const g=cfg[selected].gap;spawnNext(g[0]+Math.random()*(g[1]-g[0]));
+        },cfg[selected].active);
+      }
+
+      function checkCollision(d){
+        if(invincible)return;
+        let hit=false, radius=.055;
+        if(d.kind==='v')hit=Math.abs(px-d.pos)<radius+d.thick/2;
+        if(d.kind==='h')hit=Math.abs(py-d.pos)<radius+d.thick/2;
+        if(d.kind==='vgap')hit=Math.abs(px-(d.center-d.gap/2))<radius+d.thick/2||Math.abs(px-(d.center+d.gap/2))<radius+d.thick/2;
+        if(d.kind==='hgap')hit=Math.abs(py-(d.center-d.gap/2))<radius+d.thick/2||Math.abs(py-(d.center+d.gap/2))<radius+d.thick/2;
+        if(d.kind==='diag'){
+          const slope=Math.tan(d.diag*32*Math.PI/180);
+          const lineY=.5 + slope*(px-.5) + d.offset;
+          hit=Math.abs(py-lineY)<.075;
+        }
+        if(hit)takeHit();
+      }
+
+      function takeHit(){
+        if(invincible)return;
+        invincible=true;hits++;score=Math.max(0,score-180);
+        if(!practice)lives--;
+        $('#player').classList.add('hit');$('#message').textContent=practice?'Laser contact':'LASER HIT — LIFE LOST';
+        vib([60,40,90]);updateHUD();
+        setTimeout(()=>{$('#player').classList.remove('hit');invincible=false},750);
+        if(!practice&&lives<=0)setTimeout(endGame,450);
+      }
+
+      function endGame(){
+        if(!running)return;
+        running=false;paused=false;stopTimers();
+        const survived=practice?Math.round((performance.now()-startTime)/1000):Math.round(totalTime-timeLeft);
+        store.bestTime=Math.max(store.bestTime||0,survived);
+        store.bestScore=Math.max(store.bestScore||0,Math.round(score));
+        store.sessions=(store.sessions||0)+1;save();refreshHome();
+        $('#finalScore').textContent=Math.round(score);$('#finalTime').textContent=survived+'s';
+        $('#finalDodges').textContent=dodges;$('#finalHits').textContent=hits;
+        $('#resultTitle').textContent=hits===0?'Perfect Escape':dodges>=12?'Cyber Survivor':lives<=0?'System Breached':'Protocol Complete';
+        $('#resultText').textContent=hits===0?'No laser touched you. Clean execution.':`You avoided ${dodges} laser patterns and survived ${survived} seconds.`;
+        show('result');
+      }
+
+      $('#pauseBtn').onclick=()=>{
+        if(!running)return;
+        paused=!paused;$('#pauseBtn').textContent=paused?'▶':'Ⅱ';
+        if(paused){clearTimeout(spawnTimer);clearHazard();$('#message').textContent='PAUSED'}
+        else{$('#message').textContent='Resume movement';spawnNext(500)}
+      };
+      $('#exitBtn').onclick=()=>{running=false;stopTimers();show('home')};
+      $('#startBtn').onclick=()=>startGame(false);
+      $('#practiceBtn').onclick=()=>startGame(true);
+      $('#againBtn').onclick=()=>startGame(practice);
+      $('#homeBtn').onclick=()=>show('home');
+      document.addEventListener('visibilitychange',()=>{if(document.hidden&&running&&!paused)$('#pauseBtn').click()});
+      refreshHome();
+    })();
+</script>
+</body>
+</html>
