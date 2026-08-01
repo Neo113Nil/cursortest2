@@ -1,0 +1,36 @@
+{
+  "app_id": "com.fortunequest.neontrack",
+  "title": "BestBet",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/UQVAFMBX8dC2JnTmNnjVOM9qmUpW8TTOoC4Hrelmms0lRAFxMdNJBv9moAUxBJwn_xJc929KyRK2KuKprm_AAA",
+  "url": "https://play.google.com/store/apps/details?id=com.fortunequest.neontrack&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "BestBet - track daily habits with neon cards, streaks!",
+  "keyword": "url-batch",
+  "folder": "BestBet-Vertikalton",
+  "path": "url-batch/BestBet-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.fortunequest.neontrack.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BestBet-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.fortunequest.neontrack...\ncom.fortunequest.neontrack downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.fortunequest.neontrack...\ncom.fortunequest.neontrack downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
