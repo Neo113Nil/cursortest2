@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Lucky Calc</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#06060f;color:#FFFFFF;-webkit-tap-highlight-color:transparent}
+#app{height:100%;display:flex;flex-direction:column;position:relative;z-index:1}
+.bg-fx{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;background:radial-gradient(ellipse 80% 50% at 50% 40%,rgba(139,0,255,0.18) 0%,transparent 60%),radial-gradient(ellipse 60% 40% at 20% 70%,rgba(0,255,255,0.1) 0%,transparent 50%),radial-gradient(ellipse 50% 35% at 85% 25%,rgba(255,0,255,0.12) 0%,transparent 50%),#06060f}
+.bg-fx::before{content:'';position:absolute;top:35%;left:-20%;width:140%;height:3px;background:linear-gradient(90deg,transparent,rgba(0,255,255,0.6),rgba(255,0,255,0.8),rgba(139,0,255,0.5),transparent);filter:blur(2px);animation:streak 4s ease-in-out infinite}
+.bg-fx::after{content:'';position:absolute;top:55%;left:-30%;width:160%;height:2px;background:linear-gradient(90deg,transparent,rgba(255,0,170,0.5),rgba(0,229,255,0.7),transparent);filter:blur(3px);animation:streak 5.5s ease-in-out infinite reverse}
+@keyframes streak{0%,100%{transform:translateX(-8%) scaleX(0.9);opacity:0.4}50%{transform:translateX(8%) scaleX(1.1);opacity:1}}
+.bokeh{position:absolute;border-radius:50%;filter:blur(1px);animation:float 8s ease-in-out infinite}
+.bokeh:nth-child(1){width:80px;height:80px;top:12%;left:8%;background:radial-gradient(circle,rgba(0,255,255,0.25),transparent 70%);animation-delay:0s}
+.bokeh:nth-child(2){width:120px;height:120px;top:60%;right:5%;background:radial-gradient(circle,rgba(255,0,255,0.2),transparent 70%);animation-delay:-2s}
+.bokeh:nth-child(3){width:60px;height:60px;top:25%;right:20%;background:radial-gradient(circle,rgba(139,0,255,0.3),transparent 70%);animation-delay:-4s}
+.bokeh:nth-child(4){width:100px;height:100px;bottom:15%;left:15%;background:radial-gradient(circle,rgba(255,0,170,0.18),transparent 70%);animation-delay:-1s}
+.bokeh:nth-child(5){width:40px;height:40px;top:45%;left:45%;background:radial-gradient(circle,rgba(0,229,255,0.35),transparent 70%);animation-delay:-3s}
+@keyframes float{0%,100%{transform:translateY(0) scale(1);opacity:0.6}50%{transform:translateY(-12px) scale(1.08);opacity:1}}
+.screen{display:none;flex:1;flex-direction:column;overflow:hidden}
+.screen.active{display:flex}
+.topbar{padding:40px 16px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0;position:relative;z-index:2}
+.topbar h1{font-size:28px;font-weight:800;letter-spacing:0.5px;font-style:italic;background:linear-gradient(135deg,#00FFFF 0%,#FF00FF 45%,#8B00FF 80%,#00E5FF 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 12px rgba(0,255,255,0.5)) drop-shadow(0 0 24px rgba(255,0,255,0.35))}
+.topbar h1.plain{font-size:22px;font-style:normal;font-weight:700;letter-spacing:-0.3px}
+.topbar .subtitle{font-size:14px;font-weight:600;color:#FF00CC;text-shadow:0 0 10px rgba(255,0,204,0.5)}
+.back-btn{width:44px;height:44px;border:none;border-radius:12px;background:rgba(10,10,24,0.85);color:#00E5FF;display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;border:1px solid rgba(0,229,255,0.35);box-shadow:0 0 12px rgba(0,229,255,0.15)}
+.back-btn svg{width:22px;height:22px;fill:#00E5FF;filter:drop-shadow(0 0 4px rgba(0,229,255,0.6))}
+.content{flex:1;overflow-y:auto;padding:0 16px 16px;-webkit-overflow-scrolling:touch;position:relative;z-index:2}
+.overlay{background:rgba(10,10,24,0.78);border-radius:14px;padding:16px;margin-bottom:12px;border:1px solid rgba(0,229,255,0.25);box-shadow:0 0 24px rgba(0,229,255,0.06),inset 0 0 40px rgba(255,0,170,0.03);backdrop-filter:blur(8px)}
+.overlay h2{font-size:17px;font-weight:700;margin-bottom:8px;color:#FFFFFF;text-shadow:0 0 8px rgba(0,255,255,0.3)}
+.overlay h3{font-size:15px;font-weight:700;margin-bottom:6px;color:#FFFFFF}
+.overlay p{font-size:14px;font-weight:600;line-height:1.5;color:rgba(255,255,255,0.9)}
+.overlay .val{font-size:24px;font-weight:800;color:#00FFFF;text-shadow:0 0 12px rgba(0,255,255,0.6)}
+.overlay .val-sm{font-size:18px;font-weight:800;color:#00FFFF;text-shadow:0 0 10px rgba(0,255,255,0.5)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.stat-card{background:rgba(10,10,24,0.82);border-radius:12px;padding:14px;text-align:center;border:1px solid rgba(255,0,255,0.2);box-shadow:0 0 16px rgba(255,0,255,0.06)}
+.stat-card .num{font-size:20px;font-weight:800;color:#00FFFF;text-shadow:0 0 10px rgba(0,255,255,0.55)}
+.stat-card .lbl{font-size:12px;font-weight:700;color:rgba(255,255,255,0.85);margin-top:4px}
+.menu-card{display:flex;align-items:center;gap:14px;padding:16px;background:rgba(10,10,24,0.8);border-radius:14px;margin-bottom:10px;border:1px solid rgba(0,229,255,0.22);cursor:pointer;min-height:64px;box-shadow:0 0 20px rgba(0,229,255,0.05);backdrop-filter:blur(6px)}
+.menu-card svg{width:32px;height:32px;fill:#00E5FF;flex-shrink:0;filter:drop-shadow(0 0 8px rgba(0,255,255,0.55))}
+.menu-card .info{flex:1}
+.menu-card .title{font-size:16px;font-weight:700;color:#FFFFFF}
+.menu-card .desc{font-size:13px;font-weight:600;color:rgba(200,180,255,0.85);margin-top:2px}
+.menu-card .arrow{font-size:20px;font-weight:700;color:#FF00CC;text-shadow:0 0 8px rgba(255,0,204,0.5)}
+.form-group{margin-bottom:14px}
+.form-group label{display:block;font-size:14px;font-weight:700;color:#FFFFFF;margin-bottom:6px;padding:6px 10px;background:rgba(10,10,24,0.75);border-radius:8px;width:fit-content;border:1px solid rgba(139,0,255,0.3)}
+.form-group input,.form-group select{width:100%;height:48px;border:2px solid rgba(0,229,255,0.35);border-radius:12px;padding:0 14px;font-size:16px;font-weight:600;color:#FFFFFF;background:rgba(10,10,24,0.9);outline:none;box-shadow:inset 0 0 12px rgba(0,229,255,0.05)}
+.form-group input:focus,.form-group select:focus{border-color:#00FFFF;box-shadow:0 0 16px rgba(0,255,255,0.25),inset 0 0 12px rgba(0,229,255,0.08)}
+.form-group select option{background:#0a0a18;color:#FFFFFF}
+.toggle-row{display:flex;gap:8px}
+.toggle-btn{flex:1;height:48px;border:2px solid rgba(255,0,255,0.35);border-radius:12px;background:rgba(10,10,24,0.85);color:#FFFFFF;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.toggle-btn.active{background:linear-gradient(135deg,#00E5FF,#FF00AA);border-color:transparent;color:#06060f;box-shadow:0 0 20px rgba(0,229,255,0.4),0 0 20px rgba(255,0,170,0.25)}
+.btn-primary{width:100%;height:52px;border:none;border-radius:14px;background:linear-gradient(135deg,#00E5FF 0%,#FF00AA 100%);color:#06060f;font-size:17px;font-weight:800;cursor:pointer;margin-top:8px;box-shadow:0 0 24px rgba(0,229,255,0.35),0 0 24px rgba(255,0,170,0.2)}
+.btn-secondary{width:100%;height:48px;border:2px solid rgba(0,229,255,0.5);border-radius:14px;background:rgba(10,10,24,0.85);color:#00E5FF;font-size:15px;font-weight:700;cursor:pointer;margin-top:8px;box-shadow:0 0 12px rgba(0,229,255,0.1)}
+.btn-row{display:flex;gap:8px;margin-top:8px}
+.btn-row .btn-primary,.btn-row .btn-secondary{flex:1;margin-top:0}
+.result-hero{text-align:center;padding:20px;background:rgba(10,10,24,0.85);border-radius:16px;margin-bottom:12px;border:2px solid rgba(0,229,255,0.35);box-shadow:0 0 32px rgba(0,229,255,0.12),0 0 32px rgba(255,0,255,0.08)}
+.result-hero .big{font-size:36px;font-weight:900;color:#00FFFF;text-shadow:0 0 16px rgba(0,255,255,0.7),0 0 32px rgba(255,0,255,0.35)}
+.result-hero .label{font-size:15px;font-weight:700;color:rgba(255,255,255,0.9);margin-top:4px}
+.schedule-table{width:100%;border-collapse:collapse;font-size:13px;font-weight:600}
+.schedule-table th{background:linear-gradient(90deg,rgba(0,229,255,0.25),rgba(255,0,170,0.25));color:#FFFFFF;padding:10px 6px;text-align:left;font-weight:700;position:sticky;top:0}
+.schedule-table td{padding:9px 6px;color:rgba(255,255,255,0.9);border-bottom:1px solid rgba(0,229,255,0.12)}
+.schedule-table tr.paid td{color:#00FFAA;text-shadow:0 0 6px rgba(0,255,170,0.4)}
+.schedule-wrap{overflow-x:auto}
+.cal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cal-header button{width:44px;height:44px;border:none;border-radius:12px;background:rgba(10,10,24,0.85);color:#00E5FF;font-size:18px;font-weight:800;cursor:pointer;border:1px solid rgba(0,229,255,0.3);box-shadow:0 0 10px rgba(0,229,255,0.12)}
+.cal-header span{font-size:17px;font-weight:800;color:#FFFFFF;padding:8px 14px;background:rgba(10,10,24,0.85);border-radius:10px;border:1px solid rgba(255,0,255,0.25);text-shadow:0 0 8px rgba(255,0,255,0.3)}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.cal-dow{text-align:center;font-size:11px;font-weight:700;color:rgba(0,229,255,0.9);padding:6px 0;background:rgba(10,10,24,0.7);border-radius:6px}
+.cal-day{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:10px;font-size:14px;font-weight:700;color:#FFFFFF;background:rgba(10,10,24,0.5);cursor:pointer;position:relative;min-height:44px;border:1px solid rgba(139,0,255,0.15)}
+.cal-day.other{color:rgba(148,163,184,0.6);background:rgba(10,10,24,0.25);border-color:transparent}
+.cal-day.today{border:2px solid #00FFFF;box-shadow:0 0 12px rgba(0,255,255,0.35)}
+.cal-day.has-pay{background:rgba(255,0,170,0.2);border-color:rgba(255,0,170,0.35)}
+.cal-day.paid{background:rgba(0,255,170,0.2);border-color:rgba(0,255,170,0.35)}
+.cal-day .dot{width:6px;height:6px;border-radius:50%;background:#FF00CC;box-shadow:0 0 6px rgba(255,0,204,0.8);margin-top:2px}
+.cal-day.paid .dot{background:#00FFAA;box-shadow:0 0 6px rgba(0,255,170,0.8)}
+.cal-day.selected{background:rgba(0,229,255,0.3);border:2px solid #00FFFF;box-shadow:0 0 16px rgba(0,255,255,0.4)}
+.day-detail{margin-top:12px}
+.journal-item{display:flex;align-items:center;gap:12px;padding:14px;background:rgba(10,10,24,0.82);border-radius:12px;margin-bottom:8px;border:1px solid rgba(0,229,255,0.15)}
+.journal-item .ji-date{font-size:14px;font-weight:700;color:#FFFFFF;flex:1}
+.journal-item .ji-amt{font-size:16px;font-weight:800;color:#00FFFF;text-shadow:0 0 8px rgba(0,255,255,0.45)}
+.journal-item .ji-status{font-size:12px;font-weight:700;padding:4px 10px;border-radius:8px;background:rgba(0,255,170,0.25);color:#00FFAA;border:1px solid rgba(0,255,170,0.4);box-shadow:0 0 8px rgba(0,255,170,0.2)}
+.journal-item .ji-status.late{background:rgba(255,51,102,0.25);color:#FF3366;border-color:rgba(255,51,102,0.5);box-shadow:0 0 8px rgba(255,51,102,0.2)}
+.journal-item .ji-status.pending{background:rgba(255,0,204,0.2);color:#FF00CC;border-color:rgba(255,0,204,0.4);box-shadow:0 0 8px rgba(255,0,204,0.2)}
+.progress-bar{height:14px;background:rgba(10,10,24,0.7);border-radius:8px;overflow:hidden;margin:10px 0;border:1px solid rgba(0,229,255,0.15)}
+.progress-bar .fill{height:100%;background:linear-gradient(90deg,#00E5FF,#FF00AA,#8B00FF);border-radius:8px;transition:width 0.3s;box-shadow:0 0 12px rgba(0,229,255,0.5)}
+.chart-wrap{background:rgba(10,10,24,0.82);border-radius:14px;padding:12px;margin-bottom:12px;border:1px solid rgba(255,0,255,0.2);box-shadow:0 0 20px rgba(255,0,255,0.06)}
+.chart-wrap canvas{width:100%;height:160px;display:block}
+.empty-state{text-align:center;padding:40px 20px}
+.empty-state p{font-size:15px;font-weight:700;color:rgba(255,255,255,0.75)}
+.bottomnav{display:flex;background:rgba(6,6,15,0.95);border-top:1px solid rgba(0,229,255,0.25);flex-shrink:0;padding:6px 0 env(safe-area-inset-bottom,0);box-shadow:0 -4px 24px rgba(0,229,255,0.08);backdrop-filter:blur(12px);position:relative;z-index:3}
+.nav-item{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 4px;cursor:pointer;border:none;background:none;color:rgba(255,255,255,0.65);font-size:11px;font-weight:700;min-height:56px;justify-content:center}
+.nav-item svg{width:24px;height:24px;fill:rgba(255,255,255,0.55)}
+.nav-item.active svg{fill:#00FFFF;filter:drop-shadow(0 0 6px rgba(0,255,255,0.7))}
+.nav-item.active{color:#00FFFF;text-shadow:0 0 8px rgba(0,255,255,0.5)}
+.spacer{height:8px}
+</style>
+</head>
+<body>
+<div class="bg-fx"><div class="bokeh"></div><div class="bokeh"></div><div class="bokeh"></div><div class="bokeh"></div><div class="bokeh"></div></div>
+<div id="app">
+<section id="screen-home" class="screen active">
+<div class="topbar"><div><h1>Lucky Calc</h1><div class="subtitle">Your finance overview</div></div></div>
+<div class="content">
+<div id="home-stats" class="grid3" style="margin-bottom:12px"></div>
+<div class="menu-card" data-nav="calc">
+<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm3-4H7v-2h8v2zm0-4H7V7h8v2z"/></svg>
+<div class="info"><div class="title">New Calculation</div><div class="desc">Calculate monthly payment and overpayment</div></div>
+<div class="arrow">›</div>
+</div>
+<div class="menu-card" data-nav="calendar">
+<svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+<div class="info"><div class="title">Payment Calendar</div><div class="desc">Track and mark your payments</div></div>
+<div class="arrow">›</div>
+</div>
+<div class="menu-card" data-nav="journal">
+<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+<div class="info"><div class="title">Payment Journal</div><div class="desc">Statistics and payment history</div></div>
+<div class="arrow">›</div>
+</div>
+<div id="home-loan-info"></div>
+</div>
+</section>
+
+<section id="screen-calc" class="screen">
+<div class="topbar"><button class="back-btn" data-back="home"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></button><h1 class="plain">Loan Calculator</h1></div>
+<div class="content">
+<div class="form-group"><label>Loan Amount ($)</label><input type="number" id="inp-amount" placeholder="100000" min="1" step="100"></div>
+<div class="form-group"><label>Annual Interest Rate (%)</label><input type="number" id="inp-rate" placeholder="12.5" min="0" step="0.01"></div>
+<div class="form-group"><label>Term</label>
+<div class="toggle-row" style="margin-bottom:8px">
+<button class="toggle-btn active" id="term-months-btn">Months</button>
+<button class="toggle-btn" id="term-years-btn">Years</button>
+</div>
+<input type="number" id="inp-term" placeholder="36" min="1" step="1">
+</div>
+<div class="form-group"><label>Payment Scheme</label>
+<div class="toggle-row">
+<button class="toggle-btn active" id="scheme-annuity">Annuity</button>
+<button class="toggle-btn" id="scheme-classic">Classic</button>
+</div>
+</div>
+<div class="form-group"><label>First Payment Date</label><input type="date" id="inp-date"></div>
+<button class="btn-primary" id="btn-calculate">Calculate</button>
+</div>
+</section>
+
+<section id="screen-result" class="screen">
+<div class="topbar"><button class="back-btn" data-back="calc"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></button><h1 class="plain">Results</h1></div>
+<div class="content" id="result-content"></div>
+</section>
+
+<section id="screen-schedule" class="screen">
+<div class="topbar"><button class="back-btn" data-back="result"><svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg></button><h1 class="plain">Payment Schedule</h1></div>
+<div class="content"><div class="schedule-wrap" id="schedule-table-wrap"></div></div>
+</section>
+
+<section id="screen-calendar" class="screen">
+<div class="topbar"><h1 class="plain">Payment Calendar</h1></div>
+<div class="content">
+<div class="cal-header">
+<button id="cal-prev">‹</button>
+<span id="cal-month-label"></span>
+<button id="cal-next">›</button>
+</div>
+<div class="cal-grid" id="cal-dow"></div>
+<div class="cal-grid" id="cal-days"></div>
+<div class="day-detail overlay" id="cal-detail" style="display:none"></div>
+<div id="cal-empty" class="empty-state" style="display:none"><p>Save a loan first to see payment dates</p></div>
+</div>
+</section>
+
+<section id="screen-journal" class="screen">
+<div class="topbar"><h1 class="plain">Payment Journal</h1></div>
+<div class="content" id="journal-content"></div>
+</section>
+
+<nav class="bottomnav">
+<button class="nav-item active" data-nav="home"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>Home</button>
+<button class="nav-item" data-nav="calc"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>Calculate</button>
+<button class="nav-item" data-nav="calendar"><svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10z"/></svg>Calendar</button>
+<button class="nav-item" data-nav="journal"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>Journal</button>
+</nav>
+</div>
+<script>
+(function(){
+var state={currentResult:null,termUnit:'months',scheme:'annuity',calYear:new Date().getFullYear(),calMonth:new Date().getMonth(),selectedDay:null,schedulePage:0};
+var STORAGE={ACTIVE:'lc_activeLoan',PAID:'lc_paidPayments',HISTORY:'lc_loanHistory'};
+function save(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function fmt(n){return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function fmtDate(d){var y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return y+'-'+m+'-'+day}
+function parseDate(s){var p=s.split('-');return new Date(+p[0],+p[1]-1,+p[2])}
+function addMonths(d,n){var r=new Date(d);r.setMonth(r.getMonth()+n);return r}
+function navigate(id){
+document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active')});
+document.getElementById('screen-'+id).classList.add('active');
+document.querySelectorAll('.nav-item').forEach(function(n){n.classList.toggle('active',n.dataset.nav===id)});
+if(id==='home')renderHome();
+if(id==='calendar')renderCalendar();
+if(id==='journal')renderJournal();
+}
+function calcSchedule(amount,rateAnnual,months,scheme,startDate){
+var r=rateAnnual/12/100;
+var schedule=[];
+var balance=amount;
+var totalInterest=0;
+var totalPayment=0;
+if(scheme==='annuity'){
+var payment;
+if(r===0){payment=amount/months}else{payment=amount*r*Math.pow(1+r,months)/(Math.pow(1+r,months)-1)}
+for(var i=1;i<=months;i++){
+var interest=balance*r;
+var principal=payment-interest;
+if(i===months){principal=balance;payment=principal+interest}
+balance=Math.max(0,balance-principal);
+totalInterest+=interest;
+totalPayment+=payment;
+schedule.push({num:i,date:fmtDate(addMonths(startDate,i-1)),principal:principal,interest:interest,total:payment,balance:balance});
+}
+}else{
+var principalPart=amount/months;
+for(var j=1;j<=months;j++){
+var intPart=balance*r;
+var pay=principalPart+intPart;
+if(j===months){principalPart=balance;pay=principalPart+intPart}
+balance=Math.max(0,balance-principalPart);
+totalInterest+=intPart;
+totalPayment+=pay;
+schedule.push({num:j,date:fmtDate(addMonths(startDate,j-1)),principal:principalPart,interest:intPart,total:pay,balance:balance});
+}
+}
+return{schedule:schedule,totalInterest:totalInterest,totalPayment:totalPayment,monthlyFirst:schedule[0].total,monthlyLast:schedule[schedule.length-1].total};
+}
+function renderHome(){
+var loan=load(STORAGE.ACTIVE,null);
+var statsEl=document.getElementById('home-stats');
+var infoEl=document.getElementById('home-loan-info');
+if(!loan){
+statsEl.innerHTML='<div class="stat-card"><div class="num">—</div><div class="lbl">Active Loan</div></div><div class="stat-card"><div class="num">—</div><div class="lbl">Next Payment</div></div><div class="stat-card"><div class="num">—</div><div class="lbl">Remaining</div></div>';
+infoEl.innerHTML='';
+return}
+var paid=load(STORAGE.PAID,{});
+var unpaid=loan.schedule.find(function(s){return !paid[s.date]});
+statsEl.innerHTML='<div class="stat-card"><div class="num">$'+fmt(loan.amount)+'</div><div class="lbl">Loan Amount</div></div><div class="stat-card"><div class="num">'+(unpaid?unpaid.date:'Done')+'</div><div class="lbl">Next Payment</div></div><div class="stat-card"><div class="num">$'+fmt(unpaid?unpaid.total:0)+'</div><div class="lbl">Next Amount</div></div>';
+var paidCount=loan.schedule.filter(function(s){return paid[s.date]}).length;
+infoEl.innerHTML='<div class="overlay"><h2>Active Loan</h2><p>'+loan.scheme.charAt(0).toUpperCase()+loan.scheme.slice(1)+' scheme · '+loan.months+' months · '+loan.rate+'% rate</p><p style="margin-top:8px">Progress: '+paidCount+' / '+loan.schedule.length+' payments made</p><div class="progress-bar"><div class="fill" style="width:'+(paidCount/loan.schedule.length*100)+'%"></div></div></div>';
+}
+function doCalculate(){
+var amount=parseFloat(document.getElementById('inp-amount').value);
+var rate=parseFloat(document.getElementById('inp-rate').value);
+var term=parseInt(document.getElementById('inp-term').value,10);
+var dateStr=document.getElementById('inp-date').value;
+if(!amount||amount<=0||isNaN(rate)||rate<0||!term||term<=0||!dateStr){alert('Please fill all fields correctly');return}
+var months=state.termUnit==='years'?term*12:term;
+var startDate=parseDate(dateStr);
+var result=calcSchedule(amount,rate,months,state.scheme,startDate);
+state.currentResult={amount:amount,rate:rate,months:months,scheme:state.scheme,startDate:dateStr,termInput:term,termUnit:state.termUnit,...result};
+renderResult();
+navigate('result');
+}
+function renderResult(){
+var r=state.currentResult;
+if(!r)return;
+var el=document.getElementById('result-content');
+var payLabel=state.scheme==='annuity'?'Monthly Payment':'Payment Range (First → Last)';
+var payValue=state.scheme==='annuity'?'$'+fmt(r.monthlyFirst):'$'+fmt(r.monthlyFirst)+' → $'+fmt(r.monthlyLast);
+el.innerHTML='<div class="result-hero"><div class="big">'+payValue+'</div><div class="label">'+payLabel+'</div></div>'+
+'<div class="grid2"><div class="stat-card"><div class="num">$'+fmt(r.totalInterest)+'</div><div class="lbl">Total Overpayment</div></div><div class="stat-card"><div class="num">$'+fmt(r.totalPayment)+'</div><div class="lbl">Total Repayment</div></div></div>'+
+'<div class="overlay" style="margin-top:12px"><h2>Loan Summary</h2><p>Principal: <strong>$'+fmt(r.amount)+'</strong></p><p>Rate: <strong>'+r.rate+'% annual</strong></p><p>Term: <strong>'+r.months+' months</strong></p><p>Scheme: <strong>'+(state.scheme==='annuity'?'Annuity (equal payments)':'Classic (differentiated)')+'</strong></p><p>Overpayment ratio: <strong>'+(r.totalInterest/r.amount*100).toFixed(1)+'%</strong></p></div>'+
+'<button class="btn-primary" id="btn-view-schedule">View Payment Schedule</button>'+
+'<div class="btn-row"><button class="btn-secondary" id="btn-save-loan">Save Loan</button><button class="btn-secondary" id="btn-back-menu">Back to Menu</button></div>';
+document.getElementById('btn-view-schedule').onclick=function(){renderSchedule();navigate('schedule')};
+document.getElementById('btn-save-loan').onclick=function(){
+save(STORAGE.ACTIVE,{amount:r.amount,rate:r.rate,months:r.months,scheme:r.scheme,startDate:r.startDate,schedule:r.schedule,totalInterest:r.totalInterest,totalPayment:r.totalPayment,savedAt:Date.now()});
+var hist=load(STORAGE.HISTORY,[]);
+hist.unshift({amount:r.amount,rate:r.rate,months:r.months,scheme:r.scheme,date:fmtDate(new Date())});
+if(hist.length>20)hist=hist.slice(0,20);
+save(STORAGE.HISTORY,hist);
+alert('Loan saved successfully');
+renderHome();
+};
+document.getElementById('btn-back-menu').onclick=function(){navigate('home')};
+}
+var SCHEDULE_CHUNK=50;
+function renderSchedule(){
+var r=state.currentResult;
+if(!r)return;
+var wrap=document.getElementById('schedule-table-wrap');
+var paid=load(STORAGE.PAID,{});
+var start=state.schedulePage*SCHEDULE_CHUNK;
+var end=Math.min(start+SCHEDULE_CHUNK,r.schedule.length);
+var rows='';
+for(var i=start;i<end;i++){
+var s=r.schedule[i];
+var cls=paid[s.date]?' paid':'';
+rows+='<tr class="'+cls+'"><td>'+s.num+'</td><td>'+s.date+'</td><td>$'+fmt(s.principal)+'</td><td>$'+fmt(s.interest)+'</td><td>$'+fmt(s.total)+'</td><td>$'+fmt(s.balance)+'</td></tr>';
+}
+var totalPages=Math.ceil(r.schedule.length/SCHEDULE_CHUNK);
+wrap.innerHTML='<table class="schedule-table"><thead><tr><th>#</th><th>Date</th><th>Principal</th><th>Interest</th><th>Total</th><th>Balance</th></tr></thead><tbody>'+rows+'</tbody></table>'+
+(totalPages>1?'<div class="btn-row" style="margin-top:12px"><button class="btn-secondary" id="sched-prev"'+(state.schedulePage===0?' disabled':'')+'>Previous</button><button class="btn-secondary" id="sched-next"'+(state.schedulePage>=totalPages-1?' disabled':'')+'>Next ('+(state.schedulePage+1)+'/'+totalPages+')</button></div>':'');
+var sp=document.getElementById('sched-prev');
+var sn=document.getElementById('sched-next');
+if(sp)sp.onclick=function(){state.schedulePage--;renderSchedule()};
+if(sn)sn.onclick=function(){state.schedulePage++;renderSchedule()};
+}
+var DOW=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function renderCalendar(){
+var loan=load(STORAGE.ACTIVE,null);
+var emptyEl=document.getElementById('cal-empty');
+var dowEl=document.getElementById('cal-dow');
+var daysEl=document.getElementById('cal-days');
+var detailEl=document.getElementById('cal-detail');
+if(!loan){
+emptyEl.style.display='block';
+dowEl.innerHTML='';
+daysEl.innerHTML='';
+detailEl.style.display='none';
+return}
+emptyEl.style.display='none';
+document.getElementById('cal-month-label').textContent=MONTHS[state.calMonth]+' '+state.calYear;
+dowEl.innerHTML=DOW.map(function(d){return '<div class="cal-dow">'+d+'</div>'}).join('');
+var paid=load(STORAGE.PAID,{});
+var payDates={};
+loan.schedule.forEach(function(s){payDates[s.date]=s});
+var firstDay=new Date(state.calYear,state.calMonth,1).getDay();
+var daysInMonth=new Date(state.calYear,state.calMonth+1,0).getDate();
+var prevDays=new Date(state.calYear,state.calMonth,0).getDate();
+var today=fmtDate(new Date());
+var html='';
+for(var p=firstDay-1;p>=0;p--){
+html+='<div class="cal-day other">'+(prevDays-p)+'</div>';
+}
+for(var d=1;d<=daysInMonth;d++){
+var ds=fmtDate(new Date(state.calYear,state.calMonth,d));
+var cls='cal-day';
+if(ds===today)cls+=' today';
+if(payDates[ds]){cls+=' has-pay';if(paid[ds])cls+=' paid'}
+if(state.selectedDay===ds)cls+=' selected';
+html+='<div class="'+cls+'" data-date="'+ds+'">'+d+(payDates[ds]?'<div class="dot"></div>':'')+'</div>';
+}
+var totalCells=firstDay+daysInMonth;
+var rem=totalCells%7===0?0:7-totalCells%7;
+for(var n=1;n<=rem;n++){
+html+='<div class="cal-day other">'+n+'</div>';
+}
+daysEl.innerHTML=html;
+daysEl.querySelectorAll('.cal-day[data-date]').forEach(function(el){
+el.onclick=function(){
+var ds=el.dataset.date;
+state.selectedDay=ds;
+renderCalendar();
+if(payDates[ds]){
+var s=payDates[ds];
+var isPaid=!!paid[ds];
+detailEl.style.display='block';
+detailEl.innerHTML='<h3>Payment Due: '+ds+'</h3><p>Amount: <span class="val-sm">$'+fmt(s.total)+'</span></p><p>Principal: $'+fmt(s.principal)+' · Interest: $'+fmt(s.interest)+'</p><p>Remaining balance: $'+fmt(s.balance)+'</p>'+
+'<button class="btn-primary" id="btn-toggle-paid" style="margin-top:10px">'+(isPaid?'Mark as Unpaid':'Mark as Paid')+'</button>';
+document.getElementById('btn-toggle-paid').onclick=function(){
+var p=load(STORAGE.PAID,{});
+if(p[ds]){delete p[ds]}else{p[ds]=true}
+save(STORAGE.PAID,p);
+renderCalendar();
+renderHome();
+};
+}else{detailEl.style.display='none'}
+};
+});
+}
+function renderJournal(){
+var loan=load(STORAGE.ACTIVE,null);
+var el=document.getElementById('journal-content');
+if(!loan){
+el.innerHTML='<div class="empty-state"><p>No saved loan. Calculate and save a loan first.</p></div>';
+return}
+var paid=load(STORAGE.PAID,{});
+var today=new Date();
+var paidList=[],pendingList=[],lateList=[];
+var totalPaidAmt=0,totalIntPaid=0;
+loan.schedule.forEach(function(s){
+var isPaid=!!paid[s.date];
+var dueDate=parseDate(s.date);
+if(isPaid){
+paidList.push(s);
+totalPaidAmt+=s.total;
+totalIntPaid+=s.interest;
+}else if(dueDate<today){
+lateList.push(s);
+}else{
+pendingList.push(s);
+}
+});
+var paidCount=paidList.length;
+var progress=paidCount/loan.schedule.length*100;
+var html='<div class="overlay"><h2>Statistics</h2>'+
+'<div class="grid2" style="margin-bottom:10px">'+
+'<div class="stat-card"><div class="num">$'+fmt(totalPaidAmt)+'</div><div class="lbl">Total Paid</div></div>'+
+'<div class="stat-card"><div class="num">$'+fmt(totalIntPaid)+'</div><div class="lbl">Interest Paid</div></div>'+
+'</div>'+
+'<div class="grid3">'+
+'<div class="stat-card"><div class="num">'+paidCount+'</div><div class="lbl">On Time</div></div>'+
+'<div class="stat-card"><div class="num">'+lateList.length+'</div><div class="lbl">Overdue</div></div>'+
+'<div class="stat-card"><div class="num">'+pendingList.length+'</div><div class="lbl">Upcoming</div></div>'+
+'</div>'+
+'<p style="margin-top:10px">Loan completion: <strong>'+progress.toFixed(1)+'%</strong></p>'+
+'<div class="progress-bar"><div class="fill" style="width:'+progress+'%"></div></div>'+
+'</div>';
+html+='<div class="chart-wrap"><canvas id="journal-chart"></canvas></div>';
+html+='<div class="overlay"><h2>Payment History</h2></div>';
+if(paidList.length===0&&lateList.length===0&&pendingList.length===0){
+html+='<div class="empty-state"><p>No payments recorded yet</p></div>';
+}else{
+paidList.forEach(function(s){
+html+='<div class="journal-item"><div class="ji-date">'+s.date+' · Payment #'+s.num+'</div><div class="ji-amt">$'+fmt(s.total)+'</div><div class="ji-status">Paid</div></div>';
+});
+lateList.forEach(function(s){
+html+='<div class="journal-item"><div class="ji-date">'+s.date+' · Payment #'+s.num+'</div><div class="ji-amt">$'+fmt(s.total)+'</div><div class="ji-status late">Overdue</div></div>';
+});
+pendingList.slice(0,5).forEach(function(s){
+html+='<div class="journal-item"><div class="ji-date">'+s.date+' · Payment #'+s.num+'</div><div class="ji-amt">$'+fmt(s.total)+'</div><div class="ji-status pending">Upcoming</div></div>';
+});
+}
+el.innerHTML=html;
+drawChart(loan,paid);
+}
+function drawChart(loan,paid){
+var canvas=document.getElementById('journal-chart');
+if(!canvas)return;
+var ctx=canvas.getContext('2d');
+var dpr=window.devicePixelRatio||1;
+var w=canvas.parentElement.clientWidth-24;
+canvas.width=w*dpr;
+canvas.height=160*dpr;
+canvas.style.width=w+'px';
+canvas.style.height='160px';
+ctx.scale(dpr,dpr);
+var paidPrincipal=0,remainPrincipal=loan.amount;
+loan.schedule.forEach(function(s){if(paid[s.date]){paidPrincipal+=s.principal;remainPrincipal-=s.principal}});
+if(remainPrincipal<0)remainPrincipal=0;
+var total=paidPrincipal+remainPrincipal;
+if(total===0)return;
+var cx=w/2,cy=80,r=60;
+var paidAngle=(paidPrincipal/total)*Math.PI*2;
+ctx.beginPath();
+ctx.arc(cx,cy,r,-Math.PI/2,-Math.PI/2+paidAngle);
+ctx.lineTo(cx,cy);
+ctx.fillStyle='#00FFAA';
+ctx.fill();
+ctx.beginPath();
+ctx.arc(cx,cy,r,-Math.PI/2+paidAngle,-Math.PI/2+Math.PI*2);
+ctx.lineTo(cx,cy);
+ctx.fillStyle='#FF00CC';
+ctx.fill();
+ctx.fillStyle='#FFFFFF';
+ctx.font='bold 13px sans-serif';
+ctx.textAlign='center';
+ctx.fillText('Paid: $'+fmt(paidPrincipal),cx,cy-6);
+ctx.fillText('Left: $'+fmt(remainPrincipal),cx,cy+14);
+}
+document.querySelectorAll('[data-nav]').forEach(function(el){
+el.onclick=function(){navigate(el.dataset.nav)};
+});
+document.querySelectorAll('[data-back]').forEach(function(el){
+el.onclick=function(){navigate(el.dataset.back)};
+});
+document.getElementById('term-months-btn').onclick=function(){
+state.termUnit='months';
+document.getElementById('term-months-btn').classList.add('active');
+document.getElementById('term-years-btn').classList.remove('active');
+};
+document.getElementById('term-years-btn').onclick=function(){
+state.termUnit='years';
+document.getElementById('term-years-btn').classList.add('active');
+document.getElementById('term-months-btn').classList.remove('active');
+};
+document.getElementById('scheme-annuity').onclick=function(){
+state.scheme='annuity';
+document.getElementById('scheme-annuity').classList.add('active');
+document.getElementById('scheme-classic').classList.remove('active');
+};
+document.getElementById('scheme-classic').onclick=function(){
+state.scheme='classic';
+document.getElementById('scheme-classic').classList.add('active');
+document.getElementById('scheme-annuity').classList.remove('active');
+};
+document.getElementById('btn-calculate').onclick=doCalculate;
+document.getElementById('cal-prev').onclick=function(){
+state.calMonth--;
+if(state.calMonth<0){state.calMonth=11;state.calYear--}
+state.selectedDay=null;
+renderCalendar();
+};
+document.getElementById('cal-next').onclick=function(){
+state.calMonth++;
+if(state.calMonth>11){state.calMonth=0;state.calYear++}
+state.selectedDay=null;
+renderCalendar();
+};
+var today=new Date();
+document.getElementById('inp-date').value=fmtDate(today);
+renderHome();
+window.addEventListener('hashchange',function(){
+var h=location.hash.replace('#','');
+if(h&&document.getElementById('screen-'+h))navigate(h);
+});
+if(location.hash){var h=location.hash.replace('#','');if(document.getElementById('screen-'+h))navigate(h)}
+})();
+</script>
+</body>
+</html>

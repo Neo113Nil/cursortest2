@@ -1,0 +1,36 @@
+{
+  "app_id": "com.luckycalc.loanfinance",
+  "title": "AW33",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/6cIKA1T6FbAvxNmxVrgwEyY0XCDvi0qQA4utXsnDYRgHhu-8W1Vroe11ktY2HUBgasfYKk1eLnI_RQXmScnZzOE",
+  "url": "https://play.google.com/store/apps/details?id=com.luckycalc.loanfinance&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "AW33 - Loan payment calculator with calendar and payment tracker",
+  "keyword": "url-batch",
+  "folder": "AW33-Vertikalton",
+  "path": "url-batch/AW33-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.luckycalc.loanfinance.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/AW33-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckycalc.loanfinance...\ncom.luckycalc.loanfinance downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.luckycalc.loanfinance...\ncom.luckycalc.loanfinance downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
