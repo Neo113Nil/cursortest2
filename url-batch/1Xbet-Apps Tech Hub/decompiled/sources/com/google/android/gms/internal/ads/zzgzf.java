@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@22.6.0 */
+/* loaded from: classes2.dex */
+public final class zzgzf extends RuntimeException {
+    public zzgzf(zzgxw zzgxwVar) {
+        super("Message was missing required fields.  (Lite runtime could not determine which fields were missing).");
+    }
+
+    public final zzgwy zza() {
+        return new zzgwy(getMessage());
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "apks": [
+    "com.translator.alllanguagetranslations.ath.apk",
+    "config.xhdpi.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.translator.alllanguagetranslations.ath.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "77 of 12518 (46%)\nINFO  - progress: 6124 of 12518 (48%)\nINFO  - progress: 6166 of 12518 (49%)\nINFO  - progress: 6180 of 12518 (49%)\nINFO  - progress: 6201 of 12518 (49%)\nINFO  - progress: 6210 of 12518 (49%)\nINFO  - progress: 6225 of 12518 (49%)\nINFO  - progress: 6272 of 12518 (50%)\nINFO  - progress: 6291 of 12518 (50%)\nINFO  - progress: 6314 of 12518 (50%)\nINFO  - progress: 6327 of 12518 (50%)\nINFO  - progress: 6354 of 12518 (50%)\nINFO  - progress: 6376 of 12518 (50%)\nINFO  - progress: 6391 of 12518 (51%)\nINFO  - progress: 6416 of 12518 (51%)\nINFO  - progress: 6451 of 12518 (51%)\nINFO  - progress: 6466 of 12518 (51%)\nINFO  - progress: 6765 of 12518 (54%)\nINFO  - progress: 6791 of 12518 (54%)\nINFO  - progress: 6908 of 12518 (55%)\nINFO  - progress: 6909 of 12518 (55%)\nINFO  - progress: 7101 of 12518 (56%)\nINFO  - progress: 7415 of 12518 (59%)\nINFO  - progress: 7436 of 12518 (59%)\nINFO  - progress: 7447 of 12518 (59%)\nINFO  - progress: 7476 of 12518 (59%)\nINFO  - progress: 7504 of 12518 (59%)\nINFO  - progress: 7546 of 12518 (60%)\nINFO  - progress: 7571 of 12518 (60%)\nINFO  - progress: 7585 of 12518 (60%)\nINFO  - progress: 7613 of 12518 (60%)\nINFO  - progress: 7633 of 12518 (60%)\nINFO  - progress: 7654 of 12518 (61%)\nINFO  - progress: 7667 of 12518 (61%)\nINFO  - progress: 7694 of 12518 (61%)\nINFO  - progress: 7736 of 12518 (61%)\nINFO  - progress: 8036 of 12518 (64%)\nINFO  - progress: 8265 of 12518 (66%)\nINFO  - progress: 8597 of 12518 (68%)\nINFO  - progress: 8667 of 12518 (69%)\nINFO  - progress: 8756 of 12518 (69%)\nINFO  - progress: 8861 of 12518 (70%)\nINFO  - progress: 9153 of 12518 (73%)\nINFO  - progress: 9436 of 12518 (75%)\nINFO  - progress: 9543 of 12518 (76%)\nINFO  - progress: 9686 of 12518 (77%)\nINFO  - progress: 10002 of 12518 (79%)\nINFO  - progress: 10171 of 12518 (81%)\nINFO  - progress: 10517 of 12518 (84%)\nINFO  - progress: 10772 of 12518 (86%)\nINFO  - progress: 10923 of 12518 (87%)\nINFO  - progress: 11139 of 12518 (88%)\nINFO  - progress: 11211 of 12518 (89%)\nINFO  - progress: 11236 of 12518 (89%)\nINFO  - progress: 11270 of 12518 (90%)\nINFO  - progress: 11293 of 12518 (90%)\nINFO  - progress: 11311 of 12518 (90%)\nINFO  - progress: 11325 of 12518 (90%)\nINFO  - progress: 11349 of 12518 (90%)\nINFO  - progress: 11368 of 12518 (90%)\nINFO  - progress: 11411 of 12518 (91%)\nINFO  - progress: 11419 of 12518 (91%)\nINFO  - progress: 11433 of 12518 (91%)\nINFO  - progress: 11444 of 12518 (91%)\nINFO  - progress: 11462 of 12518 (91%)\nINFO  - progress: 11479 of 12518 (91%)\nINFO  - progress: 11484 of 12518 (91%)\nINFO  - progress: 11485 of 12518 (91%)\nINFO  - progress: 11493 of 12518 (91%)\nINFO  - progress: 11530 of 12518 (92%)\nINFO  - progress: 11567 of 12518 (92%)\nINFO  - progress: 11616 of 12518 (92%)\nINFO  - progress: 11681 of 12518 (93%)\nINFO  - progress: 11871 of 12518 (94%)\nINFO  - progress: 12292 of 12518 (98%)\nINFO  - progress: 12356 of 12518 (98%)\n                                                             \nERROR - finished with errors, count: 16\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/1Xbet-Apps Tech Hub/decompiled",
+    "skipped": false,
+    "base_apk": "com.translator.alllanguagetranslations.ath.apk"
+  },
+  "analysis_files": [
+    "com.translator.alllanguagetranslations.ath.xapk",
+    "apk/com.translator.alllanguagetranslations.ath.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.xhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/dev/",
+    "decompiled/sources/io/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

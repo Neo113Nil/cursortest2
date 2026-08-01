@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/conversation_icon_main"
+        android:id="@+id/conversation"
+        android:title="@string/conversation"/>
+    <item
+        android:icon="@drawable/phrasebook"
+        android:id="@+id/phrasebook"
+        android:title="@string/phrasebook"/>
+    <item
+        android:icon="@drawable/speech_to_text"
+        android:id="@+id/speech_to_text"
+        android:visible="false"
+        android:title="@string/speech_to_text"/>
+    <item
+        android:icon="@drawable/dictionary"
+        android:id="@+id/dictionary"
+        android:title="@string/dictionary"/>
+    <item
+        android:icon="@drawable/widget"
+        android:id="@+id/widget"
+        android:title="@string/widget"/>
+</menu>

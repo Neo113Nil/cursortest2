@@ -1,0 +1,27 @@
+package com.google.android.gms.internal.ads;
+
+import android.database.sqlite.SQLiteDatabase;
+
+/* compiled from: com.google.android.gms:play-services-ads@@22.6.0 */
+/* loaded from: classes2.dex */
+final class zzeeo implements zzgax {
+    final /* synthetic */ zzfhx zza;
+
+    zzeeo(zzeep zzeepVar, zzfhx zzfhxVar) {
+        this.zza = zzfhxVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgax
+    public final void zza(Throwable th) {
+        zzcbn.zzg("Failed to get offline buffered ping database: ".concat(String.valueOf(th.getMessage())));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgax
+    public final /* bridge */ /* synthetic */ void zzb(Object obj) {
+        try {
+            this.zza.zza((SQLiteDatabase) obj);
+        } catch (Exception e) {
+            zzcbn.zzg("Error executing function on offline buffered ping database: ".concat(String.valueOf(e.getMessage())));
+        }
+    }
+}

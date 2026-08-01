@@ -1,0 +1,113 @@
+package com.bytedance.sdk.openadsdk.component.view;
+
+import android.content.Context;
+import android.graphics.Color;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import com.bytedance.sdk.component.utils.uc;
+import com.bytedance.sdk.openadsdk.core.customview.PAGFrameLayout;
+import com.bytedance.sdk.openadsdk.core.customview.PAGImageView;
+import com.bytedance.sdk.openadsdk.core.customview.PAGLinearLayout;
+import com.bytedance.sdk.openadsdk.core.customview.PAGRelativeLayout;
+import com.bytedance.sdk.openadsdk.core.customview.PAGTextView;
+import com.bytedance.sdk.openadsdk.core.widget.PAGLogoView;
+import com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView;
+import com.bytedance.sdk.openadsdk.utils.Pj;
+
+/* loaded from: classes2.dex */
+public class PAGAppOpenOneLayout extends PAGAppOpenBaseLayout {
+    public PAGAppOpenOneLayout(Context context) {
+        super(context);
+        setLayoutParams(new FrameLayout.LayoutParams(-1, -1));
+        setBackgroundColor(Color.parseColor("#000000"));
+        PAGLinearLayout pAGLinearLayout = new PAGLinearLayout(context);
+        pAGLinearLayout.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        pAGLinearLayout.setOrientation(1);
+        PAGRelativeLayout pAGRelativeLayout = new PAGRelativeLayout(context);
+        pAGRelativeLayout.setId(520093753);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, 0);
+        layoutParams.weight = 84.0f;
+        pAGRelativeLayout.setLayoutParams(layoutParams);
+        this.pvs = new PAGImageView(context);
+        this.pvs.setId(520093754);
+        this.pvs.setLayoutParams(new LinearLayout.LayoutParams(-1, -1));
+        this.pvs.setScaleType(ImageView.ScaleType.FIT_XY);
+        this.icD = new PAGFrameLayout(context);
+        this.icD.setId(520093755);
+        RelativeLayout.LayoutParams layoutParams2 = new RelativeLayout.LayoutParams(-1, -1);
+        layoutParams2.addRule(13);
+        this.icD.setLayoutParams(layoutParams2);
+        this.vG = new PAGImageView(context);
+        this.vG.setId(520093756);
+        this.vG.setLayoutParams(new RelativeLayout.LayoutParams(-1, -1));
+        this.Jd = new PAGLogoView(context);
+        this.Jd.setId(520093757);
+        RelativeLayout.LayoutParams layoutParams3 = new RelativeLayout.LayoutParams(-2, Pj.icD(context, 14.0f));
+        layoutParams3.addRule(12);
+        this.Jd.setLayoutParams(layoutParams3);
+        View pvs = pvs(context);
+        pAGRelativeLayout.addView(this.pvs);
+        pAGRelativeLayout.addView(this.icD);
+        pAGRelativeLayout.addView(this.vG);
+        pAGRelativeLayout.addView(this.Jd);
+        pAGRelativeLayout.addView(pvs);
+        pAGRelativeLayout.addView(this.Mxy);
+        int icD = Pj.icD(context, 2.0f);
+        int icD2 = Pj.icD(context, 20.0f);
+        int icD3 = Pj.icD(context, 22.0f);
+        int icD4 = Pj.icD(context, 40.0f);
+        this.sUS = new PAGLinearLayout(context);
+        this.sUS.setId(520093758);
+        LinearLayout.LayoutParams layoutParams4 = new LinearLayout.LayoutParams(-1, 0);
+        layoutParams4.weight = 16.0f;
+        this.sUS.setLayoutParams(layoutParams4);
+        this.sUS.setBackgroundColor(Color.parseColor("#FFFFFF"));
+        this.sUS.setClickable(false);
+        this.sUS.setGravity(17);
+        this.sUS.setOrientation(0);
+        this.sUS.setPadding(icD2, 0, icD2, 0);
+        this.yiw = new TTRoundRectImageView(context);
+        this.yiw.setId(520093759);
+        LinearLayout.LayoutParams layoutParams5 = new LinearLayout.LayoutParams(icD4, icD4);
+        layoutParams5.leftMargin = icD;
+        layoutParams5.rightMargin = icD3;
+        layoutParams5.setMarginStart(icD);
+        layoutParams5.setMarginEnd(icD3);
+        this.yiw.setLayoutParams(layoutParams5);
+        this.so = new PAGTextView(context);
+        this.so.setId(520093761);
+        this.so.setLayoutParams(new LinearLayout.LayoutParams(-2, -2));
+        this.so.setEllipsize(TextUtils.TruncateAt.END);
+        this.so.setMaxLines(2);
+        this.so.setTextColor(Color.parseColor("#161823"));
+        this.so.setTextSize(1, 22.0f);
+        this.sUS.addView(this.yiw);
+        this.sUS.addView(this.so);
+        pAGLinearLayout.addView(pAGRelativeLayout);
+        pAGLinearLayout.addView(this.sUS);
+        addView(pAGLinearLayout);
+    }
+
+    public View pvs(Context context) {
+        this.NB = new ButtonFlash(context);
+        this.NB.setId(520093717);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(Pj.icD(context, 180.0f), Pj.icD(context, 43.0f));
+        layoutParams.addRule(14);
+        layoutParams.addRule(12);
+        layoutParams.bottomMargin = Pj.icD(context, 24.0f);
+        this.NB.setLayoutParams(layoutParams);
+        this.NB.setBackground(uc.vG(context, "tt_button_back"));
+        this.NB.setEllipsize(TextUtils.TruncateAt.END);
+        this.NB.setGravity(17);
+        this.NB.setLines(1);
+        this.NB.setText(uc.icD(context, "tt_video_download_apk"));
+        this.NB.setTextColor(Color.parseColor("#FFFFFF"));
+        this.NB.setTextSize(1, 16.0f);
+        this.NB.setTag("open_ad_click_button_tag");
+        return this.NB;
+    }
+}
