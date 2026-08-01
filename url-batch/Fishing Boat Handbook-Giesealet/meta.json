@@ -32,5 +32,74 @@
   ],
   "stdout": "Downloading com.fishingboathandbook...\ncom.fishingboathandbook downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Fishing Boat Handbook"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.8.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "нет"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, com.fishingboathandbook.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native (Hermes), Kotlin 2.0.21 / kotlinx-coroutines, OkHttp 4.9.2, Okio, Bolts, Facebook Fresco/SoLoader/Yoga, @react-native-async-storage/async-storage, react-native-maps (com.rnmaps), react-native-screens (com.swmansion.rnscreens), react-native-safe-area-context (com.th3rdwave.safeareacontext), Google Play Services Maps 18.2.0 / Location 21.0.1 / Base 18.2.0 / Basement 18.1.0 / Tasks 18.0.2, Google Maps Android Utils, Google Material Components, AndroidX (appcompat, activity, fragment, core, lifecycle, recyclerview, constraintlayout, coordinatorlayout, room, sqlite, work, startup, emoji2, profileinstaller, savedstate, viewpager2, drawerlayout, swiperefreshlayout, vectordrawable), Pairip (com.pairip.application / licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "нет"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "AsyncStorage (RNCAsyncStorage): флаг онбординга inboat:onboardingComplete и сохранённые избранные элементы inboat:savedItem"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "license check"
+      }
+    ],
+    "domains": [],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

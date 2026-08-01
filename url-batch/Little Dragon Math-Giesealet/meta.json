@@ -1,0 +1,36 @@
+{
+  "app_id": "com.little.dron.math",
+  "title": "Little Dragon Math",
+  "developer": "Giesealet",
+  "developer_id": "5644484772063866391",
+  "icon": "https://play-lh.googleusercontent.com/JDoJn0Qtbjhs6ifUWHXmlbBkyUdx0VYr28yMUSHIwd1_yt4KrZncvxxsqule4Ju-3nAGyt88oJKKL5WnWFipfA",
+  "url": "https://play.google.com/store/apps/details?id=com.little.dron.math&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 8, 2026",
+  "updated": "2026-06-09",
+  "version": "1.0",
+  "summary": "Learn math through short lessons, interactive challenges, number patterns",
+  "keyword": "url-batch",
+  "folder": "Little Dragon Math-Giesealet",
+  "path": "url-batch/Little Dragon Math-Giesealet",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.little.dron.math.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Little Dragon Math-Giesealet",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.little.dron.math...\ncom.little.dron.math downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.little.dron.math...\ncom.little.dron.math downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
