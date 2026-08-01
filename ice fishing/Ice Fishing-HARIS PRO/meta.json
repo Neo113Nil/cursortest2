@@ -32,24 +32,5 @@
   ],
   "stdout": "Downloading com.lumenpath.harispro.hrnavigator...\ncom.lumenpath.harispro.hrnavigator downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0,
-  "cloaking": "нет",
-  "brief_report": {
-    "table": [
-      {
-        "param": "Libraries",
-        "value": "androidx.activity 1.8.0, androidx.activity-ktx 1.8.0, androidx.annotation-experimental 1.4.1, androidx.appcompat 1.7.0, androidx.appcompat-resources 1.7.0, androidx.arch.core-runtime, androidx.cardview 1.0.0, androidx.constraintlayout 2.2.0, androidx.coordinatorlayout 1.1.0, androidx.core 1.15.0, androidx.core-ktx 1.15.0, androidx.cursoradapter 1.0.0, androidx.customview 1.1.0, androidx.customview-poolingcontainer 1.0.0, androidx.databinding-viewbinding 8.7.3, androidx.documentfile 1.0.0, androidx.drawerlayout 1.1.1, androidx.dynamicanimation 1.0.0, androidx.emoji2 1.3.0, androidx.emoji2-views-helper 1.3.0, androidx.fragment 1.6.2, androidx.fragment-ktx 1.6.2, androidx.interpolator 1.0.0, androidx.legacy-support-core-utils 1.0.0, androidx.lifecycle-livedata 2.8.7, androidx.lifecycle-livedata-core 2.8.7, androidx.lifecycle-livedata-core-ktx 2.8.7, androidx.lifecycle-livedata-ktx 2.8.7, androidx.lifecycle-process 2.8.7, androidx.lifecycle-runtime 2.8.7, androidx.lifecycle-runtime-ktx 2.8.7, androidx.lifecycle-viewmodel 2.8.7, androidx.lifecycle-viewmodel-ktx 2.8.7, androidx.lifecycle-viewmodel-savedstate 2.8.7, androidx.loader 1.0.0, androidx.localbroadcastmanager 1.0.0, androidx.nav…"
-      }
-    ],
-    "domains": [
-      {
-        "domain": "dispatchers.io",
-        "redirects_to": "https://cakhiatv1.net/",
-        "parked_at": "регистратор: NAMECHEAP INC"
-      }
-    ],
-    "collected_data": [],
-    "cloaking": "нет",
-    "cloaking_brief": ""
-  }
+  "exit_code": 0
 }
