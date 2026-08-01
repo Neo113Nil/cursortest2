@@ -1,6 +1,6 @@
 package m8;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import g1.C4523c;
 import i8.C4594a;
 import java.io.IOException;

@@ -6,7 +6,7 @@ import android.util.Log;
 import android.util.Pair;
 import com.anythink.basead.exoplayer.k.af;
 import com.anythink.basead.exoplayer.k.o;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class a {

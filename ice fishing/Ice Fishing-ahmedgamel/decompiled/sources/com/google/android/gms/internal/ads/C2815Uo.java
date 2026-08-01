@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Objects;
 import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;

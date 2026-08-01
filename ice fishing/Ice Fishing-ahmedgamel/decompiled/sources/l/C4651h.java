@@ -3,7 +3,7 @@ package l;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.ArrayList;
 
 /* renamed from: l.h, reason: case insensitive filesystem */

@@ -1,7 +1,7 @@
 package h1;
 
 import android.graphics.Path;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import d1.C4443a;
 import d1.C4444b;
 import i1.C4580b;

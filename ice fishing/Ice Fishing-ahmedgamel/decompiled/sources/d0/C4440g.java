@@ -8,7 +8,7 @@ import android.system.OsConstants;
 import android.util.Log;
 import com.anythink.basead.exoplayer.k.p;
 import com.anythink.basead.ui.BaseATView;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.BufferedInputStream;
 import java.io.EOFException;
 import java.io.FileDescriptor;

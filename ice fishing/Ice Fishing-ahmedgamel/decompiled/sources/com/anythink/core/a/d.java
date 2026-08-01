@@ -6,7 +6,7 @@ import com.anythink.core.common.d.u;
 import com.anythink.core.common.h.bv;
 import com.anythink.core.common.v.af;
 import com.anythink.core.d.l;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class d {

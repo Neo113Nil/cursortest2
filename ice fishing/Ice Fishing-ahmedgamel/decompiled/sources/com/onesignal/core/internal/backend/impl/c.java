@@ -1,7 +1,7 @@
 package com.onesignal.core.internal.backend.impl;
 
 import I7.l;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import kotlin.jvm.internal.h;
 import kotlin.jvm.internal.i;
 import kotlin.jvm.internal.r;

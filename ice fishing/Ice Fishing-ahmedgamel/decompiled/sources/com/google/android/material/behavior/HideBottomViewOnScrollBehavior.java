@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewPropertyAnimator;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import l3.AbstractC4661a;

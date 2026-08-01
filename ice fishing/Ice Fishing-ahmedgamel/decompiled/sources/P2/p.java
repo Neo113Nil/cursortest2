@@ -5,7 +5,7 @@ import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.text.TextUtils;
 import android.util.Log;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Locale;
 
 /* loaded from: classes.dex */

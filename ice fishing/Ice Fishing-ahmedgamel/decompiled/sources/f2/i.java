@@ -14,7 +14,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import androidx.fragment.app.C0461d;
 import c2.C0534a;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import g2.C4525b;
 import g2.InterfaceC4526c;
 import g2.InterfaceC4527d;

@@ -34,7 +34,7 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import com.facebook.ads.AdError;
 import com.google.android.material.chip.Chip;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import java.util.Locale;

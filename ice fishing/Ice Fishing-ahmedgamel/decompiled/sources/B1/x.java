@@ -12,11 +12,11 @@ import com.anythink.core.common.n.b.af;
 import com.anythink.core.common.n.b.ah;
 import com.google.firebase.concurrent.ExecutorsRegistrar;
 import com.google.firebase.datatransport.TransportRegistrar;
-import com.icefishinggame.icefishinggamemultigames.DetailsActivity;
-import com.icefishinggame.icefishinggamemultigames.IntroActivity;
-import com.icefishinggame.icefishinggamemultigames.MainActivity;
-import com.icefishinggame.icefishinggamemultigames.SplashActivity;
-import com.icefishinggame.icefishinggamemultigames.StartActivity;
+import com.icefishing.icefishingbigwin.DetailsActivity;
+import com.icefishing.icefishingbigwin.IntroActivity;
+import com.icefishing.icefishingbigwin.MainActivity;
+import com.icefishing.icefishingbigwin.SplashActivity;
+import com.icefishing.icefishingbigwin.StartActivity;
 import java.util.List;
 import java.util.concurrent.ScheduledExecutorService;
 

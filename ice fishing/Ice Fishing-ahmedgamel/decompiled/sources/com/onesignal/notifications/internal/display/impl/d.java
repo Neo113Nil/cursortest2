@@ -11,7 +11,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.text.SpannableString;
 import android.text.style.StyleSpan;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import com.onesignal.notifications.internal.display.impl.b;
 import java.security.SecureRandom;
 import java.util.ArrayList;

@@ -45,7 +45,7 @@ import com.google.android.gms.internal.consent_sdk.C4386w2;
 import com.google.android.gms.internal.consent_sdk.RunnableC4324h;
 import com.google.android.gms.internal.consent_sdk.RunnableC4340l;
 import com.google.android.gms.internal.consent_sdk.Z2;
-import com.icefishinggame.icefishinggamemultigames.SplashActivity;
+import com.icefishing.icefishingbigwin.SplashActivity;
 import d3.AbstractC4446a;
 import g1.C4522b;
 import java.util.ArrayList;
@@ -89,7 +89,7 @@ public final /* synthetic */ class y implements Runnable {
         int i;
         j3.m d2;
         JSONObject jSONObject;
-        com.icefishinggame.icefishinggamemultigames.F f3;
+        com.icefishing.icefishingbigwin.F f3;
         j4.q qVar;
         int i6 = 7;
         Object obj = null;

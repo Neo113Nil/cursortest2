@@ -3,7 +3,7 @@ package e8;
 import a.AbstractC0422a;
 import b8.C0531c;
 import b8.InterfaceC0529a;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import u7.EnumC5088f;
 
 /* renamed from: e8.w, reason: case insensitive filesystem */

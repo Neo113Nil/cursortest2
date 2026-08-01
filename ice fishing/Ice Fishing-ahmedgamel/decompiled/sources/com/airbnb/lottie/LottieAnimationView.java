@@ -40,7 +40,7 @@ import android.widget.ImageView;
 import b1.C0513a;
 import c1.e;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import f1.C4499b;
 import j1.AbstractC4603g;
 import j1.ChoreographerFrameCallbackC4601e;

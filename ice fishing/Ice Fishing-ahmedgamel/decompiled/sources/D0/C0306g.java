@@ -3,7 +3,7 @@ package D0;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.view.View;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* renamed from: D0.g, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

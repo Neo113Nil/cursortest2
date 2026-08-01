@@ -26,7 +26,7 @@ import com.anythink.core.common.d.t;
 import com.anythink.core.common.u.e;
 import com.anythink.core.common.v.m;
 import com.anythink.expressad.reward.player.c;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.File;
 import java.lang.ref.WeakReference;
 import java.util.Timer;

@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.WindowManager;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class f1 extends Q2.a {

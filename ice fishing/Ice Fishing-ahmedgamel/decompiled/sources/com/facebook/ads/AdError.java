@@ -1,7 +1,7 @@
 package com.facebook.ads;
 
 import android.text.TextUtils;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.Locale;
 
 /* loaded from: classes.dex */

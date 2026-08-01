@@ -6,7 +6,7 @@ import android.os.IInterface;
 import android.os.Parcel;
 import com.google.android.gms.internal.ads.AbstractC3388j8;
 import com.google.android.gms.internal.ads.P8;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class I extends AbstractC0432a implements K {

@@ -6,7 +6,7 @@
     android:compileSdkVersionCodename="15"
     android:requiredSplitTypes="base__abi,base__density"
     android:splitTypes=""
-    package="com.icefishinggame.icefishinggamemultigames"
+    package="com.icefishing.icefishingbigwin"
     platformBuildVersionCode="35"
     platformBuildVersionName="15">
     <uses-sdk
@@ -48,9 +48,9 @@
         </intent>
     </queries>
     <permission
-        android:name="com.icefishinggame.icefishinggamemultigames.permission.C2D_MESSAGE"
+        android:name="com.icefishing.icefishingbigwin.permission.C2D_MESSAGE"
         android:protectionLevel="signature"/>
-    <uses-permission android:name="com.icefishinggame.icefishinggamemultigames.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.icefishing.icefishingbigwin.permission.C2D_MESSAGE"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
@@ -73,9 +73,9 @@
     <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
     <permission
-        android:name="com.icefishinggame.icefishinggamemultigames.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.icefishing.icefishingbigwin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature"/>
-    <uses-permission android:name="com.icefishinggame.icefishinggamemultigames.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.icefishing.icefishingbigwin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
     <application
         android:theme="@style/Theme.AllInOneGame"
         android:label="@string/app_name"
@@ -91,49 +91,49 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules">
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.MainActivity"
+            android:name="com.icefishing.icefishingbigwin.MainActivity"
             android:exported="true"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopActiongamesActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopActiongamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopAdventuregamesActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopAdventuregamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopArcadegamesActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopArcadegamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopPuzzleLogicActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopPuzzleLogicActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopSportsRacinggamesActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopSportsRacinggamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GzopStretegygamesActivity"
+            android:name="com.icefishing.icefishingbigwin.GzopStretegygamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.PlaygamesActivity"
+            android:name="com.icefishing.icefishingbigwin.PlaygamesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GameCategoriesActivity"
+            android:name="com.icefishing.icefishingbigwin.GameCategoriesActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.LanguageActivity"
+            android:name="com.icefishing.icefishingbigwin.LanguageActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.CountryActivity"
+            android:name="com.icefishing.icefishingbigwin.CountryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.IntroActivity"
+            android:name="com.icefishing.icefishingbigwin.IntroActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.AgeSelection"
+            android:name="com.icefishing.icefishingbigwin.AgeSelection"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.GenderActivity"
+            android:name="com.icefishing.icefishingbigwin.GenderActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.StartActivity"
+            android:name="com.icefishing.icefishingbigwin.StartActivity"
             android:exported="false"/>
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -145,10 +145,10 @@
             android:name="org.apache.http.legacy"
             android:required="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.adscode.ApplinkActivity"
+            android:name="com.icefishing.icefishingbigwin.adscode.ApplinkActivity"
             android:exported="true"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.SplashActivity"
+            android:name="com.icefishing.icefishingbigwin.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -156,10 +156,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.MWebActivity"
+            android:name="com.icefishing.icefishingbigwin.MWebActivity"
             android:exported="false"/>
         <activity
-            android:name="com.icefishinggame.icefishinggamemultigames.DetailsActivity"
+            android:name="com.icefishing.icefishingbigwin.DetailsActivity"
             android:exported="false"/>
         <activity
             android:theme="@android:style/Theme.Translucent"
@@ -170,7 +170,7 @@
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
             android:exported="false"
-            android:authorities="com.icefishinggame.icefishinggamemultigames.mobileadsinitprovider"
+            android:authorities="com.icefishing.icefishingbigwin.mobileadsinitprovider"
             android:initOrder="100"/>
         <service
             android:name="com.google.android.gms.ads.AdService"
@@ -206,7 +206,7 @@
             android:exported="true">
             <intent-filter android:priority="999">
                 <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-                <category android:name="com.icefishinggame.icefishinggamemultigames"/>
+                <category android:name="com.icefishing.icefishingbigwin"/>
             </intent-filter>
         </receiver>
         <service
@@ -271,7 +271,7 @@
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:exported="false"
-            android:authorities="com.icefishinggame.icefishinggamemultigames.androidx-startup">
+            android:authorities="com.icefishing.icefishingbigwin.androidx-startup">
             <meta-data
                 android:name="com.onesignal.core.internal.application.impl.ActivityLifecycleInitializer"
                 android:value="androidx.startup"/>
@@ -299,7 +299,7 @@
         <provider
             android:name="com.facebook.ads.AudienceNetworkContentProvider"
             android:exported="false"
-            android:authorities="com.icefishinggame.icefishinggamemultigames.AudienceNetworkContentProvider"/>
+            android:authorities="com.icefishing.icefishingbigwin.AudienceNetworkContentProvider"/>
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
             android:permission="com.google.android.c2dm.permission.SEND"
@@ -352,7 +352,7 @@
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:exported="false"
-            android:authorities="com.icefishinggame.icefishinggamemultigames.firebaseinitprovider"
+            android:authorities="com.icefishing.icefishingbigwin.firebaseinitprovider"
             android:initOrder="100"
             android:directBootAware="true"/>
         <uses-library

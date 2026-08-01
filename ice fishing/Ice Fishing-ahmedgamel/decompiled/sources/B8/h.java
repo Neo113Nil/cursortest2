@@ -1,6 +1,6 @@
 package B8;
 
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* loaded from: classes2.dex */
 public abstract class h {

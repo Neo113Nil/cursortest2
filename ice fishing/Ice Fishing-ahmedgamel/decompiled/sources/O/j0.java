@@ -7,7 +7,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.PathInterpolator;
 import com.google.android.gms.internal.ads.C2545Eo;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import g0.C4519a;
 import java.util.List;
 

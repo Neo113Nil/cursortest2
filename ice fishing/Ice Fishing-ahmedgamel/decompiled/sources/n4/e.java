@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.viewpager.widget.ViewPager;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
-import com.icefishinggame.icefishinggamemultigames.IntroActivity;
+import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishing.icefishingbigwin.IntroActivity;
 
 /* loaded from: classes2.dex */
 public final class e extends G0.a {

@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.util.StateSet;
 import android.util.TypedValue;
 import android.util.Xml;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.lang.reflect.Array;
 import org.xmlpull.v1.XmlPullParserException;
 

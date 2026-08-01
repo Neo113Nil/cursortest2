@@ -1,6 +1,6 @@
 package S0;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import u.AbstractC5049e;
 
 /* loaded from: classes.dex */

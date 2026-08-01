@@ -3,7 +3,7 @@ package com.google.android.gms.internal.ads;
 import a3.AbstractC0432a;
 import android.os.IBinder;
 import android.os.Parcel;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import q2.AbstractBinderC4918y0;
 
 /* renamed from: com.google.android.gms.internal.ads.ob, reason: case insensitive filesystem */

@@ -38,7 +38,7 @@ import android.view.Window;
 import b8.C0531c;
 import b8.InterfaceC0529a;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import d1.C4445c;
 import d4.C4449c;
 import d4.InterfaceC4450d;

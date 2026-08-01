@@ -2,7 +2,7 @@ package com.anythink.core.common.n.b;
 
 import com.anythink.basead.ui.BaseATView;
 import com.anythink.core.common.n.b.u;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.Closeable;
 import java.util.Collections;
 import java.util.List;

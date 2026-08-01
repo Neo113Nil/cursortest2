@@ -38,7 +38,7 @@ public final class BinderC2647Ko extends AbstractBinderC3336i8 implements Interf
                 q2.J0.a(list);
                 int size = arrayList.size();
                 for (i = 0; i < size; i++) {
-                    ((com.icefishinggame.icefishinggamemultigames.z) arrayList.get(i)).getClass();
+                    ((com.icefishing.icefishingbigwin.z) arrayList.get(i)).getClass();
                 }
                 return;
         }

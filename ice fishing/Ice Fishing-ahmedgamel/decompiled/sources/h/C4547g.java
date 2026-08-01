@@ -14,7 +14,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 import androidx.appcompat.app.AlertController$RecycleListView;
 import androidx.core.widget.NestedScrollView;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import g.AbstractC4518a;
 import java.lang.ref.WeakReference;
 

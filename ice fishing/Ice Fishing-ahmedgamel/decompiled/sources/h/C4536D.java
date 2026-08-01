@@ -4,7 +4,7 @@ import android.R;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.lang.reflect.Constructor;
 import m.C4668B;
 import m.C4703o;

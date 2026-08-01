@@ -1,6 +1,6 @@
 package p4;
 
-import com.icefishinggame.icefishinggamemultigames.StartActivity;
+import com.icefishing.icefishingbigwin.StartActivity;
 import u7.AbstractC5091i;
 import u7.C5090h;
 import z7.InterfaceC5267d;

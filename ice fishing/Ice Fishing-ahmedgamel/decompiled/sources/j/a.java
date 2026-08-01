@@ -9,8 +9,8 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishing.icefishingbigwin.C5275R;
 import g.AbstractC4518a;
 
 /* loaded from: classes.dex */

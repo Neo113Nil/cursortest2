@@ -2,7 +2,7 @@ package m;
 
 import android.content.Context;
 import android.view.View;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import l.C4648e;
 import l.SubMenuC4643E;
 

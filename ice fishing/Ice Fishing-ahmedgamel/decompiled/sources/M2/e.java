@@ -25,8 +25,8 @@ import androidx.fragment.app.AbstractActivityC0480x;
 import androidx.fragment.app.C0458a;
 import androidx.fragment.app.N;
 import com.google.android.gms.common.api.GoogleApiActivity;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* loaded from: classes.dex */
 public final class e extends f {

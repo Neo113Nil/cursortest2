@@ -4,7 +4,7 @@ import L3.F;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.TypedValue;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import k3.AbstractC4632a;
 import m.Z;
 

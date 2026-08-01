@@ -24,7 +24,7 @@ import com.facebook.ads.NativeAd;
 import com.facebook.ads.NativeBannerAd;
 import com.google.android.gms.internal.ads.C2815Uo;
 import com.google.android.gms.internal.ads.C3462kb;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import h.AbstractActivityC4551k;
 import java.util.Random;
 import l.C4648e;

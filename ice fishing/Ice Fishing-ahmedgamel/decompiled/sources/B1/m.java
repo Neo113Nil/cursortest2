@@ -3,7 +3,7 @@ package B1;
 import android.util.Log;
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
 import com.google.android.gms.internal.ads.C2941aq;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

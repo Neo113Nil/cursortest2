@@ -16,7 +16,7 @@ import android.widget.AdapterView;
 import android.widget.Filterable;
 import android.widget.ListAdapter;
 import com.google.android.material.textfield.TextInputLayout;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.List;
 import java.util.Locale;
 import k3.AbstractC4632a;

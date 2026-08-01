@@ -6,7 +6,7 @@ import android.webkit.WebView;
 import com.anythink.expressad.atsignalcommon.windvane.WindVaneWebView;
 import com.anythink.expressad.atsignalcommon.windvane.h;
 import com.anythink.expressad.foundation.g.g.a.b;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import org.json.JSONException;
 import org.json.JSONObject;
 

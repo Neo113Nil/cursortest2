@@ -3,7 +3,7 @@ package o4;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.InterstitialAdListener;
-import com.icefishinggame.icefishinggamemultigames.F;
+import com.icefishing.icefishingbigwin.F;
 import h.AbstractActivityC4551k;
 
 /* renamed from: o4.d, reason: case insensitive filesystem */

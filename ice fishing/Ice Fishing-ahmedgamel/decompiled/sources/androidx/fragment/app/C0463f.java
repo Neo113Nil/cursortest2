@@ -8,7 +8,7 @@ import android.content.res.Resources;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* renamed from: androidx.fragment.app.f, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

@@ -4,7 +4,7 @@ import android.R;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import k.C4617d;
 
 /* loaded from: classes2.dex */

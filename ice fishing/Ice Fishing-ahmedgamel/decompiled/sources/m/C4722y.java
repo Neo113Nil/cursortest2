@@ -13,7 +13,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.MultiAutoCompleteTextView;
 import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* renamed from: m.y, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

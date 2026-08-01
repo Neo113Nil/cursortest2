@@ -2,8 +2,8 @@ package h;
 
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
-import com.icefishinggame.icefishinggamemultigames.MainActivity;
+import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishing.icefishingbigwin.MainActivity;
 
 /* renamed from: h.d, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

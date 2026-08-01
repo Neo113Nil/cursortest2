@@ -31,7 +31,7 @@ import com.anythink.core.common.a.n;
 import com.anythink.core.common.a.o;
 import com.anythink.core.common.d.t;
 import com.anythink.core.common.h.x;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.File;
 import java.util.List;
 import u.AbstractC5049e;

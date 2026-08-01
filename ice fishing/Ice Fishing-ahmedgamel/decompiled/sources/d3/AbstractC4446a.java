@@ -4,7 +4,7 @@ import android.os.BadParcelableException;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* renamed from: d3.a, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

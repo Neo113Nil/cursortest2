@@ -1,7 +1,7 @@
 package com.pairip.application;
 
 import android.content.Context;
-import com.icefishinggame.icefishinggamemultigames.MyApplication;
+import com.icefishing.icefishingbigwin.MyApplication;
 import com.pairip.licensecheck.LicenseClient;
 
 /* loaded from: classes.dex */

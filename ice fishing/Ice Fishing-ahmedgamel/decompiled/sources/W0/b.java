@@ -8,7 +8,7 @@ import S0.p;
 import android.database.Cursor;
 import androidx.work.impl.WorkDatabase_Impl;
 import com.bumptech.glide.e;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Iterator;
 import kotlin.jvm.internal.h;

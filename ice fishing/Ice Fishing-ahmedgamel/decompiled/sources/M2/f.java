@@ -13,7 +13,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.google.android.gms.common.GooglePlayServicesIncorrectManifestValueException;
 import com.google.android.gms.common.GooglePlayServicesMissingManifestValueException;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* loaded from: classes.dex */
 public class f {

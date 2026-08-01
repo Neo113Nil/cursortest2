@@ -3,7 +3,7 @@ package X2;
 import a3.AbstractC0432a;
 import android.os.Parcel;
 import com.google.android.gms.dynamite.descriptors.com.google.android.gms.ads.dynamite.ModuleDescriptor;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class h extends AbstractC0432a {

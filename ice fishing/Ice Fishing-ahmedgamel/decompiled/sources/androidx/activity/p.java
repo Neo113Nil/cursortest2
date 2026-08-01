@@ -33,7 +33,7 @@ import androidx.lifecycle.T;
 import androidx.lifecycle.V;
 import androidx.lifecycle.X;
 import androidx.lifecycle.Y;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import d.C4432a;
 import d.InterfaceC4433b;
 import e.AbstractC4457c;

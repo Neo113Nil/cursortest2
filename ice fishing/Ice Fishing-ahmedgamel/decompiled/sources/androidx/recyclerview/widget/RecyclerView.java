@@ -49,7 +49,7 @@ import com.anythink.core.common.d.j;
 import com.google.android.gms.internal.ads.C2780Sl;
 import com.google.android.gms.internal.ads.C3381j1;
 import com.google.android.gms.internal.ads.C3675oP;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import g1.C4522b;
 import g1.C4523c;
 import j4.g;

@@ -1,7 +1,7 @@
 package S6;
 
 import B1.x;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import i8.l;
 import i8.o;
 import i8.v;

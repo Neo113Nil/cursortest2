@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.facebook.ads.Ad;
 import com.facebook.ads.AdError;
 import com.facebook.ads.AdListener;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;
 

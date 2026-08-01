@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.ads;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.Locale;
 
 /* renamed from: com.google.android.gms.internal.ads.xN, reason: case insensitive filesystem */

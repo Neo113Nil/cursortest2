@@ -1,7 +1,7 @@
 package D0;
 
 import android.view.View;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.HashMap;
 import u.AbstractC5049e;

@@ -1,6 +1,6 @@
 package c6;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes2.dex */
 public final class h extends IllegalArgumentException {

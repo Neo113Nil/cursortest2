@@ -2,7 +2,7 @@ package com.anythink.expressad.foundation.h;
 
 import android.text.TextUtils;
 import android.util.Base64;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.security.MessageDigest;
 import java.security.Provider;
 import java.security.Security;

@@ -2,7 +2,7 @@ package com.google.android.gms.internal.ads;
 
 import com.anythink.core.common.d.j;
 import com.anythink.expressad.foundation.h.p;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.util.Arrays;

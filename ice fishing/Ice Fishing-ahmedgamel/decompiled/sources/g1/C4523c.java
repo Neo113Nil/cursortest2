@@ -42,10 +42,10 @@ import com.google.android.gms.internal.ads.FE;
 import com.google.android.gms.internal.ads.KD;
 import com.google.android.gms.internal.ads.Qx;
 import com.google.android.gms.internal.ads.RunnableC3191fP;
-import com.icefishinggame.icefishinggamemultigames.IntroActivity;
-import com.icefishinggame.icefishinggamemultigames.LanguageActivity;
-import com.icefishinggame.icefishinggamemultigames.MainActivity;
-import com.icefishinggame.icefishinggamemultigames.ViewOnClickListenerC4400b;
+import com.icefishing.icefishingbigwin.IntroActivity;
+import com.icefishing.icefishingbigwin.LanguageActivity;
+import com.icefishing.icefishingbigwin.MainActivity;
+import com.icefishing.icefishingbigwin.ViewOnClickListenerC4400b;
 import g7.m;
 import g7.p;
 import h.LayoutInflaterFactory2C4533A;
@@ -164,15 +164,15 @@ public class C4523c implements InterfaceC0345u, f, KD, H0.b, InterfaceC0329e, x,
                 viewOnClickListenerC4400b.f36904u.startActivity(new Intent(viewOnClickListenerC4400b.f36904u, (Class<?>) LanguageActivity.class));
                 break;
             case 17:
-                IntroActivity introActivity = ((com.icefishinggame.icefishinggamemultigames.o) this.f37627u).f36928u;
+                IntroActivity introActivity = ((com.icefishing.icefishingbigwin.o) this.f37627u).f36928u;
                 introActivity.startActivity(introActivity.f36779x);
                 break;
             case 18:
-                MainActivity mainActivity = ((com.icefishinggame.icefishinggamemultigames.x) this.f37627u).f36946u.f36949c;
+                MainActivity mainActivity = ((com.icefishing.icefishingbigwin.x) this.f37627u).f36946u.f36949c;
                 mainActivity.startActivity(mainActivity.f36836O);
                 break;
             default:
-                MainActivity mainActivity2 = ((com.icefishinggame.icefishinggamemultigames.x) this.f37627u).f36946u.f36949c;
+                MainActivity mainActivity2 = ((com.icefishing.icefishingbigwin.x) this.f37627u).f36946u.f36949c;
                 mainActivity2.startActivity(mainActivity2.f36846T);
                 break;
         }

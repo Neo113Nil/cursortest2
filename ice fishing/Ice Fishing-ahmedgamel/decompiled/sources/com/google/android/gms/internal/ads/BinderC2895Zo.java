@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import com.google.android.gms.ads.nativead.MediaView;
 import com.google.android.gms.ads.nativead.NativeAd;
 import com.google.android.gms.ads.nativead.NativeAdView;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import m2.AbstractC4731b;

@@ -71,7 +71,7 @@ import com.google.android.gms.internal.ads.VF;
 import com.google.android.gms.internal.ads.VG;
 import com.google.android.gms.internal.ads.XO;
 import com.google.android.gms.internal.ads.Yv;
-import com.icefishinggame.icefishinggamemultigames.GzopSportsRacinggamesActivity;
+import com.icefishing.icefishingbigwin.GzopSportsRacinggamesActivity;
 import d1.C4445c;
 import e4.C4463a;
 import f6.C4512a;

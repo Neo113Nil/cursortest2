@@ -6,7 +6,7 @@ import com.anythink.core.api.ATSDK;
 import com.anythink.core.common.d.j;
 import com.anythink.core.common.h.bv;
 import com.anythink.expressad.advanced.js.NativeAdvancedJsUtils;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.List;
 import java.util.Map;
 import org.json.JSONArray;

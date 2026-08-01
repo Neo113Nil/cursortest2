@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import com.google.android.gms.internal.ads.AbstractC3569ma;
 import com.google.android.gms.internal.ads.C3301ha;
 import com.google.android.gms.internal.ads.Vr;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import p2.C4835j;
 import q2.C4900p;
 import q2.r;

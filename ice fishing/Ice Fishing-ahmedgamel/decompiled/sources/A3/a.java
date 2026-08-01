@@ -3,7 +3,7 @@ package A3;
 import U.b;
 import android.R;
 import android.content.res.ColorStateList;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import m.C4668B;
 
 /* loaded from: classes2.dex */

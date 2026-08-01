@@ -30,7 +30,7 @@ import com.google.android.gms.internal.ads.InterfaceC3123eB;
 import com.google.android.gms.internal.ads.PA;
 import com.google.android.gms.internal.ads.SharedPreferencesOnSharedPreferenceChangeListenerC3461ka;
 import com.google.android.gms.internal.ads.St;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.IOException;
 import java.io.Serializable;
 import java.lang.ref.WeakReference;

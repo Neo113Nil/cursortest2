@@ -1,22 +1,23 @@
 {
-  "app_id": "com.icefishinggame.icefishinggamemultigames",
+  "app_id": "com.icefishing.icefishingbigwin",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/BKq_Us5v4gwoCFW_tdr0UVrQ2rVxHNpQA9K4u41nw8qz5PgsK8jLvshYm9MNn2Are9hkKVfZ5hnbtBjY-HiVCQ",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishinggame.icefishinggamemultigames&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/moJGSH3u6T9I64R6ytAMwyYprqBGtKlQIfpAF0eTS6ft4CAFCjsj821_6G1HuINRXkdLZG8x6WlZSARB9es4g3M",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingbigwin&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Thrilling game with levels and record-breaking fun!",
+  "summary": "Cool catching adventure: swap, score, and chase the jackpot effect!",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
   "ok": true,
   "source": "apkeep:apk-pure",
   "files": [
+    "com.icefishing.icefishingbigwin.xapk",
     "com.icefishinggame.icefishinggamemultigames.xapk"
   ],
   "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ahmedgamel",
@@ -26,11 +27,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
+      "stdout": "Downloading com.icefishing.icefishingbigwin...\ncom.icefishing.icefishingbigwin downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
+  "stdout": "Downloading com.icefishing.icefishingbigwin...\ncom.icefishing.icefishingbigwin downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }

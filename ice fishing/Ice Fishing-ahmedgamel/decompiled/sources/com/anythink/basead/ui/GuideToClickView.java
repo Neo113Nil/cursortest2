@@ -18,7 +18,7 @@ import com.anythink.core.common.res.b;
 import com.anythink.core.common.res.e;
 import com.anythink.core.common.v.g;
 import com.anythink.core.common.v.q;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public class GuideToClickView extends RelativeLayout {

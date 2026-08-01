@@ -29,7 +29,7 @@ import android.window.OnBackInvokedCallback;
 import android.window.OnBackInvokedDispatcher;
 import androidx.fragment.app.F;
 import com.bumptech.glide.g;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import g.AbstractC4518a;
 import g1.C4522b;
 import java.util.ArrayList;

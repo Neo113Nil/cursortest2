@@ -17,7 +17,7 @@ import com.anythink.core.common.h.x;
 import com.anythink.core.common.v.m;
 import com.anythink.core.common.v.q;
 import com.anythink.core.common.v.y;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;

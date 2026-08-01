@@ -1,6 +1,6 @@
 package p8;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.Closeable;
 import java.io.EOFException;
 import java.io.IOException;
@@ -43,7 +43,7 @@ public final class v implements Closeable {
 
     /* JADX WARN: Code restructure failed: missing block: B:163:0x0250, code lost:
     
-        throw new java.io.IOException(com.icefishinggame.icefishinggamemultigames.AbstractC4404f.e(r8, "PROTOCOL_ERROR SETTINGS_MAX_FRAME_SIZE: "));
+        throw new java.io.IOException(com.icefishing.icefishingbigwin.AbstractC4404f.e(r8, "PROTOCOL_ERROR SETTINGS_MAX_FRAME_SIZE: "));
      */
     /*
         Code decompiled incorrectly, please refer to instructions dump.

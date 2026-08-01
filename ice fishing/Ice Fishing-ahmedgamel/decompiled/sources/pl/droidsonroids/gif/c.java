@@ -18,7 +18,7 @@ import android.net.Uri;
 import android.os.SystemClock;
 import android.util.TypedValue;
 import android.widget.MediaController;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.io.IOException;
 import java.util.Locale;
 import java.util.concurrent.ConcurrentLinkedQueue;

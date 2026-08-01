@@ -1,6 +1,6 @@
 package x;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

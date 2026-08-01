@@ -4,7 +4,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import c1.C0533a;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import j1.AbstractC4599c;
 import j1.AbstractC4603g;
 import java.util.ArrayList;

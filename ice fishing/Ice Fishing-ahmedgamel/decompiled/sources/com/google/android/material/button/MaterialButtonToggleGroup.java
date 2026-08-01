@@ -17,7 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.ToggleButton;
 import com.google.android.material.timepicker.f;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import g1.C4523c;
 import java.util.ArrayList;
 import java.util.Collections;

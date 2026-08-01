@@ -78,6 +78,8 @@
     <public type="anim" name="slide_out_right" id="0x7f01004b" />
     <public type="anim" name="success_bow_roate" id="0x7f01004c" />
     <public type="anim" name="success_mask_layout" id="0x7f01004d" />
+    <public type="anim" name="zoom_in" id="0x7f01004e" />
+    <public type="anim" name="zoom_out" id="0x7f01004f" />
     <public type="animator" name="design_appbar_state_list_animator" id="0x7f020000" />
     <public type="animator" name="design_fab_hide_motion_spec" id="0x7f020001" />
     <public type="animator" name="design_fab_show_motion_spec" id="0x7f020002" />
@@ -6336,8 +6338,10 @@
     <public type="style" name="Platform.V21.AppCompat.Light" id="0x7f120143" />
     <public type="style" name="Platform.V25.AppCompat" id="0x7f120144" />
     <public type="style" name="Platform.V25.AppCompat.Light" id="0x7f120145" />
+    <public type="style" name="Platform.Widget.AppCompat.Spinner" id="0x7f120146" />
     <public type="style" name="RtlOverlay.DialogWindowTitle.AppCompat" id="0x7f120147" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.ActionBar.TitleItem" id="0x7f120148" />
+    <public type="style" name="RtlOverlay.Widget.AppCompat.DialogTitle.Icon" id="0x7f120149" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.PopupMenuItem" id="0x7f12014a" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.PopupMenuItem.InternalGroup" id="0x7f12014b" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.PopupMenuItem.Shortcut" id="0x7f12014c" />
@@ -6350,6 +6354,8 @@
     <public type="style" name="RtlOverlay.Widget.AppCompat.Search.DropDown.Query" id="0x7f120153" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.Search.DropDown.Text" id="0x7f120154" />
     <public type="style" name="RtlOverlay.Widget.AppCompat.SearchView.MagIcon" id="0x7f120155" />
+    <public type="style" name="RtlUnderlay.Widget.AppCompat.ActionButton" id="0x7f120156" />
+    <public type="style" name="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow" id="0x7f120157" />
     <public type="style" name="ShapeAppearance.M3.Comp.Badge.Large.Shape" id="0x7f120158" />
     <public type="style" name="ShapeAppearance.M3.Comp.Badge.Shape" id="0x7f120159" />
     <public type="style" name="ShapeAppearance.M3.Comp.BottomAppBar.Container.Shape" id="0x7f12015a" />

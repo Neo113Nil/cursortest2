@@ -91,7 +91,7 @@ public final class J0 {
         }
     }
 
-    public final void d(Context context, com.icefishinggame.icefishinggamemultigames.z zVar) {
+    public final void d(Context context, com.icefishing.icefishingbigwin.z zVar) {
         InterfaceC4883g0 interfaceC4883g0;
         synchronized (this.f40057d) {
             try {

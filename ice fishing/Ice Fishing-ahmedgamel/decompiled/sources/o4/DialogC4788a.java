@@ -2,7 +2,7 @@ package o4;
 
 import android.app.Dialog;
 import android.os.Bundle;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 
 /* renamed from: o4.a, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

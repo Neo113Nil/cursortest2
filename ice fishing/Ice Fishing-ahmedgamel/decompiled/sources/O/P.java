@@ -1,7 +1,7 @@
 package O;
 
 import android.view.View;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Objects;
 
 /* loaded from: classes.dex */

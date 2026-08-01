@@ -5,7 +5,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import com.anythink.core.common.d.u;
 import com.anythink.core.common.v.af;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.concurrent.ConcurrentHashMap;
 import org.json.JSONObject;
 

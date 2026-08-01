@@ -9,7 +9,7 @@ import android.text.TextUtils;
 import com.bumptech.glide.manager.o;
 import com.google.android.gms.internal.ads.RunnableC4027v0;
 import com.google.android.gms.internal.ads.W4;
-import com.icefishinggame.icefishinggamemultigames.F;
+import com.icefishing.icefishingbigwin.F;
 import g1.C4523c;
 import j4.q;
 import java.io.UnsupportedEncodingException;

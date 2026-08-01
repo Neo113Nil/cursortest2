@@ -40,10 +40,10 @@ import com.facebook.ads.internal.api.MediaViewApi;
 import com.facebook.ads.internal.dynamicloading.DynamicLoaderFactory;
 import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.textfield.TextInputLayout;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
-import com.icefishinggame.icefishinggamemultigames.IntroActivity;
-import com.icefishinggame.icefishinggamemultigames.MainActivity;
-import com.icefishinggame.icefishinggamemultigames.w;
+import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishing.icefishingbigwin.IntroActivity;
+import com.icefishing.icefishingbigwin.MainActivity;
+import com.icefishing.icefishingbigwin.w;
 import h.C4539G;
 import i3.C4582a;
 import java.io.IOException;
@@ -399,7 +399,7 @@ public final class c implements Runnable {
                 return;
             case 22:
                 int i10 = Build.VERSION.SDK_INT;
-                IntroActivity introActivity = ((com.icefishinggame.icefishinggamemultigames.p) this.f1031u).f36929a;
+                IntroActivity introActivity = ((com.icefishing.icefishingbigwin.p) this.f1031u).f36929a;
                 E0 h9 = i10 >= 30 ? X.h(introActivity.getWindow().getDecorView()) : new E0(introActivity.getWindow(), null);
                 Objects.requireNonNull(h9);
                 h9.f2039a.j();

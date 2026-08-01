@@ -1,7 +1,7 @@
 package c6;
 
 import a.AbstractC0422a;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import u7.EnumC5088f;
 import y8.s;
 

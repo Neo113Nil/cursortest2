@@ -7,7 +7,7 @@ import S7.InterfaceC0404w;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.common.g;
 import j5.InterfaceC4611a;

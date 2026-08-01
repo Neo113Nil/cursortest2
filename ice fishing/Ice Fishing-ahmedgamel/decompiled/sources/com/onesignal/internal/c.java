@@ -13,7 +13,7 @@ import a.AbstractC0422a;
 import a5.InterfaceC0437a;
 import android.content.Context;
 import android.os.Build;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import com.onesignal.common.AndroidUtils;
 import com.onesignal.core.CoreModule;
 import com.onesignal.session.SessionModule;

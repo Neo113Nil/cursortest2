@@ -26,7 +26,7 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import com.anythink.basead.exoplayer.k.p;
 import com.google.android.material.chip.Chip;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;
 import l3.C4662b;

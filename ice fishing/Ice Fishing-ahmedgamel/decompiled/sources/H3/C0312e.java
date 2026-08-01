@@ -7,7 +7,7 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import android.widget.EditText;
 import com.google.android.material.internal.CheckableImageButton;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import l3.AbstractC4661a;
 
 /* renamed from: H3.e, reason: case insensitive filesystem */

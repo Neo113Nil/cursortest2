@@ -194,9 +194,7 @@ public final class C4164xc implements BD {
                 return ND.f26473u;
             case 9:
                 Throwable th2 = (Throwable) obj;
-                Vs vs = (Vs) this.f35029b;
-                vs.getClass();
-                vs.f28256c.a(new RunnableC3470kj(20, th2));
+                ((Vs) this.f35029b).f28256c.a(new RunnableC3470kj(20, th2));
                 String str5 = "";
                 return QC.c(th2 instanceof SecurityException ? new C3265gs(str5, i9, i10) : th2 instanceof IllegalStateException ? new C3265gs(str5, 3, i10) : th2 instanceof IllegalArgumentException ? new C3265gs(str5, 4, i10) : th2 instanceof TimeoutException ? new C3265gs(str5, i6, i10) : new C3265gs(str5, i, i10));
             case 10:

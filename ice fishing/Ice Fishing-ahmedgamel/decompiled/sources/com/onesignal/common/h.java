@@ -1,7 +1,7 @@
 package com.onesignal.common;
 
 import a.AbstractC0422a;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.List;
 import java.util.regex.Pattern;
 import u7.InterfaceC5087e;

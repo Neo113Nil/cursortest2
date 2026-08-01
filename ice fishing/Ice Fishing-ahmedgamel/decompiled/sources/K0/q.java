@@ -13,7 +13,7 @@ import androidx.work.impl.WorkDatabase_Impl;
 import androidx.work.impl.background.systemalarm.RescheduleReceiver;
 import com.google.android.gms.internal.ads.LD;
 import com.google.android.gms.internal.consent_sdk.C4300b;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

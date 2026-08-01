@@ -30,7 +30,12 @@ public final class C05521a extends AbstractC07599j {
     public final F6 A0G;
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 32 out of bounds for length 25
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public C05521a(@MetaExoPlayerCustomization("Used for OculusAdaptiveTrackSelection") C2363pg c2363pg, @MetaExoPlayerCustomization("Used to retain old value for Oculus") int[] iArr, int i, F6 f62, int i6, long j6, long j9, long j10, int i9, int i10, float f3, float f9, long j11, List<EU> list, AnonymousClass45 anonymousClass45) {
         super(c2363pg, iArr, i);

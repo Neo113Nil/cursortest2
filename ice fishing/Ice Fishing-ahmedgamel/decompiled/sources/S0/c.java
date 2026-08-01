@@ -87,8 +87,8 @@ import com.google.android.gms.internal.ads.ViewTreeObserverOnGlobalLayoutListene
 import com.google.android.gms.internal.ads.XO;
 import com.google.android.gms.internal.ads.YI;
 import com.google.android.gms.internal.ads.Yq;
-import com.icefishinggame.icefishinggamemultigames.GzopActiongamesActivity;
-import com.icefishinggame.icefishinggamemultigames.MainActivity;
+import com.icefishing.icefishingbigwin.GzopActiongamesActivity;
+import com.icefishing.icefishingbigwin.MainActivity;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;

@@ -10,7 +10,7 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import com.google.android.material.button.MaterialButton;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import h.C4536D;
 import k3.AbstractC4632a;
 import m.C4668B;

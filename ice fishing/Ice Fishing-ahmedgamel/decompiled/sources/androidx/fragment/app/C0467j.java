@@ -3,8 +3,8 @@ package androidx.fragment.app;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.WeakHashMap;
@@ -412,7 +412,7 @@ public final class C0467j {
      */
     /* JADX WARN: Code restructure failed: missing block: B:191:0x0094, code lost:
     
-        throw new java.lang.IllegalArgumentException(com.icefishinggame.icefishinggamemultigames.AbstractC4404f.e(r14, "Unknown visibility "));
+        throw new java.lang.IllegalArgumentException(com.icefishing.icefishingbigwin.AbstractC4404f.e(r14, "Unknown visibility "));
      */
     /* JADX WARN: Code restructure failed: missing block: B:19:0x0077, code lost:
     

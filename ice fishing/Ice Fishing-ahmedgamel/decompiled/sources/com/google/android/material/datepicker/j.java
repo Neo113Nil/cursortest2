@@ -15,7 +15,7 @@ import android.widget.Scroller;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.button.MaterialButton;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.ArrayList;
 import t0.C5005U;
 import t0.C5026u;

@@ -4,7 +4,7 @@ import a3.AbstractC0432a;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Parcel;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.List;
 import q2.AbstractBinderC4918y0;

@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Base64;
 import android.view.View;
 import com.google.firebase.installations.FirebaseInstallationsRegistrar;
-import com.icefishinggame.icefishinggamemultigames.adscode.ApplinkActivity;
+import com.icefishing.icefishingbigwin.adscode.ApplinkActivity;
 import j3.InterfaceC4604a;
 import j3.m;
 import java.util.ArrayList;

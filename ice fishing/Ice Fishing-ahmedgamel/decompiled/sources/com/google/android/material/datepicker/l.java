@@ -29,7 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.fragment.app.DialogInterfaceOnCancelListenerC0471n;
 import com.google.android.material.internal.CheckableImageButton;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import java.util.Calendar;
 import java.util.Iterator;
 import java.util.LinkedHashSet;

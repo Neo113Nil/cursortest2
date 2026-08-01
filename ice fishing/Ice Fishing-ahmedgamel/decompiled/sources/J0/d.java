@@ -1,6 +1,6 @@
 package J0;
 
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.Set;
 import u.AbstractC5049e;
 

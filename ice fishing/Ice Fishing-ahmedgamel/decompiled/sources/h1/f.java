@@ -2,7 +2,7 @@ package h1;
 
 import android.graphics.Color;
 import android.graphics.PointF;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import i1.AbstractC4579a;
 import k1.C4630b;
 

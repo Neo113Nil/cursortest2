@@ -2,7 +2,7 @@ package m;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import l.C4645b;
 
 /* renamed from: m.j, reason: case insensitive filesystem */

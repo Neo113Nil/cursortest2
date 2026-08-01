@@ -18,7 +18,7 @@ import android.graphics.PointF;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import d1.C4443a;
 import d1.C4444b;
 import e1.m;

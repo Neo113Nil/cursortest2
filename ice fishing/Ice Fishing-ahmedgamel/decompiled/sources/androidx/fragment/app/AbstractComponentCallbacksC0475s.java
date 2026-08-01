@@ -18,7 +18,7 @@ import androidx.lifecycle.C0505x;
 import androidx.lifecycle.EnumC0497o;
 import androidx.lifecycle.InterfaceC0492j;
 import androidx.lifecycle.InterfaceC0503v;
-import com.icefishinggame.icefishinggamemultigames.C5275R;
+import com.icefishing.icefishingbigwin.C5275R;
 import h.AbstractActivityC4551k;
 import h0.AbstractC4554b;
 import h0.C4556d;

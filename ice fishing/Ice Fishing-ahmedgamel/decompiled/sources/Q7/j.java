@@ -2,7 +2,7 @@ package Q7;
 
 import D.y;
 import L3.F;
-import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import com.icefishing.icefishingbigwin.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
