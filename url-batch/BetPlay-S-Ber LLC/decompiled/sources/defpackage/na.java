@@ -1,0 +1,162 @@
+package defpackage;
+
+import java.util.LinkedHashMap;
+
+/* compiled from: r8-map-id-9fea5842fe02e932dfed9a581eb1db18ad6fbe2fdbe2eb471e1a0b06e64b43e7 */
+/* loaded from: classes.dex */
+public final class na {
+    public static final vg b;
+    public static final ma c;
+    public static final LinkedHashMap d;
+    public static final na e;
+    public static final na f;
+    public static final na g;
+    public static final na h;
+    public static final na i;
+    public static final na j;
+    public static final na k;
+    public static final na l;
+    public static final na m;
+    public static final na n;
+    public static final na o;
+    public static final na p;
+    public static final na q;
+    public static final na r;
+    public static final na s;
+    public static final na t;
+    public final String a;
+
+    static {
+        vg vgVar = new vg(15);
+        b = vgVar;
+        c = new ma(0);
+        d = new LinkedHashMap();
+        vg.e(vgVar, "SSL_RSA_WITH_NULL_MD5");
+        vg.e(vgVar, "SSL_RSA_WITH_NULL_SHA");
+        vg.e(vgVar, "SSL_RSA_EXPORT_WITH_RC4_40_MD5");
+        vg.e(vgVar, "SSL_RSA_WITH_RC4_128_MD5");
+        vg.e(vgVar, "SSL_RSA_WITH_RC4_128_SHA");
+        vg.e(vgVar, "SSL_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        vg.e(vgVar, "SSL_RSA_WITH_DES_CBC_SHA");
+        e = vg.e(vgVar, "SSL_RSA_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_DSS_WITH_DES_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_RSA_WITH_DES_CBC_SHA");
+        vg.e(vgVar, "SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "SSL_DH_anon_EXPORT_WITH_RC4_40_MD5");
+        vg.e(vgVar, "SSL_DH_anon_WITH_RC4_128_MD5");
+        vg.e(vgVar, "SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA");
+        vg.e(vgVar, "SSL_DH_anon_WITH_DES_CBC_SHA");
+        vg.e(vgVar, "SSL_DH_anon_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_KRB5_WITH_DES_CBC_SHA");
+        vg.e(vgVar, "TLS_KRB5_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_KRB5_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_KRB5_WITH_DES_CBC_MD5");
+        vg.e(vgVar, "TLS_KRB5_WITH_3DES_EDE_CBC_MD5");
+        vg.e(vgVar, "TLS_KRB5_WITH_RC4_128_MD5");
+        vg.e(vgVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA");
+        vg.e(vgVar, "TLS_KRB5_EXPORT_WITH_RC4_40_SHA");
+        vg.e(vgVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5");
+        vg.e(vgVar, "TLS_KRB5_EXPORT_WITH_RC4_40_MD5");
+        f = vg.e(vgVar, "TLS_RSA_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA");
+        g = vg.e(vgVar, "TLS_RSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_RSA_WITH_NULL_SHA256");
+        vg.e(vgVar, "TLS_RSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_RSA_WITH_AES_256_CBC_SHA256");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA256");
+        vg.e(vgVar, "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        vg.e(vgVar, "TLS_PSK_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_PSK_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_PSK_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_PSK_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_RSA_WITH_SEED_CBC_SHA");
+        h = vg.e(vgVar, "TLS_RSA_WITH_AES_128_GCM_SHA256");
+        i = vg.e(vgVar, "TLS_RSA_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256");
+        vg.e(vgVar, "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_128_GCM_SHA256");
+        vg.e(vgVar, "TLS_DH_anon_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_EMPTY_RENEGOTIATION_INFO_SCSV");
+        vg.e(vgVar, "TLS_FALLBACK_SCSV");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_NULL_SHA");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_NULL_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_NULL_SHA");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_RSA_WITH_NULL_SHA");
+        vg.e(vgVar, "TLS_ECDHE_RSA_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        j = vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA");
+        k = vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_anon_WITH_NULL_SHA");
+        vg.e(vgVar, "TLS_ECDH_anon_WITH_RC4_128_SHA");
+        vg.e(vgVar, "TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_anon_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDH_anon_WITH_AES_256_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384");
+        vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384");
+        l = vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256");
+        m = vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256");
+        vg.e(vgVar, "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384");
+        n = vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256");
+        o = vg.e(vgVar, "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256");
+        vg.e(vgVar, "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384");
+        vg.e(vgVar, "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA");
+        vg.e(vgVar, "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA");
+        p = vg.e(vgVar, "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        q = vg.e(vgVar, "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256");
+        vg.e(vgVar, "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        vg.e(vgVar, "TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256");
+        r = vg.e(vgVar, "TLS_AES_128_GCM_SHA256");
+        s = vg.e(vgVar, "TLS_AES_256_GCM_SHA384");
+        t = vg.e(vgVar, "TLS_CHACHA20_POLY1305_SHA256");
+        vg.e(vgVar, "TLS_AES_128_CCM_SHA256");
+        vg.e(vgVar, "TLS_AES_128_CCM_8_SHA256");
+    }
+
+    public na(String str) {
+        this.a = str;
+    }
+
+    public final String toString() {
+        return this.a;
+    }
+}

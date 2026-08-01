@@ -1,0 +1,60 @@
+{
+  "app_id": "com.awerser.monnit.betplay",
+  "title": "BetPlay",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "https://play-lh.googleusercontent.com/K4hnt4luA0ut1U7CAGQmCJyi6KAdr7WbbtCl9aHgwQ6LxOYRc_mjhqM8lF9KDeann4YpfiOc-gupxRJtBiL_pw",
+  "url": "https://play.google.com/store/apps/details?id=com.awerser.monnit.betplay&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 26, 2026",
+  "updated": "Jun 26, 2026",
+  "version": "Varies with device",
+  "summary": "BetPlay  helps track daily habits and progress",
+  "keyword": "url-batch",
+  "folder": "BetPlay-S-Ber LLC",
+  "path": "url-batch/BetPlay-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.awerser.monnit.betplay-1-asset.apk",
+    "com.awerser.monnit.betplay-1-config.en.apk",
+    "com.awerser.monnit.betplay-1-config.lt.apk",
+    "com.awerser.monnit.betplay-1-config.ru.apk",
+    "com.awerser.monnit.betplay-1-config.xxhdpi.apk",
+    "com.awerser.monnit.betplay-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/BetPlay-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.awerser.monnit.betplay...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.awerser.monnit.betplay...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.awerser.monnit.betplay ─╮\n│ BetPlay                      │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (4.9 MB)\n  com.awerser.monnit.betplay-1.apk               ━━━━━━ 100% 3.2/… 17.7   0:00:…\n                                                             MB    MB/s         \n  com.awerser.monnit.betplay-1-config.en.apk     ━━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.lt.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.ru.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.xxhdpi.apk ━━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-asset.apk         ━━━━━━ 100% 1.8/… 15.1   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.awerser.monnit.betplay-1.apk               │  3.0 MB │\n│ com.awerser.monnit.betplay-1-config.en.apk     │ 40.2 KB │\n│ com.awerser.monnit.betplay-1-config.lt.apk     │ 28.2 KB │\n│ com.awerser.monnit.betplay-1-config.ru.apk     │ 28.2 KB │\n│ com.awerser.monnit.betplay-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.awerser.monnit.betplay-1-asset.apk         │  3.0 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.awerser.monnit.betplay ─╮\n│ BetPlay                      │\n│ 1.0  (vc 1)                  │\n╰──────────────────────────────╯\n\nDownloading 6 files  (4.9 MB)\n  com.awerser.monnit.betplay-1.apk               ━━━━━━ 100% 3.2/… 17.7   0:00:…\n                                                             MB    MB/s         \n  com.awerser.monnit.betplay-1-config.en.apk     ━━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.lt.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.ru.apk     ━━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-config.xxhdpi.apk ━━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.awerser.monnit.betplay-1-asset.apk         ━━━━━━ 100% 1.8/… 15.1   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.awerser.monnit.betplay-1.apk               │  3.0 MB │\n│ com.awerser.monnit.betplay-1-config.en.apk     │ 40.2 KB │\n│ com.awerser.monnit.betplay-1-config.lt.apk     │ 28.2 KB │\n│ com.awerser.monnit.betplay-1-config.ru.apk     │ 28.2 KB │\n│ com.awerser.monnit.betplay-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.awerser.monnit.betplay-1-asset.apk         │  3.0 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
