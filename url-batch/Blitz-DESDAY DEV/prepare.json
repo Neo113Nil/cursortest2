@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.winfour.neondrop.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.mdpi.apk"
+  ],
+  "base_apk": "com.winfour.neondrop.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1435 (0%)\nINFO  - progress: 714 of 1435 (49%)\nINFO  - progress: 873 of 1435 (60%)\nINFO  - progress: 960 of 1435 (66%)\nINFO  - progress: 1045 of 1435 (72%)\nINFO  - progress: 1162 of 1435 (80%)\nINFO  - progress: 1291 of 1435 (89%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Blitz-DESDAY DEV/decompiled",
+    "skipped": false,
+    "base_apk": "com.winfour.neondrop.apk"
+  },
+  "analysis_files": [
+    "com.winfour.neondrop.xapk",
+    "apk/config.fr.apk",
+    "apk/config.mdpi.apk",
+    "apk/com.winfour.neondrop.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/D1/",
+    "decompiled/sources/E/",
+    "decompiled/sources/E0/",
+    "decompiled/sources/E1/",
+    "decompiled/sources/F/",
+    "decompiled/sources/F0/",
+    "decompiled/sources/F1/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H0/",
+    "decompiled/sources/I/",
+    "decompiled/sources/I0/"
+  ]
+}

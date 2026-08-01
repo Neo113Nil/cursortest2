@@ -1,0 +1,36 @@
+{
+  "app_id": "com.winfour.neondrop",
+  "title": "Blitz",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "https://play-lh.googleusercontent.com/l0izB0V_gakW2jtjQfSBxBwAaFyr2mHbqJl3Ld9y_IEOx8uDai5JTiyCZw_84xqFpcbRohJX1G4nsU6MSRasGg",
+  "url": "https://play.google.com/store/apps/details?id=com.winfour.neondrop&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 21, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "Blitz — lightning-fast sports betting and premium casino gaming in one app!",
+  "keyword": "url-batch",
+  "folder": "Blitz-DESDAY DEV",
+  "path": "url-batch/Blitz-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.winfour.neondrop.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Blitz-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.winfour.neondrop...\ncom.winfour.neondrop downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.winfour.neondrop...\ncom.winfour.neondrop downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
