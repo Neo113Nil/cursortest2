@@ -16,6 +16,10 @@ final class zzz {
     private Long zzc;
     private long zzd;
 
+    /* synthetic */ zzz(zzae zzaeVar, zzad zzadVar) {
+        this.zza = zzaeVar;
+    }
+
     /* JADX WARN: Code restructure failed: missing block: B:67:0x00f1, code lost:
     
         if (r4 == null) goto L22;

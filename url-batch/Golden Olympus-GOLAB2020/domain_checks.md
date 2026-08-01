@@ -521,7 +521,7 @@
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=3d8bd5dd-58ff-43d4-9f93-3bcdfd3c4b17 |
+| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ed050ebe-9702-4b4d-ac9f-31951ddee0d3 |
 | Что выводит (кратко) | title: Log in. Log in Log in with ID Email Phone number Next Face or fingerprint login QR code Create ID Yandex ID. The key for all your services Learn more |
 | Где припаркован | регистратор: SafeNames Ltd. |
 
