@@ -1,0 +1,162 @@
+package defpackage;
+
+import java.util.LinkedHashMap;
+
+/* compiled from: r8-map-id-de38bb36dc2361356cb83b4c675dbcd2450924cecdb12a3272c608759c381a50 */
+/* loaded from: classes.dex */
+public final class db {
+    public static final ej b;
+    public static final cb c;
+    public static final LinkedHashMap d;
+    public static final db e;
+    public static final db f;
+    public static final db g;
+    public static final db h;
+    public static final db i;
+    public static final db j;
+    public static final db k;
+    public static final db l;
+    public static final db m;
+    public static final db n;
+    public static final db o;
+    public static final db p;
+    public static final db q;
+    public static final db r;
+    public static final db s;
+    public static final db t;
+    public final String a;
+
+    static {
+        ej ejVar = new ej(17);
+        b = ejVar;
+        c = new cb(0);
+        d = new LinkedHashMap();
+        ej.d(ejVar, "SSL_RSA_WITH_NULL_MD5");
+        ej.d(ejVar, "SSL_RSA_WITH_NULL_SHA");
+        ej.d(ejVar, "SSL_RSA_EXPORT_WITH_RC4_40_MD5");
+        ej.d(ejVar, "SSL_RSA_WITH_RC4_128_MD5");
+        ej.d(ejVar, "SSL_RSA_WITH_RC4_128_SHA");
+        ej.d(ejVar, "SSL_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        ej.d(ejVar, "SSL_RSA_WITH_DES_CBC_SHA");
+        e = ej.d(ejVar, "SSL_RSA_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_DSS_WITH_DES_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_RSA_WITH_DES_CBC_SHA");
+        ej.d(ejVar, "SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "SSL_DH_anon_EXPORT_WITH_RC4_40_MD5");
+        ej.d(ejVar, "SSL_DH_anon_WITH_RC4_128_MD5");
+        ej.d(ejVar, "SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA");
+        ej.d(ejVar, "SSL_DH_anon_WITH_DES_CBC_SHA");
+        ej.d(ejVar, "SSL_DH_anon_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_KRB5_WITH_DES_CBC_SHA");
+        ej.d(ejVar, "TLS_KRB5_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_KRB5_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_KRB5_WITH_DES_CBC_MD5");
+        ej.d(ejVar, "TLS_KRB5_WITH_3DES_EDE_CBC_MD5");
+        ej.d(ejVar, "TLS_KRB5_WITH_RC4_128_MD5");
+        ej.d(ejVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA");
+        ej.d(ejVar, "TLS_KRB5_EXPORT_WITH_RC4_40_SHA");
+        ej.d(ejVar, "TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5");
+        ej.d(ejVar, "TLS_KRB5_EXPORT_WITH_RC4_40_MD5");
+        f = ej.d(ejVar, "TLS_RSA_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA");
+        g = ej.d(ejVar, "TLS_RSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_RSA_WITH_NULL_SHA256");
+        ej.d(ejVar, "TLS_RSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_RSA_WITH_AES_256_CBC_SHA256");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_256_CBC_SHA256");
+        ej.d(ejVar, "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA");
+        ej.d(ejVar, "TLS_PSK_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_PSK_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_PSK_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_PSK_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_RSA_WITH_SEED_CBC_SHA");
+        h = ej.d(ejVar, "TLS_RSA_WITH_AES_128_GCM_SHA256");
+        i = ej.d(ejVar, "TLS_RSA_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256");
+        ej.d(ejVar, "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_128_GCM_SHA256");
+        ej.d(ejVar, "TLS_DH_anon_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_EMPTY_RENEGOTIATION_INFO_SCSV");
+        ej.d(ejVar, "TLS_FALLBACK_SCSV");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_NULL_SHA");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_NULL_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_NULL_SHA");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_RSA_WITH_NULL_SHA");
+        ej.d(ejVar, "TLS_ECDHE_RSA_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA");
+        j = ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA");
+        k = ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_anon_WITH_NULL_SHA");
+        ej.d(ejVar, "TLS_ECDH_anon_WITH_RC4_128_SHA");
+        ej.d(ejVar, "TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_anon_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDH_anon_WITH_AES_256_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384");
+        ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384");
+        l = ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256");
+        m = ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256");
+        ej.d(ejVar, "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384");
+        n = ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256");
+        o = ej.d(ejVar, "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256");
+        ej.d(ejVar, "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384");
+        ej.d(ejVar, "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA");
+        ej.d(ejVar, "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA");
+        p = ej.d(ejVar, "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        q = ej.d(ejVar, "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256");
+        ej.d(ejVar, "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256");
+        ej.d(ejVar, "TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256");
+        r = ej.d(ejVar, "TLS_AES_128_GCM_SHA256");
+        s = ej.d(ejVar, "TLS_AES_256_GCM_SHA384");
+        t = ej.d(ejVar, "TLS_CHACHA20_POLY1305_SHA256");
+        ej.d(ejVar, "TLS_AES_128_CCM_SHA256");
+        ej.d(ejVar, "TLS_AES_128_CCM_8_SHA256");
+    }
+
+    public db(String str) {
+        this.a = str;
+    }
+
+    public final String toString() {
+        return this.a;
+    }
+}

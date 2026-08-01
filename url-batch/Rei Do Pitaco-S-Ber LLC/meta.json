@@ -67,5 +67,94 @@
   ],
   "stdout": "╭─ com.ionia.reidopitaco.libya ─╮\n│ Rei Do Pitaco                 │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (5.6 MB)\n  com.ionia.reidopitaco.libya-1.apk               ━━━━━ 100% 3.5/… 16.2   0:00:…\n                                                             MB    MB/s         \n  com.ionia.reidopitaco.libya-1-config.en.apk     ━━━━━ 100% 41.2… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.lt.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.ru.apk     ━━━━━ 100% 28.9… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-config.xxhdpi.apk ━━━━━ 100% 53.5… ?      0:00:…\n                                                             kB                 \n  com.ionia.reidopitaco.libya-1-asset.apk         ━━━━━ 100% 2.2/… 11.9   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.ionia.reidopitaco.libya-1.apk               │  3.4 MB │\n│ com.ionia.reidopitaco.libya-1-config.en.apk     │ 40.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.lt.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.ru.apk     │ 28.2 KB │\n│ com.ionia.reidopitaco.libya-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.ionia.reidopitaco.libya-1-asset.apk         │  3.4 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : bilbert87@gmail.com                   │\n│ GSF ID : 324f5ab813ede7a9                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Rei Do Pitaco"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.ionia.reidopitaco.libya.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin ~2.2 / kotlin-stdlib, kotlinx-coroutines 1.9.0, OkHttp 4.12.0, AndroidX (appcompat 1.7.1, activity 1.13.0, fragment 1.5.4, core/core-ktx 1.19.0, lifecycle, recyclerview 1.4.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, viewpager2 1.1.0-beta02, cardview 1.0.0, startup 1.1.1, emoji2 1.3.0, profileinstaller 1.4.0, savedstate 1.2.1, transition 1.5.0, drawerlayout 1.1.1, customview 1.2.0, vectordrawable 1.1.0, dynamicanimation 1.1.0, interpolator), Material Components 1.14.0, Pairip (com.pairip.application / licensecheck), ViewBinding"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "auroraoss.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл cfg, ключ rurl — сохраняет ссылку на внешнюю страницу после проверки на сервере; при следующем запуске сразу открывает сохранённую ссылку; отдельно win_habit_tracker (habits_json, achievements_json) — привычки и достижения обычного режима приложения"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, User-Agent, Accept-Language, X-Device-Model, status, redirect, license check, Rei Do Pitaco, webview url"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "имя приложения в системе → техническое имя этой программы в телефоне",
+      "(com.ionia.reidopitaco.libya); уходит в адрес проверки параметром app, чтобы сервер понял, из какого",
+      "приложения пришёл запрос",
+      "модель телефона → марка и модель устройства (то, что система Android сообщает как модель);",
+      "передаётся в служебном заголовке X-Device-Model, чтобы сервер мог учитывать устройство",
+      "язык для ответа → значение Accept-Language; в этом приложении оно не читается с телефона, а",
+      "всегда подставляется как en-US,en;q=0.9",
+      "как представился браузер → строка «лица» встроенного браузерного движка телефона",
+      "(User-Agent); берётся через настройки встроенного окна сайта и уходит в заголовке User-Agent, чтобы",
+      "сервер видел, как выглядит обычный браузер на этом устройстве",
+      "итоговый адрес после перехода → полный адрес, на котором закончился ответ сервера (после",
+      "возможных переходов); по нему приложение решает, открывать внешнюю страницу или оставить",
+      "обычное приложение, и при «боевом» варианте сохраняет этот адрес"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• имя приложения в системе → техническое имя этой программы в телефоне\n• (com.ionia.reidopitaco.libya); уходит в адрес проверки параметром app, чтобы сервер понял, из какого\n• приложения пришёл запрос\n• модель телефона → марка и модель устройства (то, что система Android сообщает как модель);\n• передаётся в служебном заголовке X-Device-Model, чтобы сервер мог учитывать устройство\n• язык для ответа → значение Accept-Language; в этом приложении оно не читается с телефона, а\n• всегда подставляется как en-US,en;q=0.9\n• как представился браузер → строка «лица» встроенного браузерного движка телефона\n• (User-Agent); берётся через настройки встроенного окна сайта и уходит в заголовке User-Agent, чтобы\n• сервер видел, как выглядит обычный браузер на этом устройстве\n• итоговый адрес после перехода → полный адрес, на котором закончился ответ сервера (после\n• возможных переходов); по нему приложение решает, открывать внешнюю страницу или оставить\n• обычное приложение, и при «боевом» варианте сохраняет этот адрес\n\nКак собираются: Сразу при открытии стартового экрана приложение само, без отдельного окна и без спроса у человека, читает нужные сведения. Имя приложения берётся из системы Android. Модель телефона — из системного поля модели устройства. Строку «как представился браузер» приложение запрашивает у встроенных браузерных настроек телефона. Язык для заголовка не спрашивает у человека и не читает из настроек языка телефона: подставляет заранее записанное английское значение. Всё это происходит тихо, обычно на коротком стартовом экране с полоской ожидания, п…"
+  }
 }
