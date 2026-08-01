@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Win Molar</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--neon-cyan:#00ffff;--neon-magenta:#ff00ff;--neon-orange:#ff8c00;--neon-purple:#bf00ff;--bg-black:#000008;--glass:rgba(8,4,20,.82)}
+html,body{width:100%;height:100%;overflow:hidden;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg-black);color:#fff;-webkit-tap-highlight-color:transparent}
+.bg-scene{position:fixed;inset:0;z-index:0;overflow:hidden;background:radial-gradient(ellipse 80% 50% at 50% 40%,#0a0820 0%,#000008 55%,#000 100%)}
+.bg-trails{position:absolute;inset:0;opacity:.55}
+.bg-trails svg{width:100%;height:100%}
+.trail-path{fill:none;stroke-width:2;stroke-linecap:round;filter:blur(1px)}
+.trail-cyan{stroke:var(--neon-cyan);animation:trailPulse 4s ease-in-out infinite}
+.trail-magenta{stroke:var(--neon-magenta);animation:trailPulse 5s ease-in-out infinite .8s}
+.trail-orange{stroke:var(--neon-orange);animation:trailPulse 4.5s ease-in-out infinite 1.6s}
+@keyframes trailPulse{0%,100%{opacity:.25;stroke-width:1.5}50%{opacity:.85;stroke-width:3}}
+.bg-shapes{position:absolute;inset:0;pointer-events:none}
+.neon-shape{position:absolute;opacity:.35;animation:shapeFloat 8s ease-in-out infinite}
+.neon-shape.triangle{width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid var(--neon-cyan);background:none;filter:drop-shadow(0 0 6px var(--neon-cyan))}
+.neon-shape.diamond{width:8px;height:8px;background:var(--neon-magenta);transform:rotate(45deg);filter:drop-shadow(0 0 8px var(--neon-magenta))}
+.neon-shape.star{width:10px;height:10px;background:var(--neon-orange);clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);filter:drop-shadow(0 0 6px var(--neon-orange))}
+.neon-shape.circle{width:6px;height:6px;border-radius:50%;background:var(--neon-cyan);filter:drop-shadow(0 0 6px var(--neon-cyan))}
+@keyframes shapeFloat{0%,100%{transform:translateY(0) rotate(0deg);opacity:.2}50%{transform:translateY(-12px) rotate(180deg);opacity:.5}}
+.bg-particles{position:absolute;inset:0;pointer-events:none}
+.particle{position:absolute;border-radius:50%;animation:particleDrift linear infinite}
+@keyframes particleDrift{0%{transform:translateY(100vh) scale(0);opacity:0}10%{opacity:.8}90%{opacity:.3}100%{transform:translateY(-20px) scale(1);opacity:0}}
+.bg-floor{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to bottom,transparent 0%,rgba(0,255,255,.03) 30%,rgba(255,0,255,.05) 60%,rgba(255,140,0,.04) 100%);pointer-events:none}
+.bg-floor::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent,rgba(0,0,0,.6));backdrop-filter:blur(2px)}
+#app{width:100%;height:100dvh;display:flex;flex-direction:column;position:relative;overflow:hidden;z-index:1}
+.screen{display:none;flex-direction:column;width:100%;height:100%;position:absolute;top:0;left:0;right:0;bottom:0;overflow-y:auto;-webkit-overflow-scrolling:touch;z-index:1}
+.screen.active{display:flex}
+.topbar{padding:40px 20px 20px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.topbar h1{font-size:1.35rem;font-weight:800;color:#fff;flex:1;text-shadow:0 0 12px rgba(0,255,255,.4)}
+.back-btn{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:none;border-radius:12px;background:var(--glass);border:1px solid rgba(0,255,255,.35);cursor:pointer;flex-shrink:0;box-shadow:0 0 12px rgba(0,255,255,.15),inset 0 0 12px rgba(0,255,255,.05)}
+.back-btn svg{width:22px;height:22px;fill:var(--neon-cyan);filter:drop-shadow(0 0 4px var(--neon-cyan))}
+.content{flex:1;padding:0 16px 24px;display:flex;flex-direction:column;gap:16px}
+.overlay-panel{background:var(--glass);border:1px solid rgba(0,255,255,.2);border-radius:16px;padding:20px;backdrop-filter:blur(12px);box-shadow:0 0 20px rgba(0,255,255,.08),inset 0 1px 0 rgba(255,255,255,.06)}
+.overlay-panel h2{font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:8px}
+.overlay-panel p{font-size:.95rem;color:rgba(255,255,255,.75);line-height:1.5}
+.menu-hero{text-align:center;padding:36px 20px 28px;position:relative}
+.menu-hero .logo-wrap{display:flex;justify-content:center;margin-bottom:20px;filter:drop-shadow(0 0 16px rgba(0,255,255,.6))}
+.menu-hero .logo-wrap svg{width:72px;height:72px}
+.menu-hero h1{font-size:2.6rem;font-weight:900;letter-spacing:1px;line-height:1.1;margin-bottom:4px}
+.menu-hero .title-win{display:inline-block}
+.menu-hero .neon-w{color:var(--neon-cyan);text-shadow:0 0 7px #fff,0 0 15px var(--neon-cyan),0 0 30px var(--neon-cyan),0 0 60px var(--neon-cyan)}
+.menu-hero .neon-i{color:var(--neon-magenta);text-shadow:0 0 7px #fff,0 0 15px var(--neon-magenta),0 0 30px var(--neon-magenta),0 0 60px var(--neon-magenta)}
+.menu-hero .neon-n{color:var(--neon-orange);text-shadow:0 0 7px #fff,0 0 15px var(--neon-orange),0 0 30px var(--neon-orange),0 0 60px var(--neon-orange)}
+.menu-hero .title-rest{color:#fff;text-shadow:0 0 10px rgba(255,255,255,.5),0 0 25px rgba(0,255,255,.3);font-weight:800}
+.menu-hero .title-reflect{display:block;font-size:2.6rem;font-weight:900;letter-spacing:1px;line-height:1.1;margin-top:-6px;transform:scaleY(-1);opacity:.2;filter:blur(3px);mask-image:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);-webkit-mask-image:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);pointer-events:none}
+.menu-hero p{font-size:1rem;color:rgba(255,255,255,.65);margin-top:12px;font-weight:500;letter-spacing:.3px}
+.menu-btns{display:flex;flex-direction:column;gap:14px;padding:0 16px 32px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:52px;padding:14px 20px;border:none;border-radius:14px;font-size:1.05rem;font-weight:700;cursor:pointer;background:var(--glass);color:#fff;border:1px solid rgba(0,255,255,.3);backdrop-filter:blur(10px);transition:box-shadow .2s}
+.btn-primary{background:linear-gradient(135deg,rgba(0,255,255,.25),rgba(255,0,255,.25),rgba(255,140,0,.2));border:1px solid rgba(0,255,255,.5);box-shadow:0 0 20px rgba(0,255,255,.25),0 0 40px rgba(255,0,255,.1),inset 0 1px 0 rgba(255,255,255,.15);color:#fff;text-shadow:0 0 8px rgba(0,255,255,.5)}
+.btn-primary:active{box-shadow:0 0 30px rgba(0,255,255,.4),0 0 50px rgba(255,0,255,.2)}
+.btn-secondary{background:var(--glass);border:1px solid rgba(255,140,0,.45);box-shadow:0 0 15px rgba(255,140,0,.15),inset 0 0 10px rgba(255,140,0,.05);text-shadow:0 0 6px rgba(255,140,0,.4)}
+.btn svg{width:22px;height:22px;fill:currentColor;flex-shrink:0;filter:drop-shadow(0 0 4px rgba(0,255,255,.6))}
+.input-wrap{display:flex;flex-direction:column;gap:10px}
+.input-wrap label{font-size:.95rem;font-weight:600;color:rgba(255,255,255,.9);text-shadow:0 0 8px rgba(0,255,255,.3)}
+.formula-input{width:100%;min-height:52px;padding:14px 16px;border:2px solid rgba(0,255,255,.35);border-radius:12px;background:rgba(0,0,8,.85);color:#fff;font-size:1.15rem;font-weight:600;outline:none;box-shadow:0 0 15px rgba(0,255,255,.1),inset 0 0 20px rgba(0,0,0,.5)}
+.formula-input:focus{border-color:var(--neon-cyan);box-shadow:0 0 20px rgba(0,255,255,.3),inset 0 0 20px rgba(0,0,0,.5)}
+.formula-input::placeholder{color:rgba(255,255,255,.35)}
+.hint{font-size:.88rem;color:rgba(255,255,255,.55);font-weight:500;line-height:1.4}
+.error-msg{background:rgba(255,0,80,.15);border:1px solid rgba(255,0,128,.5);border-radius:12px;padding:14px;color:#ff80c0;font-weight:600;font-size:.95rem;display:none;box-shadow:0 0 15px rgba(255,0,128,.2)}
+.error-msg.show{display:block}
+.result-mass{text-align:center;padding:24px 16px}
+.result-mass .formula-display{font-size:1.4rem;font-weight:700;color:var(--neon-cyan);margin-bottom:8px;word-break:break-all;text-shadow:0 0 10px var(--neon-cyan),0 0 25px rgba(0,255,255,.5)}
+.result-mass .mass-value{font-size:2.8rem;font-weight:900;color:#fff;line-height:1.1;text-shadow:0 0 10px #fff,0 0 25px var(--neon-magenta),0 0 50px rgba(255,0,255,.4)}
+.result-mass .mass-unit{font-size:1.1rem;font-weight:600;color:rgba(255,255,255,.6);margin-top:4px;text-shadow:0 0 8px rgba(255,140,0,.4)}
+.breakdown-title{font-size:1rem;font-weight:700;color:rgba(255,255,255,.9);margin-bottom:12px;text-shadow:0 0 8px rgba(0,255,255,.3)}
+.breakdown-table{width:100%;border-collapse:collapse}
+.breakdown-table th{text-align:left;padding:10px 8px;font-size:.85rem;font-weight:700;color:rgba(255,255,255,.55);border-bottom:1px solid rgba(0,255,255,.25)}
+.breakdown-table td{padding:10px 8px;font-size:.95rem;font-weight:600;color:#fff;border-bottom:1px solid rgba(255,0,255,.1)}
+.breakdown-table td.num{text-align:right;color:rgba(255,255,255,.85)}
+.result-btns{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.catalog-list{display:flex;flex-direction:column;gap:10px;padding-bottom:24px}
+.catalog-item{display:flex;align-items:center;gap:14px;padding:16px;border-radius:14px;background:var(--glass);border:1px solid rgba(255,0,255,.15);cursor:pointer;min-height:64px;backdrop-filter:blur(10px);box-shadow:0 0 12px rgba(0,255,255,.06)}
+.catalog-item:active{background:rgba(20,10,40,.95);border-color:rgba(0,255,255,.4);box-shadow:0 0 20px rgba(0,255,255,.2)}
+.catalog-item .ci-info{flex:1;min-width:0}
+.catalog-item .ci-name{font-size:1rem;font-weight:700;color:#fff}
+.catalog-item .ci-formula{font-size:.95rem;font-weight:600;color:var(--neon-cyan);text-shadow:0 0 8px rgba(0,255,255,.4)}
+.catalog-item .ci-mass{font-size:1rem;font-weight:700;color:var(--neon-orange);white-space:nowrap;text-shadow:0 0 10px rgba(255,140,0,.5)}
+.search-input{width:100%;min-height:48px;padding:12px 16px;border:2px solid rgba(255,0,255,.3);border-radius:12px;background:rgba(0,0,8,.85);color:#fff;font-size:1rem;font-weight:500;outline:none;margin-bottom:4px;box-shadow:0 0 12px rgba(255,0,255,.08)}
+.search-input:focus{border-color:var(--neon-magenta);box-shadow:0 0 18px rgba(255,0,255,.25)}
+.search-input::placeholder{color:rgba(255,255,255,.35)}
+</style>
+</head>
+<body>
+<div class="bg-scene" id="bg-scene">
+<div class="bg-trails">
+<svg viewBox="0 0 400 800" preserveAspectRatio="xMidYMid slice">
+<path class="trail-path trail-cyan" d="M-20,200 Q100,180 220,210 T420,190"/>
+<path class="trail-path trail-magenta" d="M-30,350 Q120,320 250,360 T430,330"/>
+<path class="trail-path trail-orange" d="M-10,500 Q150,470 280,510 T440,480"/>
+<path class="trail-path trail-cyan" d="M0,650 Q130,620 260,660 T400,640" style="animation-delay:2s"/>
+<path class="trail-path trail-magenta" d="M50,120 Q180,100 300,130 T450,110" style="animation-delay:1.2s"/>
+</svg>
+</div>
+<div class="bg-shapes" id="bg-shapes"></div>
+<div class="bg-particles" id="bg-particles"></div>
+<div class="bg-floor"></div>
+</div>
+<div id="app">
+<section class="screen active" id="screen-menu">
+<div class="menu-hero overlay-panel" style="margin:40px 16px 0;border-color:rgba(255,0,255,.25);box-shadow:0 0 30px rgba(255,0,255,.12),0 0 60px rgba(0,255,255,.08)">
+<div class="logo-wrap">
+<svg viewBox="0 0 64 64"><defs><filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><circle cx="32" cy="32" r="28" fill="none" stroke="#00ffff" stroke-width="2" filter="url(#glow)"/><circle cx="32" cy="32" r="8" fill="#ff00ff" filter="url(#glow)"/><circle cx="32" cy="14" r="4" fill="#00ffff"/><circle cx="48" cy="24" r="4" fill="#ff8c00"/><circle cx="48" cy="40" r="4" fill="#ff00ff"/><circle cx="32" cy="50" r="4" fill="#00ffff"/><circle cx="16" cy="40" r="4" fill="#ff8c00"/><circle cx="16" cy="24" r="4" fill="#ff00ff"/><line x1="32" y1="24" x2="32" y2="18" stroke="#00ffff" stroke-width="1.5" opacity=".8"/><line x1="38" y1="26" x2="44" y2="24" stroke="#ff8c00" stroke-width="1.5" opacity=".8"/><line x1="38" y1="38" x2="44" y2="40" stroke="#ff00ff" stroke-width="1.5" opacity=".8"/><line x1="32" y1="42" x2="32" y2="46" stroke="#00ffff" stroke-width="1.5" opacity=".8"/><line x1="26" y1="38" x2="20" y2="40" stroke="#ff8c00" stroke-width="1.5" opacity=".8"/><line x1="26" y1="26" x2="20" y2="24" stroke="#ff00ff" stroke-width="1.5" opacity=".8"/></svg>
+</div>
+<h1><span class="title-win"><span class="neon-w">W</span><span class="neon-i">i</span><span class="neon-n">n</span></span> <span class="title-rest">Molar</span></h1>
+<div class="title-reflect" aria-hidden="true"><span class="title-win"><span class="neon-w">W</span><span class="neon-i">i</span><span class="neon-n">n</span></span> <span class="title-rest">Molar</span></div>
+<p>Molecular Mass Calculator</p>
+</div>
+<div class="menu-btns">
+<button class="btn btn-primary" id="btn-calc">
+<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+Calculate Formula
+</button>
+<button class="btn btn-secondary" id="btn-catalog">
+<svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
+Popular Formulas
+</button>
+</div>
+</section>
+<section class="screen" id="screen-calc">
+<div class="topbar">
+<button class="back-btn" data-back="menu" aria-label="Back">
+<svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+</button>
+<h1>Calculator</h1>
+</div>
+<div class="content">
+<div class="overlay-panel input-wrap">
+<label for="formula-input">Chemical Formula</label>
+<input type="text" id="formula-input" class="formula-input" placeholder="e.g. H2O, H_2SO_4, Ca(OH)2" autocomplete="off" autocapitalize="characters">
+<p class="hint">Use element symbols with subscripts. Formats: H2O, H_2O, Ca(OH)_2, Mg3(PO4)2</p>
+</div>
+<div class="error-msg" id="calc-error"></div>
+<button class="btn btn-primary" id="btn-do-calc">
+<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+Calculate
+</button>
+</div>
+</section>
+<section class="screen" id="screen-result">
+<div class="topbar">
+<button class="back-btn" id="result-back" aria-label="Back">
+<svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+</button>
+<h1>Result</h1>
+</div>
+<div class="content">
+<div class="overlay-panel result-mass">
+<div class="formula-display" id="res-formula"></div>
+<div class="mass-value" id="res-mass"></div>
+<div class="mass-unit">g/mol</div>
+</div>
+<div class="overlay-panel">
+<div class="breakdown-title">Element Breakdown</div>
+<table class="breakdown-table">
+<thead><tr><th>Element</th><th>Count</th><th>Mass</th><th>Total</th></tr></thead>
+<tbody id="res-breakdown"></tbody>
+</table>
+</div>
+<div class="result-btns">
+<button class="btn btn-primary" id="btn-new-calc">New Calculation</button>
+<button class="btn btn-secondary" id="btn-res-menu">Back to Menu</button>
+</div>
+</div>
+</section>
+<section class="screen" id="screen-catalog">
+<div class="topbar">
+<button class="back-btn" data-back="menu" aria-label="Back">
+<svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+</button>
+<h1>Popular Formulas</h1>
+</div>
+<div class="content">
+<div class="overlay-panel" style="padding:12px 16px">
+<input type="text" id="catalog-search" class="search-input" placeholder="Search compounds..." autocomplete="off">
+</div>
+<div class="catalog-list" id="catalog-list"></div>
+</div>
+</section>
+</div>
+<script>
+(function(){
+var ATOMIC={H:1.008,He:4.003,Li:6.94,Be:9.012,B:10.81,C:12.011,N:14.007,O:15.999,F:18.998,Ne:20.18,Na:22.99,Mg:24.305,Al:26.982,Si:28.085,P:30.974,S:32.06,Cl:35.45,Ar:39.948,K:39.098,Ca:40.078,Sc:44.956,Ti:47.867,V:50.942,Cr:51.996,Mn:54.938,Fe:55.845,Co:58.933,Ni:58.693,Cu:63.546,Zn:65.38,Ga:69.723,Ge:72.63,As:74.922,Se:78.971,Br:79.904,Kr:83.798,Rb:85.468,Sr:87.62,Y:88.906,Zr:91.224,Nb:92.906,Mo:95.95,Tc:98,Ru:101.07,Rh:102.91,Pd:106.42,Ag:107.87,Cd:112.41,In:114.82,Sn:118.71,Sb:121.76,Te:127.6,I:126.9,Xe:131.29,Cs:132.91,Ba:137.33,La:138.91,Ce:140.12,Pr:140.91,Nd:144.24,Pm:145,Sm:150.36,Eu:151.96,Gd:157.25,Tb:158.93,Dy:162.5,Ho:164.93,Er:167.26,Tm:168.93,Yb:173.05,Lu:175.96,Hf:178.49,Ta:180.95,W:183.84,Re:186.21,Os:190.23,Ir:192.22,Pt:195.08,Au:196.97,Hg:200.59,Tl:204.38,Pb:207.2,Bi:208.98,Po:209,At:210,Rn:222,Fr:223,Ra:226,Ac:227,Th:232.04,Pa:231.04,U:238.03,Np:237,Pu:244,Am:243,Cm:247,Bk:247,Cf:251,Es:252,Fm:257,Md:258,No:259,Lr:266,Rf:267,Db:268,Sg:269,Bh:270,Hs:269,Mt:278,Ds:281,Rg:282,Cn:285,Nh:286,Fl:289,Mc:289,Lv:293,Ts:294,Og:294};
+var CATALOG=[
+{name:"Water",formula:"H2O"},{name:"Carbon dioxide",formula:"CO2"},{name:"Sodium chloride",formula:"NaCl"},
+{name:"Sulfuric acid",formula:"H2SO4"},{name:"Ammonia",formula:"NH3"},{name:"Methane",formula:"CH4"},
+{name:"Glucose",formula:"C6H12O6"},{name:"Ethanol",formula:"C2H5OH"},{name:"Calcium carbonate",formula:"CaCO3"},
+{name:"Hydrochloric acid",formula:"HCl"},{name:"Nitric acid",formula:"HNO3"},{name:"Phosphoric acid",formula:"H3PO4"},
+{name:"Calcium hydroxide",formula:"Ca(OH)2"},{name:"Magnesium oxide",formula:"MgO"},{name:"Iron(III) oxide",formula:"Fe2O3"},
+{name:"Copper sulfate",formula:"CuSO4"},{name:"Potassium permanganate",formula:"KMnO4"},{name:"Sodium bicarbonate",formula:"NaHCO3"},
+{name:"Acetic acid",formula:"CH3COOH"},{name:"Benzene",formula:"C6H6"},{name:"Oxygen gas",formula:"O2"},
+{name:"Nitrogen gas",formula:"N2"},{name:"Hydrogen peroxide",formula:"H2O2"},{name:"Sodium hydroxide",formula:"NaOH"},
+{name:"Calcium chloride",formula:"CaCl2"},{name:"Potassium chloride",formula:"KCl"},{name:"Magnesium sulfate",formula:"MgSO4"}
+];
+var resultFrom="calc";
+function normalizeFormula(raw){
+var s=raw.trim().replace(/\s+/g,"");
+s=s.replace(/_(\d+)/g,"$1");
+return s;
+}
+function readNumber(s,i){
+if(i>=s.length||s[i]<"0"||s[i]>"9")return{val:1,next:i};
+var n=0;
+while(i<s.length&&s[i]>="0"&&s[i]<="9"){n=n*10+(s.charCodeAt(i)-48);i++;}
+return{val:n||1,next:i};
+}
+function readElement(s,i){
+if(i>=s.length||!/^[A-Z]/.test(s[i]))return null;
+var sym=s[i];
+i++;
+if(i<s.length&&/^[a-z]/.test(s[i])){sym+=s[i];i++;}
+if(!ATOMIC.hasOwnProperty(sym))return{error:"Unknown element: "+sym};
+return{symbol:sym,next:i};
+}
+function mergeCounts(target,source,mult){
+for(var k in source){if(source.hasOwnProperty(k))target[k]=(target[k]||0)+source[k]*mult;}
+}
+function parseGroup(s,i,inside){
+var counts={};
+while(i<s.length&&s[i]!==")"){
+if(s[i]==="("){
+var inner=parseGroup(s,i+1,true);
+if(inner.error)return inner;
+i=inner.next;
+var mult=readNumber(s,i);
+i=mult.next;
+mergeCounts(counts,inner.counts,mult.val);
+}else{
+var el=readElement(s,i);
+if(!el)return{error:"Invalid formula at position "+(i+1)};
+if(el.error)return el;
+i=el.next;
+var mult=readNumber(s,i);
+i=mult.next;
+counts[el.symbol]=(counts[el.symbol]||0)+mult.val;
+}
+}
+if(inside){
+if(i>=s.length||s[i]!==")")return{error:"Unmatched parenthesis"};
+return{counts:counts,next:i+1};
+}
+return{counts:counts,next:i};
+}
+function parseFormula(raw){
+var s=normalizeFormula(raw);
+if(!s)return{error:"Please enter a formula"};
+var result=parseGroup(s,0,false);
+if(result.error)return result;
+if(result.next!==s.length)return{error:"Invalid formula: unexpected characters"};
+return{counts:result.counts,display:s};
+}
+function calculateMass(counts){
+var total=0;
+var breakdown=[];
+var elems=Object.keys(counts).sort();
+for(var i=0;i<elems.length;i++){
+var sym=elems[i];
+var cnt=counts[sym];
+var am=ATOMIC[sym];
+var subtotal=cnt*am;
+total+=subtotal;
+breakdown.push({symbol:sym,count:cnt,atomicMass:am,subtotal:subtotal});
+}
+return{total:total,breakdown:breakdown};
+}
+function formatMass(v){
+if(v>=1000)return v.toFixed(2);
+if(v>=100)return v.toFixed(2);
+if(v>=10)return v.toFixed(3);
+return v.toFixed(4);
+}
+function showScreen(id){
+var screens=document.querySelectorAll(".screen");
+for(var i=0;i<screens.length;i++)screens[i].classList.remove("active");
+document.getElementById("screen-"+id).classList.add("active");
+}
+function showError(msg){
+var el=document.getElementById("calc-error");
+el.textContent=msg;
+el.classList.add("show");
+}
+function hideError(){
+var el=document.getElementById("calc-error");
+el.classList.remove("show");
+}
+function showResult(formula,counts){
+var calc=calculateMass(counts);
+document.getElementById("res-formula").textContent=formula;
+document.getElementById("res-mass").textContent=formatMass(calc.total);
+var tbody=document.getElementById("res-breakdown");
+tbody.innerHTML="";
+for(var i=0;i<calc.breakdown.length;i++){
+var b=calc.breakdown[i];
+var tr=document.createElement("tr");
+tr.innerHTML="<td>"+b.symbol+"</td><td class='num'>"+b.count+"</td><td class='num'>"+formatMass(b.atomicMass)+"</td><td class='num'>"+formatMass(b.subtotal)+"</td>";
+tbody.appendChild(tr);
+}
+try{localStorage.setItem("wm_lastFormula",formula);}catch(e){}
+showScreen("result");
+}
+function doCalculate(formula){
+hideError();
+var parsed=parseFormula(formula);
+if(parsed.error){showError(parsed.error);return false;}
+resultFrom="calc";
+showResult(parsed.display,parsed.counts);
+return true;
+}
+function renderCatalog(filter){
+var list=document.getElementById("catalog-list");
+list.innerHTML="";
+var q=(filter||"").toLowerCase();
+for(var i=0;i<CATALOG.length;i++){
+var item=CATALOG[i];
+if(q&&item.name.toLowerCase().indexOf(q)===-1&&item.formula.toLowerCase().indexOf(q)===-1)continue;
+var parsed=parseFormula(item.formula);
+if(parsed.error)continue;
+var mass=calculateMass(parsed.counts).total;
+var div=document.createElement("div");
+div.className="catalog-item";
+div.innerHTML="<div class='ci-info'><div class='ci-name'>"+item.name+"</div><div class='ci-formula'>"+item.formula+"</div></div><div class='ci-mass'>"+formatMass(mass)+" g/mol</div>";
+div.addEventListener("click",function(f){
+return function(){
+var p=parseFormula(f);
+if(!p.error){resultFrom="catalog";showResult(p.display,p.counts);}
+};
+}(item.formula));
+list.appendChild(div);
+}
+}
+function initNeonBg(){
+var shapes=document.getElementById("bg-shapes");
+var types=["triangle","diamond","star","circle"];
+var colors=["#00ffff","#ff00ff","#ff8c00"];
+for(var i=0;i<18;i++){
+var s=document.createElement("div");
+s.className="neon-shape "+types[i%types.length];
+s.style.left=(Math.random()*100)+"%";
+s.style.top=(Math.random()*70)+"%";
+s.style.animationDelay=(Math.random()*6)+"s";
+s.style.animationDuration=(6+Math.random()*6)+"s";
+if(types[i%types.length]==="triangle")s.style.borderBottomColor=colors[i%3];
+else if(types[i%types.length]==="diamond")s.style.background=colors[i%3];
+else if(types[i%types.length]==="star")s.style.background=colors[i%3];
+else s.style.background=colors[i%3];
+shapes.appendChild(s);
+}
+var particles=document.getElementById("bg-particles");
+for(var j=0;j<30;j++){
+var p=document.createElement("div");
+p.className="particle";
+var c=colors[j%3];
+p.style.left=(Math.random()*100)+"%";
+p.style.width=(2+Math.random()*4)+"px";
+p.style.height=p.style.width;
+p.style.background=c;
+p.style.boxShadow="0 0 6px "+c;
+p.style.animationDuration=(6+Math.random()*10)+"s";
+p.style.animationDelay=(Math.random()*8)+"s";
+particles.appendChild(p);
+}
+}
+document.getElementById("btn-calc").addEventListener("click",function(){
+hideError();
+var last="";
+try{last=localStorage.getItem("wm_lastFormula")||"";}catch(e){}
+document.getElementById("formula-input").value=last;
+showScreen("calc");
+setTimeout(function(){document.getElementById("formula-input").focus();},100);
+});
+document.getElementById("btn-catalog").addEventListener("click",function(){
+document.getElementById("catalog-search").value="";
+renderCatalog("");
+showScreen("catalog");
+});
+document.getElementById("btn-do-calc").addEventListener("click",function(){
+doCalculate(document.getElementById("formula-input").value);
+});
+document.getElementById("formula-input").addEventListener("keydown",function(e){
+if(e.key==="Enter")doCalculate(this.value);
+});
+document.querySelectorAll("[data-back]").forEach(function(btn){
+btn.addEventListener("click",function(){showScreen(btn.getAttribute("data-back"));});
+});
+document.getElementById("result-back").addEventListener("click",function(){
+showScreen(resultFrom==="catalog"?"catalog":"calc");
+});
+document.getElementById("btn-new-calc").addEventListener("click",function(){showScreen("calc");});
+document.getElementById("btn-res-menu").addEventListener("click",function(){showScreen("menu");});
+var searchTimer=null;
+document.getElementById("catalog-search").addEventListener("input",function(){
+var val=this.value;
+clearTimeout(searchTimer);
+searchTimer=setTimeout(function(){renderCatalog(val);},200);
+});
+initNeonBg();
+renderCatalog("");
+})();
+</script>
+</body>
+</html>

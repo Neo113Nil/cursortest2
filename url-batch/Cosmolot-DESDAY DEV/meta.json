@@ -1,0 +1,60 @@
+{
+  "app_id": "com.molarmass.wincalc",
+  "title": "Cosmolot",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "https://play-lh.googleusercontent.com/i7VtR1bspg1nzMG3pmMNVOwCkIOsm2dqgpD_m5qcUGRXP5SD9Mn7J8Dce5EBqcqCMyvS26H9up_IvLG1mUvW",
+  "url": "https://play.google.com/store/apps/details?id=com.molarmass.wincalc&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 22, 2026",
+  "updated": "Jul 22, 2026",
+  "version": "Varies with device",
+  "summary": "Play premium slots & live casino games! Get bonuses, free spins & win jackpots!",
+  "keyword": "url-batch",
+  "folder": "Cosmolot-DESDAY DEV",
+  "path": "url-batch/Cosmolot-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.molarmass.wincalc-1-asset.apk",
+    "com.molarmass.wincalc-1-config.en.apk",
+    "com.molarmass.wincalc-1-config.lt.apk",
+    "com.molarmass.wincalc-1-config.ru.apk",
+    "com.molarmass.wincalc-1-config.xxhdpi.apk",
+    "com.molarmass.wincalc-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Cosmolot-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.molarmass.wincalc...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.molarmass.wincalc...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.molarmass.wincalc ─╮\n│ Cosmolot                │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 6 files  (5.9 MB)\n  com.molarmass.wincalc-1.apk               ━━━━━━━ 100% 3.7/3.7 11.4    0:00:00\n                                                         MB      MB/s           \n  com.molarmass.wincalc-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 1.7     0:00:00\n                                                         kB      MB/s           \n  com.molarmass.wincalc-1-asset.apk         ━━━━━━━ 100% 2.4/2.4 12.7    0:00:00\n                                                         MB      MB/s           \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.molarmass.wincalc-1.apk               │  3.5 MB │\n│ com.molarmass.wincalc-1-config.en.apk     │ 44.4 KB │\n│ com.molarmass.wincalc-1-config.lt.apk     │ 28.4 KB │\n│ com.molarmass.wincalc-1-config.ru.apk     │ 28.4 KB │\n│ com.molarmass.wincalc-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.molarmass.wincalc-1-asset.apk         │  3.5 MB │\n└───────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.molarmass.wincalc ─╮\n│ Cosmolot                │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 6 files  (5.9 MB)\n  com.molarmass.wincalc-1.apk               ━━━━━━━ 100% 3.7/3.7 11.4    0:00:00\n                                                         MB      MB/s           \n  com.molarmass.wincalc-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.molarmass.wincalc-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 1.7     0:00:00\n                                                         kB      MB/s           \n  com.molarmass.wincalc-1-asset.apk         ━━━━━━━ 100% 2.4/2.4 12.7    0:00:00\n                                                         MB      MB/s           \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.molarmass.wincalc-1.apk               │  3.5 MB │\n│ com.molarmass.wincalc-1-config.en.apk     │ 44.4 KB │\n│ com.molarmass.wincalc-1-config.lt.apk     │ 28.4 KB │\n│ com.molarmass.wincalc-1-config.ru.apk     │ 28.4 KB │\n│ com.molarmass.wincalc-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.molarmass.wincalc-1-asset.apk         │  3.5 MB │\n└───────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
