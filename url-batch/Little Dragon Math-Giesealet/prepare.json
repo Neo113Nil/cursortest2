@@ -11,7 +11,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2769 (0%)\nINFO  - progress: 273 of 2769 (9%)\nINFO  - progress: 335 of 2769 (12%)\nINFO  - progress: 692 of 2769 (24%)\nINFO  - progress: 979 of 2769 (35%)\nINFO  - progress: 1183 of 2769 (42%)\nINFO  - progress: 1351 of 2769 (48%)\nINFO  - progress: 1582 of 2769 (57%)\nINFO  - progress: 1699 of 2769 (61%)\nINFO  - progress: 1859 of 2769 (67%)\nINFO  - progress: 2128 of 2769 (76%)\nINFO  - progress: 2247 of 2769 (81%)\nINFO  - progress: 2305 of 2769 (83%)\nINFO  - progress: 2429 of 2769 (87%)\nINFO  - progress: 2526 of 2769 (91%)\nINFO  - progress: 2694 of 2769 (97%)\n                                                             \nERROR - finished with errors, count: 3\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 2769 (0%)\nINFO  - progress: 272 of 2769 (9%)\nINFO  - progress: 292 of 2769 (10%)\nINFO  - progress: 579 of 2769 (20%)\nINFO  - progress: 852 of 2769 (30%)\nINFO  - progress: 1061 of 2769 (38%)\nINFO  - progress: 1221 of 2769 (44%)\nINFO  - progress: 1431 of 2769 (51%)\nINFO  - progress: 1619 of 2769 (58%)\nINFO  - progress: 1699 of 2769 (61%)\nINFO  - progress: 1856 of 2769 (67%)\nINFO  - progress: 2081 of 2769 (75%)\nINFO  - progress: 2234 of 2769 (80%)\nINFO  - progress: 2316 of 2769 (83%)\nINFO  - progress: 2452 of 2769 (88%)\nINFO  - progress: 2496 of 2769 (90%)\nINFO  - progress: 2696 of 2769 (97%)\n                                                             \nERROR - finished with errors, count: 3\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/url-batch/Little Dragon Math-Giesealet/decompiled",
     "skipped": false,
@@ -25,6 +25,8 @@
     "apk/config.zh.apk",
     "apk/config.en.apk",
     "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
     "decompiled/resources/AndroidManifest.xml",
     "decompiled/resources/res/values/strings.xml",
     "decompiled/sources/",
