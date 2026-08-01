@@ -1,0 +1,16 @@
+package j0;
+
+import java.io.Closeable;
+
+/* loaded from: classes.dex */
+public interface c extends Closeable {
+    void e(int i, byte[] bArr);
+
+    void f(int i);
+
+    void g(String str, int i);
+
+    void h(int i, double d);
+
+    void p(int i, long j2);
+}

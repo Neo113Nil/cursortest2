@@ -74,7 +74,7 @@
       },
       {
         "param": "Permissions",
-        "value": "android.permission.RECORD_AUDIO, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.SYSTEM_ALERT_WINDOW, android.permission.FOREGROUND_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.translator.alllanguagetranslations.ath.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.BILLING"
+        "value": "android.permission.RECORD_AUDIO, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.SYSTEM_ALERT_WINDOW, android.permission.FOREGROUND_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTR IBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.translator.alllanguagetranslations.ath.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.BILLING"
       },
       {
         "param": "Libraries",
@@ -101,16 +101,42 @@
       {
         "domain": "api.dictionaryapi.dev",
         "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: NAMECHEAP INC",
-        "vt_url": "https://www.virustotal.com/gui/domain/api.dictionaryapi.dev",
-        "detections": "0/91 (malicious=0, suspicious=0)"
+        "parked_at": "регистратор: NAMECHEAP INC"
       },
       {
         "domain": "ktor.io",
         "redirects_to": "нет (без редиректа)",
-        "parked_at": "регистратор: MarkMonitor Inc.",
-        "vt_url": "https://www.virustotal.com/gui/domain/ktor.io",
-        "detections": "0/91 (malicious=0, suspicious=0)"
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "log-mva.isnssdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "log.sgsnssdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "p16-sign-sg.tiktokcdn.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "pangleglobal.com",
+        "redirects_to": "https://www.pangleglobal.com/",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "pangolin16.isnssdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "pangolin16.sgsnssdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
       }
     ],
     "collected_data": [],
