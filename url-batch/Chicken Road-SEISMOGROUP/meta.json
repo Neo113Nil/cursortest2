@@ -1,0 +1,36 @@
+{
+  "app_id": "com.quantumriftgate.arqntmrg",
+  "title": "Chicken Road",
+  "developer": "SEISMOGROUP",
+  "developer_id": "SEISMOGROUP",
+  "icon": "https://play-lh.googleusercontent.com/oX2PEZAsg6uvQ0VOaJ4loyd8zCkIGIR-_nOTp5g5hJeNiRQqcuxH0JblWjkX4rcTuKg4Cd3jeZW94qxzSO8dlg",
+  "url": "https://play.google.com/store/apps/details?id=com.quantumriftgate.arqntmrg&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 11, 2026",
+  "updated": "Jun 11, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to the World of Chicken Road 2!",
+  "keyword": "url-batch",
+  "folder": "Chicken Road-SEISMOGROUP",
+  "path": "url-batch/Chicken Road-SEISMOGROUP",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.quantumriftgate.arqntmrg.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken Road-SEISMOGROUP",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.quantumriftgate.arqntmrg...\ncom.quantumriftgate.arqntmrg downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.quantumriftgate.arqntmrg...\ncom.quantumriftgate.arqntmrg downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
