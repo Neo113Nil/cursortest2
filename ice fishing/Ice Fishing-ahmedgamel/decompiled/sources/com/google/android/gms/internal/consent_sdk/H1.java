@@ -1,0 +1,38 @@
+package com.google.android.gms.internal.consent_sdk;
+
+/* loaded from: classes2.dex */
+public final class H1 extends AbstractC4355o2 {
+    private static final H1 zzb;
+    private int zzd;
+    private int zze;
+    private int zzf;
+    private boolean zzg;
+    private boolean zzh;
+
+    static {
+        H1 h12 = new H1();
+        zzb = h12;
+        AbstractC4355o2.l(H1.class, h12);
+    }
+
+    @Override // com.google.android.gms.internal.consent_sdk.AbstractC4355o2
+    public final Object f(int i) {
+        int i6 = i - 1;
+        if (i6 == 0) {
+            return (byte) 1;
+        }
+        if (i6 == 2) {
+            return new H2(zzb, "\u0004\u0004\u0000\u0001\u0001\u0004\u0004\u0000\u0000\u0000\u0001᠌\u0000\u0002᠌\u0001\u0003ဇ\u0002\u0004ဇ\u0003", new Object[]{"zzd", "zze", S.f35588C, "zzf", O2.f35584a, "zzg", "zzh"});
+        }
+        if (i6 == 3) {
+            return new H1();
+        }
+        if (i6 == 4) {
+            return new C4369s1(zzb);
+        }
+        if (i6 == 5) {
+            return zzb;
+        }
+        throw null;
+    }
+}

@@ -1,0 +1,95 @@
+package l;
+
+import android.content.Context;
+import android.graphics.Rect;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.FrameLayout;
+import android.widget.HeaderViewListAdapter;
+import android.widget.ListAdapter;
+import android.widget.PopupWindow;
+
+/* loaded from: classes.dex */
+public abstract class u implements InterfaceC4641C, y, AdapterView.OnItemClickListener {
+
+    /* renamed from: n, reason: collision with root package name */
+    public Rect f38868n;
+
+    public static int l(ListAdapter listAdapter, Context context, int i) {
+        int makeMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, 0);
+        int makeMeasureSpec2 = View.MeasureSpec.makeMeasureSpec(0, 0);
+        int count = listAdapter.getCount();
+        int i6 = 0;
+        int i9 = 0;
+        FrameLayout frameLayout = null;
+        View view = null;
+        for (int i10 = 0; i10 < count; i10++) {
+            int itemViewType = listAdapter.getItemViewType(i10);
+            if (itemViewType != i9) {
+                view = null;
+                i9 = itemViewType;
+            }
+            if (frameLayout == null) {
+                frameLayout = new FrameLayout(context);
+            }
+            view = listAdapter.getView(i10, view, frameLayout);
+            view.measure(makeMeasureSpec, makeMeasureSpec2);
+            int measuredWidth = view.getMeasuredWidth();
+            if (measuredWidth >= i) {
+                return i;
+            }
+            if (measuredWidth > i6) {
+                i6 = measuredWidth;
+            }
+        }
+        return i6;
+    }
+
+    public static boolean t(m mVar) {
+        int size = mVar.f38825y.size();
+        for (int i = 0; i < size; i++) {
+            MenuItem item = mVar.getItem(i);
+            if (item.isVisible() && item.getIcon() != null) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override // l.y
+    public final boolean c(o oVar) {
+        return false;
+    }
+
+    @Override // l.y
+    public final boolean j(o oVar) {
+        return false;
+    }
+
+    public abstract void k(m mVar);
+
+    public abstract void m(View view);
+
+    public abstract void n(boolean z3);
+
+    public abstract void o(int i);
+
+    @Override // android.widget.AdapterView.OnItemClickListener
+    public final void onItemClick(AdapterView adapterView, View view, int i, long j6) {
+        ListAdapter listAdapter = (ListAdapter) adapterView.getAdapter();
+        (listAdapter instanceof HeaderViewListAdapter ? (C4653j) ((HeaderViewListAdapter) listAdapter).getWrappedAdapter() : (C4653j) listAdapter).f38797a.q((MenuItem) listAdapter.getItem(i), this, !(this instanceof ViewOnKeyListenerC4650g) ? 0 : 4);
+    }
+
+    public abstract void p(int i);
+
+    public abstract void q(PopupWindow.OnDismissListener onDismissListener);
+
+    public abstract void r(boolean z3);
+
+    public abstract void s(int i);
+
+    @Override // l.y
+    public final void h(Context context, m mVar) {
+    }
+}

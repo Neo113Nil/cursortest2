@@ -57,5 +57,144 @@
   ],
   "stdout": "╭─ com.icewinter.flow.winter.icecatch ─╮\n│ Ice Fishing                          │\n│ 3.0  (vc 3)                          │\n╰──────────────────────────────────────╯\n\nDownloading 7 files  (7.3 MB)\n  com.icewinter.flow.winter.icecatch-3.apk                  ━━━ 100% 3.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk ━━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.en.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.lt.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.ru.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    ━━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-asset.apk            ━━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icewinter.flow.winter.icecatch-3.apk                  │  3.7 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk │  1.3 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.en.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.lt.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.ru.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    │ 16.3 KB │\n│ com.icewinter.flow.winter.icecatch-3-asset.apk            │  3.7 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Ice Fishing (пакет com.icewinter.flow.winter.icecatch, версия 3.0, versionCode 3, разработчик Soft App Zone)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.3.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.4.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Adjust SDK 5.7.0 (атрибуция: adid, attribution, Google Advertising ID, Google Play install referrer, режим ENVIRONMENT_PRODUCTION, LogLevel.VERBOSE), Firebase Cloud Messaging 25.1.1 (push-токен устройства), Firebase Installations 19.1.1, Firebase Common 22.0.1, Google DataTransport / CCT 18.2.0 (отправляет model, hardware, device, product, os-uild, manufacturer, fingerprint, tz-offset, net-type, mobile-subtype, country, locale, mcc_mnc, application_build, sdk-version), Google Play Install Referrer"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.POST_NOTIFICATIONS, android.permission.CAMERA, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, co m.icewinter.flow.winter.icecatch.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.google.android.gms.permission.AD_ID, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "AGP 9.3.1; Kotlin 2.4.10 / kotlin-stdlib; kotlinx-coroutines; Jetpack Compose UI (androidx.compose.ui, Material-иконки, Compose Runtime); AndroidX: activity, annotation, core, emoji2, fragment, graphics-path (libandroidx.graphics.path.so), legacy-support, lifecycle (process/runtime/viewmodel), profileinstaller, room (AppDatabase, таблица caught_fish), startup-runtime, versionedparcelable, window; AndroidX DataStore (libdatastore_shared_counter.so); Adjust Android SDK 5.7.0 + adjust-signature libsigner.so 3.67.0; Google Play Install Referrer (com.android.installreferrer); Firebase: fire-core 22.0.1, firebase-messaging 25.1.1, firebase-installations 19.1.1, firebase-datatransport 18.2.0, firebase-iid-interop 17.1.0, firebase-measurement-connector 19.0.0, firebase-encoders 17.0.0 / -json 18.0.0 / -proto 16.0.0; Google Play services: basement 18.9.0, base 18.9.0, cloud-messaging 17.4.0, stats 17.0.2, tasks 18.4.0; Java-WebSocket (клиент WebSocket, TooTallNate) + slf4j-api 2.0.99; Pairip (com.pairip.application.Application, com.pairip.licensecheck); android.webkit.WebView"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "torquepatterncluster.life, config.ru, dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Файл «Ice Fishing_preferences»: ключ user_secure_data — сюда записывается строка, которую вернул сервер (ссылка на внешнюю страницу). Если ключ не пустой, приложение при следующих запусках уже не спрашивает сервер и сразу открывает сохранённую ссылку во встроенном окне сайта. Дополнительно служебные файлы сторонних компонентов: adjust_preferences (данные атрибуции Adjust), com.google.firebase.messaging и com.google.android.gms.appid (push-идентификаторы). Игровой прогресс белой части хранится в базе Room «caught_fish», а не в SharedPreferences."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Ice Fishing — com.icewinter.flow.winter.icecatch 2 Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "wss://torquepatterncluster.life (адрес спрятан в классе AppConnectionData как «readConnectionData»), APP_CONNECTION_DATA, APP_SECURE_KEY, APP_GOOGLE_BLANK_ID («00000000-0000-0000-0000-000000000000»), frozenCatchKey, icyRouteAnchor, glacierSignalBridge (bridge), frostCurrentVector, snowStreamTracker, dywdsn385csg, user_secure_data, Successfully / Failure (развилка «оффер или игра»), ColdActivity, удаление метки «; wv» из строки браузера, googlepay://, tez://, intent://, S.browser_fallback_url, redirect («Following redirect to: %s»), deeplink_url / deeplink_url_cached / attribution_deeplink, license check (com.pairip.licensecheck)"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "app.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "gdpr.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      },
+      {
+        "domain": "go.link",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "slf4j.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "ssrv.adjust.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: united-domains GmbH"
+      }
+    ],
+    "collected_data": [
+      " рекламный номер устройства от Google (в коде — ключ «frostCurrentVector», берётся через",
+      "Adjust.getGoogleAdId) → уникальный рекламный номер телефона; по нему сервер отличает одно",
+      "устройство от другого и понимает, «живой» ли это телефон",
+      " подменный рекламный номер, когда настоящего нет → если человек запретил рекламный номер или его",
+      "выдаёт эмулятор, телефон отдаёт номер из одних нулей (00000000-0000-0000-0000-000000000000);",
+      "приложение это замечает и вместо него отправляет случайный набор символов, склеенный сам с собой",
+      "— по такому странному значению на сервере легко увидеть, что настоящего рекламного номера нет",
+      " рекламный номер, который выдала система отслеживания установок Adjust (ключ «icyRouteAnchor») →",
+      "второй, независимый номер этого же телефона; помогает связать человека с рекламной кампанией, по",
+      "которой он пришёл",
+      " номер устройства для push-уведомлений от Firebase (ключ «glacierSignalBridge») → служебный номер, по",
+      "которому этому телефону потом можно присылать уведомления и который тоже работает как",
+      "«отпечаток» устройства",
+      " строка Google Play о том, откуда установили приложение (ключ «snowStreamTracker», install referrer) →",
+      "текст с пометками рекламной ссылки: источник, кампания, метка перехода; именно по нему видно,",
+      "пришёл человек из рекламы или установил приложение сам",
+      "Ice Fishing — com.icewinter.flow.winter.icecatch",
+      "7",
+      " весь ответ системы Adjust о рекламной кампании (кладётся в запрос без отдельного имени, полями) →",
+      "приложение разбирает ответ Adjust и вкладывает в свой запрос все непустые значения: метка и",
+      "название источника трафика, сеть, кампания, группа объявлений, креатив, метка клика, стоимость",
+      "перехода, ссылка из рекламы",
+      " техническое имя и сборка приложения → имя программы в телефоне (com.icewinter.flow.winter.icecatch)",
+      "и номер сборки уходят вместе со служебными обращениями встроенных компонентов Google",
+      " язык и страна телефона, модель, производитель, «отпечаток» прошивки, часовой пояс, тип сети и код",
+      "оператора связи → эти сведения собирает и отправляет встроенная часть Google и система Adjust:",
+      "model, manufacturer, device, product, hardware, fingerprint, os-uild, locale, country, tz-offset, net-type,",
+      "mobile-subtype, mcc_mnc, sdk-version"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n•  рекламный номер устройства от Google (в коде — ключ «frostCurrentVector», берётся через\n• Adjust.getGoogleAdId) → уникальный рекламный номер телефона; по нему сервер отличает одно\n• устройство от другого и понимает, «живой» ли это телефон\n•  подменный рекламный номер, когда настоящего нет → если человек запретил рекламный номер или его\n• выдаёт эмулятор, телефон отдаёт номер из одних нулей (00000000-0000-0000-0000-000000000000);\n• приложение это замечает и вместо него отправляет случайный набор символов, склеенный сам с собой\n• — по такому странному значению на сервере легко увидеть, что настоящего рекламного номера нет\n•  рекламный номер, который выдала система отслеживания установок Adjust (ключ «icyRouteAnchor») →\n• второй, независимый номер этого же телефона; помогает связать человека с рекламной кампанией, по\n• которой он пришёл\n•  номер устройства для push-уведомлений от Firebase (ключ «glacierSignalBridge») → служебный номер, по\n• которому этому телефону потом можно присылать уведомления и который тоже работает как\n• «отпечаток» устройства\n•  строка Google Play о том, откуда установили приложение (ключ «snowStreamTracker», install referrer) →\n• текст с пометками рекламной ссылки: источник, кампания, метка перехода; именно по нему видно,\n• пришёл человек из рекламы или установил приложение сам\n• Ice Fishing — com.icewinter.flow.winter.icecatch\n• 7\n•  весь ответ системы Adjust о рекламной кампании (кладётся в запрос без отдельного имени, полями) →\n• приложение разбирает ответ Adjust и вкладывает в свой запрос все непустые значения: метка и\n• название источника трафика, сеть, кампания, группа объявлений, креатив, метка клика, стоимость\n• перехода, ссылка из рекламы\n•  техническое имя и сборка приложения → имя программы в телефоне (com.icewinter.flow.winter.icecatch)\n• и номер сборки уходят вместе со служебными обращениями встроенных компонентов Google\n•  язык и страна телефона, модель, производитель, «отпечаток» прошивки, часовой пояс, тип сети и код\n• оператора связи → эти сведения собирает и отправляет встроенная часть Google и система Adjust:\n• model, manufacturer, device, product, hardware, fingerprint, os-uild, locale…"
+  }
 }

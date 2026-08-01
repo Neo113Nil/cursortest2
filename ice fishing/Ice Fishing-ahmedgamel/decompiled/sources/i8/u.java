@@ -1,0 +1,85 @@
+package i8;
+
+import com.google.android.gms.internal.ads.C3428jv;
+import q2.C4896n;
+
+/* loaded from: classes2.dex */
+public final class u {
+
+    /* renamed from: a, reason: collision with root package name */
+    public C4896n f38230a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public s f38231b;
+
+    /* renamed from: d, reason: collision with root package name */
+    public String f38233d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public k f38234e;
+
+    /* renamed from: h, reason: collision with root package name */
+    public m8.i f38237h;
+    public v i;
+
+    /* renamed from: j, reason: collision with root package name */
+    public v f38238j;
+
+    /* renamed from: k, reason: collision with root package name */
+    public v f38239k;
+
+    /* renamed from: l, reason: collision with root package name */
+    public long f38240l;
+
+    /* renamed from: m, reason: collision with root package name */
+    public long f38241m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public C3428jv f38242n;
+
+    /* renamed from: c, reason: collision with root package name */
+    public int f38232c = -1;
+
+    /* renamed from: g, reason: collision with root package name */
+    public x f38236g = x.f38261n;
+
+    /* renamed from: o, reason: collision with root package name */
+    public A f38243o = A.f38066a;
+
+    /* renamed from: f, reason: collision with root package name */
+    public G1.e f38235f = new G1.e(3);
+
+    public static void b(String str, v vVar) {
+        if (vVar != null) {
+            if (vVar.f38245B != null) {
+                throw new IllegalArgumentException(str.concat(".networkResponse != null").toString());
+            }
+            if (vVar.f38246C != null) {
+                throw new IllegalArgumentException(str.concat(".cacheResponse != null").toString());
+            }
+            if (vVar.f38247D != null) {
+                throw new IllegalArgumentException(str.concat(".priorResponse != null").toString());
+            }
+        }
+    }
+
+    public final v a() {
+        int i = this.f38232c;
+        if (i < 0) {
+            throw new IllegalStateException(("code < 0: " + this.f38232c).toString());
+        }
+        C4896n c4896n = this.f38230a;
+        if (c4896n == null) {
+            throw new IllegalStateException("request == null");
+        }
+        s sVar = this.f38231b;
+        if (sVar == null) {
+            throw new IllegalStateException("protocol == null");
+        }
+        String str = this.f38233d;
+        if (str != null) {
+            return new v(c4896n, sVar, str, i, this.f38234e, this.f38235f.b(), this.f38236g, this.f38237h, this.i, this.f38238j, this.f38239k, this.f38240l, this.f38241m, this.f38242n, this.f38243o);
+        }
+        throw new IllegalStateException("message == null");
+    }
+}

@@ -1,0 +1,20 @@
+package com.instagram.common.viewpoint.core;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public final class MK {
+    public String A00;
+    public String A01;
+    public final String A02;
+    public final boolean A03;
+
+    public MK() {
+        this("", false, "", "");
+    }
+
+    public MK(String str, boolean z3, String str2, String str3) {
+        this.A02 = str;
+        this.A03 = z3;
+        this.A00 = str2;
+        this.A01 = str3;
+    }
+}

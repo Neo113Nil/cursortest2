@@ -1,0 +1,1613 @@
+package U7;
+
+import D.y;
+import S7.AbstractC0406y;
+import S7.C0389g;
+import S7.InterfaceC0388f;
+import S7.y0;
+import X7.t;
+import X7.u;
+import com.icefishinggame.icefishinggamemultigames.AbstractC4404f;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.concurrent.CancellationException;
+import java.util.concurrent.atomic.AtomicLongFieldUpdater;
+import java.util.concurrent.atomic.AtomicReferenceArray;
+import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
+import u7.v;
+import v7.AbstractC5130k;
+import z7.InterfaceC5267d;
+
+/* loaded from: classes2.dex */
+public class c implements g {
+    private volatile /* synthetic */ Object _closeCause$volatile;
+    private volatile /* synthetic */ long bufferEnd$volatile;
+    private volatile /* synthetic */ Object bufferEndSegment$volatile;
+    private volatile /* synthetic */ Object closeHandler$volatile;
+    private volatile /* synthetic */ long completedExpandBuffersAndPauseFlag$volatile;
+
+    /* renamed from: n, reason: collision with root package name */
+    public final int f3235n;
+    private volatile /* synthetic */ Object receiveSegment$volatile;
+    private volatile /* synthetic */ long receivers$volatile;
+    private volatile /* synthetic */ Object sendSegment$volatile;
+    private volatile /* synthetic */ long sendersAndCloseStatus$volatile;
+
+    /* renamed from: u, reason: collision with root package name */
+    public static final /* synthetic */ AtomicLongFieldUpdater f3229u = AtomicLongFieldUpdater.newUpdater(c.class, "sendersAndCloseStatus$volatile");
+
+    /* renamed from: v, reason: collision with root package name */
+    public static final /* synthetic */ AtomicLongFieldUpdater f3230v = AtomicLongFieldUpdater.newUpdater(c.class, "receivers$volatile");
+
+    /* renamed from: w, reason: collision with root package name */
+    public static final /* synthetic */ AtomicLongFieldUpdater f3231w = AtomicLongFieldUpdater.newUpdater(c.class, "bufferEnd$volatile");
+
+    /* renamed from: x, reason: collision with root package name */
+    public static final /* synthetic */ AtomicLongFieldUpdater f3232x = AtomicLongFieldUpdater.newUpdater(c.class, "completedExpandBuffersAndPauseFlag$volatile");
+
+    /* renamed from: y, reason: collision with root package name */
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3233y = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "sendSegment$volatile");
+
+    /* renamed from: z, reason: collision with root package name */
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3234z = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "receiveSegment$volatile");
+
+    /* renamed from: A, reason: collision with root package name */
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3226A = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "bufferEndSegment$volatile");
+
+    /* renamed from: B, reason: collision with root package name */
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3227B = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "_closeCause$volatile");
+
+    /* renamed from: C, reason: collision with root package name */
+    public static final /* synthetic */ AtomicReferenceFieldUpdater f3228C = AtomicReferenceFieldUpdater.newUpdater(c.class, Object.class, "closeHandler$volatile");
+
+    public c(int i) {
+        this.f3235n = i;
+        if (i < 0) {
+            throw new IllegalArgumentException(y.k(i, "Invalid channel capacity: ", ", should be >=0").toString());
+        }
+        k kVar = e.f3237a;
+        this.bufferEnd$volatile = i != 0 ? i != Integer.MAX_VALUE ? i : Long.MAX_VALUE : 0L;
+        this.completedExpandBuffersAndPauseFlag$volatile = f3231w.get(this);
+        k kVar2 = new k(0L, null, this, 3);
+        this.sendSegment$volatile = kVar2;
+        this.receiveSegment$volatile = kVar2;
+        if (v()) {
+            kVar2 = e.f3237a;
+            kotlin.jvm.internal.h.c(kVar2, "null cannot be cast to non-null type kotlinx.coroutines.channels.ChannelSegment<E of kotlinx.coroutines.channels.BufferedChannel>");
+        }
+        this.bufferEndSegment$volatile = kVar2;
+        this._closeCause$volatile = e.f3254s;
+    }
+
+    public static boolean A(Object obj) {
+        if (!(obj instanceof InterfaceC0388f)) {
+            throw new IllegalStateException(("Unexpected waiter: " + obj).toString());
+        }
+        kotlin.jvm.internal.h.c(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<kotlin.Unit>");
+        InterfaceC0388f interfaceC0388f = (InterfaceC0388f) obj;
+        k kVar = e.f3237a;
+        D2.b c9 = interfaceC0388f.c(v.f41353a, null);
+        if (c9 == null) {
+            return false;
+        }
+        interfaceC0388f.f(c9);
+        return true;
+    }
+
+    public static final k c(c cVar, long j6, k kVar) {
+        Object b9;
+        c cVar2;
+        cVar.getClass();
+        k kVar2 = e.f3237a;
+        d dVar = d.f3236v;
+        loop0: while (true) {
+            b9 = X7.a.b(kVar, j6, dVar);
+            if (!X7.a.e(b9)) {
+                t c9 = X7.a.c(b9);
+                while (true) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3233y;
+                    t tVar = (t) atomicReferenceFieldUpdater.get(cVar);
+                    if (tVar.f3860v >= c9.f3860v) {
+                        break loop0;
+                    }
+                    if (!c9.i()) {
+                        break;
+                    }
+                    while (!atomicReferenceFieldUpdater.compareAndSet(cVar, tVar, c9)) {
+                        if (atomicReferenceFieldUpdater.get(cVar) != tVar) {
+                            if (c9.e()) {
+                                c9.d();
+                            }
+                        }
+                    }
+                    if (tVar.e()) {
+                        tVar.d();
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        boolean e9 = X7.a.e(b9);
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f3230v;
+        if (e9) {
+            cVar.k();
+            if (kVar.f3860v * e.f3238b < atomicLongFieldUpdater.get(cVar)) {
+                kVar.a();
+                return null;
+            }
+        } else {
+            k kVar3 = (k) X7.a.c(b9);
+            long j9 = kVar3.f3860v;
+            if (j9 <= j6) {
+                return kVar3;
+            }
+            long j10 = e.f3238b * j9;
+            while (true) {
+                AtomicLongFieldUpdater atomicLongFieldUpdater2 = f3229u;
+                long j11 = atomicLongFieldUpdater2.get(cVar);
+                long j12 = 1152921504606846975L & j11;
+                if (j12 >= j10) {
+                    cVar2 = cVar;
+                    break;
+                }
+                cVar2 = cVar;
+                if (atomicLongFieldUpdater2.compareAndSet(cVar2, j11, j12 + (((int) (j11 >> 60)) << 60))) {
+                    break;
+                }
+                cVar = cVar2;
+            }
+            if (j9 * e.f3238b < atomicLongFieldUpdater.get(cVar2)) {
+                kVar3.a();
+            }
+        }
+        return null;
+    }
+
+    public static final void f(c cVar, Object obj, C0389g c0389g) {
+        cVar.getClass();
+        c0389g.resumeWith(com.bumptech.glide.d.f(cVar.q()));
+    }
+
+    public static final int g(c cVar, k kVar, int i, Object obj, long j6, Object obj2, boolean z3) {
+        cVar.getClass();
+        kVar.m(i, obj);
+        if (z3) {
+            return cVar.C(kVar, i, obj, j6, obj2, z3);
+        }
+        Object k9 = kVar.k(i);
+        if (k9 == null) {
+            if (cVar.h(j6)) {
+                if (kVar.j(i, null, e.f3240d)) {
+                    return 1;
+                }
+            } else {
+                if (obj2 == null) {
+                    return 3;
+                }
+                if (kVar.j(i, null, obj2)) {
+                    return 2;
+                }
+            }
+        } else if (k9 instanceof y0) {
+            kVar.m(i, null);
+            if (cVar.z(k9, obj)) {
+                kVar.n(i, e.i);
+                return 0;
+            }
+            D2.b bVar = e.f3246k;
+            if (kVar.f3261y.getAndSet((i * 2) + 1, bVar) == bVar) {
+                return 5;
+            }
+            kVar.l(i, true);
+            return 5;
+        }
+        return cVar.C(kVar, i, obj, j6, obj2, z3);
+    }
+
+    public static void s(c cVar) {
+        cVar.getClass();
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f3232x;
+        if ((atomicLongFieldUpdater.addAndGet(cVar, 1L) & 4611686018427387904L) != 0) {
+            while ((atomicLongFieldUpdater.get(cVar) & 4611686018427387904L) != 0) {
+            }
+        }
+    }
+
+    public final Object B(k kVar, int i, long j6, Object obj) {
+        Object k9 = kVar.k(i);
+        AtomicReferenceArray atomicReferenceArray = kVar.f3261y;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f3229u;
+        if (k9 == null) {
+            if (j6 >= (atomicLongFieldUpdater.get(this) & 1152921504606846975L)) {
+                if (obj == null) {
+                    return e.f3249n;
+                }
+                if (kVar.j(i, k9, obj)) {
+                    m();
+                    return e.f3248m;
+                }
+            }
+        } else if (k9 == e.f3240d && kVar.j(i, k9, e.i)) {
+            m();
+            Object obj2 = atomicReferenceArray.get(i * 2);
+            kVar.m(i, null);
+            return obj2;
+        }
+        while (true) {
+            Object k10 = kVar.k(i);
+            if (k10 == null || k10 == e.f3241e) {
+                if (j6 < (atomicLongFieldUpdater.get(this) & 1152921504606846975L)) {
+                    if (kVar.j(i, k10, e.f3244h)) {
+                        m();
+                        return e.f3250o;
+                    }
+                } else {
+                    if (obj == null) {
+                        return e.f3249n;
+                    }
+                    if (kVar.j(i, k10, obj)) {
+                        m();
+                        return e.f3248m;
+                    }
+                }
+            } else if (k10 != e.f3240d) {
+                D2.b bVar = e.f3245j;
+                if (k10 == bVar) {
+                    return e.f3250o;
+                }
+                if (k10 == e.f3244h) {
+                    return e.f3250o;
+                }
+                if (k10 == e.f3247l) {
+                    m();
+                    return e.f3250o;
+                }
+                if (k10 != e.f3243g && kVar.j(i, k10, e.f3242f)) {
+                    boolean z3 = k10 instanceof s;
+                    if (z3) {
+                        k10 = ((s) k10).f3265a;
+                    }
+                    if (A(k10)) {
+                        kVar.n(i, e.i);
+                        m();
+                        Object obj3 = atomicReferenceArray.get(i * 2);
+                        kVar.m(i, null);
+                        return obj3;
+                    }
+                    kVar.n(i, bVar);
+                    kVar.h();
+                    if (z3) {
+                        m();
+                    }
+                    return e.f3250o;
+                }
+            } else if (kVar.j(i, k10, e.i)) {
+                m();
+                Object obj4 = atomicReferenceArray.get(i * 2);
+                kVar.m(i, null);
+                return obj4;
+            }
+        }
+    }
+
+    public final int C(k kVar, int i, Object obj, long j6, Object obj2, boolean z3) {
+        while (true) {
+            Object k9 = kVar.k(i);
+            if (k9 == null) {
+                if (!h(j6) || z3) {
+                    if (z3) {
+                        if (kVar.j(i, null, e.f3245j)) {
+                            kVar.h();
+                            return 4;
+                        }
+                    } else {
+                        if (obj2 == null) {
+                            return 3;
+                        }
+                        if (kVar.j(i, null, obj2)) {
+                            return 2;
+                        }
+                    }
+                } else if (kVar.j(i, null, e.f3240d)) {
+                    break;
+                }
+            } else {
+                if (k9 != e.f3241e) {
+                    D2.b bVar = e.f3246k;
+                    if (k9 == bVar) {
+                        kVar.m(i, null);
+                        return 5;
+                    }
+                    if (k9 == e.f3244h) {
+                        kVar.m(i, null);
+                        return 5;
+                    }
+                    if (k9 == e.f3247l) {
+                        kVar.m(i, null);
+                        k();
+                        return 4;
+                    }
+                    kVar.m(i, null);
+                    if (k9 instanceof s) {
+                        k9 = ((s) k9).f3265a;
+                    }
+                    if (z(k9, obj)) {
+                        kVar.n(i, e.i);
+                        return 0;
+                    }
+                    if (kVar.f3261y.getAndSet((i * 2) + 1, bVar) != bVar) {
+                        kVar.l(i, true);
+                    }
+                    return 5;
+                }
+                if (kVar.j(i, k9, e.f3240d)) {
+                    break;
+                }
+            }
+        }
+        return 1;
+    }
+
+    public final void D(long j6) {
+        AtomicLongFieldUpdater atomicLongFieldUpdater;
+        c cVar = this;
+        if (cVar.v()) {
+            return;
+        }
+        while (true) {
+            atomicLongFieldUpdater = f3231w;
+            if (atomicLongFieldUpdater.get(cVar) > j6) {
+                break;
+            } else {
+                cVar = this;
+            }
+        }
+        int i = e.f3239c;
+        int i6 = 0;
+        while (true) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater2 = f3232x;
+            if (i6 < i) {
+                long j9 = atomicLongFieldUpdater.get(cVar);
+                if (j9 == (4611686018427387903L & atomicLongFieldUpdater2.get(cVar)) && j9 == atomicLongFieldUpdater.get(cVar)) {
+                    return;
+                } else {
+                    i6++;
+                }
+            } else {
+                while (true) {
+                    long j10 = atomicLongFieldUpdater2.get(cVar);
+                    if (atomicLongFieldUpdater2.compareAndSet(cVar, j10, (j10 & 4611686018427387903L) + 4611686018427387904L)) {
+                        break;
+                    } else {
+                        cVar = this;
+                    }
+                }
+                while (true) {
+                    long j11 = atomicLongFieldUpdater.get(cVar);
+                    long j12 = atomicLongFieldUpdater2.get(cVar);
+                    long j13 = j12 & 4611686018427387903L;
+                    boolean z3 = (j12 & 4611686018427387904L) != 0;
+                    if (j11 == j13 && j11 == atomicLongFieldUpdater.get(cVar)) {
+                        break;
+                    }
+                    if (!z3) {
+                        atomicLongFieldUpdater2.compareAndSet(this, j12, 4611686018427387904L + j13);
+                    }
+                    cVar = this;
+                }
+                while (true) {
+                    long j14 = atomicLongFieldUpdater2.get(cVar);
+                    if (atomicLongFieldUpdater2.compareAndSet(cVar, j14, j14 & 4611686018427387903L)) {
+                        return;
+                    } else {
+                        cVar = this;
+                    }
+                }
+            }
+        }
+    }
+
+    @Override // U7.q
+    public final void a(CancellationException cancellationException) {
+        if (cancellationException == null) {
+            cancellationException = new CancellationException("Channel was cancelled");
+        }
+        i(cancellationException, true);
+    }
+
+    @Override // U7.q
+    public final Object b(InterfaceC5267d interfaceC5267d) {
+        k kVar;
+        c cVar = this;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3234z;
+        k kVar2 = (k) atomicReferenceFieldUpdater.get(cVar);
+        while (true) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f3229u;
+            if (cVar.t(atomicLongFieldUpdater.get(cVar), true)) {
+                Throwable p9 = p();
+                int i = u.f3861a;
+                throw p9;
+            }
+            AtomicLongFieldUpdater atomicLongFieldUpdater2 = f3230v;
+            long andIncrement = atomicLongFieldUpdater2.getAndIncrement(cVar);
+            long j6 = e.f3238b;
+            long j9 = andIncrement / j6;
+            int i6 = (int) (andIncrement % j6);
+            if (kVar2.f3860v != j9) {
+                k n9 = cVar.n(j9, kVar2);
+                if (n9 == null) {
+                    continue;
+                } else {
+                    kVar2 = n9;
+                }
+            }
+            Object B9 = cVar.B(kVar2, i6, andIncrement, null);
+            D2.b bVar = e.f3248m;
+            if (B9 == bVar) {
+                throw new IllegalStateException("unexpected");
+            }
+            D2.b bVar2 = e.f3250o;
+            if (B9 != bVar2) {
+                if (B9 != e.f3249n) {
+                    kVar2.a();
+                    return B9;
+                }
+                C0389g k9 = AbstractC0406y.k(A8.b.l(interfaceC5267d));
+                c cVar2 = this;
+                try {
+                    Object B10 = cVar2.B(kVar2, i6, andIncrement, k9);
+                    if (B10 == bVar) {
+                        k9.a(kVar2, i6);
+                    } else if (B10 == bVar2) {
+                        if (andIncrement < cVar2.r()) {
+                            kVar2.a();
+                        }
+                        k kVar3 = (k) atomicReferenceFieldUpdater.get(cVar2);
+                        while (true) {
+                            if (cVar2.t(atomicLongFieldUpdater.get(cVar2), true)) {
+                                k9.resumeWith(com.bumptech.glide.d.f(cVar2.p()));
+                                break;
+                            }
+                            long andIncrement2 = atomicLongFieldUpdater2.getAndIncrement(cVar2);
+                            long j10 = e.f3238b;
+                            long j11 = andIncrement2 / j10;
+                            int i9 = (int) (andIncrement2 % j10);
+                            if (kVar3.f3860v != j11) {
+                                kVar = cVar2.n(j11, kVar3);
+                                if (kVar == null) {
+                                }
+                            } else {
+                                kVar = kVar3;
+                            }
+                            Object B11 = cVar2.B(kVar, i9, andIncrement2, k9);
+                            if (B11 == e.f3248m) {
+                                k9.a(kVar, i9);
+                                break;
+                            }
+                            if (B11 == e.f3250o) {
+                                if (andIncrement2 < r()) {
+                                    kVar.a();
+                                }
+                                cVar2 = this;
+                                kVar3 = kVar;
+                            } else {
+                                if (B11 == e.f3249n) {
+                                    throw new IllegalStateException("unexpected");
+                                }
+                                kVar.a();
+                                k9.z(B11, null);
+                            }
+                        }
+                    } else {
+                        kVar2.a();
+                        k9.z(B10, null);
+                    }
+                    Object q8 = k9.q();
+                    A7.a aVar = A7.a.f58n;
+                    return q8;
+                } catch (Throwable th) {
+                    k9.y();
+                    throw th;
+                }
+            }
+            if (andIncrement < r()) {
+                kVar2.a();
+            }
+            cVar = this;
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:30:0x0189, code lost:
+    
+        return r10;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:94:0x00c6, code lost:
+    
+        f(r1, r4, r7);
+     */
+    /* JADX WARN: Removed duplicated region for block: B:75:0x0170  */
+    /* JADX WARN: Removed duplicated region for block: B:77:0x0173 A[RETURN] */
+    @Override // U7.r
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public Object d(Object obj, InterfaceC5267d interfaceC5267d) {
+        Object q8;
+        A7.a aVar;
+        Object obj2;
+        c cVar;
+        int i;
+        int i6;
+        boolean z3;
+        k kVar;
+        c cVar2 = this;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3233y;
+        k kVar2 = (k) atomicReferenceFieldUpdater.get(cVar2);
+        while (true) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f3229u;
+            long andIncrement = atomicLongFieldUpdater.getAndIncrement(cVar2);
+            long j6 = andIncrement & 1152921504606846975L;
+            boolean t6 = cVar2.t(andIncrement, false);
+            int i9 = e.f3238b;
+            long j9 = i9;
+            long j10 = j6 / j9;
+            int i10 = (int) (j6 % j9);
+            long j11 = kVar2.f3860v;
+            v vVar = v.f41353a;
+            if (j11 != j10) {
+                k c9 = c(cVar2, j10, kVar2);
+                if (c9 != null) {
+                    kVar2 = c9;
+                } else if (t6) {
+                    Object x9 = x(obj, interfaceC5267d);
+                    if (x9 == A7.a.f58n) {
+                        return x9;
+                    }
+                }
+            }
+            int g4 = g(cVar2, kVar2, i10, obj, j6, null, t6);
+            if (g4 == 0) {
+                kVar2.a();
+                return vVar;
+            }
+            if (g4 == 1) {
+                break;
+            }
+            if (g4 != 2) {
+                AtomicLongFieldUpdater atomicLongFieldUpdater2 = f3230v;
+                if (g4 == 3) {
+                    C0389g k9 = AbstractC0406y.k(A8.b.l(interfaceC5267d));
+                    Object obj3 = obj;
+                    try {
+                        int g9 = g(cVar2, kVar2, i10, obj3, j6, k9, false);
+                        try {
+                            if (g9 != 0) {
+                                if (g9 == 1) {
+                                    k9.resumeWith(vVar);
+                                } else if (g9 != 2) {
+                                    if (g9 != 4) {
+                                        String str = "unexpected";
+                                        if (g9 != 5) {
+                                            throw new IllegalStateException("unexpected");
+                                        }
+                                        kVar2.a();
+                                        k kVar3 = (k) atomicReferenceFieldUpdater.get(cVar2);
+                                        while (true) {
+                                            long andIncrement2 = atomicLongFieldUpdater.getAndIncrement(cVar2);
+                                            long j12 = andIncrement2 & 1152921504606846975L;
+                                            boolean t9 = cVar2.t(andIncrement2, false);
+                                            int i11 = e.f3238b;
+                                            AtomicLongFieldUpdater atomicLongFieldUpdater3 = atomicLongFieldUpdater;
+                                            long j13 = i11;
+                                            String str2 = str;
+                                            long j14 = j12 / j13;
+                                            int i12 = (int) (j12 % j13);
+                                            AtomicLongFieldUpdater atomicLongFieldUpdater4 = atomicLongFieldUpdater2;
+                                            if (kVar3.f3860v != j14) {
+                                                k c10 = c(cVar2, j14, kVar3);
+                                                if (c10 != null) {
+                                                    z3 = t9;
+                                                    kVar = c10;
+                                                    i = i11;
+                                                    i6 = i12;
+                                                } else {
+                                                    if (t9) {
+                                                        break;
+                                                    }
+                                                    atomicLongFieldUpdater = atomicLongFieldUpdater3;
+                                                    str = str2;
+                                                    atomicLongFieldUpdater2 = atomicLongFieldUpdater4;
+                                                }
+                                            } else {
+                                                i = i11;
+                                                i6 = i12;
+                                                z3 = t9;
+                                                kVar = kVar3;
+                                            }
+                                            int g10 = g(cVar2, kVar, i6, obj3, j12, k9, z3);
+                                            Object obj4 = obj3;
+                                            cVar = cVar2;
+                                            k kVar4 = kVar;
+                                            int i13 = i6;
+                                            obj2 = obj4;
+                                            if (g10 == 0) {
+                                                kVar4.a();
+                                                break;
+                                            }
+                                            if (g10 == 1) {
+                                                break;
+                                            }
+                                            if (g10 != 2) {
+                                                if (g10 == 3) {
+                                                    throw new IllegalStateException(str2);
+                                                }
+                                                if (g10 != 4) {
+                                                    if (g10 == 5) {
+                                                        kVar4.a();
+                                                    }
+                                                    kVar3 = kVar4;
+                                                    cVar2 = cVar;
+                                                    atomicLongFieldUpdater = atomicLongFieldUpdater3;
+                                                    str = str2;
+                                                    atomicLongFieldUpdater2 = atomicLongFieldUpdater4;
+                                                    obj3 = obj2;
+                                                } else if (j12 < atomicLongFieldUpdater4.get(cVar)) {
+                                                    kVar4.a();
+                                                }
+                                            } else if (z3) {
+                                                kVar4.h();
+                                            } else {
+                                                k9.a(kVar4, i13 + i);
+                                            }
+                                        }
+                                    } else {
+                                        obj2 = obj3;
+                                        cVar = cVar2;
+                                        if (j6 < atomicLongFieldUpdater2.get(cVar)) {
+                                            kVar2.a();
+                                        }
+                                    }
+                                    f(cVar, obj2, k9);
+                                } else {
+                                    k9.a(kVar2, i10 + i9);
+                                }
+                                q8 = k9.q();
+                                aVar = A7.a.f58n;
+                                if (q8 != aVar) {
+                                    q8 = vVar;
+                                }
+                                if (q8 != aVar) {
+                                    return q8;
+                                }
+                            } else {
+                                kVar2.a();
+                            }
+                            k9.resumeWith(vVar);
+                            q8 = k9.q();
+                            aVar = A7.a.f58n;
+                            if (q8 != aVar) {
+                            }
+                            if (q8 != aVar) {
+                            }
+                        } catch (Throwable th) {
+                            th = th;
+                            k9.y();
+                            throw th;
+                        }
+                    } catch (Throwable th2) {
+                        th = th2;
+                    }
+                } else if (g4 == 4) {
+                    if (j6 < atomicLongFieldUpdater2.get(cVar2)) {
+                        kVar2.a();
+                    }
+                    Object x10 = x(obj, interfaceC5267d);
+                    if (x10 == A7.a.f58n) {
+                        return x10;
+                    }
+                } else if (g4 == 5) {
+                    kVar2.a();
+                }
+            } else if (t6) {
+                kVar2.h();
+                Object x11 = x(obj, interfaceC5267d);
+                if (x11 == A7.a.f58n) {
+                    return x11;
+                }
+            }
+        }
+    }
+
+    @Override // U7.r
+    public Object e(Object obj) {
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f3229u;
+        boolean z3 = false;
+        long j6 = 1152921504606846975L;
+        boolean z6 = t(atomicLongFieldUpdater.get(this), false) ? false : !h(r1 & 1152921504606846975L);
+        i iVar = j.f3259a;
+        if (z6) {
+            return iVar;
+        }
+        Object obj2 = e.f3245j;
+        k kVar = (k) f3233y.get(this);
+        while (true) {
+            long andIncrement = atomicLongFieldUpdater.getAndIncrement(this);
+            long j9 = andIncrement & j6;
+            boolean t6 = t(andIncrement, z3);
+            int i = e.f3238b;
+            long j10 = i;
+            long j11 = j9 / j10;
+            int i6 = (int) (j9 % j10);
+            if (kVar.f3860v != j11) {
+                k c9 = c(this, j11, kVar);
+                if (c9 != null) {
+                    kVar = c9;
+                } else {
+                    if (t6) {
+                        return new h(q());
+                    }
+                    z3 = false;
+                    j6 = 1152921504606846975L;
+                }
+            }
+            int g4 = g(this, kVar, i6, obj, j9, obj2, t6);
+            v vVar = v.f41353a;
+            if (g4 == 0) {
+                kVar.a();
+                return vVar;
+            }
+            if (g4 == 1) {
+                return vVar;
+            }
+            if (g4 == 2) {
+                if (t6) {
+                    kVar.h();
+                    return new h(q());
+                }
+                y0 y0Var = obj2 instanceof y0 ? (y0) obj2 : null;
+                if (y0Var != null) {
+                    y0Var.a(kVar, i6 + i);
+                }
+                kVar.h();
+                return iVar;
+            }
+            if (g4 == 3) {
+                throw new IllegalStateException("unexpected");
+            }
+            if (g4 == 4) {
+                if (j9 < f3230v.get(this)) {
+                    kVar.a();
+                }
+                return new h(q());
+            }
+            if (g4 == 5) {
+                kVar.a();
+            }
+            z3 = false;
+            j6 = 1152921504606846975L;
+        }
+    }
+
+    public final boolean h(long j6) {
+        return j6 < f3231w.get(this) || j6 < f3230v.get(this) + ((long) this.f3235n);
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:11:0x0031  */
+    /* JADX WARN: Removed duplicated region for block: B:17:0x003c A[LOOP:2: B:17:0x003c->B:39:?, LOOP_START] */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x006e A[LOOP:3: B:22:0x006e->B:30:?, LOOP_LABEL: LOOP:3: B:22:0x006e->B:30:?, LOOP_START] */
+    /* JADX WARN: Removed duplicated region for block: B:40:0x004c A[LOOP:5: B:40:0x004c->B:48:?, LOOP_START] */
+    /* JADX WARN: Removed duplicated region for block: B:52:0x002f A[SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean i(Throwable th, boolean z3) {
+        c cVar;
+        D2.b bVar;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        boolean z6;
+        long j6;
+        long j9;
+        long j10;
+        Object obj;
+        long j11;
+        long j12;
+        AtomicLongFieldUpdater atomicLongFieldUpdater = f3229u;
+        if (z3) {
+            do {
+                j12 = atomicLongFieldUpdater.get(this);
+                if (((int) (j12 >> 60)) == 0) {
+                    k kVar = e.f3237a;
+                    cVar = this;
+                }
+            } while (!atomicLongFieldUpdater.compareAndSet(cVar, j12, (j12 & 1152921504606846975L) + (1 << 60)));
+            bVar = e.f3254s;
+            while (true) {
+                atomicReferenceFieldUpdater = f3227B;
+                if (!atomicReferenceFieldUpdater.compareAndSet(this, bVar, th)) {
+                    z6 = true;
+                    break;
+                }
+                if (atomicReferenceFieldUpdater.get(this) != bVar) {
+                    z6 = false;
+                    break;
+                }
+            }
+            if (z3) {
+                do {
+                    j6 = atomicLongFieldUpdater.get(this);
+                    int i = (int) (j6 >> 60);
+                    if (i == 0) {
+                        j9 = j6 & 1152921504606846975L;
+                        j10 = 2;
+                    } else {
+                        if (i != 1) {
+                            break;
+                        }
+                        j9 = j6 & 1152921504606846975L;
+                        j10 = 3;
+                    }
+                } while (!atomicLongFieldUpdater.compareAndSet(cVar, j6, (j10 << 60) + j9));
+            } else {
+                do {
+                    j11 = atomicLongFieldUpdater.get(this);
+                } while (!atomicLongFieldUpdater.compareAndSet(cVar, j11, (3 << 60) + (j11 & 1152921504606846975L)));
+            }
+            k();
+            if (z6) {
+                loop3: while (true) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f3228C;
+                    obj = atomicReferenceFieldUpdater2.get(this);
+                    D2.b bVar2 = obj == null ? e.f3252q : e.f3253r;
+                    while (!atomicReferenceFieldUpdater2.compareAndSet(this, obj, bVar2)) {
+                        if (atomicReferenceFieldUpdater2.get(this) != obj) {
+                            break;
+                        }
+                    }
+                }
+                if (obj != null) {
+                    kotlin.jvm.internal.u.b(1, obj);
+                    ((I7.l) obj).invoke(o());
+                    return z6;
+                }
+            }
+            return z6;
+        }
+        cVar = this;
+        bVar = e.f3254s;
+        while (true) {
+            atomicReferenceFieldUpdater = f3227B;
+            if (!atomicReferenceFieldUpdater.compareAndSet(this, bVar, th)) {
+            }
+        }
+        if (z3) {
+        }
+        k();
+        if (z6) {
+        }
+        return z6;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:54:0x008f, code lost:
+    
+        r1 = (U7.k) ((X7.d) X7.d.f3829u.get(r1));
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final k j(long j6) {
+        Object obj;
+        long j9;
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater;
+        Object obj2 = f3226A.get(this);
+        k kVar = (k) f3233y.get(this);
+        if (kVar.f3860v > ((k) obj2).f3860v) {
+            obj2 = kVar;
+        }
+        k kVar2 = (k) f3234z.get(this);
+        if (kVar2.f3860v > ((k) obj2).f3860v) {
+            obj2 = kVar2;
+        }
+        X7.d dVar = (X7.d) obj2;
+        loop0: while (true) {
+            dVar.getClass();
+            Object obj3 = X7.d.f3828n.get(dVar);
+            D2.b bVar = X7.a.f3821b;
+            obj = null;
+            if (obj3 == bVar) {
+                break;
+            }
+            X7.d dVar2 = (X7.d) obj3;
+            if (dVar2 == null) {
+                do {
+                    atomicReferenceFieldUpdater = X7.d.f3828n;
+                    if (atomicReferenceFieldUpdater.compareAndSet(dVar, null, bVar)) {
+                        break loop0;
+                    }
+                } while (atomicReferenceFieldUpdater.get(dVar) == null);
+            } else {
+                dVar = dVar2;
+            }
+        }
+        k kVar3 = (k) dVar;
+        if (u()) {
+            k kVar4 = kVar3;
+            loop2: do {
+                int i = e.f3238b - 1;
+                while (true) {
+                    if (-1 >= i) {
+                        break;
+                    }
+                    j9 = (kVar4.f3860v * e.f3238b) + i;
+                    if (j9 < f3230v.get(this)) {
+                        break loop2;
+                    }
+                    while (true) {
+                        Object k9 = kVar4.k(i);
+                        if (k9 != null && k9 != e.f3241e) {
+                            if (k9 == e.f3240d) {
+                                break loop2;
+                            }
+                        } else {
+                            if (kVar4.j(i, k9, e.f3247l)) {
+                                kVar4.h();
+                                break;
+                            }
+                        }
+                    }
+                    i--;
+                }
+            } while (kVar4 != null);
+            j9 = -1;
+            if (j9 != -1) {
+                l(j9);
+            }
+        }
+        loop5: for (k kVar5 = kVar3; kVar5 != null; kVar5 = (k) ((X7.d) X7.d.f3829u.get(kVar5))) {
+            for (int i6 = e.f3238b - 1; -1 < i6; i6--) {
+                if ((kVar5.f3860v * e.f3238b) + i6 < j6) {
+                    break loop5;
+                }
+                while (true) {
+                    Object k10 = kVar5.k(i6);
+                    if (k10 != null && k10 != e.f3241e) {
+                        if (!(k10 instanceof s)) {
+                            if (!(k10 instanceof y0)) {
+                                break;
+                            }
+                            if (kVar5.j(i6, k10, e.f3247l)) {
+                                obj = X7.a.f(obj, k10);
+                                kVar5.l(i6, true);
+                                break;
+                            }
+                        } else {
+                            if (kVar5.j(i6, k10, e.f3247l)) {
+                                obj = X7.a.f(obj, ((s) k10).f3265a);
+                                kVar5.l(i6, true);
+                                break;
+                            }
+                        }
+                    } else {
+                        if (kVar5.j(i6, k10, e.f3247l)) {
+                            kVar5.h();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        if (obj != null) {
+            if (!(obj instanceof ArrayList)) {
+                y((y0) obj, true);
+                return kVar3;
+            }
+            ArrayList arrayList = (ArrayList) obj;
+            for (int size = arrayList.size() - 1; -1 < size; size--) {
+                y((y0) arrayList.get(size), true);
+            }
+        }
+        return kVar3;
+    }
+
+    public final void k() {
+        t(f3229u.get(this), false);
+    }
+
+    public final void l(long j6) {
+        k kVar = (k) f3234z.get(this);
+        while (true) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f3230v;
+            long j9 = atomicLongFieldUpdater.get(this);
+            if (j6 < Math.max(this.f3235n + j9, f3231w.get(this))) {
+                return;
+            }
+            if (atomicLongFieldUpdater.compareAndSet(this, j9, 1 + j9)) {
+                long j10 = e.f3238b;
+                long j11 = j9 / j10;
+                int i = (int) (j9 % j10);
+                if (kVar.f3860v != j11) {
+                    k n9 = n(j11, kVar);
+                    if (n9 != null) {
+                        kVar = n9;
+                    }
+                }
+                k kVar2 = kVar;
+                if (B(kVar2, i, j9, null) != e.f3250o) {
+                    kVar2.a();
+                } else if (j9 < r()) {
+                    kVar2.a();
+                }
+                kVar = kVar2;
+            }
+        }
+    }
+
+    public final void m() {
+        Object b9;
+        if (v()) {
+            return;
+        }
+        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3226A;
+        k kVar = (k) atomicReferenceFieldUpdater.get(this);
+        loop0: while (true) {
+            long andIncrement = f3231w.getAndIncrement(this);
+            long j6 = andIncrement / e.f3238b;
+            if (r() <= andIncrement) {
+                if (kVar.f3860v < j6 && kVar.b() != null) {
+                    w(j6, kVar);
+                }
+                s(this);
+                return;
+            }
+            if (kVar.f3860v != j6) {
+                d dVar = d.f3236v;
+                while (true) {
+                    b9 = X7.a.b(kVar, j6, dVar);
+                    if (!X7.a.e(b9)) {
+                        t c9 = X7.a.c(b9);
+                        while (true) {
+                            t tVar = (t) atomicReferenceFieldUpdater.get(this);
+                            if (tVar.f3860v >= c9.f3860v) {
+                                break;
+                            }
+                            if (!c9.i()) {
+                                break;
+                            }
+                            while (!atomicReferenceFieldUpdater.compareAndSet(this, tVar, c9)) {
+                                if (atomicReferenceFieldUpdater.get(this) != tVar) {
+                                    if (c9.e()) {
+                                        c9.d();
+                                    }
+                                }
+                            }
+                            if (tVar.e()) {
+                                tVar.d();
+                            }
+                        }
+                    } else {
+                        break;
+                    }
+                }
+                k kVar2 = null;
+                if (X7.a.e(b9)) {
+                    k();
+                    w(j6, kVar);
+                    s(this);
+                } else {
+                    k kVar3 = (k) X7.a.c(b9);
+                    long j9 = kVar3.f3860v;
+                    if (j9 > j6) {
+                        long j10 = j9 * e.f3238b;
+                        if (f3231w.compareAndSet(this, 1 + andIncrement, j10)) {
+                            AtomicLongFieldUpdater atomicLongFieldUpdater = f3232x;
+                            if ((atomicLongFieldUpdater.addAndGet(this, j10 - andIncrement) & 4611686018427387904L) != 0) {
+                                while ((atomicLongFieldUpdater.get(this) & 4611686018427387904L) != 0) {
+                                }
+                            }
+                        } else {
+                            s(this);
+                        }
+                    } else {
+                        kVar2 = kVar3;
+                    }
+                }
+                if (kVar2 == null) {
+                    continue;
+                } else {
+                    kVar = kVar2;
+                }
+            }
+            int i = (int) (andIncrement % e.f3238b);
+            Object k9 = kVar.k(i);
+            boolean z3 = k9 instanceof y0;
+            AtomicLongFieldUpdater atomicLongFieldUpdater2 = f3230v;
+            if (!z3 || andIncrement < atomicLongFieldUpdater2.get(this) || !kVar.j(i, k9, e.f3243g)) {
+                while (true) {
+                    Object k10 = kVar.k(i);
+                    if (!(k10 instanceof y0)) {
+                        if (k10 != e.f3245j) {
+                            if (k10 != null) {
+                                if (k10 == e.f3240d || k10 == e.f3244h || k10 == e.i || k10 == e.f3246k || k10 == e.f3247l) {
+                                    break loop0;
+                                }
+                                if (k10 != e.f3242f) {
+                                    throw new IllegalStateException(("Unexpected cell state: " + k10).toString());
+                                }
+                            } else if (kVar.j(i, k10, e.f3241e)) {
+                                break loop0;
+                            }
+                        } else {
+                            break;
+                        }
+                    } else if (andIncrement < atomicLongFieldUpdater2.get(this)) {
+                        if (kVar.j(i, k10, new s((y0) k10))) {
+                            break loop0;
+                        }
+                    } else if (kVar.j(i, k10, e.f3243g)) {
+                        if (A(k10)) {
+                            kVar.n(i, e.f3240d);
+                            break;
+                        } else {
+                            kVar.n(i, e.f3245j);
+                            kVar.h();
+                        }
+                    }
+                }
+            } else if (A(k9)) {
+                kVar.n(i, e.f3240d);
+                break;
+            } else {
+                kVar.n(i, e.f3245j);
+                kVar.h();
+                s(this);
+            }
+        }
+        s(this);
+    }
+
+    public final k n(long j6, k kVar) {
+        Object b9;
+        AtomicLongFieldUpdater atomicLongFieldUpdater;
+        long j9;
+        k kVar2 = e.f3237a;
+        d dVar = d.f3236v;
+        loop0: while (true) {
+            b9 = X7.a.b(kVar, j6, dVar);
+            if (!X7.a.e(b9)) {
+                t c9 = X7.a.c(b9);
+                while (true) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3234z;
+                    t tVar = (t) atomicReferenceFieldUpdater.get(this);
+                    if (tVar.f3860v >= c9.f3860v) {
+                        break loop0;
+                    }
+                    if (!c9.i()) {
+                        break;
+                    }
+                    while (!atomicReferenceFieldUpdater.compareAndSet(this, tVar, c9)) {
+                        if (atomicReferenceFieldUpdater.get(this) != tVar) {
+                            if (c9.e()) {
+                                c9.d();
+                            }
+                        }
+                    }
+                    if (tVar.e()) {
+                        tVar.d();
+                    }
+                }
+            } else {
+                break;
+            }
+        }
+        if (X7.a.e(b9)) {
+            k();
+            if (kVar.f3860v * e.f3238b < r()) {
+                kVar.a();
+                return null;
+            }
+        } else {
+            k kVar3 = (k) X7.a.c(b9);
+            boolean v9 = v();
+            long j10 = kVar3.f3860v;
+            if (!v9 && j6 <= f3231w.get(this) / e.f3238b) {
+                while (true) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater2 = f3226A;
+                    t tVar2 = (t) atomicReferenceFieldUpdater2.get(this);
+                    if (tVar2.f3860v >= j10 || !kVar3.i()) {
+                        break;
+                    }
+                    while (!atomicReferenceFieldUpdater2.compareAndSet(this, tVar2, kVar3)) {
+                        if (atomicReferenceFieldUpdater2.get(this) != tVar2) {
+                            if (kVar3.e()) {
+                                kVar3.d();
+                            }
+                        }
+                    }
+                    if (tVar2.e()) {
+                        tVar2.d();
+                    }
+                }
+            }
+            if (j10 <= j6) {
+                return kVar3;
+            }
+            long j11 = j10 * e.f3238b;
+            do {
+                atomicLongFieldUpdater = f3230v;
+                j9 = atomicLongFieldUpdater.get(this);
+                if (j9 >= j11) {
+                    break;
+                }
+            } while (!atomicLongFieldUpdater.compareAndSet(this, j9, j11));
+            if (j10 * e.f3238b < r()) {
+                kVar3.a();
+            }
+        }
+        return null;
+    }
+
+    public final Throwable o() {
+        return (Throwable) f3227B.get(this);
+    }
+
+    public final Throwable p() {
+        Throwable o6 = o();
+        return o6 == null ? new l("Channel was closed") : o6;
+    }
+
+    public final Throwable q() {
+        Throwable o6 = o();
+        return o6 == null ? new m("Channel was closed") : o6;
+    }
+
+    public final long r() {
+        return f3229u.get(this) & 1152921504606846975L;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:84:0x00a2, code lost:
+    
+        r0 = (U7.k) ((X7.d) X7.d.f3829u.get(r0));
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean t(long j6, boolean z3) {
+        int i = (int) (j6 >> 60);
+        if (i != 0 && i != 1) {
+            AtomicLongFieldUpdater atomicLongFieldUpdater = f3230v;
+            if (i == 2) {
+                j(1152921504606846975L & j6);
+                if (z3) {
+                    while (true) {
+                        AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3234z;
+                        k kVar = (k) atomicReferenceFieldUpdater.get(this);
+                        long j9 = atomicLongFieldUpdater.get(this);
+                        if (r() <= j9) {
+                            break;
+                        }
+                        long j10 = e.f3238b;
+                        long j11 = j9 / j10;
+                        if (kVar.f3860v != j11 && (kVar = n(j11, kVar)) == null) {
+                            if (((k) atomicReferenceFieldUpdater.get(this)).f3860v < j11) {
+                                break;
+                            }
+                        } else {
+                            kVar.a();
+                            int i6 = (int) (j9 % j10);
+                            while (true) {
+                                Object k9 = kVar.k(i6);
+                                if (k9 == null || k9 == e.f3241e) {
+                                    if (kVar.j(i6, k9, e.f3244h)) {
+                                        m();
+                                        break;
+                                    }
+                                } else {
+                                    if (k9 == e.f3240d) {
+                                        break;
+                                    }
+                                    if (k9 != e.f3245j) {
+                                        if (k9 != e.f3247l) {
+                                            if (k9 != e.i) {
+                                                if (k9 != e.f3244h) {
+                                                    if (k9 == e.f3243g) {
+                                                        break;
+                                                    }
+                                                    if (k9 != e.f3242f && j9 == atomicLongFieldUpdater.get(this)) {
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            f3230v.compareAndSet(this, j9, j9 + 1);
+                        }
+                    }
+                }
+            } else {
+                if (i != 3) {
+                    throw new IllegalStateException(AbstractC4404f.e(i, "unexpected close status: ").toString());
+                }
+                k j12 = j(1152921504606846975L & j6);
+                Object obj = null;
+                loop0: do {
+                    int i9 = e.f3238b - 1;
+                    while (true) {
+                        if (-1 >= i9) {
+                            break;
+                        }
+                        long j13 = (j12.f3860v * e.f3238b) + i9;
+                        while (true) {
+                            Object k10 = j12.k(i9);
+                            if (k10 == e.i) {
+                                break loop0;
+                            }
+                            if (k10 == e.f3240d) {
+                                if (j13 < atomicLongFieldUpdater.get(this)) {
+                                    break loop0;
+                                }
+                                if (j12.j(i9, k10, e.f3247l)) {
+                                    j12.m(i9, null);
+                                    j12.h();
+                                    break;
+                                }
+                            } else if (k10 != e.f3241e && k10 != null) {
+                                if (!(k10 instanceof y0) && !(k10 instanceof s)) {
+                                    D2.b bVar = e.f3243g;
+                                    if (k10 == bVar || k10 == e.f3242f) {
+                                        break loop0;
+                                    }
+                                    if (k10 != bVar) {
+                                        break;
+                                    }
+                                } else {
+                                    if (j13 < atomicLongFieldUpdater.get(this)) {
+                                        break loop0;
+                                    }
+                                    y0 y0Var = k10 instanceof s ? ((s) k10).f3265a : (y0) k10;
+                                    if (j12.j(i9, k10, e.f3247l)) {
+                                        obj = X7.a.f(obj, y0Var);
+                                        j12.m(i9, null);
+                                        j12.h();
+                                        break;
+                                    }
+                                }
+                            } else if (j12.j(i9, k10, e.f3247l)) {
+                                j12.h();
+                                break;
+                            }
+                        }
+                        i9--;
+                    }
+                } while (j12 != null);
+                if (obj != null) {
+                    if (obj instanceof ArrayList) {
+                        ArrayList arrayList = (ArrayList) obj;
+                        for (int size = arrayList.size() - 1; -1 < size; size--) {
+                            y((y0) arrayList.get(size), false);
+                        }
+                    } else {
+                        y((y0) obj, false);
+                    }
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:94:0x01aa, code lost:
+    
+        r16 = r7;
+        r3 = (U7.k) r3.b();
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:95:0x01b3, code lost:
+    
+        if (r3 != null) goto L88;
+     */
+    /* JADX WARN: Multi-variable type inference failed */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final String toString() {
+        boolean z3;
+        String obj;
+        StringBuilder sb = new StringBuilder();
+        int i = (int) (f3229u.get(this) >> 60);
+        if (i == 2) {
+            sb.append("closed,");
+        } else if (i == 3) {
+            sb.append("cancelled,");
+        }
+        sb.append("capacity=" + this.f3235n + ',');
+        sb.append("data=[");
+        int i6 = 0;
+        boolean z6 = true;
+        List v9 = AbstractC5130k.v(f3234z.get(this), f3233y.get(this), f3226A.get(this));
+        ArrayList arrayList = new ArrayList();
+        for (Object obj2 : v9) {
+            if (((k) obj2) != e.f3237a) {
+                arrayList.add(obj2);
+            }
+        }
+        Iterator it = arrayList.iterator();
+        if (!it.hasNext()) {
+            throw new NoSuchElementException();
+        }
+        Object next = it.next();
+        if (it.hasNext()) {
+            long j6 = ((k) next).f3860v;
+            do {
+                Object next2 = it.next();
+                long j9 = ((k) next2).f3860v;
+                if (j6 > j9) {
+                    next = next2;
+                    j6 = j9;
+                }
+            } while (it.hasNext());
+        }
+        k kVar = (k) next;
+        long j10 = f3230v.get(this);
+        long r9 = r();
+        loop2: while (true) {
+            int i9 = e.f3238b;
+            int i10 = i6;
+            while (true) {
+                if (i10 >= i9) {
+                    break;
+                }
+                long j11 = (kVar.f3860v * e.f3238b) + i10;
+                if (j11 >= r9 && j11 >= j10) {
+                    break loop2;
+                }
+                Object k9 = kVar.k(i10);
+                boolean z9 = z6;
+                Object obj3 = kVar.f3261y.get(i10 * 2);
+                if (k9 instanceof InterfaceC0388f) {
+                    obj = (j11 >= j10 || j11 < r9) ? (j11 >= r9 || j11 < j10) ? "cont" : "send" : "receive";
+                } else if (k9 instanceof s) {
+                    obj = "EB(" + k9 + ')';
+                } else if (kotlin.jvm.internal.h.a(k9, e.f3242f) ? z9 : kotlin.jvm.internal.h.a(k9, e.f3243g)) {
+                    obj = "resuming_sender";
+                } else if (k9 == null ? z9 : k9.equals(e.f3241e) ? z9 : kotlin.jvm.internal.h.a(k9, e.i) ? z9 : kotlin.jvm.internal.h.a(k9, e.f3244h) ? z9 : kotlin.jvm.internal.h.a(k9, e.f3246k) ? z9 : kotlin.jvm.internal.h.a(k9, e.f3245j) ? z9 : kotlin.jvm.internal.h.a(k9, e.f3247l)) {
+                    i10++;
+                    z6 = z9;
+                } else {
+                    obj = k9.toString();
+                }
+                if (obj3 != null) {
+                    sb.append("(" + obj + ',' + obj3 + "),");
+                } else {
+                    sb.append(obj + ',');
+                }
+                i10++;
+                z6 = z9;
+            }
+            z6 = z3;
+            i6 = 0;
+        }
+        if (sb.length() == 0) {
+            throw new NoSuchElementException("Char sequence is empty.");
+        }
+        if (sb.charAt(Q7.j.X(sb)) == ',') {
+            kotlin.jvm.internal.h.d(sb.deleteCharAt(sb.length() - 1), "deleteCharAt(...)");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public boolean u() {
+        return false;
+    }
+
+    public final boolean v() {
+        long j6 = f3231w.get(this);
+        return j6 == 0 || j6 == Long.MAX_VALUE;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:38:0x0011, code lost:
+    
+        continue;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void w(long j6, k kVar) {
+        k kVar2;
+        k kVar3;
+        while (kVar.f3860v < j6 && (kVar3 = (k) kVar.b()) != null) {
+            kVar = kVar3;
+        }
+        while (true) {
+            if (!kVar.c() || (kVar2 = (k) kVar.b()) == null) {
+                while (true) {
+                    AtomicReferenceFieldUpdater atomicReferenceFieldUpdater = f3226A;
+                    t tVar = (t) atomicReferenceFieldUpdater.get(this);
+                    if (tVar.f3860v >= kVar.f3860v) {
+                        return;
+                    }
+                    if (!kVar.i()) {
+                        break;
+                    }
+                    while (!atomicReferenceFieldUpdater.compareAndSet(this, tVar, kVar)) {
+                        if (atomicReferenceFieldUpdater.get(this) != tVar) {
+                            if (kVar.e()) {
+                                kVar.d();
+                            }
+                        }
+                    }
+                    if (tVar.e()) {
+                        tVar.d();
+                        return;
+                    }
+                    return;
+                }
+            }
+            kVar = kVar2;
+        }
+    }
+
+    public final Object x(Object obj, InterfaceC5267d interfaceC5267d) {
+        C0389g c0389g = new C0389g(1, A8.b.l(interfaceC5267d));
+        c0389g.r();
+        c0389g.resumeWith(com.bumptech.glide.d.f(q()));
+        Object q8 = c0389g.q();
+        return q8 == A7.a.f58n ? q8 : v.f41353a;
+    }
+
+    public final void y(y0 y0Var, boolean z3) {
+        if (y0Var instanceof InterfaceC0388f) {
+            ((InterfaceC5267d) y0Var).resumeWith(com.bumptech.glide.d.f(z3 ? p() : q()));
+            return;
+        }
+        if (!(y0Var instanceof b)) {
+            throw new IllegalStateException(("Unexpected waiter: " + y0Var).toString());
+        }
+        b bVar = (b) y0Var;
+        C0389g c0389g = bVar.f3224u;
+        kotlin.jvm.internal.h.b(c0389g);
+        bVar.f3224u = null;
+        bVar.f3223n = e.f3247l;
+        Throwable o6 = bVar.f3225v.o();
+        if (o6 == null) {
+            c0389g.resumeWith(Boolean.FALSE);
+        } else {
+            c0389g.resumeWith(com.bumptech.glide.d.f(o6));
+        }
+    }
+
+    public final boolean z(Object obj, Object obj2) {
+        if (!(obj instanceof b)) {
+            if (!(obj instanceof InterfaceC0388f)) {
+                throw new IllegalStateException(("Unexpected receiver type: " + obj).toString());
+            }
+            kotlin.jvm.internal.h.c(obj, "null cannot be cast to non-null type kotlinx.coroutines.CancellableContinuation<E of kotlinx.coroutines.channels.BufferedChannel>");
+            InterfaceC0388f interfaceC0388f = (InterfaceC0388f) obj;
+            k kVar = e.f3237a;
+            D2.b c9 = interfaceC0388f.c(obj2, null);
+            if (c9 == null) {
+                return false;
+            }
+            interfaceC0388f.f(c9);
+            return true;
+        }
+        kotlin.jvm.internal.h.c(obj, "null cannot be cast to non-null type kotlinx.coroutines.channels.BufferedChannel.BufferedChannelIterator<E of kotlinx.coroutines.channels.BufferedChannel>");
+        b bVar = (b) obj;
+        C0389g c0389g = bVar.f3224u;
+        kotlin.jvm.internal.h.b(c0389g);
+        bVar.f3224u = null;
+        bVar.f3223n = obj2;
+        Boolean bool = Boolean.TRUE;
+        bVar.f3225v.getClass();
+        k kVar2 = e.f3237a;
+        D2.b c10 = c0389g.c(bool, null);
+        if (c10 == null) {
+            return false;
+        }
+        c0389g.f(c10);
+        return true;
+    }
+}

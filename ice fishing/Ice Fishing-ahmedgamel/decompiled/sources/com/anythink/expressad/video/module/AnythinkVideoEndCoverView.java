@@ -1,0 +1,266 @@
+package com.anythink.expressad.video.module;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import android.text.TextUtils;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import com.anythink.core.common.d.t;
+import com.anythink.expressad.foundation.d.d;
+import com.anythink.expressad.foundation.h.v;
+import com.anythink.expressad.video.module.a.a;
+import com.anythink.expressad.video.module.a.a.j;
+import com.anythink.expressad.video.signal.f;
+import com.anythink.expressad.video.signal.factory.b;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public class AnythinkVideoEndCoverView extends AnythinkBaseView implements f {
+
+    /* renamed from: n, reason: collision with root package name */
+    private final String f21625n;
+
+    /* renamed from: o, reason: collision with root package name */
+    private View f21626o;
+
+    /* renamed from: p, reason: collision with root package name */
+    private ImageView f21627p;
+
+    /* renamed from: q, reason: collision with root package name */
+    private ImageView f21628q;
+
+    /* renamed from: r, reason: collision with root package name */
+    private TextView f21629r;
+
+    /* renamed from: s, reason: collision with root package name */
+    private TextView f21630s;
+
+    /* renamed from: t, reason: collision with root package name */
+    private TextView f21631t;
+
+    /* renamed from: u, reason: collision with root package name */
+    private b f21632u;
+
+    public AnythinkVideoEndCoverView(Context context) {
+        super(context);
+        this.f21625n = "AnythinkVideoEndCoverView";
+    }
+
+    private boolean a(View view) {
+        if (view == null) {
+            return true;
+        }
+        try {
+            this.f21627p = (ImageView) view.findViewById(findID("anythink_vec_iv_icon"));
+            this.f21628q = (ImageView) view.findViewById(findID("anythink_vec_iv_close"));
+            this.f21629r = (TextView) view.findViewById(findID("anythink_vec_tv_title"));
+            this.f21630s = (TextView) view.findViewById(findID("anythink_vec_tv_desc"));
+            this.f21631t = (TextView) view.findViewById(findID("anythink_vec_btn"));
+            return true;
+        } catch (Throwable th) {
+            th.getMessage();
+            return false;
+        }
+    }
+
+    private void b() {
+        View view = this.f21626o;
+        if (view == null) {
+            init(this.f21441a);
+            preLoadData(this.f21632u);
+            return;
+        }
+        if (view.getParent() != null) {
+            ((ViewGroup) this.f21626o.getParent()).removeView(this.f21626o);
+        }
+        addView(this.f21626o);
+        a(this.f21626o);
+        c();
+    }
+
+    private void e() {
+        ImageView imageView;
+        d dVar = this.f21442b;
+        if (dVar != null) {
+            if (!TextUtils.isEmpty(dVar.bl()) && (imageView = this.f21627p) != null) {
+                com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bl(), new j(imageView, com.anythink.basead.exoplayer.f.f.e(8.0f)));
+            }
+            TextView textView = this.f21629r;
+            if (textView != null) {
+                textView.setText(this.f21442b.bj());
+            }
+            TextView textView2 = this.f21631t;
+            if (textView2 != null) {
+                textView2.setText(this.f21442b.dj);
+            }
+            TextView textView3 = this.f21630s;
+            if (textView3 != null) {
+                textView3.setText(this.f21442b.bk());
+            }
+        }
+    }
+
+    @Override // com.anythink.expressad.video.module.AnythinkBaseView
+    public final void c() {
+        super.c();
+        this.f21628q.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkVideoEndCoverView.1
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                a aVar = AnythinkVideoEndCoverView.this.f21445e;
+                if (aVar != null) {
+                    aVar.a(104, "");
+                }
+            }
+        });
+        this.f21627p.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkVideoEndCoverView.2
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                AnythinkVideoEndCoverView.this.a();
+            }
+        });
+        this.f21631t.setOnClickListener(new View.OnClickListener() { // from class: com.anythink.expressad.video.module.AnythinkVideoEndCoverView.3
+            @Override // android.view.View.OnClickListener
+            public final void onClick(View view) {
+                AnythinkVideoEndCoverView.this.a();
+            }
+        });
+    }
+
+    @Override // com.anythink.expressad.video.module.AnythinkBaseView
+    public void init(Context context) {
+        int findLayout = findLayout("anythink_reward_videoend_cover");
+        if (findLayout >= 0) {
+            View inflate = this.f21443c.inflate(findLayout, (ViewGroup) null);
+            this.f21626o = inflate;
+            if (inflate != null) {
+                this.f21446f = a(inflate);
+                addView(this.f21626o, -1, -1);
+                c();
+            }
+        }
+    }
+
+    @Override // com.anythink.expressad.video.module.AnythinkBaseView, android.view.ViewGroup
+    public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
+        this.f21447g = motionEvent.getRawX();
+        this.f21448h = motionEvent.getRawY();
+        return super.onInterceptTouchEvent(motionEvent);
+    }
+
+    @Override // com.anythink.expressad.video.module.AnythinkBaseView
+    public void onSelfConfigurationChanged(Configuration configuration) {
+        super.onSelfConfigurationChanged(configuration);
+        this.f21444d = configuration.orientation;
+        removeView(this.f21626o);
+        View view = this.f21626o;
+        if (view == null) {
+            init(this.f21441a);
+            preLoadData(this.f21632u);
+            return;
+        }
+        if (view.getParent() != null) {
+            ((ViewGroup) this.f21626o.getParent()).removeView(this.f21626o);
+        }
+        addView(this.f21626o);
+        a(this.f21626o);
+        c();
+    }
+
+    @Override // com.anythink.expressad.video.signal.f
+    public void preLoadData(b bVar) {
+        ImageView imageView;
+        this.f21632u = bVar;
+        try {
+            d dVar = this.f21442b;
+            if (dVar == null || !this.f21446f || dVar == null) {
+                return;
+            }
+            if (!TextUtils.isEmpty(dVar.bl()) && (imageView = this.f21627p) != null) {
+                com.anythink.expressad.foundation.g.d.b.a(this.f21441a.getApplicationContext()).a(this.f21442b.bl(), new j(imageView, v.b(t.b().g(), 8.0f)));
+            }
+            TextView textView = this.f21629r;
+            if (textView != null) {
+                textView.setText(this.f21442b.bj());
+            }
+            TextView textView2 = this.f21631t;
+            if (textView2 != null) {
+                textView2.setText(this.f21442b.dj);
+            }
+            TextView textView3 = this.f21630s;
+            if (textView3 != null) {
+                textView3.setText(this.f21442b.bk());
+            }
+        } catch (Throwable th) {
+            th.getMessage();
+        }
+    }
+
+    public AnythinkVideoEndCoverView(Context context, AttributeSet attributeSet) {
+        super(context, attributeSet);
+        this.f21625n = "AnythinkVideoEndCoverView";
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:16:0x0083  */
+    /* JADX WARN: Removed duplicated region for block: B:19:? A[RETURN, SYNTHETIC] */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void a() {
+        JSONObject jSONObject;
+        JSONException e9;
+        a aVar;
+        JSONObject jSONObject2;
+        JSONException e10;
+        try {
+            JSONObject jSONObject3 = new JSONObject();
+            try {
+                jSONObject2 = new JSONObject();
+                try {
+                    jSONObject2.put(com.anythink.expressad.foundation.g.a.cg, v.a(t.b().g(), this.f21447g));
+                    jSONObject2.put(com.anythink.expressad.foundation.g.a.ch, v.a(t.b().g(), this.f21448h));
+                    jSONObject2.put(com.anythink.expressad.foundation.g.a.cj, 0);
+                    try {
+                        this.f21444d = getContext().getResources().getConfiguration().orientation;
+                    } catch (Exception e11) {
+                        e11.printStackTrace();
+                    }
+                    jSONObject2.put(com.anythink.expressad.foundation.g.a.ck, this.f21444d);
+                    jSONObject2.put(com.anythink.expressad.foundation.g.a.cl, v.c(getContext()));
+                } catch (JSONException e12) {
+                    e10 = e12;
+                    e10.getMessage();
+                    jSONObject = new JSONObject();
+                    jSONObject.put(com.anythink.expressad.foundation.g.a.ci, jSONObject2);
+                    aVar = this.f21445e;
+                    if (aVar != null) {
+                    }
+                }
+            } catch (JSONException e13) {
+                jSONObject2 = jSONObject3;
+                e10 = e13;
+            }
+            jSONObject = new JSONObject();
+            try {
+                jSONObject.put(com.anythink.expressad.foundation.g.a.ci, jSONObject2);
+            } catch (JSONException e14) {
+                e9 = e14;
+                e9.printStackTrace();
+                aVar = this.f21445e;
+                if (aVar != null) {
+                }
+            }
+        } catch (JSONException e15) {
+            jSONObject = null;
+            e9 = e15;
+        }
+        aVar = this.f21445e;
+        if (aVar != null) {
+            aVar.a(105, jSONObject);
+        }
+    }
+}

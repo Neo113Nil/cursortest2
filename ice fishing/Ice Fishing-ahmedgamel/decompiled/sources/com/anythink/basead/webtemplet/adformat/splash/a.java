@@ -1,0 +1,10 @@
+package com.anythink.basead.webtemplet.adformat.splash;
+
+import com.anythink.basead.webtemplet.adformat.e;
+
+/* loaded from: classes.dex */
+public class a extends e {
+
+    /* renamed from: d, reason: collision with root package name */
+    private final String f11478d = "a";
+}
