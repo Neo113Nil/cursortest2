@@ -1,0 +1,60 @@
+{
+  "app_id": "com.winpower.neonfit",
+  "title": "Belbet",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/eHqX8wV77tX6P3LCGWmobGNogzjHNMyEWKJA9TfoHxmKnpmPkcfK8SCrNjgPkMsMevlHGYR78fgufp7N2fwPbBA",
+  "url": "https://play.google.com/store/apps/details?id=com.winpower.neonfit&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Belbet - Track calories & macros daily - neon nutrition dashboard.",
+  "keyword": "url-batch",
+  "folder": "Belbet-Vertikalton",
+  "path": "url-batch/Belbet-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.winpower.neonfit-1-asset.apk",
+    "com.winpower.neonfit-1-config.en.apk",
+    "com.winpower.neonfit-1-config.lt.apk",
+    "com.winpower.neonfit-1-config.ru.apk",
+    "com.winpower.neonfit-1-config.xxhdpi.apk",
+    "com.winpower.neonfit-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Belbet-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.winpower.neonfit...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.winpower.neonfit...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.winpower.neonfit ─╮\n│ Belbet                 │\n│ 1.0  (vc 1)            │\n╰────────────────────────╯\n\nDownloading 6 files  (6.9 MB)\n  com.winpower.neonfit-1.apk               ━━━━━━━ 100% 4.2/4.2 19.4     0:00:00\n                                                        MB      MB/s            \n  com.winpower.neonfit-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 2.2 MB/s 0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-asset.apk         ━━━━━━━ 100% 2.8/2.8 16.6     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winpower.neonfit-1.apk               │  4.0 MB │\n│ com.winpower.neonfit-1-config.en.apk     │ 44.4 KB │\n│ com.winpower.neonfit-1-config.lt.apk     │ 28.4 KB │\n│ com.winpower.neonfit-1-config.ru.apk     │ 28.4 KB │\n│ com.winpower.neonfit-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.winpower.neonfit-1-asset.apk         │  4.0 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.winpower.neonfit ─╮\n│ Belbet                 │\n│ 1.0  (vc 1)            │\n╰────────────────────────╯\n\nDownloading 6 files  (6.9 MB)\n  com.winpower.neonfit-1.apk               ━━━━━━━ 100% 4.2/4.2 19.4     0:00:00\n                                                        MB      MB/s            \n  com.winpower.neonfit-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?        0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 2.2 MB/s 0:00:00\n                                                        kB                      \n  com.winpower.neonfit-1-asset.apk         ━━━━━━━ 100% 2.8/2.8 16.6     0:00:00\n                                                        MB      MB/s            \n\n                   Downloaded files                   \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                     ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winpower.neonfit-1.apk               │  4.0 MB │\n│ com.winpower.neonfit-1-config.en.apk     │ 44.4 KB │\n│ com.winpower.neonfit-1-config.lt.apk     │ 28.4 KB │\n│ com.winpower.neonfit-1-config.ru.apk     │ 28.4 KB │\n│ com.winpower.neonfit-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.winpower.neonfit-1-asset.apk         │  4.0 MB │\n└──────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
