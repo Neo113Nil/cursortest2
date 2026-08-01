@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/haris_surface"/>
+            <corners android:radius="@dimen/card_radius"/>
+            <stroke
+                android:width="1dp"
+                android:color="@color/haris_card_stroke"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="start"
+        android:width="4dp"
+        android:top="8dp"
+        android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/haris_accent"/>
+            <corners
+                android:topRightRadius="4dp"
+                android:bottomRightRadius="4dp"/>
+        </shape>
+    </item>
+</layer-list>

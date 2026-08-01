@@ -1,0 +1,36 @@
+{
+  "app_id": "com.lumenpath.harispro.hrnavigator",
+  "title": "Ice Fishing",
+  "developer": "HARIS PRO",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/lqx0jiY23G1OTtU09B3qRVJr_EU_KLzKLc3JjzbTB-q-lfxhlA9lPgJVfs5uN3ir8Y2tZfUAbcVaH_QX3jqAOw",
+  "url": "https://play.google.com/store/apps/details?id=com.lumenpath.harispro.hrnavigator&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "developer_id": "HARIS+PRO",
+  "released": "Jul 6, 2026",
+  "updated": "Jul 28, 2026",
+  "version": "Varies with device",
+  "summary": "Ice Fishing game — offline HR tools, articles, diagnostics & checklists",
+  "folder": "Ice Fishing-HARIS PRO",
+  "path": "ice fishing/Ice Fishing-HARIS PRO",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.lumenpath.harispro.hrnavigator.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-HARIS PRO",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.lumenpath.harispro.hrnavigator...\ncom.lumenpath.harispro.hrnavigator downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.lumenpath.harispro.hrnavigator...\ncom.lumenpath.harispro.hrnavigator downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
