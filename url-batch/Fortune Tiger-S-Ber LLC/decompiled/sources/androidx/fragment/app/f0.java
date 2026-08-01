@@ -1,0 +1,18 @@
+package androidx.fragment.app;
+
+/* compiled from: r8-map-id-72a2021f0a77848162657eed404f056d03742612a99b9acca4b8f3bd8ed17555 */
+/* loaded from: classes.dex */
+public final class f0 implements n0 {
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ u f422f;
+
+    public f0(u uVar) {
+        this.f422f = uVar;
+    }
+
+    @Override // androidx.fragment.app.n0
+    public final void d() {
+        this.f422f.getClass();
+    }
+}

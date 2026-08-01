@@ -1,0 +1,60 @@
+{
+  "app_id": "com.gglhk.bofio.fortunetiger",
+  "title": "Fortune Tiger",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "https://play-lh.googleusercontent.com/z_jwvRQHIH5PG3thxFh6tQHX_pot6uSX_3fdxdPQvsewqptuWg9kk0mS6mIvcmT2MpQksB7NUNOQMgbl4YnJLQ",
+  "url": "https://play.google.com/store/apps/details?id=com.gglhk.bofio.fortunetiger&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 27, 2026",
+  "updated": "Jun 27, 2026",
+  "version": "Varies with device",
+  "summary": "Fortune Tiger Calculator Simple and Scientific Calculations in One App",
+  "keyword": "url-batch",
+  "folder": "Fortune Tiger-S-Ber LLC",
+  "path": "url-batch/Fortune Tiger-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.gglhk.bofio.fortunetiger-1-asset.apk",
+    "com.gglhk.bofio.fortunetiger-1-config.en.apk",
+    "com.gglhk.bofio.fortunetiger-1-config.lt.apk",
+    "com.gglhk.bofio.fortunetiger-1-config.ru.apk",
+    "com.gglhk.bofio.fortunetiger-1-config.xxhdpi.apk",
+    "com.gglhk.bofio.fortunetiger-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Fortune Tiger-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gglhk.bofio.fortunetiger...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.gglhk.bofio.fortunetiger...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.gglhk.bofio.fortunetiger ─╮\n│ Fortune Tiger                  │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 6 files  (5.1 MB)\n  com.gglhk.bofio.fortunetiger-1.apk               ━━━━━ 100% 3.3/… 10.7  0:00:…\n                                                              MB    MB/s        \n  com.gglhk.bofio.fortunetiger-1-config.en.apk     ━━━━━ 100% 49.6… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.lt.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.ru.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.xxhdpi.apk ━━━━━ 100% 61.9… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-asset.apk         ━━━━━ 100% 1.8/… 15.5  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gglhk.bofio.fortunetiger-1.apk               │  3.2 MB │\n│ com.gglhk.bofio.fortunetiger-1-config.en.apk     │ 48.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.lt.apk     │ 32.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.ru.apk     │ 32.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-asset.apk         │  3.2 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.gglhk.bofio.fortunetiger ─╮\n│ Fortune Tiger                  │\n│ 1.0  (vc 1)                    │\n╰────────────────────────────────╯\n\nDownloading 6 files  (5.1 MB)\n  com.gglhk.bofio.fortunetiger-1.apk               ━━━━━ 100% 3.3/… 10.7  0:00:…\n                                                              MB    MB/s        \n  com.gglhk.bofio.fortunetiger-1-config.en.apk     ━━━━━ 100% 49.6… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.lt.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.ru.apk     ━━━━━ 100% 33.2… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-config.xxhdpi.apk ━━━━━ 100% 61.9… ?     0:00:…\n                                                              kB                \n  com.gglhk.bofio.fortunetiger-1-asset.apk         ━━━━━ 100% 1.8/… 15.5  0:00:…\n                                                              MB    MB/s        \n\n                       Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                             ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.gglhk.bofio.fortunetiger-1.apk               │  3.2 MB │\n│ com.gglhk.bofio.fortunetiger-1-config.en.apk     │ 48.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.lt.apk     │ 32.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.ru.apk     │ 32.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-config.xxhdpi.apk │ 60.4 KB │\n│ com.gglhk.bofio.fortunetiger-1-asset.apk         │  3.2 MB │\n└──────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}
