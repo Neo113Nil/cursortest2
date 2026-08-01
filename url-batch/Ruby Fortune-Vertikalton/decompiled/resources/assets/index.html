@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="theme-color" content="#07151f">
+    <title>Win Punch</title>
+    <style>
+        :root{
+          --bg:#06131b;
+          --panel:rgba(13,31,42,.82);
+          --panel2:rgba(20,44,55,.68);
+          --line:rgba(255,255,255,.12);
+          --text:#f4fbff;
+          --muted:#9eb5c2;
+          --green:#b8ff5c;
+          --green2:#62e87d;
+          --cyan:#4de8ff;
+          --gold:#ffd36a;
+          --danger:#ff6b7d;
+          --shadow:0 18px 55px rgba(0,0,0,.35);
+          --r:24px;
+        }
+        *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+        html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#02090e;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+        body{overscroll-behavior:none;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+        button,input{font:inherit}
+        button{border:0;color:inherit}
+        #app{
+          position:relative;
+          width:100%;
+          height:100dvh;
+          min-height:520px;
+          overflow:hidden;
+          background:
+            radial-gradient(circle at 78% 12%,rgba(77,232,255,.12),transparent 28%),
+            radial-gradient(circle at 12% 88%,rgba(184,255,92,.12),transparent 32%),
+            linear-gradient(155deg,#071821,#041017 55%,#02090e);
+        }
+        #app::before{
+          content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;
+          background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+          background-size:34px 34px;
+        }
+        .screen{
+          position:absolute;inset:0;
+          display:none;flex-direction:column;
+          padding:calc(14px + env(safe-area-inset-top)) 16px calc(14px + env(safe-area-inset-bottom));
+          overflow-y:auto;overflow-x:hidden;
+          animation:screenIn .32s ease both;
+        }
+        .screen.active{display:flex}
+        .screen.game-screen{padding:0;overflow:hidden}
+        @keyframes screenIn{from{opacity:0;transform:translateY(10px) scale(.992)}to{opacity:1;transform:none}}
+        .topbar{
+          display:flex;align-items:center;justify-content:space-between;gap:12px;
+          margin-bottom:14px;min-height:48px;flex:0 0 auto;
+        }
+        .topbar h1{font-size:clamp(20px,5.5vw,28px);margin:0;letter-spacing:-.04em}
+        .icon-btn{
+          width:44px;height:44px;border-radius:15px;display:grid;place-items:center;
+          background:rgba(255,255,255,.07);border:1px solid var(--line);box-shadow:0 10px 26px rgba(0,0,0,.2);
+        }
+        .icon-btn:active,.btn:active,.select-card:active{transform:scale(.97)}
+        .icon-btn svg,.mini-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+        .hero{
+          position:relative;overflow:hidden;border:1px solid var(--line);border-radius:30px;
+          background:
+            linear-gradient(180deg,rgba(7,20,28,.05),rgba(3,14,20,.9)),
+            radial-gradient(circle at 70% 18%,rgba(77,232,255,.28),transparent 33%),
+            linear-gradient(145deg,#153749,#09212d 56%,#0f3427);
+          box-shadow:var(--shadow);
+        }
+        .hero-court{
+          position:absolute;left:7%;right:7%;bottom:-10%;height:62%;transform:perspective(480px) rotateX(58deg);
+          border:2px solid rgba(255,255,255,.65);
+          background:linear-gradient(90deg,rgba(64,156,111,.9),rgba(38,123,85,.92));
+          box-shadow:0 0 0 120px rgba(13,72,52,.55);
+        }
+        .hero-court::before,.hero-court::after{content:"";position:absolute;background:rgba(255,255,255,.72)}
+        .hero-court::before{left:49.7%;top:0;bottom:0;width:2px}
+        .hero-court::after{left:0;right:0;top:54%;height:2px}
+        .hero-content{position:relative;z-index:2;padding:26px}
+        .eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:800}
+        .display{font-size:clamp(42px,13vw,68px);line-height:.92;margin:10px 0 12px;letter-spacing:-.075em;font-weight:900}
+        .sub{color:var(--muted);line-height:1.5;font-size:14px}
+        .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+        .pill{padding:9px 12px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid var(--line);font-size:12px;color:#d9edf5}
+        .btn{
+          min-height:52px;padding:0 18px;border-radius:17px;display:flex;align-items:center;justify-content:center;gap:10px;
+          font-weight:850;letter-spacing:.01em;transition:.16s transform,.18s opacity,.18s background;
+        }
+        .btn.primary{background:linear-gradient(135deg,var(--green),var(--green2));color:#092015;box-shadow:0 14px 35px rgba(98,232,125,.22)}
+        .btn.secondary{background:rgba(255,255,255,.075);border:1px solid var(--line)}
+        .btn.danger{background:rgba(255,107,125,.11);border:1px solid rgba(255,107,125,.3);color:#ffc1c9}
+        .btn:disabled{opacity:.38;pointer-events:none}
+        .stack{display:grid;gap:12px}
+        .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+        .card{
+          background:linear-gradient(160deg,rgba(20,44,55,.82),rgba(8,26,36,.78));
+          border:1px solid var(--line);border-radius:22px;padding:16px;box-shadow:0 14px 34px rgba(0,0,0,.18);
+        }
+        .card h3{margin:0 0 6px;font-size:16px}
+        .card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+        .stat{font-size:clamp(26px,8vw,38px);font-weight:900;letter-spacing:-.05em;margin-top:8px}
+        .label{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.13em;font-weight:800}
+        .section-title{font-size:13px;text-transform:uppercase;letter-spacing:.16em;color:#b8cad3;margin:20px 2px 10px;font-weight:850}
+        .home-action{min-height:112px;text-align:left;justify-content:flex-start;padding:18px;align-items:flex-start;flex-direction:column}
+        .home-action strong{font-size:18px}.home-action span{font-size:12px;color:var(--muted);font-weight:500;line-height:1.4}
+        .select-card{position:relative;overflow:hidden;min-height:150px;transition:.18s transform,.18s border-color}
+        .select-card.selected{border-color:rgba(184,255,92,.75);box-shadow:0 0 0 2px rgba(184,255,92,.08),0 15px 38px rgba(0,0,0,.25)}
+        .select-card.locked{opacity:.48}
+        .avatar{
+          width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin-bottom:12px;
+          background:radial-gradient(circle at 35% 25%,#fff,rgba(255,255,255,.18) 15%,rgba(77,232,255,.4) 16%,rgba(15,55,70,.8) 70%);
+          border:2px solid rgba(255,255,255,.18);
+        }
+        .avatar svg{width:38px;height:38px;stroke:white;fill:none;stroke-width:1.7}
+        .tag{position:absolute;right:12px;top:12px;font-size:10px;padding:6px 8px;border-radius:999px;background:rgba(0,0,0,.25);color:#ddecf2}
+        .court-preview{height:92px;border-radius:16px;margin-bottom:12px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14)}
+        .court-preview::before{content:"";position:absolute;inset:13px;border:2px solid rgba(255,255,255,.76)}
+        .court-preview::after{content:"";position:absolute;left:50%;top:13px;bottom:13px;width:2px;background:rgba(255,255,255,.72)}
+        .court-hard{background:linear-gradient(#4f90c8 0 64%,#1f5d87 64%)}
+        .court-clay{background:linear-gradient(#c66a3d 0 64%,#8e4027 64%)}
+        .court-grass{background:linear-gradient(#4b9b62 0 64%,#2b6640 64%)}
+        .court-night{background:radial-gradient(circle at 70% 10%,rgba(77,232,255,.3),transparent 25%),linear-gradient(#17394f 0 64%,#0d2230 64%)}
+        .setting-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+        .setting-row+.setting-row{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+        .segment{display:flex;gap:6px;padding:5px;background:rgba(0,0,0,.2);border-radius:14px}
+        .segment button{padding:9px 11px;border-radius:10px;background:transparent;color:var(--muted);font-size:12px;font-weight:800}
+        .segment button.active{background:rgba(184,255,92,.16);color:var(--green)}
+        .switch{width:50px;height:30px;border-radius:999px;background:rgba(255,255,255,.1);padding:3px;transition:.2s}
+        .switch::after{content:"";display:block;width:24px;height:24px;border-radius:50%;background:white;transition:.2s}
+        .switch.on{background:linear-gradient(135deg,var(--green),var(--green2))}
+        .switch.on::after{transform:translateX(20px);background:#082015}
+        .record-row{display:grid;grid-template-columns:38px 1fr auto;gap:12px;align-items:center}
+        .medal{width:34px;height:34px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.07);font-weight:900;color:var(--gold)}
+        .empty{text-align:center;color:var(--muted);padding:24px}
+        .progress{height:9px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.08);margin-top:9px}
+        .progress>i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--cyan),var(--green));width:0;transition:width .45s ease}
+        #gameScreen{background:#07131b}
+        .game-wrap{position:absolute;inset:0;overflow:hidden;touch-action:none}
+        #gameCanvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+        .game-hud{
+          position:absolute;top:calc(10px + env(safe-area-inset-top));left:10px;right:10px;
+          display:grid;grid-template-columns:44px 1fr 44px;gap:8px;align-items:start;z-index:4;pointer-events:none;
+        }
+        .game-hud .icon-btn{
+          pointer-events:auto;
+          background:linear-gradient(160deg,rgba(12,31,41,.92),rgba(2,12,18,.84));
+          border-color:rgba(152,235,255,.22);
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 10px 28px rgba(0,0,0,.38),0 0 22px rgba(77,232,255,.06);
+          backdrop-filter:blur(14px)
+        }
+        .scoreboard{
+          position:relative;overflow:hidden;min-height:62px;border-radius:19px;
+          background:linear-gradient(160deg,rgba(11,31,42,.94),rgba(1,11,17,.88));
+          border:1px solid rgba(151,233,255,.2);
+          backdrop-filter:blur(14px);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:9px 12px;
+          box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 12px 34px rgba(0,0,0,.38),0 0 34px rgba(77,232,255,.06);
+        }
+        .scoreboard::before{
+          content:"";position:absolute;left:10%;right:10%;top:0;height:1px;
+          background:linear-gradient(90deg,transparent,rgba(184,255,92,.78),transparent)
+        }
+        .scoreboard::after{
+          content:"LIVE";position:absolute;right:8px;bottom:5px;font-size:6px;letter-spacing:.18em;
+          color:rgba(184,255,92,.58);font-weight:900
+        }
+        .score-side{text-align:center}.score-side .value{font-size:20px;font-weight:900}.score-side .name{font-size:9px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase}
+        .rally-badge{text-align:center;padding:0 10px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+        .rally-badge .value{font-size:23px;font-weight:900;color:var(--green)}.rally-badge .name{font-size:8px;color:var(--muted);letter-spacing:.13em;text-transform:uppercase}
+        .game-tip{
+          position:absolute;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);
+          z-index:4;background:rgba(3,13,19,.7);border:1px solid var(--line);border-radius:999px;padding:10px 14px;
+          color:#d9eaf1;font-size:11px;white-space:nowrap;backdrop-filter:blur(10px);transition:.25s opacity;
+        }
+        .game-tip.hide{opacity:0}
+        .pause-overlay,.modal{
+          position:absolute;inset:0;z-index:20;display:none;place-items:center;padding:22px;background:rgba(1,8,12,.72);backdrop-filter:blur(12px);
+        }
+        .pause-overlay.show,.modal.show{display:grid}
+        .modal-card{width:min(100%,360px);background:linear-gradient(160deg,#14303e,#081923);border:1px solid var(--line);border-radius:28px;padding:24px;box-shadow:var(--shadow)}
+        .modal-card h2{font-size:28px;margin:0 0 8px;letter-spacing:-.05em}.modal-card p{margin:0 0 20px;color:var(--muted);line-height:1.5;font-size:14px}
+        .toast{
+          position:absolute;left:50%;bottom:calc(26px + env(safe-area-inset-bottom));z-index:50;transform:translate(-50%,24px);
+          opacity:0;pointer-events:none;background:#eafbff;color:#0b202a;padding:11px 15px;border-radius:999px;font-weight:850;font-size:12px;
+          transition:.25s;box-shadow:0 12px 35px rgba(0,0,0,.32);white-space:nowrap;
+        }
+        .toast.show{opacity:1;transform:translate(-50%,0)}
+        .result-hero{text-align:center;padding:24px}.result-score{font-size:70px;line-height:1;font-weight:950;letter-spacing:-.08em;color:var(--green);margin:8px 0}
+        .small{font-size:12px;color:var(--muted)}
+        @media(max-height:650px){
+          .screen:not(.game-screen){padding-top:calc(8px + env(safe-area-inset-top));padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+          .topbar{margin-bottom:8px}.hero-content{padding:20px}.display{font-size:42px}.home-action{min-height:96px;padding:14px}.card{padding:13px}
+        }
+        @media(max-width:350px){
+          .screen{padding-left:12px;padding-right:12px}.grid2{gap:9px}.btn{padding:0 13px}.card{border-radius:19px}.display{font-size:40px}
+        }
+
+        .athlete-layer{
+          position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;display:none
+        }
+        .athlete-model{
+          position:absolute;left:0;top:0;width:178px;height:258px;overflow:visible;
+          transform-origin:50% 100%;will-change:transform,filter;
+          filter:drop-shadow(0 10px 9px rgba(0,0,0,.28))
+        }
+        .athlete-model.opponent{width:126px;height:194px}
+        .athlete-model .rim{filter:drop-shadow(0 0 4px rgba(191,248,255,.24))}
+        .athlete-model .joint{transform-box:fill-box;transform-origin:center}
+        .athlete-model .upper-arm{transform-origin:50% 14%}
+        .athlete-model .forearm{transform-origin:50% 12%}
+        .athlete-model .thigh{transform-origin:50% 10%}
+        .athlete-model .shin{transform-origin:50% 10%}
+        .athlete-model .racket-group{transform-origin:12% 70%}
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <section class="screen active" id="welcomeScreen">
+        <div style="flex:1;display:grid;place-items:center">
+            <div style="width:100%">
+                <div class="hero" style="min-height:min(66dvh,560px)">
+                    <div class="hero-court"></div>
+                    <div class="hero-content">
+                        <div class="eyebrow">Tennis arcade</div>
+                        <div class="display">WIN<br>PUNCH</div>
+                        <p class="sub">Control the baseline, read every bounce, and direct clean returns into open court.</p>
+                        <div class="pill-row">
+                            <span class="pill">Drag to move</span>
+                            <span class="pill">Swipe to aim</span>
+                            <span class="pill">Rally speed-up</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn primary" id="enterBtn" style="width:100%;margin-top:14px">Enter the court</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen" id="homeScreen">
+        <div class="topbar">
+            <div><div class="eyebrow">Player hub</div><h1>Win Punch</h1></div>
+            <button class="icon-btn" data-nav="settingsScreen" aria-label="Settings">
+                <svg viewBox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.88l.06.06-2.12 2.12-.06-.06a1.7 1.7 0 0 0-1.88-.34 1.7 1.7 0 0 0-1.03 1.55V20h-3v-.09a1.7 1.7 0 0 0-1.03-1.55 1.7 1.7 0 0 0-1.88.34l-.06.06-2.12-2.12.06-.06A1.7 1.7 0 0 0 7 14.7a1.7 1.7 0 0 0-1.55-1.03H5.3v-3h.15A1.7 1.7 0 0 0 7 9.64a1.7 1.7 0 0 0-.34-1.88l-.06-.06 2.12-2.12.06.06A1.7 1.7 0 0 0 10.66 6a1.7 1.7 0 0 0 1.03-1.55V4.3h3v.15A1.7 1.7 0 0 0 15.72 6a1.7 1.7 0 0 0 1.88-.34l.06-.06 2.12 2.12-.06.06a1.7 1.7 0 0 0-.34 1.88 1.7 1.7 0 0 0 1.55 1.03H21v3h-.09A1.7 1.7 0 0 0 19.4 15Z"/></svg>
+            </button>
+        </div>
+        <div class="hero">
+            <div class="hero-court"></div>
+            <div class="hero-content">
+                <div class="eyebrow">Longest rally</div>
+                <div class="display" id="homeBest">0</div>
+                <p class="sub" id="homeLoadout">Avery · Blue Arena</p>
+            </div>
+        </div>
+        <div class="grid2" style="margin-top:12px">
+            <div class="card"><div class="label">Accuracy</div><div class="stat" id="homeAccuracy">0%</div></div>
+            <div class="card"><div class="label">Matches</div><div class="stat" id="homeMatches">0</div></div>
+        </div>
+        <div class="section-title">Play</div>
+        <div class="grid2">
+            <button class="btn primary home-action" id="quickPlayBtn"><strong>Quick match</strong><span>Start with your current player and court.</span></button>
+            <button class="btn secondary home-action" data-nav="playerScreen"><strong>Customize</strong><span>Select player, arena, and challenge level.</span></button>
+            <button class="btn secondary home-action" data-nav="recordsScreen"><strong>Records</strong><span>Review recent rallies and performance.</span></button>
+            <button class="btn secondary home-action" data-nav="settingsScreen"><strong>Settings</strong><span>Difficulty, motion, and data controls.</span></button>
+        </div>
+    </section>
+
+    <section class="screen" id="playerScreen">
+        <div class="topbar">
+            <button class="icon-btn back-btn" aria-label="Back"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h1>Player Select</h1><div style="width:44px"></div>
+        </div>
+        <p class="sub">Choose your baseline style. Player choice is saved automatically.</p>
+        <div class="grid2" id="playerGrid" style="margin-top:14px"></div>
+        <button class="btn primary" data-nav="courtScreen" style="margin-top:16px">Continue to courts</button>
+    </section>
+
+    <section class="screen" id="courtScreen">
+        <div class="topbar">
+            <button class="icon-btn back-btn" aria-label="Back"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h1>Court Select</h1><div style="width:44px"></div>
+        </div>
+        <p class="sub">Long rallies unlock additional tournament surfaces.</p>
+        <div class="grid2" id="courtGrid" style="margin-top:14px"></div>
+        <div class="card" style="margin-top:14px">
+            <div class="setting-row"><div><h3>Challenge</h3><p>Controls speed growth and target precision.</p></div>
+                <div class="segment" id="difficultySegment">
+                    <button data-diff="easy">Easy</button><button data-diff="normal">Pro</button><button data-diff="hard">Elite</button>
+                </div>
+            </div>
+        </div>
+        <button class="btn primary" id="startMatchBtn" style="margin-top:14px">Start match</button>
+    </section>
+
+    <section class="screen game-screen" id="gameScreen">
+        <div class="game-wrap" id="gameWrap">
+            <canvas id="gameCanvas"></canvas><div class="athlete-layer" id="athleteLayer"></div>
+            <div class="game-hud">
+                <button class="icon-btn" id="gameBackBtn" aria-label="Exit"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+                <div class="scoreboard">
+                    <div class="score-side"><div class="value" id="playerPoints">0</div><div class="name">You</div></div>
+                    <div class="rally-badge"><div class="value" id="rallyCount">0</div><div class="name">Rally</div></div>
+                    <div class="score-side"><div class="value" id="opponentPoints">0</div><div class="name">CPU</div></div>
+                </div>
+                <button class="icon-btn" id="pauseBtn" aria-label="Pause"><svg viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></svg></button>
+            </div>
+            <div class="game-tip" id="gameTip">Drag racket · short swipe to direct return</div>
+            <div class="pause-overlay" id="pauseOverlay">
+                <div class="modal-card">
+                    <div class="eyebrow">Match paused</div><h2>Take a breath</h2><p>Your rally is safely frozen.</p>
+                    <div class="stack">
+                        <button class="btn primary" id="resumeBtn">Continue</button>
+                        <button class="btn secondary" id="restartBtn">Restart match</button>
+                        <button class="btn danger" id="quitBtn">Return home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="screen" id="resultsScreen">
+        <div class="topbar"><div style="width:44px"></div><h1>Match Results</h1><div style="width:44px"></div></div>
+        <div class="hero result-hero">
+            <div class="eyebrow" id="resultLabel">Rally complete</div>
+            <div class="result-score" id="resultRally">0</div>
+            <div class="small">LONGEST RALLY THIS MATCH</div>
+        </div>
+        <div class="grid2" style="margin-top:12px">
+            <div class="card"><div class="label">Returns</div><div class="stat" id="resultReturns">0</div></div>
+            <div class="card"><div class="label">Accuracy</div><div class="stat" id="resultAccuracy">0%</div></div>
+            <div class="card"><div class="label">Points won</div><div class="stat" id="resultWon">0</div></div>
+            <div class="card"><div class="label">Best speed</div><div class="stat" id="resultSpeed">0</div></div>
+        </div>
+        <div class="card" style="margin-top:12px">
+            <div class="setting-row"><div><div class="label">Unlock progress</div><h3 id="unlockText">Blue Arena active</h3></div><div class="stat" id="unlockValue">0/12</div></div>
+            <div class="progress"><i id="unlockBar"></i></div>
+        </div>
+        <div class="stack" style="margin-top:14px">
+            <button class="btn primary" id="playAgainBtn">Play again</button>
+            <button class="btn secondary" data-nav="recordsScreen">View records</button>
+            <button class="btn secondary" data-nav="homeScreen">Return home</button>
+        </div>
+    </section>
+
+    <section class="screen" id="recordsScreen">
+        <div class="topbar">
+            <button class="icon-btn back-btn" aria-label="Back"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h1>Records</h1><div style="width:44px"></div>
+        </div>
+        <div class="grid2">
+            <div class="card"><div class="label">Longest rally</div><div class="stat" id="recordBest">0</div></div>
+            <div class="card"><div class="label">Career accuracy</div><div class="stat" id="recordAccuracy">0%</div></div>
+        </div>
+        <div class="section-title">Recent matches</div>
+        <div class="stack" id="recordList"></div>
+    </section>
+
+    <section class="screen" id="settingsScreen">
+        <div class="topbar">
+            <button class="icon-btn back-btn" aria-label="Back"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button>
+            <h1>Settings</h1><div style="width:44px"></div>
+        </div>
+        <div class="card">
+            <div class="setting-row"><div><h3>Challenge level</h3><p>Changes pace and CPU pressure.</p></div>
+                <div class="segment" id="settingsDifficulty">
+                    <button data-diff="easy">Easy</button><button data-diff="normal">Pro</button><button data-diff="hard">Elite</button>
+                </div>
+            </div>
+            <div class="setting-row"><div><h3>Reduced motion</h3><p>Minimizes decorative movement.</p></div><button class="switch" id="motionSwitch" aria-label="Toggle reduced motion"></button></div>
+            <div class="setting-row"><div><h3>Control guide</h3><p>Show the gameplay hint at match start.</p></div><button class="switch on" id="guideSwitch" aria-label="Toggle guide"></button></div>
+        </div>
+        <div class="section-title">How to play</div>
+        <div class="card stack">
+            <div><h3>Move</h3><p>Drag anywhere in the lower court to move your racket along the baseline.</p></div>
+            <div><h3>Direct</h3><p>Finish with a short left, center, or right swipe while the ball is near your racket.</p></div>
+            <div><h3>Build the rally</h3><p>Each clean return increases pace. Missing a return gives the CPU a point.</p></div>
+        </div>
+        <div class="section-title">Data</div>
+        <button class="btn danger" id="resetDataBtn">Reset saved progress</button>
+    </section>
+
+    <div class="modal" id="confirmModal">
+        <div class="modal-card">
+            <div class="eyebrow">Confirm reset</div><h2>Erase progress?</h2><p>This removes records, unlocked courts, player selection, and accuracy history.</p>
+            <div class="stack"><button class="btn danger" id="confirmResetBtn">Erase everything</button><button class="btn secondary" id="cancelResetBtn">Cancel</button></div>
+        </div>
+    </div>
+    <div class="toast" id="toast"></div>
+</div>
+
+<script>
+    (() => {
+    "use strict";
+    const $ = s => document.querySelector(s);
+    const $$ = s => [...document.querySelectorAll(s)];
+    const STORAGE_KEY = "winPunchSave_v1";
+    const defaults = {
+      selectedPlayer:"Avery", selectedCourt:"Blue Arena", difficulty:"normal",
+      reducedMotion:false, showGuide:true, bestRally:0, matches:0,
+      totalReturns:0, totalAttempts:0, unlockedCourts:["Blue Arena"], history:[]
+    };
+    const players = [
+      {name:"Avery",style:"Balanced control",accent:"#4de8ff"},
+      {name:"Mika",style:"Fast recovery",accent:"#b8ff5c"},
+      {name:"Noah",style:"Wide coverage",accent:"#ffd36a"},
+      {name:"Sloane",style:"Sharp angles",accent:"#ff8bb2"}
+    ];
+    const courts = [
+      {name:"Blue Arena",cls:"court-hard",need:0,label:"Hard"},
+      {name:"Clay Center",cls:"court-clay",need:12,label:"Clay"},
+      {name:"Grass Club",cls:"court-grass",need:24,label:"Grass"},
+      {name:"Night Finals",cls:"court-night",need:40,label:"Night"}
+    ];
+    const app = {
+      data:loadData(),
+      current:"welcomeScreen",
+      previous:"welcomeScreen",
+      toastTimer:0,
+      game:{
+        running:false,paused:false,ended:false,raf:0,last:0,w:0,h:0,dpr:1,
+        playerX:.5,targetX:.5,playerVX:0,opponentX:.5,opponentTargetX:.5,opponentVX:0,
+        playerPose:0,opponentPose:0,playerStrike:0,opponentStrike:0,
+        pointer:false,pointerStartX:0,pointerLastX:0,swipeDir:0,
+        ball:{x:.5,y:.72,vx:0,vy:0,targetX:.5,targetY:.18,fromPlayer:false,progress:0,duration:900,curve:0},
+        rally:0,bestRally:0,returns:0,attempts:0,playerPoints:0,opponentPoints:0,maxSpeed:0,
+        pointDelay:0,servePending:false,tipTimer:0,
+        trail:[],effects:[],flash:0,crowdPhase:0
+      }
+    };
+    function loadData(){
+      try{
+        const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||"null");
+        return {...defaults,...(saved||{}),history:Array.isArray(saved?.history)?saved.history:[],unlockedCourts:Array.isArray(saved?.unlockedCourts)?saved.unlockedCourts:["Blue Arena"]};
+      }catch{return {...defaults};}
+    }
+    function saveData(){localStorage.setItem(STORAGE_KEY,JSON.stringify(app.data));}
+    function showToast(msg){
+      const t=$("#toast"); t.textContent=msg;t.classList.add("show");
+      clearTimeout(app.toastTimer);app.toastTimer=setTimeout(()=>t.classList.remove("show"),1600);
+    }
+    function navigate(id,push=true){
+      if(id!==app.current && push){app.previous=app.current;}
+      if(app.current==="gameScreen" && id!=="gameScreen") stopGame();
+      $$(".screen").forEach(s=>s.classList.toggle("active",s.id===id));
+      app.current=id;
+      const screen=$("#"+id); if(screen) screen.scrollTop=0;
+      if(id==="homeScreen") updateHome();
+      if(id==="recordsScreen") renderRecords();
+      if(id==="playerScreen") renderPlayers();
+      if(id==="courtScreen") renderCourts();
+      if(id==="settingsScreen") updateSettings();
+    }
+    function goBack(){navigate(app.previous||"homeScreen",false);}
+    function playerSvg(){
+     return '<svg viewBox="0 0 48 48"><circle cx="24" cy="14" r="7"/><path d="M14 40c1-10 4-16 10-16s9 6 10 16M10 25l9 4m19-4-9 4"/><path d="M36 9c5 4 6 10 3 15"/><ellipse cx="39" cy="11" rx="3" ry="8" transform="rotate(-30 39 11)"/></svg>';
+    }
+    function renderPlayers(){
+     const grid=$("#playerGrid");grid.innerHTML="";
+     players.forEach(p=>{
+      const b=document.createElement("button");b.className="card select-card"+(app.data.selectedPlayer===p.name?" selected":"");
+      b.innerHTML='<span class="tag">'+(app.data.selectedPlayer===p.name?"Selected":"Player")+'</span><div class="avatar" style="box-shadow:0 0 34px '+p.accent+'33">'+playerSvg()+'</div><h3>'+p.name+'</h3><p>'+p.style+'</p>';
+      b.addEventListener("click",()=>{app.data.selectedPlayer=p.name;saveData();renderPlayers();showToast(p.name+" selected");});
+      grid.appendChild(b);
+     });
+    }
+    function unlockCourts(){
+     courts.forEach(c=>{if(app.data.bestRally>=c.need&&!app.data.unlockedCourts.includes(c.name))app.data.unlockedCourts.push(c.name);});
+     if(!app.data.unlockedCourts.includes(app.data.selectedCourt))app.data.selectedCourt="Blue Arena";
+     saveData();
+    }
+    function renderCourts(){
+     unlockCourts();const grid=$("#courtGrid");grid.innerHTML="";
+     courts.forEach(c=>{
+      const unlocked=app.data.unlockedCourts.includes(c.name);
+      const b=document.createElement("button");b.className="card select-card"+(app.data.selectedCourt===c.name?" selected":"")+(unlocked?"":" locked");
+      b.innerHTML='<span class="tag">'+(unlocked?c.label:"Rally "+c.need)+'</span><div class="court-preview '+c.cls+'"></div><h3>'+c.name+'</h3><p>'+(unlocked?"Tournament surface ready.":"Reach a "+c.need+"-shot rally to unlock.")+'</p>';
+      b.addEventListener("click",()=>{if(!unlocked){showToast("Locked until rally "+c.need);return;}app.data.selectedCourt=c.name;saveData();renderCourts();});
+      grid.appendChild(b);
+     });
+     updateDifficultySegments();
+    }
+    function updateDifficultySegments(){
+     $$("[data-diff]").forEach(b=>b.classList.toggle("active",b.dataset.diff===app.data.difficulty));
+    }
+    function setDifficulty(v){app.data.difficulty=v;saveData();updateDifficultySegments();showToast("Challenge updated");}
+    function updateHome(){
+     unlockCourts();
+     $("#homeBest").textContent=app.data.bestRally;
+     $("#homeAccuracy").textContent=careerAccuracy()+"%";
+     $("#homeMatches").textContent=app.data.matches;
+     $("#homeLoadout").textContent=app.data.selectedPlayer+" · "+app.data.selectedCourt;
+    }
+    function careerAccuracy(){return app.data.totalAttempts?Math.round(app.data.totalReturns/app.data.totalAttempts*100):0;}
+    function renderRecords(){
+     $("#recordBest").textContent=app.data.bestRally;$("#recordAccuracy").textContent=careerAccuracy()+"%";
+     const list=$("#recordList");list.innerHTML="";
+     if(!app.data.history.length){list.innerHTML='<div class="card empty">No matches yet. Complete a match to create your first record.</div>';return;}
+     app.data.history.forEach((r,i)=>{
+      const d=document.createElement("div");d.className="card record-row";
+      d.innerHTML='<div class="medal">'+(i+1)+'</div><div><h3>Rally '+r.best+'</h3><p>'+r.player+' · '+r.court+' · '+r.difficulty+'</p></div><div style="text-align:right"><strong>'+r.accuracy+'%</strong><div class="small">'+r.date+'</div></div>';
+      list.appendChild(d);
+     });
+    }
+    function updateSettings(){
+     updateDifficultySegments();
+     $("#motionSwitch").classList.toggle("on",app.data.reducedMotion);
+     $("#guideSwitch").classList.toggle("on",app.data.showGuide);
+     document.documentElement.style.setProperty("--motion",app.data.reducedMotion?"0":"1");
+    }
+    function toggleSetting(key,el){app.data[key]=!app.data[key];el.classList.toggle("on",app.data[key]);saveData();}
+
+    const canvas=$("#gameCanvas"),ctx=canvas.getContext("2d",{alpha:false});
+
+    const athleteLayer=$("#athleteLayer");
+    function athleteSvg(id,shirtA,shirtB,accent,skin,hair){
+     const cpu=id==="cpu";
+     return `<svg class="athlete-model ${cpu?"opponent":"player"}" id="${id}Model" viewBox="0 0 220 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+     <defs>
+      <linearGradient id="${id}Shirt" x1="0" y1="0" x2=".85" y2="1"><stop stop-color="${shirtA}"/><stop offset=".52" stop-color="${shirtB}"/><stop offset="1" stop-color="#1c5d50"/></linearGradient>
+      <linearGradient id="${id}Shorts" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#203947"/><stop offset=".55" stop-color="#0b1c25"/><stop offset="1" stop-color="#040b10"/></linearGradient>
+      <linearGradient id="${id}Skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe0c7"/><stop offset=".55" stop-color="${skin}"/><stop offset="1" stop-color="#9c5c43"/></linearGradient>
+      <linearGradient id="${id}Shoe" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffffff"/><stop offset=".5" stop-color="#dbe7eb"/><stop offset=".78" stop-color="${accent}"/><stop offset="1" stop-color="#4b6873"/></linearGradient>
+      <radialGradient id="${id}Face" cx=".28" cy=".22"><stop stop-color="#ffe9d7"/><stop offset=".58" stop-color="${skin}"/><stop offset="1" stop-color="#ad674c"/></radialGradient>
+      <linearGradient id="${id}Racket" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6ffbe"/><stop offset=".45" stop-color="${accent}"/><stop offset="1" stop-color="#4b9078"/></linearGradient>
+     </defs>
+
+     <ellipse cx="112" cy="299" rx="52" ry="14" fill="rgba(0,0,0,.28)"/>
+
+     <g id="${id}Body" class="rim">
+       <!-- rear leg -->
+       <g id="${id}BackLeg" class="joint thigh">
+         <path d="M100 187 C88 204 82 223 84 244 C87 253 95 257 102 251 C104 231 110 213 119 198 Z" fill="url(#${id}Shorts)"/>
+         <g class="joint shin">
+           <path d="M85 241 C82 258 78 276 79 288 C84 295 95 294 100 286 C101 271 102 256 103 246 Z" fill="url(#${id}Skin)"/>
+           <path d="M73 285 C82 280 95 281 103 288 L101 299 L68 299 C65 294 67 289 73 285 Z" fill="url(#${id}Shoe)"/>
+           <path d="M71 294 L99 294" stroke="rgba(28,54,63,.55)" stroke-width="2.4"/>
+         </g>
+       </g>
+
+       <!-- front leg -->
+       <g id="${id}FrontLeg" class="joint thigh">
+         <path d="M120 188 C128 207 132 226 129 246 C124 254 115 255 108 248 C108 228 106 211 101 196 Z" fill="url(#${id}Shorts)"/>
+         <g class="joint shin">
+           <path d="M110 243 C111 262 115 278 121 290 C128 295 138 291 140 284 C136 267 133 253 130 242 Z" fill="url(#${id}Skin)"/>
+           <path d="M119 286 C130 282 144 285 151 292 L148 301 L114 301 C111 296 113 290 119 286 Z" fill="url(#${id}Shoe)"/>
+           <path d="M117 296 L145 296" stroke="rgba(28,54,63,.55)" stroke-width="2.4"/>
+         </g>
+       </g>
+
+       <!-- shorts -->
+       <path d="M91 171 C102 165 126 166 137 174 L132 203 C122 211 103 210 94 203 Z" fill="url(#${id}Shorts)"/>
+       <path d="M96 177 L109 204 M132 177 L119 204" stroke="rgba(255,255,255,.12)" stroke-width="2.4"/>
+
+       <!-- torso -->
+       <g id="${id}Torso" class="joint">
+         <path d="M82 99 C98 88 126 89 143 103 C151 119 151 145 143 169 C128 179 101 179 86 167 C78 145 76 121 82 99 Z" fill="url(#${id}Shirt)"/>
+         <path d="M91 103 C104 97 124 98 136 107 L132 118 C118 112 103 112 91 117 Z" fill="rgba(255,255,255,.14)"/>
+         <path d="M88 131 C105 141 128 141 145 131" stroke="rgba(255,255,255,.12)" stroke-width="3" fill="none"/>
+         <path d="M83 107 C78 120 78 142 84 158" stroke="${accent}" stroke-width="5" opacity=".45"/>
+         <path d="M108 97 L115 110 L123 98" fill="rgba(8,29,36,.34)"/>
+         <path d="M99 122 C108 118 126 119 135 125 L132 150 C120 155 108 154 98 148 Z" fill="rgba(255,255,255,.055)"/>
+       </g>
+
+       <!-- off arm -->
+       <g id="${id}LeftArm" class="joint upper-arm">
+         <path d="M87 105 C76 111 68 123 65 138 L77 143 C84 132 91 121 97 112 Z" fill="url(#${id}Shirt)"/>
+         <g class="joint forearm">
+           <path d="M67 136 C61 150 59 164 63 176 C69 181 78 177 81 171 C80 157 80 146 79 140 Z" fill="url(#${id}Skin)"/>
+           <path d="M62 173 C60 181 64 188 71 190 C77 187 81 181 79 173 Z" fill="url(#${id}Skin)"/>
+         </g>
+       </g>
+
+       <!-- racket arm -->
+       <g id="${id}RightArm" class="joint upper-arm">
+         <path d="M138 104 C153 109 164 121 169 136 L157 142 C149 130 139 119 130 112 Z" fill="url(#${id}Shirt)"/>
+         <g id="${id}Forearm" class="joint forearm">
+           <path d="M160 134 C173 143 181 154 184 166 C181 173 172 176 166 171 C159 160 153 151 151 143 Z" fill="url(#${id}Skin)"/>
+           <path d="M168 166 C170 174 177 179 184 177 C188 172 188 166 184 161 Z" fill="url(#${id}Skin)"/>
+           <g id="${id}Racket" class="joint racket-group">
+             <path d="M181 174 L196 201" stroke="#c9d7dc" stroke-width="8" stroke-linecap="round"/>
+             <path d="M181 174 L196 201" stroke="#1d343d" stroke-width="3" stroke-linecap="round"/>
+             <ellipse cx="202" cy="224" rx="22" ry="34" fill="rgba(255,255,255,.025)" stroke="url(#${id}Racket)" stroke-width="6"/>
+             <ellipse cx="202" cy="224" rx="18" ry="29" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.4"/>
+             <path d="M188 204 L215 244 M184 214 L219 235 M184 226 L218 214 M188 239 L215 204" stroke="rgba(255,255,255,.34)" stroke-width="1.1"/>
+           </g>
+         </g>
+       </g>
+
+       <!-- neck -->
+       <path d="M109 88 C109 97 123 98 124 88 L124 75 L110 75 Z" fill="url(#${id}Skin)"/>
+
+       <!-- head profile -->
+       <g id="${id}Head" class="joint">
+         <path d="M98 49 C100 31 113 21 130 24 C145 27 151 41 147 58 C144 73 134 84 120 83 C106 82 96 68 98 49 Z" fill="url(#${id}Face)"/>
+         <path d="M98 49 C95 35 102 23 115 17 C131 10 147 20 151 35 C141 32 133 27 126 21 C120 31 111 39 99 50 Z" fill="${hair}"/>
+         <path d="M101 45 C104 35 111 27 121 20 C116 34 110 44 101 53 Z" fill="${hair}"/>
+         <path d="M134 45 Q140 42 145 45" stroke="#4c332a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+         <ellipse cx="141" cy="48" rx="1.8" ry="2.3" fill="#17303a"/>
+         <path d="M145 51 C149 54 149 58 145 60" stroke="#b87454" stroke-width="1.5" fill="none"/>
+         <path d="M136 68 Q143 71 148 66" stroke="#8b5140" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+         <path d="M100 57 C95 54 94 62 98 66" fill="none" stroke="${skin}" stroke-width="4.5" stroke-linecap="round"/>
+         <path d="M111 76 C120 80 129 78 134 73" stroke="rgba(255,255,255,.2)" stroke-width="1.4" fill="none"/>
+       </g>
+
+       <!-- rim highlights -->
+       <path d="M83 101 C79 124 80 148 87 165" stroke="rgba(227,255,255,.28)" stroke-width="1.6" fill="none"/>
+       <path d="M99 187 C90 211 87 236 88 247" stroke="rgba(255,255,255,.12)" stroke-width="1.3" fill="none"/>
+     </g>
+     </svg>`;
+    }
+    function initAthletes(){
+     athleteLayer.innerHTML=
+      athleteSvg("cpu","#80f0ff","#267e9b","#9af4ff","#d8a07c","#142a34")+
+      athleteSvg("player","#e6ff82","#63b94e","#ddff72","#d8a07c","#202a2e");
+    }
+    initAthletes();
+
+    function resizeGame(){
+     const rect=$("#gameWrap").getBoundingClientRect();
+     const g=app.game;g.w=Math.max(1,rect.width);g.h=Math.max(1,rect.height);g.dpr=Math.min(window.devicePixelRatio||1,1.75);
+     canvas.width=Math.round(g.w*g.dpr);canvas.height=Math.round(g.h*g.dpr);canvas.style.width=g.w+"px";canvas.style.height=g.h+"px";
+     ctx.setTransform(g.dpr,0,0,g.dpr,0,0);
+    }
+    function difficultyConfig(){
+     return app.data.difficulty==="easy"?{base:1020,min:610,growth:18,cpu:.72,window:.14,points:5}:
+     app.data.difficulty==="hard"?{base:780,min:410,growth:27,cpu:.9,window:.095,points:7}:
+     {base:900,min:500,growth:22,cpu:.82,window:.115,points:6};
+    }
+    function resetGameState(){
+     const g=app.game;
+     cancelAnimationFrame(g.raf);
+     Object.assign(g,{running:true,paused:false,ended:false,raf:0,last:performance.now(),
+     playerX:.5,targetX:.5,playerVX:0,opponentX:.5,opponentTargetX:.5,opponentVX:0,
+     playerPose:0,opponentPose:0,playerStrike:0,opponentStrike:0,
+     pointer:false,pointerStartX:0,pointerLastX:0,swipeDir:0,rally:0,bestRally:0,returns:0,attempts:0,
+     playerPoints:0,opponentPoints:0,maxSpeed:0,pointDelay:0,servePending:false,trail:[],effects:[],flash:0,crowdPhase:0});
+     g.ball={x:.5,y:.72,vx:0,vy:0,targetX:.5,targetY:.18,fromPlayer:false,progress:0,duration:900,curve:0};
+     $("#pauseOverlay").classList.remove("show");
+     updateHud();
+    }
+    function startMatch(){
+     navigate("gameScreen");
+     resizeGame();resetGameState();
+     if(app.data.showGuide){$("#gameTip").classList.remove("hide");clearTimeout(app.game.tipTimer);app.game.tipTimer=setTimeout(()=>$("#gameTip").classList.add("hide"),3200);}
+     else $("#gameTip").classList.add("hide");
+     serveFromOpponent();
+     app.game.raf=requestAnimationFrame(loop);
+    }
+    function stopGame(){
+     const g=app.game;g.running=false;g.paused=false;cancelAnimationFrame(g.raf);g.raf=0;clearTimeout(g.tipTimer);
+    }
+    function serveFromOpponent(){
+     const g=app.game,c=difficultyConfig();
+     g.servePending=false;
+     g.opponentTargetX=.18+Math.random()*.64;
+     g.opponentStrike=1;
+     g.ball={x:g.opponentX,y:.2,targetX:.2+Math.random()*.6,targetY:.76,fromPlayer:false,progress:0,duration:c.base,curve:(Math.random()-.5)*.08};
+     g.maxSpeed=Math.max(g.maxSpeed,Math.round(100000/g.ball.duration));
+    }
+    function returnToOpponent(dir){
+     const g=app.game,c=difficultyConfig();
+     g.attempts++;g.returns++;g.rally++;g.bestRally=Math.max(g.bestRally,g.rally);
+     let tx=dir<0?.2:dir>0?.8:.5;
+     tx+=(Math.random()-.5)*.08;
+     const duration=Math.max(c.min,c.base-g.rally*c.growth);
+     g.ball={x:g.ball.x,y:g.ball.y,targetX:tx,targetY:.2,fromPlayer:true,progress:0,duration,curve:(dir||((Math.random()>.5)?1:-1))*.045};
+     g.flash=.9;
+     g.playerStrike=1;
+     spawnImpact(g.ball.x,g.ball.y,true);
+     g.maxSpeed=Math.max(g.maxSpeed,Math.round(100000/duration));
+     updateHud();
+    }
+    function cpuReturn(){
+     const g=app.game,c=difficultyConfig();
+     const missChance=Math.max(.035,.18-g.rally*.004)*(1.05-c.cpu*.25);
+     if(Math.random()<missChance){scorePoint("player");return;}
+     g.opponentTargetX=Math.max(.1,Math.min(.9,g.ball.x+(Math.random()-.5)*(.12*(1-c.cpu))));
+     g.opponentStrike=1;
+     const tx=.14+Math.random()*.72;
+     const duration=Math.max(c.min,c.base-g.rally*c.growth);
+     g.ball={x:g.ball.x,y:g.ball.y,targetX:tx,targetY:.76,fromPlayer:false,progress:0,duration,curve:(Math.random()-.5)*.1};
+     spawnImpact(g.ball.x,g.ball.y,false);
+     g.maxSpeed=Math.max(g.maxSpeed,Math.round(100000/duration));
+    }
+    function scorePoint(who){
+     const g=app.game,c=difficultyConfig();
+     if(g.pointDelay||g.ended)return;
+     if(who==="player")g.playerPoints++;else g.opponentPoints++;
+     g.rally=0;updateHud();
+     g.pointDelay=700;
+     if(g.playerPoints>=c.points||g.opponentPoints>=c.points){
+       setTimeout(()=>finishMatch(),650);
+     }else{
+       setTimeout(()=>{g.pointDelay=0;if(g.running&&!g.paused)serveFromOpponent();},700);
+     }
+    }
+    function spawnImpact(x,y,playerHit){
+     const g=app.game;
+     g.effects.push({x,y,life:1,playerHit});
+     if(g.effects.length>6)g.effects.shift();
+    }
+    function updateBall(dt){
+     const g=app.game,b=g.ball;if(g.pointDelay)return;
+     b.progress+=dt/b.duration;
+     const t=Math.min(1,b.progress),ease=t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+     if(b.startX===undefined)b.startX=b.fromPlayer?g.playerX:g.opponentX;
+     const sx=b.startX;
+     b.x=sx+(b.targetX-sx)*ease+Math.sin(Math.PI*t)*b.curve;
+     b.y=(b.fromPlayer?.76:.2)+(b.targetY-(b.fromPlayer?.76:.2))*ease-Math.sin(Math.PI*t)*.13;
+     g.trail.push({x:b.x,y:b.y,a:1});
+     if(g.trail.length>11)g.trail.shift();
+     for(const q of g.trail)q.a-=dt*.0019;
+     g.trail=g.trail.filter(q=>q.a>0);
+     for(const fx of g.effects)fx.life-=dt*.0025;
+     g.effects=g.effects.filter(fx=>fx.life>0);
+     g.flash=Math.max(0,g.flash-dt*.0034);
+     g.crowdPhase+=dt*.001;
+     if(b.fromPlayer && t>.18){
+      const lead=Math.min(1,(t-.18)/.5);
+      g.opponentTargetX+=(Math.max(.08,Math.min(.92,b.targetX))-g.opponentTargetX)*lead*.08;
+     }
+     if(t>=1){
+      if(b.fromPlayer){cpuReturn();}
+      else{
+       g.attempts++;
+       const c=difficultyConfig(),distance=Math.abs(g.playerX-b.x);
+       const hit=distance<c.window;
+       if(hit){returnToOpponent(g.swipeDir);g.swipeDir=0;}
+       else{scorePoint("cpu");}
+      }
+     }
+    }
+    function smoothAxis(pos,target,vel,dt,accel,maxSpeed,damping){
+     const delta=target-pos;
+     vel+=Math.max(-accel,Math.min(accel,delta*accel*5))*dt;
+     vel*=Math.pow(damping,dt/16.67);
+     vel=Math.max(-maxSpeed,Math.min(maxSpeed,vel));
+     if(Math.abs(delta)<.0015&&Math.abs(vel)<.00005){pos=target;vel=0;}
+     else pos+=vel*dt;
+     return [Math.max(.06,Math.min(.94,pos)),vel];
+    }
+    function loop(ts){
+     const g=app.game;if(!g.running)return;
+     const dt=Math.min(32,ts-g.last||16);g.last=ts;
+     if(!g.paused){
+       let r=smoothAxis(g.playerX,g.targetX,g.playerVX,dt,.000038,.00165,.76);
+       g.playerX=r[0];g.playerVX=r[1];
+       const cpuSpeed=app.data.difficulty==="hard"?.00148:app.data.difficulty==="easy"?.00108:.00128;
+       r=smoothAxis(g.opponentX,g.opponentTargetX,g.opponentVX,dt,.000031,cpuSpeed,.80);
+       g.opponentX=r[0];g.opponentVX=r[1];
+       g.playerPose+=(Math.abs(g.playerVX)*900-g.playerPose)*Math.min(1,dt*.012);
+       g.opponentPose+=(Math.abs(g.opponentVX)*900-g.opponentPose)*Math.min(1,dt*.012);
+       g.playerStrike=Math.max(0,g.playerStrike-dt*.0028);
+       g.opponentStrike=Math.max(0,g.opponentStrike-dt*.0028);
+       updateBall(dt);
+     }
+     drawGame();
+     g.raf=requestAnimationFrame(loop);
+    }
+    function courtPalette(){
+     const name=app.data.selectedCourt;
+     if(name==="Clay Center")return {outer:"#7c331e",court:"#b85d34",line:"rgba(255,245,225,.88)",sky:"#19303a"};
+     if(name==="Grass Club")return {outer:"#174b2c",court:"#3f8a53",line:"rgba(255,255,255,.88)",sky:"#17313d"};
+     if(name==="Night Finals")return {outer:"#07151f",court:"#163c55",line:"rgba(115,239,255,.92)",sky:"#050d17"};
+     return {outer:"#16486a",court:"#397fb3",line:"rgba(255,255,255,.88)",sky:"#17313d"};
+    }
+    function project(x,y){
+     const g=app.game;
+     const topY=g.h*.16,bottomY=g.h*.9;
+     const widthTop=g.w*.58,widthBottom=g.w*1.18;
+     const py=topY+(bottomY-topY)*y;
+     const width=widthTop+(widthBottom-widthTop)*y;
+     return {x:g.w/2+(x-.5)*width,y:py};
+    }
+    function roundedRect(x,y,w,h,r){
+     ctx.beginPath();ctx.roundRect(x,y,w,h,r);
+    }
+
+    function updateAthleteModels(){/* removed player models */}
+
+    function drawGame(){
+     const g=app.game,p=courtPalette(),w=g.w,h=g.h,time=g.crowdPhase;
+     const sky=ctx.createLinearGradient(0,0,0,h);
+     sky.addColorStop(0,p.sky);sky.addColorStop(.38,"#102b38");sky.addColorStop(1,"#061017");
+     ctx.fillStyle=sky;ctx.fillRect(0,0,w,h);
+
+     const dome=ctx.createRadialGradient(w*.5,h*.02,12,w*.5,h*.08,w*.72);
+     dome.addColorStop(0,"rgba(135,235,255,.24)");dome.addColorStop(.42,"rgba(38,108,136,.09)");dome.addColorStop(1,"rgba(0,0,0,0)");
+     ctx.fillStyle=dome;ctx.fillRect(0,0,w,h*.56);
+
+     // roof structure
+     ctx.strokeStyle="rgba(164,222,238,.11)";ctx.lineWidth=1;
+     for(let i=0;i<8;i++){
+       const x=i*w/7;
+       ctx.beginPath();ctx.moveTo(w*.5,h*.05);ctx.lineTo(x,h*.26);ctx.stroke();
+     }
+     ctx.beginPath();ctx.ellipse(w*.5,h*.12,w*.45,h*.095,0,0,Math.PI*2);ctx.stroke();
+
+     // floodlights
+     for(const side of [-1,1]){
+       const lx=w*.5+side*w*.39,ly=h*.095;
+       ctx.save();ctx.translate(lx,ly);
+       ctx.fillStyle="rgba(225,250,255,.95)";
+       for(let r=0;r<2;r++)for(let c=0;c<4;c++){
+         ctx.shadowColor="#9eeeff";ctx.shadowBlur=12;
+         roundedRect((c-1.5)*8-3,(r-.5)*8-3,6,6,2);ctx.fill();
+       }
+       ctx.restore();ctx.shadowBlur=0;
+       const beam=ctx.createLinearGradient(lx,ly,lx-side*w*.12,h*.62);
+       beam.addColorStop(0,"rgba(180,242,255,.11)");beam.addColorStop(1,"rgba(180,242,255,0)");
+       ctx.fillStyle=beam;ctx.beginPath();ctx.moveTo(lx-18,ly+5);ctx.lineTo(lx+18,ly+5);ctx.lineTo(lx-side*w*.22,h*.66);ctx.closePath();ctx.fill();
+     }
+
+     // grandstands
+     const standY=h*.18;
+     ctx.fillStyle="#07131b";ctx.fillRect(0,standY,w,h*.25);
+     for(let row=0;row<5;row++){
+       const y=standY+row*h*.033;
+       ctx.fillStyle=row%2?"rgba(15,38,49,.95)":"rgba(10,29,39,.98)";
+       ctx.fillRect(0,y,w,h*.028);
+       const count=18+row*3;
+       for(let i=0;i<count;i++){
+         const tw=.55+.45*Math.sin(i*1.7+row*2.2+time);
+         ctx.fillStyle=i%7===0?`rgba(184,255,92,${.28*tw})`:i%5===0?`rgba(77,232,255,${.24*tw})`:`rgba(231,244,249,${.12*tw})`;
+         ctx.beginPath();ctx.arc((i+.5)*w/count,y+6+(i%2)*4,1.4+(row*.12),0,Math.PI*2);ctx.fill();
+       }
+     }
+     // LED ribbon
+     const ribbon=ctx.createLinearGradient(0,0,w,0);
+     ribbon.addColorStop(0,"rgba(77,232,255,.16)");ribbon.addColorStop(.5,"rgba(184,255,92,.54)");ribbon.addColorStop(1,"rgba(77,232,255,.16)");
+     ctx.fillStyle="#071116";ctx.fillRect(0,h*.335,w,h*.026);
+     ctx.fillStyle=ribbon;ctx.fillRect(0,h*.339,w,2);
+     ctx.font=`800 ${Math.max(8,w*.022)}px system-ui`;
+     ctx.textAlign="center";ctx.fillStyle="rgba(220,249,255,.72)";
+     ctx.fillText("WIN PUNCH  •  CENTER COURT  •  MATCH PLAY",w*.5,h*.355);
+
+     const A=project(0,0),B=project(1,0),C=project(1,1),D=project(0,1);
+     // court surround with vignette
+     ctx.fillStyle=p.outer;ctx.beginPath();ctx.moveTo(A.x-72,A.y-18);ctx.lineTo(B.x+72,B.y-18);ctx.lineTo(C.x+118,C.y+46);ctx.lineTo(D.x-118,D.y+46);ctx.closePath();ctx.fill();
+
+     // subtle surround texture
+     ctx.strokeStyle="rgba(255,255,255,.025)";ctx.lineWidth=1;
+     for(let i=0;i<18;i++){const y=.04+i*.055,s=project(0,y),e=project(1,y);ctx.beginPath();ctx.moveTo(s.x-60,s.y);ctx.lineTo(e.x+60,e.y);ctx.stroke();}
+
+     const courtGrad=ctx.createLinearGradient(0,A.y,0,D.y);
+     courtGrad.addColorStop(0,p.court);courtGrad.addColorStop(1,shadeColor(p.court,-18));
+     ctx.fillStyle=courtGrad;ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.lineTo(C.x,C.y);ctx.lineTo(D.x,D.y);ctx.closePath();ctx.fill();
+
+     // center glow and mowing bands
+     const cg=ctx.createRadialGradient(w*.5,h*.58,10,w*.5,h*.58,w*.62);
+     cg.addColorStop(0,"rgba(255,255,255,.055)");cg.addColorStop(1,"rgba(0,0,0,.08)");
+     ctx.fillStyle=cg;ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.lineTo(C.x,C.y);ctx.lineTo(D.x,D.y);ctx.closePath();ctx.fill();
+     for(let i=0;i<8;i++){
+       const s=project(0,i/8),e=project(1,(i+1)/8);
+       ctx.fillStyle=i%2?"rgba(255,255,255,.018)":"rgba(0,0,0,.025)";
+       ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(project(1,i/8).x,project(1,i/8).y);ctx.lineTo(e.x,e.y);ctx.lineTo(project(0,(i+1)/8).x,project(0,(i+1)/8).y);ctx.closePath();ctx.fill();
+     }
+
+     ctx.strokeStyle=p.line;ctx.lineWidth=2;
+     ctx.shadowColor="rgba(255,255,255,.18)";ctx.shadowBlur=4;
+     ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.lineTo(C.x,C.y);ctx.lineTo(D.x,D.y);ctx.closePath();ctx.stroke();
+     [[0,.5,1,.5],[.5,0,.5,1],[.18,.28,.82,.28],[.18,.72,.82,.72],[.18,0,.18,1],[.82,0,.82,1]].forEach(l=>{
+       const s=project(l[0],l[1]),e=project(l[2],l[3]);ctx.beginPath();ctx.moveTo(s.x,s.y);ctx.lineTo(e.x,e.y);ctx.stroke();
+     });
+     ctx.shadowBlur=0;
+
+     // net posts, tape, mesh
+     const netL=project(0,.5),netR=project(1,.5);
+     ctx.fillStyle="#dcebf0";roundedRect(netL.x-4,netL.y-16,6,34,2);ctx.fill();roundedRect(netR.x-2,netR.y-16,6,34,2);ctx.fill();
+     ctx.strokeStyle="rgba(244,252,255,.94)";ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(netL.x,netL.y-12);ctx.lineTo(netR.x,netR.y-12);ctx.stroke();
+     ctx.strokeStyle="rgba(230,248,255,.24)";ctx.lineWidth=.7;
+     for(let i=0;i<=18;i++){const x=netL.x+(netR.x-netL.x)*i/18;ctx.beginPath();ctx.moveTo(x,netL.y-12);ctx.lineTo(x,netL.y+16);ctx.stroke();}
+     for(let j=0;j<=5;j++){const y=netL.y-12+j*5.5;ctx.beginPath();ctx.moveTo(netL.x,y);ctx.lineTo(netR.x,y);ctx.stroke();}
+
+     // side benches and umpire chair
+     ctx.fillStyle="rgba(5,19,25,.92)";
+     roundedRect(Math.max(8,A.x-72),h*.54,44,26,7);ctx.fill();
+     roundedRect(Math.min(w-52,B.x+28),h*.54,44,26,7);ctx.fill();
+     ctx.strokeStyle="rgba(132,222,241,.28)";ctx.strokeRect(w*.87,h*.43,20,54);
+     ctx.fillStyle="rgba(232,245,249,.75)";roundedRect(w*.865,h*.415,30,12,4);ctx.fill();
+
+     // target zones based on swipe
+     if(g.swipeDir!==0 || g.pointer){
+       const tx=g.swipeDir<0?.2:g.swipeDir>0?.8:g.targetX;
+       const z=project(tx,.18);
+       const pulse=.72+.16*Math.sin(time*7);
+       ctx.strokeStyle=`rgba(184,255,92,${pulse})`;ctx.lineWidth=2;
+       ctx.beginPath();ctx.ellipse(z.x,z.y,20,8,0,0,Math.PI*2);ctx.stroke();
+       ctx.fillStyle="rgba(184,255,92,.08)";ctx.beginPath();ctx.ellipse(z.x,z.y,20,8,0,0,Math.PI*2);ctx.fill();
+     }
+
+     // player shadows
+     drawPlayerShadow(g.opponentX,.13,.72);
+     drawPlayerShadow(g.playerX,.84,1.08);
+     drawRacket(g.opponentX,.13,false);
+     drawRacket(g.playerX,.84,true);
+
+     // trail
+     for(let i=0;i<g.trail.length;i++){
+       const q=g.trail[i],tp=project(q.x,q.y),s=.35+q.y*.55;
+       ctx.fillStyle=`rgba(218,255,84,${Math.max(0,q.a)*.16})`;
+       ctx.beginPath();ctx.arc(tp.x,tp.y,4*s,0,Math.PI*2);ctx.fill();
+     }
+     for(const fx of g.effects){
+       const ep=project(fx.x,fx.y),life=fx.life;
+       ctx.strokeStyle=fx.playerHit?`rgba(184,255,92,${life})`:`rgba(77,232,255,${life})`;
+       ctx.lineWidth=2;ctx.beginPath();ctx.arc(ep.x,ep.y,(1-life)*32+7,0,Math.PI*2);ctx.stroke();
+       for(let i=0;i<6;i++){
+         const a=i*Math.PI/3,rr=(1-life)*25+8;
+         ctx.fillStyle=fx.playerHit?`rgba(184,255,92,${life*.7})`:`rgba(77,232,255,${life*.65})`;
+         ctx.beginPath();ctx.arc(ep.x+Math.cos(a)*rr,ep.y+Math.sin(a)*rr,1.8,0,Math.PI*2);ctx.fill();
+       }
+     }
+
+     const bp=project(g.ball.x,g.ball.y),scale=.62+g.ball.y*.9;
+     const ballShadow=project(g.ball.x,Math.min(.92,g.ball.y+.065));
+     ctx.fillStyle="rgba(0,0,0,.22)";ctx.beginPath();ctx.ellipse(ballShadow.x,ballShadow.y,9*scale,3.5*scale,0,0,Math.PI*2);ctx.fill();
+     const bg=ctx.createRadialGradient(bp.x-3*scale,bp.y-4*scale,1,bp.x,bp.y,9*scale);
+     bg.addColorStop(0,"#f4ffae");bg.addColorStop(.42,"#dfff59");bg.addColorStop(1,"#91bd20");
+     ctx.shadowColor="#dfff64";ctx.shadowBlur=16+g.flash*12;ctx.fillStyle=bg;ctx.beginPath();ctx.arc(bp.x,bp.y,7.2*scale,0,Math.PI*2);ctx.fill();ctx.shadowBlur=0;
+     ctx.strokeStyle="rgba(255,255,255,.72)";ctx.lineWidth=1.1;ctx.beginPath();ctx.arc(bp.x,bp.y,5.9*scale,-1.25,1.15);ctx.stroke();
+
+     // cinematic vignette and hit flash
+     const vig=ctx.createRadialGradient(w*.5,h*.52,w*.18,w*.5,h*.52,w*.78);
+     vig.addColorStop(.45,"rgba(0,0,0,0)");vig.addColorStop(1,"rgba(0,4,8,.45)");
+     ctx.fillStyle=vig;ctx.fillRect(0,0,w,h);
+     if(g.flash>0){
+       ctx.fillStyle=`rgba(184,255,92,${g.flash*.055})`;ctx.fillRect(0,0,w,h);
+     }
+    }
+    function shadeColor(hex,amt){
+     const n=parseInt(hex.slice(1),16),r=Math.max(0,Math.min(255,(n>>16)+amt)),g=Math.max(0,Math.min(255,((n>>8)&255)+amt)),b=Math.max(0,Math.min(255,(n&255)+amt));
+     return `rgb(${r},${g},${b})`;
+    }
+
+    function drawRacket(x,y,isPlayer){
+     const g=app.game;
+     const p=project(x,y);
+     const move=isPlayer?g.playerVX:g.opponentVX;
+     const strike=isPlayer?g.playerStrike:g.opponentStrike;
+     const speed=Math.min(1,Math.abs(move)*900);
+     const sway=Math.sin(g.crowdPhase*8 + (isPlayer?0:1.4))*speed;
+     const scale=isPlayer?1.14:.84;
+     const angle=isPlayer?(-0.30 + strike*1.34 + sway*.08):(0.24 - strike*1.18 - sway*.07);
+
+     ctx.save();
+     ctx.translate(p.x,p.y);
+     ctx.rotate(angle);
+     ctx.scale(scale,scale);
+
+     // Entire racket is aligned along the local vertical axis.
+     // Head center at y=-28, throat at y=6, handle below.
+     const rimColor=isPlayer?"#d8ff66":"#86efff";
+     const rimDark=isPlayer?"#79a923":"#247e96";
+
+     // soft ground-contact shadow
+     ctx.save();
+     ctx.rotate(-angle);
+     ctx.scale(1,.35);
+     const shadow=ctx.createRadialGradient(0,78,2,0,78,35);
+     shadow.addColorStop(0,"rgba(0,0,0,.30)");
+     shadow.addColorStop(1,"rgba(0,0,0,0)");
+     ctx.fillStyle=shadow;
+     ctx.beginPath();ctx.arc(0,78,35,0,Math.PI*2);ctx.fill();
+     ctx.restore();
+
+     // grip and butt cap
+     const grip=ctx.createLinearGradient(-6,20,7,78);
+     grip.addColorStop(0,"#eef4f6");
+     grip.addColorStop(.28,"#c9d6dc");
+     grip.addColorStop(.62,"#5d737d");
+     grip.addColorStop(1,"#253941");
+     ctx.fillStyle=grip;
+     ctx.beginPath();
+     ctx.roundRect(-6,18,12,61,5);
+     ctx.fill();
+
+     // grip wrapping
+     ctx.strokeStyle="rgba(255,255,255,.40)";
+     ctx.lineWidth=1.2;
+     for(let y=25;y<74;y+=7){
+       ctx.beginPath();
+       ctx.moveTo(-5,y);
+       ctx.lineTo(5,y+3);
+       ctx.stroke();
+     }
+     ctx.fillStyle="#14262e";
+     ctx.beginPath();ctx.roundRect(-8,74,16,9,4);ctx.fill();
+
+     // throat/yoke: connected cleanly to head and shaft
+     const yoke=ctx.createLinearGradient(0,-4,0,25);
+     yoke.addColorStop(0,"#e8f0f3");
+     yoke.addColorStop(1,"#6b838d");
+     ctx.strokeStyle=yoke;
+     ctx.lineWidth=5.5;
+     ctx.lineCap="round";
+     ctx.beginPath();
+     ctx.moveTo(-12,-1);
+     ctx.quadraticCurveTo(-8,8,-2,19);
+     ctx.moveTo(12,-1);
+     ctx.quadraticCurveTo(8,8,2,19);
+     ctx.stroke();
+
+     // outer head — elongated tennis-racket oval
+     ctx.shadowColor=isPlayer?"rgba(216,255,102,.24)":"rgba(134,239,255,.22)";
+     ctx.shadowBlur=8;
+     const rimGrad=ctx.createLinearGradient(-30,-70,30,10);
+     rimGrad.addColorStop(0,"#f2ffbb");
+     rimGrad.addColorStop(.35,rimColor);
+     rimGrad.addColorStop(1,rimDark);
+     ctx.strokeStyle=rimGrad;
+     ctx.lineWidth=6;
+     ctx.beginPath();
+     ctx.ellipse(0,-35,27,39,0,0,Math.PI*2);
+     ctx.stroke();
+     ctx.shadowBlur=0;
+
+     // inner rim detail
+     ctx.strokeStyle="rgba(244,252,255,.78)";
+     ctx.lineWidth=1.4;
+     ctx.beginPath();
+     ctx.ellipse(0,-35,22.5,34.5,0,0,Math.PI*2);
+     ctx.stroke();
+
+     // strings clipped to inside of oval
+     ctx.save();
+     ctx.beginPath();
+     ctx.ellipse(0,-35,21.5,33.5,0,0,Math.PI*2);
+     ctx.clip();
+
+     ctx.strokeStyle="rgba(225,241,247,.48)";
+     ctx.lineWidth=.85;
+     for(let sx=-18;sx<=18;sx+=6){
+       ctx.beginPath();
+       ctx.moveTo(sx,-70);
+       ctx.lineTo(sx,-1);
+       ctx.stroke();
+     }
+     for(let sy=-65;sy<=-5;sy+=7){
+       ctx.beginPath();
+       ctx.moveTo(-25,sy);
+       ctx.lineTo(25,sy);
+       ctx.stroke();
+     }
+
+     // subtle sweet spot
+     const sweet=ctx.createRadialGradient(-5,-43,2,0,-35,24);
+     sweet.addColorStop(0,"rgba(255,255,255,.11)");
+     sweet.addColorStop(1,"rgba(255,255,255,0)");
+     ctx.fillStyle=sweet;
+     ctx.fillRect(-25,-72,50,74);
+     ctx.restore();
+
+     // bridge connection, ensuring no visual gap
+     ctx.fillStyle="#d9e5e9";
+     ctx.beginPath();
+     ctx.moveTo(-12,-2);
+     ctx.lineTo(12,-2);
+     ctx.lineTo(6,6);
+     ctx.lineTo(-6,6);
+     ctx.closePath();
+     ctx.fill();
+
+     // tiny edge highlight for premium material
+     ctx.strokeStyle="rgba(255,255,255,.48)";
+     ctx.lineWidth=1;
+     ctx.beginPath();
+     ctx.arc(-2,-36,23,-2.6,-1.2);
+     ctx.stroke();
+
+     ctx.restore();
+    }
+
+    function drawPlayerShadow(x,y,scale){
+     const p=project(x,y);
+     const motion=Math.min(1,isFinite(scale)?scale:1);
+     ctx.save();
+     ctx.translate(p.x,p.y+30*motion);
+     ctx.scale(1,.34);
+     const sh=ctx.createRadialGradient(0,0,2,0,0,28*motion);
+     sh.addColorStop(0,"rgba(0,0,0,.34)");sh.addColorStop(1,"rgba(0,0,0,0)");
+     ctx.fillStyle=sh;ctx.beginPath();ctx.arc(0,0,28*motion,0,Math.PI*2);ctx.fill();
+     ctx.restore();
+    }
+    function drawLimb(ax,ay,bx,by,cx,cy,width,color){
+     ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";
+     ctx.beginPath();ctx.moveTo(ax,ay);ctx.quadraticCurveTo(bx,by,cx,cy);ctx.stroke();
+    }
+    function drawAthlete(){/* SVG models are rendered in the athlete layer. */}
+    function updateHud(){
+     const g=app.game;$("#rallyCount").textContent=g.rally;$("#playerPoints").textContent=g.playerPoints;$("#opponentPoints").textContent=g.opponentPoints;
+    }
+    function pauseGame(){
+     const g=app.game;if(!g.running||g.ended)return;g.paused=true;$("#pauseOverlay").classList.add("show");
+    }
+    function resumeGame(){const g=app.game;if(!g.running)return;g.paused=false;g.last=performance.now();$("#pauseOverlay").classList.remove("show");}
+    function finishMatch(){
+     const g=app.game;if(g.ended)return;g.ended=true;g.running=false;cancelAnimationFrame(g.raf);
+     const accuracy=g.attempts?Math.round(g.returns/g.attempts*100):0;
+     app.data.matches++;app.data.totalReturns+=g.returns;app.data.totalAttempts+=g.attempts;app.data.bestRally=Math.max(app.data.bestRally,g.bestRally);
+     unlockCourts();
+     app.data.history.unshift({best:g.bestRally,accuracy,player:app.data.selectedPlayer,court:app.data.selectedCourt,difficulty:app.data.difficulty,date:new Date().toLocaleDateString(undefined,{month:"short",day:"numeric"})});
+     app.data.history=app.data.history.slice(0,12);saveData();
+     $("#resultLabel").textContent=g.playerPoints>g.opponentPoints?"Match won":"Match complete";
+     $("#resultRally").textContent=g.bestRally;$("#resultReturns").textContent=g.returns;$("#resultAccuracy").textContent=accuracy+"%";$("#resultWon").textContent=g.playerPoints;$("#resultSpeed").textContent=g.maxSpeed;
+     const next=courts.find(c=>!app.data.unlockedCourts.includes(c.name));
+     if(next){$("#unlockText").textContent="Next: "+next.name;$("#unlockValue").textContent=Math.min(app.data.bestRally,next.need)+"/"+next.need;$("#unlockBar").style.width=Math.min(100,app.data.bestRally/next.need*100)+"%";}
+     else{$("#unlockText").textContent="All courts unlocked";$("#unlockValue").textContent="100%";$("#unlockBar").style.width="100%";}
+     navigate("resultsScreen");
+    }
+    function pointerPos(e){const r=canvas.getBoundingClientRect();return {x:(e.clientX-r.left)/r.width,y:(e.clientY-r.top)/r.height};}
+    function onPointerDown(e){
+     if(!app.game.running||app.game.paused)return;e.preventDefault();canvas.setPointerCapture?.(e.pointerId);
+     const p=pointerPos(e),g=app.game;g.pointer=true;g.pointerStartX=p.x;g.pointerLastX=p.x;if(p.y>.42)g.targetX=Math.max(.07,Math.min(.93,p.x));
+    }
+    function onPointerMove(e){
+     const g=app.game;if(!g.pointer||g.paused)return;e.preventDefault();const p=pointerPos(e);g.pointerLastX=p.x;if(p.y>.36)g.targetX=Math.max(.07,Math.min(.93,p.x));
+    }
+    function onPointerUp(e){
+     const g=app.game;if(!g.pointer)return;e.preventDefault();const p=pointerPos(e),dx=p.x-g.pointerStartX;g.swipeDir=Math.abs(dx)<.055?0:(dx<0?-1:1);g.pointer=false;
+    }
+    canvas.addEventListener("pointerdown",onPointerDown,{passive:false});canvas.addEventListener("pointermove",onPointerMove,{passive:false});canvas.addEventListener("pointerup",onPointerUp,{passive:false});canvas.addEventListener("pointercancel",()=>app.game.pointer=false);
+
+    $("#enterBtn").addEventListener("click",()=>navigate("homeScreen"));
+    $("#quickPlayBtn").addEventListener("click",startMatch);
+    $("#startMatchBtn").addEventListener("click",startMatch);
+    $("#pauseBtn").addEventListener("click",pauseGame);
+    $("#resumeBtn").addEventListener("click",resumeGame);
+    $("#restartBtn").addEventListener("click",startMatch);
+    $("#quitBtn").addEventListener("click",()=>navigate("homeScreen"));
+    $("#gameBackBtn").addEventListener("click",pauseGame);
+    $("#playAgainBtn").addEventListener("click",startMatch);
+    $("#motionSwitch").addEventListener("click",e=>toggleSetting("reducedMotion",e.currentTarget));
+    $("#guideSwitch").addEventListener("click",e=>toggleSetting("showGuide",e.currentTarget));
+    $("#resetDataBtn").addEventListener("click",()=>$("#confirmModal").classList.add("show"));
+    $("#cancelResetBtn").addEventListener("click",()=>$("#confirmModal").classList.remove("show"));
+    $("#confirmResetBtn").addEventListener("click",()=>{
+     app.data={...defaults,history:[],unlockedCourts:["Blue Arena"]};saveData();$("#confirmModal").classList.remove("show");updateSettings();updateHome();showToast("Progress reset");
+    });
+    $$("[data-nav]").forEach(b=>b.addEventListener("click",()=>navigate(b.dataset.nav)));
+    $$(".back-btn").forEach(b=>b.addEventListener("click",goBack));
+    $$("[data-diff]").forEach(b=>b.addEventListener("click",()=>setDifficulty(b.dataset.diff)));
+    window.addEventListener("resize",()=>{if(app.current==="gameScreen")resizeGame();});
+    document.addEventListener("visibilitychange",()=>{if(document.hidden&&app.current==="gameScreen"&&app.game.running)pauseGame();});
+    document.addEventListener("dblclick",e=>e.preventDefault(),{passive:false});
+    renderPlayers();renderCourts();updateHome();updateSettings();
+    })();
+</script>
+</body>
+</html>
