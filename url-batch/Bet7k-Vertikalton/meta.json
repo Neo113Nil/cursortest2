@@ -1,0 +1,36 @@
+{
+  "app_id": "com.shotwins.games",
+  "title": "Bet7k",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/PXI2kFmrtdrvqP-ib_oKV4Kawm1NaCwSr5fj0JZvQAA8WO-RtUKZCOgyHXSCH9n2bEYQL1D7e6-s2GiAbdNA",
+  "url": "https://play.google.com/store/apps/details?id=com.shotwins.games&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 25, 2026",
+  "updated": "Jul 25, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to Bet7k for live sports updates, scores and match insights.",
+  "keyword": "url-batch",
+  "folder": "Bet7k-Vertikalton",
+  "path": "url-batch/Bet7k-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.shotwins.games.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Bet7k-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.shotwins.games...\ncom.shotwins.games downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.shotwins.games...\ncom.shotwins.games downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
