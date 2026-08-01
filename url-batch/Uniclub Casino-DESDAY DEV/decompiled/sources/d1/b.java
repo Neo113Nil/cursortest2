@@ -1,0 +1,27 @@
+package d1;
+
+import java.util.Iterator;
+
+/* loaded from: classes.dex */
+public final class b implements d {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final d f1910a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final int f1911b;
+
+    public b(d dVar, int i) {
+        this.f1910a = dVar;
+        this.f1911b = i;
+        if (i >= 0) {
+            return;
+        }
+        throw new IllegalArgumentException(("count must be non-negative, but was " + i + '.').toString());
+    }
+
+    @Override // d1.d
+    public final Iterator iterator() {
+        return new Q0.a(this);
+    }
+}

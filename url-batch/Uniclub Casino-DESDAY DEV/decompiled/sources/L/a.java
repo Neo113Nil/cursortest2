@@ -1,0 +1,31 @@
+package L;
+
+import android.os.Bundle;
+import android.text.style.ClickableSpan;
+import android.view.View;
+
+/* loaded from: classes.dex */
+public final class a extends ClickableSpan {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final int f468a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final j f469b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final int f470c;
+
+    public a(int i, j jVar, int i2) {
+        this.f468a = i;
+        this.f469b = jVar;
+        this.f470c = i2;
+    }
+
+    @Override // android.text.style.ClickableSpan
+    public final void onClick(View view) {
+        Bundle bundle = new Bundle();
+        bundle.putInt("ACCESSIBILITY_CLICKABLE_SPAN_ID", this.f468a);
+        this.f469b.f482a.performAction(this.f470c, bundle);
+    }
+}

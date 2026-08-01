@@ -1,0 +1,57 @@
+package V;
+
+import K.C0011l;
+import android.text.Editable;
+import android.text.method.KeyListener;
+import android.text.method.MetaKeyKeyListener;
+import android.view.KeyEvent;
+import android.view.View;
+
+/* loaded from: classes.dex */
+public final class e implements KeyListener {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final KeyListener f775a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final J0.e f776b;
+
+    public e(KeyListener keyListener) {
+        J0.e eVar = new J0.e(11);
+        this.f775a = keyListener;
+        this.f776b = eVar;
+    }
+
+    @Override // android.text.method.KeyListener
+    public final void clearMetaKeyState(View view, Editable editable, int i) {
+        this.f775a.clearMetaKeyState(view, editable, i);
+    }
+
+    @Override // android.text.method.KeyListener
+    public final int getInputType() {
+        return this.f775a.getInputType();
+    }
+
+    @Override // android.text.method.KeyListener
+    public final boolean onKeyDown(View view, Editable editable, int i, KeyEvent keyEvent) {
+        boolean z2;
+        this.f776b.getClass();
+        if (i != 67 ? i != 112 ? false : C0011l.c(editable, keyEvent, true) : C0011l.c(editable, keyEvent, false)) {
+            MetaKeyKeyListener.adjustMetaAfterKeypress(editable);
+            z2 = true;
+        } else {
+            z2 = false;
+        }
+        return z2 || this.f775a.onKeyDown(view, editable, i, keyEvent);
+    }
+
+    @Override // android.text.method.KeyListener
+    public final boolean onKeyOther(View view, Editable editable, KeyEvent keyEvent) {
+        return this.f775a.onKeyOther(view, editable, keyEvent);
+    }
+
+    @Override // android.text.method.KeyListener
+    public final boolean onKeyUp(View view, Editable editable, int i, KeyEvent keyEvent) {
+        return this.f775a.onKeyUp(view, editable, i, keyEvent);
+    }
+}
