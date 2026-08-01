@@ -1,0 +1,67 @@
+package com.appsflyer.internal;
+
+import com.appsflyer.deeplink.DeepLink;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: r8-map-id-c4937ab901668f9cff4bec8519cace7e1239157a414c58210d923e8673528904 */
+@Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\b\b\u0086\b\u0018\u00002\u00020\u0001B\u001d\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u001a\u0010\b\u001a\u00020\u00022\b\u0010\u0003\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\b\u0010\tJ\u0010\u0010\u000b\u001a\u00020\nHÖ\u0001¢\u0006\u0004\b\u000b\u0010\fJ\u0010\u0010\u000e\u001a\u00020\rH×\u0001¢\u0006\u0004\b\u000e\u0010\u000fR\u0016\u0010\u0012\u001a\u0004\u0018\u00010\u00048\u0007X\u0087\u0004¢\u0006\u0006\n\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0014\u001a\u00020\u00028\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0012\u0010\u0013\u001a\u0004\b\u0014\u0010\u0015"}, d2 = {"Lcom/appsflyer/internal/AFa1oSDK;", "", "", "p0", "Lcom/appsflyer/deeplink/DeepLink;", "p1", "<init>", "(ZLcom/appsflyer/deeplink/DeepLink;)V", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "getMonetizationNetwork", "Lcom/appsflyer/deeplink/DeepLink;", "getCurrencyIso4217Code", "Z", "AFAdRevenueData", "()Z"}, k = 1, mv = {1, a4.j.BYTES_FIELD_NUMBER, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final /* data */ class AFa1oSDK {
+
+    /* renamed from: getCurrencyIso4217Code, reason: from kotlin metadata */
+    private final boolean AFAdRevenueData;
+
+    /* renamed from: getMonetizationNetwork, reason: from kotlin metadata */
+    public final DeepLink getCurrencyIso4217Code;
+
+    public /* synthetic */ AFa1oSDK(boolean z10, DeepLink deepLink, int i3, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i3 & 1) != 0 ? true : z10, (i3 & 2) != 0 ? null : deepLink);
+    }
+
+    /* renamed from: AFAdRevenueData, reason: from getter */
+    public final boolean getAFAdRevenueData() {
+        return this.AFAdRevenueData;
+    }
+
+    public final boolean equals(Object p02) {
+        if (this == p02) {
+            return true;
+        }
+        if (!(p02 instanceof AFa1oSDK)) {
+            return false;
+        }
+        AFa1oSDK aFa1oSDK = (AFa1oSDK) p02;
+        return this.AFAdRevenueData == aFa1oSDK.AFAdRevenueData && Intrinsics.a(this.getCurrencyIso4217Code, aFa1oSDK.getCurrencyIso4217Code);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v1, types: [int] */
+    /* JADX WARN: Type inference failed for: r0v4 */
+    /* JADX WARN: Type inference failed for: r0v5 */
+    public final int hashCode() {
+        boolean z10 = this.AFAdRevenueData;
+        ?? r02 = z10;
+        if (z10) {
+            r02 = 1;
+        }
+        int i3 = r02 * 31;
+        DeepLink deepLink = this.getCurrencyIso4217Code;
+        return i3 + (deepLink == null ? 0 : deepLink.hashCode());
+    }
+
+    public final String toString() {
+        return "DdlResponse(secondPing=" + this.AFAdRevenueData + ", deepLink=" + this.getCurrencyIso4217Code + ")";
+    }
+
+    public AFa1oSDK(boolean z10, DeepLink deepLink) {
+        this.AFAdRevenueData = z10;
+        this.getCurrencyIso4217Code = deepLink;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public AFa1oSDK() {
+        this(false, null, 3, 0 == true ? 1 : 0);
+    }
+}

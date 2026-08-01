@@ -1,0 +1,78 @@
+{
+  "app_id": "com.manholeroboramprush.cardestroy",
+  "title": "Chicken Road Slot",
+  "developer": "DAMOS",
+  "developer_id": "DAMOS",
+  "icon": "https://play-lh.googleusercontent.com/Ve1rJUQDVEQhDvMqDhSW1t_ImEwzFAp27pj2VrO95SI1EcPhkoyx1dILkScU1QpwRQFyaB4I-pr_p5tKsTSLxA",
+  "url": "https://play.google.com/store/apps/details?id=com.manholeroboramprush.cardestroy&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 16, 2026",
+  "updated": "2026-06-19",
+  "version": "2.0",
+  "summary": "Tap to check your luck on road.",
+  "keyword": "url-batch",
+  "folder": "Chicken Road Slot-DAMOS",
+  "path": "url-batch/Chicken Road Slot-DAMOS",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.manholeroboramprush.cardestroy-2-asset.apk",
+    "com.manholeroboramprush.cardestroy-2.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken Road Slot-DAMOS",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.manholeroboramprush.cardestroy...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.manholeroboramprush.cardestroy...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\nNo download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": false
+      },
+      "ok": false,
+      "exit_code": 1,
+      "stdout": "\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : justin.hablet@gmail.com               │\n│ GSF ID : 307a2e237edd94ca                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": "No download URL returned. The app may require purchase or is unavailable for \nthis device.\n"
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": true,
+        "no_splits": true
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.manholeroboramprush.cardestroy ─╮\n│ Chicken Road Slot                    │\n│ 2.0  (vc 2)                          │\n╰──────────────────────────────────────╯\n\nDownloading 2 files  (66.8 MB)\n  com.manholeroboramprush.cardestroy-2.apk       ━━━━━━ 100% 36.5… 12.0   0:00:…\n                                                             MB    MB/s         \n  com.manholeroboramprush.cardestroy-2-asset.apk ━━━━━━ 100% 33.5… 15.3   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.manholeroboramprush.cardestroy-2.apk       │ 34.8 MB │\n│ com.manholeroboramprush.cardestroy-2-asset.apk │ 34.8 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fiftyone@gmail.com         │\n│ GSF ID : 3686f49f149e5c24                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.manholeroboramprush.cardestroy ─╮\n│ Chicken Road Slot                    │\n│ 2.0  (vc 2)                          │\n╰──────────────────────────────────────╯\n\nDownloading 2 files  (66.8 MB)\n  com.manholeroboramprush.cardestroy-2.apk       ━━━━━━ 100% 36.5… 12.0   0:00:…\n                                                             MB    MB/s         \n  com.manholeroboramprush.cardestroy-2-asset.apk ━━━━━━ 100% 33.5… 15.3   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.manholeroboramprush.cardestroy-2.apk       │ 34.8 MB │\n│ com.manholeroboramprush.cardestroy-2-asset.apk │ 34.8 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fiftyone@gmail.com         │\n│ GSF ID : 3686f49f149e5c24                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
+  "stderr": "",
+  "exit_code": 0
+}

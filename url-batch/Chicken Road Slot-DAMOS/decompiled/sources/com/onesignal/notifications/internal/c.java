@@ -1,0 +1,518 @@
+package com.onesignal.notifications.internal;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* compiled from: r8-map-id-c4937ab901668f9cff4bec8519cace7e1239157a414c58210d923e8673528904 */
+/* loaded from: classes.dex */
+public final class c implements qb.c {
+    private List<? extends qb.b> actionButtons;
+    private JSONObject additionalData;
+    private int androidNotificationId;
+    private qb.a backgroundImageLayout;
+    private String bigPicture;
+    private String body;
+    private String collapseId;
+    private final com.onesignal.common.threading.d displayWaiter;
+    private String fromProjectNumber;
+    private String groupKey;
+    private String groupMessage;
+    private List<c> groupedNotifications;
+    private String largeIcon;
+    private String launchURL;
+    private String ledColor;
+    private int lockScreenVisibility;
+    private e3.h notificationExtender;
+    private String notificationId;
+    private int priority;
+    private String rawPayload;
+    private long sentTime;
+    private String smallIcon;
+    private String smallIconAccentColor;
+    private String sound;
+    private String templateId;
+    private String templateName;
+    private String title;
+    private int ttl;
+
+    public c(List<c> list, JSONObject jSONObject, int i3, sa.a aVar) {
+        jSONObject.getClass();
+        aVar.getClass();
+        this.displayWaiter = new com.onesignal.common.threading.d();
+        this.lockScreenVisibility = 1;
+        this.rawPayload = "";
+        initPayloadData(jSONObject, aVar);
+        setGroupedNotifications(list);
+        setAndroidNotificationId(i3);
+    }
+
+    private final void initPayloadData(JSONObject jSONObject, sa.a aVar) {
+        try {
+            JSONObject customJSONObject = bc.e.INSTANCE.getCustomJSONObject(jSONObject);
+            long currentTimeMillis = aVar.getCurrentTimeMillis();
+            if (jSONObject.has("google.ttl")) {
+                setSentTime(jSONObject.optLong("google.sent_time", currentTimeMillis) / 1000);
+                setTtl(jSONObject.optInt("google.ttl", 259200));
+            } else if (jSONObject.has(com.onesignal.notifications.bridges.a.HMS_TTL_KEY)) {
+                setSentTime(jSONObject.optLong(com.onesignal.notifications.bridges.a.HMS_SENT_TIME_KEY, currentTimeMillis) / 1000);
+                setTtl(jSONObject.optInt(com.onesignal.notifications.bridges.a.HMS_TTL_KEY, 259200));
+            } else {
+                setSentTime(currentTimeMillis / 1000);
+                setTtl(259200);
+            }
+            setNotificationId(com.onesignal.common.e.safeString(customJSONObject, "i"));
+            setTemplateId(com.onesignal.common.e.safeString(customJSONObject, "ti"));
+            setTemplateName(com.onesignal.common.e.safeString(customJSONObject, "tn"));
+            String jSONObject2 = jSONObject.toString();
+            jSONObject2.getClass();
+            setRawPayload(jSONObject2);
+            setAdditionalData(com.onesignal.common.e.safeJSONObject(customJSONObject, yb.a.PUSH_ADDITIONAL_DATA_KEY));
+            setLaunchURL(com.onesignal.common.e.safeString(customJSONObject, "u"));
+            setBody(com.onesignal.common.e.safeString(jSONObject, "alert"));
+            setTitle(com.onesignal.common.e.safeString(jSONObject, "title"));
+            setSmallIcon(com.onesignal.common.e.safeString(jSONObject, "sicon"));
+            setBigPicture(com.onesignal.common.e.safeString(jSONObject, "bicon"));
+            setLargeIcon(com.onesignal.common.e.safeString(jSONObject, "licon"));
+            setSound(com.onesignal.common.e.safeString(jSONObject, "sound"));
+            setGroupKey(com.onesignal.common.e.safeString(jSONObject, "grp"));
+            setGroupMessage(com.onesignal.common.e.safeString(jSONObject, "grp_msg"));
+            setSmallIconAccentColor(com.onesignal.common.e.safeString(jSONObject, "bgac"));
+            setLedColor(com.onesignal.common.e.safeString(jSONObject, "ledc"));
+            String safeString = com.onesignal.common.e.safeString(jSONObject, "vis");
+            if (safeString != null) {
+                setLockScreenVisibility(Integer.parseInt(safeString));
+            }
+            setFromProjectNumber(com.onesignal.common.e.safeString(jSONObject, "from"));
+            setPriority(jSONObject.optInt("pri", 0));
+            String safeString2 = com.onesignal.common.e.safeString(jSONObject, "collapse_key");
+            if (!"do_not_collapse".equals(safeString2)) {
+                setCollapseId(safeString2);
+            }
+            try {
+                setActionButtonsFromData();
+            } catch (Throwable th) {
+                com.onesignal.debug.internal.logging.b.error("Error assigning OSNotificationReceivedEvent.actionButtons values!", th);
+            }
+            try {
+                setBackgroundImageLayoutFromData(jSONObject);
+            } catch (Throwable th2) {
+                com.onesignal.debug.internal.logging.b.error("Error assigning OSNotificationReceivedEvent.backgroundImageLayout values!", th2);
+            }
+        } catch (Throwable th3) {
+            com.onesignal.debug.internal.logging.b.error("Error assigning OSNotificationReceivedEvent payload values!", th3);
+        }
+    }
+
+    private final void setActionButtonsFromData() {
+        if (getAdditionalData() != null) {
+            JSONObject additionalData = getAdditionalData();
+            additionalData.getClass();
+            if (additionalData.has("actionButtons")) {
+                JSONObject additionalData2 = getAdditionalData();
+                additionalData2.getClass();
+                JSONArray jSONArray = additionalData2.getJSONArray("actionButtons");
+                ArrayList arrayList = new ArrayList();
+                int length = jSONArray.length();
+                for (int i3 = 0; i3 < length; i3++) {
+                    JSONObject jSONObject = jSONArray.getJSONObject(i3);
+                    jSONObject.getClass();
+                    arrayList.add(new a(com.onesignal.common.e.safeString(jSONObject, "id"), com.onesignal.common.e.safeString(jSONObject, "text"), com.onesignal.common.e.safeString(jSONObject, "icon")));
+                }
+                setActionButtons(arrayList);
+                JSONObject additionalData3 = getAdditionalData();
+                additionalData3.getClass();
+                additionalData3.remove("actionId");
+                JSONObject additionalData4 = getAdditionalData();
+                additionalData4.getClass();
+                additionalData4.remove("actionButtons");
+            }
+        }
+    }
+
+    private final void setBackgroundImageLayoutFromData(JSONObject jSONObject) {
+        String safeString = com.onesignal.common.e.safeString(jSONObject, "bg_img");
+        if (safeString != null) {
+            JSONObject jSONObject2 = new JSONObject(safeString);
+            setBackgroundImageLayout(new qb.a(com.onesignal.common.e.safeString(jSONObject2, "img"), com.onesignal.common.e.safeString(jSONObject2, "tc"), com.onesignal.common.e.safeString(jSONObject2, "bc")));
+        }
+    }
+
+    @Override // qb.c, qb.d
+    public void display() {
+        this.displayWaiter.wake(Boolean.TRUE);
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public List<qb.b> getActionButtons() {
+        return this.actionButtons;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public JSONObject getAdditionalData() {
+        return this.additionalData;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public int getAndroidNotificationId() {
+        return this.androidNotificationId;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public qb.a getBackgroundImageLayout() {
+        return this.backgroundImageLayout;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getBigPicture() {
+        return this.bigPicture;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getBody() {
+        return this.body;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getCollapseId() {
+        return this.collapseId;
+    }
+
+    public final com.onesignal.common.threading.d getDisplayWaiter() {
+        return this.displayWaiter;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getFromProjectNumber() {
+        return this.fromProjectNumber;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getGroupKey() {
+        return this.groupKey;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getGroupMessage() {
+        return this.groupMessage;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public List<c> getGroupedNotifications() {
+        return this.groupedNotifications;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getLargeIcon() {
+        return this.largeIcon;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getLaunchURL() {
+        return this.launchURL;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getLedColor() {
+        return this.ledColor;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public int getLockScreenVisibility() {
+        return this.lockScreenVisibility;
+    }
+
+    public final e3.h getNotificationExtender() {
+        return null;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getNotificationId() {
+        return this.notificationId;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public int getPriority() {
+        return this.priority;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getRawPayload() {
+        return this.rawPayload;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public long getSentTime() {
+        return this.sentTime;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getSmallIcon() {
+        return this.smallIcon;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getSmallIconAccentColor() {
+        return this.smallIconAccentColor;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getSound() {
+        return this.sound;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getTemplateId() {
+        return this.templateId;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getTemplateName() {
+        return this.templateName;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public String getTitle() {
+        return this.title;
+    }
+
+    @Override // qb.c, qb.e, qb.f, qb.d
+    public int getTtl() {
+        return this.ttl;
+    }
+
+    public final boolean hasNotificationId() {
+        return getAndroidNotificationId() != 0;
+    }
+
+    public void setActionButtons(List<? extends qb.b> list) {
+        this.actionButtons = list;
+    }
+
+    public void setAdditionalData(JSONObject jSONObject) {
+        this.additionalData = jSONObject;
+    }
+
+    public void setAndroidNotificationId(int i3) {
+        this.androidNotificationId = i3;
+    }
+
+    public void setBackgroundImageLayout(qb.a aVar) {
+        this.backgroundImageLayout = aVar;
+    }
+
+    public void setBigPicture(String str) {
+        this.bigPicture = str;
+    }
+
+    public void setBody(String str) {
+        this.body = str;
+    }
+
+    public void setCollapseId(String str) {
+        this.collapseId = str;
+    }
+
+    public void setFromProjectNumber(String str) {
+        this.fromProjectNumber = str;
+    }
+
+    public void setGroupKey(String str) {
+        this.groupKey = str;
+    }
+
+    public void setGroupMessage(String str) {
+        this.groupMessage = str;
+    }
+
+    public void setGroupedNotifications(List<c> list) {
+        this.groupedNotifications = list;
+    }
+
+    public void setLargeIcon(String str) {
+        this.largeIcon = str;
+    }
+
+    public void setLaunchURL(String str) {
+        this.launchURL = str;
+    }
+
+    public void setLedColor(String str) {
+        this.ledColor = str;
+    }
+
+    public void setLockScreenVisibility(int i3) {
+        this.lockScreenVisibility = i3;
+    }
+
+    public void setNotificationId(String str) {
+        this.notificationId = str;
+    }
+
+    public void setPriority(int i3) {
+        this.priority = i3;
+    }
+
+    public void setRawPayload(String str) {
+        str.getClass();
+        this.rawPayload = str;
+    }
+
+    public void setSentTime(long j) {
+        this.sentTime = j;
+    }
+
+    public void setSmallIcon(String str) {
+        this.smallIcon = str;
+    }
+
+    public void setSmallIconAccentColor(String str) {
+        this.smallIconAccentColor = str;
+    }
+
+    public void setSound(String str) {
+        this.sound = str;
+    }
+
+    public void setTemplateId(String str) {
+        this.templateId = str;
+    }
+
+    public void setTemplateName(String str) {
+        this.templateName = str;
+    }
+
+    public void setTitle(String str) {
+        this.title = str;
+    }
+
+    public void setTtl(int i3) {
+        this.ttl = i3;
+    }
+
+    public final JSONObject toJSONObject() {
+        JSONObject jSONObject = new JSONObject();
+        try {
+            jSONObject.put("androidNotificationId", getAndroidNotificationId());
+            JSONArray jSONArray = new JSONArray();
+            if (getGroupedNotifications() != null) {
+                List<c> groupedNotifications = getGroupedNotifications();
+                groupedNotifications.getClass();
+                Iterator<c> it = groupedNotifications.iterator();
+                while (it.hasNext()) {
+                    jSONArray.put(it.next().toJSONObject());
+                }
+            }
+            jSONObject.put("groupedNotifications", jSONArray);
+            jSONObject.put("notificationId", getNotificationId());
+            jSONObject.put("templateName", getTemplateName());
+            jSONObject.put("templateId", getTemplateId());
+            jSONObject.put("title", getTitle());
+            jSONObject.put("body", getBody());
+            jSONObject.put("smallIcon", getSmallIcon());
+            jSONObject.put("largeIcon", getLargeIcon());
+            jSONObject.put("bigPicture", getBigPicture());
+            jSONObject.put("smallIconAccentColor", getSmallIconAccentColor());
+            jSONObject.put("launchURL", getLaunchURL());
+            jSONObject.put("sound", getSound());
+            jSONObject.put("ledColor", getLedColor());
+            jSONObject.put("lockScreenVisibility", getLockScreenVisibility());
+            jSONObject.put("groupKey", getGroupKey());
+            jSONObject.put("groupMessage", getGroupMessage());
+            jSONObject.put("fromProjectNumber", getFromProjectNumber());
+            jSONObject.put("collapseId", getCollapseId());
+            jSONObject.put("priority", getPriority());
+            if (getAdditionalData() != null) {
+                jSONObject.put("additionalData", getAdditionalData());
+            }
+            if (getActionButtons() != null) {
+                JSONArray jSONArray2 = new JSONArray();
+                List<qb.b> actionButtons = getActionButtons();
+                actionButtons.getClass();
+                for (qb.b bVar : actionButtons) {
+                    bVar.getClass();
+                    jSONArray2.put(((a) bVar).toJSONObject());
+                }
+                jSONObject.put("actionButtons", jSONArray2);
+            }
+            jSONObject.put("rawPayload", getRawPayload());
+            return jSONObject;
+        } catch (JSONException e2) {
+            e2.printStackTrace();
+            return jSONObject;
+        }
+    }
+
+    public String toString() {
+        return "OSNotification{notificationExtender=null, groupedNotifications=" + getGroupedNotifications() + ", androidNotificationId=" + getAndroidNotificationId() + ", notificationId='" + getNotificationId() + "', templateName='" + getTemplateName() + "', templateId='" + getTemplateId() + "', title='" + getTitle() + "', body='" + getBody() + "', additionalData=" + getAdditionalData() + ", smallIcon='" + getSmallIcon() + "', largeIcon='" + getLargeIcon() + "', bigPicture='" + getBigPicture() + "', smallIconAccentColor='" + getSmallIconAccentColor() + "', launchURL='" + getLaunchURL() + "', sound='" + getSound() + "', ledColor='" + getLedColor() + "', lockScreenVisibility=" + getLockScreenVisibility() + ", groupKey='" + getGroupKey() + "', groupMessage='" + getGroupMessage() + "', actionButtons=" + getActionButtons() + ", fromProjectNumber='" + getFromProjectNumber() + "', backgroundImageLayout=" + getBackgroundImageLayout() + ", collapseId='" + getCollapseId() + "', priority=" + getPriority() + ", rawPayload='" + getRawPayload() + "'}";
+    }
+
+    /* compiled from: r8-map-id-c4937ab901668f9cff4bec8519cace7e1239157a414c58210d923e8673528904 */
+    public static final class a implements qb.b {
+        private final String icon;
+
+        /* renamed from: id, reason: collision with root package name */
+        private final String f3201id;
+        private final String text;
+
+        public /* synthetic */ a(String str, String str2, String str3, int i3, DefaultConstructorMarker defaultConstructorMarker) {
+            this((i3 & 1) != 0 ? null : str, (i3 & 2) != 0 ? null : str2, (i3 & 4) != 0 ? null : str3);
+        }
+
+        @Override // qb.b
+        public String getIcon() {
+            return this.icon;
+        }
+
+        @Override // qb.b
+        public String getId() {
+            return this.f3201id;
+        }
+
+        @Override // qb.b
+        public String getText() {
+            return this.text;
+        }
+
+        public final JSONObject toJSONObject() {
+            JSONObject jSONObject = new JSONObject();
+            try {
+                jSONObject.put("id", getId());
+                jSONObject.put("text", getText());
+                jSONObject.put("icon", getIcon());
+                return jSONObject;
+            } catch (Throwable th) {
+                th.printStackTrace();
+                return jSONObject;
+            }
+        }
+
+        public a(String str, String str2, String str3) {
+            this.f3201id = str;
+            this.text = str2;
+            this.icon = str3;
+        }
+
+        public a() {
+            this(null, null, null, 7, null);
+        }
+    }
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public c(JSONObject jSONObject, sa.a aVar) {
+        this(null, jSONObject, 0, aVar);
+        jSONObject.getClass();
+        aVar.getClass();
+    }
+
+    @Override // qb.c, qb.e
+    public void setExtender(e3.h hVar) {
+    }
+
+    public final void setNotificationExtender(e3.h hVar) {
+    }
+}

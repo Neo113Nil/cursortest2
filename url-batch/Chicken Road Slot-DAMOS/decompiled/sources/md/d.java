@@ -1,0 +1,13 @@
+package md;
+
+import nd.g;
+
+/* compiled from: r8-map-id-c4937ab901668f9cff4bec8519cace7e1239157a414c58210d923e8673528904 */
+/* loaded from: classes.dex */
+public final class d extends g {
+    @Override // nd.a
+    public final Object invokeSuspend(Object obj) {
+        cf.c.M(obj);
+        return obj;
+    }
+}
