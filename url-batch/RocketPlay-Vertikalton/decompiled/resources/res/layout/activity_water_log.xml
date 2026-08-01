@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.luckycounter.drinkwater.ui.StarrySkyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/aqua"
+            android:paddingTop="40dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/water_log_title"/>
+        <TextView
+            android:textSize="16sp"
+            android:textColor="@color/hot_pink"
+            android:id="@+id/textEmpty"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_entries"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerLog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

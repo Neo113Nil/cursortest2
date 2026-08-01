@@ -1,0 +1,60 @@
+{
+  "app_id": "com.luckycounter.drinkwater",
+  "title": "RocketPlay",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/9zxSD7dc8LJ5wZOYMJ8CXCIEkx3F6g0tUQOIs7vRFYqwP8CPp1bWz8I2kl9S3vf-DOhrDsN5lHW5vSyW8NWL",
+  "url": "https://play.google.com/store/apps/details?id=com.luckycounter.drinkwater&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 21, 2026",
+  "version": "Varies with device",
+  "summary": "RocketPlay - track water intake, streaks, tiers, and daily hydration goals.",
+  "keyword": "url-batch",
+  "folder": "RocketPlay-Vertikalton",
+  "path": "url-batch/RocketPlay-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.luckycounter.drinkwater-1-asset.apk",
+    "com.luckycounter.drinkwater-1-config.en.apk",
+    "com.luckycounter.drinkwater-1-config.lt.apk",
+    "com.luckycounter.drinkwater-1-config.ru.apk",
+    "com.luckycounter.drinkwater-1-config.xxhdpi.apk",
+    "com.luckycounter.drinkwater-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/RocketPlay-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckycounter.drinkwater...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.luckycounter.drinkwater...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.luckycounter.drinkwater ─╮\n│ RocketPlay                    │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (6.7 MB)\n  com.luckycounter.drinkwater-1.apk               ━━━━━ 100% 4.1/… 10.4   0:00:…\n                                                             MB    MB/s         \n  com.luckycounter.drinkwater-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.7    0:00:…\n                                                             kB    MB/s         \n  com.luckycounter.drinkwater-1-asset.apk         ━━━━━ 100% 2.7/… 18.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckycounter.drinkwater-1.apk               │  3.9 MB │\n│ com.luckycounter.drinkwater-1-config.en.apk     │ 44.4 KB │\n│ com.luckycounter.drinkwater-1-config.lt.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.ru.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckycounter.drinkwater-1-asset.apk         │  3.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.luckycounter.drinkwater ─╮\n│ RocketPlay                    │\n│ 1.0  (vc 1)                   │\n╰───────────────────────────────╯\n\nDownloading 6 files  (6.7 MB)\n  com.luckycounter.drinkwater-1.apk               ━━━━━ 100% 4.1/… 10.4   0:00:…\n                                                             MB    MB/s         \n  com.luckycounter.drinkwater-1-config.en.apk     ━━━━━ 100% 45.5… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.lt.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.ru.apk     ━━━━━ 100% 29.1… ?      0:00:…\n                                                             kB                 \n  com.luckycounter.drinkwater-1-config.xxhdpi.apk ━━━━━ 100% 66.5… 1.7    0:00:…\n                                                             kB    MB/s         \n  com.luckycounter.drinkwater-1-asset.apk         ━━━━━ 100% 2.7/… 18.5   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                       \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                            ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.luckycounter.drinkwater-1.apk               │  3.9 MB │\n│ com.luckycounter.drinkwater-1-config.en.apk     │ 44.4 KB │\n│ com.luckycounter.drinkwater-1-config.lt.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.ru.apk     │ 28.4 KB │\n│ com.luckycounter.drinkwater-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.luckycounter.drinkwater-1-asset.apk         │  3.9 MB │\n└─────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

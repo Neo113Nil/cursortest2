@@ -1,0 +1,301 @@
+package v;
+
+import android.view.ViewGroup;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.Arrays;
+import java.util.HashMap;
+
+/* loaded from: classes.dex */
+public final class i {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f4306a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final l f4307b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final k f4308c;
+    public final j d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final m f4309e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public HashMap f4310f;
+
+    public i() {
+        l lVar = new l();
+        lVar.f4381a = 0;
+        lVar.f4382b = 0;
+        lVar.f4383c = 1.0f;
+        lVar.d = Float.NaN;
+        this.f4307b = lVar;
+        k kVar = new k();
+        kVar.f4375a = -1;
+        kVar.f4376b = 0;
+        kVar.f4377c = -1;
+        kVar.d = Float.NaN;
+        kVar.f4378e = Float.NaN;
+        kVar.f4379f = Float.NaN;
+        kVar.f4380g = -1;
+        kVar.h = null;
+        kVar.i = -1;
+        this.f4308c = kVar;
+        j jVar = new j();
+        jVar.f4337a = false;
+        jVar.d = -1;
+        jVar.f4344e = -1;
+        jVar.f4346f = -1.0f;
+        jVar.f4348g = true;
+        jVar.h = -1;
+        jVar.i = -1;
+        jVar.f4352j = -1;
+        jVar.f4354k = -1;
+        jVar.f4356l = -1;
+        jVar.f4358m = -1;
+        jVar.f4360n = -1;
+        jVar.f4361o = -1;
+        jVar.f4363p = -1;
+        jVar.f4364q = -1;
+        jVar.f4365r = -1;
+        jVar.f4366s = -1;
+        jVar.f4367t = -1;
+        jVar.f4368u = -1;
+        jVar.f4369v = -1;
+        jVar.f4370w = 0.5f;
+        jVar.f4371x = 0.5f;
+        jVar.f4372y = null;
+        jVar.f4373z = -1;
+        jVar.f4312A = 0;
+        jVar.f4313B = RecyclerView.f1949A0;
+        jVar.f4314C = -1;
+        jVar.f4315D = -1;
+        jVar.f4316E = -1;
+        jVar.F = 0;
+        jVar.f4317G = 0;
+        jVar.f4318H = 0;
+        jVar.f4319I = 0;
+        jVar.f4320J = 0;
+        jVar.f4321K = 0;
+        jVar.f4322L = 0;
+        jVar.f4323M = Integer.MIN_VALUE;
+        jVar.f4324N = Integer.MIN_VALUE;
+        jVar.f4325O = Integer.MIN_VALUE;
+        jVar.f4326P = Integer.MIN_VALUE;
+        jVar.f4327Q = Integer.MIN_VALUE;
+        jVar.f4328R = Integer.MIN_VALUE;
+        jVar.f4329S = Integer.MIN_VALUE;
+        jVar.f4330T = -1.0f;
+        jVar.f4331U = -1.0f;
+        jVar.f4332V = 0;
+        jVar.f4333W = 0;
+        jVar.f4334X = 0;
+        jVar.f4335Y = 0;
+        jVar.f4336Z = 0;
+        jVar.f4338a0 = 0;
+        jVar.f4340b0 = 0;
+        jVar.f4342c0 = 0;
+        jVar.f4343d0 = 1.0f;
+        jVar.f4345e0 = 1.0f;
+        jVar.f4347f0 = -1;
+        jVar.f4349g0 = 0;
+        jVar.f4350h0 = -1;
+        jVar.f4357l0 = false;
+        jVar.f4359m0 = false;
+        jVar.n0 = true;
+        jVar.f4362o0 = 0;
+        this.d = jVar;
+        m mVar = new m();
+        mVar.f4385a = RecyclerView.f1949A0;
+        mVar.f4386b = RecyclerView.f1949A0;
+        mVar.f4387c = RecyclerView.f1949A0;
+        mVar.d = 1.0f;
+        mVar.f4388e = 1.0f;
+        mVar.f4389f = Float.NaN;
+        mVar.f4390g = Float.NaN;
+        mVar.h = -1;
+        mVar.i = RecyclerView.f1949A0;
+        mVar.f4391j = RecyclerView.f1949A0;
+        mVar.f4392k = RecyclerView.f1949A0;
+        mVar.f4393l = false;
+        mVar.f4394m = RecyclerView.f1949A0;
+        this.f4309e = mVar;
+        this.f4310f = new HashMap();
+    }
+
+    public final void a(e eVar) {
+        j jVar = this.d;
+        eVar.f4256e = jVar.h;
+        eVar.f4258f = jVar.i;
+        eVar.f4260g = jVar.f4352j;
+        eVar.h = jVar.f4354k;
+        eVar.i = jVar.f4356l;
+        eVar.f4264j = jVar.f4358m;
+        eVar.f4266k = jVar.f4360n;
+        eVar.f4268l = jVar.f4361o;
+        eVar.f4270m = jVar.f4363p;
+        eVar.f4272n = jVar.f4364q;
+        eVar.f4273o = jVar.f4365r;
+        eVar.f4279s = jVar.f4366s;
+        eVar.f4280t = jVar.f4367t;
+        eVar.f4281u = jVar.f4368u;
+        eVar.f4282v = jVar.f4369v;
+        ((ViewGroup.MarginLayoutParams) eVar).leftMargin = jVar.F;
+        ((ViewGroup.MarginLayoutParams) eVar).rightMargin = jVar.f4317G;
+        ((ViewGroup.MarginLayoutParams) eVar).topMargin = jVar.f4318H;
+        ((ViewGroup.MarginLayoutParams) eVar).bottomMargin = jVar.f4319I;
+        eVar.f4224A = jVar.f4328R;
+        eVar.f4225B = jVar.f4327Q;
+        eVar.f4284x = jVar.f4324N;
+        eVar.f4286z = jVar.f4326P;
+        eVar.f4228E = jVar.f4370w;
+        eVar.F = jVar.f4371x;
+        eVar.f4275p = jVar.f4373z;
+        eVar.f4277q = jVar.f4312A;
+        eVar.f4278r = jVar.f4313B;
+        eVar.f4229G = jVar.f4372y;
+        eVar.f4242T = jVar.f4314C;
+        eVar.f4243U = jVar.f4315D;
+        eVar.f4231I = jVar.f4330T;
+        eVar.f4230H = jVar.f4331U;
+        eVar.f4233K = jVar.f4333W;
+        eVar.f4232J = jVar.f4332V;
+        eVar.f4245W = jVar.f4357l0;
+        eVar.f4246X = jVar.f4359m0;
+        eVar.f4234L = jVar.f4334X;
+        eVar.f4235M = jVar.f4335Y;
+        eVar.f4238P = jVar.f4336Z;
+        eVar.f4239Q = jVar.f4338a0;
+        eVar.f4236N = jVar.f4340b0;
+        eVar.f4237O = jVar.f4342c0;
+        eVar.f4240R = jVar.f4343d0;
+        eVar.f4241S = jVar.f4345e0;
+        eVar.f4244V = jVar.f4316E;
+        eVar.f4253c = jVar.f4346f;
+        eVar.f4249a = jVar.d;
+        eVar.f4251b = jVar.f4344e;
+        ((ViewGroup.MarginLayoutParams) eVar).width = jVar.f4339b;
+        ((ViewGroup.MarginLayoutParams) eVar).height = jVar.f4341c;
+        String str = jVar.f4355k0;
+        if (str != null) {
+            eVar.f4247Y = str;
+        }
+        eVar.f4248Z = jVar.f4362o0;
+        eVar.setMarginStart(jVar.f4321K);
+        eVar.setMarginEnd(jVar.f4320J);
+        eVar.a();
+    }
+
+    public final Object clone() {
+        i iVar = new i();
+        j jVar = iVar.d;
+        jVar.getClass();
+        j jVar2 = this.d;
+        jVar.f4337a = jVar2.f4337a;
+        jVar.f4339b = jVar2.f4339b;
+        jVar.f4341c = jVar2.f4341c;
+        jVar.d = jVar2.d;
+        jVar.f4344e = jVar2.f4344e;
+        jVar.f4346f = jVar2.f4346f;
+        jVar.f4348g = jVar2.f4348g;
+        jVar.h = jVar2.h;
+        jVar.i = jVar2.i;
+        jVar.f4352j = jVar2.f4352j;
+        jVar.f4354k = jVar2.f4354k;
+        jVar.f4356l = jVar2.f4356l;
+        jVar.f4358m = jVar2.f4358m;
+        jVar.f4360n = jVar2.f4360n;
+        jVar.f4361o = jVar2.f4361o;
+        jVar.f4363p = jVar2.f4363p;
+        jVar.f4364q = jVar2.f4364q;
+        jVar.f4365r = jVar2.f4365r;
+        jVar.f4366s = jVar2.f4366s;
+        jVar.f4367t = jVar2.f4367t;
+        jVar.f4368u = jVar2.f4368u;
+        jVar.f4369v = jVar2.f4369v;
+        jVar.f4370w = jVar2.f4370w;
+        jVar.f4371x = jVar2.f4371x;
+        jVar.f4372y = jVar2.f4372y;
+        jVar.f4373z = jVar2.f4373z;
+        jVar.f4312A = jVar2.f4312A;
+        jVar.f4313B = jVar2.f4313B;
+        jVar.f4314C = jVar2.f4314C;
+        jVar.f4315D = jVar2.f4315D;
+        jVar.f4316E = jVar2.f4316E;
+        jVar.F = jVar2.F;
+        jVar.f4317G = jVar2.f4317G;
+        jVar.f4318H = jVar2.f4318H;
+        jVar.f4319I = jVar2.f4319I;
+        jVar.f4320J = jVar2.f4320J;
+        jVar.f4321K = jVar2.f4321K;
+        jVar.f4322L = jVar2.f4322L;
+        jVar.f4323M = jVar2.f4323M;
+        jVar.f4324N = jVar2.f4324N;
+        jVar.f4325O = jVar2.f4325O;
+        jVar.f4326P = jVar2.f4326P;
+        jVar.f4327Q = jVar2.f4327Q;
+        jVar.f4328R = jVar2.f4328R;
+        jVar.f4329S = jVar2.f4329S;
+        jVar.f4330T = jVar2.f4330T;
+        jVar.f4331U = jVar2.f4331U;
+        jVar.f4332V = jVar2.f4332V;
+        jVar.f4333W = jVar2.f4333W;
+        jVar.f4334X = jVar2.f4334X;
+        jVar.f4335Y = jVar2.f4335Y;
+        jVar.f4336Z = jVar2.f4336Z;
+        jVar.f4338a0 = jVar2.f4338a0;
+        jVar.f4340b0 = jVar2.f4340b0;
+        jVar.f4342c0 = jVar2.f4342c0;
+        jVar.f4343d0 = jVar2.f4343d0;
+        jVar.f4345e0 = jVar2.f4345e0;
+        jVar.f4347f0 = jVar2.f4347f0;
+        jVar.f4349g0 = jVar2.f4349g0;
+        jVar.f4350h0 = jVar2.f4350h0;
+        jVar.f4355k0 = jVar2.f4355k0;
+        int[] iArr = jVar2.f4351i0;
+        if (iArr == null || jVar2.f4353j0 != null) {
+            jVar.f4351i0 = null;
+        } else {
+            jVar.f4351i0 = Arrays.copyOf(iArr, iArr.length);
+        }
+        jVar.f4353j0 = jVar2.f4353j0;
+        jVar.f4357l0 = jVar2.f4357l0;
+        jVar.f4359m0 = jVar2.f4359m0;
+        jVar.n0 = jVar2.n0;
+        jVar.f4362o0 = jVar2.f4362o0;
+        k kVar = iVar.f4308c;
+        kVar.getClass();
+        k kVar2 = this.f4308c;
+        kVar2.getClass();
+        kVar.f4375a = kVar2.f4375a;
+        kVar.f4377c = kVar2.f4377c;
+        kVar.f4378e = kVar2.f4378e;
+        kVar.d = kVar2.d;
+        l lVar = iVar.f4307b;
+        l lVar2 = this.f4307b;
+        lVar.f4381a = lVar2.f4381a;
+        lVar.f4383c = lVar2.f4383c;
+        lVar.d = lVar2.d;
+        lVar.f4382b = lVar2.f4382b;
+        m mVar = iVar.f4309e;
+        mVar.getClass();
+        m mVar2 = this.f4309e;
+        mVar2.getClass();
+        mVar.f4385a = mVar2.f4385a;
+        mVar.f4386b = mVar2.f4386b;
+        mVar.f4387c = mVar2.f4387c;
+        mVar.d = mVar2.d;
+        mVar.f4388e = mVar2.f4388e;
+        mVar.f4389f = mVar2.f4389f;
+        mVar.f4390g = mVar2.f4390g;
+        mVar.h = mVar2.h;
+        mVar.i = mVar2.i;
+        mVar.f4391j = mVar2.f4391j;
+        mVar.f4392k = mVar2.f4392k;
+        mVar.f4393l = mVar2.f4393l;
+        mVar.f4394m = mVar2.f4394m;
+        iVar.f4306a = this.f4306a;
+        return iVar;
+    }
+}
