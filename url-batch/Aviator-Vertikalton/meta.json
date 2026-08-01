@@ -1,0 +1,60 @@
+{
+  "app_id": "com.fortuneink.neonpad",
+  "title": "Aviator",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/-bajQej9CNWrghToKXSRvl9k5FzAo4yuScoDf_Lu0H5fDR-RECjt3hmVM-HI3vqSug-voI6GTyqvoCPAlvkcEQ",
+  "url": "https://play.google.com/store/apps/details?id=com.fortuneink.neonpad&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Aviator - Create neon art with colors, brushes, and save to gallery",
+  "keyword": "url-batch",
+  "folder": "Aviator-Vertikalton",
+  "path": "url-batch/Aviator-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.fortuneink.neonpad-1-asset.apk",
+    "com.fortuneink.neonpad-1-config.en.apk",
+    "com.fortuneink.neonpad-1-config.lt.apk",
+    "com.fortuneink.neonpad-1-config.ru.apk",
+    "com.fortuneink.neonpad-1-config.xxhdpi.apk",
+    "com.fortuneink.neonpad-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Aviator-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.fortuneink.neonpad...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.fortuneink.neonpad...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.fortuneink.neonpad ─╮\n│ Aviator                  │\n│ 1.0  (vc 1)              │\n╰──────────────────────────╯\n\nDownloading 6 files  (6.4 MB)\n  com.fortuneink.neonpad-1.apk               ━━━━━━━ 100% 3.9/3.9 23.3   0:00:00\n                                                          MB      MB/s          \n  com.fortuneink.neonpad-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 1.0    0:00:00\n                                                          kB      MB/s          \n  com.fortuneink.neonpad-1-asset.apk         ━━━━━━━ 100% 2.6/2.6 14.5   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fortuneink.neonpad-1.apk               │  3.8 MB │\n│ com.fortuneink.neonpad-1-config.en.apk     │ 44.4 KB │\n│ com.fortuneink.neonpad-1-config.lt.apk     │ 28.4 KB │\n│ com.fortuneink.neonpad-1-config.ru.apk     │ 28.4 KB │\n│ com.fortuneink.neonpad-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.fortuneink.neonpad-1-asset.apk         │  3.8 MB │\n└────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.fortuneink.neonpad ─╮\n│ Aviator                  │\n│ 1.0  (vc 1)              │\n╰──────────────────────────╯\n\nDownloading 6 files  (6.4 MB)\n  com.fortuneink.neonpad-1.apk               ━━━━━━━ 100% 3.9/3.9 23.3   0:00:00\n                                                          MB      MB/s          \n  com.fortuneink.neonpad-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?      0:00:00\n                                                          kB                    \n  com.fortuneink.neonpad-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 1.0    0:00:00\n                                                          kB      MB/s          \n  com.fortuneink.neonpad-1-asset.apk         ━━━━━━━ 100% 2.6/2.6 14.5   0:00:00\n                                                          MB      MB/s          \n\n                    Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.fortuneink.neonpad-1.apk               │  3.8 MB │\n│ com.fortuneink.neonpad-1-config.en.apk     │ 44.4 KB │\n│ com.fortuneink.neonpad-1-config.lt.apk     │ 28.4 KB │\n│ com.fortuneink.neonpad-1-config.ru.apk     │ 28.4 KB │\n│ com.fortuneink.neonpad-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.fortuneink.neonpad-1-asset.apk         │  3.8 MB │\n└────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
