@@ -74,5 +74,129 @@
   ],
   "stdout": "╭─ com.manholeroboramprush.cardestroy ─╮\n│ Chicken Road Slot                    │\n│ 2.0  (vc 2)                          │\n╰──────────────────────────────────────╯\n\nDownloading 2 files  (66.8 MB)\n  com.manholeroboramprush.cardestroy-2.apk       ━━━━━━ 100% 36.5… 12.0   0:00:…\n                                                             MB    MB/s         \n  com.manholeroboramprush.cardestroy-2-asset.apk ━━━━━━ 100% 33.5… 15.3   0:00:…\n                                                             MB    MB/s         \n\n                      Downloaded files                      \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                           ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.manholeroboramprush.cardestroy-2.apk       │ 34.8 MB │\n│ com.manholeroboramprush.cardestroy-2-asset.apk │ 34.8 MB │\n└────────────────────────────────────────────────┴─────────┘\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : aurora.oss.fiftyone@gmail.com         │\n│ GSF ID : 3686f49f149e5c24                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Chicken Road Slot (пакет com.manholeroboramprush.cardestroy, версия 2.0, разработчик DAMOS)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.4.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Cloud Messaging, Firebase Installations, Google DataTransport (CCT), AppsFlyer, OneSignal"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, com.manholeroboramprush.cardestroy.permission.C2D_MESSAGE, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_NETWORK_STATE, com.google.android.fins ky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, androi…"
+      },
+      {
+        "param": "Libraries",
+        "value": "Jetpack Compose (compose-ui / foundation / material 1.11.2, material3 1.4.0, material-icons 1.7.8), androidx.activity / activity-compose 1.13.0, androidx.navigation-compose 2.9.8, androidx.lifecycle 2.10.0 (viewmodel-compose, runtime-compose, process, service), androidx.room 2.8.4 (локальная база рекордов high_scores), androidx.datastore-preferences 1.2.1, androidx.work (WorkManager) 2.8.1, androidx.appcompat 1.7.1, androidx.core / core-ktx 1.18.0, androidx.browser 1.3.0 (Custom Tabs), androidx.window 1.5.0, androidx.startup 1.1.1, androidx.profileinstaller 1.4.0, androidx.privacysandbox.ads (ads-adservices 1.1.0-beta11), androidx.emoji2 1.4.0, androidx.fragment 1.8.9, Kotlin stdlib 2.4.0, kotlinx-coroutines 1.11.0, kotlinx-serialization-json, Koin (внедрение зависимостей), Firebase Analytics 23.2.0, Firebase Cloud Messaging / Installations / Datatransport (CCT), Google Play Services: basement 18.9.0, base 18.9.0, tasks 18.4.0, stats 17.0.2, ads-identifier 18.2.0, cloud-messaging 17.4.0, measurement 23.2.0, Google Play Integrity 1.3.0 + Play Core, com.pairip (licensecheck, защита подписи Google Play), AppsFlyer SDK 6.17.5, OneSignal SDK 5.6.2"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "land.roboramprush.com, policy.roboramprush.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Файл настроек «dvnskj», ключ «dsvjnvsd»: пока ключа нет, приложение считает человека новым и показывает экран-проверку «I am not a robot» со ссылкой наружу; после возврата в приложение по ссылке roboramprush://road в этот ключ записывается случайный идентификатор (UUID), и дальше всегда открывается обычное приложение. Дополнительно свои хранилища ведут AppsFlyer (appsflyer-data), OneSignal и Firebase, а рекорды игры лежат в базе high_scores."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "NotRobot, ToNotARobot, onNotARobotClick, notarobot_bg, notarobot_btn, I am not a robot, land (land.roboramprush.com), rodfl, fokfl, kpopdid, ffb, cvxdy, dvnskj, dsvjnvsd, roboramprush://road, Slot (Chicken Road Slot), redirect, clickid, click_id, 18 years and older"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "land.roboramprush.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "policy.roboramprush.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      }
+    ],
+    "collected_data": [
+      "рекламный номер устройства → служебный номер телефона для рекламы (Google",
+      "Advertising ID). Приложение берёт его у сервисов Google и отправляет сразу в двух видах: в",
+      "поле «fokfl» — как есть, с чёрточками, и в поле «kpopdid» — тот же номер без чёрточек. По",
+      "нему сервер отличает один телефон от другого и узнаёт человека при повторном заходе.",
+      "номер установки из рекламной системы AppsFlyer → уникальный номер именно этой",
+      "установки программы на этом телефоне (поле «rodfl»). Он нужен, чтобы связать человека с",
+      "тем объявлением или ссылкой, по которой он поставил приложение, и понять,",
+      "стр. 17",
+      "Chicken Road Slot — com.manholeroboramprush.cardestroy",
+      "«купленный» это трафик или случайный.",
+      "версия Android → какая версия системы стоит на телефоне (поле «ffb»). По ней на стороне",
+      "сервера легко отличить живой современный телефон от старой тестовой или виртуальной",
+      "машины.",
+      "модель телефона → марка и модель устройства, например «Pixel 9a» (поле «cvxdy»). Тоже",
+      "помогает отделить настоящих людей от проверяющих роботов, которые часто ходят с",
+      "одинаковых или необычных моделей.",
+      "адрес выхода в интернет и данные браузера → эти сведения приложение специально не",
+      "собирает, но они уходят автоматически: ссылка открывается в обычном браузере",
+      "телефона, поэтому принимающая сторона видит IP-адрес (а значит страну и оператора) и",
+      "то, как представился браузер.",
+      "тот же рекламный номер уходит и в систему рассылки уведомлений OneSignal → он",
+      "записывается там как постоянное имя пользователя (без чёрточек), поэтому позже этому",
+      "же человеку можно слать push-сообщения и узнавать его между запусками."
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• рекламный номер устройства → служебный номер телефона для рекламы (Google\n• Advertising ID). Приложение берёт его у сервисов Google и отправляет сразу в двух видах: в\n• поле «fokfl» — как есть, с чёрточками, и в поле «kpopdid» — тот же номер без чёрточек. По\n• нему сервер отличает один телефон от другого и узнаёт человека при повторном заходе.\n• номер установки из рекламной системы AppsFlyer → уникальный номер именно этой\n• установки программы на этом телефоне (поле «rodfl»). Он нужен, чтобы связать человека с\n• тем объявлением или ссылкой, по которой он поставил приложение, и понять,\n• стр. 17\n• Chicken Road Slot — com.manholeroboramprush.cardestroy\n• «купленный» это трафик или случайный.\n• версия Android → какая версия системы стоит на телефоне (поле «ffb»). По ней на стороне\n• сервера легко отличить живой современный телефон от старой тестовой или виртуальной\n• машины.\n• модель телефона → марка и модель устройства, например «Pixel 9a» (поле «cvxdy»). Тоже\n• помогает отделить настоящих людей от проверяющих роботов, которые часто ходят с\n• одинаковых или необычных моделей.\n• адрес выхода в интернет и данные браузера → эти сведения приложение специально не\n• собирает, но они уходят автоматически: ссылка открывается в обычном браузере\n• телефона, поэтому принимающая сторона видит IP-адрес (а значит страну и оператора) и\n• то, как представился браузер.\n• тот же рекламный номер уходит и в систему рассылки уведомлений OneSignal → он\n• записывается там как постоянное имя пользователя (без чёрточек), поэтому позже этому\n• же человеку можно слать push-сообщения и узнавать его между запусками.\n\nКак собираются: Всё происходит на первом же запуске, на экране заставки с надписью «Important Notice» про возраст 18+. Заставка сразу спрашивает у сервисов Google рекламный номер устройства (в фоновом потоке, чтобы не подвешивать картинку), берёт номер установки у встроенной системы AppsFlyer и читает версию системы и модель телефона прямо из настроек Android. Никаких окон с вопросами «разрешить?» при этом не появляется: все четыре сведения доступны программе без спроса, поэтому человек ничего не замечает — он видит только заставку примерно на одну секу…"
+  }
 }

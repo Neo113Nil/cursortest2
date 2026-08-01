@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@android:drawable/ic_menu_manage"
+        android:id="@+id/nav_utility"
+        android:title="@string/menu_utility"/>
+    <item
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:id="@+id/nav_info"
+        android:title="@string/menu_info"/>
+    <item
+        android:icon="@android:drawable/ic_menu_help"
+        android:id="@+id/nav_quiz"
+        android:title="@string/menu_quiz"/>
+    <item
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:id="@+id/nav_stats"
+        android:title="@string/menu_stats"/>
+    <item
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:id="@+id/nav_game"
+        android:title="@string/menu_game"/>
+</menu>

@@ -1,0 +1,36 @@
+{
+  "app_id": "com.oriondriftchasers.arordrft",
+  "title": "Chicken Road 2",
+  "developer": "LIVENTORH",
+  "developer_id": "LIVENTORH",
+  "icon": "https://play-lh.googleusercontent.com/80b0rTXd1iQsCzIZhEOjv0ZDA-poI5pOgUeUEZd_wzAvzkgst7UyvMsagej_cyVoi9JykVfduljetTyt_ZF-sA",
+  "url": "https://play.google.com/store/apps/details?id=com.oriondriftchasers.arordrft&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Feb 5, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to the World of Chicken Road 2!",
+  "keyword": "url-batch",
+  "folder": "Chicken Road 2-LIVENTORH",
+  "path": "url-batch/Chicken Road 2-LIVENTORH",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.oriondriftchasers.arordrft.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken Road 2-LIVENTORH",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.oriondriftchasers.arordrft...\ncom.oriondriftchasers.arordrft downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.oriondriftchasers.arordrft...\ncom.oriondriftchasers.arordrft downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

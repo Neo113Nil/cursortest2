@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/star_white"
+        android:id="@+id/game_title_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/game_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <HorizontalScrollView
+        android:id="@+id/game_navigation_scroll"
+        android:scrollbars="none"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_title_header">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_dashboard_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="�� Dashboard"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/energy_blue"/>
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_garage_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="�� Garage"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/energy_blue"/>
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_races_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="�� Races"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/energy_blue"/>
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_upgrades_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚡ Upgrades"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/energy_blue"/>
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_shop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="�� Shop"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/energy_blue"/>
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/game_missions_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="�� Missions"
+                android:backgroundTint="@color/energy_blue"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <FrameLayout
+        android:id="@+id/game_content_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game_navigation_scroll"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
