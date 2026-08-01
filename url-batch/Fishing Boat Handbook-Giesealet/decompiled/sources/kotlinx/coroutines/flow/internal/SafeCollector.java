@@ -59,7 +59,8 @@ public final class SafeCollector<T> extends ContinuationImpl implements FlowColl
     }
 
     @Override // kotlin.coroutines.jvm.internal.ContinuationImpl, kotlin.coroutines.Continuation
-    public CoroutineContext getContext() {
+    /* renamed from: getContext */
+    public CoroutineContext get$context() {
         CoroutineContext coroutineContext = this.lastEmissionContext;
         return coroutineContext == null ? EmptyCoroutineContext.INSTANCE : coroutineContext;
     }
@@ -68,7 +69,7 @@ public final class SafeCollector<T> extends ContinuationImpl implements FlowColl
     public Object invokeSuspend(Object result) {
         Throwable m586exceptionOrNullimpl = Result.m586exceptionOrNullimpl(result);
         if (m586exceptionOrNullimpl != null) {
-            this.lastEmissionContext = new DownstreamExceptionContext(m586exceptionOrNullimpl, getContext());
+            this.lastEmissionContext = new DownstreamExceptionContext(m586exceptionOrNullimpl, get$context());
         }
         Continuation<? super Unit> continuation = this.completion;
         if (continuation != null) {
@@ -91,19 +92,19 @@ public final class SafeCollector<T> extends ContinuationImpl implements FlowColl
             }
             return emit == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? emit : Unit.INSTANCE;
         } catch (Throwable th) {
-            this.lastEmissionContext = new DownstreamExceptionContext(th, continuation.getContext());
+            this.lastEmissionContext = new DownstreamExceptionContext(th, continuation.get$context());
             throw th;
         }
     }
 
     private final Object emit(Continuation<? super Unit> uCont, T value) {
         Function3 function3;
-        CoroutineContext context = uCont.getContext();
-        JobKt.ensureActive(context);
-        CoroutineContext coroutineContext = this.lastEmissionContext;
-        if (coroutineContext != context) {
-            checkContext(context, coroutineContext, value);
-            this.lastEmissionContext = context;
+        CoroutineContext coroutineContext = uCont.get$context();
+        JobKt.ensureActive(coroutineContext);
+        CoroutineContext coroutineContext2 = this.lastEmissionContext;
+        if (coroutineContext2 != coroutineContext) {
+            checkContext(coroutineContext, coroutineContext2, value);
+            this.lastEmissionContext = coroutineContext;
         }
         this.completion = uCont;
         function3 = SafeCollectorKt.emitFun;

@@ -32,5 +32,117 @@
   ],
   "stdout": "Downloading com.getfinesylabusfromtab...\ncom.getfinesylabusfromtab downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "pornhub (внутреннее имя Bornbub, пакет com.getfinesylabusfromtab)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.READ_EXTERNAL_STORAGE, android.permission.SYSTEM_ALERT_WINDOW, android.permission.VIBRATE, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.ACCESS_NETWORK_STATE, com.getfinesylabusfromtab.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Expo SDK 54.0.0, React Native 0.81.4 (Hermes, New Architecture / Fabric), Kotlin 2.1.20, kotlinx-coroutines (core, android), expo-modules-core, expo-router, expo-updates, expo-web-browser, expo-splash-screen, expo-linking, expo-constants, expo-asset, expo-font, expo-haptics, expo-keep-awake, expo-blur, expo-linear-gradient, expo-system-ui, expo-file-system, expo-fetch, expo-manifests, expo-json-utils, expo-structured-headers, expo-eas-client, react-native-webview (RNCWebView), @react-native-async-storage/async-storage, react-native-reanimated, react-native-worklets, react-native-gesture-handler, react-native-screens, react-native-safe-area-context, react-native-svg + AndroidSVG (caverock), react-native-get-random-values (org.linusu), AndroidX: AppCompat 1.7, Core / Core-KTX, Core-SplashScreen, Activity, Fragment, Lifecycle, SavedState, Loader, Room + SQLite, Startup, ProfileInstaller, Emoji2, RecyclerView, ViewPager / ViewPager2, SwipeRefreshLayout, SlidingPaneLayout, CoordinatorLayout, DrawerLayout, CardView, CustomView, CursorAdapter, DocumentFile, DynamicAnimation, ExifInterface, Autofill, Interpolator, LocalBroadcastManager, Media, Print, Transition, Tracing, VectorDrawable, Ve…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "dev.expo.EASSharedPreferences — ключ eas-client-id: постоянный уникальный номер установки, который создаётся при первом запуске и уходит на сервер в каждом запросе обновления; dev.expo.updates.prefs — локальное переопределение настроек обновлений; expo_ui_preferences — вид системных панелей; expo.modules.permissions.asked — какие разрешения уже спрашивали; expo.modules.kotlin.PersistentDataManager — служебные данные. Игровой прогресс хранится отдельно, в AsyncStorage: winner_slice_stats, winner_slice_settings, winner_slice_achievements; скачанные версии кода — в собственной базе expo-updates."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "EXPO_UPDATES_CHECK_ON_LAUNCH = ALWAYS, EX_UPDATES_ANDROID_DELAY_LOAD_APP, expo-channel-name = production, expo-server-defined-headers, expo-manifest-filters, rollBackToEmbedded, noUpdateAvailable, checkForUpdateAsync, fetchUpdateAsync, reloadAsync, redirect (applyRedirects, setRedirect, getNameFromRedirectPath), whitelist / allowlist (originWhitelist, defaultOriginWhitelist, addWhitelistedNativeProps), loadUrl, openURL, canOpenURL, webview url (source.uri), bridge, license check (com.pairip.licensecheck, LicenseActivity), bornbub (схема ссылок и внутреннее имя, имитирующие бренд pornhub)"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      }
+    ],
+    "collected_data": [
+      "стр. 5",
+      "pornhub — com.getfinesylabusfromtab",
+      "тип телефонной системы → приложение сообщает, что запрос пришёл именно с",
+      "Android-телефона (в запросе это пометка «Expo-Platform: android»); по ней сервер понимает,",
+      "какой набор кода можно этому человеку отдать",
+      "постоянный уникальный номер установки → служебный номер, который приложение",
+      "придумывает себе при первом же запуске и навсегда сохраняет в своей памяти (пометка",
+      "«EAS-Client-ID», хранится в файле настроек dev.expo.EASSharedPreferences под ключом",
+      "eas-client-id). Это фактически метка устройства: по ней сервер отличает один телефон от",
+      "другого и может стабильно выдавать конкретному телефону конкретный вариант",
+      "приложения",
+      "версия начинки приложения → номер «сменного содержимого», под которое собрана",
+      "эта установка (пометка «Expo-Runtime-Version», здесь 1.0.3); сервер по нему выбирает",
+      "подходящий пакет и не присылает несовместимый",
+      "название канала раздачи → имя «полки» на сервере, с которой этому телефону берут",
+      "содержимое (пометка «expo-channel-name: production», она вшита в настройки приложения).",
+      "Владелец может держать на разных полках разное содержимое и переключать их без",
+      "обновления приложения в магазине",
+      "номер той версии кода, которая сейчас работает → пометка «Expo-Current-Update-ID»;",
+      "по ней сервер видит, что человеку уже успели подсунуть, и не повторяется",
+      "номер версии кода, вшитой в установочный файл → пометка",
+      "«Expo-Embedded-Update-ID»; сервер видит, находится телефон на «заводском» (магазинном)",
+      "содержимом или уже на подменённом",
+      "номера версий кода, которые на этом телефоне не смогли запуститься → пометка",
+      "«Expo-Recent-Failed-Update-IDs»; сервер узнаёт, что именно у этого человека сломалось, и",
+      "может прислать другой вариант",
+      "текст последней аварии приложения → первые 1024 символа сообщения об ошибке из",
+      "последнего падения (пометка «Expo-Fatal-Error»); это, по сути, кусок внутреннего журнала",
+      "телефона, который уходит наружу",
+      "произвольные дополнительные пометки → набор пар «название — значение», который",
+      "приложение хранит у себя и подставляет в запрос (пометка «Expo-Extra-Params»); состав",
+      "этих пометок задаётся не человеком, а стороной, которая управляет содержимым",
+      "дополнительные поля, которые ранее назначил сам сервер → самое важное: в",
+      "предыдущем ответе сервер может сказать «в следующий раз присылай мне ещё вот эти",
+      "сведения» (пометка «expo-server-defined-headers»). Приложение сохраняет такой список у",
+      "себя и послушно добавляет его в каждый следующий запрос, то есть перечень собираемых",
+      "данных можно менять удалённо, уже после установки",
+      "служебные пометки способа связи → Accept, «Expo-Protocol-Version: 1»,",
+      "«Expo-API-Version: 1», «Expo-Updates-Environment: BARE», «Expo-JSON-Error: true», а при",
+      "включённой подписи ещё и «expo-expect-signature»; сами по себе они безобидны и нужны,"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• стр. 5\n• pornhub — com.getfinesylabusfromtab\n• тип телефонной системы → приложение сообщает, что запрос пришёл именно с\n• Android-телефона (в запросе это пометка «Expo-Platform: android»); по ней сервер понимает,\n• какой набор кода можно этому человеку отдать\n• постоянный уникальный номер установки → служебный номер, который приложение\n• придумывает себе при первом же запуске и навсегда сохраняет в своей памяти (пометка\n• «EAS-Client-ID», хранится в файле настроек dev.expo.EASSharedPreferences под ключом\n• eas-client-id). Это фактически метка устройства: по ней сервер отличает один телефон от\n• другого и может стабильно выдавать конкретному телефону конкретный вариант\n• приложения\n• версия начинки приложения → номер «сменного содержимого», под которое собрана\n• эта установка (пометка «Expo-Runtime-Version», здесь 1.0.3); сервер по нему выбирает\n• подходящий пакет и не присылает несовместимый\n• название канала раздачи → имя «полки» на сервере, с которой этому телефону берут\n• содержимое (пометка «expo-channel-name: production», она вшита в настройки приложения).\n• Владелец может держать на разных полках разное содержимое и переключать их без\n• обновления приложения в магазине\n• номер той версии кода, которая сейчас работает → пометка «Expo-Current-Update-ID»;\n• по ней сервер видит, что человеку уже успели подсунуть, и не повторяется\n• номер версии кода, вшитой в установочный файл → пометка\n• «Expo-Embedded-Update-ID»; сервер видит, находится телефон на «заводском» (магазинном)\n• содержимом или уже на подменённом\n• номера версий кода, которые на это…"
+  },
+  "cloaking": "да"
 }

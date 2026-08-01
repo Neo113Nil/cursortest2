@@ -53,11 +53,9 @@ public final class DispatchedContinuation<T> extends DispatchedTask<T> implement
     /* JADX WARN: Multi-variable type inference failed */
     public DispatchedContinuation(CoroutineDispatcher coroutineDispatcher, Continuation<? super T> continuation) {
         super(-1);
-        Symbol symbol;
         this.dispatcher = coroutineDispatcher;
         this.continuation = continuation;
-        symbol = DispatchedContinuationKt.UNDEFINED;
-        this._state = symbol;
+        this._state = DispatchedContinuationKt.UNDEFINED;
         this.countOrElement = ThreadContextKt.threadContextElements(getContext());
         this._reusableCancellableContinuation = null;
     }
@@ -93,17 +91,11 @@ public final class DispatchedContinuation<T> extends DispatchedTask<T> implement
 
     @Override // kotlinx.coroutines.DispatchedTask
     public Object takeState$kotlinx_coroutines_core() {
-        Symbol symbol;
-        Symbol symbol2;
         Object obj = this._state;
-        if (DebugKt.getASSERTIONS_ENABLED()) {
-            symbol2 = DispatchedContinuationKt.UNDEFINED;
-            if (obj == symbol2) {
-                throw new AssertionError();
-            }
+        if (DebugKt.getASSERTIONS_ENABLED() && obj == DispatchedContinuationKt.UNDEFINED) {
+            throw new AssertionError();
         }
-        symbol = DispatchedContinuationKt.UNDEFINED;
-        this._state = symbol;
+        this._state = DispatchedContinuationKt.UNDEFINED;
         return obj;
     }
 
