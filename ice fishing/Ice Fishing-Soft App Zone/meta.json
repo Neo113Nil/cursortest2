@@ -1,0 +1,61 @@
+{
+  "app_id": "com.icewinter.flow.winter.icecatch",
+  "title": "Ice Fishing",
+  "developer": "Soft App Zone",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/Y_eohwCAEZa4JEBbSbwQnDSLM2g0m2u2vGYGh3LoiNN6Ccat6904wN59BE0CPIK2Rlq0blo19rmO-eYZu1eM-w",
+  "url": "https://play.google.com/store/apps/details?id=com.icewinter.flow.winter.icecatch&hl=en&gl=us",
+  "keyword": "ice fishing",
+  "developer_id": "Soft++App+Zone",
+  "released": "",
+  "updated": "Jul 29, 2026",
+  "version": "Varies with device",
+  "summary": "Catch fish, manage energy, unlock modes!",
+  "folder": "Ice Fishing-Soft App Zone",
+  "path": "ice fishing/Ice Fishing-Soft App Zone",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.icewinter.flow.winter.icecatch-3-asset.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.en.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.lt.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.ru.apk",
+    "com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk",
+    "com.icewinter.flow.winter.icecatch-3.apk"
+  ],
+  "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-Soft App Zone",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icewinter.flow.winter.icecatch...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.icewinter.flow.winter.icecatch...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.icewinter.flow.winter.icecatch ─╮\n│ Ice Fishing                          │\n│ 3.0  (vc 3)                          │\n╰──────────────────────────────────────╯\n\nDownloading 7 files  (7.3 MB)\n  com.icewinter.flow.winter.icecatch-3.apk                  ━━━ 100% 3.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk ━━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.en.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.lt.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.ru.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    ━━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-asset.apk            ━━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icewinter.flow.winter.icecatch-3.apk                  │  3.7 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk │  1.3 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.en.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.lt.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.ru.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    │ 16.3 KB │\n│ com.icewinter.flow.winter.icecatch-3-asset.apk            │  3.7 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n"
+    }
+  ],
+  "stdout": "╭─ com.icewinter.flow.winter.icecatch ─╮\n│ Ice Fishing                          │\n│ 3.0  (vc 3)                          │\n╰──────────────────────────────────────╯\n\nDownloading 7 files  (7.3 MB)\n  com.icewinter.flow.winter.icecatch-3.apk                  ━━━ 100% 3.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk ━━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n  com.icewinter.flow.winter.icecatch-3-config.en.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.lt.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.ru.apk        ━━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    ━━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.icewinter.flow.winter.icecatch-3-asset.apk            ━━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n\n                           Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.icewinter.flow.winter.icecatch-3.apk                  │  3.7 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.arm64_v8a.apk │  1.3 MB │\n│ com.icewinter.flow.winter.icecatch-3-config.en.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.lt.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.ru.apk        │ 20.2 KB │\n│ com.icewinter.flow.winter.icecatch-3-config.xxhdpi.apk    │ 16.3 KB │\n│ com.icewinter.flow.winter.icecatch-3-asset.apk            │  3.7 MB │\n└───────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
+  "exit_code": 0
+}

@@ -1,0 +1,11 @@
+package com.google.android.datatransport;
+
+/* compiled from: r8-map-id-548aee5da8eff46005463ebe9e9e6d0246428ebf3153b8af4dadfbd57572a0a1 */
+/* loaded from: classes.dex */
+public abstract class WinterFlowStackDebug {
+    public static final /* synthetic */ int WinterFlowRouterStructure = 0;
+
+    static {
+        WinterFlowServiceOrchestration.WinterFlowHookDataSource(0, 0, 5);
+    }
+}
