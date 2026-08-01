@@ -17,7 +17,8 @@ public final class PersistentHashMapValues<K, V> extends AbstractCollection<V> i
     }
 
     @Override // kotlin.collections.AbstractCollection
-    public int getSize() {
+    /* renamed from: getSize */
+    public int get_size() {
         return this.map.size();
     }
 

@@ -9,6 +9,7 @@
     "imp.startappservice.com",
     "infoevent.startappservice.com",
     "opentelemetry.io",
+    "passport.yandex.com",
     "req.startappservice.com",
     "startapp.com",
     "startup.mobile.yandex.net",
@@ -405,20 +406,22 @@
           "Cisco Umbrella: 48091"
         ],
         "creation_date": 1323712278,
-        "last_modification_date": 1785523324,
-        "last_analysis_date": 1785522022,
+        "last_modification_date": 1785598091,
+        "last_analysis_date": 1785594503,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2011-12-12T17:51:18Z\nDNSSEC: unsigned\nDomain Name: MOBILEADEXCHANGE.NET\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P05.NSONE.NET\nName Server: DNS2.P05.NSONE.NET\nName Server: DNS3.P05.NSONE.NET\nName Server: DNS4.P05.NSONE.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1691748794_DOMAIN_NET-VRSN\nRegistry Expiry Date: 2026-12-12T17:51:18Z\nUpdated Date: 2024-12-13T13:11:08Z",
         "dns_records": [
           "CNAME adsmetadata.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
+          "CNAME adsmetadata.startappelb.com",
+          "A 150.136.77.254",
           "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
-          "A 129.213.103.0",
+          "CNAME adsmetadata.startappelb.com",
+          "CNAME adsmetadata.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
           "A 132.145.167.65",
-          "CNAME adsmetadata.startappelb.com",
-          "CNAME adsmetadata.startappelb.com",
-          "A 150.136.77.254"
+          "A 129.213.103.0",
+          "CNAME adsmetadata.startappelb.com"
         ],
         "https_subject": {
           "O": "Acme Co",
@@ -1227,25 +1230,24 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 10311"
+          "Cisco Umbrella: 9751"
         ],
         "creation_date": 1382346862,
-        "last_modification_date": 1785523417,
-        "last_analysis_date": 1785522022,
+        "last_modification_date": 1785598091,
+        "last_analysis_date": 1785594643,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Domain Name: STARTAPPSERVICE.COM\nRegistry Domain ID: 1831888533_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2017-10-22T11:20:45Z\nCreation Date: 2013-10-21T09:14:22Z\nRegistry Expiry Date: 2018-10-21T09:14:22Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: NS1.P05.DYNECT.NET\nName Server: NS2.P05.DYNECT.NET\nName Server: NS3.P05.DYNECT.NET\nName Server: NS4.P05.DYNECT.NET\nDNSSEC: unsigned\nUpdated Date: 2017-10-22T11:20:44Z\nRegistrar Registration Expiration Date: 2018-10-21T09:14:22Z\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistrant Country: US",
         "dns_records": [
-          "A 132.145.167.65",
           "CNAME adsmetadata.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
-          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
-          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
           "CNAME adsmetadata.startappelb.com",
-          "A 150.136.77.254",
           "A 129.213.103.0",
-          "CNAME adsmetadata.startappelb.com"
+          "A 150.136.77.254",
+          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
+          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
+          "A 132.145.167.65"
         ],
         "https_subject": {
           "CN": "metadata-service.startappservice.com"
@@ -2053,8 +2055,8 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1753401600,
-        "last_modification_date": 1785523474,
-        "last_analysis_date": 1785522767,
+        "last_modification_date": 1785597911,
+        "last_analysis_date": 1785596910,
         "registrar": "нет",
         "whois": "Administrative city: REDACTED FOR PRIVACY\nAdministrative country: REDACTED FOR PRIVACY\nAdministrative state: REDACTED FOR PRIVACY\nCreate date: 2025-07-25 00:00:00\nDomain name: iapkit.com\nDomain registrar id: 69\nDomain registrar url: http://tucowsdomains.com\nExpiry date: 2026-07-25 00:00:00\nName server 1: ns1.vercel-dns.com\nName server 2: ns2.vercel-dns.com\nQuery time: 2025-07-26 09:49:17\nRegistrant city: 1f8f4166599d23ee\nRegistrant company: 1f8f4166599d23ee\nRegistrant country: United States\nRegistrant email: 3ef12fa6473ac415s@\nRegistrant fax: 31d1617d95c9a75c\nRegistrant name: 1f8f4166599d23ee\nRegistrant phone: 31d1617d95c9a75c\nRegistrant state: b1952dfc047df18a\nRegistrant zip: 1f8f4166599d23ee\nTechnical city: REDACTED FOR PRIVACY\nTechnical country: REDACTED FOR PRIVACY\nTechnical state: REDACTED FOR PRIVACY\nUpdate date: 2025-07-25 00:00:00",
         "dns_records": [
@@ -2866,21 +2868,21 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1684413845,
-        "last_modification_date": 1785523556,
-        "last_analysis_date": 1785503434,
+        "last_modification_date": 1785598180,
+        "last_analysis_date": 1785589838,
         "registrar": "SafeNames Ltd.",
         "whois": "Admin City: REDACTED\nAdmin Country: REDACTED\nAdmin Organization: REDACTED\nAdmin Postal Code: REDACTED\nAdmin State/Province: REDACTED\nCreation Date: 2023-05-18T12:44:05Z\nDNSSEC: unsigned\nDomain Name: appmetrica.io\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: ns3.yandex.ru\nName Server: ns4.yandex.ru\nRegistrant City: 3495bcf1839c6374\nRegistrant Country: GB\nRegistrant Email: fb6ff66ef97c0518s@\nRegistrant Fax Ext: 3495bcf1839c6374\nRegistrant Fax: 3495bcf1839c6374\nRegistrant Name: 3495bcf1839c6374\nRegistrant Organization: ca1569abd36dd9f8\nRegistrant Phone Ext: 3495bcf1839c6374\nRegistrant Phone: 3495bcf1839c6374\nRegistrant Postal Code: 3495bcf1839c6374\nRegistrant State/Province: 3432650ec337c945\nRegistrant Street: 3495bcf1839c6374\nRegistrar Abuse Contact Email: abuse@safenames.net\nRegistrar Abuse Contact Phone: +44.1908200022\nRegistrar IANA ID: 447\nRegistrar URL: http://www.safenames.net/\nRegistrar WHOIS Server: whois.safenames.net\nRegistrar: SafeNames Ltd.\nRegistry Admin ID: REDACTED\nRegistry Domain ID: REDACTED\nRegistry Expiry Date: 2027-05-18T12:44:05Z\nRegistry Registrant ID: REDACTED\nRegistry Tech ID: REDACTED\nTech City: REDACTED\nTech Country: REDACTED\nTech Organization: REDACTED\nTech Postal Code: REDACTED\nTech State/Province: REDACTED\nUpdated Date: 2026-05-15T23:37:24Z",
         "dns_records": [
-          "SOA ns3.yandex.ru",
-          "TXT yandex-verification: adfe74c2c65c9dd8",
-          "TXT _globalsign-domain-verification=ZugVVQStqhGecn3BcWw17RkawF9jGdaSvBFQ5hEUQj",
-          "NS ns4.yandex.ru",
-          "A 213.180.204.242",
-          "TXT OSSRH-92685",
           "NS ns3.yandex.ru",
-          "AAAA 2a02:6b8::242",
+          "TXT yandex-verification: adfe74c2c65c9dd8",
+          "TXT OSSRH-92685",
+          "TXT v=spf1 redirect=_spf.yandex.net",
           "MX mx.yandex.net",
-          "TXT v=spf1 redirect=_spf.yandex.net"
+          "AAAA 2a02:6b8::242",
+          "NS ns4.yandex.ru",
+          "TXT _globalsign-domain-verification=ZugVVQStqhGecn3BcWw17RkawF9jGdaSvBFQ5hEUQj",
+          "A 213.180.204.242",
+          "SOA ns3.yandex.ru"
         ],
         "https_subject": {
           "C": "RU",
@@ -2902,17 +2904,17 @@
         ],
         "tags": []
       },
-      "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6ea9a83c-a5ab-476c-ad99-0af328652567",
+      "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a",
       "redirect_chain": [
         "https://appmetrica.io/",
         "https://appmetrica.yandex.com/",
         "https://appmetrica.yandex.com/overview",
         "https://passport.yandex.com/auth?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en",
-        "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6ea9a83c-a5ab-476c-ad99-0af328652567"
+        "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a"
       ],
       "page_output": "title: Log in. Log in Log in with ID Email Phone number Next Face or fingerprint login QR code Create ID Yandex ID. The key for all your services Learn more",
       "parked_at": "регистратор: SafeNames Ltd.",
-      "final_url": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6ea9a83c-a5ab-476c-ad99-0af328652567",
+      "final_url": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a",
       "http_status": 200,
       "table_rows": [
         {
@@ -3297,7 +3299,7 @@
         },
         {
           "param": "Куда редиректит",
-          "value": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6ea9a83c-a5ab-476c-ad99-0af328652567"
+          "value": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a"
         },
         {
           "param": "Что выводит (кратко)",
@@ -3698,23 +3700,23 @@
           "Cisco Umbrella: 175148"
         ],
         "creation_date": 1382346862,
-        "last_modification_date": 1785523585,
-        "last_analysis_date": 1785522023,
+        "last_modification_date": 1785598255,
+        "last_analysis_date": 1785594644,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2013-10-21T09:14:22Z\nDNSSEC: unsigned\nDomain Name: STARTAPPSERVICE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P05.NSONE.NET\nName Server: DNS2.P05.NSONE.NET\nName Server: DNS3.P05.NSONE.NET\nName Server: DNS4.P05.NSONE.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1831888533_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-10-21T09:14:22Z\nUpdated Date: 2025-10-22T18:18:36Z",
         "dns_records": [
+          "CNAME dualstack.ioriver.map.fastly.net",
           "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
+          "A 199.232.211.52",
           "CNAME dualstack.ioriver.map.fastly.net",
-          "CNAME dualstack.ioriver.map.fastly.net",
+          "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
           "A 199.232.215.52",
+          "AAAA 2a04:4e42:4f::820",
+          "CNAME dualstack.ioriver.map.fastly.net",
           "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
           "AAAA 2a04:4e42:4e::820",
-          "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
-          "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
-          "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net",
-          "AAAA 2a04:4e42:4f::820",
-          "A 199.232.211.52",
-          "CNAME dualstack.ioriver.map.fastly.net"
+          "CNAME dualstack.ioriver.map.fastly.net",
+          "CNAME itxdg74w9s2.yamrhd5sp4.ioriveredge.net"
         ],
         "https_subject": {
           "CN": "startappservice.com"
@@ -3736,7 +3738,7 @@
       "redirect_chain": [
         "https://funnel-assets.startappservice.com/"
       ],
-      "page_output": "AccessDenied Access Denied 1F86DV1X3F9AXN96 +D9jV9ZmSblzTPDj7v5BAmS1QnZmSiB47PeaVpMpU/BuQRjTJeNPDWvp6UdIbIDYSp5+6QXg4Hc=",
+      "page_output": "AccessDenied Access Denied WWWH5A1R5AKNV7KF DQvPVccCuopuhRzWEyT2Vgx+h04MVyPM4Ydh/jLNbcR1+B1iOzopwETjjVg1Mwx6stcY9yX+n5wbhYvHdp8VYS9VHd2YyZpl",
       "parked_at": "регистратор/whois связан с парковкой: godaddy",
       "final_url": "https://funnel-assets.startappservice.com/",
       "http_status": 403,
@@ -4127,7 +4129,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "AccessDenied Access Denied 1F86DV1X3F9AXN96 +D9jV9ZmSblzTPDj7v5BAmS1QnZmSiB47PeaVpMpU/BuQRjTJeNPDWvp6UdIbIDYSp5+6QXg4Hc="
+          "value": "AccessDenied Access Denied WWWH5A1R5AKNV7KF DQvPVccCuopuhRzWEyT2Vgx+h04MVyPM4Ydh/jLNbcR1+B1iOzopwETjjVg1Mwx6stcY9yX+n5wbhYvHdp8VYS9VHd2YyZpl"
         },
         {
           "param": "Где припаркован",
@@ -4524,20 +4526,18 @@
           "Cisco Umbrella: 28466"
         ],
         "creation_date": 799977600,
-        "last_modification_date": 1785523607,
-        "last_analysis_date": 1785522368,
+        "last_modification_date": 1785597911,
+        "last_analysis_date": 1785596501,
         "registrar": "нет",
         "whois": "Create date: 1995-05-09 00:00:00\nDomain name: oculus.com\nDomain registrar id: 3237.0\nDomain registrar url: https://rdap.registrarsafe.com/rdap/\nExpiry date: 2034-05-10 00:00:00\nName server 1: a.ns.facebook.com\nName server 2: b.ns.facebook.com\nName server 3: c.ns.facebook.com\nName server 4: d.ns.facebook.com\nQuery time: 2026-03-11 14:27:48\nRegistrant address: 079d6691e053c662\nRegistrant city: 0a6347cfe4514b39\nRegistrant company: 4c8f818cd132646f\nRegistrant country: United States\nRegistrant email: 03d71b91f97a44efs@fb.com\nRegistrant name: edeae57e15fec50a\nRegistrant phone: 35cd1c7947be7d4e\nRegistrant state: b1952dfc047df18a\nRegistrant zip: f24f08453958b611\nTechnical email: 03d71b91f97a44efs@fb.com\nUpdate date: 2026-03-11 00:00:00",
         "dns_records": [
           "CNAME oculus.c10r.facebook.com",
           "CNAME oculus.c10r.facebook.com",
-          "CNAME oculus.c10r.facebook.com",
-          "AAAA 2a03:2880:f366:18d:face:b00c:0:32c2",
           "TXT v=spf1 a ~all",
           "CNAME oculus.c10r.facebook.com",
-          "A 57.144.205.141",
+          "AAAA 2a03:2880:f366:18d:face:b00c:0:32c2",
           "CNAME oculus.c10r.facebook.com",
-          "CNAME oculus.c10r.facebook.com",
+          "A 157.240.254.54",
           "CNAME oculus.c10r.facebook.com"
         ],
         "https_subject": {
@@ -4564,7 +4564,7 @@
       "redirect_chain": [
         "https://graph.oculus.com/"
       ],
-      "page_output": "{ \"error\": { \"message\": \"Invalid OAuth 2.0 Access Token\", \"type\": \"OCApiException\", \"code\": 190, \"error_data\": { }, \"fbtrace_id\": \"A0GaUEtMKh0nRn2xKNeprTN\" } }",
+      "page_output": "{ \"error\": { \"message\": \"Invalid OAuth 2.0 Access Token\", \"type\": \"OCApiException\", \"code\": 190, \"error_data\": { }, \"fbtrace_id\": \"AUi3yac0og73Hkx7nLzaASV\" } }",
       "parked_at": "нет данных",
       "final_url": "https://graph.oculus.com/",
       "http_status": 400,
@@ -4955,7 +4955,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "{ \"error\": { \"message\": \"Invalid OAuth 2.0 Access Token\", \"type\": \"OCApiException\", \"code\": 190, \"error_data\": { }, \"fbtrace_id\": \"A0GaUEtMKh0nRn2xKNeprTN\" } }"
+          "value": "{ \"error\": { \"message\": \"Invalid OAuth 2.0 Access Token\", \"type\": \"OCApiException\", \"code\": 190, \"error_data\": { }, \"fbtrace_id\": \"AUi3yac0og73Hkx7nLzaASV\" } }"
         },
         {
           "param": "Где припаркован",
@@ -5349,23 +5349,20 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 624464"
+          "Cisco Umbrella: 600403"
         ],
         "creation_date": 1382346862,
-        "last_modification_date": 1785523586,
-        "last_analysis_date": 1785518315,
+        "last_modification_date": 1785598255,
+        "last_analysis_date": 1785594876,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2013-10-21T09:14:22Z\nDNSSEC: unsigned\nDomain Name: STARTAPPSERVICE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P05.NSONE.NET\nName Server: DNS2.P05.NSONE.NET\nName Server: DNS3.P05.NSONE.NET\nName Server: DNS4.P05.NSONE.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1831888533_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-10-21T09:14:22Z\nUpdated Date: 2025-10-22T18:18:36Z",
         "dns_records": [
-          "A 150.136.77.254",
-          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
-          "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
           "A 129.213.103.0",
           "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
+          "A 150.136.77.254",
+          "CNAME infoevent.startappelb.com",
           "A 132.145.167.65",
+          "CNAME infoevent.startappelb.com",
           "CNAME infoevent.startappelb.com"
         ],
         "https_subject": {
@@ -6175,22 +6172,23 @@
         },
         "categories": {},
         "popularity_ranks": [
-          "Cisco Umbrella: 18325"
+          "Cisco Umbrella: 17244"
         ],
         "creation_date": 1382346862,
-        "last_modification_date": 1785523585,
-        "last_analysis_date": 1785522022,
+        "last_modification_date": 1785598255,
+        "last_analysis_date": 1785594516,
         "registrar": "GoDaddy.com, LLC",
         "whois": "Creation Date: 2013-10-21T09:14:22Z\nDNSSEC: unsigned\nDomain Name: STARTAPPSERVICE.COM\nDomain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\nDomain Status: clientRenewProhibited https://icann.org/epp#clientRenewProhibited\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\nName Server: DNS1.P05.NSONE.NET\nName Server: DNS2.P05.NSONE.NET\nName Server: DNS3.P05.NSONE.NET\nName Server: DNS4.P05.NSONE.NET\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: 480-624-2505\nRegistrar IANA ID: 146\nRegistrar URL: http://www.godaddy.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar: GoDaddy.com, LLC\nRegistry Domain ID: 1831888533_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-10-21T09:14:22Z\nUpdated Date: 2025-10-22T18:18:36Z",
         "dns_records": [
-          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
+          "CNAME infoevent.startappelb.com",
+          "CNAME infoevent.startappelb.com",
           "A 132.145.167.65",
+          "A 150.136.77.254",
           "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
-          "CNAME infoevent.startappelb.com",
+          "CNAME ash-cni-oke-ms-weight-lb.startappelb.com",
           "A 129.213.103.0",
-          "A 150.136.77.254"
+          "CNAME infoevent.startappelb.com",
+          "CNAME infoevent.startappelb.com"
         ],
         "https_subject": {
           "CN": "infoevent.startappservice.com"

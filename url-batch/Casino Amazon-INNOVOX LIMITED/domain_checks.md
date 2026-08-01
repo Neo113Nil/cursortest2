@@ -416,7 +416,7 @@
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=6ea9a83c-a5ab-476c-ad99-0af328652567 |
+| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a |
 | Что выводит (кратко) | title: Log in. Log in Log in with ID Email Phone number Next Face or fingerprint login QR code Create ID Yandex ID. The key for all your services Learn more |
 | Где припаркован | регистратор: SafeNames Ltd. |
 
@@ -522,7 +522,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | AccessDenied Access Denied 1F86DV1X3F9AXN96 +D9jV9ZmSblzTPDj7v5BAmS1QnZmSiB47PeaVpMpU/BuQRjTJeNPDWvp6UdIbIDYSp5+6QXg4Hc= |
+| Что выводит (кратко) | AccessDenied Access Denied WWWH5A1R5AKNV7KF DQvPVccCuopuhRzWEyT2Vgx+h04MVyPM4Ydh/jLNbcR1+B1iOzopwETjjVg1Mwx6stcY9yX+n5wbhYvHdp8VYS9VHd2YyZpl |
 | Где припаркован | регистратор/whois связан с парковкой: godaddy |
 
 ## Проверка домена: graph.oculus.com
@@ -627,7 +627,7 @@
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
 | Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | { "error": { "message": "Invalid OAuth 2.0 Access Token", "type": "OCApiException", "code": 190, "error_data": { }, "fbtrace_id": "A0GaUEtMKh0nRn2xKNeprTN" } } |
+| Что выводит (кратко) | { "error": { "message": "Invalid OAuth 2.0 Access Token", "type": "OCApiException", "code": 190, "error_data": { }, "fbtrace_id": "AUi3yac0og73Hkx7nLzaASV" } } |
 | Где припаркован | нет данных |
 
 ## Проверка домена: imp.startappservice.com

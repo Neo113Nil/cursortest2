@@ -58,9 +58,8 @@ public final class PrePackagedCopyOpenHelper implements SupportSQLiteOpenHelper,
     }
 
     @Override // androidx.sqlite.db.SupportSQLiteOpenHelper
-    /* renamed from: getDatabaseName */
-    public String getName() {
-        return getDelegate().getName();
+    public String getDatabaseName() {
+        return getDelegate().getDatabaseName();
     }
 
     @Override // androidx.sqlite.db.SupportSQLiteOpenHelper
@@ -98,18 +97,18 @@ public final class PrePackagedCopyOpenHelper implements SupportSQLiteOpenHelper,
     }
 
     private final void verifyDatabaseFile(boolean writable) {
-        String name = getName();
-        if (name == null) {
+        String databaseName = getDatabaseName();
+        if (databaseName == null) {
             throw new IllegalStateException("Required value was null.".toString());
         }
-        File databasePath = this.context.getDatabasePath(name);
+        File databasePath = this.context.getDatabasePath(databaseName);
         DatabaseConfiguration databaseConfiguration = this.databaseConfiguration;
         DatabaseConfiguration databaseConfiguration2 = null;
         if (databaseConfiguration == null) {
             Intrinsics.throwUninitializedPropertyAccessException("databaseConfiguration");
             databaseConfiguration = null;
         }
-        ProcessLock processLock = new ProcessLock(name, this.context.getFilesDir(), databaseConfiguration.multiInstanceInvalidation);
+        ProcessLock processLock = new ProcessLock(databaseName, this.context.getFilesDir(), databaseConfiguration.multiInstanceInvalidation);
         try {
             ProcessLock.lock$default(processLock, false, 1, null);
             if (!databasePath.exists()) {
@@ -148,7 +147,7 @@ public final class PrePackagedCopyOpenHelper implements SupportSQLiteOpenHelper,
                     processLock.unlock();
                     return;
                 }
-                if (this.context.deleteDatabase(name)) {
+                if (this.context.deleteDatabase(databaseName)) {
                     try {
                         copyDatabaseFile(databasePath, writable);
                         Unit unit = Unit.INSTANCE;
@@ -156,7 +155,7 @@ public final class PrePackagedCopyOpenHelper implements SupportSQLiteOpenHelper,
                         Integer.valueOf(Log.w(Room.LOG_TAG, "Unable to copy database file.", e2));
                     }
                 } else {
-                    Log.w(Room.LOG_TAG, "Failed to delete database file (" + name + ") for a copy destructive migration.");
+                    Log.w(Room.LOG_TAG, "Failed to delete database file (" + databaseName + ") for a copy destructive migration.");
                 }
                 processLock.unlock();
                 return;

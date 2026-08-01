@@ -24,8 +24,9 @@ public final class MissingMainCoroutineDispatcherFactory implements MainDispatch
         return MainDispatcherFactory.DefaultImpls.hintOnError(this);
     }
 
+    /* JADX WARN: Multi-variable type inference failed */
     @Override // kotlinx.coroutines.internal.MainDispatcherFactory
     public MainCoroutineDispatcher createDispatcher(List<? extends MainDispatcherFactory> allFactories) {
-        return new MissingMainCoroutineDispatcher(null, null, 2, null);
+        return new MissingMainCoroutineDispatcher(null, 0 == true ? 1 : 0, 2, 0 == true ? 1 : 0);
     }
 }
