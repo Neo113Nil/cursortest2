@@ -1,0 +1,36 @@
+{
+  "app_id": "com.skydrop.fallring",
+  "title": "Bally Bet",
+  "developer": "Vertikalton",
+  "developer_id": "Vertikalton",
+  "icon": "https://play-lh.googleusercontent.com/-xS0dLJb8wTPm3DRQR_1eZQ19h-PspUaBZlqzzyF1IlNUzL_Cfcz-A20PKwN8ydTzaFAcGaP-ST1qEhphQpkdw",
+  "url": "https://play.google.com/store/apps/details?id=com.skydrop.fallring&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 20, 2026",
+  "updated": "Jul 20, 2026",
+  "version": "Varies with device",
+  "summary": "Bally Bet - Fly through neon rings in this sky arcade reflex challenge.",
+  "keyword": "url-batch",
+  "folder": "Bally Bet-Vertikalton",
+  "path": "url-batch/Bally Bet-Vertikalton",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.skydrop.fallring.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Bally Bet-Vertikalton",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.skydrop.fallring...\ncom.skydrop.fallring downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.skydrop.fallring...\ncom.skydrop.fallring downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

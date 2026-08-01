@@ -1,0 +1,40 @@
+package k0;
+
+import android.graphics.Matrix;
+import android.view.View;
+
+/* renamed from: k0.D, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0175D extends C0174C {
+    @Override // i1.r
+    public final float j(View view) {
+        float transitionAlpha;
+        transitionAlpha = view.getTransitionAlpha();
+        return transitionAlpha;
+    }
+
+    @Override // i1.r
+    public final void r(View view, float f2) {
+        view.setTransitionAlpha(f2);
+    }
+
+    @Override // k0.C0174C, i1.r
+    public final void s(View view, int i) {
+        view.setTransitionVisibility(i);
+    }
+
+    @Override // k0.C0174C
+    public final void v(View view, int i, int i2, int i3, int i4) {
+        view.setLeftTopRightBottom(i, i2, i3, i4);
+    }
+
+    @Override // k0.C0174C
+    public final void w(View view, Matrix matrix) {
+        view.transformMatrixToGlobal(matrix);
+    }
+
+    @Override // k0.C0174C
+    public final void x(View view, Matrix matrix) {
+        view.transformMatrixToLocal(matrix);
+    }
+}
