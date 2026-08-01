@@ -1,0 +1,381 @@
+package w1;
+
+import V0.p;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InterruptedIOException;
+import java.net.ProtocolException;
+import java.net.Proxy;
+import java.net.SocketTimeoutException;
+import java.security.cert.CertificateException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.regex.Pattern;
+import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLSocketFactory;
+import k0.AbstractC0180a;
+import r1.g;
+import r1.k;
+import r1.l;
+import r1.m;
+import r1.n;
+import r1.q;
+import r1.s;
+import r1.t;
+import r1.u;
+import r1.v;
+import v1.j;
+import v1.o;
+import y1.C0320a;
+
+/* loaded from: classes.dex */
+public final class a implements n {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ int f4095a = 0;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final Object f4096b;
+
+    public a(r1.b bVar) {
+        g1.d.e(bVar, "cookieJar");
+        this.f4096b = bVar;
+    }
+
+    public static int d(t tVar, int i) {
+        String g2 = t.g("Retry-After", tVar);
+        if (g2 == null) {
+            return i;
+        }
+        Pattern compile = Pattern.compile("\\d+");
+        g1.d.d(compile, "compile(...)");
+        if (!compile.matcher(g2).matches()) {
+            return Integer.MAX_VALUE;
+        }
+        Integer valueOf = Integer.valueOf(g2);
+        g1.d.d(valueOf, "valueOf(header)");
+        return valueOf.intValue();
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // r1.n
+    public final t a(f fVar) {
+        u uVar;
+        p pVar;
+        int i;
+        SSLSocketFactory sSLSocketFactory;
+        D1.c cVar;
+        r1.d dVar;
+        switch (this.f4095a) {
+            case 0:
+                H.e eVar = fVar.f4101e;
+                U.u g2 = eVar.g();
+                boolean z2 = false;
+                k kVar = (k) eVar.d;
+                String a2 = kVar.a("Host");
+                m mVar = (m) eVar.f278c;
+                if (a2 == null) {
+                    g2.k("Host", s1.b.u(mVar, false));
+                }
+                if (kVar.a("Connection") == null) {
+                    g2.k("Connection", "Keep-Alive");
+                }
+                if (kVar.a("Accept-Encoding") == null && kVar.a("Range") == null) {
+                    g2.k("Accept-Encoding", "gzip");
+                    z2 = true;
+                }
+                r1.b bVar = (r1.b) this.f4096b;
+                bVar.getClass();
+                g1.d.e(mVar, "url");
+                if (kVar.a("User-Agent") == null) {
+                    g2.k("User-Agent", "okhttp/4.12.0");
+                }
+                t b2 = fVar.b(g2.b());
+                k kVar2 = b2.f3533f;
+                e.b(bVar, mVar, kVar2);
+                s h = b2.h();
+                h.f3519a = eVar;
+                if (z2 && "gzip".equalsIgnoreCase(t.g("Content-Encoding", b2)) && e.a(b2) && (uVar = b2.f3534g) != null) {
+                    E1.k kVar3 = new E1.k(uVar.h());
+                    g c2 = kVar2.c();
+                    c2.e("Content-Encoding");
+                    c2.e("Content-Length");
+                    h.f3523f = c2.d().c();
+                    h.f3524g = new u(t.g("Content-Type", b2), -1L, new E1.p(kVar3), 1);
+                }
+                return h.a();
+            default:
+                H.e eVar2 = fVar.f4101e;
+                j jVar = fVar.f4098a;
+                p pVar2 = p.f917a;
+                t tVar = null;
+                int i2 = 0;
+                H.e eVar3 = eVar2;
+                while (true) {
+                    boolean z3 = true;
+                    while (true) {
+                        jVar.getClass();
+                        if (jVar.i != null) {
+                            throw new IllegalStateException("Check failed.");
+                        }
+                        synchronized (jVar) {
+                            try {
+                                if (jVar.f4053k) {
+                                    throw new IllegalStateException("cannot make a new request because the previous response is still open: please call response.close()");
+                                }
+                                if (jVar.f4052j) {
+                                    throw new IllegalStateException("Check failed.");
+                                }
+                            } catch (Throwable th) {
+                                throw th;
+                            }
+                        }
+                        if (z3) {
+                            v1.n nVar = jVar.f4048c;
+                            m mVar2 = (m) eVar3.f278c;
+                            boolean z4 = mVar2.i;
+                            q qVar = jVar.f4046a;
+                            if (z4) {
+                                SSLSocketFactory sSLSocketFactory2 = qVar.f3502o;
+                                if (sSLSocketFactory2 == null) {
+                                    throw new IllegalStateException("CLEARTEXT-only client");
+                                }
+                                D1.c cVar2 = qVar.f3506s;
+                                dVar = qVar.f3507t;
+                                sSLSocketFactory = sSLSocketFactory2;
+                                cVar = cVar2;
+                            } else {
+                                sSLSocketFactory = null;
+                                cVar = null;
+                                dVar = null;
+                            }
+                            pVar = pVar2;
+                            i = i2;
+                            jVar.f4051g = new v1.f(nVar, new r1.a(mVar2.d, mVar2.f3466e, qVar.f3498k, qVar.f3501n, sSLSocketFactory, cVar, dVar, qVar.f3500m, qVar.f3505r, qVar.f3504q, qVar.f3499l), jVar);
+                        } else {
+                            pVar = pVar2;
+                            i = i2;
+                        }
+                        try {
+                            if (jVar.f4055m) {
+                                throw new IOException("Canceled");
+                            }
+                            try {
+                                t b3 = fVar.b(eVar3);
+                                if (tVar != null) {
+                                    s h2 = b3.h();
+                                    s h3 = tVar.h();
+                                    h3.f3524g = null;
+                                    t a3 = h3.a();
+                                    if (a3.f3534g != null) {
+                                        throw new IllegalArgumentException("priorResponse.body != null");
+                                    }
+                                    h2.f3525j = a3;
+                                    b3 = h2.a();
+                                }
+                                tVar = b3;
+                                eVar3 = b(tVar, jVar.i);
+                                if (eVar3 == null) {
+                                    jVar.e(false);
+                                    return tVar;
+                                }
+                                u uVar2 = tVar.f3534g;
+                                if (uVar2 != null) {
+                                    s1.b.b(uVar2);
+                                }
+                                i2 = i + 1;
+                                if (i2 > 20) {
+                                    throw new ProtocolException("Too many follow-up requests: " + i2);
+                                }
+                                jVar.e(true);
+                                pVar2 = pVar;
+                            } catch (IOException e2) {
+                                if (!c(e2, jVar, eVar3, !(e2 instanceof C0320a))) {
+                                    Iterator it = pVar.iterator();
+                                    while (it.hasNext()) {
+                                        z1.d.h(e2, (Exception) it.next());
+                                    }
+                                    throw e2;
+                                }
+                                ArrayList arrayList = new ArrayList(pVar.size() + 1);
+                                arrayList.addAll(pVar);
+                                arrayList.add(e2);
+                                jVar.e(true);
+                                pVar2 = arrayList;
+                                i2 = i;
+                                z3 = false;
+                            } catch (o e3) {
+                                p pVar3 = pVar;
+                                if (!c(e3.f4078b, jVar, eVar3, false)) {
+                                    IOException iOException = e3.f4077a;
+                                    g1.d.e(iOException, "<this>");
+                                    Iterator it2 = pVar3.iterator();
+                                    while (it2.hasNext()) {
+                                        z1.d.h(iOException, (Exception) it2.next());
+                                    }
+                                    throw iOException;
+                                }
+                                IOException iOException2 = e3.f4077a;
+                                ArrayList arrayList2 = new ArrayList(pVar3.size() + 1);
+                                arrayList2.addAll(pVar3);
+                                arrayList2.add(iOException2);
+                                jVar.e(true);
+                                pVar2 = arrayList2;
+                                z3 = false;
+                                i2 = i;
+                            }
+                        } catch (Throwable th2) {
+                            jVar.e(true);
+                            throw th2;
+                        }
+                    }
+                }
+        }
+    }
+
+    public H.e b(t tVar, v1.e eVar) {
+        String g2;
+        l lVar;
+        v1.m mVar;
+        v vVar = (eVar == null || (mVar = eVar.f4034e) == null) ? null : mVar.f4061b;
+        int i = tVar.d;
+        String str = (String) tVar.f3529a.f277b;
+        if (i != 307 && i != 308) {
+            if (i == 401) {
+                ((q) this.f4096b).f3496g.getClass();
+                return null;
+            }
+            if (i == 421) {
+                if (eVar == null || g1.d.a(eVar.f4032b.f4036b.h.d, eVar.f4034e.f4061b.f3542a.h.d)) {
+                    return null;
+                }
+                v1.m mVar2 = eVar.f4034e;
+                synchronized (mVar2) {
+                    mVar2.f4067k = true;
+                }
+                return tVar.f3529a;
+            }
+            if (i == 503) {
+                t tVar2 = tVar.f3535j;
+                if ((tVar2 == null || tVar2.d != 503) && d(tVar, Integer.MAX_VALUE) == 0) {
+                    return tVar.f3529a;
+                }
+                return null;
+            }
+            if (i == 407) {
+                g1.d.b(vVar);
+                if (vVar.f3543b.type() != Proxy.Type.HTTP) {
+                    throw new ProtocolException("Received HTTP_PROXY_AUTH (407) code while not using proxy");
+                }
+                ((q) this.f4096b).f3500m.getClass();
+                return null;
+            }
+            if (i == 408) {
+                if (!((q) this.f4096b).f3495f) {
+                    return null;
+                }
+                t tVar3 = tVar.f3535j;
+                if ((tVar3 == null || tVar3.d != 408) && d(tVar, 0) <= 0) {
+                    return tVar.f3529a;
+                }
+                return null;
+            }
+            switch (i) {
+                case 300:
+                case 301:
+                case 302:
+                case 303:
+                    break;
+                default:
+                    return null;
+            }
+        }
+        q qVar = (q) this.f4096b;
+        if (!qVar.h || (g2 = t.g("Location", tVar)) == null) {
+            return null;
+        }
+        H.e eVar2 = tVar.f3529a;
+        m mVar3 = (m) eVar2.f278c;
+        mVar3.getClass();
+        try {
+            lVar = new l();
+            lVar.c(mVar3, g2);
+        } catch (IllegalArgumentException unused) {
+            lVar = null;
+        }
+        m a2 = lVar != null ? lVar.a() : null;
+        if (a2 == null) {
+            return null;
+        }
+        if (!g1.d.a(a2.f3463a, ((m) eVar2.f278c).f3463a) && !qVar.i) {
+            return null;
+        }
+        U.u g3 = eVar2.g();
+        if (AbstractC0180a.n(str)) {
+            boolean equals = str.equals("PROPFIND");
+            int i2 = tVar.d;
+            boolean z2 = equals || i2 == 308 || i2 == 307;
+            if (str.equals("PROPFIND") || i2 == 308 || i2 == 307) {
+                g3.o(str, null);
+            } else {
+                g3.o("GET", null);
+            }
+            if (!z2) {
+                ((g) g3.f885c).e("Transfer-Encoding");
+                ((g) g3.f885c).e("Content-Length");
+                ((g) g3.f885c).e("Content-Type");
+            }
+        }
+        if (!s1.b.a((m) eVar2.f278c, a2)) {
+            ((g) g3.f885c).e("Authorization");
+        }
+        g3.f883a = a2;
+        return g3.b();
+    }
+
+    public boolean c(IOException iOException, j jVar, H.e eVar, boolean z2) {
+        v1.p pVar;
+        boolean i;
+        v1.m mVar;
+        if (!((q) this.f4096b).f3495f) {
+            return false;
+        }
+        if ((z2 && (iOException instanceof FileNotFoundException)) || (iOException instanceof ProtocolException) || (!(iOException instanceof InterruptedIOException) ? !(((iOException instanceof SSLHandshakeException) && (iOException.getCause() instanceof CertificateException)) || (iOException instanceof SSLPeerUnverifiedException)) : (iOException instanceof SocketTimeoutException) && !z2)) {
+            return false;
+        }
+        v1.f fVar = jVar.f4051g;
+        g1.d.b(fVar);
+        int i2 = fVar.f4039f;
+        if (i2 == 0 && fVar.f4040g == 0 && fVar.h == 0) {
+            i = false;
+        } else {
+            if (fVar.i == null) {
+                v vVar = null;
+                if (i2 <= 1 && fVar.f4040g <= 1 && fVar.h <= 0 && (mVar = fVar.f4037c.h) != null) {
+                    synchronized (mVar) {
+                        if (mVar.f4068l == 0) {
+                            if (s1.b.a(mVar.f4061b.f3542a.h, fVar.f4036b.h)) {
+                                vVar = mVar.f4061b;
+                            }
+                        }
+                    }
+                }
+                if (vVar != null) {
+                    fVar.i = vVar;
+                } else {
+                    H.j jVar2 = fVar.d;
+                    if ((jVar2 == null || !jVar2.d()) && (pVar = fVar.f4038e) != null) {
+                        i = pVar.i();
+                    }
+                }
+            }
+            i = true;
+        }
+        return i;
+    }
+
+    public a(q qVar) {
+        this.f4096b = qVar;
+    }
+}

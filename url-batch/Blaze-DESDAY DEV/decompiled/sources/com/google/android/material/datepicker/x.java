@@ -1,0 +1,16 @@
+package com.google.android.material.datepicker;
+
+import android.widget.TextView;
+import g0.a0;
+
+/* loaded from: classes.dex */
+public final class x extends a0 {
+
+    /* renamed from: u, reason: collision with root package name */
+    public final TextView f1872u;
+
+    public x(TextView textView) {
+        super(textView);
+        this.f1872u = textView;
+    }
+}

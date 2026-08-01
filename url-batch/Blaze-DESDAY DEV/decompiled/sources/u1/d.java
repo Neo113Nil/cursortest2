@@ -1,0 +1,208 @@
+package u1;
+
+import M0.B;
+import Y.V;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.logging.Logger;
+import r1.g;
+
+/* loaded from: classes.dex */
+public final class d {
+    public static final d h;
+    public static final Logger i;
+
+    /* renamed from: a, reason: collision with root package name */
+    public final g f3786a;
+
+    /* renamed from: c, reason: collision with root package name */
+    public boolean f3788c;
+    public long d;
+
+    /* renamed from: b, reason: collision with root package name */
+    public int f3787b = 10000;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final ArrayList f3789e = new ArrayList();
+
+    /* renamed from: f, reason: collision with root package name */
+    public final ArrayList f3790f = new ArrayList();
+
+    /* renamed from: g, reason: collision with root package name */
+    public final B f3791g = new B(13, this);
+
+    static {
+        String str = s1.b.f3726g + " TaskRunner";
+        g1.d.e(str, "name");
+        h = new d(new g(new s1.a(str, true)));
+        Logger logger = Logger.getLogger(d.class.getName());
+        g1.d.d(logger, "getLogger(TaskRunner::class.java.name)");
+        i = logger;
+    }
+
+    public d(g gVar) {
+        this.f3786a = gVar;
+    }
+
+    public static final void a(d dVar, a aVar) {
+        dVar.getClass();
+        byte[] bArr = s1.b.f3721a;
+        Thread currentThread = Thread.currentThread();
+        String name = currentThread.getName();
+        currentThread.setName(aVar.f3776a);
+        try {
+            long a2 = aVar.a();
+            synchronized (dVar) {
+                dVar.b(aVar, a2);
+            }
+            currentThread.setName(name);
+        } catch (Throwable th) {
+            synchronized (dVar) {
+                dVar.b(aVar, -1L);
+                currentThread.setName(name);
+                throw th;
+            }
+        }
+    }
+
+    public final void b(a aVar, long j2) {
+        byte[] bArr = s1.b.f3721a;
+        c cVar = aVar.f3778c;
+        g1.d.b(cVar);
+        if (cVar.d != aVar) {
+            throw new IllegalStateException("Check failed.");
+        }
+        boolean z2 = cVar.f3785f;
+        cVar.f3785f = false;
+        cVar.d = null;
+        this.f3789e.remove(cVar);
+        if (j2 != -1 && !z2 && !cVar.f3783c) {
+            cVar.d(aVar, j2, true);
+        }
+        if (cVar.f3784e.isEmpty()) {
+            return;
+        }
+        this.f3790f.add(cVar);
+    }
+
+    public final a c() {
+        boolean z2;
+        d dVar = this;
+        byte[] bArr = s1.b.f3721a;
+        while (true) {
+            ArrayList arrayList = dVar.f3790f;
+            if (arrayList.isEmpty()) {
+                return null;
+            }
+            g gVar = dVar.f3786a;
+            long nanoTime = System.nanoTime();
+            Iterator it = arrayList.iterator();
+            long j2 = Long.MAX_VALUE;
+            a aVar = null;
+            while (true) {
+                if (!it.hasNext()) {
+                    dVar = this;
+                    z2 = false;
+                    break;
+                }
+                a aVar2 = (a) ((c) it.next()).f3784e.get(0);
+                long max = Math.max(0L, aVar2.d - nanoTime);
+                if (max > 0) {
+                    j2 = Math.min(max, j2);
+                } else {
+                    if (aVar != null) {
+                        dVar = this;
+                        z2 = true;
+                        break;
+                    }
+                    aVar = aVar2;
+                }
+            }
+            ArrayList arrayList2 = dVar.f3789e;
+            if (aVar != null) {
+                byte[] bArr2 = s1.b.f3721a;
+                aVar.d = -1L;
+                c cVar = aVar.f3778c;
+                g1.d.b(cVar);
+                cVar.f3784e.remove(aVar);
+                arrayList.remove(cVar);
+                cVar.d = aVar;
+                arrayList2.add(cVar);
+                if (z2 || (!dVar.f3788c && !arrayList.isEmpty())) {
+                    B b2 = dVar.f3791g;
+                    g1.d.e(b2, "runnable");
+                    ((ThreadPoolExecutor) gVar.f3436a).execute(b2);
+                }
+                return aVar;
+            }
+            if (dVar.f3788c) {
+                if (j2 < dVar.d - nanoTime) {
+                    notify();
+                }
+                return null;
+            }
+            dVar.f3788c = true;
+            dVar.d = nanoTime + j2;
+            try {
+                try {
+                    long j3 = j2 / 1000000;
+                    long j4 = j2 - (1000000 * j3);
+                    if (j3 > 0 || j2 > 0) {
+                        dVar.wait(j3, (int) j4);
+                    }
+                } catch (InterruptedException unused) {
+                    for (int size = arrayList2.size() - 1; -1 < size; size--) {
+                        ((c) arrayList2.get(size)).b();
+                    }
+                    int i2 = -1;
+                    for (int size2 = arrayList.size() - 1; i2 < size2; size2--) {
+                        c cVar2 = (c) arrayList.get(size2);
+                        cVar2.b();
+                        if (cVar2.f3784e.isEmpty()) {
+                            arrayList.remove(size2);
+                        }
+                        i2 = -1;
+                    }
+                }
+            } finally {
+                dVar.f3788c = false;
+            }
+        }
+    }
+
+    public final void d(c cVar) {
+        g1.d.e(cVar, "taskQueue");
+        byte[] bArr = s1.b.f3721a;
+        if (cVar.d == null) {
+            boolean isEmpty = cVar.f3784e.isEmpty();
+            ArrayList arrayList = this.f3790f;
+            if (isEmpty) {
+                arrayList.remove(cVar);
+            } else {
+                g1.d.e(arrayList, "<this>");
+                if (!arrayList.contains(cVar)) {
+                    arrayList.add(cVar);
+                }
+            }
+        }
+        boolean z2 = this.f3788c;
+        g gVar = this.f3786a;
+        if (z2) {
+            notify();
+            return;
+        }
+        B b2 = this.f3791g;
+        g1.d.e(b2, "runnable");
+        ((ThreadPoolExecutor) gVar.f3436a).execute(b2);
+    }
+
+    public final c e() {
+        int i2;
+        synchronized (this) {
+            i2 = this.f3787b;
+            this.f3787b = i2 + 1;
+        }
+        return new c(this, V.e("Q", i2));
+    }
+}

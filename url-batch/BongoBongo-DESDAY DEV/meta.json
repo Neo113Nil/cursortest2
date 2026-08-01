@@ -67,5 +67,92 @@
   ],
   "stdout": "╭─ com.winfour.winrandom ─╮\n│ BongoBongo              │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 6 files  (6.2 MB)\n  com.winfour.winrandom-1.apk               ━━━━━━━ 100% 3.8/3.8 19.8    0:00:00\n                                                         MB      MB/s           \n  com.winfour.winrandom-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?       0:00:00\n                                                         kB                     \n  com.winfour.winrandom-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.winfour.winrandom-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.winfour.winrandom-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 2.2     0:00:00\n                                                         kB      MB/s           \n  com.winfour.winrandom-1-asset.apk         ━━━━━━━ 100% 2.5/2.5 14.3    0:00:00\n                                                         MB      MB/s           \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.winfour.winrandom-1.apk               │  3.6 MB │\n│ com.winfour.winrandom-1-config.en.apk     │ 44.4 KB │\n│ com.winfour.winrandom-1-config.lt.apk     │ 28.4 KB │\n│ com.winfour.winrandom-1-config.ru.apk     │ 28.4 KB │\n│ com.winfour.winrandom-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.winfour.winrandom-1-asset.apk         │  3.6 MB │\n└───────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\nDispenser: https://auroraoss.com/api/auth\nArchitecture: arm64\n\n╭──────────────────── Token ─────────────────────╮\n│ Authenticated                                  │\n│ Email  : ossaur01@gmail.com                    │\n│ GSF ID : 3a35ea99979e82ce                      │\n│ Saved  : /root/.config/gplaydl/auth-arm64.json │\n╰────────────────────────────────────────────────╯\n\n  Authenticated with profile: Google Pixel 9a\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BongoBongo"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.7.3"
+      },
+      {
+        "param": "minSdk",
+        "value": "26"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.0.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, com.winfour.winrandom.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin 2.0.21, kotlinx-coroutines 1.7.3, OkHttp 4.12.0, AndroidX (AppCompat 1.7.0, Activity 1.9.3, ConstraintLayout, Core/Core-KTX 1.13.1, Fragment 1.5.4, Lifecycle 2.8.7, Room 2.6.1, RecyclerView, ViewPager2, Emoji2 1.3.0, Startup 1.1.1, ProfileInstaller 1.3.1, CardView, CoordinatorLayout, DrawerLayout, Transition, Vectordrawable, SavedState, SQLite), Google Material Components 1.12.0, Pairip licensecheck (com.pairip.licensecheck)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "auroraoss.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл prefs «cfg»: ключ «rurl» — сохранённый адрес после перенаправления с сервера; при следующем запуске сразу открывается во внешнем браузере; также «win_random_prefs» для обычного режима (default_min/max/count/unique, history)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "redirect, rurl, workers.dev, User-Agent, X-Device-Model, Accept-Language, license check, status, lottery, casino, slots, bet"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "auroraoss.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "имя приложения в системе → техническое имя этой программы (com.winfour.winrandom); уходит в",
+      "адрес запроса параметром app, чтобы сервер понял, какое именно приложение спрашивает",
+      "модель телефона → какая марка и модель устройства у человека (берётся из системы Android);",
+      "уходит в заголовке запроса; сервер может отличить обычный телефон от эмулятора или",
+      "подозрительного устройства",
+      "язык в заголовке запроса → в запросе всегда стоит английский язык (en-US,en;q=0.9); это не живой",
+      "язык из настроек телефона, а заранее прописанное значение, но сервер всё равно видит «как будто",
+      "англоязычный клиент»",
+      "строка браузера → как встроенный браузер телефона представляется сайтам; приложение берёт её",
+      "из системных настроек встроенного окна сайта и кладёт в заголовок запроса; по ней сервер может",
+      "понять, что запрос идёт с живого Android, а не от простого скрипта"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• имя приложения в системе → техническое имя этой программы (com.winfour.winrandom); уходит в\n• адрес запроса параметром app, чтобы сервер понял, какое именно приложение спрашивает\n• модель телефона → какая марка и модель устройства у человека (берётся из системы Android);\n• уходит в заголовке запроса; сервер может отличить обычный телефон от эмулятора или\n• подозрительного устройства\n• язык в заголовке запроса → в запросе всегда стоит английский язык (en-US,en;q=0.9); это не живой\n• язык из настроек телефона, а заранее прописанное значение, но сервер всё равно видит «как будто\n• англоязычный клиент»\n• строка браузера → как встроенный браузер телефона представляется сайтам; приложение берёт её\n• из системных настроек встроенного окна сайта и кладёт в заголовок запроса; по ней сервер может\n• понять, что запрос идёт с живого Android, а не от простого скрипта\n\nКак собираются: Сразу после открытия главного экрана приложение само, без спроса у человека, читает имя программы, модель телефона и строку браузера из системы Android. Отдельного окна с разрешением нет — человек обычно этого не замечает. Язык в заголовке не читают из настроек телефона: он уже зашит в программе как английский. Перед этим приложение ещё смотрит свою внутреннюю память: если раньше уже сохраняли внешнюю ссылку, новый сбор и запрос к серверу могут не понадобиться. Всё это происходит в фоне в первые мгновения после запуска. Если в памяти уже есть сохранённый адрес, программа сразу пытается открыть его и снова не спрашивает сервер.\n\nКуда отправляются: Собранные сведения незаметно уходя…"
+  }
 }
