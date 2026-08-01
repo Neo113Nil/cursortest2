@@ -1,0 +1,36 @@
+{
+  "app_id": "com.getfinesylabusfromtab",
+  "title": "pornhub",
+  "developer": "KIBIRIGE CONSULTANCY LIMITED",
+  "developer_id": "KIBIRIGE+CONSULTANCY+LIMITED",
+  "icon": "https://play-lh.googleusercontent.com/Ps_qWLrc-PnAY_xWPznHwGWOE5AKygw03EeiI8Yjzkr6ale4IdPgm0xENKxqQpsZC4e-hvPq2NMHvQHJmjs9bDc",
+  "url": "https://play.google.com/store/apps/details?id=com.getfinesylabusfromtab&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 27, 2026",
+  "updated": "Jun 22, 2026",
+  "version": "Varies with device",
+  "summary": "Slice flying burgers, dosas, and wraps in this fun offline arcade adventure!",
+  "keyword": "url-app",
+  "folder": "pornhub-KIBIRIGE CONSULTANCY LIMITED",
+  "path": "url-app/pornhub-KIBIRIGE CONSULTANCY LIMITED",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.getfinesylabusfromtab.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-app/pornhub-KIBIRIGE CONSULTANCY LIMITED",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.getfinesylabusfromtab...\ncom.getfinesylabusfromtab downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.getfinesylabusfromtab...\ncom.getfinesylabusfromtab downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
