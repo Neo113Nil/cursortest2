@@ -1,0 +1,36 @@
+{
+  "app_id": "games.joker.chicken.go",
+  "title": "Chicken Cross - Farm Cross 2",
+  "developer": "Joker.games",
+  "score": 4.47,
+  "icon": "https://play-lh.googleusercontent.com/a-DHEOVuxtPluH05Db2Hu8-fAE_9-VG4qgtAly38lm_bFUjAtcn7kkNYlyPKOoUcxoTpOlKqXDj5dtwxQqsm",
+  "url": "https://play.google.com/store/apps/details?id=games.joker.chicken.go&hl=en&gl=us",
+  "keyword": "chicken road",
+  "developer_id": "5503554217443910814",
+  "released": "Aug 12, 2025",
+  "updated": "2026-07-24",
+  "version": "7.286.0",
+  "summary": "Dodge heavy traffic and help your chicken cross the street for score!",
+  "folder": "Chicken Cross - Farm Cross 2-Joker.games",
+  "path": "chicken road/Chicken Cross - Farm Cross 2-Joker.games",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "games.joker.chicken.go.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/chicken road/Chicken Cross - Farm Cross 2-Joker.games",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading games.joker.chicken.go...\ngames.joker.chicken.go downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading games.joker.chicken.go...\ngames.joker.chicken.go downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,23 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.gms.ads.nativead.NativeAd;
+
+/* compiled from: com.google.android.gms:play-services-ads-api@@25.4.0 */
+/* loaded from: classes9.dex */
+public final class zzbzj extends zzboi {
+    private final NativeAd.UnconfirmedClickListener zza;
+
+    public zzbzj(NativeAd.UnconfirmedClickListener unconfirmedClickListener) {
+        this.zza = unconfirmedClickListener;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzboj
+    public final void zze(String str) {
+        this.zza.onUnconfirmedClickReceived(str);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzboj
+    public final void zzf() {
+        this.zza.onUnconfirmedClickCancelled();
+    }
+}

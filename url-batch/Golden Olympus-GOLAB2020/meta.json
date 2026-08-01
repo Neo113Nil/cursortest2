@@ -32,5 +32,153 @@
   ],
   "stdout": "Downloading com.GoLab2020.GoldenOlymGoogle...\ncom.GoLab2020.GoldenOlymGoogle downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Golden Olympus (GoldenOlympus, com.GoLab2020.GoldenOlymGoogle)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.10.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9.22"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "ironSource / Unity LevelPlay (медиация, баннеры, вставки, видео за награду, Offerwall), Google AdMob (ca-app-pub-9929175073468185~1385521280 в манифесте, com.google.android.gms.ads.*), Yandex Mobile Ads (com.yandex.mobile.ads, com.monetization.ads), Unity Ads (UnityAdsIdentifier), Pincrux Offerwall"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics / Google Measurement, Firebase Messaging (push), Firebase Auth, Firebase Installations, AppsFlyer (+ OneLink goldwing.onelink.me), Yandex AppMetrica, Yandex Varioqub (удалённые настройки и A/B), MyTracker (VK/Mail.ru), Unity Analytics / Unity Services (collect.analytics.unity3d.com), RuStore Analytics и RuStore Metrics, Huawei HMS hatool/stats, ironSource impression data, собственная отправка технических отчётов в Slack (slack.com/api)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.INTERNET, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android.permission.VIBRATE, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.google.android.providers.gsf.permission.READ_GSERVICES, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.GoLab2020 .GoldenOlymGoogle.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.GoLab2020.GoldenOlymGoogle.permission.C2D_MESSAGE Параметр Значение"
+      },
+      {
+        "param": "Libraries",
+        "value": "Unity 2023.x (libunity.so, libil2cpp.so, lib_burst_generated.so, UnityPlayer), unity-webview (net.gree.unitywebview: CWebViewPlugin, RoundedWebView), Unity Services (Core, Analytics, Push Notifications), Unity LevelPlay (com.unity3d.mediation, com.unity3d.ironsourceads), Unity Purchasing (com.unity.purchasing), Unity Android Notifications, ironSource mediation SDK (com.ironsource), Yandex Mobile Ads + com.monetization.ads, Yandex Div, Yandex AuthSDK, Yandex Varioqub, io.appmetrica (AppMetrica), AppsFlyer SDK (com.appsflyer) + OneLink, MyTracker (com.my.tracker), Firebase: app, analytics/measurement, messaging, auth, installations, iid, app-check, datatransport, encoders (+ libFirebaseCppApp-12_10_1.so, libFirebaseCppAnalytics.so, libFirebaseCppAuth.so, libFirebaseCppMessaging.so), Google Play Services: base, basement, auth, auth-api-phone, ads-identifier, appset, fido, location, cloud-messaging, measurement, places-placereport, stats, tasks, recaptcha, Google Play Billing 8.3.0, Play Core, Play Integrity, Play licensecheck (com.pairip.licensecheck, com.pairip.VMRunner), Huawei HMS: base, iap, agconnect-core, network-grs, network-common, hatool, stats, ui, device, log, RuStore SDK:…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "alb.zolotoiolimp.ru, uncached.zolotoiolimp.ru, download.zolotoiolimp.ru, global-uncached.goldwingcasino.com, global-download.goldwingcasino.com, global-qa-alb.goldwingcasino.com:19911, coupon.goldwingcasino.com, aijsonbucket.goldwingcasino.com, goldwing.mocatree.com:9876"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "«yandex_auth» — результат входа через Яндекс и метки времени (result_json, result_ts, direct_success_ts, launcher_executed); стандартный файл настроек Unity (PlayerPrefs) — номер устройства, автоматический вход и тип последнего входа, версия скачанных ресурсов (PREF_BUNDLE_VERIFIED_VERSION), флаги завершённой докачки (EXTRA_PATCH_COMPLETE), настройки звука и языка; файлы сторонних наборов: appsflyer-data, mytracker_prefs, supersonic_shared_preferen (ironSource), metrics_sdk_sp (RuStore), com.google.android.gms.measurement.prefs, com.google.firebase.messaging, com.google.android.gms.appid, authsdk, InstallIdentifierPrefs, pps_install_referrer, identifier_hiad_sp_* (Huawei), CRep, tracer"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino (goldwingcasino.com), GoldWing / GOLDWING, GoldExchange, IsUseGoldExchange, IsBlockedGoldExchange, SafeboxWithdraw, WithdrawGold, DailyWithdrawLimit, WithdrawFeeRate, betting (UIBetting, MinBet/MaxBet, MultiBetting), slots (SLOT_GAME_101…149), poker (Holdem, Baduki), roulette (RouletteType), Jackpot, payout (PayoutRate, PayoutSum), Rakeback, Payback, DailyLossLimit, whitelist (BaseWhiteListItem, GESWhiteListItem, WhiteListData), IsMonitorUser, CoProcessMonitorUser, RequestCheckMonitoringUser, SetMonitorUser, Review_1 / Review_2 / Review_3, IsQAServerType, ChangeServerTarget, Update_ServerTarget, inspection_check_url, inspection_contents_web_url, SUCCESS_INSPECTION, webSocketGatePath, Ready.php, offer (OfferPopup, Offerwall, Err_Offerwall), redirect (redirect_host, «[VK] Redirection URI detected»), ALREADY_BANED, IsBlocked / BlockReason, license check (com.pairip.licensecheck, CHECK_LICENSE, «do strictQueryLicense»), self_auth_url / popup_webview_selfauth, loadUrl / WebView / EvaluateJS, http://ip-api.com/json"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "alb.zolotoiolimp.ru",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api-project-51605401.firebasestorage.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: MarkMonitor Inc."
+      },
+      {
+        "domain": "api.rustore.ru",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=e4d808a2-4186-4aac-aadd-26d1484299ce",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "cakhiatv1.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "com.snb.online",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: afternic"
+      },
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "уникальный номер установки (в коде DeviceUID, deviceUniqueIdentifier) → служебный",
+      "номер, который программа выдаёт телефону при первом запуске и потом прикладывает",
+      "почти к каждому обращению к своему серверу; по нему сервер узнаёт конкретный аппарат",
+      "ещё до того, как человек куда-то вошёл",
+      "рекламный номер устройства и признак «разрешено ли отслеживание» (AdID,",
+      "advertisingId, trackingEnabled) → отдельный рекламный идентификатор Android; по нему",
+      "одного и того же человека узнают разные программы и рекламные сети",
+      "адрес телефона в интернете (DeviceIP, LoginIP, PublicIP) → внешний сетевой адрес, по",
+      "которому легко определить страну, город и оператора связи",
+      "страна по внешнему адресу — приложение отдельно ходит на чужой сервис",
+      "http://ip-api.com/json → этот сервис отвечает, из какой страны и от какого провайдера зашёл",
+      "человек, даже если в телефоне нет симкарты",
+      "страна симкарты и страна сотовой сети (simCountryIso, networkCountryIso) → в какой",
+      "стране выдана симка и к сети какой страны сейчас подключён телефон",
+      "страна платёжного аккаунта магазина (playCountryCode, запрос настроек оплаты у Google",
+      "Play) → в какой стране зарегистрирован кошелёк человека",
+      "название магазина, из которого поставлена программа (installerPackageName) → Google",
+      "Play, RuStore или что-то иное",
+      "модель телефона и его служебное состояние (deviceModel, deviceStatus) → какая марка и",
+      "модель устройства у человека",
+      "язык телефона и язык уведомлений (envirLang, Language, PushLanguage, UsingLanguage,",
+      "чтение системного языка Android) → на каком языке настроен аппарат",
+      "номер версии программы и тип сборки (now_app_Version, app_ver, CurrentClientType,",
+      "StoreClientType) → какая именно сборка стоит у человека: «для Google Play», «для RuStore»,",
+      "«российская», «глобальная», «корейская» и так далее",
+      "адрес для уведомлений (PushToken из набора Firebase) → служебный адрес, по которому",
+      "на этот конкретный телефон можно прислать сообщение",
+      "данные входа: логин и пароль либо служебный ключ (LoginPW, PWToken), а также ключи",
+      "входа через VK, Яндекс, Google, Apple, LINE, Telegram, Facebook (SNSAccessToken,",
+      "VKAccessToken, YandexAccessToken, LineAccessToken, AuthCode, Provider)",
+      "внутренний номер игрока и тип входа (UID, UserPUID, LoginType) → именно по этому",
+      "номеру сервер потом сверяет человека со своими списками",
+      "прежний номер устройства при его смене (BeforeDeviceUID в запросе",
+      "RequestChangeDeviceUID) → чтобы связать старый и новый аппарат одного человека",
+      "код купона и язык при активации подарков (CouponCode, UsingLanguage), а также",
+      "рекламные события и покупки, которые уходят в сторонние счётчики (AppsFlyer, AppMetrica,",
+      "MyTracker, Firebase, ironSource)"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• уникальный номер установки (в коде DeviceUID, deviceUniqueIdentifier) → служебный\n• номер, который программа выдаёт телефону при первом запуске и потом прикладывает\n• почти к каждому обращению к своему серверу; по нему сервер узнаёт конкретный аппарат\n• ещё до того, как человек куда-то вошёл\n• рекламный номер устройства и признак «разрешено ли отслеживание» (AdID,\n• advertisingId, trackingEnabled) → отдельный рекламный идентификатор Android; по нему\n• одного и того же человека узнают разные программы и рекламные сети\n• адрес телефона в интернете (DeviceIP, LoginIP, PublicIP) → внешний сетевой адрес, по\n• которому легко определить страну, город и оператора связи\n• страна по внешнему адресу — приложение отдельно ходит на чужой сервис\n• http://ip-api.com/json → этот сервис отвечает, из какой страны и от какого провайдера зашёл\n• человек, даже если в телефоне нет симкарты\n• страна симкарты и страна сотовой сети (simCountryIso, networkCountryIso) → в какой\n• стране выдана симка и к сети какой страны сейчас подключён телефон\n• страна платёжного аккаунта магазина (playCountryCode, запрос настроек оплаты у Google\n• Play) → в какой стране зарегистрирован кошелёк человека\n• название магазина, из которого поставлена программа (installerPackageName) → Google\n• Play, RuStore или что-то иное\n• модель телефона и его служебное состояние (deviceModel, deviceStatus) → какая марка и\n• модель устройства у человека\n• язык телефона и язык уведомлений (envirLang, Language, PushLanguage, UsingLanguage,\n• чтение системного языка Android) → на каком языке настроен аппарат\n• номер версии программы и тип сборки (now_app_Version, app_ver, CurrentClientType,\n• StoreClientType) → какая именно сборка стоит у человека: «для Google Play», «для RuStore»,\n• «российская», «глобальная», «корейская» и так далее\n• адрес для уведомлений (PushToken из набора Firebase) → служебный адрес, по которому\n• на этот конкретный телефон можно прислать сообщение\n• данные входа: логин и пароль либо служебный ключ (LoginPW, PWToken), а также ключи\n• входа через VK, Яндекс, Google, Apple, LINE, Telegram, Facebook (SNSAccessToken,\n• VKAccessToken, YandexAccessToken, LineAccessToken, AuthCode…"
+  }
 }

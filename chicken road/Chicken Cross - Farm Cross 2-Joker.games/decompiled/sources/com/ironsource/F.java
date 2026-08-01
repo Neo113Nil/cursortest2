@@ -1,0 +1,12 @@
+package com.ironsource;
+
+import com.ironsource.mediationsdk.logger.IronSourceError;
+
+/* loaded from: classes6.dex */
+public interface F {
+    void a(B b);
+
+    void a(B b, IronSourceError ironSourceError);
+
+    void b(B b);
+}

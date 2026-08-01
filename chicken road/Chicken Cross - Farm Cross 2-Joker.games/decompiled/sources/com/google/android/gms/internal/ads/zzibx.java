@@ -1,0 +1,61 @@
+package com.google.android.gms.internal.ads;
+
+import java.security.GeneralSecurityException;
+import java.util.Arrays;
+import javax.crypto.spec.SecretKeySpec;
+
+/* compiled from: com.google.android.gms:play-services-ads@@25.4.0 */
+/* loaded from: classes9.dex */
+public final class zzibx implements zzhfi {
+    private static final byte[] zza = {0};
+    private final zzhrh zzb;
+    private final int zzc;
+    private final byte[] zzd;
+    private final byte[] zze;
+
+    private zzibx(zzhpf zzhpfVar) throws GeneralSecurityException {
+        this.zzb = zzibu.zzb(zzhrf.zzc(zzhrg.zzb(zzhpfVar.zzf().zzc()), zzhpfVar.zzd()));
+        this.zzc = zzhpfVar.zzf().zzd();
+        this.zzd = zzhpfVar.zze().zzc();
+        if (zzhpfVar.zzf().zzf().equals(zzhpl.zzc)) {
+            this.zze = Arrays.copyOf(zza, 1);
+        } else {
+            this.zze = new byte[0];
+        }
+    }
+
+    public static zzhfi zza(zzhpf zzhpfVar) throws GeneralSecurityException {
+        return new zzibx(zzhpfVar);
+    }
+
+    public static zzhfi zzb(zzhpq zzhpqVar) throws GeneralSecurityException {
+        return new zzibx(zzhpqVar);
+    }
+
+    public final byte[] zzc(byte[] bArr) throws GeneralSecurityException {
+        byte[] bArr2 = this.zze;
+        return bArr2.length > 0 ? zziat.zza(this.zzd, this.zzb.zza(zziat.zza(bArr, bArr2), this.zzc)) : zziat.zza(this.zzd, this.zzb.zza(bArr, this.zzc));
+    }
+
+    private zzibx(zzhpq zzhpqVar) throws GeneralSecurityException {
+        String valueOf = String.valueOf(zzhpqVar.zzf().zzg());
+        String.valueOf(valueOf);
+        String valueOf2 = String.valueOf(valueOf);
+        this.zzb = new zzibw("HMAC".concat(valueOf2), new SecretKeySpec(zzhpqVar.zzd().zzc(zzheq.zza()), "HMAC"));
+        this.zzc = zzhpqVar.zzf().zzd();
+        this.zzd = zzhpqVar.zze().zzc();
+        if (zzhpqVar.zzf().zzf().equals(zzhpy.zzc)) {
+            this.zze = Arrays.copyOf(zza, 1);
+        } else {
+            this.zze = new byte[0];
+        }
+    }
+
+    public zzibx(zzhrh zzhrhVar, int i) throws GeneralSecurityException {
+        this.zzb = zzhrhVar;
+        this.zzc = i;
+        this.zzd = new byte[0];
+        this.zze = new byte[0];
+        zzhrhVar.zza(new byte[0], i);
+    }
+}
