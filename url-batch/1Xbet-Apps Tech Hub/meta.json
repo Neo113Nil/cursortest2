@@ -32,5 +32,89 @@
   ],
   "stdout": "Downloading com.translator.alllanguagetranslations.ath...\ncom.translator.alllanguagetranslations.ath downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "1Xbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "7.4.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "34"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.8.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob, Meta Audience Network, Pangle"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Remote Config, Google Play Services Measurement, ByteDance Crash/APM"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.RECORD_AUDIO, android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.SYSTEM_ALERT_WINDOW, android.permission.FOREGROUND_SERVICE, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.translator.alllanguagetranslations.ath.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.BILLING"
+      },
+      {
+        "param": "Libraries",
+        "value": "dev.cct.translatorapp; AndroidX (AppCompat 1.6.1, Core 1.12.0, Activity, Fragment, RecyclerView, Browser 1.6.0-alpha02, Room 2.5.0, Work 2.7.0, Lifecycle, Startup, Emoji2); Kotlin 1.8.0 / kotlinx-coroutines 1.7.3 / kotlinx-serialization; Ktor client; Okio; Google Mobile Ads / play-services-ads 22.6.0; Meta Audience Network; Facebook Shimmer; Pangle/ByteDance OpenAdsSDK (com.bytedance.sdk.openadsdk, com.bytedance.adsdk, com.bykv, com.pgl.ssdk); ByteDance crash/APM/AppLog; IAB OM SDK; User Messaging Platform 2.1.0; Play Services Ads Identifier / AppSet / Measurement; Play Billing 6.0.1; Firebase Analytics 21.2.0, Firebase Remote Config 21.2.0, Firebase Common/Installations/ABT; Glide; Lottie; Material 1.8.0; SDP/SSP; WaveView; SLF4J"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "api.dictionaryapi.dev, ktor.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл «0»: язык приложения, выбранные языки перевода/речи/виджета, флаг первого запуска, счётчик открытий, статус подписки и цены, флаги рекламы; файл пакета: код локали «code»; TranslatorPrefs: remainingTime для плавающего переводчика; prefTrans: лимит межстраничной рекламы по дню"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer, redirect, landing, User-Agent, WebView, loadUrl"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "api.dictionaryapi.dev",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC",
+        "vt_url": "https://www.virustotal.com/gui/domain/api.dictionaryapi.dev",
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      },
+      {
+        "domain": "ktor.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: MarkMonitor Inc.",
+        "vt_url": "https://www.virustotal.com/gui/domain/ktor.io",
+        "detections": "0/91 (malicious=0, suspicious=0)"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
