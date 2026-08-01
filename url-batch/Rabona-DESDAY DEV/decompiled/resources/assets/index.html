@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <title>Lucky Cross</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg-a: #090014;
+      --bg-b: #2a084f;
+      --bg-c: #5d1fa2;
+      --panel: rgba(18, 6, 38, 0.74);
+      --panel-strong: rgba(255, 255, 255, 0.11);
+      --line: rgba(255, 255, 255, 0.17);
+      --text: #fff8ff;
+      --muted: #ccb7e6;
+      --cross: #ffd05b;
+      --zero: #74f5d7;
+      --danger: #ff6d9e;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 14%, rgba(255, 208, 91, 0.24), transparent 28%),
+        radial-gradient(circle at 84% 22%, rgba(116, 245, 215, 0.2), transparent 30%),
+        linear-gradient(145deg, var(--bg-a), var(--bg-b) 52%, var(--bg-c));
+      color: var(--text);
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+    }
+
+    .app {
+      width: min(100%, 390px);
+      min-height: min(680px, calc(100dvh - 32px));
+      display: grid;
+      gap: 14px;
+      position: relative;
+    }
+
+    .screen,
+    .game {
+      width: 100%;
+      min-height: inherit;
+    }
+
+    .screen {
+      display: grid;
+      align-content: center;
+      gap: 18px;
+    }
+
+    .game {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 14px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .menu-panel {
+      display: grid;
+      gap: 18px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 8px;
+      background: rgba(14, 3, 33, 0.7);
+      box-shadow: inset 0 0 40px rgba(255, 255, 255, 0.05), 0 24px 80px rgba(0, 0, 0, 0.36);
+      text-align: center;
+    }
+
+    .menu-title {
+      margin: 0;
+      font-size: clamp(44px, 15vw, 66px);
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    .menu-copy,
+    .result-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 750;
+      line-height: 1.4;
+    }
+
+    .symbol-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .symbol-tile {
+      min-height: 72px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      font-size: 38px;
+      font-weight: 950;
+    }
+
+    .symbol-tile:nth-child(1),
+    .result-mark.x {
+      color: var(--cross);
+    }
+
+    .symbol-tile:nth-child(2),
+    .result-mark.o {
+      color: var(--zero);
+    }
+
+    .symbol-tile:nth-child(3),
+    .result-mark.draw {
+      color: #f6e8ff;
+    }
+
+    .menu-actions {
+      display: grid;
+      gap: 10px;
+    }
+
+    .result-mark {
+      font-size: 68px;
+      font-weight: 950;
+      line-height: 0.9;
+    }
+
+    .result-title {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .mini-score {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .mini-score div {
+      min-height: 58px;
+      padding: 9px 6px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .mini-score span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 850;
+      text-transform: uppercase;
+    }
+
+    .mini-score strong {
+      display: block;
+      margin-top: 5px;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .score {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .score div {
+      min-height: 62px;
+      padding: 9px 8px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      text-align: center;
+    }
+
+    .score span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .score strong {
+      display: block;
+      margin-top: 4px;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    main {
+      align-self: center;
+      display: grid;
+      gap: 14px;
+      width: 100%;
+    }
+
+    .status {
+      min-height: 28px;
+      color: #f4eaff;
+      font-size: 18px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .board {
+      width: 100%;
+      max-width: 390px;
+      aspect-ratio: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.19);
+      border-radius: 8px;
+      background: rgba(9, 0, 20, 0.45);
+      box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.06), 0 22px 80px rgba(0, 0, 0, 0.36);
+    }
+
+    .cell {
+      width: 100%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 8px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04));
+      color: var(--text);
+      font-size: clamp(44px, 20vw, 86px);
+      font-weight: 950;
+      line-height: 1;
+      display: grid;
+      place-items: center;
+      transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+    }
+
+    .cell:active {
+      transform: scale(0.96);
+    }
+
+    .cell.x {
+      color: var(--cross);
+      text-shadow: 0 0 18px rgba(255, 208, 91, 0.46);
+    }
+
+    .cell.o {
+      color: var(--zero);
+      text-shadow: 0 0 18px rgba(116, 245, 215, 0.42);
+    }
+
+    .cell.win {
+      border-color: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    button {
+      min-height: 50px;
+      border: 0;
+      border-radius: 8px;
+      color: #170522;
+      background: var(--cross);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    button.secondary {
+      color: var(--text);
+      background: var(--panel-strong);
+      border: 1px solid var(--line);
+    }
+
+    footer {
+      min-height: 22px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding-left: 14px;
+        padding-right: 14px;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .app {
+        width: min(100%, 362px);
+        max-width: 362px;
+        min-height: calc(100dvh - 28px);
+      }
+
+      .score {
+        gap: 7px;
+      }
+
+      .score div {
+        min-width: 0;
+      }
+
+      .board {
+        gap: 8px;
+        padding: 8px;
+      }
+
+      .controls {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="app" aria-label="Lucky Cross game">
+    <section class="screen" id="startScreen" aria-label="Start menu">
+      <div class="menu-panel">
+        <div>
+          <h1 class="menu-title">Lucky<br>Cross</h1>
+          <p class="menu-copy">Place three X marks in a line before the AI locks the board.</p>
+        </div>
+        <div class="symbol-row" aria-hidden="true">
+          <div class="symbol-tile">X</div>
+          <div class="symbol-tile">O</div>
+          <div class="symbol-tile">#</div>
+        </div>
+        <div class="menu-actions">
+          <button id="startGame">Start game</button>
+          <button class="secondary" id="startResetScore">Reset score</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="game hidden" id="gameScreen" aria-label="Game board">
+      <section class="score" aria-label="Score">
+        <div><span>You</span><strong id="wins">0</strong></div>
+        <div><span>Draw</span><strong id="draws">0</strong></div>
+        <div><span>AI</span><strong id="losses">0</strong></div>
+      </section>
+
+      <main>
+        <div class="status" id="status">Your move</div>
+        <section class="board" id="board" aria-label="Tic tac toe board"></section>
+        <div class="controls">
+          <button id="newRound">New round</button>
+          <button class="secondary" id="resetScore">Reset score</button>
+        </div>
+      </main>
+
+      <footer id="footer">Center control changes everything.</footer>
+    </section>
+
+    <section class="screen hidden" id="resultScreen" aria-label="Round result">
+      <div class="menu-panel">
+        <div class="result-mark" id="resultMark">X</div>
+        <div>
+          <h2 class="result-title" id="resultTitle">You win</h2>
+          <p class="result-copy" id="resultCopy">Nice line. Start another round when ready.</p>
+        </div>
+        <div class="mini-score" aria-label="Score summary">
+          <div><span>You</span><strong id="resultWins">0</strong></div>
+          <div><span>Draw</span><strong id="resultDraws">0</strong></div>
+          <div><span>AI</span><strong id="resultLosses">0</strong></div>
+        </div>
+        <div class="menu-actions">
+          <button id="playAgain">Play again</button>
+          <button class="secondary" id="mainMenu">Main menu</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    const boardEl = document.getElementById("board");
+    const statusEl = document.getElementById("status");
+    const footerEl = document.getElementById("footer");
+    const startScreen = document.getElementById("startScreen");
+    const gameScreen = document.getElementById("gameScreen");
+    const resultScreen = document.getElementById("resultScreen");
+    const resultMarkEl = document.getElementById("resultMark");
+    const resultTitleEl = document.getElementById("resultTitle");
+    const resultCopyEl = document.getElementById("resultCopy");
+    const scoreEls = {
+      wins: document.getElementById("wins"),
+      draws: document.getElementById("draws"),
+      losses: document.getElementById("losses"),
+      resultWins: document.getElementById("resultWins"),
+      resultDraws: document.getElementById("resultDraws"),
+      resultLosses: document.getElementById("resultLosses")
+    };
+    const lines = [
+      [0, 1, 2], [3, 4, 5], [6, 7, 8],
+      [0, 3, 6], [1, 4, 7], [2, 5, 8],
+      [0, 4, 8], [2, 4, 6]
+    ];
+    const score = { wins: 0, draws: 0, losses: 0 };
+    let board = Array(9).fill("");
+    let locked = false;
+    let resultTimer = null;
+
+    function showScreen(screen) {
+      startScreen.classList.add("hidden");
+      gameScreen.classList.add("hidden");
+      resultScreen.classList.add("hidden");
+      screen.classList.remove("hidden");
+    }
+
+    function renderBoard() {
+      boardEl.innerHTML = "";
+      board.forEach((value, index) => {
+        const cell = document.createElement("button");
+        cell.className = `cell ${value.toLowerCase()}`;
+        cell.type = "button";
+        cell.textContent = value;
+        cell.setAttribute("aria-label", value ? `Cell ${index + 1}: ${value}` : `Cell ${index + 1}: empty`);
+        cell.addEventListener("click", () => play(index));
+        boardEl.appendChild(cell);
+      });
+    }
+
+    function winner(state = board) {
+      for (const line of lines) {
+        const [a, b, c] = line;
+        if (state[a] && state[a] === state[b] && state[a] === state[c]) {
+          return { mark: state[a], line };
+        }
+      }
+      return state.every(Boolean) ? { mark: "draw", line: [] } : null;
+    }
+
+    function scoreMove(index, mark) {
+      const next = board.slice();
+      next[index] = mark;
+      const result = winner(next);
+      if (result?.mark === mark) return 100;
+      if (result?.mark === "draw") return 8;
+
+      const opponent = mark === "O" ? "X" : "O";
+      for (let i = 0; i < 9; i++) {
+        if (!next[i]) {
+          const trial = next.slice();
+          trial[i] = opponent;
+          if (winner(trial)?.mark === opponent) return mark === "O" ? 90 : 70;
+        }
+      }
+
+      const weights = [7, 4, 7, 4, 10, 4, 7, 4, 7];
+      return weights[index] + Math.random();
+    }
+
+    function chooseAiMove() {
+      const empty = board.map((value, index) => value ? -1 : index).filter(index => index >= 0);
+      const winning = empty.find(index => {
+        const trial = board.slice();
+        trial[index] = "O";
+        return winner(trial)?.mark === "O";
+      });
+      if (winning !== undefined) return winning;
+
+      const blocking = empty.find(index => {
+        const trial = board.slice();
+        trial[index] = "X";
+        return winner(trial)?.mark === "X";
+      });
+      if (blocking !== undefined) return blocking;
+
+      return empty.sort((a, b) => scoreMove(b, "O") - scoreMove(a, "O"))[0];
+    }
+
+    function endRound(result) {
+      locked = true;
+      let title = "Draw";
+      let copy = "Clean board, no winner. One more?";
+      let mark = "#";
+      let resultClass = "draw";
+
+      if (result.line.length) {
+        result.line.forEach(index => boardEl.children[index].classList.add("win"));
+      }
+      if (result.mark === "X") {
+        score.wins++;
+        statusEl.textContent = "Lucky strike. You win!";
+        footerEl.textContent = "Nice line. Start another round when ready.";
+        title = "You win";
+        copy = "Lucky strike. The line is yours.";
+        mark = "X";
+        resultClass = "x";
+      } else if (result.mark === "O") {
+        score.losses++;
+        statusEl.textContent = "AI takes the round";
+        footerEl.textContent = "Block two-way threats earlier.";
+        title = "AI wins";
+        copy = "The board closed fast. Take the center early.";
+        mark = "O";
+        resultClass = "o";
+      } else {
+        score.draws++;
+        statusEl.textContent = "Draw";
+        footerEl.textContent = "Clean board, no winner. One more?";
+      }
+      updateScore();
+      resultMarkEl.textContent = mark;
+      resultMarkEl.className = `result-mark ${resultClass}`;
+      resultTitleEl.textContent = title;
+      resultCopyEl.textContent = copy;
+      clearTimeout(resultTimer);
+      resultTimer = window.setTimeout(() => showScreen(resultScreen), 650);
+    }
+
+    function checkRound() {
+      const result = winner();
+      if (result) {
+        endRound(result);
+        return true;
+      }
+      return false;
+    }
+
+    function play(index) {
+      if (locked || board[index]) return;
+      board[index] = "X";
+      renderBoard();
+      if (checkRound()) return;
+
+      locked = true;
+      statusEl.textContent = "AI thinking...";
+      window.setTimeout(() => {
+        const move = chooseAiMove();
+        if (move !== undefined) board[move] = "O";
+        renderBoard();
+        locked = false;
+        if (!checkRound()) statusEl.textContent = "Your move";
+      }, 360);
+    }
+
+    function updateScore() {
+      scoreEls.wins.textContent = score.wins;
+      scoreEls.draws.textContent = score.draws;
+      scoreEls.losses.textContent = score.losses;
+      scoreEls.resultWins.textContent = score.wins;
+      scoreEls.resultDraws.textContent = score.draws;
+      scoreEls.resultLosses.textContent = score.losses;
+    }
+
+    function newRound() {
+      clearTimeout(resultTimer);
+      board = Array(9).fill("");
+      locked = false;
+      statusEl.textContent = "Your move";
+      footerEl.textContent = "Center control changes everything.";
+      renderBoard();
+      showScreen(gameScreen);
+    }
+
+    function resetScore() {
+      score.wins = 0;
+      score.draws = 0;
+      score.losses = 0;
+      updateScore();
+    }
+
+    document.getElementById("startGame").addEventListener("click", newRound);
+    document.getElementById("startResetScore").addEventListener("click", resetScore);
+    document.getElementById("newRound").addEventListener("click", newRound);
+    document.getElementById("resetScore").addEventListener("click", () => {
+      resetScore();
+      newRound();
+    });
+    document.getElementById("playAgain").addEventListener("click", newRound);
+    document.getElementById("mainMenu").addEventListener("click", () => showScreen(startScreen));
+
+    updateScore();
+    renderBoard();
+  </script>
+</body>
+</html>
