@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "com.arcticexpedition.frostmatch.apk",
+    "config.arm64_v8a.apk"
+  ],
+  "base_apk": "com.arcticexpedition.frostmatch.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 390 (0%)\nINFO  - progress: 184 of 390 (47%)\nINFO  - progress: 259 of 390 (66%)\n                                                             \nERROR - finished with errors, count: 2\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Chicken Road 2-VERZEN LTD/decompiled",
+    "skipped": false,
+    "base_apk": "com.arcticexpedition.frostmatch.apk"
+  },
+  "analysis_files": [
+    "com.arcticexpedition.frostmatch.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.arcticexpedition.frostmatch.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/B/",
+    "decompiled/sources/C/",
+    "decompiled/sources/D/",
+    "decompiled/sources/E/",
+    "decompiled/sources/F/",
+    "decompiled/sources/G/",
+    "decompiled/sources/H/",
+    "decompiled/sources/I/",
+    "decompiled/sources/K/",
+    "decompiled/sources/M/",
+    "decompiled/sources/N/",
+    "decompiled/sources/O/",
+    "decompiled/sources/Q/",
+    "decompiled/sources/R/",
+    "decompiled/sources/S/",
+    "decompiled/sources/T/",
+    "decompiled/sources/U/",
+    "decompiled/sources/V/",
+    "decompiled/sources/W/",
+    "decompiled/sources/X/"
+  ]
+}

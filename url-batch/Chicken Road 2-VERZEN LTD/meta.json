@@ -1,0 +1,36 @@
+{
+  "app_id": "com.arcticexpedition.frostmatch",
+  "title": "Chicken Road 2",
+  "developer": "VERZEN LTD",
+  "developer_id": "VERZEN+LTD",
+  "icon": "https://play-lh.googleusercontent.com/absxCk2Fmqp01SNqZ5czVPEHycXsKOslY2QgoVPXjNLsU7HV6CHFryBBe5IVSE9OwyxyRgRSeT0Ff52yDI2zYMU",
+  "url": "https://play.google.com/store/apps/details?id=com.arcticexpedition.frostmatch&hl=en&gl=us",
+  "score": null,
+  "released": "Apr 4, 2026",
+  "updated": "Jun 25, 2026",
+  "version": "Varies with device",
+  "summary": "Welcome to the World of Chicken Road 2!",
+  "keyword": "url-batch",
+  "folder": "Chicken Road 2-VERZEN LTD",
+  "path": "url-batch/Chicken Road 2-VERZEN LTD",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.arcticexpedition.frostmatch.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Chicken Road 2-VERZEN LTD",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.arcticexpedition.frostmatch...\ncom.arcticexpedition.frostmatch downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.arcticexpedition.frostmatch...\ncom.arcticexpedition.frostmatch downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
