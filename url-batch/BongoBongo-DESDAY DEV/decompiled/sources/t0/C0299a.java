@@ -1,0 +1,156 @@
+package t0;
+
+import A.b;
+import A1.m;
+import L.T;
+import android.view.View;
+import android.view.ViewParent;
+import androidx.recyclerview.widget.RecyclerView;
+import com.google.android.material.behavior.SwipeDismissBehavior;
+import java.util.WeakHashMap;
+
+/* renamed from: t0.a, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C0299a extends m {
+
+    /* renamed from: a, reason: collision with root package name */
+    public int f3893a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public int f3894b = -1;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ SwipeDismissBehavior f3895c;
+
+    public C0299a(SwipeDismissBehavior swipeDismissBehavior) {
+        this.f3895c = swipeDismissBehavior;
+    }
+
+    @Override // A1.m
+    public final int F(View view) {
+        return view.getWidth();
+    }
+
+    @Override // A1.m
+    public final void R(View view, int i) {
+        this.f3894b = i;
+        this.f3893a = view.getLeft();
+        ViewParent parent = view.getParent();
+        if (parent != null) {
+            SwipeDismissBehavior swipeDismissBehavior = this.f3895c;
+            swipeDismissBehavior.f1756c = true;
+            parent.requestDisallowInterceptTouchEvent(true);
+            swipeDismissBehavior.f1756c = false;
+        }
+    }
+
+    @Override // A1.m
+    public final void S(int i) {
+        this.f3895c.getClass();
+    }
+
+    @Override // A1.m
+    public final void T(View view, int i, int i2) {
+        float width = view.getWidth();
+        SwipeDismissBehavior swipeDismissBehavior = this.f3895c;
+        float f2 = width * swipeDismissBehavior.f1757e;
+        float width2 = view.getWidth() * swipeDismissBehavior.f1758f;
+        float abs = Math.abs(i - this.f3893a);
+        if (abs <= f2) {
+            view.setAlpha(1.0f);
+        } else if (abs >= width2) {
+            view.setAlpha(RecyclerView.A0);
+        } else {
+            view.setAlpha(Math.min(Math.max(RecyclerView.A0, 1.0f - ((abs - f2) / (width2 - f2))), 1.0f));
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:33:0x0053, code lost:
+    
+        if (java.lang.Math.abs(r1) >= java.lang.Math.round(r5 * 0.5f)) goto L27;
+     */
+    @Override // A1.m
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void U(View view, float f2, float f3) {
+        int i;
+        this.f3894b = -1;
+        int width = view.getWidth();
+        boolean z2 = true;
+        SwipeDismissBehavior swipeDismissBehavior = this.f3895c;
+        if (f2 != RecyclerView.A0) {
+            WeakHashMap weakHashMap = T.f490a;
+            boolean z3 = view.getLayoutDirection() == 1;
+            int i2 = swipeDismissBehavior.d;
+            if (i2 != 2) {
+                if (i2 == 0) {
+                    i = this.f3893a;
+                    z2 = false;
+                } else {
+                    i = this.f3893a;
+                    z2 = false;
+                }
+            }
+            if (f2 >= RecyclerView.A0) {
+                int left = view.getLeft();
+                int i3 = this.f3893a;
+                if (left >= i3) {
+                    i = i3 + width;
+                }
+            }
+            i = this.f3893a - width;
+        } else {
+            int left2 = view.getLeft() - this.f3893a;
+            float width2 = view.getWidth();
+            swipeDismissBehavior.getClass();
+        }
+        if (swipeDismissBehavior.f1754a.o(i, view.getTop())) {
+            b bVar = new b(swipeDismissBehavior, view, z2);
+            WeakHashMap weakHashMap2 = T.f490a;
+            view.postOnAnimation(bVar);
+        }
+    }
+
+    @Override // A1.m
+    public final int k(View view, int i) {
+        int width;
+        int width2;
+        int width3;
+        WeakHashMap weakHashMap = T.f490a;
+        boolean z2 = view.getLayoutDirection() == 1;
+        int i2 = this.f3895c.d;
+        if (i2 == 0) {
+            if (z2) {
+                width = this.f3893a - view.getWidth();
+                width2 = this.f3893a;
+            } else {
+                width = this.f3893a;
+                width3 = view.getWidth();
+                width2 = width3 + width;
+            }
+        } else if (i2 != 1) {
+            width = this.f3893a - view.getWidth();
+            width2 = view.getWidth() + this.f3893a;
+        } else if (z2) {
+            width = this.f3893a;
+            width3 = view.getWidth();
+            width2 = width3 + width;
+        } else {
+            width = this.f3893a - view.getWidth();
+            width2 = this.f3893a;
+        }
+        return Math.min(Math.max(width, i), width2);
+    }
+
+    @Override // A1.m
+    public final int l(View view, int i) {
+        return view.getTop();
+    }
+
+    @Override // A1.m
+    public final boolean m0(View view, int i) {
+        int i2 = this.f3894b;
+        return (i2 == -1 || i2 == i) && this.f3895c.r(view);
+    }
+}
