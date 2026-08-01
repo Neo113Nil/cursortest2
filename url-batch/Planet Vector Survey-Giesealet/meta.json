@@ -1,0 +1,60 @@
+{
+  "app_id": "com.vectorharbor.planetvectorsurvey",
+  "title": "Planet Vector Survey",
+  "developer": "Giesealet",
+  "developer_id": "5644484772063866391",
+  "icon": "https://play-lh.googleusercontent.com/yWXR8cAYdTSkhcNENimk-pIB9QOvF3MW6a_K1BWGVY1KyQ1HWV6Khu-pLpZl22Alw-oFdAXEpy6HDdSnWHnZvg",
+  "url": "https://play.google.com/store/apps/details?id=com.vectorharbor.planetvectorsurvey&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 24, 2026",
+  "updated": "2026-06-24",
+  "version": "1.0",
+  "summary": "Stabilize drifting scan bands, lock planetary targets before timer collapses.",
+  "keyword": "url-batch",
+  "folder": "Planet Vector Survey-Giesealet",
+  "path": "url-batch/Planet Vector Survey-Giesealet",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.vectorharbor.planetvectorsurvey-1-asset.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.en.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.lt.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.ru.apk",
+    "com.vectorharbor.planetvectorsurvey-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Planet Vector Survey-Giesealet",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.vectorharbor.planetvectorsurvey...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.vectorharbor.planetvectorsurvey...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.vectorharbor.planetvectorsurvey ─╮\n│ Planet Vector Survey                  │\n│ 1.0  (vc 1)                           │\n╰───────────────────────────────────────╯\n\nDownloading 6 files  (3.9 MB)\n  com.vectorharbor.planetvectorsurvey-1.apk                  ━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n  com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk ━━ 100% 41… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.en.apk        ━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.lt.apk        ━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.ru.apk        ━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-asset.apk            ━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vectorharbor.planetvectorsurvey-1.apk                  │  2.4 MB │\n│ com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.en.apk        │ 20.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.lt.apk        │ 16.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.ru.apk        │ 16.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-asset.apk            │  2.4 MB │\n└────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.vectorharbor.planetvectorsurvey ─╮\n│ Planet Vector Survey                  │\n│ 1.0  (vc 1)                           │\n╰───────────────────────────────────────╯\n\nDownloading 6 files  (3.9 MB)\n  com.vectorharbor.planetvectorsurvey-1.apk                  ━━ 100% 2.… 1… 0:0…\n                                                                     MB  M…     \n  com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk ━━ 100% 41… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.en.apk        ━━ 100% 20… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.lt.apk        ━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-config.ru.apk        ━━ 100% 16… ?  0:0…\n                                                                     kB         \n  com.vectorharbor.planetvectorsurvey-1-asset.apk            ━━ 100% 1.… 1… 0:0…\n                                                                     MB  M…     \n\n                            Downloaded files                            \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                       ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.vectorharbor.planetvectorsurvey-1.apk                  │  2.4 MB │\n│ com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk │ 40.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.en.apk        │ 20.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.lt.apk        │ 16.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-config.ru.apk        │ 16.2 KB │\n│ com.vectorharbor.planetvectorsurvey-1-asset.apk            │  2.4 MB │\n└────────────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}

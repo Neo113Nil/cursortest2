@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.vectorharbor.planetvectorsurvey-1.apk",
+    "com.vectorharbor.planetvectorsurvey-1-asset.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.lt.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.en.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.ru.apk"
+  ],
+  "base_apk": "com.vectorharbor.planetvectorsurvey-1.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 1286 (0%)\nINFO  - progress: 234 of 1286 (18%)\nINFO  - progress: 356 of 1286 (27%)\nINFO  - progress: 494 of 1286 (38%)\nINFO  - progress: 642 of 1286 (49%)\nINFO  - progress: 871 of 1286 (67%)\nINFO  - progress: 925 of 1286 (71%)\nINFO  - progress: 1114 of 1286 (86%)\n                                                             \nERROR - finished with errors, count: 9\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/Planet Vector Survey-Giesealet/decompiled",
+    "skipped": false,
+    "base_apk": "com.vectorharbor.planetvectorsurvey-1.apk"
+  },
+  "analysis_files": [
+    "com.vectorharbor.planetvectorsurvey-1.apk",
+    "com.vectorharbor.planetvectorsurvey-1-asset.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.lt.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.en.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk",
+    "com.vectorharbor.planetvectorsurvey-1-config.ru.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1-asset.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1-config.lt.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1-config.en.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1-config.arm64_v8a.apk",
+    "apk/com.vectorharbor.planetvectorsurvey-1-config.ru.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/kotlin/"
+  ]
+}
