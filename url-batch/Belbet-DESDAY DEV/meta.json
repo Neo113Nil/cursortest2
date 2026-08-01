@@ -1,0 +1,60 @@
+{
+  "app_id": "com.quicktoss.winflip",
+  "title": "Belbet",
+  "developer": "DESDAY DEV",
+  "developer_id": "DESDAY+DEV",
+  "icon": "https://play-lh.googleusercontent.com/aTafYr8ht6gtSG36AKOEN2GPsyZxNlYNd80slCfQDYA5QoNuylEGEKqicFsaRsXNCPTR9lp7qcZK9zl9mXPrYiQ",
+  "url": "https://play.google.com/store/apps/details?id=com.quicktoss.winflip&hl=en&gl=us",
+  "score": null,
+  "released": "Jul 22, 2026",
+  "updated": "Jul 22, 2026",
+  "version": "Varies with device",
+  "summary": "Follow live sports with real-time scores, fixtures and team statistics.",
+  "keyword": "url-batch",
+  "folder": "Belbet-DESDAY DEV",
+  "path": "url-batch/Belbet-DESDAY DEV",
+  "updates_count": 1,
+  "ok": true,
+  "source": "gplaydl",
+  "files": [
+    "com.quicktoss.winflip-1-asset.apk",
+    "com.quicktoss.winflip-1-config.en.apk",
+    "com.quicktoss.winflip-1-config.lt.apk",
+    "com.quicktoss.winflip-1-config.ru.apk",
+    "com.quicktoss.winflip-1-config.xxhdpi.apk",
+    "com.quicktoss.winflip-1.apk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Belbet-DESDAY DEV",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.quicktoss.winflip...\n",
+      "stderr": ""
+    },
+    {
+      "method": "apkeep",
+      "try": 2,
+      "ok": false,
+      "exit_code": 0,
+      "stdout": "Downloading com.quicktoss.winflip...\n",
+      "stderr": ""
+    },
+    {
+      "method": "gplaydl",
+      "try": {
+        "force_auth": false,
+        "no_splits": false
+      },
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "╭─ com.quicktoss.winflip ─╮\n│ Belbet                  │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 6 files  (4.9 MB)\n  com.quicktoss.winflip-1.apk               ━━━━━━━ 100% 3.1/3.1 11.6    0:00:00\n                                                         MB      MB/s           \n  com.quicktoss.winflip-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 2.1     0:00:00\n                                                         kB      MB/s           \n  com.quicktoss.winflip-1-asset.apk         ━━━━━━━ 100% 1.9/1.9 15.1    0:00:00\n                                                         MB      MB/s           \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.quicktoss.winflip-1.apk               │  3.0 MB │\n│ com.quicktoss.winflip-1-config.en.apk     │ 44.4 KB │\n│ com.quicktoss.winflip-1-config.lt.apk     │ 28.4 KB │\n│ com.quicktoss.winflip-1-config.ru.apk     │ 28.4 KB │\n│ com.quicktoss.winflip-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.quicktoss.winflip-1-asset.apk         │  3.0 MB │\n└───────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+      "stderr": ""
+    }
+  ],
+  "stdout": "╭─ com.quicktoss.winflip ─╮\n│ Belbet                  │\n│ 1.0  (vc 1)             │\n╰─────────────────────────╯\n\nDownloading 6 files  (4.9 MB)\n  com.quicktoss.winflip-1.apk               ━━━━━━━ 100% 3.1/3.1 11.6    0:00:00\n                                                         MB      MB/s           \n  com.quicktoss.winflip-1-config.en.apk     ━━━━━━━ 100% 45.5/4… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.lt.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.ru.apk     ━━━━━━━ 100% 29.1/2… ?       0:00:00\n                                                         kB                     \n  com.quicktoss.winflip-1-config.xxhdpi.apk ━━━━━━━ 100% 66.5/6… 2.1     0:00:00\n                                                         kB      MB/s           \n  com.quicktoss.winflip-1-asset.apk         ━━━━━━━ 100% 1.9/1.9 15.1    0:00:00\n                                                         MB      MB/s           \n\n                   Downloaded files                    \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                      ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.quicktoss.winflip-1.apk               │  3.0 MB │\n│ com.quicktoss.winflip-1-config.en.apk     │ 44.4 KB │\n│ com.quicktoss.winflip-1-config.lt.apk     │ 28.4 KB │\n│ com.quicktoss.winflip-1-config.ru.apk     │ 28.4 KB │\n│ com.quicktoss.winflip-1-config.xxhdpi.apk │ 64.9 KB │\n│ com.quicktoss.winflip-1-asset.apk         │  3.0 MB │\n└───────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
+  "stderr": "",
+  "exit_code": 0
+}
