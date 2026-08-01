@@ -521,9 +521,114 @@
 | VIPRE | Unrated |
 | Xcitium Verdict Cloud | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=5cd681c4-73d8-4c99-8421-e7742e033f50 |
+| Куда редиректит | https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=3d8bd5dd-58ff-43d4-9f93-3bcdfd3c4b17 |
 | Что выводит (кратко) | title: Log in. Log in Log in with ID Email Phone number Next Face or fingerprint login QR code Create ID Yandex ID. The key for all your services Learn more |
 | Где припаркован | регистратор: SafeNames Ltd. |
+
+## Проверка домена: cakhiatv1.net
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | cakhiatv1.net |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/cakhiatv1.net |
+| Детекции | 0/91 (malicious=0, suspicious=0) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| Abusix | Clean |
+| Acronis | Clean |
+| ADMINUSLabs | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| Chong Lua Dao | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CRDF | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Forcepoint ThreatSeeker | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| Netcraft | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Webroot | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| 0xSI_f33d | Unrated |
+| alphaMountain.ai | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| Bkav | Unrated |
+| ChainPatrol | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Gridinsoft | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| LevelBlue | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| ZeroFox | Unrated |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam. CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam Bỏ qua nội dung World Cup 2026 CakhiaTV Bảng xếp hạng Kết quả bóng đá Lịch Thi Đấu Nhận Định Tin Tức Bóng Đá Danh Thủ Bóng Đá CakhiaTV – Trực tiếp bóng đá xuyên suốt World Cup 2026 Tất cả 0 Trực tiếp 0 Trận hot 0 Hô |
+| Где припаркован | нет данных |
 
 ## Проверка домена: com.snb.online
 
@@ -656,7 +761,6 @@
 | Certego | Clean |
 | CINS Army | Clean |
 | CMC Threat Intelligence | Clean |
-| Criminal IP | Clean |
 | CTX AI | Clean |
 | Cyble | Clean |
 | CyRadar | Clean |
@@ -707,6 +811,7 @@
 | Bkav | Unrated |
 | ChainPatrol | Unrated |
 | Cluster25 | Unrated |
+| Criminal IP | Unrated |
 | CSIS Security Group | Unrated |
 | Cyan | Unrated |
 | DNS8 | Unrated |
@@ -734,108 +839,3 @@
 | Куда редиректит | https://cakhiatv1.net/ |
 | Что выводит (кратко) | title: CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam. CakhiaTV cakhiatv1.net - Trực tiếp bóng đá AFF Cup 2026 Việt Nam Bỏ qua nội dung World Cup 2026 CakhiaTV Bảng xếp hạng Kết quả bóng đá Lịch Thi Đấu Nhận Định Tin Tức Bóng Đá Danh Thủ Bóng Đá CakhiaTV – Trực tiếp bóng đá xuyên suốt World Cup 2026 Tất cả 0 Trực tiếp 0 Trận hot 0 Hô |
 | Где припаркован | регистратор: NAMECHEAP INC |
-
-## Проверка домена: grs.dbankcloud.asia
-
-Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
-
-| Параметр / движок | Значение / вердикт |
-|---|---|
-| Домен | grs.dbankcloud.asia |
-| VirusTotal URL | https://www.virustotal.com/gui/domain/grs.dbankcloud.asia |
-| Детекции | 0/91 (malicious=0, suspicious=0) |
-| Security vendors' analysis | ниже построчно, как на VirusTotal |
-| Abusix | Clean |
-| Acronis | Clean |
-| ADMINUSLabs | Clean |
-| AILabs (MONITORAPP) | Clean |
-| AlienVault | Clean |
-| alphaMountain.ai | Clean |
-| Antiy-AVL | Clean |
-| BitDefender | Clean |
-| Blueliv | Clean |
-| Certego | Clean |
-| Chong Lua Dao | Clean |
-| CINS Army | Clean |
-| CMC Threat Intelligence | Clean |
-| CRDF | Clean |
-| Criminal IP | Clean |
-| CTX AI | Clean |
-| Cyble | Clean |
-| CyRadar | Clean |
-| desenmascara.me | Clean |
-| DNS8 | Clean |
-| Dr.Web | Clean |
-| EmergingThreats | Clean |
-| Emsisoft | Clean |
-| ESET | Clean |
-| ESTsecurity | Clean |
-| Forcepoint ThreatSeeker | Clean |
-| Fortinet | Clean |
-| G-Data | Clean |
-| Google Safe Browsing | Clean |
-| GreenSnow | Clean |
-| Heimdal Security | Clean |
-| IPsum | Clean |
-| Juniper Networks | Clean |
-| Kaspersky | Clean |
-| LevelBlue | Clean |
-| Lionic | Clean |
-| Malwared | Clean |
-| MalwarePatrol | Clean |
-| OpenPhish | Clean |
-| Phishing Database | Clean |
-| Phishtank | Clean |
-| PREBYTES | Clean |
-| Quick Heal | Clean |
-| Quttera | Clean |
-| Scantitan | Clean |
-| SCUMWARE.org | Clean |
-| Seclookup | Clean |
-| Sophos | Clean |
-| StopForumSpam | Clean |
-| Sucuri SiteCheck | Clean |
-| ThreatHive | Clean |
-| URLhaus | Clean |
-| URLQuery | Clean |
-| Viettel Threat Intelligence | Clean |
-| ViriBack | Clean |
-| VX Vault | Clean |
-| Webroot | Clean |
-| Yandex Safebrowsing | Clean |
-| ZeroCERT | Clean |
-| 0xSI_f33d | Unrated |
-| AlphaSOC | Unrated |
-| ArcSight Threat Intelligence | Unrated |
-| AutoShun | Unrated |
-| Axur | Unrated |
-| Bfore.Ai PreCrime | Unrated |
-| Bkav | Unrated |
-| ChainPatrol | Unrated |
-| Cluster25 | Unrated |
-| CSIS Security Group | Unrated |
-| Cyan | Unrated |
-| Ermes | Unrated |
-| Fortra | Unrated |
-| GCP Abuse Intelligence | Unrated |
-| GreyNoise | Unrated |
-| Gridinsoft | Unrated |
-| Guardpot | Unrated |
-| Hunt.io Intelligence | Unrated |
-| Lumu | Unrated |
-| MalwareURL | Unrated |
-| Mimecast | Unrated |
-| Netcraft | Unrated |
-| PhishFort | Unrated |
-| PrecisionSec | Unrated |
-| SafeToOpen | Unrated |
-| Sansec eComscan | Unrated |
-| SecureBrain | Unrated |
-| Snort IP sample list | Unrated |
-| SOCRadar | Unrated |
-| VIPRE | Unrated |
-| Xcitium Verdict Cloud | Unrated |
-| ZeroFox | Unrated |
-| Куда редиректит | нет (без редиректа) |
-| Что выводит (кратко) | title: Error. Error An error occurred. An error occurred. code: 4xx |
-| Где припаркован | регистратор: Xin Net Technology Corporation |

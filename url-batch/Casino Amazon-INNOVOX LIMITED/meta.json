@@ -32,5 +32,115 @@
   ],
   "stdout": "Downloading com.amazonfoot.kickball...\ncom.amazonfoot.kickball downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Casino Amazon (в системе — «Amazon Foot KickBall», пакет com.amazonfoot.kickball, версия 1.0.1, versionCode 2, разработчик INNOVOX LIMITED)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Start.io / StartApp (нативный SDK 5.3.2 + обёртка RNStartIoSdk: баннер, MREC, нативная реклама, межстраничная, cover-реклама, реклама за вознаграждение, тип OFFERWALL), IAB Open Measurement / OMID (в составе Start.io)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Yandex AppMetrica 7.14.1 (ключ e95afcd3-0ccf-4582-b003-27651ad85f60, события app_open, screen_view, round_start, round_end, wheel_spin, wheel_prize_claim, coins_converted, shop_purchase, rewarded_ad_viewed, payout_method_connected, withdrawal_request), OneSignal 5.9.6 (push и in-app сообщения, app id 67ad5f71-9aa9-43ed-9a40-5de17a6893d3), Firebase Cloud Messaging / Installations / Datatransport и Firebase analytics-connector, собственная телеметрия Start.io (adImpression, infoEvent), OpenTelemetry в составе AppMetrica"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, com.android.vending.BILLING, com.google.android.gms.permission.AD_ID, com.amazonfoot.kickball.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.RECEIVE_BOOT_COMPLETED, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ, me.everything.badger.permission.BADGE_COUNT_WRITE, android.permission.ACCESS_WIFI_STATE, com.google.android.fins…"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native 0.85.3 (Hermes, New Architecture / Fabric), com.facebook.react + Fresco, fbjni, SoLoader; Kotlin 2.1.20, kotlinx.coroutines (core, android, play-services); AndroidX: activity, annotation-experimental, appcompat, appcompat-resources, arch.core, autofill, browser (Custom Tabs / Trusted Web Activity), cardview, compose.runtime, compose.ui (geometry, graphics, text, unit, util), coordinatorlayout, core, core-ktx, core-viewtree, cursoradapter, customview, customview-poolingcontainer, documentfile, drawerlayout, dynamicanimation, emoji2, emoji2-views-helper, fragment, fragment-ktx, graphics-shapes, interpolator, legacy-support-core-utils, lifecycle (livedata, process, runtime, service, viewmodel, savedstate), loader, localbroadcastmanager, print, profileinstaller, recyclerview, room-runtime, room-ktx, savedstate, sqlite, sqlite-bundled, sqlite-framework, startup-runtime, swiperefreshlayout, tracing, transition, vectordrawable, versionedparcelable, viewpager, viewpager2, webkit, work-runtime; Google Material Components; Google Play Services: ads-identifier, appset, base, basement, cloud-messaging, location, places-placereport, stats, tasks; Google Play Billing 8.3.0 + billing…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "adsmetadata.mobileadexchange.net, adsmetadata.startappservice.com, api.iapkit.com, appmetrica.io, funnel-assets.startappservice.com, graph.oculus.com, imp.startappservice.com, infoevent.startappservice.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Своё состояние игра держит в хранилище приложения (AsyncStorage) с ключами вида @amazonfootkickball/…: balance (монеты), dollar_balance (виртуальные доллары), has_entered_game (флаг первого входа), last_bet (последняя ставка), daily_bonus_claimed_at и low_balance_bonus_at (когда выдавались бонусы), wheel_bonus_spins, wheel_last_free_spin_at, wheel_last_collect_at (колесо фортуны), shop_bonus_percent и shop_bonus_ends_at (купленный бонус к выигрышу и его срок), shop_priority_withdrawal (купленный «приоритетный вывод»), connected_payout_methods (список идентификаторов подключённых способов выплат — сами реквизиты не сохраняются). Собственные SharedPreferences заводят SDK: OneSignal; com.startapp.sdk, com.startapp.sdk.extras, com.startapp.android.publish.CookiePrefsFile и набор файлов StartApp- (в т.ч. строка согласия IABUSPrivacy_String); com.google.firebase.messaging и app_set_id_storage; AppMetrica хранит appmetrica_uuid, appmetrica_device_id и appmetrica_device_id_hash"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino (название в Google Play — «Casino Amazon»), offer, hasOffers, subscriptionOffers, discountOffers, offerToken, sku-offer-mismatch, «Selected offer does not match the SKU», BOOST_OFFER_VISIBLE_MS, OFFERWALL, bet, TOTAL BET, lastBet, defaultBet, clampBet, «Increase bet» / «Decrease bet», stake, payout, ADD PAYOUT METHOD, «+ Add payout method», payout_method_connected, withdraw, Withdraw, withdrawal_request, priority_withdrawal, «Priority withdrawal», crypto / btc / trc20 (USDT), redirect, goal-gate, «18+», «HOLD ON…», «PLEASE WAIT», «The good news: once we're back, every user will receive a special loyalty bonus» Casino Amazon · INNOVOX LIMITED · com.amazonfoot.kickball стр. 3"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "adsmetadata.mobileadexchange.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "adsmetadata.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "api.iapkit.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=ffc133da-3cbe-4737-9c19-b52f9018bd1a",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "funnel-assets.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "graph.oculus.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "imp.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "infoevent.startappservice.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }
