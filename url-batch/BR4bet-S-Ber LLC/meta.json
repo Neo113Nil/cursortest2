@@ -56,5 +56,94 @@
   ],
   "stdout": "╭─ com.moontiko.really.admiralcasino ─╮\n│ BR4bet                              │\n│ 1.0  (vc 1)                         │\n╰─────────────────────────────────────╯\n\nDownloading 6 files  (5.5 MB)\n  com.moontiko.really.admiralcasino-1.apk               ━━━━ 100% 3.5… 17.2 0:0…\n                                                                  MB   MB/s     \n  com.moontiko.really.admiralcasino-1-config.en.apk     ━━━━ 100% 41.… ?    0:0…\n                                                                  kB            \n  com.moontiko.really.admiralcasino-1-config.lt.apk     ━━━━ 100% 28.… ?    0:0…\n                                                                  kB            \n  com.moontiko.really.admiralcasino-1-config.ru.apk     ━━━━ 100% 28.… ?    0:0…\n                                                                  kB            \n  com.moontiko.really.admiralcasino-1-config.xxhdpi.apk ━━━━ 100% 53.… ?    0:0…\n                                                                  kB            \n  com.moontiko.really.admiralcasino-1-asset.apk         ━━━━ 100% 2.1… 10.3 0:0…\n                                                                  MB   MB/s     \n\n                         Downloaded files                          \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                  ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.moontiko.really.admiralcasino-1.apk               │  3.4 MB │\n│ com.moontiko.really.admiralcasino-1-config.en.apk     │ 40.2 KB │\n│ com.moontiko.really.admiralcasino-1-config.lt.apk     │ 28.2 KB │\n│ com.moontiko.really.admiralcasino-1-config.ru.apk     │ 28.2 KB │\n│ com.moontiko.really.admiralcasino-1-config.xxhdpi.apk │ 52.2 KB │\n│ com.moontiko.really.admiralcasino-1-asset.apk         │  3.4 MB │\n└───────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "BR4bet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.1.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "32"
+      },
+      {
+        "param": "targetSdk",
+        "value": "37"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, ~2.2"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.moontiko.really.admiralcasino.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION, com.android.vending.CHECK_LICENSE"
+      },
+      {
+        "param": "Libraries",
+        "value": "Kotlin ~2.2 / kotlin-stdlib, kotlinx-coroutines 1.9.0, OkHttp 4.12.0, AndroidX (appcompat 1.7.1, activity 1.13.0, fragment 1.5.4, core/core-ktx 1.19.0, lifecycle, recyclerview 1.2.1, constraintlayout 2.2.1, coordinatorlayout 1.1.0, viewpager2, cardview, startup, emoji2, profileinstaller, savedstate, transition, drawerlayout, customview, vectordrawable, dynamicanimation, interpolator), Material Components 1.14.0, Pairip (com.pairip.application / licensecheck), ViewBinding"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "dispatchers.io"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файл cfg, ключ rurl — сохраняет ссылку на внешнюю страницу после проверки на сервере; при следующем запуске сразу открывает сохранённую ссылку; заметки обычного режима хранятся отдельно в базе win_notes.db"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "rurl, workers.dev, User-Agent, Accept-Language, X-Device-Model, status, redirect, license check, casino, admiralcasino, BR4bet, betting, webview url"
+      }
+    ],
+    "domains": [
+      {
+        "domain": "dispatchers.io",
+        "redirects_to": "https://cakhiatv1.net/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "имя приложения в системе → техническое имя программы в телефоне",
+      "(com.moontiko.really.admiralcasino); уходит в адрес проверки параметром app, чтобы сервер понял, из",
+      "какого приложения пришёл запрос",
+      "модель телефона → марка и модель устройства (то, что система Android сообщает как модель);",
+      "передаётся в служебном заголовке X-Device-Model, чтобы сервер мог учитывать устройство",
+      "язык для ответа → значение Accept-Language; в этом приложении оно не читается с телефона, а",
+      "всегда подставляется как en-US,en;q=0.9",
+      "как представился браузер → строка «лица» встроенного браузерного движка телефона (User-Agent);",
+      "берётся через настройки встроенного окна сайта и уходит в заголовке User-Agent, чтобы сервер",
+      "видел, как выглядит обычный браузер на этом устройстве",
+      "итоговый адрес после перехода → полный адрес, на котором закончился ответ сервера (после",
+      "возможных переходов); по нему приложение решает, открывать внешнюю страницу или оставить",
+      "обычное приложение, и при «боевом» варианте сохраняет этот адрес"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• имя приложения в системе → техническое имя программы в телефоне\n• (com.moontiko.really.admiralcasino); уходит в адрес проверки параметром app, чтобы сервер понял, из\n• какого приложения пришёл запрос\n• модель телефона → марка и модель устройства (то, что система Android сообщает как модель);\n• передаётся в служебном заголовке X-Device-Model, чтобы сервер мог учитывать устройство\n• язык для ответа → значение Accept-Language; в этом приложении оно не читается с телефона, а\n• всегда подставляется как en-US,en;q=0.9\n• как представился браузер → строка «лица» встроенного браузерного движка телефона (User-Agent);\n• берётся через настройки встроенного окна сайта и уходит в заголовке User-Agent, чтобы сервер\n• видел, как выглядит обычный браузер на этом устройстве\n• итоговый адрес после перехода → полный адрес, на котором закончился ответ сервера (после\n• возможных переходов); по нему приложение решает, открывать внешнюю страницу или оставить\n• обычное приложение, и при «боевом» варианте сохраняет этот адрес\n\nКак собираются: Сразу при открытии стартового экрана приложение само, без отдельного окна и без спроса у человека, читает нужные сведения. Имя приложения берётся из системы Android. Модель телефона — из системного поля модели устройства. Строку «как представился браузер» приложение запрашивает у встроенных браузерных настроек телефона. Язык для заголовка не спрашивает у человека и не читает из настроек языка телефона: подставляет заранее записанное английское значение. Всё это происходит тихо, обычно на коротком стартовом экране с полоской ожидания,…"
+  }
 }

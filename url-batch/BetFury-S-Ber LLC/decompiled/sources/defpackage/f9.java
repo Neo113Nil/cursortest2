@@ -1,0 +1,280 @@
+package defpackage;
+
+import android.os.SystemClock;
+import android.view.View;
+import android.view.ViewGroup;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+import com.google.android.material.sidesheet.SideSheetBehavior;
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+/* compiled from: r8-map-id-555d5e190d9a27a9a8404de93c25a29c9fbe11559b3463c92c68ce527c1de619 */
+/* loaded from: classes.dex */
+public final class f9 extends ud0 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ hg b;
+
+    public /* synthetic */ f9(hg hgVar, int i) {
+        this.a = i;
+        this.b = hgVar;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:28:0x005d, code lost:
+    
+        if (r0.canScrollVertically(-1) != false) goto L41;
+     */
+    @Override // defpackage.ud0
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean B(View view, int i) {
+        WeakReference weakReference;
+        int i2 = this.a;
+        hg hgVar = this.b;
+        switch (i2) {
+            case 0:
+                BottomSheetBehavior bottomSheetBehavior = (BottomSheetBehavior) hgVar;
+                int i3 = bottomSheetBehavior.P;
+                if (i3 != 1 && !bottomSheetBehavior.g0) {
+                    if (i3 == 3 && bottomSheetBehavior.d0 == i) {
+                        View view2 = null;
+                        if (bottomSheetBehavior.e) {
+                            WeakReference weakReference2 = bottomSheetBehavior.f0;
+                            if (weakReference2 != null) {
+                                view2 = (View) weakReference2.get();
+                            }
+                        } else {
+                            ArrayList arrayList = bottomSheetBehavior.Z;
+                            if (!arrayList.isEmpty()) {
+                                view2 = (View) ((WeakReference) arrayList.get(0)).get();
+                            }
+                        }
+                        if (view2 != null) {
+                            break;
+                        }
+                    }
+                    SystemClock.uptimeMillis();
+                    WeakReference weakReference3 = bottomSheetBehavior.Y;
+                    if (weakReference3 != null && weakReference3.get() == view) {
+                    }
+                }
+                break;
+            default:
+                SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) hgVar;
+                if (sideSheetBehavior.h == 1 || (weakReference = sideSheetBehavior.p) == null || weakReference.get() != view) {
+                    break;
+                }
+                break;
+        }
+        return false;
+    }
+
+    @Override // defpackage.ud0
+    public final int c(View view, int i) {
+        switch (this.a) {
+            case 0:
+                return view.getLeft();
+            default:
+                SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) this.b;
+                return gk0.g(i, sideSheetBehavior.a.m(), sideSheetBehavior.a.l());
+        }
+    }
+
+    @Override // defpackage.ud0
+    public final int d(View view, int i) {
+        switch (this.a) {
+            case 0:
+                return gk0.g(i, ((BottomSheetBehavior) this.b).E(), r());
+            default:
+                return view.getTop();
+        }
+    }
+
+    @Override // defpackage.ud0
+    public int q(View view) {
+        switch (this.a) {
+            case 1:
+                SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) this.b;
+                return sideSheetBehavior.l + sideSheetBehavior.o;
+            default:
+                return super.q(view);
+        }
+    }
+
+    @Override // defpackage.ud0
+    public int r() {
+        switch (this.a) {
+            case 0:
+                BottomSheetBehavior bottomSheetBehavior = (BottomSheetBehavior) this.b;
+                return bottomSheetBehavior.J ? bottomSheetBehavior.X : bottomSheetBehavior.H;
+            default:
+                return super.r();
+        }
+    }
+
+    @Override // defpackage.ud0
+    public final void w(int i) {
+        int i2 = this.a;
+        hg hgVar = this.b;
+        switch (i2) {
+            case 0:
+                if (i == 1) {
+                    BottomSheetBehavior bottomSheetBehavior = (BottomSheetBehavior) hgVar;
+                    if (bottomSheetBehavior.L) {
+                        bottomSheetBehavior.M(1);
+                        break;
+                    }
+                }
+                break;
+            default:
+                if (i == 1) {
+                    SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) hgVar;
+                    if (sideSheetBehavior.g) {
+                        sideSheetBehavior.x(1);
+                        break;
+                    }
+                }
+                break;
+        }
+    }
+
+    @Override // defpackage.ud0
+    public final void x(View view, int i, int i2) {
+        ViewGroup.MarginLayoutParams marginLayoutParams;
+        int i3 = this.a;
+        hg hgVar = this.b;
+        switch (i3) {
+            case 0:
+                ((BottomSheetBehavior) hgVar).A(i2);
+                break;
+            default:
+                SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) hgVar;
+                WeakReference weakReference = sideSheetBehavior.q;
+                View view2 = weakReference != null ? (View) weakReference.get() : null;
+                if (view2 != null && (marginLayoutParams = (ViewGroup.MarginLayoutParams) view2.getLayoutParams()) != null) {
+                    sideSheetBehavior.a.D(marginLayoutParams, view.getLeft(), view.getRight());
+                    view2.setLayoutParams(marginLayoutParams);
+                }
+                LinkedHashSet linkedHashSet = sideSheetBehavior.v;
+                if (!linkedHashSet.isEmpty()) {
+                    sideSheetBehavior.a.b(i);
+                    Iterator it = linkedHashSet.iterator();
+                    if (it.hasNext()) {
+                        it.next().getClass();
+                        s9.c();
+                        break;
+                    }
+                }
+                break;
+        }
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:10:0x002c, code lost:
+    
+        if (r6.a.t(r7) == false) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:17:0x005b, code lost:
+    
+        if (java.lang.Math.abs(r8 - r6.a.j()) < java.lang.Math.abs(r8 - r6.a.k())) goto L23;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:26:0x0079, code lost:
+    
+        if (r8 > r6.F) goto L50;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:44:0x00c9, code lost:
+    
+        if (java.lang.Math.abs(r7.getTop() - r6.E()) < java.lang.Math.abs(r7.getTop() - r6.F)) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:53:0x00fb, code lost:
+    
+        if (java.lang.Math.abs(r8 - r6.F) < java.lang.Math.abs(r8 - r6.H)) goto L50;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:57:0x0115, code lost:
+    
+        if (java.lang.Math.abs(r8 - r6.E) < java.lang.Math.abs(r8 - r6.H)) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:61:0x0124, code lost:
+    
+        if (r8 < java.lang.Math.abs(r8 - r6.H)) goto L75;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:63:0x0134, code lost:
+    
+        if (java.lang.Math.abs(r8 - r9) < java.lang.Math.abs(r8 - r6.H)) goto L50;
+     */
+    @Override // defpackage.ud0
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final void y(View view, float f, float f2) {
+        int i = this.a;
+        int i2 = 3;
+        hg hgVar = this.b;
+        switch (i) {
+            case 0:
+                BottomSheetBehavior bottomSheetBehavior = (BottomSheetBehavior) hgVar;
+                if (f2 < 0.0f) {
+                    if (!bottomSheetBehavior.b) {
+                        int top = view.getTop();
+                        SystemClock.uptimeMillis();
+                        break;
+                    }
+                    bottomSheetBehavior.O(view, i2, true);
+                    break;
+                } else if (bottomSheetBehavior.J && bottomSheetBehavior.N(view, f2)) {
+                    if (Math.abs(f) >= Math.abs(f2) || f2 <= bottomSheetBehavior.d) {
+                        if (view.getTop() <= (bottomSheetBehavior.E() + bottomSheetBehavior.X) / 2) {
+                            if (!bottomSheetBehavior.b) {
+                                break;
+                            }
+                            bottomSheetBehavior.O(view, i2, true);
+                        }
+                    }
+                    i2 = 5;
+                    bottomSheetBehavior.O(view, i2, true);
+                } else {
+                    if (f2 == 0.0f || Math.abs(f) > Math.abs(f2)) {
+                        int top2 = view.getTop();
+                        if (bottomSheetBehavior.b) {
+                            break;
+                        } else {
+                            int i3 = bottomSheetBehavior.F;
+                            if (top2 >= i3) {
+                                break;
+                            } else {
+                                break;
+                            }
+                            i2 = 6;
+                        }
+                    } else {
+                        if (!bottomSheetBehavior.b) {
+                            int top3 = view.getTop();
+                            break;
+                        }
+                        i2 = 4;
+                    }
+                    bottomSheetBehavior.O(view, i2, true);
+                }
+                break;
+            default:
+                SideSheetBehavior sideSheetBehavior = (SideSheetBehavior) hgVar;
+                if (!sideSheetBehavior.a.s(f)) {
+                    if (sideSheetBehavior.a.A(view, f)) {
+                        if (!sideSheetBehavior.a.u(f, f2)) {
+                            break;
+                        }
+                        i2 = 5;
+                    } else {
+                        if (f == 0.0f || Math.abs(f) <= Math.abs(f2)) {
+                            int left = view.getLeft();
+                            break;
+                        }
+                        i2 = 5;
+                    }
+                }
+                sideSheetBehavior.z(view, i2, true);
+                break;
+        }
+    }
+}

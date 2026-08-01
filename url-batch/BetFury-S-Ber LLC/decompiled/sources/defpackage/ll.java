@@ -1,0 +1,23 @@
+package defpackage;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import android.view.View;
+
+/* compiled from: r8-map-id-555d5e190d9a27a9a8404de93c25a29c9fbe11559b3463c92c68ce527c1de619 */
+/* loaded from: classes.dex */
+public final class ll extends View {
+    public final /* synthetic */ kl f;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ll(kl klVar, Context context) {
+        super(context);
+        this.f = klVar;
+    }
+
+    @Override // android.view.View
+    public final void onConfigurationChanged(Configuration configuration) {
+        configuration.getClass();
+        this.f.run();
+    }
+}
