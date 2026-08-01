@@ -1,0 +1,402 @@
+package k;
+
+import android.R;
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.view.ActionProvider;
+import android.view.ContextMenu;
+import android.view.KeyEvent;
+import android.view.MenuItem;
+import android.view.SubMenu;
+import android.view.View;
+
+/* compiled from: r8-map-id-cbdb90155a17acee3f5e5c838b1038a1056cff151b1a2a170c159711c8afb558 */
+/* loaded from: classes.dex */
+public final class a implements h0.a {
+
+    /* renamed from: a, reason: collision with root package name */
+    public CharSequence f2138a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public CharSequence f2139b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public Intent f2140c;
+    public char d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f2141e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public char f2142f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f2143g;
+    public Drawable h;
+    public Context i;
+
+    /* renamed from: j, reason: collision with root package name */
+    public CharSequence f2144j;
+
+    /* renamed from: k, reason: collision with root package name */
+    public CharSequence f2145k;
+
+    /* renamed from: l, reason: collision with root package name */
+    public ColorStateList f2146l;
+
+    /* renamed from: m, reason: collision with root package name */
+    public PorterDuff.Mode f2147m;
+
+    /* renamed from: n, reason: collision with root package name */
+    public boolean f2148n;
+
+    /* renamed from: o, reason: collision with root package name */
+    public boolean f2149o;
+
+    /* renamed from: p, reason: collision with root package name */
+    public int f2150p;
+
+    @Override // h0.a
+    public final h0.a a(p pVar) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // h0.a
+    public final p b() {
+        return null;
+    }
+
+    public final void c() {
+        Drawable drawable = this.h;
+        if (drawable != null) {
+            if (this.f2148n || this.f2149o) {
+                this.h = drawable;
+                Drawable mutate = drawable.mutate();
+                this.h = mutate;
+                if (this.f2148n) {
+                    mutate.setTintList(this.f2146l);
+                }
+                if (this.f2149o) {
+                    this.h.setTintMode(this.f2147m);
+                }
+            }
+        }
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean collapseActionView() {
+        return false;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean expandActionView() {
+        return false;
+    }
+
+    @Override // android.view.MenuItem
+    public final ActionProvider getActionProvider() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // android.view.MenuItem
+    public final View getActionView() {
+        return null;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final int getAlphabeticModifiers() {
+        return this.f2143g;
+    }
+
+    @Override // android.view.MenuItem
+    public final char getAlphabeticShortcut() {
+        return this.f2142f;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final CharSequence getContentDescription() {
+        return this.f2144j;
+    }
+
+    @Override // android.view.MenuItem
+    public final int getGroupId() {
+        return 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final Drawable getIcon() {
+        return this.h;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final ColorStateList getIconTintList() {
+        return this.f2146l;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final PorterDuff.Mode getIconTintMode() {
+        return this.f2147m;
+    }
+
+    @Override // android.view.MenuItem
+    public final Intent getIntent() {
+        return this.f2140c;
+    }
+
+    @Override // android.view.MenuItem
+    public final int getItemId() {
+        return R.id.home;
+    }
+
+    @Override // android.view.MenuItem
+    public final ContextMenu.ContextMenuInfo getMenuInfo() {
+        return null;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final int getNumericModifiers() {
+        return this.f2141e;
+    }
+
+    @Override // android.view.MenuItem
+    public final char getNumericShortcut() {
+        return this.d;
+    }
+
+    @Override // android.view.MenuItem
+    public final int getOrder() {
+        return 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final SubMenu getSubMenu() {
+        return null;
+    }
+
+    @Override // android.view.MenuItem
+    public final CharSequence getTitle() {
+        return this.f2138a;
+    }
+
+    @Override // android.view.MenuItem
+    public final CharSequence getTitleCondensed() {
+        CharSequence charSequence = this.f2139b;
+        return charSequence != null ? charSequence : this.f2138a;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final CharSequence getTooltipText() {
+        return this.f2145k;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean hasSubMenu() {
+        return false;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean isActionViewExpanded() {
+        return false;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean isCheckable() {
+        return (this.f2150p & 1) != 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean isChecked() {
+        return (this.f2150p & 2) != 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean isEnabled() {
+        return (this.f2150p & 16) != 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final boolean isVisible() {
+        return (this.f2150p & 8) == 0;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setActionProvider(ActionProvider actionProvider) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setActionView(View view) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setAlphabeticShortcut(char c5) {
+        this.f2142f = Character.toLowerCase(c5);
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setCheckable(boolean z4) {
+        this.f2150p = (z4 ? 1 : 0) | (this.f2150p & (-2));
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setChecked(boolean z4) {
+        this.f2150p = (z4 ? 2 : 0) | (this.f2150p & (-3));
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setContentDescription(CharSequence charSequence) {
+        this.f2144j = charSequence;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setEnabled(boolean z4) {
+        this.f2150p = (z4 ? 16 : 0) | (this.f2150p & (-17));
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setIcon(Drawable drawable) {
+        this.h = drawable;
+        c();
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final MenuItem setIconTintList(ColorStateList colorStateList) {
+        this.f2146l = colorStateList;
+        this.f2148n = true;
+        c();
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final MenuItem setIconTintMode(PorterDuff.Mode mode) {
+        this.f2147m = mode;
+        this.f2149o = true;
+        c();
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setIntent(Intent intent) {
+        this.f2140c = intent;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setNumericShortcut(char c5) {
+        this.d = c5;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setOnActionExpandListener(MenuItem.OnActionExpandListener onActionExpandListener) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setShortcut(char c5, char c6) {
+        this.d = c5;
+        this.f2142f = Character.toLowerCase(c6);
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setTitle(CharSequence charSequence) {
+        this.f2138a = charSequence;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setTitleCondensed(CharSequence charSequence) {
+        this.f2139b = charSequence;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setTooltipText(CharSequence charSequence) {
+        this.f2145k = charSequence;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setVisible(boolean z4) {
+        this.f2150p = (this.f2150p & 8) | (z4 ? 0 : 8);
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setActionView(int i) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final MenuItem setAlphabeticShortcut(char c5, int i) {
+        this.f2142f = Character.toLowerCase(c5);
+        this.f2143g = KeyEvent.normalizeMetaState(i);
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final h0.a setContentDescription(CharSequence charSequence) {
+        this.f2144j = charSequence;
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final MenuItem setNumericShortcut(char c5, int i) {
+        this.d = c5;
+        this.f2141e = KeyEvent.normalizeMetaState(i);
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setTitle(int i) {
+        this.f2138a = this.i.getResources().getString(i);
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final h0.a setTooltipText(CharSequence charSequence) {
+        this.f2145k = charSequence;
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setIcon(int i) {
+        this.h = this.i.getDrawable(i);
+        c();
+        return this;
+    }
+
+    @Override // h0.a, android.view.MenuItem
+    public final MenuItem setShortcut(char c5, char c6, int i, int i4) {
+        this.d = c5;
+        this.f2141e = KeyEvent.normalizeMetaState(i);
+        this.f2142f = Character.toLowerCase(c6);
+        this.f2143g = KeyEvent.normalizeMetaState(i4);
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setOnMenuItemClickListener(MenuItem.OnMenuItemClickListener onMenuItemClickListener) {
+        return this;
+    }
+
+    @Override // android.view.MenuItem
+    public final void setShowAsAction(int i) {
+    }
+
+    @Override // android.view.MenuItem
+    public final MenuItem setShowAsActionFlags(int i) {
+        return this;
+    }
+}

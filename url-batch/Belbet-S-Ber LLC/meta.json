@@ -1,0 +1,36 @@
+{
+  "app_id": "com.gdmhkmf.belbet",
+  "title": "Belbet",
+  "developer": "S-Ber LLC",
+  "developer_id": "S-Ber+LLC",
+  "icon": "https://play-lh.googleusercontent.com/64KpU84g-vAGlQJd1Je9VhpIfKuKHPMMrztxY7OHp3PR2ju3LDUW9W69FoeZh4bv7JuyV1A96otf1_MLK9zBOA",
+  "url": "https://play.google.com/store/apps/details?id=com.gdmhkmf.belbet&hl=en&gl=us",
+  "score": null,
+  "released": "Jun 25, 2026",
+  "updated": "Jun 25, 2026",
+  "version": "Varies with device",
+  "summary": "Belbet  makes it easy to remember birthdays and special occasions.",
+  "keyword": "url-batch",
+  "folder": "Belbet-S-Ber LLC",
+  "path": "url-batch/Belbet-S-Ber LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.gdmhkmf.belbet.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Belbet-S-Ber LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.gdmhkmf.belbet...\ncom.gdmhkmf.belbet downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.gdmhkmf.belbet...\ncom.gdmhkmf.belbet downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

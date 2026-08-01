@@ -1,0 +1,18 @@
+package g1;
+
+/* compiled from: r8-map-id-cbdb90155a17acee3f5e5c838b1038a1056cff151b1a2a170c159711c8afb558 */
+/* loaded from: classes.dex */
+public final class b0 extends b1 {
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f1615e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f1616f;
+
+    public b0(int i, int i4) {
+        super(i, i4);
+        this.f1615e = -1;
+        this.f1616f = 0;
+    }
+}

@@ -1,0 +1,14 @@
+package r0;
+
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+
+/* compiled from: r8-map-id-cbdb90155a17acee3f5e5c838b1038a1056cff151b1a2a170c159711c8afb558 */
+/* loaded from: classes.dex */
+public interface i {
+    ColorStateList getSupportButtonTintList();
+
+    void setSupportButtonTintList(ColorStateList colorStateList);
+
+    void setSupportButtonTintMode(PorterDuff.Mode mode);
+}
