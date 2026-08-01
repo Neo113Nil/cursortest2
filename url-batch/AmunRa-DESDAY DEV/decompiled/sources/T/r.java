@@ -1,0 +1,105 @@
+package T;
+
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Handler;
+import java.util.concurrent.LinkedBlockingDeque;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
+
+/* loaded from: classes.dex */
+public final class r implements i {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final Context f783a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final H.e f784b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final I0.e f785c;
+    public final Object d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public Handler f786e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public ThreadPoolExecutor f787f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public ThreadPoolExecutor f788g;
+    public s1.d h;
+
+    public r(Context context, H.e eVar) {
+        I0.e eVar2 = s.d;
+        this.d = new Object();
+        s1.l.i(context, "Context cannot be null");
+        this.f783a = context.getApplicationContext();
+        this.f784b = eVar;
+        this.f785c = eVar2;
+    }
+
+    public final void a() {
+        synchronized (this.d) {
+            try {
+                this.h = null;
+                Handler handler = this.f786e;
+                if (handler != null) {
+                    handler.removeCallbacks(null);
+                }
+                this.f786e = null;
+                ThreadPoolExecutor threadPoolExecutor = this.f788g;
+                if (threadPoolExecutor != null) {
+                    threadPoolExecutor.shutdown();
+                }
+                this.f787f = null;
+                this.f788g = null;
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public final H.k b() {
+        try {
+            I0.e eVar = this.f785c;
+            Context context = this.f783a;
+            H.e eVar2 = this.f784b;
+            eVar.getClass();
+            H.j a2 = H.d.a(context, eVar2);
+            int i = a2.f213a;
+            if (i != 0) {
+                throw new RuntimeException("fetchFonts failed (" + i + ")");
+            }
+            H.k[] kVarArr = (H.k[]) a2.f214b;
+            if (kVarArr == null || kVarArr.length == 0) {
+                throw new RuntimeException("fetchFonts failed (empty result)");
+            }
+            return kVarArr[0];
+        } catch (PackageManager.NameNotFoundException e2) {
+            throw new RuntimeException("provider not found", e2);
+        }
+    }
+
+    @Override // T.i
+    public final void p(s1.d dVar) {
+        synchronized (this.d) {
+            this.h = dVar;
+        }
+        synchronized (this.d) {
+            try {
+                if (this.h == null) {
+                    return;
+                }
+                if (this.f787f == null) {
+                    ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(0, 1, 15L, TimeUnit.SECONDS, new LinkedBlockingDeque(), new ThreadFactoryC0031a("emojiCompat"));
+                    threadPoolExecutor.allowCoreThreadTimeOut(true);
+                    this.f788g = threadPoolExecutor;
+                    this.f787f = threadPoolExecutor;
+                }
+                this.f787f.execute(new C0.p(7, this));
+            } finally {
+            }
+        }
+    }
+}

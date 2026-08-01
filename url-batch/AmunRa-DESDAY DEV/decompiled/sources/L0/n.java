@@ -1,0 +1,37 @@
+package L0;
+
+import android.widget.EditText;
+import com.google.android.material.textfield.TextInputLayout;
+
+/* loaded from: classes.dex */
+public final class n {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ q f523a;
+
+    public n(q qVar) {
+        this.f523a = qVar;
+    }
+
+    public final void a(TextInputLayout textInputLayout) {
+        q qVar = this.f523a;
+        if (qVar.f544s == textInputLayout.getEditText()) {
+            return;
+        }
+        EditText editText = qVar.f544s;
+        m mVar = qVar.f547v;
+        if (editText != null) {
+            editText.removeTextChangedListener(mVar);
+            if (qVar.f544s.getOnFocusChangeListener() == qVar.b().e()) {
+                qVar.f544s.setOnFocusChangeListener(null);
+            }
+        }
+        EditText editText2 = textInputLayout.getEditText();
+        qVar.f544s = editText2;
+        if (editText2 != null) {
+            editText2.addTextChangedListener(mVar);
+        }
+        qVar.b().m(qVar.f544s);
+        qVar.j(qVar.b());
+    }
+}

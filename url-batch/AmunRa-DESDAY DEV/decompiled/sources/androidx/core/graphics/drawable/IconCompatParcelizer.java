@@ -1,0 +1,162 @@
+package androidx.core.graphics.drawable;
+
+import android.content.res.ColorStateList;
+import android.graphics.PorterDuff;
+import android.os.Parcel;
+import android.os.Parcelable;
+import java.nio.charset.Charset;
+import m0.AbstractC0272a;
+import m0.b;
+
+/* loaded from: classes.dex */
+public class IconCompatParcelizer {
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    public static IconCompat read(AbstractC0272a abstractC0272a) {
+        IconCompat iconCompat = new IconCompat();
+        int i = iconCompat.f1328a;
+        if (abstractC0272a.e(1)) {
+            i = ((b) abstractC0272a).f3263e.readInt();
+        }
+        iconCompat.f1328a = i;
+        byte[] bArr = iconCompat.f1330c;
+        if (abstractC0272a.e(2)) {
+            Parcel parcel = ((b) abstractC0272a).f3263e;
+            int readInt = parcel.readInt();
+            if (readInt < 0) {
+                bArr = null;
+            } else {
+                byte[] bArr2 = new byte[readInt];
+                parcel.readByteArray(bArr2);
+                bArr = bArr2;
+            }
+        }
+        iconCompat.f1330c = bArr;
+        iconCompat.d = abstractC0272a.f(iconCompat.d, 3);
+        int i2 = iconCompat.f1331e;
+        if (abstractC0272a.e(4)) {
+            i2 = ((b) abstractC0272a).f3263e.readInt();
+        }
+        iconCompat.f1331e = i2;
+        int i3 = iconCompat.f1332f;
+        if (abstractC0272a.e(5)) {
+            i3 = ((b) abstractC0272a).f3263e.readInt();
+        }
+        iconCompat.f1332f = i3;
+        iconCompat.f1333g = (ColorStateList) abstractC0272a.f(iconCompat.f1333g, 6);
+        String str = iconCompat.i;
+        if (abstractC0272a.e(7)) {
+            str = ((b) abstractC0272a).f3263e.readString();
+        }
+        iconCompat.i = str;
+        String str2 = iconCompat.f1334j;
+        if (abstractC0272a.e(8)) {
+            str2 = ((b) abstractC0272a).f3263e.readString();
+        }
+        iconCompat.f1334j = str2;
+        iconCompat.h = PorterDuff.Mode.valueOf(iconCompat.i);
+        switch (iconCompat.f1328a) {
+            case -1:
+                Parcelable parcelable = iconCompat.d;
+                if (parcelable == null) {
+                    throw new IllegalArgumentException("Invalid icon");
+                }
+                iconCompat.f1329b = parcelable;
+                return iconCompat;
+            case 0:
+            default:
+                return iconCompat;
+            case 1:
+            case 5:
+                Parcelable parcelable2 = iconCompat.d;
+                if (parcelable2 != null) {
+                    iconCompat.f1329b = parcelable2;
+                } else {
+                    byte[] bArr3 = iconCompat.f1330c;
+                    iconCompat.f1329b = bArr3;
+                    iconCompat.f1328a = 3;
+                    iconCompat.f1331e = 0;
+                    iconCompat.f1332f = bArr3.length;
+                }
+                return iconCompat;
+            case 2:
+            case 4:
+            case 6:
+                String str3 = new String(iconCompat.f1330c, Charset.forName("UTF-16"));
+                iconCompat.f1329b = str3;
+                if (iconCompat.f1328a == 2 && iconCompat.f1334j == null) {
+                    iconCompat.f1334j = str3.split(":", -1)[0];
+                }
+                return iconCompat;
+            case 3:
+                iconCompat.f1329b = iconCompat.f1330c;
+                return iconCompat;
+        }
+    }
+
+    public static void write(IconCompat iconCompat, AbstractC0272a abstractC0272a) {
+        abstractC0272a.getClass();
+        iconCompat.i = iconCompat.h.name();
+        switch (iconCompat.f1328a) {
+            case -1:
+                iconCompat.d = (Parcelable) iconCompat.f1329b;
+                break;
+            case 1:
+            case 5:
+                iconCompat.d = (Parcelable) iconCompat.f1329b;
+                break;
+            case 2:
+                iconCompat.f1330c = ((String) iconCompat.f1329b).getBytes(Charset.forName("UTF-16"));
+                break;
+            case 3:
+                iconCompat.f1330c = (byte[]) iconCompat.f1329b;
+                break;
+            case 4:
+            case 6:
+                iconCompat.f1330c = iconCompat.f1329b.toString().getBytes(Charset.forName("UTF-16"));
+                break;
+        }
+        int i = iconCompat.f1328a;
+        if (-1 != i) {
+            abstractC0272a.h(1);
+            ((b) abstractC0272a).f3263e.writeInt(i);
+        }
+        byte[] bArr = iconCompat.f1330c;
+        if (bArr != null) {
+            abstractC0272a.h(2);
+            int length = bArr.length;
+            Parcel parcel = ((b) abstractC0272a).f3263e;
+            parcel.writeInt(length);
+            parcel.writeByteArray(bArr);
+        }
+        Parcelable parcelable = iconCompat.d;
+        if (parcelable != null) {
+            abstractC0272a.h(3);
+            ((b) abstractC0272a).f3263e.writeParcelable(parcelable, 0);
+        }
+        int i2 = iconCompat.f1331e;
+        if (i2 != 0) {
+            abstractC0272a.h(4);
+            ((b) abstractC0272a).f3263e.writeInt(i2);
+        }
+        int i3 = iconCompat.f1332f;
+        if (i3 != 0) {
+            abstractC0272a.h(5);
+            ((b) abstractC0272a).f3263e.writeInt(i3);
+        }
+        ColorStateList colorStateList = iconCompat.f1333g;
+        if (colorStateList != null) {
+            abstractC0272a.h(6);
+            ((b) abstractC0272a).f3263e.writeParcelable(colorStateList, 0);
+        }
+        String str = iconCompat.i;
+        if (str != null) {
+            abstractC0272a.h(7);
+            ((b) abstractC0272a).f3263e.writeString(str);
+        }
+        String str2 = iconCompat.f1334j;
+        if (str2 != null) {
+            abstractC0272a.h(8);
+            ((b) abstractC0272a).f3263e.writeString(str2);
+        }
+    }
+}
