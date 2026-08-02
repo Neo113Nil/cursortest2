@@ -1,0 +1,33 @@
+package defpackage;
+
+import com.yandex.go.design.compose.haptic.HapticEffect;
+import ru.CryptoPro.JCP.tools.CertReader.Extension;
+
+/* loaded from: classes14.dex */
+public final class llj0 implements xlj0 {
+    public final HapticEffect a;
+
+    public llj0(HapticEffect hapticEffect) {
+        this.a = hapticEffect;
+    }
+
+    @Override // defpackage.xlj0
+    public final HapticEffect a() {
+        return this.a;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof llj0) && this.a == ((llj0) obj).a;
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        return "OrderDueTrailClicked(hapticEffect=" + this.a + Extension.C_BRAKE;
+    }
+}

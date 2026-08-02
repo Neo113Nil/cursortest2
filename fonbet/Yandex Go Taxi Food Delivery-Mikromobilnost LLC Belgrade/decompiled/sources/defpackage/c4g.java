@@ -1,0 +1,215 @@
+package defpackage;
+
+import android.content.Context;
+import com.yandex.go.multimodal_route.taxi_feedback.TaxiFeedbackStateRepository;
+import com.yandex.go.taxi.order.details.v2.domain.feedback.sending.a;
+import ru.yandex.taxi.activity.ContentContainer$ZOrder;
+import ru.yandex.taxi.logistics.sdk.delivery.edit.b;
+import ru.yandex.taxi.logistics.sdk.management.localstate.e;
+import ru.yandex.taxi.logistics.sdk.tracking.impl.data.NeuroPostcardShownStagesRepository;
+import ru.yandex.taxi.logistics.sdk.ui.AppVisibilitySubscriptionImpl;
+import ru.yandex.taxi.logistics.sdk.voiceforwarding.impl.c;
+import ru.yandex.taxi.masstransit.detailedroute.ui.f;
+
+/* loaded from: classes12.dex */
+public final class c4g {
+    public final Object A;
+    public final Object B;
+    public final Object C;
+    public final Object D;
+    public final Object E;
+    public final Object F;
+    public final Object G;
+    public final Object H;
+    public final Object I;
+    public final Object J;
+    public final Object K;
+    public final Object L;
+    public final Object M;
+    public final Object N;
+    public final Object a;
+    public final Object b;
+    public final Object c;
+    public final Object d;
+    public final Object e;
+    public final Object f;
+    public final Object g;
+    public final Object h;
+    public final Object i;
+    public final Object j;
+    public final Object k;
+    public final Object l;
+    public final Object m;
+    public final Object n;
+    public final Object o;
+    public final Object p;
+    public final Object q;
+    public final Object r;
+    public final Object s;
+    public final Object t;
+    public final Object u;
+    public final Object v;
+    public final Object w;
+    public final Object x;
+    public final Object y;
+    public final Object z;
+
+    public c4g(i6r i6rVar) {
+        this.b = this;
+        this.a = i6rVar;
+        int i = 11;
+        this.c = new y3g(i6rVar, i);
+        this.d = new y3g(i6rVar, 27);
+        this.e = new b4g(i6rVar, 7);
+        int i2 = 14;
+        this.f = new b4g(i6rVar, i2);
+        this.g = new b4g(i6rVar, 3);
+        this.h = new b4g(i6rVar, 10);
+        this.i = new b4g(i6rVar, 5);
+        int i3 = 15;
+        this.j = new y3g(i6rVar, i3);
+        int i4 = 2;
+        this.k = new lq40(i4, new y3g(i6rVar, 26));
+        this.l = new y3g(i6rVar, 28);
+        int i5 = 21;
+        y3g y3gVar = new y3g(i6rVar, i5);
+        this.m = y3gVar;
+        b4g b4gVar = new b4g(i6rVar, 4);
+        b4g b4gVar2 = new b4g(i6rVar, 20);
+        int i6 = 1;
+        b4g b4gVar3 = new b4g(i6rVar, i6);
+        int i7 = 13;
+        b4g b4gVar4 = new b4g(i6rVar, i7);
+        this.n = b4gVar4;
+        xvf0 b = i5m.b(new e840(y3gVar, b4gVar, b4gVar2, b4gVar3, b4gVar4, 5));
+        this.o = b;
+        b4g b4gVar5 = new b4g(i6rVar, i);
+        this.q = b4gVar5;
+        int i8 = 12;
+        b4g b4gVar6 = new b4g(i6rVar, i8);
+        int i9 = 16;
+        s730 s730Var = new s730(new y3g(i6rVar, i9), i5);
+        this.r = s730Var;
+        this.s = n3w.a(new gt40(new tt((y3g) this.c, (y3g) this.d, (b4g) this.e, (b4g) this.f, (b4g) this.g, (b4g) this.h, (b4g) this.i, (y3g) this.j, (lq40) this.k, (y3g) this.l, b, b4gVar5, b4gVar6, s730Var)));
+        int i10 = 19;
+        n3w a = n3w.a(new z711(new a811((b4g) this.n, new b4g(i6rVar, i10))));
+        this.t = a;
+        this.u = n3w.a(new at40(new lf2(a, (xvf0) this.o, (s730) this.r)));
+        int i11 = 23;
+        this.y = new y3g(i6rVar, i11);
+        this.v = n3w.a(new zv40(new xl10(new b4g(i6rVar, i9))));
+        this.z = new b4g(i6rVar, i3);
+        int i12 = 18;
+        this.A = new b4g(i6rVar, i12);
+        this.B = new b4g(i6rVar, 6);
+        this.C = new y3g(i6rVar, i8);
+        this.D = new b4g(i6rVar, 9);
+        int i13 = 8;
+        this.E = new b4g(i6rVar, i13);
+        this.F = new y3g(i6rVar, 29);
+        y3g y3gVar2 = new y3g(i6rVar, i10);
+        this.G = y3gVar2;
+        this.H = new s730(y3gVar2, i11);
+        y3g y3gVar3 = new y3g(i6rVar, i12);
+        this.I = y3gVar3;
+        int i14 = 22;
+        y3g y3gVar4 = new y3g(i6rVar, i14);
+        y3g y3gVar5 = new y3g(i6rVar, i2);
+        this.J = y3gVar5;
+        this.K = new gpx0(y3gVar3, y3gVar4, y3gVar5, i6);
+        xvf0 b2 = i5m.b(ovx0.a);
+        this.p = b2;
+        int i15 = 24;
+        this.w = n3w.a(new ma11(new ke8((s730) this.H, (gpx0) this.K, b2, (y3g) this.l, (y3g) this.I, (y3g) this.d, (b4g) this.i, rt40.a, (xvf0) this.o, (lq40) this.k, (y3g) this.F, (b4g) this.e, new y3g(i6rVar, 25), nt40.a, new y3g(i6rVar, i15), (b4g) this.q, (s730) this.r, (y3g) this.J)));
+        int i16 = 17;
+        b4g b4gVar7 = new b4g(i6rVar, i16);
+        b4g b4gVar8 = new b4g(i6rVar, 0);
+        y3g y3gVar6 = (y3g) this.F;
+        this.x = n3w.a(new ha11(new z4m0((n3w) this.t, (xvf0) this.o, y3gVar6, (y3g) this.m, new tgb0((xvf0) b4gVar7, (xvf0) b4gVar8, (xvf0) y3gVar6, 21, false), new s730(new y3g(i6rVar, i16), i14), (s730) this.r, 13)));
+        this.L = new b4g(i6rVar, i4);
+        this.M = new y3g(i6rVar, i7);
+        this.N = new mam0(new y3g(i6rVar, 20), new jzi0(i15, (b4g) this.h), i13);
+    }
+
+    public d130 a() {
+        y030 y030Var = (y030) ((c0g) ((i6r) this.a)).H3.get();
+        q5z.h(y030Var);
+        return y030Var.a(ContentContainer$ZOrder.CONTENT);
+    }
+
+    public es40 b() {
+        pho T1 = ((c0g) ((i6r) this.a)).T1();
+        q5z.h(T1);
+        return new es40(T1);
+    }
+
+    public s911 c() {
+        c0g c0gVar = (c0g) ((i6r) this.a);
+        f C5 = c0gVar.C5();
+        ma11 ma11Var = (ma11) ((n3w) this.w).a;
+        ha11 ha11Var = (ha11) ((n3w) this.x).a;
+        Context H1 = c0gVar.H1();
+        q5z.h(H1);
+        d130 a = a();
+        y3g y3gVar = (y3g) this.y;
+        a3v j1 = c0gVar.j1();
+        q5z.h(j1);
+        zuj0 c = c0gVar.c();
+        q5z.h(c);
+        TaxiFeedbackStateRepository taxiFeedbackStateRepository = (TaxiFeedbackStateRepository) ((xvf0) this.p).get();
+        a aVar = (a) c0gVar.z.E7.get();
+        q5z.h(aVar);
+        com.yandex.go.multimodal_route.taxi_feedback.a aVar2 = new com.yandex.go.multimodal_route.taxi_feedback.a(taxiFeedbackStateRepository, aVar, b());
+        b4g b4gVar = (b4g) this.L;
+        y3g y3gVar2 = (y3g) this.M;
+        mam0 mam0Var = (mam0) this.N;
+        bw40 bw40Var = (bw40) c0gVar.Fy.get();
+        q5z.h(bw40Var);
+        ra00 ra00Var = (ra00) c0gVar.u8.get();
+        q5z.h(ra00Var);
+        return new s911(C5, ma11Var, ha11Var, H1, a, y3gVar, j1, c, aVar2, b4gVar, y3gVar2, mam0Var, bw40Var, ra00Var);
+    }
+
+    public c4g(qcp0 qcp0Var, l7x0 l7x0Var, dci dciVar, b bVar, ru.yandex.taxi.logistics.sdk.management.f fVar, e eVar, st2 st2Var, com.yandex.delivery.utils.dialogmanager.impl.b bVar2, yuj0 yuj0Var, c cVar, phi phiVar, ru.yandex.taxi.logistics.sdk.pay_on_delivery.a aVar, z9h z9hVar, jwh jwhVar, rza0 rza0Var, fza0 fza0Var, hwy0 hwy0Var, s701 s701Var, z501 z501Var, ts0 ts0Var, ru.yandex.taxi.logistics.sdk.management.storage.b bVar3, bi60 bi60Var, t0k0 t0k0Var, ugl0 ugl0Var, ru.yandex.taxi.logistics.sdk.tracking.impl.rover.a aVar2, hjh hjhVar, com.yandex.delivery.live.location.impl.repository.b bVar4, qdc qdcVar, q8s q8sVar, k360 k360Var, NeuroPostcardShownStagesRepository neuroPostcardShownStagesRepository, u7i u7iVar, AppVisibilitySubscriptionImpl appVisibilitySubscriptionImpl, v6s v6sVar, pkb0 pkb0Var, ru.yandex.logistics.sdk.cargo_form.core.impl.datastore.c cVar2, ru.yandex.taxi.logistics.sdk.management.storage.f fVar2, htg htgVar, com.yandex.delivery.utils.auth.impl.a aVar3, com.yandex.delivery.utils.storage.impl.c cVar3) {
+        this.a = qcp0Var;
+        this.b = l7x0Var;
+        this.c = dciVar;
+        this.d = bVar;
+        this.e = fVar;
+        this.f = eVar;
+        this.g = st2Var;
+        this.h = bVar2;
+        this.i = yuj0Var;
+        this.j = cVar;
+        this.k = phiVar;
+        this.l = aVar;
+        this.m = z9hVar;
+        this.n = jwhVar;
+        this.o = rza0Var;
+        this.p = fza0Var;
+        this.q = hwy0Var;
+        this.r = s701Var;
+        this.s = z501Var;
+        this.t = ts0Var;
+        this.u = bVar3;
+        this.v = bi60Var;
+        this.w = t0k0Var;
+        this.x = ugl0Var;
+        this.y = aVar2;
+        this.z = hjhVar;
+        this.A = bVar4;
+        this.B = qdcVar;
+        this.C = q8sVar;
+        this.D = k360Var;
+        this.E = neuroPostcardShownStagesRepository;
+        this.F = u7iVar;
+        this.G = appVisibilitySubscriptionImpl;
+        this.H = v6sVar;
+        this.I = pkb0Var;
+        this.J = cVar2;
+        this.K = fVar2;
+        this.L = htgVar;
+        this.M = aVar3;
+        this.N = cVar3;
+    }
+}

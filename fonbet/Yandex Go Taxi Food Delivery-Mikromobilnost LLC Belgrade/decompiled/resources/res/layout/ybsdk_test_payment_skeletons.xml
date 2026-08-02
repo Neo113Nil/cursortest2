@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:shape="oval"
+            app:layout_constraintBottom_toTopOf="@+id/skeletons_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/skeletons_title"
+            android:layout_width="218dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/ybsdk_skeletonview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/avatar"
+            app:ybsdk_cornerRadius="16dp"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/ybsdk_skeletonview"
+            android:layout_width="218dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skeletons_title"
+            app:ybsdk_cornerRadius="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

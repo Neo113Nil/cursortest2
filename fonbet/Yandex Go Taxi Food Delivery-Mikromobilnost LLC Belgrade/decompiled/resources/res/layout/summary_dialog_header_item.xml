@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.design.ListItemComponent
+        android:id="@+id/summary_dialog_header_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:component_no_background="true"
+        app:component_title_max_lines="2"
+        app:component_vertical_padding="5dp"/>
+    <ru.yandex.taxi.widget.PlaceholderView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/summary_dialog_header_loading"
+        android:visibility="gone"
+        android:layout_width="200dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        app:placeholder_shimmering="true"
+        app:placeholder_type="rounded_line"/>
+</FrameLayout>

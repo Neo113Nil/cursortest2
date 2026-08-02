@@ -1,0 +1,8 @@
+package com.yandex.passport.internal.report;
+
+import defpackage.fd20;
+
+/* loaded from: classes15.dex */
+public final class v6 extends fd20 {
+    public static final v6 w = new v6(3, z6.w, "cancelled");
+}

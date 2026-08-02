@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BottomModalContentHolder">
+    <ru.yandex.taxi.design.ListItemInputComponent
+        android:id="@+id/tips_input"
+        android:background="?attr/bgMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:component_input_clear_enable="false"
+        app:component_input_type="number"
+        app:imeOptions="actionUnspecified"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/tips_another_amount_cancel"
+            android:layout_weight="0.5"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="2dp"
+            app:component_background_color="?attr/controlMinor"
+            app:component_title_color="?attr/textOnControlMinor"/>
+        <ru.yandex.taxi.design.ButtonComponent
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/tips_another_amount_select"
+            android:layout_weight="0.5"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="4dp"/>
+    </LinearLayout>
+</LinearLayout>

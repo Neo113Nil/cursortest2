@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RoundedCornersImageView
+        android:id="@+id/primary_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        app:cornerRadius="12dp"/>
+    <com.yandex.go.design.view.GoFrameLayout
+        android:layout_gravity="end|bottom"
+        android:id="@+id/overlay_image_container"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginEnd="-2dp">
+        <ru.yandex.taxi.widget.RoundedCornersImageView
+            android:id="@+id/overlay_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            app:cornerRadius="10dp"/>
+    </com.yandex.go.design.view.GoFrameLayout>
+</merge>

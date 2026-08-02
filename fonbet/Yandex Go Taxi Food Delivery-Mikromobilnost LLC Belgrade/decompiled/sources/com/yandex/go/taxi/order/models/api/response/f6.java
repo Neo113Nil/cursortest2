@@ -1,0 +1,10 @@
+package com.yandex.go.taxi.order.models.api.response;
+
+import kotlinx.serialization.KSerializer;
+
+/* loaded from: classes14.dex */
+public final class f6 {
+    public final KSerializer serializer() {
+        return RideCardItemDto$TextRatingReasonsSelector$$serializer.INSTANCE;
+    }
+}

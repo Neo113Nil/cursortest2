@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/acquisition_sdk_dimension_size_200">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/error_image_view"
+        android:layout_width="@dimen/acquisition_sdk_error_image_size"
+        android:layout_height="@dimen/acquisition_sdk_error_image_size"
+        android:layout_marginBottom="@dimen/acquisition_sdk_dimension_size_400"
+        android:src="0x7f080441"
+        android:contentDescription="@null"
+        android:paddingVertical="@dimen/acquisition_sdk_dimension_size_100"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/error_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/acquisition_sdk_dimension_size_100"
+        style="@style/AcquisitionSdk.Widget.Text.Title1"/>
+    <TextView
+        android:textColor="@color/acquisition_sdk_semantic_text_primary"
+        android:gravity="center"
+        android:id="@+id/error_additional_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/acquisition_sdk_dimension_size_200"
+        style="@style/AcquisitionSdk.Widget.Text.Body.M"/>
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AcquisitionSdk.Widget.ErrorButton"/>
+</merge>

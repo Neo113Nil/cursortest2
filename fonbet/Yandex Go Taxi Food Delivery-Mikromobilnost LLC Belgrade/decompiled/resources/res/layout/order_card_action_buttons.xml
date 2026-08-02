@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.yandex.go.superapp.orders.card.actions.TrackingCardButtonView
+        android:id="@+id/secondary_button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:includeFontPadding="false"
+        android:layout_weight="1"
+        app:component_rounded_background="?attr/controlMinor"
+        app:component_subtitle_text_color="?attr/textOnControlMinor"
+        app:component_title_text_color="?attr/textOnControlMinor"
+        app:component_title_typeface="regular"/>
+    <View
+        android:id="@+id/spacer"
+        android:layout_width="@dimen/go_design_s_space"
+        android:layout_height="0dp"/>
+    <com.yandex.go.superapp.orders.card.actions.TrackingCardButtonView
+        android:id="@+id/primary_button"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:includeFontPadding="false"
+        android:layout_weight="1"
+        app:component_rounded_background="?attr/controlMain"
+        app:component_subtitle_text_color="?attr/textOnControl"
+        app:component_title_text_color="?attr/textOnControl"
+        app:component_title_typeface="medium"/>
+</merge>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:id="@+id/header"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/go_design_m_space"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sorting_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.yandex.go.design.view.GoLinearLayout>

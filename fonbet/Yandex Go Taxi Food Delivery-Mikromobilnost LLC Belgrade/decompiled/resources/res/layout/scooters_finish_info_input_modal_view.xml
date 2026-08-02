@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="16sp"
+        android:textColor="?attr/textMain"
+        android:layout_gravity="center"
+        android:id="@+id/comment_input_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/scooters_enter_comment_feedback_title"
+        app:robotoFontStyle="medium"/>
+    <ru.yandex.taxi.design.ListItemInputComponent
+        android:id="@+id/comment_input"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:importantForAccessibility="yes"
+        app:component_divider_position="top"
+        app:component_divider_type="margin"
+        app:component_input_clear_enable="false"/>
+    <ru.yandex.taxi.design.ButtonComponent
+        android:id="@+id/done_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/common_done"
+        android:layout_marginHorizontal="8dp"
+        app:component_background_color="?attr/controlMain"/>
+</com.yandex.go.design.view.GoLinearLayout>

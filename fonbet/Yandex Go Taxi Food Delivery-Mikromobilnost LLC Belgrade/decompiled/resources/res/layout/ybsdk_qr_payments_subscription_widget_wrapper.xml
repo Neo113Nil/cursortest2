@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.feature.qr.payments.internal.screens.presentation.view.SubscriptionWidgetView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/ybsdk_qr_payments_subscription_widget_horizontal_margins"/>

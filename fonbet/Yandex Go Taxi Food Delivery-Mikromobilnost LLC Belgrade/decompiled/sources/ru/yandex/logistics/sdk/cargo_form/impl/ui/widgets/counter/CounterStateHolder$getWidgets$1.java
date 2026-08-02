@@ -1,0 +1,53 @@
+package ru.yandex.logistics.sdk.cargo_form.impl.ui.widgets.counter;
+
+import defpackage.j6s;
+import defpackage.mvg;
+import defpackage.ny61;
+import defpackage.q0f;
+import defpackage.scc;
+import defpackage.zls;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.b;
+import kotlin.collections.EmptyList;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import ru.yandex.common.clid.ClidProvider;
+
+@Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\b\u0010\u0001\u001a\u0004\u0018\u00010\u00002\u0006\u0010\u0003\u001a\u00020\u0002H\n¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"Lq0f;", "coreWidget", "Lj6s;", ClidProvider.STATE, "", "Ln351;", "<anonymous>", "(Lq0f;Lj6s;)Ljava/util/List;"}, k = 3, mv = {2, 3, 0})
+@mvg(c = "ru.yandex.logistics.sdk.cargo_form.impl.ui.widgets.counter.CounterStateHolder$getWidgets$1", f = "CounterStateHolder.kt", l = {}, m = "invokeSuspend", v = 2)
+/* loaded from: classes5.dex */
+final class CounterStateHolder$getWidgets$1 extends SuspendLambda implements zls {
+    /* synthetic */ Object L$0;
+    /* synthetic */ Object L$1;
+    int label;
+    final /* synthetic */ a this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CounterStateHolder$getWidgets$1(a aVar, Continuation continuation) {
+        super(3, continuation);
+        this.this$0 = aVar;
+    }
+
+    @Override // defpackage.zls
+    public final Object invoke(Object obj, Object obj2, Object obj3) {
+        CounterStateHolder$getWidgets$1 counterStateHolder$getWidgets$1 = new CounterStateHolder$getWidgets$1(this.this$0, (Continuation) obj3);
+        counterStateHolder$getWidgets$1.L$0 = (q0f) obj;
+        counterStateHolder$getWidgets$1.L$1 = (j6s) obj2;
+        return counterStateHolder$getWidgets$1.invokeSuspend(zy11.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        q0f q0fVar = (q0f) this.L$0;
+        j6s j6sVar = (j6s) this.L$1;
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        if (this.label == 0) {
+            b.b(obj);
+            return (q0fVar == null || this.this$0.d.C(q0fVar)) ? EmptyList.a : scc.h(this.this$0.c.a(q0fVar, j6sVar));
+        }
+        ny61.r("call to 'resume' before 'invoke' with coroutine");
+        return null;
+    }
+}

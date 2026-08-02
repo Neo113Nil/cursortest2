@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="16dp"
+    android:width="16dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <group
+        android:name="first"
+        android:pivotX="16"
+        android:pivotY="32">
+        <path
+            android:fillColor="?attr/messagingCommonIconsSecondaryColor"
+            android:pathData="M 10, 32             a 6, 6 0 1, 1 12, 0             a 6, 6 0 1, 1 -12, 0"/>
+    </group>
+    <group
+        android:name="second"
+        android:pivotX="32"
+        android:pivotY="32">
+        <path
+            android:fillColor="?attr/messagingCommonIconsSecondaryColor"
+            android:pathData="M 26, 32             a 6, 6 0 1, 1 12, 0             a 6, 6 0 1, 1 -12, 0"/>
+    </group>
+    <group
+        android:name="third"
+        android:pivotX="48"
+        android:pivotY="32">
+        <path
+            android:fillColor="?attr/messagingCommonIconsSecondaryColor"
+            android:pathData="M 42, 32             a 6, 6 0 1, 1 12, 0             a 6, 6 0 1, 1 -12, 0"/>
+    </group>
+</vector>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_rectangle_round_16dp_minor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+    <com.yandex.go.design.view.GoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.yandex.go.design.view.GoLinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="16dp">
+            <com.yandex.go.design.view.GoImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/number_image"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"/>
+            <ru.yandex.taxi.widget.RobotoTextView
+                android:textSize="40sp"
+                android:textColor="?attr/textMain"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/number_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="-13sp"
+                android:letterSpacing="0.2"
+                android:fontFeatureSettings="pnum, lnum"
+                android:paddingVertical="24dp"
+                app:robotoFontStyle="heavy"/>
+        </com.yandex.go.design.view.GoLinearLayout>
+    </com.yandex.go.design.view.GoFrameLayout>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/number_checkout_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginHorizontal="16dp"
+        app:robotoFontStyle="medium"/>
+</merge>

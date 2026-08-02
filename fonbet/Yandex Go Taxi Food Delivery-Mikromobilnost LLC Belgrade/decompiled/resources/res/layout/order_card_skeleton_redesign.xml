@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="0.1"
+    android:paddingStart="12dp"
+    android:paddingEnd="32dp"
+    android:paddingVertical="12dp">
+    <ru.yandex.taxi.widget.ShimmeringBar
+        android:id="@+id/skeleton_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:barCornerRadius="20dp"
+        app:centerColor="?attr/trackingLoadingCenter"
+        app:edgeColor="?attr/trackingLoadingEdge"/>
+    <ru.yandex.taxi.widget.ShimmeringBar
+        android:id="@+id/skeleton_2"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginStart="12dp"
+        app:barCornerRadius="8dp"
+        app:centerColor="?attr/trackingLoadingCenter"
+        app:edgeColor="?attr/trackingLoadingEdge"/>
+</com.yandex.go.design.view.GoLinearLayout>

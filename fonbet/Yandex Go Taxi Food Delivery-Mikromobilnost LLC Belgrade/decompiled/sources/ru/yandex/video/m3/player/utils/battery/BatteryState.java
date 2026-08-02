@@ -1,0 +1,87 @@
+package ru.yandex.video.m3.player.utils.battery;
+
+import defpackage.unr0;
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\r\n\u0002\u0010\u000e\n\u0000\b\u0087\b\u0018\u00002\u00020\u0001B\u001f\u0012\b\b\u0001\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0002\u0010\u0007J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\f\u001a\u00020\u0005HÆ\u0003J\t\u0010\r\u001a\u00020\u0005HÆ\u0003J'\u0010\u000e\u001a\u00020\u00002\b\b\u0003\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u0005HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00052\b\u0010\u0010\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0003HÖ\u0001J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0004\u0010\nR\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\n¨\u0006\u0014"}, d2 = {"Lru/yandex/video/m3/player/utils/battery/BatteryState;", "", "batteryPercentage", "", "isCharging", "", "isPowerSaveMode", "(IZZ)V", "getBatteryPercentage", "()I", "()Z", "component1", "component2", "component3", "copy", "equals", "other", "hashCode", "toString", "", "video-player_internalRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public final /* data */ class BatteryState {
+    public static final int $stable = 0;
+    private final int batteryPercentage;
+    private final boolean isCharging;
+    private final boolean isPowerSaveMode;
+
+    public BatteryState(int i, boolean z, boolean z2) {
+        this.batteryPercentage = i;
+        this.isCharging = z;
+        this.isPowerSaveMode = z2;
+    }
+
+    public static /* synthetic */ BatteryState copy$default(BatteryState batteryState, int i, boolean z, boolean z2, int i2, Object obj) {
+        if ((i2 & 1) != 0) {
+            i = batteryState.batteryPercentage;
+        }
+        if ((i2 & 2) != 0) {
+            z = batteryState.isCharging;
+        }
+        if ((i2 & 4) != 0) {
+            z2 = batteryState.isPowerSaveMode;
+        }
+        return batteryState.copy(i, z, z2);
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final int getBatteryPercentage() {
+        return this.batteryPercentage;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final boolean getIsCharging() {
+        return this.isCharging;
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final boolean getIsPowerSaveMode() {
+        return this.isPowerSaveMode;
+    }
+
+    public final BatteryState copy(int batteryPercentage, boolean isCharging, boolean isPowerSaveMode) {
+        return new BatteryState(batteryPercentage, isCharging, isPowerSaveMode);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof BatteryState)) {
+            return false;
+        }
+        BatteryState batteryState = (BatteryState) other;
+        return this.batteryPercentage == batteryState.batteryPercentage && this.isCharging == batteryState.isCharging && this.isPowerSaveMode == batteryState.isPowerSaveMode;
+    }
+
+    public final int getBatteryPercentage() {
+        return this.batteryPercentage;
+    }
+
+    public int hashCode() {
+        return Boolean.hashCode(this.isPowerSaveMode) + unr0.e(Integer.hashCode(this.batteryPercentage) * 31, 31, this.isCharging);
+    }
+
+    public final boolean isCharging() {
+        return this.isCharging;
+    }
+
+    public final boolean isPowerSaveMode() {
+        return this.isPowerSaveMode;
+    }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder("BatteryState(batteryPercentage=");
+        sb.append(this.batteryPercentage);
+        sb.append(", isCharging=");
+        sb.append(this.isCharging);
+        sb.append(", isPowerSaveMode=");
+        return unr0.u(sb, this.isPowerSaveMode, ')');
+    }
+}

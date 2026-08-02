@@ -1,0 +1,8 @@
+package defpackage;
+
+import java.util.ArrayList;
+
+/* loaded from: classes2.dex */
+public final class yw41 {
+    public final ArrayList a = new ArrayList();
+}

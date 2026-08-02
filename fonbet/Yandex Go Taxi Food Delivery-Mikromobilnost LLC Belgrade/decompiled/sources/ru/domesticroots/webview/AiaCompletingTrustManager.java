@@ -1,0 +1,32 @@
+package ru.domesticroots.webview;
+
+import java.security.cert.CertificateException;
+import java.security.cert.X509Certificate;
+import java.util.List;
+import javax.net.ssl.X509TrustManager;
+
+/* loaded from: classes11.dex */
+class AiaCompletingTrustManager implements X509TrustManager {
+    @Override // javax.net.ssl.X509TrustManager
+    public final void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) {
+        throw null;
+    }
+
+    @Override // javax.net.ssl.X509TrustManager
+    public final void checkServerTrusted(X509Certificate[] x509CertificateArr, String str) {
+        throw null;
+    }
+
+    @Override // javax.net.ssl.X509TrustManager
+    public final X509Certificate[] getAcceptedIssuers() {
+        throw null;
+    }
+
+    public boolean isSameTrustConfiguration(String str, String str2) {
+        throw null;
+    }
+
+    public List<X509Certificate> checkServerTrusted(X509Certificate[] x509CertificateArr, String str, String str2) throws CertificateException {
+        throw null;
+    }
+}

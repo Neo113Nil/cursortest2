@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/go_design_l_space"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/superapp_cart_top_view"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_title"
+        android:textColor="?attr/textMain"
+        android:id="@+id/error_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ys_text_bold"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="@dimen/go_design_m_space"
+        app:layout_constraintBottom_toTopOf="@+id/reload_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_view"
+        app:layout_constraintVertical_bias="0.43"/>
+    <ru.yandex.taxi.design.ButtonComponent
+        android:id="@+id/reload_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="@dimen/go_design_s_space"
+        android:layout_marginVertical="@dimen/go_design_s_space"
+        app:component_button_accent="true"
+        app:component_button_size="L"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</com.yandex.go.design.view.GoConstraintLayout>

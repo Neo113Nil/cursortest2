@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.ybsdk.widgets.common.OperationStatusView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/progressLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="32dp"
+        style="@style/Widget.YB.Text.Headline2"/>
+    <TextView
+        android:textColorLink="?attr/ybColor_textIcon_linkNormal"
+        android:gravity="center"
+        android:id="@+id/progressSublabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="8dp"
+        style="@style/Widget.YB.Text.Body2"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="@color/orb_misc_gradient_ya_plus_01"
+        android:endColor="@color/orb_misc_gradient_ya_plus_03"
+        android:angle="0"
+        android:type="linear"
+        android:centerColor="@color/orb_misc_gradient_ya_plus_02"/>
+</shape>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="12sp"
+    android:textColor="?attr/textOnControlMinor"
+    android:layout_gravity="end|top"
+    android:id="@+id/tv_testing_badge"
+    android:background="@drawable/bg_round_12dp_minor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/go_design_s_space"
+    android:text="new card"
+    android:importantForAccessibility="no"
+    android:layout_marginEnd="@dimen/go_design_m_space"
+    android:translationZ="100dp"
+    android:backgroundTint="?attr/controlMinor"
+    android:paddingHorizontal="@dimen/go_design_s_space"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>

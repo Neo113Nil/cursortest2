@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/map_speed_background"
+    android:layout_width="64dp"
+    android:layout_height="64dp">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textStyle="bold"
+        android:textColor="?attr/textMain"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/text_speed_value"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+</com.yandex.go.design.view.GoFrameLayout>

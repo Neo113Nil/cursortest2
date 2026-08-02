@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:height="48dp"
+                android:width="48dp"/>
+            <solid android:color="@color/component_fog_light"/>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_flashlight_light_24"
+        android:left="12dp"
+        android:top="12dp"
+        android:right="12dp"
+        android:bottom="12dp"/>
+</layer-list>

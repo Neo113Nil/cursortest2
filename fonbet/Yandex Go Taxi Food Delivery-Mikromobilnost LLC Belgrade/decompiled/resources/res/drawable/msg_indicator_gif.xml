@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="?attr/messagingChatImageTimeForegroundColor"
+    android:drawable="@drawable/gif_outline_sm_regular"
+    class="com.yandex.messaging.base.view.DrawableTint"/>

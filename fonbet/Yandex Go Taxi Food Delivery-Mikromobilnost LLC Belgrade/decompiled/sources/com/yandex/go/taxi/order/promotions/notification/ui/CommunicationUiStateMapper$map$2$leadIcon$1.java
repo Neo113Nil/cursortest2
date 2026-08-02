@@ -1,0 +1,71 @@
+package com.yandex.go.taxi.order.promotions.notification.ui;
+
+import defpackage.c4v;
+import defpackage.mvg;
+import defpackage.ny61;
+import defpackage.tse;
+import defpackage.wls;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import ru.yandex.taxi.communications.model.CommunicationItem;
+import ru.yandex.taxi.widget.utils.e;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Ltse;", "Landroid/graphics/drawable/BitmapDrawable;", "<anonymous>", "(Ltse;)Landroid/graphics/drawable/BitmapDrawable;"}, k = 3, mv = {2, 4, 0})
+@mvg(c = "com.yandex.go.taxi.order.promotions.notification.ui.CommunicationUiStateMapper$map$2$leadIcon$1", f = "CommunicationUiStateMapper.kt", l = {40}, m = "invokeSuspend", v = 2)
+/* loaded from: classes14.dex */
+final class CommunicationUiStateMapper$map$2$leadIcon$1 extends SuspendLambda implements wls {
+    final /* synthetic */ CommunicationItem $item;
+    int label;
+    final /* synthetic */ a this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CommunicationUiStateMapper$map$2$leadIcon$1(a aVar, CommunicationItem communicationItem, Continuation continuation) {
+        super(2, continuation);
+        this.this$0 = aVar;
+        this.$item = communicationItem;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new CommunicationUiStateMapper$map$2$leadIcon$1(this.this$0, this.$item, continuation);
+    }
+
+    @Override // defpackage.wls
+    public final Object invoke(Object obj, Object obj2) {
+        return ((CommunicationUiStateMapper$map$2$leadIcon$1) create((tse) obj, (Continuation) obj2)).invokeSuspend(zy11.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        int i = this.label;
+        Object obj2 = null;
+        if (i != 0) {
+            if (i == 1) {
+                kotlin.b.b(obj);
+                return obj;
+            }
+            ny61.r("call to 'resume' before 'invoke' with coroutine");
+            return null;
+        }
+        kotlin.b.b(obj);
+        a aVar = this.this$0;
+        c4v c4vVar = this.$item.d;
+        this.label = 1;
+        aVar.getClass();
+        e eVar = aVar.a;
+        String str = c4vVar.a;
+        if (str != null) {
+            obj2 = e.f(eVar, str, null, this, 6);
+        } else {
+            String str2 = c4vVar.b;
+            if (str2 != null) {
+                obj2 = e.k(eVar, str2, null, this, 14);
+            }
+        }
+        return obj2 == coroutineSingletons ? coroutineSingletons : obj2;
+    }
+}

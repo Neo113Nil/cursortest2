@@ -1,0 +1,66 @@
+package ru.yandex.taxi.linked_order.interactor;
+
+import defpackage.ij00;
+import defpackage.ny61;
+import defpackage.tpr;
+import defpackage.vpr;
+import defpackage.zy11;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+
+/* loaded from: classes5.dex */
+public final class c0 implements tpr {
+    public final /* synthetic */ tpr a;
+    public final /* synthetic */ ij00 b;
+
+    public c0(tpr tprVar, ij00 ij00Var) {
+        this.a = tprVar;
+        this.b = ij00Var;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x003a  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0022  */
+    @Override // defpackage.tpr
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object collect(vpr vprVar, Continuation continuation) {
+        LinkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1 linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1;
+        int i;
+        if (continuation instanceof LinkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1) {
+            linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1 = (LinkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1) continuation;
+            int i2 = linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.label;
+            if ((i2 & Integer.MIN_VALUE) != 0) {
+                linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.label = i2 - Integer.MIN_VALUE;
+                Object obj = linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.result;
+                CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+                i = linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.label;
+                if (i != 0) {
+                    kotlin.b.b(obj);
+                    b0 b0Var = new b0(vprVar, this.b);
+                    linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.L$0 = null;
+                    linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.L$1 = null;
+                    linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.L$2 = null;
+                    linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.label = 1;
+                    if (this.a.collect(b0Var, linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1) == coroutineSingletons) {
+                        return coroutineSingletons;
+                    }
+                } else {
+                    if (i != 1) {
+                        ny61.r("call to 'resume' before 'invoke' with coroutine");
+                        return null;
+                    }
+                    kotlin.b.b(obj);
+                }
+                return zy11.a;
+            }
+        }
+        linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1 = new LinkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1(this, continuation);
+        Object obj2 = linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.result;
+        CoroutineSingletons coroutineSingletons2 = CoroutineSingletons.COROUTINE_SUSPENDED;
+        i = linkedOrderMapOverlayDataInteractor$listenMapPointImages$$inlined$map$2$1.label;
+        if (i != 0) {
+        }
+        return zy11.a;
+    }
+}

@@ -1,0 +1,58 @@
+package defpackage;
+
+/* loaded from: classes13.dex */
+public abstract class luh0 {
+    public static int add_card_modal_view = 2131623994;
+    public static int add_card_status_layout = 2131623995;
+    public static int add_card_view = 2131623996;
+    public static int business_payments_creation_loading_view = 2131624057;
+    public static int business_payments_creation_view = 2131624058;
+    public static int card_3ds_view = 2131624077;
+    public static int card_info = 2131624081;
+    public static int card_number_pad = 2131624082;
+    public static int card_trail_view = 2131624084;
+    public static int confirm_card_cvn_layout = 2131624167;
+    public static int confirm_card_random_amount = 2131624168;
+    public static int confirm_card_toolbar = 2131624169;
+    public static int confirm_card_view = 2131624170;
+    public static int corp_anti_fraud = 2131624173;
+    public static int corp_creating_draft_screen = 2131624174;
+    public static int corp_creating_limit_exceeded_screen = 2131624175;
+    public static int corp_personal_account_splash = 2131624176;
+    public static int corp_success_draft_created_screen = 2131624177;
+    public static int create_shared_payment_account = 2131624185;
+    public static int family_invite_view = 2131624355;
+    public static int item_check = 2131624501;
+    public static int opening_bank_dialog_modal_view = 2131625071;
+    public static int payment_method_chooser = 2131625258;
+    public static int payment_method_chooser_card_info = 2131625259;
+    public static int payment_method_chooser_details = 2131625260;
+    public static int payment_method_chooser_view = 2131625261;
+    public static int payment_promo_modal_view = 2131625262;
+    public static int payment_view_impl_content = 2131625263;
+    public static int plus_multi_badge = 2131625372;
+    public static int postcard_view = 2131625421;
+    public static int progress_status = 2131625446;
+    public static int sbp_home_content_layout = 2131625523;
+    public static int sbp_home_loading_layout = 2131625524;
+    public static int sbp_home_modal_view = 2131625525;
+    public static int sbp_token_binding_progress_modal_view = 2131625526;
+    public static int shared_account_already_exists_warning = 2131625655;
+    public static int shared_payment_account_details = 2131625656;
+    public static int shared_payment_account_prefetch = 2131625657;
+    public static int shared_payment_account_preview = 2131625658;
+    public static int shared_payment_currency_settings = 2131625659;
+    public static int shared_payment_invitation = 2131625660;
+    public static int shared_payment_member_details = 2131625661;
+    public static int shared_payment_protection = 2131625662;
+    public static int shared_payment_report_settings = 2131625663;
+    public static int shared_payment_save_account = 2131625664;
+    public static int shared_payment_settings = 2131625665;
+    public static int shared_payments_add_member = 2131625666;
+    public static int shared_payments_members_list = 2131625667;
+    public static int transport_card_widget_view = 2131625845;
+    public static int webview_progress_error_layout = 2131625892;
+    public static int yango_pay_widget_action_view = 2131625899;
+    public static int yango_pay_widget_view = 2131625900;
+    public static int yb_widget_view = 2131625901;
+}

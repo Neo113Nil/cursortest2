@@ -1,0 +1,126 @@
+{
+  "ui": {
+    "type": "skeleton",
+    "skeleton": "(theme bgMinor 0.0p (padded 0.0 12p (col 100% (repeat 3 (col (bone 100% 116p 20p) (space 6p))))))"
+  },
+  "scaffold": {
+    "topView": {
+      "id": "SuperappCartTopView-local",
+      "divDataTag": null,
+      "type": "DivkitSnippet",
+      "actions": {
+        "goBackFromSuperappCart-1": {
+          "type": "PreviewBackwardAction"
+        }
+      },
+      "divData": {
+        "log_id": "SuperappCartTopView-local",
+        "states": [
+          {
+            "state_id": 0,
+            "div": {
+              "type": "container",
+              "orientation": "overlap",
+              "height": {
+                "type": "wrap_content"
+              },
+              "items": [
+                {
+                  "type": "image",
+                  "image_url": "div-load-image://load_by_tag?tag=superapp_service_catalog_arrow_back&cache_type=disk&theme=@{theme}",
+                  "accessibility": {
+                    "description": "@{strings.common_back}",
+                    "type": "button"
+                  },
+                  "action": {
+                    "log_id": "goBackFromSuperappCart-1",
+                    "url": "flex-action://dispatch/goBackFromSuperappCart-1"
+                  },
+                  "alignment_horizontal": "start",
+                  "height": {
+                    "type": "fixed",
+                    "value": 64
+                  },
+                  "paddings": {
+                    "bottom": 20,
+                    "left": 16,
+                    "right": 16,
+                    "top": 20
+                  },
+                  "tint_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                  "width": {
+                    "type": "fixed",
+                    "value": 56
+                  }
+                },
+                {
+                  "type": "text",
+                  "text": "@{superapp_cart.screen.title}",
+                  "alignment_horizontal": "center",
+                  "alignment_vertical": "center",
+                  "font_feature_settings": "pnum, lnum",
+                  "font_size": 16,
+                  "font_weight_value": 500,
+                  "height": {
+                    "type": "wrap_content"
+                  },
+                  "letter_spacing": -0.005,
+                  "line_height": 19,
+                  "text_alignment_horizontal": "center",
+                  "text_alignment_vertical": "center",
+                  "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                  "width": {
+                    "type": "wrap_content"
+                  },
+                  "accessibility": {
+                    "type": "header",
+                    "mode": "merge"
+                  }
+                }
+              ],
+              "paddings": {
+                "top": "@{handleInsetsInFlex ? flex.statusbar_height : 0}"
+              },
+              "width": {
+                "type": "match_parent"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "topPadding": {
+      "value": {
+        "relative": 1,
+        "type": "relative"
+      }
+    },
+    "bottomPadding": {
+      "value": {
+        "absolute": 0,
+        "type": "absolute"
+      }
+    },
+    "backgroundColor": {
+      "light": "#FFFFFF",
+      "dark": "#191918",
+      "ultimaLight": "#FFFFFF",
+      "ultimaDark": "#1F2021"
+    },
+    "type": "DivkitScaffold"
+  },
+  "shared": {
+    "divkitTemplates": {},
+    "sections": {},
+    "divData": {},
+    "analytics": {
+      "bf7ce2-0": {
+        "grid_id": "test_trace_id",
+        "shortcuts_list": [],
+        "_interfaces": {},
+        "_event_version": 1
+      }
+    }
+  },
+  "context": null
+}

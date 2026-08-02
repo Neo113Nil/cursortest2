@@ -1,0 +1,18 @@
+package io.appmetrica.analytics.impl;
+
+import android.content.Context;
+import android.location.LocationManager;
+
+/* renamed from: io.appmetrica.analytics.impl.f3, reason: case insensitive filesystem */
+/* loaded from: classes9.dex */
+public final class C0322f3 {
+    public final LocationManager a;
+
+    public C0322f3(Context context) {
+        this((LocationManager) context.getSystemService("location"));
+    }
+
+    public C0322f3(LocationManager locationManager) {
+        this.a = locationManager;
+    }
+}

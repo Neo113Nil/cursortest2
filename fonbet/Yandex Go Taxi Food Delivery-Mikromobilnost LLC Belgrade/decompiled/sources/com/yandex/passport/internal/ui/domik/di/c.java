@@ -1,0 +1,30 @@
+package com.yandex.passport.internal.ui.domik.di;
+
+import com.yandex.passport.internal.properties.LoginProperties;
+import defpackage.q5z;
+import defpackage.v7p;
+
+/* loaded from: classes15.dex */
+public final class c implements v7p {
+    public final /* synthetic */ int a;
+    public final b b;
+
+    public /* synthetic */ c(b bVar, int i) {
+        this.a = i;
+        this.b = bVar;
+    }
+
+    @Override // defpackage.yvf0
+    public final Object get() {
+        int i = this.a;
+        b bVar = this.b;
+        switch (i) {
+            case 0:
+                return bVar.b;
+            default:
+                LoginProperties loginProperties = bVar.a;
+                q5z.i(loginProperties);
+                return loginProperties;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+package ru.yandex.taxi.logistics.sdk;
+
+import defpackage.iuh;
+import defpackage.juh;
+import defpackage.muh;
+import defpackage.ny61;
+import defpackage.vpr;
+import defpackage.zy11;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+
+/* loaded from: classes9.dex */
+public final class a implements vpr {
+    public final /* synthetic */ vpr a;
+    public final /* synthetic */ muh b;
+
+    public a(vpr vprVar, muh muhVar) {
+        this.a = vprVar;
+        this.b = muhVar;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0036  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0022  */
+    @Override // defpackage.vpr
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object emit(Object obj, Continuation continuation) {
+        DeliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1 deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1;
+        int i;
+        if (continuation instanceof DeliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1) {
+            deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1 = (DeliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1) continuation;
+            int i2 = deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.label;
+            if ((i2 & Integer.MIN_VALUE) != 0) {
+                deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.label = i2 - Integer.MIN_VALUE;
+                Object obj2 = deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.result;
+                CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+                i = deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.label;
+                if (i != 0) {
+                    kotlin.b.b(obj2);
+                    Object iuhVar = ((Boolean) obj).booleanValue() ? new iuh((j) this.b.a.get()) : juh.a;
+                    deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.L$0 = null;
+                    deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.L$1 = null;
+                    deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.L$2 = null;
+                    deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.L$3 = null;
+                    deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.label = 1;
+                    if (this.a.emit(iuhVar, deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1) == coroutineSingletons) {
+                        return coroutineSingletons;
+                    }
+                } else {
+                    if (i != 1) {
+                        ny61.r("call to 'resume' before 'invoke' with coroutine");
+                        return null;
+                    }
+                    kotlin.b.b(obj2);
+                }
+                return zy11.a;
+            }
+        }
+        deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1 = new DeliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1(this, continuation);
+        Object obj22 = deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.result;
+        CoroutineSingletons coroutineSingletons2 = CoroutineSingletons.COROUTINE_SUSPENDED;
+        i = deliveriesSourceModeRepositoryImpl$special$$inlined$map$1$2$1.label;
+        if (i != 0) {
+        }
+        return zy11.a;
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_body"
+        android:textColor="?attr/line"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        app:robotoFontStyle="bold"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_bubble"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/badge"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="1dp"
+        app:robotoFontStyle="medium"/>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -32,5 +32,115 @@
   ],
   "stdout": "Downloading com.rebet.android_frontend...\ncom.rebet.android_frontend downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "ReBet Social Sports & Casino (ReBet), com.rebet.android_frontend, версия 17.86 (versionCode 1786), разработчик Trivelta LLC"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.12.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "25"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.20"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics / Google Analytics for Firebase (measurement), Firebase Auth, Firebase Cloud Messaging, Firebase Installations, AppsFlyer (атрибуция, OneLink rebet.onelink.me, Install Referrer), Braze (CRM / push / in-app, sdk.iad-*.braze.com), Facebook SDK (Login + App Events), Sentry (io.sentry), Coralogix RUM (ingress.*.rum-ingress-coralogix.com), Radar.io (гео / fraud geofencing), SEON (device fingerprint / fraud), Verisoul (device / bot fraud), Surt Guardian (age / geo identity), Google Play Install Referrer, Google Advertising ID / ads-identifier, Timber (локальное логирование) Параметр Значение"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_BACKGROUND_LOCATION, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.BLUETOOTH, android.permission.BLUETOOTH_CONNECT, android.permission.CAMERA, android.permission.CHANGE_NETWORK_STATE, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_MICROPHONE, android.permission.INTERNET, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.READ_APP_BADGE, android.permission.READ_CONTACTS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_PROFILE, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.RECORD_AUDIO, android.permission.REORDER_TASKS, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, android.permission.VIBRATE, android.permission.WAKE_LOCK, android.permission.WRITE_CONTACTS, android.permission.WRITE_EXTERNAL_STORAGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.google.android.c2dm.permission.RECEIVE, com.google.…"
+      },
+      {
+        "param": "Libraries",
+        "value": "React Native (com.facebook.react, hermes, fresco, yoga, soloader), androidx.appcompat, androidx.activity, androidx.fragment, androidx.core, androidx.browser (Custom Tabs), androidx.webkit, androidx.biometric, androidx.credentials (+ play-services-auth), androidx.lifecycle, androidx.recyclerview, androidx.constraintlayout, androidx.startup, androidx.work, androidx.room / sqlite, androidx.datastore, androidx.media / media3, androidx.privacysandbox.ads, com.google.android.material, Kotlin stdlib 2.1.20, kotlinx-coroutines, kotlinx-serialization, OkHttp3, Okio, Retrofit2, Google Play Services (auth, base/basement, location, maps, cloud-messaging, measurement, wallet, fido, appset, tasks, identity), Firebase (analytics, auth, messaging, installations, datatransport, common), AppsFlyer SDK, Braze SDK, Facebook SDK (login / common / applinks / share), Sentry Android, Coralogix / cxsdk, Radar.io SDK, SEON Android SDK, Verisoul SDK, Surt Guardian, Plaid Link, OrkestaPay, Evervault, Paystack (co.paystack), Giphy React Native SDK, Zendesk Talk / Core, Zoho SalesIQ / LiveChat, Twilio, Agora RTC, AppsOnAir AppSync / AppLink, react-native-webview, react-native-keys, BouncyCastle / SpongyCastle,…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "analytics.plaid.com, aomedia.org, api-verified.radar.io, api.evervault.com, api.giphy.com, api.orkestapay.com, api.paystack.co, api.radar.io Параметр Значение"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "В пакете приложения отдельного собственного файла SharedPreferences почти нет (состояние в основном в React Native AsyncStorage). Служебные SDK хранят: appsflyer-data (атрибуция AppsFlyer), RadarSDK / RadarReplayBufferPreferences (гео Radar), seonLocalPreferences / seonLocalNtPreferences / PREF_UNIQUE_ID (отпечаток SEON), guardian_sdk (Surt Guardian), плюс внутренние файлы Braze, Facebook, Firebase, Zoho, Agora, AppsOnAir (AnalyticsData / Referral), rn_push_notification и react-native-device-info"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "casino, betting, slots, poker, roulette, gambling, deposit, withdraw, affiliate / referral, redirect, bot, is_bot (Zoho livechat), whitelist Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "analytics.plaid.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api-verified.radar.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "api.evervault.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NameCheap, Inc."
+      },
+      {
+        "domain": "api.giphy.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "api.orkestapay.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "api.paystack.co",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "api.radar.io",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

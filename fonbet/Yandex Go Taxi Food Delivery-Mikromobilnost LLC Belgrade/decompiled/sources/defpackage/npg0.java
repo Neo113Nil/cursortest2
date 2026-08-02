@@ -1,0 +1,11 @@
+package defpackage;
+
+/* loaded from: classes10.dex */
+public abstract class npg0 {
+    public static int androidx_core_ripple_material_light = 2131099968;
+    public static int androidx_core_secondary_text_default_material_light = 2131099969;
+    public static int call_notification_answer_color = 2131100064;
+    public static int call_notification_decline_color = 2131100065;
+    public static int notification_action_color_filter = 2131101918;
+    public static int notification_icon_bg_color = 2131101922;
+}

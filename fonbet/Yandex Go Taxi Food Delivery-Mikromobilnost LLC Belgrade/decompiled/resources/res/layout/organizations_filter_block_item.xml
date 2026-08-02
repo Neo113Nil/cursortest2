@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.design.ListItemComponent
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:component_title_size="20sp"
+        app:component_title_typeface="bold"
+        app:component_vertical_padding="12dp"/>
+    <com.yandex.go.design.view.GoConstraintLayout
+        android:id="@+id/chips"
+        android:paddingBottom="@dimen/go_design_m_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="14dp">
+        <androidx.constraintlayout.helper.widget.Flow
+            android:orientation="horizontal"
+            android:id="@+id/flow"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:flow_horizontalAlign="start"
+            app:flow_horizontalBias="0"
+            app:flow_horizontalGap="@dimen/discovery_organizations_filter_chips_gap"
+            app:flow_horizontalStyle="packed"
+            app:flow_verticalAlign="top"
+            app:flow_verticalGap="@dimen/discovery_organizations_filter_chips_gap"
+            app:flow_verticalStyle="packed"
+            app:flow_wrapMode="chain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </com.yandex.go.design.view.GoConstraintLayout>
+</com.yandex.go.design.view.GoLinearLayout>

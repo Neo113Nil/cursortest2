@@ -1,0 +1,91 @@
+package defpackage;
+
+import android.view.accessibility.AccessibilityManager;
+import com.yandex.go.taxi.order.models.api.screen.OrderScreen;
+
+/* loaded from: classes14.dex */
+public final class x6g {
+    public final v6g a;
+    public final n3w b;
+    public final n3w c;
+    public final xvf0 d;
+    public final n3w e;
+    public final zni0 f;
+    public final wj0 g;
+    public final rwh h;
+    public final zo0 i;
+    public final xvf0 j;
+    public final xvf0 k;
+    public final so4 l;
+    public final kbk0 m;
+    public final n7i0 n;
+    public final cta0 o;
+    public final jpf0 p;
+    public final qx4 q;
+    public final n3w r;
+    public final n3w s;
+    public final xvf0 t;
+    public final xvf0 u;
+    public final n3w v;
+    public final vu w;
+    public final n3w x;
+    public final n3w y;
+
+    public x6g(v6g v6gVar, k030 k030Var, o230 o230Var, AccessibilityManager accessibilityManager, OrderScreen orderScreen, Boolean bool) {
+        this.a = v6gVar;
+        this.b = n3w.a(bool);
+        n3w a = n3w.a(accessibilityManager);
+        this.c = a;
+        this.d = i5m.b(new rx4((xvf0) this.b, (xvf0) v6gVar.d, (xvf0) v6gVar.e, a, 15));
+        this.e = n3w.b(k030Var);
+        this.f = new zni0(v6gVar.w0, 16);
+        this.g = new wj0(this.f, v6gVar.d, v6gVar.W, v6gVar.u0, i5m.b(ybk0.a), v6gVar.s0, v6gVar.r0, v6gVar.x0, 26);
+        this.h = new rwh(v6gVar.z0, 27);
+        this.i = new zo0(v6gVar.A0, v6gVar.B0, v6gVar.C0, v6gVar.V, v6gVar.D0, v6gVar.E0, 12);
+        this.j = i5m.b(new zni0(this.d, 28));
+        xvf0 b = i5m.b(ldk0.a);
+        this.k = b;
+        n3w n3wVar = v6gVar.d;
+        xvf0 xvf0Var = this.j;
+        s6g s6gVar = v6gVar.e;
+        u6g u6gVar = v6gVar.W0;
+        t6g t6gVar = v6gVar.X0;
+        n3w n3wVar2 = this.c;
+        r6g r6gVar = v6gVar.s;
+        so4 so4Var = new so4(n3wVar, xvf0Var, s6gVar, u6gVar, t6gVar, n3wVar2, r6gVar, v6gVar.Y0, b, 15);
+        this.l = so4Var;
+        this.m = new kbk0(n3wVar, v6gVar.v0, this.g, v6gVar.y0, this.h, this.i, v6gVar.F0, v6gVar.G0, v6gVar.H0, v6gVar.I0, v6gVar.J0, v6gVar.K0, v6gVar.L0, v6gVar.X, v6gVar.U, v6gVar.M0, v6gVar.N0, v6gVar.O0, v6gVar.I, v6gVar.P0, v6gVar.Q0, v6gVar.R0, v6gVar.S0, v6gVar.T0, v6gVar.a0, v6gVar.U0, v6gVar.V0, v6gVar.i0, so4Var, v6gVar.Z0, v6gVar.a1, v6gVar.b1, v6gVar.c1, v6gVar.d1, v6gVar.o0, v6gVar.g1, v6gVar.h1, new kj7((xvf0) r6gVar, (xvf0) v6gVar.f1, (xvf0) new ig7(v6gVar.i1, 20), 18, (char) 0), v6gVar.j1, ppw.a);
+        this.n = new n7i0(n3wVar, v6gVar.k1, 18);
+        p8k0 p8k0Var = new p8k0(v6gVar.j, v6gVar.k, v6gVar.n, n3wVar, 1);
+        r6g r6gVar2 = v6gVar.c;
+        this.o = new cta0(r6gVar2, n3wVar, v6gVar.l1, new jpj0(r6gVar2, v6gVar.m1, p8k0Var, 2, false), r6gVar);
+        n3w b2 = n3w.b(o230Var);
+        n7i0 n7i0Var = new n7i0(v6gVar.y, v6gVar.w, 11);
+        r6g r6gVar3 = v6gVar.s;
+        n3w n3wVar3 = v6gVar.d;
+        jpf0 jpf0Var = new jpf0((Object) new jpj0(n7i0Var, r6gVar3, n3wVar3, 5, false), (xvf0) v6gVar.v, 21);
+        this.p = jpf0Var;
+        this.q = new qx4(v6gVar.u0, this.m, this.n, this.o, b2, v6gVar.n1, this.l, jpf0Var, v6gVar.o1, v6gVar.p1, n3wVar3, v6gVar.q1, this.g, r6gVar3, v6gVar.r1);
+        this.r = n3w.a(new pkk0(new zz7(v6gVar.s1, v6gVar.f)));
+        zni0 zni0Var = new zni0(i5m.b(new zni0(yhk0.a, 24)), 25);
+        n3w n3wVar4 = v6gVar.d;
+        n3w a2 = n3w.a(new dkk0(new fn6(n3wVar4, v6gVar.t, v6gVar.y1, v6gVar.n0, v6gVar.z1, v6gVar.h, this.g, zni0Var, v6gVar.A1, v6gVar.g, v6gVar.C, new zni0(n3wVar4, 19))));
+        this.s = a2;
+        xvf0 b3 = i5m.b(new ju9(v6gVar.c, this.d, v6gVar.f, v6gVar.g, this.e, v6gVar.h, this.q, this.r, v6gVar.t1, this.g, v6gVar.t0, v6gVar.u1, v6gVar.v1, v6gVar.w1, v6gVar.x1, a2, v6gVar.j1, v6gVar.B1));
+        n3w n3wVar5 = v6gVar.d;
+        this.t = i5m.b(new cta0((xvf0) v6gVar.b, b3, (xvf0) this.l, (xvf0) new zni0(n3wVar5, 27), (xvf0) new s3f0(n3wVar5, v6gVar.X, this.i, 13), 23));
+        n3w a3 = n3w.a(orderScreen);
+        u6g u6gVar2 = v6gVar.C1;
+        u6g u6gVar3 = v6gVar.D1;
+        this.u = i5m.b(new jzi0(9, new nt0((xvf0) v6gVar.c, (xvf0) new xv8(u6gVar2, a3, u6gVar3, v6gVar.u0, this.m, this.o, v6gVar.o1, v6gVar.E1, v6gVar.F1, this.p, this.g, v6gVar.s, a3), (xvf0) v6gVar.h, (xvf0) v6gVar.x1, (xvf0) this.s, (xvf0) u6gVar2, (xvf0) u6gVar3, (xvf0) v6gVar.d, v6gVar.t0, (xvf0) v6gVar.j1, 29, (byte) 0)));
+        xvf0 xvf0Var2 = v6gVar.u0;
+        r6g r6gVar4 = v6gVar.s;
+        this.v = n3w.a(new zmk0(new kdd0(v6gVar.c, new n7i0(xvf0Var2, r6gVar4, 17), r6gVar4, v6gVar.d)));
+        int i = 22;
+        this.w = new vu((xvf0) this.v, n3w.a(new gnk0(new kdd0(v6gVar.c, v6gVar.t0, v6gVar.x1, this.s))), v6gVar.t0, i);
+        this.x = n3w.a(new dmf(new sae(12, v6gVar.c)));
+        n3w a4 = n3w.a(new hmf(new vx0(v6gVar.X, v6gVar.L1, v6gVar.n)));
+        u6g u6gVar4 = v6gVar.a;
+        this.y = n3w.a(new jfk0(new kkm(u6gVar4, this.t, this.u, v6gVar.G1, this.w, v6gVar.H1, v6gVar.I1, v6gVar.J1, v6gVar.K1, new f2b(u6gVar4, this.x, a4, i), v6gVar.M1, v6gVar.N1, v6gVar.O1, v6gVar.P1, v6gVar.Q1, v6gVar.S0, v6gVar.R1, new p6f(v6gVar.n, 6), this.k, new ze(v6gVar.v0, v6gVar.S1, 0))));
+    }
+}

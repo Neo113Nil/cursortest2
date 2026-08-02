@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemComponent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:component_navigation_trail_horizontal_padding="10dp"
+    app:component_no_background="true"
+    app:component_title="@string/order_progress_quality_question_action"
+    app:component_title_gravity="end"
+    app:component_title_text_color="?attr/textMain"
+    app:component_title_typeface="medium"
+    app:component_trail_mode="navigation"
+    app:component_trail_navigation_color="?attr/textMain"/>

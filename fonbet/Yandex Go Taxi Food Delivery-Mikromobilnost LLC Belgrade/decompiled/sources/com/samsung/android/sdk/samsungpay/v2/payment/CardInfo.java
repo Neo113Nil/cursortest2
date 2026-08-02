@@ -1,0 +1,71 @@
+package com.samsung.android.sdk.samsungpay.v2.payment;
+
+import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.samsung.android.sdk.samsungpay.v2.SpaySdk;
+
+/* loaded from: classes11.dex */
+public class CardInfo implements Parcelable {
+    public static final Parcelable.Creator<CardInfo> CREATOR = new Parcelable.Creator<CardInfo>() { // from class: com.samsung.android.sdk.samsungpay.v2.payment.CardInfo.1
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public CardInfo createFromParcel(Parcel parcel) {
+            return new CardInfo(parcel);
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // android.os.Parcelable.Creator
+        public CardInfo[] newArray(int i) {
+            return new CardInfo[i];
+        }
+    };
+    private SpaySdk.Brand brand;
+    private String cardId;
+    private Bundle cardMetaData;
+
+    public static class a {
+        private SpaySdk.Brand a;
+        private String b;
+        private Bundle c;
+    }
+
+    public CardInfo(Parcel parcel) {
+        this.brand = (SpaySdk.Brand) parcel.readValue(SpaySdk.Brand.class.getClassLoader());
+        this.cardId = parcel.readString();
+        this.cardMetaData = parcel.readBundle();
+    }
+
+    @Override // android.os.Parcelable
+    public int describeContents() {
+        return 0;
+    }
+
+    public SpaySdk.Brand getBrand() {
+        return this.brand;
+    }
+
+    public String getCardId() {
+        return this.cardId;
+    }
+
+    public Bundle getCardMetaData() {
+        return this.cardMetaData;
+    }
+
+    @Override // android.os.Parcelable
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeValue(this.brand);
+        parcel.writeString(this.cardId);
+        parcel.writeBundle(this.cardMetaData);
+    }
+
+    private CardInfo() {
+    }
+
+    private CardInfo(a aVar) {
+        this.brand = aVar.a;
+        this.cardId = aVar.b;
+        this.cardMetaData = aVar.c;
+    }
+}

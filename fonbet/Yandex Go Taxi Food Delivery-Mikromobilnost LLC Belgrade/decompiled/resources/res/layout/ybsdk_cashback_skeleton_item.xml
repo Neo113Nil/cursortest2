@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="168dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp">
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        app:ybsdk_cornerRadius="@dimen/ybsdk_text_skeleton_radius"/>
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="260dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        app:ybsdk_cornerRadius="@dimen/ybsdk_balance_text_skeleton_radius"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+    <include layout="@layout/ybsdk_category_item_shimmer"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="no">
+    <View
+        android:id="@+id/map_top_fade"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/map_top_fade_height"
+        android:importantForAccessibility="no"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_body"
+        android:textColor="?attr/textMain"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:importantForAccessibility="no"
+        app:robotoFontStyle="medium"/>
+</com.yandex.go.design.view.GoFrameLayout>

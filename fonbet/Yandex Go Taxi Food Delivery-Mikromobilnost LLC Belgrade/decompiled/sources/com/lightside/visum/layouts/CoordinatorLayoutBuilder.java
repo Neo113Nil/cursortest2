@@ -1,0 +1,95 @@
+package com.lightside.visum.layouts;
+
+import android.R;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewManager;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CheckedTextView;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.MultiAutoCompleteTextView;
+import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RatingBar;
+import android.widget.SeekBar;
+import android.widget.Spinner;
+import android.widget.TextView;
+import androidx.appcompat.widget.AppCompatCheckBox;
+import androidx.appcompat.widget.AppCompatEditText;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.AppCompatRadioButton;
+import androidx.appcompat.widget.AppCompatRatingBar;
+import androidx.appcompat.widget.AppCompatSeekBar;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.recyclerview.widget.RecyclerView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.switchmaterial.SwitchMaterial;
+import defpackage.bog0;
+import defpackage.eng0;
+import defpackage.gog0;
+import defpackage.iog0;
+import defpackage.lzx;
+import defpackage.nzx;
+import defpackage.tls;
+import defpackage.wls;
+import kotlin.Metadata;
+import kotlin.jvm.internal.FunctionReferenceImpl;
+import ru.CryptoPro.JCPRequest.ca20.status.CA20Status;
+
+@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\u0018\u00002\u00020\u00012\b\u0012\u0004\u0012\u00020\u00030\u0002B#\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0006\u0012\b\b\u0001\u0010\b\u001a\u00020\u0006¢\u0006\u0004\b\t\u0010\nB\u0011\b\u0016\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\t\u0010\u000bJ$\u0010\u000e\u001a\u00020\u00032\b\b\u0001\u0010\f\u001a\u00020\u00062\b\b\u0001\u0010\r\u001a\u00020\u0006H\u0097\u0001¢\u0006\u0004\b\u000e\u0010\u000fJ2\u0010\u0015\u001a\u00028\u0000\"\b\b\u0000\u0010\u0011*\u00020\u0010*\u00028\u00002\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0012H\u0096\u0003¢\u0006\u0004\b\u0015\u0010\u0016J\u0018\u0010\u0019\u001a\u00020\u00132\u0006\u0010\u0018\u001a\u00020\u0017H\u0096\u0001¢\u0006\u0004\b\u0019\u0010\u001aJ\u0014\u0010\u001b\u001a\u00020\u0013*\u00020\u0010H\u0096\u0001¢\u0006\u0004\b\u001b\u0010\u001cR\u0014\u0010\u001f\u001a\u00020\u00048VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u001d\u0010\u001e¨\u0006 "}, d2 = {"Lcom/lightside/visum/layouts/CoordinatorLayoutBuilder;", "Landroidx/coordinatorlayout/widget/CoordinatorLayout;", "Llzx;", "Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;", "Landroid/content/Context;", "context", "", "defStyleAttr", "defStyleRes", "<init>", "(Landroid/content/Context;II)V", "(Landroid/content/Context;)V", "width", "height", "generateLayoutParams", "(II)Landroidx/coordinatorlayout/widget/CoordinatorLayout$LayoutParams;", "Landroid/view/View;", CA20Status.STATUS_CERTIFICATE_V, "Lkotlin/Function1;", "Lzy11;", "init", "invoke", "(Landroid/view/View;Ltls;)Landroid/view/View;", "Landroid/view/ViewManager;", "viewManager", "attachTo", "(Landroid/view/ViewManager;)V", "addToParent", "(Landroid/view/View;)V", "getCtx", "()Landroid/content/Context;", "ctx", "visum_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes11.dex */
+public final class CoordinatorLayoutBuilder extends CoordinatorLayout implements lzx {
+    private final /* synthetic */ lzx $$delegate_0;
+
+    @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+    /* renamed from: com.lightside.visum.layouts.CoordinatorLayoutBuilder$1, reason: invalid class name */
+    public /* synthetic */ class AnonymousClass1 extends FunctionReferenceImpl implements wls {
+        public static final AnonymousClass1 b = new AnonymousClass1(2, 0, CoordinatorLayout.LayoutParams.class, "<init>", "<init>(II)V");
+
+        @Override // defpackage.wls
+        public final Object invoke(Object obj, Object obj2) {
+            return new CoordinatorLayout.LayoutParams(((Number) obj).intValue(), ((Number) obj2).intValue());
+        }
+    }
+
+    public CoordinatorLayoutBuilder(Context context) {
+        this(context, (CoordinatorLayout.class.equals(TextView.class) || CoordinatorLayout.class.equals(AppCompatTextView.class)) ? R.attr.textViewStyle : CoordinatorLayout.class.equals(Button.class) ? R.attr.buttonStyle : CoordinatorLayout.class.equals(EditText.class) ? R.attr.editTextStyle : CoordinatorLayout.class.equals(AppCompatEditText.class) ? iog0.editTextStyle : CoordinatorLayout.class.equals(Spinner.class) ? R.attr.spinnerStyle : CoordinatorLayout.class.equals(ImageButton.class) ? R.attr.imageButtonStyle : CoordinatorLayout.class.equals(AppCompatImageButton.class) ? iog0.imageButtonStyle : CoordinatorLayout.class.equals(CheckBox.class) ? R.attr.checkboxStyle : CoordinatorLayout.class.equals(AppCompatCheckBox.class) ? iog0.checkboxStyle : CoordinatorLayout.class.equals(RadioButton.class) ? R.attr.radioButtonStyle : CoordinatorLayout.class.equals(AppCompatRadioButton.class) ? iog0.radioButtonStyle : CoordinatorLayout.class.equals(CheckedTextView.class) ? R.attr.checkedTextViewStyle : (CoordinatorLayout.class.equals(AutoCompleteTextView.class) || CoordinatorLayout.class.equals(MultiAutoCompleteTextView.class)) ? 16842859 : CoordinatorLayout.class.equals(RatingBar.class) ? R.attr.ratingBarStyle : CoordinatorLayout.class.equals(AppCompatRatingBar.class) ? iog0.ratingBarStyle : CoordinatorLayout.class.equals(SeekBar.class) ? R.attr.seekBarStyle : CoordinatorLayout.class.equals(AppCompatSeekBar.class) ? iog0.seekBarStyle : CoordinatorLayout.class.equals(ProgressBar.class) ? R.attr.progressBarStyle : CoordinatorLayout.class.equals(RecyclerView.class) ? gog0.recyclerViewStyle : CoordinatorLayout.class.equals(CoordinatorLayout.class) ? bog0.coordinatorLayoutStyle : CoordinatorLayout.class.equals(Toolbar.class) ? iog0.toolbarStyle : CoordinatorLayout.class.equals(FloatingActionButton.class) ? eng0.floatingActionButtonStyle : (CoordinatorLayout.class.equals(SwitchCompat.class) || CoordinatorLayout.class.equals(SwitchMaterial.class)) ? eng0.switchStyle : 0, 0);
+    }
+
+    @Override // defpackage.lzx
+    public void addToParent(View view) {
+        this.$$delegate_0.addToParent(view);
+    }
+
+    @Override // defpackage.lzx
+    public void attachTo(ViewManager viewManager) {
+        this.$$delegate_0.attachTo(viewManager);
+    }
+
+    @Override // defpackage.lzx
+    public CoordinatorLayout.LayoutParams generateLayoutParams(int width, int height) {
+        return (CoordinatorLayout.LayoutParams) this.$$delegate_0.generateLayoutParams(width, height);
+    }
+
+    @Override // defpackage.kp31
+    public Context getCtx() {
+        return getContext();
+    }
+
+    @Override // defpackage.lzx
+    public <V extends View> V invoke(V v, tls tlsVar) {
+        return (V) this.$$delegate_0.invoke(v, tlsVar);
+    }
+
+    public CoordinatorLayoutBuilder(Context context, int i, int i2) {
+        super(context, null, i);
+        this.$$delegate_0 = new nzx(context, AnonymousClass1.b);
+        attachTo(this);
+    }
+}

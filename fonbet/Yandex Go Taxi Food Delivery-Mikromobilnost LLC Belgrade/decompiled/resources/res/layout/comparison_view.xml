@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.yandex.taxi.altpins.confirmation_screen.modal.comparison_block.ComparisonItemView
+        android:id="@+id/altpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_marginStart="@dimen/go_design_s_space"
+        android:layout_marginEnd="@dimen/go_design_s_space"/>
+    <View
+        android:background="?attr/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/component_divider_height"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+    <ru.yandex.taxi.altpins.confirmation_screen.modal.comparison_block.ComparisonItemView
+        android:id="@+id/original"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:layout_marginStart="@dimen/go_design_s_space"
+        android:layout_marginEnd="@dimen/go_design_s_space"/>
+</merge>

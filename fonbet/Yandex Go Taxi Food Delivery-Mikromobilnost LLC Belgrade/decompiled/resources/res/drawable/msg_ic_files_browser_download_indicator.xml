@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:tint="?attr/messagingCommonAccentTextColor"
+    android:drawable="@drawable/download_outline_sm_regular"
+    app:scaledPadding="-1dp"
+    class="com.yandex.messaging.base.view.DrawableTint"/>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?attr/bgMain"
+    android:padding="@dimen/go_design_m_space"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="44sp"
+        android:textColor="?attr/textMain"
+        android:id="@+id/final_loading_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="19sp"
+        android:textColor="?attr/textMain"
+        android:id="@+id/final_loading_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ru.yandex.taxi.widget.progress.CircularProgressBar
+        android:id="@+id/final_loading_loader"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="48dp"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp">
+    <com.yandex.alicekit.core.views.RoundedCornersWithStrokeLayout
+        android:layout_width="@dimen/timeline_message_div_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:roundedCornersLayoutCornerColor="@android:color/white"
+        app:roundedCornersLayoutCornerRadius="8dp"
+        app:roundedCornersLayoutStrokeColor="?attr/messagingCommonDividerColor"
+        app:roundedCornersLayoutStrokeWidth="1dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textSize="14sp"
+            android:textColor="?attr/messagingCommonTextSecondaryColor"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/unsupported_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4sp"
+            android:paddingVertical="7dp"/>
+    </com.yandex.alicekit.core.views.RoundedCornersWithStrokeLayout>
+</LinearLayout>

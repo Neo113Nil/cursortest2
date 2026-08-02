@@ -1,0 +1,27 @@
+package io.appmetrica.analytics.rtmwrapper.internal;
+
+import android.content.Context;
+import android.os.Bundle;
+import io.appmetrica.analytics.coreapi.internal.data.IBinaryDataHelper;
+import io.appmetrica.analytics.coreapi.internal.data.TempCacheStorage;
+import io.appmetrica.analytics.coreapi.internal.executors.IHandlerExecutor;
+import io.appmetrica.analytics.rtm.internal.service.EventToReporterProxy;
+import io.appmetrica.analytics.rtm.internal.service.ReporterEventProcessorComponents;
+import io.appmetrica.analytics.rtmwrapper.impl.b;
+
+/* loaded from: classes9.dex */
+public class RtmServiceWrapper implements IRtmServiceWrapper {
+    private final EventToReporterProxy a;
+
+    public RtmServiceWrapper(RtmCrashesDirectoryProvider rtmCrashesDirectoryProvider, Context context, IHandlerExecutor iHandlerExecutor, RtmDefaultValuesProvider rtmDefaultValuesProvider, IBinaryDataHelper iBinaryDataHelper, TempCacheStorage tempCacheStorage) {
+        this.a = new EventToReporterProxy(new ReporterEventProcessorComponents(context, iHandlerExecutor, iBinaryDataHelper, tempCacheStorage, new b(rtmDefaultValuesProvider)), new CrashesDirectoryProviderWrapper(rtmCrashesDirectoryProvider));
+    }
+
+    @Override // io.appmetrica.analytics.rtmwrapper.internal.IRtmServiceWrapper
+    public void reportData(Bundle bundle) {
+        try {
+            this.a.reportData(bundle);
+        } catch (Throwable unused) {
+        }
+    }
+}

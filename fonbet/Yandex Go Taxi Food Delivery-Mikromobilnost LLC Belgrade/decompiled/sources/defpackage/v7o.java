@@ -1,0 +1,6 @@
+package defpackage;
+
+/* loaded from: classes12.dex */
+public interface v7o {
+    boolean b();
+}

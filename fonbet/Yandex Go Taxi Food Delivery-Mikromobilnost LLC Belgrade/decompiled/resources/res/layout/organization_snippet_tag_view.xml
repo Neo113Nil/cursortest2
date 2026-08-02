@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/organization_snippet_tag_shape"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="6dp">
+    <com.yandex.go.design.view.GoImageView
+        android:layout_gravity="center"
+        android:id="@+id/tag_icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/discovery_organizations_snippet_tag_icon_size"
+        android:layout_height="@dimen/discovery_organizations_snippet_tag_icon_size"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="3dp"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="9sp"
+        android:textColor="?attr/textMain"
+        android:id="@+id/tag_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ys_text_bold"
+        android:paddingVertical="5dp"/>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.messaging.ui.chatinfo.editchat.ChatSettingsSwitch xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/allow_guests_to_download_switch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:css_icon="@drawable/msg_ic_download"
+    app:css_label="@string/messaging_edit_chat_user_rights_allow_guests_to_download"/>

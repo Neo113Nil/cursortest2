@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ask_disk_space_files_count">
+        <item quantity="one">%1$d file</item>
+        <item quantity="few">%1$d files</item>
+        <item quantity="other">%1$d files</item>
+    </plurals>
+    <plurals name="back_button_with_unread_content_desc">
+        <item quantity="one">Back, %d unread message in other chats</item>
+        <item quantity="few">Back, %d unread messages in other chats</item>
+        <item quantity="other">Back, %d unread messages in other chats</item>
+    </plurals>
+    <plurals name="calls_feedback_show_all_reasons_button_text">
+        <item quantity="zero">@string/call_feedback_more_reasons</item>
+        <item quantity="one">Encore %d raison …</item>
+        <item quantity="few">Encore %d raisons …</item>
+        <item quantity="many">Encore %d raisons …</item>
+        <item quantity="other">Encore %d raisons …</item>
+    </plurals>
+    <plurals name="channel_subscribers_plural">
+        <item quantity="one">%1$d subscriber</item>
+        <item quantity="few">%1$d subscribers</item>
+        <item quantity="other">%1$d subscribers</item>
+    </plurals>
+    <plurals name="chat_attach_send_files">
+        <item quantity="one">Send file</item>
+        <item quantity="few">Send %1$d files</item>
+        <item quantity="other">Send %1$d files</item>
+    </plurals>
+    <plurals name="chat_attach_send_gif">
+        <item quantity="one">Send image</item>
+        <item quantity="few">Send %1$d images</item>
+        <item quantity="other">Send %1$d images</item>
+    </plurals>
+    <plurals name="chat_attach_send_images">
+        <item quantity="one">Send image</item>
+        <item quantity="few">Send %1$d images</item>
+        <item quantity="other">Send %1$d images</item>
+    </plurals>
+    <plurals name="chat_list_item_unread_count_content_desc">
+        <item quantity="one">%d unread message</item>
+        <item quantity="few">%d unread messages</item>
+        <item quantity="other">%d unread messages</item>
+    </plurals>
+    <plurals name="chat_list_tab_unread_chats_count_content_desc">
+        <item quantity="one">%d unread chat</item>
+        <item quantity="few">%d unread chats</item>
+        <item quantity="other">%d unread chats</item>
+    </plurals>
+    <plurals name="chat_list_tab_unread_threads_count_content_desc">
+        <item quantity="one">%d unread thread</item>
+        <item quantity="few">%d unread threads</item>
+        <item quantity="other">%d unread threads</item>
+    </plurals>
+    <plurals name="chat_members_plural">
+        <item quantity="zero">%1$d membres</item>
+        <item quantity="one">%1$d membre</item>
+        <item quantity="few">%1$d membres</item>
+        <item quantity="many">%1$d membres</item>
+        <item quantity="other">%1$d membres</item>
+    </plurals>
+    <plurals name="chat_status_typing_many">
+        <item quantity="zero">%d en train d&apos;écrire</item>
+        <item quantity="one">%d en train d&apos;écrire</item>
+        <item quantity="few">%d en train d&apos;écrire</item>
+        <item quantity="many">%d en train d&apos;écrire</item>
+        <item quantity="other">%d en train d&apos;écrire</item>
+    </plurals>
+    <plurals name="chat_threadlist_status">
+        <item quantity="zero">Vous suivez %1$d threads</item>
+        <item quantity="one">Vous suivez %1$d thread</item>
+        <item quantity="few">Vous suivez %1$d threads</item>
+        <item quantity="many">Vous suivez %1$d threads</item>
+        <item quantity="other">Vous suivez %1$d threads</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="few">%d hours</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="few">%d minutes</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avancer de %d seconde</item>
+        <item quantity="other">Avancer de %d secondes</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+    </plurals>
+    <plurals name="forward_messages_text">
+        <item quantity="one">Forward %1$s message</item>
+        <item quantity="few">Forward %1$s messages</item>
+        <item quantity="other">Forward %1$s messages</item>
+    </plurals>
+    <plurals name="group_call_participants_count_text">
+        <item quantity="zero">%d membres</item>
+        <item quantity="one">%d membre</item>
+        <item quantity="few">%d membres</item>
+        <item quantity="many">%d membres</item>
+        <item quantity="other">%d membres</item>
+    </plurals>
+    <plurals name="menu_confirm_delete_messages_plural">
+        <item quantity="zero">Supprimer %1$d messages</item>
+        <item quantity="one">Supprimer %1$d message</item>
+        <item quantity="few">Supprimer %1$d messages</item>
+        <item quantity="many">Supprimer %1$d messages</item>
+        <item quantity="other">Supprimer %1$d messages</item>
+    </plurals>
+    <plurals name="menu_reactions">
+        <item quantity="one">%s reaction</item>
+        <item quantity="few">%s reactions</item>
+        <item quantity="other">%s reactions</item>
+    </plurals>
+    <plurals name="messaging_chat_search_result">
+        <item quantity="zero">%1$d de %2$d coïncidences</item>
+        <item quantity="one">%1$d de %2$d coïncidence</item>
+        <item quantity="few">%1$d de %2$d coïncidences</item>
+        <item quantity="many">%1$d de %2$d coïncidences</item>
+        <item quantity="other">%1$d de %2$d coïncidences</item>
+    </plurals>
+    <plurals name="messaging_online_minutes_ago">
+        <item quantity="one">last seen %d minute ago</item>
+        <item quantity="few">last seen %d minutes ago</item>
+        <item quantity="other">last seen %d minutes ago</item>
+    </plurals>
+    <plurals name="messaging_removed_messages_group_plural">
+        <item quantity="one">%d message deleted</item>
+        <item quantity="few">%d messages deleted</item>
+        <item quantity="other">%d messages deleted</item>
+    </plurals>
+    <plurals name="messaging_thread_counter_label">
+        <item quantity="zero">%1$d Réponses</item>
+        <item quantity="one">%1$d Réponse</item>
+        <item quantity="few">%1$d Réponses</item>
+        <item quantity="many">%1$d Réponses</item>
+        <item quantity="other">%1$d Réponses</item>
+    </plurals>
+    <plurals name="messenger_count_recent_voters">
+        <item quantity="one">%d vote</item>
+        <item quantity="few">%d votes</item>
+        <item quantity="other">%d votes</item>
+    </plurals>
+    <plurals name="messenger_create_poll_max_answers_warn">
+        <item quantity="one">You can add %d more response</item>
+        <item quantity="few">You can add %d more responses</item>
+        <item quantity="other">You can add %d more responses</item>
+    </plurals>
+    <plurals name="messenger_poll_answers_count">
+        <item quantity="one">%d response</item>
+        <item quantity="few">%d responses</item>
+        <item quantity="other">%d responses</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="one">jour</item>
+        <item quantity="few">jours</item>
+        <item quantity="many">jours</item>
+        <item quantity="other">jours</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="one">heure</item>
+        <item quantity="few">heures</item>
+        <item quantity="many">heures</item>
+        <item quantity="other">heures</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d nouvelle notification</item>
+        <item quantity="other">%d nouvelles notifications</item>
+    </plurals>
+    <plurals name="notification_chat_title_plural">
+        <item quantity="zero">%1$s: %2$s nouveaux messages</item>
+        <item quantity="one">%1$s: %2$s nouveau message</item>
+        <item quantity="few">%1$s: %2$s nouveaux messages</item>
+        <item quantity="many">%1$s: %2$s nouveaux messages</item>
+        <item quantity="other">%1$s: %2$s nouveaux messages</item>
+    </plurals>
+    <plurals name="notification_new_messages_count">
+        <item quantity="one">%d new message</item>
+        <item quantity="few">%d new messages</item>
+        <item quantity="other">%d new messages</item>
+    </plurals>
+    <plurals name="org_picker_item_unread_content_desc">
+        <item quantity="one">%d unread message</item>
+        <item quantity="few">%d unread messages</item>
+        <item quantity="other">%d unread messages</item>
+    </plurals>
+    <plurals name="org_picker_with_unread_content_desc">
+        <item quantity="one">Switch space, %d unread message in other spaces</item>
+        <item quantity="few">Switch space, %d unread messages in other spaces</item>
+        <item quantity="other">Switch space, %d unread messages in other spaces</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="zero">%1$d dernières chiffres</item>
+        <item quantity="one">%1$d dernière chiffre</item>
+        <item quantity="few">%1$d dernières chiffres</item>
+        <item quantity="many">%1$d dernières chiffres</item>
+        <item quantity="other">%1$d dernières chiffres</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="zero">Vous allez recevoir un appel de\n%1$s. Saisissez les derniers %2$d chiffres de ce numéro.</item>
+        <item quantity="one">Vous allez recevoir un appel de\n%1$s. Saisissez le dernier %2$d chiffre de ce numéro.</item>
+        <item quantity="few">Vous allez recevoir un appel de\n%1$s. Saisissez les derniers %2$d chiffres de ce numéro.</item>
+        <item quantity="many">Vous allez recevoir un appel de\n%1$s. Saisissez les derniers %2$d chiffres de ce numéro.</item>
+        <item quantity="other">Vous allez recevoir un appel de\n%1$s. Saisissez les derniers %2$d chiffres de ce numéro.</item>
+    </plurals>
+    <plurals name="reaction_selected_with_count_content_desc">
+        <item quantity="one">%1$s, selected, %2$d vote</item>
+        <item quantity="few">%1$s, selected, %2$d votes</item>
+        <item quantity="other">%1$s, selected, %2$d votes</item>
+    </plurals>
+    <plurals name="reaction_with_count_content_desc">
+        <item quantity="one">%1$s, %2$d vote</item>
+        <item quantity="few">%1$s, %2$d votes</item>
+        <item quantity="other">%1$s, %2$d votes</item>
+    </plurals>
+    <plurals name="scroll_to_bottom_with_unread_content_desc">
+        <item quantity="one">Scroll to bottom, %d unread message in the chat</item>
+        <item quantity="few">Scroll to bottom, %d unread messages in the chat</item>
+        <item quantity="other">Scroll to bottom, %d unread messages in the chat</item>
+    </plurals>
+    <plurals name="tech_user_added_department">
+        <item quantity="one">a department: %1$s</item>
+        <item quantity="few">departments: %1$s</item>
+        <item quantity="other">departments: %1$s</item>
+    </plurals>
+    <plurals name="tech_user_added_employee">
+        <item quantity="one">an employee</item>
+        <item quantity="few">employees</item>
+        <item quantity="other">employees</item>
+    </plurals>
+    <plurals name="tech_user_added_group">
+        <item quantity="one">a group: %1$s</item>
+        <item quantity="few">groups: %1$s</item>
+        <item quantity="other">groups: %1$s</item>
+    </plurals>
+    <plurals name="tech_user_added_guest">
+        <item quantity="one">a guest: %1$s</item>
+        <item quantity="few">guests: %1$s</item>
+        <item quantity="other">guests: %1$s</item>
+    </plurals>
+    <plurals name="toolbar_num_organizations">
+        <item quantity="zero">%1$d organisations</item>
+        <item quantity="one">%1$d organisation</item>
+        <item quantity="few">%1$d organisations</item>
+        <item quantity="many">%1$d organisations</item>
+        <item quantity="other">%1$d organisations</item>
+    </plurals>
+    <plurals name="user_in_groups">
+        <item quantity="one">%s</item>
+        <item quantity="few">%s</item>
+        <item quantity="other">%s</item>
+    </plurals>
+    <plurals name="user_in_groups_count">
+        <item quantity="one">%d group</item>
+        <item quantity="few">%d groups</item>
+        <item quantity="other">%d groups</item>
+    </plurals>
+    <plurals name="voice_timelimit_minutes_plural">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="few">%1$d minutes</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
+    <plurals name="votes_count_plural_content_desc">
+        <item quantity="one">%1$s, %2$d vote</item>
+        <item quantity="few">%1$s, %2$d votes</item>
+        <item quantity="other">%1$s, %2$d votes</item>
+    </plurals>
+</resources>

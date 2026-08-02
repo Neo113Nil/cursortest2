@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.alicekit.core.views.BackHandlingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/messagingCommonActionbarColor"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/chat_exit_positive"
+        android:paddingLeft="19dp"
+        android:paddingTop="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chatlist_menu_exit"
+        style="@style/Messaging.MessagePopupButton"/>
+    <TextView
+        android:id="@+id/chat_exit_negative"
+        android:paddingLeft="19dp"
+        android:paddingTop="19dp"
+        android:paddingRight="19dp"
+        android:paddingBottom="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_confirm_cancel"
+        style="@style/Messaging.MessagePopupButton"/>
+</com.yandex.alicekit.core.views.BackHandlingLinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="@dimen/msg_bottomsheet_top_margin">
+    <item>
+        <bitmap
+            android:gravity="top|center_horizontal"
+            android:src="?attr/messagingBottomSheetPinDrawable"
+            android:alpha="0.1"/>
+    </item>
+    <item android:top="@dimen/msg_bottomsheet_top_margin">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/messagingCommonBackgroundColor"/>
+            <corners
+                android:topLeftRadius="@dimen/msg_bottomsheet_corner_radius"
+                android:topRightRadius="@dimen/msg_bottomsheet_corner_radius"/>
+        </shape>
+    </item>
+</layer-list>

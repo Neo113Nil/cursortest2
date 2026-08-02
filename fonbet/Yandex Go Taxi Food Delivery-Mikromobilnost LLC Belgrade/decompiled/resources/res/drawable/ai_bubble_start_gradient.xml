@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="41dp"
+    android:width="28dp"
+    android:shape="rectangle"
+    android:viewportWidth="28"
+    android:viewportHeight="41">
+    <gradient
+        android:startColor="?attr/bgMinor"
+        android:endColor="@color/transparent"
+        android:angle="0"
+        android:type="linear"
+        android:startX="28"
+        android:startY="20.5"
+        android:endX="0"
+        android:endY="20.5"/>
+    <corners android:bottomLeftRadius="8dp"/>
+</shape>

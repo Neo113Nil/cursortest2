@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/mt_aeroexpress_buttons_top_padding"
+    android:paddingBottom="@dimen/mt_aeroexpress_buttons_bottom_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+    <com.yandex.go.design.view.GoView
+        android:id="@+id/lead"
+        android:layout_width="56dp"
+        android:layout_height="36dp"/>
+    <com.yandex.go.design.view.GoLinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ru.yandex.taxi.design.ButtonComponent
+            android:textSize="@dimen/component_text_size_body"
+            android:id="@+id/schedule_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:component_background_color="?attr/controlMain"
+            app:component_button_outline_width="0dp"
+            app:component_button_rounded_corners_radius="13dp"
+            app:component_button_size="S"
+            app:component_title_color="?attr/textOnControl"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/go_design_s_space"/>
+        <ru.yandex.taxi.design.ButtonComponent
+            android:textSize="@dimen/component_text_size_body"
+            android:id="@+id/tickets_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:component_background_color="?attr/controlMinor"
+            app:component_button_outline_width="0dp"
+            app:component_button_rounded_corners_radius="13dp"
+            app:component_button_size="S"
+            app:component_title_color="?attr/textOnControlMinor"/>
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.ybsdk.widgets.common.SkeletonView
+            android:visibility="visible"
+            android:layout_width="52dp"
+            android:layout_height="@dimen/ybsdk_pfm_filter_min_height"
+            android:layout_marginEnd="@dimen/ybsdk_pfm_filter_margin_horizontal"
+            app:ybsdk_backgroundColor="?attr/ybColor_other_skeleton"
+            app:ybsdk_cornerRadius="@dimen/ybsdk_pfm_filter_radius"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:visibility="visible"
+            android:layout_width="103dp"
+            android:layout_height="@dimen/ybsdk_pfm_filter_min_height"
+            android:layout_marginHorizontal="@dimen/ybsdk_pfm_filter_margin_horizontal"
+            app:ybsdk_backgroundColor="?attr/ybColor_other_skeleton"
+            app:ybsdk_cornerRadius="@dimen/ybsdk_pfm_filter_radius"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/ybsdk_pfm_filter_min_height"
+            android:layout_marginStart="@dimen/ybsdk_pfm_filter_margin_horizontal"
+            app:ybsdk_backgroundColor="?attr/ybColor_other_skeleton"
+            app:ybsdk_cornerRadius="@dimen/ybsdk_pfm_filter_radius"/>
+    </LinearLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

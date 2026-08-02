@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/ybsdk_button_background_opacity_static"/>
+    <padding
+        android:left="@dimen/ybsdk_button_start_padding"
+        android:top="@dimen/ybsdk_button_top_padding"
+        android:right="@dimen/ybsdk_button_end_padding"
+        android:bottom="@dimen/ybsdk_button_bottom_padding"/>
+</shape>

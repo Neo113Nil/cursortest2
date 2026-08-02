@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/media_browser_tech_screen_margin_vertical">
+    <TextView
+        android:text="@string/messenger_media_browser_no_data_title"
+        style="@style/Messaging.MediaBrowser.PageElement.Heading"/>
+    <TextView
+        android:id="@+id/media_browser_no_data_description"
+        style="@style/Messaging.MediaBrowser.PageElement.Description"/>
+    <ImageView
+        android:id="@+id/ic_empty_screen"
+        app:srcCompat="@drawable/msg_ic_no_data_yet"
+        style="@style/Messaging.MediaBrowser.PageElement.Image"/>
+</LinearLayout>

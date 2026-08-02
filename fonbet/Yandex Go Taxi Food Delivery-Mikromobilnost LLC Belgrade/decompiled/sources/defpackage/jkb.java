@@ -1,0 +1,21 @@
+package defpackage;
+
+import com.yandex.plus.core.strings.PlusSdkBrandType;
+
+/* loaded from: classes8.dex */
+public abstract /* synthetic */ class jkb {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[PlusSdkBrandType.values().length];
+        try {
+            iArr[PlusSdkBrandType.YANDEX.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            iArr[PlusSdkBrandType.YANGO.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        a = iArr;
+    }
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_tariff_price_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textColor="?attr/textMain"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/tariff_price_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ru.yandex.taxi.widget.SingleShimmeringBar
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/price_loading_placeholder"
+        android:layout_width="80dp"
+        android:layout_height="16dp"
+        app:edgeColor="?attr/controlMinor"
+        app:shimmeringDuration="1000"/>
+</FrameLayout>

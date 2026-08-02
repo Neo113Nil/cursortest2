@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.design.ButtonComponent
+        android:id="@+id/route_stop_view_add_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_route_stop"
+        app:component_background_color="@color/component_accent_color"
+        app:component_button_accent="true"
+        app:component_title_color="?attr/textOnControl"
+        style="@style/BottomEdgeButtonMarginStyle"/>
+</FrameLayout>

@@ -1,0 +1,19 @@
+package ru.yandex.video.m3.player.impl.managers;
+
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\b¨\u0006\t"}, d2 = {"Lru/yandex/video/m3/player/impl/managers/AllowInitCodecManagerImpl;", "Lru/yandex/video/m3/player/impl/managers/AllowInitCodecManager;", "()V", "allowInitCodec", "", "getAllowInitCodec", "()Z", "setAllowInitCodec", "(Z)V", "video-player_internalRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public final class AllowInitCodecManagerImpl implements AllowInitCodecManager {
+    public static final int $stable = 8;
+    private volatile boolean allowInitCodec = true;
+
+    @Override // ru.yandex.video.m3.player.impl.managers.AllowInitCodecManager
+    public boolean getAllowInitCodec() {
+        return this.allowInitCodec;
+    }
+
+    public void setAllowInitCodec(boolean z) {
+        this.allowInitCodec = z;
+    }
+}

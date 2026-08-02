@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ybsdk_bg_promo_banner_small_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="128dp">
+    <com.ybsdk.widgets.common.ImageViewWithAspectRatio
+        android:id="@+id/smallBannerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/smallBannerMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="26dp"
+        android:maxLines="4"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Widget.YB.Text.Title1"/>
+    <com.ybsdk.widgets.common.banners.CloseBannerButtonView
+        android:id="@+id/smallBannerCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/YbSdk.Widget.WidgetsCommon.CloseBannerButtonView.Banner"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

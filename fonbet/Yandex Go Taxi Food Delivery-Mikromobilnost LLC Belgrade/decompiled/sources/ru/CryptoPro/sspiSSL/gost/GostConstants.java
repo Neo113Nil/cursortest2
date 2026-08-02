@@ -1,0 +1,57 @@
+package ru.CryptoPro.sspiSSL.gost;
+
+/* loaded from: classes4.dex */
+public interface GostConstants {
+    public static final String ALG_GOST28147_CFB_NO_PADDING = "GOST28147/CFB/NoPadding";
+    public static final String ALG_GOST28147_CNT_NO_PADDING = "GOST28147/CNT/NoPadding";
+    public static final String ALG_GOST_K_CTR_NO_PADDING = "GOST3412_2015_K/CTR_ACPKM/NoPadding";
+    public static final String ALG_GOST_M_CTR_NO_PADDING = "GOST3412_2015_M/CTR_ACPKM/NoPadding";
+    public static final int CALG_G28147 = 26142;
+    public static final int CALG_G28147_IMIT = 32799;
+    public static final int CALG_GR3412_2015_K = 26161;
+    public static final int CALG_GR3412_2015_M = 26160;
+    public static final int CALG_GR3413_2015_K_IMIT = 32829;
+    public static final int CALG_GR3413_2015_M_IMIT = 32828;
+    public static final int CALG_SCHANNEL_MASTER_HASH = 19458;
+    public static final int CALG_TLS1PRF = 32778;
+    public static final int CALG_TLS1PRF_2012_256 = 32817;
+    public static final int CALG_TLS1_MASTER_HASH = 32800;
+    public static final int CALG_TLS1_MASTER_HASH_2012_256 = 32822;
+    public static final String CIPHER28147_ALGORITHM = "GOST28147";
+    public static final String CIPHERK_ALGORITHM = "GOST3412_2015_K";
+    public static final String CIPHERM_ALGORITHM = "GOST3412_2015_M";
+    public static final String GR3410 = "GR3410";
+    public static final String GR3410_2012_256 = "GR3410_2012_256";
+    public static final String GR3410_2012_256_KUZN = "GR3410_2012_256_KUZN";
+    public static final String GR3410_2012_256_MAGMA = "GR3410_2012_256_MAGMA";
+    public static final String TLS_AES_128_GCM_SHA256 = "TLS_AES_128_GCM_SHA256";
+    public static final String TLS_AES_256_GCM_SHA384 = "TLS_AES_256_GCM_SHA384";
+    public static final String TLS_CIPHER_2001 = "TLS_CIPHER_2001";
+    public static final String TLS_CIPHER_2012 = "TLS_CIPHER_2012";
+    public static final String TLS_CIPHER_2012_IANA = "TLS_CIPHER_2012_IANA";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 = "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384";
+    public static final String TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384";
+    public static final String TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA";
+    public static final String TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256";
+    public static final String TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 = "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256";
+    public static final String TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA = "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA";
+    public static final String TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 = "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384";
+    public static final String TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 = "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384";
+    public static final String TLS_GOSTR341112_256_WITH_KUZNYECHIK_CTR_OMAC = "TLS_GOSTR341112_256_WITH_KUZNYECHIK_CTR_OMAC";
+    public static final String TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_L = "TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_L";
+    public static final String TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_S = "TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_S";
+    public static final String TLS_GOSTR341112_256_WITH_MAGMA_CTR_OMAC = "TLS_GOSTR341112_256_WITH_MAGMA_CTR_OMAC";
+    public static final String TLS_GOSTR341112_256_WITH_MAGMA_MGM_L = "TLS_GOSTR341112_256_WITH_MAGMA_MGM_L";
+    public static final String TLS_GOSTR341112_256_WITH_MAGMA_MGM_S = "TLS_GOSTR341112_256_WITH_MAGMA_MGM_S";
+    public static final String TLS_RSA_WITH_3DES_EDE_CBC_SHA = "TLS_RSA_WITH_3DES_EDE_CBC_SHA";
+    public static final String TLS_RSA_WITH_AES_128_CBC_SHA = "TLS_RSA_WITH_AES_128_CBC_SHA";
+    public static final String TLS_RSA_WITH_AES_128_CBC_SHA256 = "TLS_RSA_WITH_AES_128_CBC_SHA256";
+    public static final String TLS_RSA_WITH_AES_128_GCM_SHA256 = "TLS_RSA_WITH_AES_128_GCM_SHA256";
+    public static final String TLS_RSA_WITH_AES_256_CBC_SHA = "TLS_RSA_WITH_AES_256_CBC_SHA";
+    public static final String TLS_RSA_WITH_AES_256_CBC_SHA256 = "TLS_RSA_WITH_AES_256_CBC_SHA256";
+    public static final String TLS_RSA_WITH_AES_256_GCM_SHA384 = "TLS_RSA_WITH_AES_256_GCM_SHA384";
+}

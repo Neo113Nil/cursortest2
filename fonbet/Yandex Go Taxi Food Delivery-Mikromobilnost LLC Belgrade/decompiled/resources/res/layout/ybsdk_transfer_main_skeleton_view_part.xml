@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="@dimen/ybsdk_circle_buttons_list_button_size"
+        android:layout_height="@dimen/ybsdk_circle_buttons_list_button_size"
+        app:ybsdk_cornerRadius="100dp"/>
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="56dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="10dp"
+        app:ybsdk_cornerRadius="24dp"/>
+</LinearLayout>

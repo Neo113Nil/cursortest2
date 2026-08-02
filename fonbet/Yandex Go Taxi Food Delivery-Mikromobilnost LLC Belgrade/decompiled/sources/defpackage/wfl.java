@@ -1,0 +1,215 @@
+package defpackage;
+
+import androidx.core.provider.FontsContractCompat$Columns;
+import com.yandex.div.internal.parser.b;
+import com.yandex.div2.DivAlignmentHorizontal;
+import com.yandex.div2.DivAlignmentVertical;
+import com.yandex.div2.DivFontWeight;
+import com.yandex.div2.DivLineStyle;
+import com.yandex.div2.DivSizeUnit;
+import com.yandex.div2.DivText$Truncate;
+import com.yandex.div2.DivTransitionTrigger;
+import com.yandex.div2.DivVisibility;
+import com.yandex.div2.JsonParserComponent;
+import com.yandex.div2.w2;
+import com.yandex.fintechsdk.features.bdui.internal.presentation.customview.caret.CaretView;
+import io.appmetrica.analytics.impl.C0553n3;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public final class wfl implements zsq0, yey0 {
+    public final JsonParserComponent a;
+
+    public wfl(JsonParserComponent jsonParserComponent) {
+        this.a = jsonParserComponent;
+    }
+
+    @Override // defpackage.yey0, defpackage.nyi
+    public final /* bridge */ /* synthetic */ hex a(yf90 yf90Var, JSONObject jSONObject) {
+        return c(yf90Var, null, jSONObject);
+    }
+
+    public final uhl c(yf90 yf90Var, uhl uhlVar, JSONObject jSONObject) {
+        boolean i = yf90Var.i();
+        d290 Q = udq0.Q(yf90Var);
+        exq exqVar = uhlVar != null ? uhlVar.a : null;
+        JsonParserComponent jsonParserComponent = this.a;
+        i3y i3yVar = jsonParserComponent.I;
+        i3y i3yVar2 = jsonParserComponent.S9;
+        i3y i3yVar3 = jsonParserComponent.J1;
+        i3y i3yVar4 = jsonParserComponent.h3;
+        i3y i3yVar5 = jsonParserComponent.p7;
+        i3y i3yVar6 = jsonParserComponent.u1;
+        exq i2 = wcx.i(Q, jSONObject, "accessibility", i, exqVar, i3yVar);
+        exq i3 = wcx.i(Q, jSONObject, "action", i, uhlVar != null ? uhlVar.b : null, i3yVar6);
+        exq i4 = wcx.i(Q, jSONObject, "action_animation", i, uhlVar != null ? uhlVar.c : null, jsonParserComponent.A1);
+        exq k = wcx.k(Q, jSONObject, "actions", i, uhlVar != null ? uhlVar.d : null, i3yVar6);
+        qkj qkjVar = w2.r;
+        exq exqVar2 = uhlVar != null ? uhlVar.e : null;
+        tls tlsVar = DivAlignmentHorizontal.FROM_STRING;
+        kbs kbsVar = q5z.b;
+        exq j = wcx.j(Q, jSONObject, "alignment_horizontal", qkjVar, i, exqVar2, tlsVar, kbsVar);
+        qkj qkjVar2 = w2.s;
+        exq exqVar3 = uhlVar != null ? uhlVar.f : null;
+        tls tlsVar2 = DivAlignmentVertical.FROM_STRING;
+        exq j2 = wcx.j(Q, jSONObject, "alignment_vertical", qkjVar2, i, exqVar3, tlsVar2, kbsVar);
+        sms smsVar = wm11.d;
+        exq exqVar4 = uhlVar != null ? uhlVar.g : null;
+        tls tlsVar3 = b.g;
+        exq j3 = wcx.j(Q, jSONObject, CaretView.ALPHA_PROPERTY, smsVar, i, exqVar4, tlsVar3, w2.B);
+        exq k2 = wcx.k(Q, jSONObject, "animators", i, uhlVar != null ? uhlVar.h : null, jsonParserComponent.D1);
+        wms wmsVar = wm11.a;
+        exq exqVar5 = uhlVar != null ? uhlVar.i : null;
+        tls tlsVar4 = b.f;
+        exq j4 = wcx.j(Q, jSONObject, "auto_ellipsize", wmsVar, i, exqVar5, tlsVar4, kbsVar);
+        exq k3 = wcx.k(Q, jSONObject, C0553n3.g, i, uhlVar != null ? uhlVar.j : null, jsonParserComponent.P1);
+        exq i5 = wcx.i(Q, jSONObject, "border", i, uhlVar != null ? uhlVar.k : null, jsonParserComponent.V1);
+        exq j5 = wcx.j(Q, jSONObject, "capture_focus_on_action", wmsVar, i, uhlVar != null ? uhlVar.l : null, tlsVar4, kbsVar);
+        tms tmsVar = wm11.b;
+        exq exqVar6 = uhlVar != null ? uhlVar.m : null;
+        tls tlsVar5 = b.h;
+        exq j6 = wcx.j(Q, jSONObject, "column_span", tmsVar, i, exqVar6, tlsVar5, w2.C);
+        exq k4 = wcx.k(Q, jSONObject, "disappear_actions", i, uhlVar != null ? uhlVar.n : null, jsonParserComponent.Y2);
+        exq k5 = wcx.k(Q, jSONObject, "doubletap_actions", i, uhlVar != null ? uhlVar.o : null, i3yVar6);
+        exq i6 = wcx.i(Q, jSONObject, "ellipsis", i, uhlVar != null ? uhlVar.p : null, jsonParserComponent.X8);
+        exq k6 = wcx.k(Q, jSONObject, "extensions", i, uhlVar != null ? uhlVar.q : null, jsonParserComponent.k3);
+        exq i7 = wcx.i(Q, jSONObject, "focus", i, uhlVar != null ? uhlVar.r : null, jsonParserComponent.L3);
+        rms rmsVar = wm11.f;
+        exq exqVar7 = uhlVar != null ? uhlVar.s : null;
+        tls tlsVar6 = b.b;
+        exq j7 = wcx.j(Q, jSONObject, "focused_text_color", rmsVar, i, exqVar7, tlsVar6, kbsVar);
+        ums umsVar = wm11.c;
+        exq exqVar8 = uhlVar != null ? uhlVar.t : null;
+        abl0 abl0Var = q5z.c;
+        exq j8 = wcx.j(Q, jSONObject, "font_family", umsVar, i, exqVar8, abl0Var, kbsVar);
+        exq j9 = wcx.j(Q, jSONObject, "font_feature_settings", umsVar, i, uhlVar != null ? uhlVar.u : null, abl0Var, kbsVar);
+        exq j10 = wcx.j(Q, jSONObject, "font_size", tmsVar, i, uhlVar != null ? uhlVar.v : null, tlsVar5, w2.D);
+        exq j11 = wcx.j(Q, jSONObject, "font_size_unit", w2.t, i, uhlVar != null ? uhlVar.w : null, DivSizeUnit.FROM_STRING, kbsVar);
+        exq j12 = wcx.j(Q, jSONObject, FontsContractCompat$Columns.VARIATION_SETTINGS, wm11.h, i, uhlVar != null ? uhlVar.x : null, abl0Var, kbsVar);
+        exq j13 = wcx.j(Q, jSONObject, FontsContractCompat$Columns.WEIGHT, w2.u, i, uhlVar != null ? uhlVar.y : null, DivFontWeight.FROM_STRING, kbsVar);
+        exq j14 = wcx.j(Q, jSONObject, "font_weight_value", tmsVar, i, uhlVar != null ? uhlVar.z : null, tlsVar5, w2.E);
+        exq k7 = wcx.k(Q, jSONObject, "functions", i, uhlVar != null ? uhlVar.A : null, jsonParserComponent.U3);
+        exq i8 = wcx.i(Q, jSONObject, "height", i, uhlVar != null ? uhlVar.B : null, i3yVar5);
+        exq k8 = wcx.k(Q, jSONObject, "hover_end_actions", i, uhlVar != null ? uhlVar.C : null, i3yVar6);
+        exq k9 = wcx.k(Q, jSONObject, "hover_start_actions", i, uhlVar != null ? uhlVar.D : null, i3yVar6);
+        exq h = wcx.h(Q, jSONObject, "id", i, uhlVar != null ? uhlVar.E : null, abl0Var);
+        exq k10 = wcx.k(Q, jSONObject, "images", i, uhlVar != null ? uhlVar.F : null, jsonParserComponent.R8);
+        exq i9 = wcx.i(Q, jSONObject, "layout_provider", i, uhlVar != null ? uhlVar.G : null, jsonParserComponent.Y4);
+        exq j15 = wcx.j(Q, jSONObject, "letter_spacing", smsVar, i, uhlVar != null ? uhlVar.H : null, tlsVar3, kbsVar);
+        exq j16 = wcx.j(Q, jSONObject, "line_height", tmsVar, i, uhlVar != null ? uhlVar.I : null, tlsVar5, w2.F);
+        exq k11 = wcx.k(Q, jSONObject, "longtap_actions", i, uhlVar != null ? uhlVar.J : null, i3yVar6);
+        exq i10 = wcx.i(Q, jSONObject, "margins", i, uhlVar != null ? uhlVar.K : null, i3yVar4);
+        exq j17 = wcx.j(Q, jSONObject, "max_lines", tmsVar, i, uhlVar != null ? uhlVar.L : null, tlsVar5, w2.G);
+        exq j18 = wcx.j(Q, jSONObject, "min_hidden_lines", tmsVar, i, uhlVar != null ? uhlVar.M : null, tlsVar5, w2.H);
+        exq i11 = wcx.i(Q, jSONObject, "paddings", i, uhlVar != null ? uhlVar.N : null, i3yVar4);
+        exq k12 = wcx.k(Q, jSONObject, "press_end_actions", i, uhlVar != null ? uhlVar.O : null, i3yVar6);
+        exq k13 = wcx.k(Q, jSONObject, "press_start_actions", i, uhlVar != null ? uhlVar.P : null, i3yVar6);
+        exq k14 = wcx.k(Q, jSONObject, "ranges", i, uhlVar != null ? uhlVar.Q : null, jsonParserComponent.O8);
+        exq j19 = wcx.j(Q, jSONObject, "reuse_id", umsVar, i, uhlVar != null ? uhlVar.R : null, abl0Var, kbsVar);
+        exq j20 = wcx.j(Q, jSONObject, "row_span", tmsVar, i, uhlVar != null ? uhlVar.S : null, tlsVar5, w2.I);
+        exq j21 = wcx.j(Q, jSONObject, "selectable", wmsVar, i, uhlVar != null ? uhlVar.T : null, tlsVar4, kbsVar);
+        exq k15 = wcx.k(Q, jSONObject, "selected_actions", i, uhlVar != null ? uhlVar.U : null, i3yVar6);
+        qkj qkjVar3 = w2.v;
+        exq exqVar9 = uhlVar != null ? uhlVar.V : null;
+        tls tlsVar7 = DivLineStyle.FROM_STRING;
+        return new uhl(i2, i3, i4, k, j, j2, j3, k2, j4, k3, i5, j5, j6, k4, k5, i6, k6, i7, j7, j8, j9, j10, j11, j12, j13, j14, k7, i8, k8, k9, h, k10, i9, j15, j16, k11, i10, j17, j18, i11, k12, k13, k14, j19, j20, j21, k15, wcx.j(Q, jSONObject, "strike", qkjVar3, i, exqVar9, tlsVar7, kbsVar), wcx.d(Q, jSONObject, "text", umsVar, i, uhlVar != null ? uhlVar.W : null), wcx.j(Q, jSONObject, "text_alignment_horizontal", w2.w, i, uhlVar != null ? uhlVar.X : null, tlsVar, kbsVar), wcx.j(Q, jSONObject, "text_alignment_vertical", w2.x, i, uhlVar != null ? uhlVar.Y : null, tlsVar2, kbsVar), wcx.j(Q, jSONObject, "text_color", rmsVar, i, uhlVar != null ? uhlVar.Z : null, tlsVar6, kbsVar), wcx.i(Q, jSONObject, "text_gradient", i, uhlVar != null ? uhlVar.a0 : null, jsonParserComponent.r8), wcx.i(Q, jSONObject, "text_shadow", i, uhlVar != null ? uhlVar.b0 : null, jsonParserComponent.d7), wcx.j(Q, jSONObject, "tighten_width", wmsVar, i, uhlVar != null ? uhlVar.c0 : null, tlsVar4, kbsVar), wcx.k(Q, jSONObject, "tooltips", i, uhlVar != null ? uhlVar.d0 : null, jsonParserComponent.l9), wcx.i(Q, jSONObject, "transform", i, uhlVar != null ? uhlVar.e0 : null, jsonParserComponent.o9), wcx.k(Q, jSONObject, "transformations", i, uhlVar != null ? uhlVar.f0 : null, jsonParserComponent.r9), wcx.i(Q, jSONObject, "transition_change", i, uhlVar != null ? uhlVar.g0 : null, jsonParserComponent.e2), wcx.i(Q, jSONObject, "transition_in", i, uhlVar != null ? uhlVar.h0 : null, i3yVar3), wcx.i(Q, jSONObject, "transition_out", i, uhlVar != null ? uhlVar.i0 : null, i3yVar3), wcx.l(Q, jSONObject, i, uhlVar != null ? uhlVar.j0 : null, DivTransitionTrigger.FROM_STRING, w2.J), wcx.j(Q, jSONObject, "truncate", w2.y, i, uhlVar != null ? uhlVar.k0 : null, DivText$Truncate.FROM_STRING, kbsVar), wcx.j(Q, jSONObject, "underline", w2.z, i, uhlVar != null ? uhlVar.l0 : null, tlsVar7, kbsVar), wcx.k(Q, jSONObject, "variable_triggers", i, uhlVar != null ? uhlVar.m0 : null, jsonParserComponent.A9), wcx.k(Q, jSONObject, "variables", i, uhlVar != null ? uhlVar.n0 : null, jsonParserComponent.G9), wcx.j(Q, jSONObject, "visibility", w2.A, i, uhlVar != null ? uhlVar.o0 : null, DivVisibility.FROM_STRING, kbsVar), wcx.i(Q, jSONObject, "visibility_action", i, uhlVar != null ? uhlVar.p0 : null, i3yVar2), wcx.k(Q, jSONObject, "visibility_actions", i, uhlVar != null ? uhlVar.q0 : null, i3yVar2), wcx.i(Q, jSONObject, "width", i, uhlVar != null ? uhlVar.r0 : null, i3yVar5));
+    }
+
+    @Override // defpackage.zsq0
+    /* renamed from: d, reason: merged with bridge method [inline-methods] */
+    public final JSONObject b(yf90 yf90Var, uhl uhlVar) {
+        JSONObject jSONObject = new JSONObject();
+        exq exqVar = uhlVar.a;
+        JsonParserComponent jsonParserComponent = this.a;
+        wcx.u(yf90Var, jSONObject, "accessibility", exqVar, jsonParserComponent.I);
+        exq exqVar2 = uhlVar.b;
+        i3y i3yVar = jsonParserComponent.u1;
+        wcx.u(yf90Var, jSONObject, "action", exqVar2, i3yVar);
+        wcx.u(yf90Var, jSONObject, "action_animation", uhlVar.c, jsonParserComponent.A1);
+        wcx.w(yf90Var, jSONObject, "actions", uhlVar.d, i3yVar);
+        exq exqVar3 = uhlVar.e;
+        tls tlsVar = DivAlignmentHorizontal.TO_STRING;
+        wcx.p(exqVar3, tlsVar, yf90Var, "alignment_horizontal", jSONObject);
+        exq exqVar4 = uhlVar.f;
+        tls tlsVar2 = DivAlignmentVertical.TO_STRING;
+        wcx.p(exqVar4, tlsVar2, yf90Var, "alignment_vertical", jSONObject);
+        wcx.q(yf90Var, jSONObject, CaretView.ALPHA_PROPERTY, uhlVar.g);
+        wcx.w(yf90Var, jSONObject, "animators", uhlVar.h, jsonParserComponent.D1);
+        wcx.q(yf90Var, jSONObject, "auto_ellipsize", uhlVar.i);
+        wcx.w(yf90Var, jSONObject, C0553n3.g, uhlVar.j, jsonParserComponent.P1);
+        wcx.u(yf90Var, jSONObject, "border", uhlVar.k, jsonParserComponent.V1);
+        wcx.q(yf90Var, jSONObject, "capture_focus_on_action", uhlVar.l);
+        wcx.q(yf90Var, jSONObject, "column_span", uhlVar.m);
+        wcx.w(yf90Var, jSONObject, "disappear_actions", uhlVar.n, jsonParserComponent.Y2);
+        wcx.w(yf90Var, jSONObject, "doubletap_actions", uhlVar.o, i3yVar);
+        wcx.u(yf90Var, jSONObject, "ellipsis", uhlVar.p, jsonParserComponent.X8);
+        wcx.w(yf90Var, jSONObject, "extensions", uhlVar.q, jsonParserComponent.k3);
+        wcx.u(yf90Var, jSONObject, "focus", uhlVar.r, jsonParserComponent.L3);
+        exq exqVar5 = uhlVar.s;
+        tls tlsVar3 = b.a;
+        wcx.p(exqVar5, tlsVar3, yf90Var, "focused_text_color", jSONObject);
+        wcx.q(yf90Var, jSONObject, "font_family", uhlVar.t);
+        wcx.q(yf90Var, jSONObject, "font_feature_settings", uhlVar.u);
+        wcx.q(yf90Var, jSONObject, "font_size", uhlVar.v);
+        wcx.p(uhlVar.w, DivSizeUnit.TO_STRING, yf90Var, "font_size_unit", jSONObject);
+        wcx.q(yf90Var, jSONObject, FontsContractCompat$Columns.VARIATION_SETTINGS, uhlVar.x);
+        wcx.p(uhlVar.y, DivFontWeight.TO_STRING, yf90Var, FontsContractCompat$Columns.WEIGHT, jSONObject);
+        wcx.q(yf90Var, jSONObject, "font_weight_value", uhlVar.z);
+        wcx.w(yf90Var, jSONObject, "functions", uhlVar.A, jsonParserComponent.U3);
+        exq exqVar6 = uhlVar.B;
+        i3y i3yVar2 = jsonParserComponent.p7;
+        wcx.u(yf90Var, jSONObject, "height", exqVar6, i3yVar2);
+        wcx.w(yf90Var, jSONObject, "hover_end_actions", uhlVar.C, i3yVar);
+        wcx.w(yf90Var, jSONObject, "hover_start_actions", uhlVar.D, i3yVar);
+        wcx.t(yf90Var, jSONObject, "id", uhlVar.E);
+        wcx.w(yf90Var, jSONObject, "images", uhlVar.F, jsonParserComponent.R8);
+        wcx.u(yf90Var, jSONObject, "layout_provider", uhlVar.G, jsonParserComponent.Y4);
+        wcx.q(yf90Var, jSONObject, "letter_spacing", uhlVar.H);
+        wcx.q(yf90Var, jSONObject, "line_height", uhlVar.I);
+        wcx.w(yf90Var, jSONObject, "longtap_actions", uhlVar.J, i3yVar);
+        exq exqVar7 = uhlVar.K;
+        i3y i3yVar3 = jsonParserComponent.h3;
+        wcx.u(yf90Var, jSONObject, "margins", exqVar7, i3yVar3);
+        wcx.q(yf90Var, jSONObject, "max_lines", uhlVar.L);
+        wcx.q(yf90Var, jSONObject, "min_hidden_lines", uhlVar.M);
+        wcx.u(yf90Var, jSONObject, "paddings", uhlVar.N, i3yVar3);
+        wcx.w(yf90Var, jSONObject, "press_end_actions", uhlVar.O, i3yVar);
+        wcx.w(yf90Var, jSONObject, "press_start_actions", uhlVar.P, i3yVar);
+        wcx.w(yf90Var, jSONObject, "ranges", uhlVar.Q, jsonParserComponent.O8);
+        wcx.q(yf90Var, jSONObject, "reuse_id", uhlVar.R);
+        wcx.q(yf90Var, jSONObject, "row_span", uhlVar.S);
+        wcx.q(yf90Var, jSONObject, "selectable", uhlVar.T);
+        wcx.w(yf90Var, jSONObject, "selected_actions", uhlVar.U, i3yVar);
+        exq exqVar8 = uhlVar.V;
+        tls tlsVar4 = DivLineStyle.TO_STRING;
+        wcx.p(exqVar8, tlsVar4, yf90Var, "strike", jSONObject);
+        wcx.q(yf90Var, jSONObject, "text", uhlVar.W);
+        wcx.p(uhlVar.X, tlsVar, yf90Var, "text_alignment_horizontal", jSONObject);
+        wcx.p(uhlVar.Y, tlsVar2, yf90Var, "text_alignment_vertical", jSONObject);
+        wcx.p(uhlVar.Z, tlsVar3, yf90Var, "text_color", jSONObject);
+        wcx.u(yf90Var, jSONObject, "text_gradient", uhlVar.a0, jsonParserComponent.r8);
+        wcx.u(yf90Var, jSONObject, "text_shadow", uhlVar.b0, jsonParserComponent.d7);
+        wcx.q(yf90Var, jSONObject, "tighten_width", uhlVar.c0);
+        wcx.w(yf90Var, jSONObject, "tooltips", uhlVar.d0, jsonParserComponent.l9);
+        wcx.u(yf90Var, jSONObject, "transform", uhlVar.e0, jsonParserComponent.o9);
+        wcx.w(yf90Var, jSONObject, "transformations", uhlVar.f0, jsonParserComponent.r9);
+        wcx.u(yf90Var, jSONObject, "transition_change", uhlVar.g0, jsonParserComponent.e2);
+        exq exqVar9 = uhlVar.h0;
+        i3y i3yVar4 = jsonParserComponent.J1;
+        wcx.u(yf90Var, jSONObject, "transition_in", exqVar9, i3yVar4);
+        wcx.u(yf90Var, jSONObject, "transition_out", uhlVar.i0, i3yVar4);
+        wcx.v(yf90Var, jSONObject, uhlVar.j0, DivTransitionTrigger.TO_STRING);
+        wcx.p(uhlVar.k0, DivText$Truncate.TO_STRING, yf90Var, "truncate", jSONObject);
+        wwg.Z(yf90Var, jSONObject, "type", "text");
+        wcx.p(uhlVar.l0, tlsVar4, yf90Var, "underline", jSONObject);
+        wcx.w(yf90Var, jSONObject, "variable_triggers", uhlVar.m0, jsonParserComponent.A9);
+        wcx.w(yf90Var, jSONObject, "variables", uhlVar.n0, jsonParserComponent.G9);
+        wcx.p(uhlVar.o0, DivVisibility.TO_STRING, yf90Var, "visibility", jSONObject);
+        exq exqVar10 = uhlVar.p0;
+        i3y i3yVar5 = jsonParserComponent.S9;
+        wcx.u(yf90Var, jSONObject, "visibility_action", exqVar10, i3yVar5);
+        wcx.w(yf90Var, jSONObject, "visibility_actions", uhlVar.q0, i3yVar5);
+        wcx.u(yf90Var, jSONObject, "width", uhlVar.r0, i3yVar2);
+        return jSONObject;
+    }
+}

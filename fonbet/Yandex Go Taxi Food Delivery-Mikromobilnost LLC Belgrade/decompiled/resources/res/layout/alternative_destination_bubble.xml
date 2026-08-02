@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.bubble.BubbleComponent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bubble"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-16dp">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_bubble"
+        android:id="@+id/title"
+        android:padding="@dimen/go_design_s_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="160dp"
+        android:minWidth="40dp"
+        android:minHeight="24dp"
+        android:maxLines="3"
+        app:useMinimumWidth="true"/>
+</ru.yandex.taxi.design.bubble.BubbleComponent>

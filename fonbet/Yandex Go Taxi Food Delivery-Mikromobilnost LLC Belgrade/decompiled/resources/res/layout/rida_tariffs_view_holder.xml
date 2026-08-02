@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/firstTariff"
+        layout="@layout/rida_tariff_item_view"/>
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="0dp"/>
+    <include
+        android:id="@+id/secondTariff"
+        layout="@layout/rida_tariff_item_view"/>
+</com.yandex.go.design.view.GoLinearLayout>

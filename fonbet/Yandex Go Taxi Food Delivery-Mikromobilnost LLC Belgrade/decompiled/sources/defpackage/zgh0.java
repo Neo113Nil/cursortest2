@@ -1,0 +1,51 @@
+package defpackage;
+
+/* loaded from: classes15.dex */
+public abstract class zgh0 {
+    public static int action_close = 2131427471;
+    public static int action_go_back = 2131427486;
+    public static int action_go_forward = 2131427487;
+    public static int action_reload = 2131427497;
+    public static int action_share = 2131427499;
+    public static int alert = 2131427603;
+    public static int bottomBar = 2131427996;
+    public static int bottomSpace = 2131428005;
+    public static int buttonList = 2131428159;
+    public static int cameraClose = 2131428279;
+    public static int cancel = 2131428285;
+    public static int capDesc = 2131428296;
+    public static int capName = 2131428297;
+    public static int container = 2131428922;
+    public static int fragment_container = 2131430130;
+    public static int frontFlash = 2131430146;
+    public static int hud = 2131430411;
+    public static int icon = 2131430422;
+    public static int loader = 2131430909;
+    public static int main = 2131431026;
+    public static int menu_search = 2131431167;
+    public static int message = 2131431184;
+    public static int pattern = 2131431861;
+    public static int permission = 2131432019;
+    public static int permissionClose = 2131432020;
+    public static int permissionMessage = 2131432021;
+    public static int photoOk = 2131432138;
+    public static int preview = 2131432467;
+    public static int progressBar = 2131432533;
+    public static int pullToRefresh = 2131432616;
+    public static int retake = 2131432865;
+    public static int root = 2131432921;
+    public static int separator = 2131433215;
+    public static int settings = 2131433231;
+    public static int snap = 2131433624;
+    public static int snapshot = 2131433627;
+    public static int take = 2131434107;
+    public static int textBottom = 2131434212;
+    public static int textTop = 2131434231;
+    public static int title = 2131434367;
+    public static int topBar = 2131434481;
+    public static int topContent = 2131434483;
+    public static int topSpace = 2131434487;
+    public static int torch = 2131434544;
+    public static int turn = 2131434757;
+    public static int webView = 2131435007;
+}

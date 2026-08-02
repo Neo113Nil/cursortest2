@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/messaging_choose_organizations_dialog_title"
+        style="@style/Messaging.Settings.Text.Group"/>
+    <View
+        android:background="@drawable/msg_divider_settings_group"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/organizations_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+package defpackage;
+
+import com.yandex.div2.DivBlendMode;
+import com.yandex.div2.DivText$Image$IndexingDirection;
+import com.yandex.div2.DivTextAlignmentVertical;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public final class shl implements c4x, hex {
+    public final exq a;
+    public final exq b;
+    public final exq c;
+    public final exq d;
+    public final exq e;
+    public final exq f;
+    public final exq g;
+    public final exq h;
+    public final exq i;
+    public final exq j;
+
+    static {
+        ngd0.m(DivTextAlignmentVertical.CENTER);
+        ngd0.m(20L);
+        ngd0.m(DivText$Image$IndexingDirection.NORMAL);
+        ngd0.m(Boolean.FALSE);
+        ngd0.m(DivBlendMode.SOURCE_IN);
+        ngd0.m(20L);
+    }
+
+    public shl(exq exqVar, exq exqVar2, exq exqVar3, exq exqVar4, exq exqVar5, exq exqVar6, exq exqVar7, exq exqVar8, exq exqVar9, exq exqVar10) {
+        this.a = exqVar;
+        this.b = exqVar2;
+        this.c = exqVar3;
+        this.d = exqVar4;
+        this.e = exqVar5;
+        this.f = exqVar6;
+        this.g = exqVar7;
+        this.h = exqVar8;
+        this.i = exqVar9;
+        this.j = exqVar10;
+    }
+
+    @Override // defpackage.c4x
+    public final JSONObject r() {
+        return ((ufl) ft6.b.R8.getValue()).b(ft6.a, this);
+    }
+}

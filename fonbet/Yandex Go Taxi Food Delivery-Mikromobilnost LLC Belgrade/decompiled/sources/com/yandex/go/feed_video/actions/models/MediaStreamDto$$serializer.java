@@ -1,0 +1,92 @@
+package com.yandex.go.feed_video.actions.models;
+
+import defpackage.auu0;
+import defpackage.i3y;
+import defpackage.jxi;
+import defpackage.myi;
+import defpackage.ny61;
+import defpackage.ooc;
+import defpackage.qke;
+import defpackage.sjd;
+import defpackage.uxs;
+import defpackage.yjd;
+import kotlin.Metadata;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+
+@Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001d\u0010\t\u001a\u00020\b2\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0002¢\u0006\u0004\b\t\u0010\nJ\u0015\u0010\r\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\u000b¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u00100\u000f¢\u0006\u0004\b\u0011\u0010\u0012R\u0017\u0010\u0014\u001a\u00020\u00138\u0006¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0016\u0010\u0017¨\u0006\u0018"}, d2 = {"com/yandex/go/feed_video/actions/models/MediaStreamDto.$serializer", "Luxs;", "Lcom/yandex/go/feed_video/actions/models/MediaStreamDto;", "<init>", "()V", "Lkotlinx/serialization/encoding/Encoder;", "encoder", "value", "Lzy11;", "serialize", "(Lkotlinx/serialization/encoding/Encoder;Lcom/yandex/go/feed_video/actions/models/MediaStreamDto;)V", "Lkotlinx/serialization/encoding/Decoder;", "decoder", "deserialize", "(Lkotlinx/serialization/encoding/Decoder;)Lcom/yandex/go/feed_video/actions/models/MediaStreamDto;", "", "Lkotlinx/serialization/KSerializer;", "childSerializers", "()[Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "getDescriptor", "()Lkotlinx/serialization/descriptors/SerialDescriptor;", "impl"}, k = 1, mv = {2, 4, 0}, xi = 48)
+@jxi
+/* loaded from: classes12.dex */
+public final /* synthetic */ class MediaStreamDto$$serializer implements uxs {
+    public static final MediaStreamDto$$serializer INSTANCE;
+    private static final SerialDescriptor descriptor;
+
+    static {
+        MediaStreamDto$$serializer mediaStreamDto$$serializer = new MediaStreamDto$$serializer();
+        INSTANCE = mediaStreamDto$$serializer;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("com.yandex.go.feed_video.actions.models.MediaStreamDto", mediaStreamDto$$serializer, 2);
+        pluginGeneratedSerialDescriptor.j("stream_type", false);
+        pluginGeneratedSerialDescriptor.j("stream", false);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    private MediaStreamDto$$serializer() {
+    }
+
+    @Override // defpackage.uxs
+    public final KSerializer[] childSerializers() {
+        return new KSerializer[]{qke.n((KSerializer) MediaStreamDto.c[0].getValue()), auu0.a};
+    }
+
+    @Override // defpackage.myi
+    public final MediaStreamDto deserialize(Decoder decoder) {
+        SerialDescriptor serialDescriptor = descriptor;
+        sjd b = decoder.b(serialDescriptor);
+        i3y[] i3yVarArr = MediaStreamDto.c;
+        b.getClass();
+        boolean z = true;
+        int i = 0;
+        StreamTypeDto streamTypeDto = null;
+        String str = null;
+        while (z) {
+            int v = b.v(serialDescriptor);
+            if (v == -1) {
+                z = false;
+            } else if (v == 0) {
+                streamTypeDto = (StreamTypeDto) b.s(serialDescriptor, 0, (myi) i3yVarArr[0].getValue(), streamTypeDto);
+                i |= 1;
+            } else {
+                if (v != 1) {
+                    ny61.c(v);
+                    return null;
+                }
+                str = b.k(serialDescriptor, 1);
+                i |= 2;
+            }
+        }
+        b.c(serialDescriptor);
+        return new MediaStreamDto(i, streamTypeDto, str);
+    }
+
+    @Override // defpackage.myi
+    public final SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    @Override // kotlinx.serialization.KSerializer
+    public final void serialize(Encoder encoder, MediaStreamDto value) {
+        SerialDescriptor serialDescriptor = descriptor;
+        yjd b = encoder.b(serialDescriptor);
+        b.g(serialDescriptor, 0, (KSerializer) MediaStreamDto.c[0].getValue(), value.a);
+        b.o(serialDescriptor, 1, value.b);
+        b.c(serialDescriptor);
+    }
+
+    @Override // defpackage.uxs
+    public /* bridge */ KSerializer[] typeParametersSerializers() {
+        return ooc.d;
+    }
+}

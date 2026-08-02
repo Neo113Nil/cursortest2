@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/ic_scooters_pass_check"/>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/controlMinor"/>
+            <size
+                android:height="32dp"
+                android:width="32dp"/>
+        </shape>
+    </item>
+</selector>

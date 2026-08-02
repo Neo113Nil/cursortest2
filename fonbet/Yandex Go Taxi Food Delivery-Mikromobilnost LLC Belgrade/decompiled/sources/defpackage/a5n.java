@@ -1,0 +1,6 @@
+package defpackage;
+
+/* loaded from: classes12.dex */
+public final class a5n {
+    public Long a;
+}

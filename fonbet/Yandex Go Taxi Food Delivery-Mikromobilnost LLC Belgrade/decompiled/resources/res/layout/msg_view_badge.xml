@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/badge_icon"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="?attr/messagingCommonAccentFgColor"/>
+    <com.yandex.messaging.views.CounterTextView
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="?attr/messagingCommonAccentFgColor"
+        android:gravity="center"
+        android:id="@+id/badge_text_switcher"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:lineSpacingExtra="0sp"/>
+</merge>

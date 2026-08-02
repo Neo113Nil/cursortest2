@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/arrow,
+                @drawable/clicked_arrow,
+                @drawable/default_line,
+                @drawable/entry,
+                @drawable/house_marker_expandable,
+                @drawable/house_marker_left,
+                @drawable/house_marker_right,
+                @drawable/interior,
+                @drawable/loader,
+                @drawable-xhdpi/house_marker_expandable,
+                @drawable-xhdpi/house_marker_left,
+                @drawable-xhdpi/house_marker_right,
+                @drawable-xhdpi/loader,
+                @drawable-xxhdpi/house_marker_expandable,
+                @drawable-xxhdpi/house_marker_left,
+                @drawable-xxhdpi/house_marker_right,
+                @drawable-xxhdpi/loader" />
+

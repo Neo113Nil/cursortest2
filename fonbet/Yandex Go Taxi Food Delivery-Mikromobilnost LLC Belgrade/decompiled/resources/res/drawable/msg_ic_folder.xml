@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<drawable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:tint="?attr/messagingCommonIconsSecondaryColor"
+    android:drawable="@drawable/folder_outline_md_regular"
+    class="com.yandex.messaging.base.view.DrawableTint"/>

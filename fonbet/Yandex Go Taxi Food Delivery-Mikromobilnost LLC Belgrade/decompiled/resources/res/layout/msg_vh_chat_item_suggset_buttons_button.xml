@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="16sp"
+    android:textColor="?attr/messagingCommonAccentTextColor"
+    android:id="@+id/dialog_item_bot_button"
+    android:background="@drawable/msg_bg_chat_item_suggest_buttons"
+    android:paddingLeft="12dp"
+    android:paddingTop="8dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginBottom="12dp"
+    android:includeFontPadding="false"
+    style="@style/TextAppearance.AppCompat.Medium"/>

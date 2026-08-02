@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_bottom_padding">36dp</dimen>
+    <dimen name="card_top_margin">36dp</dimen>
+    <dimen name="messaging_onboarding_feature_pager_height">404dp</dimen>
+    <dimen name="messaging_onboarding_pager_bottom_padding">130dp</dimen>
+</resources>

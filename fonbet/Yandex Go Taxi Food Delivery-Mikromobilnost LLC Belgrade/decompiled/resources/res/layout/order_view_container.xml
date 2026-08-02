@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/card_cover"
+        android:background="@color/half_transparent_black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"/>
+    <ru.yandex.taxi.order.view.TaxiOrderDetailsViewContainerLayout
+        android:gravity="bottom"
+        android:id="@+id/order_view_container"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="ru.yandex.taxi.coordinator.AnchorBottomSheetBehavior"/>
+</merge>

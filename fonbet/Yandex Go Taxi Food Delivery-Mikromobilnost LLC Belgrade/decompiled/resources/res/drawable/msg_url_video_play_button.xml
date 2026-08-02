@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:height="@dimen/orb_size_28m"
+        android:width="@dimen/orb_size_28m">
+        <shape
+            android:tint="#ffff"
+            android:shape="oval"
+            android:tintMode="multiply">
+            <solid android:color="?attr/messagingViewerBackgroundColor"/>
+        </shape>
+    </item>
+    <item>
+        <drawable
+            android:tint="?attr/messagingViewerIconsColor"
+            android:drawable="@drawable/play_solid_md_regular"
+            android:alpha="0.8"
+            app:scaledPadding="16dp"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+</layer-list>

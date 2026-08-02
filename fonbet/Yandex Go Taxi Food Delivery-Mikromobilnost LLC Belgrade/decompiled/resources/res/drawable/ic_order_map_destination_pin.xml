@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="1dp"
+    android:insetRight="1dp"
+    android:insetTop="1dp"
+    android:insetBottom="1dp">
+    <shape android:shape="oval">
+        <solid android:color="@color/component_white"/>
+        <stroke
+            android:width="@dimen/map_point_stroke_width"
+            android:color="@color/component_gray_450"/>
+        <size
+            android:height="@dimen/map_point_width"
+            android:width="@dimen/map_point_width"/>
+    </shape>
+</inset>

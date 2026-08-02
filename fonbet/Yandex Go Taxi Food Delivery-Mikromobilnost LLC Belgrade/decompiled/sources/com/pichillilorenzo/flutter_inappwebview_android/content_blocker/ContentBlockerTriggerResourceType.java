@@ -1,0 +1,42 @@
+package com.pichillilorenzo.flutter_inappwebview_android.content_blocker;
+
+import defpackage.g8e;
+import defpackage.ny61;
+
+/* loaded from: classes11.dex */
+public enum ContentBlockerTriggerResourceType {
+    DOCUMENT("document"),
+    IMAGE("image"),
+    STYLE_SHEET("style-sheet"),
+    SCRIPT("script"),
+    FONT("font"),
+    SVG_DOCUMENT("svg-document"),
+    MEDIA("media"),
+    POPUP("popup"),
+    RAW("raw");
+
+    private final String value;
+
+    ContentBlockerTriggerResourceType(String str) {
+        this.value = str;
+    }
+
+    public static ContentBlockerTriggerResourceType fromValue(String str) {
+        for (ContentBlockerTriggerResourceType contentBlockerTriggerResourceType : values()) {
+            if (str.equals(contentBlockerTriggerResourceType.value)) {
+                return contentBlockerTriggerResourceType;
+            }
+        }
+        ny61.g(g8e.o("No enum constant: ", str));
+        return null;
+    }
+
+    public boolean equalsValue(String str) {
+        return this.value.equals(str);
+    }
+
+    @Override // java.lang.Enum
+    public String toString() {
+        return this.value;
+    }
+}

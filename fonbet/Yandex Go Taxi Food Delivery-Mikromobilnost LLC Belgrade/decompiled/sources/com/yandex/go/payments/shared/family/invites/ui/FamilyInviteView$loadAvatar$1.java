@@ -1,0 +1,32 @@
+package com.yandex.go.payments.shared.family.invites.ui;
+
+import defpackage.mvg;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import ru.CryptoPro.JCSP.MSCAPI.HProv;
+
+@Metadata(k = 3, mv = {2, 4, 0}, xi = 48)
+@mvg(c = "com.yandex.go.payments.shared.family.invites.ui.FamilyInviteView", f = "FamilyInviteView.kt", l = {HProv.PP_LCD_QUERY}, m = "loadAvatar", v = 2)
+/* loaded from: classes13.dex */
+public final class FamilyInviteView$loadAvatar$1 extends ContinuationImpl {
+    Object L$0;
+    int label;
+    /* synthetic */ Object result;
+    final /* synthetic */ FamilyInviteView this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public FamilyInviteView$loadAvatar$1(FamilyInviteView familyInviteView, Continuation continuation) {
+        super(continuation);
+        this.this$0 = familyInviteView;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        Object loadAvatar;
+        this.result = obj;
+        this.label |= Integer.MIN_VALUE;
+        loadAvatar = this.this$0.loadAvatar(null, this);
+        return loadAvatar;
+    }
+}

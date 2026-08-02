@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/guidelineItemImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="no"/>
+    <TextView
+        android:textColor="?attr/ybColor_textIcon_primaryStaticInverted"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/guidelineItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:importantForAccessibility="no"
+        android:paddingHorizontal="4dp"
+        style="@style/Widget.YB.Text.Caption3.Regular"/>
+</merge>

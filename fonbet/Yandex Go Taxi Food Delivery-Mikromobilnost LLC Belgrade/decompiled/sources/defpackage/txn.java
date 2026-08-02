@@ -1,0 +1,95 @@
+package defpackage;
+
+import com.yandex.go.payments.cards.nfc.enums.TagValueTypeEnum;
+import java.util.HashMap;
+
+/* loaded from: classes2.dex */
+public abstract class txn {
+    public static final HashMap a;
+    public static final s6x0 b;
+    public static final s6x0 c;
+    public static final s6x0 d;
+    public static final s6x0 e;
+    public static final s6x0 f;
+    public static final s6x0 g;
+    public static final s6x0 h;
+    public static final s6x0 i;
+    public static final s6x0 j;
+    public static final s6x0 k;
+    public static final s6x0 l;
+    public static final s6x0 m;
+    public static final s6x0 n;
+    public static final s6x0 o;
+    public static final s6x0 p;
+    public static final s6x0 q;
+    public static final s6x0 r;
+    public static final s6x0 s;
+    public static final s6x0 t;
+    public static final s6x0 u;
+
+    static {
+        HashMap hashMap = new HashMap();
+        a = hashMap;
+        TagValueTypeEnum tagValueTypeEnum = TagValueTypeEnum.BINARY;
+        s6x0 s6x0Var = new s6x0("88", tagValueTypeEnum, "Short File Identifier (SFI)");
+        b = s6x0Var;
+        c = new s6x0("4f", tagValueTypeEnum, "Application Identifier (AID) - card");
+        s6x0 s6x0Var2 = new s6x0("57", tagValueTypeEnum, "Track 2 Equivalent Data");
+        d = s6x0Var2;
+        s6x0 s6x0Var3 = new s6x0("80", tagValueTypeEnum, "Response Message Template Format 1");
+        e = s6x0Var3;
+        s6x0 s6x0Var4 = new s6x0("83", tagValueTypeEnum, "Command Template");
+        f = s6x0Var4;
+        s6x0 s6x0Var5 = new s6x0("94", tagValueTypeEnum, "Application File Locator (AFL)");
+        g = s6x0Var5;
+        TagValueTypeEnum tagValueTypeEnum2 = TagValueTypeEnum.NUMERIC;
+        s6x0 s6x0Var6 = new s6x0("9a", tagValueTypeEnum2, "Transaction Date");
+        h = s6x0Var6;
+        s6x0 s6x0Var7 = new s6x0("9c", tagValueTypeEnum2, "Transaction Type");
+        i = s6x0Var7;
+        TagValueTypeEnum tagValueTypeEnum3 = TagValueTypeEnum.TEXT;
+        s6x0 s6x0Var8 = new s6x0("5f2a", tagValueTypeEnum3, "Transaction Currency Code");
+        j = s6x0Var8;
+        s6x0 s6x0Var9 = new s6x0("9f02", tagValueTypeEnum2, "Amount, Authorised (Numeric)");
+        k = s6x0Var9;
+        s6x0 s6x0Var10 = new s6x0("9f1a", tagValueTypeEnum3, "Terminal Country Code");
+        l = s6x0Var10;
+        s6x0 s6x0Var11 = new s6x0("9f33", tagValueTypeEnum, "Terminal Capabilities");
+        m = s6x0Var11;
+        s6x0 s6x0Var12 = new s6x0("9f35", tagValueTypeEnum2, "Terminal Type");
+        n = s6x0Var12;
+        s6x0 s6x0Var13 = new s6x0("9f37", tagValueTypeEnum, "Unpredictable Number");
+        o = s6x0Var13;
+        s6x0 s6x0Var14 = new s6x0("9f38", TagValueTypeEnum.DOL, "Processing Options Data Object List (PDOL)");
+        p = s6x0Var14;
+        s6x0 s6x0Var15 = new s6x0("9f40", tagValueTypeEnum, "Additional Terminal Capabilities");
+        q = s6x0Var15;
+        s6x0 s6x0Var16 = new s6x0("9f66", tagValueTypeEnum, "Terminal Transaction Qualifiers");
+        r = s6x0Var16;
+        s6x0 s6x0Var17 = new s6x0("9f6b", tagValueTypeEnum, "Track 2 Data");
+        s = s6x0Var17;
+        s6x0 s6x0Var18 = new s6x0("9f2a", tagValueTypeEnum, "The value to be appended to the ADF Name in the data field of the SELECT command, if the Extended Selection Support flag is present and set to 1");
+        t = s6x0Var18;
+        s6x0 s6x0Var19 = new s6x0("9f5c", tagValueTypeEnum, "DS Requested Operator ID");
+        u = s6x0Var19;
+        hashMap.put(new r67(s6x0Var.a), s6x0Var);
+        hashMap.put(new r67(s6x0Var2.a), s6x0Var2);
+        hashMap.put(new r67(s6x0Var3.a), s6x0Var3);
+        hashMap.put(new r67(s6x0Var4.a), s6x0Var4);
+        hashMap.put(new r67(s6x0Var5.a), s6x0Var5);
+        hashMap.put(new r67(s6x0Var6.a), s6x0Var6);
+        hashMap.put(new r67(s6x0Var7.a), s6x0Var7);
+        hashMap.put(new r67(s6x0Var8.a), s6x0Var8);
+        hashMap.put(new r67(s6x0Var9.a), s6x0Var9);
+        hashMap.put(new r67(s6x0Var10.a), s6x0Var10);
+        hashMap.put(new r67(s6x0Var11.a), s6x0Var11);
+        hashMap.put(new r67(s6x0Var12.a), s6x0Var12);
+        hashMap.put(new r67(s6x0Var13.a), s6x0Var13);
+        hashMap.put(new r67(s6x0Var14.a), s6x0Var14);
+        hashMap.put(new r67(s6x0Var15.a), s6x0Var15);
+        hashMap.put(new r67(s6x0Var16.a), s6x0Var16);
+        hashMap.put(new r67(s6x0Var17.a), s6x0Var17);
+        hashMap.put(new r67(s6x0Var18.a), s6x0Var18);
+        hashMap.put(new r67(s6x0Var19.a), s6x0Var19);
+    }
+}

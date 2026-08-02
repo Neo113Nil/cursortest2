@@ -1,0 +1,57 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class uyh0 {
+    public static int plus_sdk_copied_info = 2132087913;
+    public static int plus_sdk_debug_panel_back = 2132087914;
+    public static int plus_sdk_debug_panel_cancel = 2132087915;
+    public static int plus_sdk_debug_panel_choose_field_to_display = 2132087916;
+    public static int plus_sdk_debug_panel_clear = 2132087917;
+    public static int plus_sdk_debug_panel_clear_logs = 2132087918;
+    public static int plus_sdk_debug_panel_copied = 2132087919;
+    public static int plus_sdk_debug_panel_debug = 2132087920;
+    public static int plus_sdk_debug_panel_device_id = 2132087921;
+    public static int plus_sdk_debug_panel_device_model = 2132087922;
+    public static int plus_sdk_debug_panel_environment = 2132087923;
+    public static int plus_sdk_debug_panel_error = 2132087924;
+    public static int plus_sdk_debug_panel_error_message = 2132087925;
+    public static int plus_sdk_debug_panel_field_to_display = 2132087926;
+    public static int plus_sdk_debug_panel_filter_by_level = 2132087927;
+    public static int plus_sdk_debug_panel_function = 2132087928;
+    public static int plus_sdk_debug_panel_general_information_title = 2132087929;
+    public static int plus_sdk_debug_panel_general_screen_logs_item_title = 2132087930;
+    public static int plus_sdk_debug_panel_info = 2132087931;
+    public static int plus_sdk_debug_panel_information_title = 2132087932;
+    public static int plus_sdk_debug_panel_level = 2132087933;
+    public static int plus_sdk_debug_panel_location = 2132087934;
+    public static int plus_sdk_debug_panel_log_session_id = 2132087935;
+    public static int plus_sdk_debug_panel_logs_not_found = 2132087936;
+    public static int plus_sdk_debug_panel_logs_screen_title = 2132087937;
+    public static int plus_sdk_debug_panel_menu = 2132087938;
+    public static int plus_sdk_debug_panel_message = 2132087939;
+    public static int plus_sdk_debug_panel_metrics_uuid = 2132087940;
+    public static int plus_sdk_debug_panel_next_match = 2132087941;
+    public static int plus_sdk_debug_panel_ok = 2132087942;
+    public static int plus_sdk_debug_panel_os_version = 2132087943;
+    public static int plus_sdk_debug_panel_prev_match = 2132087944;
+    public static int plus_sdk_debug_panel_raw_level = 2132087945;
+    public static int plus_sdk_debug_panel_reset = 2132087946;
+    public static int plus_sdk_debug_panel_save_to_device = 2132087947;
+    public static int plus_sdk_debug_panel_scroll = 2132087948;
+    public static int plus_sdk_debug_panel_sdk_version = 2132087949;
+    public static int plus_sdk_debug_panel_search = 2132087950;
+    public static int plus_sdk_debug_panel_search_by_logs = 2132087951;
+    public static int plus_sdk_debug_panel_send = 2132087952;
+    public static int plus_sdk_debug_panel_session_id = 2132087953;
+    public static int plus_sdk_debug_panel_specified_information_title = 2132087954;
+    public static int plus_sdk_debug_panel_tag = 2132087955;
+    public static int plus_sdk_debug_panel_thread = 2132087956;
+    public static int plus_sdk_debug_panel_thread_sequence = 2132087957;
+    public static int plus_sdk_debug_panel_timestamp = 2132087958;
+    public static int plus_sdk_debug_panel_unspecified = 2132087959;
+    public static int plus_sdk_debug_panel_user_agent = 2132087960;
+    public static int plus_sdk_debug_panel_user_id = 2132087961;
+    public static int plus_sdk_debug_panel_verbose = 2132087962;
+    public static int plus_sdk_debug_panel_warn = 2132087963;
+    public static int plus_sdk_debug_panel_web_view_version = 2132087964;
+}

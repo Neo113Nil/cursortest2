@@ -1,0 +1,42 @@
+package androidx.compose.foundation.gestures;
+
+import defpackage.iip0;
+import defpackage.mvg;
+import defpackage.ny61;
+import defpackage.wls;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Liip0;", "Lzy11;", "<anonymous>", "(Liip0;)V"}, k = 3, mv = {2, 1, 0})
+@mvg(c = "androidx.compose.foundation.gestures.ScrollExtensionsKt$stopScroll$2", f = "ScrollExtensions.kt", l = {}, m = "invokeSuspend", v = 1)
+/* loaded from: classes10.dex */
+final class ScrollExtensionsKt$stopScroll$2 extends SuspendLambda implements wls {
+    int label;
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new ScrollExtensionsKt$stopScroll$2(2, continuation);
+    }
+
+    @Override // defpackage.wls
+    public final Object invoke(Object obj, Object obj2) {
+        ScrollExtensionsKt$stopScroll$2 scrollExtensionsKt$stopScroll$2 = (ScrollExtensionsKt$stopScroll$2) create((iip0) obj, (Continuation) obj2);
+        zy11 zy11Var = zy11.a;
+        scrollExtensionsKt$stopScroll$2.invokeSuspend(zy11Var);
+        return zy11Var;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        if (this.label == 0) {
+            kotlin.b.b(obj);
+            return zy11.a;
+        }
+        ny61.r("call to 'resume' before 'invoke' with coroutine");
+        return null;
+    }
+}

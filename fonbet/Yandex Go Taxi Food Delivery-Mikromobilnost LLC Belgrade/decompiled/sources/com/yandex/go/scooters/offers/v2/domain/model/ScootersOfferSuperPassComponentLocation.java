@@ -1,0 +1,34 @@
+package com.yandex.go.scooters.offers.v2.domain.model;
+
+import defpackage.k4o;
+import kotlin.Metadata;
+import kotlin.enums.a;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0003\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001j\u0002\b\u0002j\u0002\b\u0003¨\u0006\u0004"}, d2 = {"Lcom/yandex/go/scooters/offers/v2/domain/model/ScootersOfferSuperPassComponentLocation;", "", "OPTIONS", "BOTTOM", "preorder"}, k = 1, mv = {2, 4, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final class ScootersOfferSuperPassComponentLocation {
+    private static final /* synthetic */ k4o $ENTRIES;
+    private static final /* synthetic */ ScootersOfferSuperPassComponentLocation[] $VALUES;
+    public static final ScootersOfferSuperPassComponentLocation BOTTOM;
+    public static final ScootersOfferSuperPassComponentLocation OPTIONS;
+
+    static {
+        ScootersOfferSuperPassComponentLocation scootersOfferSuperPassComponentLocation = new ScootersOfferSuperPassComponentLocation("OPTIONS", 0);
+        OPTIONS = scootersOfferSuperPassComponentLocation;
+        ScootersOfferSuperPassComponentLocation scootersOfferSuperPassComponentLocation2 = new ScootersOfferSuperPassComponentLocation("BOTTOM", 1);
+        BOTTOM = scootersOfferSuperPassComponentLocation2;
+        ScootersOfferSuperPassComponentLocation[] scootersOfferSuperPassComponentLocationArr = {scootersOfferSuperPassComponentLocation, scootersOfferSuperPassComponentLocation2};
+        $VALUES = scootersOfferSuperPassComponentLocationArr;
+        $ENTRIES = a.a(scootersOfferSuperPassComponentLocationArr);
+    }
+
+    public static ScootersOfferSuperPassComponentLocation valueOf(String str) {
+        return (ScootersOfferSuperPassComponentLocation) Enum.valueOf(ScootersOfferSuperPassComponentLocation.class, str);
+    }
+
+    public static ScootersOfferSuperPassComponentLocation[] values() {
+        return (ScootersOfferSuperPassComponentLocation[]) $VALUES.clone();
+    }
+}

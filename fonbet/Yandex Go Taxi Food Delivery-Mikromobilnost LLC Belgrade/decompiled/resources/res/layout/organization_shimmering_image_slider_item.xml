@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/bgMinor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yandex.go.design.view.GoImageView
+        android:id="@+id/image"
+        android:background="?attr/bgMinor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+    <include
+        android:id="@+id/loading_container"
+        layout="@layout/organization_card_loading_slider_item_layout"/>
+</com.yandex.go.design.view.GoFrameLayout>

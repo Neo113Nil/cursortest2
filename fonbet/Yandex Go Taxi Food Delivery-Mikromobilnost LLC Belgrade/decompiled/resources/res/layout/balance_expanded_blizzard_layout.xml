@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="@dimen/component_text_size_body"
+        android:ellipsize="end"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/blizzard_widget_content_max_with"
+        android:maxLines="2"
+        app:lineHeight="17dp"
+        app:robotoFontStyle="medium"/>
+    <ru.yandex.taxi.design.ButtonComponent
+        android:textSize="@dimen/component_text_size_caption"
+        android:ellipsize="end"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="@dimen/blizzard_widget_content_max_with"
+        android:maxLines="1"
+        app:component_button_accent="true"
+        app:component_button_rounded_corners_radius="10dp"
+        app:component_button_size="XS"
+        app:lineHeight="14dp"/>
+</LinearLayout>

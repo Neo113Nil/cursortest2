@@ -1,0 +1,79 @@
+package androidx.compose.foundation;
+
+import defpackage.lvc0;
+import defpackage.mvg;
+import defpackage.npb1;
+import defpackage.ny61;
+import defpackage.pzt0;
+import defpackage.sls;
+import defpackage.tse;
+import defpackage.w6u;
+import defpackage.wls;
+import defpackage.xp31;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Ltse;", "Lzy11;", "<anonymous>", "(Ltse;)V"}, k = 3, mv = {2, 1, 0})
+@mvg(c = "androidx.compose.foundation.CombinedClickableNode$handleDownEvent$2", f = "Clickable.kt", l = {1318}, m = "invokeSuspend", v = 1)
+/* loaded from: classes10.dex */
+final class CombinedClickableNode$handleDownEvent$2 extends SuspendLambda implements wls {
+    int label;
+    final /* synthetic */ d this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CombinedClickableNode$handleDownEvent$2(d dVar, Continuation continuation) {
+        super(2, continuation);
+        this.this$0 = dVar;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        return new CombinedClickableNode$handleDownEvent$2(this.this$0, continuation);
+    }
+
+    @Override // defpackage.wls
+    public final Object invoke(Object obj, Object obj2) {
+        return ((CombinedClickableNode$handleDownEvent$2) create((tse) obj, (Continuation) obj2)).invokeSuspend(zy11.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        int i = this.label;
+        if (i == 0) {
+            kotlin.b.b(obj);
+            long f = ((xp31) npb1.c(this.this$0, androidx.compose.ui.platform.j.t)).f();
+            this.label = 1;
+            if (kotlinx.coroutines.a.i(f, this) == coroutineSingletons) {
+                return coroutineSingletons;
+            }
+        } else {
+            if (i != 1) {
+                ny61.r("call to 'resume' before 'invoke' with coroutine");
+                return null;
+            }
+            kotlin.b.b(obj);
+        }
+        sls slsVar = this.this$0.R;
+        if (slsVar != null) {
+            slsVar.invoke();
+        }
+        d dVar = this.this$0;
+        if (dVar.T) {
+            ((lvc0) ((w6u) npb1.c(dVar, androidx.compose.ui.platform.j.l))).a(0);
+        }
+        d dVar2 = this.this$0;
+        dVar2.j0 = true;
+        pzt0 pzt0Var = dVar2.h0;
+        if (pzt0Var != null) {
+            pzt0Var.a(null);
+        }
+        d dVar3 = this.this$0;
+        dVar3.h0 = null;
+        dVar3.g0 = null;
+        return zy11.a;
+    }
+}

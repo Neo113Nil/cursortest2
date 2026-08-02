@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.yandex.taxi.design.ButtonComponent
+        android:textSize="14sp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:lineSpacingExtra="-1sp"
+        android:fontFeatureSettings="pnum, lnum"
+        android:layout_marginHorizontal="2dp"
+        app:component_background_color="?attr/controlMain"
+        app:component_button_disabled_alpha="1"
+        app:component_button_icon_padding="4dp"
+        app:component_button_icon_tint="true"
+        app:component_button_size="M"
+        app:component_title_color="?attr/textOnControl"
+        app:robotoFontStyle="medium"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="end|top"
+        android:id="@+id/badge_text"
+        android:background="@drawable/bg_notification_badge"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="-2dp"
+        android:minWidth="18dp"
+        android:maxLines="1"
+        android:lineSpacingExtra="-1sp"
+        android:importantForAccessibility="no"
+        android:elevation="8dp"
+        android:backgroundTint="@color/component_cinnaban_toxic"
+        android:fontFeatureSettings="pnum, lnum"
+        android:paddingHorizontal="4dp"/>
+</merge>

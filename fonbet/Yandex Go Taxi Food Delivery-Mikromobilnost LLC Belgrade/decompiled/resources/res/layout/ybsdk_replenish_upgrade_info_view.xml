@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="no">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+        app:srcCompat="@drawable/ybsdk_ic_replenish_upgrade_info"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ybsdk_uprid_alert_deposit_uprid_not_started_title"
+        android:importantForAccessibility="yes"
+        android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+        style="@style/Widget.YB.Text.Headline1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/ybsdk_uprid_alert_deposit_uprid_not_started_description"
+        android:importantForAccessibility="yes"
+        android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+        style="@style/Widget.YB.Text.Body2"/>
+    <com.ybsdk.widgets.common.NumberOptionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:importantForAccessibility="yes"
+        app:ybsdk_content="@string/ybsdk_uprid_alert_deposit_uprid_not_started_description_details_1"
+        app:ybsdk_number="1"/>
+    <com.ybsdk.widgets.common.NumberOptionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        app:ybsdk_content="@string/ybsdk_uprid_alert_deposit_uprid_not_started_description_details_2"
+        app:ybsdk_number="2"/>
+    <com.ybsdk.widgets.common.NumberOptionView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ybsdk_content="@string/ybsdk_uprid_alert_deposit_uprid_not_started_description_details_3"
+        app:ybsdk_number="3"/>
+</LinearLayout>

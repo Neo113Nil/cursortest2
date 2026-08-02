@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="10dp">
+    <layer-list>
+        <item>
+            <ripple android:color="?android:attr/colorControlHighlight">
+                <item>
+                    <shape android:shape="oval">
+                        <solid android:color="?attr/messagingCommonActionbarColor"/>
+                    </shape>
+                </item>
+            </ripple>
+        </item>
+        <item
+            android:gravity="center"
+            android:drawable="@drawable/msg_ic_chat_scroll"
+            android:left="8dp"
+            android:top="8dp"
+            android:right="8dp"
+            android:bottom="8dp"/>
+    </layer-list>
+</inset>

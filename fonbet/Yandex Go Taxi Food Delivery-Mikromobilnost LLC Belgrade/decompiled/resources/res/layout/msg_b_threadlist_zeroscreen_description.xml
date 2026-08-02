@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="33dp"
+    android:layout_marginVertical="30dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/horizontal_guideline">
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/threadlist_zeroscreen_title"
+        android:alpha="0.85"
+        style="@style/Messaging.Title"/>
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/threadlist_zeroscreen_text"
+        android:lineSpacingExtra="4dp"
+        android:alpha="0.85"
+        android:fontFamily="@font/ya_medium"
+        android:layout_marginHorizontal="33dp"
+        style="@style/Messaging.Description"/>
+</LinearLayout>

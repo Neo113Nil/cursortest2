@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/ybColor_other_separator"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ybsdk_divider_height"
+    android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"/>

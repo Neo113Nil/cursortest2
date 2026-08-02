@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/internetPaymentFormSkeleton"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+            app:layout_constraintTop_toTopOf="parent"
+            app:ybsdk_cornerRadius="16dp"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/internetPaymentInputSkeleton"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+            app:layout_constraintTop_toBottomOf="@+id/internetPaymentFormSkeleton"
+            app:ybsdk_cornerRadius="16dp"/>
+        <com.ybsdk.widgets.common.SkeletonView
+            android:id="@+id/internetPaymentInputButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:ybsdk_cornerRadius="16dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

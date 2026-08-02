@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:route="webview-payment"
+    app:startDestination="@+id/finsdk_webview_payment_fragment">
+    <fragment
+        android:label="WebViewPaymentFragment"
+        android:name="com.yandex.fintechsdk.features.webview.payment.internal.presentation.WebViewPaymentFragment"
+        android:id="@+id/finsdk_webview_payment_fragment"/>
+</navigation>

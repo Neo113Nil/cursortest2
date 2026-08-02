@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.ybsdk.widgets.common.ToolbarView
+        android:id="@+id/auto_topup_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.ybsdk.widgets.common.LoadableInput
+        android:id="@+id/topEditView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+        style="@style/YbSdk.Widget.WidgetsCommon.LoadableInput.WithBackground"/>
+    <com.ybsdk.widgets.common.LoadableInput
+        android:id="@+id/bottomEditView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ybsdk_bottom_sheet_inset_height"
+        android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+        style="@style/YbSdk.Widget.WidgetsCommon.LoadableInput.WithBackground"/>
+</LinearLayout>

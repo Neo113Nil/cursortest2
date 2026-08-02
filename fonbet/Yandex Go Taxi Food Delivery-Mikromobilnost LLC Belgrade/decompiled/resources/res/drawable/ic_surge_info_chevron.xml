@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="8dp"
+        android:width="4.8dp"
+        android:drawable="@drawable/chevron_next"
+        android:top="2dp"
+        android:start="2dp"/>
+</layer-list>

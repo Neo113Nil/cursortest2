@@ -1,0 +1,24 @@
+package com.yandex.passport.internal.ui.challenge.logout.bottomsheet;
+
+import android.view.View;
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
+
+/* loaded from: classes2.dex */
+public final class h extends BottomSheetBehavior.a {
+    public final x0 a;
+
+    public h(x0 x0Var) {
+        this.a = x0Var;
+    }
+
+    @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.a
+    public final void onSlide(View view, float f) {
+    }
+
+    @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.a
+    public final void onStateChanged(View view, int i) {
+        if (i == 4 || i == 5) {
+            this.a.X(LogoutBottomsheetWish.COLLAPSE);
+        }
+    }
+}

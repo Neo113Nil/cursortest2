@@ -1,0 +1,76 @@
+package defpackage;
+
+import android.graphics.Color;
+import com.google.common.primitives.a;
+import ru.CryptoPro.JCP.ASN.Gost_CryptoPro_PrivateKey._Gost_CryptoPro_PrivateKeyValues;
+
+/* loaded from: classes10.dex */
+public final class zxt0 {
+    public final String a;
+    public final int b;
+    public final Integer c;
+    public final Integer d;
+    public final float e;
+    public final boolean f;
+    public final boolean g;
+    public final boolean h;
+    public final boolean i;
+    public final int j;
+
+    public zxt0(String str, int i, Integer num, Integer num2, float f, boolean z, boolean z2, boolean z3, boolean z4, int i2) {
+        this.a = str;
+        this.b = i;
+        this.c = num;
+        this.d = num2;
+        this.e = f;
+        this.f = z;
+        this.g = z2;
+        this.h = z3;
+        this.i = z4;
+        this.j = i2;
+    }
+
+    public static int a(String str) {
+        int parseInt;
+        try {
+            parseInt = Integer.parseInt(str.trim());
+        } catch (NumberFormatException unused) {
+        }
+        switch (parseInt) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+                return parseInt;
+            default:
+                lk91.j("Ignoring unknown alignment: " + str);
+                return -1;
+        }
+    }
+
+    public static boolean b(String str) {
+        try {
+            int parseInt = Integer.parseInt(str);
+            return parseInt == 1 || parseInt == -1;
+        } catch (NumberFormatException e) {
+            lk91.k("Failed to parse boolean value: '" + str + "'", e);
+            return false;
+        }
+    }
+
+    public static Integer c(String str) {
+        try {
+            long parseLong = str.startsWith("&H") ? Long.parseLong(str.substring(2), 16) : Long.parseLong(str);
+            d6z.l(parseLong <= _Gost_CryptoPro_PrivateKeyValues.maxDWORD);
+            return Integer.valueOf(Color.argb(a.b(((parseLong >> 24) & 255) ^ 255), a.b(parseLong & 255), a.b((parseLong >> 8) & 255), a.b((parseLong >> 16) & 255)));
+        } catch (IllegalArgumentException e) {
+            lk91.k("Failed to parse color expression: '" + str + "'", e);
+            return null;
+        }
+    }
+}

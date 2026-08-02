@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/iconMinor">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke
+                        android:width="4dp"
+                        android:color="@color/pickup_form_photo_camera_button_highlighted"/>
+                    <size
+                        android:height="72dp"
+                        android:width="72dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="6dp"
+                android:top="6dp"
+                android:right="6dp"
+                android:bottom="6dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/pickup_form_photo_camera_button_highlighted"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <stroke
+                        android:width="4dp"
+                        android:color="@color/component_ever_front"/>
+                    <size
+                        android:height="72dp"
+                        android:width="72dp"/>
+                </shape>
+            </item>
+            <item
+                android:left="6dp"
+                android:top="6dp"
+                android:right="6dp"
+                android:bottom="6dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/component_ever_front"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

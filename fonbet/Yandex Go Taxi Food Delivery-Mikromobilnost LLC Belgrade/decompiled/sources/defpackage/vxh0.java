@@ -1,0 +1,57 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class vxh0 {
+    public static int finsdk_almost_done = 2132084705;
+    public static int finsdk_back = 2132084706;
+    public static int finsdk_cancel = 2132084707;
+    public static int finsdk_card_number = 2132084708;
+    public static int finsdk_card_number_hint = 2132084709;
+    public static int finsdk_cashback_img_n = 2132084710;
+    public static int finsdk_cashback_n_points_or_in_split = 2132084711;
+    public static int finsdk_checkout_long = 2132084712;
+    public static int finsdk_checkout_short = 2132084713;
+    public static int finsdk_confirm_the_payment = 2132084714;
+    public static int finsdk_continue = 2132084715;
+    public static int finsdk_cvc = 2132084716;
+    public static int finsdk_cvn = 2132084717;
+    public static int finsdk_cvp = 2132084718;
+    public static int finsdk_cvv = 2132084719;
+    public static int finsdk_cvv_hint = 2132084720;
+    public static int finsdk_enable_nfc = 2132084721;
+    public static int finsdk_error = 2132084722;
+    public static int finsdk_expiration_date = 2132084723;
+    public static int finsdk_expiration_date_hint = 2132084724;
+    public static int finsdk_host_divkit_version = 2132084725;
+    public static int finsdk_host_flex_version = 2132084726;
+    public static int finsdk_img_in_split = 2132084727;
+    public static int finsdk_in_split_with = 2132084728;
+    public static int finsdk_logged_into_your_profile = 2132084729;
+    public static int finsdk_n_points_or_in_split = 2132084730;
+    public static int finsdk_nfc_module_enabled_is_required = 2132084731;
+    public static int finsdk_no = 2132084732;
+    public static int finsdk_pass_the_verification = 2132084733;
+    public static int finsdk_pay = 2132084734;
+    public static int finsdk_polling_close_content_description = 2132084735;
+    public static int finsdk_polling_logo_content_description = 2132084736;
+    public static int finsdk_polling_open_browser_button = 2132084737;
+    public static int finsdk_polling_order_status_subtitle = 2132084738;
+    public static int finsdk_polling_order_status_title = 2132084739;
+    public static int finsdk_polling_redirect_id_subtitle = 2132084740;
+    public static int finsdk_polling_redirect_id_title = 2132084741;
+    public static int finsdk_reauthorization_required = 2132084742;
+    public static int finsdk_setup_biometry_in_settings = 2132084743;
+    public static int finsdk_something_happened = 2132084744;
+    public static int finsdk_something_went_wrong = 2132084745;
+    public static int finsdk_something_wrong = 2132084746;
+    public static int finsdk_split_with = 2132084747;
+    public static int finsdk_to_use_the_quick_payment = 2132084748;
+    public static int finsdk_try_again = 2132084749;
+    public static int finsdk_ui_language = 2132084750;
+    public static int finsdk_using_img_pay = 2132084751;
+    public static int finsdk_with = 2132084752;
+    public static int finsdk_wrong_card_number = 2132084753;
+    public static int finsdk_wrong_cvv = 2132084754;
+    public static int finsdk_wrong_expiration_date = 2132084755;
+    public static int finsdk_yes = 2132084756;
+}

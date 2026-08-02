@@ -1,0 +1,53 @@
+package com.google.android.gms.internal.auth_blockstore;
+
+import android.os.BadParcelableException;
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+import defpackage.oyr;
+import defpackage.xc91;
+import defpackage.yg91;
+
+/* loaded from: classes11.dex */
+public class zzb extends Binder implements IInterface {
+    private static yg91 globalInterceptor;
+
+    public zzb(String str) {
+        attachInterface(this, str);
+    }
+
+    private boolean routeToSuperOrEnforceInterface(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        if (i > 16777215) {
+            return super.onTransact(i, parcel, parcel2, i2);
+        }
+        parcel.enforceInterface(getInterfaceDescriptor());
+        return false;
+    }
+
+    @Override // android.os.IInterface
+    public IBinder asBinder() {
+        return this;
+    }
+
+    public boolean dispatchTransaction(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        throw null;
+    }
+
+    public void enforceNoDataAvail(Parcel parcel) {
+        int i = xc91.a;
+        int dataAvail = parcel.dataAvail();
+        if (dataAvail > 0) {
+            throw new BadParcelableException(oyr.i(dataAvail, "Parcel data not fully consumed, unread size: "));
+        }
+    }
+
+    @Override // android.os.Binder
+    public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        if (routeToSuperOrEnforceInterface(i, parcel, parcel2, i2)) {
+            return true;
+        }
+        return dispatchTransaction(i, parcel, parcel2, i2);
+    }
+}

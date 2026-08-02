@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.yandex.go.places.common.ui.ControlButtonView
+        android:id="@+id/filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.yandex.go.design.view.GoView
+        android:layout_gravity="end|top"
+        android:id="@+id/filter_badge_dot"
+        android:background="@drawable/places_filter_badge_dot"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="3dp"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="3dp"/>
+</FrameLayout>

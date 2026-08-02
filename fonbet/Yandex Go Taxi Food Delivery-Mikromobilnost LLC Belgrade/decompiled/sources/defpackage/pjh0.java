@@ -1,0 +1,8 @@
+package defpackage;
+
+/* loaded from: classes10.dex */
+public abstract class pjh0 {
+    public static int exo_media_button_opacity_percentage_disabled = 2131492909;
+    public static int exo_media_button_opacity_percentage_enabled = 2131492910;
+    public static int status_bar_notification_info_maxnum = 2131493080;
+}

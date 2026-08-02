@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="40dp"
+        android:width="40dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/component_blue_toxic"/>
+            <corners android:radius="100dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="24dp"
+        android:width="24dp"
+        android:drawable="@drawable/ic_wash_car_white_24"/>
+</layer-list>

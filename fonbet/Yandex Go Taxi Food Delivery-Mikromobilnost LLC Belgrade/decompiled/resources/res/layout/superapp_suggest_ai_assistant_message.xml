@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="@dimen/component_text_size_body"
+    android:id="@+id/ai_assistant_message"
+    android:background="@drawable/message_background"
+    android:paddingTop="15dp"
+    android:paddingBottom="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="3"
+    android:alpha="0"
+    android:paddingHorizontal="20dp"/>

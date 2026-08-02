@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="185dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/banner_folder_empty_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/msg_zero_chats_light"
+        android:scaleType="centerCrop"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="?attr/messagingCommonTextPrimaryColor"
+        android:gravity="center"
+        android:id="@+id/banner_folder_empty_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/messenger_folder_empty_chat_list_title"
+        style="@style/orb_HeadingXsMessenger"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="?attr/messagingCommonTextSecondaryColor"
+        android:gravity="center"
+        android:id="@+id/banner_folder_empty_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/orb_spacing_2m"
+        android:text="@string/folder_empty_chat_list_description"
+        style="@style/orb_BodyLgRegularMessenger"/>
+</LinearLayout>

@@ -1,0 +1,53 @@
+package defpackage;
+
+/* loaded from: classes2.dex */
+public abstract class v9h0 {
+    public static int btn_to_article = 2131428088;
+    public static int end_icon = 2131429702;
+    public static int error_description = 2131429750;
+    public static int error_layout = 2131429758;
+    public static int error_title = 2131429776;
+    public static int modal_view_shadow = 2131431341;
+    public static int modal_view_wrapper = 2131431342;
+    public static int plus_home_toolbar = 2131432230;
+    public static int plus_home_web_view_error_layout = 2131432231;
+    public static int plus_home_web_view_root = 2131432232;
+    public static int plus_home_webview_contracts_container = 2131432233;
+    public static int plus_offer_space = 2131432242;
+    public static int plus_sdk_btn_debug_panel = 2131432295;
+    public static int plus_sdk_home_acquisition_sdk_button_section_container = 2131432324;
+    public static int plus_sdk_home_barrier = 2131432325;
+    public static int plus_sdk_home_host_pay_container = 2131432326;
+    public static int plus_sdk_home_native_pay_layout = 2131432327;
+    public static int plus_sdk_layout_btn_debug_panel = 2131432335;
+    public static int plus_sdk_loading_animation_layout = 2131432336;
+    public static int plus_sdk_native_pay_button = 2131432342;
+    public static int plus_sdk_offer_one_click_text = 2131432343;
+    public static int plus_sdk_offer_sub_text = 2131432344;
+    public static int plus_sdk_offer_text = 2131432345;
+    public static int plus_sdk_progress_bar = 2131432347;
+    public static int plus_sdk_retry_button_subtitle = 2131432350;
+    public static int plus_sdk_retry_button_title = 2131432351;
+    public static int plus_sdk_stories_host_pay_container = 2131432352;
+    public static int plus_sdk_stories_native_pay_layout = 2131432353;
+    public static int plus_sdk_webview_simple_root = 2131432360;
+    public static int plus_simple_web_view_contracts_container = 2131432361;
+    public static int plus_smart_web_view_contracts_container = 2131432362;
+    public static int plus_smart_web_view_root = 2131432363;
+    public static int progress_bar_layout = 2131432550;
+    public static int pull_out_line_icon = 2131432617;
+    public static int retry_button = 2131432869;
+    public static int smart_webview_container = 2131433616;
+    public static int ssl_error_view_stub = 2131433761;
+    public static int start_icon = 2131433808;
+    public static int stories_container = 2131433876;
+    public static int stories_loading = 2131433877;
+    public static int stories_web_view_contracts_container = 2131433880;
+    public static int title = 2131434367;
+    public static int toolbar = 2131434431;
+    public static int toolbar_outline_icon = 2131434466;
+    public static int top_spacer_view = 2131434517;
+    public static int view_pager = 2131434964;
+    public static int view_stub_container = 2131434973;
+    public static int web_stories_view_error_layout = 2131435010;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?android:attr/colorControlHighlight">
+    <item>
+        <selector>
+            <item
+                android:state_enabled="true"
+                android:drawable="@drawable/msg_bg_personal_status"/>
+            <item android:drawable="@android:color/transparent"/>
+        </selector>
+    </item>
+</ripple>

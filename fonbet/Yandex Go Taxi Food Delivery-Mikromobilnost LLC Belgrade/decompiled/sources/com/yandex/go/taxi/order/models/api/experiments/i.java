@@ -1,0 +1,14 @@
+package com.yandex.go.taxi.order.models.api.experiments;
+
+import kotlinx.serialization.KSerializer;
+
+/* loaded from: classes14.dex */
+public final class i {
+    public static UseFeedbackProposalExperiment a() {
+        return UseFeedbackProposalExperiment.f;
+    }
+
+    public final KSerializer serializer() {
+        return UseFeedbackProposalExperiment$$serializer.INSTANCE;
+    }
+}

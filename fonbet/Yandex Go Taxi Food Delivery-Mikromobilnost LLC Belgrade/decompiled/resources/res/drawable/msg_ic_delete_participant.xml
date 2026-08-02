@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <drawable
+            android:tint="?attr/messagingCommonIconsSecondaryColor"
+            android:drawable="@drawable/circle_solid_md_regular"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+    <item>
+        <drawable
+            android:tint="?attr/messagingCommonBackgroundColor"
+            android:drawable="@drawable/close_circle_outline_md_regular"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+</layer-list>

@@ -1,0 +1,36 @@
+{
+  "app_id": "ru.yandex.taxi",
+  "title": "Yandex Go Taxi Food Delivery",
+  "developer": "Mikromobilnost LLC Belgrade",
+  "score": 4.7442575,
+  "icon": "https://play-lh.googleusercontent.com/cAO85g8yzIS2Q-lOYHEJMaJWzGCMaFhmYOoPicsEjR0uCJrKzYrwAk_ZjsK7jxgDse0elB6UZ289gJq-A6wj-g",
+  "url": "https://play.google.com/store/apps/details?id=ru.yandex.taxi&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "Mikromobilnost+LLC+Belgrade",
+  "released": "Oct 25, 2011",
+  "updated": "2026-07-31",
+  "version": "5.87.0",
+  "summary": "Car and scooter rides, item and food delivery",
+  "folder": "Yandex Go Taxi Food Delivery-Mikromobilnost LLC Belgrade",
+  "path": "fonbet/Yandex Go Taxi Food Delivery-Mikromobilnost LLC Belgrade",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "ru.yandex.taxi.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Yandex Go Taxi Food Delivery-Mikromobilnost LLC Belgrade",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading ru.yandex.taxi...\nru.yandex.taxi downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading ru.yandex.taxi...\nru.yandex.taxi downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

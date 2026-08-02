@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.yandex.taxi.widget.progress.CircularProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:importantForAccessibility="no"/>
+    <ImageView
+        android:id="@+id/progress_done"
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:importantForAccessibility="no"/>
+    <ru.yandex.taxi.widget.RobotoTextView
+        android:textSize="16sp"
+        android:gravity="center"
+        android:id="@+id/status"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:maxWidth="360dp"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:robotoFontStyle="light"/>
+</LinearLayout>

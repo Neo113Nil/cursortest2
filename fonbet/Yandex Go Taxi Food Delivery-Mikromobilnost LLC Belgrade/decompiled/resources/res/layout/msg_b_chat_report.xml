@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="?attr/messagingCommonDestructiveTextColor"
+    android:id="@+id/chat_action_report"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/contact_info_report"
+    android:drawableTint="?attr/messagingCommonDestructiveIconsColor"
+    app:drawableStartCompat="@drawable/msg_ic_report"
+    style="@style/Messaging.Settings.Item.Text"/>

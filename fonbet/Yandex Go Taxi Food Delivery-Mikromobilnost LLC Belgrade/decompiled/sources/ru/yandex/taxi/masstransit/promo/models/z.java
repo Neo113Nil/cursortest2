@@ -1,0 +1,10 @@
+package ru.yandex.taxi.masstransit.promo.models;
+
+import kotlinx.serialization.KSerializer;
+
+/* loaded from: classes6.dex */
+public final class z {
+    public final KSerializer serializer() {
+        return y.a;
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/amber_toxic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"/>
+    <View
+        android:background="@color/black_alpha20"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"/>
+</android.widget.LinearLayout>

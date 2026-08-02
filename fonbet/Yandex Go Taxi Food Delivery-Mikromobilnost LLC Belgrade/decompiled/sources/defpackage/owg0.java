@@ -1,0 +1,58 @@
+package defpackage;
+
+/* loaded from: classes4.dex */
+public abstract class owg0 {
+    public static int ebssdk_button_corner_radius = 2131167105;
+    public static int ebssdk_button_corner_radius_0 = 2131167106;
+    public static int ebssdk_button_corner_radius_1 = 2131167107;
+    public static int ebssdk_button_corner_radius_10 = 2131167108;
+    public static int ebssdk_button_corner_radius_11 = 2131167109;
+    public static int ebssdk_button_corner_radius_12 = 2131167110;
+    public static int ebssdk_button_corner_radius_13 = 2131167111;
+    public static int ebssdk_button_corner_radius_14 = 2131167112;
+    public static int ebssdk_button_corner_radius_15 = 2131167113;
+    public static int ebssdk_button_corner_radius_16 = 2131167114;
+    public static int ebssdk_button_corner_radius_2 = 2131167115;
+    public static int ebssdk_button_corner_radius_3 = 2131167116;
+    public static int ebssdk_button_corner_radius_4 = 2131167117;
+    public static int ebssdk_button_corner_radius_5 = 2131167118;
+    public static int ebssdk_button_corner_radius_6 = 2131167119;
+    public static int ebssdk_button_corner_radius_7 = 2131167120;
+    public static int ebssdk_button_corner_radius_8 = 2131167121;
+    public static int ebssdk_button_corner_radius_9 = 2131167122;
+    public static int ebssdk_button_height = 2131167123;
+    public static int ebssdk_common_card_radius = 2131167124;
+    public static int ebssdk_common_elevation = 2131167125;
+    public static int ebssdk_common_icon_size = 2131167126;
+    public static int ebssdk_frame_thickness_4 = 2131167127;
+    public static int ebssdk_frame_thickness_5 = 2131167128;
+    public static int ebssdk_frame_thickness_6 = 2131167129;
+    public static int ebssdk_instruction_bottom_margin = 2131167130;
+    public static int ebssdk_margin_10 = 2131167131;
+    public static int ebssdk_margin_12 = 2131167132;
+    public static int ebssdk_margin_16 = 2131167133;
+    public static int ebssdk_margin_18 = 2131167134;
+    public static int ebssdk_margin_2 = 2131167135;
+    public static int ebssdk_margin_20 = 2131167136;
+    public static int ebssdk_margin_24 = 2131167137;
+    public static int ebssdk_margin_28 = 2131167138;
+    public static int ebssdk_margin_3 = 2131167139;
+    public static int ebssdk_margin_4 = 2131167140;
+    public static int ebssdk_margin_40 = 2131167141;
+    public static int ebssdk_margin_44 = 2131167142;
+    public static int ebssdk_margin_6 = 2131167143;
+    public static int ebssdk_margin_64 = 2131167144;
+    public static int ebssdk_margin_8 = 2131167145;
+    public static int ebssdk_pad_2 = 2131167146;
+    public static int ebssdk_processing_widget_min_height = 2131167147;
+    public static int ebssdk_processing_widget_min_width = 2131167148;
+    public static int ebssdk_screen_icon_bg_size = 2131167149;
+    public static int ebssdk_screen_icon_size = 2131167150;
+    public static int ebssdk_text_14 = 2131167151;
+    public static int ebssdk_text_15 = 2131167152;
+    public static int ebssdk_text_16 = 2131167153;
+    public static int ebssdk_text_20 = 2131167154;
+    public static int ebssdk_text_23 = 2131167155;
+    public static int ebssdk_timer_height = 2131167156;
+    public static int ebssdk_view_progress_size = 2131167157;
+}

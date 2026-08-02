@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/address_confirmation_top_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.yandex.taxi.design.ListItemComponent
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        app:component_no_background="true"
+        app:component_title="@string/route_selector_map_hint"
+        app:component_title_gravity="center_horizontal"
+        app:component_title_size="@dimen/component_text_size_body"
+        app:component_title_typeface="medium"/>
+</FrameLayout>

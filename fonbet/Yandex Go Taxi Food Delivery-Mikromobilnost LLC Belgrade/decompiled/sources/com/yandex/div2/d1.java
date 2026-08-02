@@ -1,0 +1,96 @@
+package com.yandex.div2;
+
+import com.yandex.plus.home.feature.webviews.internal.container.ModalContentViewContainer;
+import defpackage.i9l;
+import defpackage.ivk;
+import defpackage.j73;
+import defpackage.j9l;
+import defpackage.kvo;
+import defpackage.lql;
+import defpackage.ngd0;
+import defpackage.nzk;
+import defpackage.qkj;
+import defpackage.z3k;
+
+/* loaded from: classes11.dex */
+public abstract class d1 {
+    public static final z3k A;
+    public static final z3k B;
+    public static final z3k C;
+    public static final z3k D;
+    public static final z3k E;
+    public static final z3k F;
+    public static final ivk G;
+    public static final ivk H;
+    public static final ivk I;
+    public static final kvo a = ngd0.m(Double.valueOf(1.0d));
+    public static final kvo b;
+    public static final kvo c;
+    public static final kvo d;
+    public static final kvo e;
+    public static final j9l f;
+    public static final kvo g;
+    public static final kvo h;
+    public static final kvo i;
+    public static final kvo j;
+    public static final kvo k;
+    public static final kvo l;
+    public static final kvo m;
+    public static final kvo n;
+    public static final kvo o;
+    public static final i9l p;
+    public static final qkj q;
+    public static final qkj r;
+    public static final qkj s;
+    public static final qkj t;
+    public static final qkj u;
+    public static final qkj v;
+    public static final qkj w;
+    public static final qkj x;
+    public static final qkj y;
+    public static final qkj z;
+
+    static {
+        DivInput$Autocapitalization divInput$Autocapitalization = DivInput$Autocapitalization.AUTO;
+        b = ngd0.m(divInput$Autocapitalization);
+        DivInput$EnterKeyType divInput$EnterKeyType = DivInput$EnterKeyType.DEFAULT;
+        c = ngd0.m(divInput$EnterKeyType);
+        d = ngd0.m(12L);
+        DivSizeUnit divSizeUnit = DivSizeUnit.SP;
+        e = ngd0.m(divSizeUnit);
+        f = new j9l(new lql(null, null, null));
+        g = ngd0.m(1929379840);
+        h = ngd0.m(Boolean.TRUE);
+        DivInput$KeyboardType divInput$KeyboardType = DivInput$KeyboardType.MULTI_LINE_TEXT;
+        i = ngd0.m(divInput$KeyboardType);
+        j = ngd0.m(Double.valueOf(0.0d));
+        k = ngd0.m(Boolean.FALSE);
+        DivAlignmentHorizontal divAlignmentHorizontal = DivAlignmentHorizontal.START;
+        l = ngd0.m(divAlignmentHorizontal);
+        DivAlignmentVertical divAlignmentVertical = DivAlignmentVertical.CENTER;
+        m = ngd0.m(divAlignmentVertical);
+        n = ngd0.m(Integer.valueOf(ModalContentViewContainer.BASE_SHADOW_COLOR));
+        DivVisibility divVisibility = DivVisibility.VISIBLE;
+        o = ngd0.m(divVisibility);
+        p = new i9l(new nzk(null, null, null));
+        q = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_ALIGNMENT_HORIZONTAL$1.w, j73.C(DivAlignmentHorizontal.values()));
+        r = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_ALIGNMENT_VERTICAL$1.w, j73.C(DivAlignmentVertical.values()));
+        s = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_AUTOCAPITALIZATION$1.w, divInput$Autocapitalization);
+        t = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_ENTER_KEY_TYPE$1.w, divInput$EnterKeyType);
+        u = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_FONT_SIZE_UNIT$1.w, divSizeUnit);
+        v = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_FONT_WEIGHT$1.w, j73.C(DivFontWeight.values()));
+        w = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_KEYBOARD_TYPE$1.w, divInput$KeyboardType);
+        x = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_TEXT_ALIGNMENT_HORIZONTAL$1.w, divAlignmentHorizontal);
+        y = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_TEXT_ALIGNMENT_VERTICAL$1.w, divAlignmentVertical);
+        z = new qkj(DivInputJsonParser$Companion$TYPE_HELPER_VISIBILITY$1.w, divVisibility);
+        A = new z3k(24);
+        B = new z3k(25);
+        C = new z3k(26);
+        D = new z3k(27);
+        E = new z3k(28);
+        F = new z3k(29);
+        G = new ivk(0);
+        H = new ivk(1);
+        I = new ivk(2);
+    }
+}

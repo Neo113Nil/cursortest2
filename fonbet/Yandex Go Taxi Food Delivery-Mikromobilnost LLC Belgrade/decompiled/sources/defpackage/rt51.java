@@ -1,0 +1,222 @@
+package defpackage;
+
+import ru.CryptoPro.JCP.tools.CertReader.Extension;
+
+/* loaded from: classes15.dex */
+public final class rt51 {
+    public final long A;
+    public final long B;
+    public final long C;
+    public final long D;
+    public final long E;
+    public final long F;
+    public final long G;
+    public final long H;
+    public final long I;
+    public final long J;
+    public final long K;
+    public final long L;
+    public final long M;
+    public final long N;
+    public final long O;
+    public final long P;
+    public final long Q;
+    public final long R;
+    public final long S;
+    public final long T;
+    public final long U;
+    public final long V;
+    public final long W;
+    public final long X;
+    public final long Y;
+    public final long Z;
+    public final long a;
+    public final long a0;
+    public final long b;
+    public final long b0;
+    public final long c;
+    public final long c0;
+    public final long d;
+    public final long e;
+    public final long f;
+    public final long g;
+    public final long h;
+    public final long i;
+    public final long j;
+    public final long k;
+    public final long l;
+    public final long m;
+    public final long n;
+    public final long o;
+    public final long p;
+    public final long q;
+    public final long r;
+    public final long s;
+    public final long t;
+    public final long u;
+    public final long v;
+    public final long w;
+    public final long x;
+    public final long y;
+    public final long z;
+
+    public rt51(long j, long j2, long j3, long j4, long j5, long j6, long j7, long j8, long j9, long j10, long j11, long j12, long j13, long j14, long j15, long j16, long j17, long j18, long j19, long j20, long j21, long j22, long j23, long j24, long j25, long j26, long j27, long j28, long j29, long j30, long j31, long j32, long j33, long j34, long j35, long j36, long j37, long j38, long j39, long j40, long j41, long j42, long j43, long j44, long j45, long j46, long j47, long j48, long j49, long j50, long j51, long j52, long j53, long j54, long j55) {
+        this.a = j;
+        this.b = j2;
+        this.c = j3;
+        this.d = j4;
+        this.e = j5;
+        this.f = j6;
+        this.g = j7;
+        this.h = j8;
+        this.i = j9;
+        this.j = j10;
+        this.k = j11;
+        this.l = j12;
+        this.m = j13;
+        this.n = j14;
+        this.o = j15;
+        this.p = j16;
+        this.q = j17;
+        this.r = j18;
+        this.s = j19;
+        this.t = j20;
+        this.u = j21;
+        this.v = j22;
+        this.w = j23;
+        this.x = j24;
+        this.y = j25;
+        this.z = j26;
+        this.A = j27;
+        this.B = j28;
+        this.C = j29;
+        this.D = j30;
+        this.E = j31;
+        this.F = j32;
+        this.G = j33;
+        this.H = j34;
+        this.I = j35;
+        this.J = j36;
+        this.K = j37;
+        this.L = j38;
+        this.M = j39;
+        this.N = j40;
+        this.O = j41;
+        this.P = j42;
+        this.Q = j43;
+        this.R = j44;
+        this.S = j45;
+        this.T = j46;
+        this.U = j47;
+        this.V = j48;
+        this.W = j49;
+        this.X = j50;
+        this.Y = j51;
+        this.Z = j52;
+        this.a0 = j53;
+        this.b0 = j54;
+        this.c0 = j55;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof rt51)) {
+            return false;
+        }
+        rt51 rt51Var = (rt51) obj;
+        return ldc.c(this.a, rt51Var.a) && ldc.c(this.b, rt51Var.b) && ldc.c(this.c, rt51Var.c) && ldc.c(this.d, rt51Var.d) && ldc.c(this.e, rt51Var.e) && ldc.c(this.f, rt51Var.f) && ldc.c(this.g, rt51Var.g) && ldc.c(this.h, rt51Var.h) && ldc.c(this.i, rt51Var.i) && ldc.c(this.j, rt51Var.j) && ldc.c(this.k, rt51Var.k) && ldc.c(this.l, rt51Var.l) && ldc.c(this.m, rt51Var.m) && ldc.c(this.n, rt51Var.n) && ldc.c(this.o, rt51Var.o) && ldc.c(this.p, rt51Var.p) && ldc.c(this.q, rt51Var.q) && ldc.c(this.r, rt51Var.r) && ldc.c(this.s, rt51Var.s) && ldc.c(this.t, rt51Var.t) && ldc.c(this.u, rt51Var.u) && ldc.c(this.v, rt51Var.v) && ldc.c(this.w, rt51Var.w) && ldc.c(this.x, rt51Var.x) && ldc.c(this.y, rt51Var.y) && ldc.c(this.z, rt51Var.z) && ldc.c(this.A, rt51Var.A) && ldc.c(this.B, rt51Var.B) && ldc.c(this.C, rt51Var.C) && ldc.c(this.D, rt51Var.D) && ldc.c(this.E, rt51Var.E) && ldc.c(this.F, rt51Var.F) && ldc.c(this.G, rt51Var.G) && ldc.c(this.H, rt51Var.H) && ldc.c(this.I, rt51Var.I) && ldc.c(this.J, rt51Var.J) && ldc.c(this.K, rt51Var.K) && ldc.c(this.L, rt51Var.L) && ldc.c(this.M, rt51Var.M) && ldc.c(this.N, rt51Var.N) && ldc.c(this.O, rt51Var.O) && ldc.c(this.P, rt51Var.P) && ldc.c(this.Q, rt51Var.Q) && ldc.c(this.R, rt51Var.R) && ldc.c(this.S, rt51Var.S) && ldc.c(this.T, rt51Var.T) && ldc.c(this.U, rt51Var.U) && ldc.c(this.V, rt51Var.V) && ldc.c(this.W, rt51Var.W) && ldc.c(this.X, rt51Var.X) && ldc.c(this.Y, rt51Var.Y) && ldc.c(this.Z, rt51Var.Z) && ldc.c(this.a0, rt51Var.a0) && ldc.c(this.b0, rt51Var.b0) && ldc.c(this.c0, rt51Var.c0);
+    }
+
+    public final int hashCode() {
+        int i = ldc.n;
+        return Long.hashCode(this.c0) + qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(qv10.c(Long.hashCode(this.a) * 31, 31, this.b), 31, this.c), 31, this.d), 31, this.e), 31, this.f), 31, this.g), 31, this.h), 31, this.i), 31, this.j), 31, this.k), 31, this.l), 31, this.m), 31, this.n), 31, this.o), 31, this.p), 31, this.q), 31, this.r), 31, this.s), 31, this.t), 31, this.u), 31, this.v), 31, this.w), 31, this.x), 31, this.y), 31, this.z), 31, this.A), 31, this.B), 31, this.C), 31, this.D), 31, this.E), 31, this.F), 31, this.G), 31, this.H), 31, this.I), 31, this.J), 31, this.K), 31, this.L), 31, this.M), 31, this.N), 31, this.O), 31, this.P), 31, this.Q), 31, this.R), 31, this.S), 31, this.T), 31, this.U), 31, this.V), 31, this.W), 31, this.X), 31, this.Y), 31, this.Z), 31, this.a0), 31, this.b0);
+    }
+
+    public final String toString() {
+        String i = ldc.i(this.a);
+        String i2 = ldc.i(this.b);
+        String i3 = ldc.i(this.c);
+        String i4 = ldc.i(this.d);
+        String i5 = ldc.i(this.e);
+        String i6 = ldc.i(this.f);
+        String i7 = ldc.i(this.g);
+        String i8 = ldc.i(this.h);
+        String i9 = ldc.i(this.i);
+        String i10 = ldc.i(this.j);
+        String i11 = ldc.i(this.k);
+        String i12 = ldc.i(this.l);
+        String i13 = ldc.i(this.m);
+        String i14 = ldc.i(this.n);
+        String i15 = ldc.i(this.o);
+        String i16 = ldc.i(this.p);
+        String i17 = ldc.i(this.q);
+        String i18 = ldc.i(this.r);
+        String i19 = ldc.i(this.s);
+        String i20 = ldc.i(this.t);
+        String i21 = ldc.i(this.u);
+        String i22 = ldc.i(this.v);
+        String i23 = ldc.i(this.w);
+        String i24 = ldc.i(this.x);
+        String i25 = ldc.i(this.y);
+        String i26 = ldc.i(this.z);
+        String i27 = ldc.i(this.A);
+        String i28 = ldc.i(this.B);
+        String i29 = ldc.i(this.C);
+        String i30 = ldc.i(this.D);
+        String i31 = ldc.i(this.E);
+        String i32 = ldc.i(this.F);
+        String i33 = ldc.i(this.G);
+        String i34 = ldc.i(this.H);
+        String i35 = ldc.i(this.I);
+        String i36 = ldc.i(this.J);
+        String i37 = ldc.i(this.K);
+        String i38 = ldc.i(this.L);
+        String i39 = ldc.i(this.M);
+        String i40 = ldc.i(this.N);
+        String i41 = ldc.i(this.O);
+        String i42 = ldc.i(this.P);
+        String i43 = ldc.i(this.Q);
+        String i44 = ldc.i(this.R);
+        String i45 = ldc.i(this.S);
+        String i46 = ldc.i(this.T);
+        String i47 = ldc.i(this.U);
+        String i48 = ldc.i(this.V);
+        String i49 = ldc.i(this.W);
+        String i50 = ldc.i(this.X);
+        String i51 = ldc.i(this.Y);
+        String i52 = ldc.i(this.Z);
+        String i53 = ldc.i(this.a0);
+        String i54 = ldc.i(this.b0);
+        String i55 = ldc.i(this.c0);
+        StringBuilder v = b64.v("YbProductColors(baseBlack=", i, ", blueSky=", i2, ", blue100=");
+        g8e.D(v, i3, ", blue200=", i4, ", defaultOld=");
+        g8e.D(v, i5, ", digitalRuble=", i6, ", greenProductDeep=");
+        g8e.D(v, i7, ", greenProductLight=", i8, ", green100=");
+        g8e.D(v, i9, ", green200=", i10, ", green300=");
+        g8e.D(v, i11, ", green400=", i12, ", green500=");
+        g8e.D(v, i13, ", green600=", i14, ", indigo100=");
+        g8e.D(v, i15, ", lime100=", i16, ", lime200=");
+        g8e.D(v, i17, ", loans100=", i18, ", loans200=");
+        g8e.D(v, i19, ", loans300=", i20, ", loans400=");
+        g8e.D(v, i21, ", loans500=", i22, ", monoLogo=");
+        g8e.D(v, i23, ", monoLogoInverted=", i24, ", payBlack=");
+        g8e.D(v, i25, ", payCardSticker=", i26, ", pinkProductDeep=");
+        g8e.D(v, i27, ", pinkProductLight=", i28, ", pink100=");
+        g8e.D(v, i29, ", pink200=", i30, ", pink300=");
+        g8e.D(v, i31, ", pink400=", i32, ", pink500=");
+        g8e.D(v, i33, ", pink600=", i34, ", plusSolid=");
+        g8e.D(v, i35, ", s7=", i36, ", savers=");
+        g8e.D(v, i37, ", savingsBgTheme1=", i38, ", savingsBgTheme2=");
+        g8e.D(v, i39, ", savingsBgTheme3=", i40, ", savingsBgTheme4=");
+        g8e.D(v, i41, ", savingsBgTheme5=", i42, ", sunrise=");
+        g8e.D(v, i43, ", sunset=", i44, ", sunshine=");
+        g8e.D(v, i45, ", ultra100=", i46, ", ultra200=");
+        g8e.D(v, i47, ", ultra300=", i48, ", ultra400=");
+        g8e.D(v, i49, ", violet100=", i50, ", violet200=");
+        g8e.D(v, i51, ", violet300=", i52, ", violet400=");
+        g8e.D(v, i53, ", yandexRed=", i54, ", yandexRed2=");
+        return oyr.t(v, i55, Extension.C_BRAKE);
+    }
+}

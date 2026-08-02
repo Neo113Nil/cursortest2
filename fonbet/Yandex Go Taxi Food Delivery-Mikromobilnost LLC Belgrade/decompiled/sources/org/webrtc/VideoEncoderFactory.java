@@ -1,0 +1,29 @@
+package org.webrtc;
+
+/* loaded from: classes4.dex */
+public interface VideoEncoderFactory {
+
+    public interface VideoEncoderSelector {
+        VideoCodecInfo onAvailableBitrate(int i);
+
+        void onCurrentEncoder(VideoCodecInfo videoCodecInfo);
+
+        VideoCodecInfo onEncoderBroken();
+
+        default VideoCodecInfo onResolutionChange(int i, int i2) {
+            return null;
+        }
+    }
+
+    VideoEncoder createEncoder(VideoCodecInfo videoCodecInfo);
+
+    default VideoEncoderSelector getEncoderSelector() {
+        return null;
+    }
+
+    default VideoCodecInfo[] getImplementations() {
+        return getSupportedCodecs();
+    }
+
+    VideoCodecInfo[] getSupportedCodecs();
+}

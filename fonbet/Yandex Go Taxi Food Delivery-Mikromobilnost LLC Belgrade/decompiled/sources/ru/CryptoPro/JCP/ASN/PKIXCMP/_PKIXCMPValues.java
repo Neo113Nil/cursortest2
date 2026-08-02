@@ -1,0 +1,93 @@
+package ru.CryptoPro.JCP.ASN.PKIXCMP;
+
+import com.objsys.asn1j.runtime.Asn1Null;
+import com.objsys.asn1j.runtime.Asn1ObjectIdentifier;
+import com.objsys.asn1j.runtime.Asn1OctetString;
+import ru.CryptoPro.JCP.ASN.CPPKIXCMP.ChangeNameReq;
+import ru.CryptoPro.JCP.ASN.CPPKIXCMP.PKIAudit;
+import ru.CryptoPro.JCP.ASN.CPPKIXCMP._CPPKIXCMPValues;
+import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.AlgorithmIdentifier;
+import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.Certificate;
+import ru.CryptoPro.JCP.ASN.PKIX1Explicit88.CertificateList;
+
+/* loaded from: classes4.dex */
+public class _PKIXCMPValues {
+    public static final INFOTYPEANDVALUE_CLASS[] SupportedInfos;
+    public static final int[] id_it = {1, 3, 6, 1, 5, 5, 7, 4};
+    public static final int[] id_it_CAKeyUpdateInfo;
+    public static final int[] id_it_CAProtEncCert;
+    public static final int[] id_it_CurrentCRL;
+    public static final int[] id_it_EncKeyPairTypes;
+    public static final int[] id_it_PreferredSymmAlg;
+    public static final int[] id_it_SignKeyPairTypes;
+    public static final INFOTYPEANDVALUE_CLASS itCAKeyUpdateInfo;
+    public static final INFOTYPEANDVALUE_CLASS itCAProtEncCert;
+    public static final INFOTYPEANDVALUE_CLASS itChangeNameReq;
+    public static final INFOTYPEANDVALUE_CLASS itCryptoProCertificate;
+    public static final INFOTYPEANDVALUE_CLASS itCryptoProLicense;
+    public static final INFOTYPEANDVALUE_CLASS itCryptoProOfficial;
+    public static final INFOTYPEANDVALUE_CLASS itCryptoProOrganization;
+    public static final INFOTYPEANDVALUE_CLASS itCryptoProPolicy;
+    public static final INFOTYPEANDVALUE_CLASS itCurrentCRL;
+    public static final INFOTYPEANDVALUE_CLASS itDeleteCustomer;
+    public static final INFOTYPEANDVALUE_CLASS itEncKeyPairTypes;
+    public static final INFOTYPEANDVALUE_CLASS itGetMessage;
+    public static final INFOTYPEANDVALUE_CLASS itGetMessages;
+    public static final INFOTYPEANDVALUE_CLASS itPKIAudit;
+    public static final INFOTYPEANDVALUE_CLASS itPreferredSymmAlg;
+    public static final INFOTYPEANDVALUE_CLASS itResumeCertificate;
+    public static final INFOTYPEANDVALUE_CLASS itResumeCertificateReply;
+    public static final INFOTYPEANDVALUE_CLASS itSignKeyPairTypes;
+
+    static {
+        int[] iArr = {1, 3, 6, 1, 5, 5, 7, 4, 1};
+        id_it_CAProtEncCert = iArr;
+        int[] iArr2 = {1, 3, 6, 1, 5, 5, 7, 4, 2};
+        id_it_SignKeyPairTypes = iArr2;
+        int[] iArr3 = {1, 3, 6, 1, 5, 5, 7, 4, 3};
+        id_it_EncKeyPairTypes = iArr3;
+        int[] iArr4 = {1, 3, 6, 1, 5, 5, 7, 4, 4};
+        id_it_PreferredSymmAlg = iArr4;
+        int[] iArr5 = {1, 3, 6, 1, 5, 5, 7, 4, 5};
+        id_it_CAKeyUpdateInfo = iArr5;
+        int[] iArr6 = {1, 3, 6, 1, 5, 5, 7, 4, 6};
+        id_it_CurrentCRL = iArr6;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class = new INFOTYPEANDVALUE_CLASS(new Certificate(), new Asn1ObjectIdentifier(iArr));
+        itCAProtEncCert = infotypeandvalue_class;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class2 = new INFOTYPEANDVALUE_CLASS(new _itSignKeyPairTypes_Type(), new Asn1ObjectIdentifier(iArr2));
+        itSignKeyPairTypes = infotypeandvalue_class2;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class3 = new INFOTYPEANDVALUE_CLASS(new _itEncKeyPairTypes_Type(), new Asn1ObjectIdentifier(iArr3));
+        itEncKeyPairTypes = infotypeandvalue_class3;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class4 = new INFOTYPEANDVALUE_CLASS(new AlgorithmIdentifier(), new Asn1ObjectIdentifier(iArr4));
+        itPreferredSymmAlg = infotypeandvalue_class4;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class5 = new INFOTYPEANDVALUE_CLASS(new CAKeyUpdAnnContent(), new Asn1ObjectIdentifier(iArr5));
+        itCAKeyUpdateInfo = infotypeandvalue_class5;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class6 = new INFOTYPEANDVALUE_CLASS(new CertificateList(), new Asn1ObjectIdentifier(iArr6));
+        itCurrentCRL = infotypeandvalue_class6;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class7 = new INFOTYPEANDVALUE_CLASS(new PKIAudit(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_PKIAudit));
+        itPKIAudit = infotypeandvalue_class7;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class8 = new INFOTYPEANDVALUE_CLASS(new ChangeNameReq(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_ChangeNameReq));
+        itChangeNameReq = infotypeandvalue_class8;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class9 = new INFOTYPEANDVALUE_CLASS(new RevDetails(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_ResumeCertificate));
+        itResumeCertificate = infotypeandvalue_class9;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class10 = new INFOTYPEANDVALUE_CLASS(new Asn1Null(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_GetMessage));
+        itGetMessage = infotypeandvalue_class10;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class11 = new INFOTYPEANDVALUE_CLASS(new Asn1Null(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_GetMessages));
+        itGetMessages = infotypeandvalue_class11;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class12 = new INFOTYPEANDVALUE_CLASS(new ChangeNameReq(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_DeleteCustomer));
+        itDeleteCustomer = infotypeandvalue_class12;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class13 = new INFOTYPEANDVALUE_CLASS(new RevRepContent(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_ResumeCertificateReply));
+        itResumeCertificateReply = infotypeandvalue_class13;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class14 = new INFOTYPEANDVALUE_CLASS(new Asn1OctetString(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_Organization));
+        itCryptoProOrganization = infotypeandvalue_class14;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class15 = new INFOTYPEANDVALUE_CLASS(new Asn1OctetString(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_License));
+        itCryptoProLicense = infotypeandvalue_class15;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class16 = new INFOTYPEANDVALUE_CLASS(new Asn1OctetString(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_Policy));
+        itCryptoProPolicy = infotypeandvalue_class16;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class17 = new INFOTYPEANDVALUE_CLASS(new Asn1OctetString(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_Official));
+        itCryptoProOfficial = infotypeandvalue_class17;
+        INFOTYPEANDVALUE_CLASS infotypeandvalue_class18 = new INFOTYPEANDVALUE_CLASS(new Asn1OctetString(), new Asn1ObjectIdentifier(_CPPKIXCMPValues.id_CryptoPro_it_Certificate));
+        itCryptoProCertificate = infotypeandvalue_class18;
+        SupportedInfos = new INFOTYPEANDVALUE_CLASS[]{infotypeandvalue_class, infotypeandvalue_class2, infotypeandvalue_class3, infotypeandvalue_class4, infotypeandvalue_class5, infotypeandvalue_class6, infotypeandvalue_class7, infotypeandvalue_class8, infotypeandvalue_class9, infotypeandvalue_class10, infotypeandvalue_class11, infotypeandvalue_class12, infotypeandvalue_class13, infotypeandvalue_class14, infotypeandvalue_class15, infotypeandvalue_class16, infotypeandvalue_class17, infotypeandvalue_class18};
+    }
+}

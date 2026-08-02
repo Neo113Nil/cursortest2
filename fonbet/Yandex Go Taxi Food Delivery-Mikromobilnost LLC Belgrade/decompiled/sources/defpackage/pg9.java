@@ -1,0 +1,9 @@
+package defpackage;
+
+import kotlinx.coroutines.channels.BufferOverflow;
+import kotlinx.coroutines.flow.n0;
+
+/* loaded from: classes6.dex */
+public final class pg9 {
+    public final n0 a = ffx.b(0, 1, BufferOverflow.DROP_OLDEST);
+}

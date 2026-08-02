@@ -1,0 +1,55 @@
+package defpackage;
+
+/* loaded from: classes6.dex */
+public abstract class q0h0 {
+    public static int bg_route_info = 2131232088;
+    public static int circle_remove_button_bg = 2131232572;
+    public static int ic_add_plus = 2131233447;
+    public static int ic_battery_v3_division = 2131233498;
+    public static int ic_battery_v3_mask = 2131233499;
+    public static int ic_ble_sign = 2131233504;
+    public static int ic_camera_photo = 2131233550;
+    public static int ic_nav_arrow = 2131233938;
+    public static int ic_plus_in_circle = 2131234119;
+    public static int ic_scooter = 2131234168;
+    public static int ic_scooter_b_point = 2131234169;
+    public static int ic_scooter_circle_icon = 2131234170;
+    public static int ic_scooter_on_order = 2131234172;
+    public static int ic_scooters_agreement_point = 2131234176;
+    public static int ic_scooters_camera = 2131234177;
+    public static int ic_scooters_error = 2131234181;
+    public static int ic_scooters_error_bg_color = 2131234182;
+    public static int ic_scooters_load_error = 2131234196;
+    public static int ic_scooters_pass_check = 2131234201;
+    public static int ic_scooters_route_arrow_small = 2131234205;
+    public static int ic_scooters_shortcut_qr = 2131234209;
+    public static int ic_scooters_shortcut_support = 2131234210;
+    public static int ic_scooters_tariff_fix_route_time = 2131234215;
+    public static int ic_scooters_trashfill = 2131234216;
+    public static int ic_scooters_warning = 2131234217;
+    public static int ic_time_outline = 2131234326;
+    public static int list_cross_close = 2131235024;
+    public static int scooter_detailed_order_card_background = 2131236882;
+    public static int scooters_badge_bg = 2131236885;
+    public static int scooters_card_background = 2131236886;
+    public static int scooters_card_v2_insurance_icon = 2131236887;
+    public static int scooters_comment_with_photos_camera_button_bg = 2131236889;
+    public static int scooters_damage_item_bg = 2131236890;
+    public static int scooters_flash_light = 2131236891;
+    public static int scooters_flash_light_selected = 2131236892;
+    public static int scooters_flash_light_unselected = 2131236893;
+    public static int scooters_item_bg = 2131236894;
+    public static int scooters_item_check = 2131236895;
+    public static int scooters_rounded_background_bottom = 2131236903;
+    public static int scooters_rounded_background_top = 2131236905;
+    public static int scooters_rounded_foreground_ripple = 2131236906;
+    public static int scooters_route_summary_bg = 2131236909;
+    public static int scooters_show_navigation_bubble = 2131236910;
+    public static int scooters_start_riding_bg = 2131236911;
+    public static int scooters_stop_riding_bg = 2131236912;
+    public static int scooters_take_photo_btn = 2131236915;
+    public static int scooters_take_photo_btn_pressed = 2131236916;
+    public static int scooters_take_photo_btn_unpressed = 2131236917;
+    public static int scooters_top_bar_bg = 2131236922;
+    public static int scooters_vehicle_preview_background = 2131236924;
+}

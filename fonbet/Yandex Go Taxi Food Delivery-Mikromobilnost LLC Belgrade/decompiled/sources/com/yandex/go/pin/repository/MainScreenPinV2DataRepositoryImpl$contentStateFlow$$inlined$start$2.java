@@ -1,0 +1,55 @@
+package com.yandex.go.pin.repository;
+
+import defpackage.mvg;
+import defpackage.ny61;
+import defpackage.vpr;
+import defpackage.wls;
+import defpackage.ybo;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0003\u001a\u00020\u0002\"\u0004\b\u0000\u0010\u0000*\b\u0012\u0004\u0012\u00028\u00000\u0001H\n¢\u0006\u0004\b\u0003\u0010\u0004"}, d2 = {"T", "Lvpr;", "Lzy11;", "<anonymous>", "(Lvpr;)V"}, k = 3, mv = {2, 4, 0})
+@mvg(c = "com.yandex.go.pin.repository.MainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2", f = "MainScreenPinV2DataRepositoryImpl.kt", l = {67}, m = "invokeSuspend", v = 2)
+/* loaded from: classes13.dex */
+public final class MainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2 extends SuspendLambda implements wls {
+    private /* synthetic */ Object L$0;
+    Object L$1;
+    int label;
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation create(Object obj, Continuation continuation) {
+        MainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2 mainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2 = new MainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2(2, continuation);
+        mainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2.L$0 = obj;
+        return mainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2;
+    }
+
+    @Override // defpackage.wls
+    public final Object invoke(Object obj, Object obj2) {
+        return ((MainScreenPinV2DataRepositoryImpl$contentStateFlow$$inlined$start$2) create((vpr) obj, (Continuation) obj2)).invokeSuspend(zy11.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        vpr vprVar = (vpr) this.L$0;
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        int i = this.label;
+        if (i == 0) {
+            kotlin.b.b(obj);
+            this.L$0 = null;
+            this.label = 1;
+            if (vprVar.emit(ybo.d, this) == coroutineSingletons) {
+                return coroutineSingletons;
+            }
+        } else {
+            if (i != 1) {
+                ny61.r("call to 'resume' before 'invoke' with coroutine");
+                return null;
+            }
+            kotlin.b.b(obj);
+        }
+        return zy11.a;
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="100dp"
+    android:width="100dp"
+    android:opacity="opaque">
+    <item
+        android:height="100dp"
+        android:width="100dp"
+        android:drawable="@color/finsdk_surface_elevated_0"/>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/finsdk_ic_pay_logo_red"
+        android:top="10dp"
+        android:bottom="10dp"
+        android:start="10dp"
+        android:end="10dp"/>
+</layer-list>

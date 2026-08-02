@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingHorizontal="@dimen/ybsdk_screen_horizontal_space">
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:ybsdk_cornerRadius="20dp"/>
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        app:ybsdk_cornerRadius="6dp"/>
+    <com.ybsdk.widgets.common.SkeletonView
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        app:ybsdk_cornerRadius="6dp"/>
+</LinearLayout>

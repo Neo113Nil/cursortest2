@@ -1,0 +1,48 @@
+package defpackage;
+
+import ru.CryptoPro.JCP.tools.CertReader.Extension;
+
+/* loaded from: classes5.dex */
+public final class bs {
+    public final String a;
+    public final String b;
+    public final hhg c;
+    public final boolean d;
+    public final String e;
+
+    public bs(String str, String str2, hhg hhgVar, boolean z, String str3) {
+        this.a = str;
+        this.b = str2;
+        this.c = hhgVar;
+        this.d = z;
+        this.e = str3;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof bs)) {
+            return false;
+        }
+        bs bsVar = (bs) obj;
+        return jl40.l(this.a, bsVar.a) && jl40.l(this.b, bsVar.b) && jl40.l(this.c, bsVar.c) && this.d == bsVar.d && jl40.l(this.e, bsVar.e);
+    }
+
+    public final int hashCode() {
+        int hashCode = this.a.hashCode() * 31;
+        String str = this.b;
+        int e = unr0.e((this.c.hashCode() + ((hashCode + (str == null ? 0 : str.hashCode())) * 31)) * 31, 31, this.d);
+        String str2 = this.e;
+        return e + (str2 != null ? str2.hashCode() : 0);
+    }
+
+    public final String toString() {
+        StringBuilder v = b64.v("ActionButton(title=", this.a, ", subtitle=", this.b, ", action=");
+        v.append(this.c);
+        v.append(", highlighted=");
+        v.append(this.d);
+        v.append(", metricaLabel=");
+        return oyr.t(v, this.e, Extension.C_BRAKE);
+    }
+}

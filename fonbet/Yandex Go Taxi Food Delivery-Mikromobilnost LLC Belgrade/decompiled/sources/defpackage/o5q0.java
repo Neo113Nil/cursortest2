@@ -1,0 +1,20 @@
+package defpackage;
+
+import ru.CryptoPro.JCP.tools.CertReader.Extension;
+
+/* loaded from: classes4.dex */
+public final class o5q0 extends z5q0 {
+    public final String a;
+
+    public o5q0(String str) {
+        this.a = str;
+    }
+
+    public final String a() {
+        return this.a;
+    }
+
+    public final String toString() {
+        return oyr.p("EnablePagination(actionId=", this.a, Extension.C_BRAKE);
+    }
+}

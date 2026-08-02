@@ -1,0 +1,803 @@
+package defpackage;
+
+import com.yandex.div.json.expressions.Expression;
+import com.yandex.div2.DivAccessibility;
+import com.yandex.div2.DivAlignmentHorizontal;
+import com.yandex.div2.DivAlignmentVertical;
+import com.yandex.div2.DivAppearanceTransition;
+import com.yandex.div2.DivBorder;
+import com.yandex.div2.DivChangeTransition;
+import com.yandex.div2.DivEdgeInsets;
+import com.yandex.div2.DivFocus;
+import com.yandex.div2.DivLayoutProvider;
+import com.yandex.div2.DivSize;
+import com.yandex.div2.DivTransform;
+import com.yandex.div2.DivTransitionTrigger;
+import com.yandex.div2.DivVisibility;
+import com.yandex.div2.DivVisibilityAction;
+import com.yandex.div2.c3;
+import java.util.Iterator;
+import java.util.List;
+import org.json.JSONObject;
+
+/* loaded from: classes.dex */
+public final class ycl implements c4x, egk {
+    public final DivChangeTransition A;
+    public final DivAppearanceTransition B;
+    public final DivAppearanceTransition C;
+    public final List D;
+    public final List E;
+    public final List F;
+    public final Expression G;
+    public final DivVisibilityAction H;
+    public final List I;
+    public final DivSize J;
+    public Integer K;
+    public final DivAccessibility a;
+    public final Expression b;
+    public final Expression c;
+    public final Expression d;
+    public final List e;
+    public final List f;
+    public final DivBorder g;
+    public final Expression h;
+    public final List i;
+    public final List j;
+    public final DivFocus k;
+    public final List l;
+    public final DivSize m;
+    public final String n;
+    public final Expression o;
+    public final String p;
+    public final DivLayoutProvider q;
+    public final DivEdgeInsets r;
+    public final Expression s;
+    public final DivEdgeInsets t;
+    public final Expression u;
+    public final Expression v;
+    public final List w;
+    public final List x;
+    public final DivTransform y;
+    public final List z;
+
+    static {
+        ngd0.m(Double.valueOf(1.0d));
+        ngd0.m(Boolean.TRUE);
+        ngd0.m(DivVisibility.VISIBLE);
+    }
+
+    public ycl(DivAccessibility divAccessibility, Expression expression, Expression expression2, Expression expression3, List list, List list2, DivBorder divBorder, Expression expression4, List list3, List list4, DivFocus divFocus, List list5, DivSize divSize, String str, Expression expression5, String str2, DivLayoutProvider divLayoutProvider, DivEdgeInsets divEdgeInsets, Expression expression6, DivEdgeInsets divEdgeInsets2, Expression expression7, Expression expression8, List list6, List list7, DivTransform divTransform, List list8, DivChangeTransition divChangeTransition, DivAppearanceTransition divAppearanceTransition, DivAppearanceTransition divAppearanceTransition2, List list9, List list10, List list11, Expression expression9, DivVisibilityAction divVisibilityAction, List list12, DivSize divSize2) {
+        this.a = divAccessibility;
+        this.b = expression;
+        this.c = expression2;
+        this.d = expression3;
+        this.e = list;
+        this.f = list2;
+        this.g = divBorder;
+        this.h = expression4;
+        this.i = list3;
+        this.j = list4;
+        this.k = divFocus;
+        this.l = list5;
+        this.m = divSize;
+        this.n = str;
+        this.o = expression5;
+        this.p = str2;
+        this.q = divLayoutProvider;
+        this.r = divEdgeInsets;
+        this.s = expression6;
+        this.t = divEdgeInsets2;
+        this.u = expression7;
+        this.v = expression8;
+        this.w = list6;
+        this.x = list7;
+        this.y = divTransform;
+        this.z = list8;
+        this.A = divChangeTransition;
+        this.B = divAppearanceTransition;
+        this.C = divAppearanceTransition2;
+        this.D = list9;
+        this.E = list10;
+        this.F = list11;
+        this.G = expression9;
+        this.H = divVisibilityAction;
+        this.I = list12;
+        this.J = divSize2;
+    }
+
+    @Override // defpackage.egk
+    public final DivBorder A() {
+        return this.g;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:325:0x04f4, code lost:
+    
+        if (r3 == null) goto L379;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:329:0x0494, code lost:
+    
+        if (r3 == null) goto L351;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:330:0x0451, code lost:
+    
+        if (r3 == null) goto L332;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:331:0x040e, code lost:
+    
+        if (r3 == null) goto L313;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:341:0x039b, code lost:
+    
+        if (r3 == null) goto L274;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:345:0x0346, code lost:
+    
+        if (r3 == null) goto L248;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:346:0x0303, code lost:
+    
+        if (r3 == null) goto L229;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:362:0x01f8, code lost:
+    
+        if (r3 == null) goto L151;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:366:0x01a3, code lost:
+    
+        if (r3 == null) goto L125;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:367:0x0160, code lost:
+    
+        if (r3 == null) goto L106;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:373:0x00ed, code lost:
+    
+        if (r3 == null) goto L70;
+     */
+    /* JADX WARN: Code restructure failed: missing block: B:374:0x00aa, code lost:
+    
+        if (r3 == null) goto L51;
+     */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final boolean B(ycl yclVar, rvo rvoVar, rvo rvoVar2) {
+        if (yclVar != null) {
+            DivAccessibility divAccessibility = yclVar.a;
+            DivAccessibility divAccessibility2 = this.a;
+            if (divAccessibility2 != null ? divAccessibility2.a(divAccessibility, rvoVar, rvoVar2) : divAccessibility == null) {
+                Expression expression = this.b;
+                DivAlignmentHorizontal divAlignmentHorizontal = expression != null ? (DivAlignmentHorizontal) expression.a(rvoVar) : null;
+                Expression expression2 = yclVar.b;
+                if (divAlignmentHorizontal == (expression2 != null ? (DivAlignmentHorizontal) expression2.a(rvoVar2) : null)) {
+                    Expression expression3 = this.c;
+                    DivAlignmentVertical divAlignmentVertical = expression3 != null ? (DivAlignmentVertical) expression3.a(rvoVar) : null;
+                    Expression expression4 = yclVar.c;
+                    if (divAlignmentVertical == (expression4 != null ? (DivAlignmentVertical) expression4.a(rvoVar2) : null) && ((Number) this.d.a(rvoVar)).doubleValue() == ((Number) yclVar.d.a(rvoVar2)).doubleValue()) {
+                        List list = yclVar.e;
+                        List list2 = this.e;
+                        if (list2 != null) {
+                            if (list != null && list2.size() == list.size()) {
+                                int i = 0;
+                                for (Object obj : list2) {
+                                    int i2 = i + 1;
+                                    if (i < 0) {
+                                        scc.m();
+                                        throw null;
+                                    }
+                                    if (!((ydk) obj).a((ydk) list.get(i), rvoVar, rvoVar2)) {
+                                        break;
+                                    }
+                                    i = i2;
+                                }
+                                List list3 = yclVar.f;
+                                List list4 = this.f;
+                                if (list4 != null) {
+                                    if (list3 != null && list4.size() == list3.size()) {
+                                        int i3 = 0;
+                                        for (Object obj2 : list4) {
+                                            int i4 = i3 + 1;
+                                            if (i3 < 0) {
+                                                scc.m();
+                                                throw null;
+                                            }
+                                            if (!((kfk) obj2).a((kfk) list3.get(i3), rvoVar, rvoVar2)) {
+                                                break;
+                                            }
+                                            i3 = i4;
+                                        }
+                                        DivBorder divBorder = yclVar.g;
+                                        DivBorder divBorder2 = this.g;
+                                        if (divBorder2 != null ? divBorder2.a(divBorder, rvoVar, rvoVar2) : divBorder == null) {
+                                            Expression expression5 = this.h;
+                                            Long l = expression5 != null ? (Long) expression5.a(rvoVar) : null;
+                                            Expression expression6 = yclVar.h;
+                                            if (jl40.l(l, expression6 != null ? (Long) expression6.a(rvoVar2) : null)) {
+                                                List list5 = yclVar.i;
+                                                List list6 = this.i;
+                                                if (list6 != null) {
+                                                    if (list5 != null && list6.size() == list5.size()) {
+                                                        int i5 = 0;
+                                                        for (Object obj3 : list6) {
+                                                            int i6 = i5 + 1;
+                                                            if (i5 < 0) {
+                                                                scc.m();
+                                                                throw null;
+                                                            }
+                                                            if (!((nnk) obj3).f((nnk) list5.get(i5), rvoVar, rvoVar2)) {
+                                                                break;
+                                                            }
+                                                            i5 = i6;
+                                                        }
+                                                        List list7 = yclVar.j;
+                                                        List list8 = this.j;
+                                                        if (list8 != null) {
+                                                            if (list7 != null && list8.size() == list7.size()) {
+                                                                int i7 = 0;
+                                                                for (Object obj4 : list8) {
+                                                                    int i8 = i7 + 1;
+                                                                    if (i7 < 0) {
+                                                                        scc.m();
+                                                                        throw null;
+                                                                    }
+                                                                    if (!((bpk) obj4).a((bpk) list7.get(i7))) {
+                                                                        break;
+                                                                    }
+                                                                    i7 = i8;
+                                                                }
+                                                                DivFocus divFocus = yclVar.k;
+                                                                DivFocus divFocus2 = this.k;
+                                                                if (divFocus2 != null ? divFocus2.a(divFocus, rvoVar, rvoVar2) : divFocus == null) {
+                                                                    List list9 = yclVar.l;
+                                                                    List list10 = this.l;
+                                                                    if (list10 != null) {
+                                                                        if (list9 != null && list10.size() == list9.size()) {
+                                                                            int i9 = 0;
+                                                                            for (Object obj5 : list10) {
+                                                                                int i10 = i9 + 1;
+                                                                                if (i9 < 0) {
+                                                                                    scc.m();
+                                                                                    throw null;
+                                                                                }
+                                                                                if (!((irk) obj5).a((irk) list9.get(i9))) {
+                                                                                    break;
+                                                                                }
+                                                                                i9 = i10;
+                                                                            }
+                                                                            if (this.m.a(yclVar.m, rvoVar, rvoVar2) && jl40.l(this.n, yclVar.n) && ((Boolean) this.o.a(rvoVar)).booleanValue() == ((Boolean) yclVar.o.a(rvoVar2)).booleanValue() && jl40.l(this.p, yclVar.p)) {
+                                                                                DivLayoutProvider divLayoutProvider = yclVar.q;
+                                                                                DivLayoutProvider divLayoutProvider2 = this.q;
+                                                                                if (divLayoutProvider2 != null ? divLayoutProvider2.a(divLayoutProvider) : divLayoutProvider == null) {
+                                                                                    DivEdgeInsets divEdgeInsets = yclVar.r;
+                                                                                    DivEdgeInsets divEdgeInsets2 = this.r;
+                                                                                    if (divEdgeInsets2 != null ? divEdgeInsets2.a(divEdgeInsets, rvoVar, rvoVar2) : divEdgeInsets == null) {
+                                                                                        Expression expression7 = this.s;
+                                                                                        Integer num = expression7 != null ? (Integer) expression7.a(rvoVar) : null;
+                                                                                        Expression expression8 = yclVar.s;
+                                                                                        if (jl40.l(num, expression8 != null ? (Integer) expression8.a(rvoVar2) : null)) {
+                                                                                            DivEdgeInsets divEdgeInsets3 = yclVar.t;
+                                                                                            DivEdgeInsets divEdgeInsets4 = this.t;
+                                                                                            if (divEdgeInsets4 != null ? divEdgeInsets4.a(divEdgeInsets3, rvoVar, rvoVar2) : divEdgeInsets3 == null) {
+                                                                                                Expression expression9 = this.u;
+                                                                                                String str = expression9 != null ? (String) expression9.a(rvoVar) : null;
+                                                                                                Expression expression10 = yclVar.u;
+                                                                                                if (jl40.l(str, expression10 != null ? (String) expression10.a(rvoVar2) : null)) {
+                                                                                                    Expression expression11 = this.v;
+                                                                                                    Long l2 = expression11 != null ? (Long) expression11.a(rvoVar) : null;
+                                                                                                    Expression expression12 = yclVar.v;
+                                                                                                    if (jl40.l(l2, expression12 != null ? (Long) expression12.a(rvoVar2) : null)) {
+                                                                                                        List list11 = yclVar.w;
+                                                                                                        List list12 = this.w;
+                                                                                                        if (list12 != null) {
+                                                                                                            if (list11 != null && list12.size() == list11.size()) {
+                                                                                                                int i11 = 0;
+                                                                                                                for (Object obj6 : list12) {
+                                                                                                                    int i12 = i11 + 1;
+                                                                                                                    if (i11 < 0) {
+                                                                                                                        scc.m();
+                                                                                                                        throw null;
+                                                                                                                    }
+                                                                                                                    if (!((v3k) obj6).a((v3k) list11.get(i11), rvoVar, rvoVar2)) {
+                                                                                                                        break;
+                                                                                                                    }
+                                                                                                                    i11 = i12;
+                                                                                                                }
+                                                                                                                List list13 = yclVar.x;
+                                                                                                                List list14 = this.x;
+                                                                                                                if (list14 != null) {
+                                                                                                                    if (list13 != null && list14.size() == list13.size()) {
+                                                                                                                        int i13 = 0;
+                                                                                                                        for (Object obj7 : list14) {
+                                                                                                                            int i14 = i13 + 1;
+                                                                                                                            if (i13 < 0) {
+                                                                                                                                scc.m();
+                                                                                                                                throw null;
+                                                                                                                            }
+                                                                                                                            if (!((gil) obj7).a((gil) list13.get(i13), rvoVar, rvoVar2)) {
+                                                                                                                                break;
+                                                                                                                            }
+                                                                                                                            i13 = i14;
+                                                                                                                        }
+                                                                                                                        DivTransform divTransform = yclVar.y;
+                                                                                                                        DivTransform divTransform2 = this.y;
+                                                                                                                        if (divTransform2 != null ? divTransform2.a(divTransform, rvoVar, rvoVar2) : divTransform == null) {
+                                                                                                                            List list15 = yclVar.z;
+                                                                                                                            List list16 = this.z;
+                                                                                                                            if (list16 != null) {
+                                                                                                                                if (list15 != null && list16.size() == list15.size()) {
+                                                                                                                                    int i15 = 0;
+                                                                                                                                    for (Object obj8 : list16) {
+                                                                                                                                        int i16 = i15 + 1;
+                                                                                                                                        if (i15 < 0) {
+                                                                                                                                            scc.m();
+                                                                                                                                            throw null;
+                                                                                                                                        }
+                                                                                                                                        if (!((xjl) obj8).a((xjl) list15.get(i15), rvoVar, rvoVar2)) {
+                                                                                                                                            break;
+                                                                                                                                        }
+                                                                                                                                        i15 = i16;
+                                                                                                                                    }
+                                                                                                                                    DivChangeTransition divChangeTransition = yclVar.A;
+                                                                                                                                    DivChangeTransition divChangeTransition2 = this.A;
+                                                                                                                                    if (divChangeTransition2 != null ? divChangeTransition2.a(divChangeTransition, rvoVar, rvoVar2) : divChangeTransition == null) {
+                                                                                                                                        DivAppearanceTransition divAppearanceTransition = yclVar.B;
+                                                                                                                                        DivAppearanceTransition divAppearanceTransition2 = this.B;
+                                                                                                                                        if (divAppearanceTransition2 != null ? divAppearanceTransition2.a(divAppearanceTransition, rvoVar, rvoVar2) : divAppearanceTransition == null) {
+                                                                                                                                            DivAppearanceTransition divAppearanceTransition3 = yclVar.C;
+                                                                                                                                            DivAppearanceTransition divAppearanceTransition4 = this.C;
+                                                                                                                                            if (divAppearanceTransition4 != null ? divAppearanceTransition4.a(divAppearanceTransition3, rvoVar, rvoVar2) : divAppearanceTransition3 == null) {
+                                                                                                                                                List list17 = yclVar.D;
+                                                                                                                                                List list18 = this.D;
+                                                                                                                                                if (list18 != null) {
+                                                                                                                                                    if (list17 != null && list18.size() == list17.size()) {
+                                                                                                                                                        int i17 = 0;
+                                                                                                                                                        for (Object obj9 : list18) {
+                                                                                                                                                            int i18 = i17 + 1;
+                                                                                                                                                            if (i17 < 0) {
+                                                                                                                                                                scc.m();
+                                                                                                                                                                throw null;
+                                                                                                                                                            }
+                                                                                                                                                            if (((DivTransitionTrigger) obj9) != ((DivTransitionTrigger) list17.get(i17))) {
+                                                                                                                                                                break;
+                                                                                                                                                            }
+                                                                                                                                                            i17 = i18;
+                                                                                                                                                        }
+                                                                                                                                                        List list19 = yclVar.E;
+                                                                                                                                                        List list20 = this.E;
+                                                                                                                                                        if (list20 != null) {
+                                                                                                                                                            if (list19 != null && list20.size() == list19.size()) {
+                                                                                                                                                                int i19 = 0;
+                                                                                                                                                                for (Object obj10 : list20) {
+                                                                                                                                                                    int i20 = i19 + 1;
+                                                                                                                                                                    if (i19 < 0) {
+                                                                                                                                                                        scc.m();
+                                                                                                                                                                        throw null;
+                                                                                                                                                                    }
+                                                                                                                                                                    if (!((lll) obj10).a((lll) list19.get(i19), rvoVar, rvoVar2)) {
+                                                                                                                                                                        break;
+                                                                                                                                                                    }
+                                                                                                                                                                    i19 = i20;
+                                                                                                                                                                }
+                                                                                                                                                                List list21 = yclVar.F;
+                                                                                                                                                                List list22 = this.F;
+                                                                                                                                                                if (list22 != null) {
+                                                                                                                                                                    if (list21 != null && list22.size() == list21.size()) {
+                                                                                                                                                                        int i21 = 0;
+                                                                                                                                                                        for (Object obj11 : list22) {
+                                                                                                                                                                            int i22 = i21 + 1;
+                                                                                                                                                                            if (i21 < 0) {
+                                                                                                                                                                                scc.m();
+                                                                                                                                                                                throw null;
+                                                                                                                                                                            }
+                                                                                                                                                                            if (!((c3) obj11).a((c3) list21.get(i21), rvoVar, rvoVar2)) {
+                                                                                                                                                                                break;
+                                                                                                                                                                            }
+                                                                                                                                                                            i21 = i22;
+                                                                                                                                                                        }
+                                                                                                                                                                        if (this.G.a(rvoVar) == yclVar.G.a(rvoVar2)) {
+                                                                                                                                                                            DivVisibilityAction divVisibilityAction = yclVar.H;
+                                                                                                                                                                            DivVisibilityAction divVisibilityAction2 = this.H;
+                                                                                                                                                                            if (divVisibilityAction2 != null ? divVisibilityAction2.f(divVisibilityAction, rvoVar, rvoVar2) : divVisibilityAction == null) {
+                                                                                                                                                                                List list23 = yclVar.I;
+                                                                                                                                                                                List list24 = this.I;
+                                                                                                                                                                                if (list24 != null) {
+                                                                                                                                                                                    if (list23 != null && list24.size() == list23.size()) {
+                                                                                                                                                                                        int i23 = 0;
+                                                                                                                                                                                        for (Object obj12 : list24) {
+                                                                                                                                                                                            int i24 = i23 + 1;
+                                                                                                                                                                                            if (i23 < 0) {
+                                                                                                                                                                                                scc.m();
+                                                                                                                                                                                                throw null;
+                                                                                                                                                                                            }
+                                                                                                                                                                                            if (!((DivVisibilityAction) obj12).f((DivVisibilityAction) list23.get(i23), rvoVar, rvoVar2)) {
+                                                                                                                                                                                                break;
+                                                                                                                                                                                            }
+                                                                                                                                                                                            i23 = i24;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        if (this.J.a(yclVar.J, rvoVar, rvoVar2)) {
+                                                                                                                                                                                            return true;
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }
+                                                                                                                                                                                }
+                                                                                                                                                                            }
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            }
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public final int C() {
+        int i;
+        int i2;
+        int i3;
+        int i4;
+        int i5;
+        int i6;
+        int i7;
+        int i8;
+        int i9;
+        int i10;
+        Integer num = this.K;
+        if (num != null) {
+            return num.intValue();
+        }
+        int hashCode = qoi0.a(ycl.class).hashCode();
+        int i11 = 0;
+        DivAccessibility divAccessibility = this.a;
+        int b = hashCode + (divAccessibility != null ? divAccessibility.b() : 0);
+        Expression expression = this.b;
+        int hashCode2 = b + (expression != null ? expression.hashCode() : 0);
+        Expression expression2 = this.c;
+        int hashCode3 = this.d.hashCode() + hashCode2 + (expression2 != null ? expression2.hashCode() : 0);
+        List list = this.e;
+        if (list != null) {
+            Iterator it = list.iterator();
+            i = 0;
+            while (it.hasNext()) {
+                i += ((ydk) it.next()).b();
+            }
+        } else {
+            i = 0;
+        }
+        int i12 = hashCode3 + i;
+        List list2 = this.f;
+        if (list2 != null) {
+            Iterator it2 = list2.iterator();
+            i2 = 0;
+            while (it2.hasNext()) {
+                i2 += ((kfk) it2.next()).b();
+            }
+        } else {
+            i2 = 0;
+        }
+        int i13 = i12 + i2;
+        DivBorder divBorder = this.g;
+        int b2 = i13 + (divBorder != null ? divBorder.b() : 0);
+        Expression expression3 = this.h;
+        int hashCode4 = b2 + (expression3 != null ? expression3.hashCode() : 0);
+        List list3 = this.i;
+        if (list3 != null) {
+            Iterator it3 = list3.iterator();
+            i3 = 0;
+            while (it3.hasNext()) {
+                i3 += ((nnk) it3.next()).g();
+            }
+        } else {
+            i3 = 0;
+        }
+        int i14 = hashCode4 + i3;
+        List list4 = this.j;
+        if (list4 != null) {
+            Iterator it4 = list4.iterator();
+            i4 = 0;
+            while (it4.hasNext()) {
+                i4 += ((bpk) it4.next()).b();
+            }
+        } else {
+            i4 = 0;
+        }
+        int i15 = i14 + i4;
+        DivFocus divFocus = this.k;
+        int b3 = i15 + (divFocus != null ? divFocus.b() : 0);
+        List list5 = this.l;
+        if (list5 != null) {
+            Iterator it5 = list5.iterator();
+            i5 = 0;
+            while (it5.hasNext()) {
+                i5 += ((irk) it5.next()).b();
+            }
+        } else {
+            i5 = 0;
+        }
+        int b4 = this.m.b() + b3 + i5;
+        String str = this.n;
+        int hashCode5 = this.p.hashCode() + this.o.hashCode() + b4 + (str != null ? str.hashCode() : 0);
+        DivLayoutProvider divLayoutProvider = this.q;
+        int b5 = hashCode5 + (divLayoutProvider != null ? divLayoutProvider.b() : 0);
+        DivEdgeInsets divEdgeInsets = this.r;
+        int b6 = b5 + (divEdgeInsets != null ? divEdgeInsets.b() : 0);
+        Expression expression4 = this.s;
+        int hashCode6 = b6 + (expression4 != null ? expression4.hashCode() : 0);
+        DivEdgeInsets divEdgeInsets2 = this.t;
+        int b7 = hashCode6 + (divEdgeInsets2 != null ? divEdgeInsets2.b() : 0);
+        Expression expression5 = this.u;
+        int hashCode7 = b7 + (expression5 != null ? expression5.hashCode() : 0);
+        Expression expression6 = this.v;
+        int hashCode8 = hashCode7 + (expression6 != null ? expression6.hashCode() : 0);
+        List list6 = this.w;
+        if (list6 != null) {
+            Iterator it6 = list6.iterator();
+            i6 = 0;
+            while (it6.hasNext()) {
+                i6 += ((v3k) it6.next()).b();
+            }
+        } else {
+            i6 = 0;
+        }
+        int i16 = hashCode8 + i6;
+        List list7 = this.x;
+        if (list7 != null) {
+            Iterator it7 = list7.iterator();
+            i7 = 0;
+            while (it7.hasNext()) {
+                i7 += ((gil) it7.next()).b();
+            }
+        } else {
+            i7 = 0;
+        }
+        int i17 = i16 + i7;
+        DivTransform divTransform = this.y;
+        int b8 = i17 + (divTransform != null ? divTransform.b() : 0);
+        List list8 = this.z;
+        if (list8 != null) {
+            Iterator it8 = list8.iterator();
+            i8 = 0;
+            while (it8.hasNext()) {
+                i8 += ((xjl) it8.next()).b();
+            }
+        } else {
+            i8 = 0;
+        }
+        int i18 = b8 + i8;
+        DivChangeTransition divChangeTransition = this.A;
+        int b9 = i18 + (divChangeTransition != null ? divChangeTransition.b() : 0);
+        DivAppearanceTransition divAppearanceTransition = this.B;
+        int b10 = b9 + (divAppearanceTransition != null ? divAppearanceTransition.b() : 0);
+        DivAppearanceTransition divAppearanceTransition2 = this.C;
+        int b11 = b10 + (divAppearanceTransition2 != null ? divAppearanceTransition2.b() : 0);
+        List list9 = this.D;
+        int hashCode9 = b11 + (list9 != null ? list9.hashCode() : 0);
+        List list10 = this.E;
+        if (list10 != null) {
+            Iterator it9 = list10.iterator();
+            i9 = 0;
+            while (it9.hasNext()) {
+                i9 += ((lll) it9.next()).b();
+            }
+        } else {
+            i9 = 0;
+        }
+        int i19 = hashCode9 + i9;
+        List list11 = this.F;
+        if (list11 != null) {
+            Iterator it10 = list11.iterator();
+            i10 = 0;
+            while (it10.hasNext()) {
+                i10 += ((c3) it10.next()).b();
+            }
+        } else {
+            i10 = 0;
+        }
+        int hashCode10 = this.G.hashCode() + i19 + i10;
+        DivVisibilityAction divVisibilityAction = this.H;
+        int g = hashCode10 + (divVisibilityAction != null ? divVisibilityAction.g() : 0);
+        List list12 = this.I;
+        if (list12 != null) {
+            Iterator it11 = list12.iterator();
+            while (it11.hasNext()) {
+                i11 += ((DivVisibilityAction) it11.next()).g();
+            }
+        }
+        int b12 = this.J.b() + g + i11;
+        this.K = Integer.valueOf(b12);
+        return b12;
+    }
+
+    @Override // defpackage.egk
+    public final Expression a() {
+        return this.d;
+    }
+
+    @Override // defpackage.egk
+    public final List b() {
+        return this.I;
+    }
+
+    @Override // defpackage.egk
+    public final Expression c() {
+        return this.h;
+    }
+
+    @Override // defpackage.egk
+    public final List d() {
+        return this.F;
+    }
+
+    @Override // defpackage.egk
+    public final DivEdgeInsets e() {
+        return this.r;
+    }
+
+    @Override // defpackage.egk
+    public final Expression f() {
+        return this.v;
+    }
+
+    @Override // defpackage.egk
+    public final Expression g() {
+        return this.u;
+    }
+
+    @Override // defpackage.egk
+    public final List getBackground() {
+        return this.f;
+    }
+
+    @Override // defpackage.egk
+    public final List getExtensions() {
+        return this.j;
+    }
+
+    @Override // defpackage.egk
+    public final DivSize getHeight() {
+        return this.m;
+    }
+
+    @Override // defpackage.egk
+    public final String getId() {
+        return this.n;
+    }
+
+    @Override // defpackage.egk
+    public final Expression getVisibility() {
+        return this.G;
+    }
+
+    @Override // defpackage.egk
+    public final DivSize getWidth() {
+        return this.J;
+    }
+
+    @Override // defpackage.egk
+    public final Expression h() {
+        return this.b;
+    }
+
+    @Override // defpackage.egk
+    public final List i() {
+        return this.x;
+    }
+
+    @Override // defpackage.egk
+    public final DivAppearanceTransition j() {
+        return this.C;
+    }
+
+    @Override // defpackage.egk
+    public final DivChangeTransition k() {
+        return this.A;
+    }
+
+    @Override // defpackage.egk
+    public final List l() {
+        return this.i;
+    }
+
+    @Override // defpackage.egk
+    public final DivTransform m() {
+        return this.y;
+    }
+
+    @Override // defpackage.egk
+    public final List n() {
+        return this.D;
+    }
+
+    @Override // defpackage.egk
+    public final Expression o() {
+        return this.c;
+    }
+
+    @Override // defpackage.egk
+    public final DivFocus p() {
+        return this.k;
+    }
+
+    @Override // defpackage.egk
+    public final DivAccessibility q() {
+        return this.a;
+    }
+
+    @Override // defpackage.c4x
+    public final JSONObject r() {
+        return ((zcl) ft6.b.b8.getValue()).b(ft6.a, this);
+    }
+
+    @Override // defpackage.egk
+    public final DivEdgeInsets s() {
+        return this.t;
+    }
+
+    @Override // defpackage.egk
+    public final List t() {
+        return this.w;
+    }
+
+    @Override // defpackage.egk
+    public final DivLayoutProvider u() {
+        return this.q;
+    }
+
+    @Override // defpackage.egk
+    public final List v() {
+        return this.E;
+    }
+
+    @Override // defpackage.egk
+    public final DivVisibilityAction w() {
+        return this.H;
+    }
+
+    @Override // defpackage.egk
+    public final List x() {
+        return this.l;
+    }
+
+    @Override // defpackage.egk
+    public final DivAppearanceTransition y() {
+        return this.B;
+    }
+
+    @Override // defpackage.egk
+    public final List z() {
+        return this.e;
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigate_up_button"
+    android:background="@drawable/msg_toolbar_button_ripple"
+    android:layout_width="48dp"
+    android:layout_height="56dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/back_with_counter_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/msg_ic_back"/>
+    <com.yandex.messaging.views.CounterTextView
+        android:textSize="12dp"
+        android:textColor="?attr/messagingCommonAccentFgColor"
+        android:gravity="center"
+        android:layout_gravity="top|right"
+        android:id="@+id/unread_counter"
+        android:background="@drawable/msg_bg_toolbar_back_button_counter"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"
+        android:minWidth="16dp"
+        android:fontFamily="@font/ya_medium"/>
+</FrameLayout>

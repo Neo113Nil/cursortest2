@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:height="14dp"
+                android:width="14dp"/>
+            <solid android:color="?attr/bgMain"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/inner_circle"
+        android:height="10dp"
+        android:width="10dp">
+        <shape android:shape="oval">
+            <solid android:color="#0596fa"/>
+        </shape>
+    </item>
+</layer-list>

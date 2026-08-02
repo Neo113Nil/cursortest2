@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Keri %d sekund edasi</item>
+        <item quantity="other">Keri %d sekundit edasi</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Keri %d sekund tagasi</item>
+        <item quantity="other">Keri %d sekundit tagasi</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="one">day</item>
+        <item quantity="few">days</item>
+        <item quantity="many">days</item>
+        <item quantity="other">days</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="one">hour</item>
+        <item quantity="few">hours</item>
+        <item quantity="many">hours</item>
+        <item quantity="other">hours</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uus märguanne</item>
+        <item quantity="other">%d uut märguannet</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="zero">Viimased %1$d numbrit</item>
+        <item quantity="one">%1$d viimane number</item>
+        <item quantity="few">Viimased %1$d numbrit</item>
+        <item quantity="many">Viimased %1$d numbrit</item>
+        <item quantity="other">Viimased %1$d numbrit</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="zero">Teile tuleb kõne numbrilt \n%1$s. Sisestage %2$d selle kolm viimast numbrit.</item>
+        <item quantity="one">Teile tuleb kõne numbrilt \n%1$s. Sisestage %2$d selle kolm viimast numbrit.</item>
+        <item quantity="few">Teile tuleb kõne numbrilt \n%1$s. Sisestage %2$d selle kolm viimast numbrit.</item>
+        <item quantity="many">Teile tuleb kõne numbrilt \n%1$s. Sisestage %2$d selle kolm viimast numbrit.</item>
+        <item quantity="other">Teile tuleb kõne numbrilt \n%1$s. Sisestage %2$d selle kolm viimast numbrit.</item>
+    </plurals>
+</resources>

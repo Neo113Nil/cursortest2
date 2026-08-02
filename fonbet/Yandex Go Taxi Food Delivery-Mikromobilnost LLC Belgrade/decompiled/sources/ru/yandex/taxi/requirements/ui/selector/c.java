@@ -1,0 +1,79 @@
+package ru.yandex.taxi.requirements.ui.selector;
+
+import defpackage.gmw0;
+import defpackage.hmw0;
+import defpackage.jmw0;
+import defpackage.ny61;
+import defpackage.uv21;
+import defpackage.vpr;
+import defpackage.w511;
+import defpackage.xvd;
+import defpackage.zy11;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+
+/* loaded from: classes6.dex */
+public final class c implements vpr {
+    public final /* synthetic */ vpr a;
+
+    public c(vpr vprVar) {
+        this.a = vprVar;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0036  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0022  */
+    @Override // defpackage.vpr
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object emit(Object obj, Continuation continuation) {
+        RequirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1 requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1;
+        int i;
+        Object uv21Var;
+        if (continuation instanceof RequirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1) {
+            requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1 = (RequirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1) continuation;
+            int i2 = requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.label;
+            if ((i2 & Integer.MIN_VALUE) != 0) {
+                requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.label = i2 - Integer.MIN_VALUE;
+                Object obj2 = requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.result;
+                CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+                i = requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.label;
+                if (i != 0) {
+                    kotlin.b.b(obj2);
+                    jmw0 jmw0Var = (jmw0) obj;
+                    if (jmw0Var instanceof gmw0) {
+                        uv21Var = new xvd((gmw0) jmw0Var);
+                    } else {
+                        if (!(jmw0Var instanceof hmw0)) {
+                            w511.b();
+                            return null;
+                        }
+                        uv21Var = new uv21((hmw0) jmw0Var);
+                    }
+                    requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.L$0 = null;
+                    requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.L$1 = null;
+                    requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.L$2 = null;
+                    requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.L$3 = null;
+                    requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.label = 1;
+                    if (this.a.emit(uv21Var, requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1) == coroutineSingletons) {
+                        return coroutineSingletons;
+                    }
+                } else {
+                    if (i != 1) {
+                        ny61.r("call to 'resume' before 'invoke' with coroutine");
+                        return null;
+                    }
+                    kotlin.b.b(obj2);
+                }
+                return zy11.a;
+            }
+        }
+        requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1 = new RequirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1(this, continuation);
+        Object obj22 = requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.result;
+        CoroutineSingletons coroutineSingletons2 = CoroutineSingletons.COROUTINE_SUSPENDED;
+        i = requirementOptionsSelectPresenter$attachView$1$invokeSuspend$$inlined$map$1$2$1.label;
+        if (i != 0) {
+        }
+        return zy11.a;
+    }
+}

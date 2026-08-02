@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.yandex.go.design.view.GoImageView
+        android:layout_gravity="center"
+        android:id="@+id/retry_icon"
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/ic_arrow_round_48"/>
+    <ru.yandex.taxi.widget.PlaceholderView
+        android:id="@+id/shimmer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:placeholder_color="?attr/bgMinor"
+        app:placeholder_shimmering="true"
+        app:placeholder_type="rectangle"/>
+</FrameLayout>

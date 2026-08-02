@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="@dimen/messaging_settings_item_padding_horizontal"
+    android:insetRight="@dimen/messaging_settings_item_padding_horizontal">
+    <shape android:shape="rectangle">
+        <size android:height="2dp"/>
+        <solid android:color="?attr/messagingCommonDividerColor"/>
+    </shape>
+</inset>

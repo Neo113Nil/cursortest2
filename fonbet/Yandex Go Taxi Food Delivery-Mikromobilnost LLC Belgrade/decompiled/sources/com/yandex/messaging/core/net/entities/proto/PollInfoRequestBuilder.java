@@ -1,0 +1,19 @@
+package com.yandex.messaging.core.net.entities.proto;
+
+import kotlin.Metadata;
+import ru.cprocsp.ACSP.tools.config.ConfigConstants;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0007¢\u0006\u0004\b\u0002\u0010\u0003¨\u0006\u0004"}, d2 = {"Lcom/yandex/messaging/core/net/entities/proto/PollInfoRequestBuilder;", "", "<init>", "()V", "messaging-core-net_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes15.dex */
+public final class PollInfoRequestBuilder {
+    public String d;
+    public Long e;
+    public int f;
+    public Integer g;
+    public int i;
+    public int j;
+    public String a = "";
+    public long b = -1;
+    public boolean c = true;
+    public long h = ConfigConstants.VAL_WARNING_2001_VALUE_DISABLED;
+}

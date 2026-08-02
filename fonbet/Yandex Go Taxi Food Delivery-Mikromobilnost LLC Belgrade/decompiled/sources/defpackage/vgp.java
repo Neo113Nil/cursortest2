@@ -1,0 +1,82 @@
+package defpackage;
+
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.Decoder;
+import kotlinx.serialization.encoding.Encoder;
+import kotlinx.serialization.internal.PluginGeneratedSerialDescriptor;
+
+/* loaded from: classes5.dex */
+public final /* synthetic */ class vgp implements uxs {
+    public static final vgp a;
+    private static final SerialDescriptor descriptor;
+
+    static {
+        vgp vgpVar = new vgp();
+        a = vgpVar;
+        PluginGeneratedSerialDescriptor pluginGeneratedSerialDescriptor = new PluginGeneratedSerialDescriptor("ru.yandex.taxi.favorites.rides.save_modal.dto.FavoriteRideRequest", vgpVar, 3);
+        pluginGeneratedSerialDescriptor.j("id", true);
+        pluginGeneratedSerialDescriptor.j("type_id", true);
+        pluginGeneratedSerialDescriptor.j("name", false);
+        descriptor = pluginGeneratedSerialDescriptor;
+    }
+
+    @Override // defpackage.uxs
+    public final KSerializer[] childSerializers() {
+        auu0 auu0Var = auu0.a;
+        return new KSerializer[]{qke.n(auu0Var), qke.n(auu0Var), auu0Var};
+    }
+
+    @Override // defpackage.myi
+    public final Object deserialize(Decoder decoder) {
+        SerialDescriptor serialDescriptor = descriptor;
+        sjd b = decoder.b(serialDescriptor);
+        b.getClass();
+        boolean z = true;
+        int i = 0;
+        String str = null;
+        String str2 = null;
+        String str3 = null;
+        while (z) {
+            int v = b.v(serialDescriptor);
+            if (v == -1) {
+                z = false;
+            } else if (v == 0) {
+                str = (String) b.s(serialDescriptor, 0, auu0.a, str);
+                i |= 1;
+            } else if (v == 1) {
+                str2 = (String) b.s(serialDescriptor, 1, auu0.a, str2);
+                i |= 2;
+            } else {
+                if (v != 2) {
+                    ny61.c(v);
+                    return null;
+                }
+                str3 = b.k(serialDescriptor, 2);
+                i |= 4;
+            }
+        }
+        b.c(serialDescriptor);
+        return new xgp(i, str, str2, str3);
+    }
+
+    @Override // defpackage.myi
+    public final SerialDescriptor getDescriptor() {
+        return descriptor;
+    }
+
+    @Override // kotlinx.serialization.KSerializer
+    public final void serialize(Encoder encoder, Object obj) {
+        xgp xgpVar = (xgp) obj;
+        SerialDescriptor serialDescriptor = descriptor;
+        yjd b = encoder.b(serialDescriptor);
+        if (b.F() || xgpVar.a != null) {
+            b.g(serialDescriptor, 0, auu0.a, xgpVar.a);
+        }
+        if (b.F() || xgpVar.b != null) {
+            b.g(serialDescriptor, 1, auu0.a, xgpVar.b);
+        }
+        b.o(serialDescriptor, 2, xgpVar.c);
+        b.c(serialDescriptor);
+    }
+}

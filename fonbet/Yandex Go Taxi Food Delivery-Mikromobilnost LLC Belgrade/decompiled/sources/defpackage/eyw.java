@@ -1,0 +1,54 @@
+package defpackage;
+
+import com.apollographql.apollo3.api.c;
+
+/* loaded from: classes2.dex */
+public final class eyw implements ejg0 {
+    public final String a;
+
+    public eyw(String str) {
+        this.a = str;
+    }
+
+    @Override // defpackage.fc70
+    public final void a(bfx bfxVar, c cVar) {
+        bfxVar.A1("id");
+        foe foeVar = l80.a;
+        bfxVar.r0(this.a);
+    }
+
+    @Override // defpackage.fc70
+    public final ep60 adapter() {
+        return l80.a(fyw.a);
+    }
+
+    @Override // defpackage.fc70
+    public final String b() {
+        return "query Invoice($id: ID!) { externalInvoice(id: $id) { __typename ...invoice } }  fragment invoicePrice on Price { currency amount }  fragment invoicePayment on Payment { id respCode respDesc status }  fragment invoice on Invoice { id invoiceStatus form paymentMethodId paidAmount { __typename ...invoicePrice } payment { __typename ...invoicePayment } totalAmount { __typename ...invoicePrice } invoicePollingParams { retryDelayMillis timeoutMillis } widgetQrCodeParams { widgetUrl underlineText } }";
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof eyw) && jl40.l(this.a, ((eyw) obj).a);
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    @Override // defpackage.fc70
+    public final String id() {
+        return "884425ea69abec63029c188aedcbb3c8d103c280c7a2d7d4b680377a4c15fe18";
+    }
+
+    @Override // defpackage.fc70
+    public final String name() {
+        return "Invoice";
+    }
+
+    public final String toString() {
+        return b64.p(new StringBuilder("InvoiceQuery(id="), this.a, ')');
+    }
+}

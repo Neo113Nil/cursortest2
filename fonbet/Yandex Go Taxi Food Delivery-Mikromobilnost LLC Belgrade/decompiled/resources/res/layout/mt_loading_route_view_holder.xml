@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.PlaceholderView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/route_placeholder"
+    android:layout_width="132dp"
+    android:layout_height="72dp"
+    android:importantForAccessibility="no"
+    app:placeholder_corner_radius="16dp"
+    app:placeholder_shimmering="true"
+    app:placeholder_type="rectangle"/>

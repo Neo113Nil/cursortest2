@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="@dimen/orb_size_18m"
+        android:width="@dimen/orb_size_18m">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/messagingCommonAccentColor"/>
+            <corners android:radius="@dimen/orb_rounding_5m"/>
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <drawable
+            android:tint="?attr/messagingCommonAccentFgColor"
+            android:drawable="@drawable/chat_group_outline_sm_regular"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+</layer-list>

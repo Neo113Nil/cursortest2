@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="66dp"
+        android:width="66dp">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/messagingCommonAccentColor"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <drawable
+            android:tint="?attr/messagingCommonAccentFgColor"
+            android:drawable="@drawable/photo_solid_lg_regular"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+</layer-list>

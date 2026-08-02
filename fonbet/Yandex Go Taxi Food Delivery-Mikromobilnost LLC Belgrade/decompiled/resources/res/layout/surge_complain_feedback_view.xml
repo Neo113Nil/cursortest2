@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RobotoTextView
+            android:textSize="@dimen/component_text_size_title"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginStart="@dimen/go_design_m_space"
+            android:layout_marginEnd="@dimen/go_design_m_space"
+            app:layout_goneMarginTop="15dp"
+            app:robotoFontStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/feedback_options_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ru.yandex.taxi.widget.KeyboardAwareRobotoEditText
+            android:textSize="16sp"
+            android:id="@+id/comment_input"
+            android:background="@drawable/bg_comment_item"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textCursorDrawable="@drawable/blue_toxic_input_cursor"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:component_divider_margin_left="@dimen/go_design_m_space"
+            app:component_divider_margin_right="@dimen/go_design_m_space"
+            app:component_input_max_lines="100"
+            app:component_type_input="text"/>
+        <ru.yandex.taxi.widget.ButtonsView
+            android:id="@+id/buttons_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

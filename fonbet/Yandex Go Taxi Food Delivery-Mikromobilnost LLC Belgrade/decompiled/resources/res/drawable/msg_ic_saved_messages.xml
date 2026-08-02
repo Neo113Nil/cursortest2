@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item>
+        <drawable
+            android:tint="?attr/messagingCommonAccentColor"
+            android:drawable="@drawable/circle_solid_md_regular"
+            app:scaledPadding="-2dp"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+    <item>
+        <drawable
+            android:tint="@color/orb_white"
+            android:drawable="@drawable/bookmark_solid_md_regular"
+            app:scaledPadding="4dp"
+            class="com.yandex.messaging.base.view.DrawableTint"/>
+    </item>
+</layer-list>

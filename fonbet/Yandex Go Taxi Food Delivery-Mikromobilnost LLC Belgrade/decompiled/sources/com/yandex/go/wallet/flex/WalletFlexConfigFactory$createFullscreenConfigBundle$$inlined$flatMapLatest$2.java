@@ -1,0 +1,73 @@
+package com.yandex.go.wallet.flex;
+
+import defpackage.b841;
+import defpackage.d0m;
+import defpackage.mvg;
+import defpackage.ny61;
+import defpackage.rol0;
+import defpackage.vpr;
+import defpackage.zls;
+import defpackage.zy11;
+import kotlin.Metadata;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlinx.coroutines.flow.e;
+
+@Metadata(d1 = {"\u0000\u0010\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0005\u001a\u00020\u0004\"\u0004\b\u0000\u0010\u0000\"\u0004\b\u0001\u0010\u0001*\b\u0012\u0004\u0012\u00028\u00000\u00022\u0006\u0010\u0003\u001a\u00028\u0001H\n"}, d2 = {"R", "T", "Lvpr;", "it", "Lzy11;", "<anonymous>"}, k = 3, mv = {2, 4, 0})
+@mvg(c = "com.yandex.go.wallet.flex.WalletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2", f = "WalletFlexConfigFactory.kt", l = {189}, m = "invokeSuspend", v = 2)
+/* loaded from: classes10.dex */
+public final class WalletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2 extends SuspendLambda implements zls {
+    final /* synthetic */ d0m $documentJsonProvider$inlined;
+    private /* synthetic */ Object L$0;
+    /* synthetic */ Object L$1;
+    Object L$2;
+    int label;
+    final /* synthetic */ a this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public WalletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2(Continuation continuation, a aVar, d0m d0mVar) {
+        super(3, continuation);
+        this.this$0 = aVar;
+        this.$documentJsonProvider$inlined = d0mVar;
+    }
+
+    @Override // defpackage.zls
+    public final Object invoke(Object obj, Object obj2, Object obj3) {
+        WalletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2 walletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2 = new WalletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2((Continuation) obj3, this.this$0, this.$documentJsonProvider$inlined);
+        walletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2.L$0 = (vpr) obj;
+        walletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2.L$1 = obj2;
+        return walletFlexConfigFactory$createFullscreenConfigBundle$$inlined$flatMapLatest$2.invokeSuspend(zy11.a);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        vpr vprVar = (vpr) this.L$0;
+        Object obj2 = this.L$1;
+        CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+        int i = this.label;
+        if (i == 0) {
+            kotlin.b.b(obj);
+            b841 b841Var = (b841) obj2;
+            a aVar = this.this$0;
+            d0m d0mVar = this.$documentJsonProvider$inlined;
+            boolean z = b841Var.a;
+            boolean z2 = b841Var.b;
+            aVar.getClass();
+            rol0 rol0Var = new rol0(new WalletFlexConfigFactory$createLoadDocumentFlow$1(aVar, z2, d0mVar, z, null));
+            this.L$0 = null;
+            this.L$1 = null;
+            this.label = 1;
+            if (e.u(rol0Var, vprVar, this) == coroutineSingletons) {
+                return coroutineSingletons;
+            }
+        } else {
+            if (i != 1) {
+                ny61.r("call to 'resume' before 'invoke' with coroutine");
+                return null;
+            }
+            kotlin.b.b(obj);
+        }
+        return zy11.a;
+    }
+}

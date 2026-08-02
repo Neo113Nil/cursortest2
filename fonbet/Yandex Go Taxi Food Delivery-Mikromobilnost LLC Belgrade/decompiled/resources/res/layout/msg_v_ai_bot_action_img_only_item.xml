@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/ai_bot_action_square_item_padding"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ai_bot_action_icon"
+        android:layout_width="@dimen/ai_bot_action_icon_size"
+        android:layout_height="@dimen/ai_bot_action_icon_size"/>
+</FrameLayout>
