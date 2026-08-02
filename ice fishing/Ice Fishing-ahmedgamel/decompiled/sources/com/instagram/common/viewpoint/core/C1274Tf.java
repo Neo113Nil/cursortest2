@@ -63,11 +63,7 @@ public final class C1274Tf {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 12 out of bounds for length 12
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:147)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static JSONArray A04(T8 t82, int i) {
         InterfaceC1271Tc A08;
@@ -157,11 +153,7 @@ public final class C1274Tf {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 16 out of bounds for length 15
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:147)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static boolean A0G(T8 t82) {
         JSONArray jSONArray = new JSONArray();
