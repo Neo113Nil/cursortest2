@@ -1,0 +1,43 @@
+{
+  "ok": true,
+  "apks": [
+    "com.foxtailsports.app.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.fr.apk",
+    "config.xhdpi.apk"
+  ],
+  "base_apk": "com.foxtailsports.app.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 5854 (0%)\nINFO  - progress: 1440 of 5854 (24%)\nINFO  - progress: 1460 of 5854 (24%)\nINFO  - progress: 1547 of 5854 (26%)\nINFO  - progress: 1945 of 5854 (33%)\nINFO  - progress: 2130 of 5854 (36%)\nINFO  - progress: 2421 of 5854 (41%)\nINFO  - progress: 2605 of 5854 (44%)\nINFO  - progress: 2757 of 5854 (47%)\nINFO  - progress: 2860 of 5854 (48%)\nINFO  - progress: 2982 of 5854 (50%)\nINFO  - progress: 3226 of 5854 (55%)\nINFO  - progress: 3435 of 5854 (58%)\nINFO  - progress: 3618 of 5854 (61%)\nINFO  - progress: 3745 of 5854 (63%)\nINFO  - progress: 3803 of 5854 (64%)\nINFO  - progress: 3903 of 5854 (66%)\nINFO  - progress: 3979 of 5854 (67%)\nINFO  - progress: 4053 of 5854 (69%)\nINFO  - progress: 4166 of 5854 (71%)\nINFO  - progress: 4318 of 5854 (73%)\nINFO  - progress: 4489 of 5854 (76%)\nINFO  - progress: 4646 of 5854 (79%)\nINFO  - progress: 4735 of 5854 (80%)\nINFO  - progress: 4801 of 5854 (82%)\nINFO  - progress: 4917 of 5854 (83%)\nINFO  - progress: 4931 of 5854 (84%)\nINFO  - progress: 4976 of 5854 (85%)\nINFO  - progress: 5179 of 5854 (88%)\nINFO  - progress: 5305 of 5854 (90%)\nINFO  - progress: 5367 of 5854 (91%)\nINFO  - progress: 5430 of 5854 (92%)\nINFO  - progress: 5557 of 5854 (94%)\nINFO  - progress: 5702 of 5854 (97%)\nINFO  - progress: 5800 of 5854 (99%)\n                                                             \nERROR - finished with errors, count: 49\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/fonbet/Foxtail Sports Betting Picks-Foxtail Sports LLC/decompiled",
+    "skipped": false,
+    "base_apk": "com.foxtailsports.app.apk"
+  },
+  "analysis_files": [
+    "com.foxtailsports.app.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.fr.apk",
+    "apk/config.en.apk",
+    "apk/com.foxtailsports.app.apk",
+    "apk/config.xhdpi.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/capacitor/",
+    "decompiled/sources/com/",
+    "decompiled/sources/ee/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/"
+  ]
+}

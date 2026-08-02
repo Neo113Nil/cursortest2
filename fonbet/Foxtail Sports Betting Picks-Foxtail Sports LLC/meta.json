@@ -1,0 +1,36 @@
+{
+  "app_id": "com.foxtailsports.app",
+  "title": "Foxtail Sports Betting Picks",
+  "developer": "Foxtail Sports LLC",
+  "score": 4.3714285,
+  "icon": "https://play-lh.googleusercontent.com/5QZNAh1WQzMmdHhe9d91Kpb-5hhwWHv1ybl2iIfxZ65pxrGXox8fQWlOu4aqMsD9Cu8c0jQnUc24jdxpKMTpB78",
+  "url": "https://play.google.com/store/apps/details?id=com.foxtailsports.app&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "Foxtail+Sports+LLC",
+  "released": "Jan 22, 2026",
+  "updated": "2026-07-22",
+  "version": "1.0.79",
+  "summary": "AI sports betting picks, parlays & player props: NFL, NBA, MLB, NHL, NCAA, PGA",
+  "folder": "Foxtail Sports Betting Picks-Foxtail Sports LLC",
+  "path": "fonbet/Foxtail Sports Betting Picks-Foxtail Sports LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.foxtailsports.app.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Foxtail Sports Betting Picks-Foxtail Sports LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.foxtailsports.app...\ncom.foxtailsports.app downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.foxtailsports.app...\ncom.foxtailsports.app downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

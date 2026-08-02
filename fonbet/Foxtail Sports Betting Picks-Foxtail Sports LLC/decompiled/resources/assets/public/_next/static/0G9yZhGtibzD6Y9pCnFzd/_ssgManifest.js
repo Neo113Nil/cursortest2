@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F[sport]","\u002F[sport]\u002Fteam-comparison","\u002Ff1\u002Fevent\u002F[eventId]","\u002Flpga\u002Fevent\u002F[eventId]","\u002Fnascar\u002Fevent\u002F[eventId]","\u002Fpga\u002Fevent\u002F[eventId]","\u002Fufc\u002Fevent\u002F[eventId]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

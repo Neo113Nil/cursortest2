@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,25944,i=>{"use strict";var t=i.i(35545);i.i(54059),i.s(["PushNotifications",()=>t.PushNotifications])}]);

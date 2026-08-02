@@ -1,0 +1,33 @@
+{
+	"appId": "com.foxtailsports.app",
+	"appName": "Foxtail Sports",
+	"webDir": "out",
+	"server": {
+		"cleartext": false,
+		"errorPath": "offline.html"
+	},
+	"ios": {
+		"contentInset": "never",
+		"preferredContentMode": "mobile",
+		"scrollEnabled": true
+	},
+	"android": {},
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": true
+		},
+		"GoogleAuth": {
+			"scopes": [
+				"profile",
+				"email"
+			],
+			"serverClientId": "1025564718897-tkljghbh3135u0afqac77l9puqfiv4n6.apps.googleusercontent.com",
+			"iosClientId": "1025564718897-l9qr0kdn7qqj9kf21qjfsjk5aumctqbg.apps.googleusercontent.com",
+			"forceCodeForRefreshToken": false
+		},
+		"FacebookLogin": {
+			"appId": "1532203824720586",
+			"appName": "Foxtail Sports"
+		}
+	}
+}
