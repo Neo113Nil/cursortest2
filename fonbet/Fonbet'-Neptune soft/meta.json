@@ -1,0 +1,36 @@
+{
+  "app_id": "com.neptunesoft.bacdz",
+  "title": "Fonbet'",
+  "developer": "Neptune soft",
+  "score": 4.4210525,
+  "icon": "https://play-lh.googleusercontent.com/TM9GL3EK0BKYMc7sOB3Bjrp5Furpu0e1EOzuIV5Q6achVwRcBQBTTFTBuylnkGlyDhuRRBzxt__v3LLzUMi7",
+  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.bacdz&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "7512881118161131049",
+  "released": "Dec 22, 2020",
+  "updated": "Jul 30, 2026",
+  "version": "Varies with device",
+  "summary": "nu scores livescore: follow matches, live statistics, and results",
+  "folder": "Fonbet'-Neptune soft",
+  "path": "fonbet/Fonbet'-Neptune soft",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.neptunesoft.bacdz.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Fonbet'-Neptune soft",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.neptunesoft.bacdz...\ncom.neptunesoft.bacdz downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.neptunesoft.bacdz...\ncom.neptunesoft.bacdz downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

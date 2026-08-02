@@ -62,5 +62,144 @@
   ],
   "stdout": "╭─ com.IceFishing.LiveIceFishing ─╮\n│ Ice Fishing                     │\n│ 1.0  (vc 1)                     │\n╰─────────────────────────────────╯\n\nDownloading 7 files  (42.1 MB)\n  com.IceFishing.LiveIceFishing-1.apk                  ━━━━ 100% 26.… 11.8 0:00…\n                                                                 MB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk ━━━━ 100% 74.… 4.2  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-config.en.apk        ━━━━ 100% 61.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.lt.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.ru.apk        ━━━━ 100% 37.… ?    0:00…\n                                                                 kB             \n  com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    ━━━━ 100% 88.… 4.4  0:00…\n                                                                 kB   MB/s      \n  com.IceFishing.LiveIceFishing-1-asset.apk            ━━━━ 100% 17.… 13.1 0:00…\n                                                                 MB   MB/s      \n\n                         Downloaded files                         \n┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┓\n┃ File                                                 ┃    Size ┃\n┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━┩\n│ com.IceFishing.LiveIceFishing-1.apk                  │ 24.8 MB │\n│ com.IceFishing.LiveIceFishing-1-config.arm64_v8a.apk │ 72.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.en.apk        │ 60.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.lt.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.ru.apk        │ 36.4 KB │\n│ com.IceFishing.LiveIceFishing-1-config.xxhdpi.apk    │ 86.0 KB │\n│ com.IceFishing.LiveIceFishing-1-asset.apk            │ 24.8 MB │\n└──────────────────────────────────────────────────────┴─────────┘\n\nTip: install split APKs to a device with adb install-multiple *.apk\n\nDownload complete!\n\ncached",
   "stderr": "Token expired — refreshing...\n  Authenticated with profile: Google Pixel 9a\n",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.9.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.1.0 (kotlin-stdlib) + kotlinx-coroutines 1.8.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Google AdMob / Google Ad Manager (play-services-ads 25.4.0), TopOn (AnyThink) UA_6.5.13 — медиация с собственными форматами myoffer / expressad / adx / onlineapi и адаптерами AdMob и Meta, Meta Audience Network (Facebook Audience Network), Google User Messaging Platform (сбор согласия на рекламу), IAB Open Measurement (замер видимости рекламы), собственные встроенные баннеры-заглушки Qureka (ads_qureka, qureka_native, qureka_nativebanner_layout)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "OneSignal (push и события, app id f2a35f4f-9ae4-41ac-b40d-ed960fc01377, api.onesignal.com), Firebase Cloud Messaging, Firebase Installations, Firebase DataTransport, Google Android DataTransport (CCT backend), play-services-measurement-base 20.1.2 / play-services-measurement-sdk-api 20.1.2, трекинг TopOn / AnyThink (tk.anythinktech.com, da.anythinktech.com, ssapi.anythinktech.com), аналитика Meta Audience Network, IAB Open Measurement"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_NETWORK_STATE, android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, com.icefishing.icefishingbigwin.permission.C2D_MESSAGE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, com.google.android.c2dm.permission.RECEIVE, android.permission.VIBRATE, com.sec.android.provider.badge.permission.READ, com.sec.android.provider.badge.permission.WRITE, com.htc.launcher.permission.READ_SETTINGS, com.htc.launcher.permission.UPDATE_SHORTCUT, com.sonyericsson.home.permission.BROADCAST_BADGE, com.sonymobile.home.permission.PROVIDER_INSERT_BADGE, com.anddoes.launcher.permission.UPDATE_COUNT, com.majeur.launcher.permission.UPDATE_BADGE, com.huawei.android.launcher.permission.CHANGE_BADGE, com.huawei.android.launcher.permission.READ_SETTINGS, com.huawei.android.launcher.permission.WRITE_SETTINGS, android.permission.READ_APP_BADGE, com.oppo.launcher.permission.READ_SETTINGS, com.oppo.launcher.permission.WRITE_SETTINGS, me.everything.badger.permission.BADGE_COUNT_READ,…"
+      },
+      {
+        "param": "Libraries",
+        "value": "AndroidX: appcompat 1.7.1, activity 1.10.1 (+ktx), fragment 1.6.1 (+ktx), core 1.13.0 (+ktx), core-viewtree 1.0.0, cardview 1.0.0, constraintlayout 2.2.1, coordinatorlayout 1.1.0, drawerlayout 1.1.1, slidingpanelayout 1.2.0, recyclerview 1.1.0, viewpager 1.0.0, viewpager2 1.0.0, navigation 2.6.0 (common/runtime/fragment/ui), room-runtime 2.5.0, work-runtime 2.8.1 (+ktx), startup-runtime 1.2.0, lifecycle (runtime/process/service/viewmodel/livedata/savedstate), datastore 1.0.0, savedstate 1.2.1 (+ktx), loader 1.0.0, localbroadcastmanager 1.0.0, documentfile 1.0.0, exifinterface 1.3.6, print 1.0.0, emoji2 1.3.0 (+views-helper), profileinstaller 1.4.0, tracing 1.0.0, transition 1.5.0, vectordrawable 1.1.0 (+animated), dynamicanimation 1.0.0, interpolator 1.0.0, cursoradapter 1.0.0, customview 1.1.0, versionedparcelable 1.1.1, databinding-viewbinding 8.9.0, sqlite 2.3.0 (+framework), window 1.0.0, legacy-support-core-utils 1.0.0, annotation-experimental 1.4.1, privacysandbox.ads ads-adservices 1.0.0-beta05 (+java), browser 1.8.0 (Chrome Custom Tabs), webkit 1.12.1 + org.chromium.support_lib_boundary, multidex; Google Android Material 1.12.0; Google Play Services: play-services-ads 25.4.…"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "«MyPref» — сюда целиком складывается ответ удалённой настройки (ключ response), плюс adposition (в каком месте показывать рекламу) и interstitial_id (номер рекламного блока); оттуда же читаются app_AppOpenAdStatus и AppOpenID. «HeartRate» — флаг IsFirstTimeLaunch (первый ли это запуск). Свои отдельные хранилища заводят библиотеки: согласие на рекламу от Google (consent_status, consent_type, stored_info, privacy_options_requirement_status), OneSignal и TopOn/AnyThink."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Подозрительные слова link_redirect, splash_redirect, splash_inter, link1, link2, link3, livetv, AppOpenID, app_AppOpenAdStatus, adposition, response, IsFirstTimeLaunch, redirect, «Redirect to third party application», «Unable to redirect», offer / myoffer / anythink_myoffer_*, anythink_more_offer, WebLandPageActivity, zcode, ucode, qureka / ads_qureka / qureka_native, «Play & Win Coins», «Win 5,00,000 Coins & More», «Win 50,000 Coins No Install Required», «Collect 50,000 Coins Now», bigwin (в имени пакета), jackpot (в описании в магазине), clickid / click_id / clickId, whitelist, Withdraw, licensecheck (com.pairip.licensecheck), LicenseActivity, se.zxcvbnmpo.com / tc.weszxdrf.com / YXBpLmJyaWRnZW9vcy5jb20= (api.bridgeoos.com) — запасные адреса рекламной библиотеки, часть спрятана в закодированном виде Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок (domain_checks.json / domain_checks.md): сводка VirusTotal, полный построчный список проверяющих и три дополнительных пункта."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "10761.play.gamezop.com",
+        "redirects_to": "https://10761.play.umogames.com/en/intro?int-nav=1",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "10761.play.umogames.com",
+        "redirects_to": "https://10761.play.umogames.com/en/intro?int-nav=1",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "1086.mark.qureka.com",
+        "redirects_to": "https://1086.mark.qureka.com/intro",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "25.go.gamescritique.com",
+        "redirects_to": "https://25.go.gamescritique.com/intro",
+        "parked_at": "регистратор: Realtime Register B.V."
+      },
+      {
+        "domain": "9455.read.criczop.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "adx.anythinktech.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "adxtk.anythinktech.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Alibaba Cloud Computing (Beijing) Co., Ltd."
+      },
+      {
+        "domain": "alphamountain.ai",
+        "redirects_to": "https://www.alphamountain.ai/",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      }
+    ],
+    "collected_data": [
+      "техническое имя приложения → внутреннее название программы в телефоне —",
+      "com.icefishing.icefishingbigwin. Оно вписано прямо в адрес тихой проверки, поэтому сервер сразу",
+      "понимает, из какого именно приложения пришёл человек и какую настройку ему отдать",
+      "название и номер версии приложения → какая именно сборка установлена; по этому можно",
+      "отличать старые и новые версии и включать переход на внешнюю страницу только для нужных",
+      "язык телефона → на каком языке настроен телефон; по языку чаще всего и решают, показывать",
+      "ли человеку рекламную страницу или оставить обычное приложение",
+      "часовой пояс → в каком поясе живёт человек; это косвенно показывает страну и время суток",
+      "код страны оператора и код самого оператора → служебные номера сотовой сети (mcc и mnc).",
+      "По ним видно страну и конкретного мобильного оператора, даже если человек ничего о себе не",
+      "вводил",
+      "тип подключения к интернету → мобильная сеть или Wi-Fi; помогает понять, насколько «живой»",
+      "это трафик",
+      "марка и модель телефона → какое устройство у человека; дешёвая или дорогая модель тоже",
+      "влияет на то, кому что показывать",
+      "версия Android (название и номер) → какая система стоит на телефоне",
+      "размер экрана и ориентация → разрешение экрана и как он повёрнут; заодно это простой",
+      "признак того, что перед нами настоящий телефон, а не проверочный робот",
+      "как представился «браузер» телефона → строка, которой система обычно представляется",
+      "сайтам. Её берут из Android и отправляют на сервер: по ней хорошо видно и версию системы, и",
+      "признаки эмулятора",
+      "рекламный номер устройства → уникальный номер телефона для рекламы (тот самый, что",
+      "требуют разрешения AD_ID). По нему сервер отличает одно устройство от другого и помнит, кому",
+      "уже показывали внешнюю страницу",
+      "служебный номер Android → внутренний идентификатор устройства (android_id) — ещё один",
+      "способ узнать телефон повторно",
+      "версия магазина Google Play на телефоне → по ней видно, «живой» ли это телефон с",
+      "настоящим магазином приложений",
+      "откуда установлено приложение → название программы-установщика: из Google Play, из",
+      "другого магазина или вручную. Это классический способ отличить обычного человека от",
+      "проверяющего",
+      "уровень заряда батареи и стоит ли телефон на зарядке → сколько процентов заряда и",
+      "подключён ли провод; у эмуляторов и тестовых стендов эти значения часто выглядят неестественно",
+      "признак «телефон взломан» → проверка на root — получены ли на телефоне права",
+      "суперпользователя. Такие устройства часто относят к «грязному» трафику и показывают им другое",
+      "признак «это не настоящий телефон» → проверка на эмулятор или проверочную среду. Это",
+      "прямой способ отличить живого человека от автоматической проверки",
+      "есть ли SIM-карта → стоит ли в телефоне симка; без неё устройство выглядит как тестовый стенд",
+      "работает ли приложение в «клоне» → запущено ли оно через программу-двойник или",
+      "песочницу — ещё один признак нечестного трафика"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• техническое имя приложения → внутреннее название программы в телефоне —\n• com.icefishing.icefishingbigwin. Оно вписано прямо в адрес тихой проверки, поэтому сервер сразу\n• понимает, из какого именно приложения пришёл человек и какую настройку ему отдать\n• название и номер версии приложения → какая именно сборка установлена; по этому можно\n• отличать старые и новые версии и включать переход на внешнюю страницу только для нужных\n• язык телефона → на каком языке настроен телефон; по языку чаще всего и решают, показывать\n• ли человеку рекламную страницу или оставить обычное приложение\n• часовой пояс → в каком поясе живёт человек; это косвенно показывает страну и время суток\n• код страны оператора и код самого оператора → служебные номера сотовой сети (mcc и mnc).\n• По ним видно страну и конкретного мобильного оператора, даже если человек ничего о себе не\n• вводил\n• тип подключения к интернету → мобильная сеть или Wi-Fi; помогает понять, насколько «живой»\n• это трафик\n• марка и модель телефона → какое устройство у человека; дешёвая или дорогая модель тоже\n• влияет на то, кому что показывать\n• версия Android (название и номер) → какая система стоит на телефоне\n• размер экрана и ориентация → разрешение экрана и как он повёрнут; заодно это простой\n• признак того, что перед нами настоящий телефон, а не проверочный робот\n• как представился «браузер» телефона → строка, которой система обычно представляется\n• сайтам. Её берут из Android и отправляют на сервер: по ней хорошо видно и версию системы, и\n• признаки эмулятора\n• рекламный номер устройства → уникальный номер телефона для рекламы (тот самый, что\n• требуют разрешения AD_ID). По нему сервер отличает одно устройство от другого и помнит, кому\n• уже показывали внешнюю страницу\n• служебный номер Android → внутренний идентификатор устройства (android_id) — ещё один\n• способ узнать телефон повторно\n• версия магазина Google Play на телефоне → по ней видно, «живой» ли это телефон с\n• настоящим магазином приложений\n• откуда установлено приложение → название программы-установщика: из Google Play, из\n• другого магазина или вручную. Это классический способ отличить обычного человека от\n• проверяющего\n•…"
+  }
 }
