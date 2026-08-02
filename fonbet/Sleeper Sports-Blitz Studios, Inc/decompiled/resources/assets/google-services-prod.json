@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "217769016823",
+    "firebase_url": "https://blitzstudios-sleeperbot.firebaseio.com",
+    "project_id": "blitzstudios-sleeperbot",
+    "storage_bucket": "blitzstudios-sleeperbot.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217769016823:android:25617c4cf2033630",
+        "android_client_info": {
+          "package_name": "com.sleeperbot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217769016823-mghivhhe6d6113ip9pt3u3o04krf2o74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sleeperbot",
+            "certificate_hash": "7f0ee53c301f3d52c83b6c9f4eba5a1cf1a76479"
+          }
+        },
+        {
+          "client_id": "217769016823-teseblqbeqtgt16cfuub8qi22nfc9bv3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sleeperbot",
+            "certificate_hash": "607a0c9b7f20d7f3017d1ecd8f8bee7c65b1e0ec"
+          }
+        },
+        {
+          "client_id": "217769016823-arj0jf2k4ll4gkco6n85uvmt9opl9ft6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJ0WulLVBh7SxX7VG5RTss3cXy5RdFqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217769016823-4g81eboiimrkfidb4qt7bqst7p1iu5ou.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "217769016823-0s2a8l5019pom1306mkfma9g3ek7dk5g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blitzstudios.sleeperbot",
+                "app_store_id": "987367543"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217769016823:android:edb342bd4167727fc9c2f2",
+        "android_client_info": {
+          "package_name": "com.sleeperbot.lite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217769016823-5a75rcq74im7ft1go4ivkcgdcqk8va11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sleeperbot.lite",
+            "certificate_hash": "7f0ee53c301f3d52c83b6c9f4eba5a1cf1a76479"
+          }
+        },
+        {
+          "client_id": "217769016823-8dscsbla90om6s50h298q7oij2it5suj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sleeperbot.lite",
+            "certificate_hash": "607a0c9b7f20d7f3017d1ecd8f8bee7c65b1e0ec"
+          }
+        },
+        {
+          "client_id": "217769016823-arj0jf2k4ll4gkco6n85uvmt9opl9ft6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJ0WulLVBh7SxX7VG5RTss3cXy5RdFqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217769016823-4g81eboiimrkfidb4qt7bqst7p1iu5ou.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "217769016823-0s2a8l5019pom1306mkfma9g3ek7dk5g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blitzstudios.sleeperbot",
+                "app_store_id": "987367543"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:217769016823:android:2f24f7a859e7b4ecc9c2f2",
+        "android_client_info": {
+          "package_name": "com.sleeperbot.picks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "217769016823-arj0jf2k4ll4gkco6n85uvmt9opl9ft6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtJ0WulLVBh7SxX7VG5RTss3cXy5RdFqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "217769016823-4g81eboiimrkfidb4qt7bqst7p1iu5ou.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "217769016823-0s2a8l5019pom1306mkfma9g3ek7dk5g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.blitzstudios.sleeperbot",
+                "app_store_id": "987367543"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

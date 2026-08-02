@@ -1,0 +1,22 @@
+package io.ably.lib.types;
+
+import java.util.Map;
+
+/* loaded from: classes9.dex */
+public interface ReadOnlyMap<K, V> {
+    boolean containsKey(Object obj);
+
+    boolean containsValue(Object obj);
+
+    Iterable<Map.Entry<K, V>> entrySet();
+
+    V get(Object obj);
+
+    boolean isEmpty();
+
+    Iterable<K> keySet();
+
+    int size();
+
+    Iterable<V> values();
+}

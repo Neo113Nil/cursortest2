@@ -32,5 +32,115 @@
   ],
   "stdout": "Downloading com.foxtailsports.app...\ncom.foxtailsports.app downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Foxtail Sports Betting Picks (Foxtail Sports), com.foxtailsports.app, версия 1.0.46 (versionCode 46), разработчик Foxtail Sports LLC"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "24"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 1.9.0"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics / Google Analytics for Firebase (measurement), Firebase Cloud Messaging, Firebase Installations, Google Play Install Referrer, Google Advertising ID library (play-services-ads-identifier, без AdMob), Facebook SDK App Events (плагин logEvent; AutoLogAppEventsEnabled=false, AdvertiserIDCollectionEnabled=false)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_NETWORK_STATE, android.permission.POST_NOTIFICATIONS, android.permission.WAKE_LOCK, android.permission.USE_CREDENTIALS, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, com.android.vending.BILLING, com.android.vending.CHECK_LICENSE, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.foxtailsports.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "Capacitor (com.getcapacitor, BridgeActivity / WebView), Cordova WebView (org.apache.cordova), @capacitor/browser (Custom Tabs), @capacitor/app, @capacitor/push-notifications, @capacitor-community/facebook-login, @capacitor-community/apple-sign-in, @codetrix-studio/capacitor-google-auth, @capgo/native-purchases (ee.forgr.nativepurchases), androidx.appcompat, androidx.activity, androidx.fragment, androidx.core (+ktx, splashscreen), androidx.browser, androidx.webkit, androidx.lifecycle, androidx.datastore, androidx.emoji2, androidx.privacysandbox.ads, androidx.profileinstaller, androidx.startup, Kotlin stdlib (metadata 1.9.0), kotlinx-coroutines 1.9.0, Okio, Google Play Services (auth, base/basement, cloud-messaging, measurement, tasks, location, ads-identifier), Firebase (analytics, messaging, installations, datatransport, common), Facebook SDK (login / common / customtabs), Google Play Billing 8.3.0 (com.android.billingclient), PairIP / Play license check (com.pairip.licensecheck), ZXing (com.google.zxing)"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "app.foxtailsports.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "foxtail_app: ключ last_version_code — сброс кэша встроенного окна сайта при обновлении версии; CapWebViewSettings: serverBasePath, lastBinaryVersionCode, lastBinaryVersionName; в веб-части sessionStorage/localStorage: foxtail_session_id, api-cache:*, offline-action-queue, pendingPlan, foxtail_update_dismissed_<version>, seenPredictions"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "betting, sports betting, betting_lines, betting-preferences, parlay / parlay-builder, odds, offer / promotional offers / What We Offer, promo / promo-codes / retention offer, redirect (auth/checkout/onboarding), bot (запрет ботов в Terms), banned-entities / capture-ip (антиабьюз админки) Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.foxtailsports.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "appleid.cdn-apple.com",
+        "redirects_to": "https://account.apple.com/",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "bit.ly",
+        "redirects_to": "https://bitly.com/",
+        "parked_at": "регистратор: Libyan Spider Network (int)"
+      },
+      {
+        "domain": "capacitorjs.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "cct.com.foxtailsports.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "change.link",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Alibaba Cloud Computing Ltd."
+      },
+      {
+        "domain": "com.example.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "com.foxtailsports.app",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

@@ -1,0 +1,26 @@
+package androidx.compose.foundation.lazy;
+
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function1;
+import org.objectweb.asm.Opcodes;
+
+/* compiled from: LazyDsl.kt */
+@Metadata(k = 3, mv = {2, 0, 0}, xi = Opcodes.ARETURN)
+/* loaded from: classes.dex */
+public final class LazyDslKt$itemsIndexed$$inlined$itemsIndexed$default$2 implements Function1<Integer, Object> {
+    final /* synthetic */ Object[] $items;
+
+    public LazyDslKt$itemsIndexed$$inlined$itemsIndexed$default$2(Object[] objArr) {
+        this.$items = objArr;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Object invoke(Integer num) {
+        return invoke(num.intValue());
+    }
+
+    public final Object invoke(int i) {
+        Object obj = this.$items[i];
+        return null;
+    }
+}

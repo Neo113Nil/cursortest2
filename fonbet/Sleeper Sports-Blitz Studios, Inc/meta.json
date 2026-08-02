@@ -1,0 +1,36 @@
+{
+  "app_id": "com.sleeperbot",
+  "title": "Sleeper Sports",
+  "developer": "Blitz Studios, Inc",
+  "score": 4.345415,
+  "icon": "https://play-lh.googleusercontent.com/665BCAjC-zqlHf1gt9GAKS6HJIT35yvK_j-KLByPYNc60F4AHWSkuiXMEYFvsrD7cB8C_gypCaRS_d6FOlyjUA",
+  "url": "https://play.google.com/store/apps/details?id=com.sleeperbot&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "Blitz+Studios,+Inc.",
+  "released": "Apr 28, 2015",
+  "updated": "2026-07-29",
+  "version": "147.0",
+  "summary": "Real Money Picks & Leagues",
+  "folder": "Sleeper Sports-Blitz Studios, Inc",
+  "path": "fonbet/Sleeper Sports-Blitz Studios, Inc",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.sleeperbot.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Sleeper Sports-Blitz Studios, Inc",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.sleeperbot...\ncom.sleeperbot downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.sleeperbot...\ncom.sleeperbot downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

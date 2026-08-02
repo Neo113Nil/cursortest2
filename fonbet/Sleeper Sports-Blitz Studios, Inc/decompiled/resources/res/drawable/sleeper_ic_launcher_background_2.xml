@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="108dp"
+    android:width="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="@drawable/_sleeper_ic_launcher_background_2__0_res_0x7f08002a"
+        android:pathData="M0,0h108v108h-108z"/>
+    <path
+        android:fillColor="@drawable/_sleeper_ic_launcher_background_2__1_res_0x7f08002b"
+        android:pathData="M23.93,0C10.71,0 0,10.71 0,23.93V84.07C0,97.29 10.71,108 23.93,108H84.07C97.29,108 108,97.29 108,84.07V23.93C108,10.71 97.29,0 84.07,0H23.93Z"/>
+</vector>

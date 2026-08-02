@@ -1,0 +1,171 @@
+package org.jacoco.core.analysis;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.StringTokenizer;
+import java.util.zip.GZIPInputStream;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+import org.jacoco.core.JaCoCo;
+import org.jacoco.core.data.ExecutionData;
+import org.jacoco.core.data.ExecutionDataStore;
+import org.jacoco.core.internal.ContentTypeDetector;
+import org.jacoco.core.internal.InputStreams;
+import org.jacoco.core.internal.Pack200Streams;
+import org.jacoco.core.internal.analysis.ClassAnalyzer;
+import org.jacoco.core.internal.analysis.ClassCoverageImpl;
+import org.jacoco.core.internal.analysis.StringPool;
+import org.jacoco.core.internal.data.CRC64;
+import org.jacoco.core.internal.flow.ClassProbesAdapter;
+import org.jacoco.core.internal.instr.InstrSupport;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+
+/* loaded from: classes10.dex */
+public class Analyzer {
+    private final ICoverageVisitor coverageVisitor;
+    private final ExecutionDataStore executionData;
+    private final StringPool stringPool = new StringPool();
+
+    public Analyzer(ExecutionDataStore executionDataStore, ICoverageVisitor iCoverageVisitor) {
+        this.executionData = executionDataStore;
+        this.coverageVisitor = iCoverageVisitor;
+    }
+
+    private ClassVisitor createAnalyzingVisitor(long j, String str) {
+        boolean[] probes;
+        boolean z;
+        ExecutionData executionData = this.executionData.get(j);
+        if (executionData == null) {
+            z = this.executionData.contains(str);
+            probes = null;
+        } else {
+            probes = executionData.getProbes();
+            z = false;
+        }
+        final ClassCoverageImpl classCoverageImpl = new ClassCoverageImpl(str, j, z);
+        return new ClassProbesAdapter(new ClassAnalyzer(classCoverageImpl, probes, this.stringPool) { // from class: org.jacoco.core.analysis.Analyzer.1
+            @Override // org.objectweb.asm.ClassVisitor
+            public void visitEnd() {
+                super.visitEnd();
+                Analyzer.this.coverageVisitor.visitCoverage(classCoverageImpl);
+            }
+        }, false);
+    }
+
+    private void analyzeClass(byte[] bArr) {
+        long classId = CRC64.classId(bArr);
+        ClassReader classReaderFor = InstrSupport.classReaderFor(bArr);
+        if ((classReaderFor.getAccess() & 32768) == 0 && (classReaderFor.getAccess() & 4096) == 0) {
+            classReaderFor.accept(createAnalyzingVisitor(classId, classReaderFor.getClassName()), 0);
+        }
+    }
+
+    public void analyzeClass(byte[] bArr, String str) throws IOException {
+        try {
+            analyzeClass(bArr);
+        } catch (RuntimeException e) {
+            throw analyzerError(str, e);
+        }
+    }
+
+    public void analyzeClass(InputStream inputStream, String str) throws IOException {
+        try {
+            analyzeClass(InputStreams.readFully(inputStream), str);
+        } catch (IOException e) {
+            throw analyzerError(str, e);
+        }
+    }
+
+    private IOException analyzerError(String str, Exception exc) {
+        IOException iOException = new IOException(String.format("Error while analyzing %s with JaCoCo %s/%s.", str, JaCoCo.VERSION, JaCoCo.COMMITID_SHORT));
+        iOException.initCause(exc);
+        return iOException;
+    }
+
+    public int analyzeAll(InputStream inputStream, String str) throws IOException {
+        try {
+            ContentTypeDetector contentTypeDetector = new ContentTypeDetector(inputStream);
+            int type = contentTypeDetector.getType();
+            if (type == -889275714) {
+                analyzeClass(contentTypeDetector.getInputStream(), str);
+                return 1;
+            }
+            if (type == -889270259) {
+                return analyzePack200(contentTypeDetector.getInputStream(), str);
+            }
+            if (type == 529203200) {
+                return analyzeGzip(contentTypeDetector.getInputStream(), str);
+            }
+            if (type != 1347093252) {
+                return 0;
+            }
+            return analyzeZip(contentTypeDetector.getInputStream(), str);
+        } catch (IOException e) {
+            throw analyzerError(str, e);
+        }
+    }
+
+    public int analyzeAll(File file) throws IOException {
+        if (file.isDirectory()) {
+            int i = 0;
+            for (File file2 : file.listFiles()) {
+                i += analyzeAll(file2);
+            }
+            return i;
+        }
+        FileInputStream fileInputStream = new FileInputStream(file);
+        try {
+            return analyzeAll(fileInputStream, file.getPath());
+        } finally {
+            fileInputStream.close();
+        }
+    }
+
+    public int analyzeAll(String str, File file) throws IOException {
+        StringTokenizer stringTokenizer = new StringTokenizer(str, File.pathSeparator);
+        int i = 0;
+        while (stringTokenizer.hasMoreTokens()) {
+            i += analyzeAll(new File(file, stringTokenizer.nextToken()));
+        }
+        return i;
+    }
+
+    private int analyzeZip(InputStream inputStream, String str) throws IOException {
+        ZipInputStream zipInputStream = new ZipInputStream(inputStream);
+        int i = 0;
+        while (true) {
+            ZipEntry nextEntry = nextEntry(zipInputStream, str);
+            if (nextEntry == null) {
+                return i;
+            }
+            i += analyzeAll(zipInputStream, str + "@" + nextEntry.getName());
+        }
+    }
+
+    private ZipEntry nextEntry(ZipInputStream zipInputStream, String str) throws IOException {
+        try {
+            return zipInputStream.getNextEntry();
+        } catch (IOException e) {
+            throw analyzerError(str, e);
+        }
+    }
+
+    private int analyzeGzip(InputStream inputStream, String str) throws IOException {
+        try {
+            return analyzeAll(new GZIPInputStream(inputStream), str);
+        } catch (IOException e) {
+            throw analyzerError(str, e);
+        }
+    }
+
+    private int analyzePack200(InputStream inputStream, String str) throws IOException {
+        try {
+            return analyzeAll(Pack200Streams.unpack(inputStream), str);
+        } catch (IOException e) {
+            throw analyzerError(str, e);
+        }
+    }
+}

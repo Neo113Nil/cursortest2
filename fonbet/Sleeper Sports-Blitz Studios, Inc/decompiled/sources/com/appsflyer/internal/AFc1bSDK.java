@@ -1,0 +1,23 @@
+package com.appsflyer.internal;
+
+import android.content.Intent;
+import android.net.Uri;
+
+/* loaded from: classes6.dex */
+public final class AFc1bSDK {
+    public static Uri s_(Intent intent) {
+        if (intent == null) {
+            return null;
+        }
+        AFj1pSDK aFj1pSDK = new AFj1pSDK(intent);
+        Uri uri = (Uri) aFj1pSDK.H_("android.intent.extra.REFERRER");
+        if (uri != null) {
+            return uri;
+        }
+        String revenue = aFj1pSDK.getRevenue("android.intent.extra.REFERRER_NAME");
+        if (revenue != null) {
+            return Uri.parse(revenue);
+        }
+        return null;
+    }
+}
