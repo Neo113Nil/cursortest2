@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="vertical"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <Button
+        layout_gravity="center"
+        id="@+id/_2131428268_res_0x7f0b03ac"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Login"/>
+    <Button
+        layout_gravity="center"
+        id="@+id/_2131429167_res_0x7f0b072f"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Login"/>
+    <TextView
+        textColor="@android:color/holo_green_dark"
+        layout_gravity="center_horizontal"
+        id="@+id/_2131428270_res_0x7f0b03ae"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Login successful"/>
+    <TextView
+        textColor="@android:color/holo_green_dark"
+        layout_gravity="center_horizontal"
+        id="@+id/_2131429169_res_0x7f0b0731"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Verify successful"/>
+    <TextView
+        textColor="@android:color/holo_red_dark"
+        layout_gravity="center_horizontal"
+        id="@+id/_2131428269_res_0x7f0b03ad"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Login failed"/>
+    <TextView
+        textColor="@android:color/holo_red_dark"
+        layout_gravity="center_horizontal"
+        id="@+id/_2131429168_res_0x7f0b0730"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="Verify failed"/>
+    <TextView
+        textColor="@android:color/holo_green_dark"
+        layout_gravity="center_horizontal"
+        id="@+id/_2131429166_res_0x7f0b072e"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"/>
+</LinearLayout>

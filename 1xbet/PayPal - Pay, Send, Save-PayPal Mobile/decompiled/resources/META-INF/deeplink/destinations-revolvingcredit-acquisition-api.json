@@ -1,0 +1,211 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.CBMCAcquisitionExternalDestination.DirectApplication",
+      "paths": ["/credit-application/co/landing"],
+      "pathPropertyName": "url",
+      "parameters": [
+        {
+          "propertyName": "track",
+          "urlParamName": "track",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "present",
+          "urlParamName": "present",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.CBMCAcquisitionExternalDestination.ApplicationBilling",
+      "paths": ["/credit-application/co"],
+      "pathPropertyName": "url",
+      "parameters": [
+        {
+          "propertyName": "track",
+          "urlParamName": "track",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "present",
+          "urlParamName": "present",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.PPCCUSAcquisitionExternalDestination.DirectApplication",
+      "paths": ["/credit-application/paypal-credit-card/da/us/landing"],
+      "pathPropertyName": "url",
+      "parameters": [
+        {
+          "propertyName": "longTrack",
+          "urlParamName": "track",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "longPresent",
+          "urlParamName": "present",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "shortTrack",
+          "urlParamName": "t",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "shortPresent",
+          "urlParamName": "p",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.PPCCUSAcquisitionExternalDestination.ApplicationBilling",
+      "paths": ["/credit-application/paypal-credit-card/da/us/billing"],
+      "pathPropertyName": "url",
+      "parameters": [
+        {
+          "propertyName": "longTrack",
+          "urlParamName": "track",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "longPresent",
+          "urlParamName": "present",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "shortTrack",
+          "urlParamName": "t",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "shortPresent",
+          "urlParamName": "p",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.CreditAcquisitionInternalDeeplinkDestination.DirectApplication",
+      "paths": ["/revolvingcredit_acquisition_credit_application"],
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "url",
+          "urlParamName": "url",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.CreditAcquisitionInternalDeeplinkDestination.DocumentUpload",
+      "paths": ["/revolvingcredit_acquisition_document_upload"],
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "url",
+          "urlParamName": "url",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.CreditAcquisitionInternalDeeplinkDestination.ApplicationDecline",
+      "paths": ["/revolvingcredit_acquisition_decline"],
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "url",
+          "urlParamName": "url",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditacquisition.api.navigation.PPCCTermsWebViewDestination",
+      "paths": ["/us/webapps/mpp/terms/paypal-credit-10-back", "/us/webapps/mpp/terms/paypal-credit-20-back", "/us/webapps/mpp/terms/paypal-credit", "/us/webapps/mpp/campaigns/terms/paypal-credit-dual"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

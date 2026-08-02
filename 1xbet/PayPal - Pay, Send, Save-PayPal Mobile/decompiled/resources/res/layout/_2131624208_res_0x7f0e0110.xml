@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        layout_gravity="center"
+        id="@+id/_2131428661_res_0x7f0b0535"
+        layout_width="192dp"
+        layout_height="120dp"
+        layout_marginTop="48dp"
+        NOT_FOUND_0x10="@drawable/_2131231816_res_0x7f080448"/>
+    <TextView
+        textAppearance="@style/_2132148682_res_0x7f1601ca"
+        layout_gravity="center"
+        id="@+id/_2131428654_res_0x7f0b052e"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        layout_marginTop="38dp"
+        includeFontPadding="false"/>
+    <FrameLayout
+        layout_gravity="center"
+        layout_width="wrap_content"
+        layout_height="wrap_content">
+        <Button
+            textAppearance="@style/_2132148681_res_0x7f1601c9"
+            id="@+id/_2131428667_res_0x7f0b053b"
+            background="@null"
+            paddingTop="20dp"
+            paddingBottom="30dp"
+            layout_width="wrap_content"
+            layout_height="wrap_content"
+            text="@string/_2132093242_res_0x7f15293a"
+            includeFontPadding="false"/>
+        <ProgressBar
+            id="@+id/_2131428668_res_0x7f0b053c"
+            padding="3dp"
+            layout_width="24dp"
+            layout_height="24dp"
+            layout_marginTop="20dp"
+            layout_marginBottom="30dp"
+            indeterminate="true"
+            indeterminateTint="#4184f3"
+            indeterminateTintMode="src_atop"
+            style="@style/_2132149318_res_0x7f160446"/>
+    </FrameLayout>
+</merge>

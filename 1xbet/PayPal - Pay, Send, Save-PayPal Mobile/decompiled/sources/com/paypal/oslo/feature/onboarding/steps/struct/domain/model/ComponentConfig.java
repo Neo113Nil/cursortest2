@@ -1,0 +1,10 @@
+package com.paypal.oslo.feature.onboarding.steps.struct.domain.model;
+
+@kotlin.Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\bv\u0018\u00002\u00020\u0001R\u0014\u0010\u0005\u001a\u00020\u00028'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004R\u0014\u0010\b\u001a\u00020\u00068'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\u0004\u0082\u0001\n\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012À\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/ComponentConfig;", "", "", "getComponentId", "()Ljava/lang/String;", "componentId", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/ComponentType;", "getComponentType-NvngK3s", "componentType", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/AddressComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/ButtonComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/DropdownComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/EmailComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/HeaderComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/LinkComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/NameComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/PasswordComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/PhoneComponentConfig;", "Lcom/paypal/oslo/feature/onboarding/steps/struct/domain/model/TermsAndConditionsComponentConfig;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public interface ComponentConfig {
+    java.lang.String getComponentId();
+
+    /* renamed from: getComponentType-NvngK3s */
+    java.lang.String mo16534getComponentTypeNvngK3s();
+}

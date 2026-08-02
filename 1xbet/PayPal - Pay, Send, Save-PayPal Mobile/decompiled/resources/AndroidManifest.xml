@@ -1,0 +1,2143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="1160090083"
+    versionName="9.1.0"
+    compileSdkVersion="36"
+    compileSdkVersionCodename="16"
+    android:requiredSplitTypes="base__abi,base__density"
+    android:splitTypes=""
+    package="com.paypal.android.p2pmobile"
+    platformBuildVersionCode="36"
+    platformBuildVersionName="16">
+    <uses-sdk
+        minSdkVersion="26"
+        targetSdkVersion="36"/>
+    <permission
+        label="Access Oslo Configuration"
+        name="com.paypal.android.p2pmobile.permission.ACCESS_CONFIG"
+        protectionLevel="signature"
+        description="@string/_2132082951_res_0x7f150107"/>
+    <uses-permission name="android.permission.WAKE_LOCK"/>
+    <uses-permission name="android.permission.CAMERA"/>
+    <uses-feature
+        name="android.hardware.camera"
+        required="true"/>
+    <uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission name="android.permission.NFC"/>
+    <uses-permission name="android.permission.VIBRATE"/>
+    <uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission name="android.permission.INTERNET"/>
+    <uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission name="android.permission.USE_BIOMETRIC"/>
+    <uses-feature
+        name="android.hardware.nfc"
+        required="false"/>
+    <uses-feature
+        name="android.hardware.nfc.hce"
+        required="false"/>
+    <uses-permission
+        name="android.permission.BLUETOOTH"
+        maxSdkVersion="30"/>
+    <uses-permission
+        name="android.permission.BLUETOOTH_ADMIN"
+        maxSdkVersion="30"/>
+    <uses-permission name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission name="android.permission.REQUEST_COMPANION_USE_DATA_IN_BACKGROUND"/>
+    <uses-feature
+        name="android.hardware.screen.portrait"
+        required="false"/>
+    <uses-feature
+        name="android.hardware.screen.landscape"
+        required="false"/>
+    <queries>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+    </queries>
+    <uses-permission name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature
+        name="android.hardware.location"
+        required="false"/>
+    <uses-feature
+        name="android.hardware.location.gps"
+        required="false"/>
+    <uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission name="android.permission.FLASHLIGHT"/>
+    <uses-feature name="android.hardware.camera.autofocus"/>
+    <uses-feature
+        name="android.hardware.camera.flash"
+        required="false"/>
+    <uses-permission name="android.permission.RECORD_AUDIO"/>
+    <uses-feature
+        glEsVersion="0x20000"
+        required="true"/>
+    <uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission
+        name="com.paypal.android.p2pmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        protectionLevel="signature"/>
+    <uses-permission name="com.paypal.android.p2pmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature
+        name="android.hardware.camera.front"
+        required="false"/>
+    <supports-screens
+        anyDensity="true"
+        smallScreens="true"
+        normalScreens="true"
+        largeScreens="true"
+        resizeable="true"/>
+    <uses-permission name="android.permission.KB_WHITELIST_NFC"/>
+    <application
+        theme="@style/_2132149135_res_0x7f16038f"
+        label="@string/_2132082860_res_0x7f1500ac"
+        android:icon="@mipmap/ic_launcher"
+        name="com.paypal.oslo.app.OsloApplication"
+        allowBackup="true"
+        installLocation="internalOnly"
+        hardwareAccelerated="true"
+        largeHeap="true"
+        supportsRtl="true"
+        android:extractNativeLibs="false"
+        fullBackupContent="@xml/_2132279299_res_0x7f180003"
+        usesCleartextTraffic="false"
+        resizeableActivity="false"
+        networkSecurityConfig="@xml/_2132279309_res_0x7f18000d"
+        roundIcon="@mipmap/ic_launcher_round"
+        appComponentFactory="androidx.core.app.CoreComponentFactory"
+        dataExtractionRules="@xml/_2132279301_res_0x7f180005">
+        <activity
+            theme="@style/_2132149135_res_0x7f16038f"
+            android:name="com.paypal.oslo.app.MainActivity"
+            android:exported="true"
+            launchMode="singleTask"
+            configChanges="uiMode"
+            windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/activity"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/activities"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/activity"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/activities"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/myaccount/activity"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/myaccount/activities"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/activity_details"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/activities/details"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/myaccount/activities/details"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPattern="/myaccount/activities/details/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/balance/auto-reload"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/banking-hub/auto-reload"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/balance/auto-reload"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/taxHoldDetails"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/moneyOnHoldDetails"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/banking-bundle/standalone-landing"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/balance/get-started/balance-bundle"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/paylater/pl2go-acq-lander"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/paylater/pl2go/tap-to-pay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/paylater/map"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/paylater/planDetails"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/paylater/planList"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/paylater/pay-later-hub"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/paylater/prequal-faq"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/crypto"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/myaccount/crypto/onboarding"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/crypto/quick/buy"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPattern="/myaccount/crypto/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/crypto/redeem/celsius"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/crypto/recurring-purchases"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/debitcards/link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/direct_deposit_setup_info_view"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/helpcenter/showRecommendedList"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/helpcenter/showArticle"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/helpcenter/showEducationCenter"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/identity_unified_alerts"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/idapps/connect/mobile"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/confirmEmail"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/app-switch-checkout"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPattern="/invoice/payerView/details/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/cip_home"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/notification-center"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/post-onboarding"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/cgp/welcome-back"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/request/external"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/request/preview"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/homepage/request"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/homepage/pay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/homepage/external/international"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/payRequest"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/pay-request/preview"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/transfer/claim/preview"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_acquisition_credit_application"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/credit-application/co/landing"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/credit-application/paypal-credit-card/da/us/landing"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_acquisition_document_upload"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_acquisition_decline"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/credit-application/co"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/credit-application/paypal-credit-card/da/us/billing"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/us/webapps/mpp/terms/paypal-credit-10-back"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/us/webapps/mpp/terms/paypal-credit-20-back"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/us/webapps/mpp/terms/paypal-credit"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/us/webapps/mpp/campaigns/terms/paypal-credit-dual"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_account_summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/repayments"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/payments/pay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card/repayments"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_make_payment"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/autopay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/payments/autopay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card/repayments/autopay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_autopay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/repayments-summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/payments"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_payment_summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/manage-account"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/manage"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card/manage"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_manage_account"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/statements"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/statements"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card/statements"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_statement_summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/paypal-credit/us/special-financing"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_financial_plans_summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/rewards-card/rewards"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/credit/cashback/rewards"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/ppcredit/redirect"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit/card-activation"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_activate_card"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_request_virtual_card"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_request_physical_card"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_credit_limit_increase"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_set_preferred"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/revolvingcredit_servicing_card_requested"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings/goal"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings/create"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings/transfer-to-savings/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings/auto-save/manage"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/savings/add-money"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/profile"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/profile"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/redeem"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPattern="/mobile-app/loyalty-rewards/.*"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/earn"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/shopping/offer-education-details"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/rewardscenter/saved-offers"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/summary"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/benefits-subscription"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/celebration"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/loyalty-rewards/enroll"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/rewardscenter"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/shopping/debit-category-selection"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/hub/subsmanagement"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/details-sheet"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/hub/saved-businesses"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/bulk-fi"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/link-subscriptions"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/subscriptions/link-businesses"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/statements"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/statements/tax"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/statements/monthly"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/statements/custom"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/statements/custom/download"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/balance/get-started/tax-filing-bundle"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/idassurance/link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/money/cards/update"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/money/accounts/new"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/mobile-app/wallet/bank-oauth-callback"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/money/banks/confirmation"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/myaccount/money/flow/partner/accounts/link"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:path="/open_web"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <uses-library
+            name="org.apache.http.legacy"
+            required="false"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD1wIRCZPKH87EjU7CXPLKBi9GZ4ArHZMo"/>
+        <provider
+            name="androidx.startup.InitializationProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.androidx-startup">
+            <meta-data
+                name="com.paypal.oslo.feature.taptopay.init.TapToPaySdkInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.feature.identity.clienttoken.ClientTokenInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.feature.identity.unifiedalert.data.AlertsForegroundMonitorInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.feature.shaketoreport.ShakeToReportInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.remoteconfig.RemoteConfigInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.remoteconfig.RemoteConfigCompanionInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.logger.LoggerInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.vendors.datadog.DatadogInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.analytics.AnalyticsTrackerInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.vendors.adjust.AdjustInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.vendors.adobe.AdobeInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.telemetry.compose.AppLifecycleEventsInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.appidentity.initializer.AppGUIDInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.appidentity.initializer.SessionLifecycleInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.i18n.initializer.LocaleInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.i18n.initializer.I18nUserStatusObserverInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.security.initializer.MagnesInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.paypal.oslo.core.startup.AppVerifierInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.google.maps.android.compose.utils.attribution.AttributionIdInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.google.maps.android.ktx.utils.attribution.AttributionIdInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.emoji2.text.EmojiCompatInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.lifecycle.ProcessLifecycleInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="okhttp3.internal.platform.PlatformInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="androidx.profileinstaller.ProfileInstallerInitializer"
+                value="androidx.startup"/>
+            <meta-data
+                name="com.apollographql.apollo.cache.normalized.sql.ApolloInitializer"
+                value="androidx.startup"/>
+        </provider>
+        <provider
+            name="androidx.core.content.FileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.oslo.qrc.fileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279305_res_0x7f180009"/>
+        </provider>
+        <provider
+            name="com.paypal.oslo.feature.directdeposit.DirectDepositFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.oslo.directdeposit.fileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279304_res_0x7f180008"/>
+        </provider>
+        <activity
+            theme="@style/_2132149041_res_0x7f160331"
+            android:name="com.paypal.oslo.feature.taptopay.ui.paymode.PayModeActivity"
+            android:exported="false"
+            taskAffinity="com.paypal.oslo.taptopay"
+            launchMode="singleTask"
+            screenOrientation="portrait"
+            showOnLockScreen="true"/>
+        <receiver
+            name="com.paypal.oslo.feature.onboarding.signup.phone.data.receiver.SmsBroadcastReceiver"
+            permission="com.google.android.gms.auth.api.phone.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            name="com.paypal.oslo.feature.mosaic.ui.webview.MosaicFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.feature.mosaic.fileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279307_res_0x7f18000b"/>
+        </provider>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.paypal.oslo.feature.packagetracking.ui.oauth.PackageTrackingOAuthActivity"
+            android:exported="true"
+            launchMode="singleTop">
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPrefix="/package_list"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="https"
+                    android:host="www.paypal.com"
+                    android:pathPrefix="/package_tracking_email_auth"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="paypal"
+                    android:host="package_tracking_email_auth"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="paypal"
+                    android:host="package_list"/>
+            </intent-filter>
+        </activity>
+        <provider
+            name="com.paypal.oslo.feature.userprofile.ui.utils.UserProfileFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.feature.userprofile.fileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279306_res_0x7f18000a"/>
+        </provider>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.paypal.oslo.feature.verificationcapture.ui.webflow.VerificationCaptureWebFlowDocumentActivity"
+            android:exported="false"
+            windowSoftInputMode="adjustResize"
+            hardwareAccelerated="true"/>
+        <activity
+            theme="@style/_2132149041_res_0x7f160331"
+            android:name="com.paypal.oslo.feature.shaketoreport.ui.BugReportActivity"
+            android:exported="false"
+            launchMode="singleTop"/>
+        <activity
+            android:name="com.paypal.oslo.feature.xoom.YodleeBrowserSwitchActivity"
+            android:exported="true"
+            configChanges="screenSize|orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data
+                    android:scheme="paypal"
+                    android:host="remittance-yodlee"/>
+            </intent-filter>
+        </activity>
+        <service
+            name="com.paypal.oslo.core.pushnotification.data.fcm.OsloFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver
+            name="com.paypal.oslo.core.pushnotification.data.click.NotificationClickReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.paypal.oslo.NOTIFICATION_ACTION_CLICK"/>
+            </intent-filter>
+        </receiver>
+        <service
+            name="com.paypal.oslo.core.companion.data.CompanionIpcService"
+            permission="com.paypal.android.p2pmobile.permission.ACCESS_CONFIG"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.paypal.oslo.action.LAUNCH_COMPANION"/>
+            </intent-filter>
+        </service>
+        <service
+            name="androidx.work.impl.foreground.SystemForegroundService"
+            enabled="true"
+            android:exported="false"
+            directBootAware="false"
+            foregroundServiceType="dataSync"/>
+        <receiver
+            name="com.paypal.oslo.downloads.impl.notification.DownloadActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.paypal.oslo.downloads.CANCEL"/>
+                <action android:name="com.paypal.oslo.downloads.RETRY"/>
+                <action android:name="com.paypal.oslo.downloads.RESUME"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            name="com.paypal.oslo.downloads.impl.DownloadsFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.oslo.downloads.fileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279300_res_0x7f180004"/>
+        </provider>
+        <activity
+            theme="@style/_2132149137_res_0x7f160391"
+            android:name="com.paypal.android.threeds.ChallengeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value=""/>
+        </activity>
+        <service
+            name="com.paypal.android.taptopay.data.thales.payment.ThalesPaymentHCEService"
+            permission="android.permission.BIND_NFC_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data
+                name="android.nfc.cardemulation.host_apdu_service"
+                resource="@xml/_2132279296_res_0x7f180000"/>
+        </service>
+        <activity
+            theme="@style/_2132148242_res_0x7f160012"
+            android:name="com.zettle.sdk.ui.ZettleActivity"
+            android:exported="true"
+            launchMode="singleTop"
+            configChanges="uiMode"
+            fullBackupContent="@xml/_2132279299_res_0x7f180003"/>
+        <activity
+            android:name="com.mastercard.openbanking.connect.Connect"
+            android:exported="true"
+            launchMode="singleTask"
+            windowSoftInputMode="adjustPan">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="connect"/>
+                <data android:host="maob"/>
+                <data android:path="/redirect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mastercard.openbanking.connect.CustomTabsActivityManager"/>
+        <provider
+            name="com.plaid.link.internal.PlaidFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.com.plaid.link.internal.PlaidFileProvider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279313_res_0x7f180011"/>
+        </provider>
+        <activity
+            theme="@style/_2132149133_res_0x7f16038d"
+            android:name="com.plaid.internal.LinkRedirectActivity"
+            android:exported="true"
+            autoRemoveFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="plaid"/>
+                <data android:host="complete"/>
+                <data android:host="redirect"/>
+                <data android:host="resume"/>
+            </intent-filter>
+        </activity>
+        <activity
+            theme="@style/_2132148727_res_0x7f1601f7"
+            android:name="com.plaid.internal.link.LinkActivity"
+            android:exported="false"
+            launchMode="singleInstance"
+            windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name="com.izettle.android.auth.OAuthActivity"
+            taskAffinity="@string/_2132093077_res_0x7f152895"
+            launchMode="singleTask"/>
+        <activity android:name="com.izettle.android.auth.OAuthTestActivity"/>
+        <service
+            name="com.izettle.android.auth.sync.ZettleSyncService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <activity
+            theme="@style/_2132149057_res_0x7f160341"
+            android:name="com.ingo.sdk.android.ux.activity.IngoSdkActivity"
+            launchMode="singleTop"
+            screenOrientation="portrait"
+            windowSoftInputMode="adjustResize"
+            enableOnBackInvokedCallback="true"/>
+        <activity
+            theme="@style/_2132149057_res_0x7f160341"
+            android:name="com.ingo.sdk.android.ux.activity.IngoSdkCameraActivity"
+            launchMode="singleTop"
+            screenOrientation="portrait"/>
+        <activity
+            theme="@style/_2132149057_res_0x7f160341"
+            android:name="com.miteksystems.misnap.workflow.MiSnapWorkflowActivity"
+            configChanges="keyboardHidden"/>
+        <activity
+            theme="@style/_2132149652_res_0x7f160594"
+            android:name="com.knotapi.knot.ui.activities.KnotActivity"
+            android:exported="true"
+            screenOrientation="portrait"
+            windowSoftInputMode="adjustResize"
+            hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.knotapi.knot.ui.activities.KnotActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider
+            name="com.knotapi.knot.services.KnotSDKInitProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.knotSDKInitProvider"
+            initOrder="100"/>
+        <activity
+            theme="@style/_2132148684_res_0x7f1601cc"
+            label="@string/_2132093231_res_0x7f15292f"
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:exported="false"
+            windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.BasicPlaceAutocompleteActivity"
+            android:exported="false"
+            windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.PlaceAutocompleteActivity"
+            android:exported="false"
+            windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name="com.google.android.libraries.places.widget.internal.photoviewer.PlacesLightboxActivity"
+            android:exported="false"
+            windowSoftInputMode="adjustResize"/>
+        <activity
+            theme="@style/_2132149651_res_0x7f160593"
+            android:name="financial.atomic.transact.activity.TransactActivity"
+            screenOrientation="sensorPortrait"
+            configChanges="screenSize|orientation|keyboardHidden"/>
+        <service
+            name="financial.atomic.transact.service.TransactService"
+            enabled="true"
+            android:exported="false"/>
+        <service
+            name="com.adobe.marketing.mobile.ExtensionDiscoveryService"
+            android:exported="false">
+            <meta-data
+                name="a"
+                value=""/>
+        </service>
+        <activity
+            theme="@style/_2132148627_res_0x7f160193"
+            android:name="com.adobe.marketing.mobile.messaging.MessagingPushTrackerActivity"
+            android:exported="false"
+            launchMode="singleInstance"/>
+        <receiver name="com.adobe.marketing.mobile.messaging.NotificationInteractionReceiver"/>
+        <provider
+            name="com.adobe.marketing.mobile.messaging.MessagingFileProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.messagingfileprovider"
+            grantUriPermissions="true">
+            <meta-data
+                name="android.support.FILE_PROVIDER_PATHS"
+                resource="@xml/_2132279312_res_0x7f180010"/>
+        </provider>
+        <activity
+            label=""
+            android:name="com.dyneti.android.dyscan.DyScanActivity"
+            android:exported="false"
+            screenOrientation="portrait"/>
+        <uses-library
+            name="androidx.camera.extensions.impl"
+            required="false"/>
+        <service
+            name="androidx.camera.core.impl.MetadataHolderService"
+            enabled="false"
+            android:exported="false">
+            <meta-data
+                name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+                value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service
+            name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:exported="false"
+            directBootAware="true">
+            <meta-data
+                name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider
+            name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.mlkitinitprovider"
+            initOrder="99"/>
+        <service
+            name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+            enabled="true"
+            android:exported="false">
+            <meta-data
+                name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+                value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity
+            theme="@style/_2132149056_res_0x7f160340"
+            android:name="androidx.view.playservices.controllers.identityauth.HiddenActivity"
+            enabled="true"
+            android:exported="false"
+            configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            fitsSystemWindows="true"/>
+        <activity
+            theme="@style/_2132149056_res_0x7f160340"
+            android:name="androidx.view.playservices.controllers.identitycredentials.IdentityCredentialApiHiddenActivity"
+            enabled="true"
+            android:exported="false"
+            configChanges="screenSize|screenLayout|orientation|keyboardHidden"
+            fitsSystemWindows="true"/>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:exported="false"
+            excludeFromRecents="true"/>
+        <service
+            name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+            android:exported="true"
+            visibleToInstantApps="true"/>
+        <service
+            name="com.payair.hce.PayairWalletHceService"
+            permission="android.permission.BIND_NFC_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+            </intent-filter>
+            <meta-data
+                name="android.nfc.cardemulation.host_apdu_service"
+                resource="@xml/_2132279296_res_0x7f180000"/>
+        </service>
+        <service
+            name="com.payair.hce.McbpGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            name="com.payair.hce.communication.MDESInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            name="com.payair.hce.McbpGcmJobIntentService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+        <receiver
+            name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data
+                name="a"
+                value=""/>
+        </receiver>
+        <service
+            name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false"
+            directBootAware="true">
+            <intent-filter priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false"
+            directBootAware="true">
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service
+            name="com.google.android.gms.tapandpay.issuer.GeneratePaymentCredentialsService"
+            permission="com.google.android.gms.permission.SEND_ANDROID_PAY_DATA"
+            android:exported="true"
+            description="@string/_2132092174_res_0x7f15250e">
+            <intent-filter>
+                <action android:name="com.google.android.gms.tapandpay.issuer.GENERATE_PAYMENT_CREDENTIALS"/>
+            </intent-filter>
+        </service>
+        <activity
+            theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <provider
+            name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.firebaseinitprovider"
+            initOrder="100"
+            directBootAware="true"/>
+        <provider
+            name="com.datadog.android.profiling.DdProfilingContentProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.provider.datadog.profiling"
+            initOrder="1000"/>
+        <service
+            name="androidx.work.impl.background.systemjob.SystemJobService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false"/>
+        <receiver
+            name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            enabled="true"
+            android:exported="false"
+            directBootAware="false"/>
+        <receiver
+            name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            enabled="false"
+            android:exported="false"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            permission="android.permission.DUMP"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service
+            name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false"
+            directBootAware="true"/>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true"/>
+        <uses-library
+            name="androidx.window.extensions"
+            required="false"/>
+        <uses-library
+            name="androidx.window.sidecar"
+            required="false"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="12451000"/>
+        <provider
+            name="com.datadog.android.rum.DdRumContentProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.provider.datadog.rum"/>
+        <receiver
+            name="androidx.profileinstaller.ProfileInstallReceiver"
+            permission="android.permission.DUMP"
+            enabled="true"
+            android:exported="true"
+            directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service
+            name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false">
+            <meta-data
+                name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                value="cct"/>
+        </service>
+        <service
+            name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false"/>
+        <receiver
+            name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false"/>
+        <provider
+            name="com.adjust.sdk.SystemLifecycleContentProvider"
+            android:exported="false"
+            authorities="com.paypal.android.p2pmobile.adjust-lifecycle-provider"/>
+        <activity
+            theme="@style/_2132148237_res_0x7f16000d"
+            android:name="com.daon.dmds.activities.DefaultScanActivity"
+            configChanges="screenSize|orientation"/>
+        <activity
+            theme="@style/_2132148237_res_0x7f16000d"
+            android:name="com.daon.dmds.activities.DMDSPreviewActivity"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.DocumentScanActivity"
+            screenOrientation="nosensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.BarcodeScanActivity"
+            screenOrientation="sensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.FieldByFieldScanActivity"
+            screenOrientation="nosensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.LegacyDocumentVerificationActivity"
+            screenOrientation="nosensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.BlinkCardActivity"
+            screenOrientation="sensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.BlinkIdActivity"
+            screenOrientation="sensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            android:name="com.microblink.blinkid.activity.DocumentCaptureActivity"
+            screenOrientation="sensor"
+            configChanges="screenSize|orientation"/>
+        <activity
+            theme="@style/_2132148604_res_0x7f16017c"
+            android:name="com.microblink.blinkid.activity.edit.BlinkCardEditActivity"
+            screenOrientation="portrait"/>
+        <activity
+            theme="@style/_2132149049_res_0x7f160339"
+            android:name="com.facetec.sdk.FaceTecSessionActivity"
+            excludeFromRecents="true"
+            configChanges="screenSize|orientation|keyboardHidden"
+            windowSoftInputMode="adjustPan"
+            supportsRtl="true"
+            resizeableActivity="false"/>
+        <service
+            name="com.gemalto.mfs.mwsdk.provisioning.push.CPSCommService"
+            permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            name="com.gemalto.mfs.mwsdk.mobilegateway.MGConfigurationChangeService"
+            permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            name="com.gemalto.mfs.mwsdk.dcm.broadcast.DCMBroadcastService"
+            permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity
+            android:name="com.gemalto.mfs.mwsdk.cdcvm.DeviceCVMKeyguardActivity"
+            android:exported="false"
+            autoRemoveFromRecents="true"/>
+        <service
+            name="sspog.SSPOGJobService"
+            permission="android.permission.BIND_JOB_SERVICE"/>
+        <service
+            name="sspog.internal.SSPOGIsolatedService"
+            enabled="true"
+            process=":remoteProcessIsolatedCheck"
+            isolatedProcess="true"/>
+        <service
+            name="sspog.internal.SSPOGIsolatedNativeService"
+            enabled="true"
+            process=":remoteProcessIsolatedNativeCheck"
+            isolatedProcess="true"/>
+        <service
+            name="sspog.internal.SSPOGAppLifecycleService"
+            enabled="true"/>
+        <activity
+            theme="@style/_2132149136_res_0x7f160390"
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            stateNotNeeded="true"/>
+        <meta-data
+            android:name="com.android.vending.splits.required"
+            android:value="true"/>
+        <meta-data
+            android:name="com.android.stamp.source"
+            android:value="https://play.google.com/store"/>
+        <meta-data
+            android:name="com.android.stamp.type"
+            android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="2"/>
+    </application>
+</manifest>

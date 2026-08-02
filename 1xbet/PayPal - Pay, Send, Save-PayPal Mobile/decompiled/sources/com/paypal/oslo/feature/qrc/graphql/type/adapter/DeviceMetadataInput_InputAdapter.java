@@ -1,0 +1,54 @@
+package com.paypal.oslo.feature.qrc.graphql.type.adapter;
+
+@kotlin.Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\t\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\t\u0010\nJ'\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u000f\u0010\u0010"}, d2 = {"Lcom/paypal/oslo/feature/qrc/graphql/type/adapter/DeviceMetadataInput_InputAdapter;", "Lcom/apollographql/apollo/api/Adapter;", "Lcom/paypal/oslo/feature/qrc/graphql/type/DeviceMetadataInput;", "<init>", "()V", "Lcom/apollographql/apollo/api/json/JsonReader;", "reader", "Lcom/apollographql/apollo/api/CustomScalarAdapters;", "customScalarAdapters", "fromJson", "(Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lcom/paypal/oslo/feature/qrc/graphql/type/DeviceMetadataInput;", "Lcom/apollographql/apollo/api/json/JsonWriter;", "writer", com.datadog.android.rum.internal.metric.ViewEndedMetricDispatcher.KEY_VALUE, "", "toJson", "(Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lcom/paypal/oslo/feature/qrc/graphql/type/DeviceMetadataInput;)V"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes14.dex */
+public final class DeviceMetadataInput_InputAdapter implements com.apollographql.apollo.api.Adapter<com.paypal.oslo.feature.qrc.graphql.type.DeviceMetadataInput> {
+    public static final int $stable = 0;
+    public static final com.paypal.oslo.feature.qrc.graphql.type.adapter.DeviceMetadataInput_InputAdapter INSTANCE = new com.paypal.oslo.feature.qrc.graphql.type.adapter.DeviceMetadataInput_InputAdapter();
+
+    private DeviceMetadataInput_InputAdapter() {
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // com.apollographql.apollo.api.Adapter
+    public final com.paypal.oslo.feature.qrc.graphql.type.DeviceMetadataInput fromJson(com.apollographql.apollo.api.json.JsonReader reader, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(reader, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+        throw new java.lang.IllegalStateException("Input type used in output position");
+    }
+
+    @Override // com.apollographql.apollo.api.Adapter
+    public final void toJson(com.apollographql.apollo.api.json.JsonWriter writer, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters, com.paypal.oslo.feature.qrc.graphql.type.DeviceMetadataInput value) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(writer, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(value, "");
+        if (value.getMerchantClientMetadataId() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("merchantClientMetadataId");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.NullableStringAdapter).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getMerchantClientMetadataId());
+        }
+        if (value.getInternalDeviceId() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("internalDeviceId");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.NullableStringAdapter).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getInternalDeviceId());
+        }
+        if (value.getDevicePublicKey() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("devicePublicKey");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.NullableStringAdapter).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getDevicePublicKey());
+        }
+        if (value.getDevicePublicKeyAlgorithm() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("devicePublicKeyAlgorithm");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.NullableStringAdapter).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getDevicePublicKeyAlgorithm());
+        }
+        if (value.getGeoCoordinates() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("geoCoordinates");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9940obj$default(com.paypal.oslo.feature.qrc.graphql.type.adapter.GeoCoordinatesInput_InputAdapter.INSTANCE, false, 1, null))).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getGeoCoordinates());
+        }
+        if (value.getGeoCountry() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("geoCountry");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.m9938nullable(customScalarAdapters.responseAdapterFor(com.paypal.oslo.feature.qrc.graphql.type.CountryCode.INSTANCE.getType()))).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getGeoCountry());
+        }
+        if (value.getVettedStatus() instanceof com.apollographql.apollo.api.Optional.Present) {
+            writer.name("vettedStatus");
+            com.apollographql.apollo.api.Adapters.m9942present(com.apollographql.apollo.api.Adapters.m9938nullable(com.paypal.oslo.feature.qrc.graphql.type.adapter.DeviceVettedStatus_ResponseAdapter.INSTANCE)).toJson(writer, customScalarAdapters, (com.apollographql.apollo.api.Optional.Present) value.getVettedStatus());
+        }
+    }
+}

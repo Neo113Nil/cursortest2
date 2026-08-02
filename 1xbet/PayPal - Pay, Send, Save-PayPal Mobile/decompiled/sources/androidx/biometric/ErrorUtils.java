@@ -1,0 +1,58 @@
+package androidx.biometric;
+
+/* loaded from: classes3.dex */
+class ErrorUtils {
+    static boolean getHighResolutionOutputSizeshNQ4ISI(int i) {
+        return i == 7 || i == 9;
+    }
+
+    static boolean getHighSpeedVideoSizes(int i) {
+        switch (i) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+                return true;
+            case 6:
+            default:
+                return false;
+        }
+    }
+
+    private ErrorUtils() {
+    }
+
+    static java.lang.String getHighSpeedVideoFpsRangesFor(android.content.Context context, int i) {
+        if (context == null) {
+            return "";
+        }
+        if (i == 1) {
+            return context.getString(androidx.biometric.R.string.fingerprint_error_hw_not_available);
+        }
+        if (i != 7) {
+            switch (i) {
+                case 9:
+                    break;
+                case 10:
+                    return context.getString(androidx.biometric.R.string.fingerprint_error_user_canceled);
+                case 11:
+                    return context.getString(androidx.biometric.R.string.fingerprint_error_no_fingerprints);
+                case 12:
+                    return context.getString(androidx.biometric.R.string.fingerprint_error_hw_not_present);
+                default:
+                    return context.getString(androidx.biometric.R.string.default_error_msg);
+            }
+        }
+        return context.getString(androidx.biometric.R.string.fingerprint_error_lockout);
+    }
+}

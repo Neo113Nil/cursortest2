@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        state_focused="true"
+        state_enabled="false"
+        state_pressed="true"
+        drawable="0x7f080153"/>
+    <item
+        state_focused="true"
+        state_enabled="false"
+        drawable="0x7f080153"/>
+    <item
+        state_focused="true"
+        state_pressed="true"
+        drawable="@drawable/_2131231057_res_0x7f080151"/>
+    <item
+        state_focused="false"
+        state_pressed="true"
+        drawable="@drawable/_2131231057_res_0x7f080151"/>
+    <item
+        state_focused="true"
+        drawable="0x7f08014d"/>
+    <item drawable="@android:color/transparent"/>
+</selector>

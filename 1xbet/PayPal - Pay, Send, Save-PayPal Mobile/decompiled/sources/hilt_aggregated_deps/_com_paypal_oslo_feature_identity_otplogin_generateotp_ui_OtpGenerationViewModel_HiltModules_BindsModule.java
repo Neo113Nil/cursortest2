@@ -1,0 +1,5 @@
+package hilt_aggregated_deps;
+
+/* loaded from: classes17.dex */
+public class _com_paypal_oslo_feature_identity_otplogin_generateotp_ui_OtpGenerationViewModel_HiltModules_BindsModule {
+}

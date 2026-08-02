@@ -1,0 +1,63 @@
+package com.paypal.oslo.feature.activity.domain.usecase.ledger.filters;
+
+@kotlin.Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0083\u0001\u0010\u0014\u001a\u00060\u0012j\u0002`\u00132\u001a\b\u0002\u0010\b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\b\u0012\u00060\u0006j\u0002`\u0007\u0018\u00010\u00050\u00042\u001a\b\u0002\u0010\u000b\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\t0\u00042\u001a\b\u0002\u0010\u000e\u001a\u0014\u0012\u0010\u0012\u000e\u0012\b\u0012\u00060\fj\u0002`\r\u0018\u00010\u00050\u00042\u001a\b\u0002\u0010\u0011\u001a\u0014\u0012\u0010\u0012\u000e\u0012\b\u0012\u00060\u000fj\u0002`\u0010\u0018\u00010\u00050\u0004H\u0000¢\u0006\u0004\b\u0014\u0010\u0015J\u000f\u0010\u0017\u001a\u00020\u0016H\u0000¢\u0006\u0004\b\u0017\u0010\u0018J\u0019\u0010\u001c\u001a\u00020\u001b2\b\b\u0002\u0010\u001a\u001a\u00020\u0019H\u0000¢\u0006\u0004\b\u001c\u0010\u001d"}, d2 = {"Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/filters/ActivityLedgerDefaultFilterInputProvider;", "", "<init>", "()V", "Lcom/apollographql/apollo/api/Optional;", "", "Lcom/paypal/oslo/api/graphql/schema/type/ActivityStatus;", "Lcom/paypal/oslo/feature/activity/graphql/type/ActivityStatus;", "activityStatus", "Lkotlin/Pair;", "Ljava/util/Date;", "activityRequestDateTime", "Lcom/paypal/oslo/api/graphql/schema/type/PackageTrackingStatus;", "Lcom/paypal/oslo/feature/activity/graphql/type/PackageTrackingStatus;", "packageStatuses", "Lcom/paypal/oslo/api/graphql/schema/type/ActivityType;", "Lcom/paypal/oslo/feature/activity/graphql/type/ActivityType;", "types", "Lcom/paypal/oslo/api/graphql/schema/type/ActivitiesInput;", "Lcom/paypal/oslo/feature/activity/graphql/type/ActivitiesInput;", "getActivityQueriesInput$activity_prodRelease", "(Lcom/apollographql/apollo/api/Optional;Lcom/apollographql/apollo/api/Optional;Lcom/apollographql/apollo/api/Optional;Lcom/apollographql/apollo/api/Optional;)Lcom/paypal/oslo/api/graphql/schema/type/ActivitiesInput;", "Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/mapper/ActivityLedgerUseCaseInputQueryType$ActivityLedgerQueryType;", "getActivityLedgerSectionsList$activity_prodRelease", "()Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/mapper/ActivityLedgerUseCaseInputQueryType$ActivityLedgerQueryType;", "Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/filters/ActivityFilterType;", "activityFilterType", "Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/mapper/ActivityLedgerUseCaseInputQueryType$ActivityLedgerPaginationQueryType;", "getCompletedActivityItems$activity_prodRelease", "(Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/filters/ActivityFilterType;)Lcom/paypal/oslo/feature/activity/domain/usecase/ledger/mapper/ActivityLedgerUseCaseInputQueryType$ActivityLedgerPaginationQueryType;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes10.dex */
+public final class ActivityLedgerDefaultFilterInputProvider {
+    public static final int $stable = 0;
+    public static final com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityLedgerDefaultFilterInputProvider INSTANCE = new com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityLedgerDefaultFilterInputProvider();
+
+    private ActivityLedgerDefaultFilterInputProvider() {
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static /* synthetic */ com.paypal.oslo.api.graphql.schema.type.ActivitiesInput getActivityQueriesInput$activity_prodRelease$default(com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityLedgerDefaultFilterInputProvider activityLedgerDefaultFilterInputProvider, com.apollographql.apollo.api.Optional optional, com.apollographql.apollo.api.Optional optional2, com.apollographql.apollo.api.Optional optional3, com.apollographql.apollo.api.Optional optional4, int i, java.lang.Object obj) {
+        if ((i & 1) != 0) {
+            optional = com.apollographql.apollo.api.Optional.INSTANCE.absent();
+        }
+        if ((i & 2) != 0) {
+            optional2 = com.apollographql.apollo.api.Optional.INSTANCE.absent();
+        }
+        if ((i & 4) != 0) {
+            optional3 = com.apollographql.apollo.api.Optional.INSTANCE.absent();
+        }
+        if ((i & 8) != 0) {
+            optional4 = com.apollographql.apollo.api.Optional.INSTANCE.absent();
+        }
+        return activityLedgerDefaultFilterInputProvider.getActivityQueriesInput$activity_prodRelease(optional, optional2, optional3, optional4);
+    }
+
+    public final com.paypal.oslo.api.graphql.schema.type.ActivitiesInput getActivityQueriesInput$activity_prodRelease(com.apollographql.apollo.api.Optional<? extends java.util.List<? extends com.paypal.oslo.api.graphql.schema.type.ActivityStatus>> activityStatus, com.apollographql.apollo.api.Optional<? extends kotlin.Pair<? extends java.util.Date, ? extends java.util.Date>> activityRequestDateTime, com.apollographql.apollo.api.Optional<? extends java.util.List<? extends com.paypal.oslo.api.graphql.schema.type.PackageTrackingStatus>> packageStatuses, com.apollographql.apollo.api.Optional<? extends java.util.List<? extends com.paypal.oslo.api.graphql.schema.type.ActivityType>> types) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(activityStatus, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(activityRequestDateTime, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(packageStatuses, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(types, "");
+        java.lang.String id = java.util.TimeZone.getDefault().getID();
+        kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(id, "");
+        com.apollographql.apollo.api.Optional.Present present = com.apollographql.apollo.api.Optional.INSTANCE.present(60);
+        com.apollographql.apollo.api.Optional.Companion companion = com.apollographql.apollo.api.Optional.INSTANCE;
+        com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils dateTimeUtils = com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE;
+        kotlin.Pair<? extends java.util.Date, ? extends java.util.Date> orNull = activityRequestDateTime.getOrNull();
+        com.apollographql.apollo.api.Optional.Present present2 = companion.present(dateTimeUtils.getUTCStringValue$activity_prodRelease(orNull != null ? orNull.getFirst() : null));
+        com.apollographql.apollo.api.Optional.Companion companion2 = com.apollographql.apollo.api.Optional.INSTANCE;
+        com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils dateTimeUtils2 = com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE;
+        kotlin.Pair<? extends java.util.Date, ? extends java.util.Date> orNull2 = activityRequestDateTime.getOrNull();
+        com.apollographql.apollo.api.Optional optional = null;
+        return new com.paypal.oslo.api.graphql.schema.type.ActivitiesInput(id, new com.paypal.oslo.api.graphql.schema.type.ActivityFiltersInput(present2, companion2.present(dateTimeUtils2.getUTCStringValue$activity_prodRelease(orNull2 != null ? orNull2.getSecond() : null)), null, null, null, null, null, null, null, null, optional, optional, optional, types, optional, activityStatus, null, null, null, null, null, null, null, packageStatuses, null, null, null, null, null, 528441340, null), present, null, 8, null);
+    }
+
+    public final com.paypal.oslo.feature.activity.domain.usecase.ledger.mapper.ActivityLedgerUseCaseInputQueryType.ActivityLedgerQueryType getActivityLedgerSectionsList$activity_prodRelease() {
+        return new com.paypal.oslo.feature.activity.domain.usecase.ledger.mapper.ActivityLedgerUseCaseInputQueryType.ActivityLedgerQueryType(kotlin.collections.MapsKt.mutableMapOf(kotlin.TuplesKt.to(new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Upcoming(null, null, null, 7, null), getActivityQueriesInput$activity_prodRelease$default(this, null, com.apollographql.apollo.api.Optional.INSTANCE.present(com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE.transformInUTCFormat(new com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeRange.NDays(-90, 0, 2, null))), new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Upcoming(null, null, null, 7, null).getPackageStatuses(), new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Upcoming(null, null, null, 7, null).getTypes(), 1, null)), kotlin.TuplesKt.to(new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Pending(null, 1, null), getActivityQueriesInput$activity_prodRelease$default(this, new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Pending(null, 1, null).getActivityStatuses(), com.apollographql.apollo.api.Optional.INSTANCE.present(com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE.transformInUTCFormat(new com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeRange.Month(-6, 0, 2, null))), null, null, 12, null)), kotlin.TuplesKt.to(new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Completed(null, 1, null), getActivityQueriesInput$activity_prodRelease$default(this, new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Completed(null, 1, null).getActivityStatuses(), com.apollographql.apollo.api.Optional.INSTANCE.present(com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE.transformInUTCFormat(new com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeRange.Year(-3, 0, 2, null))), null, null, 12, null))));
+    }
+
+    public static /* synthetic */ com.paypal.oslo.feature.activity.domain.usecase.ledger.mapper.ActivityLedgerUseCaseInputQueryType.ActivityLedgerPaginationQueryType getCompletedActivityItems$activity_prodRelease$default(com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityLedgerDefaultFilterInputProvider activityLedgerDefaultFilterInputProvider, com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityFilterType activityFilterType, int i, java.lang.Object obj) {
+        if ((i & 1) != 0) {
+            activityFilterType = new com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityFilterType.Default(null, 1, null);
+        }
+        return activityLedgerDefaultFilterInputProvider.getCompletedActivityItems$activity_prodRelease(activityFilterType);
+    }
+
+    public final com.paypal.oslo.feature.activity.domain.usecase.ledger.mapper.ActivityLedgerUseCaseInputQueryType.ActivityLedgerPaginationQueryType getCompletedActivityItems$activity_prodRelease(com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityFilterType activityFilterType) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(activityFilterType, "");
+        return new com.paypal.oslo.feature.activity.domain.usecase.ledger.mapper.ActivityLedgerUseCaseInputQueryType.ActivityLedgerPaginationQueryType(kotlin.collections.MapsKt.mutableMapOf(kotlin.TuplesKt.to(new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Completed(null, 1, null), com.paypal.oslo.feature.activity.domain.usecase.ledger.filters.ActivityLedgerFiltersInputProvider.INSTANCE.getActivityLedgerSectionsListWithFilters$activity_prodRelease(activityFilterType).getActivityInput().getOrDefault(new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Completed(null, 1, null), getActivityQueriesInput$activity_prodRelease$default(this, new com.paypal.oslo.feature.activity.domain.common.queryparams.ActivityGraphQLQueryFilterStatus.Completed(null, 1, null).getActivityStatuses(), com.apollographql.apollo.api.Optional.INSTANCE.present(com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeUtils.INSTANCE.transformInUTCFormat(new com.paypal.oslo.feature.activity.domain.base.utils.datetime.DateTimeRange.Year(-3, 0, 2, null))), null, null, 12, null)))));
+    }
+}

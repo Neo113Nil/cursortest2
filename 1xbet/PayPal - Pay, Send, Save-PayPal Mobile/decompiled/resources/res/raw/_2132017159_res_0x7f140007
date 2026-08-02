@@ -1,0 +1,1404 @@
+{
+  "sprites": {
+    "round": {
+      "1x": {
+        "url": "https://www.paypalobjects.com/paypal-ui/components/flags/v6/round1x.png",
+        "size": 64
+      }
+    }
+  },
+  "countries": [
+    {
+      "objectType": "Country",
+      "countryCode": "globe",
+      "label": "Default",
+      "imageIndex": 0
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AF",
+      "label": "Afghanistan",
+      "imageIndex": 1
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AL",
+      "label": "Albania",
+      "imageIndex": 2
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DZ",
+      "label": "Algeria",
+      "imageIndex": 3
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AS",
+      "label": "American Samoa",
+      "imageIndex": 4
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AD",
+      "label": "Andorra",
+      "imageIndex": 5
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AO",
+      "label": "Angola",
+      "imageIndex": 6
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AI",
+      "label": "Anguilla",
+      "imageIndex": 7
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AG",
+      "label": "Antigua and Barbuda",
+      "imageIndex": 8
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AR",
+      "label": "Argentina",
+      "imageIndex": 9
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AM",
+      "label": "Armenia",
+      "imageIndex": 10
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AW",
+      "label": "Aruba",
+      "imageIndex": 11
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AU",
+      "label": "Australia",
+      "imageIndex": 12
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AT",
+      "label": "Austria",
+      "imageIndex": 13
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AZ",
+      "label": "Azerbaijan",
+      "imageIndex": 14
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BS",
+      "label": "Bahamas",
+      "imageIndex": 15
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BH",
+      "label": "Bahrain",
+      "imageIndex": 16
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BD",
+      "label": "Bangladesh",
+      "imageIndex": 17
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BB",
+      "label": "Barbados",
+      "imageIndex": 18
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BY",
+      "label": "Belarus",
+      "imageIndex": 19
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BE",
+      "label": "Belgium",
+      "imageIndex": 20
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BZ",
+      "label": "Belize",
+      "imageIndex": 21
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BJ",
+      "label": "Benin",
+      "imageIndex": 22
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BM",
+      "label": "Bermuda",
+      "imageIndex": 23
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BT",
+      "label": "Bhutan",
+      "imageIndex": 24
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BO",
+      "label": "Bolivia",
+      "imageIndex": 25
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BA",
+      "label": "Bosnia and Herzegovina",
+      "imageIndex": 26
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BW",
+      "label": "Botswana",
+      "imageIndex": 27
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BR",
+      "label": "Brazil",
+      "imageIndex": 28
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IO",
+      "label": "British Indian Ocean Territory",
+      "imageIndex": 29
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VG",
+      "label": "British Virgin Islands",
+      "imageIndex": 30
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BN",
+      "label": "Brunei",
+      "imageIndex": 31
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BG",
+      "label": "Bulgaria",
+      "imageIndex": 32
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BF",
+      "label": "Burkina Faso",
+      "imageIndex": 33
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "BI",
+      "label": "Burundi",
+      "imageIndex": 34
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KH",
+      "label": "Cambodia",
+      "imageIndex": 35
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CM",
+      "label": "Cameroon",
+      "imageIndex": 36
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CA",
+      "label": "Canada",
+      "imageIndex": 37
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CV",
+      "label": "Cape Verde",
+      "imageIndex": 38
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KY",
+      "label": "Cayman Islands",
+      "imageIndex": 39
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CF",
+      "label": "Central African Republic",
+      "imageIndex": 40
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TD",
+      "label": "Chad",
+      "imageIndex": 41
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CL",
+      "label": "Chile",
+      "imageIndex": 42
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CN",
+      "label": "China",
+      "imageIndex": 43
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CX",
+      "label": "Christmas Island",
+      "imageIndex": 44
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CC",
+      "label": "Cocos (Keeling) Islands",
+      "imageIndex": 45
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CO",
+      "label": "Colombia",
+      "imageIndex": 46
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KM",
+      "label": "Comoros",
+      "imageIndex": 47
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CG",
+      "label": "Congo-Brazzaville",
+      "imageIndex": 48
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CD",
+      "label": "Congo-Kinshasa",
+      "imageIndex": 49
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CK",
+      "label": "Cook Islands",
+      "imageIndex": 50
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CR",
+      "label": "Costa Rica",
+      "imageIndex": 51
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "HR",
+      "label": "Croatia",
+      "imageIndex": 52
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CY",
+      "label": "Cyprus",
+      "imageIndex": 53
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CZ",
+      "label": "Czech Republic",
+      "imageIndex": 54
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CI",
+      "label": "Côte d’Ivoire",
+      "imageIndex": 55
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DK",
+      "label": "Denmark",
+      "imageIndex": 56
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DJ",
+      "label": "Djibouti",
+      "imageIndex": 57
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DM",
+      "label": "Dominica",
+      "imageIndex": 58
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DO",
+      "label": "Dominican Republic",
+      "imageIndex": 59
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "EC",
+      "label": "Ecuador",
+      "imageIndex": 60
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "EG",
+      "label": "Egypt",
+      "imageIndex": 61
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SV",
+      "label": "El Salvador",
+      "imageIndex": 62
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GQ",
+      "label": "Equatorial Guinea",
+      "imageIndex": 63
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ER",
+      "label": "Eritrea",
+      "imageIndex": 64
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "EE",
+      "label": "Estonia",
+      "imageIndex": 65
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ET",
+      "label": "Ethiopia",
+      "imageIndex": 66
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "EU",
+      "label": "European Union",
+      "imageIndex": 67
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FK",
+      "label": "Falkland Islands",
+      "imageIndex": 68
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FO",
+      "label": "Faroe Islands",
+      "imageIndex": 69
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FJ",
+      "label": "Fiji",
+      "imageIndex": 70
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FI",
+      "label": "Finland",
+      "imageIndex": 71
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FR",
+      "label": "France",
+      "imageIndex": 72
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GF",
+      "label": "French Guiana",
+      "imageIndex": 73
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PF",
+      "label": "French Polynesia",
+      "imageIndex": 74
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GA",
+      "label": "Gabon",
+      "imageIndex": 75
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GM",
+      "label": "Gambia",
+      "imageIndex": 76
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GE",
+      "label": "Georgia",
+      "imageIndex": 77
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "DE",
+      "label": "Germany",
+      "imageIndex": 78
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GH",
+      "label": "Ghana",
+      "imageIndex": 79
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GI",
+      "label": "Gibraltar",
+      "imageIndex": 80
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GR",
+      "label": "Greece",
+      "imageIndex": 81
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GL",
+      "label": "Greenland",
+      "imageIndex": 82
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GD",
+      "label": "Grenada",
+      "imageIndex": 83
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GP",
+      "label": "Guadeloupe",
+      "imageIndex": 84
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GU",
+      "label": "Guam",
+      "imageIndex": 85
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GT",
+      "label": "Guatemala",
+      "imageIndex": 86
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GG",
+      "label": "Guernsey",
+      "imageIndex": 87
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GN",
+      "label": "Guinea",
+      "imageIndex": 88
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GW",
+      "label": "Guinea Bissau",
+      "imageIndex": 89
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GY",
+      "label": "Guyana",
+      "imageIndex": 90
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "HT",
+      "label": "Haiti",
+      "imageIndex": 91
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "HN",
+      "label": "Honduras",
+      "imageIndex": 92
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "HK",
+      "label": "Hong Kong",
+      "imageIndex": 93
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "HU",
+      "label": "Hungary",
+      "imageIndex": 94
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IS",
+      "label": "Iceland",
+      "imageIndex": 95
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IN",
+      "label": "India",
+      "imageIndex": 96
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ID",
+      "label": "Indonesia",
+      "imageIndex": 97
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IE",
+      "label": "Ireland",
+      "imageIndex": 98
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IM",
+      "label": "Isle of Man",
+      "imageIndex": 99
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IL",
+      "label": "Israel",
+      "imageIndex": 100
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "IT",
+      "label": "Italy",
+      "imageIndex": 101
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "JM",
+      "label": "Jamaica",
+      "imageIndex": 102
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "JP",
+      "label": "Japan",
+      "imageIndex": 103
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "JE",
+      "label": "Jersey",
+      "imageIndex": 104
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "JO",
+      "label": "Jordan",
+      "imageIndex": 105
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KZ",
+      "label": "Kazakhstan",
+      "imageIndex": 106
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KE",
+      "label": "Kenya",
+      "imageIndex": 107
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KI",
+      "label": "Kiribati",
+      "imageIndex": 108
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KW",
+      "label": "Kuwait",
+      "imageIndex": 109
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KG",
+      "label": "Kyrgyzstan",
+      "imageIndex": 110
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LA",
+      "label": "Laos",
+      "imageIndex": 111
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LV",
+      "label": "Latvia",
+      "imageIndex": 112
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LB",
+      "label": "Lebanon",
+      "imageIndex": 113
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LS",
+      "label": "Lesotho",
+      "imageIndex": 114
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LR",
+      "label": "Liberia",
+      "imageIndex": 115
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LI",
+      "label": "Liechtenstein",
+      "imageIndex": 116
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LT",
+      "label": "Lithuania",
+      "imageIndex": 117
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LU",
+      "label": "Luxembourg",
+      "imageIndex": 118
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MO",
+      "label": "Macao",
+      "imageIndex": 119
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MK",
+      "label": "Macedonia",
+      "imageIndex": 120
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MG",
+      "label": "Madagascar",
+      "imageIndex": 121
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MW",
+      "label": "Malawi",
+      "imageIndex": 122
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MY",
+      "label": "Malaysia",
+      "imageIndex": 123
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MV",
+      "label": "Maldives",
+      "imageIndex": 124
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ML",
+      "label": "Mali",
+      "imageIndex": 125
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MT",
+      "label": "Malta",
+      "imageIndex": 126
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MH",
+      "label": "Marshall Islands",
+      "imageIndex": 127
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MQ",
+      "label": "Martinique",
+      "imageIndex": 128
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MR",
+      "label": "Mauritania",
+      "imageIndex": 129
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MU",
+      "label": "Mauritius",
+      "imageIndex": 130
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "YT",
+      "label": "Mayotte",
+      "imageIndex": 131
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MX",
+      "label": "Mexico",
+      "imageIndex": 132
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "FM",
+      "label": "Micronesia",
+      "imageIndex": 133
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MD",
+      "label": "Moldova",
+      "imageIndex": 134
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MC",
+      "label": "Monaco",
+      "imageIndex": 135
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MN",
+      "label": "Mongolia",
+      "imageIndex": 136
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ME",
+      "label": "Montenegro",
+      "imageIndex": 137
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MS",
+      "label": "Montserrat",
+      "imageIndex": 138
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MA",
+      "label": "Morocco",
+      "imageIndex": 139
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MZ",
+      "label": "Mozambique",
+      "imageIndex": 140
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MM",
+      "label": "Myanmar",
+      "imageIndex": 141
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NA",
+      "label": "Namibia",
+      "imageIndex": 142
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NR",
+      "label": "Nauru",
+      "imageIndex": 143
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NP",
+      "label": "Nepal",
+      "imageIndex": 144
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NL",
+      "label": "Netherlands",
+      "imageIndex": 145
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AN",
+      "label": "Netherlands Antilles",
+      "imageIndex": 146
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NC",
+      "label": "New Caledonia",
+      "imageIndex": 147
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NZ",
+      "label": "New Zealand",
+      "imageIndex": 148
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NI",
+      "label": "Nicaragua",
+      "imageIndex": 149
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NE",
+      "label": "Niger",
+      "imageIndex": 150
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NG",
+      "label": "Nigeria",
+      "imageIndex": 151
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NU",
+      "label": "Niue",
+      "imageIndex": 152
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NF",
+      "label": "Norfolk Island",
+      "imageIndex": 153
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "MP",
+      "label": "Northern Mariana Islands",
+      "imageIndex": 154
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "NO",
+      "label": "Norway",
+      "imageIndex": 155
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "OM",
+      "label": "Oman",
+      "imageIndex": 156
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PK",
+      "label": "Pakistan",
+      "imageIndex": 157
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PW",
+      "label": "Palau",
+      "imageIndex": 158
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PS",
+      "label": "Palestine",
+      "imageIndex": 159
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PA",
+      "label": "Panama",
+      "imageIndex": 160
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PG",
+      "label": "Papua New Guinea",
+      "imageIndex": 161
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PY",
+      "label": "Paraguay",
+      "imageIndex": 162
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PE",
+      "label": "Peru",
+      "imageIndex": 163
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PH",
+      "label": "Philippines",
+      "imageIndex": 164
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PN",
+      "label": "Pitcairn Islands",
+      "imageIndex": 165
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PL",
+      "label": "Poland",
+      "imageIndex": 166
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PT",
+      "label": "Portugal",
+      "imageIndex": 167
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PR",
+      "label": "Puerto Rico",
+      "imageIndex": 168
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "QA",
+      "label": "Qatar",
+      "imageIndex": 169
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "RO",
+      "label": "Romania",
+      "imageIndex": 170
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "RU",
+      "label": "Russia",
+      "imageIndex": 171
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "RW",
+      "label": "Rwanda",
+      "imageIndex": 172
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "RE",
+      "label": "Réunion",
+      "imageIndex": 173
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KN",
+      "label": "Saint Kitts and Nevis",
+      "imageIndex": 174
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "WS",
+      "label": "Samoa",
+      "imageIndex": 175
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SM",
+      "label": "San Marino",
+      "imageIndex": 176
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SA",
+      "label": "Saudi Arabia",
+      "imageIndex": 177
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SN",
+      "label": "Senegal",
+      "imageIndex": 178
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "RS",
+      "label": "Serbia",
+      "imageIndex": 179
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SC",
+      "label": "Seychelles",
+      "imageIndex": 180
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SL",
+      "label": "Sierra Leone",
+      "imageIndex": 181
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SG",
+      "label": "Singapore",
+      "imageIndex": 182
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SK",
+      "label": "Slovakia",
+      "imageIndex": 183
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SI",
+      "label": "Slovenia",
+      "imageIndex": 184
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SB",
+      "label": "Solomon Islands",
+      "imageIndex": 185
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SO",
+      "label": "Somalia",
+      "imageIndex": 186
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ZA",
+      "label": "South Africa",
+      "imageIndex": 187
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "KR",
+      "label": "South Korea",
+      "imageIndex": 188
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ES",
+      "label": "Spain",
+      "imageIndex": 189
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LK",
+      "label": "Sri Lanka",
+      "imageIndex": 190
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SH",
+      "label": "Saint Helena",
+      "imageIndex": 191
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "LC",
+      "label": "Saint Lucia",
+      "imageIndex": 192
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "PM",
+      "label": "Saint Pierre and Miquelon",
+      "imageIndex": 193
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VC",
+      "label": "Saint Vincent and the Grenadines",
+      "imageIndex": 194
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SR",
+      "label": "Suriname",
+      "imageIndex": 195
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SJ",
+      "label": "Svalbard and Jan Mayen",
+      "imageIndex": 196
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SZ",
+      "label": "Swaziland",
+      "imageIndex": 197
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "SE",
+      "label": "Sweden",
+      "imageIndex": 198
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "CH",
+      "label": "Switzerland",
+      "imageIndex": 199
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ST",
+      "label": "São Tomé & Príncipe",
+      "imageIndex": 200
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TW",
+      "label": "Taiwan",
+      "imageIndex": 201
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TJ",
+      "label": "Tajikistan",
+      "imageIndex": 202
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TZ",
+      "label": "Tanzania",
+      "imageIndex": 203
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TH",
+      "label": "Thailand",
+      "imageIndex": 204
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TL",
+      "label": "Timor-Leste",
+      "imageIndex": 205
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TG",
+      "label": "Togo",
+      "imageIndex": 206
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TK",
+      "label": "Tokelau",
+      "imageIndex": 207
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TO",
+      "label": "Tonga",
+      "imageIndex": 208
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TT",
+      "label": "Trinidad and Tobago",
+      "imageIndex": 209
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TN",
+      "label": "Tunisia",
+      "imageIndex": 210
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TR",
+      "label": "Turkey",
+      "imageIndex": 211
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TM",
+      "label": "Turkmenistan",
+      "imageIndex": 212
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TC",
+      "label": "Turks and Caicos",
+      "imageIndex": 213
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "TV",
+      "label": "Tuvalu",
+      "imageIndex": 214
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "UG",
+      "label": "Uganda",
+      "imageIndex": 215
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "UA",
+      "label": "Ukraine",
+      "imageIndex": 216
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "AE",
+      "label": "United Arab Emirates",
+      "imageIndex": 217
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "GB",
+      "label": "United Kingdom",
+      "imageIndex": 218
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "US",
+      "label": "United States",
+      "imageIndex": 219
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "UY",
+      "label": "Uruguay",
+      "imageIndex": 220
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "UZ",
+      "label": "Uzbekistan",
+      "imageIndex": 221
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VU",
+      "label": "Vanuatu",
+      "imageIndex": 222
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VA",
+      "label": "Vatican City",
+      "imageIndex": 223
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VE",
+      "label": "Venezuela",
+      "imageIndex": 224
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VN",
+      "label": "Vietnam",
+      "imageIndex": 225
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "VI",
+      "label": "US Virgin Islands",
+      "imageIndex": 226
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "WF",
+      "label": "Wallis And Futuna",
+      "imageIndex": 227
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "EH",
+      "label": "Western Sahara",
+      "imageIndex": 228
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "YE",
+      "label": "Yemen",
+      "imageIndex": 229
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ZM",
+      "label": "Zambia",
+      "imageIndex": 230
+    },
+    {
+      "objectType": "Country",
+      "countryCode": "ZW",
+      "label": "Zimbabwe",
+      "imageIndex": 231
+    }
+  ]
+}

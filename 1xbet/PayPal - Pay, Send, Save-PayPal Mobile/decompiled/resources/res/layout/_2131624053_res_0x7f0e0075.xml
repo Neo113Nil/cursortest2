@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    textAppearance="?attr/_2130970157_res_0x7f04062d"
+    ellipsize="end"
+    paddingLeft="16dp"
+    paddingTop="13dp"
+    paddingRight="16dp"
+    paddingBottom="13dp"
+    layout_width="match_parent"
+    layout_height="wrap_content"
+    maxLines="1"/>

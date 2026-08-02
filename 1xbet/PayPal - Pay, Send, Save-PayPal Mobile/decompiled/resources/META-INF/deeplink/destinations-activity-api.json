@@ -1,0 +1,114 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.activity.api.navigation.PayPalActivityLedgerTabbedScreenDestinationKey",
+      "paths": ["/activity", "/activities", "/myaccount/activity", "/myaccount/activities", "/mobile-app/myaccount/activity", "/mobile-app/myaccount/activities"],
+      "parameters": [
+        {
+          "propertyName": "startDate",
+          "urlParamName": "start_date",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "endDate",
+          "urlParamName": "end_date",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.activity.api.navigation.PayPalActivityTransactionDetailScreenDestinationKey",
+      "paths": ["/activity_details", "/myaccount/activities/details", "/mobile-app/myaccount/activities/details", "/myaccount/activities/details/{myAccountPathTransactionId}"],
+      "parameters": [
+        {
+          "propertyName": "id",
+          "urlParamName": "transactionId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "activityItemId",
+          "urlParamName": "activityItemId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "groupId",
+          "urlParamName": "groupRequestId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "type",
+          "urlParamName": "activity_type",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "paymentType",
+          "urlParamName": "payment_type",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "transactionShortDescription",
+          "urlParamName": "transactionShortDescription",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "sourcePage",
+          "urlParamName": "source_page",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "isShipmentAvailable",
+          "urlParamName": "is_shipment_available",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "subdomainId",
+          "urlParamName": "subdomain_id",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "subdomainType",
+          "urlParamName": "subdomain_type",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "myAccountPathTransactionId",
+          "urlParamName": "myAccountPathTransactionId",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": true
+        }
+      ]
+    }
+  ]
+}

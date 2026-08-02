@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    gravity="start|center_vertical"
+    orientation="horizontal"
+    id="@+id/_2131428130_res_0x7f0b0322"
+    paddingLeft="0dp"
+    paddingTop="4dp"
+    paddingRight="8dp"
+    paddingBottom="4dp"
+    layout_width="wrap_content"
+    layout_height="wrap_content"
+    minWidth="56dp"
+    paddingStart="0dp"
+    paddingEnd="8dp">
+    <androidx.preference.internal.PreferenceImageView
+        id="@android:id/icon"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        NOT_FOUND_0xc="48dp"
+        NOT_FOUND_0xd="48dp"/>
+</LinearLayout>

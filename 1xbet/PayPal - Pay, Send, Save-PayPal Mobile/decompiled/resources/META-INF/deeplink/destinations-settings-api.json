@@ -1,0 +1,10 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.settings.api.navigation.SettingsDestination",
+      "paths": ["/profile", "/myaccount/profile"],
+      "parameters": [
+      ]
+    }
+  ]
+}

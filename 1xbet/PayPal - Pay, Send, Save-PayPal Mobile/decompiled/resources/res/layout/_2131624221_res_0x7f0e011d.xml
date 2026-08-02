@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/_2131428671_res_0x7f0b053f"
+    focusable="true"
+    focusableInTouchMode="true"
+    layout_width="match_parent"
+    layout_height="match_parent"/>

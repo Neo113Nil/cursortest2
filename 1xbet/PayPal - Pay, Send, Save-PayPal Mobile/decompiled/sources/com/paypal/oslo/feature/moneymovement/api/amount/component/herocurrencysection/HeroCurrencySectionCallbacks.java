@@ -1,0 +1,13 @@
+package com.paypal.oslo.feature.moneymovement.api.amount.component.herocurrencysection;
+
+@kotlin.Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\bf\u0018\u00002\u00020\u0001R\u0016\u0010\u0005\u001a\u0004\u0018\u00010\u00028'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004R\u0016\u0010\t\u001a\u0004\u0018\u00010\u00068'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0016\u0010\r\u001a\u0004\u0018\u00010\n8'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\fR\u0016\u0010\u0011\u001a\u0004\u0018\u00010\u000e8'X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010À\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/moneymovement/api/amount/component/herocurrencysection/HeroCurrencySectionCallbacks;", "", "Lcom/paypal/oslo/feature/moneymovement/api/amount/component/amountinput/AmountInputCallbacks;", "getAmountInputCallbacks", "()Lcom/paypal/oslo/feature/moneymovement/api/amount/component/amountinput/AmountInputCallbacks;", "amountInputCallbacks", "Lcom/paypal/oslo/feature/moneymovement/api/amount/component/currencypicker/CurrencyPickerCallbacks;", "getCurrencyPickerCallbacks", "()Lcom/paypal/oslo/feature/moneymovement/api/amount/component/currencypicker/CurrencyPickerCallbacks;", "currencyPickerCallbacks", "Lcom/paypal/oslo/feature/moneymovement/api/amount/component/crossborderherocurrency/CrossBorderHeroCurrencyCallbacks;", "getCrossBorderCallbacks", "()Lcom/paypal/oslo/feature/moneymovement/api/amount/component/crossborderherocurrency/CrossBorderHeroCurrencyCallbacks;", "crossBorderCallbacks", "Lcom/paypal/oslo/feature/moneymovement/api/amount/component/currencyexchangeaction/CurrencyExchangeActionCallbacks;", "getCurrencyExchangeActionCallbacks", "()Lcom/paypal/oslo/feature/moneymovement/api/amount/component/currencyexchangeaction/CurrencyExchangeActionCallbacks;", "currencyExchangeActionCallbacks"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public interface HeroCurrencySectionCallbacks {
+    com.paypal.oslo.feature.moneymovement.api.amount.component.amountinput.AmountInputCallbacks getAmountInputCallbacks();
+
+    com.paypal.oslo.feature.moneymovement.api.amount.component.crossborderherocurrency.CrossBorderHeroCurrencyCallbacks getCrossBorderCallbacks();
+
+    com.paypal.oslo.feature.moneymovement.api.amount.component.currencyexchangeaction.CurrencyExchangeActionCallbacks getCurrencyExchangeActionCallbacks();
+
+    com.paypal.oslo.feature.moneymovement.api.amount.component.currencypicker.CurrencyPickerCallbacks getCurrencyPickerCallbacks();
+}

@@ -1,0 +1,37 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.onboarding.api.navigation.PostOnboardingDeepLinkLauncher",
+      "paths": ["/mobile-app/post-onboarding"],
+      "parameters": [
+        {
+          "propertyName": "flowId",
+          "urlParamName": "flowId",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.onboarding.api.navigation.WelcomeBackDeepLinkLauncher",
+      "paths": ["/cgp/welcome-back"],
+      "parameters": [
+        {
+          "propertyName": "email",
+          "urlParamName": "em",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "code",
+          "urlParamName": "cc",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+package dagger.internal;
+
+/* loaded from: classes17.dex */
+public final class MapProviderLazyFactory<K, V> extends dagger.internal.AbstractMapFactory<K, V, dagger.internal.Provider<dagger.Lazy<V>>> {
+    private static final dagger.internal.Provider<java.util.Map<java.lang.Object, java.lang.Object>> Camera2StreamConfigurationMap = dagger.internal.InstanceFactory.create(java.util.Collections.emptyMap());
+
+    /* synthetic */ MapProviderLazyFactory(java.util.Map map, byte b) {
+        this(map);
+    }
+
+    public static <K, V> dagger.internal.MapProviderLazyFactory.Builder<K, V> builder(int i) {
+        return new dagger.internal.MapProviderLazyFactory.Builder<>(i, (byte) 0);
+    }
+
+    public static <K, V> dagger.internal.Provider<java.util.Map<K, dagger.internal.Provider<dagger.Lazy<V>>>> emptyMapProvider() {
+        return (dagger.internal.Provider<java.util.Map<K, dagger.internal.Provider<dagger.Lazy<V>>>>) Camera2StreamConfigurationMap;
+    }
+
+    private MapProviderLazyFactory(java.util.Map<K, dagger.internal.Provider<V>> map) {
+        super(map);
+    }
+
+    @Override // javax.inject.Provider, jakarta.inject.Provider
+    public final java.util.Map<K, dagger.internal.Provider<dagger.Lazy<V>>> get() {
+        java.util.LinkedHashMap newLinkedHashMapWithExpectedSize = dagger.internal.DaggerCollections.newLinkedHashMapWithExpectedSize(getHighSpeedVideoSizes().size());
+        for (final java.util.Map.Entry<K, dagger.internal.Provider<V>> entry : getHighSpeedVideoSizes().entrySet()) {
+            newLinkedHashMapWithExpectedSize.put(entry.getKey(), new dagger.internal.Provider() { // from class: dagger.internal.MapProviderLazyFactory$$ExternalSyntheticLambda0
+                @Override // javax.inject.Provider, jakarta.inject.Provider
+                public final java.lang.Object get() {
+                    dagger.Lazy lazy;
+                    lazy = dagger.internal.DoubleCheck.lazy((dagger.internal.Provider) entry.getValue());
+                    return lazy;
+                }
+            });
+        }
+        return java.util.Collections.unmodifiableMap(newLinkedHashMapWithExpectedSize);
+    }
+
+    public static final class Builder<K, V> extends dagger.internal.AbstractMapFactory.Builder<K, V, dagger.internal.Provider<dagger.Lazy<V>>> {
+        /* synthetic */ Builder(int i, byte b) {
+            this(i);
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        @Override // dagger.internal.AbstractMapFactory.Builder
+        public final /* bridge */ /* synthetic */ dagger.internal.AbstractMapFactory.Builder put(java.lang.Object obj, dagger.internal.Provider provider) {
+            return put((dagger.internal.MapProviderLazyFactory.Builder<K, V>) obj, provider);
+        }
+
+        private Builder(int i) {
+            super(i);
+        }
+
+        @Override // dagger.internal.AbstractMapFactory.Builder
+        public final dagger.internal.MapProviderLazyFactory.Builder<K, V> put(K k, dagger.internal.Provider<V> provider) {
+            super.put((dagger.internal.MapProviderLazyFactory.Builder<K, V>) k, (dagger.internal.Provider) provider);
+            return this;
+        }
+
+        @java.lang.Deprecated
+        public final dagger.internal.MapProviderLazyFactory.Builder<K, V> put(K k, javax.inject.Provider<V> provider) {
+            return put((dagger.internal.MapProviderLazyFactory.Builder<K, V>) k, (dagger.internal.Provider) dagger.internal.Providers.asDaggerProvider(provider));
+        }
+
+        /* JADX WARN: Multi-variable type inference failed */
+        @Override // dagger.internal.AbstractMapFactory.Builder
+        public final dagger.internal.MapProviderLazyFactory.Builder<K, V> putAll(dagger.internal.Provider<java.util.Map<K, dagger.internal.Provider<dagger.Lazy<V>>>> provider) {
+            super.putAll((dagger.internal.Provider) provider);
+            return this;
+        }
+
+        @java.lang.Deprecated
+        public final dagger.internal.MapProviderLazyFactory.Builder<K, V> putAll(javax.inject.Provider<java.util.Map<K, dagger.internal.Provider<dagger.Lazy<V>>>> provider) {
+            return putAll((dagger.internal.Provider) dagger.internal.Providers.asDaggerProvider(provider));
+        }
+
+        public final dagger.internal.MapProviderLazyFactory<K, V> build() {
+            return new dagger.internal.MapProviderLazyFactory<>(this.getHighSpeedVideoSizes, (byte) 0);
+        }
+    }
+}

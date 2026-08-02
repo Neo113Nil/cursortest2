@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <FrameLayout
+        id="@+id/_2131429076_res_0x7f0b06d4"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        layout_alignParentTop="true">
+        <include layout="@layout/_2131624089_res_0x7f0e0099"/>
+    </FrameLayout>
+    <com.microblink.blinkid.fragment.overlay.components.feedback.view.SuccessFlashView
+        id="@+id/_2131428955_res_0x7f0b065b"
+        visibility="gone"
+        layout_width="match_parent"
+        layout_height="match_parent"/>
+    <TextSwitcher
+        id="@+id/_2131428946_res_0x7f0b0652"
+        background="@drawable/_2131231481_res_0x7f0802f9"
+        padding="8dp"
+        visibility="gone"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        layout_margin="16dp"
+        measureAllChildren="false"
+        minWidth="1dp"
+        minHeight="1dp"
+        drawablePadding="10dp"
+        layout_centerInParent="true"/>
+    <RelativeLayout
+        gravity="center"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        layout_marginBottom="24dp"
+        layout_alignParentBottom="true">
+        <com.microblink.blinkid.fragment.overlay.documentcapture.detectionui.capture.CaptureButtonView
+            id="@+id/_2131427683_res_0x7f0b0163"
+            layout_width="72dp"
+            layout_height="72dp"/>
+    </RelativeLayout>
+</RelativeLayout>

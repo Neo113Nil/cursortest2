@@ -1,0 +1,24 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.invoicing.api.navigation.ViewInvoiceDestination",
+      "paths": ["/invoice/payerView/details/{invoiceId}"],
+      "parameters": [
+        {
+          "propertyName": "entryPoint",
+          "urlParamName": "entrypoint",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "invoiceId",
+          "urlParamName": "invoiceId",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" drawable="@drawable/_2131231703_res_0x7f0803d7">
+    <set
+        android:interpolator="@interpolator/_2131558407_res_0x7f0d0007"
+        android:shareInterpolator="true">
+        <target
+            name="@string/_2132093054_res_0x7f15287e"
+            animation="@drawable/_2131230999_res_0x7f080117"/>
+        <target
+            name="@string/_2132093054_res_0x7f15287e"
+            animation="@drawable/_2131231000_res_0x7f080118"/>
+    </set>
+</animated-vector>

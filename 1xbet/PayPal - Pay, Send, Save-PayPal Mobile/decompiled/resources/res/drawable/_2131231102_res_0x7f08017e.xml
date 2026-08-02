@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" drawable="@drawable/_2131230723_res_0x7f080003">
+    <target
+        name="indicator_mark"
+        animation="@drawable/_2131230724_res_0x7f080004"/>
+    <target
+        name="indicator"
+        animation="@drawable/_2131230725_res_0x7f080005"/>
+</animated-vector>

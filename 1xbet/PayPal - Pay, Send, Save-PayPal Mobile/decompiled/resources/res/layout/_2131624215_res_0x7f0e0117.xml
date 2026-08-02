@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/_2131428240_res_0x7f0b0390"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <androidx.fragment.app.FragmentContainerView
+        id="@+id/_2131427993_res_0x7f0b0299"
+        layout_width="match_parent"
+        layout_height="match_parent"
+        style="@style/_2132148724_res_0x7f1601f4"/>
+</FrameLayout>

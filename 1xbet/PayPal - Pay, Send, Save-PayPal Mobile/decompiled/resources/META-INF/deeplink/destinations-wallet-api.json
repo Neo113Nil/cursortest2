@@ -1,0 +1,167 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.wallet.api.navigation.CardDetailDeepLink",
+      "paths": ["/myaccount/money/cards/update"],
+      "parameters": [
+        {
+          "propertyName": "cardId",
+          "urlParamName": "cardId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.wallet.api.navigation.AddFIDeepLink",
+      "paths": ["/myaccount/money/accounts/new"],
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.wallet.api.navigation.BankOAuthCallbackDestination",
+      "paths": ["/mobile-app/wallet/bank-oauth-callback"],
+      "parameters": [
+        {
+          "propertyName": "aggregatorName",
+          "urlParamName": "aggregatorName",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "externalBankId",
+          "urlParamName": "externalBankId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "countryCode",
+          "urlParamName": "countryCode",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "integrationType",
+          "urlParamName": "integrationType",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "bankName",
+          "urlParamName": "bankName",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "code",
+          "urlParamName": "code",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "state",
+          "urlParamName": "state",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "error",
+          "urlParamName": "error",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "errorDescription",
+          "urlParamName": "errorDescription",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.wallet.api.navigation.BankConfirmationDeepLink",
+      "paths": ["/myaccount/money/banks/confirmation"],
+      "parameters": [
+        {
+          "propertyName": "bankInstrumentId",
+          "urlParamName": "bankInstrumentId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "action",
+          "urlParamName": "action",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "lastNChars",
+          "urlParamName": "lastNChars",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "accountType",
+          "urlParamName": "accountType",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.wallet.api.navigation.PartnerInitiatedP3Flow",
+      "paths": ["/myaccount/money/flow/partner/accounts/link"],
+      "parameters": [
+        {
+          "propertyName": "clientId",
+          "urlParamName": "clientId",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "scope",
+          "urlParamName": "scope",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "authClaim",
+          "urlParamName": "authClaim",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "redirectUri",
+          "urlParamName": "redirectUri",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "state",
+          "urlParamName": "state",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

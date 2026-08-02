@@ -1,0 +1,7 @@
+package com.paypal.oslo.feature.wallet.me.domain.repository;
+
+@kotlin.Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J@\u0010\n\u001a\u0018\u0012\u0004\u0012\u00020\b\u0012\u000e\u0012\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\t0\u00040\u00072\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\u000e\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0004H¦@¢\u0006\u0004\b\n\u0010\u000bÀ\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/wallet/me/domain/repository/WalletComponentsRepository;", "", "", "placementId", "", "Lcom/paypal/oslo/feature/wallet/me/domain/Product$Type;", "filters", "Larrow/core/Either;", "Lcom/paypal/oslo/feature/wallet/me/domain/ProductError;", "Lcom/paypal/oslo/feature/wallet/me/domain/Product;", "components", "(Ljava/lang/String;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes16.dex */
+public interface WalletComponentsRepository {
+    java.lang.Object components(java.lang.String str, java.util.List<? extends com.paypal.oslo.feature.wallet.me.domain.Product.Type> list, kotlin.coroutines.Continuation<? super arrow.core.Either<? extends com.paypal.oslo.feature.wallet.me.domain.ProductError, ? extends java.util.List<? extends com.paypal.oslo.feature.wallet.me.domain.Product<?>>>> continuation);
+}

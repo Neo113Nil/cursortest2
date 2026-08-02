@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/_2131429085_res_0x7f0b06dd"
+    background="?attr/_2130968664_res_0x7f040058"
+    padding="24dp"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <ImageView
+        id="@+id/_2131429084_res_0x7f0b06dc"
+        layout_width="100dp"
+        layout_height="100dp"
+        src="@drawable/_2131231851_res_0x7f08046b"
+        scaleType="fitCenter"
+        layout_centerHorizontal="true"
+        layout_centerVertical="true"
+        contentDescription="@string/_2132093521_res_0x7f152a51"/>
+</RelativeLayout>

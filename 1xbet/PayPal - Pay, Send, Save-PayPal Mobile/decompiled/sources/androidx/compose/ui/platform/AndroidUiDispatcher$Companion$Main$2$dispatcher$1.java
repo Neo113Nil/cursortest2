@@ -1,0 +1,34 @@
+package androidx.compose.ui.platform;
+
+@kotlin.Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001*\u00020\u0003H\n"}, d2 = {"<anonymous>", "Landroid/view/Choreographer;", "kotlin.jvm.PlatformType", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 0, 0}, xi = 48)
+@kotlin.coroutines.jvm.internal.DebugMetadata(c = "androidx.compose.ui.platform.AndroidUiDispatcher$Companion$Main$2$dispatcher$1", f = "AndroidUiDispatcher.android.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {}, v = 1)
+/* loaded from: classes6.dex */
+final class AndroidUiDispatcher$Companion$Main$2$dispatcher$1 extends kotlin.coroutines.jvm.internal.SuspendLambda implements kotlin.jvm.functions.Function2<kotlinx.coroutines.CoroutineScope, kotlin.coroutines.Continuation<? super android.view.Choreographer>, java.lang.Object> {
+    int getHighResolutionOutputSizeshNQ4ISI;
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final java.lang.Object invokeSuspend(java.lang.Object obj) {
+        kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.getHighResolutionOutputSizeshNQ4ISI != 0) {
+            throw new java.lang.IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        kotlin.ResultKt.throwOnFailure(obj);
+        return android.view.Choreographer.getInstance();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    @Override // kotlin.jvm.functions.Function2
+    /* renamed from: getHighResolutionOutputSizeshNQ4ISI, reason: merged with bridge method [inline-methods] */
+    public java.lang.Object invoke(kotlinx.coroutines.CoroutineScope coroutineScope, kotlin.coroutines.Continuation<? super android.view.Choreographer> continuation) {
+        return ((androidx.compose.ui.platform.AndroidUiDispatcher$Companion$Main$2$dispatcher$1) create(coroutineScope, continuation)).invokeSuspend(kotlin.Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final kotlin.coroutines.Continuation<kotlin.Unit> create(java.lang.Object obj, kotlin.coroutines.Continuation<?> continuation) {
+        return new androidx.compose.ui.platform.AndroidUiDispatcher$Companion$Main$2$dispatcher$1(continuation);
+    }
+
+    AndroidUiDispatcher$Companion$Main$2$dispatcher$1(kotlin.coroutines.Continuation<? super androidx.compose.ui.platform.AndroidUiDispatcher$Companion$Main$2$dispatcher$1> continuation) {
+        super(2, continuation);
+    }
+}

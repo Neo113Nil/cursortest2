@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/lib/com.daon.daondocument"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <com.microblink.blinkid.view.recognition.RecognizerRunnerView
+        id="@+id/_2131428733_res_0x7f0b057d"
+        layout_width="match_parent"
+        layout_height="match_parent"
+        custom:initialOrientation="portrait"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.bnplservicing.api.navigation.PayLaterHubDestination",
+      "paths": ["/mobile-app/paylater/pay-later-hub"],
+      "parameters": [
+        {
+          "propertyName": "payLaterSource",
+          "urlParamName": "paylater_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.bnplservicing.api.navigation.PreQualDestination",
+      "paths": ["/paylater/prequal-faq"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "paylater_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

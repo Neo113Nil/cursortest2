@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    fillViewport="true">
+    <FrameLayout
+        layout_width="match_parent"
+        layout_height="match_parent">
+        <com.microblink.blinkid.ocr.RoiOverlayView
+            id="@+id/_2131428800_res_0x7f0b05c0"
+            background="#00000000"
+            layout_width="match_parent"
+            layout_height="match_parent"/>
+        <FrameLayout
+            id="@+id/_2131428516_res_0x7f0b04a4"
+            background="#00000000"
+            layout_width="match_parent"
+            layout_height="match_parent"
+            animateLayoutChanges="true">
+            <include layout="@layout/_2131624084_res_0x7f0e0094"/>
+        </FrameLayout>
+    </FrameLayout>
+</androidx.core.widget.NestedScrollView>

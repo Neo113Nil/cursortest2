@@ -1,0 +1,15 @@
+package com.paypal.oslo.feature.oneonboarding.inventory.views.address.ui;
+
+@kotlin.Metadata(d1 = {"\u0000\b\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u000f\u0010\u0001\u001a\u00020\u0000H\u0000¢\u0006\u0004\b\u0001\u0010\u0002"}, d2 = {"Lcom/paypal/oslo/core/i18n/domain/model/AddressLayout;", "defaultUsAddressLayout", "()Lcom/paypal/oslo/core/i18n/domain/model/AddressLayout;"}, k = 2, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final class AddressViewComponentViewModelKt {
+    public static final com.paypal.oslo.core.i18n.domain.model.AddressLayout defaultUsAddressLayout() {
+        boolean z = false;
+        boolean z2 = true;
+        boolean z3 = false;
+        java.util.List list = null;
+        int i = 16;
+        kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker = null;
+        return new com.paypal.oslo.core.i18n.domain.model.AddressLayout(kotlin.collections.CollectionsKt.listOf((java.lang.Object[]) new com.paypal.oslo.core.i18n.domain.model.AddressLayout.Row[]{new com.paypal.oslo.core.i18n.domain.model.AddressLayout.Row(kotlin.collections.CollectionsKt.listOf(new com.paypal.oslo.core.i18n.domain.model.AddressComponent((com.paypal.oslo.core.i18n.domain.model.Field) com.paypal.oslo.core.i18n.domain.model.AddressLine1.m11272boximpl(com.paypal.oslo.core.i18n.domain.model.AddressLine1.m11273constructorimpl("")), "Address", true, z, (java.util.List) null, 16, (kotlin.jvm.internal.DefaultConstructorMarker) null))), new com.paypal.oslo.core.i18n.domain.model.AddressLayout.Row(kotlin.collections.CollectionsKt.listOf(new com.paypal.oslo.core.i18n.domain.model.AddressComponent((com.paypal.oslo.core.i18n.domain.model.Field) com.paypal.oslo.core.i18n.domain.model.AddressLine2.m11281boximpl(com.paypal.oslo.core.i18n.domain.model.AddressLine2.m11282constructorimpl("")), "Apt., ste., bldg. (Optional)", z, false, (java.util.List) null, 16, (kotlin.jvm.internal.DefaultConstructorMarker) null))), new com.paypal.oslo.core.i18n.domain.model.AddressLayout.Row(kotlin.collections.CollectionsKt.listOf(new com.paypal.oslo.core.i18n.domain.model.AddressComponent((com.paypal.oslo.core.i18n.domain.model.Field) com.paypal.oslo.core.i18n.domain.model.AdminArea2.m11308boximpl(com.paypal.oslo.core.i18n.domain.model.AdminArea2.m11309constructorimpl("")), "City", true, false, (java.util.List) null, 16, (kotlin.jvm.internal.DefaultConstructorMarker) null))), new com.paypal.oslo.core.i18n.domain.model.AddressLayout.Row(kotlin.collections.CollectionsKt.listOf((java.lang.Object[]) new com.paypal.oslo.core.i18n.domain.model.AddressComponent[]{new com.paypal.oslo.core.i18n.domain.model.AddressComponent(com.paypal.oslo.core.i18n.domain.model.AdminArea1.m11299boximpl(com.paypal.oslo.core.i18n.domain.model.AdminArea1.m11300constructorimpl("")), "State", z2, z3, list, i, defaultConstructorMarker), new com.paypal.oslo.core.i18n.domain.model.AddressComponent(com.paypal.oslo.core.i18n.domain.model.PostalCode.m11459boximpl(com.paypal.oslo.core.i18n.domain.model.PostalCode.m11460constructorimpl("")), "ZIP Code", z2, z3, list, i, defaultConstructorMarker)}))}));
+    }
+}

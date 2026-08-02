@@ -1,0 +1,16 @@
+package com.daon.dmds.models;
+
+/* loaded from: classes7.dex */
+public enum DMDSDocumentDetectionStatus {
+    DOCUMENT_TILTED,
+    DOCUMENT_DOES_NOT_FILL_SCANNING_AREA,
+    DOCUMENT_TOO_CLOSE_TO_EDGE,
+    DOCUMENT_TOO_CLOSE_TO_CAMERA,
+    BLUR_DETECTED,
+    GLARE_DETECTED,
+    WRONG_SIDE_DETECTED,
+    FACE_NOT_FOUND,
+    DOCUMENT_QUALITY_FAILED,
+    FACE_QUALITY_FAILED,
+    NO_ERROR
+}

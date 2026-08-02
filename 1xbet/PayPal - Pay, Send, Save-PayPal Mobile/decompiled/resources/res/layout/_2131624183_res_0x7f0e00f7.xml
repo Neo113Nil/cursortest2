@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_gravity="center"
+    orientation="vertical"
+    background="@drawable/_2131231792_res_0x7f080430"
+    padding="?attr/_2130969835_res_0x7f0404eb"
+    layout_width="wrap_content"
+    layout_height="wrap_content"
+    layout_margin="?attr/_2130969835_res_0x7f0404eb">
+    <TextView
+        textAppearance="?attr/_2130969839_res_0x7f0404ef"
+        textColor="?attr/_2130969815_res_0x7f0404d7"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="@string/_2132093152_res_0x7f1528e0"/>
+    <TextView
+        textAppearance="?attr/_2130969836_res_0x7f0404ec"
+        textColor="?attr/_2130969815_res_0x7f0404d7"
+        paddingTop="?attr/_2130969833_res_0x7f0404e9"
+        paddingBottom="?attr/_2130969833_res_0x7f0404e9"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="@string/_2132093151_res_0x7f1528df"/>
+    <Button
+        textAppearance="?attr/_2130969840_res_0x7f0404f0"
+        textColor="?attr/_2130969814_res_0x7f0404d6"
+        id="@+id/_2131428455_res_0x7f0b0467"
+        background="@drawable/_2131231791_res_0x7f08042f"
+        paddingTop="?attr/_2130969831_res_0x7f0404e7"
+        paddingBottom="?attr/_2130969831_res_0x7f0404e7"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        text="@string/_2132093234_res_0x7f152932"
+        stateListAnimator="@null"/>
+</LinearLayout>

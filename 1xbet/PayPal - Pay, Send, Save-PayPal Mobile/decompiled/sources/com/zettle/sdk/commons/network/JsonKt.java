@@ -1,0 +1,199 @@
+package com.zettle.sdk.commons.network;
+
+@kotlin.Metadata(d1 = {"\u00007\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0003\b\u0090\u0001\u001a!\u0010\u0006\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0006\u0010\u0007\u001a'\u0010\u0006\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0002\u001a\u00020\u00012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\b¢\u0006\u0004\b\u0006\u0010\t\u001a\u001b\u0010\f\u001a\u00020\u0005*\u00020\u00002\b\u0010\u000b\u001a\u0004\u0018\u00010\n¢\u0006\u0004\b\f\u0010\r\u001a\u0019\u0010\u0010\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u000f\u001a\u00020\u000e¢\u0006\u0004\b\u0010\u0010\u0011\u001a\u0019\u0010\u0014\u001a\u00020\u0005*\u00020\u00002\u0006\u0010\u0013\u001a\u00020\u0012¢\u0006\u0004\b\u0014\u0010\u0015\"\u0014\u0010\u0016\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017\"\u0014\u0010\u0018\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0018\u0010\u0017\"\u0014\u0010\u0019\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0019\u0010\u0017\"\u0014\u0010\u001a\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001a\u0010\u0017\"\u0014\u0010\u001b\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001b\u0010\u0017\"\u0014\u0010\u001c\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001c\u0010\u0017\"\u0014\u0010\u001d\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001d\u0010\u0017\"\u0014\u0010\u001e\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001e\u0010\u0017\"\u0014\u0010\u001f\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u001f\u0010\u0017\"\u0014\u0010 \u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b \u0010\u0017\"\u0014\u0010!\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b!\u0010\u0017\"\u0014\u0010\"\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\"\u0010\u0017\"\u0014\u0010#\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b#\u0010\u0017\"\u0014\u0010$\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b$\u0010\u0017\"\u0014\u0010%\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b%\u0010\u0017\"\u0014\u0010&\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b&\u0010\u0017\"\u0014\u0010'\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b'\u0010\u0017\"\u0014\u0010(\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b(\u0010\u0017\"\u0014\u0010)\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b)\u0010\u0017\"\u0014\u0010*\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b*\u0010\u0017\"\u0014\u0010+\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b+\u0010\u0017\"\u0014\u0010,\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b,\u0010\u0017\"\u0014\u0010-\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b-\u0010\u0017\"\u0014\u0010.\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b.\u0010\u0017\"\u0014\u0010/\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b/\u0010\u0017\"\u0014\u00100\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b0\u0010\u0017\"\u0014\u00101\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b1\u0010\u0017\"\u0014\u00102\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b2\u0010\u0017\"\u0014\u00103\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b3\u0010\u0017\"\u0014\u00104\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b4\u0010\u0017\"\u0014\u00105\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b5\u0010\u0017\"\u0014\u00106\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b6\u0010\u0017\"\u0014\u00107\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b7\u0010\u0017\"\u0014\u00108\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b8\u0010\u0017\"\u0014\u00109\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b9\u0010\u0017\"\u0014\u0010:\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b:\u0010\u0017\"\u0014\u0010;\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b;\u0010\u0017\"\u0014\u0010<\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b<\u0010\u0017\"\u0014\u0010=\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b=\u0010\u0017\"\u0014\u0010>\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b>\u0010\u0017\"\u0014\u0010?\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b?\u0010\u0017\"\u0014\u0010@\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b@\u0010\u0017\"\u0014\u0010A\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bA\u0010\u0017\"\u0014\u0010B\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bB\u0010\u0017\"\u0014\u0010C\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bC\u0010\u0017\"\u0014\u0010D\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bD\u0010\u0017\"\u0014\u0010E\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bE\u0010\u0017\"\u0014\u0010F\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bF\u0010\u0017\"\u0014\u0010G\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bG\u0010\u0017\"\u0014\u0010H\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bH\u0010\u0017\"\u0014\u0010I\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bI\u0010\u0017\"\u0014\u0010J\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bJ\u0010\u0017\"\u0014\u0010K\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bK\u0010\u0017\"\u0014\u0010L\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bL\u0010\u0017\"\u0014\u0010M\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bM\u0010\u0017\"\u0014\u0010N\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bN\u0010\u0017\"\u0014\u0010O\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bO\u0010\u0017\"\u0014\u0010P\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bP\u0010\u0017\"\u0014\u0010Q\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bQ\u0010\u0017\"\u0014\u0010R\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bR\u0010\u0017\"\u0014\u0010S\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bS\u0010\u0017\"\u0014\u0010T\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bT\u0010\u0017\"\u0014\u0010U\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bU\u0010\u0017\"\u0014\u0010V\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bV\u0010\u0017\"\u0014\u0010W\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bW\u0010\u0017\"\u0014\u0010X\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bX\u0010\u0017\"\u0014\u0010Y\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bY\u0010\u0017\"\u0014\u0010Z\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bZ\u0010\u0017\"\u0014\u0010[\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b[\u0010\u0017\"\u0014\u0010\\\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\\\u0010\u0017\"\u0014\u0010]\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b]\u0010\u0017\"\u0014\u0010^\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b^\u0010\u0017\"\u0014\u0010_\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b_\u0010\u0017\"\u0014\u0010`\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b`\u0010\u0017\"\u0014\u0010a\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\ba\u0010\u0017\"\u0014\u0010b\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bb\u0010\u0017\"\u0014\u0010c\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bc\u0010\u0017\"\u0014\u0010d\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bd\u0010\u0017\"\u0014\u0010e\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\be\u0010\u0017\"\u0014\u0010f\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bf\u0010\u0017\"\u0014\u0010g\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bg\u0010\u0017\"\u0014\u0010h\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bh\u0010\u0017\"\u0014\u0010i\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bi\u0010\u0017\"\u0014\u0010j\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bj\u0010\u0017\"\u0014\u0010k\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bk\u0010\u0017\"\u0014\u0010l\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bl\u0010\u0017\"\u0014\u0010m\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bm\u0010\u0017\"\u0014\u0010n\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bn\u0010\u0017\"\u0014\u0010o\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bo\u0010\u0017\"\u0014\u0010p\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bp\u0010\u0017\"\u0014\u0010q\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bq\u0010\u0017\"\u0014\u0010r\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\br\u0010\u0017\"\u0014\u0010s\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bs\u0010\u0017\"\u0014\u0010t\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bt\u0010\u0017\"\u0014\u0010u\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bu\u0010\u0017\"\u0014\u0010v\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bv\u0010\u0017\"\u0014\u0010w\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bw\u0010\u0017\"\u0014\u0010x\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bx\u0010\u0017\"\u0014\u0010y\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\by\u0010\u0017\"\u0014\u0010z\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\bz\u0010\u0017\"\u0014\u0010{\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b{\u0010\u0017\"\u0014\u0010|\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b|\u0010\u0017\"\u0014\u0010}\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b}\u0010\u0017\"\u0014\u0010~\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b~\u0010\u0017\"\u0014\u0010\u007f\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u007f\u0010\u0017\"\u0016\u0010\u0080\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0080\u0001\u0010\u0017\"\u0016\u0010\u0081\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0081\u0001\u0010\u0017\"\u0016\u0010\u0082\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0082\u0001\u0010\u0017\"\u0016\u0010\u0083\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0083\u0001\u0010\u0017\"\u0016\u0010\u0084\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0084\u0001\u0010\u0017\"\u0016\u0010\u0085\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0085\u0001\u0010\u0017\"\u0016\u0010\u0086\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0086\u0001\u0010\u0017\"\u0016\u0010\u0087\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0087\u0001\u0010\u0017\"\u0016\u0010\u0088\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0088\u0001\u0010\u0017\"\u0016\u0010\u0089\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0089\u0001\u0010\u0017\"\u0016\u0010\u008a\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008a\u0001\u0010\u0017\"\u0016\u0010\u008b\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008b\u0001\u0010\u0017\"\u0016\u0010\u008c\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008c\u0001\u0010\u0017\"\u0016\u0010\u008d\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008d\u0001\u0010\u0017\"\u0016\u0010\u008e\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008e\u0001\u0010\u0017\"\u0016\u0010\u008f\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u008f\u0001\u0010\u0017\"\u0016\u0010\u0090\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0090\u0001\u0010\u0017\"\u0016\u0010\u0091\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0091\u0001\u0010\u0017\"\u0016\u0010\u0092\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0092\u0001\u0010\u0017\"\u0016\u0010\u0093\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0093\u0001\u0010\u0017\"\u0016\u0010\u0094\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0094\u0001\u0010\u0017\"\u0016\u0010\u0095\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0095\u0001\u0010\u0017\"\u0016\u0010\u0096\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0096\u0001\u0010\u0017\"\u0016\u0010\u0097\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0097\u0001\u0010\u0017\"\u0016\u0010\u0098\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0098\u0001\u0010\u0017\"\u0016\u0010\u0099\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u0099\u0001\u0010\u0017\"\u0016\u0010\u009a\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009a\u0001\u0010\u0017\"\u0016\u0010\u009b\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009b\u0001\u0010\u0017\"\u0016\u0010\u009c\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009c\u0001\u0010\u0017\"\u0016\u0010\u009d\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009d\u0001\u0010\u0017\"\u0016\u0010\u009e\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009e\u0001\u0010\u0017\"\u0016\u0010\u009f\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b\u009f\u0001\u0010\u0017\"\u0016\u0010 \u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b \u0001\u0010\u0017\"\u0016\u0010¡\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b¡\u0001\u0010\u0017\"\u0016\u0010¢\u0001\u001a\u00020\u00018\u0006X\u0086T¢\u0006\u0007\n\u0005\b¢\u0001\u0010\u0017"}, d2 = {"Lorg/json/JSONObject;", "", "key", "", com.datadog.android.rum.internal.metric.ViewEndedMetricDispatcher.KEY_VALUE, "", "putBuffer", "(Lorg/json/JSONObject;Ljava/lang/String;[B)V", "", "(Lorg/json/JSONObject;Ljava/lang/String;Ljava/util/List;)V", "Lcom/zettle/sdk/core/os/LocationData;", "location", "putLastLocation", "(Lorg/json/JSONObject;Lcom/zettle/sdk/core/os/LocationData;)V", "Lcom/zettle/sdk/meta/PlatformInfo;", "platformInfo", "putPlatformInfo", "(Lorg/json/JSONObject;Lcom/zettle/sdk/meta/PlatformInfo;)V", "Lcom/zettle/sdk/meta/AppInfo;", "appInfo", "putSdkInfo", "(Lorg/json/JSONObject;Lcom/zettle/sdk/meta/AppInfo;)V", "ACCOUNT_TYPE_CREDIT", "Ljava/lang/String;", "ACCOUNT_TYPE_DEBIT", "EMV_RESULT_TRANSACTION_APPROVED", "EMV_STATE_COMMUNICATION_FINISHED", "EMV_STATE_ISSUE_APP_COMMAND", "EMV_STATE_ISSUE_READER_COMMAND", "EMV_STATE_ISSUE_READER_COMMAND_AND_COMMUNICATION_FINISHED", "EMV_STATE_READY_TO_ISSUE_COMMAND", "EMV_STATE_RESPONSE_FROM_READER", "KEY_ACCOUNT_TYPE", "KEY_ACCOUNT_TYPE_SELECTION", "KEY_APPLICATION_IDENTIFIER", "KEY_APPLICATION_NAME", "KEY_APP_COMMAND", "KEY_AUTHORIZATION_CODE", "KEY_CARDHOLDER_NAME", "KEY_CARDHOLDER_VERIFICATION_METHOD", "KEY_CARD_HASH", "KEY_CARD_INFO_KSN", "KEY_CARD_ISSUING_BANK", "KEY_CARD_LAST_DIGITS", "KEY_CARD_PAYMENT_ENTRY_MODE", "KEY_CARD_PAYMENT_INFO_AMOUNT", "KEY_CARD_PAYMENT_INFO_APPLICATION_NAME", "KEY_CARD_PAYMENT_INFO_CARD_LAST_4_DIGITS", "KEY_CARD_PAYMENT_INFO_CARD_PAYMENT_UUID", "KEY_CARD_PAYMENT_INFO_CARD_TRANSACTION_ID", "KEY_CARD_PAYMENT_INFO_CARD_TYPE", "KEY_CARD_PAYMENT_INFO_DATE", "KEY_CARD_PAYMENT_INFO_ENTRY_MODE", "KEY_CARD_PAYMENT_INFO_IS_REFUNDABLE", "KEY_CARD_PAYMENT_INFO_REFERENCE_NUMBER", "KEY_CARD_PAYMENT_INFO_TOTAL_FEES", "KEY_CARD_PAYMENT_UUID", "KEY_CARD_TYPE", "KEY_COMMAND", "KEY_COMMANDS", "KEY_CONTACTLESS_TOO_MANY_CONSECUTIVE_TX", "KEY_CONVERSATION_CONTEXT", "KEY_COTS_ID", "KEY_CVM", "KEY_DATECS_READER_PREFIX", "KEY_DATECS_READER_V1", "KEY_DATECS_READER_V2", "KEY_DATECS_READER_V3", "KEY_DATECS_TERMINAL_TOUCH_1", "KEY_DECLINED_SCA", "KEY_DESCRIPTORS_RESPONSE", "KEY_EMV_CONVERSATION_RESULT", "KEY_EMV_PROTOCOL_FEATURES", "KEY_EMV_PROTOCOL_STATE", "KEY_ERROR_MESSAGE_BODY_TEXT_KEY", "KEY_ERROR_MESSAGE_TITLE_TEXT_KEY", "KEY_FILE_WRITE_CHUNK_SIZE", "KEY_INSTALLMENT_AMOUNT", "KEY_INSTALLMENT_CONFIG", "KEY_INSTALLMENT_MIN_AMOUNT", "KEY_INSTALLMENT_OPTIONS", "KEY_LAST_RECEIPT_COUNTRY_CODE", "KEY_LAST_RECEIPT_EMAIL", "KEY_LAST_RECEIPT_PHONE_NUMBER", "KEY_MASKED_PAN", "KEY_MAX_OFFLINE_LAST_CONFIG_SECONDS", "KEY_MAX_OFFLINE_SECONDS", "KEY_MX_CARD_TYPE", "KEY_MX_FIID", "KEY_MX_PAYMENT_METHOD", "KEY_NAMED_COMMAND_BLOCKS", "KEY_NAMED_COMMAND_COMMANDS", "KEY_NEW_CURRENCY", "KEY_NR_INSTALLMENTS", "KEY_NR_OF_INSTALLMENTS", "KEY_OFFLINE_CONFIG", "KEY_PAYEE_PRICING_TIER_ID", "KEY_PAYLOAD", "KEY_PAYMENT_AMOUNT", "KEY_PIN_BLOCK", "KEY_PIN_BLOCK_KSN", "KEY_PIN_BYPASS_SUPPORT", "KEY_READER_CONNECTION_TYPE", "KEY_READER_GRATUITY_CONFIG", "KEY_READER_GRATUITY_CONFIG_ALLOW_CENTS", "KEY_READER_GRATUITY_CONFIG_AVAILABLE", "KEY_READER_GRATUITY_CONFIG_CURRENCY_EXPONENT", "KEY_READER_GRATUITY_CONFIG_MIN_PA_VERSION", "KEY_READER_GRATUITY_CONFIG_PREDEFINED_PERCENTAGES", "KEY_READER_GRATUITY_CONFIG_TYPE", "KEY_READER_GRATUITY_CONFIG_TYPES", "KEY_READER_IDENTIFIER", "KEY_READER_OFFLINE_APPROVE_POLICY", "KEY_READER_OFFLINE_APPROVE_POLICY_AMOUNT_MAX", "KEY_READER_OFFLINE_APPROVE_POLICY_AMOUNT_MIN", "KEY_READER_OFFLINE_APPROVE_POLICY_DISALLOWED_AID", "KEY_READER_OFFLINE_APPROVE_POLICY_ENTRY_MODES", "KEY_READER_OFFLINE_APPROVE_POLICY_TSI_MASK", "KEY_READER_OFFLINE_APPROVE_POLICY_TVR_MASK", "KEY_READER_OFFLINE_APPROVE_POLICY_UNEXPIRED_APPLICATION", "KEY_READER_OFFLINE_AVAILABLE", "KEY_READER_OFFLINE_CONFIG", "KEY_READER_OFFLINE_STORAGE_POLICY", "KEY_READER_OFFLINE_STORAGE_POLICY_AMOUNT_LIMIT", "KEY_READER_OFFLINE_STORAGE_POLICY_COUNT_LIMIT", "KEY_READER_SERIAL_NUMBER", "KEY_REFERENCES", "KEY_REFERENCES_API_REFERENCE", "KEY_REFERENCES_GRATUTITY_AMOUNT", "KEY_REFERENCES_LOCAL_TRANSACTION_UUID", "KEY_REFERENCES_PAYPAL_CLIENT_METADATA_ID", "KEY_REFERENCES_PAYPAL_PARTNER_ATTRIBUTION_ID", "KEY_REFERENCES_READER_SOFTWARE_VERSION", "KEY_REFERENCE_NUMBER", "KEY_REFUND_AMOUNT", "KEY_REFUND_RESULT", "KEY_RESPONSE_CODE", "KEY_RESPONSE_PAYLOAD", "KEY_RESPONSE_PAYLOADS", "KEY_RETENTION_SECONDS", "KEY_REVERSAL_REASON", "KEY_SIGNATURE_OPTIONAL", "KEY_SIGNATURE_PERMISSIVE", "KEY_SIGNATURE_POINTS", "KEY_SIGNATURE_REQUIRED", "KEY_SIGNATURE_SKIPPED", "KEY_SOFTWARE_UPDATE", "KEY_SUPPORTS_STORE_AND_FORWARD", "KEY_SWIPE_DATA", "KEY_TIMEZONE_OFFSET", "KEY_TSI", "KEY_TVR", "NAMED_COMMAND_CAPTURE_GRATUITY", "NAMED_COMMAND_CAPTURE_GRATUITY_V2", "NAMED_COMMAND_CONFIGURATION", "NAMED_COMMAND_FETCH_DESCRIPTORS", "NAMED_COMMAND_INIT_GRATUITY_V3", "NAMED_COMMAND_INIT_TRANSACTION", "NAMED_COMMAND_INIT_TRANSACTION_GRATUITY", "NAMED_COMMAND_RESET_DEVICE", "NAMED_COMMAND_SOFTWARE_UPDATE", com.zettle.sdk.commons.network.JsonKt.ONLINE_HOST_REQUEST_MESSAGE_MAC, "PREDEFINED_PERCENTAGES"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes16.dex */
+public final class JsonKt {
+    public static final java.lang.String ACCOUNT_TYPE_CREDIT = "CREDIT";
+    public static final java.lang.String ACCOUNT_TYPE_DEBIT = "DEBIT";
+    public static final java.lang.String EMV_RESULT_TRANSACTION_APPROVED = "TRANSACTION_APPROVED";
+    public static final java.lang.String EMV_STATE_COMMUNICATION_FINISHED = "COMMUNICATION_FINISHED";
+    public static final java.lang.String EMV_STATE_ISSUE_APP_COMMAND = "ISSUE_APP_COMMAND";
+    public static final java.lang.String EMV_STATE_ISSUE_READER_COMMAND = "ISSUE_READER_COMMAND";
+    public static final java.lang.String EMV_STATE_ISSUE_READER_COMMAND_AND_COMMUNICATION_FINISHED = "ISSUE_READER_COMMAND_AND_COMMUNICATION_FINISHED";
+    public static final java.lang.String EMV_STATE_READY_TO_ISSUE_COMMAND = "READY_TO_ISSUE_COMMAND";
+    public static final java.lang.String EMV_STATE_RESPONSE_FROM_READER = "RESPONSE_FROM_READER";
+    public static final java.lang.String KEY_ACCOUNT_TYPE = "ACCOUNT_TYPE";
+    public static final java.lang.String KEY_ACCOUNT_TYPE_SELECTION = "ACCOUNT_TYPE_SELECTION";
+    public static final java.lang.String KEY_APPLICATION_IDENTIFIER = "APPLICATION_IDENTIFIER";
+    public static final java.lang.String KEY_APPLICATION_NAME = "APPLICATION_NAME";
+    public static final java.lang.String KEY_APP_COMMAND = "APP_COMMAND";
+    public static final java.lang.String KEY_AUTHORIZATION_CODE = "AUTHORIZATION_CODE";
+    public static final java.lang.String KEY_CARDHOLDER_NAME = "CARDHOLDER_NAME";
+    public static final java.lang.String KEY_CARDHOLDER_VERIFICATION_METHOD = "CARDHOLDER_VERIFICATION_METHOD";
+    public static final java.lang.String KEY_CARD_HASH = "CARD_HASH";
+    public static final java.lang.String KEY_CARD_INFO_KSN = "KSN";
+    public static final java.lang.String KEY_CARD_ISSUING_BANK = "CARD_ISSUING_BANK";
+    public static final java.lang.String KEY_CARD_LAST_DIGITS = "CARD_LAST_DIGITS";
+    public static final java.lang.String KEY_CARD_PAYMENT_ENTRY_MODE = "CARD_PAYMENT_ENTRY_MODE";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_AMOUNT = "amount";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_APPLICATION_NAME = "applicationName";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_CARD_LAST_4_DIGITS = "panLastDigits";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_CARD_PAYMENT_UUID = "cardPaymentUUID";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_CARD_TRANSACTION_ID = "transactionId";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_CARD_TYPE = "cardType";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_DATE = "date";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_ENTRY_MODE = "cardPaymentEntryMode";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_IS_REFUNDABLE = "isRefundable";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_REFERENCE_NUMBER = "referenceNumber";
+    public static final java.lang.String KEY_CARD_PAYMENT_INFO_TOTAL_FEES = "totalFees";
+    public static final java.lang.String KEY_CARD_PAYMENT_UUID = "CARD_PAYMENT_UUID";
+    public static final java.lang.String KEY_CARD_TYPE = "CARD_TYPE";
+    public static final java.lang.String KEY_COMMAND = "EMV_COMMAND";
+    public static final java.lang.String KEY_COMMANDS = "EMV_COMMANDS";
+    public static final java.lang.String KEY_CONTACTLESS_TOO_MANY_CONSECUTIVE_TX = "CONTACTLESS_TOO_MANY_CONSECUTIVE_TX";
+    public static final java.lang.String KEY_CONVERSATION_CONTEXT = "CONVERSATION_CONTEXT";
+    public static final java.lang.String KEY_COTS_ID = "COTS_ID";
+    public static final java.lang.String KEY_CVM = "CVM";
+    public static final java.lang.String KEY_DATECS_READER_PREFIX = "DATECS_DEVICE";
+    public static final java.lang.String KEY_DATECS_READER_V1 = "DATECS_DEVICE_1";
+    public static final java.lang.String KEY_DATECS_READER_V2 = "DATECS_DEVICE_2";
+    public static final java.lang.String KEY_DATECS_READER_V3 = "DATECS_DEVICE_3";
+    public static final java.lang.String KEY_DATECS_TERMINAL_TOUCH_1 = "DATECS_DEVICE_TOUCH_1";
+    public static final java.lang.String KEY_DECLINED_SCA = "DECLINED_SCA";
+    public static final java.lang.String KEY_DESCRIPTORS_RESPONSE = "DESCRIPTORS_RESPONSE";
+    public static final java.lang.String KEY_EMV_CONVERSATION_RESULT = "EMV_CONVERSATION_RESULT";
+    public static final java.lang.String KEY_EMV_PROTOCOL_FEATURES = "EMV_PROTOCOL_FEATURES";
+    public static final java.lang.String KEY_EMV_PROTOCOL_STATE = "EMV_PROTOCOL_STATE";
+    public static final java.lang.String KEY_ERROR_MESSAGE_BODY_TEXT_KEY = "ERROR_MESSAGE_BODY_TEXT_KEY";
+    public static final java.lang.String KEY_ERROR_MESSAGE_TITLE_TEXT_KEY = "ERROR_MESSAGE_TITLE_TEXT_KEY";
+    public static final java.lang.String KEY_FILE_WRITE_CHUNK_SIZE = "FILE_WRITE_CHUNK_SIZE";
+    public static final java.lang.String KEY_INSTALLMENT_AMOUNT = "INSTALLMENT_AMOUNT";
+    public static final java.lang.String KEY_INSTALLMENT_CONFIG = "INSTALLMENT_CONFIG";
+    public static final java.lang.String KEY_INSTALLMENT_MIN_AMOUNT = "MIN_AMOUNT";
+    public static final java.lang.String KEY_INSTALLMENT_OPTIONS = "OPTIONS";
+    public static final java.lang.String KEY_LAST_RECEIPT_COUNTRY_CODE = "LAST_RECEIPT_COUNTRY_CODE";
+    public static final java.lang.String KEY_LAST_RECEIPT_EMAIL = "LAST_RECEIPT_EMAIL";
+    public static final java.lang.String KEY_LAST_RECEIPT_PHONE_NUMBER = "LAST_RECEIPT_PHONE_NUMBER";
+    public static final java.lang.String KEY_MASKED_PAN = "MASKED_PAN";
+    public static final java.lang.String KEY_MAX_OFFLINE_LAST_CONFIG_SECONDS = "MAX_LAST_CONFIG_SECONDS";
+    public static final java.lang.String KEY_MAX_OFFLINE_SECONDS = "MAX_OFFLINE_SECONDS";
+    public static final java.lang.String KEY_MX_CARD_TYPE = "MX_CARD_TYPE";
+    public static final java.lang.String KEY_MX_FIID = "MX_FIID";
+    public static final java.lang.String KEY_MX_PAYMENT_METHOD = "MX_PAYMENT_METHOD";
+    public static final java.lang.String KEY_NAMED_COMMAND_BLOCKS = "NAMED_COMMAND_BLOCKS";
+    public static final java.lang.String KEY_NAMED_COMMAND_COMMANDS = "COMMANDS";
+    public static final java.lang.String KEY_NEW_CURRENCY = "currency";
+    public static final java.lang.String KEY_NR_INSTALLMENTS = "NR_INSTALLMENTS";
+    public static final java.lang.String KEY_NR_OF_INSTALLMENTS = "NR_OF_INSTALLMENTS";
+    public static final java.lang.String KEY_OFFLINE_CONFIG = "OFFLINE";
+    public static final java.lang.String KEY_PAYEE_PRICING_TIER_ID = "PAYEE_PRICING_TIER_ID";
+    public static final java.lang.String KEY_PAYLOAD = "PAYLOAD";
+    public static final java.lang.String KEY_PAYMENT_AMOUNT = "AMOUNT";
+    public static final java.lang.String KEY_PIN_BLOCK = "PIN_BLOCK";
+    public static final java.lang.String KEY_PIN_BLOCK_KSN = "PIN_BLOCK_KSN";
+    public static final java.lang.String KEY_PIN_BYPASS_SUPPORT = "SUPPORTS_PIN_BYPASS";
+    public static final java.lang.String KEY_READER_CONNECTION_TYPE = "READER_CONNECTION_TYPE";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG = "GRATUITY";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_ALLOW_CENTS = "ALLOW_CENTS";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_AVAILABLE = "AVAILABLE";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_CURRENCY_EXPONENT = "CURRENCY_EXPONENT";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_MIN_PA_VERSION = "MIN_PA_VERSION";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_PREDEFINED_PERCENTAGES = "PREDEFINED_PERCENTAGES";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_TYPE = "TYPE";
+    public static final java.lang.String KEY_READER_GRATUITY_CONFIG_TYPES = "TYPES";
+    public static final java.lang.String KEY_READER_IDENTIFIER = "READER_IDENTIFIER";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY = "APPROVE_POLICY";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_AMOUNT_MAX = "AMOUNT_MAX";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_AMOUNT_MIN = "AMOUNT_MIN";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_DISALLOWED_AID = "DISALLOWED_AID";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_ENTRY_MODES = "CARD_ENTRY_MODES";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_TSI_MASK = "TSI_MASK";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_TVR_MASK = "TVR_MASK";
+    public static final java.lang.String KEY_READER_OFFLINE_APPROVE_POLICY_UNEXPIRED_APPLICATION = "UNEXPIRED_APPLICATION";
+    public static final java.lang.String KEY_READER_OFFLINE_AVAILABLE = "AVAILABLE";
+    public static final java.lang.String KEY_READER_OFFLINE_CONFIG = "OFFLINE";
+    public static final java.lang.String KEY_READER_OFFLINE_STORAGE_POLICY = "STORAGE_POLICY";
+    public static final java.lang.String KEY_READER_OFFLINE_STORAGE_POLICY_AMOUNT_LIMIT = "AMOUNT_LIMIT";
+    public static final java.lang.String KEY_READER_OFFLINE_STORAGE_POLICY_COUNT_LIMIT = "COUNT_LIMIT";
+    public static final java.lang.String KEY_READER_SERIAL_NUMBER = "READER_SERIAL_NUMBER";
+    public static final java.lang.String KEY_REFERENCES = "REFERENCES";
+    public static final java.lang.String KEY_REFERENCES_API_REFERENCE = "apiReference";
+    public static final java.lang.String KEY_REFERENCES_GRATUTITY_AMOUNT = "gratuityAmount";
+    public static final java.lang.String KEY_REFERENCES_LOCAL_TRANSACTION_UUID = "localUUID";
+    public static final java.lang.String KEY_REFERENCES_PAYPAL_CLIENT_METADATA_ID = "magnesPaypalClientMetaDataId";
+    public static final java.lang.String KEY_REFERENCES_PAYPAL_PARTNER_ATTRIBUTION_ID = "paypalPartnerAttributionId";
+    public static final java.lang.String KEY_REFERENCES_READER_SOFTWARE_VERSION = "readerSwVersion";
+    public static final java.lang.String KEY_REFERENCE_NUMBER = "REFERENCE_NUMBER";
+    public static final java.lang.String KEY_REFUND_AMOUNT = "REFUND_AMOUNT";
+    public static final java.lang.String KEY_REFUND_RESULT = "RESULT";
+    public static final java.lang.String KEY_RESPONSE_CODE = "RESPONSE_CODE";
+    public static final java.lang.String KEY_RESPONSE_PAYLOAD = "RESPONSE_PAYLOAD";
+    public static final java.lang.String KEY_RESPONSE_PAYLOADS = "RESPONSE_PAYLOADS";
+    public static final java.lang.String KEY_RETENTION_SECONDS = "RETENTION_SECONDS";
+    public static final java.lang.String KEY_REVERSAL_REASON = "REVERSAL_REASON";
+    public static final java.lang.String KEY_SIGNATURE_OPTIONAL = "SIGNATURE_OPTIONAL";
+    public static final java.lang.String KEY_SIGNATURE_PERMISSIVE = "SIGNATURE_PERMISSIVE";
+    public static final java.lang.String KEY_SIGNATURE_POINTS = "SIGNATURE_POINTS";
+    public static final java.lang.String KEY_SIGNATURE_REQUIRED = "SIGNATURE_REQUIRED";
+    public static final java.lang.String KEY_SIGNATURE_SKIPPED = "SIGNATURE_SKIPPED";
+    public static final java.lang.String KEY_SOFTWARE_UPDATE = "READER_SOFTWARE_UPDATE";
+    public static final java.lang.String KEY_SUPPORTS_STORE_AND_FORWARD = "SUPPORTS_STORE_AND_FORWARD";
+    public static final java.lang.String KEY_SWIPE_DATA = "SWIPE_DATA";
+    public static final java.lang.String KEY_TIMEZONE_OFFSET = "TRANSACTION_TIME_GMT_OFFSET";
+    public static final java.lang.String KEY_TSI = "TSI";
+    public static final java.lang.String KEY_TVR = "TVR";
+    public static final java.lang.String NAMED_COMMAND_CAPTURE_GRATUITY = "CAPTURE_GRATUITY";
+    public static final java.lang.String NAMED_COMMAND_CAPTURE_GRATUITY_V2 = "CAPTURE_GRATUITY_V2";
+    public static final java.lang.String NAMED_COMMAND_CONFIGURATION = "CONFIGURATION";
+    public static final java.lang.String NAMED_COMMAND_FETCH_DESCRIPTORS = "DESCRIPTORS_RESPONSE";
+    public static final java.lang.String NAMED_COMMAND_INIT_GRATUITY_V3 = "INIT_GRATUITY_V3";
+    public static final java.lang.String NAMED_COMMAND_INIT_TRANSACTION = "INIT_TRANSACTION";
+    public static final java.lang.String NAMED_COMMAND_INIT_TRANSACTION_GRATUITY = "INIT_TRANSACTION_GRATUITY";
+    public static final java.lang.String NAMED_COMMAND_RESET_DEVICE = "RESET_DEVICE";
+    public static final java.lang.String NAMED_COMMAND_SOFTWARE_UPDATE = "SOFTWARE_UPDATE";
+    public static final java.lang.String ONLINE_HOST_REQUEST_MESSAGE_MAC = "ONLINE_HOST_REQUEST_MESSAGE_MAC";
+    public static final java.lang.String PREDEFINED_PERCENTAGES = "PREDEFINED_PERCENTAGES";
+
+    public static final void putPlatformInfo(org.json.JSONObject jSONObject, com.zettle.sdk.meta.PlatformInfo platformInfo) throws org.json.JSONException {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(jSONObject, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(platformInfo, "");
+        jSONObject.putOpt("DEVICE_PLATFORM", "ANDROID");
+        jSONObject.putOpt("DEVICE_NAME", platformInfo.getDeviceName());
+        jSONObject.putOpt("DEVICE_MODEL", platformInfo.getDeviceModelBrand());
+        jSONObject.putOpt("DEVICE_LOCALE", platformInfo.getDeviceLocale());
+        jSONObject.putOpt("APP_LANGUAGE", platformInfo.getDeviceLocale());
+    }
+
+    public static final void putSdkInfo(org.json.JSONObject jSONObject, com.zettle.sdk.meta.AppInfo appInfo) throws org.json.JSONException {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(jSONObject, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(appInfo, "");
+        jSONObject.putOpt("APP_ID", appInfo.getAppId());
+        jSONObject.putOpt("APP_VERSION", appInfo.getAppVersion());
+        jSONObject.putOpt("SDK_VERSION_V2", appInfo.getSdkVersion());
+        jSONObject.putOpt("UNIQUE_DEVICE_ID", appInfo.getDeviceId());
+    }
+
+    public static final void putBuffer(org.json.JSONObject jSONObject, java.lang.String str, byte[] bArr) throws org.json.JSONException {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(jSONObject, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(bArr, "");
+        jSONObject.put(str, com.zettle.sdk.io.BuffersKt.toHexString$default(bArr, 0, 0, 3, null));
+    }
+
+    public static final void putBuffer(org.json.JSONObject jSONObject, java.lang.String str, java.util.List<byte[]> list) throws org.json.JSONException {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(jSONObject, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(list, "");
+        org.json.JSONArray jSONArray = new org.json.JSONArray();
+        java.util.Iterator<T> it = list.iterator();
+        while (it.hasNext()) {
+            jSONArray = jSONArray.put(com.zettle.sdk.io.BuffersKt.toHexString$default((byte[]) it.next(), 0, 0, 3, null));
+            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(jSONArray, "");
+        }
+        jSONObject.put(str, jSONArray);
+    }
+
+    public static final void putLastLocation(org.json.JSONObject jSONObject, com.zettle.sdk.core.os.LocationData locationData) throws org.json.JSONException {
+        org.json.JSONObject jSONObject2;
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(jSONObject, "");
+        if (locationData != null) {
+            jSONObject2 = new org.json.JSONObject();
+            jSONObject2.putOpt("longitude", java.lang.Double.valueOf(locationData.getLongitude()));
+            jSONObject2.putOpt("latitude", java.lang.Double.valueOf(locationData.getLatitude()));
+            jSONObject2.putOpt("accuracyMeters", java.lang.Double.valueOf(locationData.getAccuracy()));
+        } else {
+            jSONObject2 = null;
+        }
+        jSONObject.putOpt("gpsCoordinates", jSONObject2);
+    }
+}

@@ -1,0 +1,1131 @@
+package androidx.appcompat.widget;
+
+/* loaded from: classes5.dex */
+public class SwitchCompat extends android.widget.CompoundButton implements androidx.appcompat.widget.EmojiCompatConfigurationView {
+    private static final java.lang.String ACCESSIBILITY_EVENT_CLASS_NAME = "android.widget.Switch";
+    private static final int MONOSPACE = 3;
+    private static final int SANS = 1;
+    private static final int SERIF = 2;
+    private static final int THUMB_ANIMATION_DURATION = 250;
+    private static final int TOUCH_MODE_DOWN = 1;
+    private static final int TOUCH_MODE_DRAGGING = 2;
+    private static final int TOUCH_MODE_IDLE = 0;
+    private androidx.appcompat.widget.AppCompatEmojiTextHelper mAppCompatEmojiTextHelper;
+    private androidx.appcompat.widget.SwitchCompat.EmojiCompatInitCallback mEmojiCompatInitCallback;
+    private boolean mEnforceSwitchWidth;
+    private boolean mHasThumbTint;
+    private boolean mHasThumbTintMode;
+    private boolean mHasTrackTint;
+    private boolean mHasTrackTintMode;
+    private int mMinFlingVelocity;
+    private android.text.Layout mOffLayout;
+    private android.text.Layout mOnLayout;
+    android.animation.ObjectAnimator mPositionAnimator;
+    private boolean mShowText;
+    private boolean mSplitTrack;
+    private int mSwitchBottom;
+    private int mSwitchHeight;
+    private int mSwitchLeft;
+    private int mSwitchMinWidth;
+    private int mSwitchPadding;
+    private int mSwitchRight;
+    private int mSwitchTop;
+    private android.text.method.TransformationMethod mSwitchTransformationMethod;
+    private int mSwitchWidth;
+    private final android.graphics.Rect mTempRect;
+    private android.content.res.ColorStateList mTextColors;
+    private final androidx.appcompat.widget.AppCompatTextHelper mTextHelper;
+    private java.lang.CharSequence mTextOff;
+    private java.lang.CharSequence mTextOffTransformed;
+    private java.lang.CharSequence mTextOn;
+    private java.lang.CharSequence mTextOnTransformed;
+    private final android.text.TextPaint mTextPaint;
+    private android.graphics.drawable.Drawable mThumbDrawable;
+    float mThumbPosition;
+    private int mThumbTextPadding;
+    private android.content.res.ColorStateList mThumbTintList;
+    private android.graphics.PorterDuff.Mode mThumbTintMode;
+    private int mThumbWidth;
+    private int mTouchMode;
+    private int mTouchSlop;
+    private float mTouchX;
+    private float mTouchY;
+    private android.graphics.drawable.Drawable mTrackDrawable;
+    private android.content.res.ColorStateList mTrackTintList;
+    private android.graphics.PorterDuff.Mode mTrackTintMode;
+    private android.view.VelocityTracker mVelocityTracker;
+    private static final android.util.Property<androidx.appcompat.widget.SwitchCompat, java.lang.Float> THUMB_POS = new android.util.Property<androidx.appcompat.widget.SwitchCompat, java.lang.Float>(java.lang.Float.class, "thumbPos") { // from class: androidx.appcompat.widget.SwitchCompat.1
+        @Override // android.util.Property
+        /* renamed from: Camera2StreamConfigurationMap, reason: merged with bridge method [inline-methods] */
+        public java.lang.Float get(androidx.appcompat.widget.SwitchCompat switchCompat) {
+            return java.lang.Float.valueOf(switchCompat.mThumbPosition);
+        }
+
+        @Override // android.util.Property
+        /* renamed from: getHighSpeedVideoFpsRanges, reason: merged with bridge method [inline-methods] */
+        public void set(androidx.appcompat.widget.SwitchCompat switchCompat, java.lang.Float f) {
+            switchCompat.setThumbPosition(f.floatValue());
+        }
+    };
+    private static final int[] CHECKED_STATE_SET = {android.R.attr.state_checked};
+
+    private static float constrain(float f, float f2, float f3) {
+        return f < f2 ? f2 : f > f3 ? f3 : f;
+    }
+
+    public final class InspectionCompanion implements android.view.inspector.InspectionCompanion<androidx.appcompat.widget.SwitchCompat> {
+        private int Camera2StreamConfigurationMap;
+        private int getHighResolutionOutputSizeshNQ4ISI;
+        private int getHighSpeedVideoFpsRanges;
+        private boolean getHighSpeedVideoFpsRangesFor = false;
+        private int getHighSpeedVideoSizes;
+        private int getHighSpeedVideoSizesFor;
+        private int getInputFormats;
+        private int getInputSizeshNQ4ISI;
+        private int getOutputFormats;
+        private int getOutputMinFrameDuration;
+        private int getOutputMinFrameDurationlomOqCM;
+        private int getOutputSizes;
+        private int getOutputStallDuration;
+        private int getOutputStallDurationlomOqCM;
+
+        @Override // android.view.inspector.InspectionCompanion
+        public final void mapProperties(android.view.inspector.PropertyMapper propertyMapper) {
+            this.getHighSpeedVideoSizesFor = propertyMapper.mapObject("textOff", android.R.attr.textOff);
+            this.getOutputMinFrameDuration = propertyMapper.mapObject("textOn", android.R.attr.textOn);
+            this.getInputFormats = propertyMapper.mapObject(com.datadog.android.sessionreplay.internal.recorder.mapper.SwitchCompatMapper.THUMB_KEY_NAME, android.R.attr.thumb);
+            this.getHighSpeedVideoFpsRanges = propertyMapper.mapBoolean("showText", androidx.appcompat.R.attr.showText);
+            this.Camera2StreamConfigurationMap = propertyMapper.mapBoolean("splitTrack", androidx.appcompat.R.attr.splitTrack);
+            this.getHighSpeedVideoSizes = propertyMapper.mapInt("switchMinWidth", androidx.appcompat.R.attr.switchMinWidth);
+            this.getHighResolutionOutputSizeshNQ4ISI = propertyMapper.mapInt("switchPadding", androidx.appcompat.R.attr.switchPadding);
+            this.getInputSizeshNQ4ISI = propertyMapper.mapInt("thumbTextPadding", androidx.appcompat.R.attr.thumbTextPadding);
+            this.getOutputFormats = propertyMapper.mapObject("thumbTint", androidx.appcompat.R.attr.thumbTint);
+            this.getOutputStallDurationlomOqCM = propertyMapper.mapObject("thumbTintMode", androidx.appcompat.R.attr.thumbTintMode);
+            this.getOutputSizes = propertyMapper.mapObject("track", androidx.appcompat.R.attr.track);
+            this.getOutputStallDuration = propertyMapper.mapObject("trackTint", androidx.appcompat.R.attr.trackTint);
+            this.getOutputMinFrameDurationlomOqCM = propertyMapper.mapObject("trackTintMode", androidx.appcompat.R.attr.trackTintMode);
+            this.getHighSpeedVideoFpsRangesFor = true;
+        }
+
+        @Override // android.view.inspector.InspectionCompanion
+        public final void readProperties(androidx.appcompat.widget.SwitchCompat switchCompat, android.view.inspector.PropertyReader propertyReader) {
+            if (!this.getHighSpeedVideoFpsRangesFor) {
+                throw new android.view.inspector.InspectionCompanion.UninitializedPropertyMapException();
+            }
+            propertyReader.readObject(this.getHighSpeedVideoSizesFor, switchCompat.getTextOff());
+            propertyReader.readObject(this.getOutputMinFrameDuration, switchCompat.getTextOn());
+            propertyReader.readObject(this.getInputFormats, switchCompat.getThumbDrawable());
+            propertyReader.readBoolean(this.getHighSpeedVideoFpsRanges, switchCompat.getShowText());
+            propertyReader.readBoolean(this.Camera2StreamConfigurationMap, switchCompat.getSplitTrack());
+            propertyReader.readInt(this.getHighSpeedVideoSizes, switchCompat.getSwitchMinWidth());
+            propertyReader.readInt(this.getHighResolutionOutputSizeshNQ4ISI, switchCompat.getSwitchPadding());
+            propertyReader.readInt(this.getInputSizeshNQ4ISI, switchCompat.getThumbTextPadding());
+            propertyReader.readObject(this.getOutputFormats, switchCompat.getThumbTintList());
+            propertyReader.readObject(this.getOutputStallDurationlomOqCM, switchCompat.getThumbTintMode());
+            propertyReader.readObject(this.getOutputSizes, switchCompat.getTrackDrawable());
+            propertyReader.readObject(this.getOutputStallDuration, switchCompat.getTrackTintList());
+            propertyReader.readObject(this.getOutputMinFrameDurationlomOqCM, switchCompat.getTrackTintMode());
+        }
+    }
+
+    public SwitchCompat(android.content.Context context) {
+        this(context, null);
+    }
+
+    public SwitchCompat(android.content.Context context, android.util.AttributeSet attributeSet) {
+        this(context, attributeSet, androidx.appcompat.R.attr.switchStyle);
+    }
+
+    public SwitchCompat(android.content.Context context, android.util.AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
+        this.mThumbTintList = null;
+        this.mThumbTintMode = null;
+        this.mHasThumbTint = false;
+        this.mHasThumbTintMode = false;
+        this.mTrackTintList = null;
+        this.mTrackTintMode = null;
+        this.mHasTrackTint = false;
+        this.mHasTrackTintMode = false;
+        this.mVelocityTracker = android.view.VelocityTracker.obtain();
+        this.mEnforceSwitchWidth = true;
+        this.mTempRect = new android.graphics.Rect();
+        androidx.appcompat.widget.ThemeUtils.checkAppCompatTheme(this, getContext());
+        android.text.TextPaint textPaint = new android.text.TextPaint(1);
+        this.mTextPaint = textPaint;
+        textPaint.density = getResources().getDisplayMetrics().density;
+        androidx.appcompat.widget.TintTypedArray obtainStyledAttributes = androidx.appcompat.widget.TintTypedArray.obtainStyledAttributes(context, attributeSet, androidx.appcompat.R.styleable.SwitchCompat, i, 0);
+        androidx.core.view.ViewCompat.saveAttributeDataForStyleable(this, context, androidx.appcompat.R.styleable.SwitchCompat, attributeSet, obtainStyledAttributes.getWrappedTypeArray(), i, 0);
+        android.graphics.drawable.Drawable drawable = obtainStyledAttributes.getDrawable(androidx.appcompat.R.styleable.SwitchCompat_android_thumb);
+        this.mThumbDrawable = drawable;
+        if (drawable != null) {
+            drawable.setCallback(this);
+        }
+        android.graphics.drawable.Drawable drawable2 = obtainStyledAttributes.getDrawable(androidx.appcompat.R.styleable.SwitchCompat_track);
+        this.mTrackDrawable = drawable2;
+        if (drawable2 != null) {
+            drawable2.setCallback(this);
+        }
+        setTextOnInternal(obtainStyledAttributes.getText(androidx.appcompat.R.styleable.SwitchCompat_android_textOn));
+        setTextOffInternal(obtainStyledAttributes.getText(androidx.appcompat.R.styleable.SwitchCompat_android_textOff));
+        this.mShowText = obtainStyledAttributes.getBoolean(androidx.appcompat.R.styleable.SwitchCompat_showText, true);
+        this.mThumbTextPadding = obtainStyledAttributes.getDimensionPixelSize(androidx.appcompat.R.styleable.SwitchCompat_thumbTextPadding, 0);
+        this.mSwitchMinWidth = obtainStyledAttributes.getDimensionPixelSize(androidx.appcompat.R.styleable.SwitchCompat_switchMinWidth, 0);
+        this.mSwitchPadding = obtainStyledAttributes.getDimensionPixelSize(androidx.appcompat.R.styleable.SwitchCompat_switchPadding, 0);
+        this.mSplitTrack = obtainStyledAttributes.getBoolean(androidx.appcompat.R.styleable.SwitchCompat_splitTrack, false);
+        android.content.res.ColorStateList colorStateList = obtainStyledAttributes.getColorStateList(androidx.appcompat.R.styleable.SwitchCompat_thumbTint);
+        if (colorStateList != null) {
+            this.mThumbTintList = colorStateList;
+            this.mHasThumbTint = true;
+        }
+        android.graphics.PorterDuff.Mode parseTintMode = androidx.appcompat.widget.DrawableUtils.parseTintMode(obtainStyledAttributes.getInt(androidx.appcompat.R.styleable.SwitchCompat_thumbTintMode, -1), null);
+        if (this.mThumbTintMode != parseTintMode) {
+            this.mThumbTintMode = parseTintMode;
+            this.mHasThumbTintMode = true;
+        }
+        if (this.mHasThumbTint || this.mHasThumbTintMode) {
+            applyThumbTint();
+        }
+        android.content.res.ColorStateList colorStateList2 = obtainStyledAttributes.getColorStateList(androidx.appcompat.R.styleable.SwitchCompat_trackTint);
+        if (colorStateList2 != null) {
+            this.mTrackTintList = colorStateList2;
+            this.mHasTrackTint = true;
+        }
+        android.graphics.PorterDuff.Mode parseTintMode2 = androidx.appcompat.widget.DrawableUtils.parseTintMode(obtainStyledAttributes.getInt(androidx.appcompat.R.styleable.SwitchCompat_trackTintMode, -1), null);
+        if (this.mTrackTintMode != parseTintMode2) {
+            this.mTrackTintMode = parseTintMode2;
+            this.mHasTrackTintMode = true;
+        }
+        if (this.mHasTrackTint || this.mHasTrackTintMode) {
+            applyTrackTint();
+        }
+        int resourceId = obtainStyledAttributes.getResourceId(androidx.appcompat.R.styleable.SwitchCompat_switchTextAppearance, 0);
+        if (resourceId != 0) {
+            setSwitchTextAppearance(context, resourceId);
+        }
+        androidx.appcompat.widget.AppCompatTextHelper appCompatTextHelper = new androidx.appcompat.widget.AppCompatTextHelper(this);
+        this.mTextHelper = appCompatTextHelper;
+        appCompatTextHelper.getHighSpeedVideoFpsRanges(attributeSet, i);
+        obtainStyledAttributes.recycle();
+        android.view.ViewConfiguration viewConfiguration = android.view.ViewConfiguration.get(context);
+        this.mTouchSlop = viewConfiguration.getScaledTouchSlop();
+        this.mMinFlingVelocity = viewConfiguration.getScaledMinimumFlingVelocity();
+        getEmojiTextViewHelper().getHighSpeedVideoSizes(attributeSet, i);
+        refreshDrawableState();
+        setChecked(isChecked());
+    }
+
+    public void setSwitchTextAppearance(android.content.Context context, int i) {
+        androidx.appcompat.widget.TintTypedArray obtainStyledAttributes = androidx.appcompat.widget.TintTypedArray.obtainStyledAttributes(context, i, androidx.appcompat.R.styleable.TextAppearance);
+        android.content.res.ColorStateList colorStateList = obtainStyledAttributes.getColorStateList(androidx.appcompat.R.styleable.TextAppearance_android_textColor);
+        if (colorStateList != null) {
+            this.mTextColors = colorStateList;
+        } else {
+            this.mTextColors = getTextColors();
+        }
+        int dimensionPixelSize = obtainStyledAttributes.getDimensionPixelSize(androidx.appcompat.R.styleable.TextAppearance_android_textSize, 0);
+        if (dimensionPixelSize != 0) {
+            float f = dimensionPixelSize;
+            if (f != this.mTextPaint.getTextSize()) {
+                this.mTextPaint.setTextSize(f);
+                requestLayout();
+            }
+        }
+        setSwitchTypefaceByIndex(obtainStyledAttributes.getInt(androidx.appcompat.R.styleable.TextAppearance_android_typeface, -1), obtainStyledAttributes.getInt(androidx.appcompat.R.styleable.TextAppearance_android_textStyle, -1));
+        if (obtainStyledAttributes.getBoolean(androidx.appcompat.R.styleable.TextAppearance_textAllCaps, false)) {
+            this.mSwitchTransformationMethod = new androidx.appcompat.text.AllCapsTransformationMethod(getContext());
+        } else {
+            this.mSwitchTransformationMethod = null;
+        }
+        setTextOnInternal(this.mTextOn);
+        setTextOffInternal(this.mTextOff);
+        obtainStyledAttributes.recycle();
+    }
+
+    private void setSwitchTypefaceByIndex(int i, int i2) {
+        android.graphics.Typeface typeface;
+        if (i == 1) {
+            typeface = android.graphics.Typeface.SANS_SERIF;
+        } else if (i == 2) {
+            typeface = android.graphics.Typeface.SERIF;
+        } else {
+            typeface = i != 3 ? null : android.graphics.Typeface.MONOSPACE;
+        }
+        setSwitchTypeface(typeface, i2);
+    }
+
+    public void setSwitchTypeface(android.graphics.Typeface typeface, int i) {
+        android.graphics.Typeface create;
+        if (i > 0) {
+            if (typeface == null) {
+                create = android.graphics.Typeface.defaultFromStyle(i);
+            } else {
+                create = android.graphics.Typeface.create(typeface, i);
+            }
+            setSwitchTypeface(create);
+            int i2 = (~(create != null ? create.getStyle() : 0)) & i;
+            this.mTextPaint.setFakeBoldText((i2 & 1) != 0);
+            this.mTextPaint.setTextSkewX((i2 & 2) != 0 ? -0.25f : 0.0f);
+            return;
+        }
+        this.mTextPaint.setFakeBoldText(false);
+        this.mTextPaint.setTextSkewX(0.0f);
+        setSwitchTypeface(typeface);
+    }
+
+    public void setSwitchTypeface(android.graphics.Typeface typeface) {
+        if ((this.mTextPaint.getTypeface() == null || this.mTextPaint.getTypeface().equals(typeface)) && (this.mTextPaint.getTypeface() != null || typeface == null)) {
+            return;
+        }
+        this.mTextPaint.setTypeface(typeface);
+        requestLayout();
+        invalidate();
+    }
+
+    public void setSwitchPadding(int i) {
+        this.mSwitchPadding = i;
+        requestLayout();
+    }
+
+    public int getSwitchPadding() {
+        return this.mSwitchPadding;
+    }
+
+    public void setSwitchMinWidth(int i) {
+        this.mSwitchMinWidth = i;
+        requestLayout();
+    }
+
+    public int getSwitchMinWidth() {
+        return this.mSwitchMinWidth;
+    }
+
+    public void setThumbTextPadding(int i) {
+        this.mThumbTextPadding = i;
+        requestLayout();
+    }
+
+    public int getThumbTextPadding() {
+        return this.mThumbTextPadding;
+    }
+
+    public void setTrackDrawable(android.graphics.drawable.Drawable drawable) {
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null) {
+            drawable2.setCallback(null);
+        }
+        this.mTrackDrawable = drawable;
+        if (drawable != null) {
+            drawable.setCallback(this);
+        }
+        requestLayout();
+    }
+
+    public void setTrackResource(int i) {
+        setTrackDrawable(androidx.appcompat.content.res.AppCompatResources.getDrawable(getContext(), i));
+    }
+
+    public android.graphics.drawable.Drawable getTrackDrawable() {
+        return this.mTrackDrawable;
+    }
+
+    public void setTrackTintList(android.content.res.ColorStateList colorStateList) {
+        this.mTrackTintList = colorStateList;
+        this.mHasTrackTint = true;
+        applyTrackTint();
+    }
+
+    public android.content.res.ColorStateList getTrackTintList() {
+        return this.mTrackTintList;
+    }
+
+    public void setTrackTintMode(android.graphics.PorterDuff.Mode mode) {
+        this.mTrackTintMode = mode;
+        this.mHasTrackTintMode = true;
+        applyTrackTint();
+    }
+
+    public android.graphics.PorterDuff.Mode getTrackTintMode() {
+        return this.mTrackTintMode;
+    }
+
+    private void applyTrackTint() {
+        android.graphics.drawable.Drawable drawable = this.mTrackDrawable;
+        if (drawable != null) {
+            if (this.mHasTrackTint || this.mHasTrackTintMode) {
+                android.graphics.drawable.Drawable mutate = androidx.core.graphics.drawable.DrawableCompat.wrap(drawable).mutate();
+                this.mTrackDrawable = mutate;
+                if (this.mHasTrackTint) {
+                    androidx.core.graphics.drawable.DrawableCompat.setTintList(mutate, this.mTrackTintList);
+                }
+                if (this.mHasTrackTintMode) {
+                    androidx.core.graphics.drawable.DrawableCompat.setTintMode(this.mTrackDrawable, this.mTrackTintMode);
+                }
+                if (this.mTrackDrawable.isStateful()) {
+                    this.mTrackDrawable.setState(getDrawableState());
+                }
+            }
+        }
+    }
+
+    public void setThumbDrawable(android.graphics.drawable.Drawable drawable) {
+        android.graphics.drawable.Drawable drawable2 = this.mThumbDrawable;
+        if (drawable2 != null) {
+            drawable2.setCallback(null);
+        }
+        this.mThumbDrawable = drawable;
+        if (drawable != null) {
+            drawable.setCallback(this);
+        }
+        requestLayout();
+    }
+
+    public void setThumbResource(int i) {
+        setThumbDrawable(androidx.appcompat.content.res.AppCompatResources.getDrawable(getContext(), i));
+    }
+
+    public android.graphics.drawable.Drawable getThumbDrawable() {
+        return this.mThumbDrawable;
+    }
+
+    public void setThumbTintList(android.content.res.ColorStateList colorStateList) {
+        this.mThumbTintList = colorStateList;
+        this.mHasThumbTint = true;
+        applyThumbTint();
+    }
+
+    public android.content.res.ColorStateList getThumbTintList() {
+        return this.mThumbTintList;
+    }
+
+    public void setThumbTintMode(android.graphics.PorterDuff.Mode mode) {
+        this.mThumbTintMode = mode;
+        this.mHasThumbTintMode = true;
+        applyThumbTint();
+    }
+
+    public android.graphics.PorterDuff.Mode getThumbTintMode() {
+        return this.mThumbTintMode;
+    }
+
+    private void applyThumbTint() {
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        if (drawable != null) {
+            if (this.mHasThumbTint || this.mHasThumbTintMode) {
+                android.graphics.drawable.Drawable mutate = androidx.core.graphics.drawable.DrawableCompat.wrap(drawable).mutate();
+                this.mThumbDrawable = mutate;
+                if (this.mHasThumbTint) {
+                    androidx.core.graphics.drawable.DrawableCompat.setTintList(mutate, this.mThumbTintList);
+                }
+                if (this.mHasThumbTintMode) {
+                    androidx.core.graphics.drawable.DrawableCompat.setTintMode(this.mThumbDrawable, this.mThumbTintMode);
+                }
+                if (this.mThumbDrawable.isStateful()) {
+                    this.mThumbDrawable.setState(getDrawableState());
+                }
+            }
+        }
+    }
+
+    public void setSplitTrack(boolean z) {
+        this.mSplitTrack = z;
+        invalidate();
+    }
+
+    public boolean getSplitTrack() {
+        return this.mSplitTrack;
+    }
+
+    public java.lang.CharSequence getTextOn() {
+        return this.mTextOn;
+    }
+
+    private void setTextOnInternal(java.lang.CharSequence charSequence) {
+        this.mTextOn = charSequence;
+        this.mTextOnTransformed = doTransformForOnOffText(charSequence);
+        this.mOnLayout = null;
+        if (this.mShowText) {
+            setupEmojiCompatLoadCallback();
+        }
+    }
+
+    public void setTextOn(java.lang.CharSequence charSequence) {
+        setTextOnInternal(charSequence);
+        requestLayout();
+        if (isChecked()) {
+            setOnStateDescriptionOnRAndAbove();
+        }
+    }
+
+    public java.lang.CharSequence getTextOff() {
+        return this.mTextOff;
+    }
+
+    private void setTextOffInternal(java.lang.CharSequence charSequence) {
+        this.mTextOff = charSequence;
+        this.mTextOffTransformed = doTransformForOnOffText(charSequence);
+        this.mOffLayout = null;
+        if (this.mShowText) {
+            setupEmojiCompatLoadCallback();
+        }
+    }
+
+    public void setTextOff(java.lang.CharSequence charSequence) {
+        setTextOffInternal(charSequence);
+        requestLayout();
+        if (isChecked()) {
+            return;
+        }
+        setOffStateDescriptionOnRAndAbove();
+    }
+
+    private java.lang.CharSequence doTransformForOnOffText(java.lang.CharSequence charSequence) {
+        android.text.method.TransformationMethod highSpeedVideoFpsRangesFor = getEmojiTextViewHelper().getHighSpeedVideoFpsRangesFor(this.mSwitchTransformationMethod);
+        return highSpeedVideoFpsRangesFor != null ? highSpeedVideoFpsRangesFor.getTransformation(charSequence, this) : charSequence;
+    }
+
+    public void setShowText(boolean z) {
+        if (this.mShowText != z) {
+            this.mShowText = z;
+            requestLayout();
+            if (z) {
+                setupEmojiCompatLoadCallback();
+            }
+        }
+    }
+
+    public boolean getShowText() {
+        return this.mShowText;
+    }
+
+    @Override // android.widget.TextView, android.view.View
+    public void onMeasure(int i, int i2) {
+        int i3;
+        int i4;
+        int i5;
+        if (this.mShowText) {
+            if (this.mOnLayout == null) {
+                this.mOnLayout = makeLayout(this.mTextOnTransformed);
+            }
+            if (this.mOffLayout == null) {
+                this.mOffLayout = makeLayout(this.mTextOffTransformed);
+            }
+        }
+        android.graphics.Rect rect = this.mTempRect;
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        int i6 = 0;
+        if (drawable != null) {
+            drawable.getPadding(rect);
+            i3 = (this.mThumbDrawable.getIntrinsicWidth() - rect.left) - rect.right;
+            i4 = this.mThumbDrawable.getIntrinsicHeight();
+        } else {
+            i3 = 0;
+            i4 = 0;
+        }
+        this.mThumbWidth = java.lang.Math.max(this.mShowText ? java.lang.Math.max(this.mOnLayout.getWidth(), this.mOffLayout.getWidth()) + (this.mThumbTextPadding * 2) : 0, i3);
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null) {
+            drawable2.getPadding(rect);
+            i6 = this.mTrackDrawable.getIntrinsicHeight();
+        } else {
+            rect.setEmpty();
+        }
+        int i7 = rect.left;
+        int i8 = rect.right;
+        android.graphics.drawable.Drawable drawable3 = this.mThumbDrawable;
+        if (drawable3 != null) {
+            android.graphics.Rect opticalBounds = androidx.appcompat.widget.DrawableUtils.getOpticalBounds(drawable3);
+            i7 = java.lang.Math.max(i7, opticalBounds.left);
+            i8 = java.lang.Math.max(i8, opticalBounds.right);
+        }
+        if (this.mEnforceSwitchWidth) {
+            i5 = java.lang.Math.max(this.mSwitchMinWidth, (this.mThumbWidth * 2) + i7 + i8);
+        } else {
+            i5 = this.mSwitchMinWidth;
+        }
+        int max = java.lang.Math.max(i6, i4);
+        this.mSwitchWidth = i5;
+        this.mSwitchHeight = max;
+        super.onMeasure(i, i2);
+        if (getMeasuredHeight() < max) {
+            setMeasuredDimension(getMeasuredWidthAndState(), max);
+        }
+    }
+
+    @Override // android.view.View
+    public void onPopulateAccessibilityEvent(android.view.accessibility.AccessibilityEvent accessibilityEvent) {
+        super.onPopulateAccessibilityEvent(accessibilityEvent);
+        java.lang.CharSequence charSequence = isChecked() ? this.mTextOn : this.mTextOff;
+        if (charSequence != null) {
+            accessibilityEvent.getText().add(charSequence);
+        }
+    }
+
+    private android.text.Layout makeLayout(java.lang.CharSequence charSequence) {
+        return new android.text.StaticLayout(charSequence, this.mTextPaint, charSequence != null ? (int) java.lang.Math.ceil(android.text.Layout.getDesiredWidth(charSequence, r2)) : 0, android.text.Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, true);
+    }
+
+    private boolean hitThumb(float f, float f2) {
+        if (this.mThumbDrawable == null) {
+            return false;
+        }
+        int thumbOffset = getThumbOffset();
+        this.mThumbDrawable.getPadding(this.mTempRect);
+        int i = this.mSwitchTop;
+        int i2 = this.mTouchSlop;
+        int i3 = (this.mSwitchLeft + thumbOffset) - i2;
+        int i4 = this.mThumbWidth;
+        int i5 = this.mTempRect.left;
+        int i6 = this.mTempRect.right;
+        int i7 = this.mTouchSlop;
+        return f > ((float) i3) && f < ((float) ((((i4 + i3) + i5) + i6) + i7)) && f2 > ((float) (i - i2)) && f2 < ((float) (this.mSwitchBottom + i7));
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:7:0x0012, code lost:
+    
+        if (r0 != 3) goto L43;
+     */
+    @Override // android.widget.TextView, android.view.View
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public boolean onTouchEvent(android.view.MotionEvent motionEvent) {
+        this.mVelocityTracker.addMovement(motionEvent);
+        int actionMasked = motionEvent.getActionMasked();
+        if (actionMasked == 0) {
+            float x = motionEvent.getX();
+            float y = motionEvent.getY();
+            if (isEnabled() && hitThumb(x, y)) {
+                this.mTouchMode = 1;
+                this.mTouchX = x;
+                this.mTouchY = y;
+            }
+        } else {
+            if (actionMasked != 1) {
+                if (actionMasked == 2) {
+                    int i = this.mTouchMode;
+                    if (i == 1) {
+                        float x2 = motionEvent.getX();
+                        float y2 = motionEvent.getY();
+                        if (java.lang.Math.abs(x2 - this.mTouchX) > this.mTouchSlop || java.lang.Math.abs(y2 - this.mTouchY) > this.mTouchSlop) {
+                            this.mTouchMode = 2;
+                            getParent().requestDisallowInterceptTouchEvent(true);
+                            this.mTouchX = x2;
+                            this.mTouchY = y2;
+                            return true;
+                        }
+                    } else if (i == 2) {
+                        float x3 = motionEvent.getX();
+                        int thumbScrollRange = getThumbScrollRange();
+                        float f = x3 - this.mTouchX;
+                        float f2 = thumbScrollRange != 0 ? f / thumbScrollRange : f > 0.0f ? 1.0f : -1.0f;
+                        if (androidx.appcompat.widget.ViewUtils.isLayoutRtl(this)) {
+                            f2 = -f2;
+                        }
+                        float constrain = constrain(this.mThumbPosition + f2, 0.0f, 1.0f);
+                        if (constrain != this.mThumbPosition) {
+                            this.mTouchX = x3;
+                            setThumbPosition(constrain);
+                        }
+                        return true;
+                    }
+                }
+            }
+            if (this.mTouchMode == 2) {
+                stopDrag(motionEvent);
+                super.onTouchEvent(motionEvent);
+                return true;
+            }
+            this.mTouchMode = 0;
+            this.mVelocityTracker.clear();
+        }
+        return super.onTouchEvent(motionEvent);
+    }
+
+    private void cancelSuperTouch(android.view.MotionEvent motionEvent) {
+        android.view.MotionEvent obtain = android.view.MotionEvent.obtain(motionEvent);
+        obtain.setAction(3);
+        super.onTouchEvent(obtain);
+        obtain.recycle();
+    }
+
+    private void stopDrag(android.view.MotionEvent motionEvent) {
+        this.mTouchMode = 0;
+        boolean z = true;
+        boolean z2 = motionEvent.getAction() == 1 && isEnabled();
+        boolean isChecked = isChecked();
+        if (z2) {
+            this.mVelocityTracker.computeCurrentVelocity(1000);
+            float xVelocity = this.mVelocityTracker.getXVelocity();
+            if (java.lang.Math.abs(xVelocity) > this.mMinFlingVelocity) {
+                if (!androidx.appcompat.widget.ViewUtils.isLayoutRtl(this) ? xVelocity <= 0.0f : xVelocity >= 0.0f) {
+                    z = false;
+                }
+            } else {
+                z = getTargetCheckedState();
+            }
+        } else {
+            z = isChecked;
+        }
+        if (z != isChecked) {
+            playSoundEffect(0);
+        }
+        setChecked(z);
+        cancelSuperTouch(motionEvent);
+    }
+
+    private void animateThumbToCheckedState(boolean z) {
+        android.animation.ObjectAnimator ofFloat = android.animation.ObjectAnimator.ofFloat(this, THUMB_POS, z ? 1.0f : 0.0f);
+        this.mPositionAnimator = ofFloat;
+        ofFloat.setDuration(250L);
+        this.mPositionAnimator.setAutoCancel(true);
+        this.mPositionAnimator.start();
+    }
+
+    private void cancelPositionAnimator() {
+        android.animation.ObjectAnimator objectAnimator = this.mPositionAnimator;
+        if (objectAnimator != null) {
+            objectAnimator.cancel();
+        }
+    }
+
+    private boolean getTargetCheckedState() {
+        return this.mThumbPosition > 0.5f;
+    }
+
+    protected final float getThumbPosition() {
+        return this.mThumbPosition;
+    }
+
+    void setThumbPosition(float f) {
+        this.mThumbPosition = f;
+        invalidate();
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.Checkable
+    public void toggle() {
+        setChecked(!isChecked());
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.Checkable
+    public void setChecked(boolean z) {
+        super.setChecked(z);
+        boolean isChecked = isChecked();
+        if (isChecked) {
+            setOnStateDescriptionOnRAndAbove();
+        } else {
+            setOffStateDescriptionOnRAndAbove();
+        }
+        if (getWindowToken() != null && isLaidOut()) {
+            animateThumbToCheckedState(isChecked);
+        } else {
+            cancelPositionAnimator();
+            setThumbPosition(isChecked ? 1.0f : 0.0f);
+        }
+    }
+
+    @Override // android.widget.TextView, android.view.View
+    protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
+        int i5;
+        int width;
+        int i6;
+        int i7;
+        int i8;
+        int i9;
+        int i10;
+        super.onLayout(z, i, i2, i3, i4);
+        int i11 = 0;
+        if (this.mThumbDrawable != null) {
+            android.graphics.Rect rect = this.mTempRect;
+            android.graphics.drawable.Drawable drawable = this.mTrackDrawable;
+            if (drawable != null) {
+                drawable.getPadding(rect);
+            } else {
+                rect.setEmpty();
+            }
+            android.graphics.Rect opticalBounds = androidx.appcompat.widget.DrawableUtils.getOpticalBounds(this.mThumbDrawable);
+            i5 = java.lang.Math.max(0, opticalBounds.left - rect.left);
+            i11 = java.lang.Math.max(0, opticalBounds.right - rect.right);
+        } else {
+            i5 = 0;
+        }
+        if (androidx.appcompat.widget.ViewUtils.isLayoutRtl(this)) {
+            i6 = getPaddingLeft() + i5;
+            width = ((this.mSwitchWidth + i6) - i5) - i11;
+        } else {
+            width = (getWidth() - getPaddingRight()) - i11;
+            i6 = (width - this.mSwitchWidth) + i5 + i11;
+        }
+        int gravity = getGravity() & 112;
+        if (gravity == 16) {
+            int paddingTop = ((getPaddingTop() + getHeight()) - getPaddingBottom()) / 2;
+            i7 = this.mSwitchHeight;
+            i8 = paddingTop - (i7 / 2);
+        } else if (gravity != 80) {
+            i8 = getPaddingTop();
+            i7 = this.mSwitchHeight;
+        } else {
+            i10 = getHeight() - getPaddingBottom();
+            i9 = i10 - this.mSwitchHeight;
+            this.mSwitchLeft = i6;
+            this.mSwitchTop = i9;
+            this.mSwitchBottom = i10;
+            this.mSwitchRight = width;
+        }
+        int i12 = i7 + i8;
+        i9 = i8;
+        i10 = i12;
+        this.mSwitchLeft = i6;
+        this.mSwitchTop = i9;
+        this.mSwitchBottom = i10;
+        this.mSwitchRight = width;
+    }
+
+    @Override // android.view.View
+    public void draw(android.graphics.Canvas canvas) {
+        android.graphics.Rect rect;
+        int i;
+        int i2;
+        android.graphics.Rect rect2 = this.mTempRect;
+        int i3 = this.mSwitchLeft;
+        int i4 = this.mSwitchTop;
+        int i5 = this.mSwitchRight;
+        int i6 = this.mSwitchBottom;
+        int thumbOffset = getThumbOffset() + i3;
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        if (drawable != null) {
+            rect = androidx.appcompat.widget.DrawableUtils.getOpticalBounds(drawable);
+        } else {
+            rect = androidx.appcompat.widget.DrawableUtils.INSETS_NONE;
+        }
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null) {
+            drawable2.getPadding(rect2);
+            thumbOffset += rect2.left;
+            if (rect != null) {
+                if (rect.left > rect2.left) {
+                    i3 += rect.left - rect2.left;
+                }
+                i = rect.top > rect2.top ? (rect.top - rect2.top) + i4 : i4;
+                if (rect.right > rect2.right) {
+                    i5 -= rect.right - rect2.right;
+                }
+                if (rect.bottom > rect2.bottom) {
+                    i2 = i6 - (rect.bottom - rect2.bottom);
+                    this.mTrackDrawable.setBounds(i3, i, i5, i2);
+                }
+            } else {
+                i = i4;
+            }
+            i2 = i6;
+            this.mTrackDrawable.setBounds(i3, i, i5, i2);
+        }
+        android.graphics.drawable.Drawable drawable3 = this.mThumbDrawable;
+        if (drawable3 != null) {
+            drawable3.getPadding(rect2);
+            int i7 = thumbOffset - rect2.left;
+            int i8 = thumbOffset + this.mThumbWidth + rect2.right;
+            this.mThumbDrawable.setBounds(i7, i4, i8, i6);
+            android.graphics.drawable.Drawable background = getBackground();
+            if (background != null) {
+                androidx.core.graphics.drawable.DrawableCompat.setHotspotBounds(background, i7, i4, i8, i6);
+            }
+        }
+        super.draw(canvas);
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    protected void onDraw(android.graphics.Canvas canvas) {
+        int width;
+        super.onDraw(canvas);
+        android.graphics.Rect rect = this.mTempRect;
+        android.graphics.drawable.Drawable drawable = this.mTrackDrawable;
+        if (drawable != null) {
+            drawable.getPadding(rect);
+        } else {
+            rect.setEmpty();
+        }
+        int i = this.mSwitchTop;
+        int i2 = this.mSwitchBottom;
+        int i3 = rect.top;
+        int i4 = rect.bottom;
+        android.graphics.drawable.Drawable drawable2 = this.mThumbDrawable;
+        if (drawable != null) {
+            if (this.mSplitTrack && drawable2 != null) {
+                android.graphics.Rect opticalBounds = androidx.appcompat.widget.DrawableUtils.getOpticalBounds(drawable2);
+                drawable2.copyBounds(rect);
+                rect.left += opticalBounds.left;
+                rect.right -= opticalBounds.right;
+                int save = canvas.save();
+                canvas.clipRect(rect, android.graphics.Region.Op.DIFFERENCE);
+                drawable.draw(canvas);
+                canvas.restoreToCount(save);
+            } else {
+                drawable.draw(canvas);
+            }
+        }
+        int save2 = canvas.save();
+        if (drawable2 != null) {
+            drawable2.draw(canvas);
+        }
+        android.text.Layout layout = getTargetCheckedState() ? this.mOnLayout : this.mOffLayout;
+        if (layout != null) {
+            int[] drawableState = getDrawableState();
+            android.content.res.ColorStateList colorStateList = this.mTextColors;
+            if (colorStateList != null) {
+                this.mTextPaint.setColor(colorStateList.getColorForState(drawableState, 0));
+            }
+            this.mTextPaint.drawableState = drawableState;
+            if (drawable2 != null) {
+                android.graphics.Rect bounds = drawable2.getBounds();
+                width = bounds.left + bounds.right;
+            } else {
+                width = getWidth();
+            }
+            canvas.translate((width / 2) - (layout.getWidth() / 2), (((i + i3) + (i2 - i4)) / 2) - (layout.getHeight() / 2));
+            layout.draw(canvas);
+        }
+        canvas.restoreToCount(save2);
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView
+    public int getCompoundPaddingLeft() {
+        if (!androidx.appcompat.widget.ViewUtils.isLayoutRtl(this)) {
+            return super.getCompoundPaddingLeft();
+        }
+        int compoundPaddingLeft = super.getCompoundPaddingLeft() + this.mSwitchWidth;
+        return !android.text.TextUtils.isEmpty(getText()) ? compoundPaddingLeft + this.mSwitchPadding : compoundPaddingLeft;
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView
+    public int getCompoundPaddingRight() {
+        if (androidx.appcompat.widget.ViewUtils.isLayoutRtl(this)) {
+            return super.getCompoundPaddingRight();
+        }
+        int compoundPaddingRight = super.getCompoundPaddingRight() + this.mSwitchWidth;
+        return !android.text.TextUtils.isEmpty(getText()) ? compoundPaddingRight + this.mSwitchPadding : compoundPaddingRight;
+    }
+
+    private int getThumbOffset() {
+        float f;
+        if (androidx.appcompat.widget.ViewUtils.isLayoutRtl(this)) {
+            f = 1.0f - this.mThumbPosition;
+        } else {
+            f = this.mThumbPosition;
+        }
+        return (int) ((f * getThumbScrollRange()) + 0.5f);
+    }
+
+    private int getThumbScrollRange() {
+        android.graphics.Rect rect;
+        android.graphics.drawable.Drawable drawable = this.mTrackDrawable;
+        if (drawable == null) {
+            return 0;
+        }
+        android.graphics.Rect rect2 = this.mTempRect;
+        drawable.getPadding(rect2);
+        android.graphics.drawable.Drawable drawable2 = this.mThumbDrawable;
+        if (drawable2 != null) {
+            rect = androidx.appcompat.widget.DrawableUtils.getOpticalBounds(drawable2);
+        } else {
+            rect = androidx.appcompat.widget.DrawableUtils.INSETS_NONE;
+        }
+        return ((((this.mSwitchWidth - this.mThumbWidth) - rect2.left) - rect2.right) - rect.left) - rect.right;
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    public int[] onCreateDrawableState(int i) {
+        int[] onCreateDrawableState = super.onCreateDrawableState(i + 1);
+        if (isChecked()) {
+            mergeDrawableStates(onCreateDrawableState, CHECKED_STATE_SET);
+        }
+        return onCreateDrawableState;
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    protected void drawableStateChanged() {
+        super.drawableStateChanged();
+        int[] drawableState = getDrawableState();
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        boolean state = (drawable == null || !drawable.isStateful()) ? false : drawable.setState(drawableState);
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null && drawable2.isStateful()) {
+            state |= drawable2.setState(drawableState);
+        }
+        if (state) {
+            invalidate();
+        }
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    public void drawableHotspotChanged(float f, float f2) {
+        super.drawableHotspotChanged(f, f2);
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        if (drawable != null) {
+            androidx.core.graphics.drawable.DrawableCompat.setHotspot(drawable, f, f2);
+        }
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null) {
+            androidx.core.graphics.drawable.DrawableCompat.setHotspot(drawable2, f, f2);
+        }
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    protected boolean verifyDrawable(android.graphics.drawable.Drawable drawable) {
+        return super.verifyDrawable(drawable) || drawable == this.mThumbDrawable || drawable == this.mTrackDrawable;
+    }
+
+    @Override // android.widget.CompoundButton, android.widget.TextView, android.view.View
+    public void jumpDrawablesToCurrentState() {
+        super.jumpDrawablesToCurrentState();
+        android.graphics.drawable.Drawable drawable = this.mThumbDrawable;
+        if (drawable != null) {
+            drawable.jumpToCurrentState();
+        }
+        android.graphics.drawable.Drawable drawable2 = this.mTrackDrawable;
+        if (drawable2 != null) {
+            drawable2.jumpToCurrentState();
+        }
+        android.animation.ObjectAnimator objectAnimator = this.mPositionAnimator;
+        if (objectAnimator == null || !objectAnimator.isStarted()) {
+            return;
+        }
+        this.mPositionAnimator.end();
+        this.mPositionAnimator = null;
+    }
+
+    @Override // android.view.View
+    public void onInitializeAccessibilityEvent(android.view.accessibility.AccessibilityEvent accessibilityEvent) {
+        super.onInitializeAccessibilityEvent(accessibilityEvent);
+        accessibilityEvent.setClassName(ACCESSIBILITY_EVENT_CLASS_NAME);
+    }
+
+    @Override // android.view.View
+    public void onInitializeAccessibilityNodeInfo(android.view.accessibility.AccessibilityNodeInfo accessibilityNodeInfo) {
+        super.onInitializeAccessibilityNodeInfo(accessibilityNodeInfo);
+        accessibilityNodeInfo.setClassName(ACCESSIBILITY_EVENT_CLASS_NAME);
+        if (android.os.Build.VERSION.SDK_INT < 30) {
+            java.lang.CharSequence charSequence = isChecked() ? this.mTextOn : this.mTextOff;
+            if (android.text.TextUtils.isEmpty(charSequence)) {
+                return;
+            }
+            java.lang.CharSequence text = accessibilityNodeInfo.getText();
+            if (android.text.TextUtils.isEmpty(text)) {
+                accessibilityNodeInfo.setText(charSequence);
+                return;
+            }
+            java.lang.StringBuilder sb = new java.lang.StringBuilder();
+            sb.append(text);
+            sb.append(' ');
+            sb.append(charSequence);
+            accessibilityNodeInfo.setText(sb);
+        }
+    }
+
+    @Override // android.widget.TextView
+    public void setCustomSelectionActionModeCallback(android.view.ActionMode.Callback callback) {
+        super.setCustomSelectionActionModeCallback(androidx.core.widget.TextViewCompat.wrapCustomSelectionActionModeCallback(this, callback));
+    }
+
+    @Override // android.widget.TextView
+    public android.view.ActionMode.Callback getCustomSelectionActionModeCallback() {
+        return androidx.core.widget.TextViewCompat.unwrapCustomSelectionActionModeCallback(super.getCustomSelectionActionModeCallback());
+    }
+
+    protected final void setEnforceSwitchWidth(boolean z) {
+        this.mEnforceSwitchWidth = z;
+        invalidate();
+    }
+
+    private void setOnStateDescriptionOnRAndAbove() {
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            java.lang.CharSequence charSequence = this.mTextOn;
+            if (charSequence == null) {
+                charSequence = getResources().getString(androidx.appcompat.R.string.abc_capital_on);
+            }
+            androidx.core.view.ViewCompat.setStateDescription(this, charSequence);
+        }
+    }
+
+    private void setOffStateDescriptionOnRAndAbove() {
+        if (android.os.Build.VERSION.SDK_INT >= 30) {
+            java.lang.CharSequence charSequence = this.mTextOff;
+            if (charSequence == null) {
+                charSequence = getResources().getString(androidx.appcompat.R.string.abc_capital_off);
+            }
+            androidx.core.view.ViewCompat.setStateDescription(this, charSequence);
+        }
+    }
+
+    @Override // android.widget.TextView
+    public void setAllCaps(boolean z) {
+        super.setAllCaps(z);
+        getEmojiTextViewHelper().Camera2StreamConfigurationMap(z);
+    }
+
+    @Override // android.widget.TextView
+    public void setFilters(android.text.InputFilter[] inputFilterArr) {
+        super.setFilters(getEmojiTextViewHelper().getHighSpeedVideoFpsRangesFor(inputFilterArr));
+    }
+
+    private androidx.appcompat.widget.AppCompatEmojiTextHelper getEmojiTextViewHelper() {
+        if (this.mAppCompatEmojiTextHelper == null) {
+            this.mAppCompatEmojiTextHelper = new androidx.appcompat.widget.AppCompatEmojiTextHelper(this);
+        }
+        return this.mAppCompatEmojiTextHelper;
+    }
+
+    @Override // androidx.appcompat.widget.EmojiCompatConfigurationView
+    public void setEmojiCompatEnabled(boolean z) {
+        getEmojiTextViewHelper().getHighSpeedVideoSizes(z);
+        setTextOnInternal(this.mTextOn);
+        setTextOffInternal(this.mTextOff);
+        requestLayout();
+    }
+
+    @Override // androidx.appcompat.widget.EmojiCompatConfigurationView
+    public boolean isEmojiCompatEnabled() {
+        return getEmojiTextViewHelper().getHighResolutionOutputSizeshNQ4ISI();
+    }
+
+    private void setupEmojiCompatLoadCallback() {
+        if (this.mEmojiCompatInitCallback == null && this.mAppCompatEmojiTextHelper.getHighResolutionOutputSizeshNQ4ISI() && androidx.emoji2.text.EmojiCompat.isConfigured()) {
+            androidx.emoji2.text.EmojiCompat emojiCompat = androidx.emoji2.text.EmojiCompat.get();
+            int loadState = emojiCompat.getLoadState();
+            if (loadState == 3 || loadState == 0) {
+                androidx.appcompat.widget.SwitchCompat.EmojiCompatInitCallback emojiCompatInitCallback = new androidx.appcompat.widget.SwitchCompat.EmojiCompatInitCallback(this);
+                this.mEmojiCompatInitCallback = emojiCompatInitCallback;
+                emojiCompat.registerInitCallback(emojiCompatInitCallback);
+            }
+        }
+    }
+
+    void onEmojiCompatInitializedForSwitchText() {
+        setTextOnInternal(this.mTextOn);
+        setTextOffInternal(this.mTextOff);
+        requestLayout();
+    }
+
+    static class EmojiCompatInitCallback extends androidx.emoji2.text.EmojiCompat.InitCallback {
+        private final java.lang.ref.Reference<androidx.appcompat.widget.SwitchCompat> getHighSpeedVideoSizes;
+
+        EmojiCompatInitCallback(androidx.appcompat.widget.SwitchCompat switchCompat) {
+            this.getHighSpeedVideoSizes = new java.lang.ref.WeakReference(switchCompat);
+        }
+
+        @Override // androidx.emoji2.text.EmojiCompat.InitCallback
+        public void onInitialized() {
+            androidx.appcompat.widget.SwitchCompat switchCompat = this.getHighSpeedVideoSizes.get();
+            if (switchCompat != null) {
+                switchCompat.onEmojiCompatInitializedForSwitchText();
+            }
+        }
+
+        @Override // androidx.emoji2.text.EmojiCompat.InitCallback
+        public void onFailed(java.lang.Throwable th) {
+            androidx.appcompat.widget.SwitchCompat switchCompat = this.getHighSpeedVideoSizes.get();
+            if (switchCompat != null) {
+                switchCompat.onEmojiCompatInitializedForSwitchText();
+            }
+        }
+    }
+}

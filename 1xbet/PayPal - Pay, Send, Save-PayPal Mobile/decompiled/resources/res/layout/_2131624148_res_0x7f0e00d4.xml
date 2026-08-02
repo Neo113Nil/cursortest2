@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.miteksystems.misnap.camera.view.CameraView
+        gravity="center"
+        id="@+id/_2131427677_res_0x7f0b015d"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        NOT_FOUND_0x4="0"
+        NOT_FOUND_0x5="0"
+        NOT_FOUND_0x6="0"
+        NOT_FOUND_0x7="0"/>
+</merge>

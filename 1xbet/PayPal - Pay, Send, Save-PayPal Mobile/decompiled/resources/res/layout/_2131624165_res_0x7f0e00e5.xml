@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    id="@+id/_2131428392_res_0x7f0b0428"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    listSelector="@android:color/transparent"/>

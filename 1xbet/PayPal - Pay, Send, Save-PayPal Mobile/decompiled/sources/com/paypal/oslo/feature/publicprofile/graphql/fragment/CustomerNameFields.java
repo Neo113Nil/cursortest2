@@ -1,0 +1,95 @@
+package com.paypal.oslo.feature.publicprofile.graphql.fragment;
+
+@kotlin.Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\t\b\u0086\b\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\b\u0010\tJ\u0010\u0010\n\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\n\u0010\u000bJ\u0012\u0010\f\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b\f\u0010\rJ\u0012\u0010\u000e\u001a\u0004\u0018\u00010\u0006HÆ\u0003¢\u0006\u0004\b\u000e\u0010\u000fJ2\u0010\u0010\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00022\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u0006HÆ\u0001¢\u0006\u0004\b\u0010\u0010\u0011J\u001a\u0010\u0015\u001a\u00020\u00142\b\u0010\u0013\u001a\u0004\u0018\u00010\u0012HÖ\u0003¢\u0006\u0004\b\u0015\u0010\u0016J\u0010\u0010\u0018\u001a\u00020\u0017HÖ\u0001¢\u0006\u0004\b\u0018\u0010\u0019J\u0010\u0010\u001a\u001a\u00020\u0002HÖ\u0001¢\u0006\u0004\b\u001a\u0010\u000bR\u0017\u0010\u0003\u001a\u00020\u00028\u0007¢\u0006\f\n\u0004\b\u0003\u0010\u001b\u001a\u0004\b\u001c\u0010\u000bR\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0005\u0010\u001d\u001a\u0004\b\u001e\u0010\rR\u001c\u0010\u0007\u001a\u0004\u0018\u00010\u00068\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0007\u0010\u001f\u001a\u0004\b \u0010\u000f"}, d2 = {"Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/CustomerNameFields;", "Lcom/apollographql/apollo/api/Fragment$Data;", "", "__typename", "Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/PersonNameFields;", "personNameFields", "Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/BusinessNameFields;", "businessNameFields", "<init>", "(Ljava/lang/String;Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/PersonNameFields;Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/BusinessNameFields;)V", "component1", "()Ljava/lang/String;", "component2", "()Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/PersonNameFields;", "component3", "()Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/BusinessNameFields;", "copy", "(Ljava/lang/String;Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/PersonNameFields;Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/BusinessNameFields;)Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/CustomerNameFields;", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "toString", "Ljava/lang/String;", "get__typename", "Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/PersonNameFields;", "getPersonNameFields", "Lcom/paypal/oslo/feature/publicprofile/graphql/fragment/BusinessNameFields;", "getBusinessNameFields"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final /* data */ class CustomerNameFields implements com.apollographql.apollo.api.Fragment.Data {
+    public static final int $stable = 0;
+    private final java.lang.String __typename;
+    private final com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields;
+    private final com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields;
+
+    public CustomerNameFields(java.lang.String str, com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields, com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        this.__typename = str;
+        this.personNameFields = personNameFields;
+        this.businessNameFields = businessNameFields;
+    }
+
+    public final java.lang.String get__typename() {
+        return this.__typename;
+    }
+
+    public final com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields getPersonNameFields() {
+        return this.personNameFields;
+    }
+
+    public final com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields getBusinessNameFields() {
+        return this.businessNameFields;
+    }
+
+    public final java.lang.String toString() {
+        java.lang.String str = this.__typename;
+        com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields = this.personNameFields;
+        com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields = this.businessNameFields;
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("CustomerNameFields(__typename=");
+        sb.append(str);
+        sb.append(", personNameFields=");
+        sb.append(personNameFields);
+        sb.append(", businessNameFields=");
+        sb.append(businessNameFields);
+        sb.append(")");
+        return sb.toString();
+    }
+
+    public final int hashCode() {
+        int hashCode = this.__typename.hashCode();
+        com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields = this.personNameFields;
+        int hashCode2 = personNameFields == null ? 0 : personNameFields.hashCode();
+        com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields = this.businessNameFields;
+        return (((hashCode * 31) + hashCode2) * 31) + (businessNameFields != null ? businessNameFields.hashCode() : 0);
+    }
+
+    public final boolean equals(java.lang.Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields)) {
+            return false;
+        }
+        com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields customerNameFields = (com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields) other;
+        return kotlin.jvm.internal.Intrinsics.areEqual(this.__typename, customerNameFields.__typename) && kotlin.jvm.internal.Intrinsics.areEqual(this.personNameFields, customerNameFields.personNameFields) && kotlin.jvm.internal.Intrinsics.areEqual(this.businessNameFields, customerNameFields.businessNameFields);
+    }
+
+    public final com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields copy(java.lang.String __typename, com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields, com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(__typename, "");
+        return new com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields(__typename, personNameFields, businessNameFields);
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields getBusinessNameFields() {
+        return this.businessNameFields;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields getPersonNameFields() {
+        return this.personNameFields;
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final java.lang.String get__typename() {
+        return this.__typename;
+    }
+
+    public static /* synthetic */ com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields copy$default(com.paypal.oslo.feature.publicprofile.graphql.fragment.CustomerNameFields customerNameFields, java.lang.String str, com.paypal.oslo.feature.publicprofile.graphql.fragment.PersonNameFields personNameFields, com.paypal.oslo.feature.publicprofile.graphql.fragment.BusinessNameFields businessNameFields, int i, java.lang.Object obj) {
+        if ((i & 1) != 0) {
+            str = customerNameFields.__typename;
+        }
+        if ((i & 2) != 0) {
+            personNameFields = customerNameFields.personNameFields;
+        }
+        if ((i & 4) != 0) {
+            businessNameFields = customerNameFields.businessNameFields;
+        }
+        return customerNameFields.copy(str, personNameFields, businessNameFields);
+    }
+}

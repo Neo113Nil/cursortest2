@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    background="?attr/_2130969823_res_0x7f0404df"
+    fitsSystemWindows="true"
+    layout_width="match_parent"
+    layout_height="wrap_content">
+    <LinearLayout
+        orientation="vertical"
+        background="?attr/_2130969823_res_0x7f0404df"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        textDirection="locale"
+        layoutDirection="locale">
+        <LinearLayout
+            padding="?attr/_2130969833_res_0x7f0404e9"
+            layout_width="match_parent"
+            layout_height="wrap_content">
+            <LinearLayout
+                background="@drawable/_2131231834_res_0x7f08045a"
+                layout_width="match_parent"
+                layout_height="wrap_content"
+                minHeight="48dp">
+                <include layout="@layout/_2131623981_res_0x7f0e002d"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            id="@+id/_2131427588_res_0x7f0b0104"
+            layout_width="match_parent"
+            layout_height="0dp"
+            layout_weight="1"
+            importantForAccessibility="yes"/>
+        <include layout="@layout/_2131623979_res_0x7f0e002b"/>
+        <include layout="@layout/_2131623978_res_0x7f0e002a"/>
+    </LinearLayout>
+</FrameLayout>

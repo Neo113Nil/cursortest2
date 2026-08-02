@@ -1,0 +1,15 @@
+package com.google.android.gms.common.moduleinstall.internal;
+
+/* loaded from: classes8.dex */
+final class zaw extends com.google.android.gms.common.moduleinstall.internal.zaa {
+    final /* synthetic */ com.google.android.gms.tasks.TaskCompletionSource zaa;
+
+    zaw(com.google.android.gms.common.moduleinstall.internal.zay zayVar, com.google.android.gms.tasks.TaskCompletionSource taskCompletionSource) {
+        this.zaa = taskCompletionSource;
+    }
+
+    @Override // com.google.android.gms.common.moduleinstall.internal.zaa, com.google.android.gms.common.moduleinstall.internal.zae
+    public final void zac(com.google.android.gms.common.api.Status status, com.google.android.gms.common.moduleinstall.ModuleInstallIntentResponse moduleInstallIntentResponse) {
+        com.google.android.gms.common.api.internal.TaskUtil.trySetResultOrApiException(status, moduleInstallIntentResponse, this.zaa);
+    }
+}

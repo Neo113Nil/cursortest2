@@ -1,0 +1,39 @@
+package com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel;
+
+/* renamed from: com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.DebitCardManagementViewModel_Factory, reason: case insensitive filesystem */
+/* loaded from: classes12.dex */
+public final class C0360DebitCardManagementViewModel_Factory {
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.util.DebitCardI18nFormatter> Camera2StreamConfigurationMap;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.CardConnectHandler> getHighResolutionOutputSizeshNQ4ISI;
+    private final dagger.internal.Provider<android.content.Context> getHighSpeedVideoFpsRanges;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.domain.remoteconfig.gates.FeatureGateManager> getHighSpeedVideoFpsRangesFor;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.ui.webview.utils.DebitCardWebViewUrlBuilder> getHighSpeedVideoSizes;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.DebitCardManagementReducer> getHighSpeedVideoSizesFor;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.UnlockCardUseCase> getInputFormats;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.LockCardUseCase> getInputSizeshNQ4ISI;
+    private final dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.GetDebitInstrumentsUseCase> getOutputFormats;
+
+    private C0360DebitCardManagementViewModel_Factory(dagger.internal.Provider<android.content.Context> provider, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.ui.webview.utils.DebitCardWebViewUrlBuilder> provider2, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.util.DebitCardI18nFormatter> provider3, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.GetDebitInstrumentsUseCase> provider4, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.DebitCardManagementReducer> provider5, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.LockCardUseCase> provider6, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.UnlockCardUseCase> provider7, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.CardConnectHandler> provider8, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.domain.remoteconfig.gates.FeatureGateManager> provider9) {
+        this.getHighSpeedVideoFpsRanges = provider;
+        this.getHighSpeedVideoSizes = provider2;
+        this.Camera2StreamConfigurationMap = provider3;
+        this.getOutputFormats = provider4;
+        this.getHighSpeedVideoSizesFor = provider5;
+        this.getInputSizeshNQ4ISI = provider6;
+        this.getInputFormats = provider7;
+        this.getHighResolutionOutputSizeshNQ4ISI = provider8;
+        this.getHighSpeedVideoFpsRangesFor = provider9;
+    }
+
+    public final com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.DebitCardManagementViewModel get(com.paypal.oslo.feature.debitcard.api.model.DebitCardProductName debitCardProductName, com.paypal.oslo.feature.debitcard.api.model.DebitCardFlow debitCardFlow, com.paypal.oslo.feature.debitcard.api.model.DebitCardFlowIntent debitCardFlowIntent, com.paypal.oslo.feature.debitcard.api.navigation.result.DebitCardActivationResultType debitCardActivationResultType, com.paypal.oslo.feature.debitcard.api.navigation.DebitCardAcquisitionOnArrivalAction debitCardAcquisitionOnArrivalAction, com.paypal.oslo.feature.debitcard.api.model.DebitCardPostEnrollmentAction debitCardPostEnrollmentAction) {
+        return newInstance(this.getHighSpeedVideoFpsRanges.get(), debitCardProductName, debitCardFlow, debitCardFlowIntent, debitCardActivationResultType, debitCardAcquisitionOnArrivalAction, debitCardPostEnrollmentAction, this.getHighSpeedVideoSizes.get(), this.Camera2StreamConfigurationMap.get(), this.getOutputFormats.get(), this.getHighSpeedVideoSizesFor.get(), this.getInputSizeshNQ4ISI.get(), this.getInputFormats.get(), this.getHighResolutionOutputSizeshNQ4ISI.get(), this.getHighSpeedVideoFpsRangesFor.get());
+    }
+
+    public static com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.C0360DebitCardManagementViewModel_Factory create(dagger.internal.Provider<android.content.Context> provider, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.ui.webview.utils.DebitCardWebViewUrlBuilder> provider2, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.util.DebitCardI18nFormatter> provider3, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.GetDebitInstrumentsUseCase> provider4, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.DebitCardManagementReducer> provider5, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.LockCardUseCase> provider6, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.domain.usecase.UnlockCardUseCase> provider7, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.CardConnectHandler> provider8, dagger.internal.Provider<com.paypal.oslo.feature.debitcard.shared.domain.remoteconfig.gates.FeatureGateManager> provider9) {
+        return new com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.C0360DebitCardManagementViewModel_Factory(provider, provider2, provider3, provider4, provider5, provider6, provider7, provider8, provider9);
+    }
+
+    public static com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.DebitCardManagementViewModel newInstance(android.content.Context context, com.paypal.oslo.feature.debitcard.api.model.DebitCardProductName debitCardProductName, com.paypal.oslo.feature.debitcard.api.model.DebitCardFlow debitCardFlow, com.paypal.oslo.feature.debitcard.api.model.DebitCardFlowIntent debitCardFlowIntent, com.paypal.oslo.feature.debitcard.api.navigation.result.DebitCardActivationResultType debitCardActivationResultType, com.paypal.oslo.feature.debitcard.api.navigation.DebitCardAcquisitionOnArrivalAction debitCardAcquisitionOnArrivalAction, com.paypal.oslo.feature.debitcard.api.model.DebitCardPostEnrollmentAction debitCardPostEnrollmentAction, com.paypal.oslo.feature.debitcard.shared.ui.webview.utils.DebitCardWebViewUrlBuilder debitCardWebViewUrlBuilder, com.paypal.oslo.feature.debitcard.shared.util.DebitCardI18nFormatter debitCardI18nFormatter, com.paypal.oslo.feature.debitcard.servicing.domain.usecase.GetDebitInstrumentsUseCase getDebitInstrumentsUseCase, com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.DebitCardManagementReducer debitCardManagementReducer, com.paypal.oslo.feature.debitcard.servicing.domain.usecase.LockCardUseCase lockCardUseCase, com.paypal.oslo.feature.debitcard.servicing.domain.usecase.UnlockCardUseCase unlockCardUseCase, com.paypal.oslo.feature.debitcard.servicing.ui.managecard.mvi.CardConnectHandler cardConnectHandler, com.paypal.oslo.feature.debitcard.shared.domain.remoteconfig.gates.FeatureGateManager featureGateManager) {
+        return new com.paypal.oslo.feature.debitcard.servicing.ui.managecard.viewmodel.DebitCardManagementViewModel(context, debitCardProductName, debitCardFlow, debitCardFlowIntent, debitCardActivationResultType, debitCardAcquisitionOnArrivalAction, debitCardPostEnrollmentAction, debitCardWebViewUrlBuilder, debitCardI18nFormatter, getDebitInstrumentsUseCase, debitCardManagementReducer, lockCardUseCase, unlockCardUseCase, cardConnectHandler, featureGateManager);
+    }
+}

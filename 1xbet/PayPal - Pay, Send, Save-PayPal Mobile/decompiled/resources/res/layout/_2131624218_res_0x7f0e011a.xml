@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <FrameLayout
+        id="@+id/_2131427893_res_0x7f0b0235"
+        layout_width="match_parent"
+        layout_height="match_parent"/>
+    <ProgressBar
+        layout_gravity="center"
+        id="@+id/_2131428707_res_0x7f0b0563"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        indeterminateTint="#949494"/>
+    <LinearLayout
+        gravity="center"
+        orientation="vertical"
+        id="@+id/_2131428772_res_0x7f0b05a4"
+        visibility="gone"
+        layout_width="match_parent"
+        layout_height="match_parent">
+        <TextView
+            textSize="16sp"
+            textColor="#878787"
+            gravity="center"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            layout_marginBottom="16dp"
+            text="Something went wrong.\10 Reload to try again."
+            textAlignment="center"/>
+        <TextView
+            textSize="24sp"
+            textStyle="bold"
+            textColor="#4b4b4b"
+            gravity="center"
+            id="@+id/_2131428771_res_0x7f0b05a3"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            text="Reload"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+package com.paypal.oslo.feature.identity.challenges.stepupsna.ui;
+
+/* loaded from: classes12.dex */
+public final class StepupSnaViewModel_HiltModules {
+    private StepupSnaViewModel_HiltModules() {
+    }
+
+    @dagger.Module
+    public static abstract class BindsModule {
+        @dagger.multibindings.LazyClassKey(com.paypal.oslo.feature.identity.challenges.stepupsna.ui.StepupSnaViewModel.class)
+        @dagger.Binds
+        @dagger.multibindings.IntoMap
+        public abstract androidx.view.ViewModel binds(com.paypal.oslo.feature.identity.challenges.stepupsna.ui.StepupSnaViewModel stepupSnaViewModel);
+
+        private BindsModule() {
+        }
+    }
+
+    @dagger.Module
+    public static final class KeyModule {
+        @dagger.Provides
+        @dagger.multibindings.LazyClassKey(com.paypal.oslo.feature.identity.challenges.stepupsna.ui.StepupSnaViewModel.class)
+        @dagger.multibindings.IntoMap
+        public static boolean provide() {
+            return true;
+        }
+
+        private KeyModule() {
+        }
+    }
+}

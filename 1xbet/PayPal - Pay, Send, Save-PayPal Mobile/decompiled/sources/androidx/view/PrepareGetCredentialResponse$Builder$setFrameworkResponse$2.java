@@ -1,0 +1,15 @@
+package androidx.view;
+
+@kotlin.Metadata(k = 3, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes7.dex */
+final /* synthetic */ class PrepareGetCredentialResponse$Builder$setFrameworkResponse$2 extends kotlin.jvm.internal.FunctionReferenceImpl implements kotlin.jvm.functions.Function0<java.lang.Boolean> {
+    @Override // kotlin.jvm.functions.Function0
+    /* renamed from: getHighSpeedVideoFpsRanges, reason: merged with bridge method [inline-methods] */
+    public final java.lang.Boolean invoke() {
+        return java.lang.Boolean.valueOf(androidx.credentials.PrepareGetCredentialResponse.Builder.access$hasAuthenticationResults((androidx.credentials.PrepareGetCredentialResponse.Builder) this.receiver));
+    }
+
+    PrepareGetCredentialResponse$Builder$setFrameworkResponse$2(java.lang.Object obj) {
+        super(0, obj, androidx.credentials.PrepareGetCredentialResponse.Builder.class, "hasAuthenticationResults", "hasAuthenticationResults()Z", 0);
+    }
+}

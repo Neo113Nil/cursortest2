@@ -1,0 +1,7 @@
+package com.paypal.oslo.feature.oneonboarding.inventory.views.stepup.di;
+
+@kotlin.Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\b`\u0018\u00002\u00020\u0001J-\u0010\t\u001a\u00020\u00072\u0006\u0010\u0003\u001a\u00020\u00022\u0006\u0010\u0005\u001a\u00020\u00042\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006H&¢\u0006\u0004\b\t\u0010\nÀ\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/oneonboarding/inventory/views/stepup/di/StepUpViewComponentAttacher;", "", "Lcom/paypal/oslo/feature/oneonboarding/inventory/views/stepup/domain/StepUpViewComponentConfig;", "config", "Lcom/paypal/oslo/feature/oneonboarding/api/domain/IntentId;", "intentId", "Lkotlin/Function0;", "", "onStepForward", "Attach", "(Lcom/paypal/oslo/feature/oneonboarding/inventory/views/stepup/domain/StepUpViewComponentConfig;Lcom/paypal/oslo/feature/oneonboarding/api/domain/IntentId;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public interface StepUpViewComponentAttacher {
+    void Attach(com.paypal.oslo.feature.oneonboarding.inventory.views.stepup.domain.StepUpViewComponentConfig stepUpViewComponentConfig, com.paypal.oslo.feature.oneonboarding.api.domain.IntentId intentId, kotlin.jvm.functions.Function0<kotlin.Unit> function0, androidx.compose.runtime.Composer composer, int i);
+}

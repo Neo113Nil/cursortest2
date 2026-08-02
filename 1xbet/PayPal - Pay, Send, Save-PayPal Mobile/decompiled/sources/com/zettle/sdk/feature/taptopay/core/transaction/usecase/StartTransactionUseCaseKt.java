@@ -1,0 +1,8 @@
+package com.zettle.sdk.feature.taptopay.core.transaction.usecase;
+
+@kotlin.Metadata(d1 = {"\u0000\u0018\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\" \u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00020\u00008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010\u0004\"\u0014\u0010\u0007\u001a\u00020\u00068\u0000X\u0080T¢\u0006\u0006\n\u0004\b\u0007\u0010\b"}, d2 = {"", "Lcom/zettle/sdk/core/user/CountryCode;", "", "getHighSpeedVideoFpsRanges", "Ljava/util/Map;", "Camera2StreamConfigurationMap", "", "TRANSACTION_TIMEOUT_SEC", "J"}, k = 2, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes17.dex */
+public final class StartTransactionUseCaseKt {
+    public static final long TRANSACTION_TIMEOUT_SEC = 60;
+    private static final java.util.Map<com.zettle.sdk.core.user.CountryCode, java.lang.String> getHighSpeedVideoFpsRanges = kotlin.collections.MapsKt.mapOf(kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.SE, "0752"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.NL, "0528"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.GB, "0826"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.FI, "0246"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.FR, "0250"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.IT, "0380"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.NO, "0578"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.DK, "0208"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.DE, "0276"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.ES, "0724"), kotlin.TuplesKt.to(com.zettle.sdk.core.user.CountryCode.US, "0840"));
+}

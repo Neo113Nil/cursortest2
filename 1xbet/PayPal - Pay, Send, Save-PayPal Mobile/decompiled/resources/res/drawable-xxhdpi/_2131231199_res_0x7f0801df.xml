@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131231230_res_0x7f0801fe">
+    <target
+        name="strokePath"
+        animation="@anim/_2130771999_res_0x7f01001f"/>
+    <target
+        name="strokePath"
+        animation="@anim/_2130772001_res_0x7f010021"/>
+    <target
+        name="strokePath"
+        animation="@anim/_2130772000_res_0x7f010020"/>
+</animated-vector>

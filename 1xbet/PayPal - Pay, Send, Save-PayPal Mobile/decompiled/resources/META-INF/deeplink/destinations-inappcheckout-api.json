@@ -1,0 +1,10 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.inappcheckout.api.navigation.CheckoutDestination",
+      "paths": ["/app-switch-checkout"],
+      "parameters": [
+      ]
+    }
+  ]
+}

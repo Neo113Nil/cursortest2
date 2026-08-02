@@ -1,0 +1,6 @@
+package com.paypal.oslo.feature.debitcard.servicing.ui.managesecondarycard.viewmodel;
+
+/* loaded from: classes12.dex */
+public final class ManageSecondaryCardHolderViewModel_HiltModules_KeyModule_Provide_LazyMapKey {
+    public static java.lang.String lazyClassKeyName = "com.paypal.oslo.feature.debitcard.servicing.ui.managesecondarycard.viewmodel.ManageSecondaryCardHolderViewModel";
+}

@@ -1,0 +1,10 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.notificationcenter.api.navigation.NotificationCenterDestination",
+      "paths": ["/mobile-app/notification-center"],
+      "parameters": [
+      ]
+    }
+  ]
+}

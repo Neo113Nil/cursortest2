@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_gravity="top"
+    id="@+id/_2131429075_res_0x7f0b06d3"
+    layout_width="match_parent"
+    layout_height="wrap_content"
+    style="@style/_2132148606_res_0x7f16017e">
+    <ImageButton
+        id="@+id/_2131427808_res_0x7f0b01e0"
+        src="@drawable/_2131231498_res_0x7f08030a"
+        contentDescription="Exit scanning"
+        style="@style/_2132148605_res_0x7f16017d"/>
+    <Space
+        layout_width="0dp"
+        layout_height="match_parent"
+        layout_weight="1"/>
+    <ImageButton
+        id="@+id/_2131427809_res_0x7f0b01e1"
+        visibility="gone"
+        layout_marginRight="8dp"
+        src="@drawable/_2131231489_res_0x7f080301"
+        contentDescription="Show help screens"
+        style="@style/_2132148605_res_0x7f16017d"/>
+    <ImageButton
+        id="@+id/_2131427811_res_0x7f0b01e3"
+        src="0x7f08030b"
+        contentDescription="Turn flashlight on"
+        style="@style/_2132148605_res_0x7f16017d"/>
+</LinearLayout>

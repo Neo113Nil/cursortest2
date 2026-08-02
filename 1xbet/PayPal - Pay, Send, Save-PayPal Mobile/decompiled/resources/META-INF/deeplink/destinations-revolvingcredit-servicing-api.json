@@ -1,0 +1,235 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.AccountSummaryDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us", "/myaccount/credit/cashback", "/myaccount/credit/rewards-card", "/revolvingcredit_servicing_account_summary"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.MakePaymentDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/repayments", "/myaccount/credit/cashback/payments/pay", "/myaccount/credit/rewards-card/repayments", "/revolvingcredit_servicing_make_payment"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.AutopayDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/autopay", "/myaccount/credit/cashback/payments/autopay", "/myaccount/credit/rewards-card/repayments/autopay", "/revolvingcredit_servicing_autopay"],
+      "pathPropertyName": "path",
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.PaymentSummaryDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/repayments-summary", "/myaccount/credit/cashback/payments", "/revolvingcredit_servicing_payment_summary"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.ManageAccountDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/manage-account", "/myaccount/credit/cashback/manage", "/myaccount/credit/rewards-card/manage", "/revolvingcredit_servicing_manage_account"],
+      "pathPropertyName": "path",
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.StatementHubDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/statements", "/myaccount/credit/cashback/statements", "/myaccount/credit/rewards-card/statements", "/revolvingcredit_servicing_statement_summary"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.SpecialFinancingDeepLinkDestination",
+      "paths": ["/myaccount/credit/paypal-credit/us/special-financing", "/revolvingcredit_servicing_financial_plans_summary"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.RewardsDeepLinkDestination",
+      "paths": ["/myaccount/credit/rewards-card/rewards", "/myaccount/credit/cashback/rewards"],
+      "pathPropertyName": "path",
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.LegacyServicingRedirectDeepLinkDestination",
+      "paths": ["/myaccount/ppcredit/redirect"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "redirectUrlKey",
+          "urlParamName": "redirectUrlKey",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.CardActivationDeepLinkDestination",
+      "paths": ["/revolvingcredit/card-activation", "/revolvingcredit_servicing_activate_card"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.RequestVirtualCardDeepLinkDestination",
+      "paths": ["/revolvingcredit_servicing_request_virtual_card"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.RequestPhysicalCardDeepLinkDestination",
+      "paths": ["/revolvingcredit_servicing_request_physical_card"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.CreditLimitIncreaseDeepLinkDestination",
+      "paths": ["/revolvingcredit_servicing_credit_limit_increase"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.SetPreferredDeepLinkDestination",
+      "paths": ["/revolvingcredit_servicing_set_preferred"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.revolvingcreditservicing.api.navigation.CardRequestedDeepLinkDestination",
+      "paths": ["/revolvingcredit_servicing_card_requested"],
+      "pathPropertyName": "path",
+      "parameters": [
+        {
+          "propertyName": "creditProductIdentifier",
+          "urlParamName": "creditProductIdentifier",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

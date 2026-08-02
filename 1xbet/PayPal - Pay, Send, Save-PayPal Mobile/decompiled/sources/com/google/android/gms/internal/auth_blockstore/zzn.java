@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.auth_blockstore;
+
+/* loaded from: classes8.dex */
+public abstract class zzn extends com.google.android.gms.internal.auth_blockstore.zzb implements com.google.android.gms.internal.auth_blockstore.zzo {
+    public zzn() {
+        super("com.google.android.gms.auth.blockstore.internal.IStoreBytesCallback");
+    }
+
+    @Override // com.google.android.gms.internal.auth_blockstore.zzb
+    protected final boolean dispatchTransaction(int i, android.os.Parcel parcel, android.os.Parcel parcel2, int i2) throws android.os.RemoteException {
+        if (i != 1) {
+            return false;
+        }
+        com.google.android.gms.common.api.Status status = (com.google.android.gms.common.api.Status) com.google.android.gms.internal.auth_blockstore.zzc.zza(parcel, com.google.android.gms.common.api.Status.CREATOR);
+        int readInt = parcel.readInt();
+        enforceNoDataAvail(parcel);
+        zza(status, readInt);
+        return true;
+    }
+}

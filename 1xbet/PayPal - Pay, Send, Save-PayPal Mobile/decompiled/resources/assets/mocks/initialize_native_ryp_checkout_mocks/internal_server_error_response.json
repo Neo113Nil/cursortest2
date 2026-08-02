@@ -1,0 +1,35 @@
+{
+  "initializeCheckout": {
+    "__typename": "InitializeCheckoutSuccessResponse",
+    "token": "EC-70U03853CA3952000",
+    "checkoutContext": {
+      "__typename": "CheckoutContextSuccessResponse",
+      "integrationDetails": {
+        "cancelUrl": "https://gse-appstestbed.com/braintree-payments/braintreeAppSwitchPayPal/cancel?token=EC-70U03853CA3952000&ba_token=BA-1P3964667P922682F",
+        "returnUrl": "https://gse-appstestbed.com/braintree-payments/braintreeAppSwitchPayPal/success?token=EC-70U03853CA3952000&ba_token=BA-1P3964667P922682F",
+        "editStickyFiScenario": "NONE",
+        "flow": "BILLING_WITHOUT_PURCHASE",
+        "billingType": "MERCHANT_INITIATED_BILLING"
+      },
+      "merchant": {
+        "name": "AA Logos",
+        "merchantId": "RUKUZFZG34FHQ",
+        "merchantLogo": "https://www.paypalobjects.com/shopping/shop-store-logos/188922683891171254.png"
+      }
+    }
+  },
+  "errors": [
+    {
+      "message": "Internal server error occurred",
+      "extensions": {
+        "name": "INTERNAL_SERVER_ERROR",
+        "details": [
+          {
+            "description": "The server encountered an error and could not complete your request"
+          }
+        ]
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="match_parent"
+    layout_height="?attr/_2130969423_res_0x7f04034f"
+    paddingStart="?attr/_2130969428_res_0x7f040354"
+    paddingEnd="?attr/_2130969425_res_0x7f040351">
+    <com.google.android.material.textview.MaterialTextView
+        textAppearance="@style/_2132148651_res_0x7f1601ab"
+        layout_gravity="center_vertical"
+        id="@+id/_2131429049_res_0x7f0b06b9"
+        layout_width="wrap_content"
+        layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,507 @@
+{
+  "addCard": {
+    "__typename": "externalAddCardSuccessResponse",
+    "id": "CC-4RK8AM9L5YT7G",
+    "staleDomains": [
+      {
+        "__typename": "externalStaleDomain",
+        "domain": "FUNDING_SELECTION"
+      }
+    ]
+  },
+  "updateCard": {
+    "__typename": "externalUpdateCardSuccessResponse",
+    "id": "CC-S7LFGC845FNSJ",
+    "staleDomains": [
+      {
+        "__typename": "externalStaleDomain",
+        "domain": "FUNDING_SELECTION"
+      }
+    ]
+  },
+  "cardFormData": {
+    "__typename": "externalCardFormDataSuccessResponse",
+    "cardholder": {
+      "__typename": "externalCardholderInfo",
+      "name": {
+        "__typename": "externalPersonName",
+        "prefix": "",
+        "givenName": "Shalini",
+        "surname": "Bansal",
+        "middleName": "",
+        "suffix": "",
+        "fullName": "Shalini Bansal",
+        "orthography": null
+      }
+    },
+    "addresses": [
+      {
+        "__typename": "externalCardBillingAddress",
+        "id": "7935632017516889060",
+        "address": {
+          "__typename": "externalAddressPortable",
+          "addressLine1": "77346548 Marsh Street",
+          "addressLine2": "631781 Holcomb Bridge Road #698",
+          "addressLine3": null,
+          "adminArea4": null,
+          "adminArea3": null,
+          "adminArea2": "Scottsville",
+          "adminArea1": "KY",
+          "postalCode": "42164",
+          "countryCode": "US",
+          "addressDetails": null
+        }
+      },
+      {
+        "__typename": "externalCardBillingAddress",
+        "id": "8000970220717250628",
+        "address": {
+          "__typename": "externalAddressPortable",
+          "addressLine1": "street update",
+          "addressLine2": "",
+          "addressLine3": null,
+          "adminArea4": null,
+          "adminArea3": null,
+          "adminArea2": "city cfd",
+          "adminArea1": "AE",
+          "postalCode": "12345",
+          "countryCode": "US",
+          "addressDetails": null
+        }
+      },
+      {
+        "__typename": "externalCardBillingAddress",
+        "id": "8000967471731791400",
+        "address": {
+          "__typename": "externalAddressPortable",
+          "addressLine1": "street",
+          "addressLine2": "",
+          "addressLine3": null,
+          "adminArea4": null,
+          "adminArea3": null,
+          "adminArea2": "city",
+          "adminArea1": "AL",
+          "postalCode": "67890",
+          "countryCode": "US",
+          "addressDetails": null
+        }
+      },
+      {
+        "__typename": "externalCardBillingAddress",
+        "id": "8000966372692899624",
+        "address": {
+          "__typename": "externalAddressPortable",
+          "addressLine1": "street",
+          "addressLine2": "",
+          "addressLine3": null,
+          "adminArea4": null,
+          "adminArea3": null,
+          "adminArea2": "city",
+          "adminArea1": "DE",
+          "postalCode": "12345",
+          "countryCode": "US",
+          "addressDetails": null
+        }
+      },
+      {
+        "__typename": "externalCardBillingAddress",
+        "id": "7985194702483460799",
+        "address": {
+          "__typename": "externalAddressPortable",
+          "addressLine1": "123 dsss",
+          "addressLine2": "",
+          "addressLine3": null,
+          "adminArea4": null,
+          "adminArea3": null,
+          "adminArea2": "San Jose",
+          "adminArea1": "CA",
+          "postalCode": "95118",
+          "countryCode": "US",
+          "addressDetails": null
+        }
+      }
+    ],
+    "prefillCardInfo": {
+      "__typename": "externalPrefillCardInfo",
+      "last4Digits": "8899",
+      "cardBrand": "AMEX"
+    },
+    "instrumentConstraints": []
+  },
+  "financialInstrumentMetadataTypeList": [
+    {
+      "instrumentType": {
+        "type": "CARD",
+        "displayText": "CARD",
+        "description": "CARD",
+        "enumValues": ["CARD", "BANK"],
+        "schemaVersion": "1.0.0",
+        "objectType": "FinancialInstrumentType"
+      },
+      "financialInstrumentMetadataActionList": [
+        {
+          "actionType": {
+            "type": "ADD",
+            "displayText": "ADD",
+            "description": "ADD",
+            "enumValues": ["ADD", "MODIFY"],
+            "schemaVersion": "1.0.0",
+            "objectType": "FinancialInstrumentActionType"
+          },
+          "financialInstrumentMetadataDefinitionList": [
+            {
+              "imageUrl": "https://www.paypalobjects.com/webstatic/wallet/bankscards/img-fi-amex-small.png",
+              "brand": "AMEX",
+              "localizedBrandName": "American Express",
+              "grouping": [4, 6, 5],
+              "regex": "^3[47]\\d*",
+              "firstName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameFirstName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "lastName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": false,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameLastName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "accountNumber": {
+                "minimumLength": 15,
+                "maximumLength": 15,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardNumber",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryMonth": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^(0?[1-9]|1[012])$",
+                "labelKey": "LabelExpirationTimeMonth",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryYear": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9][0-9]$",
+                "labelKey": "LabelExpirationTimeYear",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "cvv": {
+                "minimumLength": 4,
+                "maximumLength": 4,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardVerificationCode",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "addressRequired": {
+                "minimumLength": 1,
+                "maximumLength": 1,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBillingAddress",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "schemaVersion": "1.0.0",
+              "objectType": "FinancialInstrumentMetadataDefinition"
+            },
+            {
+              "imageUrl": "https://www.paypalobjects.com/webstatic/wallet/bankscards/img-fi-discover-small.png",
+              "brand": "DISCOVER",
+              "localizedBrandName": "Discover",
+              "grouping": [4, 4, 4, 4],
+              "regex": "(^6(?:011|5[0-9]{2})[0-9]*|^3(?:0[0-5]|[68][0-9])[0-9]*)",
+              "firstName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameFirstName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "lastName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": false,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameLastName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "accountNumber": {
+                "minimumLength": 14,
+                "maximumLength": 16,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]{14}$|^[0-9]{16}$",
+                "labelKey": "LabelCardNumber",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryMonth": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^(0?[1-9]|1[012])$",
+                "labelKey": "LabelExpirationTimeMonth",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryYear": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9][0-9]$",
+                "labelKey": "LabelExpirationTimeYear",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "cvv": {
+                "minimumLength": 3,
+                "maximumLength": 3,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardVerificationCode",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "addressRequired": {
+                "minimumLength": 1,
+                "maximumLength": 1,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBillingAddress",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "schemaVersion": "1.0.0",
+              "objectType": "FinancialInstrumentMetadataDefinition"
+            },
+            {
+              "imageUrl": "https://www.paypalobjects.com/webstatic/wallet/bankscards/img-fi-mastercard-small.png",
+              "brand": "MASTER_CARD",
+              "localizedBrandName": "Mastercard",
+              "grouping": [4, 4, 4, 4],
+              "regex": "^(5[1-5]|2(2(2[1-9]|[3-9]\\d)|[3-6]\\d\\d|7[0-1]\\d|720))\\d*",
+              "firstName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameFirstName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "lastName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": false,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameLastName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "accountNumber": {
+                "minimumLength": 16,
+                "maximumLength": 16,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardNumber",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryMonth": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^(0?[1-9]|1[012])$",
+                "labelKey": "LabelExpirationTimeMonth",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryYear": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9][0-9]$",
+                "labelKey": "LabelExpirationTimeYear",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "cvv": {
+                "minimumLength": 3,
+                "maximumLength": 3,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardVerificationCode",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "addressRequired": {
+                "minimumLength": 1,
+                "maximumLength": 1,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBillingAddress",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "schemaVersion": "1.0.0",
+              "objectType": "FinancialInstrumentMetadataDefinition"
+            },
+            {
+              "imageUrl": "https://www.paypalobjects.com/webstatic/wallet/bankscards/img-fi-visa-small.png",
+              "brand": "VISA",
+              "localizedBrandName": "Visa",
+              "grouping": [4, 4, 4, 4],
+              "regex": "^4[0-9]*",
+              "firstName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameFirstName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "lastName": {
+                "minimumLength": 1,
+                "maximumLength": 64,
+                "isRequired": true,
+                "isEditable": false,
+                "regex": "",
+                "labelKey": "LabelBeneficiaryNameLastName",
+                "group": "BeneficiaryName",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "accountNumber": {
+                "minimumLength": 13,
+                "maximumLength": 19,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardNumber",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryMonth": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^(0?[1-9]|1[012])$",
+                "labelKey": "LabelExpirationTimeMonth",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "expiryYear": {
+                "minimumLength": 2,
+                "maximumLength": 2,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9][0-9]$",
+                "labelKey": "LabelExpirationTimeYear",
+                "group": "ExpiryDate",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "cvv": {
+                "minimumLength": 3,
+                "maximumLength": 3,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "^[0-9]+$",
+                "labelKey": "LabelCardVerificationCode",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "addressRequired": {
+                "minimumLength": 1,
+                "maximumLength": 1,
+                "isRequired": true,
+                "isEditable": true,
+                "regex": "",
+                "labelKey": "LabelBillingAddress",
+                "schemaVersion": "1.0.0",
+                "objectType": "FinancialInstrumentMetadataAttribute"
+              },
+              "schemaVersion": "1.0.0",
+              "objectType": "FinancialInstrumentMetadataDefinition"
+            }
+          ],
+          "schemaVersion": "1.0.0",
+          "objectType": "FinancialInstrumentMetadataAction"
+        }
+      ],
+      "schemaVersion": "1.0.0",
+      "objectType": "FinancialInstrumentMetadataType"
+    }
+  ],
+  "cardMetadataList": [
+    {
+      "brand": "AMEX",
+      "objectType": "CardMetadata"
+    },
+    {
+      "brand": "VISA",
+      "objectType": "CardMetadata"
+    },
+    {
+      "brand": "MASTER_CARD",
+      "objectType": "CardMetadata"
+    }
+  ]
+}

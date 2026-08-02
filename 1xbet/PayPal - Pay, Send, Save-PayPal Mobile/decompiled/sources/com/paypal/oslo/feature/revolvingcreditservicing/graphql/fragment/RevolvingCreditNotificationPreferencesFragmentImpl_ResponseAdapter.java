@@ -1,0 +1,158 @@
+package com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment;
+
+@kotlin.Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u0004\u0005\u0006B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter;", "", "<init>", "()V", "RevolvingCreditNotificationPreferencesFragment", "Attribute", "Amount"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes14.dex */
+public final class RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter {
+    public static final int $stable = 0;
+    public static final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter INSTANCE = new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter();
+
+    @kotlin.Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\t\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\t\u0010\nJ'\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u001d\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00118\u0007¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016"}, d2 = {"Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter$RevolvingCreditNotificationPreferencesFragment;", "Lcom/apollographql/apollo/api/Adapter;", "Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment;", "<init>", "()V", "Lcom/apollographql/apollo/api/json/JsonReader;", "reader", "Lcom/apollographql/apollo/api/CustomScalarAdapters;", "customScalarAdapters", "fromJson", "(Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment;", "Lcom/apollographql/apollo/api/json/JsonWriter;", "writer", com.datadog.android.rum.internal.metric.ViewEndedMetricDispatcher.KEY_VALUE, "", "toJson", "(Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment;)V", "", "", "RESPONSE_NAMES", "Ljava/util/List;", "getRESPONSE_NAMES", "()Ljava/util/List;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public static final class RevolvingCreditNotificationPreferencesFragment implements com.apollographql.apollo.api.Adapter<com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment> {
+        public static final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.RevolvingCreditNotificationPreferencesFragment INSTANCE = new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.RevolvingCreditNotificationPreferencesFragment();
+        private static final java.util.List<java.lang.String> RESPONSE_NAMES = kotlin.collections.CollectionsKt.listOf((java.lang.Object[]) new java.lang.String[]{"id", "channels", com.datadog.android.rum.internal.RumFeature.EVENT_ATTRIBUTES_PROPERTY});
+        public static final int $stable = 8;
+
+        private RevolvingCreditNotificationPreferencesFragment() {
+        }
+
+        public final java.util.List<java.lang.String> getRESPONSE_NAMES() {
+            return RESPONSE_NAMES;
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // com.apollographql.apollo.api.Adapter
+        public final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment fromJson(com.apollographql.apollo.api.json.JsonReader reader, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(reader, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            com.paypal.oslo.api.graphql.schema.type.RevolvingCreditNotificationPreferenceID revolvingCreditNotificationPreferenceID = null;
+            java.util.List list = null;
+            java.util.List list2 = null;
+            while (true) {
+                int selectName = reader.selectName(RESPONSE_NAMES);
+                if (selectName == 0) {
+                    revolvingCreditNotificationPreferenceID = com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationPreferenceID_ResponseAdapter.INSTANCE.fromJson(reader, customScalarAdapters);
+                } else if (selectName == 1) {
+                    list = (java.util.List) com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9937list(com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationChannel_ResponseAdapter.INSTANCE)).fromJson(reader, customScalarAdapters);
+                } else {
+                    if (selectName != 2) {
+                        break;
+                    }
+                    list2 = (java.util.List) com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9937list(com.apollographql.apollo.api.Adapters.m9940obj$default(com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Attribute.INSTANCE, false, 1, null))).fromJson(reader, customScalarAdapters);
+                }
+            }
+            if (revolvingCreditNotificationPreferenceID != null) {
+                return new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment(revolvingCreditNotificationPreferenceID, list, list2);
+            }
+            com.apollographql.apollo.api.Assertions.missingField(reader, "id");
+            throw new kotlin.KotlinNothingValueException();
+        }
+
+        @Override // com.apollographql.apollo.api.Adapter
+        public final void toJson(com.apollographql.apollo.api.json.JsonWriter writer, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters, com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment value) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(writer, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(value, "");
+            writer.name("id");
+            com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationPreferenceID_ResponseAdapter.INSTANCE.toJson(writer, customScalarAdapters, value.getId());
+            writer.name("channels");
+            com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9937list(com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationChannel_ResponseAdapter.INSTANCE)).toJson(writer, customScalarAdapters, value.getChannels());
+            writer.name(com.datadog.android.rum.internal.RumFeature.EVENT_ATTRIBUTES_PROPERTY);
+            com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9937list(com.apollographql.apollo.api.Adapters.m9940obj$default(com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Attribute.INSTANCE, false, 1, null))).toJson(writer, customScalarAdapters, value.getAttributes());
+        }
+    }
+
+    private RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter() {
+    }
+
+    @kotlin.Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\t\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\t\u0010\nJ'\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u001d\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00118\u0007¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016"}, d2 = {"Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter$Attribute;", "Lcom/apollographql/apollo/api/Adapter;", "Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Attribute;", "<init>", "()V", "Lcom/apollographql/apollo/api/json/JsonReader;", "reader", "Lcom/apollographql/apollo/api/CustomScalarAdapters;", "customScalarAdapters", "fromJson", "(Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Attribute;", "Lcom/apollographql/apollo/api/json/JsonWriter;", "writer", com.datadog.android.rum.internal.metric.ViewEndedMetricDispatcher.KEY_VALUE, "", "toJson", "(Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Attribute;)V", "", "", "RESPONSE_NAMES", "Ljava/util/List;", "getRESPONSE_NAMES", "()Ljava/util/List;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public static final class Attribute implements com.apollographql.apollo.api.Adapter<com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Attribute> {
+        public static final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Attribute INSTANCE = new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Attribute();
+        private static final java.util.List<java.lang.String> RESPONSE_NAMES = kotlin.collections.CollectionsKt.listOf((java.lang.Object[]) new java.lang.String[]{"name", "amount"});
+        public static final int $stable = 8;
+
+        private Attribute() {
+        }
+
+        public final java.util.List<java.lang.String> getRESPONSE_NAMES() {
+            return RESPONSE_NAMES;
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // com.apollographql.apollo.api.Adapter
+        public final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Attribute fromJson(com.apollographql.apollo.api.json.JsonReader reader, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(reader, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            com.paypal.oslo.api.graphql.schema.type.RevolvingCreditNotificationPreferenceAttributeName revolvingCreditNotificationPreferenceAttributeName = null;
+            com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount amount = null;
+            while (true) {
+                int selectName = reader.selectName(RESPONSE_NAMES);
+                if (selectName == 0) {
+                    revolvingCreditNotificationPreferenceAttributeName = com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationPreferenceAttributeName_ResponseAdapter.INSTANCE.fromJson(reader, customScalarAdapters);
+                } else {
+                    if (selectName != 1) {
+                        break;
+                    }
+                    amount = (com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount) com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9939obj(com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Amount.INSTANCE, true)).fromJson(reader, customScalarAdapters);
+                }
+            }
+            if (revolvingCreditNotificationPreferenceAttributeName != null) {
+                return new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Attribute(revolvingCreditNotificationPreferenceAttributeName, amount);
+            }
+            com.apollographql.apollo.api.Assertions.missingField(reader, "name");
+            throw new kotlin.KotlinNothingValueException();
+        }
+
+        @Override // com.apollographql.apollo.api.Adapter
+        public final void toJson(com.apollographql.apollo.api.json.JsonWriter writer, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters, com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Attribute value) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(writer, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(value, "");
+            writer.name("name");
+            com.paypal.oslo.api.graphql.schema.type.adapter.RevolvingCreditNotificationPreferenceAttributeName_ResponseAdapter.INSTANCE.toJson(writer, customScalarAdapters, value.getName());
+            writer.name("amount");
+            com.apollographql.apollo.api.Adapters.m9938nullable(com.apollographql.apollo.api.Adapters.m9939obj(com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Amount.INSTANCE, true)).toJson(writer, customScalarAdapters, value.getAmount());
+        }
+    }
+
+    @kotlin.Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\t\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\t\u0010\nJ'\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\b\u001a\u00020\u00072\u0006\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\u000f\u0010\u0010R\u001d\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00118\u0007¢\u0006\f\n\u0004\b\u0013\u0010\u0014\u001a\u0004\b\u0015\u0010\u0016"}, d2 = {"Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter$Amount;", "Lcom/apollographql/apollo/api/Adapter;", "Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Amount;", "<init>", "()V", "Lcom/apollographql/apollo/api/json/JsonReader;", "reader", "Lcom/apollographql/apollo/api/CustomScalarAdapters;", "customScalarAdapters", "fromJson", "(Lcom/apollographql/apollo/api/json/JsonReader;Lcom/apollographql/apollo/api/CustomScalarAdapters;)Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Amount;", "Lcom/apollographql/apollo/api/json/JsonWriter;", "writer", com.datadog.android.rum.internal.metric.ViewEndedMetricDispatcher.KEY_VALUE, "", "toJson", "(Lcom/apollographql/apollo/api/json/JsonWriter;Lcom/apollographql/apollo/api/CustomScalarAdapters;Lcom/paypal/oslo/feature/revolvingcreditservicing/graphql/fragment/RevolvingCreditNotificationPreferencesFragment$Amount;)V", "", "", "RESPONSE_NAMES", "Ljava/util/List;", "getRESPONSE_NAMES", "()Ljava/util/List;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public static final class Amount implements com.apollographql.apollo.api.Adapter<com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount> {
+        public static final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Amount INSTANCE = new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragmentImpl_ResponseAdapter.Amount();
+        private static final java.util.List<java.lang.String> RESPONSE_NAMES = kotlin.collections.CollectionsKt.listOf("__typename");
+        public static final int $stable = 8;
+
+        private Amount() {
+        }
+
+        public final java.util.List<java.lang.String> getRESPONSE_NAMES() {
+            return RESPONSE_NAMES;
+        }
+
+        /* JADX WARN: Can't rename method to resolve collision */
+        @Override // com.apollographql.apollo.api.Adapter
+        public final com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount fromJson(com.apollographql.apollo.api.json.JsonReader reader, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(reader, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            java.lang.String str = null;
+            while (reader.selectName(RESPONSE_NAMES) == 0) {
+                str = com.apollographql.apollo.api.Adapters.StringAdapter.fromJson(reader, customScalarAdapters);
+            }
+            reader.rewind();
+            com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditMoneyFragment fromJson = com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditMoneyFragmentImpl_ResponseAdapter.RevolvingCreditMoneyFragment.INSTANCE.fromJson(reader, customScalarAdapters);
+            if (str != null) {
+                return new com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount(str, fromJson);
+            }
+            com.apollographql.apollo.api.Assertions.missingField(reader, "__typename");
+            throw new kotlin.KotlinNothingValueException();
+        }
+
+        @Override // com.apollographql.apollo.api.Adapter
+        public final void toJson(com.apollographql.apollo.api.json.JsonWriter writer, com.apollographql.apollo.api.CustomScalarAdapters customScalarAdapters, com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditNotificationPreferencesFragment.Amount value) {
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(writer, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(customScalarAdapters, "");
+            kotlin.jvm.internal.Intrinsics.checkNotNullParameter(value, "");
+            writer.name("__typename");
+            com.apollographql.apollo.api.Adapters.StringAdapter.toJson(writer, customScalarAdapters, value.get__typename());
+            com.paypal.oslo.feature.revolvingcreditservicing.graphql.fragment.RevolvingCreditMoneyFragmentImpl_ResponseAdapter.RevolvingCreditMoneyFragment.INSTANCE.toJson(writer, customScalarAdapters, value.getRevolvingCreditMoneyFragment());
+        }
+    }
+}

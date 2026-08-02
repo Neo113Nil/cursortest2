@@ -1,0 +1,61 @@
+package com.adjust.sdk.scheduler;
+
+/* loaded from: classes7.dex */
+public class TimerOnce {
+    private java.lang.Runnable command;
+    private com.adjust.sdk.ILogger logger = com.adjust.sdk.AdjustFactory.getLogger();
+
+    /* renamed from: name, reason: collision with root package name */
+    private java.lang.String f2820name;
+    private com.adjust.sdk.scheduler.FutureScheduler scheduler;
+    private java.util.concurrent.ScheduledFuture waitingTask;
+
+    public TimerOnce(java.lang.Runnable runnable, java.lang.String str) {
+        this.f2820name = str;
+        this.scheduler = new com.adjust.sdk.scheduler.SingleThreadFutureScheduler(str, true);
+        this.command = runnable;
+    }
+
+    private void cancel(boolean z) {
+        java.util.concurrent.ScheduledFuture scheduledFuture = this.waitingTask;
+        if (scheduledFuture != null) {
+            scheduledFuture.cancel(z);
+        }
+        this.waitingTask = null;
+        this.logger.verbose("%s canceled", this.f2820name);
+    }
+
+    public long getFireIn() {
+        java.util.concurrent.ScheduledFuture scheduledFuture = this.waitingTask;
+        if (scheduledFuture == null) {
+            return 0L;
+        }
+        return scheduledFuture.getDelay(java.util.concurrent.TimeUnit.MILLISECONDS);
+    }
+
+    public void startIn(long j) {
+        cancel(false);
+        this.logger.verbose("%s starting. Launching in %s seconds", this.f2820name, com.adjust.sdk.Util.SecondsDisplayFormat.format(j / 1000.0d));
+        this.waitingTask = this.scheduler.scheduleFuture(new java.lang.Runnable() { // from class: com.adjust.sdk.scheduler.TimerOnce.1
+            @Override // java.lang.Runnable
+            public final void run() {
+                com.adjust.sdk.scheduler.TimerOnce.this.logger.verbose("%s fired", com.adjust.sdk.scheduler.TimerOnce.this.f2820name);
+                com.adjust.sdk.scheduler.TimerOnce.this.command.run();
+                com.adjust.sdk.scheduler.TimerOnce.this.waitingTask = null;
+            }
+        }, j);
+    }
+
+    public void teardown() {
+        cancel(true);
+        com.adjust.sdk.scheduler.FutureScheduler futureScheduler = this.scheduler;
+        if (futureScheduler != null) {
+            futureScheduler.teardown();
+        }
+        this.scheduler = null;
+    }
+
+    public void cancel() {
+        cancel(false);
+    }
+}

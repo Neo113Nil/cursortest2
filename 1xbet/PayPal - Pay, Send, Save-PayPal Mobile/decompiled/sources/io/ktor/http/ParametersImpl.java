@@ -1,0 +1,27 @@
+package io.ktor.http;
+
+@kotlin.Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\u0010 \n\u0002\b\u0005\u0018\u00002\u00020\u00012\u00020\u0002B#\u0012\u001a\b\u0002\u0010\u0006\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u00050\u0003¢\u0006\u0004\b\u0007\u0010\bJ\u000f\u0010\t\u001a\u00020\u0004H\u0016¢\u0006\u0004\b\t\u0010\n"}, d2 = {"Lio/ktor/http/ParametersImpl;", "Lio/ktor/http/Parameters;", "Lio/ktor/util/StringValuesImpl;", "", "", "", "values", "<init>", "(Ljava/util/Map;)V", "toString", "()Ljava/lang/String;"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes17.dex */
+public final class ParametersImpl extends io.ktor.util.StringValuesImpl implements io.ktor.http.Parameters {
+    public /* synthetic */ ParametersImpl(java.util.Map map, int i, kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? kotlin.collections.MapsKt.emptyMap() : map);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ParametersImpl(java.util.Map<java.lang.String, ? extends java.util.List<java.lang.String>> map) {
+        super(true, map);
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(map, "");
+    }
+
+    @Override // io.ktor.util.StringValuesImpl
+    public final java.lang.String toString() {
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("Parameters ");
+        sb.append(entries());
+        return sb.toString();
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public ParametersImpl() {
+        this(null, 1, 0 == true ? 1 : 0);
+    }
+}

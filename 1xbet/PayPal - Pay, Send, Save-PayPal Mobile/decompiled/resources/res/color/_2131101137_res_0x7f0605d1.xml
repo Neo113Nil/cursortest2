@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        state_enabled="true"
+        state_selected="true"
+        color="?attr/_2130968887_res_0x7f040137"
+        alpha="0.24"/>
+    <item
+        state_enabled="true"
+        state_checked="true"
+        color="?attr/_2130968887_res_0x7f040137"
+        alpha="0.24"/>
+    <item
+        state_enabled="true"
+        color="?attr/_2130968878_res_0x7f04012e"
+        alpha="0.1"/>
+    <item
+        color="?attr/_2130968878_res_0x7f04012e"
+        alpha="0.12"/>
+</selector>

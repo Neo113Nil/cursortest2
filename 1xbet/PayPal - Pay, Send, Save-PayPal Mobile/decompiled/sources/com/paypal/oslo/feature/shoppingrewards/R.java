@@ -1,0 +1,192 @@
+package com.paypal.oslo.feature.shoppingrewards;
+
+/* loaded from: classes14.dex */
+public final class R {
+
+    public static final class drawable {
+        public static int feature_shopping_rewards_ic_avatar_checked = 0x7f080243;
+        public static int feature_shopping_rewards_ic_avatar_unchecked = 0x7f080244;
+        public static int feature_shopping_rewards_ic_paypal_plus = 0x7f080245;
+
+        private drawable() {
+        }
+    }
+
+    public static final class string {
+        public static int feature_shopping_rewards_activated_offer_completed_badge = 0x7f151d08;
+        public static int feature_shopping_rewards_activated_offer_progress_discrete_one = 0x7f151d09;
+        public static int feature_shopping_rewards_activated_offer_progress_discrete_other = 0x7f151d0a;
+        public static int feature_shopping_rewards_active_offer_less_than_24_hours = 0x7f151d0b;
+        public static int feature_shopping_rewards_active_offer_one_day_left = 0x7f151d0c;
+        public static int feature_shopping_rewards_active_offer_other_day_left = 0x7f151d0d;
+        public static int feature_shopping_rewards_active_offers_ends_today = 0x7f151d0e;
+        public static int feature_shopping_rewards_benefits_pay_in_4_item_2 = 0x7f151d0f;
+        public static int feature_shopping_rewards_benefits_pay_in_approval_text = 0x7f151d10;
+        public static int feature_shopping_rewards_benefits_pay_in_benefit_item1_text = 0x7f151d11;
+        public static int feature_shopping_rewards_benefits_pay_in_benefit_item2_text = 0x7f151d12;
+        public static int feature_shopping_rewards_benefits_pay_in_benefit_item_title = 0x7f151d13;
+        public static int feature_shopping_rewards_benefits_pay_in_title = 0x7f151d14;
+        public static int feature_shopping_rewards_benefits_pay_later_description = 0x7f151d15;
+        public static int feature_shopping_rewards_benefits_pay_later_generic_item_2 = 0x7f151d16;
+        public static int feature_shopping_rewards_benefits_pay_later_terms = 0x7f151d17;
+        public static int feature_shopping_rewards_benefits_pay_later_terms_link = 0x7f151d18;
+        public static int feature_shopping_rewards_benefits_pay_later_title_suffix = 0x7f151d19;
+        public static int feature_shopping_rewards_benefits_pay_monthly_item_1 = 0x7f151d1a;
+        public static int feature_shopping_rewards_benefits_pay_monthly_item_2 = 0x7f151d1b;
+        public static int feature_shopping_rewards_benefits_pay_monthly_terms = 0x7f151d1c;
+        public static int feature_shopping_rewards_benefits_pay_with_pay_pal_title_prefix = 0x7f151d1d;
+        public static int feature_shopping_rewards_benefits_paypal_rewards_terms_link = 0x7f151d1e;
+        public static int feature_shopping_rewards_benefits_terms_apply = 0x7f151d1f;
+        public static int feature_shopping_rewards_benefits_zeroapr_subtitle = 0x7f151d20;
+        public static int feature_shopping_rewards_category_selection_choose_category_error = 0x7f151d21;
+        public static int feature_shopping_rewards_category_selection_confirm_cta_label = 0x7f151d22;
+        public static int feature_shopping_rewards_category_selection_description = 0x7f151d23;
+        public static int feature_shopping_rewards_category_selection_expiry = 0x7f151d24;
+        public static int feature_shopping_rewards_category_selection_screen_description = 0x7f151d25;
+        public static int feature_shopping_rewards_category_selection_screen_header = 0x7f151d26;
+        public static int feature_shopping_rewards_category_selection_screen_title = 0x7f151d27;
+        public static int feature_shopping_rewards_category_selection_subtitle = 0x7f151d28;
+        public static int feature_shopping_rewards_category_selection_title = 0x7f151d29;
+        public static int feature_shopping_rewards_donation_terms_delivery_policy_title = 0x7f151d2a;
+        public static int feature_shopping_rewards_donor_terms_of_service_title = 0x7f151d2b;
+        public static int feature_shopping_rewards_earn_zero_state_description = 0x7f151d2c;
+        public static int feature_shopping_rewards_earn_zero_state_title = 0x7f151d2d;
+        public static int feature_shopping_rewards_exclusion_dialog_button = 0x7f151d2e;
+        public static int feature_shopping_rewards_exclusion_dialog_content = 0x7f151d2f;
+        public static int feature_shopping_rewards_exclusion_dialog_title = 0x7f151d30;
+        public static int feature_shopping_rewards_generic_error_screen_message = 0x7f151d31;
+        public static int feature_shopping_rewards_generic_error_screen_title = 0x7f151d32;
+        public static int feature_shopping_rewards_header_info_cta = 0x7f151d33;
+        public static int feature_shopping_rewards_header_info_description = 0x7f151d34;
+        public static int feature_shopping_rewards_header_info_title = 0x7f151d35;
+        public static int feature_shopping_rewards_iab_banner_cta_title = 0x7f151d36;
+        public static int feature_shopping_rewards_iab_banner_earn_points_pp_plus = 0x7f151d37;
+        public static int feature_shopping_rewards_iab_banner_fallback = 0x7f151d38;
+        public static int feature_shopping_rewards_iab_banner_pay_in_4 = 0x7f151d39;
+        public static int feature_shopping_rewards_iab_banner_pay_later = 0x7f151d3a;
+        public static int feature_shopping_rewards_iab_banner_pay_later_generic = 0x7f151d3b;
+        public static int feature_shopping_rewards_iab_banner_pay_monthly = 0x7f151d3c;
+        public static int feature_shopping_rewards_iab_interstitial_fallback_subtitle = 0x7f151d3d;
+        public static int feature_shopping_rewards_iab_interstitial_fallback_title = 0x7f151d3e;
+        public static int feature_shopping_rewards_iab_interstitial_merchant_logo = 0x7f151d3f;
+        public static int feature_shopping_rewards_iab_interstitial_nav_title = 0x7f151d40;
+        public static int feature_shopping_rewards_iab_interstitial_pay_later_subtitle = 0x7f151d41;
+        public static int feature_shopping_rewards_iab_interstitial_pay_later_title = 0x7f151d42;
+        public static int feature_shopping_rewards_iab_menu_reload_page = 0x7f151d43;
+        public static int feature_shopping_rewards_iab_menu_share = 0x7f151d44;
+        public static int feature_shopping_rewards_iab_pay_later_title = 0x7f151d45;
+        public static int feature_shopping_rewards_iab_screen_error_load_merchant = 0x7f151d46;
+        public static int feature_shopping_rewards_iab_sticky_banner_paypal_badge_label = 0x7f151d47;
+        public static int feature_shopping_rewards_iab_sticky_banner_paypal_plus_label = 0x7f151d48;
+        public static int feature_shopping_rewards_iab_webview_a11y_back = 0x7f151d49;
+        public static int feature_shopping_rewards_iab_webview_a11y_can_go_back_hint = 0x7f151d4a;
+        public static int feature_shopping_rewards_iab_webview_a11y_can_go_foward_hint = 0x7f151d4b;
+        public static int feature_shopping_rewards_iab_webview_a11y_cannot_go_back_hint = 0x7f151d4c;
+        public static int feature_shopping_rewards_iab_webview_a11y_cannot_go_foward_hint = 0x7f151d4d;
+        public static int feature_shopping_rewards_iab_webview_a11y_forward = 0x7f151d4e;
+        public static int feature_shopping_rewards_iab_webview_a11y_menu = 0x7f151d4f;
+        public static int feature_shopping_rewards_iab_webview_a11y_progress_complete = 0x7f151d50;
+        public static int feature_shopping_rewards_iab_webview_a11y_progress_loading = 0x7f151d51;
+        public static int feature_shopping_rewards_internet_error_screen_message = 0x7f151d52;
+        public static int feature_shopping_rewards_internet_error_screen_title = 0x7f151d53;
+        public static int feature_shopping_rewards_offer_pagination_label = 0x7f151d54;
+        public static int feature_shopping_rewards_overview_points = 0x7f151d55;
+        public static int feature_shopping_rewards_overview_subtitle = 0x7f151d56;
+        public static int feature_shopping_rewards_promotion_cashback_info_1_text = 0x7f151d57;
+        public static int feature_shopping_rewards_promotion_cashback_info_3_text = 0x7f151d58;
+        public static int feature_shopping_rewards_promotion_cashback_info_4_text = 0x7f151d59;
+        public static int feature_shopping_rewards_promotion_cashback_terms = 0x7f151d5a;
+        public static int feature_shopping_rewards_promotion_cashback_terms_link_1 = 0x7f151d5b;
+        public static int feature_shopping_rewards_promotion_cashback_terms_link_2 = 0x7f151d5c;
+        public static int feature_shopping_rewards_promotions_apr_terms = 0x7f151d5d;
+        public static int feature_shopping_rewards_promotions_cashback_title = 0x7f151d5e;
+        public static int feature_shopping_rewards_promotions_disclosures_link_text = 0x7f151d5f;
+        public static int feature_shopping_rewards_promotions_fallback_description = 0x7f151d60;
+        public static int feature_shopping_rewards_promotions_fallback_title = 0x7f151d61;
+        public static int feature_shopping_rewards_promotions_pay_in_4_info1_text = 0x7f151d62;
+        public static int feature_shopping_rewards_promotions_pay_in_4_info2_text = 0x7f151d63;
+        public static int feature_shopping_rewards_promotions_pay_in_4_terms = 0x7f151d64;
+        public static int feature_shopping_rewards_promotions_pay_in_4_terms_label = 0x7f151d65;
+        public static int feature_shopping_rewards_promotions_pay_in_4_terms_link = 0x7f151d66;
+        public static int feature_shopping_rewards_promotions_pay_in_4_title = 0x7f151d67;
+        public static int feature_shopping_rewards_promotions_pay_monthly_info1_text = 0x7f151d68;
+        public static int feature_shopping_rewards_promotions_pay_monthly_info2_text = 0x7f151d69;
+        public static int feature_shopping_rewards_promotions_pay_monthly_terms = 0x7f151d6a;
+        public static int feature_shopping_rewards_promotions_pay_monthly_terms_label = 0x7f151d6b;
+        public static int feature_shopping_rewards_promotions_pay_monthly_terms_link = 0x7f151d6c;
+        public static int feature_shopping_rewards_promotions_pay_monthly_title = 0x7f151d6d;
+        public static int feature_shopping_rewards_redeem_amount_balance_header = 0x7f151d6e;
+        public static int feature_shopping_rewards_redeem_amount_balance_terms = 0x7f151d6f;
+        public static int feature_shopping_rewards_redeem_amount_balance_title = 0x7f151d70;
+        public static int feature_shopping_rewards_redeem_amount_conversion = 0x7f151d71;
+        public static int feature_shopping_rewards_redeem_amount_cta_title = 0x7f151d72;
+        public static int feature_shopping_rewards_redeem_amount_donate_cta_title = 0x7f151d73;
+        public static int feature_shopping_rewards_redeem_amount_donation_header = 0x7f151d74;
+        public static int feature_shopping_rewards_redeem_amount_donation_title = 0x7f151d75;
+        public static int feature_shopping_rewards_redeem_amount_points = 0x7f151d76;
+        public static int feature_shopping_rewards_redeem_amount_savings_header = 0x7f151d77;
+        public static int feature_shopping_rewards_redeem_amount_savings_terms = 0x7f151d78;
+        public static int feature_shopping_rewards_redeem_amount_savings_title = 0x7f151d79;
+        public static int feature_shopping_rewards_redeem_amount_spend = 0x7f151d7a;
+        public static int feature_shopping_rewards_redeem_amount_terms_link_text = 0x7f151d7b;
+        public static int feature_shopping_rewards_redeem_balance_description = 0x7f151d7c;
+        public static int feature_shopping_rewards_redeem_balance_title = 0x7f151d7d;
+        public static int feature_shopping_rewards_redeem_confirmation_balance_title = 0x7f151d7e;
+        public static int feature_shopping_rewards_redeem_donate_description = 0x7f151d7f;
+        public static int feature_shopping_rewards_redeem_donate_title = 0x7f151d80;
+        public static int feature_shopping_rewards_redeem_savings_description = 0x7f151d81;
+        public static int feature_shopping_rewards_redeem_savings_title = 0x7f151d82;
+        public static int feature_shopping_rewards_redeem_to_balance_confirmation_footnote = 0x7f151d83;
+        public static int feature_shopping_rewards_redeem_to_balance_terms_description = 0x7f151d84;
+        public static int feature_shopping_rewards_redeem_to_balance_terms_title = 0x7f151d85;
+        public static int feature_shopping_rewards_redeem_to_balance_title = 0x7f151d86;
+        public static int feature_shopping_rewards_redeem_to_charity_confirmation_sent = 0x7f151d87;
+        public static int feature_shopping_rewards_redeem_to_charity_confirmation_view_details = 0x7f151d88;
+        public static int feature_shopping_rewards_redeem_to_charity_details_donation_amount = 0x7f151d89;
+        public static int feature_shopping_rewards_redeem_to_charity_details_send_to = 0x7f151d8a;
+        public static int feature_shopping_rewards_redeem_to_charity_details_summary = 0x7f151d8b;
+        public static int feature_shopping_rewards_redeem_to_charity_details_total = 0x7f151d8c;
+        public static int feature_shopping_rewards_redeem_to_charity_donate_button_title = 0x7f151d8d;
+        public static int feature_shopping_rewards_redeem_to_charity_selection_to = 0x7f151d8e;
+        public static int feature_shopping_rewards_redeem_to_charity_terms = 0x7f151d8f;
+        public static int feature_shopping_rewards_redeem_to_charity_terms_title = 0x7f151d90;
+        public static int feature_shopping_rewards_redeem_to_savings_confirmation_footnote = 0x7f151d91;
+        public static int feature_shopping_rewards_redeem_to_savings_terms_description = 0x7f151d92;
+        public static int feature_shopping_rewards_redeem_to_savings_terms_title = 0x7f151d93;
+        public static int feature_shopping_rewards_redeem_to_savings_title = 0x7f151d94;
+        public static int feature_shopping_rewards_redeem_zero_state_cta = 0x7f151d95;
+        public static int feature_shopping_rewards_redeem_zero_state_description = 0x7f151d96;
+        public static int feature_shopping_rewards_redeem_zero_state_title = 0x7f151d97;
+        public static int feature_shopping_rewards_rewards_chip_activity = 0x7f151d98;
+        public static int feature_shopping_rewards_rewards_chip_earn = 0x7f151d99;
+        public static int feature_shopping_rewards_rewards_chip_redeem = 0x7f151d9a;
+        public static int feature_shopping_rewards_rewards_tab_activity = 0x7f151d9b;
+        public static int feature_shopping_rewards_rewards_tab_earn = 0x7f151d9c;
+        public static int feature_shopping_rewards_rewards_tab_redeem = 0x7f151d9d;
+        public static int feature_shopping_rewards_rewards_title = 0x7f151d9e;
+        public static int feature_shopping_rewards_saved_offers_section_cta_title = 0x7f151d9f;
+        public static int feature_shopping_rewards_saved_offers_section_title = 0x7f151da0;
+        public static int feature_shopping_rewards_see_full_terms_cta = 0x7f151da1;
+        public static int feature_shopping_rewards_share_contact_consent_description = 0x7f151da2;
+        public static int feature_shopping_rewards_share_contact_consent_title = 0x7f151da3;
+        public static int feature_shopping_rewards_shared_a11y_back = 0x7f151da4;
+        public static int feature_shopping_rewards_shared_a11y_close = 0x7f151da5;
+        public static int feature_shopping_rewards_shared_action_choose = 0x7f151da6;
+        public static int feature_shopping_rewards_shared_action_continue = 0x7f151da7;
+        public static int feature_shopping_rewards_shared_action_done = 0x7f151da8;
+        public static int feature_shopping_rewards_shared_action_learn_more = 0x7f151da9;
+        public static int feature_shopping_rewards_shared_action_redeem = 0x7f151daa;
+        public static int feature_shopping_rewards_shared_action_retry = 0x7f151dab;
+        public static int feature_shopping_rewards_summary_title = 0x7f151dac;
+        public static int feature_shopping_rewards_use_at_checkout_details_cta_title = 0x7f151dad;
+        public static int feature_shopping_rewards_use_at_checkout_details_message = 0x7f151dae;
+        public static int feature_shopping_rewards_use_at_checkout_message = 0x7f151daf;
+        public static int feature_shopping_rewards_use_at_checkout_title = 0x7f151db0;
+
+        private string() {
+        }
+    }
+
+    private R() {
+    }
+}

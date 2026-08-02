@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="top|center_horizontal"
+    orientation="vertical"
+    id="@+id/_2131429077_res_0x7f0b06d5"
+    layout_width="match_parent"
+    layout_height="wrap_content">
+    <LinearLayout
+        gravity="center_horizontal"
+        orientation="vertical"
+        id="@+id/_2131429070_res_0x7f0b06ce"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        layout_marginTop="24dp">
+        <ImageView
+            layout_gravity="center_horizontal"
+            id="@android:id/icon"
+            layout_width="wrap_content"
+            layout_height="wrap_content"
+            adjustViewBounds="true"
+            maxWidth="24dp"
+            maxHeight="24dp"/>
+        <androidx.appcompat.widget.DialogTitle
+            gravity="center"
+            id="@+id/_2131427529_res_0x7f0b00c9"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            style="?android:attr/windowTitleStyle"/>
+    </LinearLayout>
+    <android.widget.Space
+        id="@+id/_2131429069_res_0x7f0b06cd"
+        visibility="gone"
+        layout_width="match_parent"
+        layout_height="8dp"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131231850_res_0x7f08046a">
+    <target
+        name="green_path"
+        animation="@animator/_2130837580_res_0x7f02004c"/>
+</animated-vector>

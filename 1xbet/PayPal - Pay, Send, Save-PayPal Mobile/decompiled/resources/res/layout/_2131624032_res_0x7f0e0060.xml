@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar
+        id="@+id/_2131429072_res_0x7f0b06d0"
+        foregroundTint="@color/_2131100349_res_0x7f0602bd"
+        NOT_FOUND_0x8="0"
+        NOT_FOUND_0x9="0"
+        NOT_FOUND_0xc="0"
+        NOT_FOUND_0xd="@string/_2132093397_res_0x7f1529d5"
+        style="@style/_2132149259_res_0x7f16040b"/>
+    <com.google.android.material.tabs.TabLayout
+        id="@+id/_2131428962_res_0x7f0b0662"
+        paddingTop="4dp"
+        layout_width="0dp"
+        layout_height="wrap_content"
+        NOT_FOUND_0x7="0"
+        NOT_FOUND_0xa="0"
+        NOT_FOUND_0xb="@+id/_2131429072_res_0x7f0b06d0"
+        NOT_FOUND_0xe="3dp"
+        NOT_FOUND_0xf="1"
+        NOT_FOUND_0x10="?android:attr/textColorPrimary"
+        NOT_FOUND_0x11="?android:attr/textColorSecondary">
+        <com.google.android.material.tabs.TabItem
+            layout_width="wrap_content"
+            layout_height="wrap_content"
+            text="@string/_2132093464_res_0x7f152a18"/>
+        <com.google.android.material.tabs.TabItem
+            layout_width="wrap_content"
+            layout_height="wrap_content"
+            text="@string/_2132093463_res_0x7f152a17"/>
+    </com.google.android.material.tabs.TabLayout>
+    <FrameLayout
+        id="@+id/_2131427758_res_0x7f0b01ae"
+        layout_width="match_parent"
+        layout_height="0dp"
+        NOT_FOUND_0x6="0"
+        NOT_FOUND_0x7="0"
+        NOT_FOUND_0xa="0"
+        NOT_FOUND_0xb="@+id/_2131428962_res_0x7f0b0662"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

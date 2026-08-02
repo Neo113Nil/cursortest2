@@ -1,0 +1,23 @@
+package com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase;
+
+/* loaded from: classes15.dex */
+public final class GetDepositOptionsUseCase_Factory implements dagger.internal.Factory<com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase> {
+    private final dagger.internal.Provider<com.paypal.oslo.feature.wallet.fifo.addmoney.domain.repository.AddMoneyRepository> getHighSpeedVideoFpsRanges;
+
+    private GetDepositOptionsUseCase_Factory(dagger.internal.Provider<com.paypal.oslo.feature.wallet.fifo.addmoney.domain.repository.AddMoneyRepository> provider) {
+        this.getHighSpeedVideoFpsRanges = provider;
+    }
+
+    @Override // javax.inject.Provider, jakarta.inject.Provider
+    public final com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase get() {
+        return newInstance(this.getHighSpeedVideoFpsRanges.get());
+    }
+
+    public static com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase_Factory create(dagger.internal.Provider<com.paypal.oslo.feature.wallet.fifo.addmoney.domain.repository.AddMoneyRepository> provider) {
+        return new com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase_Factory(provider);
+    }
+
+    public static com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase newInstance(com.paypal.oslo.feature.wallet.fifo.addmoney.domain.repository.AddMoneyRepository addMoneyRepository) {
+        return new com.paypal.oslo.feature.wallet.fifo.addmoney.domain.usecase.GetDepositOptionsUseCase(addMoneyRepository);
+    }
+}

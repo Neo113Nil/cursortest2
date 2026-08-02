@@ -1,0 +1,243 @@
+package com.google.android.libraries.places.internal;
+
+/* loaded from: classes4.dex */
+class zzbfs extends java.util.AbstractMap {
+    private java.lang.Object[] zza;
+    private int zzb;
+    private boolean zzd;
+    private volatile com.google.android.libraries.places.internal.zzbfr zze;
+    private java.util.Map zzc = java.util.Collections.emptyMap();
+    private java.util.Map zzf = java.util.Collections.emptyMap();
+
+    private zzbfs() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: zzl, reason: merged with bridge method [inline-methods] */
+    public final java.lang.Object zzg(int i) {
+        zzh();
+        java.lang.Object value = ((com.google.android.libraries.places.internal.zzbfp) this.zza[i]).getValue();
+        java.lang.Object[] objArr = this.zza;
+        java.lang.System.arraycopy(objArr, i + 1, objArr, i, (this.zzb - i) - 1);
+        this.zzb--;
+        if (!this.zzc.isEmpty()) {
+            java.util.Iterator it = zzo().entrySet().iterator();
+            java.lang.Object[] objArr2 = this.zza;
+            int i2 = this.zzb;
+            java.util.Map.Entry entry = (java.util.Map.Entry) it.next();
+            objArr2[i2] = new com.google.android.libraries.places.internal.zzbfp(this, (java.lang.Comparable) entry.getKey(), entry.getValue());
+            this.zzb++;
+            it.remove();
+        }
+        return value;
+    }
+
+    private final int zzm(java.lang.Comparable comparable) {
+        int i = this.zzb;
+        int i2 = i - 1;
+        int i3 = 0;
+        if (i2 >= 0) {
+            int compareTo = comparable.compareTo(((com.google.android.libraries.places.internal.zzbfp) this.zza[i2]).zza());
+            if (compareTo > 0) {
+                return -(i + 1);
+            }
+            if (compareTo == 0) {
+                return i2;
+            }
+        }
+        while (i3 <= i2) {
+            int i4 = (i3 + i2) / 2;
+            int compareTo2 = comparable.compareTo(((com.google.android.libraries.places.internal.zzbfp) this.zza[i4]).zza());
+            if (compareTo2 < 0) {
+                i2 = i4 - 1;
+            } else {
+                if (compareTo2 <= 0) {
+                    return i4;
+                }
+                i3 = i4 + 1;
+            }
+        }
+        return -(i3 + 1);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* renamed from: zzn, reason: merged with bridge method [inline-methods] */
+    public final void zzh() {
+        if (this.zzd) {
+            throw new java.lang.UnsupportedOperationException();
+        }
+    }
+
+    private final java.util.SortedMap zzo() {
+        zzh();
+        if (this.zzc.isEmpty() && !(this.zzc instanceof java.util.TreeMap)) {
+            java.util.TreeMap treeMap = new java.util.TreeMap();
+            this.zzc = treeMap;
+            this.zzf = treeMap.descendingMap();
+        }
+        return (java.util.SortedMap) this.zzc;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final void clear() {
+        zzh();
+        if (this.zzb != 0) {
+            this.zza = null;
+            this.zzb = 0;
+        }
+        if (this.zzc.isEmpty()) {
+            return;
+        }
+        this.zzc.clear();
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final boolean containsKey(java.lang.Object obj) {
+        java.lang.Comparable comparable = (java.lang.Comparable) obj;
+        return zzm(comparable) >= 0 || this.zzc.containsKey(comparable);
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final java.util.Set entrySet() {
+        if (this.zze == null) {
+            this.zze = new com.google.android.libraries.places.internal.zzbfr(this, null);
+        }
+        return this.zze;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final boolean equals(java.lang.Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof com.google.android.libraries.places.internal.zzbfs)) {
+            return super.equals(obj);
+        }
+        com.google.android.libraries.places.internal.zzbfs zzbfsVar = (com.google.android.libraries.places.internal.zzbfs) obj;
+        int size = size();
+        if (size != zzbfsVar.size()) {
+            return false;
+        }
+        int i = this.zzb;
+        if (i != zzbfsVar.zzb) {
+            return entrySet().equals(zzbfsVar.entrySet());
+        }
+        for (int i2 = 0; i2 < i; i2++) {
+            if (!zzd(i2).equals(zzbfsVar.zzd(i2))) {
+                return false;
+            }
+        }
+        if (i != size) {
+            return this.zzc.equals(zzbfsVar.zzc);
+        }
+        return true;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final java.lang.Object get(java.lang.Object obj) {
+        java.lang.Comparable comparable = (java.lang.Comparable) obj;
+        int zzm = zzm(comparable);
+        return zzm >= 0 ? ((com.google.android.libraries.places.internal.zzbfp) this.zza[zzm]).getValue() : this.zzc.get(comparable);
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final int hashCode() {
+        int i = this.zzb;
+        int i2 = 0;
+        for (int i3 = 0; i3 < i; i3++) {
+            i2 += this.zza[i3].hashCode();
+        }
+        return this.zzc.size() > 0 ? i2 + this.zzc.hashCode() : i2;
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final java.lang.Object remove(java.lang.Object obj) {
+        zzh();
+        java.lang.Comparable comparable = (java.lang.Comparable) obj;
+        int zzm = zzm(comparable);
+        if (zzm >= 0) {
+            return zzg(zzm);
+        }
+        if (this.zzc.isEmpty()) {
+            return null;
+        }
+        return this.zzc.remove(comparable);
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    public final int size() {
+        return this.zzb + this.zzc.size();
+    }
+
+    public void zza() {
+        if (this.zzd) {
+            return;
+        }
+        this.zzc = this.zzc.isEmpty() ? java.util.Collections.emptyMap() : java.util.Collections.unmodifiableMap(this.zzc);
+        this.zzf = this.zzf.isEmpty() ? java.util.Collections.emptyMap() : java.util.Collections.unmodifiableMap(this.zzf);
+        this.zzd = true;
+    }
+
+    public final java.util.Map.Entry zzd(int i) {
+        if (i < this.zzb) {
+            return (com.google.android.libraries.places.internal.zzbfp) this.zza[i];
+        }
+        throw new java.lang.ArrayIndexOutOfBoundsException(i);
+    }
+
+    public final java.lang.Iterable zze() {
+        return this.zzc.isEmpty() ? java.util.Collections.emptySet() : this.zzc.entrySet();
+    }
+
+    @Override // java.util.AbstractMap, java.util.Map
+    /* renamed from: zzf, reason: merged with bridge method [inline-methods] */
+    public final java.lang.Object put(java.lang.Comparable comparable, java.lang.Object obj) {
+        zzh();
+        int zzm = zzm(comparable);
+        if (zzm >= 0) {
+            return ((com.google.android.libraries.places.internal.zzbfp) this.zza[zzm]).setValue(obj);
+        }
+        zzh();
+        if (this.zza == null) {
+            this.zza = new java.lang.Object[16];
+        }
+        int i = -(zzm + 1);
+        if (i >= 16) {
+            return zzo().put(comparable, obj);
+        }
+        if (this.zzb == 16) {
+            com.google.android.libraries.places.internal.zzbfp zzbfpVar = (com.google.android.libraries.places.internal.zzbfp) this.zza[15];
+            this.zzb = 15;
+            zzo().put(zzbfpVar.zza(), zzbfpVar.getValue());
+        }
+        java.lang.Object[] objArr = this.zza;
+        int length = objArr.length;
+        java.lang.System.arraycopy(objArr, i, objArr, i + 1, 15 - i);
+        this.zza[i] = new com.google.android.libraries.places.internal.zzbfp(this, comparable, obj);
+        this.zzb++;
+        return null;
+    }
+
+    /* synthetic */ zzbfs(byte[] bArr) {
+    }
+
+    final /* synthetic */ java.util.Map zzk() {
+        return this.zzc;
+    }
+
+    final /* synthetic */ int zzj() {
+        return this.zzb;
+    }
+
+    final /* synthetic */ java.lang.Object[] zzi() {
+        return this.zza;
+    }
+
+    public final int zzc() {
+        return this.zzb;
+    }
+
+    public final boolean zzb() {
+        return this.zzd;
+    }
+}

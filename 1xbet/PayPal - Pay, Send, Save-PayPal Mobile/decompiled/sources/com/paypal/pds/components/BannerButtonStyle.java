@@ -1,0 +1,11 @@
+package com.paypal.pds.components;
+
+@kotlin.Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÂ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Lcom/paypal/pds/components/BannerButtonStyle;", "Lcom/paypal/pds/components/ButtonStyle;", "<init>", "()V"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes16.dex */
+final class BannerButtonStyle extends com.paypal.pds.components.ButtonStyle {
+    public static final com.paypal.pds.components.BannerButtonStyle INSTANCE = new com.paypal.pds.components.BannerButtonStyle();
+
+    private BannerButtonStyle() {
+        super(com.paypal.pds.core.Color.ContentMuted.INSTANCE, com.paypal.pds.core.Color.Transparent.INSTANCE, com.paypal.pds.core.Color.Unspecified.INSTANCE, com.paypal.pds.core.Color.Unspecified.INSTANCE, null, null, 0.0f, 112, null);
+    }
+}

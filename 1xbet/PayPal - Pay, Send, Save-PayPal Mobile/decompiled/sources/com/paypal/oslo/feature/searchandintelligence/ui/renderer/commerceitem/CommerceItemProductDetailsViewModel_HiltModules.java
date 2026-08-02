@@ -1,0 +1,31 @@
+package com.paypal.oslo.feature.searchandintelligence.ui.renderer.commerceitem;
+
+/* loaded from: classes14.dex */
+public final class CommerceItemProductDetailsViewModel_HiltModules {
+    private CommerceItemProductDetailsViewModel_HiltModules() {
+    }
+
+    @dagger.Module
+    public static abstract class BindsModule {
+        @dagger.multibindings.LazyClassKey(com.paypal.oslo.feature.searchandintelligence.ui.renderer.commerceitem.CommerceItemProductDetailsViewModel.class)
+        @dagger.Binds
+        @dagger.multibindings.IntoMap
+        public abstract androidx.view.ViewModel binds(com.paypal.oslo.feature.searchandintelligence.ui.renderer.commerceitem.CommerceItemProductDetailsViewModel commerceItemProductDetailsViewModel);
+
+        private BindsModule() {
+        }
+    }
+
+    @dagger.Module
+    public static final class KeyModule {
+        @dagger.Provides
+        @dagger.multibindings.LazyClassKey(com.paypal.oslo.feature.searchandintelligence.ui.renderer.commerceitem.CommerceItemProductDetailsViewModel.class)
+        @dagger.multibindings.IntoMap
+        public static boolean provide() {
+            return true;
+        }
+
+        private KeyModule() {
+        }
+    }
+}

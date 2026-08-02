@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_2132148312_res_0x7f160058" parent="@style/_2132148424_res_0x7f1600c8">
+    </style>
+    <style name="_2132148319_res_0x7f16005f" parent="@style/_2132148425_res_0x7f1600c9">
+    </style>
+    <style name="_2132148396_res_0x7f1600ac" parent="@style/_2132149145_res_0x7f160399">
+        <item name="android:backgroundDimAmount">@dimen/_2131165683_res_0x7f0701f3</item>
+        <item name="android:checkedTextViewStyle">@style/_2132149553_res_0x7f160531</item>
+        <item name="android:dialogCornerRadius">@null</item>
+        <item name="_2130968625_res_0x7f040031">@style/_2132148617_res_0x7f160189</item>
+        <item name="_2130968732_res_0x7f04009c">@style/_2132149545_res_0x7f160529</item>
+        <item name="_2130968733_res_0x7f04009d">@style/_2132149545_res_0x7f160529</item>
+        <item name="_2130968734_res_0x7f04009e">@style/_2132149546_res_0x7f16052a</item>
+        <item name="_2130968735_res_0x7f04009f">@style/_2132149545_res_0x7f160529</item>
+        <item name="_2130969507_res_0x7f0403a3">@style/_2132148618_res_0x7f16018a</item>
+        <item name="_2130969508_res_0x7f0403a4">@integer/_2131492980_res_0x7f0c0074</item>
+    </style>
+    <style name="_2132148424_res_0x7f1600c8" parent="@style/_2132148421_res_0x7f1600c5">
+        <item name="_2130969003_res_0x7f0401ab">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="_2132148425_res_0x7f1600c9" parent="@style/_2132148422_res_0x7f1600c6">
+        <item name="_2130969003_res_0x7f0401ab">?android:attr/dialogCornerRadius</item>
+    </style>
+    <style name="_2132148561_res_0x7f160151" parent="@android:style/Theme.DeviceDefault.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowElevation">0dp</item>
+        <item name="android:windowClipToOutline">false</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">@integer/_2131492915_res_0x7f0c0033</item>
+    </style>
+    <style name="_2132148592_res_0x7f160170" parent="">
+        <item name="android:textSize">@dimen/_2131165914_res_0x7f0702da</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131101106_res_0x7f0605b2</item>
+        <item name="android:shadowColor">#33000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineHeight">@dimen/_2131165913_res_0x7f0702d9</item>
+    </style>
+    <style name="_2132148594_res_0x7f160172" parent="">
+        <item name="android:textSize">@dimen/_2131165914_res_0x7f0702da</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131101106_res_0x7f0605b2</item>
+        <item name="android:shadowColor">#33000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:lineHeight">@dimen/_2131165913_res_0x7f0702d9</item>
+    </style>
+    <style name="_2132148693_res_0x7f1601d5" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166264_res_0x7f070438</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166265_res_0x7f070439</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166265_res_0x7f070439</item>
+    </style>
+    <style name="_2132148694_res_0x7f1601d6" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166264_res_0x7f070438</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166265_res_0x7f070439</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166265_res_0x7f070439</item>
+    </style>
+    <style name="_2132148695_res_0x7f1601d7" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166266_res_0x7f07043a</item>
+        <item name="android:textColor">?attr/_2130969853_res_0x7f0404fd</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296279_res_0x7f090017</item>
+        <item name="android:lineHeight">@dimen/_2131166267_res_0x7f07043b</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166267_res_0x7f07043b</item>
+    </style>
+    <style name="_2132148696_res_0x7f1601d8" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166266_res_0x7f07043a</item>
+        <item name="android:textColor">?attr/_2130969853_res_0x7f0404fd</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/_2131296279_res_0x7f090017</item>
+        <item name="android:lineHeight">@dimen/_2131166267_res_0x7f07043b</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166267_res_0x7f07043b</item>
+    </style>
+    <style name="_2132148697_res_0x7f1601d9" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166268_res_0x7f07043c</item>
+        <item name="android:textColor">?attr/_2130969853_res_0x7f0404fd</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166269_res_0x7f07043d</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166269_res_0x7f07043d</item>
+    </style>
+    <style name="_2132148698_res_0x7f1601da" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166268_res_0x7f07043c</item>
+        <item name="android:textColor">?attr/_2130969853_res_0x7f0404fd</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166269_res_0x7f07043d</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166269_res_0x7f07043d</item>
+    </style>
+    <style name="_2132148699_res_0x7f1601db" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166268_res_0x7f07043c</item>
+        <item name="android:textColor">?attr/_2130969853_res_0x7f0404fd</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166269_res_0x7f07043d</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166269_res_0x7f07043d</item>
+    </style>
+    <style name="_2132148700_res_0x7f1601dc" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166270_res_0x7f07043e</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166271_res_0x7f07043f</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166271_res_0x7f07043f</item>
+    </style>
+    <style name="_2132148701_res_0x7f1601dd" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166270_res_0x7f07043e</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166271_res_0x7f07043f</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166271_res_0x7f07043f</item>
+    </style>
+    <style name="_2132148702_res_0x7f1601de" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166270_res_0x7f07043e</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166271_res_0x7f07043f</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166271_res_0x7f07043f</item>
+    </style>
+    <style name="_2132148703_res_0x7f1601df" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166270_res_0x7f07043e</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166271_res_0x7f07043f</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166271_res_0x7f07043f</item>
+    </style>
+    <style name="_2132148704_res_0x7f1601e0" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166272_res_0x7f070440</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166273_res_0x7f070441</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166273_res_0x7f070441</item>
+    </style>
+    <style name="_2132148705_res_0x7f1601e1" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166272_res_0x7f070440</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166273_res_0x7f070441</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166273_res_0x7f070441</item>
+    </style>
+    <style name="_2132148706_res_0x7f1601e2" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166272_res_0x7f070440</item>
+        <item name="android:textColor">?attr/_2130969852_res_0x7f0404fc</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166273_res_0x7f070441</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166273_res_0x7f070441</item>
+    </style>
+    <style name="_2132148707_res_0x7f1601e3" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166275_res_0x7f070443</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166276_res_0x7f070444</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166276_res_0x7f070444</item>
+    </style>
+    <style name="_2132148708_res_0x7f1601e4" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166275_res_0x7f070443</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166276_res_0x7f070444</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166276_res_0x7f070444</item>
+    </style>
+    <style name="_2132148709_res_0x7f1601e5" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166275_res_0x7f070443</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166276_res_0x7f070444</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166276_res_0x7f070444</item>
+    </style>
+    <style name="_2132148710_res_0x7f1601e6" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166277_res_0x7f070445</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166278_res_0x7f070446</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166278_res_0x7f070446</item>
+    </style>
+    <style name="_2132148711_res_0x7f1601e7" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166277_res_0x7f070445</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166278_res_0x7f070446</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166278_res_0x7f070446</item>
+    </style>
+    <style name="_2132148712_res_0x7f1601e8" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166277_res_0x7f070445</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166278_res_0x7f070446</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166278_res_0x7f070446</item>
+    </style>
+    <style name="_2132148713_res_0x7f1601e9" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166279_res_0x7f070447</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166280_res_0x7f070448</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166280_res_0x7f070448</item>
+    </style>
+    <style name="_2132148714_res_0x7f1601ea" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166279_res_0x7f070447</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166280_res_0x7f070448</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166280_res_0x7f070448</item>
+    </style>
+    <style name="_2132148715_res_0x7f1601eb" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166279_res_0x7f070447</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166280_res_0x7f070448</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166280_res_0x7f070448</item>
+    </style>
+    <style name="_2132148716_res_0x7f1601ec" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166281_res_0x7f070449</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166282_res_0x7f07044a</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166282_res_0x7f07044a</item>
+    </style>
+    <style name="_2132148717_res_0x7f1601ed" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166281_res_0x7f070449</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166282_res_0x7f07044a</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166282_res_0x7f07044a</item>
+    </style>
+    <style name="_2132148718_res_0x7f1601ee" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166281_res_0x7f070449</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166282_res_0x7f07044a</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166282_res_0x7f07044a</item>
+    </style>
+    <style name="_2132148719_res_0x7f1601ef" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166283_res_0x7f07044b</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166284_res_0x7f07044c</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166284_res_0x7f07044c</item>
+    </style>
+    <style name="_2132148720_res_0x7f1601f0" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166283_res_0x7f07044b</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296276_res_0x7f090014</item>
+        <item name="android:lineHeight">@dimen/_2131166284_res_0x7f07044c</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166284_res_0x7f07044c</item>
+    </style>
+    <style name="_2132148721_res_0x7f1601f1" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166283_res_0x7f07044b</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166284_res_0x7f07044c</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166284_res_0x7f07044c</item>
+    </style>
+    <style name="_2132148722_res_0x7f1601f2" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166285_res_0x7f07044d</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/_2131296277_res_0x7f090015</item>
+        <item name="android:lineHeight">@dimen/_2131166286_res_0x7f07044e</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166286_res_0x7f07044e</item>
+    </style>
+    <style name="_2132148723_res_0x7f1601f3" parent="@style/_2132148692_res_0x7f1601d4">
+        <item name="android:textSize">@dimen/_2131166285_res_0x7f07044d</item>
+        <item name="android:textColor">?attr/_2130969855_res_0x7f0404ff</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:fontFamily">@font/_2131296278_res_0x7f090016</item>
+        <item name="android:lineHeight">@dimen/_2131166286_res_0x7f07044e</item>
+        <item name="_2130969411_res_0x7f040343">@dimen/_2131166286_res_0x7f07044e</item>
+    </style>
+    <style name="_2132148926_res_0x7f1602be" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296268_res_0x7f09000c</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296268_res_0x7f09000c</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148930_res_0x7f1602c2" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296265_res_0x7f090009</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">28sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296265_res_0x7f090009</item>
+        <item name="_2130969411_res_0x7f040343">28sp</item>
+    </style>
+    <style name="_2132148932_res_0x7f1602c4" parent="">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296266_res_0x7f09000a</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296266_res_0x7f09000a</item>
+        <item name="_2130969411_res_0x7f040343">24sp</item>
+    </style>
+    <style name="_2132148934_res_0x7f1602c6" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296269_res_0x7f09000d</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296269_res_0x7f09000d</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148935_res_0x7f1602c7" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296269_res_0x7f09000d</item>
+        <item name="android:letterSpacing">0.0167</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296269_res_0x7f09000d</item>
+        <item name="_2130969411_res_0x7f040343">16sp</item>
+    </style>
+    <style name="_2132148937_res_0x7f1602c9" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296265_res_0x7f090009</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296265_res_0x7f090009</item>
+        <item name="_2130969411_res_0x7f040343">24sp</item>
+    </style>
+    <style name="_2132148938_res_0x7f1602ca" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296268_res_0x7f09000c</item>
+        <item name="android:letterSpacing">0.0063</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296268_res_0x7f09000c</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148939_res_0x7f1602cb" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/_2131296269_res_0x7f09000d</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@font/_2131296269_res_0x7f09000d</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148940_res_0x7f1602cc" parent="@style/_2132148862_res_0x7f16027e">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="android:letterSpacing">0.0312</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="_2130969411_res_0x7f040343">24sp</item>
+    </style>
+    <style name="_2132148941_res_0x7f1602cd" parent="@style/_2132148861_res_0x7f16027d">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="android:letterSpacing">0.0179</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148942_res_0x7f1602ce" parent="@style/_2132148864_res_0x7f160280">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="android:letterSpacing">0.0333</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092362_res_0x7f1525ca</item>
+        <item name="_2130969411_res_0x7f040343">16sp</item>
+    </style>
+    <style name="_2132148943_res_0x7f1602cf" parent="@style/_2132148867_res_0x7f160283">
+        <item name="android:textSize">57sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">-0.0044</item>
+        <item name="android:lineHeight">64sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">64sp</item>
+    </style>
+    <style name="_2132148944_res_0x7f1602d0" parent="@style/_2132148866_res_0x7f160282">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">52sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">52sp</item>
+    </style>
+    <style name="_2132148945_res_0x7f1602d1" parent="@style/_2132148865_res_0x7f160281">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">44sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">44sp</item>
+    </style>
+    <style name="_2132148946_res_0x7f1602d2" parent="@style/_2132148865_res_0x7f160281">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">40sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">40sp</item>
+    </style>
+    <style name="_2132148947_res_0x7f1602d3" parent="@style/_2132148869_res_0x7f160285">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">36sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">36sp</item>
+    </style>
+    <style name="_2132148948_res_0x7f1602d4" parent="@style/_2132148886_res_0x7f160296">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">32sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">32sp</item>
+    </style>
+    <style name="_2132148949_res_0x7f1602d5" parent="@style/_2132148861_res_0x7f16027d">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132148950_res_0x7f1602d6" parent="@style/_2132148864_res_0x7f160280">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="android:letterSpacing">0.0417</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="_2130969411_res_0x7f040343">16sp</item>
+    </style>
+    <style name="_2132148951_res_0x7f1602d7" parent="@style/_2132148864_res_0x7f160280">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="android:letterSpacing">0.0455</item>
+        <item name="android:lineHeight">16sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="_2130969411_res_0x7f040343">16sp</item>
+    </style>
+    <style name="_2132148952_res_0x7f1602d8" parent="@style/_2132148886_res_0x7f160296">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineHeight">28sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092360_res_0x7f1525c8</item>
+        <item name="_2130969411_res_0x7f040343">28sp</item>
+    </style>
+    <style name="_2132148953_res_0x7f1602d9" parent="@style/_2132148884_res_0x7f160294">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="android:letterSpacing">0.0094</item>
+        <item name="android:lineHeight">24sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="_2130969411_res_0x7f040343">24sp</item>
+    </style>
+    <style name="_2132148954_res_0x7f1602da" parent="@style/_2132148884_res_0x7f160294">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="android:lineHeight">20sp</item>
+        <item name="_2130969178_res_0x7f04025a">@string/_2132092361_res_0x7f1525c9</item>
+        <item name="_2130969411_res_0x7f040343">20sp</item>
+    </style>
+    <style name="_2132149350_res_0x7f160466" parent="@style/_2132149526_res_0x7f160516">
+        <item name="android:background">?attr/_2130968902_res_0x7f040146</item>
+        <item name="android:stateListAnimator">@animator/_2130837516_res_0x7f02000c</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="_2130969406_res_0x7f04033e">true</item>
+        <item name="_2130969407_res_0x7f04033f">?attr/_2130968904_res_0x7f040148</item>
+    </style>
+    <style name="_2132149361_res_0x7f160471" parent="@style/_2132148498_res_0x7f160112">
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+    </style>
+    <style name="_2132149484_res_0x7f1604ec" parent="@android:style/Widget">
+        <item name="android:textAppearance">@style/_2132148970_res_0x7f1602ea</item>
+        <item name="android:minHeight">@dimen/_2131165793_res_0x7f070261</item>
+        <item name="android:paddingStart">@dimen/_2131165797_res_0x7f070265</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="_2130968672_res_0x7f040060">?attr/_2130968905_res_0x7f040149</item>
+        <item name="_2130968992_res_0x7f0401a0">true</item>
+        <item name="_2130968995_res_0x7f0401a3">true</item>
+        <item name="_2130969059_res_0x7f0401e3">@dimen/_2131165792_res_0x7f070260</item>
+        <item name="_2130969078_res_0x7f0401f6">true</item>
+        <item name="_2130969226_res_0x7f04028a">false</item>
+        <item name="_2130969550_res_0x7f0403ce">@style/_2132149207_res_0x7f1603d7</item>
+        <item name="_2130969556_res_0x7f0403d4">@dimen/_2131165793_res_0x7f070261</item>
+        <item name="_2130969976_res_0x7f040578">?attr/_2130969983_res_0x7f04057f</item>
+        <item name="_2130969984_res_0x7f040580">@style/_2132148848_res_0x7f160270</item>
+    </style>
+    <style name="_2132149515_res_0x7f16050b" parent="@style/_2132149333_res_0x7f160455">
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
+        <item name="_2130968933_res_0x7f040165">0dp</item>
+        <item name="_2130970076_res_0x7f0405dc">?attr/_2130970190_res_0x7f04064e</item>
+        <item name="_2130970280_res_0x7f0406a8">?attr/_2130970189_res_0x7f04064d</item>
+    </style>
+</resources>

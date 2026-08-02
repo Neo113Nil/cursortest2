@@ -1,0 +1,18 @@
+package com.google.gson.stream;
+
+/* loaded from: classes4.dex */
+public final class MalformedJsonException extends java.io.IOException {
+    private static final long serialVersionUID = 1;
+
+    public MalformedJsonException(java.lang.String str) {
+        super(str);
+    }
+
+    public MalformedJsonException(java.lang.String str, java.lang.Throwable th) {
+        super(str, th);
+    }
+
+    public MalformedJsonException(java.lang.Throwable th) {
+        super(th);
+    }
+}

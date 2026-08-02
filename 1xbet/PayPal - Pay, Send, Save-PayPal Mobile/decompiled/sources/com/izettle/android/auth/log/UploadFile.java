@@ -1,0 +1,7 @@
+package com.izettle.android.auth.log;
+
+@kotlin.Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0010\u0003\n\u0002\b\u0002\bà\u0080\u0001\u0018\u00002\u00020\u0001J>\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b0\t2\b\u0010\u0003\u001a\u0004\u0018\u00010\u00022\u0006\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00022\u0006\u0010\b\u001a\u00020\u0007H¦\u0002¢\u0006\u0004\b\f\u0010\r"}, d2 = {"Lcom/izettle/android/auth/log/UploadFile;", "", "", com.paypal.oslo.feature.identity.challenges.stepupwebview.StepupWebViewConstants.HeaderFields.ACCESS_TOKEN, "Ljava/io/File;", "file", "uploadedFilename", "Lcom/izettle/android/net/ContentType;", org.bouncycastle.cms.CMSAttributeTableGenerator.CONTENT_TYPE, "Lcom/izettle/android/core/data/result/Result;", "", "", "invoke", "(Ljava/lang/String;Ljava/io/File;Ljava/lang/String;Lcom/izettle/android/net/ContentType;)Lcom/izettle/android/core/data/result/Result;"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* loaded from: classes9.dex */
+public interface UploadFile {
+    com.izettle.android.core.data.result.Result<kotlin.Unit, java.lang.Throwable> invoke(java.lang.String accessToken, java.io.File file, java.lang.String uploadedFilename, com.izettle.android.net.ContentType contentType);
+}

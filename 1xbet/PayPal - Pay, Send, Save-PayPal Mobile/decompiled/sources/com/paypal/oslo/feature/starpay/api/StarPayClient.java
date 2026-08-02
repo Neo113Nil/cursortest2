@@ -1,0 +1,45 @@
+package com.paypal.oslo.feature.starpay.api;
+
+@kotlin.Metadata(d1 = {"\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\bf\u0018\u0000 62\u00020\u0001:\u00016JC\u0010\u000b\u001a\u00020\u000722\u0010\n\u001a.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005j\u0002`\b\u0012\u0004\u0012\u00020\u00070\u0002j\u0002`\tH&¢\u0006\u0004\b\u000b\u0010\fJW\u0010\u000b\u001a\u00020\u00072\u0012\u0010\u0010\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000f0\r22\u0010\n\u001a.\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005j\u0002`\b\u0012\u0004\u0012\u00020\u00070\u0002j\u0002`\tH&¢\u0006\u0004\b\u000b\u0010\u0011J\u0017\u0010\u0014\u001a\u00020\u00072\u0006\u0010\u0013\u001a\u00020\u0012H&¢\u0006\u0004\b\u0014\u0010\u0015J'\u0010\u001b\u001a\u00020\u00072\u0006\u0010\u0017\u001a\u00020\u00162\u000e\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00190\u0018H&¢\u0006\u0004\b\u001b\u0010\u001cJ#\u0010\u001e\u001a\u00020\u00072\u0012\u0010\u001a\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00190\u001d0\u0018H&¢\u0006\u0004\b\u001e\u0010\u001fJ\u001d\u0010!\u001a\u00020\u00072\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020 0\u0018H&¢\u0006\u0004\b!\u0010\u001fJ\u000f\u0010\"\u001a\u00020\u0007H&¢\u0006\u0004\b\"\u0010#J,\u0010(\u001a\u0011\u0012\u0004\u0012\u00020\u00070$j\u0002`&¢\u0006\u0002\b'2\f\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00070$H&¢\u0006\u0004\b(\u0010)J,\u0010*\u001a\u0011\u0012\u0004\u0012\u00020\u00070$j\u0002`&¢\u0006\u0002\b'2\f\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00070$H&¢\u0006\u0004\b*\u0010)J+\u00102\u001a\u000e\u0012\u0004\u0012\u000200\u0012\u0004\u0012\u0002010/2\u0006\u0010,\u001a\u00020+2\u0006\u0010.\u001a\u00020-H&¢\u0006\u0004\b2\u00103J\u0017\u00104\u001a\u00020\u00072\u0006\u0010\u0017\u001a\u00020\u0016H&¢\u0006\u0004\b4\u00105À\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/starpay/api/StarPayClient;", "Lcom/paypal/oslo/feature/starpay/api/LoggingAttributesProvider;", "Lkotlin/Function2;", "Lcom/paypal/oslo/feature/starpay/api/Result;", "Lcom/paypal/oslo/feature/starpay/api/WalletData;", "Lkotlin/Function1;", "Lcom/paypal/oslo/feature/starpay/api/ProvisioningMetadata;", "", "Lcom/paypal/oslo/feature/starpay/api/OnProvisioningDataReceivedCallback;", "Lcom/paypal/oslo/feature/starpay/api/OnWalletDataRetrievedCallback;", "onWalletDataRetrievedCallback", "initiatePushProvisioning", "(Lkotlin/jvm/functions/Function2;)V", "Landroidx/activity/compose/ManagedActivityResultLauncher;", "Landroidx/activity/result/IntentSenderRequest;", "Landroidx/activity/result/ActivityResult;", com.datadog.android.profiling.DdProfilingContentProvider.TELEMETRY_APP_START_INFO_LAUNCHER, "(Landroidx/activity/compose/ManagedActivityResultLauncher;Lkotlin/jvm/functions/Function2;)V", "Lcom/paypal/oslo/feature/starpay/api/ResumeProvisioningMetaData;", "resumeProvisioningMetaData", "resumePushProvisioning", "(Lcom/paypal/oslo/feature/starpay/api/ResumeProvisioningMetaData;)V", "Lcom/paypal/oslo/feature/starpay/api/TokenMatchPolicy;", "tokenMatchPolicy", "Lcom/paypal/oslo/feature/starpay/api/OnCompleteListener;", "Lcom/paypal/oslo/feature/starpay/api/Token;", "onCompleteListener", "findTokenInWallet", "(Lcom/paypal/oslo/feature/starpay/api/TokenMatchPolicy;Lcom/paypal/oslo/feature/starpay/api/OnCompleteListener;)V", "", "fetchProvisionedTokens", "(Lcom/paypal/oslo/feature/starpay/api/OnCompleteListener;)V", "Lcom/paypal/oslo/feature/starpay/api/WalletStatus;", "checkWalletStatus", "setupWallet", "()V", "Lkotlin/Function0;", "onClick", "Lcom/paypal/oslo/feature/starpay/api/AddToWalletButtonComposable;", "Landroidx/compose/runtime/Composable;", "getAddToWalletButton", "(Lkotlin/jvm/functions/Function0;)Lkotlin/jvm/functions/Function2;", "getAddToWalletButtonCondensed", "", "resultCode", "Landroid/content/Intent;", com.google.firebase.messaging.Constants.ScionAnalytics.MessageType.DATA_MESSAGE, "Larrow/core/Either;", "Lcom/paypal/oslo/feature/starpay/api/Error;", "Lcom/paypal/oslo/feature/starpay/api/PushTokenResult;", "getPushProvisioningResult", "(ILandroid/content/Intent;)Larrow/core/Either;", "viewTokenInDeviceWallet", "(Lcom/paypal/oslo/feature/starpay/api/TokenMatchPolicy;)V", "Companion"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes15.dex */
+public interface StarPayClient extends com.paypal.oslo.feature.starpay.api.LoggingAttributesProvider {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final com.paypal.oslo.feature.starpay.api.StarPayClient.Companion INSTANCE = com.paypal.oslo.feature.starpay.api.StarPayClient.Companion.getHighSpeedVideoFpsRangesFor;
+    public static final int REQUEST_CODE_GPAY_PUSH_TOKENIZE = 100;
+    public static final int REQUEST_CODE_GPAY_SETUP_WALLET = 101;
+    public static final int REQUEST_CODE_GPAY_TOKENIZE = 1003;
+
+    void checkWalletStatus(com.paypal.oslo.feature.starpay.api.OnCompleteListener<com.paypal.oslo.feature.starpay.api.WalletStatus> onCompleteListener);
+
+    void fetchProvisionedTokens(com.paypal.oslo.feature.starpay.api.OnCompleteListener<java.util.List<com.paypal.oslo.feature.starpay.api.Token>> onCompleteListener);
+
+    void findTokenInWallet(com.paypal.oslo.feature.starpay.api.TokenMatchPolicy tokenMatchPolicy, com.paypal.oslo.feature.starpay.api.OnCompleteListener<com.paypal.oslo.feature.starpay.api.Token> onCompleteListener);
+
+    kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> getAddToWalletButton(kotlin.jvm.functions.Function0<kotlin.Unit> onClick);
+
+    kotlin.jvm.functions.Function2<androidx.compose.runtime.Composer, java.lang.Integer, kotlin.Unit> getAddToWalletButtonCondensed(kotlin.jvm.functions.Function0<kotlin.Unit> onClick);
+
+    arrow.core.Either<com.paypal.oslo.feature.starpay.api.Error, com.paypal.oslo.feature.starpay.api.PushTokenResult> getPushProvisioningResult(int resultCode, android.content.Intent data);
+
+    void initiatePushProvisioning(androidx.view.compose.ManagedActivityResultLauncher<androidx.view.result.IntentSenderRequest, androidx.view.result.ActivityResult> launcher, kotlin.jvm.functions.Function2<? super com.paypal.oslo.feature.starpay.api.Result<com.paypal.oslo.feature.starpay.api.WalletData>, ? super kotlin.jvm.functions.Function1<? super com.paypal.oslo.feature.starpay.api.ProvisioningMetadata, kotlin.Unit>, kotlin.Unit> onWalletDataRetrievedCallback);
+
+    void initiatePushProvisioning(kotlin.jvm.functions.Function2<? super com.paypal.oslo.feature.starpay.api.Result<com.paypal.oslo.feature.starpay.api.WalletData>, ? super kotlin.jvm.functions.Function1<? super com.paypal.oslo.feature.starpay.api.ProvisioningMetadata, kotlin.Unit>, kotlin.Unit> onWalletDataRetrievedCallback);
+
+    void resumePushProvisioning(com.paypal.oslo.feature.starpay.api.ResumeProvisioningMetaData resumeProvisioningMetaData);
+
+    void setupWallet();
+
+    void viewTokenInDeviceWallet(com.paypal.oslo.feature.starpay.api.TokenMatchPolicy tokenMatchPolicy);
+
+    @kotlin.Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0014\u0010\u0005\u001a\u00020\u00048\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u00048\u0006X\u0086T¢\u0006\u0006\n\u0004\b\u0007\u0010\u0006R\u0014\u0010\b\u001a\u00020\u00048\u0006X\u0086T¢\u0006\u0006\n\u0004\b\b\u0010\u0006"}, d2 = {"Lcom/paypal/oslo/feature/starpay/api/StarPayClient$Companion;", "", "<init>", "()V", "", "REQUEST_CODE_GPAY_PUSH_TOKENIZE", com.visa.cbp.getEncExpo.warmup, "REQUEST_CODE_GPAY_SETUP_WALLET", "REQUEST_CODE_GPAY_TOKENIZE"}, k = 1, mv = {2, 3, 0}, xi = 48)
+    public static final class Companion {
+        public static final int REQUEST_CODE_GPAY_PUSH_TOKENIZE = 100;
+        public static final int REQUEST_CODE_GPAY_SETUP_WALLET = 101;
+        public static final int REQUEST_CODE_GPAY_TOKENIZE = 1003;
+        static final /* synthetic */ com.paypal.oslo.feature.starpay.api.StarPayClient.Companion getHighSpeedVideoFpsRangesFor = new com.paypal.oslo.feature.starpay.api.StarPayClient.Companion();
+
+        private Companion() {
+        }
+    }
+}

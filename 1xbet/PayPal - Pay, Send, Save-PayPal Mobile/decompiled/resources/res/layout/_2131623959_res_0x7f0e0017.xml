@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.ActionBarOverlayLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131427807_res_0x7f0b01df"
+    fitsSystemWindows="true"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <include layout="@layout/_2131623956_res_0x7f0e0014"/>
+    <androidx.appcompat.widget.ActionBarContainer
+        gravity="top"
+        id="@+id/_2131427437_res_0x7f0b006d"
+        layout_width="match_parent"
+        layout_height="wrap_content"
+        layout_alignParentTop="true"
+        touchscreenBlocksFocus="true"
+        keyboardNavigationCluster="true"
+        style="?attr/_2130968584_res_0x7f040008">
+        <androidx.appcompat.widget.Toolbar
+            id="@+id/_2131427435_res_0x7f0b006b"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            NOT_FOUND_0xa="@string/_2132082815_res_0x7f15007f"
+            style="?attr/_2130970287_res_0x7f0406af"/>
+        <androidx.appcompat.widget.ActionBarContextView
+            theme="?attr/_2130968608_res_0x7f040020"
+            id="@+id/_2131427455_res_0x7f0b007f"
+            visibility="gone"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            style="?attr/_2130968607_res_0x7f04001f"/>
+    </androidx.appcompat.widget.ActionBarContainer>
+</androidx.appcompat.widget.ActionBarOverlayLayout>

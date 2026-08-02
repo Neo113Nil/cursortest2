@@ -1,0 +1,54 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoHubDestination",
+      "paths": ["/myaccount/crypto"],
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoOnboardingDestination",
+      "paths": ["/mobile-app/myaccount/crypto/onboarding"],
+      "parameters": [
+        {
+          "propertyName": "product",
+          "urlParamName": "product",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoQuickBuyDestination",
+      "paths": ["/myaccount/crypto/quick/buy"],
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoDetailsDestination",
+      "paths": ["/myaccount/crypto/{assetSymbol}"],
+      "parameters": [
+        {
+          "propertyName": "assetSymbol",
+          "urlParamName": "assetSymbol",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": true
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoCelsiusClaimCodeDestination",
+      "paths": ["/myaccount/crypto/redeem/celsius"],
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.cryptocurrency.api.navigation.CryptoRecurringPurchasesDestination",
+      "paths": ["/myaccount/crypto/recurring-purchases"],
+      "parameters": [
+      ]
+    }
+  ]
+}

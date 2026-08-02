@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="400"
+        android:valueFrom="M 43 10 L 39.5 14.5 L 36 19 M 36 19 L 32.5 15"
+        android:valueTo="M 43 9.5 L 38 14.5 L 33 19.5 M 43 19.5 L 33 9.5"
+        android:valueType="pathType"
+        android:propertyName="pathData"/>
+    <objectAnimator
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:duration="300"
+        android:valueFrom="@color/_2131100348_res_0x7f0602bc"
+        android:valueTo="@color/_2131100357_res_0x7f0602c5"
+        android:valueType="colorType"
+        android:propertyName="strokeColor"/>
+</set>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    gravity="end"
+    orientation="horizontal"
+    id="@+id/_2131427795_res_0x7f0b01d3"
+    paddingRight="8dp"
+    layout_width="match_parent"
+    layout_height="52dp"
+    paddingEnd="8dp">
+    <Button
+        layout_gravity="center_vertical"
+        id="@+id/_2131427682_res_0x7f0b0162"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        text="@string/_2132093019_res_0x7f15285b"
+        style="?attr/_2130968733_res_0x7f04009d"/>
+    <Button
+        layout_gravity="center_vertical"
+        id="@+id/_2131427750_res_0x7f0b01a6"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        minWidth="64dp"
+        text="@string/_2132093020_res_0x7f15285c"
+        style="?attr/_2130968735_res_0x7f04009f"/>
+</LinearLayout>

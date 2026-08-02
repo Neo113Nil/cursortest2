@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131428619_res_0x7f0b050b"
+    visibility="gone"
+    layout_width="wrap_content"
+    layout_height="wrap_content"
+    NOT_FOUND_0x12="@color/_2131100264_res_0x7f060268"
+    NOT_FOUND_0x13="@dimen/_2131165408_res_0x7f0700e0"
+    NOT_FOUND_0x14="0dp">
+    <LinearLayout
+        gravity="center_vertical"
+        orientation="horizontal"
+        layout_width="wrap_content"
+        layout_height="wrap_content"
+        layout_marginTop="1dp"
+        layout_marginBottom="1dp"
+        layout_marginStart="5dp"
+        layout_marginEnd="5dp">
+        <ImageView
+            layout_width="14dp"
+            layout_height="14dp"
+            src="@drawable/_2131231355_res_0x7f08027b"
+            scaleType="centerCrop"
+            adjustViewBounds="true"
+            tint="@android:color/white"
+            importantForAccessibility="no"
+            layout_marginEnd="2dp"/>
+        <TextView
+            textAppearance="?attr/_2130969841_res_0x7f0404f1"
+            textColor="@android:color/white"
+            layout_gravity="center_vertical"
+            id="@+id/_2131428620_res_0x7f0b050c"
+            layout_width="wrap_content"
+            layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

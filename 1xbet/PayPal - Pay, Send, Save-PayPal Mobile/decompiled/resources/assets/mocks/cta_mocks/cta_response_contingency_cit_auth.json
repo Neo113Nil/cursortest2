@@ -1,0 +1,155 @@
+{
+  "data": {
+    "external": {
+      "__typename": "AuthorizeBillingAgreementCreationSuccessResponse",
+      "returnURL": "https://gse-appstestbed.com/braintree-payments/success?token=EC-70U03853CA3952000&ba_token=BA-1P3964667P922682F",
+      "merchantName": "AA Logos",
+      "status": false,
+      "intent": null,
+      "paymentID": "BA-1P3964667P922682F",
+      "payerID": "5072028291818117845",
+      "contingencies": [
+        {
+          "__typename": "externalCitAuthContingency",
+          "name": "CIT_AUTH"
+        }
+      ],
+      "staleDomains": [
+        {
+          "domain": "FUNDING_SELECTION"
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "tracing": {
+      "version": 1,
+      "startTime": "2025-06-04T12:23:22.781Z",
+      "endTime": "2025-06-04T12:23:23.675Z",
+      "duration": 893997102,
+      "correlationId": "bfacc21c76424",
+      "execution": {
+        "resolvers": [
+          {
+            "path": [
+              "external"
+            ],
+            "parentType": "Mutation",
+            "fieldName": "external",
+            "returnType": "externalMutation",
+            "startOffset": 963820,
+            "duration": 6920
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation"
+            ],
+            "parentType": "externalMutation",
+            "fieldName": "authorizeBillingAgreementCreation",
+            "returnType": "externalAuthorizeBillingAgreementCreationResponse",
+            "startOffset": 1012200,
+            "duration": 892755262
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "returnURL"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "returnURL",
+            "returnType": "String",
+            "startOffset": 893904532,
+            "duration": 4980
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "merchantName"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "merchantName",
+            "returnType": "String",
+            "startOffset": 893915102,
+            "duration": 1450
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "status"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "status",
+            "returnType": "Boolean",
+            "startOffset": 893919562,
+            "duration": 1050
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "intent"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "intent",
+            "returnType": "String",
+            "startOffset": 893923342,
+            "duration": 1010
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "paymentID"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "paymentID",
+            "returnType": "String",
+            "startOffset": 893926882,
+            "duration": 690
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "payerID"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "payerID",
+            "returnType": "String",
+            "startOffset": 893930332,
+            "duration": 820
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "contingencies"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "contingencies",
+            "returnType": "[externalAuthorizeContingency!]!",
+            "startOffset": 893940292,
+            "duration": 1770
+          },
+          {
+            "path": [
+              "external",
+              "authorizeBillingAgreementCreation",
+              "staleDomains"
+            ],
+            "parentType": "externalAuthorizeBillingAgreementCreationSuccessResponse",
+            "fieldName": "staleDomains",
+            "returnType": "[externalStaleDomain!]!",
+            "startOffset": 893948172,
+            "duration": 1420
+          }
+        ]
+      }
+    }
+  },
+  "status": 200
+}

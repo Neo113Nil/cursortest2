@@ -1,0 +1,103 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.SubscriptionsHubDestination",
+      "paths": ["/mobile-app/subscriptions/hub/subsmanagement"],
+      "parameters": [
+        {
+          "propertyName": "trafficSource",
+          "urlParamName": "traffic_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.SubscriptionDetailsDestination",
+      "paths": ["/mobile-app/subscriptions/details-sheet"],
+      "parameters": [
+        {
+          "propertyName": "agreementId",
+          "urlParamName": "a_id",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "trafficSource",
+          "urlParamName": "traffic_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "agreementType",
+          "urlParamName": "a_type",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.BusinessesHubDestination",
+      "paths": ["/mobile-app/subscriptions/hub/saved-businesses"],
+      "parameters": [
+        {
+          "propertyName": "trafficSource",
+          "urlParamName": "traffic_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.BulkUpdateFiDestination",
+      "paths": ["/mobile-app/subscriptions/bulk-fi"],
+      "parameters": [
+        {
+          "propertyName": "flowType",
+          "urlParamName": "flow_type",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.LinkSubscriptionsDestination",
+      "paths": ["/mobile-app/subscriptions/link-subscriptions"],
+      "parameters": [
+        {
+          "propertyName": "trafficSource",
+          "urlParamName": "traffic_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.subscriptions.api.navigation.LinkBusinessesDestination",
+      "paths": ["/mobile-app/subscriptions/link-businesses"],
+      "parameters": [
+        {
+          "propertyName": "trafficSource",
+          "urlParamName": "traffic_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+package com.google.android.libraries.places.internal;
+
+/* loaded from: classes8.dex */
+public final class zzawj extends com.google.android.libraries.places.internal.zzbdq implements com.google.android.libraries.places.internal.zzbey {
+    private static final com.google.android.libraries.places.internal.zzawj zzf;
+    private static volatile com.google.android.libraries.places.internal.zzbff zzg;
+    private int zzb = 0;
+    private java.lang.Object zze;
+
+    static {
+        com.google.android.libraries.places.internal.zzawj zzawjVar = new com.google.android.libraries.places.internal.zzawj();
+        zzf = zzawjVar;
+        com.google.android.libraries.places.internal.zzbdq.zzbz(com.google.android.libraries.places.internal.zzawj.class, zzawjVar);
+    }
+
+    private zzawj() {
+    }
+
+    public static com.google.android.libraries.places.internal.zzawi zza() {
+        return (com.google.android.libraries.places.internal.zzawi) zzf.zzbv();
+    }
+
+    final /* synthetic */ void zzc(com.google.android.libraries.places.internal.zzaua zzauaVar) {
+        this.zze = zzauaVar;
+        this.zzb = 1;
+    }
+
+    final /* synthetic */ void zzd(com.google.android.libraries.places.internal.zzaxc zzaxcVar) {
+        this.zze = zzaxcVar;
+        this.zzb = 2;
+    }
+
+    @Override // com.google.android.libraries.places.internal.zzbdq
+    protected final java.lang.Object zzb(int i, java.lang.Object obj, java.lang.Object obj2) {
+        com.google.android.libraries.places.internal.zzbff zzbffVar;
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return zzbA(zzf, "\u0000\u0002\u0001\u0000\u0001\u0002\u0002\u0000\u0000\u0000\u0001<\u0000\u0002<\u0000", new java.lang.Object[]{"zze", "zzb", com.google.android.libraries.places.internal.zzaua.class, com.google.android.libraries.places.internal.zzaxc.class});
+        }
+        if (i2 == 3) {
+            return new com.google.android.libraries.places.internal.zzawj();
+        }
+        byte[] bArr = null;
+        if (i2 == 4) {
+            return new com.google.android.libraries.places.internal.zzawi(bArr);
+        }
+        if (i2 == 5) {
+            return zzf;
+        }
+        if (i2 != 6) {
+            throw null;
+        }
+        com.google.android.libraries.places.internal.zzbff zzbffVar2 = zzg;
+        if (zzbffVar2 != null) {
+            return zzbffVar2;
+        }
+        synchronized (com.google.android.libraries.places.internal.zzawj.class) {
+            zzbffVar = zzg;
+            if (zzbffVar == null) {
+                zzbffVar = new com.google.android.libraries.places.internal.zzbdl(zzf);
+                zzg = zzbffVar;
+            }
+        }
+        return zzbffVar;
+    }
+}

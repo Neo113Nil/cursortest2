@@ -1,0 +1,129 @@
+{
+  "REVOCATION_LIST": [
+    {
+      "RID": "A000000004",
+      "CRL": [
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "000010", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "000011", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "000101", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "000110", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "000111", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001000", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001001", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001010", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001011", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001100", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001101", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001110", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "001111", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010000", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010001", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010010", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010011", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010100", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010101", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "010111", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011000", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011001", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011010", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011011", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011100", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011101", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011110", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "011111", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "100000", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ],
+        [
+          {"TAG": "9F22", "VALUE": "F8", "DESCRIPTION": "INDEX"},
+          {"TAG": "DF8119", "VALUE": "100001", "DESCRIPTION": "CERTIFICATION SERIAL NUMBER"}
+        ]
+      ]
+    }
+  ]
+}

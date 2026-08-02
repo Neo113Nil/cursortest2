@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_2132149345_res_0x7f160461" parent="@style/_2132148495_res_0x7f16010f">
+        <item name="_2130970121_res_0x7f040609">_2131427704_res_0x7f0b0178</item>
+        <item name="_2130970134_res_0x7f040616">_2131427980_res_0x7f0b028c</item>
+    </style>
+    <style name="_2132149586_res_0x7f160552" parent="@style/_2132149331_res_0x7f160453">
+        <item name="android:textAppearance">?attr/_2130970170_res_0x7f04063a</item>
+        <item name="android:textColor">?attr/_2130968869_res_0x7f040125</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">start|top</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">@integer/_2131492965_res_0x7f0c0065</item>
+    </style>
+    <style name="_2132149589_res_0x7f160555" parent="@style/_2132148519_res_0x7f160127">
+        <item name="android:layout_gravity">start|bottom</item>
+    </style>
+</resources>

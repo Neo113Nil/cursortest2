@@ -1,0 +1,23 @@
+package com.paypal.oslo.feature.bnplacquisition;
+
+/* loaded from: classes11.dex */
+public final class AppStorageModule_ProvideAppStorageFactory implements dagger.internal.Factory<com.paypal.oslo.core.persistence.appstorage.AppStorage> {
+    private final dagger.internal.Provider<android.content.Context> Camera2StreamConfigurationMap;
+
+    private AppStorageModule_ProvideAppStorageFactory(dagger.internal.Provider<android.content.Context> provider) {
+        this.Camera2StreamConfigurationMap = provider;
+    }
+
+    @Override // javax.inject.Provider, jakarta.inject.Provider
+    public final com.paypal.oslo.core.persistence.appstorage.AppStorage get() {
+        return provideAppStorage(this.Camera2StreamConfigurationMap.get());
+    }
+
+    public static com.paypal.oslo.feature.bnplacquisition.AppStorageModule_ProvideAppStorageFactory create(dagger.internal.Provider<android.content.Context> provider) {
+        return new com.paypal.oslo.feature.bnplacquisition.AppStorageModule_ProvideAppStorageFactory(provider);
+    }
+
+    public static com.paypal.oslo.core.persistence.appstorage.AppStorage provideAppStorage(android.content.Context context) {
+        return (com.paypal.oslo.core.persistence.appstorage.AppStorage) dagger.internal.Preconditions.checkNotNullFromProvides(com.paypal.oslo.feature.bnplacquisition.AppStorageModule.INSTANCE.provideAppStorage(context));
+    }
+}

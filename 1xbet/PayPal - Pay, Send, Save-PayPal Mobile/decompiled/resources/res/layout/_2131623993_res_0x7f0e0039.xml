@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131427758_res_0x7f0b01ae"
+    fitsSystemWindows="true"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        id="@+id/_2131427768_res_0x7f0b01b8"
+        fitsSystemWindows="true"
+        layout_width="match_parent"
+        layout_height="match_parent">
+        <View
+            id="@+id/_2131429083_res_0x7f0b06db"
+            focusable="false"
+            layout_width="match_parent"
+            layout_height="match_parent"
+            soundEffectsEnabled="false"
+            importantForAccessibility="no"/>
+        <FrameLayout
+            layout_gravity="top|center_horizontal"
+            id="@+id/_2131427817_res_0x7f0b01e9"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            NOT_FOUND_0x8="@string/_2132082872_res_0x7f1500b8"
+            style="?attr/_2130968719_res_0x7f04008f"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

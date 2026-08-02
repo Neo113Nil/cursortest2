@@ -1,0 +1,10 @@
+package kotlin.reflect.jvm.internal.impl.metadata.deserialization;
+
+/* loaded from: classes5.dex */
+public interface NameResolver {
+    java.lang.String getQualifiedClassName(int i);
+
+    java.lang.String getString(int i);
+
+    boolean isLocalClassName(int i);
+}

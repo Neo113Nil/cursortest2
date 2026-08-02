@@ -1,0 +1,76 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.taxanddocumentcenter.api.navigation.StatementsAndTaxesDestination",
+      "paths": ["/myaccount/statements"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.taxanddocumentcenter.api.navigation.TaxDocumentsDestination",
+      "paths": ["/myaccount/statements/tax"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.taxanddocumentcenter.api.navigation.AllTransactionsDestination",
+      "paths": ["/myaccount/statements/monthly"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.taxanddocumentcenter.api.navigation.CustomStatementDestination",
+      "paths": ["/myaccount/statements/custom"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.taxanddocumentcenter.api.navigation.CustomStatementDownloadDestination",
+      "paths": ["/myaccount/statements/custom/download"],
+      "parameters": [
+        {
+          "propertyName": "fileName",
+          "urlParamName": "fileName",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

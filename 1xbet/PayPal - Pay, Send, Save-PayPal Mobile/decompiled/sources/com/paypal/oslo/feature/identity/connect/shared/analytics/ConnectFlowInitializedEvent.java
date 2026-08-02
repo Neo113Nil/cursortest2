@@ -1,0 +1,136 @@
+package com.paypal.oslo.feature.identity.connect.shared.analytics;
+
+@kotlin.Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\f\b\u0080\b\u0018\u00002\u00020\u0001B/\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\f\u0010\rJ\u0010\u0010\u000e\u001a\u00020\u0002HÆ\u0003¢\u0006\u0004\b\u000e\u0010\u000fJ\u0010\u0010\u0010\u001a\u00020\u0004HÆ\u0003¢\u0006\u0004\b\u0010\u0010\u0011J\u0010\u0010\u0012\u001a\u00020\u0006HÆ\u0003¢\u0006\u0004\b\u0012\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\bHÆ\u0003¢\u0006\u0004\b\u0014\u0010\u0015J\u0010\u0010\u0016\u001a\u00020\nHÆ\u0003¢\u0006\u0004\b\u0016\u0010\u0017JB\u0010\u0018\u001a\u00020\u00002\b\b\u0002\u0010\u0003\u001a\u00020\u00022\b\b\u0002\u0010\u0005\u001a\u00020\u00042\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\u000b\u001a\u00020\nHÆ\u0001¢\u0006\u0004\b\u0018\u0010\u0019J\u001a\u0010\u001c\u001a\u00020\u001b2\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u001c\u0010\u001dJ\u0010\u0010\u001f\u001a\u00020\u001eHÖ\u0001¢\u0006\u0004\b\u001f\u0010 J\u0010\u0010\"\u001a\u00020!HÖ\u0001¢\u0006\u0004\b\"\u0010#R\u0017\u0010\u0003\u001a\u00020\u00028\u0007¢\u0006\f\n\u0004\b\u0003\u0010$\u001a\u0004\b%\u0010\u000fR\u001a\u0010\u0005\u001a\u00020\u00048\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0005\u0010&\u001a\u0004\b'\u0010\u0011R\u001a\u0010\u0007\u001a\u00020\u00068\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0007\u0010(\u001a\u0004\b)\u0010\u0013R\u001a\u0010\t\u001a\u00020\b8\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\t\u0010*\u001a\u0004\b+\u0010\u0015R\u001a\u0010\u000b\u001a\u00020\n8\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u000b\u0010,\u001a\u0004\b-\u0010\u0017"}, d2 = {"Lcom/paypal/oslo/feature/identity/connect/shared/analytics/ConnectFlowInitializedEvent;", "", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UIContext;", "uiContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UserIntentContext;", "userIntent", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/BusinessFlowContext;", "businessFlowContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/NavigationContext;", "navigationContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/TrafficSourceContext;", "trafficSourceContext", "<init>", "(Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UIContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UserIntentContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/BusinessFlowContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/NavigationContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/TrafficSourceContext;)V", "component1", "()Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UIContext;", "component2", "()Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UserIntentContext;", "component3", "()Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/BusinessFlowContext;", "component4", "()Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/NavigationContext;", "component5", "()Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/TrafficSourceContext;", "copy", "(Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UIContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UserIntentContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/BusinessFlowContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/NavigationContext;Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/TrafficSourceContext;)Lcom/paypal/oslo/feature/identity/connect/shared/analytics/ConnectFlowInitializedEvent;", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UIContext;", "getUiContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/UserIntentContext;", "getUserIntent", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/BusinessFlowContext;", "getBusinessFlowContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/NavigationContext;", "getNavigationContext", "Lcom/paypal/oslo/core/telemetry/analytics/schema/context/standard/TrafficSourceContext;", "getTrafficSourceContext"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes12.dex */
+public final /* data */ class ConnectFlowInitializedEvent {
+    public static final int $stable = (((com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext.$stable | com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext.$stable) | com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext.$stable) | com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext.$stable) | com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext.$stable;
+    private final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext;
+    private final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext;
+    private final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext trafficSourceContext;
+    private final com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext uiContext;
+    private final com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntent;
+
+    public ConnectFlowInitializedEvent(com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext uIContext, com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntentContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext trafficSourceContext) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(uIContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(userIntentContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(businessFlowContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(navigationContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(trafficSourceContext, "");
+        this.uiContext = uIContext;
+        this.userIntent = userIntentContext;
+        this.businessFlowContext = businessFlowContext;
+        this.navigationContext = navigationContext;
+        this.trafficSourceContext = trafficSourceContext;
+    }
+
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext getUiContext() {
+        return this.uiContext;
+    }
+
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext getUserIntent() {
+        return this.userIntent;
+    }
+
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext getBusinessFlowContext() {
+        return this.businessFlowContext;
+    }
+
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext getNavigationContext() {
+        return this.navigationContext;
+    }
+
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext getTrafficSourceContext() {
+        return this.trafficSourceContext;
+    }
+
+    public final java.lang.String toString() {
+        com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext uIContext = this.uiContext;
+        com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntentContext = this.userIntent;
+        com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext = this.businessFlowContext;
+        com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext = this.navigationContext;
+        com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext trafficSourceContext = this.trafficSourceContext;
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("ConnectFlowInitializedEvent(uiContext=");
+        sb.append(uIContext);
+        sb.append(", userIntent=");
+        sb.append(userIntentContext);
+        sb.append(", businessFlowContext=");
+        sb.append(businessFlowContext);
+        sb.append(", navigationContext=");
+        sb.append(navigationContext);
+        sb.append(", trafficSourceContext=");
+        sb.append(trafficSourceContext);
+        sb.append(")");
+        return sb.toString();
+    }
+
+    public final int hashCode() {
+        return (((((((this.uiContext.hashCode() * 31) + this.userIntent.hashCode()) * 31) + this.businessFlowContext.hashCode()) * 31) + this.navigationContext.hashCode()) * 31) + this.trafficSourceContext.hashCode();
+    }
+
+    public final boolean equals(java.lang.Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent)) {
+            return false;
+        }
+        com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent connectFlowInitializedEvent = (com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent) other;
+        return kotlin.jvm.internal.Intrinsics.areEqual(this.uiContext, connectFlowInitializedEvent.uiContext) && kotlin.jvm.internal.Intrinsics.areEqual(this.userIntent, connectFlowInitializedEvent.userIntent) && kotlin.jvm.internal.Intrinsics.areEqual(this.businessFlowContext, connectFlowInitializedEvent.businessFlowContext) && kotlin.jvm.internal.Intrinsics.areEqual(this.navigationContext, connectFlowInitializedEvent.navigationContext) && kotlin.jvm.internal.Intrinsics.areEqual(this.trafficSourceContext, connectFlowInitializedEvent.trafficSourceContext);
+    }
+
+    public final com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent copy(com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext uiContext, com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntent, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext trafficSourceContext) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(uiContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(userIntent, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(businessFlowContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(navigationContext, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(trafficSourceContext, "");
+        return new com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent(uiContext, userIntent, businessFlowContext, navigationContext, trafficSourceContext);
+    }
+
+    /* renamed from: component5, reason: from getter */
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext getTrafficSourceContext() {
+        return this.trafficSourceContext;
+    }
+
+    /* renamed from: component4, reason: from getter */
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext getNavigationContext() {
+        return this.navigationContext;
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext getBusinessFlowContext() {
+        return this.businessFlowContext;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext getUserIntent() {
+        return this.userIntent;
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext getUiContext() {
+        return this.uiContext;
+    }
+
+    public static /* synthetic */ com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent copy$default(com.paypal.oslo.feature.identity.connect.shared.analytics.ConnectFlowInitializedEvent connectFlowInitializedEvent, com.paypal.oslo.core.telemetry.analytics.schema.context.UIContext uIContext, com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntentContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext, com.paypal.oslo.core.telemetry.analytics.schema.context.standard.TrafficSourceContext trafficSourceContext, int i, java.lang.Object obj) {
+        if ((i & 1) != 0) {
+            uIContext = connectFlowInitializedEvent.uiContext;
+        }
+        if ((i & 2) != 0) {
+            userIntentContext = connectFlowInitializedEvent.userIntent;
+        }
+        com.paypal.oslo.core.telemetry.analytics.schema.context.UserIntentContext userIntentContext2 = userIntentContext;
+        if ((i & 4) != 0) {
+            businessFlowContext = connectFlowInitializedEvent.businessFlowContext;
+        }
+        com.paypal.oslo.core.telemetry.analytics.schema.context.standard.BusinessFlowContext businessFlowContext2 = businessFlowContext;
+        if ((i & 8) != 0) {
+            navigationContext = connectFlowInitializedEvent.navigationContext;
+        }
+        com.paypal.oslo.core.telemetry.analytics.schema.context.standard.NavigationContext navigationContext2 = navigationContext;
+        if ((i & 16) != 0) {
+            trafficSourceContext = connectFlowInitializedEvent.trafficSourceContext;
+        }
+        return connectFlowInitializedEvent.copy(uIContext, userIntentContext2, businessFlowContext2, navigationContext2, trafficSourceContext);
+    }
+}

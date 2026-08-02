@@ -1,0 +1,59 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.balance.api.navigation.AutoReloadDestination",
+      "paths": ["/balance/auto-reload", "/mobile-app/banking-hub/auto-reload", "/myaccount/balance/auto-reload"],
+      "pathPropertyName": "incomingPath",
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "flowIntent",
+          "urlParamName": "flow_intent",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "entryPoint",
+          "urlParamName": "entry_point",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "xSellAmount",
+          "urlParamName": "xSellAmount",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "xSellCurrencyCode",
+          "urlParamName": "xSellCurrencyCode",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "xSellTransferSpeed",
+          "urlParamName": "xSellTransferSpeed",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.balance.api.navigation.BalanceOnHoldDetailsRouterDestination",
+      "paths": ["/taxHoldDetails", "/moneyOnHoldDetails"],
+      "parameters": [
+      ]
+    }
+  ]
+}

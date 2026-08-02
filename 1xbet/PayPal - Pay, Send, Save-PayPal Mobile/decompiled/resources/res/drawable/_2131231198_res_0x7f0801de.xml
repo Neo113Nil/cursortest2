@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" drawable="@drawable/_2131231210_res_0x7f0801ea">
+    <target
+        name="doubleDownChevron"
+        animation="@anim/_2130772004_res_0x7f010024"/>
+</animated-vector>

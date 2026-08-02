@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    id="@+id/_2131428355_res_0x7f0b0403"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    contentDescription="@string/_2132092827_res_0x7f15279b"
+    importantForAccessibility="yes">
+    <androidx.appcompat.widget.AppCompatImageView
+        id="@+id/_2131428152_res_0x7f0b0338"
+        layout_width="0dp"
+        layout_height="0dp"
+        importantForAccessibility="no"
+        NOT_FOUND_0x8="@+id/_2131428321_res_0x7f0b03e1"
+        NOT_FOUND_0x9="0"
+        NOT_FOUND_0xa="0"
+        NOT_FOUND_0xc="0"
+        NOT_FOUND_0xd="@drawable/_2131231554_res_0x7f080342"/>
+    <com.google.android.material.textview.MaterialTextView
+        gravity="center"
+        id="@+id/_2131428321_res_0x7f0b03e1"
+        layout_width="0dp"
+        layout_height="wrap_content"
+        text="@string/_2132092829_res_0x7f15279d"
+        importantForAccessibility="no"
+        NOT_FOUND_0x7="0"
+        NOT_FOUND_0x9="0"
+        NOT_FOUND_0xa="0"
+        NOT_FOUND_0xb="@+id/_2131428152_res_0x7f0b0338"
+        style="@style/_2132148645_res_0x7f1601a5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

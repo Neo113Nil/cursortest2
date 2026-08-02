@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    orientation="vertical"
+    paddingTop="?attr/_2130969832_res_0x7f0404e8"
+    paddingBottom="?attr/_2130969834_res_0x7f0404ea"
+    layout_width="wrap_content"
+    layout_height="wrap_content">
+    <TextView
+        textAppearance="?attr/_2130969844_res_0x7f0404f4"
+        textColor="?attr/_2130969815_res_0x7f0404d7"
+        id="@+id/_2131428850_res_0x7f0b05f2"
+        paddingBottom="?attr/_2130969834_res_0x7f0404ea"
+        layout_width="wrap_content"
+        layout_height="wrap_content"/>
+</LinearLayout>

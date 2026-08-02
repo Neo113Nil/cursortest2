@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="_2132148549_res_0x7f160145" parent="">
+        <item name="android:textSize">38sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131100400_res_0x7f0602f0</item>
+        <item name="android:lines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeMinTextSize">14sp</item>
+        <item name="android:autoSizeMaxTextSize">38sp</item>
+    </style>
+    <style name="_2132148550_res_0x7f160146" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131100400_res_0x7f0602f0</item>
+    </style>
+    <style name="_2132148551_res_0x7f160147" parent="">
+        <item name="android:textSize">10sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131100400_res_0x7f0602f0</item>
+    </style>
+    <style name="_2132148552_res_0x7f160148" parent="">
+        <item name="android:textSize">24sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/_2131100400_res_0x7f0602f0</item>
+    </style>
+</resources>

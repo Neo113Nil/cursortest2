@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_2131230782_res_0x7f08003e"
+        android:duration="1000"
+        android:startOffset="0"
+        android:valueFrom="#282828"
+        android:valueTo="#323232"
+        android:valueType="colorType"
+        android:propertyName="fillColor"/>
+    <objectAnimator
+        android:interpolator="@drawable/_2131230793_res_0x7f080049"
+        android:duration="1000"
+        android:startOffset="1000"
+        android:valueFrom="#323232"
+        android:valueTo="#3b3b3b"
+        android:valueType="colorType"
+        android:propertyName="fillColor"/>
+    <objectAnimator
+        android:interpolator="@drawable/_2131230804_res_0x7f080054"
+        android:duration="500"
+        android:startOffset="2000"
+        android:valueFrom="#3b3b3b"
+        android:valueTo="#3b3b3b"
+        android:valueType="colorType"
+        android:propertyName="fillColor"/>
+</set>

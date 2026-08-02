@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" color="@color/_2131099685_res_0x7f060025">
+    <item>
+        <selector>
+            <item
+                state_enabled="false"
+                drawable="@drawable/_2131231129_res_0x7f080199"/>
+            <item
+                state_focused="true"
+                drawable="@drawable/_2131231131_res_0x7f08019b"/>
+            <item
+                state_pressed="true"
+                drawable="@drawable/_2131231131_res_0x7f08019b"/>
+            <item drawable="@drawable/_2131231130_res_0x7f08019a"/>
+        </selector>
+    </item>
+    <item id="@android:id/mask">
+        <shape>
+            <corners radius="300dp"/>
+            <solid color="@color/_2131099685_res_0x7f060025"/>
+        </shape>
+    </item>
+</ripple>

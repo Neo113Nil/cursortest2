@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    padding="16dp"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        layout_width="0dp"
+        layout_height="0dp"
+        src="@drawable/_2131231772_res_0x7f08041c"
+        scaleType="fitCenter"
+        NOT_FOUND_0xe="false"
+        NOT_FOUND_0xf="false"
+        NOT_FOUND_0x11="@+id/_2131429006_res_0x7f0b068e"
+        NOT_FOUND_0x12="1:1"
+        NOT_FOUND_0x13="0"
+        NOT_FOUND_0x14="0"
+        NOT_FOUND_0x15="0"/>
+    <com.zettle.sdk.common.ui.components.illustration.OttoIllustration
+        id="@+id/_2131429005_res_0x7f0b068d"
+        padding="40dp"
+        layout_width="0dp"
+        layout_height="0dp"
+        contentDescription="@null"
+        NOT_FOUND_0xe="false"
+        NOT_FOUND_0xf="false"
+        NOT_FOUND_0x11="@+id/_2131429006_res_0x7f0b068e"
+        NOT_FOUND_0x12="1:1"
+        NOT_FOUND_0x13="0"
+        NOT_FOUND_0x14="0"
+        NOT_FOUND_0x15="0"/>
+    <TextView
+        textAppearance="@style/_2132148996_res_0x7f160304"
+        textColor="@color/_2131101720_res_0x7f060818"
+        gravity="center"
+        id="@+id/_2131429006_res_0x7f0b068e"
+        layout_width="0dp"
+        layout_height="wrap_content"
+        layout_marginTop="20dp"
+        layout_marginBottom="16dp"
+        layout_marginStart="16dp"
+        layout_marginEnd="16dp"
+        NOT_FOUND_0x10="0"
+        NOT_FOUND_0x13="0"
+        NOT_FOUND_0x14="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

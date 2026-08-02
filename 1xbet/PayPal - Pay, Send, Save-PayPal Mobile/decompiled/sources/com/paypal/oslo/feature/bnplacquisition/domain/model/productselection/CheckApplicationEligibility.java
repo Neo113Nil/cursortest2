@@ -1,0 +1,84 @@
+package com.paypal.oslo.feature.bnplacquisition.domain.model.productselection;
+
+@kotlin.Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u0086\b\u0018\u00002\u00020\u0001B\u001f\u0012\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u0002\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0004\b\u0006\u0010\u0007J\u0012\u0010\b\u001a\u0004\u0018\u00010\u0002HÆ\u0003¢\u0006\u0004\b\b\u0010\tJ\u0012\u0010\n\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0004\b\n\u0010\u000bJ(\u0010\f\u001a\u00020\u00002\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00022\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004HÆ\u0001¢\u0006\u0004\b\f\u0010\rJ\u001a\u0010\u0010\u001a\u00020\u000f2\b\u0010\u000e\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u0010\u0010\u0011J\u0010\u0010\u0013\u001a\u00020\u0012HÖ\u0001¢\u0006\u0004\b\u0013\u0010\u0014J\u0010\u0010\u0016\u001a\u00020\u0015HÖ\u0001¢\u0006\u0004\b\u0016\u0010\u0017R\u0019\u0010\u0003\u001a\u0004\u0018\u00010\u00028\u0007¢\u0006\f\n\u0004\b\u0003\u0010\u0018\u001a\u0004\b\u0019\u0010\tR\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0007X\u0087\u0004¢\u0006\f\n\u0004\b\u0005\u0010\u001a\u001a\u0004\b\u001b\u0010\u000b"}, d2 = {"Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibility;", "", "Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilitySuccess;", "success", "Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilityDecline;", "decline", "<init>", "(Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilitySuccess;Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilityDecline;)V", "component1", "()Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilitySuccess;", "component2", "()Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilityDecline;", "copy", "(Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilitySuccess;Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilityDecline;)Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibility;", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "", "toString", "()Ljava/lang/String;", "Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilitySuccess;", "getSuccess", "Lcom/paypal/oslo/feature/bnplacquisition/domain/model/productselection/CheckApplicationEligibilityDecline;", "getDecline"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes11.dex */
+public final /* data */ class CheckApplicationEligibility {
+    public static final int $stable = 8;
+    private final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline decline;
+    private final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess success;
+
+    public CheckApplicationEligibility(com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess checkApplicationEligibilitySuccess, com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline checkApplicationEligibilityDecline) {
+        this.success = checkApplicationEligibilitySuccess;
+        this.decline = checkApplicationEligibilityDecline;
+    }
+
+    public /* synthetic */ CheckApplicationEligibility(com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess checkApplicationEligibilitySuccess, com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline checkApplicationEligibilityDecline, int i, kotlin.jvm.internal.DefaultConstructorMarker defaultConstructorMarker) {
+        this((i & 1) != 0 ? null : checkApplicationEligibilitySuccess, (i & 2) != 0 ? null : checkApplicationEligibilityDecline);
+    }
+
+    public final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess getSuccess() {
+        return this.success;
+    }
+
+    public final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline getDecline() {
+        return this.decline;
+    }
+
+    public final java.lang.String toString() {
+        com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess checkApplicationEligibilitySuccess = this.success;
+        com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline checkApplicationEligibilityDecline = this.decline;
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("CheckApplicationEligibility(success=");
+        sb.append(checkApplicationEligibilitySuccess);
+        sb.append(", decline=");
+        sb.append(checkApplicationEligibilityDecline);
+        sb.append(")");
+        return sb.toString();
+    }
+
+    public final int hashCode() {
+        com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess checkApplicationEligibilitySuccess = this.success;
+        int hashCode = checkApplicationEligibilitySuccess == null ? 0 : checkApplicationEligibilitySuccess.hashCode();
+        com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline checkApplicationEligibilityDecline = this.decline;
+        return (hashCode * 31) + (checkApplicationEligibilityDecline != null ? checkApplicationEligibilityDecline.hashCode() : 0);
+    }
+
+    public final boolean equals(java.lang.Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility)) {
+            return false;
+        }
+        com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility checkApplicationEligibility = (com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility) other;
+        return kotlin.jvm.internal.Intrinsics.areEqual(this.success, checkApplicationEligibility.success) && kotlin.jvm.internal.Intrinsics.areEqual(this.decline, checkApplicationEligibility.decline);
+    }
+
+    public final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility copy(com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess success, com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline decline) {
+        return new com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility(success, decline);
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline getDecline() {
+        return this.decline;
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess getSuccess() {
+        return this.success;
+    }
+
+    public static /* synthetic */ com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility copy$default(com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibility checkApplicationEligibility, com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilitySuccess checkApplicationEligibilitySuccess, com.paypal.oslo.feature.bnplacquisition.domain.model.productselection.CheckApplicationEligibilityDecline checkApplicationEligibilityDecline, int i, java.lang.Object obj) {
+        if ((i & 1) != 0) {
+            checkApplicationEligibilitySuccess = checkApplicationEligibility.success;
+        }
+        if ((i & 2) != 0) {
+            checkApplicationEligibilityDecline = checkApplicationEligibility.decline;
+        }
+        return checkApplicationEligibility.copy(checkApplicationEligibilitySuccess, checkApplicationEligibilityDecline);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public CheckApplicationEligibility() {
+        this(null, 0 == true ? 1 : 0, 3, 0 == true ? 1 : 0);
+    }
+}

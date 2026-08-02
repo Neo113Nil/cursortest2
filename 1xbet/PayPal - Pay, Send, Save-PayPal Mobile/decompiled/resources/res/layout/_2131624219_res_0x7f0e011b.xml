@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    layout_width="match_parent"
+    layout_height="match_parent">
+    <ProgressBar
+        id="@+id/_2131427603_res_0x7f0b0113"
+        layout_width="match_parent"
+        layout_height="match_parent"
+        indeterminate="false"
+        progressDrawable="@drawable/_2131231811_res_0x7f080443"
+        style="@style/_2132149319_res_0x7f160447"/>
+    <LinearLayout
+        gravity="center"
+        orientation="vertical"
+        layout_width="match_parent"
+        layout_height="match_parent">
+        <ProgressBar
+            id="@+id/_2131428173_res_0x7f0b034d"
+            layout_width="wrap_content"
+            layout_height="wrap_content"
+            indeterminate="false"/>
+        <TextView
+            gravity="center"
+            id="@+id/_2131429023_res_0x7f0b069f"
+            layout_width="match_parent"
+            layout_height="wrap_content"
+            style="@style/_2132148720_res_0x7f1601f0"/>
+    </LinearLayout>
+</merge>

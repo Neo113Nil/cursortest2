@@ -1,0 +1,16 @@
+package com.paypal.oslo.feature.settings.domain.util;
+
+@kotlin.Metadata(d1 = {"\u0000\u001c\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u001aÛ\u0001\u0010\u0012\u001a\b\u0012\u0004\u0012\u00028\u00060\u0007\"\u0004\b\u0000\u0010\u0000\"\u0004\b\u0001\u0010\u0001\"\u0004\b\u0002\u0010\u0002\"\u0004\b\u0003\u0010\u0003\"\u0004\b\u0004\u0010\u0004\"\u0004\b\u0005\u0010\u0005\"\u0004\b\u0006\u0010\u00062\f\u0010\b\u001a\b\u0012\u0004\u0012\u00028\u00000\u00072\f\u0010\t\u001a\b\u0012\u0004\u0012\u00028\u00010\u00072\f\u0010\n\u001a\b\u0012\u0004\u0012\u00028\u00020\u00072\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00028\u00030\u00072\f\u0010\f\u001a\b\u0012\u0004\u0012\u00028\u00040\u00072\f\u0010\r\u001a\b\u0012\u0004\u0012\u00028\u00050\u00072B\b\u0004\u0010\u0011\u001a<\b\u0001\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0012\u0004\u0012\u00028\u0002\u0012\u0004\u0012\u00028\u0003\u0012\u0004\u0012\u00028\u0004\u0012\u0004\u0012\u00028\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00060\u000f\u0012\u0006\u0012\u0004\u0018\u00010\u00100\u000eH\u0086\bø\u0001\u0000¢\u0006\u0004\b\u0012\u0010\u0013\u0082\u0002\u0007\n\u0005\b\u009920\u0001"}, d2 = {"T1", "T2", "T3", "T4", "T5", "T6", com.adobe.marketing.mobile.internal.CoreConstants.Wrapper.Type.REACT_NATIVE, "Lkotlinx/coroutines/flow/Flow;", com.paypal.oslo.feature.p2p.domain.constants.P2pConstants.Log.Attributes.FLOW, "flow2", "flow3", "flow4", "flow5", "flow6", "Lkotlin/Function7;", "Lkotlin/coroutines/Continuation;", "", "transform", "combine", "(Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function7;)Lkotlinx/coroutines/flow/Flow;"}, k = 2, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes14.dex */
+public final class FlowHelperFunctionsKt {
+    public static final <T1, T2, T3, T4, T5, T6, R> kotlinx.coroutines.flow.Flow<R> combine(kotlinx.coroutines.flow.Flow<? extends T1> flow, kotlinx.coroutines.flow.Flow<? extends T2> flow2, kotlinx.coroutines.flow.Flow<? extends T3> flow3, kotlinx.coroutines.flow.Flow<? extends T4> flow4, kotlinx.coroutines.flow.Flow<? extends T5> flow5, kotlinx.coroutines.flow.Flow<? extends T6> flow6, kotlin.jvm.functions.Function7<? super T1, ? super T2, ? super T3, ? super T4, ? super T5, ? super T6, ? super kotlin.coroutines.Continuation<? super R>, ? extends java.lang.Object> function7) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow2, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow3, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow4, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow5, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(flow6, "");
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(function7, "");
+        return new com.paypal.oslo.feature.settings.domain.util.FlowHelperFunctionsKt$combine$$inlined$combine$1(new kotlinx.coroutines.flow.Flow[]{flow, flow2, flow3, flow4, flow5, flow6}, function7);
+    }
+}

@@ -1,0 +1,57 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.bnplservicing.navigation.MakeAPaymentDestination",
+      "paths": ["/myaccount/paylater/map"],
+      "parameters": [
+        {
+          "propertyName": "creditAccountId",
+          "urlParamName": "plan_id",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "paylater_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.bnplservicing.navigation.PlanDetailsDestination",
+      "paths": ["/myaccount/paylater/planDetails"],
+      "parameters": [
+        {
+          "propertyName": "creditProductId",
+          "urlParamName": "plan_id",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "source",
+          "urlParamName": "paylater_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.bnplservicing.navigation.PlanListDestination",
+      "paths": ["/myaccount/paylater/planList"],
+      "parameters": [
+        {
+          "propertyName": "payLaterSource",
+          "urlParamName": "paylater_source",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+package com.google.firebase.components;
+
+/* loaded from: classes9.dex */
+public final class Dependency {
+    private final com.google.firebase.components.Qualified<?> anInterface;
+    private final int injection;
+    private final int type;
+
+    private Dependency(java.lang.Class<?> cls, int i, int i2) {
+        this((com.google.firebase.components.Qualified<?>) com.google.firebase.components.Qualified.unqualified(cls), i, i2);
+    }
+
+    private Dependency(com.google.firebase.components.Qualified<?> qualified, int i, int i2) {
+        this.anInterface = (com.google.firebase.components.Qualified) com.google.firebase.components.Preconditions.checkNotNull(qualified, "Null dependency anInterface.");
+        this.type = i;
+        this.injection = i2;
+    }
+
+    @java.lang.Deprecated
+    public static com.google.firebase.components.Dependency optional(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 0, 0);
+    }
+
+    public static com.google.firebase.components.Dependency deferred(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 0, 2);
+    }
+
+    public static com.google.firebase.components.Dependency deferred(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 0, 2);
+    }
+
+    public static com.google.firebase.components.Dependency required(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 1, 0);
+    }
+
+    public static com.google.firebase.components.Dependency required(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 1, 0);
+    }
+
+    public static com.google.firebase.components.Dependency setOf(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 2, 0);
+    }
+
+    public static com.google.firebase.components.Dependency setOf(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 2, 0);
+    }
+
+    public static com.google.firebase.components.Dependency optionalProvider(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 0, 1);
+    }
+
+    public static com.google.firebase.components.Dependency optionalProvider(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 0, 1);
+    }
+
+    public static com.google.firebase.components.Dependency requiredProvider(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 1, 1);
+    }
+
+    public static com.google.firebase.components.Dependency requiredProvider(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 1, 1);
+    }
+
+    public static com.google.firebase.components.Dependency setOfProvider(java.lang.Class<?> cls) {
+        return new com.google.firebase.components.Dependency(cls, 2, 1);
+    }
+
+    public static com.google.firebase.components.Dependency setOfProvider(com.google.firebase.components.Qualified<?> qualified) {
+        return new com.google.firebase.components.Dependency(qualified, 2, 1);
+    }
+
+    public final com.google.firebase.components.Qualified<?> getInterface() {
+        return this.anInterface;
+    }
+
+    public final boolean isRequired() {
+        return this.type == 1;
+    }
+
+    public final boolean isSet() {
+        return this.type == 2;
+    }
+
+    public final boolean isDirectInjection() {
+        return this.injection == 0;
+    }
+
+    public final boolean isDeferred() {
+        return this.injection == 2;
+    }
+
+    public final boolean equals(java.lang.Object obj) {
+        if (!(obj instanceof com.google.firebase.components.Dependency)) {
+            return false;
+        }
+        com.google.firebase.components.Dependency dependency = (com.google.firebase.components.Dependency) obj;
+        return this.anInterface.equals(dependency.anInterface) && this.type == dependency.type && this.injection == dependency.injection;
+    }
+
+    public final int hashCode() {
+        return ((((this.anInterface.hashCode() ^ 1000003) * 1000003) ^ this.type) * 1000003) ^ this.injection;
+    }
+
+    public final java.lang.String toString() {
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("Dependency{anInterface=");
+        sb.append(this.anInterface);
+        sb.append(", type=");
+        int i = this.type;
+        sb.append(i == 1 ? com.paypal.oslo.feature.identity.passkey.management.enrollment.attestation.data.repository.PasskeyAttestationRepositoryImpl.DEFAULT_RESIDENT_KEY : i == 0 ? "optional" : "set");
+        sb.append(", injection=");
+        sb.append(describeInjection(this.injection));
+        sb.append("}");
+        return sb.toString();
+    }
+
+    private static java.lang.String describeInjection(int i) {
+        if (i == 0) {
+            return com.google.android.gms.fido.fido2.api.common.DevicePublicKeyStringDef.DIRECT;
+        }
+        if (i == 1) {
+            return "provider";
+        }
+        if (i == 2) {
+            return "deferred";
+        }
+        throw new java.lang.AssertionError("Unsupported injection: ".concat(java.lang.String.valueOf(i)));
+    }
+}

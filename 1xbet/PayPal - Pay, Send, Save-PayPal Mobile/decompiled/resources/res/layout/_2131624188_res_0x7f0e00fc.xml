@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Chronometer xmlns:android="http://schemas.android.com/apk/res/android"
+    textAppearance="@style/_2132148911_res_0x7f1602af"
+    id="@+id/_2131427724_res_0x7f0b018c"
+    layout_width="wrap_content"
+    layout_height="wrap_content"
+    singleLine="true"/>

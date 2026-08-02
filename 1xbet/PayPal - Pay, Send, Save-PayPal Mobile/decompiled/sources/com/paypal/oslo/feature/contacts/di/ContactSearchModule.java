@@ -1,0 +1,27 @@
+package com.paypal.oslo.feature.contacts.di;
+
+@kotlin.Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\ba\u0018\u00002\u00020\u0001J\u0017\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002H'¢\u0006\u0004\b\u0005\u0010\u0006J\u0017\u0010\t\u001a\u00020\b2\u0006\u0010\u0003\u001a\u00020\u0007H'¢\u0006\u0004\b\t\u0010\nJ\u0017\u0010\r\u001a\u00020\f2\u0006\u0010\u0003\u001a\u00020\u000bH'¢\u0006\u0004\b\r\u0010\u000eJ\u0017\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u0003\u001a\u00020\u000fH'¢\u0006\u0004\b\u0011\u0010\u0012J\u0017\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0003\u001a\u00020\u0013H'¢\u0006\u0004\b\u0015\u0010\u0016J\u0017\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u0003\u001a\u00020\u0017H'¢\u0006\u0004\b\u0019\u0010\u001aJ\u0017\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\u0003\u001a\u00020\u001bH'¢\u0006\u0004\b\u001d\u0010\u001eÀ\u0006\u0003"}, d2 = {"Lcom/paypal/oslo/feature/contacts/di/ContactSearchModule;", "", "Lcom/paypal/oslo/feature/contacts/domain/usecase/SearchContactsUseCaseImpl;", "impl", "Lcom/paypal/oslo/feature/contacts/api/usecase/SearchContactsUseCase;", "bindSearchContactsUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/SearchContactsUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/SearchContactsUseCase;", "Lcom/paypal/oslo/feature/contacts/data/repository/ContactSearchRepositoryImpl;", "Lcom/paypal/oslo/feature/contacts/domain/repository/ContactSearchRepository;", "bindContactSearchRepository", "(Lcom/paypal/oslo/feature/contacts/data/repository/ContactSearchRepositoryImpl;)Lcom/paypal/oslo/feature/contacts/domain/repository/ContactSearchRepository;", "Lcom/paypal/oslo/feature/contacts/domain/usecase/GetRecentSearchesUseCaseImpl;", "Lcom/paypal/oslo/feature/contacts/api/usecase/GetRecentContactsUseCase;", "bindGetRecentContactsUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/GetRecentSearchesUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/GetRecentContactsUseCase;", "Lcom/paypal/oslo/feature/contacts/domain/usecase/CreateContactRecentSearchUseCaseImpl;", "Lcom/paypal/oslo/feature/contacts/api/usecase/AddContactRecentSearchUseCase;", "bindAddContactRecentSearchUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/CreateContactRecentSearchUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/AddContactRecentSearchUseCase;", "Lcom/paypal/oslo/feature/contacts/domain/usecase/CreateStringRecentSearchUseCaseImpl;", "Lcom/paypal/oslo/feature/contacts/api/usecase/AddStringRecentSearchUseCase;", "bindAddStringRecentSearchUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/CreateStringRecentSearchUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/AddStringRecentSearchUseCase;", "Lcom/paypal/oslo/feature/contacts/domain/usecase/DeleteRecentSearchUseCaseImpl;", "Lcom/paypal/oslo/feature/contacts/api/usecase/DeleteRecentSearchUseCase;", "bindDeleteRecentSearchUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/DeleteRecentSearchUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/DeleteRecentSearchUseCase;", "Lcom/paypal/oslo/feature/contacts/domain/usecase/DeleteRecentSearchesUseCaseImpl;", "Lcom/paypal/oslo/feature/contacts/api/usecase/DeleteAllRecentSearchesUseCase;", "bindDeleteAllRecentSearchesUseCase", "(Lcom/paypal/oslo/feature/contacts/domain/usecase/DeleteRecentSearchesUseCaseImpl;)Lcom/paypal/oslo/feature/contacts/api/usecase/DeleteAllRecentSearchesUseCase;"}, k = 1, mv = {2, 3, 0}, xi = 48)
+@dagger.Module
+/* loaded from: classes12.dex */
+public interface ContactSearchModule {
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.AddContactRecentSearchUseCase bindAddContactRecentSearchUseCase(com.paypal.oslo.feature.contacts.domain.usecase.CreateContactRecentSearchUseCaseImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.AddStringRecentSearchUseCase bindAddStringRecentSearchUseCase(com.paypal.oslo.feature.contacts.domain.usecase.CreateStringRecentSearchUseCaseImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.domain.repository.ContactSearchRepository bindContactSearchRepository(com.paypal.oslo.feature.contacts.data.repository.ContactSearchRepositoryImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.DeleteAllRecentSearchesUseCase bindDeleteAllRecentSearchesUseCase(com.paypal.oslo.feature.contacts.domain.usecase.DeleteRecentSearchesUseCaseImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.DeleteRecentSearchUseCase bindDeleteRecentSearchUseCase(com.paypal.oslo.feature.contacts.domain.usecase.DeleteRecentSearchUseCaseImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.GetRecentContactsUseCase bindGetRecentContactsUseCase(com.paypal.oslo.feature.contacts.domain.usecase.GetRecentSearchesUseCaseImpl impl);
+
+    @dagger.Binds
+    com.paypal.oslo.feature.contacts.api.usecase.SearchContactsUseCase bindSearchContactsUseCase(com.paypal.oslo.feature.contacts.domain.usecase.SearchContactsUseCaseImpl impl);
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    gravity="center"
+    orientation="vertical"
+    background="@drawable/_2131231852_res_0x7f08046c"
+    paddingTop="24dp"
+    paddingBottom="24dp"
+    layout_width="match_parent"
+    layout_height="match_parent"
+    NOT_FOUND_0x9="1:1">
+    <TextView
+        textAppearance="@style/_2132149000_res_0x7f160308"
+        gravity="center"
+        id="@+id/_2131429068_res_0x7f0b06cc"
+        layout_width="wrap_content"
+        layout_height="wrap_content"/>
+    <TextView
+        textAppearance="@style/_2132149005_res_0x7f16030d"
+        gravity="center"
+        id="@+id/_2131428954_res_0x7f0b065a"
+        layout_width="wrap_content"
+        layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        state_checked="true"
+        id="@+id/_2131427721_res_0x7f0b0189"
+        drawable="@drawable/_2131231694_res_0x7f0803ce"/>
+    <item
+        id="@+id/_2131428172_res_0x7f0b034c"
+        drawable="@drawable/_2131231698_res_0x7f0803d2"
+        NOT_FOUND_0x5="true"/>
+    <item
+        state_checked="false"
+        id="@+id/_2131429124_res_0x7f0b0704"
+        drawable="@android:color/transparent"/>
+    <transition
+        drawable="@drawable/_2131231683_res_0x7f0803c3"
+        toId="@+id/_2131429124_res_0x7f0b0704"
+        fromId="@+id/_2131427721_res_0x7f0b0189"/>
+    <transition
+        drawable="@drawable/_2131231686_res_0x7f0803c6"
+        toId="@+id/_2131427721_res_0x7f0b0189"
+        fromId="@+id/_2131429124_res_0x7f0b0704"/>
+    <transition
+        drawable="@drawable/_2131231685_res_0x7f0803c5"
+        toId="@+id/_2131429124_res_0x7f0b0704"
+        fromId="@+id/_2131428172_res_0x7f0b034c"/>
+    <transition
+        drawable="@drawable/_2131231687_res_0x7f0803c7"
+        toId="@+id/_2131428172_res_0x7f0b034c"
+        fromId="@+id/_2131429124_res_0x7f0b0704"/>
+    <transition
+        drawable="@drawable/_2131231684_res_0x7f0803c4"
+        toId="@+id/_2131427721_res_0x7f0b0189"
+        fromId="@+id/_2131428172_res_0x7f0b034c"/>
+    <transition
+        drawable="@drawable/_2131231682_res_0x7f0803c2"
+        toId="@+id/_2131428172_res_0x7f0b034c"
+        fromId="@+id/_2131427721_res_0x7f0b0189"/>
+</animated-selector>

@@ -1,0 +1,40 @@
+package io.ktor.util;
+
+@kotlin.Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\t\b\u0000\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u001a\u0010\b\u001a\u00020\u00072\b\u0010\u0006\u001a\u0004\u0018\u00010\u0001H\u0096\u0002¢\u0006\u0004\b\b\u0010\tJ\u000f\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\u000b\u0010\fJ\u000f\u0010\r\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\r\u0010\u000eR\u0017\u0010\u0003\u001a\u00020\u00028\u0007¢\u0006\f\n\u0004\b\u0003\u0010\u000f\u001a\u0004\b\u0010\u0010\u000eR\u0014\u0010\u0013\u001a\u00020\n8\u0002X\u0083\u0004¢\u0006\u0006\n\u0004\b\u0011\u0010\u0012"}, d2 = {"Lio/ktor/util/CaseInsensitiveString;", "", "", "content", "<init>", "(Ljava/lang/String;)V", "other", "", "equals", "(Ljava/lang/Object;)Z", "", "hashCode", "()I", "toString", "()Ljava/lang/String;", "Ljava/lang/String;", "getContent", "getHighResolutionOutputSizeshNQ4ISI", com.visa.cbp.getEncExpo.warmup, "getHighSpeedVideoFpsRangesFor"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes17.dex */
+public final class CaseInsensitiveString {
+    private final java.lang.String content;
+
+    /* renamed from: getHighResolutionOutputSizeshNQ4ISI, reason: from kotlin metadata */
+    private final int getHighSpeedVideoFpsRangesFor;
+
+    public CaseInsensitiveString(java.lang.String str) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        this.content = str;
+        int length = str.length();
+        int i = 0;
+        for (int i2 = 0; i2 < length; i2++) {
+            i = (i * 31) + java.lang.Character.toLowerCase(str.charAt(i2));
+        }
+        this.getHighSpeedVideoFpsRangesFor = i;
+    }
+
+    public final java.lang.String getContent() {
+        return this.content;
+    }
+
+    public final boolean equals(java.lang.Object other) {
+        java.lang.String str;
+        io.ktor.util.CaseInsensitiveString caseInsensitiveString = other instanceof io.ktor.util.CaseInsensitiveString ? (io.ktor.util.CaseInsensitiveString) other : null;
+        return (caseInsensitiveString == null || (str = caseInsensitiveString.content) == null || !kotlin.text.StringsKt.equals(str, this.content, true)) ? false : true;
+    }
+
+    /* renamed from: hashCode, reason: from getter */
+    public final int getGetHighSpeedVideoFpsRangesFor() {
+        return this.getHighSpeedVideoFpsRangesFor;
+    }
+
+    public final java.lang.String toString() {
+        return this.content;
+    }
+}

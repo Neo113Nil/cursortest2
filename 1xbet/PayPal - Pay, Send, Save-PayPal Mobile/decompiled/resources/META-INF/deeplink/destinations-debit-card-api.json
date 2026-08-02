@@ -1,0 +1,45 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.debitcard.api.navigation.DebitCardDeepLinkLauncher",
+      "paths": ["/myaccount/debitcards/link"],
+      "parameters": [
+        {
+          "propertyName": "productName",
+          "urlParamName": "productName",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "flow",
+          "urlParamName": "flow",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "cardId",
+          "urlParamName": "cardId",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "flowIntent",
+          "urlParamName": "intent",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "entryPoint",
+          "urlParamName": "entrypoint",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

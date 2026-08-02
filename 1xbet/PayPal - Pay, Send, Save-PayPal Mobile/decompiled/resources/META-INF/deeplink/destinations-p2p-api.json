@@ -1,0 +1,50 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.p2p.api.navigation.SendTransferDestination",
+      "paths": ["/myaccount/transfer/request/external", "/myaccount/transfer/request/preview", "/myaccount/transfer/homepage/request", "/myaccount/transfer", "/myaccount/transfer/homepage/pay", "/myaccount/transfer/homepage/external/international"],
+      "parameters": [
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.p2p.api.navigation.PayRequestLandingDestination",
+      "paths": ["/myaccount/transfer/payRequest", "/myaccount/transfer/pay-request/preview"],
+      "parameters": [
+        {
+          "propertyName": "requestId",
+          "urlParamName": "reference_data",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "requestIdType",
+          "urlParamName": "requestIdType",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    },
+    {
+      "className": "com.paypal.oslo.feature.p2p.api.navigation.ClaimPreviewDestination",
+      "paths": ["/myaccount/transfer/claim/preview"],
+      "parameters": [
+        {
+          "propertyName": "paymentCodeId",
+          "urlParamName": "reference_data",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        },
+        {
+          "propertyName": "intent",
+          "urlParamName": "intent",
+          "typeName": "kotlin.String",
+          "isNullable": true,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

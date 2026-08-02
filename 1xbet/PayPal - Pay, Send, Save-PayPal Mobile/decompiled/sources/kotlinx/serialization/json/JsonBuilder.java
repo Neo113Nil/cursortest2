@@ -1,0 +1,230 @@
+package kotlinx.serialization.json;
+
+@kotlin.Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0011\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u00002\u00020\u0001B\u0011\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u000f\u0010\u0007\u001a\u00020\u0006H\u0000¢\u0006\u0004\b\u0007\u0010\bR\"\u0010\n\u001a\u00020\t8\u0007@\u0007X\u0086\u000e¢\u0006\u0012\n\u0004\b\n\u0010\u000b\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\"\u0010\u0010\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\u0010\u0010\u000b\u001a\u0004\b\u0011\u0010\r\"\u0004\b\u0012\u0010\u000fR\"\u0010\u0013\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\u0013\u0010\u000b\u001a\u0004\b\u0014\u0010\r\"\u0004\b\u0015\u0010\u000fR\"\u0010\u0016\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\u0016\u0010\u000b\u001a\u0004\b\u0016\u0010\r\"\u0004\b\u0017\u0010\u000fR\"\u0010\u0018\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\u0018\u0010\u000b\u001a\u0004\b\u0019\u0010\r\"\u0004\b\u001a\u0010\u000fR\"\u0010\u001c\u001a\u00020\u001b8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\u001c\u0010\u001d\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\"\u0010\"\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b\"\u0010\u000b\u001a\u0004\b#\u0010\r\"\u0004\b$\u0010\u000fR\"\u0010%\u001a\u00020\u001b8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b%\u0010\u001d\u001a\u0004\b&\u0010\u001f\"\u0004\b'\u0010!R(\u0010)\u001a\u00020(8\u0007@\u0007X\u0087\u000e¢\u0006\u0018\n\u0004\b)\u0010*\u0012\u0004\b/\u00100\u001a\u0004\b+\u0010,\"\u0004\b-\u0010.R\"\u00101\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b1\u0010\u000b\u001a\u0004\b2\u0010\r\"\u0004\b3\u0010\u000fR*\u00105\u001a\u0004\u0018\u0001048\u0007@\u0007X\u0087\u000e¢\u0006\u0018\n\u0004\b5\u00106\u0012\u0004\b;\u00100\u001a\u0004\b7\u00108\"\u0004\b9\u0010:R\"\u0010<\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b<\u0010\u000b\u001a\u0004\b=\u0010\r\"\u0004\b>\u0010\u000fR\"\u0010?\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\b?\u0010\u000b\u001a\u0004\b@\u0010\r\"\u0004\bA\u0010\u000fR\"\u0010B\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\bB\u0010\u000b\u001a\u0004\bC\u0010\r\"\u0004\bD\u0010\u000fR\"\u0010E\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\bE\u0010\u000b\u001a\u0004\bF\u0010\r\"\u0004\bG\u0010\u000fR\"\u0010H\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\bH\u0010\u000b\u001a\u0004\bI\u0010\r\"\u0004\bJ\u0010\u000fR\"\u0010K\u001a\u00020\t8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\bK\u0010\u000b\u001a\u0004\bL\u0010\r\"\u0004\bM\u0010\u000fR\"\u0010O\u001a\u00020N8\u0007@\u0007X\u0087\u000e¢\u0006\u0012\n\u0004\bO\u0010P\u001a\u0004\bQ\u0010R\"\u0004\bS\u0010T"}, d2 = {"Lkotlinx/serialization/json/JsonBuilder;", "", "Lkotlinx/serialization/json/Json;", "json", "<init>", "(Lkotlinx/serialization/json/Json;)V", "Lkotlinx/serialization/json/JsonConfiguration;", "build$kotlinx_serialization_json", "()Lkotlinx/serialization/json/JsonConfiguration;", "", "encodeDefaults", "Z", "getEncodeDefaults", "()Z", "setEncodeDefaults", "(Z)V", "explicitNulls", "getExplicitNulls", "setExplicitNulls", "ignoreUnknownKeys", "getIgnoreUnknownKeys", "setIgnoreUnknownKeys", "isLenient", "setLenient", "prettyPrint", "getPrettyPrint", "setPrettyPrint", "", "prettyPrintIndent", "Ljava/lang/String;", "getPrettyPrintIndent", "()Ljava/lang/String;", "setPrettyPrintIndent", "(Ljava/lang/String;)V", "coerceInputValues", "getCoerceInputValues", "setCoerceInputValues", "classDiscriminator", "getClassDiscriminator", "setClassDiscriminator", "Lkotlinx/serialization/json/ClassDiscriminatorMode;", "classDiscriminatorMode", "Lkotlinx/serialization/json/ClassDiscriminatorMode;", "getClassDiscriminatorMode", "()Lkotlinx/serialization/json/ClassDiscriminatorMode;", "setClassDiscriminatorMode", "(Lkotlinx/serialization/json/ClassDiscriminatorMode;)V", "getClassDiscriminatorMode$annotations", "()V", "useAlternativeNames", "getUseAlternativeNames", "setUseAlternativeNames", "Lkotlinx/serialization/json/JsonNamingStrategy;", "namingStrategy", "Lkotlinx/serialization/json/JsonNamingStrategy;", "getNamingStrategy", "()Lkotlinx/serialization/json/JsonNamingStrategy;", "setNamingStrategy", "(Lkotlinx/serialization/json/JsonNamingStrategy;)V", "getNamingStrategy$annotations", "decodeEnumsCaseInsensitive", "getDecodeEnumsCaseInsensitive", "setDecodeEnumsCaseInsensitive", "allowTrailingComma", "getAllowTrailingComma", "setAllowTrailingComma", "allowComments", "getAllowComments", "setAllowComments", "allowSpecialFloatingPointValues", "getAllowSpecialFloatingPointValues", "setAllowSpecialFloatingPointValues", "allowStructuredMapKeys", "getAllowStructuredMapKeys", "setAllowStructuredMapKeys", "useArrayPolymorphism", "getUseArrayPolymorphism", "setUseArrayPolymorphism", "Lkotlinx/serialization/modules/SerializersModule;", "serializersModule", "Lkotlinx/serialization/modules/SerializersModule;", "getSerializersModule", "()Lkotlinx/serialization/modules/SerializersModule;", "setSerializersModule", "(Lkotlinx/serialization/modules/SerializersModule;)V"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes5.dex */
+public final class JsonBuilder {
+    private boolean allowComments;
+    private boolean allowSpecialFloatingPointValues;
+    private boolean allowStructuredMapKeys;
+    private boolean allowTrailingComma;
+    private java.lang.String classDiscriminator;
+    private kotlinx.serialization.json.ClassDiscriminatorMode classDiscriminatorMode;
+    private boolean coerceInputValues;
+    private boolean decodeEnumsCaseInsensitive;
+    private boolean encodeDefaults;
+    private boolean explicitNulls;
+    private boolean ignoreUnknownKeys;
+    private boolean isLenient;
+    private kotlinx.serialization.json.JsonNamingStrategy namingStrategy;
+    private boolean prettyPrint;
+    private java.lang.String prettyPrintIndent;
+    private kotlinx.serialization.modules.SerializersModule serializersModule;
+    private boolean useAlternativeNames;
+    private boolean useArrayPolymorphism;
+
+    @kotlinx.serialization.ExperimentalSerializationApi
+    public static /* synthetic */ void getClassDiscriminatorMode$annotations() {
+    }
+
+    @kotlinx.serialization.ExperimentalSerializationApi
+    public static /* synthetic */ void getNamingStrategy$annotations() {
+    }
+
+    public JsonBuilder(kotlinx.serialization.json.Json json) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(json, "");
+        this.encodeDefaults = json.getConfiguration().getEncodeDefaults();
+        this.explicitNulls = json.getConfiguration().getExplicitNulls();
+        this.ignoreUnknownKeys = json.getConfiguration().getIgnoreUnknownKeys();
+        this.isLenient = json.getConfiguration().getIsLenient();
+        this.prettyPrint = json.getConfiguration().getPrettyPrint();
+        this.prettyPrintIndent = json.getConfiguration().getPrettyPrintIndent();
+        this.coerceInputValues = json.getConfiguration().getCoerceInputValues();
+        this.classDiscriminator = json.getConfiguration().getClassDiscriminator();
+        this.classDiscriminatorMode = json.getConfiguration().getClassDiscriminatorMode();
+        this.useAlternativeNames = json.getConfiguration().getUseAlternativeNames();
+        this.namingStrategy = json.getConfiguration().getNamingStrategy();
+        this.decodeEnumsCaseInsensitive = json.getConfiguration().getDecodeEnumsCaseInsensitive();
+        this.allowTrailingComma = json.getConfiguration().getAllowTrailingComma();
+        this.allowComments = json.getConfiguration().getAllowComments();
+        this.allowSpecialFloatingPointValues = json.getConfiguration().getAllowSpecialFloatingPointValues();
+        this.allowStructuredMapKeys = json.getConfiguration().getAllowStructuredMapKeys();
+        this.useArrayPolymorphism = json.getConfiguration().getUseArrayPolymorphism();
+        this.serializersModule = json.getSerializersModule();
+    }
+
+    public final boolean getEncodeDefaults() {
+        return this.encodeDefaults;
+    }
+
+    public final void setEncodeDefaults(boolean z) {
+        this.encodeDefaults = z;
+    }
+
+    public final boolean getExplicitNulls() {
+        return this.explicitNulls;
+    }
+
+    public final void setExplicitNulls(boolean z) {
+        this.explicitNulls = z;
+    }
+
+    public final boolean getIgnoreUnknownKeys() {
+        return this.ignoreUnknownKeys;
+    }
+
+    public final void setIgnoreUnknownKeys(boolean z) {
+        this.ignoreUnknownKeys = z;
+    }
+
+    /* renamed from: isLenient, reason: from getter */
+    public final boolean getIsLenient() {
+        return this.isLenient;
+    }
+
+    public final void setLenient(boolean z) {
+        this.isLenient = z;
+    }
+
+    public final boolean getPrettyPrint() {
+        return this.prettyPrint;
+    }
+
+    public final void setPrettyPrint(boolean z) {
+        this.prettyPrint = z;
+    }
+
+    public final java.lang.String getPrettyPrintIndent() {
+        return this.prettyPrintIndent;
+    }
+
+    public final void setPrettyPrintIndent(java.lang.String str) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        this.prettyPrintIndent = str;
+    }
+
+    public final boolean getCoerceInputValues() {
+        return this.coerceInputValues;
+    }
+
+    public final void setCoerceInputValues(boolean z) {
+        this.coerceInputValues = z;
+    }
+
+    public final java.lang.String getClassDiscriminator() {
+        return this.classDiscriminator;
+    }
+
+    public final void setClassDiscriminator(java.lang.String str) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(str, "");
+        this.classDiscriminator = str;
+    }
+
+    public final kotlinx.serialization.json.ClassDiscriminatorMode getClassDiscriminatorMode() {
+        return this.classDiscriminatorMode;
+    }
+
+    public final void setClassDiscriminatorMode(kotlinx.serialization.json.ClassDiscriminatorMode classDiscriminatorMode) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(classDiscriminatorMode, "");
+        this.classDiscriminatorMode = classDiscriminatorMode;
+    }
+
+    public final boolean getUseAlternativeNames() {
+        return this.useAlternativeNames;
+    }
+
+    public final void setUseAlternativeNames(boolean z) {
+        this.useAlternativeNames = z;
+    }
+
+    public final kotlinx.serialization.json.JsonNamingStrategy getNamingStrategy() {
+        return this.namingStrategy;
+    }
+
+    public final void setNamingStrategy(kotlinx.serialization.json.JsonNamingStrategy jsonNamingStrategy) {
+        this.namingStrategy = jsonNamingStrategy;
+    }
+
+    public final boolean getDecodeEnumsCaseInsensitive() {
+        return this.decodeEnumsCaseInsensitive;
+    }
+
+    public final void setDecodeEnumsCaseInsensitive(boolean z) {
+        this.decodeEnumsCaseInsensitive = z;
+    }
+
+    public final boolean getAllowTrailingComma() {
+        return this.allowTrailingComma;
+    }
+
+    public final void setAllowTrailingComma(boolean z) {
+        this.allowTrailingComma = z;
+    }
+
+    public final boolean getAllowComments() {
+        return this.allowComments;
+    }
+
+    public final void setAllowComments(boolean z) {
+        this.allowComments = z;
+    }
+
+    public final boolean getAllowSpecialFloatingPointValues() {
+        return this.allowSpecialFloatingPointValues;
+    }
+
+    public final void setAllowSpecialFloatingPointValues(boolean z) {
+        this.allowSpecialFloatingPointValues = z;
+    }
+
+    public final boolean getAllowStructuredMapKeys() {
+        return this.allowStructuredMapKeys;
+    }
+
+    public final void setAllowStructuredMapKeys(boolean z) {
+        this.allowStructuredMapKeys = z;
+    }
+
+    public final boolean getUseArrayPolymorphism() {
+        return this.useArrayPolymorphism;
+    }
+
+    public final void setUseArrayPolymorphism(boolean z) {
+        this.useArrayPolymorphism = z;
+    }
+
+    public final kotlinx.serialization.modules.SerializersModule getSerializersModule() {
+        return this.serializersModule;
+    }
+
+    public final void setSerializersModule(kotlinx.serialization.modules.SerializersModule serializersModule) {
+        kotlin.jvm.internal.Intrinsics.checkNotNullParameter(serializersModule, "");
+        this.serializersModule = serializersModule;
+    }
+
+    public final kotlinx.serialization.json.JsonConfiguration build$kotlinx_serialization_json() {
+        if (this.useArrayPolymorphism) {
+            if (!kotlin.jvm.internal.Intrinsics.areEqual(this.classDiscriminator, "type")) {
+                throw new java.lang.IllegalArgumentException("Class discriminator should not be specified when array polymorphism is specified".toString());
+            }
+            if (this.classDiscriminatorMode != kotlinx.serialization.json.ClassDiscriminatorMode.POLYMORPHIC) {
+                throw new java.lang.IllegalArgumentException("useArrayPolymorphism option can only be used if classDiscriminatorMode in a default POLYMORPHIC state.".toString());
+            }
+        }
+        if (!this.prettyPrint) {
+            if (!kotlin.jvm.internal.Intrinsics.areEqual(this.prettyPrintIndent, "    ")) {
+                throw new java.lang.IllegalArgumentException("Indent should not be specified when default printing mode is used".toString());
+            }
+        } else if (!kotlin.jvm.internal.Intrinsics.areEqual(this.prettyPrintIndent, "    ")) {
+            java.lang.String str = this.prettyPrintIndent;
+            for (int i = 0; i < str.length(); i++) {
+                char charAt = str.charAt(i);
+                if (charAt != ' ' && charAt != '\t' && charAt != '\r' && charAt != '\n') {
+                    java.lang.StringBuilder sb = new java.lang.StringBuilder("Only whitespace, tab, newline and carriage return are allowed as pretty print symbols. Had ");
+                    sb.append(this.prettyPrintIndent);
+                    throw new java.lang.IllegalArgumentException(sb.toString().toString());
+                }
+            }
+        }
+        return new kotlinx.serialization.json.JsonConfiguration(this.encodeDefaults, this.ignoreUnknownKeys, this.isLenient, this.allowStructuredMapKeys, this.prettyPrint, this.explicitNulls, this.prettyPrintIndent, this.coerceInputValues, this.useArrayPolymorphism, this.classDiscriminator, this.allowSpecialFloatingPointValues, this.useAlternativeNames, this.namingStrategy, this.decodeEnumsCaseInsensitive, this.allowTrailingComma, this.allowComments, this.classDiscriminatorMode);
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "destinations": [
+    {
+      "className": "com.paypal.oslo.feature.taxfiling.api.navigation.TaxFilingDestination",
+      "paths": ["/myaccount/balance/get-started/tax-filing-bundle"],
+      "parameters": [
+        {
+          "propertyName": "source",
+          "urlParamName": "entry_point",
+          "typeName": "kotlin.String",
+          "isNullable": false,
+          "isPathVariable": false
+        }
+      ]
+    }
+  ]
+}

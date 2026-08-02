@@ -1,0 +1,49 @@
+package com.facetec.sdk;
+
+/* loaded from: classes8.dex */
+public final class FaceTecOCRConfirmationCustomization {
+    public int backgroundColors = -1;
+    public int mainHeaderDividerLineColor = android.graphics.Color.parseColor("#417FB2");
+    public int mainHeaderTextColor = android.graphics.Color.parseColor("#417FB2");
+    public int sectionHeaderTextColor = android.graphics.Color.parseColor("#333333");
+    public int fieldLabelTextColor = android.graphics.Color.parseColor("#333333");
+    public int fieldValueTextColor = android.graphics.Color.parseColor("#333333");
+    public int inputFieldBackgroundColor = 0;
+    public int inputFieldTextColor = 0;
+    public int inputFieldBorderColor = android.graphics.Color.parseColor("#333333");
+    public int inputFieldPlaceholderTextColor = 0;
+    public int buttonTextNormalColor = -1;
+    public int buttonBackgroundNormalColor = android.graphics.Color.parseColor("#417FB2");
+    public int buttonTextHighlightColor = -1;
+    public int buttonBackgroundHighlightColor = android.graphics.Color.parseColor("#396E99");
+    public int buttonTextDisabledColor = -1;
+    public int buttonBackgroundDisabledColor = android.graphics.Color.parseColor("#66417FB2");
+    public int buttonBorderColor = 0;
+    public int scrollIndicatorBackgroundNormalColor = android.graphics.Color.parseColor("#417FB2");
+    public int scrollIndicatorBackgroundHighlightColor = android.graphics.Color.parseColor("#396E99");
+    public int scrollIndicatorForegroundNormalColor = -1;
+    public int scrollIndicatorForegroundHighlightColor = -1;
+    public int scrollIndicatorBorderColor = 0;
+    public int customScrollIndicatorAnimation = 0;
+    public int scrollIndicatorElevation = 10;
+    public int mainHeaderDividerLineWidth = -1;
+    public android.graphics.Typeface mainHeaderFont = null;
+    public android.graphics.Typeface sectionHeaderFont = null;
+    public android.graphics.Typeface fieldLabelFont = null;
+    public android.graphics.Typeface fieldValueFont = null;
+    public android.graphics.Typeface inputFieldFont = null;
+    public int inputFieldBorderWidth = -1;
+    public int inputFieldCornerRadius = -1;
+    public android.graphics.Typeface inputFieldPlaceholderFont = null;
+    public boolean showInputFieldBottomBorderOnly = false;
+    public android.graphics.Typeface buttonFont = null;
+    public int buttonCornerRadius = -1;
+    public int buttonBorderWidth = -1;
+    public android.graphics.Typeface scrollIndicatorFont = null;
+    public int scrollIndicatorCornerRadius = -1;
+    public int scrollIndicatorBorderWidth = -1;
+    public boolean enableScrollIndicator = true;
+    public boolean enableScrollIndicatorTextAnimation = true;
+    public boolean enableFixedConfirmButton = false;
+    public boolean showScrollIndicatorImage = true;
+}

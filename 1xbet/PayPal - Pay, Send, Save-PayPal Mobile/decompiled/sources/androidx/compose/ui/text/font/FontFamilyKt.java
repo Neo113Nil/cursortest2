@@ -1,0 +1,17 @@
+package androidx.compose.ui.text.font;
+
+@kotlin.Metadata(d1 = {"\u0000 \n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u001b\u0010\u0004\u001a\u00020\u00032\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0000¢\u0006\u0004\b\u0004\u0010\u0005\u001a!\u0010\u0004\u001a\u00020\u00032\u0012\u0010\u0002\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00010\u0006\"\u00020\u0001¢\u0006\u0004\b\u0004\u0010\u0007\u001a\u0015\u0010\u0004\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\b¢\u0006\u0004\b\u0004\u0010\n"}, d2 = {"", "Landroidx/compose/ui/text/font/Font;", "fonts", "Landroidx/compose/ui/text/font/FontFamily;", "FontFamily", "(Ljava/util/List;)Landroidx/compose/ui/text/font/FontFamily;", "", "([Landroidx/compose/ui/text/font/Font;)Landroidx/compose/ui/text/font/FontFamily;", "Landroidx/compose/ui/text/font/Typeface;", "typeface", "(Landroidx/compose/ui/text/font/Typeface;)Landroidx/compose/ui/text/font/FontFamily;"}, k = 2, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes.dex */
+public final class FontFamilyKt {
+    public static final androidx.compose.ui.text.font.FontFamily FontFamily(java.util.List<? extends androidx.compose.ui.text.font.Font> list) {
+        return new androidx.compose.ui.text.font.FontListFontFamily(list);
+    }
+
+    public static final androidx.compose.ui.text.font.FontFamily FontFamily(androidx.compose.ui.text.font.Font... fontArr) {
+        return new androidx.compose.ui.text.font.FontListFontFamily(kotlin.collections.ArraysKt.asList(fontArr));
+    }
+
+    public static final androidx.compose.ui.text.font.FontFamily FontFamily(androidx.compose.ui.text.font.Typeface typeface) {
+        return new androidx.compose.ui.text.font.LoadedFontFamily(typeface);
+    }
+}

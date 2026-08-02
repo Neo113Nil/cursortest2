@@ -1,0 +1,663 @@
+package com.google.common.collect;
+
+/* loaded from: classes9.dex */
+final class CollectCollectors {
+    private static final java.util.stream.Collector<java.lang.Object, ?, com.google.common.collect.ImmutableList<java.lang.Object>> TO_IMMUTABLE_LIST = java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda8
+        @Override // java.util.function.Supplier
+        public final java.lang.Object get() {
+            return com.google.common.collect.ImmutableList.builder();
+        }
+    }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda12
+        @Override // java.util.function.BiConsumer
+        public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+            ((com.google.common.collect.ImmutableList.Builder) obj).add((com.google.common.collect.ImmutableList.Builder) obj2);
+        }
+    }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda13
+        @Override // java.util.function.BiFunction
+        public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+            return ((com.google.common.collect.ImmutableList.Builder) obj).combine((com.google.common.collect.ImmutableList.Builder) obj2);
+        }
+    }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda14
+        @Override // java.util.function.Function
+        public final java.lang.Object apply(java.lang.Object obj) {
+            return ((com.google.common.collect.ImmutableList.Builder) obj).build();
+        }
+    }, new java.util.stream.Collector.Characteristics[0]);
+    private static final java.util.stream.Collector<java.lang.Object, ?, com.google.common.collect.ImmutableSet<java.lang.Object>> TO_IMMUTABLE_SET = java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda15
+        @Override // java.util.function.Supplier
+        public final java.lang.Object get() {
+            return com.google.common.collect.ImmutableSet.builder();
+        }
+    }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda16
+        @Override // java.util.function.BiConsumer
+        public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+            ((com.google.common.collect.ImmutableSet.Builder) obj).add((com.google.common.collect.ImmutableSet.Builder) obj2);
+        }
+    }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda17
+        @Override // java.util.function.BiFunction
+        public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+            return ((com.google.common.collect.ImmutableSet.Builder) obj).combine((com.google.common.collect.ImmutableSet.Builder) obj2);
+        }
+    }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda18
+        @Override // java.util.function.Function
+        public final java.lang.Object apply(java.lang.Object obj) {
+            return ((com.google.common.collect.ImmutableSet.Builder) obj).build();
+        }
+    }, new java.util.stream.Collector.Characteristics[0]);
+    private static final java.util.stream.Collector<com.google.common.collect.Range<java.lang.Comparable<?>>, ?, com.google.common.collect.ImmutableRangeSet<java.lang.Comparable<?>>> TO_IMMUTABLE_RANGE_SET = java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda19
+        @Override // java.util.function.Supplier
+        public final java.lang.Object get() {
+            return com.google.common.collect.ImmutableRangeSet.builder();
+        }
+    }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda20
+        @Override // java.util.function.BiConsumer
+        public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+            ((com.google.common.collect.ImmutableRangeSet.Builder) obj).add((com.google.common.collect.Range) obj2);
+        }
+    }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda9
+        @Override // java.util.function.BiFunction
+        public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+            return ((com.google.common.collect.ImmutableRangeSet.Builder) obj).combine((com.google.common.collect.ImmutableRangeSet.Builder) obj2);
+        }
+    }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda10
+        @Override // java.util.function.Function
+        public final java.lang.Object apply(java.lang.Object obj) {
+            return ((com.google.common.collect.ImmutableRangeSet.Builder) obj).build();
+        }
+    }, new java.util.stream.Collector.Characteristics[0]);
+
+    static <E> java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableList<E>> toImmutableList() {
+        return (java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableList<E>>) TO_IMMUTABLE_LIST;
+    }
+
+    static <E> java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableSet<E>> toImmutableSet() {
+        return (java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableSet<E>>) TO_IMMUTABLE_SET;
+    }
+
+    static <E> java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableSortedSet<E>> toImmutableSortedSet(final java.util.Comparator<? super E> comparator) {
+        com.google.common.base.Preconditions.checkNotNull(comparator);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda49
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableSortedSet$0(comparator);
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda50
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableSortedSet.Builder) obj).add((com.google.common.collect.ImmutableSortedSet.Builder) obj2);
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda51
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableSortedSet.Builder) obj).combine((com.google.common.collect.ImmutableSet.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda52
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableSortedSet.Builder) obj).build();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ com.google.common.collect.ImmutableSortedSet.Builder lambda$toImmutableSortedSet$0(java.util.Comparator comparator) {
+        return new com.google.common.collect.ImmutableSortedSet.Builder(comparator);
+    }
+
+    static <E extends java.lang.Enum<E>> java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableSet<E>> toImmutableEnumSet() {
+        return (java.util.stream.Collector<E, ?, com.google.common.collect.ImmutableSet<E>>) com.google.common.collect.CollectCollectors.EnumSetAccumulator.TO_IMMUTABLE_ENUM_SET;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static <E extends java.lang.Enum<E>> java.util.stream.Collector<E, com.google.common.collect.CollectCollectors.EnumSetAccumulator<E>, com.google.common.collect.ImmutableSet<E>> toImmutableEnumSetGeneric() {
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda4
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableEnumSetGeneric$0();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda5
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.CollectCollectors.EnumSetAccumulator) obj).add((java.lang.Enum) obj2);
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda6
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.CollectCollectors.EnumSetAccumulator) obj).combine((com.google.common.collect.CollectCollectors.EnumSetAccumulator) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda7
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.CollectCollectors.EnumSetAccumulator) obj).toImmutableSet();
+            }
+        }, java.util.stream.Collector.Characteristics.UNORDERED);
+    }
+
+    static /* synthetic */ com.google.common.collect.CollectCollectors.EnumSetAccumulator lambda$toImmutableEnumSetGeneric$0() {
+        return new com.google.common.collect.CollectCollectors.EnumSetAccumulator();
+    }
+
+    static final class EnumSetAccumulator<E extends java.lang.Enum<E>> {
+        static final java.util.stream.Collector<java.lang.Enum<?>, ?, com.google.common.collect.ImmutableSet<? extends java.lang.Enum<?>>> TO_IMMUTABLE_ENUM_SET = com.google.common.collect.CollectCollectors.toImmutableEnumSetGeneric();
+        private java.util.EnumSet<E> set;
+
+        private EnumSetAccumulator() {
+        }
+
+        final void add(E e) {
+            java.util.EnumSet<E> enumSet = this.set;
+            if (enumSet == null) {
+                this.set = java.util.EnumSet.of((java.lang.Enum) e);
+            } else {
+                enumSet.add(e);
+            }
+        }
+
+        final com.google.common.collect.CollectCollectors.EnumSetAccumulator<E> combine(com.google.common.collect.CollectCollectors.EnumSetAccumulator<E> enumSetAccumulator) {
+            java.util.EnumSet<E> enumSet = this.set;
+            if (enumSet == null) {
+                return enumSetAccumulator;
+            }
+            java.util.EnumSet<E> enumSet2 = enumSetAccumulator.set;
+            if (enumSet2 == null) {
+                return this;
+            }
+            enumSet.addAll(enumSet2);
+            return this;
+        }
+
+        final com.google.common.collect.ImmutableSet<E> toImmutableSet() {
+            java.util.EnumSet<E> enumSet = this.set;
+            if (enumSet == null) {
+                return com.google.common.collect.ImmutableSet.of();
+            }
+            com.google.common.collect.ImmutableSet<E> asImmutable = com.google.common.collect.ImmutableEnumSet.asImmutable(enumSet);
+            this.set = null;
+            return asImmutable;
+        }
+    }
+
+    static <E extends java.lang.Comparable<? super E>> java.util.stream.Collector<com.google.common.collect.Range<E>, ?, com.google.common.collect.ImmutableRangeSet<E>> toImmutableRangeSet() {
+        return (java.util.stream.Collector<com.google.common.collect.Range<E>, ?, com.google.common.collect.ImmutableRangeSet<E>>) TO_IMMUTABLE_RANGE_SET;
+    }
+
+    static <T, E> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableMultiset<E>> toImmutableMultiset(final java.util.function.Function<? super T, ? extends E> function, final java.util.function.ToIntFunction<? super T> toIntFunction) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(toIntFunction);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda28
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.LinkedHashMultiset.create();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda29
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.Multiset) obj).add(com.google.common.base.Preconditions.checkNotNull(function.apply(obj2)), toIntFunction.applyAsInt(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda30
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableMultiset$1((com.google.common.collect.Multiset) obj, (com.google.common.collect.Multiset) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda31
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                com.google.common.collect.ImmutableMultiset copyFromEntries;
+                copyFromEntries = com.google.common.collect.ImmutableMultiset.copyFromEntries(((com.google.common.collect.Multiset) obj).entrySet());
+                return copyFromEntries;
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ com.google.common.collect.Multiset lambda$toImmutableMultiset$1(com.google.common.collect.Multiset multiset, com.google.common.collect.Multiset multiset2) {
+        multiset.addAll(multiset2);
+        return multiset;
+    }
+
+    static <T, E, M extends com.google.common.collect.Multiset<E>> java.util.stream.Collector<T, ?, M> toMultiset(final java.util.function.Function<? super T, E> function, final java.util.function.ToIntFunction<? super T> toIntFunction, java.util.function.Supplier<M> supplier) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(toIntFunction);
+        com.google.common.base.Preconditions.checkNotNull(supplier);
+        return java.util.stream.Collector.of(supplier, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda65
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.Multiset) obj).add(function.apply(obj2), toIntFunction.applyAsInt(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda67
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return com.google.common.collect.CollectCollectors.lambda$toMultiset$1((com.google.common.collect.Multiset) obj, (com.google.common.collect.Multiset) obj2);
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ com.google.common.collect.Multiset lambda$toMultiset$1(com.google.common.collect.Multiset multiset, com.google.common.collect.Multiset multiset2) {
+        multiset.addAll(multiset2);
+        return multiset;
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableMap<K, V>> toImmutableMap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda45
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return new com.google.common.collect.ImmutableMap.Builder();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda46
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableMap.Builder) obj).put(function.apply(obj2), function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda47
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableMap.Builder) obj).combine((com.google.common.collect.ImmutableMap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda48
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableMap.Builder) obj).buildOrThrow();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableMap<K, V>> toImmutableMap(java.util.function.Function<? super T, ? extends K> function, java.util.function.Function<? super T, ? extends V> function2, java.util.function.BinaryOperator<V> binaryOperator) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        com.google.common.base.Preconditions.checkNotNull(binaryOperator);
+        return java.util.stream.Collectors.collectingAndThen(java.util.stream.Collectors.toMap(function, function2, binaryOperator, new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda62
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.$r8$lambda$9jZrLfmN7qos7GZMvkzgNgs9WjU();
+            }
+        }), new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda63
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return com.google.common.collect.ImmutableMap.copyOf((java.util.Map) obj);
+            }
+        });
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableSortedMap<K, V>> toImmutableSortedMap(final java.util.Comparator<? super K> comparator, final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(comparator);
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda44
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableSortedMap$0(comparator);
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda55
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableSortedMap.Builder) obj).put((com.google.common.collect.ImmutableSortedMap.Builder) function.apply(obj2), (com.google.common.collect.ImmutableSortedMap.Builder) function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda66
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableSortedMap.Builder) obj).combine((com.google.common.collect.ImmutableSortedMap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda72
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableSortedMap.Builder) obj).buildOrThrow();
+            }
+        }, java.util.stream.Collector.Characteristics.UNORDERED);
+    }
+
+    static /* synthetic */ com.google.common.collect.ImmutableSortedMap.Builder lambda$toImmutableSortedMap$0(java.util.Comparator comparator) {
+        return new com.google.common.collect.ImmutableSortedMap.Builder(comparator);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableSortedMap<K, V>> toImmutableSortedMap(final java.util.Comparator<? super K> comparator, java.util.function.Function<? super T, ? extends K> function, java.util.function.Function<? super T, ? extends V> function2, java.util.function.BinaryOperator<V> binaryOperator) {
+        com.google.common.base.Preconditions.checkNotNull(comparator);
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        com.google.common.base.Preconditions.checkNotNull(binaryOperator);
+        return java.util.stream.Collectors.collectingAndThen(java.util.stream.Collectors.toMap(function, function2, binaryOperator, new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda37
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableSortedMap$2(comparator);
+            }
+        }), new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda38
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return com.google.common.collect.ImmutableSortedMap.copyOfSorted((java.util.TreeMap) obj);
+            }
+        });
+    }
+
+    static /* synthetic */ java.util.TreeMap lambda$toImmutableSortedMap$2(java.util.Comparator comparator) {
+        return new java.util.TreeMap(comparator);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableBiMap<K, V>> toImmutableBiMap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda74
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return new com.google.common.collect.ImmutableBiMap.Builder();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda1
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableBiMap.Builder) obj).put((com.google.common.collect.ImmutableBiMap.Builder) function.apply(obj2), (com.google.common.collect.ImmutableBiMap.Builder) function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda2
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableBiMap.Builder) obj).combine((com.google.common.collect.ImmutableMap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda3
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableBiMap.Builder) obj).buildOrThrow();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static <T, K extends java.lang.Enum<K>, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableMap<K, V>> toImmutableEnumMap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda40
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableEnumMap$0();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda41
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.CollectCollectors.EnumMapAccumulator) obj).put((java.lang.Enum) com.google.common.base.Preconditions.checkNotNull((java.lang.Enum) function.apply(obj2), "Null key for input %s", obj2), com.google.common.base.Preconditions.checkNotNull(function2.apply(obj2), "Null value for input %s", obj2));
+            }
+        }, new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda42(), new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda43(), java.util.stream.Collector.Characteristics.UNORDERED);
+    }
+
+    static /* synthetic */ com.google.common.collect.CollectCollectors.EnumMapAccumulator lambda$toImmutableEnumMap$0() {
+        return new com.google.common.collect.CollectCollectors.EnumMapAccumulator(new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda64
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableEnumMap$1(obj, obj2);
+            }
+        });
+    }
+
+    static /* synthetic */ java.lang.Object lambda$toImmutableEnumMap$1(java.lang.Object obj, java.lang.Object obj2) {
+        java.lang.StringBuilder sb = new java.lang.StringBuilder("Multiple values for key: ");
+        sb.append(obj);
+        sb.append(", ");
+        sb.append(obj2);
+        throw new java.lang.IllegalArgumentException(sb.toString());
+    }
+
+    static <T, K extends java.lang.Enum<K>, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableMap<K, V>> toImmutableEnumMap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2, final java.util.function.BinaryOperator<V> binaryOperator) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        com.google.common.base.Preconditions.checkNotNull(binaryOperator);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda68
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.CollectCollectors.lambda$toImmutableEnumMap$3(binaryOperator);
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda69
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.CollectCollectors.EnumMapAccumulator) obj).put((java.lang.Enum) com.google.common.base.Preconditions.checkNotNull((java.lang.Enum) function.apply(obj2), "Null key for input %s", obj2), com.google.common.base.Preconditions.checkNotNull(function2.apply(obj2), "Null value for input %s", obj2));
+            }
+        }, new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda42(), new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda43(), new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ com.google.common.collect.CollectCollectors.EnumMapAccumulator lambda$toImmutableEnumMap$3(java.util.function.BinaryOperator binaryOperator) {
+        return new com.google.common.collect.CollectCollectors.EnumMapAccumulator(binaryOperator);
+    }
+
+    static final class EnumMapAccumulator<K extends java.lang.Enum<K>, V> {
+        private java.util.EnumMap<K, V> map = null;
+        private final java.util.function.BinaryOperator<V> mergeFunction;
+
+        EnumMapAccumulator(java.util.function.BinaryOperator<V> binaryOperator) {
+            this.mergeFunction = binaryOperator;
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public final void put(K k, V v) {
+            java.util.EnumMap<K, V> enumMap = this.map;
+            if (enumMap == null) {
+                this.map = new java.util.EnumMap<>(java.util.Collections.singletonMap(k, v));
+            } else {
+                enumMap.merge(k, v, this.mergeFunction);
+            }
+        }
+
+        final com.google.common.collect.CollectCollectors.EnumMapAccumulator<K, V> combine(com.google.common.collect.CollectCollectors.EnumMapAccumulator<K, V> enumMapAccumulator) {
+            if (this.map == null) {
+                return enumMapAccumulator;
+            }
+            java.util.EnumMap<K, V> enumMap = enumMapAccumulator.map;
+            if (enumMap == null) {
+                return this;
+            }
+            enumMap.forEach(new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$EnumMapAccumulator$$ExternalSyntheticLambda0
+                @Override // java.util.function.BiConsumer
+                public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                    com.google.common.collect.CollectCollectors.EnumMapAccumulator.this.put((java.lang.Enum) obj, obj2);
+                }
+            });
+            return this;
+        }
+
+        final com.google.common.collect.ImmutableMap<K, V> toImmutableMap() {
+            java.util.EnumMap<K, V> enumMap = this.map;
+            return enumMap == null ? com.google.common.collect.ImmutableMap.of() : com.google.common.collect.ImmutableEnumMap.asImmutable(enumMap);
+        }
+    }
+
+    static <T, K extends java.lang.Comparable<? super K>, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableRangeMap<K, V>> toImmutableRangeMap(final java.util.function.Function<? super T, com.google.common.collect.Range<K>> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda0
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.ImmutableRangeMap.builder();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda11
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableRangeMap.Builder) obj).put((com.google.common.collect.Range) function.apply(obj2), function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda22
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableRangeMap.Builder) obj).combine((com.google.common.collect.ImmutableRangeMap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda33
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableRangeMap.Builder) obj).build();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableListMultimap<K, V>> toImmutableListMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function, "keyFunction");
+        com.google.common.base.Preconditions.checkNotNull(function2, "valueFunction");
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda53
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.ImmutableListMultimap.builder();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda54
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableListMultimap.Builder) obj).put((com.google.common.collect.ImmutableListMultimap.Builder) function.apply(obj2), (com.google.common.collect.ImmutableListMultimap.Builder) function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda56
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableListMultimap.Builder) obj).combine((com.google.common.collect.ImmutableMultimap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda57
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableListMultimap.Builder) obj).build();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableListMultimap<K, V>> flatteningToImmutableListMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends V>> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        java.util.function.Function function3 = new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda24
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                java.lang.Object checkNotNull;
+                checkNotNull = com.google.common.base.Preconditions.checkNotNull(function.apply(obj));
+                return checkNotNull;
+            }
+        };
+        java.util.function.Function function4 = new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda25
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                java.util.stream.Stream peek;
+                peek = ((java.util.stream.Stream) function2.apply(obj)).peek(new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda39());
+                return peek;
+            }
+        };
+        final com.google.common.collect.MultimapBuilder.ListMultimapBuilder<java.lang.Object, java.lang.Object> arrayListValues = com.google.common.collect.MultimapBuilder.linkedHashKeys().arrayListValues();
+        java.util.Objects.requireNonNull(arrayListValues);
+        return java.util.stream.Collectors.collectingAndThen(flatteningToMultimap(function3, function4, new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda26
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.MultimapBuilder.ListMultimapBuilder.this.build();
+            }
+        }), new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda27
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return com.google.common.collect.ImmutableListMultimap.copyOf((com.google.common.collect.Multimap) obj);
+            }
+        });
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableSetMultimap<K, V>> toImmutableSetMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function, "keyFunction");
+        com.google.common.base.Preconditions.checkNotNull(function2, "valueFunction");
+        return java.util.stream.Collector.of(new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda58
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.ImmutableSetMultimap.builder();
+            }
+        }, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda59
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.ImmutableSetMultimap.Builder) obj).put((com.google.common.collect.ImmutableSetMultimap.Builder) function.apply(obj2), (com.google.common.collect.ImmutableSetMultimap.Builder) function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda60
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return ((com.google.common.collect.ImmutableSetMultimap.Builder) obj).combine((com.google.common.collect.ImmutableMultimap.Builder) obj2);
+            }
+        }, new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda61
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return ((com.google.common.collect.ImmutableSetMultimap.Builder) obj).build();
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static <T, K, V> java.util.stream.Collector<T, ?, com.google.common.collect.ImmutableSetMultimap<K, V>> flatteningToImmutableSetMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends V>> function2) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        java.util.function.Function function3 = new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda32
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                java.lang.Object checkNotNull;
+                checkNotNull = com.google.common.base.Preconditions.checkNotNull(function.apply(obj));
+                return checkNotNull;
+            }
+        };
+        java.util.function.Function function4 = new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda34
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                java.util.stream.Stream peek;
+                peek = ((java.util.stream.Stream) function2.apply(obj)).peek(new com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda39());
+                return peek;
+            }
+        };
+        final com.google.common.collect.MultimapBuilder.SetMultimapBuilder<java.lang.Object, java.lang.Object> linkedHashSetValues = com.google.common.collect.MultimapBuilder.linkedHashKeys().linkedHashSetValues();
+        java.util.Objects.requireNonNull(linkedHashSetValues);
+        return java.util.stream.Collectors.collectingAndThen(flatteningToMultimap(function3, function4, new java.util.function.Supplier() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda35
+            @Override // java.util.function.Supplier
+            public final java.lang.Object get() {
+                return com.google.common.collect.MultimapBuilder.SetMultimapBuilder.this.build();
+            }
+        }), new java.util.function.Function() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda36
+            @Override // java.util.function.Function
+            public final java.lang.Object apply(java.lang.Object obj) {
+                return com.google.common.collect.ImmutableSetMultimap.copyOf((com.google.common.collect.Multimap) obj);
+            }
+        });
+    }
+
+    static <T, K, V, M extends com.google.common.collect.Multimap<K, V>> java.util.stream.Collector<T, ?, M> toMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends V> function2, java.util.function.Supplier<M> supplier) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        com.google.common.base.Preconditions.checkNotNull(supplier);
+        return java.util.stream.Collector.of(supplier, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda70
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                ((com.google.common.collect.Multimap) obj).put(function.apply(obj2), function2.apply(obj2));
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda71
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return com.google.common.collect.CollectCollectors.lambda$toMultimap$1((com.google.common.collect.Multimap) obj, (com.google.common.collect.Multimap) obj2);
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ com.google.common.collect.Multimap lambda$toMultimap$1(com.google.common.collect.Multimap multimap, com.google.common.collect.Multimap multimap2) {
+        multimap.putAll(multimap2);
+        return multimap;
+    }
+
+    static <T, K, V, M extends com.google.common.collect.Multimap<K, V>> java.util.stream.Collector<T, ?, M> flatteningToMultimap(final java.util.function.Function<? super T, ? extends K> function, final java.util.function.Function<? super T, ? extends java.util.stream.Stream<? extends V>> function2, java.util.function.Supplier<M> supplier) {
+        com.google.common.base.Preconditions.checkNotNull(function);
+        com.google.common.base.Preconditions.checkNotNull(function2);
+        com.google.common.base.Preconditions.checkNotNull(supplier);
+        return java.util.stream.Collector.of(supplier, new java.util.function.BiConsumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda21
+            @Override // java.util.function.BiConsumer
+            public final void accept(java.lang.Object obj, java.lang.Object obj2) {
+                com.google.common.collect.CollectCollectors.lambda$flatteningToMultimap$0(function, function2, (com.google.common.collect.Multimap) obj, obj2);
+            }
+        }, new java.util.function.BinaryOperator() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda23
+            @Override // java.util.function.BiFunction
+            public final java.lang.Object apply(java.lang.Object obj, java.lang.Object obj2) {
+                return com.google.common.collect.CollectCollectors.lambda$flatteningToMultimap$1((com.google.common.collect.Multimap) obj, (com.google.common.collect.Multimap) obj2);
+            }
+        }, new java.util.stream.Collector.Characteristics[0]);
+    }
+
+    static /* synthetic */ void lambda$flatteningToMultimap$0(java.util.function.Function function, java.util.function.Function function2, com.google.common.collect.Multimap multimap, java.lang.Object obj) {
+        final java.util.Collection collection = multimap.get(function.apply(obj));
+        java.util.stream.Stream stream = (java.util.stream.Stream) function2.apply(obj);
+        java.util.Objects.requireNonNull(collection);
+        stream.forEachOrdered(new java.util.function.Consumer() { // from class: com.google.common.collect.CollectCollectors$$ExternalSyntheticLambda73
+            @Override // java.util.function.Consumer
+            public final void accept(java.lang.Object obj2) {
+                collection.add(obj2);
+            }
+        });
+    }
+
+    static /* synthetic */ com.google.common.collect.Multimap lambda$flatteningToMultimap$1(com.google.common.collect.Multimap multimap, com.google.common.collect.Multimap multimap2) {
+        multimap.putAll(multimap2);
+        return multimap;
+    }
+
+    private CollectCollectors() {
+    }
+
+    public static /* synthetic */ java.util.LinkedHashMap $r8$lambda$9jZrLfmN7qos7GZMvkzgNgs9WjU() {
+        return new java.util.LinkedHashMap();
+    }
+}
