@@ -35,7 +35,12 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 11 out of bounds for length 8
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     @MetaExoPlayerCustomization("Customized to support load retries")
     private void A02() {
@@ -54,7 +59,12 @@ public final class FK<T extends FL> extends Handler implements Runnable {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 15 out of bounds for length 14
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     @Override // android.os.Handler
     @MetaExoPlayerCustomization("enableContinueLoadingLogging is custom")

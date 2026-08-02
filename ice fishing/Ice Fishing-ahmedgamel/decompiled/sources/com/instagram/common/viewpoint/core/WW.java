@@ -82,14 +82,14 @@ public final class WW implements VA {
     }
 
     private void A06(V7 v72) {
-        switch (v72.A06()) {
-            case A0Q:
-            case A0K:
-            case A07:
-            case A0J:
-            case A0R:
-            case A0T:
-            case A0U:
+        switch (VB.A00[v72.A06().ordinal()]) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
                 C1253Te c1253Te = new C1253Te(new Exception(A02(36, 5, 86)));
                 c1253Te.A05(1);
                 try {

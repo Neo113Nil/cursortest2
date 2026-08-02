@@ -30,7 +30,12 @@ public final class VL {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 14 out of bounds for length 10
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public static void A06(T8 t82, InterfaceC1791fv interfaceC1791fv, Map<String, ?> map) throws JSONException {
         HashMap hashMap = new HashMap();
@@ -63,7 +68,12 @@ public final class VL {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public static void A0A(T8 t82, Map<String, String> map) {
         map.putAll(t82.A04().A5a());

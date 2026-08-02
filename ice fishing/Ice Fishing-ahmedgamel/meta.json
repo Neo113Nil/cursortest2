@@ -1,16 +1,16 @@
 {
-  "app_id": "com.icefishinggame.icefishinggamemultigames",
+  "app_id": "com.icefishing.icefishingmoney",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/BKq_Us5v4gwoCFW_tdr0UVrQ2rVxHNpQA9K4u41nw8qz5PgsK8jLvshYm9MNn2Are9hkKVfZ5hnbtBjY-HiVCQ",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishinggame.icefishinggamemultigames&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/-QuPNAy7NEKD1g_Lm9Lxr4fzs90uwNVnZ0ZgFKcOczxvk1dAJW887PFNnda_Ia5xXu7ZRLesulHihCAG5OdAig",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingmoney&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Thrilling game with levels and record-breaking fun!",
+  "summary": "Assemble winter fishing puzzles and earn rewards in Ice Fishing!",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
@@ -18,6 +18,7 @@
   "source": "apkeep:apk-pure",
   "files": [
     "com.icefishing.icefishingbigwin.xapk",
+    "com.icefishing.icefishingmoney.xapk",
     "com.icefishinggame.icefishinggamemultigames.xapk"
   ],
   "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ahmedgamel",
@@ -27,11 +28,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
+      "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishinggame.icefishinggamemultigames...\ncom.icefishinggame.icefishinggamemultigames downloaded successfully!\n",
+  "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }
