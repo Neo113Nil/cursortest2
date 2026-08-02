@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="46dp"
+    android:layout_marginTop="@dimen/siq_12"
+    android:layout_marginRight="46dp"
+    android:layout_marginBottom="@dimen/siq_8">
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/time_group"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="siq_time_middle_layout_textview"/>
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:textSize="@dimen/siq_text_12"
+        android:textColor="?attr/siq_text_secondary_color"
+        android:layout_gravity="center"
+        android:id="@+id/siq_time_middle_layout_textview"
+        android:paddingLeft="@dimen/siq_10"
+        android:paddingTop="@dimen/siq_4"
+        android:paddingRight="@dimen/siq_10"
+        android:paddingBottom="@dimen/siq_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/siq_text_4"
+        android:paddingHorizontal="@dimen/siq_10"
+        android:paddingVertical="@dimen/siq_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:id="@+id/siq_info_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siq_time_middle_layout_textview"
+        style="@style/SalesIQ.Style.info_message_text"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/siq_msg_text_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/connector_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replied_message_background"/>
+    <include layout="@layout/siq_item_message_text_merge_layout"/>
+    <ImageView
+        android:id="@+id/siq_system_generated_indication_icon"
+        android:visibility="gone"
+        android:layout_width="@dimen/siq_18"
+        android:layout_height="@dimen/siq_18"
+        android:layout_marginTop="@dimen/siq_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salesiq_failed_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

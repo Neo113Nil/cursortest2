@@ -1,0 +1,20 @@
+package Dd;
+
+import kotlin.jvm.internal.Intrinsics;
+import me.C5582a;
+
+/* loaded from: classes4.dex */
+public final class e {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final Cd.a f2668a;
+
+    public e(Cd.a authenticationRepository) {
+        Intrinsics.checkNotNullParameter(authenticationRepository, "authenticationRepository");
+        this.f2668a = authenticationRepository;
+    }
+
+    public final C5582a a() {
+        return this.f2668a.g();
+    }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/siq_msg_text_layout"
+    android:paddingLeft="@dimen/siq_14"
+    android:paddingTop="@dimen/siq_10"
+    android:paddingRight="@dimen/siq_14"
+    android:paddingBottom="@dimen/siq_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/siq_14"
+    android:paddingEnd="@dimen/siq_14">
+    <ImageView
+        android:id="@+id/siq_message_action_icon"
+        android:layout_width="@dimen/siq_18"
+        android:layout_height="@dimen/siq_18"
+        android:layout_marginTop="@dimen/siq_2"
+        android:src="@drawable/salesiq_replay_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/siq_message_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/siq_8"
+        app:layout_constraintBottom_toBottomOf="@+id/siq_message_action_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/siq_message_action_icon"
+        app:layout_constraintTop_toTopOf="@+id/siq_message_action_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

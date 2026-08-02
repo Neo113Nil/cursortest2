@@ -1,0 +1,60 @@
+package com.facebook.react.viewmanagers;
+
+import android.view.View;
+import com.facebook.react.bridge.ColorPropConverter;
+import com.facebook.react.uimanager.BaseViewManager;
+import com.facebook.react.uimanager.BaseViewManagerDelegate;
+import com.facebook.react.uimanager.LayoutShadowNode;
+import com.facebook.react.viewmanagers.RNGestureHandlerButtonManagerInterface;
+
+/* loaded from: classes2.dex */
+public class RNGestureHandlerButtonManagerDelegate<T extends View, U extends BaseViewManager<T, ? extends LayoutShadowNode> & RNGestureHandlerButtonManagerInterface<T>> extends BaseViewManagerDelegate<T, U> {
+    /* JADX WARN: Incorrect types in method signature: (TU;)V */
+    public RNGestureHandlerButtonManagerDelegate(BaseViewManager baseViewManager) {
+        super(baseViewManager);
+    }
+
+    @Override // com.facebook.react.uimanager.BaseViewManagerDelegate, com.facebook.react.uimanager.ViewManagerDelegate
+    /* renamed from: setProperty */
+    public void kotlinCompat$setProperty(T t10, String str, Object obj) {
+        str.getClass();
+        switch (str) {
+            case "rippleRadius":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setRippleRadius(t10, obj != null ? ((Double) obj).intValue() : 0);
+                break;
+            case "enabled":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setEnabled(t10, obj != null ? ((Boolean) obj).booleanValue() : true);
+                break;
+            case "rippleColor":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setRippleColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
+                break;
+            case "pointerEvents":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setPointerEvents(t10, (String) obj);
+                break;
+            case "borderColor":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setBorderColor(t10, ColorPropConverter.getColor(obj, t10.getContext()));
+                break;
+            case "borderStyle":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setBorderStyle(t10, obj == null ? "solid" : (String) obj);
+                break;
+            case "borderWidth":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setBorderWidth(t10, obj == null ? 0.0f : ((Double) obj).floatValue());
+                break;
+            case "touchSoundDisabled":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setTouchSoundDisabled(t10, obj != null ? ((Boolean) obj).booleanValue() : false);
+                break;
+            case "exclusive":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setExclusive(t10, obj != null ? ((Boolean) obj).booleanValue() : true);
+                break;
+            case "borderless":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setBorderless(t10, obj != null ? ((Boolean) obj).booleanValue() : false);
+                break;
+            case "foreground":
+                ((RNGestureHandlerButtonManagerInterface) this.mViewManager).setForeground(t10, obj != null ? ((Boolean) obj).booleanValue() : false);
+                break;
+            default:
+                super.kotlinCompat$setProperty(t10, str, obj);
+                break;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:id="@+id/siq_message_text"
+        android:paddingTop="@dimen/siq_10"
+        android:paddingBottom="@dimen/siq_10"
+        android:layout_marginLeft="@dimen/siq_14"
+        android:layout_marginRight="@dimen/siq_14"
+        android:layout_marginHorizontal="@dimen/siq_14"
+        android:paddingVertical="@dimen/siq_10"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/connector_view"
+        style="@style/Theme.SalesIQ.TextStyle.Message"/>
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:id="@+id/siq_message_edited"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/end_barrier"
+        app:layout_constraintEnd_toStartOf="@+id/siq_message_time_text_view"
+        style="@style/SalesIQ.Style.message_bubble_edited_text"/>
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:id="@+id/siq_message_time_text_view"
+        android:layout_marginEnd="@dimen/siq_4"
+        app:layout_constraintBottom_toBottomOf="@+id/end_barrier"
+        app:layout_constraintEnd_toStartOf="@+id/siq_message_status_icon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        style="@style/SalesIQ.Style.chatwindow_time_textcolor_operator"/>
+    <View
+        android:id="@+id/end_barrier"
+        android:layout_width="@dimen/siq_10"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/siq_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/siq_message_status_icon"
+        android:layout_marginEnd="@dimen/siq_4"
+        app:layout_constraintBottom_toBottomOf="@+id/siq_message_time_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/end_barrier"
+        app:layout_constraintTop_toTopOf="@+id/siq_message_time_text_view"
+        style="@style/SalesIQ.Style.ChatWindow_Message_Status_Icon"/>
+</merge>

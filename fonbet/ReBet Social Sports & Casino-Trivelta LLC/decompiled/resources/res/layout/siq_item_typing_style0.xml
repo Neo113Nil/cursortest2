@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/typing_parent"
+    android:layout_width="54dp"
+    android:layout_height="32dp">
+    <View
+        android:id="@+id/siq_typing_circle1"
+        android:layout_marginStart="@dimen/siq_14"
+        style="@style/SalesIQ.View.typing_indication"/>
+    <View
+        android:id="@+id/siq_typing_circle2"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        style="@style/SalesIQ.View.typing_indication"/>
+    <View
+        android:id="@+id/siq_typing_circle3"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="@dimen/siq_14"
+        style="@style/SalesIQ.View.typing_indication"/>
+</LinearLayout>

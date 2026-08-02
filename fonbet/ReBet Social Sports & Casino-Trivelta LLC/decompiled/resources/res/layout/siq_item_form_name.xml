@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/siq_form_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/siq_4"
+        android:layout_marginStart="@dimen/siq_16"
+        android:layout_marginEnd="@dimen/siq_16"
+        style="@style/SalesIQ.Form.TextInputLayout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/siq_input_visitor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

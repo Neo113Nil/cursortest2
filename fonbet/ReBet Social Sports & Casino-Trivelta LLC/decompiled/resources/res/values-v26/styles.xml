@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V26.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V26.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.V26.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+        <item name="colorError">?android:attr/colorError</item>
+    </style>
+    <style name="Base.V26.Widget.AppCompat.Toolbar" parent="@style/Base.V7.Widget.AppCompat.Toolbar">
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar" parent="@style/Base.V26.Widget.AppCompat.Toolbar">
+    </style>
+    <style name="SalesIQ.Style.Toolbar.Subtitle.Text" parent="@style/TextAppearance.Material3.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/siq_text_14</item>
+        <item name="android:textColor">?attr/siq_toolbar_subtitle_title_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/siq_text_8</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+    <style name="SalesIQ.Style.Toolbar_text" parent="@style/TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textSize">@dimen/siq_text_20</item>
+        <item name="android:textColor">?attr/siq_toolbar_title_textcolor</item>
+        <item name="android:lineSpacingExtra">@dimen/siq_text_12</item>
+        <item name="android:fontWeight">400</item>
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+        <item name="android:keyboardNavigationCluster">true</item>
+    </style>
+</resources>

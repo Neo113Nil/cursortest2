@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/siq_ripple_color">
+    <item android:id="@+id/ripple_mask">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/siq_bottom_sheet_background"/>
+        </shape>
+    </item>
+</ripple>

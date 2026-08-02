@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.measurement;
+
+/* loaded from: classes2.dex */
+public final class zzix extends zzmb implements zznn {
+    private zzix() {
+        throw null;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public /* synthetic */ zzix(byte[] bArr) {
+        super(r1);
+        zziy zziyVar;
+        zziyVar = zziy.zzf;
+    }
+}

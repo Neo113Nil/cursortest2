@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/salesiq_ripple"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/siq_dept_status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SalesIQ.Style.dialog_department_status_image"/>
+    <com.zoho.livechat.android.modules.common.ui.views.MobilistenTextView
+        android:id="@+id/siq_category_title"
+        android:clickable="false"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/siq_form_loading_progress"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/siq_dept_status"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SalesIQ.Style.dialog_department_status_text"/>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_gravity="end"
+        android:id="@+id/siq_form_loading_progress"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:layout_marginEnd="@dimen/siq_16"
+        android:elevation="@dimen/siq_5"
+        app:indicatorSize="@dimen/siq_20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/siq_category_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackCornerRadius="@dimen/siq_2"
+        app:trackThickness="2dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import java.security.GeneralSecurityException;
+
+/* loaded from: classes2.dex */
+public final class zzks {
+    private static final zznp zza = zzb();
+
+    public static zzbb zza() {
+        if (zziv.zzb()) {
+            throw new GeneralSecurityException("Cannot use non-FIPS-compliant HybridConfigurationV1 in FIPS mode");
+        }
+        return zza;
+    }
+
+    private static zznp zzb() {
+        try {
+            zzpy zza2 = zzpw.zza();
+            zzld.zza(zza2);
+            zza2.zza(zzps.zza(new zzpu() { // from class: com.google.android.gms.internal.firebase-auth-api.zzkv
+                @Override // com.google.android.gms.internal.p002firebaseauthapi.zzpu
+                public final Object zza(zzbi zzbiVar) {
+                    return zzze.zza((zzkh) zzbiVar);
+                }
+            }, zzkh.class, zzbg.class));
+            zza2.zza(zzps.zza(new zzpu() { // from class: com.google.android.gms.internal.firebase-auth-api.zzku
+                @Override // com.google.android.gms.internal.p002firebaseauthapi.zzpu
+                public final Object zza(zzbi zzbiVar) {
+                    return zzmd.zza((zzkq) zzbiVar);
+                }
+            }, zzkq.class, zzbg.class));
+            zzkz.zza(zza2);
+            zza2.zza(zzps.zza(new zzpu() { // from class: com.google.android.gms.internal.firebase-auth-api.zzkx
+                @Override // com.google.android.gms.internal.p002firebaseauthapi.zzpu
+                public final Object zza(zzbi zzbiVar) {
+                    return zzzb.zza((zzke) zzbiVar);
+                }
+            }, zzke.class, zzbd.class));
+            zza2.zza(zzps.zza(new zzpu() { // from class: com.google.android.gms.internal.firebase-auth-api.zzkw
+                @Override // com.google.android.gms.internal.p002firebaseauthapi.zzpu
+                public final Object zza(zzbi zzbiVar) {
+                    return zzma.zza((zzki) zzbiVar);
+                }
+            }, zzki.class, zzbd.class));
+            return zznp.zza(zza2.zza());
+        } catch (GeneralSecurityException e10) {
+            throw new IllegalStateException(e10);
+        }
+    }
+}

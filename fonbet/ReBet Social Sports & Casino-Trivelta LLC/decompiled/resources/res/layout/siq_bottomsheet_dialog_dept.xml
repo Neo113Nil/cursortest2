@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/siq_8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="200dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/dragger"
+        android:layout_width="@dimen/siq_32"
+        android:layout_height="4dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/siq_dept_bottomsheet"
+        android:background="?attr/siq_forms_backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/siq_8"/>
+</LinearLayout>

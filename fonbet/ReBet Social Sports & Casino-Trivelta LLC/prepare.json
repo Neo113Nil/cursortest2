@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.rebet.android_frontend.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.hdpi.apk"
+  ],
+  "base_apk": "com.rebet.android_frontend.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 18393 (0%)\nINFO  - progress: 2999 of 18393 (16%)\nINFO  - progress: 3141 of 18393 (17%)\nINFO  - progress: 3195 of 18393 (17%)\nINFO  - progress: 3220 of 18393 (17%)\nINFO  - progress: 3291 of 18393 (17%)\nINFO  - progress: 3374 of 18393 (18%)\nINFO  - progress: 3779 of 18393 (20%)\nINFO  - progress: 4753 of 18393 (25%)\nINFO  - progress: 5252 of 18393 (28%)\nINFO  - progress: 5694 of 18393 (30%)\nINFO  - progress: 6008 of 18393 (32%)\nINFO  - progress: 6322 of 18393 (34%)\nINFO  - progress: 6644 of 18393 (36%)\nINFO  - progress: 6855 of 18393 (37%)\nINFO  - progress: 7156 of 18393 (38%)\nINFO  - progress: 7411 of 18393 (40%)\nINFO  - progress: 7847 of 18393 (42%)\nINFO  - progress: 8172 of 18393 (44%)\nINFO  - progress: 8346 of 18393 (45%)\nINFO  - progress: 8454 of 18393 (45%)\nINFO  - progress: 8704 of 18393 (47%)\nINFO  - progress: 9103 of 18393 (49%)\nINFO  - progress: 9408 of 18393 (51%)\nINFO  - progress: 9548 of 18393 (51%)\nINFO  - progress: 9637 of 18393 (52%)\nINFO  - progress: 9690 of 18393 (52%)\nINFO  - progress: 9710 of 18393 (52%)\nINFO  - progress: 9740 of 18393 (52%)\nINFO  - progress: 9825 of 18393 (53%)\nINFO  - progress: 10002 of 18393 (54%)\nINFO  - progress: 10191 of 18393 (55%)\nINFO  - progress: 10467 of 18393 (56%)\nINFO  - progress: 10827 of 18393 (58%)\nINFO  - progress: 11205 of 18393 (60%)\nINFO  - progress: 11480 of 18393 (62%)\nINFO  - progress: 11706 of 18393 (63%)\nINFO  - progress: 12048 of 18393 (65%)\nINFO  - progress: 12327 of 18393 (67%)\nINFO  - progress: 12545 of 18393 (68%)\nINFO  - progress: 12855 of 18393 (69%)\nINFO  - progress: 13246 of 18393 (72%)\nINFO  - progress: 13515 of 18393 (73%)\nINFO  - progress: 13528 of 18393 (73%)\nINFO  - progress: 13528 of 18393 (73%)\nINFO  - progress: 13528 of 18393 (73%)\nINFO  - progress: 13528 of 18393 (73%)\nINFO  - progress: 13604 of 18393 (73%)\nINFO  - progress: 13786 of 18393 (74%)\nINFO  - progress: 14117 of 18393 (76%)\nINFO  - progress: 14495 of 18393 (78%)\nINFO  - progress: 14645 of 18393 (79%)\nINFO  - progress: 14883 of 18393 (80%)\nINFO  - progress: 15254 of 18393 (82%)\nINFO  - progress: 15541 of 18393 (84%)\nINFO  - progress: 15794 of 18393 (85%)\nINFO  - progress: 15802 of 18393 (85%)\nINFO  - progress: 15862 of 18393 (86%)\nINFO  - progress: 15967 of 18393 (86%)\nINFO  - progress: 16268 of 18393 (88%)\nINFO  - progress: 16460 of 18393 (89%)\nINFO  - progress: 16799 of 18393 (91%)\nINFO  - progress: 17104 of 18393 (92%)\nINFO  - progress: 17229 of 18393 (93%)\nINFO  - progress: 17504 of 18393 (95%)\nINFO  - progress: 17647 of 18393 (95%)\nINFO  - progress: 17855 of 18393 (97%)\nINFO  - progress: 18126 of 18393 (98%)\nINFO  - progress: 18230 of 18393 (99%)\nINFO  - progress: 18341 of 18393 (99%)\nINFO  - progress: 18392 of 18393 (99%)\n                                                             \nERROR - finished with errors, count: 65\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/fonbet/ReBet Social Sports & Casino-Trivelta LLC/decompiled",
+    "skipped": false,
+    "base_apk": "com.rebet.android_frontend.apk"
+  },
+  "analysis_files": [
+    "com.rebet.android_frontend.xapk",
+    "apk/com.rebet.android_frontend.apk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.hdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A3/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/A5/",
+    "decompiled/sources/A6/",
+    "decompiled/sources/A7/",
+    "decompiled/sources/A8/",
+    "decompiled/sources/A9/",
+    "decompiled/sources/Aa/",
+    "decompiled/sources/Ab/",
+    "decompiled/sources/Ac/",
+    "decompiled/sources/Ad/",
+    "decompiled/sources/Ae/",
+    "decompiled/sources/Af/",
+    "decompiled/sources/Ag/",
+    "decompiled/sources/Ah/",
+    "decompiled/sources/Ai/"
+  ]
+}

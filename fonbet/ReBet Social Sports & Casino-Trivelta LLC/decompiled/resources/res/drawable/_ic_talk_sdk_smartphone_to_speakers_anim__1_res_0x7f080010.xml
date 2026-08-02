@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:interpolator="@android:interpolator/fast_out_slow_in"
+    android:duration="100"
+    android:valueFrom="M 5 3 L 5 21 C 5 22.1 5.9 23 7 23 L 17 23 C 18.1 23 19 22.1 19 21 L 19 3 C 19 1.9 18.1 1.01 17 1.01 L 17 1.01 L 7 1 C 5.9 1 5 1.9 5 3 M 17 19 C 17 14.333 17 9.667 17 5 L 7 5 L 7 19 C 10.333 19 13.667 19 17 19 L 17 19 M 16.625 16.355 L 16.625 16.355 C 16.625 16.355 16.625 16.355 16.625 16.355 C 16.625 16.355 16.625 16.355 16.625 16.355 L 16.625 16.355 C 16.625 16.355 16.625 16.355 16.625 16.355 C 16.625 16.355 16.625 16.355 16.625 16.355 L 16.625 16.355"
+    android:valueTo="M 3 9 L 3 15 C 4.333 15 5.667 15 7 15 L 12 20 C 12 18.222 12 16.444 12 14.667 L 12 9.333 C 12 7.556 12 5.778 12 4 L 7 9 L 3 9 C 3 9 3 9 3 9 M 16.5 12 C 16.5 10.23 15.48 8.71 14 7.97 L 14 11.995 L 14 16.02 C 15.48 15.29 16.5 13.77 16.5 12 L 16.5 12 M 14 3.23 L 14 3.23 C 18.01 4.14 21 7.72 21 12 C 21 16.28 18.01 19.86 14 20.77 L 14 18.71 C 16.89 17.85 19 15.17 19 12 C 19 8.83 16.89 6.15 14 5.29 L 14 3.23"
+    android:valueType="pathType"
+    android:propertyName="pathData"/>

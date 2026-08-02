@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/view_bot_images_parent_layout"
+    android:background="@color/siq_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/siq_image_viewer_status_bar_view"
+        android:background="?attr/siq_image_viewer_status_bar_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/siq_100"/>
+    <com.zoho.livechat.android.ui.customviews.ZoomableImageView
+        android:id="@+id/botcardimageviewzoom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/botcardimageviewtoolbar"
+        android:background="?attr/siq_image_viewer_toolbar_background_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/siq_toolbar_height"
+        android:minHeight="@dimen/siq_toolbar_height"
+        app:popupTheme="?attr/siq_pop_menu_style"
+        app:subtitleTextAppearance="@style/SalesIQ.ChatImageView.Toolbar.SubTitle"
+        app:titleTextAppearance="@style/SalesIQ.ChatImageView.Toolbar.Title"
+        style="?attr/siq_toolbar_style"/>
+</FrameLayout>

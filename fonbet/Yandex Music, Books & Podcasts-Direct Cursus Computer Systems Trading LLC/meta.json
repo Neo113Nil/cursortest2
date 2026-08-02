@@ -32,5 +32,115 @@
   ],
   "stdout": "Downloading ru.yandex.music...\nru.yandex.music downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Yandex Music, Books & Podcasts (ru.yandex.music), версия 2026.07.4 #157gpr (versionCode 24026391), разработчик Direct Cursus Computer Systems Trading LLC"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "9.0.0"
+      },
+      {
+        "param": "minSdk",
+        "value": "29"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppMetrica / Yandex Metrica (io.appmetrica, com.yandex.metrica.push), AppsFlyer 6.16.2 (атрибуция, OneLink music.onelink.me), Firebase Crashlytics, Firebase Cloud Messaging / Installations (firebase_analytics_collection_deactivated=true), Google Advertising ID / Play Install Referrer, Facebook SDK (логин / Custom Tabs, не Audience Network)"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.AUTHENTICATE_ACCOUNTS, android.permission.BLUETOOTH (maxSdkVersion=30), android.permission.CAMERA, android.permission.CHANGE_WIFI_MULTICAST_STATE, android.permission.DETECT_SCREEN_CAPTURE, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_DATA_SYNC, android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK, android.permission.GET_ACCOUNTS (maxSdkVersion=22), android.permission.INTERNET, android.permission.MANAGE_ACCOUNTS, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_SYNC_SETTINGS, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.RECORD_AUDIO, android.permission.USE_BIOMETRIC, android.permission.USE_CREDENTIALS, android.permission.USE_FINGERPRINT, android.permission.VIBRATE, android.permission.WAKE_LOCK, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.WRITE_SYNC_SETTINGS, com.android.vending.BILLING, com.google.android.c2dm.permission.RECEIVE, com.google.android.finsky.permission.BIND_GET_…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx (appcompat, activity, fragment, browser/Custom Tabs, webkit, biometric, compose, media3, room, work, lifecycle, datastore, credentials, glance), Kotlin 2.2.21 / kotlinx-coroutines 1.10.2, OkHttp3, Okio, Retrofit2, Moshi, Coil, Timber, Lottie (com.airbnb.lottie), Glide remnants (com.bumptech), Google Play Services (ads-identifier, auth, base, basement, cast, cloud-messaging, location, maps, tasks), Firebase (messaging, crashlytics, installations, encoders), Play Billing, Install Referrer, AppsFlyer, AppMetrica (io.appmetrica), Facebook Login, com.yandex (passport, plus/plus2, div, messenger, payment, metrica, alicekit, auth, browser, media, pulse, music.shared), ru.yandex (music, video, quasar), ru.kinopoisk.sdk.easylogin, ru.domesticroots, io.ktor, io.grpc, io.reactivex, io.requery, io.opentelemetry, org.joda.time, org.freedesktop.gstreamer, com.connectsdk, com.getkeepsafe.relinker, de.hdodenhof.circleimageview"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "egw.home-gateway.plus.tst.yandex.net, egw.home-gateway.plus.yandex.net, am.applink.pay.yandex.ru, am.applink.sandbox.pay.yandex.ru, aomedia.org, api.messenger.yandex.net, api.music.yandex.net, appmetrica.yandex.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Основное хранилище «Yandex_Music»: флаг онбординга (onboarding), первый запуск / version_code, тема, путь скачивания, состояние плеера (shuffle/repeat/lyrics), KEY_CLID (источник установки, напр. google-play). Отдельно: prefs.pushService / prefs.notifications, metrica_settings, Passport (yandex_am_storage, passport_init, passport_sso_pref, white_list_pref / blacklisted_apps), эксперименты Plus Pay, daily_quests / plaque_definition, prefs Firebase/Crashlytics/Facebook. Ключей offer_url / cloak / gate / white-page нет."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer (подписки Yandex Plus / paywall, не рекламный оффер клоаки), landing (экраны каталога музыки ru.yandex.music.landing), redirect (DeepLink Redirected в UrlActivity), whitelist (схемы deeplink, URL WebView, Safe Browsing, форматы видео), blacklist (BLACKLISTED в Plus Pay; blacklisted_apps Passport; CDN), clickid (зарезервированные ключи AppsFlyer DeepLink), slots (A/B-слоты / JobScheduler, не казино), gate / gateway (хост egw.home-gateway.plus.yandex.net — API Plus Home), webview / loadUrl (Plus Home, Passport, промокоды — штатные экраны) Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "egw.home-gateway.plus.tst.yandex.net",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "egw.home-gateway.plus.yandex.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "am.applink.pay.yandex.ru",
+        "redirects_to": "http://am.applink.pay.yandex.ru/showcaptcha?cc=1&form-fb-hint=2.120&mt=2C5D97D22343D68B5E3CCAC6844A4E7F049D5BE5552A8A30B3C660D9C2AEE2AA02A112394EBD78955965C516C90D4F0F35346D84AAD330007789DF9AA69937400B8E1A9258EA9E12D8F5ACD00A7A81322C3A6177DE7D85E0E164C9D3D9C47FBFA5031260F9FFBD7189E2E662FCF27AD78FAE440A35E872FD6AA1F2A4F9BB2905ED71E31A8869F3159D58D17BB881EE07A0BB939D91DCE622187562E948074FC68F4407563BB17CC8F86FAC6D4CCD5DA0779CBF8558609799C0DAC20BD8F91C80B08E87347243F4F89F83981C507868A05C9C2E3DCF4D3309BB89EB1F692AD7B71A600875FF68D1CFA78DF45B38D1F495E7C74660B18A7ECF&retpath=aHR0cDovL2FtLmFwcGxpbmsucGF5LnlhbmRleC5ydS8%2C_49c6356be38f69b97dcafcb49ece6f41&t=2%252F1785682910%252F742c6b81afac0fc645770149d2782163&u=9154687132191636266&s=06100d907d03b9092dfdc457d4106602",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "am.applink.sandbox.pay.yandex.ru",
+        "redirects_to": "http://am.applink.sandbox.pay.yandex.ru/showcaptcha?cc=1&form-fb-hint=2.120&mt=677F1600D28E26CC9EAC436579B382C7CB67C0062B5BE09E9CBF95CC8EF12F10CCF90DA11B0E61EEA515EEDBCAB11F2022FE8A8C4F5871DC70230B95D9EF4DCA7759252425821B664A3C2087E19C0A18D4B121649AD966B7ACB47223CE03720833C14F9BAA7A47EEE91B5CE9981E79373B1CAE61A9E6C20F42034BB0EA26A58FD94CA55B72AED194403393D00FAB8DB2CC9A0D95DD03850BB474107E36FA3556647A56BDA4EF304168DC4A62B7282CD854F6EA471509D31D9AFB9B5CD1E9EA3F4B00A7B91E3CA6D88722CBE96C2235E4E1526C15BBF1FFBB6C378EC910CCDB5DE38FED0AE77DDFC4A682FCB2D5DE2F9F68EEEB711BC56D5B&retpath=aHR0cDovL2FtLmFwcGxpbmsuc2FuZGJveC5wYXkueWFuZGV4LnJ1Lw%2C%2C_c15ff52fdf0c0f02b5006dc8f13c4060&t=2%252F1785682926%252F728c3a4f0ff873203b815d1c257b6352&u=9154688243044662035&s=e4d401d8573c4c6d7e56303010a68b28",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api.messenger.yandex.net",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "api.music.yandex.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "appmetrica.yandex.com",
+        "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=bd9e1064-7741-4a5d-9bf7-81af24f33444",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

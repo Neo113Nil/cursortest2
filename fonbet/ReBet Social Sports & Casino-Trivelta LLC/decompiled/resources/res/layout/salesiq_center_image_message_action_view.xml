@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/siq_msg_att_img_middleview"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp">
+    <RelativeLayout
+        android:id="@+id/siq_imgactionview"
+        android:background="@drawable/salesiq_attachment_download_bg"
+        android:visibility="visible"
+        android:layout_width="@dimen/siq_46"
+        android:layout_height="@dimen/siq_46"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/siq_imgactionimage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/salesiq_download_arrow"/>
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/siq_img_progressbar"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:indeterminateTint="@color/siq_white"
+            app:indicatorSize="@dimen/siq_38"
+            app:trackCornerRadius="@dimen/siq_2"
+            app:trackThickness="@dimen/siq_3"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

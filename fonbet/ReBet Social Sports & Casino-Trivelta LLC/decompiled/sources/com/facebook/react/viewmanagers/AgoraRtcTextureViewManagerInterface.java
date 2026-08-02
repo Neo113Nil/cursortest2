@@ -1,0 +1,10 @@
+package com.facebook.react.viewmanagers;
+
+import android.view.View;
+import com.facebook.react.bridge.ReadableMap;
+import com.facebook.react.uimanager.ViewManagerWithGeneratedInterface;
+
+/* loaded from: classes2.dex */
+public interface AgoraRtcTextureViewManagerInterface<T extends View> extends ViewManagerWithGeneratedInterface {
+    void setCallApi(T t10, ReadableMap readableMap);
+}
