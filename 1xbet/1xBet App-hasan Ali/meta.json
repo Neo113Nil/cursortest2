@@ -1,0 +1,20 @@
+{
+  "app_id": "game.betting133.sports1xbet",
+  "title": "1xBet App",
+  "developer": "hasan Ali",
+  "score": null,
+  "url": "https://play.google.com/store/apps/details?id=game.betting133.sports1xbet&hl=en&gl=us",
+  "keyword": "1xbet",
+  "developer_id": "hasan+Ali",
+  "version": "1.0",
+  "version_code": 1,
+  "summary": "1xBet App / in-app name 1xBet Guide; sports guide with remote config gate",
+  "folder": "1xBet App-hasan Ali",
+  "path": "1xbet/1xBet App-hasan Ali",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "game.betting133.sports1xbet.xapk"
+  ],
+  "cloaking": "да"
+}

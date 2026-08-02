@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "apks": [
+    "game.betting133.sports1xbet.xapk"
+  ],
+  "base_apk": "game.betting133.sports1xbet.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "/workspace/1xbet/1xBet App-hasan Ali/decompiled",
+    "base_apk": "game.betting133.sports1xbet.apk"
+  },
+  "analysis_files": [
+    "game.betting133.sports1xbet.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/config.mdpi.apk",
+    "apk/game.betting133.sports1xbet.apk",
+    "apk/config.zh.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/A/",
+    "decompiled/sources/A0/",
+    "decompiled/sources/A1/",
+    "decompiled/sources/A2/",
+    "decompiled/sources/A4/",
+    "decompiled/sources/B/",
+    "decompiled/sources/B1/",
+    "decompiled/sources/B2/",
+    "decompiled/sources/B3/",
+    "decompiled/sources/B4/",
+    "decompiled/sources/C/",
+    "decompiled/sources/C0/",
+    "decompiled/sources/C1/",
+    "decompiled/sources/C2/",
+    "decompiled/sources/C3/",
+    "decompiled/sources/C4/",
+    "decompiled/sources/D/",
+    "decompiled/sources/D0/",
+    "decompiled/sources/D1/",
+    "decompiled/sources/D2/"
+  ]
+}
