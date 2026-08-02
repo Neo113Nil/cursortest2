@@ -1,0 +1,97 @@
+package com.google.android.gms.internal.ads;
+
+import androidx.core.view.InputDeviceCompat;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.3.0 */
+/* loaded from: classes2.dex */
+public final class zzaic implements zzaip {
+    private final zzaib zza;
+    private final zzef zzb = new zzef(32);
+    private int zzc;
+    private int zzd;
+    private boolean zze;
+    private boolean zzf;
+
+    public zzaic(zzaib zzaibVar) {
+        this.zza = zzaibVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaip
+    public final void zza(zzef zzefVar, int i) {
+        int i2 = i & 1;
+        int zzc = i2 != 0 ? zzefVar.zzc() + zzefVar.zzk() : -1;
+        if (this.zzf) {
+            if (i2 == 0) {
+                return;
+            }
+            this.zzf = false;
+            zzefVar.zzF(zzc);
+            this.zzd = 0;
+        }
+        while (zzefVar.zza() > 0) {
+            int i3 = this.zzd;
+            if (i3 < 3) {
+                if (i3 == 0) {
+                    int zzk = zzefVar.zzk();
+                    zzefVar.zzF(zzefVar.zzc() - 1);
+                    if (zzk == 255) {
+                        this.zzf = true;
+                        return;
+                    }
+                }
+                int min = Math.min(zzefVar.zza(), 3 - this.zzd);
+                zzefVar.zzB(this.zzb.zzH(), this.zzd, min);
+                int i4 = this.zzd + min;
+                this.zzd = i4;
+                if (i4 == 3) {
+                    this.zzb.zzF(0);
+                    this.zzb.zzE(3);
+                    this.zzb.zzG(1);
+                    int zzk2 = this.zzb.zzk();
+                    int zzk3 = this.zzb.zzk();
+                    this.zze = (zzk2 & 128) != 0;
+                    this.zzc = (((zzk2 & 15) << 8) | zzk3) + 3;
+                    int zzb = this.zzb.zzb();
+                    int i5 = this.zzc;
+                    if (zzb < i5) {
+                        int zzb2 = this.zzb.zzb();
+                        this.zzb.zzz(Math.min(InputDeviceCompat.SOURCE_TOUCHSCREEN, Math.max(i5, zzb2 + zzb2)));
+                    }
+                }
+            } else {
+                int min2 = Math.min(zzefVar.zza(), this.zzc - i3);
+                zzefVar.zzB(this.zzb.zzH(), this.zzd, min2);
+                int i6 = this.zzd + min2;
+                this.zzd = i6;
+                int i7 = this.zzc;
+                if (i6 != i7) {
+                    continue;
+                } else {
+                    if (!this.zze) {
+                        this.zzb.zzE(i7);
+                    } else {
+                        if (zzen.zzg(this.zzb.zzH(), 0, i7, -1) != 0) {
+                            this.zzf = true;
+                            return;
+                        }
+                        this.zzb.zzE(this.zzc - 4);
+                    }
+                    this.zzb.zzF(0);
+                    this.zza.zza(this.zzb);
+                    this.zzd = 0;
+                }
+            }
+        }
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaip
+    public final void zzb(zzel zzelVar, zzzl zzzlVar, zzaio zzaioVar) {
+        this.zza.zzb(zzelVar, zzzlVar, zzaioVar);
+        this.zzf = true;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzaip
+    public final void zzc() {
+        this.zzf = true;
+    }
+}

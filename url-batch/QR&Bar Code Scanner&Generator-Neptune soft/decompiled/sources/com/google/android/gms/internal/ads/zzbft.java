@@ -1,0 +1,55 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.3.0 */
+/* loaded from: classes2.dex */
+public final class zzbft extends zzgre implements zzgsp {
+    private static final zzbft zzb;
+    private int zze;
+    private String zzf = "";
+    private zzgrn zzg = zzaK();
+    private int zzh = 1000;
+    private int zzi = 1000;
+    private int zzj = 1000;
+
+    static {
+        zzbft zzbftVar = new zzbft();
+        zzb = zzbftVar;
+        zzgre.zzaQ(zzbft.class, zzbftVar);
+    }
+
+    private zzbft() {
+    }
+
+    public static zzbft zzc() {
+        return zzb;
+    }
+
+    static /* synthetic */ void zzd(zzbft zzbftVar, String str) {
+        str.getClass();
+        zzbftVar.zze |= 1;
+        zzbftVar.zzf = str;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgre
+    protected final Object zzb(int i, Object obj, Object obj2) {
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            zzgri zzgriVar = zzbgc.zza;
+            return zzaP(zzb, "\u0001\u0005\u0000\u0001\u0001\u0005\u0005\u0000\u0001\u0000\u0001ဈ\u0000\u0002\u001b\u0003ဌ\u0001\u0004ဌ\u0002\u0005ဌ\u0003", new Object[]{"zze", "zzf", "zzg", zzbfp.class, "zzh", zzgriVar, "zzi", zzgriVar, "zzj", zzgriVar});
+        }
+        if (i2 == 3) {
+            return new zzbft();
+        }
+        zzbew zzbewVar = null;
+        if (i2 == 4) {
+            return new zzbfs(zzbewVar);
+        }
+        if (i2 != 5) {
+            return null;
+        }
+        return zzb;
+    }
+}

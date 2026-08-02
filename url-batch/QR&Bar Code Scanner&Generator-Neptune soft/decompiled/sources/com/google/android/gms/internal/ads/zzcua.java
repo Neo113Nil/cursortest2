@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Map;
+
+/* compiled from: com.google.android.gms:play-services-ads@@21.3.0 */
+/* loaded from: classes2.dex */
+public final class zzcua implements zzctw {
+    private final com.google.android.gms.ads.internal.util.zzg zza;
+
+    public zzcua(com.google.android.gms.ads.internal.util.zzg zzgVar) {
+        this.zza = zzgVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzctw
+    public final void zza(Map map) {
+        this.zza.zzz(Boolean.parseBoolean((String) map.get("content_vertical_opted_out")));
+    }
+}
