@@ -1,0 +1,36 @@
+{
+  "app_id": "com.salamadev.khotabaljomo3a.kichkabdelhamid",
+  "title": "Fonbet'",
+  "developer": "SALAMA dev",
+  "score": 5,
+  "icon": "https://play-lh.googleusercontent.com/2UUFM2RMk2vOEdscdAfB87fM7GYDGc1rGQU-2tFAm06PLGi6RBAJjeInmEy_jE3e_9SqFAecS6RLe4YXkBWs",
+  "url": "https://play.google.com/store/apps/details?id=com.salamadev.khotabaljomo3a.kichkabdelhamid&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "SALAMA+dev",
+  "released": "May 8, 2022",
+  "updated": "Nov 1, 2025",
+  "version": "Varies with device",
+  "summary": "جميع خطب الشيخ عبد الحميد كشك بدون نت",
+  "folder": "Fonbet'-SALAMA dev",
+  "path": "fonbet/Fonbet'-SALAMA dev",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.salamadev.khotabaljomo3a.kichkabdelhamid.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Fonbet'-SALAMA dev",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.salamadev.khotabaljomo3a.kichkabdelhamid...\ncom.salamadev.khotabaljomo3a.kichkabdelhamid downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.salamadev.khotabaljomo3a.kichkabdelhamid...\ncom.salamadev.khotabaljomo3a.kichkabdelhamid downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

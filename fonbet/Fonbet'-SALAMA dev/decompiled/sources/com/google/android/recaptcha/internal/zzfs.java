@@ -1,0 +1,17 @@
+package com.google.android.recaptcha.internal;
+
+/* loaded from: classes.dex */
+public final class zzfs implements zzfe {
+    public static final zzfs zza = new zzfs();
+
+    private zzfs() {
+    }
+
+    @Override // com.google.android.recaptcha.internal.zzfe
+    public final void zza(int i7, zzek zzekVar, zzrr... zzrrVarArr) {
+        if (zzrrVarArr.length != 1) {
+            throw new zzby(4, 3, null);
+        }
+        zzekVar.zzc().zze(i7, zzekVar.zzc().zza(zzrrVarArr[0]));
+    }
+}

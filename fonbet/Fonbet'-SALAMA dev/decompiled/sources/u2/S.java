@@ -1,0 +1,110 @@
+package u2;
+
+import G4.C0269b;
+import java.util.ArrayList;
+import java.util.Collections;
+
+/* loaded from: classes.dex */
+public final class S {
+
+    /* renamed from: h, reason: collision with root package name */
+    public static final C0269b f16744h = new C0269b(24);
+
+    /* renamed from: i, reason: collision with root package name */
+    public static final C0269b f16745i = new C0269b(25);
+
+    /* renamed from: a, reason: collision with root package name */
+    public final int f16746a;
+
+    /* renamed from: e, reason: collision with root package name */
+    public int f16750e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public int f16751f;
+
+    /* renamed from: g, reason: collision with root package name */
+    public int f16752g;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final Q[] f16748c = new Q[5];
+
+    /* renamed from: b, reason: collision with root package name */
+    public final ArrayList f16747b = new ArrayList();
+
+    /* renamed from: d, reason: collision with root package name */
+    public int f16749d = -1;
+
+    public S(int i7) {
+        this.f16746a = i7;
+    }
+
+    public final void a(float f7, int i7) {
+        Q q7;
+        int i8 = this.f16749d;
+        ArrayList arrayList = this.f16747b;
+        if (i8 != 1) {
+            Collections.sort(arrayList, f16744h);
+            this.f16749d = 1;
+        }
+        int i9 = this.f16752g;
+        Q[] qArr = this.f16748c;
+        if (i9 > 0) {
+            int i10 = i9 - 1;
+            this.f16752g = i10;
+            q7 = qArr[i10];
+        } else {
+            q7 = new Q();
+        }
+        int i11 = this.f16750e;
+        this.f16750e = i11 + 1;
+        q7.f16741a = i11;
+        q7.f16742b = i7;
+        q7.f16743c = f7;
+        arrayList.add(q7);
+        this.f16751f += i7;
+        while (true) {
+            int i12 = this.f16751f;
+            int i13 = this.f16746a;
+            if (i12 <= i13) {
+                return;
+            }
+            int i14 = i12 - i13;
+            Q q8 = (Q) arrayList.get(0);
+            int i15 = q8.f16742b;
+            if (i15 <= i14) {
+                this.f16751f -= i15;
+                arrayList.remove(0);
+                int i16 = this.f16752g;
+                if (i16 < 5) {
+                    this.f16752g = i16 + 1;
+                    qArr[i16] = q8;
+                }
+            } else {
+                q8.f16742b = i15 - i14;
+                this.f16751f -= i14;
+            }
+        }
+    }
+
+    public final float b() {
+        int i7 = this.f16749d;
+        ArrayList arrayList = this.f16747b;
+        if (i7 != 0) {
+            Collections.sort(arrayList, f16745i);
+            this.f16749d = 0;
+        }
+        float f7 = 0.5f * this.f16751f;
+        int i8 = 0;
+        for (int i9 = 0; i9 < arrayList.size(); i9++) {
+            Q q7 = (Q) arrayList.get(i9);
+            i8 += q7.f16742b;
+            if (i8 >= f7) {
+                return q7.f16743c;
+            }
+        }
+        if (arrayList.isEmpty()) {
+            return Float.NaN;
+        }
+        return ((Q) arrayList.get(arrayList.size() - 1)).f16743c;
+    }
+}

@@ -1,0 +1,115 @@
+package G4;
+
+import R5.C0410f;
+import R5.e0;
+import Y4.A0;
+import Y4.v0;
+import android.util.SparseArray;
+import android.webkit.WebView;
+import com.google.firebase.Timestamp;
+import com.google.protobuf.AbstractC0911k;
+import g6.AbstractC1160i;
+import java.util.HashMap;
+import k4.C1343e;
+import w1.F0;
+import w1.P2;
+
+/* renamed from: G4.k, reason: case insensitive filesystem */
+/* loaded from: classes2.dex */
+public final /* synthetic */ class RunnableC0278k implements Runnable {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ int f2984a = 0;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ int f2985b;
+
+    /* renamed from: c, reason: collision with root package name */
+    public final /* synthetic */ Object f2986c;
+
+    /* renamed from: d, reason: collision with root package name */
+    public final /* synthetic */ Object f2987d;
+
+    /* renamed from: e, reason: collision with root package name */
+    public final /* synthetic */ Object f2988e;
+
+    /* renamed from: f, reason: collision with root package name */
+    public final /* synthetic */ Object f2989f;
+
+    public /* synthetic */ RunnableC0278k(C0279l c0279l, D4.i iVar, Z z4, int i7, C1343e c1343e) {
+        this.f2986c = c0279l;
+        this.f2987d = iVar;
+        this.f2988e = z4;
+        this.f2985b = i7;
+        this.f2989f = c1343e;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        switch (this.f2984a) {
+            case 0:
+                C0279l c0279l = (C0279l) this.f2986c;
+                D4.i iVar = (D4.i) this.f2987d;
+                H4.n nVar = iVar.f1768c;
+                Z z4 = (Z) this.f2988e;
+                if (nVar.compareTo(z4.f2957e) > 0) {
+                    Z a2 = z4.a(AbstractC0911k.f12212b, nVar);
+                    SparseArray sparseArray = c0279l.f3000k;
+                    int i7 = this.f2985b;
+                    sparseArray.append(i7, a2);
+                    Y y4 = c0279l.f2999i;
+                    y4.c(a2);
+                    y4.i(i7);
+                    y4.a((C1343e) this.f2989f, i7);
+                }
+                P2 p22 = c0279l.j;
+                switch (p22.f17507a) {
+                    case 9:
+                        ((HashMap) p22.f17509c).put(iVar.f1766a, iVar);
+                        break;
+                    default:
+                        D4.h hVar = iVar.f1767b;
+                        A0 w7 = ((P2) ((R4.c) p22.f17509c).f6064b).w(hVar.f1764a);
+                        X4.a B7 = X4.c.B();
+                        X4.b bVar = t.e.b(hVar.f1765b, 1) ? X4.b.FIRST : X4.b.LAST;
+                        B7.d();
+                        X4.c.x((X4.c) B7.f12096b, bVar);
+                        String y5 = w7.y();
+                        B7.d();
+                        X4.c.v((X4.c) B7.f12096b, y5);
+                        v0 z7 = w7.z();
+                        B7.d();
+                        X4.c.w((X4.c) B7.f12096b, z7);
+                        X4.c cVar = (X4.c) B7.b();
+                        Timestamp timestamp = iVar.f1768c.f3333a;
+                        ((S) p22.f17508b).b0("INSERT OR REPLACE INTO named_queries (name, read_time_seconds, read_time_nanos, bundled_query_proto) VALUES (?, ?, ?, ?)", iVar.f1766a, Long.valueOf(timestamp.f11828a), Integer.valueOf(timestamp.f11829b), cVar.d());
+                        break;
+                }
+            default:
+                long j = this.f2985b;
+                C0410f c0410f = new C0410f(3);
+                e0 e0Var = (e0) this.f2986c;
+                R5.T t7 = e0Var.f6159a;
+                WebView webView = (WebView) this.f2987d;
+                String str = (String) this.f2988e;
+                String str2 = (String) this.f2989f;
+                t7.getClass();
+                t6.h.e(e0Var, "pigeon_instanceArg");
+                t6.h.e(webView, "webViewArg");
+                t6.h.e(str, "descriptionArg");
+                t6.h.e(str2, "failingUrlArg");
+                I4.j jVar = t7.f6101a;
+                jVar.getClass();
+                new F0((A5.f) jVar.f3678b, "dev.flutter.pigeon.webview_flutter_android.WebViewClient.onReceivedError", jVar.a(), (Object) null, 1).L(AbstractC1160i.M0(e0Var, webView, Long.valueOf(j), str, str2), new R5.O(10, c0410f));
+                break;
+        }
+    }
+
+    public /* synthetic */ RunnableC0278k(e0 e0Var, WebView webView, int i7, String str, String str2) {
+        this.f2986c = e0Var;
+        this.f2987d = webView;
+        this.f2985b = i7;
+        this.f2988e = str;
+        this.f2989f = str2;
+    }
+}

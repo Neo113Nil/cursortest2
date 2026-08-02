@@ -1,0 +1,51 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Comparator;
+
+/* loaded from: classes.dex */
+final class zzfvt extends zzfvw {
+    public zzfvt() {
+        super(null);
+    }
+
+    public static final zzfvw zzf(int i7) {
+        zzfvw zzfvwVar;
+        zzfvw zzfvwVar2;
+        zzfvw zzfvwVar3;
+        if (i7 < 0) {
+            zzfvwVar3 = zzfvw.zzb;
+            return zzfvwVar3;
+        }
+        if (i7 > 0) {
+            zzfvwVar2 = zzfvw.zzc;
+            return zzfvwVar2;
+        }
+        zzfvwVar = zzfvw.zza;
+        return zzfvwVar;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfvw
+    public final int zza() {
+        return 0;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfvw
+    public final zzfvw zzb(int i7, int i8) {
+        return zzf(Integer.compare(i7, i8));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfvw
+    public final zzfvw zzc(Object obj, Object obj2, Comparator comparator) {
+        return zzf(comparator.compare(obj, obj2));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfvw
+    public final zzfvw zzd(boolean z4, boolean z7) {
+        return zzf(Boolean.compare(z4, z7));
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzfvw
+    public final zzfvw zze(boolean z4, boolean z7) {
+        return zzf(Boolean.compare(z7, z4));
+    }
+}

@@ -1,0 +1,252 @@
+package io.sentry.android.replay;
+
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
+import androidx.compose.runtime.internal.StabilityInferred;
+import io.sentry.ISentryLifecycleToken;
+import io.sentry.util.AutoClosableReentrantLock;
+import java.io.Closeable;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
+import t6.e;
+import t6.h;
+
+@StabilityInferred(parameters = 0)
+/* loaded from: classes2.dex */
+public final class RootViewsSpy implements Closeable {
+    private final ArrayList<View> delegatingViewList;
+    private final AtomicBoolean isClosed;
+    private final CopyOnWriteArrayList<OnRootViewsChangedListener> listeners;
+    private final AutoClosableReentrantLock viewListLock;
+    public static final Companion Companion = new Companion(null);
+    public static final int $stable = 8;
+
+    public static final class Companion {
+        public /* synthetic */ Companion(e eVar) {
+            this();
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final void install$lambda$1$lambda$0(RootViewsSpy rootViewsSpy) {
+            h.e(rootViewsSpy, "$this_apply");
+            if (rootViewsSpy.isClosed.get()) {
+                return;
+            }
+            WindowManagerSpy.INSTANCE.swapWindowManagerGlobalMViews(new RootViewsSpy$Companion$install$1$1$1(rootViewsSpy));
+        }
+
+        public final RootViewsSpy install() {
+            RootViewsSpy rootViewsSpy = new RootViewsSpy(null);
+            new Handler(Looper.getMainLooper()).postAtFrontOfQueue(new io.sentry.android.core.internal.modules.a(rootViewsSpy, 2));
+            return rootViewsSpy;
+        }
+
+        private Companion() {
+        }
+    }
+
+    public /* synthetic */ RootViewsSpy(e eVar) {
+        this();
+    }
+
+    @Override // java.io.Closeable, java.lang.AutoCloseable
+    public void close() {
+        this.isClosed.set(true);
+        this.listeners.clear();
+    }
+
+    public final CopyOnWriteArrayList<OnRootViewsChangedListener> getListeners() {
+        return this.listeners;
+    }
+
+    private RootViewsSpy() {
+        this.isClosed = new AtomicBoolean(false);
+        this.viewListLock = new AutoClosableReentrantLock();
+        this.listeners = new CopyOnWriteArrayList<OnRootViewsChangedListener>() { // from class: io.sentry.android.replay.RootViewsSpy$listeners$1
+            public /* bridge */ boolean contains(OnRootViewsChangedListener onRootViewsChangedListener) {
+                return super.contains((Object) onRootViewsChangedListener);
+            }
+
+            public /* bridge */ int getSize() {
+                return super.size();
+            }
+
+            public /* bridge */ int indexOf(OnRootViewsChangedListener onRootViewsChangedListener) {
+                return super.indexOf((Object) onRootViewsChangedListener);
+            }
+
+            public /* bridge */ int lastIndexOf(OnRootViewsChangedListener onRootViewsChangedListener) {
+                return super.lastIndexOf((Object) onRootViewsChangedListener);
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List
+            public final /* bridge */ OnRootViewsChangedListener remove(int i7) {
+                return removeAt(i7);
+            }
+
+            public /* bridge */ OnRootViewsChangedListener removeAt(int i7) {
+                return remove(i7);
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
+            public final /* bridge */ int size() {
+                return getSize();
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
+            public boolean add(OnRootViewsChangedListener onRootViewsChangedListener) {
+                AutoClosableReentrantLock autoClosableReentrantLock;
+                ArrayList<View> arrayList;
+                autoClosableReentrantLock = RootViewsSpy.this.viewListLock;
+                ISentryLifecycleToken acquire = autoClosableReentrantLock.acquire();
+                try {
+                    arrayList = RootViewsSpy.this.delegatingViewList;
+                    for (View view : arrayList) {
+                        if (onRootViewsChangedListener != null) {
+                            onRootViewsChangedListener.onRootViewsChanged(view, true);
+                        }
+                    }
+                    q6.a.a(acquire, null);
+                    return super.add((RootViewsSpy$listeners$1) onRootViewsChangedListener);
+                } finally {
+                }
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
+            public final /* bridge */ boolean contains(Object obj) {
+                if (obj == null ? true : obj instanceof OnRootViewsChangedListener) {
+                    return contains((OnRootViewsChangedListener) obj);
+                }
+                return false;
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List
+            public final /* bridge */ int indexOf(Object obj) {
+                if (obj == null ? true : obj instanceof OnRootViewsChangedListener) {
+                    return indexOf((OnRootViewsChangedListener) obj);
+                }
+                return -1;
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List
+            public final /* bridge */ int lastIndexOf(Object obj) {
+                if (obj == null ? true : obj instanceof OnRootViewsChangedListener) {
+                    return lastIndexOf((OnRootViewsChangedListener) obj);
+                }
+                return -1;
+            }
+
+            public /* bridge */ boolean remove(OnRootViewsChangedListener onRootViewsChangedListener) {
+                return super.remove((Object) onRootViewsChangedListener);
+            }
+
+            @Override // java.util.concurrent.CopyOnWriteArrayList, java.util.List, java.util.Collection
+            public final /* bridge */ boolean remove(Object obj) {
+                if (obj == null ? true : obj instanceof OnRootViewsChangedListener) {
+                    return remove((OnRootViewsChangedListener) obj);
+                }
+                return false;
+            }
+        };
+        this.delegatingViewList = new ArrayList<View>() { // from class: io.sentry.android.replay.RootViewsSpy$delegatingViewList$1
+            @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+            public boolean addAll(Collection<? extends View> collection) {
+                h.e(collection, "elements");
+                for (OnRootViewsChangedListener onRootViewsChangedListener : RootViewsSpy.this.getListeners()) {
+                    Iterator<T> it = collection.iterator();
+                    while (it.hasNext()) {
+                        onRootViewsChangedListener.onRootViewsChanged((View) it.next(), true);
+                    }
+                }
+                return super.addAll(collection);
+            }
+
+            public /* bridge */ boolean contains(View view) {
+                return super.contains((Object) view);
+            }
+
+            public /* bridge */ int getSize() {
+                return super.size();
+            }
+
+            public /* bridge */ int indexOf(View view) {
+                return super.indexOf((Object) view);
+            }
+
+            public /* bridge */ int lastIndexOf(View view) {
+                return super.lastIndexOf((Object) view);
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractList, java.util.List
+            public final /* bridge */ View remove(int i7) {
+                return removeAt(i7);
+            }
+
+            public View removeAt(int i7) {
+                Object remove = super.remove(i7);
+                h.d(remove, "super.removeAt(index)");
+                View view = (View) remove;
+                Iterator<T> it = RootViewsSpy.this.getListeners().iterator();
+                while (it.hasNext()) {
+                    ((OnRootViewsChangedListener) it.next()).onRootViewsChanged(view, false);
+                }
+                return view;
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+            public final /* bridge */ int size() {
+                return getSize();
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
+            public boolean add(View view) {
+                h.e(view, "element");
+                Iterator<T> it = RootViewsSpy.this.getListeners().iterator();
+                while (it.hasNext()) {
+                    ((OnRootViewsChangedListener) it.next()).onRootViewsChanged(view, true);
+                }
+                return super.add((RootViewsSpy$delegatingViewList$1) view);
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+            public final /* bridge */ boolean contains(Object obj) {
+                if (obj instanceof View) {
+                    return contains((View) obj);
+                }
+                return false;
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractList, java.util.List
+            public final /* bridge */ int indexOf(Object obj) {
+                if (obj instanceof View) {
+                    return indexOf((View) obj);
+                }
+                return -1;
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractList, java.util.List
+            public final /* bridge */ int lastIndexOf(Object obj) {
+                if (obj instanceof View) {
+                    return lastIndexOf((View) obj);
+                }
+                return -1;
+            }
+
+            public /* bridge */ boolean remove(View view) {
+                return super.remove((Object) view);
+            }
+
+            @Override // java.util.ArrayList, java.util.AbstractCollection, java.util.Collection, java.util.List
+            public final /* bridge */ boolean remove(Object obj) {
+                if (obj instanceof View) {
+                    return remove((View) obj);
+                }
+                return false;
+            }
+        };
+    }
+}
