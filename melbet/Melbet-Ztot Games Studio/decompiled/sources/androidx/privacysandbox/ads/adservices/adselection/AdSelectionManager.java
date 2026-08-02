@@ -1,0 +1,236 @@
+package androidx.privacysandbox.ads.adservices.adselection;
+
+import android.adservices.adselection.AdSelectionConfig;
+import android.adservices.common.AdSelectionSignals;
+import android.adservices.common.AdTechIdentifier;
+import android.content.Context;
+import android.net.Uri;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.os.OutcomeReceiverKt;
+import androidx.print.PrintHelper$$ExternalSyntheticApiModelOutline0;
+import androidx.privacysandbox.ads.adservices.adid.AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda6;
+import androidx.privacysandbox.ads.adservices.internal.AdServicesInfo;
+import androidx.privacysandbox.ads.adservices.measurement.DeletionRequest$$ExternalSyntheticApiModelOutline0;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugProbesKt;
+import kotlin.jvm.JvmStatic;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.CancellableContinuationImpl;
+
+/* compiled from: AdSelectionManager.kt */
+@Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b&\u0018\u0000 \u000e2\u00020\u0001:\u0002\r\u000eB\u0007\b\u0000¢\u0006\u0002\u0010\u0002J\u0019\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H§@ø\u0001\u0000¢\u0006\u0002\u0010\u0007J\u0019\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH§@ø\u0001\u0000¢\u0006\u0002\u0010\f\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u000f"}, d2 = {"Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionManager;", "", "()V", "reportImpression", "", "reportImpressionRequest", "Landroidx/privacysandbox/ads/adservices/adselection/ReportImpressionRequest;", "(Landroidx/privacysandbox/ads/adservices/adselection/ReportImpressionRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "selectAds", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionOutcome;", "adSelectionConfig", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionConfig;", "(Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Api33Ext4Impl", "Companion", "ads-adservices_release"}, k = 1, mv = {1, 8, 0}, xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public abstract class AdSelectionManager {
+
+    /* renamed from: Companion, reason: from kotlin metadata */
+    public static final Companion INSTANCE = new Companion(null);
+
+    @JvmStatic
+    public static final AdSelectionManager obtain(Context context) {
+        return INSTANCE.obtain(context);
+    }
+
+    public abstract Object reportImpression(ReportImpressionRequest reportImpressionRequest, Continuation<? super Unit> continuation);
+
+    public abstract Object selectAds(AdSelectionConfig adSelectionConfig, Continuation<? super AdSelectionOutcome> continuation);
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* compiled from: AdSelectionManager.kt */
+    @Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\b\u0003\u0018\u00002\u00020\u0001B\u000f\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004B\r\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0002J\u0010\u0010\f\u001a\u00020\r2\u0006\u0010\n\u001a\u00020\u000eH\u0002J\u001c\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u00102\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013H\u0002J*\u0010\u0015\u001a\u0010\u0012\u0004\u0012\u00020\u0011\u0012\u0006\u0012\u0004\u0018\u00010\r0\u00162\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u000e0\u0016H\u0002J\u0010\u0010\u0017\u001a\u00020\u00182\u0006\u0010\n\u001a\u00020\u0019H\u0002J\u0010\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0002J\u0019\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0019H\u0097@ø\u0001\u0000¢\u0006\u0002\u0010!J\u0019\u0010\"\u001a\u00020\u001b2\u0006\u0010#\u001a\u00020\u000bH\u0097@ø\u0001\u0000¢\u0006\u0002\u0010$J\u0019\u0010%\u001a\u00020\u001d2\u0006\u0010#\u001a\u00020\tH\u0083@ø\u0001\u0000¢\u0006\u0002\u0010&R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006'"}, d2 = {"Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionManager$Api33Ext4Impl;", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionManager;", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "mAdSelectionManager", "Landroid/adservices/adselection/AdSelectionManager;", "(Landroid/adservices/adselection/AdSelectionManager;)V", "convertAdSelectionConfig", "Landroid/adservices/adselection/AdSelectionConfig;", "request", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionConfig;", "convertAdSelectionSignals", "Landroid/adservices/common/AdSelectionSignals;", "Landroidx/privacysandbox/ads/adservices/common/AdSelectionSignals;", "convertBuyers", "", "Landroid/adservices/common/AdTechIdentifier;", "buyers", "", "Landroidx/privacysandbox/ads/adservices/common/AdTechIdentifier;", "convertPerBuyerSignals", "", "convertReportImpressionRequest", "Landroid/adservices/adselection/ReportImpressionRequest;", "Landroidx/privacysandbox/ads/adservices/adselection/ReportImpressionRequest;", "convertResponse", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionOutcome;", "response", "Landroid/adservices/adselection/AdSelectionOutcome;", "reportImpression", "", "reportImpressionRequest", "(Landroidx/privacysandbox/ads/adservices/adselection/ReportImpressionRequest;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "selectAds", "adSelectionConfig", "(Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "selectAdsInternal", "(Landroid/adservices/adselection/AdSelectionConfig;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "ads-adservices_release"}, k = 1, mv = {1, 8, 0}, xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    static final class Api33Ext4Impl extends AdSelectionManager {
+        private final android.adservices.adselection.AdSelectionManager mAdSelectionManager;
+
+        public Api33Ext4Impl(android.adservices.adselection.AdSelectionManager mAdSelectionManager) {
+            Intrinsics.checkNotNullParameter(mAdSelectionManager, "mAdSelectionManager");
+            this.mAdSelectionManager = mAdSelectionManager;
+        }
+
+        /* JADX WARN: Illegal instructions before constructor call */
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
+        public Api33Ext4Impl(Context context) {
+            this(DeletionRequest$$ExternalSyntheticApiModelOutline0.m(r2));
+            Object systemService;
+            Intrinsics.checkNotNullParameter(context, "context");
+            systemService = context.getSystemService((Class<Object>) PrintHelper$$ExternalSyntheticApiModelOutline0.m185m$1());
+            Intrinsics.checkNotNullExpressionValue(systemService, "context.getSystemService…:class.java\n            )");
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:15:0x0036  */
+        /* JADX WARN: Removed duplicated region for block: B:8:0x0024  */
+        @Override // androidx.privacysandbox.ads.adservices.adselection.AdSelectionManager
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
+        public Object selectAds(AdSelectionConfig adSelectionConfig, Continuation<? super AdSelectionOutcome> continuation) {
+            AdSelectionManager$Api33Ext4Impl$selectAds$1 adSelectionManager$Api33Ext4Impl$selectAds$1;
+            int i;
+            Api33Ext4Impl api33Ext4Impl;
+            if (continuation instanceof AdSelectionManager$Api33Ext4Impl$selectAds$1) {
+                adSelectionManager$Api33Ext4Impl$selectAds$1 = (AdSelectionManager$Api33Ext4Impl$selectAds$1) continuation;
+                if ((adSelectionManager$Api33Ext4Impl$selectAds$1.label & Integer.MIN_VALUE) != 0) {
+                    adSelectionManager$Api33Ext4Impl$selectAds$1.label -= Integer.MIN_VALUE;
+                    Object obj = adSelectionManager$Api33Ext4Impl$selectAds$1.result;
+                    Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                    i = adSelectionManager$Api33Ext4Impl$selectAds$1.label;
+                    if (i != 0) {
+                        ResultKt.throwOnFailure(obj);
+                        android.adservices.adselection.AdSelectionConfig convertAdSelectionConfig = convertAdSelectionConfig(adSelectionConfig);
+                        adSelectionManager$Api33Ext4Impl$selectAds$1.L$0 = this;
+                        adSelectionManager$Api33Ext4Impl$selectAds$1.label = 1;
+                        obj = selectAdsInternal(convertAdSelectionConfig, adSelectionManager$Api33Ext4Impl$selectAds$1);
+                        if (obj == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        api33Ext4Impl = this;
+                    } else {
+                        if (i != 1) {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        api33Ext4Impl = (Api33Ext4Impl) adSelectionManager$Api33Ext4Impl$selectAds$1.L$0;
+                        ResultKt.throwOnFailure(obj);
+                    }
+                    return api33Ext4Impl.convertResponse(DeletionRequest$$ExternalSyntheticApiModelOutline0.m193m(obj));
+                }
+            }
+            adSelectionManager$Api33Ext4Impl$selectAds$1 = new AdSelectionManager$Api33Ext4Impl$selectAds$1(this, continuation);
+            Object obj2 = adSelectionManager$Api33Ext4Impl$selectAds$1.result;
+            Object coroutine_suspended2 = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            i = adSelectionManager$Api33Ext4Impl$selectAds$1.label;
+            if (i != 0) {
+            }
+            return api33Ext4Impl.convertResponse(DeletionRequest$$ExternalSyntheticApiModelOutline0.m193m(obj2));
+        }
+
+        private final android.adservices.adselection.AdSelectionConfig convertAdSelectionConfig(AdSelectionConfig request) {
+            AdSelectionConfig.Builder adSelectionSignals;
+            AdSelectionConfig.Builder customAudienceBuyers;
+            AdSelectionConfig.Builder decisionLogicUri;
+            AdTechIdentifier fromString;
+            AdSelectionConfig.Builder seller;
+            AdSelectionConfig.Builder perBuyerSignals;
+            AdSelectionConfig.Builder sellerSignals;
+            AdSelectionConfig.Builder trustedScoringSignalsUri;
+            android.adservices.adselection.AdSelectionConfig build;
+            adSelectionSignals = PrintHelper$$ExternalSyntheticApiModelOutline0.m168m().setAdSelectionSignals(convertAdSelectionSignals(request.getAdSelectionSignals()));
+            customAudienceBuyers = adSelectionSignals.setCustomAudienceBuyers(convertBuyers(request.getCustomAudienceBuyers()));
+            decisionLogicUri = customAudienceBuyers.setDecisionLogicUri(request.getDecisionLogicUri());
+            fromString = AdTechIdentifier.fromString(request.getSeller().getIdentifier());
+            seller = decisionLogicUri.setSeller(fromString);
+            perBuyerSignals = seller.setPerBuyerSignals(convertPerBuyerSignals(request.getPerBuyerSignals()));
+            sellerSignals = perBuyerSignals.setSellerSignals(convertAdSelectionSignals(request.getSellerSignals()));
+            trustedScoringSignalsUri = sellerSignals.setTrustedScoringSignalsUri(request.getTrustedScoringSignalsUri());
+            build = trustedScoringSignalsUri.build();
+            Intrinsics.checkNotNullExpressionValue(build, "Builder()\n              …\n                .build()");
+            return build;
+        }
+
+        private final AdSelectionSignals convertAdSelectionSignals(androidx.privacysandbox.ads.adservices.common.AdSelectionSignals request) {
+            AdSelectionSignals fromString;
+            fromString = AdSelectionSignals.fromString(request.getSignals());
+            Intrinsics.checkNotNullExpressionValue(fromString, "fromString(request.signals)");
+            return fromString;
+        }
+
+        private final List<AdTechIdentifier> convertBuyers(List<androidx.privacysandbox.ads.adservices.common.AdTechIdentifier> buyers) {
+            AdTechIdentifier fromString;
+            ArrayList arrayList = new ArrayList();
+            Iterator<androidx.privacysandbox.ads.adservices.common.AdTechIdentifier> it = buyers.iterator();
+            while (it.hasNext()) {
+                fromString = AdTechIdentifier.fromString(it.next().getIdentifier());
+                Intrinsics.checkNotNullExpressionValue(fromString, "fromString(buyer.identifier)");
+                arrayList.add(fromString);
+            }
+            return arrayList;
+        }
+
+        private final Map<AdTechIdentifier, AdSelectionSignals> convertPerBuyerSignals(Map<androidx.privacysandbox.ads.adservices.common.AdTechIdentifier, androidx.privacysandbox.ads.adservices.common.AdSelectionSignals> request) {
+            AdTechIdentifier fromString;
+            AdSelectionSignals adSelectionSignals;
+            HashMap hashMap = new HashMap();
+            for (androidx.privacysandbox.ads.adservices.common.AdTechIdentifier adTechIdentifier : request.keySet()) {
+                fromString = AdTechIdentifier.fromString(adTechIdentifier.getIdentifier());
+                Intrinsics.checkNotNullExpressionValue(fromString, "fromString(key.identifier)");
+                if (request.get(adTechIdentifier) != null) {
+                    androidx.privacysandbox.ads.adservices.common.AdSelectionSignals adSelectionSignals2 = request.get(adTechIdentifier);
+                    Intrinsics.checkNotNull(adSelectionSignals2);
+                    adSelectionSignals = convertAdSelectionSignals(adSelectionSignals2);
+                } else {
+                    adSelectionSignals = null;
+                }
+                hashMap.put(fromString, adSelectionSignals);
+            }
+            return hashMap;
+        }
+
+        private final AdSelectionOutcome convertResponse(android.adservices.adselection.AdSelectionOutcome response) {
+            long adSelectionId;
+            Uri renderUri;
+            adSelectionId = response.getAdSelectionId();
+            renderUri = response.getRenderUri();
+            Intrinsics.checkNotNullExpressionValue(renderUri, "response.renderUri");
+            return new AdSelectionOutcome(adSelectionId, renderUri);
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public final android.adservices.adselection.ReportImpressionRequest convertReportImpressionRequest(ReportImpressionRequest request) {
+            DeletionRequest$$ExternalSyntheticApiModelOutline0.m213m();
+            return DeletionRequest$$ExternalSyntheticApiModelOutline0.m(request.getAdSelectionId(), convertAdSelectionConfig(request.getAdSelectionConfig()));
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public final Object selectAdsInternal(android.adservices.adselection.AdSelectionConfig adSelectionConfig, Continuation<? super android.adservices.adselection.AdSelectionOutcome> continuation) {
+            CancellableContinuationImpl cancellableContinuationImpl = new CancellableContinuationImpl(IntrinsicsKt.intercepted(continuation), 1);
+            cancellableContinuationImpl.initCancellability();
+            this.mAdSelectionManager.selectAds(adSelectionConfig, new AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda6(), OutcomeReceiverKt.asOutcomeReceiver(cancellableContinuationImpl));
+            Object result = cancellableContinuationImpl.getResult();
+            if (result == IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
+                DebugProbesKt.probeCoroutineSuspended(continuation);
+            }
+            return result;
+        }
+
+        @Override // androidx.privacysandbox.ads.adservices.adselection.AdSelectionManager
+        public Object reportImpression(ReportImpressionRequest reportImpressionRequest, Continuation<? super Unit> continuation) {
+            CancellableContinuationImpl cancellableContinuationImpl = new CancellableContinuationImpl(IntrinsicsKt.intercepted(continuation), 1);
+            cancellableContinuationImpl.initCancellability();
+            this.mAdSelectionManager.reportImpression(convertReportImpressionRequest(reportImpressionRequest), new AdIdManager$Api33Ext4Impl$$ExternalSyntheticLambda6(), OutcomeReceiverKt.asOutcomeReceiver(cancellableContinuationImpl));
+            Object result = cancellableContinuationImpl.getResult();
+            if (result == IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
+                DebugProbesKt.probeCoroutineSuspended(continuation);
+            }
+            return result == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? result : Unit.INSTANCE;
+        }
+    }
+
+    /* compiled from: AdSelectionManager.kt */
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007¨\u0006\u0007"}, d2 = {"Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionManager$Companion;", "", "()V", "obtain", "Landroidx/privacysandbox/ads/adservices/adselection/AdSelectionManager;", "context", "Landroid/content/Context;", "ads-adservices_release"}, k = 1, mv = {1, 8, 0}, xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        @JvmStatic
+        public final AdSelectionManager obtain(Context context) {
+            Intrinsics.checkNotNullParameter(context, "context");
+            if (AdServicesInfo.INSTANCE.version() >= 4) {
+                return new Api33Ext4Impl(context);
+            }
+            return null;
+        }
+    }
+}

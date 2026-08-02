@@ -1,0 +1,36 @@
+{
+  "app_id": "com.adventuretime.superstorm",
+  "title": "Melbet",
+  "developer": "Ztot Games Studio",
+  "score": null,
+  "icon": "https://play-lh.googleusercontent.com/O7inj3kgz9KSVRSDgIaNUgxg-0OImepREs6XraIVd8R5bOTVlc-x5RjZw9IRgBP1W6u0bZR_B7DgZdlDVcCtvw",
+  "url": "https://play.google.com/store/apps/details?id=com.adventuretime.superstorm&hl=en&gl=us",
+  "keyword": "melbet",
+  "developer_id": "Ztot+Games+Studio",
+  "released": "Jan 2, 2020",
+  "updated": "2026-07-16",
+  "version": "1.4.10",
+  "summary": "Join our app and start your winning adventure with us!",
+  "folder": "Melbet-Ztot Games Studio",
+  "path": "melbet/Melbet-Ztot Games Studio",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.adventuretime.superstorm.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/melbet/Melbet-Ztot Games Studio",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.adventuretime.superstorm...\ncom.adventuretime.superstorm downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.adventuretime.superstorm...\ncom.adventuretime.superstorm downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
