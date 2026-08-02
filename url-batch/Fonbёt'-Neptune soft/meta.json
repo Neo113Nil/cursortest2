@@ -1,0 +1,36 @@
+{
+  "app_id": "com.neptunesoft.languesbacdz",
+  "title": "Fonbёt'",
+  "developer": "Neptune soft",
+  "developer_id": "7512881118161131049",
+  "icon": "https://play-lh.googleusercontent.com/-rkVkdrJX7WOUykHYlr78AP9ulAlFbEx0RZjA5y5yjHDJ4B9fZdpXRNxqKMQDr4BiWOGMCNl0rD2NqazLQhWRQ",
+  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.languesbacdz&hl=en&gl=us",
+  "score": 3.4545455,
+  "released": "Mar 4, 2022",
+  "updated": "Jun 21, 2026",
+  "version": "Varies with device",
+  "summary": "BGScores livescore: follow matches, live statistics and scores online",
+  "keyword": "url-batch",
+  "folder": "Fonbёt'-Neptune soft",
+  "path": "url-batch/Fonbёt'-Neptune soft",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.neptunesoft.languesbacdz.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Fonbёt'-Neptune soft",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.neptunesoft.languesbacdz...\ncom.neptunesoft.languesbacdz downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.neptunesoft.languesbacdz...\ncom.neptunesoft.languesbacdz downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
