@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ScoreRepublic" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/window_background_color</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">@bool/light_status_bar</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+    </style>
+    <style name="Theme.ScoreRepublic.Splash" parent="@style/Theme.SplashScreen">
+        <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+        <item name="postSplashScreenTheme">@style/Theme.ScoreRepublic</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenBackground">@color/window_background_color</item>
+    </style>
+</resources>

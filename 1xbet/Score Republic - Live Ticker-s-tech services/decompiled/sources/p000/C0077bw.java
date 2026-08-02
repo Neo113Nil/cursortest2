@@ -1,0 +1,23 @@
+package p000;
+
+import android.widget.EditText;
+import java.lang.ref.WeakReference;
+
+/* JADX INFO: renamed from: bw */
+/* JADX INFO: compiled from: r8-map-id-738170b7fb69b873ed7524d5270c8e05c6f5fb40ea1ade7a72c8ed7a70699269 */
+/* JADX INFO: loaded from: classes.dex */
+public final class C0077bw extends AbstractC0484mv {
+
+    /* JADX INFO: renamed from: a */
+    public final WeakReference f1007a;
+
+    public C0077bw(EditText editText) {
+        this.f1007a = new WeakReference(editText);
+    }
+
+    @Override // p000.AbstractC0484mv
+    /* JADX INFO: renamed from: a */
+    public final void mo786a() {
+        C0116cw.m1037a((EditText) this.f1007a.get(), 1);
+    }
+}

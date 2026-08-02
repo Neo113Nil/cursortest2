@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#ffd602</color>
+    <color name="progress_color">#ffffff</color>
+    <color name="status_bar_color">#ffd602</color>
+    <color name="window_background_color">#ffd602</color>
+</resources>
