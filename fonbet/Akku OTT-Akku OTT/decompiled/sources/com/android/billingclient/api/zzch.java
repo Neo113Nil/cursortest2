@@ -1,0 +1,32 @@
+package com.android.billingclient.api;
+
+import androidx.annotation.Nullable;
+import com.google.android.gms.internal.play_billing.zzjz;
+import com.google.android.gms.internal.play_billing.zzkd;
+import com.google.android.gms.internal.play_billing.zzkl;
+import com.google.android.gms.internal.play_billing.zzkn;
+import com.google.android.gms.internal.play_billing.zzlq;
+import com.google.android.gms.internal.play_billing.zzlu;
+
+/* loaded from: classes3.dex */
+interface zzch {
+    public static final /* synthetic */ int zza = 0;
+
+    static {
+        com.google.android.gms.internal.play_billing.zzcr.zzc("com.android.vending.billing.PURCHASES_UPDATED", zzkn.PURCHASES_UPDATED_ACTION, "com.android.vending.billing.LOCAL_BROADCAST_PURCHASES_UPDATED", zzkn.LOCAL_PURCHASES_UPDATED_ACTION, "com.android.vending.billing.ALTERNATIVE_BILLING", zzkn.ALTERNATIVE_BILLING_ACTION);
+    }
+
+    void zza(zzjz zzjzVar);
+
+    void zzb(@Nullable zzjz zzjzVar, int i);
+
+    void zzc(@Nullable zzkd zzkdVar);
+
+    void zzd(@Nullable zzkd zzkdVar, int i);
+
+    void zze(zzkl zzklVar);
+
+    void zzf(zzlq zzlqVar);
+
+    void zzg(@Nullable zzlu zzluVar);
+}

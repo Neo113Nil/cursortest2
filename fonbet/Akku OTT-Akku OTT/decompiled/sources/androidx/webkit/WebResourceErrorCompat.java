@@ -1,0 +1,22 @@
+package androidx.webkit;
+
+import androidx.annotation.RestrictTo;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/* loaded from: classes3.dex */
+public abstract class WebResourceErrorCompat {
+
+    @Retention(RetentionPolicy.SOURCE)
+    @RestrictTo({RestrictTo.Scope.LIBRARY})
+    public @interface NetErrorCode {
+    }
+
+    @RestrictTo({RestrictTo.Scope.LIBRARY})
+    public WebResourceErrorCompat() {
+    }
+
+    public abstract CharSequence getDescription();
+
+    public abstract int getErrorCode();
+}

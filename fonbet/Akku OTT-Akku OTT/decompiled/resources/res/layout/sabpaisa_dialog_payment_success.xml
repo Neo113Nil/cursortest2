@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/sabpaisa_background_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/lottie_main"
+        android:layout_width="@dimen/padding_180_dp"
+        android:layout_height="@dimen/padding_180_dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/success"
+        android:layout_centerInParent="true"
+        android:contentDescription="success image"/>
+    <io.github.sabpaisaandroid.customcomponents.SatoshiBoldTextView
+        android:textSize="@dimen/text_size_20_sp"
+        android:textStyle="bold"
+        android:textColor="@color/sabpaisa_green_successful"
+        android:layout_gravity="center"
+        android:id="@+id/redirecting_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/payment_successful"/>
+</LinearLayout>

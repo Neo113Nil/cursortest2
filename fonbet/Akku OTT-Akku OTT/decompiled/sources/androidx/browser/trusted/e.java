@@ -1,0 +1,7 @@
+package androidx.browser.trusted;
+
+/* loaded from: classes.dex */
+public final /* synthetic */ class e {
+    public static /* synthetic */ void d() {
+    }
+}

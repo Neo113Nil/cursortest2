@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/widget_reels_description"
+    android:minWidth="180dp"
+    android:minHeight="83dp"
+    android:updatePeriodMillis="3600000"
+    android:initialLayout="@layout/widget_akku_reels"
+    android:previewImage="@mipmap/ic_launcher"
+    android:widgetCategory="home_screen"
+    android:previewLayout="@layout/widget_akku_reels"
+    android:targetCellWidth="3"
+    android:targetCellHeight="2"/>

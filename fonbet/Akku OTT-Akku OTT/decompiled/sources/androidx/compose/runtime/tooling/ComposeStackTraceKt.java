@@ -1,0 +1,124 @@
+package androidx.compose.runtime.tooling;
+
+import java.util.Iterator;
+import java.util.List;
+import kotlin.ExceptionsKt;
+import kotlin.Metadata;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+@Metadata(d1 = {"\u00002\n\u0000\n\u0002\u0010\u000b\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u001a \u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0012\u0010\u0003\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u0004H\u0000\u001a \u0010\u0007\u001a\u00020\u0002*\u00020\u00022\u0012\u0010\u0003\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u0004H\u0000\u001a\u001e\u0010\b\u001a\u00020\t*\u00060\nj\u0002`\u000b2\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005H\u0000\"\u000e\u0010\f\u001a\u00020\rX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u000e\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"tryAttachComposeStackTrace", "", "", "trace", "Lkotlin/Function0;", "", "Landroidx/compose/runtime/tooling/ComposeStackTraceFrame;", "attachComposeStackTrace", "appendStackTrace", "", "Ljava/lang/StringBuilder;", "Lkotlin/text/StringBuilder;", "RuntimePackageHash", "", "IncludeDebugInfo", "runtime"}, k = 2, mv = {2, 0, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nComposeStackTrace.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ComposeStackTrace.kt\nandroidx/compose/runtime/tooling/ComposeStackTraceKt\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n+ 3 fake.kt\nkotlin/jvm/internal/FakeKt\n+ 4 ListUtils.kt\nandroidx/compose/runtime/snapshots/ListUtilsKt\n*L\n1#1,134:1\n2632#2,3:135\n1#3:138\n34#4,5:139\n34#4,5:144\n*S KotlinDebug\n*F\n+ 1 ComposeStackTrace.kt\nandroidx/compose/runtime/tooling/ComposeStackTraceKt\n*L\n39#1:135,3\n66#1:139,5\n128#1:144,5\n*E\n"})
+/* loaded from: classes.dex */
+public final class ComposeStackTraceKt {
+    private static final boolean IncludeDebugInfo = false;
+    private static final String RuntimePackageHash = "9igjgp";
+
+    /* JADX WARN: Removed duplicated region for block: B:13:0x003b  */
+    /* JADX WARN: Removed duplicated region for block: B:22:0x0098  */
+    /* JADX WARN: Removed duplicated region for block: B:32:0x0040  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public static final void appendStackTrace(StringBuilder sb, List<ComposeStackTraceFrame> list) {
+        String sourceFile;
+        List createListBuilder = CollectionsKt.createListBuilder();
+        List asReversed = CollectionsKt.asReversed(list);
+        int size = asReversed.size();
+        String str = null;
+        String str2 = null;
+        for (int i = 0; i < size; i++) {
+            ComposeStackTraceFrame composeStackTraceFrame = (ComposeStackTraceFrame) asReversed.get(i);
+            SourceInformation sourceInfo = composeStackTraceFrame.getSourceInfo();
+            String functionName = sourceInfo.getFunctionName();
+            if (functionName == null) {
+                functionName = sourceInfo.getIsCall() ? "<lambda>" : null;
+                if (functionName == null) {
+                    if (str == null) {
+                        str = "<unknown function>";
+                    }
+                    sourceFile = sourceInfo.getSourceFile();
+                    if (sourceFile == null) {
+                        str2 = sourceFile;
+                    } else if (str2 == null) {
+                        str2 = "<unknown file>";
+                    }
+                    List<LocationSourceInformation> locations = sourceInfo.getLocations();
+                    String valueOf = (composeStackTraceFrame.getGroupOffset() != null || composeStackTraceFrame.getGroupOffset().intValue() >= locations.size()) ? "<unknown line>" : String.valueOf(locations.get(composeStackTraceFrame.getGroupOffset().intValue()).getLineNumber());
+                    StringBuilder sb2 = new StringBuilder();
+                    sb2.append(str);
+                    sb2.append('(');
+                    sb2.append(str2);
+                    sb2.append(':');
+                    sb2.append(valueOf);
+                    String a = androidx.collection.a.a(')', "toString(...)", sb2);
+                    if (!sourceInfo.getIsCall()) {
+                    }
+                    if (Intrinsics.areEqual(sourceInfo.getFunctionName(), "rememberCompositionContext") || !Intrinsics.areEqual(sourceInfo.getPackageHash(), RuntimePackageHash)) {
+                        createListBuilder.add(a);
+                    }
+                }
+            }
+            str = functionName;
+            sourceFile = sourceInfo.getSourceFile();
+            if (sourceFile == null) {
+            }
+            List<LocationSourceInformation> locations2 = sourceInfo.getLocations();
+            if (composeStackTraceFrame.getGroupOffset() != null) {
+            }
+            StringBuilder sb22 = new StringBuilder();
+            sb22.append(str);
+            sb22.append('(');
+            sb22.append(str2);
+            sb22.append(':');
+            sb22.append(valueOf);
+            String a2 = androidx.collection.a.a(')', "toString(...)", sb22);
+            if (!sourceInfo.getIsCall()) {
+            }
+            if (Intrinsics.areEqual(sourceInfo.getFunctionName(), "rememberCompositionContext")) {
+            }
+            createListBuilder.add(a2);
+        }
+        List asReversed2 = CollectionsKt.asReversed(CollectionsKt.build(createListBuilder));
+        int size2 = asReversed2.size();
+        for (int i2 = 0; i2 < size2; i2++) {
+            sb.append("\tat " + ((String) asReversed2.get(i2)));
+            Intrinsics.checkNotNullExpressionValue(sb, "append(...)");
+            sb.append('\n');
+            Intrinsics.checkNotNullExpressionValue(sb, "append(...)");
+        }
+    }
+
+    public static final Throwable attachComposeStackTrace(Throwable th, Function0<? extends List<ComposeStackTraceFrame>> function0) {
+        tryAttachComposeStackTrace(th, function0);
+        return th;
+    }
+
+    public static final boolean tryAttachComposeStackTrace(Throwable th, Function0<? extends List<ComposeStackTraceFrame>> function0) {
+        DiagnosticComposeException diagnosticComposeException;
+        List<Throwable> suppressedExceptions = ExceptionsKt.getSuppressedExceptions(th);
+        boolean z = false;
+        if (suppressedExceptions == null || !suppressedExceptions.isEmpty()) {
+            Iterator<T> it = suppressedExceptions.iterator();
+            while (it.hasNext()) {
+                if (((Throwable) it.next()) instanceof DiagnosticComposeException) {
+                    return false;
+                }
+            }
+        }
+        try {
+            List<ComposeStackTraceFrame> invoke = function0.invoke();
+            boolean isEmpty = invoke.isEmpty();
+            z = !isEmpty;
+            diagnosticComposeException = !isEmpty ? new DiagnosticComposeException(invoke) : null;
+        } catch (Throwable th2) {
+            diagnosticComposeException = th2;
+        }
+        if (diagnosticComposeException != null) {
+            ExceptionsKt.addSuppressed(th, diagnosticComposeException);
+        }
+        return z;
+    }
+}

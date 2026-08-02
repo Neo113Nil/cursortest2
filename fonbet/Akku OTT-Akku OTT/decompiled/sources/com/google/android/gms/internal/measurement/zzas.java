@@ -1,0 +1,487 @@
+package com.google.android.gms.internal.measurement;
+
+import androidx.collection.SieveCacheKt;
+import androidx.compose.runtime.changelist.d;
+import androidx.fragment.app.v;
+import com.google.android.exoplayer2.source.rtsp.SessionDescription;
+import com.google.firebase.analytics.FirebaseAnalytics;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/* loaded from: classes4.dex */
+public final class zzas implements Iterable, zzao {
+    private final String zza;
+
+    public zzas(String str) {
+        if (str == null) {
+            throw new IllegalArgumentException("StringValue cannot be null.");
+        }
+        this.zza = str;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof zzas) {
+            return this.zza.equals(((zzas) obj).zza);
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        return this.zza.hashCode();
+    }
+
+    @Override // java.lang.Iterable
+    public final Iterator iterator() {
+        return new zzar(this);
+    }
+
+    public final String toString() {
+        String str = this.zza;
+        return v.a(new StringBuilder(str.length() + 2), "\"", str, "\"");
+    }
+
+    public final /* synthetic */ String zzb() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final String zzc() {
+        return this.zza;
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r1v123 */
+    /* JADX WARN: Type inference failed for: r1v124, types: [int] */
+    /* JADX WARN: Type inference failed for: r1v156 */
+    /* JADX WARN: Type inference failed for: r23v0, types: [java.lang.Object, java.lang.String] */
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final zzao zzcA(String str, zzg zzgVar, List list) {
+        String str2;
+        String str3;
+        String str4;
+        String str5;
+        String str6;
+        char c;
+        int i;
+        String str7;
+        int i2;
+        int i3;
+        boolean z;
+        zzg zzgVar2;
+        int i4;
+        if ("charAt".equals(str) || "concat".equals(str) || "hasOwnProperty".equals(str) || "indexOf".equals(str) || "lastIndexOf".equals(str) || "match".equals(str) || "replace".equals(str) || FirebaseAnalytics.Event.SEARCH.equals(str) || "slice".equals(str) || "split".equals(str) || "substring".equals(str) || "toLowerCase".equals(str) || "toLocaleLowerCase".equals(str) || "toString".equals(str) || "toUpperCase".equals(str) || "toLocaleUpperCase".equals(str)) {
+            str2 = "hasOwnProperty";
+            str3 = "trim";
+        } else {
+            str2 = "hasOwnProperty";
+            str3 = "trim";
+            if (!str3.equals(str)) {
+                throw new IllegalArgumentException(d.b(str, " is not a String function"));
+            }
+        }
+        switch (str.hashCode()) {
+            case -1789698943:
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                if (str.equals(str4)) {
+                    c = 2;
+                    break;
+                }
+                c = 65535;
+                break;
+            case -1776922004:
+                str5 = "charAt";
+                str6 = "toString";
+                if (str.equals(str6)) {
+                    c = 14;
+                    str4 = str2;
+                    break;
+                } else {
+                    str4 = str2;
+                    c = 65535;
+                    break;
+                }
+            case -1464939364:
+                str5 = "charAt";
+                if (str.equals("toLocaleLowerCase")) {
+                    c = '\f';
+                    str4 = str2;
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -1361633751:
+                str5 = "charAt";
+                if (str.equals(str5)) {
+                    str4 = str2;
+                    str6 = "toString";
+                    c = 0;
+                    break;
+                }
+                str4 = str2;
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -1354795244:
+                if (str.equals("concat")) {
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    c = 1;
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -1137582698:
+                if (str.equals("toLowerCase")) {
+                    c = '\r';
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -906336856:
+                if (str.equals(FirebaseAnalytics.Event.SEARCH)) {
+                    c = 7;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -726908483:
+                if (str.equals("toLocaleUpperCase")) {
+                    c = 11;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -467511597:
+                if (str.equals("lastIndexOf")) {
+                    c = 4;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case -399551817:
+                if (str.equals("toUpperCase")) {
+                    c = 15;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 3568674:
+                if (str.equals(str3)) {
+                    c = 16;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 103668165:
+                if (str.equals("match")) {
+                    c = 5;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 109526418:
+                if (str.equals("slice")) {
+                    c = '\b';
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 109648666:
+                if (str.equals("split")) {
+                    c = '\t';
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 530542161:
+                if (str.equals("substring")) {
+                    c = '\n';
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 1094496948:
+                if (str.equals("replace")) {
+                    c = 6;
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            case 1943291465:
+                if (str.equals("indexOf")) {
+                    str4 = str2;
+                    str5 = "charAt";
+                    str6 = "toString";
+                    c = 3;
+                    break;
+                }
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+            default:
+                str4 = str2;
+                str5 = "charAt";
+                str6 = "toString";
+                c = 65535;
+                break;
+        }
+        String str8 = str5;
+        switch (c) {
+            case 0:
+                zzh.zzc(str8, 1, list);
+                int zzi = !list.isEmpty() ? (int) zzh.zzi(zzgVar.zza((zzao) list.get(0)).zzd().doubleValue()) : 0;
+                String str9 = this.zza;
+                return (zzi < 0 || zzi >= str9.length()) ? zzao.zzm : new zzas(String.valueOf(str9.charAt(zzi)));
+            case 1:
+                if (list.isEmpty()) {
+                    return this;
+                }
+                StringBuilder sb = new StringBuilder(this.zza);
+                for (int i5 = 0; i5 < list.size(); i5++) {
+                    sb.append(zzgVar.zza((zzao) list.get(i5)).zzc());
+                }
+                return new zzas(sb.toString());
+            case 2:
+                zzh.zza(str4, 1, list);
+                String str10 = this.zza;
+                zzao zza = zzgVar.zza((zzao) list.get(0));
+                if (SessionDescription.ATTR_LENGTH.equals(zza.zzc())) {
+                    return zzao.zzk;
+                }
+                double doubleValue = zza.zzd().doubleValue();
+                return (doubleValue != Math.floor(doubleValue) || (i = (int) doubleValue) < 0 || i >= str10.length()) ? zzao.zzl : zzao.zzk;
+            case 3:
+                zzh.zzc("indexOf", 2, list);
+                return new zzah(Double.valueOf(this.zza.indexOf(list.size() > 0 ? zzgVar.zza((zzao) list.get(0)).zzc() : "undefined", (int) zzh.zzi(list.size() >= 2 ? zzgVar.zza((zzao) list.get(1)).zzd().doubleValue() : 0.0d))));
+            case 4:
+                zzh.zzc("lastIndexOf", 2, list);
+                String str11 = this.zza;
+                String zzc = list.size() > 0 ? zzgVar.zza((zzao) list.get(0)).zzc() : "undefined";
+                return new zzah(Double.valueOf(str11.lastIndexOf(zzc, (int) (Double.isNaN(list.size() < 2 ? Double.NaN : zzgVar.zza((zzao) list.get(1)).zzd().doubleValue()) ? Double.POSITIVE_INFINITY : zzh.zzi(r1)))));
+            case 5:
+                zzh.zzc("match", 1, list);
+                Matcher matcher = Pattern.compile(list.size() <= 0 ? "" : zzgVar.zza((zzao) list.get(0)).zzc()).matcher(this.zza);
+                return matcher.find() ? new zzae(Arrays.asList(new zzas(matcher.group()))) : zzao.zzg;
+            case 6:
+                zzh.zzc("replace", 2, list);
+                zzao zzaoVar = zzao.zzf;
+                if (!list.isEmpty()) {
+                    str7 = zzgVar.zza((zzao) list.get(0)).zzc();
+                    if (list.size() > 1) {
+                        zzaoVar = zzgVar.zza((zzao) list.get(1));
+                    }
+                }
+                String str12 = str7;
+                String str13 = this.zza;
+                int indexOf = str13.indexOf(str12);
+                if (indexOf < 0) {
+                    return this;
+                }
+                if (zzaoVar instanceof zzai) {
+                    i2 = 0;
+                    zzaoVar = ((zzai) zzaoVar).zza(zzgVar, Arrays.asList(new zzas(str12), new zzah(Double.valueOf(indexOf)), this));
+                } else {
+                    i2 = 0;
+                }
+                String substring = str13.substring(i2, indexOf);
+                String zzc2 = zzaoVar.zzc();
+                String substring2 = str13.substring(str12.length() + indexOf);
+                return new zzas(v.a(new StringBuilder(String.valueOf(substring).length() + String.valueOf(zzc2).length() + String.valueOf(substring2).length()), substring, zzc2, substring2));
+            case 7:
+                zzh.zzc(FirebaseAnalytics.Event.SEARCH, 1, list);
+                return Pattern.compile(list.isEmpty() ? "undefined" : zzgVar.zza((zzao) list.get(0)).zzc()).matcher(this.zza).find() ? new zzah(Double.valueOf(r0.start())) : new zzah(Double.valueOf(-1.0d));
+            case '\b':
+                zzh.zzc("slice", 2, list);
+                String str14 = this.zza;
+                double zzi2 = zzh.zzi(!list.isEmpty() ? zzgVar.zza((zzao) list.get(0)).zzd().doubleValue() : 0.0d);
+                double max = zzi2 < 0.0d ? Math.max(str14.length() + zzi2, 0.0d) : Math.min(zzi2, str14.length());
+                double zzi3 = zzh.zzi(list.size() > 1 ? zzgVar.zza((zzao) list.get(1)).zzd().doubleValue() : str14.length());
+                int i6 = (int) max;
+                return new zzas(str14.substring(i6, Math.max(0, ((int) (zzi3 < 0.0d ? Math.max(str14.length() + zzi3, 0.0d) : Math.min(zzi3, str14.length()))) - i6) + i6));
+            case '\t':
+                zzh.zzc("split", 2, list);
+                String str15 = this.zza;
+                if (str15.length() == 0) {
+                    return new zzae(Arrays.asList(this));
+                }
+                ArrayList arrayList = new ArrayList();
+                if (list.isEmpty()) {
+                    arrayList.add(this);
+                } else {
+                    String zzc3 = zzgVar.zza((zzao) list.get(0)).zzc();
+                    long zzh = list.size() > 1 ? zzh.zzh(zzgVar.zza((zzao) list.get(1)).zzd().doubleValue()) : SieveCacheKt.NodeLinkMask;
+                    if (zzh == 0) {
+                        return new zzae();
+                    }
+                    String[] split = str15.split(Pattern.quote(zzc3), ((int) zzh) + 1);
+                    int length = split.length;
+                    if (!zzc3.isEmpty() || length <= 0) {
+                        i3 = length;
+                        z = false;
+                    } else {
+                        boolean isEmpty = split[0].isEmpty();
+                        i3 = length - 1;
+                        if (!split[i3].isEmpty()) {
+                            i3 = length;
+                        }
+                        z = isEmpty;
+                    }
+                    if (length > zzh) {
+                        i3--;
+                    }
+                    for (?? r1 = z; r1 < i3; r1++) {
+                        arrayList.add(new zzas(split[r1]));
+                    }
+                }
+                return new zzae(arrayList);
+            case '\n':
+                zzh.zzc("substring", 2, list);
+                String str16 = this.zza;
+                if (list.isEmpty()) {
+                    zzgVar2 = zzgVar;
+                    i4 = 0;
+                } else {
+                    zzgVar2 = zzgVar;
+                    i4 = (int) zzh.zzi(zzgVar2.zza((zzao) list.get(0)).zzd().doubleValue());
+                }
+                int zzi4 = list.size() > 1 ? (int) zzh.zzi(zzgVar2.zza((zzao) list.get(1)).zzd().doubleValue()) : str16.length();
+                int min = Math.min(Math.max(i4, 0), str16.length());
+                int min2 = Math.min(Math.max(zzi4, 0), str16.length());
+                return new zzas(str16.substring(Math.min(min, min2), Math.max(min, min2)));
+            case 11:
+                zzh.zza("toLocaleUpperCase", 0, list);
+                return new zzas(this.zza.toUpperCase());
+            case '\f':
+                zzh.zza("toLocaleLowerCase", 0, list);
+                return new zzas(this.zza.toLowerCase());
+            case '\r':
+                zzh.zza("toLowerCase", 0, list);
+                return new zzas(this.zza.toLowerCase(Locale.ENGLISH));
+            case 14:
+                zzh.zza(str6, 0, list);
+                return this;
+            case 15:
+                zzh.zza("toUpperCase", 0, list);
+                return new zzas(this.zza.toUpperCase(Locale.ENGLISH));
+            case 16:
+                zzh.zza("toUpperCase", 0, list);
+                return new zzas(this.zza.trim());
+            default:
+                throw new IllegalArgumentException("Command not supported");
+        }
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final Double zzd() {
+        String str = this.zza;
+        if (str.isEmpty()) {
+            return Double.valueOf(0.0d);
+        }
+        try {
+            return Double.valueOf(str);
+        } catch (NumberFormatException unused) {
+            return Double.valueOf(Double.NaN);
+        }
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final Boolean zze() {
+        return Boolean.valueOf(!this.zza.isEmpty());
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final Iterator zzf() {
+        return new zzaq(this);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzao
+    public final zzao zzt() {
+        return new zzas(this.zza);
+    }
+}

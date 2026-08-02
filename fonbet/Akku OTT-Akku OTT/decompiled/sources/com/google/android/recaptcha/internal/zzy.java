@@ -1,0 +1,18 @@
+package com.google.android.recaptcha.internal;
+
+import kotlin.coroutines.Continuation;
+
+/* loaded from: classes4.dex */
+public interface zzy {
+    int zza();
+
+    zzek zzb();
+
+    Object zzc(String str, Continuation continuation);
+
+    Object zzd(zzse zzseVar, Continuation continuation);
+
+    void zze(zzsr zzsrVar);
+
+    boolean zzf();
+}

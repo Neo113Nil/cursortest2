@@ -1,0 +1,72 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import android.support.v4.media.a;
+import android.support.v4.media.b;
+import com.google.android.gms.internal.p002firebaseauthapi.zzge;
+import java.security.GeneralSecurityException;
+
+/* loaded from: classes4.dex */
+public final class zzgb extends zzcw {
+    private final zzge zza;
+    private final zzaal zzb;
+    private final zzaaj zzc;
+    private final Integer zzd;
+
+    private zzgb(zzge zzgeVar, zzaal zzaalVar, zzaaj zzaajVar, Integer num) {
+        this.zza = zzgeVar;
+        this.zzb = zzaalVar;
+        this.zzc = zzaajVar;
+        this.zzd = num;
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzcw, com.google.android.gms.internal.p002firebaseauthapi.zzbi
+    public final /* synthetic */ zzcb zza() {
+        return (zzge) zza();
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzbi
+    public final Integer zzb() {
+        return this.zzd;
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzcw
+    /* renamed from: zzc */
+    public final /* synthetic */ zzcy zza() {
+        return this.zza;
+    }
+
+    @Override // com.google.android.gms.internal.p002firebaseauthapi.zzcw
+    public final zzaaj zzd() {
+        return this.zzc;
+    }
+
+    public final zzaal zze() {
+        return this.zzb;
+    }
+
+    public static zzgb zza(zzge.zza zzaVar, zzaal zzaalVar, Integer num) throws GeneralSecurityException {
+        zzaaj zzb;
+        zzge.zza zzaVar2 = zzge.zza.zzc;
+        if (zzaVar != zzaVar2 && num == null) {
+            throw new GeneralSecurityException(b.b("For given Variant ", String.valueOf(zzaVar), " the value of idRequirement must be non-null"));
+        }
+        if (zzaVar == zzaVar2 && num != null) {
+            throw new GeneralSecurityException("For given Variant NO_PREFIX the value of idRequirement must be null");
+        }
+        if (zzaalVar.zza() != 32) {
+            throw new GeneralSecurityException(a.a(zzaalVar.zza(), "XChaCha20Poly1305 key must be constructed with key of length 32 bytes, not "));
+        }
+        zzge zza = zzge.zza(zzaVar);
+        if (zza.zzb() == zzaVar2) {
+            zzb = zzpe.zza;
+        } else if (zza.zzb() == zzge.zza.zzb) {
+            zzb = zzpe.zza(num.intValue());
+        } else {
+            if (zza.zzb() != zzge.zza.zza) {
+                throw new IllegalStateException("Unknown Variant: ".concat(String.valueOf(zza.zzb())));
+            }
+            zzb = zzpe.zzb(num.intValue());
+        }
+        return new zzgb(zza, zzaalVar, zzb, num);
+    }
+}
