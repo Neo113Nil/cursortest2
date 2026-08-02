@@ -9,15 +9,19 @@
     "adxtk.anythinktech.com",
     "alphamountain.ai",
     "api.anythinktech.com",
+    "api.bridgeoos.com",
     "bfore.ai",
+    "criczop.com",
     "da.anythinktech.com",
     "desenmascara.me",
+    "gamescritique.com",
     "img.anythinktech.com",
     "img.toponad.com",
-    "net.cn",
+    "qureka.com",
     "se.zxcvbnmpo.com",
     "ssapi.anythinktech.com",
     "static.gamezop.com",
+    "tc.weszxdrf.com",
     "tk.anythinktech.com",
     "whatwg.org"
   ],
@@ -1232,21 +1236,35 @@
           "harmless": 0,
           "malicious": 0
         },
-        "categories": {
-          "Sophos": "games",
-          "Forcepoint ThreatSeeker": "games"
-        },
+        "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1587112958,
-        "last_modification_date": 1785613738,
-        "last_analysis_date": null,
+        "last_modification_date": 1785614333,
+        "last_analysis_date": 1785613731,
         "registrar": "NAMECHEAP INC",
         "whois": "Admin City: Reykjavik\nAdmin Country: IS\nAdmin Email: 9247ed1d3e10cd06s@withheldforprivacy.com\nAdmin Organization: Privacy service provided by Withheld for Privacy ehf\nAdmin Postal Code: 101\nAdmin State/Province: Capital Region\nCreation Date: 2020-04-17T08:42:38.00Z\nCreation Date: 2020-04-17T08:42:38Z\nDNSSEC: unsigned\nDomain Name: UMOGAMES.COM\nDomain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\nDomain name: umogames.com\nName Server: TERIN.NS.CLOUDFLARE.COM\nName Server: VIDA.NS.CLOUDFLARE.COM\nName Server: terin.ns.cloudflare.com\nName Server: vida.ns.cloudflare.com\nRegistrant City: ddbf76e4e8cee320\nRegistrant Country: IS\nRegistrant Email: 9247ed1d3e10cd06s@withheldforprivacy.com\nRegistrant Fax Ext: 3432650ec337c945\nRegistrant Fax: 3432650ec337c945\nRegistrant Name: 37bfbc24cafea5d2\nRegistrant Organization: 4b7a0912c26a13e2\nRegistrant Phone Ext: 3432650ec337c945\nRegistrant Phone: 1c9a7bcdeaf95e9f\nRegistrant Postal Code: f206c9d9737ad45d\nRegistrant State/Province: 3e0204199d8ebf9c\nRegistrant Street: c6523241936df1ba\nRegistrar Abuse Contact Email: abuse@namecheap.com\nRegistrar Abuse Contact Phone: +1.6613102107\nRegistrar Abuse Contact Phone: +1.9854014545\nRegistrar IANA ID: 1068\nRegistrar Registration Expiration Date: 2027-04-17T08:42:38.00Z\nRegistrar URL: http://www.namecheap.com\nRegistrar WHOIS Server: whois.namecheap.com\nRegistrar: NAMECHEAP INC\nRegistrar: NameCheap, Inc.\nRegistry Domain ID: 2515675246_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2027-04-17T08:42:38Z\nTech City: Reykjavik\nTech Country: IS\nTech Email: 9247ed1d3e10cd06s@withheldforprivacy.com\nTech Organization: Privacy service provided by Withheld for Privacy ehf\nTech Postal Code: 101\nTech State/Province: Capital Region\nUpdated Date: 2026-03-18T11:01:25.44Z\nUpdated Date: 2026-03-18T11:01:25Z",
         "dns_records": [
-          "нет"
+          "AAAA 2600:9000:2201:8e00:14:c51b:ea80:93a1",
+          "NS ns-706.awsdns-24.net",
+          "NS ns-23.awsdns-02.com",
+          "SOA ns-23.awsdns-02.com",
+          "AAAA 2600:9000:2201:600:14:c51b:ea80:93a1",
+          "A 13.226.251.120",
+          "AAAA 2600:9000:2201:aa00:14:c51b:ea80:93a1",
+          "AAAA 2600:9000:2201:6200:14:c51b:ea80:93a1",
+          "A 13.226.251.44",
+          "AAAA 2600:9000:2201:c000:14:c51b:ea80:93a1",
+          "NS ns-1027.awsdns-00.org",
+          "A 13.226.251.114"
         ],
-        "https_subject": "нет",
-        "https_issuer": "нет",
+        "https_subject": {
+          "CN": "*.play.umogames.com"
+        },
+        "https_issuer": {
+          "C": "US",
+          "O": "Amazon",
+          "CN": "Amazon RSA 2048 M04"
+        },
         "malicious_engines": [
           "нет"
         ],
@@ -3712,7 +3730,7 @@
       "redirect_chain": [
         "https://9455.read.criczop.com/"
       ],
-      "page_output": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Advertisement Latest Cricket News All Cri",
+      "page_output": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Latest Cricket News All Cricket News More",
       "parked_at": "регистратор: NAMECHEAP INC",
       "final_url": "https://9455.read.criczop.com/",
       "http_status": 200,
@@ -4103,7 +4121,7 @@
         },
         {
           "param": "Что выводит (кратко)",
-          "value": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Advertisement Latest Cricket News All Cri"
+          "value": "title: Live Cricket Scores, Match Schedules &amp; News | Criczop. Live Cricket Scores, Match Schedules &amp; News | Criczop Schedule Cricket Videos Cricket News ICC Rankings Logout All Matches ZIM vs IND T100 2026 WI vs PAK LPL 2026 WI vs NZ ICC CWC League 2 ALL Latest Cricket Fixtures View All Fixtures Latest Cricket News All Cricket News More"
         },
         {
           "param": "Где припаркован",
@@ -4500,8 +4518,8 @@
           "Cisco Umbrella: 965105"
         ],
         "creation_date": 1572854891,
-        "last_modification_date": 1785612651,
-        "last_analysis_date": 1785612342,
+        "last_modification_date": 1785673615,
+        "last_analysis_date": 1785673305,
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [
@@ -5314,8 +5332,8 @@
         "categories": {},
         "popularity_ranks": "нет",
         "creation_date": 1572854891,
-        "last_modification_date": 1784861542,
-        "last_analysis_date": 1784861216,
+        "last_modification_date": 1785645312,
+        "last_analysis_date": 1785644686,
         "registrar": "Alibaba Cloud Computing (Beijing) Co., Ltd.",
         "whois": "Creation Date: 2019-11-04T08:08:11Z\nDNSSEC: unsigned\nDomain Name: ANYTHINKTECH.COM\nDomain Name: anythinktech.com\nDomain Status: ok https://icann.org/epp#ok\nName Server: NS-1334.AWSDNS-38.ORG\nName Server: NS-1991.AWSDNS-56.CO.UK\nName Server: NS-300.AWSDNS-37.COM\nName Server: NS-910.AWSDNS-49.NET\nRegistrant City: 3432650ec337c945\nRegistrant Country: CN\nRegistrant Email: 6aacf85c31f44448s@\nRegistrant State/Province: 82d23503866c2fea\nRegistrar Abuse Contact Email: DomainAbuse@service.aliyun.com\nRegistrar Abuse Contact Phone: +86.95187\nRegistrar IANA ID: 420\nRegistrar Registration Expiration Date: 2026-11-04T08:08:11Z\nRegistrar URL: http://www.net.cn\nRegistrar WHOIS Server: grs-whois.hichina.com\nRegistrar: Alibaba Cloud Computing (Beijing) Co., Ltd.\nRegistry Domain ID: 2451252614_DOMAIN_COM-VRSN\nRegistry Expiry Date: 2026-11-04T08:08:11Z\nRegistry Registrant ID: Not Available From Registry\nUpdated Date: 2025-09-18T03:37:23Z",
         "dns_records": [

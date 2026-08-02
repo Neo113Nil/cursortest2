@@ -25,24 +25,50 @@ public final class NY implements Serializable {
     public final String A0H;
 
     public NY(NX nx) {
+        String str;
+        String str2;
+        String str3;
+        NW nw;
+        String str4;
+        String str5;
+        String str6;
+        String str7;
+        String str8;
+        String str9;
+        String str10;
+        String str11;
+        String str12;
         this.A0H = nx.A0H;
         this.A0G = nx.A0G;
         this.A04 = nx.A04;
         this.A0D = nx.A0D;
         this.A0A = nx.A0A;
-        this.A02 = nx.A02;
-        this.A05 = nx.A05;
-        this.A0F = nx.A0F;
-        this.A00 = nx.A00;
-        this.A01 = nx.A01;
-        this.A06 = nx.A06;
-        this.A0C = nx.A0C;
-        this.A07 = nx.A07;
-        this.A0E = nx.A0E;
-        this.A03 = nx.A03;
-        this.A0B = nx.A0B;
-        this.A08 = nx.A08;
-        this.A09 = nx.A09;
+        str = nx.A02;
+        this.A02 = str;
+        str2 = nx.A05;
+        this.A05 = str2;
+        str3 = nx.A0F;
+        this.A0F = str3;
+        nw = nx.A00;
+        this.A00 = nw;
+        str4 = nx.A01;
+        this.A01 = str4;
+        str5 = nx.A06;
+        this.A06 = str5;
+        str6 = nx.A0C;
+        this.A0C = str6;
+        str7 = nx.A07;
+        this.A07 = str7;
+        str8 = nx.A0E;
+        this.A0E = str8;
+        str9 = nx.A03;
+        this.A03 = str9;
+        str10 = nx.A0B;
+        this.A0B = str10;
+        str11 = nx.A08;
+        this.A08 = str11;
+        str12 = nx.A09;
+        this.A09 = str12;
     }
 
     public final NW A00() {
