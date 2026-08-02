@@ -11,18 +11,10 @@ public final class NF implements Serializable {
     public final String A03;
 
     public NF(NE ne) {
-        String str;
-        String str2;
-        String str3;
-        String str4;
-        str = ne.A02;
-        this.A02 = str;
-        str2 = ne.A03;
-        this.A03 = str2;
-        str3 = ne.A01;
-        this.A01 = str3;
-        str4 = ne.A00;
-        this.A00 = str4;
+        this.A02 = ne.A02;
+        this.A03 = ne.A03;
+        this.A01 = ne.A01;
+        this.A00 = ne.A00;
     }
 
     public final String A00() {

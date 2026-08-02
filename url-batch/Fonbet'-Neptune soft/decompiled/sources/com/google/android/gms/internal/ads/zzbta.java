@@ -1,5 +1,6 @@
 package com.google.android.gms.internal.ads;
 
+import com.google.android.gms.ads.nativead.NativeCustomFormatAd;
 import java.util.Objects;
 
 /* compiled from: com.google.android.gms:play-services-ads-api@@24.5.0 */
@@ -14,10 +15,16 @@ final class zzbta extends zzbhs {
 
     @Override // com.google.android.gms.internal.ads.zzbht
     public final void zze(zzbhj zzbhjVar, String str) {
+        NativeCustomFormatAd.OnCustomClickListener onCustomClickListener;
+        NativeCustomFormatAd.OnCustomClickListener onCustomClickListener2;
+        NativeCustomFormatAd zzf;
         zzbtd zzbtdVar = this.zza;
-        if (zzbtdVar.zzb == null) {
+        onCustomClickListener = zzbtdVar.zzb;
+        if (onCustomClickListener == null) {
             return;
         }
-        zzbtdVar.zzb.onCustomClick(zzbtdVar.zzf(zzbhjVar), str);
+        onCustomClickListener2 = zzbtdVar.zzb;
+        zzf = zzbtdVar.zzf(zzbhjVar);
+        onCustomClickListener2.onCustomClick(zzf, str);
     }
 }

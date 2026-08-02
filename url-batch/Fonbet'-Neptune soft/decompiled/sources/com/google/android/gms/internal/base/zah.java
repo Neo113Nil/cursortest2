@@ -15,9 +15,7 @@ final class zah extends Drawable.ConstantState {
 
     @Override // android.graphics.drawable.Drawable.ConstantState
     public final Drawable newDrawable() {
-        zai zaiVar;
-        zaiVar = zai.zaa;
-        return zaiVar;
+        return zai.zaa;
     }
 
     /* synthetic */ zah(zag zagVar) {

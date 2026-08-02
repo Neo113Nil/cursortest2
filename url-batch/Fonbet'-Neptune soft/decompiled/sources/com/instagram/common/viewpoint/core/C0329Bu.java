@@ -34,14 +34,18 @@ public final class C0329Bu extends ConnectivityManager.NetworkCallback {
     }
 
     public final /* synthetic */ void A02() {
-        if (this.A02.A02 == null) {
+        C0329Bu c0329Bu;
+        c0329Bu = this.A02.A02;
+        if (c0329Bu == null) {
             return;
         }
         this.A02.A03();
     }
 
     public final /* synthetic */ void A03() {
-        if (this.A02.A02 == null) {
+        C0329Bu c0329Bu;
+        c0329Bu = this.A02.A02;
+        if (c0329Bu == null) {
             return;
         }
         this.A02.A04();

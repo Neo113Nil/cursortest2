@@ -11,10 +11,18 @@ public final class N9 implements Serializable {
     public final String A03;
 
     public N9(N8 n8) {
-        this.A02 = n8.A02;
-        this.A01 = n8.A01;
-        this.A00 = n8.A00;
-        this.A03 = n8.A03;
+        String str;
+        String str2;
+        String str3;
+        String str4;
+        str = n8.A02;
+        this.A02 = str;
+        str2 = n8.A01;
+        this.A01 = str2;
+        str3 = n8.A00;
+        this.A00 = str3;
+        str4 = n8.A03;
+        this.A03 = str4;
     }
 
     public final String A00() {

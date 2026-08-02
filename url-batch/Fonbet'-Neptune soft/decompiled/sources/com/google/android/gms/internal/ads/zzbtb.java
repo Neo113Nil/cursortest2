@@ -16,8 +16,10 @@ final class zzbtb extends zzbhv {
     @Override // com.google.android.gms.internal.ads.zzbhw
     public final void zze(zzbhj zzbhjVar) {
         NativeCustomFormatAd.OnCustomFormatAdLoadedListener onCustomFormatAdLoadedListener;
+        NativeCustomFormatAd zzf;
         zzbtd zzbtdVar = this.zza;
         onCustomFormatAdLoadedListener = zzbtdVar.zza;
-        onCustomFormatAdLoadedListener.onCustomFormatAdLoaded(zzbtdVar.zzf(zzbhjVar));
+        zzf = zzbtdVar.zzf(zzbhjVar);
+        onCustomFormatAdLoadedListener.onCustomFormatAdLoaded(zzf);
     }
 }
