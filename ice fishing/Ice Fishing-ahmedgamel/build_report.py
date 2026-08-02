@@ -150,20 +150,15 @@ PERMISSIONS = (
 )
 
 AD_NETWORKS = (
-    "AdMob / Google Mobile Ads (play-services-ads, Ad Manager), "
-    "TopOn / AnyThink (com.anythink — banner, interstitial, native, splash, reward), "
-    "Meta Audience Network (com.facebook.ads), "
-    "Google User Messaging Platform (согласие на рекламу), "
-    "IAB Open Measurement (com.iab.omid.library.toponad), "
-    "локальные баннеры Qureka (ads_qureka*) как кликабельные офферы поверх медиации"
+    "AdMob / Google Mobile Ads, TopOn / AnyThink, Meta Audience Network, "
+    "Google User Messaging Platform, IAB Open Measurement (toponad), "
+    "локальные баннеры Qureka (ads_qureka*)"
 )
 
 ANALYTICS = (
     "Firebase Cloud Messaging / Installations / Datatransport, "
-    "OneSignal (push, session, in-app messages; App ID "
-    "f2a35f4f-9ae4-41ac-b40d-ed960fc01377), "
-    "Google Play Services Measurement (measurement-base / measurement-sdk-api), "
-    "OpenTelemetry (в составе TopOn/AnyThink)"
+    "OneSignal (App ID f2a35f4f-9ae4-41ac-b40d-ed960fc01377), "
+    "Google Play Services Measurement, OpenTelemetry (TopOn/AnyThink)"
 )
 
 LIBRARIES = (
@@ -200,12 +195,12 @@ SHARED_PREFS = (
 
 SUSPICIOUS_WORDS = (
     "splash_redirect, link_redirect, link1, link2, link3, livetv, "
-    "splash_inter, offer (anythink_myoffer_*), redirect, "
-    "qureka, ads_qureka, gamezop, gamescritique, criczop, umogames, "
-    "djdvk, web_url, loadUrl, CustomTabs, ApplinkActivity, "
-    "raw.githubusercontent.com/smtpatel9211/2026, black_white_screen "
-    "(anythink_myoffer_feedback_black_white_screen), landing (intro/dashboard "
-    "у оффер-доменов)"
+    "splash_inter, redirect, offer (anythink_myoffer_*), qureka, "
+    "ads_qureka, gamezop, gamescritique, criczop, umogames, djdvk, "
+    "s.djdvk.com, ApplinkActivity, CustomTabs, loadUrl, "
+    "raw.githubusercontent.com/smtpatel9211/2026, "
+    "black_white_screen (anythink_myoffer_feedback_black_white_screen), "
+    "landing (intro/dashboard у оффер-доменов)"
 )
 
 # Только кастомные/неочевидные из domain_checks (без known SDK anythink и VT-шум alphamountain)
@@ -222,7 +217,7 @@ MAIN_ROWS = [
     ("Android Gradle Plugin", "8.9.0"),
     ("minSdk", "24"),
     ("targetSdk", "35"),
-    ("Kotlin", "да, kotlinx-coroutines 1.8.0"),
+    ("Kotlin", "да (Kotlin + kotlinx-coroutines 1.8.0)"),
     ("Web View", "да"),
     ("Custom Tabs", "да"),
     ("Рекламные сети", AD_NETWORKS),
@@ -284,16 +279,16 @@ WHERE_SENT = (
 )
 
 HOW_FILTERED = (
-    "В самом приложении нет жёсткого списка стран или языков, по которому "
-    "решают «этому человеку оффер, а этому — нет». Экраны выбора страны, языка, "
-    "возраста и пола — это обычные шаги знакомства после первого запуска, а не "
-    "скрытый фильтр трафика."
+    "В самом приложении нет жёсткого списка стран, языков или «ботов», по "
+    "которому решают «этому человеку оффер, а этому — нет». Экраны выбора "
+    "страны, языка, возраста и пола — обычные шаги знакомства после первого "
+    "запуска, а не скрытый фильтр трафика для оффера."
     "<br/><br/>"
-    "Решение «кому показать внешнюю страницу» зашито в удалённом файле: "
-    "разработчик выставляет splash_redirect и link_redirect в 0 или 1 и "
-    "подставляет актуальные link1 / link2 / link3. Приложение лишь читает эти "
-    "числа и ссылки. То есть фильтр по сути делает тот, кто правит файл на "
-    "GitHub, а не код на телефоне по гео или «боту»."
+    "Решение «кому показать внешнюю страницу» зашито в удалённом файле на "
+    "GitHub: разработчик выставляет splash_redirect и link_redirect в 0 или 1 "
+    "и подставляет актуальные link1 / link2 / link3. Приложение лишь читает "
+    "эти числа и ссылки. То есть фильтр по сути делает тот, кто правит файл "
+    "на сервере, а не код на телефоне по гео или «боту»."
     "<br/><br/>"
     "Дополнительно при открытии оффера приложение случайно выбирает одну из "
     "трёх присланных ссылок (случайное число 0–2). Это не фильтр пользователей, "
@@ -302,38 +297,44 @@ HOW_FILTERED = (
 )
 
 WHAT_RETURNS = (
-    "С сервера (файла на GitHub) приходит текстовый ответ в формате списка "
-    "полей. В нём есть, в частности: splash_inter, link_redirect, "
-    "splash_redirect, link1, link2, link3, livetv, ключи TopOn / AdMob / "
-    "Facebook и статусы, какие сети показывать."
+    "С адреса на GitHub приходит текстовый ответ в виде списка полей. "
+    "Приложение читает из него, в частности: splash_inter (показывать ли "
+    "полноэкранную рекламу на заставке), link_redirect и splash_redirect "
+    "(включатели внешних переходов), link1 / link2 / link3 (три внешние "
+    "ссылки), livetv, ключи TopOn / AdMob / Facebook и статусы, какие сети "
+    "рекламы включать."
     "<br/><br/>"
-    "На момент разбора в файле стояло splash_redirect = 1, link_redirect = 0, "
-    "а ссылки указывали на gamescritique (PrankPulse), qureka (викторина/"
-    "регистрация по региону) и s.djdvk.com. Приложение сохраняет весь ответ "
-    "как есть и дальше смотрит на числа-флаги и на наличие непустых ссылок."
+    "На момент разбора в файле стояло: splash_inter = 1, splash_redirect = 1, "
+    "link_redirect = 0; link1 = https://25.go.gamescritique.com/dashboard "
+    "(PrankPulse), link2 = http://1086.mark.qureka.com/intro/question "
+    "(викторина Qureka), link3 = https://s.djdvk.com/ucode; livetv вёл на "
+    "criczop. Весь ответ сохраняется как есть; дальше решают числа-флаги и "
+    "непустые ссылки."
     "<br/><br/>"
-    "«Боевой» для схемы вариант — флаги включения редиректа равны 1 и ссылки "
-    "заполнены: тогда вызывается открытие внешней страницы. «Белый» вариант — "
-    "редирект выключен или ссылок нет: заставка заканчивается переходом в "
-    "обычное приложение без принудительного ухода на оффер."
+    "«Боевой» вариант схемы — splash_redirect = 1 и ссылки заполнены: тогда "
+    "открывают внешнюю страницу. «Белый» вариант — редирект выключен или "
+    "ссылок нет: заставка заканчивается переходом в обычное приложение без "
+    "принудительного ухода на оффер."
 )
 
 HOW_SHOWN = (
-    "Если по флагам решено показать оффер, приложение открывает одну из трёх "
-    "ссылок во внешнем браузере Chrome через механизм Custom Tabs (отдельная "
-    "вкладка браузера поверх приложения). Если Chrome недоступен — делается "
-    "обычный системный переход по ссылке. Так же открываются клики по "
-    "локальным баннерам Qureka: нажатие снова вызывает тот же выбор случайной "
-    "ссылки link1/link2/link3."
+    "После загрузки настроек на заставке сначала может показаться "
+    "полноэкранная реклама сети (если splash_inter = 1). Затем, если "
+    "splash_redirect = 1, приложение само выбирает случайную из трёх ссылок "
+    "link1/link2/link3 и открывает её во внешнем браузере Chrome через "
+    "встроенные вкладки браузера (Custom Tabs). Если Chrome недоступен — "
+    "делается обычный системный переход по ссылке. Те же три ссылки "
+    "открываются при нажатии на локальные баннеры Qureka внутри приложения."
     "<br/><br/>"
-    "По смыслу это не «рекламный блок сети внутри игры», а целевые внешние "
-    "страницы: викторины/регистрация Qureka, промо вроде PrankPulse на "
-    "gamescritique, плюс третий адрес из конфига. Отдельно внутри приложения "
-    "есть встроенное окно сайта (MWebActivity): в нём открывают HTML5-игры "
-    "Gamezop по заранее прописанным адресам — это уже содержимое белой витрины."
+    "По смыслу это не обычный рекламный блок сети внутри игры, а целевые "
+    "внешние страницы: промо PrankPulse на gamescritique, викторина/"
+    "регистрация Qureka и третий адрес s.djdvk.com. Отдельно внутри "
+    "приложения есть встроенное окно сайта (экран MWebActivity): в нём "
+    "открывают HTML5-игры Gamezop по заранее прописанным адресам — это "
+    "содержимое обычной витрины, а не оффер после проверки."
     "<br/><br/>"
     "Если оффер по флагам не нужен — человеку просто остаётся обычное "
-    "приложение: витрина с категориями игр и стандартной рекламой сетей, без "
+    "приложение с витриной игр и стандартной рекламой сетей, без "
     "принудительного перехода на внешнюю оффер-страницу."
 )
 
