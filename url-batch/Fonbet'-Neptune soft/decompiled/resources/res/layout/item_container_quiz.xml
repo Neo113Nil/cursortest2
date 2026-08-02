@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/layoutQuiz"
+    android:background="@drawable/background_resources"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:foreground="@drawable/ripplenote"
+    android:layout_marginStart="@dimen/_6sdp"
+    style="@style/Theme.BacDZ">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quizmidjahidine"
+        android:adjustViewBounds="true"
+        app:riv_corner_radius_top_left="@dimen/_10sdp"
+        app:riv_corner_radius_top_right="@dimen/_10sdp"/>
+    <TextView
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:text="شخصيات"
+        android:fontFamily="@font/tajawalbold"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        style="@style/Theme.BacDZ"/>
+</LinearLayout>

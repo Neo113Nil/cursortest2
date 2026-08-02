@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/grp1"
+        android:menuCategory="secondary">
+        <item
+            android:id="@+id/item_neptunesoft_apps"
+            android:title="تطبيقاتنا"/>
+        <item
+            android:id="@+id/item_rating"
+            android:title="تقييم التطبيق"/>
+        <item
+            android:id="@+id/item_share"
+            android:title="مشاركة التطبيق"/>
+        <item
+            android:id="@+id/item_feedback"
+            android:title="الـ feedback"/>
+        <item
+            android:id="@+id/item_about"
+            android:title="حول التطبيق"/>
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:menuCategory="container">
+        <item
+            android:icon="@drawable/ic_night"
+            android:id="@+id/item_darkmode"
+            android:title="الوضع الليلي"
+            app:showAsAction="ifRoom"/>
+    </group>
+    <group
+        android:id="@+id/grp3"
+        android:menuCategory="system">
+        <item
+            android:id="@+id/item_close"
+            android:title="غلق التطبيق"/>
+    </group>
+</menu>
