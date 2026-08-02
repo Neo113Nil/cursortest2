@@ -1,0 +1,11 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@23.0.0 */
+/* loaded from: classes2.dex */
+final class zzfxc implements zzfxa {
+    private zzfxc() {
+    }
+
+    /* synthetic */ zzfxc(zzfxb zzfxbVar) {
+    }
+}
