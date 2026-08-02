@@ -1,0 +1,40 @@
+package com.google.android.gms.internal.firebase_database;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/* loaded from: classes.dex */
+final class zzx extends SQLiteOpenHelper {
+    public zzx(Context context, String str) {
+        super(context, str, (SQLiteDatabase.CursorFactory) null, 2);
+    }
+
+    private static void zza(SQLiteDatabase sQLiteDatabase, String str) {
+        String valueOf = String.valueOf(str);
+        sQLiteDatabase.execSQL(valueOf.length() != 0 ? "DROP TABLE IF EXISTS ".concat(valueOf) : new String("DROP TABLE IF EXISTS "));
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public final void onCreate(SQLiteDatabase sQLiteDatabase) {
+        sQLiteDatabase.execSQL("CREATE TABLE serverCache (path TEXT PRIMARY KEY, value BLOB);");
+        sQLiteDatabase.execSQL("CREATE TABLE writes (id INTEGER, path TEXT, type TEXT, part INTEGER, node BLOB, UNIQUE (id, part));");
+        sQLiteDatabase.execSQL("CREATE TABLE trackedQueries (id INTEGER PRIMARY KEY, path TEXT, queryParams TEXT, lastUse INTEGER, complete INTEGER, active INTEGER);");
+        sQLiteDatabase.execSQL("CREATE TABLE trackedKeys (id INTEGER, key TEXT);");
+    }
+
+    @Override // android.database.sqlite.SQLiteOpenHelper
+    public final void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
+        if (i > 1) {
+            StringBuilder sb = new StringBuilder(40);
+            sb.append("We don't handle upgrading to ");
+            sb.append(i2);
+            throw new AssertionError(sb.toString());
+        }
+        zza(sQLiteDatabase, "serverCache");
+        sQLiteDatabase.execSQL("CREATE TABLE serverCache (path TEXT PRIMARY KEY, value BLOB);");
+        zza(sQLiteDatabase, "complete");
+        sQLiteDatabase.execSQL("CREATE TABLE trackedKeys (id INTEGER, key TEXT);");
+        sQLiteDatabase.execSQL("CREATE TABLE trackedQueries (id INTEGER PRIMARY KEY, path TEXT, queryParams TEXT, lastUse INTEGER, complete INTEGER, active INTEGER);");
+    }
+}

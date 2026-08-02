@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "apks": [
+    "com.dogearn.dogemoney.apk"
+  ],
+  "base_apk": "com.dogearn.dogemoney.apk",
+  "jadx": {
+    "ok": true,
+    "out_dir": "/workspace/1xbet/1xBet-AppToolio Soft/decompiled",
+    "base_apk": "com.dogearn.dogemoney.apk"
+  },
+  "analysis_files": [
+    "com.dogearn.dogemoney.apk",
+    "apk/com.dogearn.dogemoney.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/"
+  ]
+}

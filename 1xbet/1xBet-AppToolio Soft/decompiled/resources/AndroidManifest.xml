@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="5.0"
+    android:compileSdkVersion="28"
+    android:compileSdkVersionCodename="9"
+    package="com.dogearn.dogemoney"
+    platformBuildVersionCode="5"
+    platformBuildVersionName="5">
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission
+        android:name="com.dogearn.dogemoney.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dogearn.dogemoney.permission.C2D_MESSAGE"/>
+    <application
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name"
+        android:icon="@drawable/logo"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="@drawable/logo"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity
+            android:theme="@style/AppTheme.HadActionbar"
+            android:name="com.dogearn.dogemoney.WebsiteActivity"/>
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="Chosse "
+            android:name="com.dogearn.dogemoney.OrginalActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.dogearn.dogemoney.AdstwentyteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsnineteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdseightteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsseventeenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdssixteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.SplashActivity"/>
+        <activity android:name="com.dogearn.dogemoney.InvalidClickActivity"/>
+        <activity android:name="com.dogearn.dogemoney.RefersystemActivity"/>
+        <activity android:name="com.dogearn.dogemoney.ContactActivity"/>
+        <activity android:name="com.dogearn.dogemoney.ProfileActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsfifteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsfourteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsthirteenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdstwelveActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdselevenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdstenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsnineActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdseightActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdssevenActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdssixActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsfiveActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsfourActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsthreeActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdstwoActivity"/>
+        <activity android:name="com.dogearn.dogemoney.AdsoneActivity"/>
+        <activity android:name="com.dogearn.dogemoney.MainActivity"/>
+        <activity android:name="com.dogearn.dogemoney.WithdrawActivity"/>
+        <activity android:name="com.dogearn.dogemoney.VideoRewardActivity"/>
+        <activity android:name="com.dogearn.dogemoney.HomeActivity"/>
+        <activity android:name="com.dogearn.dogemoney.FInalClaimActivity"/>
+        <activity android:name="com.dogearn.dogemoney.ClaimActivity"/>
+        <activity android:name="com.dogearn.dogemoney.SigninActivity"/>
+        <activity android:name="com.dogearn.dogemoney.RegisterActivity"/>
+        <service android:name="com.dogearn.dogemoney.MymessageingInstance">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.dogearn.dogemoney.MyfirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:exported="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:permission="android.permission.INSTALL_PACKAGES"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false"/>
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:enabled="true"
+            android:exported="false"/>
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.dogearn.dogemoney"/>
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:exported="false"
+            android:authorities="com.dogearn.dogemoney.firebaseinitprovider"
+            android:initOrder="100"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"/>
+        <activity
+            android:theme="@android:style/Theme.Translucent"
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:configChanges="smallestScreenSize|screenSize|uiMode|screenLayout|orientation|keyboardHidden|keyboard"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0"/>
+        <meta-data
+            android:name="com.android.dynamic.apk.fused.modules"
+            android:value="base"/>
+        <meta-data
+            android:name="com.android.vending.splits"
+            android:resource="@xml/splits0"/>
+        <meta-data
+            android:name="com.android.vending.derived.apk.id"
+            android:value="7"/>
+    </application>
+</manifest>

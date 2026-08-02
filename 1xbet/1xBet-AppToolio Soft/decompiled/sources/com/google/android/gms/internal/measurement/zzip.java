@@ -1,0 +1,45 @@
+package com.google.android.gms.internal.measurement;
+
+import android.os.RemoteException;
+
+/* loaded from: classes.dex */
+final class zzip implements Runnable {
+    private final /* synthetic */ zzig zzaqn;
+    private final /* synthetic */ zzik zzaqv;
+
+    zzip(zzik zzikVar, zzig zzigVar) {
+        this.zzaqv = zzikVar;
+        this.zzaqn = zzigVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        zzfa zzfaVar;
+        long j;
+        String str;
+        String str2;
+        String packageName;
+        zzfaVar = this.zzaqv.zzaqp;
+        if (zzfaVar == null) {
+            this.zzaqv.zzgi().zziv().log("Failed to send current screen to service");
+            return;
+        }
+        try {
+            if (this.zzaqn == null) {
+                j = 0;
+                str = null;
+                str2 = null;
+                packageName = this.zzaqv.getContext().getPackageName();
+            } else {
+                j = this.zzaqn.zzaqb;
+                str = this.zzaqn.zzuk;
+                str2 = this.zzaqn.zzaqa;
+                packageName = this.zzaqv.getContext().getPackageName();
+            }
+            zzfaVar.zza(j, str, str2, packageName);
+            this.zzaqv.zzcu();
+        } catch (RemoteException e) {
+            this.zzaqv.zzgi().zziv().zzg("Failed to send current screen to the service", e);
+        }
+    }
+}

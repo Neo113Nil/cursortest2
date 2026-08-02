@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/blur"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Welcome To Our App"
+        android:textAlignment="center"/>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/clickForReward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLick and earn"
+        android:onClick="startVideoAds"/>
+</LinearLayout>

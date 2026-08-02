@@ -1,0 +1,19 @@
+{
+  "app_id": "com.dogearn.dogemoney",
+  "title": "1xBet",
+  "developer": "AppToolio Soft",
+  "score": null,
+  "url": "https://play.google.com/store/apps/details?id=com.dogearn.dogemoney&hl=en&gl=us",
+  "keyword": "1xbet",
+  "developer_id": "AppToolio+Soft",
+  "version": "5.0",
+  "summary": "1xBet (Play listing); in-app name Doge Money / DOGEARN earning platform",
+  "folder": "1xBet-AppToolio Soft",
+  "path": "1xbet/1xBet-AppToolio Soft",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.dogearn.dogemoney.apk"
+  ],
+  "cloaking": "нет"
+}

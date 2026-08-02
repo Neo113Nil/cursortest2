@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/blur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You Finished Your Task"
+        android:textAlignment="center"/>
+    <Button
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#f1f1ed"
+        android:id="@+id/finishBtn"
+        android:background="@drawable/roundbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finish"
+        android:textAlignment="center"/>
+</LinearLayout>

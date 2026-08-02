@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/blur"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <TextView
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ec0000"
+            android:id="@+id/countDownNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <TextView
+            android:textSize="30sp"
+            android:textColor="#f50057"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Nine"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+    </LinearLayout>
+    <Button
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/nextTaskNine"
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Task"
+        android:textAllCaps="false"/>
+    <TextView
+        android:textSize="30dp"
+        android:id="@+id/textString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textnine"
+        android:textAlignment="center"/>
+    <TextView
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wwww.dogearn.info"
+        android:textAlignment="center"/>
+</LinearLayout>
