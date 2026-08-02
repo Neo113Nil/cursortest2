@@ -8,7 +8,6 @@ import com.facebook.ads.androidx.media3.common.Metadata;
 import com.facebook.video.heroplayer.exocustom.MetaExoPlayerCustomization;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArraySet;
 
 /* renamed from: com.facebook.ads.redexgen.X.nI, reason: case insensitive filesystem */
 /* loaded from: assets/audience_network.dex */
@@ -46,9 +45,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.C8D
     public final void ACP(String str, long j, long j2) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0H;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0H.iterator();
         while (true) {
             boolean hasNext = it.hasNext();
             if (A01[1].charAt(3) != 'F') {
@@ -65,9 +62,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.C8D
     public final void ACQ(C01745g c01745g) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0H;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0H.iterator();
         while (it.hasNext()) {
             ((C8D) it.next()).ACQ(c01745g);
         }
@@ -78,10 +73,8 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.C8D
     public final void ACR(C01745g c01745g) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
         this.A00.A09 = c01745g;
-        copyOnWriteArraySet = this.A00.A0H;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0H.iterator();
         while (it.hasNext()) {
             ((C8D) it.next()).ACR(c01745g);
         }
@@ -89,10 +82,8 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.C8D
     public final void ACS(C1830or c1830or) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
         this.A00.A07 = c1830or;
-        copyOnWriteArraySet = this.A00.A0H;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0H.iterator();
         while (it.hasNext()) {
             ((C8D) it.next()).ACS(c1830or);
         }
@@ -100,9 +91,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.C8D
     public final void ACY(int i, long j, long j2) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0H;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0H.iterator();
         while (it.hasNext()) {
             ((C8D) it.next()).ACY(i, j, j2);
         }
@@ -111,9 +100,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
     @Override // com.instagram.common.viewpoint.core.InterfaceC0376Dq
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Required until we deprecate and move ComponentListener to ExoPlayerImpl.")
     public final void ACv(C1779o0 c1779o0) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0I;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0I.iterator();
         while (it.hasNext()) {
             ((InterfaceC01082s) it.next()).ACv(c1779o0);
         }
@@ -122,9 +109,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
     @Override // com.instagram.common.viewpoint.core.InterfaceC0376Dq
     @MetaExoPlayerCustomization(type = {"TEMPORARY"}, value = "Required until we deprecate and move ComponentListener to ExoPlayerImpl.")
     public final void ACw(List<C1781o2> list) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0I;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0I.iterator();
         while (it.hasNext()) {
             ((InterfaceC01082s) it.next()).ACw(list);
         }
@@ -132,9 +117,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AD7(int i, long j) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0K.iterator();
         while (it.hasNext()) {
             ((InterfaceC0426Fo) it.next()).AD7(i, j);
         }
@@ -142,9 +125,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.B3
     public final void AEE(Metadata metadata, long j) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0J;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0J.iterator();
         while (it.hasNext()) {
             ((B3) it.next()).AEE(metadata, j);
         }
@@ -152,19 +133,13 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AEx(Object obj, long j) {
-        Surface surface;
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        CopyOnWriteArraySet copyOnWriteArraySet2;
-        surface = this.A00.A03;
-        if (surface == obj) {
-            copyOnWriteArraySet2 = this.A00.A0L;
-            Iterator it = copyOnWriteArraySet2.iterator();
+        if (this.A00.A03 == obj) {
+            Iterator it = this.A00.A0L.iterator();
             while (it.hasNext()) {
                 it.next();
             }
         }
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it2 = copyOnWriteArraySet.iterator();
+        Iterator it2 = this.A00.A0K.iterator();
         while (it2.hasNext()) {
             ((InterfaceC0426Fo) it2.next()).AEx(obj, j);
         }
@@ -172,9 +147,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AFd(String str, long j, long j2) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0K.iterator();
         while (it.hasNext()) {
             ((InterfaceC0426Fo) it.next()).AFd(str, j, j2);
         }
@@ -182,9 +155,7 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AFe(C01745g c01745g) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0K.iterator();
         while (it.hasNext()) {
             ((InterfaceC0426Fo) it.next()).AFe(c01745g);
         }
@@ -194,10 +165,8 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AFf(C01745g c01745g) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
         this.A00.A0A = c01745g;
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0K.iterator();
         while (true) {
             boolean hasNext = it.hasNext();
             if (A01[0].length() != 9) {
@@ -216,10 +185,8 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AFk(C1830or c1830or) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
         this.A00.A08 = c1830or;
-        copyOnWriteArraySet = this.A00.A0K;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0K.iterator();
         while (true) {
             boolean hasNext = it.hasNext();
             if (A01[1].charAt(3) != 'F') {
@@ -236,15 +203,11 @@ public final class SurfaceHolderCallbackC1736nI implements InterfaceC0426Fo, C8D
 
     @Override // com.instagram.common.viewpoint.core.InterfaceC0426Fo
     public final void AFr(C1783o4 c1783o4) {
-        CopyOnWriteArraySet copyOnWriteArraySet;
-        CopyOnWriteArraySet copyOnWriteArraySet2;
-        copyOnWriteArraySet = this.A00.A0L;
-        Iterator it = copyOnWriteArraySet.iterator();
+        Iterator it = this.A00.A0L.iterator();
         while (it.hasNext()) {
             ((InterfaceC01514j) it.next()).AFq(c1783o4.A03, c1783o4.A01, c1783o4.A02, c1783o4.A00);
         }
-        copyOnWriteArraySet2 = this.A00.A0K;
-        Iterator it2 = copyOnWriteArraySet2.iterator();
+        Iterator it2 = this.A00.A0K.iterator();
         while (it2.hasNext()) {
             InterfaceC0426Fo interfaceC0426Fo = (InterfaceC0426Fo) it2.next();
             String[] strArr = A01;

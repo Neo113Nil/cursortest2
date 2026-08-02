@@ -9,6 +9,10 @@ import java.util.Map;
 final class zzmf extends AbstractSet {
     final /* synthetic */ zzmh zza;
 
+    /* synthetic */ zzmf(zzmh zzmhVar, zzme zzmeVar) {
+        this.zza = zzmhVar;
+    }
+
     @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
     public final /* bridge */ /* synthetic */ boolean add(Object obj) {
         Map.Entry entry = (Map.Entry) obj;

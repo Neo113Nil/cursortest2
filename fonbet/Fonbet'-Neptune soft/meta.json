@@ -1,16 +1,16 @@
 {
-  "app_id": "com.neptunesoft.lettrebacdz",
+  "app_id": "com.neptunesoft.bacdz",
   "title": "Fonbet'",
   "developer": "Neptune soft",
-  "score": 4.8,
-  "icon": "https://play-lh.googleusercontent.com/YRPU4JtcAiY-jnGrPHMWAjKsU_vOOFlqcEA5AT8gY7MPCXcLDdQKRuvhZrcaMb_B1cqfZsWmgS0N_6vn8-Ceu_4",
-  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.lettrebacdz&hl=en&gl=us",
+  "score": 4.4210525,
+  "icon": "https://play-lh.googleusercontent.com/TM9GL3EK0BKYMc7sOB3Bjrp5Furpu0e1EOzuIV5Q6achVwRcBQBTTFTBuylnkGlyDhuRRBzxt__v3LLzUMi7",
+  "url": "https://play.google.com/store/apps/details?id=com.neptunesoft.bacdz&hl=en&gl=us",
   "keyword": "fonbet",
   "developer_id": "7512881118161131049",
-  "released": "Mar 13, 2022",
-  "updated": "Jul 26, 2026",
+  "released": "Dec 22, 2020",
+  "updated": "Jul 30, 2026",
   "version": "Varies with device",
-  "summary": "ze scores livescore: follow matches, live statistics, and results",
+  "summary": "nu scores livescore: follow matches, live statistics, and results",
   "folder": "Fonbet'-Neptune soft",
   "path": "fonbet/Fonbet'-Neptune soft",
   "updates_count": 1,
@@ -27,11 +27,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.neptunesoft.lettrebacdz...\ncom.neptunesoft.lettrebacdz downloaded successfully!\n",
+      "stdout": "Downloading com.neptunesoft.bacdz...\ncom.neptunesoft.bacdz downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.neptunesoft.lettrebacdz...\ncom.neptunesoft.lettrebacdz downloaded successfully!\n",
+  "stdout": "Downloading com.neptunesoft.bacdz...\ncom.neptunesoft.bacdz downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }

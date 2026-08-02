@@ -68,7 +68,7 @@ final class DoubleArrayList extends AbstractProtobufList<Double> implements Inte
     }
 
     @Override // androidx.datastore.preferences.protobuf.Internal.ProtobufList, androidx.datastore.preferences.protobuf.Internal.BooleanList
-    /* renamed from: mutableCopyWithCapacity */
+    /* renamed from: mutableCopyWithCapacity, reason: merged with bridge method [inline-methods] */
     public Internal.ProtobufList<Double> mutableCopyWithCapacity2(int capacity) {
         if (capacity < this.size) {
             throw new IllegalArgumentException();

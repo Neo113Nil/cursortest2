@@ -7,14 +7,8 @@ public final class zzgtp extends zzgzb implements zzhat {
         throw null;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-    */
     /* synthetic */ zzgtp(zzgtq zzgtqVar) {
-        super(r1);
-        zzgtr zzgtrVar;
-        zzgtrVar = zzgtr.zza;
+        super(zzgtr.zza);
     }
 
     public final zzgtp zza(zzgxz zzgxzVar) {

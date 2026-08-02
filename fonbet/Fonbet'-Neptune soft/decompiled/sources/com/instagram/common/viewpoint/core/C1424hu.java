@@ -30,6 +30,10 @@ public final class C1424hu {
     public boolean A00 = false;
     public boolean A01 = false;
 
+    public static /* synthetic */ boolean A0C(C1424hu c1424hu) {
+        return c1424hu.A0B;
+    }
+
     public final C1425hv A0O() {
         return new C1425hv(this);
     }
