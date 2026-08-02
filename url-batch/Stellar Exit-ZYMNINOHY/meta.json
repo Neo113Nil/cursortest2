@@ -1,0 +1,36 @@
+{
+  "app_id": "com.cosmiclabyrinth.stellarpath",
+  "title": "Stellar Exit",
+  "developer": "ZYMNINOHY",
+  "developer_id": "ZYMNINOHY",
+  "icon": "https://play-lh.googleusercontent.com/gFDUERK5unFwol1d6QUwoxiMlOx7gGCuVv8s_Chuw5pFebWMzOxm8XRZt-U_722ndURstKCSdASlTxjDrVM9",
+  "url": "https://play.google.com/store/apps/details?id=com.cosmiclabyrinth.stellarpath&hl=en&gl=us",
+  "score": null,
+  "released": "",
+  "updated": "Mar 30, 2026",
+  "version": "Varies with device",
+  "summary": "Navigate the Cosmic Labyrinths. Find Your Way Home",
+  "keyword": "url-batch",
+  "folder": "Stellar Exit-ZYMNINOHY",
+  "path": "url-batch/Stellar Exit-ZYMNINOHY",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.cosmiclabyrinth.stellarpath.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/Stellar Exit-ZYMNINOHY",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.cosmiclabyrinth.stellarpath...\ncom.cosmiclabyrinth.stellarpath downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.cosmiclabyrinth.stellarpath...\ncom.cosmiclabyrinth.stellarpath downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}
