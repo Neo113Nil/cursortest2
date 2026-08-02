@@ -1,0 +1,6 @@
+package t2;
+
+/* loaded from: classes.dex */
+public interface Q {
+    void c(Throwable th);
+}

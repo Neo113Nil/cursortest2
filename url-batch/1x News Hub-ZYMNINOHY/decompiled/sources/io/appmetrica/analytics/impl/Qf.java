@@ -1,0 +1,17 @@
+package io.appmetrica.analytics.impl;
+
+import android.text.TextUtils;
+import android.util.Base64;
+
+/* loaded from: classes.dex */
+public final class Qf implements InterfaceC0916vo, D8 {
+    @Override // io.appmetrica.analytics.impl.D8
+    public final int a(N8 n8) {
+        return 2;
+    }
+
+    @Override // io.appmetrica.analytics.impl.InterfaceC0916vo
+    public final byte[] a(S8 s8, C0754ph c0754ph) {
+        return TextUtils.isEmpty(s8.f6612b) ? new byte[0] : Base64.decode(s8.f6612b, 0);
+    }
+}

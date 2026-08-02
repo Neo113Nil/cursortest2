@@ -1,0 +1,25 @@
+package com.startapp.sdk.internal;
+
+import android.view.View;
+
+/* loaded from: classes.dex */
+public final class b0 implements View.OnClickListener {
+
+    /* renamed from: a, reason: collision with root package name */
+    public final /* synthetic */ q f3585a;
+
+    /* renamed from: b, reason: collision with root package name */
+    public final /* synthetic */ com.startapp.sdk.adsbase.adinformation.a f3586b;
+
+    public b0(com.startapp.sdk.adsbase.adinformation.a aVar, q qVar) {
+        this.f3586b = aVar;
+        this.f3585a = qVar;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(View view) {
+        q qVar = this.f3585a;
+        com.startapp.sdk.adsbase.adinformation.a aVar = this.f3586b;
+        qVar.a(aVar.f3260e, aVar.f);
+    }
+}
