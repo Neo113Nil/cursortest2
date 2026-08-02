@@ -1,16 +1,16 @@
 {
-  "app_id": "com.icefishing.icefishingbigwin",
+  "app_id": "com.icefishing.icefishingmoney",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/moJGSH3u6T9I64R6ytAMwyYprqBGtKlQIfpAF0eTS6ft4CAFCjsj821_6G1HuINRXkdLZG8x6WlZSARB9es4g3M",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingbigwin&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/-QuPNAy7NEKD1g_Lm9Lxr4fzs90uwNVnZ0ZgFKcOczxvk1dAJW887PFNnda_Ia5xXu7ZRLesulHihCAG5OdAig",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingmoney&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Cool catching adventure: swap, score, and chase the jackpot effect!",
+  "summary": "Assemble winter fishing puzzles and earn rewards in Ice Fishing!",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
@@ -37,11 +37,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishing.icefishingbigwin...\ncom.icefishing.icefishingbigwin downloaded successfully!\n",
+      "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishing.icefishingbigwin...\ncom.icefishing.icefishingbigwin downloaded successfully!\n",
+  "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }

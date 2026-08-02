@@ -35,6 +35,8 @@ public final class C2016jQ {
     public final boolean A0S;
 
     public C2016jQ(C2015jP c2015jP) {
+        boolean z6;
+        boolean z9;
         this.A0N = c2015jP.A0L;
         this.A0M = c2015jP.A0K;
         this.A06 = c2015jP.A06;
@@ -57,10 +59,12 @@ public final class C2016jQ {
         this.A0I = c2015jP.A0G;
         this.A0J = c2015jP.A0H;
         this.A0B = c2015jP.A0B;
-        this.A0S = c2015jP.A0Q;
+        z6 = c2015jP.A0Q;
+        this.A0S = z6;
         this.A0C = c2015jP.A01;
         this.A0D = c2015jP.A02;
-        this.A0P = c2015jP.A0N;
+        z9 = c2015jP.A0N;
+        this.A0P = z9;
         this.A01 = false;
         this.A02 = c2015jP.A00;
         this.A00 = -1L;
