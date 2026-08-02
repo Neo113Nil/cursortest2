@@ -21,6 +21,28 @@ public class NX {
     public String A0G;
     public String A0H;
 
+    /* JADX WARN: Method inline analysis failed
+    java.util.ConcurrentModificationException
+    	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1778)
+    	at java.base/java.util.ArrayList.removeIf(ArrayList.java:1743)
+    	at jadx.core.dex.instructions.args.SSAVar.removeUse(SSAVar.java:141)
+    	at jadx.core.dex.instructions.args.SSAVar.use(SSAVar.java:134)
+    	at jadx.core.dex.nodes.InsnNode.attachArg(InsnNode.java:81)
+    	at jadx.core.dex.nodes.InsnNode.addArg(InsnNode.java:67)
+    	at jadx.core.dex.nodes.InsnNode.copyCommonParams(InsnNode.java:399)
+    	at jadx.core.dex.instructions.IndexInsnNode.copy(IndexInsnNode.java:33)
+    	at jadx.core.dex.instructions.IndexInsnNode.copy(IndexInsnNode.java:10)
+    	at jadx.core.dex.nodes.InsnNode.copyWithoutResult(InsnNode.java:438)
+    	at jadx.core.dex.visitors.MarkMethodsForInline.addInlineAttr(MarkMethodsForInline.java:137)
+    	at jadx.core.dex.visitors.MarkMethodsForInline.inlineMth(MarkMethodsForInline.java:83)
+    	at jadx.core.dex.visitors.MarkMethodsForInline.process(MarkMethodsForInline.java:56)
+    	at jadx.core.dex.visitors.InlineMethods.processInvokeInsn(InlineMethods.java:62)
+    	at jadx.core.dex.visitors.InlineMethods.visit(InlineMethods.java:49)
+     */
+    public static /* synthetic */ String A04(NX nx) {
+        return nx.A0C;
+    }
+
     public final NX A0I(String str) {
         this.A00 = NW.A00(str);
         return this;
