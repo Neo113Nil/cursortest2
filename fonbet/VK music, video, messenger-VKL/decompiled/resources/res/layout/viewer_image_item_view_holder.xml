@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.fresco.VKEnhancedImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/picture_iv"
+    android:background="@drawable/image_field_shape_r6"
+    android:layout_width="50dp"
+    android:layout_height="60dp"
+    android:contentDescription="@string/accessibility_photo"
+    app:cornerRadius="8dp"
+    app:imageScaleType="center_crop"/>

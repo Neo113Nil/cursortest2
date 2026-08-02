@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.im.ui.views.msg.BombView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom"
+    android:id="@+id/bomb"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    app:bv_accentColor="?attr/vk_legacy_destructive"
+    app:bv_normalColor="?attr/vk_legacy_text_secondary"
+    app:vk_layout_isExpandable="true"/>

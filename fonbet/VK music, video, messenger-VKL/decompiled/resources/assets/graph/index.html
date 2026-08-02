@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Movika Graph Viewer</title>
+</head>
+<body>
+  <style>
+    @font-face {
+      font-family: "VK_Sans_Text";
+      src: url("VK_Sans_Text_Regular.woff2") format('woff2');
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "VK_Sans_Text";
+      src: url("VK_Sans_Text_Medium.woff2") format('woff2');
+      font-weight: 500;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "VK_Sans_Text";
+      src: url("VK_Sans_Text_DemiBold.woff2") format('woff2');
+      font-weight: 600;
+      font-display: swap;
+    }
+
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      min-height: -webkit-fill-available;
+      overflow: hidden;
+    }
+    body * {
+      box-sizing: border-box;
+    }
+    #movika-graph {
+      font-family: "VK_Sans_Text", sans-serif;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+
+  <div id="movika-graph"></div>
+
+  <script src="movika-graph-editor.js"></script>
+
+  <script type="module">
+    const { GraphEditor } = window["movika-graph-editor"];
+
+    const MOVIKA_API_EVENTS = [
+      "SET_MANIFEST",
+      "SELECT_CHAPTER",
+      "FOCUS_CHAPTER",
+      "SET_VISITED_CHAPTERS",
+      "RECENTER_GRAPH",
+      "UPDATE_VIDEOS_INFO",
+    ];
+
+    const containerElement = document.getElementById("movika-graph");
+    const searchParams = new URLSearchParams(window.location.search);
+    const language = searchParams.get("lang") || "en"; // English as default
+
+    const editor = new GraphEditor(containerElement, { mode: "read", lang: language });
+
+    // Android requires initial message to be sent from JS side
+    sendPostMessage({ type: "PING_MGE" });
+
+    try {
+      // Enable native API communication
+      // iOS (default listener)
+      window.addEventListener("message", processMessage);
+      // Android
+      if (window.movika && typeof window.movika.addEventListener === "function") {
+        window.movika.addEventListener("message", processMessage);
+      }
+    } catch (e) {
+      console.error("Was not able to init message listener", e);
+    }
+
+    editor.on("control", event => {
+      if (event.name === "openPreview") {
+        sendPostMessage({
+          type: "PREVIEW_FROM_CHAPTER",
+          data: event.chapterId,
+        });
+      }
+    });
+
+    function processMessage(message) {
+      const messageData = getMessageData(message.data);
+
+      // couldn't parse or wrong type
+      if (!messageData || !MOVIKA_API_EVENTS.includes(messageData.type)) return;
+
+      switch (messageData.type) {
+        case "SET_MANIFEST": {
+          const manifestData = getMessageData(messageData.data);
+
+          if (manifestData) {
+            editor.update(manifestData);
+          }
+          break;
+        }
+        case "SELECT_CHAPTER":
+          editor.selectChapter(messageData.data);
+          break;
+        case "FOCUS_CHAPTER":
+          editor.focusChapter(messageData.data, 0.63);
+          break;
+        case "SET_VISITED_CHAPTERS": {
+          const visitedChaptersData = getMessageData(messageData.data)
+
+          if (visitedChaptersData) {
+            editor.setVisitedChapters(visitedChaptersData);
+          }
+          break;
+        }
+        case "RECENTER_GRAPH":
+          editor.recenterGraph();
+          break;
+        case "UPDATE_VIDEOS_INFO": {
+          const videosInfo = getMessageData(messageData.data)
+
+          if (videosInfo) {
+            editor.updateVideosInfo(videosInfo);
+          }
+          break;
+        }
+      }
+    }
+
+    function sendPostMessage(message) {
+      try {
+        const stringifiedMessage = JSON.stringify(message);
+
+        // send to Android
+        if (window.movika && typeof window.movika.postMessage === "function") {
+          window.movika.postMessage(stringifiedMessage);
+        }
+
+        // send to iOS
+        if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.movika && typeof window.webkit.messageHandlers.movika.postMessage === "function") {
+          window.webkit.messageHandlers.movika.postMessage(stringifiedMessage);
+        }
+      } catch (e) {
+        console.error("Was not able to send message", e);
+      }
+    }
+
+    function getMessageData(messageData) {
+      if (typeof messageData === "string") {
+        try {
+          return JSON.parse(messageData);
+        } catch (e) {
+          sendPostMessage({ type: "API_ERROR", data: "Not a valid JSON object!" });
+          return;
+        }
+      }
+      return messageData;
+    }
+  </script>
+</body>
+</html>

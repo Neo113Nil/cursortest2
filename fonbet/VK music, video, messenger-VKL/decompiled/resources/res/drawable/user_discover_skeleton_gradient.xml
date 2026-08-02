@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/vk_ui_field_background"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="?attr/vk_ui_background_content"
+                android:endColor="@color/vk_clear"
+                android:angle="90"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</layer-list>

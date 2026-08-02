@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:duration="@integer/fr_animation_mediumAnimTime"
+        android:fromAlpha="0.1"
+        android:toAlpha="1"/>
+    <translate
+        android:duration="@integer/fr_animation_mediumAnimTime"
+        android:fromXDelta="-20%"
+        android:toXDelta="0%"
+        android:fromYDelta="0%"
+        android:toYDelta="0%"/>
+</set>

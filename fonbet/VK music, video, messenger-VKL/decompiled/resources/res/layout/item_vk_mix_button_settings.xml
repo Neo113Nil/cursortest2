@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="@+id/root"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.music.bottomsheets.settings.presentation.RoundedShadowView
+        android:layout_gravity="center"
+        android:id="@+id/shadow1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:roundedCornerRadius="8dp"
+        app:shadowColor="@color/vk_black_alpha8"
+        app:shadowDx="0dp"
+        app:shadowDy="0dp"
+        app:shadowRadius="2dp"/>
+    <com.vk.music.bottomsheets.settings.presentation.RoundedShadowView
+        android:layout_gravity="center"
+        android:id="@+id/shadow2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:roundedCornerRadius="8dp"
+        app:shadowColor="@color/vk_black_alpha8"
+        app:shadowDx="0dp"
+        app:shadowDy="4dp"
+        app:shadowRadius="16dp"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/button_settings"
+        android:background="@drawable/bg_tab_selected"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="36dp"
+        android:translationZ="1dp"
+        style="@style/VkUiTypography.FootnoteNormal"/>
+</FrameLayout>

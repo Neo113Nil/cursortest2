@@ -32,5 +32,110 @@
   ],
   "stdout": "Downloading com.sports.insider...\ncom.sports.insider downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "SI - Betting tips (Sports insider)"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.13.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "23"
+      },
+      {
+        "param": "targetSdk",
+        "value": "36"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.21"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "нет"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "AppsFlyer (атрибуция), AppMetrica / Yandex (io.appmetrica), LogRocket (session replay), Firebase Analytics / Google Analytics for Firebase (measurement), Firebase Cloud Messaging, Firebase Remote Config, Firebase Installations, Sentry (io.sentry, DSN sentry.sport-insights.com), Google Play Install Referrer, Google Advertising ID / ads-identifier"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, android.permission.ACCESS_WIFI_STATE, android.permission.ACCESS_NETWORK_STATE, android.permission.VIBRATE, android.permission.ACCESS_DOWNLOAD_MANAGER, android.permission.CAMERA, android.permission.READ_EXTERNAL_STORAGE, android.permission.READ_MEDIA_VISUAL_USER_SELECTED, android.permission.POST_NOTIFICATIONS, android.permission.WRITE_EXTERNAL_STORAGE, android.permission.INSTALL_PACKAGES, android.permission.WAKE_LOCK, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.USE_BIOMETRIC, android.permission.USE_FINGERPRINT, android.permission.RECEIVE_BOOT_COMPLETED, android.permission.FOREGROUND_SERVICE, com.android.vending.BILLING, com.google.android.providers.gsf.permission.READ_GSERVICES, com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE, com.google.android.gms.permission.AD_ID, com.google.android.c2dm.permission.RECEIVE, com.samsung.android.mapsagent.permission.READ_APP_INFO, com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA, com.sports.insider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.1, androidx.activity 1.12.2, androidx.fragment, androidx.core / core-ktx 1.17.0, androidx.core.splashscreen 1.2.0, androidx.constraintlayout 2.2.1, androidx.coordinatorlayout, androidx.recyclerview, androidx.viewpager / viewpager2, androidx.cardview, androidx.drawerlayout, androidx.swiperefreshlayout, androidx.biometric 1.1.0, androidx.credentials (+ play-services-auth), androidx.datastore (preferences), androidx.room 2.8.4, androidx.sqlite, androidx.work 2.11.0, androidx.lifecycle, androidx.navigation, androidx.startup, androidx.emoji2, androidx.exifinterface, androidx.profileinstaller, androidx.privacysandbox.ads, androidx.print, com.google.android.material, Kotlin stdlib 2.2.21, kotlinx-coroutines 1.10.2, OkHttp3, Okio, Gson, Koin (DI), Google Play Billing 7.1.1, Google Play Services (ads-identifier 18.2.0, auth, base/basement 18.10.0, appset, cloud-messaging, measurement, location, tasks, integrity, fido, identity-credentials), Google Play app-update, Firebase (analytics, messaging, remote-config, installations, datatransport, common), AppsFlyer SDK, AppMetrica SDK, LogRocket Android SDK, Sentry Android SDK, androidx.webkit / систем WebView wrappers (View…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "insider.sports.com, sport-insider.club"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "файлы «user» и «settings»: gaid и advertising_id_saved_at (рекламный номер устройства), language (язык интерфейса), fbToken / fbTokenLastTime (токен Firebase Messaging), firstStart (флаг первого запуска), DEPRECATED_VERSION_CODE, rating, announcementId / announcementIdCreate / announcementIsRead, pressed_close, push_on_channel / push_on_channel_live_passed, alternativePaymentPriority, ExpiredForecastsOrder, CPEnableSupportParams; плюс кэш ключей Remote Config (rc_live_passage, rc_roi_live, rc_premium_*, rc_express_*, rc_diamond_*, rc_sku_json, rc_version_deprecated, min_odds_premium / min_odds_express, enable_clear_data, enable_expedited)"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "betting, Sports betting, betting_training, Betting_strategies, Corridor_betting, hand_betting, Value_betting, bonus, Bonuses, Get_bonus, how_to_get_a_bonus, personal_bonus, premium_bonus, express_bonus, DelayStavkaBonus, one_bonus, offer, offer_is_limited, offerId / offerIdStrike (SKU подписок), ResponsibleGaming / gambling (кнопка ответственной игры), gaid, redirect (навигация/открытие ссылок партнёров) Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "app.logrocket.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "appmetrica.io",
+        "redirects_to": "https://passport.yandex.com/pwl-yandex?retpath=https%3A%2F%2Fappmetrica.yandex.com%2Foverview&lang=en&cause=auth&process_uuid=39e5d497-c417-4725-8577-cc0c797b0b2f",
+        "parked_at": "регистратор: SafeNames Ltd."
+      },
+      {
+        "domain": "docs.logrocket.com",
+        "redirects_to": "https://docs.logrocket.com/docs → https://docs.logrocket.com/docs/introduction",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "insider.sports.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "privacy-sandbox.appsflyersdk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "sport-insider.club",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "startup.mobile.yandex.net",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: SafeNames Ltd."
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

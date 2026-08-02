@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/media_picker_selected_item_preview_size"
+    android:layout_height="@dimen/media_picker_selected_item_preview_size">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/remove_from_selected_button"
+        android:background="@drawable/vk_ripple_circle_highlight"
+        android:padding="4dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/vk_icon_cancel_shadow_16"
+        android:contentDescription="@string/media_picker_attachment_remove_content_description"/>
+</com.vk.core.tool.view.AspectRatioFrameLayout>

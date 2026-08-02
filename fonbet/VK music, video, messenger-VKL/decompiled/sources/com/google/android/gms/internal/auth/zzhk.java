@@ -1,0 +1,56 @@
+package com.google.android.gms.internal.auth;
+
+import com.ironsource.mediationsdk.logger.IronSourceError;
+import ru.ok.android.commons.nio.charset.CharsetEncoder;
+import ru.ok.proto.rtmp.amf.AmfConstants;
+
+/* compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* loaded from: classes12.dex */
+final class zzhk {
+    public static /* bridge */ /* synthetic */ void zza(byte b, byte b2, byte b3, byte b4, char[] cArr, int i) {
+        if (!zze(b2)) {
+            if ((((b2 + 112) + (b << 28)) >> 30) == 0 && !zze(b3) && !zze(b4)) {
+                int i2 = ((b & 7) << 18) | ((b2 & CharsetEncoder.DEFAULT_REPLACEMENT) << 12) | ((b3 & CharsetEncoder.DEFAULT_REPLACEMENT) << 6) | (b4 & CharsetEncoder.DEFAULT_REPLACEMENT);
+                cArr[i] = (char) ((i2 >>> 10) + 55232);
+                cArr[i + 1] = (char) ((i2 & IronSourceError.ERROR_RV_SHOW_CALLED_WRONG_STATE) + 56320);
+                return;
+            }
+        }
+        throw zzfb.zzb();
+    }
+
+    public static /* bridge */ /* synthetic */ void zzb(byte b, byte b2, byte b3, char[] cArr, int i) {
+        if (!zze(b2)) {
+            if (b == -32) {
+                if (b2 >= -96) {
+                    b = -32;
+                }
+            }
+            if (b == -19) {
+                if (b2 < -96) {
+                    b = -19;
+                }
+            }
+            if (!zze(b3)) {
+                cArr[i] = (char) (((b & AmfConstants.TYPE_XML_DOCUMENT_MARKER) << 12) | ((b2 & CharsetEncoder.DEFAULT_REPLACEMENT) << 6) | (b3 & CharsetEncoder.DEFAULT_REPLACEMENT));
+                return;
+            }
+        }
+        throw zzfb.zzb();
+    }
+
+    public static /* bridge */ /* synthetic */ void zzc(byte b, byte b2, char[] cArr, int i) {
+        if (b < -62 || zze(b2)) {
+            throw zzfb.zzb();
+        }
+        cArr[i] = (char) (((b & 31) << 6) | (b2 & CharsetEncoder.DEFAULT_REPLACEMENT));
+    }
+
+    public static /* bridge */ /* synthetic */ boolean zzd(byte b) {
+        return b >= 0;
+    }
+
+    private static boolean zze(byte b) {
+        return b > -65;
+    }
+}

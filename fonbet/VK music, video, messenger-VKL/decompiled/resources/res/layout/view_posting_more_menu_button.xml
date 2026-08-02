@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_button_posting_bottom_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/icon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tint="?attr/vk_ui_icon_accent_themed"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_gravity="center"
+        android:id="@+id/text_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/VkUiTypography.Subhead"/>
+</merge>

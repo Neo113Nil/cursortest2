@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Space
+        android:layout_width="8dp"
+        android:layout_height="match_parent"/>
+    <com.vk.im.design.view.pagination.ImPaginationSegment
+        android:id="@+id/pagination_segment"
+        android:visibility="gone"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        app:im_ipv_vertical_space="11dp"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"/>
+</merge>

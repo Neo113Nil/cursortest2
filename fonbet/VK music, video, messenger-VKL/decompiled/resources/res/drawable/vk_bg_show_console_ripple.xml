@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/vk_ui_transparent_active">
+    <item android:drawable="@drawable/vk_bg_show_console"/>
+</ripple>

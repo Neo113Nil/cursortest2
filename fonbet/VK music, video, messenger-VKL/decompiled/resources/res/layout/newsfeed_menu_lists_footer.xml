@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.FluidHorizontalLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/highlight"
+    android:layout_width="@dimen/newsfeed_menu_item_width"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Headline1Normal"
+        android:textColor="?attr/vk_ui_text_accent"
+        android:gravity="start|center_vertical"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/newsfeed_settings_menu_item"
+        android:singleLine="true"
+        app:vk_layout_isFluid="true"/>
+    <View
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/dot"
+        android:background="@drawable/white_oval"
+        android:visibility="gone"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="6dp"
+        android:backgroundTint="?attr/vk_ui_background_accent"/>
+</com.vk.core.tool.view.FluidHorizontalLayout>

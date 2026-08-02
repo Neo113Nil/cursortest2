@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.video.design.view.VideoControlsBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/controls_bar"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"/>

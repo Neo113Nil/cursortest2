@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="12dp"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.OverlayTextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium"
+        android:textColor="?attr/vk_ui_text_contrast_themed"
+        android:gravity="center"
+        android:layout_gravity="top|center_horizontal"
+        android:id="@android:id/button1"
+        android:background="@drawable/bg_panel_new_posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="36dp"
+        android:text="@string/new_posts"
+        android:paddingStart="15dp"
+        android:paddingEnd="20dp"
+        android:elevation="6dp"
+        app:src="@drawable/vk_icon_deprecated_ic_new_posts_arrow"/>
+</FrameLayout>

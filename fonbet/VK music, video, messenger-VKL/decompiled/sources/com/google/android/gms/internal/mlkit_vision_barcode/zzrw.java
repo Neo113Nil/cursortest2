@@ -1,0 +1,34 @@
+package com.google.android.gms.internal.mlkit_vision_barcode;
+
+import androidx.annotation.Nullable;
+
+/* compiled from: com.google.android.gms:play-services-mlkit-barcode-scanning@@18.2.0 */
+/* loaded from: classes12.dex */
+public final class zzrw {
+
+    @Nullable
+    private static zzrv zza;
+
+    public static synchronized zzrl zza(zzrd zzrdVar) {
+        zzrl zzrlVar;
+        synchronized (zzrw.class) {
+            try {
+                if (zza == null) {
+                    zza = new zzrv(null);
+                }
+                zzrlVar = (zzrl) zza.get(zzrdVar);
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+        return zzrlVar;
+    }
+
+    public static synchronized zzrl zzb(String str) {
+        zzrl zza2;
+        synchronized (zzrw.class) {
+            zza2 = zza(zzrd.zzd(str).zzd());
+        }
+        return zza2;
+    }
+}

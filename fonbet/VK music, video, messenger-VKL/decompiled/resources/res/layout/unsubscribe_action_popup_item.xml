@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/actionContent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_negative"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/action_sheet_title_type_unsubscribe"
+        android:singleLine="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        style="@style/VkUiTypography.Text"/>
+</FrameLayout>

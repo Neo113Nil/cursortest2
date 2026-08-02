@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/vk_ui_spacing_size2_xl">
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:id="@+id/avatar_skeleton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:id="@+id/chat_name_skeleton"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/vk_ui_spacing_size_xs"
+        android:layout_marginStart="@dimen/vk_ui_spacing_size_xl"
+        app:layout_constraintBottom_toTopOf="@+id/msg_two_lines_skeleton"
+        app:layout_constraintStart_toEndOf="@+id/avatar_skeleton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:id="@+id/msg_two_lines_skeleton"
+        android:layout_width="80dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="@dimen/vk_ui_spacing_size_m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/chat_name_skeleton"
+        app:layout_constraintTop_toBottomOf="@+id/chat_name_skeleton"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

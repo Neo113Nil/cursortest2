@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/vk_bg_card_elevation_8_cropped_full"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp">
+        <com.vk.core.view.components.button.VkSimpleButton
+            android:id="@+id/negative_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:buttonAppearance="accent"
+            app:buttonMode="secondary"
+            app:buttonSizeType="large"/>
+        <View
+            android:id="@+id/buttons_divider"
+            android:layout_width="12dp"
+            android:layout_height="0dp"/>
+        <com.vk.core.view.components.button.VkSimpleButton
+            android:id="@+id/positive_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:buttonAppearance="accent"
+            app:buttonMode="primary"
+            app:buttonSizeType="large"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:id="@+id/bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

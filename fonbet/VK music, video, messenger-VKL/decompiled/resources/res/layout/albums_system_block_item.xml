@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/system_albums_container"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.NestedScrollableRecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rv_system_albums"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:paddingHorizontal="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.TextMedium"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/tv_user_albums"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="9dp"
+        android:lines="1"
+        android:translationY="-0.62sp"
+        android:paddingStart="16dp"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.Chip xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:ellipsize="end"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:checkable="true"
+    android:elevation="@dimen/video_catalog_chips_elevation"
+    android:paddingVertical="@dimen/video_catalog_chips_padding_vertical"
+    app:chipEndPadding="@dimen/video_catalog_chips_padding_horizontal"
+    app:chipStartPadding="@dimen/video_catalog_chips_padding_horizontal"
+    app:ensureMinTouchTargetSize="false"
+    style="@style/Catalog.Chip.Choice"/>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_music_sticker_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="150dp"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="7dp">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/ivTrack"
+        android:background="@drawable/bg_music_sticker_horizontal_placeholder"
+        android:layout_width="48dp"
+        android:layout_height="48dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="none"
+            android:id="@+id/tvTrackName"
+            android:fadingEdgeLength="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawablePadding="12dp"
+            android:requiresFadingEdge="horizontal"
+            style="@style/VkUiTypography.Text"/>
+        <TextView
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="end"
+            android:id="@+id/tvArtistName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:alpha="0.6"
+            style="@style/VkUiTypography.Footnote"/>
+    </LinearLayout>
+</LinearLayout>

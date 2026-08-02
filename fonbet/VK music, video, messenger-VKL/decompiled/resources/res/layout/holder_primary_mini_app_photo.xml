@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_mini_app_photo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.feed.tool.view.newsfeed.image.FixedSizeVKEnhancedImageView
+        android:id="@+id/image_view_mini_app_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:disableAnimationOnColdStart="true"
+        app:emptyPlaceholder="?attr/vk_ui_image_placeholder"
+        app:imageScaleType="center_crop"
+        app:placeholder="?attr/vk_ui_image_placeholder"/>
+</FrameLayout>

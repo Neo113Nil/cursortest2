@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/poll_container"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp">
+    <com.vk.stories.design.view.polls.SimplePollView
+        android:id="@+id/poll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:author_text_size="14dp"
+        app:corner_radius="8dp"
+        app:default_background="@drawable/default_poll_background"
+        app:info_text_size="14dp"
+        app:selector_no_background="@drawable/poll_view_no_background_selector"
+        app:selector_with_background="@drawable/poll_view_with_background_selector"
+        app:short_date_format="false"
+        app:show_avatars="true"
+        app:show_edit_menu="false"
+        app:title_text_size="22dp"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/online_composite_background">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/online_mobile_substract"
+            android:tint="?attr/vk_ui_background_content"/>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_online_mobile"
+            android:tint="@color/vk_green"/>
+    </item>
+</layer-list>

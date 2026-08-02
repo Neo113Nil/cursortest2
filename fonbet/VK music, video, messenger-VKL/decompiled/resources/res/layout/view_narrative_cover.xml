@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        app:actualImageScaleType="centerCrop"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/access_image"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitCenter"
+        app:tint="?attr/vk_ui_vkontakte_color_placeholder_icon_foreground_primary"/>
+    <TextView
+        android:textColor="@color/vk_white"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/count"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="4sp"
+        style="@style/VkUiTypography.Title2Medium"/>
+</merge>

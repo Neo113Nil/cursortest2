@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?attr/vk_ui_text_secondary"
+    android:gravity="center"
+    android:id="@+id/audio_bottom_sheet_header_remaining_time"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="47dp"
+    style="@style/VkUiTypography.Footnote"/>

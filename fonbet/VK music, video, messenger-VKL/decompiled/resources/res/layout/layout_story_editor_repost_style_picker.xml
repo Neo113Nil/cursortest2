@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vk.core.view.components.segmented.control.VkSegmentedControl
+        android:layout_gravity="center"
+        android:id="@+id/style_controls"
+        android:background="?attr/vk_ui_overlay_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:tabMinWidth="0dp"/>
+</merge>

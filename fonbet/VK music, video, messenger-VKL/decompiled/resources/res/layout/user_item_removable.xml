@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/UserSmallRoot">
+    <com.vk.avatar.api.VKAvatarView
+        android:id="@+id/photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:borderStrokeWidth="3dp"
+        app:placeholderImage="@drawable/user_placeholder"
+        style="@style/UserSmallPhoto"/>
+    <ImageView
+        android:id="@+id/action"
+        android:background="@drawable/highlight_unbounded"
+        android:padding="8dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/accessibility_delete"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/vk_icon_cancel_24"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/title"
+        android:layout_toStartOf="@+id/action"
+        style="@style/UserSmallTitle"/>
+    <ImageView style="@style/Online.Small"/>
+</RelativeLayout>

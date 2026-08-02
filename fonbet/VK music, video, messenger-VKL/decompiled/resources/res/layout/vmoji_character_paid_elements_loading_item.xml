@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.superapp.ui.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/title"
+            android:background="@drawable/shape_bg_skeleton_6"
+            android:layout_width="140dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="15.5dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+        <com.vk.core.view.NestedScrollableRecyclerView
+            android:id="@+id/list"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="21dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"/>
+    </LinearLayout>
+</com.vk.superapp.ui.shimmer.ShimmerFrameLayout>

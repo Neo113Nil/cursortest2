@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp">
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center_vertical"
+        android:id="@+id/editor_volume_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/editor_volume_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <com.vk.clips.design.view.seek.ClipsSeekBar
+        android:id="@+id/editor_volume_seek_bar"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:paddingEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editor_volume_percent_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editor_volume_title"
+        app:lineThickness="4dp"
+        app:thumbSize="28dp"
+        app:unselectedColor="@color/vk_gray_700"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/editor_volume_percent_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/editor_volume_seek_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editor_volume_seek_bar"
+        app:layout_constraintTop_toTopOf="@+id/editor_volume_seek_bar"
+        style="@style/VkUiTypography.Headline1Normal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

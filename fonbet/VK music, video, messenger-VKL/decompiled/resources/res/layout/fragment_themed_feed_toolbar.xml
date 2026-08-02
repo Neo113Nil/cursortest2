@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/appkit_loader_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.NonBouncedAppBarLayout
+        android:id="@+id/appbar"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/VKAppBar">
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="1dp"
+            app:layout_scrollFlags="snap|enterAlways|scroll">
+            <include layout="@layout/appkit_toolbar"/>
+        </FrameLayout>
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:background="?attr/vk_ui_background_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            app:tabBackground="@drawable/highlight_toolbar"
+            app:tabIndicatorColor="?attr/vk_ui_text_accent"
+            app:tabIndicatorHeight="0dp"
+            app:tabMinWidth="0dp"
+            app:tabMode="scrollable"
+            app:tabPaddingEnd="0dp"
+            app:tabPaddingStart="0dp"/>
+    </com.google.android.material.appbar.NonBouncedAppBarLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.NonBouncedAppBarLayout$ScrollingViewBehavior">
+        <com.vk.core.view.disableable.DisableableViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.google.android.material.appbar.NonBouncedAppBarShadowView
+        android:id="@+id/appbar_shadow"
+        app:vk_appbar_allowSeparator="false"
+        style="@style/AppBarShadow"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

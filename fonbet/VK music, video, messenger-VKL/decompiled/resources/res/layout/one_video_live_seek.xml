@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/live_seek_elapsed_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:layout_marginStart="12dp"/>
+    <com.google.android.material.slider.Slider
+        android:theme="@style/Theme.MaterialComponents"
+        android:id="@+id/live_seek_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:valueFrom="-1"
+        android:valueTo="0"
+        app:labelBehavior="gone"
+        app:thumbColor="@android:color/white"
+        app:trackColorInactive="@color/one_video_gray_old"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textSize="11.5sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/live_seek_badge"
+        android:background="@drawable/one_video_bg_live_seek_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="32dp"
+        android:minHeight="16dp"
+        android:text="@string/one_video_live"
+        android:textAllCaps="true"
+        android:layout_marginEnd="16dp"/>
+</merge>

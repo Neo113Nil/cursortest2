@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_list_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.cell.rich.VkRichCell
+        android:id="@+id/vk_rich_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="@dimen/music_podcasts_speed_item_width"
+    android:layout_height="56dp">
+    <View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/line"
+        android:background="@drawable/music_podcast_playback_bar"
+        android:layout_width="2dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="?attr/vk_ui_icon_medium"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Footnote"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="none"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/text"
+        android:paddingBottom="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+</FrameLayout>

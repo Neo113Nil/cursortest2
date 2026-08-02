@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.TintTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textAppearance="@style/VkUiTypography.Title2Medium"
+    android:textColor="?attr/vk_ui_text_muted"
+    android:gravity="start|center_vertical"
+    android:layout_gravity="start|center_vertical"
+    android:id="@+id/attach_spinner_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:singleLine="true"
+    android:drawablePadding="8dp"
+    app:drawableEndCompat="@drawable/ic_toolbar_spinner_arrow"
+    app:drawableRightCompat="@drawable/ic_toolbar_spinner_arrow"
+    app:drawableTint="@color/vk_gray_400"/>

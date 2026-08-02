@@ -1,0 +1,42 @@
+package yads;
+
+import io.requery.android.database.sqlite.SQLiteDatabase;
+
+/* loaded from: classes10.dex */
+public final class r83 {
+    public final i83 a;
+    public final int b;
+    public final long[] c;
+    public final int[] d;
+    public final int e;
+    public final long[] f;
+    public final int[] g;
+    public final long h;
+
+    public r83(i83 i83Var, long[] jArr, int[] iArr, int i, long[] jArr2, int[] iArr2, long j) {
+        ni.a(iArr.length == jArr2.length);
+        ni.a(jArr.length == jArr2.length);
+        ni.a(iArr2.length == jArr2.length);
+        this.a = i83Var;
+        this.c = jArr;
+        this.d = iArr;
+        this.e = i;
+        this.f = jArr2;
+        this.g = iArr2;
+        this.h = j;
+        this.b = jArr.length;
+        if (iArr2.length > 0) {
+            int length = iArr2.length - 1;
+            iArr2[length] = iArr2[length] | SQLiteDatabase.ENABLE_WRITE_AHEAD_LOGGING;
+        }
+    }
+
+    public final int a(long j) {
+        for (int a = mc3.a(this.f, j, true); a < this.f.length; a++) {
+            if ((this.g[a] & 1) != 0) {
+                return a;
+            }
+        }
+        return -1;
+    }
+}

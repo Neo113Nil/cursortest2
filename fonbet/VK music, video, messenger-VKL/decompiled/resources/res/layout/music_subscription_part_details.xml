@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="?attr/vk_ui_typography_display_title1"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/music_subscription_details_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:maxLines="1"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"/>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="?attr/vk_ui_typography_paragraph"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/music_subscription_details_content"
+        android:paddingBottom="24dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="7sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_subscription_details_title"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/background_discover_error"
+        android:background="@drawable/bg_story_discover_error_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include layout="@layout/layout_story_view_header"/>
+    <TextView
+        android:textColor="@color/vk_gray_500"
+        android:gravity="center"
+        android:id="@+id/title_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stories_discover_title_error"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/error_reload_button"
+        app:layout_constraintEnd_toEndOf="@+id/background_discover_error"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/background_discover_error"
+        app:layout_constraintTop_toTopOf="@+id/background_discover_error"
+        app:layout_constraintVertical_chainStyle="packed"
+        style="@style/Headline1Regular"/>
+    <TextView
+        android:textColor="@color/vk_white"
+        android:id="@+id/error_reload_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/stories_discover_reload"
+        app:layout_constraintBottom_toBottomOf="@+id/background_discover_error"
+        app:layout_constraintEnd_toEndOf="@+id/background_discover_error"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/background_discover_error"
+        app:layout_constraintTop_toBottomOf="@+id/title_error"
+        style="@style/Headline2Regular"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/pb_loading"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="@+id/background_discover_error"
+        app:layout_constraintEnd_toEndOf="@+id/background_discover_error"
+        app:layout_constraintStart_toStartOf="@+id/background_discover_error"
+        app:layout_constraintTop_toTopOf="@+id/background_discover_error"
+        style="@style/Base.Widget.AppCompat.ProgressBar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

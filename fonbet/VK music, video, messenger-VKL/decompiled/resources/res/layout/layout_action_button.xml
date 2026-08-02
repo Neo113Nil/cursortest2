@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="end|top"
+        android:id="@+id/action_button_title_badge_question"
+        android:visibility="invisible"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:gravity="center"
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/action_button_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginHorizontal="4dp"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="@color/vk_white"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/action_button_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="4dp"
+        style="@style/VkUiTypography.Caption3"/>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vk_section_widget_edge_margin">12dp</dimen>
+    <dimen name="vk_tile_widget_edge_margin">8dp</dimen>
+    <dimen name="vk_tile_widget_subtitle_text_v6_size">12dp</dimen>
+    <dimen name="vk_tile_widget_title_text_v6_large_size">23dp</dimen>
+    <dimen name="vk_tile_widget_title_text_v6_size">15dp</dimen>
+</resources>

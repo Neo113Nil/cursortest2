@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="VkSuperApp.Locality.Description" parent="">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/vk_legacy_text_primary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">?attr/font_regular</item>
+        <item name="android:letterSpacing">-0.007</item>
+        <item name="lineHeight">20sp</item>
+    </style>
+    <style name="VkSuperApp.Locality.Error.Button" parent="@style/VkLegacyButton.Tertiary">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">?attr/vk_legacy_accent</item>
+        <item name="android:fontFamily">@font/vk_roboto_medium</item>
+        <item name="android:letterSpacing">0.018</item>
+    </style>
+    <style name="VkSuperApp.Locality.Error.Description" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">?attr/vk_legacy_text_secondary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingExtra">1.5sp</item>
+        <item name="android:fontFamily">?attr/font_regular</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    <style name="VkSuperApp.Locality.Error.Title" parent="">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/vk_legacy_text_primary</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">@font/vk_sans_display_demibold</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    <style name="VkSuperApp.Locality.NoResult" parent="@style/VkLegacyTypography.Headline.Regular">
+        <item name="android:textColor">?attr/vk_legacy_text_secondary</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+    <style name="VkSuperApp.Locality.SubTitle" parent="@style/VkLegacyTypography.Caption.Regular">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+    <style name="VkSuperApp.Locality.Title" parent="@style/VkLegacyTypography.Headline.Regular">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+</resources>

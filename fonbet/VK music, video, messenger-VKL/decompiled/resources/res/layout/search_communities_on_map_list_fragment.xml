@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/vk_bg_card_elevation16_top"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-16dp"
+    android:backgroundTint="?attr/vk_ui_background_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/foreground_content_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:title="@string/search_communities_on_map_search_results_title"
+        app:titleTextAppearance="@style/VkUiTypography.DisplayTitle2"
+        app:titleTextColor="?attr/vk_ui_text_primary"
+        style="?attr/actionBarTheme"/>
+    <ViewStub
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/error_layout"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Text"
+        android:textColor="?attr/vk_ui_text_muted"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/error_text"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_common_network_error"
+        android:freezesText="true"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_accent"
+        android:ellipsize="end"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/error_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/vk_common_retry"
+        app:fontFamily="@font/vk_roboto_medium"
+        style="@style/VkLegacyButton.Tertiary"/>
+</LinearLayout>

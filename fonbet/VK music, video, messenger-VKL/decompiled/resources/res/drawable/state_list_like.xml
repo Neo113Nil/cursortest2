@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:drawable="@drawable/ic_viewer_like_red_48"/>
+    <item
+        android:state_selected="false"
+        android:drawable="@drawable/vk_icon_like_outline_shadow_medium_48"/>
+</selector>

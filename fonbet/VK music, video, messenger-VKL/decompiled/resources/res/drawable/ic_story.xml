@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ic_story_bg">
+        <shape android:shape="oval">
+            <solid android:color="@color/vk_blue_300"/>
+            <size
+                android:height="48dp"
+                android:width="48dp"/>
+        </shape>
+    </item>
+    <item android:id="@+id/ic_story_photo">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_ic_story_28"
+            android:tint="@color/vk_white"/>
+    </item>
+</layer-list>

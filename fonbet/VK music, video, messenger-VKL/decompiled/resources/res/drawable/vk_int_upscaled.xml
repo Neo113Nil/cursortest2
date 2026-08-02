@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_vk_int_upscaled__0_res_0x7f0805ae">
+    <target
+        android:name="logo"
+        android:animation="@drawable/_vk_int_upscaled__1_res_0x7f0805af"/>
+</animated-vector>

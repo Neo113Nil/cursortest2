@@ -1,0 +1,22 @@
+package com.google.android.gms.internal.appset;
+
+import androidx.annotation.Nullable;
+import com.google.android.gms.appset.AppSetIdInfo;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.tasks.TaskCompletionSource;
+import xsna.i7o0;
+
+/* compiled from: com.google.android.gms:play-services-appset@@16.0.0 */
+/* loaded from: classes.dex */
+final class zzo extends zze {
+    final /* synthetic */ TaskCompletionSource zza;
+
+    public zzo(zzp zzpVar, TaskCompletionSource taskCompletionSource) {
+        this.zza = taskCompletionSource;
+    }
+
+    @Override // com.google.android.gms.internal.appset.zzf
+    public final void zzb(Status status, @Nullable com.google.android.gms.appset.zzc zzcVar) {
+        i7o0.i(status, zzcVar != null ? new AppSetIdInfo(zzcVar.zzb(), zzcVar.zza()) : null, this.zza);
+    }
+}

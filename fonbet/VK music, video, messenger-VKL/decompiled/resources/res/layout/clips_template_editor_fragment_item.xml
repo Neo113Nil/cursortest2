@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="48dp"
+    android:layout_height="64dp">
+    <View
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/clips_template_editor_fragment_item_empty"
+        android:background="@drawable/clips_template_fragment_item_photo_photo_background_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/clips_template_editor_fragment_item_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/clips_template_fragment_item_photo_foreground"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/accessibility_video"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center"
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/clips_template_editor_fragment_item_duration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/clips_template_editor_cropper_item_duration_text_content_description"
+        style="@style/VkUiTypography.Footnote"/>
+</FrameLayout>

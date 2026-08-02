@@ -1,0 +1,25 @@
+package com.fyber.inneractive.sdk.flow;
+
+import com.fyber.inneractive.sdk.external.InneractiveErrorCode;
+
+/* loaded from: classes12.dex */
+public abstract /* synthetic */ class f0 {
+    public static final /* synthetic */ int[] a;
+
+    static {
+        int[] iArr = new int[InneractiveErrorCode.values().length];
+        a = iArr;
+        try {
+            iArr[InneractiveErrorCode.CONNECTION_ERROR.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            a[InneractiveErrorCode.NO_FILL.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            a[InneractiveErrorCode.NATIVE_AD_FAILED_TO_LOAD.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+    }
+}

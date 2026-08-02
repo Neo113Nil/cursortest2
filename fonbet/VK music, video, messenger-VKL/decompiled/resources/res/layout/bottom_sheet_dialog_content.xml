@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.imageloader.view.VKCircleImageView
+        android:id="@+id/photo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:textColor="@color/vk_ui_text_title_color"
+        android:gravity="center_horizontal"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:maxLines="3"
+        style="@style/VkUiTypography.Title2Medium"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center_horizontal"
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"/>
+</LinearLayout>

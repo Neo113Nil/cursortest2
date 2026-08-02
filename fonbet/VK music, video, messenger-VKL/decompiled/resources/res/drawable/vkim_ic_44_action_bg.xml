@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="44dp"
+    android:width="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+    <path
+        android:fillColor="?attr/vk_ui_vkontakte_palette_black"
+        android:pathData="M14,0L30,0A14,14 0,0 1,44 14L44,30A14,14 0,0 1,30 44L14,44A14,14 0,0 1,0 30L0,14A14,14 0,0 1,14 0z"
+        android:fillAlpha="0.1"/>
+</vector>

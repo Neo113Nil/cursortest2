@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/flist_item_container"
+    android:paddingLeft="@dimen/post_side_padding"
+    android:paddingTop="8dp"
+    android:paddingRight="@dimen/post_side_padding"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingEnd="76dp">
+        <TextView
+            android:textAppearance="@style/VkUiTypography.Headline2"
+            android:textStyle="normal"
+            android:textColor="?attr/vk_ui_text_muted"
+            android:ellipsize="end"
+            android:id="@+id/flist_item_text"
+            android:duplicateParentState="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"/>
+        <TextView
+            android:textAppearance="@style/VkUiTypography.Subhead"
+            android:textColor="?attr/vk_ui_text_secondary"
+            android:ellipsize="end"
+            android:id="@+id/flist_item_subtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:lines="1"/>
+    </LinearLayout>
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/flist_item_photo"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:scaleType="centerCrop"
+        app:actualImageScaleType="centerCrop"
+        app:placeholderImageScaleType="centerInside"
+        app:roundedCornerRadius="2dp"/>
+</FrameLayout>

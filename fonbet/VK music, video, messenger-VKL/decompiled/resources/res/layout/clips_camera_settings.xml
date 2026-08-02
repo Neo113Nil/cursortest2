@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.p003switch.VkSwitchItem
+        android:id="@+id/camera_60_fps_settings_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/clips_camera_settings_60_fps"/>
+    <com.vk.core.view.components.p003switch.VkSwitchItem
+        android:id="@+id/camera_grid_settings_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/story_setting_camera_grid"/>
+</LinearLayout>

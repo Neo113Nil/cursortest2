@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/text_container"
+    android:layout_width="match_parent"
+    android:layout_height="28dp">
+    <View
+        android:layout_gravity="center_vertical"
+        android:id="@+id/left_line_view"
+        android:background="?attr/im_unread_line_divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_weight="1"
+        android:translationY="1dp"/>
+    <TextView
+        android:textSize="13sp"
+        android:textColor="?attr/vk_legacy_im_service_message_text"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_msg_list_unread"
+        android:singleLine="true"
+        android:fontFamily="@string/font_family_medium"/>
+    <View
+        android:layout_gravity="center_vertical"
+        android:id="@+id/right_line_view"
+        android:background="?attr/im_unread_line_divider"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_weight="1"
+        android:translationY="1dp"/>
+</LinearLayout>

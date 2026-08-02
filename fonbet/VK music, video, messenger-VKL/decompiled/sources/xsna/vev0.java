@@ -1,0 +1,98 @@
+package xsna;
+
+/* compiled from: VkPxDimens.kt */
+/* loaded from: classes.dex */
+public final class vev0 {
+    public static final float a;
+    public static final float b;
+    public static final float c;
+    public static final float d;
+    public static final float e;
+    public static final float f;
+    public static final float g;
+    public static final float h;
+    public static final float i;
+
+    static {
+        iah0.b(8.0f);
+        iah0.b(12.0f);
+        iah0.b(40.0f);
+        iah0.b(96.0f);
+        iah0.b(48.0f);
+        iah0.b(32.0f);
+        iah0.b(128.0f);
+        iah0.b(24.0f);
+        iah0.b(44.0f);
+        iah0.b(24.0f);
+        iah0.b(16.0f);
+        iah0.b(56.0f);
+        iah0.b(12.0f);
+        iah0.b(16.0f);
+        iah0.b(12.0f);
+        iah0.b(1.0f);
+        iah0.b(0.5f);
+        iah0.b(0.33f);
+        a = iah0.b(8.0f);
+        b = iah0.b(12.0f);
+        iah0.b(20.0f);
+        c = iah0.b(48.0f);
+        iah0.b(20.0f);
+        iah0.b(16.0f);
+        iah0.b(16.0f);
+        iah0.b(12.0f);
+        iah0.b(16.0f);
+        iah0.b(12.0f);
+        iah0.b(24.0f);
+        iah0.b(12.0f);
+        iah0.b(8.0f);
+        iah0.b(1.0f);
+        iah0.b(44.0f);
+        iah0.b(36.0f);
+        iah0.b(80.0f);
+        iah0.b(12.0f);
+        iah0.b(30.0f);
+        iah0.b(16.0f);
+        iah0.b(12.0f);
+        iah0.b(12.0f);
+        iah0.b(8.0f);
+        iah0.b(12.0f);
+        iah0.b(8.0f);
+        iah0.b(8.0f);
+        iah0.b(8.0f);
+        iah0.b(8.0f);
+        iah0.b(48.0f);
+        iah0.b(4.0f);
+        iah0.b(16.0f);
+        iah0.b(44.0f);
+        iah0.b(12.0f);
+        iah0.b(12.0f);
+        iah0.b(16.0f);
+        iah0.b(16.0f);
+        iah0.b(32.0f);
+        iah0.b(56.0f);
+        iah0.b(32.0f);
+        iah0.b(24.0f);
+        iah0.b(880.0f);
+        iah0.b(680.0f);
+        iah0.b(430.0f);
+        iah0.b(36.0f);
+        iah0.b(6.0f);
+        iah0.b(16.0f);
+        iah0.b(8.0f);
+        iah0.b(12.0f);
+        iah0.b(14.0f);
+        iah0.b(20.0f);
+        iah0.b(34.0f);
+        iah0.b(8.0f);
+        iah0.b(2.0f);
+        d = iah0.b(2.0f);
+        e = iah0.b(4.0f);
+        f = iah0.b(6.0f);
+        g = iah0.b(8.0f);
+        h = iah0.b(10.0f);
+        i = iah0.b(12.0f);
+        iah0.b(16.0f);
+        iah0.b(20.0f);
+        iah0.b(24.0f);
+    }
+}

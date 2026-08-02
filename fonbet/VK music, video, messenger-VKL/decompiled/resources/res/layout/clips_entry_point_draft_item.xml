@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/draft_item_height">
+    <com.vk.core.view.components.picture.VkPicture
+        android:id="@+id/clips_entry_point_draft_item_preview"
+        android:background="@drawable/bg_rounded_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/vk_gray_750"/>
+    <View
+        android:layout_gravity="start|top"
+        android:id="@+id/clips_entry_point_draft_item_template_icon"
+        android:background="@drawable/vk_icon_cards_2_shadow_24"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="@color/vk_white"/>
+    <View
+        android:layout_gravity="bottom"
+        android:id="@+id/clips_entry_point_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:alpha="0.5"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="bottom|center_horizontal"
+        android:id="@+id/clips_entry_point_draft_item_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="12dp"
+        style="@style/VkUiTypography.Subhead"/>
+</FrameLayout>

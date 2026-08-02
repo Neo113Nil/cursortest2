@@ -1,0 +1,34 @@
+package com.vk.superapp.health.js.bridge.api.events;
+
+import io.appmetrica.analytics.networktasks.internal.CommonUrlParts;
+import xsna.ad6;
+import xsna.epx;
+import xsna.ho8;
+import xsna.pmi0;
+
+/* compiled from: StartWorkouts.kt */
+/* loaded from: classes6.dex */
+public final class StartWorkouts$Parameters implements ad6 {
+
+    @pmi0(CommonUrlParts.REQUEST_ID)
+    private final String requestId;
+
+    public StartWorkouts$Parameters(String str) {
+        this.requestId = str;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof StartWorkouts$Parameters) && epx.f(this.requestId, ((StartWorkouts$Parameters) obj).requestId);
+    }
+
+    public final int hashCode() {
+        return this.requestId.hashCode();
+    }
+
+    public final String toString() {
+        return ho8.a(new StringBuilder("Parameters(requestId="), this.requestId, ')');
+    }
+}

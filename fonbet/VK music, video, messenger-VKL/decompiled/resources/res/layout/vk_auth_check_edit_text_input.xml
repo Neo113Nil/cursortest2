@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/VkUiTypography.TextNormal"
+    android:textColor="?attr/vk_ui_text_primary"
+    android:gravity="center"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/code_edit_text"
+    android:background="@drawable/vk_ui_auth_bg_edittext_stated"
+    android:focusableInTouchMode="true"
+    android:layout_width="44dp"
+    android:layout_height="44dp"
+    android:layout_marginTop="4dp"
+    android:inputType="number"
+    android:contentDescription="@string/vk_auth_accessibility_code_description"
+    android:importantForAutofill="no"
+    style="@style/VKID.EditText"/>

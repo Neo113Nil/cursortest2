@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:clipToPadding="false">
+    <item>
+        <nine-patch
+            android:src="@drawable/vk_bg_card_elevation8"
+            android:tint="?attr/vk_ui_background_secondary"
+            android:tintMode="multiply"/>
+    </item>
+</layer-list>

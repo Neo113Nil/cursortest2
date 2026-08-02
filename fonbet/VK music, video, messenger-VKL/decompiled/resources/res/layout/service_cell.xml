@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/vk_ui_base_padding_horizontal"
+    android:paddingVertical="@dimen/vk_ui_spacing_size_xs">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/ecomm_service_cell_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_xl"
+        android:paddingVertical="@dimen/vk_ui_spacing_size_l"
+        style="@style/VkUiTypography.Text"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/ecomm_service_cell_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_s"
+        style="@style/VkUiTypography.Paragraph"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/ecomm_service_cell_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        style="@style/VkUiTypography.Paragraph"/>
+</merge>

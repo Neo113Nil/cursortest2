@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/ds_internal_check_circle_on">
+    <target
+        android:name="_R_G_L_1_G"
+        android:animation="@drawable/_ds_internal_check_circle_off_on_transition__0_res_0x7f080055"/>
+    <target
+        android:name="_R_G_L_0_G_D_0_P_0"
+        android:animation="@drawable/_ds_internal_check_circle_off_on_transition__3_res_0x7f080058"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_ds_internal_check_circle_off_on_transition__5_res_0x7f08005a"/>
+    <target
+        android:name="time_group"
+        android:animation="@drawable/_ds_internal_check_circle_off_on_transition__8_res_0x7f08005d"/>
+</animated-vector>

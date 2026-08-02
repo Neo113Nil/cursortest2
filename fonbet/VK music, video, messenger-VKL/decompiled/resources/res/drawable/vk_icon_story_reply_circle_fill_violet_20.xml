@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="20dp"
+    android:width="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_story_reply_circle_fill_violet_20__0_res_0x7f080596"
+        android:pathData="m0,10c0,-5.5229 4.4771,-10 10,-10 5.5228,0 10,4.4771 10,10 0,5.5228 -4.4772,10 -10,10 -5.5229,0 -10,-4.4772 -10,-10z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="m8.9257,6.2628c0.4071,0.3732 0.4346,1.0058 0.0614,1.4129l-1.2139,1.3243h2.2268c1.9654,0 3.7101,0.946 4.8029,2.4034 0.3313,0.4418 0.2417,1.0686 -0.2001,1.4 -0.4419,0.3313 -1.0687,0.2417 -1.4,-0.2002 -0.7314,-0.9753 -1.8936,-1.6032 -3.2028,-1.6032h-2.2268l1.2139,1.3243c0.3732,0.4071 0.3457,1.0397 -0.0614,1.4129 -0.4071,0.3732 -1.0397,0.3456 -1.4129,-0.0615l-2.75,-3c-0.3505,-0.3823 -0.3505,-0.9691 0,-1.3514l2.75,-3c0.3732,-0.4071 1.0058,-0.4346 1.4129,-0.0614z"
+        android:fillType="evenOdd"/>
+</vector>

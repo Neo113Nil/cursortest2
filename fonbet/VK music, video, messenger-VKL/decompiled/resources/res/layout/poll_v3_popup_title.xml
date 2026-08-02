@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="44dp"
+    android:paddingHorizontal="16dp">
+    <TextView
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:id="@+id/popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        style="@style/VkUiTypography.FootnoteNormal"/>
+</FrameLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/error_view_holder"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:paddingHorizontal="16dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/error_text"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="@string/liblists_err_text"
+        android:singleLine="true"
+        android:layout_weight="1"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:gravity="end|center_vertical"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/error_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/liblists_retry"
+        android:layout_marginStart="16dp"
+        app:buttonAppearance="accent"
+        app:buttonMode="tertiary"
+        app:buttonSizeType="small"/>
+</LinearLayout>

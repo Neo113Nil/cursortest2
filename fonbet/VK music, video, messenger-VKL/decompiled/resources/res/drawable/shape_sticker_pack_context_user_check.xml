@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/vk_ui_background_content"/>
+            <size
+                android:height="16dp"
+                android:width="16dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/vk_icon_check_circle_fill_12"/>
+</layer-list>

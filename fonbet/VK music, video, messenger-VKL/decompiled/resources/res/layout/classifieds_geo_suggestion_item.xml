@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/classified_geo_suggestion_root_view"
+    android:background="@drawable/highlight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/classified_geo_suggestion_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="@string/classifieds_geo_suggestion_item_title"
+        android:maxLines="1"
+        android:layout_marginEnd="40dp"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/classified_geo_suggestion_subtitle_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:layout_marginEnd="40dp"
+        style="@style/VkUiTypography.Footnote"/>
+    <ImageView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/classified_geo_default_iv"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/classifieds_accessibility_checked"
+        app:srcCompat="@drawable/vk_icon_check_circle_on_24"
+        app:tint="?attr/vk_ui_icon_accent"/>
+</FrameLayout>

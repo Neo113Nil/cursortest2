@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.clips.design.view.floatingbutton.FloatingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom|center_horizontal"
+    android:id="@+id/floating_use_current_track_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="18dp"
+    android:elevation="16dp"/>

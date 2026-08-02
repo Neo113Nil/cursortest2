@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_semi_transparent_selector"
+    android:layout_width="160dp"
+    android:layout_height="44dp"
+    android:backgroundTint="@color/vk_gray_700">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@android:id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:tint="@color/vk_gray_100"/>
+    <TextView
+        android:textColor="@color/vk_gray_100"
+        android:gravity="start|center_vertical"
+        android:id="@android:id/text1"
+        android:paddingBottom="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@android:id/icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        style="@style/VkUiTypography.SubheadMedium"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

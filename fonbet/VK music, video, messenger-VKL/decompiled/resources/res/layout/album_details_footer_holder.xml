@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/VkUiTypography.Footnote"
+    android:textColor="?attr/vk_ui_text_secondary"
+    android:gravity="center_horizontal"
+    android:id="@+id/tv_photos_count"
+    android:paddingTop="22dp"
+    android:paddingBottom="24dp"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:lineSpacingMultiplier="0"
+    android:importantForAccessibility="yes"/>

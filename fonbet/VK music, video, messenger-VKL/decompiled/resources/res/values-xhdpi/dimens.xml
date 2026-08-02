@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="camera_target_bottom_margin">24dp</dimen>
+    <dimen name="toolbar_separator_height">0.33dp</dimen>
+    <dimen name="vk_camera_target_bottom_margin">24dp</dimen>
+    <dimen name="vk_camera_target_text_size">18sp</dimen>
+    <dimen name="vk_toolbar_separator_height">0.33dp</dimen>
+</resources>

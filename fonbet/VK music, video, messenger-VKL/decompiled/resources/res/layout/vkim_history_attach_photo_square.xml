@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:as_aspect_ratio="1">
+    <com.vk.core.view.image.VkEnhancedImageView
+        android:id="@+id/photo_image_view"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ev_fadeDuration="300"
+        app:ev_imageScaleType="center_crop"
+        app:placeholder="@drawable/vkim_attach_photo_placeholder"/>
+</com.vk.core.tool.view.AspectRatioFrameLayout>

@@ -1,0 +1,27 @@
+package xsna;
+
+import com.yandex.div.internal.template.Field;
+import com.yandex.div.json.JSONSerializable;
+import com.yandex.div.json.JsonTemplate;
+import com.yandex.div.json.expressions.Expression;
+import com.yandex.div.serialization.BuiltInParserKt;
+import com.yandex.div.serialization.ParsingContext;
+import org.json.JSONObject;
+
+/* compiled from: DivActionFocusElementTemplate.kt */
+/* loaded from: classes8.dex */
+public final class ljn implements JSONSerializable, JsonTemplate<hjn> {
+    public final Field<Expression<String>> a;
+
+    public ljn(Field<Expression<String>> field) {
+        this.a = field;
+    }
+
+    @Override // com.yandex.div.json.JSONSerializable
+    public final JSONObject writeToJSON() {
+        jjn jjnVar = (jjn) BuiltInParserKt.getBuiltInParserComponent().p0.getValue();
+        ParsingContext builtInParsingContext = BuiltInParserKt.getBuiltInParsingContext();
+        jjnVar.getClass();
+        return jjn.a(builtInParsingContext, this);
+    }
+}

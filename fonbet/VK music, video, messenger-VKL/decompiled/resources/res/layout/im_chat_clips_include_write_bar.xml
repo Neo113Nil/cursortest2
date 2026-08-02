@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.im.ui.views.avatars.ImAvatarView
+        android:id="@+id/im_chat_clips_avatar"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="8dp"/>
+    <com.vk.writebar.WriteBar
+        android:id="@+id/im_chat_clips_write_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"/>
+    <com.vk.im.ui.views.WriteBarDisabled
+        android:id="@+id/im_chat_clips_write_bar_disabled"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_weight="1"/>
+</LinearLayout>

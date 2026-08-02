@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/appkit_loader_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.common.presentation.base.view.swiperefreshlayout.SwipeDrawableRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/list_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.vk.feed.design.view.newsfeed.list.FeedRecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/vk_toolbar_behavior_scrolling"/>
+        </FrameLayout>
+    </com.vk.common.presentation.base.view.swiperefreshlayout.SwipeDrawableRefreshLayout>
+    <com.vk.lists.DefaultEmptyView
+        android:layout_gravity="center"
+        android:id="@+id/newsfeed_custom_empty"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/vk_toolbar_behavior_scrolling"/>
+    <include
+        android:id="@+id/newsfeed_custom_progress"
+        android:visibility="gone"
+        layout="@layout/vk_view_default_loading"/>
+    <com.vk.lists.DefaultErrorView
+        android:id="@+id/newsfeed_custom_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_sheet_container"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/vk_toolbar_behavior_scrolling"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/cv_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="6dp">
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:id="@+id/tab_icon_skeleton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tab_text_skeleton"
+        android:layout_width="48dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="6dp"/>
+</LinearLayout>

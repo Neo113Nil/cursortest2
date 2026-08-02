@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="92dp"
+    android:layout_height="121dp"
+    android:contentDescription="@string/accessibility_open_stories_camera"
+    android:layout_marginEnd="2dp">
+    <View
+        android:id="@+id/story_new_item_click_handler"
+        android:background="@drawable/highlight_radius_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:importantForAccessibility="no"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_story_new_item_redesign"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/vk_icon_add_36"
+        app:tint="?attr/vk_ui_icon_tertiary"/>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="?attr/vk_ui_typography_footnote_medium"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:text="@string/story"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:importantForAccessibility="no"/>
+</FrameLayout>

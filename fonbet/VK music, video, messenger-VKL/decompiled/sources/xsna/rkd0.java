@@ -1,0 +1,104 @@
+package xsna;
+
+import kotlin.LazyThreadSafetyMode;
+
+/* compiled from: ProductCardDependencies.kt */
+/* loaded from: classes18.dex */
+public final class rkd0 {
+    public final Object A;
+    public final Object B;
+    public final Object C;
+    public final Object D;
+    public final Object E;
+    public final Object F;
+    public final Object G;
+    public final Object H;
+    public final Object I;
+    public final Object J;
+    public final Object K;
+    public final Object L;
+    public final Object M;
+    public final Object N;
+    public final Object O;
+    public final Object P;
+    public final Object Q;
+    public final Object a;
+    public final Object b;
+    public final Object c;
+    public final Object d;
+    public final Object e;
+    public final Object f;
+    public final Object g;
+    public final Object h;
+    public final Object i;
+    public final Object j;
+    public final Object k;
+    public final Object l;
+    public final Object m;
+    public final Object n;
+    public final Object o;
+    public final Object p;
+    public final Object q;
+    public final Object r;
+    public final Object s;
+    public final Object t;
+    public final Object u;
+    public final Object v;
+    public final Object w;
+    public final Object x;
+    public final Object y;
+    public final Object z;
+
+    public rkd0(l7m l7mVar) {
+        snh snhVar = new snh(l7mVar, 1);
+        LazyThreadSafetyMode lazyThreadSafetyMode = LazyThreadSafetyMode.NONE;
+        this.a = msy.a(lazyThreadSafetyMode, snhVar);
+        this.b = msy.a(lazyThreadSafetyMode, new unh(l7mVar, 1));
+        int i = 2;
+        this.c = msy.a(lazyThreadSafetyMode, new ymh(l7mVar, i));
+        this.d = msy.a(lazyThreadSafetyMode, new e7f(l7mVar, i));
+        int i2 = 3;
+        this.e = msy.a(lazyThreadSafetyMode, new i7f(l7mVar, i2));
+        this.f = msy.a(lazyThreadSafetyMode, new jxd(l7mVar, i2));
+        this.g = msy.a(lazyThreadSafetyMode, new c53(l7mVar, i2));
+        this.h = msy.a(lazyThreadSafetyMode, new anh(l7mVar, 1));
+        int i3 = 2;
+        this.i = msy.a(lazyThreadSafetyMode, new dff(l7mVar, i3));
+        this.j = msy.a(lazyThreadSafetyMode, new e1h(l7mVar, i3));
+        int i4 = 3;
+        this.k = msy.a(lazyThreadSafetyMode, new qze(l7mVar, i4));
+        this.l = msy.a(lazyThreadSafetyMode, new yef(l7mVar, i4));
+        this.m = msy.a(lazyThreadSafetyMode, new kxd(l7mVar, 2));
+        this.n = msy.a(lazyThreadSafetyMode, new eff(l7mVar, 3));
+        this.o = msy.a(lazyThreadSafetyMode, new vv20(this, 17));
+        this.p = msy.a(lazyThreadSafetyMode, new vex(this, 21));
+        this.q = msy.a(lazyThreadSafetyMode, new gkc0(this, 3));
+        this.r = msy.a(lazyThreadSafetyMode, new da50(this, 16));
+        this.s = msy.a(lazyThreadSafetyMode, new io60(this, 17));
+        this.t = msy.a(lazyThreadSafetyMode, new in60(this, 10));
+        this.u = msy.a(lazyThreadSafetyMode, new su80(this, 11));
+        this.v = msy.a(lazyThreadSafetyMode, new wm80(this, 9));
+        this.w = msy.a(lazyThreadSafetyMode, new c950(this, 22));
+        this.x = msy.a(lazyThreadSafetyMode, new jaa0(this, 8));
+        this.y = msy.a(lazyThreadSafetyMode, new b990(this, 9));
+        this.z = msy.a(lazyThreadSafetyMode, new tu80(this, 13));
+        this.A = msy.a(lazyThreadSafetyMode, new dj60(this, 16));
+        this.B = msy.a(lazyThreadSafetyMode, new bi80(this, 8));
+        int i5 = 16;
+        this.C = msy.a(lazyThreadSafetyMode, new kr50(this, i5));
+        this.D = msy.a(lazyThreadSafetyMode, new gd40(this, i5));
+        this.E = msy.a(lazyThreadSafetyMode, new pkd0(0));
+        this.F = msy.a(lazyThreadSafetyMode, new hk70(this, 11));
+        this.G = msy.a(lazyThreadSafetyMode, new by20(this, 21));
+        this.H = msy.a(lazyThreadSafetyMode, new b410(this, 18));
+        this.I = msy.a(lazyThreadSafetyMode, new pp00(this, 26));
+        this.J = msy.a(lazyThreadSafetyMode, new ln20(this, 19));
+        this.K = msy.a(lazyThreadSafetyMode, new com.vk.movika.tools.controls.seekbar.n(28));
+        this.L = msy.a(lazyThreadSafetyMode, new fd90(2));
+        this.M = msy.a(lazyThreadSafetyMode, new iia0(this, 10));
+        this.N = msy.a(lazyThreadSafetyMode, new y84(20));
+        this.O = msy.a(lazyThreadSafetyMode, new qkd0(this, 0));
+        this.P = msy.a(lazyThreadSafetyMode, new i440(this, 23));
+        this.Q = msy.a(lazyThreadSafetyMode, new zf20(this, 22));
+    }
+}

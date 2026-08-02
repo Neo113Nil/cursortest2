@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="16dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_story_outline_28"
+        app:tint="?attr/vk_ui_icon_accent"/>
+    <com.vk.core.tool.view.onboarding.highlighter.VkOnboardingHighlighter
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/highlighter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:autoHighlight="false">
+        <com.vk.core.view.components.text.VkText
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vkim_msg_action_share_to_story"
+            android:singleLine="true"
+            android:importantForAccessibility="no"
+            style="@style/VkUiTypography.HeadlineNormal"/>
+    </com.vk.core.tool.view.onboarding.highlighter.VkOnboardingHighlighter>
+</LinearLayout>

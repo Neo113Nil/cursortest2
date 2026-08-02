@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/highlight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <View
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/item_ignored_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="?attr/vk_ui_background_accent"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/item_ignored_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="16dp"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <View
+        android:layout_gravity="end|center_vertical"
+        android:background="@drawable/vk_icon_chevron_compact_right_24"
+        android:layout_width="16dp"
+        android:layout_height="24dp"
+        android:backgroundTint="?attr/vk_ui_icon_tertiary"/>
+</FrameLayout>

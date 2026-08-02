@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/vk_ui_background"
+    android:focusable="true"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAccessibility="yes">
+    <com.vk.clips.design.view.QRSharingView
+        android:layout_gravity="center"
+        android:id="@+id/qr_sharing"
+        android:paddingTop="56dp"
+        android:focusable="true"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_gravity="top"
+        android:id="@+id/qr_header_shadow"
+        android:background="@drawable/vk_bg_toolbar_shadow_light"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="56dp"/>
+</FrameLayout>

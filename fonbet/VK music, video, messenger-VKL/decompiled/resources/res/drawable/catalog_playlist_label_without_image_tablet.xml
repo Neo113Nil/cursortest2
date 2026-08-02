@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/vk_black_alpha60"/>
+            <corners
+                android:topRightRadius="12dp"
+                android:bottomRightRadius="12dp"/>
+            <size
+                android:height="@dimen/video_catalog_playlist_list_item_tablet_height"
+                android:width="@dimen/catalog_playlist_label_tablet_width"/>
+        </shape>
+    </item>
+</layer-list>

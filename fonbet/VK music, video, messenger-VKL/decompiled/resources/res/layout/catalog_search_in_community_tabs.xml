@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/vk_ui_background_content"
+    android:paddingTop="@dimen/vk_ui_spacing_size_m"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.tabs.VkTabs
+        android:id="@+id/search_in_community_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabsLayoutMode="tabsLayoutScrollable"
+        app:tabsMode="tabsModeAccent"/>
+</FrameLayout>

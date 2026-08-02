@@ -1,0 +1,124 @@
+package com.vk.api.generated.messages.dto;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import xsna.epx;
+import xsna.nr;
+import xsna.pmi0;
+import xsna.shy;
+import xsna.uqi;
+import xsna.zcl;
+
+/* compiled from: MessagesChannelsCounterDto.kt */
+/* loaded from: classes15.dex */
+public final class MessagesChannelsCounterDto implements Parcelable {
+    public static final Parcelable.Creator<MessagesChannelsCounterDto> CREATOR = new a();
+
+    @pmi0("all_folder_count")
+    private final Integer allFolderCount;
+
+    @pmi0("all_folder_unmuted_count")
+    private final Integer allFolderUnmutedCount;
+
+    @pmi0("archived_count")
+    private final int archivedCount;
+
+    @pmi0("total_count")
+    private final int totalCount;
+
+    @pmi0("unmuted_count")
+    private final int unmutedCount;
+
+    /* compiled from: MessagesChannelsCounterDto.kt */
+    public static final class a implements Parcelable.Creator<MessagesChannelsCounterDto> {
+        @Override // android.os.Parcelable.Creator
+        public final MessagesChannelsCounterDto createFromParcel(Parcel parcel) {
+            return new MessagesChannelsCounterDto(parcel.readInt(), parcel.readInt(), parcel.readInt(), parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readInt() != 0 ? Integer.valueOf(parcel.readInt()) : null);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public final MessagesChannelsCounterDto[] newArray(int i) {
+            return new MessagesChannelsCounterDto[i];
+        }
+    }
+
+    public MessagesChannelsCounterDto(int i, int i2, int i3, Integer num, Integer num2) {
+        this.totalCount = i;
+        this.unmutedCount = i2;
+        this.archivedCount = i3;
+        this.allFolderCount = num;
+        this.allFolderUnmutedCount = num2;
+    }
+
+    public final int d() {
+        return this.archivedCount;
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public final int e() {
+        return this.totalCount;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof MessagesChannelsCounterDto)) {
+            return false;
+        }
+        MessagesChannelsCounterDto messagesChannelsCounterDto = (MessagesChannelsCounterDto) obj;
+        return this.totalCount == messagesChannelsCounterDto.totalCount && this.unmutedCount == messagesChannelsCounterDto.unmutedCount && this.archivedCount == messagesChannelsCounterDto.archivedCount && epx.f(this.allFolderCount, messagesChannelsCounterDto.allFolderCount) && epx.f(this.allFolderUnmutedCount, messagesChannelsCounterDto.allFolderUnmutedCount);
+    }
+
+    public final int f() {
+        return this.unmutedCount;
+    }
+
+    public final int hashCode() {
+        int a2 = shy.a(this.archivedCount, shy.a(this.unmutedCount, Integer.hashCode(this.totalCount) * 31, 31), 31);
+        Integer num = this.allFolderCount;
+        int hashCode = (a2 + (num == null ? 0 : num.hashCode())) * 31;
+        Integer num2 = this.allFolderUnmutedCount;
+        return hashCode + (num2 != null ? num2.hashCode() : 0);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("MessagesChannelsCounterDto(totalCount=");
+        sb.append(this.totalCount);
+        sb.append(", unmutedCount=");
+        sb.append(this.unmutedCount);
+        sb.append(", archivedCount=");
+        sb.append(this.archivedCount);
+        sb.append(", allFolderCount=");
+        sb.append(this.allFolderCount);
+        sb.append(", allFolderUnmutedCount=");
+        return uqi.b(sb, this.allFolderUnmutedCount, ')');
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        parcel.writeInt(this.totalCount);
+        parcel.writeInt(this.unmutedCount);
+        parcel.writeInt(this.archivedCount);
+        Integer num = this.allFolderCount;
+        if (num == null) {
+            parcel.writeInt(0);
+        } else {
+            nr.a(parcel, 1, num);
+        }
+        Integer num2 = this.allFolderUnmutedCount;
+        if (num2 == null) {
+            parcel.writeInt(0);
+        } else {
+            nr.a(parcel, 1, num2);
+        }
+    }
+
+    public /* synthetic */ MessagesChannelsCounterDto(int i, int i2, int i3, Integer num, Integer num2, int i4, zcl zclVar) {
+        this(i, i2, i3, (i4 & 8) != 0 ? null : num, (i4 & 16) != 0 ? null : num2);
+    }
+}

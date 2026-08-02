@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/VkUiTypography.Headline"
+    android:textStyle="normal"
+    android:textColor="?attr/vk_ui_text_accent"
+    android:gravity="center_vertical"
+    android:id="@android:id/text1"
+    android:background="@drawable/vk_highlight"
+    android:paddingLeft="@dimen/vk_post_side_padding"
+    android:paddingRight="@dimen/vk_post_side_padding"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"/>

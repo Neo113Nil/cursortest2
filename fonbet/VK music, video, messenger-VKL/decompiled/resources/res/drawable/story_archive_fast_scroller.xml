@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/vkim_bg_button_down_shadow"/>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/vkim_bg_button_down_white"
+            android:tint="?attr/vk_ui_background_secondary"
+            android:tintMode="src_in"/>
+    </item>
+    <item
+        android:gravity="center"
+        android:left="14dp"
+        android:top="12dp"
+        android:right="22dp"
+        android:bottom="16dp">
+        <bitmap
+            android:src="@drawable/vk_icon_deprecated_ic_scroll_arrows_16"
+            android:tint="?attr/vk_ui_icon_secondary"/>
+    </item>
+    <item
+        android:drawable="@drawable/vkim_ripple_circle_highlight"
+        android:left="3dp"
+        android:top="3dp"
+        android:right="3dp"
+        android:bottom="7dp"/>
+</layer-list>

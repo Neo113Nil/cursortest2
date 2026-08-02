@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+    <FrameLayout
+        android:id="@+id/qr_code_auth_state_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/qr_code_auth_loading_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_qr_code_auth_loading_state"/>
+        <include
+            android:id="@+id/qr_code_auth_code_state"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_qr_code_auth_code_state"/>
+        <include
+            android:id="@+id/qr_code_auth_error_state"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_qr_code_auth_error_state"/>
+        <include
+            android:id="@+id/qr_code_auth_device_info_state"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_qr_code_auth_device_info_state"/>
+    </FrameLayout>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/qr_code_auth_cancel_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vk_qr_auth_cancel_button"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="large"/>
+</LinearLayout>

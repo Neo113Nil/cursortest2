@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:layout_marginStart="16dp"
+        app:srcCompat="@drawable/vk_icon_recent_24"
+        app:tint="?attr/vk_legacy_text_subhead"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="?attr/vk_legacy_text_subhead"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_search_offline"
+        android:lineSpacingExtra="3sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="?attr/vk_legacy_accent"
+        android:gravity="end"
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/vkim_try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_search_try_again"
+        android:fontFamily="sans-serif-medium"/>
+</FrameLayout>

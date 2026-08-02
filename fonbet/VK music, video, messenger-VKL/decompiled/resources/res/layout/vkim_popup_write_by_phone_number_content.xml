@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.formitem.VkFormField
+        android:id="@+id/phone_form_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.components.formitem.VkInputSelect
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vkim_contacts_phone_number_plus_seven"
+            android:lines="1"
+            android:drawablePadding="8dp"
+            android:inputType="phone"
+            android:drawableStart="@drawable/ic_phone_outline_24"
+            android:drawableTint="?attr/vk_ui_icon_secondary"
+            app:inputSize="singleLine"
+            style="@style/VkInput"/>
+    </com.vk.core.view.components.formitem.VkFormField>
+    <com.vk.core.view.components.button.VkButton
+        android:enabled="false"
+        android:id="@+id/write_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/vkim_contacts_write_by_phone_number_popup_write_btn"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="large"
+        app:icon="@drawable/vk_icon_message_outline_24"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/create_contact_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/vkim_contacts_write_by_phone_number_popup_create_contact_btn"
+        app:buttonAppearance="accent"
+        app:buttonMode="secondary"
+        app:buttonSizeType="large"
+        app:icon="@drawable/vk_icon_add_24"/>
+</LinearLayout>

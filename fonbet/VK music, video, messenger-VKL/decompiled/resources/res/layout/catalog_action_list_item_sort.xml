@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.catalog.design.view.CatalogActionSortView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:paddingStart="@dimen/post_side_padding"
+    android:paddingEnd="@dimen/post_side_padding"/>

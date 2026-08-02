@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:paddingBottom="9dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:paddingHorizontal="12dp">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/btn_change_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="small"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/btn_setting_youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="small"/>
+</LinearLayout>

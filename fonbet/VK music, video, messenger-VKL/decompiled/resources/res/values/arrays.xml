@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="address_will_be_opened">
+        <item>Opens on Monday</item>
+        <item>Opens on Tuesday</item>
+        <item>Opens on Wednesday</item>
+        <item>Opens on Thursday</item>
+        <item>Opens on Friday</item>
+        <item>Opens on Saturday</item>
+        <item>Opens on Sunday</item>
+    </array>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="booking_day_of_week">
+        <item>@string/booking_day_of_week_arr_0</item>
+        <item>@string/booking_day_of_week_arr_1</item>
+        <item>@string/booking_day_of_week_arr_2</item>
+        <item>@string/booking_day_of_week_arr_3</item>
+        <item>@string/booking_day_of_week_arr_4</item>
+        <item>@string/booking_day_of_week_arr_5</item>
+        <item>@string/booking_day_of_week_arr_6</item>
+    </array>
+    <array name="booking_month">
+        <item>@string/booking_month_arr_0</item>
+        <item>@string/booking_month_arr_1</item>
+        <item>@string/booking_month_arr_2</item>
+        <item>@string/booking_month_arr_3</item>
+        <item>@string/booking_month_arr_4</item>
+        <item>@string/booking_month_arr_5</item>
+        <item>@string/booking_month_arr_6</item>
+        <item>@string/booking_month_arr_7</item>
+        <item>@string/booking_month_arr_8</item>
+        <item>@string/booking_month_arr_9</item>
+        <item>@string/booking_month_arr_10</item>
+        <item>@string/booking_month_arr_11</item>
+    </array>
+    <array name="cast_expanded_controller_default_control_buttons">
+        <item>@id/cast_button_type_closed_caption</item>
+        <item>@id/cast_button_type_skip_previous</item>
+        <item>@id/cast_button_type_skip_next</item>
+        <item>@id/cast_button_type_mute_toggle</item>
+    </array>
+    <array name="community_addresses_weekdays">
+        <item>@string/community_addresses_mon</item>
+        <item>@string/community_addresses_tue</item>
+        <item>@string/community_addresses_wed</item>
+        <item>@string/community_addresses_thu</item>
+        <item>@string/community_addresses_fri</item>
+        <item>@string/community_addresses_sat</item>
+        <item>@string/community_addresses_sun</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="date_ago_hrs">
+        <item>@string/date_ago_hrs_arr_0</item>
+        <item>@string/date_ago_hrs_arr_1</item>
+        <item>@string/date_ago_hrs_arr_2</item>
+    </array>
+    <array name="debug_webrtc_sdp_munging_audio_codecs">
+        <item>opus</item>
+        <item>ISAC</item>
+        <item>G722</item>
+        <item>ILBC</item>
+    </array>
+    <array name="debug_webrtc_sdp_munging_video_codecs">
+        <item>H264</item>
+        <item>VP8</item>
+        <item>VP9</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="dnd_options">
+        <item>@string/dnd_options_arr_0</item>
+        <item>@string/dnd_options_arr_1</item>
+        <item>@string/dnd_options_arr_2</item>
+        <item>@string/dnd_options_arr_3</item>
+    </array>
+    <array name="ds_story_months_short">
+        <item>@string/ds_story_months_short_arr_0</item>
+        <item>@string/ds_story_months_short_arr_1</item>
+        <item>@string/ds_story_months_short_arr_2</item>
+        <item>@string/ds_story_months_short_arr_3</item>
+        <item>@string/ds_story_months_short_arr_4</item>
+        <item>@string/ds_story_months_short_arr_5</item>
+        <item>@string/ds_story_months_short_arr_6</item>
+        <item>@string/ds_story_months_short_arr_7</item>
+        <item>@string/ds_story_months_short_arr_8</item>
+        <item>@string/ds_story_months_short_arr_9</item>
+        <item>@string/ds_story_months_short_arr_10</item>
+        <item>@string/ds_story_months_short_arr_11</item>
+    </array>
+    <array name="ecomm_delivery_points_weekdays">
+        <item>@string/ecomm_delivery_points_mon</item>
+        <item>@string/ecomm_delivery_points_tue</item>
+        <item>@string/ecomm_delivery_points_wed</item>
+        <item>@string/ecomm_delivery_points_thu</item>
+        <item>@string/ecomm_delivery_points_fri</item>
+        <item>@string/ecomm_delivery_points_sat</item>
+        <item>@string/ecomm_delivery_points_sun</item>
+    </array>
+    <array name="group_ban_duration_options">
+        <item>@string/group_ban_duration_options_arr_0</item>
+        <item>@string/group_ban_duration_options_arr_1</item>
+        <item>@string/group_ban_duration_options_arr_2</item>
+        <item>@string/group_ban_duration_options_arr_3</item>
+        <item>@string/group_ban_duration_options_arr_4</item>
+        <item>@string/group_ban_duration_options_arr_5</item>
+    </array>
+    <array name="group_ban_reasons">
+        <item>@string/group_ban_reasons_arr_0</item>
+        <item>@string/group_ban_reasons_arr_1</item>
+        <item>@string/group_ban_reasons_arr_2</item>
+        <item>@string/group_ban_reasons_arr_3</item>
+        <item>@string/group_ban_reasons_arr_4</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="last_seen_female_hours_ago">
+        <item>@string/last_seen_female_hours_ago_arr_0</item>
+        <item>@string/last_seen_female_hours_ago_arr_1</item>
+        <item>@string/last_seen_female_hours_ago_arr_2</item>
+    </array>
+    <array name="last_seen_male_hours_ago">
+        <item>@string/last_seen_male_hours_ago_arr_0</item>
+        <item>@string/last_seen_male_hours_ago_arr_1</item>
+        <item>@string/last_seen_male_hours_ago_arr_2</item>
+    </array>
+    <array name="libverify_block_notification_names">
+        <item>@string/block_for_one_day_text</item>
+        <item>@string/block_for_one_hour_text</item>
+        <item>@string/block_for_one_minute_text</item>
+    </array>
+    <array name="libverify_block_notification_values">
+        <item>86400</item>
+        <item>3600</item>
+        <item>60</item>
+    </array>
+    <array name="locale_display_names">
+        <item>@string/system_locale_setting_name</item>
+        <item>Русский</item>
+        <item>Беларуская</item>
+        <item>Українська</item>
+        <item>Қазақша</item>
+        <item>O‘zbekcha</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>Português brasileiro</item>
+        <item>Azərbaycanca</item>
+        <item>Հայերեն</item>
+        <item>Tiếng Việt</item>
+    </array>
+    <array name="locale_values">
+        <item>@string/system_locale_value</item>
+        <item>ru</item>
+        <item>be</item>
+        <item>uk</item>
+        <item>kk</item>
+        <item>uz</item>
+        <item>en</item>
+        <item>es</item>
+        <item>pt</item>
+        <item>az</item>
+        <item>hy</item>
+        <item>vi</item>
+    </array>
+    <array name="months_full_dep">
+        <item>@string/months_full_dep_arr_0</item>
+        <item>@string/months_full_dep_arr_1</item>
+        <item>@string/months_full_dep_arr_2</item>
+        <item>@string/months_full_dep_arr_3</item>
+        <item>@string/months_full_dep_arr_4</item>
+        <item>@string/months_full_dep_arr_5</item>
+        <item>@string/months_full_dep_arr_6</item>
+        <item>@string/months_full_dep_arr_7</item>
+        <item>@string/months_full_dep_arr_8</item>
+        <item>@string/months_full_dep_arr_9</item>
+        <item>@string/months_full_dep_arr_10</item>
+        <item>@string/months_full_dep_arr_11</item>
+    </array>
+    <array name="months_short">
+        <item>@string/months_short_arr_0</item>
+        <item>@string/months_short_arr_1</item>
+        <item>@string/months_short_arr_2</item>
+        <item>@string/months_short_arr_3</item>
+        <item>@string/months_short_arr_4</item>
+        <item>@string/months_short_arr_5</item>
+        <item>@string/months_short_arr_6</item>
+        <item>@string/months_short_arr_7</item>
+        <item>@string/months_short_arr_8</item>
+        <item>@string/months_short_arr_9</item>
+        <item>@string/months_short_arr_10</item>
+        <item>@string/months_short_arr_11</item>
+    </array>
+    <array name="months_short_without_declension">
+        <item>@string/months_short_without_declension_arr_0</item>
+        <item>@string/months_short_without_declension_arr_1</item>
+        <item>@string/months_short_without_declension_arr_2</item>
+        <item>@string/months_short_without_declension_arr_3</item>
+        <item>@string/months_short_without_declension_arr_4</item>
+        <item>@string/months_short_without_declension_arr_5</item>
+        <item>@string/months_short_without_declension_arr_6</item>
+        <item>@string/months_short_without_declension_arr_7</item>
+        <item>@string/months_short_without_declension_arr_8</item>
+        <item>@string/months_short_without_declension_arr_9</item>
+        <item>@string/months_short_without_declension_arr_10</item>
+        <item>@string/months_short_without_declension_arr_11</item>
+    </array>
+    <array name="music_recommendation_onboarding_process_array">
+        <item>@string/music_recommendation_onboarding_process_array_arr_0</item>
+        <item>@string/music_recommendation_onboarding_process_array_arr_1</item>
+        <item>@string/music_recommendation_onboarding_process_array_arr_2</item>
+        <item>@string/music_recommendation_onboarding_process_array_arr_3</item>
+        <item>@string/music_recommendation_onboarding_process_array_arr_4</item>
+    </array>
+    <array name="newsfeed_settings_feed_type">
+        <item>@string/newsfeed_settings_feed_type_arr_0</item>
+        <item>@string/newsfeed_settings_feed_type_arr_1</item>
+    </array>
+    <array name="newsfeed_settings_feed_type_v">
+        <item>recent</item>
+        <item>top</item>
+    </array>
+    <array name="personal_life_options">
+        <item>Family and children</item>
+        <item>Career and money</item>
+        <item>Entertainment and leisure</item>
+        <item>Science and research</item>
+        <item>Improving the world</item>
+        <item>Personal development</item>
+        <item>Beauty and art</item>
+        <item>Fame and influence</item>
+    </array>
+    <array name="personal_people_options">
+        <item>Intellect and creativity</item>
+        <item>Kindness and honesty</item>
+        <item>Health and beauty</item>
+        <item>Wealth and power</item>
+        <item>Courage and persistence</item>
+        <item>Humor and love for life</item>
+    </array>
+    <array name="personal_politics_options">
+        <item>Communist</item>
+        <item>Socialist</item>
+        <item>Moderate</item>
+        <item>Liberal</item>
+        <item>Conservative</item>
+        <item>Monarchist</item>
+        <item>Ultraconservative</item>
+        <item>Apathetic</item>
+        <item>Libertarian</item>
+    </array>
+    <array name="personal_views_options">
+        <item>Very negative</item>
+        <item>Negative</item>
+        <item>Compromisable</item>
+        <item>Neutral</item>
+        <item>Positive</item>
+    </array>
+    <array name="poll_months_lower">
+        <item>@string/poll_months_lower_arr_0</item>
+        <item>@string/poll_months_lower_arr_1</item>
+        <item>@string/poll_months_lower_arr_2</item>
+        <item>@string/poll_months_lower_arr_3</item>
+        <item>@string/poll_months_lower_arr_4</item>
+        <item>@string/poll_months_lower_arr_5</item>
+        <item>@string/poll_months_lower_arr_6</item>
+        <item>@string/poll_months_lower_arr_7</item>
+        <item>@string/poll_months_lower_arr_8</item>
+        <item>@string/poll_months_lower_arr_9</item>
+        <item>@string/poll_months_lower_arr_10</item>
+        <item>@string/poll_months_lower_arr_11</item>
+    </array>
+    <array name="poll_months_short">
+        <item>@string/poll_months_short_arr_0</item>
+        <item>@string/poll_months_short_arr_1</item>
+        <item>@string/poll_months_short_arr_2</item>
+        <item>@string/poll_months_short_arr_3</item>
+        <item>@string/poll_months_short_arr_4</item>
+        <item>@string/poll_months_short_arr_5</item>
+        <item>@string/poll_months_short_arr_6</item>
+        <item>@string/poll_months_short_arr_7</item>
+        <item>@string/poll_months_short_arr_8</item>
+        <item>@string/poll_months_short_arr_9</item>
+        <item>@string/poll_months_short_arr_10</item>
+        <item>@string/poll_months_short_arr_11</item>
+    </array>
+    <array name="prepositions_exceptions">
+        <item>без</item>
+        <item>близ</item>
+        <item>в</item>
+        <item>во</item>
+        <item>вместо</item>
+        <item>вне</item>
+        <item>для</item>
+        <item>до</item>
+        <item>за</item>
+        <item>из</item>
+        <item>изо</item>
+        <item>из-за</item>
+        <item>из-под</item>
+        <item>к</item>
+        <item>ко</item>
+        <item>кроме</item>
+        <item>между</item>
+        <item>меж</item>
+        <item>на</item>
+        <item>над</item>
+        <item>надо</item>
+        <item>о</item>
+        <item>об</item>
+        <item>обо</item>
+        <item>от</item>
+        <item>перед</item>
+        <item>передо</item>
+        <item>предо</item>
+        <item>по</item>
+        <item>под</item>
+        <item>подо</item>
+        <item>при</item>
+        <item>про</item>
+        <item>с</item>
+        <item>со</item>
+        <item>сквозь</item>
+        <item>среди</item>
+        <item>у</item>
+        <item>через</item>
+        <item>чрез</item>
+        <item>as</item>
+        <item>at</item>
+        <item>but</item>
+        <item>by</item>
+        <item>in</item>
+        <item>on</item>
+        <item>of</item>
+        <item>off</item>
+        <item>into</item>
+        <item>onto</item>
+        <item>for</item>
+        <item>from</item>
+        <item>to</item>
+        <item>out</item>
+        <item>via</item>
+        <item>per</item>
+        <item>with</item>
+        <item>near</item>
+    </array>
+    <array name="sett_font_size_options">
+        <item>@string/sett_font_size_options_arr_0</item>
+        <item>@string/sett_font_size_options_arr_1</item>
+        <item>@string/sett_font_size_options_arr_2</item>
+        <item>@string/sett_font_size_options_arr_3</item>
+        <item>@string/sett_font_size_options_arr_4</item>
+    </array>
+    <array name="sett_font_size_values">
+        <item>system</item>
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </array>
+    <array name="sett_im_user_name_options">
+        <item>@string/sett_im_user_name_options_arr_0</item>
+        <item>@string/sett_im_user_name_options_arr_1</item>
+    </array>
+    <array name="sett_im_user_name_values">
+        <item>vk</item>
+        <item>contact</item>
+    </array>
+    <array name="sett_media_autoplay_entries">
+        <item>@string/sett_media_autoplay_entries_arr_0</item>
+        <item>@string/sett_media_autoplay_entries_arr_1</item>
+        <item>@string/sett_media_autoplay_entries_arr_2</item>
+    </array>
+    <array name="sett_media_autoplay_entry_values">
+        <item>always</item>
+        <item>wifi</item>
+        <item>disabled</item>
+    </array>
+    <array name="short_time">
+        <item>@string/short_time_arr_0</item>
+        <item>@string/short_time_arr_1</item>
+        <item>@string/short_time_arr_2</item>
+        <item>@string/short_time_arr_3</item>
+        <item>@string/short_time_arr_4</item>
+        <item>@string/short_time_arr_5</item>
+        <item>@string/short_time_arr_6</item>
+    </array>
+    <array name="story_months_short">
+        <item>@string/story_months_short_arr_0</item>
+        <item>@string/story_months_short_arr_1</item>
+        <item>@string/story_months_short_arr_2</item>
+        <item>@string/story_months_short_arr_3</item>
+        <item>@string/story_months_short_arr_4</item>
+        <item>@string/story_months_short_arr_5</item>
+        <item>@string/story_months_short_arr_6</item>
+        <item>@string/story_months_short_arr_7</item>
+        <item>@string/story_months_short_arr_8</item>
+        <item>@string/story_months_short_arr_9</item>
+        <item>@string/story_months_short_arr_10</item>
+        <item>@string/story_months_short_arr_11</item>
+    </array>
+    <array name="story_time_hours">
+        <item>@string/story_time_hours_arr_0</item>
+        <item>@string/story_time_hours_arr_1</item>
+        <item>@string/story_time_hours_arr_2</item>
+        <item>@string/story_time_hours_arr_3</item>
+        <item>@string/story_time_hours_arr_4</item>
+        <item>@string/story_time_hours_arr_5</item>
+        <item>@string/story_time_hours_arr_6</item>
+        <item>@string/story_time_hours_arr_7</item>
+        <item>@string/story_time_hours_arr_8</item>
+        <item>@string/story_time_hours_arr_9</item>
+        <item>@string/story_time_hours_arr_10</item>
+        <item>@string/story_time_hours_arr_11</item>
+        <item>@string/story_time_hours_arr_12</item>
+        <item>@string/story_time_hours_arr_13</item>
+        <item>@string/story_time_hours_arr_14</item>
+        <item>@string/story_time_hours_arr_15</item>
+        <item>@string/story_time_hours_arr_16</item>
+        <item>@string/story_time_hours_arr_17</item>
+        <item>@string/story_time_hours_arr_18</item>
+        <item>@string/story_time_hours_arr_19</item>
+        <item>@string/story_time_hours_arr_20</item>
+        <item>@string/story_time_hours_arr_21</item>
+        <item>@string/story_time_hours_arr_22</item>
+        <item>@string/story_time_hours_arr_23</item>
+    </array>
+    <array name="story_time_minutes">
+        <item>@string/story_time_minutes_arr_0</item>
+        <item>@string/story_time_minutes_arr_1</item>
+        <item>@string/story_time_minutes_arr_2</item>
+        <item>@string/story_time_minutes_arr_3</item>
+        <item>@string/story_time_minutes_arr_4</item>
+        <item>@string/story_time_minutes_arr_5</item>
+        <item>@string/story_time_minutes_arr_6</item>
+        <item>@string/story_time_minutes_arr_7</item>
+        <item>@string/story_time_minutes_arr_8</item>
+        <item>@string/story_time_minutes_arr_9</item>
+        <item>@string/story_time_minutes_arr_10</item>
+        <item>@string/story_time_minutes_arr_11</item>
+        <item>@string/story_time_minutes_arr_12</item>
+        <item>@string/story_time_minutes_arr_13</item>
+        <item>@string/story_time_minutes_arr_14</item>
+        <item>@string/story_time_minutes_arr_15</item>
+        <item>@string/story_time_minutes_arr_16</item>
+        <item>@string/story_time_minutes_arr_17</item>
+        <item>@string/story_time_minutes_arr_18</item>
+        <item>@string/story_time_minutes_arr_19</item>
+        <item>@string/story_time_minutes_arr_20</item>
+        <item>@string/story_time_minutes_arr_21</item>
+        <item>@string/story_time_minutes_arr_22</item>
+        <item>@string/story_time_minutes_arr_23</item>
+        <item>@string/story_time_minutes_arr_24</item>
+        <item>@string/story_time_minutes_arr_25</item>
+        <item>@string/story_time_minutes_arr_26</item>
+        <item>@string/story_time_minutes_arr_27</item>
+        <item>@string/story_time_minutes_arr_28</item>
+        <item>@string/story_time_minutes_arr_29</item>
+        <item>@string/story_time_minutes_arr_30</item>
+        <item>@string/story_time_minutes_arr_31</item>
+        <item>@string/story_time_minutes_arr_32</item>
+        <item>@string/story_time_minutes_arr_33</item>
+        <item>@string/story_time_minutes_arr_34</item>
+        <item>@string/story_time_minutes_arr_35</item>
+        <item>@string/story_time_minutes_arr_36</item>
+        <item>@string/story_time_minutes_arr_37</item>
+        <item>@string/story_time_minutes_arr_38</item>
+        <item>@string/story_time_minutes_arr_39</item>
+        <item>@string/story_time_minutes_arr_40</item>
+        <item>@string/story_time_minutes_arr_41</item>
+        <item>@string/story_time_minutes_arr_42</item>
+        <item>@string/story_time_minutes_arr_43</item>
+        <item>@string/story_time_minutes_arr_44</item>
+        <item>@string/story_time_minutes_arr_45</item>
+        <item>@string/story_time_minutes_arr_46</item>
+        <item>@string/story_time_minutes_arr_47</item>
+        <item>@string/story_time_minutes_arr_48</item>
+        <item>@string/story_time_minutes_arr_49</item>
+        <item>@string/story_time_minutes_arr_50</item>
+        <item>@string/story_time_minutes_arr_51</item>
+        <item>@string/story_time_minutes_arr_52</item>
+        <item>@string/story_time_minutes_arr_53</item>
+        <item>@string/story_time_minutes_arr_54</item>
+        <item>@string/story_time_minutes_arr_55</item>
+        <item>@string/story_time_minutes_arr_56</item>
+        <item>@string/story_time_minutes_arr_57</item>
+        <item>@string/story_time_minutes_arr_58</item>
+        <item>@string/story_time_minutes_arr_59</item>
+    </array>
+    <array name="video_duration_sec">
+        <item>0</item>
+        <item>-300</item>
+        <item>1200</item>
+    </array>
+    <array name="video_search_content">
+        <item>@string/video_search_content_arr_0</item>
+        <item>@string/video_search_content_arr_1</item>
+        <item>@string/video_search_content_arr_2</item>
+        <item>@string/video_search_content_arr_3</item>
+    </array>
+    <array name="video_search_date">
+        <item>@string/video_search_date_arr_0</item>
+        <item>@string/video_search_date_arr_1</item>
+        <item>@string/video_search_date_arr_2</item>
+        <item>@string/video_search_date_arr_3</item>
+        <item>@string/video_search_date_arr_4</item>
+    </array>
+    <array name="video_search_duration">
+        <item>@string/video_search_duration_arr_0</item>
+        <item>@string/video_search_duration_arr_1</item>
+        <item>@string/video_search_duration_arr_2</item>
+    </array>
+    <array name="video_search_length">
+        <item>@string/video_search_length_arr_0</item>
+        <item>@string/video_search_length_arr_1</item>
+        <item>@string/video_search_length_arr_2</item>
+    </array>
+    <array name="video_search_sort">
+        <item>@string/video_search_sort_arr_0</item>
+        <item>@string/video_search_sort_arr_1</item>
+        <item>@string/video_search_sort_arr_2</item>
+    </array>
+    <array name="video_search_sort_options">
+        <item>@string/video_search_sort_options_arr_0</item>
+        <item>@string/video_search_sort_options_arr_1</item>
+        <item>@string/video_search_sort_options_arr_2</item>
+    </array>
+    <array name="video_upload_date_sec">
+        <item>0</item>
+        <item>86400</item>
+        <item>604800</item>
+        <item>2592000</item>
+        <item>31536000</item>
+    </array>
+    <array name="vk_date_ago_hrs">
+        <item>@string/vk_date_ago_hrs_arr_0</item>
+        <item>@string/vk_date_ago_hrs_arr_1</item>
+        <item>@string/vk_date_ago_hrs_arr_2</item>
+    </array>
+    <array name="vk_known_certs">
+        <item>057D974412032066F1B5EDB1FDB550F71854189815C806B27C4D486FB4F1EF32</item>
+    </array>
+    <array name="vk_months_full">
+        <item>@string/vk_months_full_arr_0</item>
+        <item>@string/vk_months_full_arr_1</item>
+        <item>@string/vk_months_full_arr_2</item>
+        <item>@string/vk_months_full_arr_3</item>
+        <item>@string/vk_months_full_arr_4</item>
+        <item>@string/vk_months_full_arr_5</item>
+        <item>@string/vk_months_full_arr_6</item>
+        <item>@string/vk_months_full_arr_7</item>
+        <item>@string/vk_months_full_arr_8</item>
+        <item>@string/vk_months_full_arr_9</item>
+        <item>@string/vk_months_full_arr_10</item>
+        <item>@string/vk_months_full_arr_11</item>
+    </array>
+    <array name="vk_months_short">
+        <item>@string/vk_months_short_arr_0</item>
+        <item>@string/vk_months_short_arr_1</item>
+        <item>@string/vk_months_short_arr_2</item>
+        <item>@string/vk_months_short_arr_3</item>
+        <item>@string/vk_months_short_arr_4</item>
+        <item>@string/vk_months_short_arr_5</item>
+        <item>@string/vk_months_short_arr_6</item>
+        <item>@string/vk_months_short_arr_7</item>
+        <item>@string/vk_months_short_arr_8</item>
+        <item>@string/vk_months_short_arr_9</item>
+        <item>@string/vk_months_short_arr_10</item>
+        <item>@string/vk_months_short_arr_11</item>
+    </array>
+    <array name="vk_otp_method_selection_cells_count">
+        <item>@string/vk_otp_method_selection_cells_count_1</item>
+        <item>@string/vk_otp_method_selection_cells_count_2</item>
+        <item>@string/vk_otp_method_selection_cells_count_3</item>
+        <item>@string/vk_otp_method_selection_cells_count_4</item>
+        <item>@string/vk_otp_method_selection_cells_count_5</item>
+        <item>@string/vk_otp_method_selection_cells_count_6</item>
+    </array>
+    <array name="vk_otp_method_selection_cells_in_which_cell">
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_1</item>
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_2</item>
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_3</item>
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_4</item>
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_5</item>
+        <item>@string/vk_otp_method_selection_cells_in_which_cell_6</item>
+    </array>
+    <array name="vk_otp_method_selection_cells_ordinal_num">
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_1</item>
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_2</item>
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_3</item>
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_4</item>
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_5</item>
+        <item>@string/vk_otp_method_selection_cells_ordinal_num_6</item>
+    </array>
+    <array name="vk_pay_checkout_onboarding_page_1_subtitle_items">
+        <item>@string/vk_pay_checkout_onboarding_page_1_subtitle_items_0</item>
+        <item>@string/vk_pay_checkout_onboarding_page_1_subtitle_items_1</item>
+        <item>@string/vk_pay_checkout_onboarding_page_1_subtitle_items_2</item>
+        <item>@string/vk_pay_checkout_onboarding_page_1_subtitle_items_3</item>
+    </array>
+    <array name="vk_pay_checkout_onboarding_page_2_subtitle_items">
+        <item>@string/vk_pay_checkout_onboarding_page_2_subtitle_items_0</item>
+        <item>@string/vk_pay_checkout_onboarding_page_2_subtitle_items_1</item>
+        <item>@string/vk_pay_checkout_onboarding_page_2_subtitle_items_2</item>
+        <item>@string/vk_pay_checkout_onboarding_page_2_subtitle_items_3</item>
+    </array>
+    <array name="vk_pay_checkout_onboarding_page_3_subtitle_items">
+        <item>@string/vk_pay_checkout_onboarding_page_3_subtitle_items_0</item>
+        <item>@string/vk_pay_checkout_onboarding_page_3_subtitle_items_1</item>
+        <item>@string/vk_pay_checkout_onboarding_page_3_subtitle_items_2</item>
+        <item>@string/vk_pay_checkout_onboarding_page_3_subtitle_items_3</item>
+    </array>
+    <array name="vkim_fake_chat_msg">
+        <item>@string/vkim_fake_chat_msg_arr_0</item>
+        <item>@string/vkim_fake_chat_msg_arr_1</item>
+        <item>@string/vkim_fake_chat_msg_arr_2</item>
+        <item>@string/vkim_fake_chat_msg_arr_3</item>
+        <item>@string/vkim_fake_chat_msg_arr_4</item>
+        <item>@string/vkim_fake_chat_msg_arr_5</item>
+        <item>@string/vkim_fake_chat_msg_arr_6</item>
+        <item>@string/vkim_fake_chat_msg_arr_7</item>
+        <item>@string/vkim_fake_chat_msg_arr_8</item>
+        <item>@string/vkim_fake_chat_msg_arr_9</item>
+        <item>@string/vkim_fake_chat_msg_arr_10</item>
+        <item>@string/vkim_fake_chat_msg_arr_11</item>
+        <item>@string/vkim_fake_chat_msg_arr_12</item>
+        <item>@string/vkim_fake_chat_msg_arr_13</item>
+        <item>@string/vkim_fake_chat_msg_arr_14</item>
+    </array>
+    <array name="when_day_of_week">
+        <item>@string/when_day_of_week_arr_0</item>
+        <item>@string/when_day_of_week_arr_1</item>
+        <item>@string/when_day_of_week_arr_2</item>
+        <item>@string/when_day_of_week_arr_3</item>
+        <item>@string/when_day_of_week_arr_4</item>
+        <item>@string/when_day_of_week_arr_5</item>
+        <item>@string/when_day_of_week_arr_6</item>
+    </array>
+</resources>

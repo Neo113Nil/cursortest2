@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.cell.button.group.VkCellButtonGroupLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/friend_req_btns_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.cell.button.group.VkGroupItem
+        android:id="@+id/btn_edit"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.cell.button.group.VkGroupItem
+        android:id="@+id/btn_delete_post"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</com.vk.core.view.components.cell.button.group.VkCellButtonGroupLayout>

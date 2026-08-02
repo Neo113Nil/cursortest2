@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/info_badge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="@dimen/vk_ui_spacing_size2_xs">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/iv_info_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="37dp"
+        android:minHeight="14dp"/>
+</merge>

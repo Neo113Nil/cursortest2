@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="15sp"
+    android:gravity="center_vertical"
+    android:id="@+id/voip_menu_title"
+    android:background="@drawable/vk_highlight"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    android:lines="2"
+    android:drawablePadding="12dp"
+    android:paddingStart="12dp"
+    android:paddingEnd="20dp"
+    style="@style/VkUiTypography.TextNormal"/>

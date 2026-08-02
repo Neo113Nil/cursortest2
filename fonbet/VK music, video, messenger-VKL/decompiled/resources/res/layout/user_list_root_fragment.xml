@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_list_root_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/user_list_root_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/VKAppBar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/user_list_root_toolbar"
+            android:background="?attr/vk_ui_header_background"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="noScroll"
+            app:navigationContentDescription="@string/accessibility_toolbar_back"
+            app:navigationIcon="@drawable/vk_icon_arrow_left_outline_28"
+            app:popupTheme="?attr/actionBarPopupTheme"
+            app:theme="?attr/actionBarTheme"
+            style="?attr/actionBarTheme"/>
+        <com.vk.core.view.VKTabLayout
+            android:id="@+id/user_list_root_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            style="?attr/tabBarTheme"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.vk.core.view.VKViewPager
+        android:id="@+id/user_list_root_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <com.vk.core.view.AppBarShadowView
+        app:vk_appbar_allowSeparator="true"
+        style="@style/AppBarShadow"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/avatar_verified_container"
+    android:layout_width="24dp"
+    android:layout_height="24dp">
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/avatar_verified"
+        android:padding="2dp"
+        android:visibility="gone"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_margin="4dp"
+        android:contentDescription="@null"
+        android:translationX="1dp"
+        android:translationY="3dp"
+        android:elevation="1dp"/>
+</FrameLayout>

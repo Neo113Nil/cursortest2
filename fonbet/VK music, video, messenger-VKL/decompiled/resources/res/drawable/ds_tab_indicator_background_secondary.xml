@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/ds_tab_secondary_corner_radius"/>
+            <solid android:color="?attr/vk_ui_background_secondary_alpha"/>
+        </shape>
+    </item>
+</layer-list>

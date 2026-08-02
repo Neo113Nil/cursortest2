@@ -1,0 +1,118 @@
+package com.vk.catalog.mvi.block.video.impl.video.largelist.actor.delegate;
+
+import com.vk.catalog.mvi.block.video.impl.video.largelist.entity.VideoLargeListState;
+import com.vk.dto.common.VideoFile;
+import kotlin.a;
+import kotlin.coroutines.intrinsics.CoroutineSingletons;
+import kotlin.coroutines.jvm.internal.ContinuationImpl;
+import xsna.ars0;
+import xsna.ayr0;
+import xsna.b2a;
+import xsna.b6l;
+import xsna.bwr0;
+import xsna.cwr0;
+import xsna.epx;
+import xsna.lsr;
+import xsna.s3q0;
+import xsna.spj;
+import xsna.wxr0;
+
+/* compiled from: Emitters.kt */
+/* loaded from: classes16.dex */
+public final class InitDelegateKt$registerLegacyForceUpdates$1$invokeSuspend$$inlined$filter$1$2<T> implements lsr {
+    public final /* synthetic */ lsr b;
+    public final /* synthetic */ ars0 c;
+
+    @b6l(c = "com.vk.catalog.mvi.block.video.impl.video.largelist.actor.delegate.InitDelegateKt$registerLegacyForceUpdates$1$invokeSuspend$$inlined$filter$1$2", f = "InitDelegate.kt", l = {50}, m = "emit")
+    /* renamed from: com.vk.catalog.mvi.block.video.impl.video.largelist.actor.delegate.InitDelegateKt$registerLegacyForceUpdates$1$invokeSuspend$$inlined$filter$1$2$1, reason: invalid class name */
+    public static final class AnonymousClass1 extends ContinuationImpl {
+        int I$0;
+        Object L$0;
+        Object L$1;
+        Object L$2;
+        Object L$3;
+        int label;
+        /* synthetic */ Object result;
+
+        public AnonymousClass1(spj spjVar) {
+            super(spjVar);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+        public final Object invokeSuspend(Object obj) {
+            this.result = obj;
+            this.label |= Integer.MIN_VALUE;
+            return InitDelegateKt$registerLegacyForceUpdates$1$invokeSuspend$$inlined$filter$1$2.this.emit(null, this);
+        }
+    }
+
+    public InitDelegateKt$registerLegacyForceUpdates$1$invokeSuspend$$inlined$filter$1$2(lsr lsrVar, ars0 ars0Var) {
+        this.b = lsrVar;
+        this.c = ars0Var;
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:15:0x0038  */
+    /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
+    @Override // xsna.lsr
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Object emit(Object obj, spj spjVar) {
+        AnonymousClass1 anonymousClass1;
+        int i;
+        boolean z;
+        if (spjVar instanceof AnonymousClass1) {
+            anonymousClass1 = (AnonymousClass1) spjVar;
+            int i2 = anonymousClass1.label;
+            if ((i2 & Integer.MIN_VALUE) != 0) {
+                anonymousClass1.label = i2 - Integer.MIN_VALUE;
+                Object obj2 = anonymousClass1.result;
+                CoroutineSingletons coroutineSingletons = CoroutineSingletons.COROUTINE_SUSPENDED;
+                i = anonymousClass1.label;
+                if (i != 0) {
+                    a.a(obj2);
+                    bwr0 bwr0Var = (bwr0) obj;
+                    if (bwr0Var instanceof ayr0) {
+                        z = true;
+                    } else {
+                        boolean z2 = bwr0Var instanceof wxr0;
+                        ars0 ars0Var = this.c;
+                        if (z2) {
+                            z = epx.f(((VideoLargeListState) ((b2a) ars0Var.b.b).getCurrentState()).d.r1(), ((wxr0) bwr0Var).a.r1());
+                        } else if (bwr0Var instanceof cwr0) {
+                            String r1 = ((VideoLargeListState) ((b2a) ars0Var.b.b).getCurrentState()).d.r1();
+                            VideoFile videoFile = ((cwr0) bwr0Var).a;
+                            z = epx.f(r1, videoFile != null ? videoFile.r1() : null);
+                        } else {
+                            z = false;
+                        }
+                    }
+                    if (z) {
+                        anonymousClass1.L$0 = null;
+                        anonymousClass1.L$1 = null;
+                        anonymousClass1.L$2 = null;
+                        anonymousClass1.L$3 = null;
+                        anonymousClass1.I$0 = 0;
+                        anonymousClass1.label = 1;
+                        if (this.b.emit(obj, anonymousClass1) == coroutineSingletons) {
+                            return coroutineSingletons;
+                        }
+                    }
+                } else {
+                    if (i != 1) {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    a.a(obj2);
+                }
+                return s3q0.a;
+            }
+        }
+        anonymousClass1 = new AnonymousClass1(spjVar);
+        Object obj22 = anonymousClass1.result;
+        CoroutineSingletons coroutineSingletons2 = CoroutineSingletons.COROUTINE_SUSPENDED;
+        i = anonymousClass1.label;
+        if (i != 0) {
+        }
+        return s3q0.a;
+    }
+}

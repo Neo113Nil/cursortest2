@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_list_selector"
+    android:paddingLeft="8dp"
+    android:paddingTop="4dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="12dp"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:minWidth="160dp">
+    <com.vk.avatar.api.VKAvatarView
+        android:id="@+id/photo"
+        android:visibility="visible"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:placeholderImage="@drawable/user_placeholder"/>
+    <CheckBox
+        android:id="@+id/check"
+        android:tag="@string/dynamic_theme_ignored"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_alignBottom="@+id/photo"
+        android:layout_marginEnd="1dp"
+        android:layout_alignEnd="@+id/photo"
+        app:buttonCompat="@drawable/user_tablet_checkbox"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Text.Unscaled"
+        android:textColor="?attr/vk_ui_text_muted"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:duplicateParentState="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:singleLine="false"
+        android:drawablePadding="10dp"
+        android:layout_below="@+id/photo"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

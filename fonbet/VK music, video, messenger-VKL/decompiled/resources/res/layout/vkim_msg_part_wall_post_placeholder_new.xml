@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg_wallpost_placeholder_rounded"
+    android:layout_width="match_parent"
+    android:layout_height="166dp"
+    android:contentDescription="@string/vkim_accessibility_wall_post_placeholder">
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:backgroundTint="?attr/vk_ui_icon_secondary"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"/>
+    <com.vk.im.ui.views.msg.TimeAndStatusView
+        android:textAppearance="@style/VkIm.MsgPart.Time.TextContrast"
+        android:layout_gravity="bottom|right"
+        android:id="@+id/timeAndStatus"
+        android:background="?attr/im_msg_part_time_contrast_bg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:importantForAccessibility="no"/>
+</LinearLayout>

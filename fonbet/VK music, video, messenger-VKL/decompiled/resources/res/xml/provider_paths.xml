@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path
+        name="internal_temp"
+        path="TempUploads"/>
+    <cache-path
+        name="internal_private_temp"
+        path="InternalTempUploads"/>
+    <cache-path
+        name="cache"
+        path="."/>
+    <files-path
+        name="internal"
+        path="."/>
+    <external-path
+        name="external_storage"
+        path="."/>
+    <root-path
+        name="sdcard"
+        path="/storage/"/>
+</paths>

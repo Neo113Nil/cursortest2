@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:name="path_1"
+        android:fillColor="#000000"
+        android:pathData="m17.9,11.9c0,-0.4971 -0.4029,-0.9 -0.9,-0.9s-0.9,0.4029 -0.9,0.9v3.2h-3.2c-0.4971,0 -0.9,0.4029 -0.9,0.9 0,0.497 0.4029,0.9 0.9,0.9h3.2v3.2c0,0.497 0.4029,0.9 0.9,0.9s0.9,-0.403 0.9,-0.9v-3.2h3.2c0.4971,0 0.9,-0.403 0.9,-0.9 0,-0.4971 -0.4029,-0.9 -0.9,-0.9h-3.2z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#000000"
+        android:pathData="m3.9,6.9h14.2c0.4971,0 0.9,-0.4029 0.9,-0.9 0,-0.4971 -0.4029,-0.9 -0.9,-0.9h-14.2c-0.4971,0 -0.9,0.4029 -0.9,0.9s0.4029,0.9 0.9,0.9z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="#000000"
+        android:pathData="m3.9,10.1c-0.4971,0 -0.9,0.4029 -0.9,0.9 0,0.497 0.4029,0.9 0.9,0.9h9.2c0.4971,0 0.9,-0.403 0.9,-0.9 0,-0.4971 -0.4029,-0.9 -0.9,-0.9z"/>
+    <path
+        android:name="path_4"
+        android:fillColor="#000000"
+        android:pathData="m3.9,15.1c-0.4971,0 -0.9,0.4029 -0.9,0.9 0,0.497 0.4029,0.9 0.9,0.9h5.2c0.4971,0 0.9,-0.403 0.9,-0.9 0,-0.4971 -0.4029,-0.9 -0.9,-0.9z"/>
+</vector>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_gravity="center"
+        android:id="@+id/progress"
+        android:layout_width="@dimen/clips_interests_avatar_size_with_progress"
+        android:layout_height="@dimen/clips_interests_avatar_size_with_progress"
+        android:indeterminate="false"
+        app:indicatorColor="?attr/vk_ui_text_accent"
+        app:indicatorInset="0dp"
+        app:indicatorSize="@dimen/clips_interests_avatar_size_with_progress"
+        app:trackColor="@android:color/transparent"
+        app:trackCornerRadius="3dp"
+        app:trackThickness="3dp"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/conf_animation"
+        android:layout_width="@dimen/clips_interests_lottie_size"
+        android:layout_height="@dimen/clips_interests_lottie_size"
+        android:layout_marginTop="@dimen/clips_interests_lottie_margin_to_photo_center"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"/>
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="center"
+        android:id="@+id/photo"
+        android:layout_width="@dimen/clips_interests_avatar_size"
+        android:layout_height="@dimen/clips_interests_avatar_size"
+        android:foreground="@drawable/vk_app_selectable_bg"
+        app:placeholderImage="@drawable/user_placeholder"/>
+</merge>

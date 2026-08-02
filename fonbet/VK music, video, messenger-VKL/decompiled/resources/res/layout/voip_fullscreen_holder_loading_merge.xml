@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar
+        android:id="@+id/voip_fullscreen_loading_progress"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:indeterminateTint="?attr/vk_ui_text_primary"
+        android:indeterminateTintMode="src_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/voip_fullscreen_loading_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="voip_fullscreen_loading_progress,voip_fullscreen_loading_text"/>
+</merge>

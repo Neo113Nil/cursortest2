@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.cell.VkCell
+        android:id="@+id/community_playlist_cell"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:id="@+id/community_playlist_image"
+        android:background="@drawable/bg_content_clip_playlist"
+        android:visibility="gone"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:src="@drawable/vk_icon_list_add_outline_28"
+        android:scaleType="center"
+        app:roundedCornerRadius="8dp"
+        app:tint="?attr/vk_ui_icon_accent_themed"/>
+</FrameLayout>

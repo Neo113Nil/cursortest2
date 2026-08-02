@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/album_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:actualImageScaleType="centerCrop"/>
+    <View
+        android:id="@+id/scrim"
+        android:background="@drawable/scrim_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.5"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium.Unscaled"
+        android:textColor="@color/vk_white"
+        android:ellipsize="end"
+        android:id="@+id/album_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="11dp"
+        android:text="Album Title"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/album_qty"
+        android:layout_alignBottom="@+id/scrim"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead.Unscaled"
+        android:textColor="@color/vk_white"
+        android:id="@+id/album_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="9000"
+        android:singleLine="true"
+        android:layout_alignBottom="@+id/scrim"
+        android:layout_alignParentRight="true"/>
+    <ImageView
+        android:id="@+id/album_actions"
+        android:layout_width="36dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_actions_small_shadow_24"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

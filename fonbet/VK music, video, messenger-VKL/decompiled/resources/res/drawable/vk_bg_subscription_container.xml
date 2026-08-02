@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:clipToPadding="false">
+    <item
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp"/>
+            <solid android:color="?attr/vk_ui_background_modal"/>
+        </shape>
+    </item>
+</layer-list>

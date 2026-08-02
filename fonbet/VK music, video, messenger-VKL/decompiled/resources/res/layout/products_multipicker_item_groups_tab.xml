@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:id="@+id/group_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLines="1"
+        android:textAlignment="textStart"
+        android:layout_marginStart="6dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/is_selected_icon"
+        app:layout_constraintStart_toEndOf="@+id/group_image"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Headline2Medium"/>
+    <ImageView
+        android:id="@+id/is_selected_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/vk_icon_check_circle_on_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/vk_ui_icon_accent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

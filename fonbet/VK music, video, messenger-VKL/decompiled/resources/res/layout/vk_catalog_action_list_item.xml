@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="4dp">
+    <com.vk.core.view.components.button.VkButton
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:buttonAppearance="accent"
+        app:buttonMode="secondary"
+        app:buttonSizeType="medium">
+        <com.vk.core.view.components.picture.VkImage
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/title"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.FootnoteCapsMedium"
+            android:textColor="@color/vkui_muted_button_text"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:maxLines="1"
+            android:lineSpacingExtra="3sp"
+            android:textAllCaps="true"
+            android:paddingStart="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/icon"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </com.vk.core.view.components.button.VkButton>
+</FrameLayout>

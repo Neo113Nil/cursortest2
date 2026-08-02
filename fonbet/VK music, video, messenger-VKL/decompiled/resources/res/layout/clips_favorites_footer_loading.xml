@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/load_more_error"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/clips_favorites_folders_picker_list_footer_height">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/clips_favorites_folders_picker_footer_loading_progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:indeterminate="true"
+        android:indeterminateTint="?attr/vk_ui_icon_tertiary"/>
+</FrameLayout>

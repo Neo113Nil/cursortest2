@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?attr/vk_ui_text_secondary"
+    android:gravity="center"
+    android:id="@+id/attachpicker_warning_single_mode_text"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/picker_attachments_warning_single_mode_file"
+    android:maxLines="1"
+    style="@style/VkUiTypography.FootnoteNormal"/>

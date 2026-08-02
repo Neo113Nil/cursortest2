@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="3.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.group.header.VkGroupHeader
+        android:id="@+id/recommendation_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.divider.VkDivider
+        android:id="@+id/recommendation_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</LinearLayout>

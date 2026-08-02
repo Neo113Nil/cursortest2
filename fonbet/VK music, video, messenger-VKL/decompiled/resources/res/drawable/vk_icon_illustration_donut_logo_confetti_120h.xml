@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="120">
+    <group>
+        <clip-path android:pathData="M0,0h180v120H0z"/>
+        <group>
+            <clip-path android:pathData="M0,0h180v120H0z"/>
+            <path
+                android:name="path_1"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__0_res_0x7f080388"
+                android:pathData="m147.207,91.764 l-5.759,-3.726s-4.434,9.475 -0.572,11.738a76,76 0,0 0,5.254 2.813c-1.056,-5.44 1.077,-10.825 1.077,-10.825"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_2"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__1_res_0x7f080389"
+                android:pathData="M146.409,102.945c3.845,1.893 7.505,-1.707 12.058,-3.734l-4.68,-3.705c-3.344,-2.18 -7.261,3.85 -12.912,4.27z"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_3"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__2_res_0x7f080394"
+                android:pathData="m158.951,98.769 l-5.164,-3.263c0.697,5.823 -2.816,9.177 -1.677,13.072l6.114,3.281c-0.3,-5.428 3.527,-10.712 0.727,-13.09"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_4"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__3_res_0x7f080399"
+                android:pathData="m176.025,21.265 l1.588,-6.482s-10.618,-0.425 -11.457,3.835a70,70 0,0 0,-0.885 5.697c4.853,-2.948 10.754,-3.05 10.754,-3.05"/>
+            <path
+                android:name="path_5"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__4_res_0x7f08039a"
+                android:pathData="m29.65,13.048 l-6.604,3.244s7.154,9.276 11.349,6.971a78,78 0,0 0,5.442 -3.282c-5.926,-2.017 -10.188,-6.933 -10.188,-6.933"/>
+            <path
+                android:name="path_6"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__5_res_0x7f08039b"
+                android:pathData="m151.922,61.233 l5.106,-5.17s-9.685,-6.329 -12.849,-2.817c-2.35,2.609 -4.011,4.83 -4.011,4.83 6.183,-0.044 11.754,3.157 11.754,3.157"/>
+            <path
+                android:name="path_7"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__6_res_0x7f08039c"
+                android:pathData="m32.507,44.865 l6.874,-2.695s2.442,11.163 -2.113,12.716a81,81 0,0 1,-6.136 1.83c2.358,-5.595 1.375,-11.851 1.375,-11.851"/>
+            <path
+                android:name="path_8"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__7_res_0x7f08039d"
+                android:pathData="M30.76,57.034c-4.454,1.161 -7.444,-3.526 -11.73,-6.729l5.743,-2.916c3.994,-1.58 6.692,5.77 12.496,7.497z"/>
+            <path
+                android:name="path_9"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__8_res_0x7f08039e"
+                android:pathData="M14.667,64.534c-4.452,1.161 -7.442,-3.526 -11.729,-6.729l5.743,-2.916c3.994,-1.58 6.693,5.77 12.496,7.497z"/>
+            <path
+                android:name="path_10"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__9_res_0x7f08039f"
+                android:pathData="m18.627,49.722 l6.145,-2.332c-2.072,6.087 0.822,10.477 -1.267,14.397l-7.141,2.137c1.566,-5.754 -1.21,-12.285 2.263,-14.202"/>
+            <path
+                android:name="path_11"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__10_res_0x7f08038a"
+                android:pathData="m142.418,18.092 l-6.468,2.284s-2.108,-10.246 2.174,-11.549c3.181,-0.967 5.764,-1.513 5.764,-1.513 -2.292,5.045 -1.47,10.778 -1.47,10.778"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_12"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__11_res_0x7f08038b"
+                android:pathData="M144.242,7.032c4.181,-0.946 6.902,3.406 10.859,6.437l-5.414,2.515c-3.758,1.342 -6.166,-5.434 -11.563,-7.157z"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_13"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__12_res_0x7f08038c"
+                android:pathData="m155.468,14.012 l-5.781,1.972c2.032,-5.501 -0.604,-9.58 1.41,-13.104l6.709,-1.768c-1.555,5.21 0.938,11.239 -2.338,12.9"
+                android:strokeAlpha="0.9"
+                android:fillAlpha="0.9"/>
+            <path
+                android:name="path_14"
+                android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__13_res_0x7f08038d"
+                android:pathData="m44.138,91.417 l-1.833,-7.043s-10.41,5.092 -9.009,9.614c1.041,3.359 2.101,5.926 2.101,5.926 3.131,-5.343 8.74,-8.497 8.74,-8.497"/>
+        </group>
+    </group>
+    <path
+        android:name="path_15"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__14_res_0x7f08038e"
+        android:pathData="M116.166,12.465c14.414,3.863 22.968,18.679 19.106,33.092 -3.863,14.414 -18.678,22.968 -33.092,19.106S79.212,45.985 83.074,31.571s18.678,-22.968 33.092,-19.106Z"
+        android:strokeColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__15_res_0x7f08038f"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"/>
+    <path
+        android:name="path_16"
+        android:fillColor="#00000000"
+        android:pathData="M89.079,33.008a20.781,20.916 59.575,1 0,40.31 10.662a20.781,20.916 59.575,1 0,-40.31 -10.662z"
+        android:strokeColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__16_res_0x7f080390"
+        android:strokeWidth="1.2"
+        android:strokeLineJoin="round"/>
+    <path
+        android:name="path_17"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__17_res_0x7f080391"
+        android:pathData="M98.283,39.767c11.85,3.176 20.531,12.275 23.711,23.258a27.52,27.52 0,0 1,-19.968 2.217c-12.007,-3.217 -20.036,-13.87 -20.46,-25.676a33.6,33.6 0,0 1,16.717 0.201"/>
+    <path
+        android:name="path_18"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__18_res_0x7f080392"
+        android:pathData="M91.3,52.132a2.36,2.36 0,0 1,2.862 -1.63l0.066,0.02a2.36,2.36 0,0 1,1.63 2.846l-0.032,0.109a2.36,2.36 0,0 1,-2.97 1.562,2.36 2.36,0 0,1 -1.574,-2.847z"/>
+    <path
+        android:name="path_19"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__19_res_0x7f080393"
+        android:pathData="M83.058,73.763m-29.965,17.3a34.601,34.601 103.176,1 1,59.931 -34.601a34.601,34.601 103.176,1 1,-59.931 34.601"
+        android:strokeColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__20_res_0x7f080395"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"/>
+    <path
+        android:name="path_20"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__21_res_0x7f080396"
+        android:pathData="M82.483,73.398m13.299,23.034a26.597,26.597 103.173,1 1,-26.597 -46.067a26.597,26.597 103.173,1 1,26.597 46.067"
+        android:strokeColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__22_res_0x7f080397"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"/>
+    <path
+        android:name="path_21"
+        android:fillColor="@drawable/_vk_icon_illustration_donut_logo_confetti_120h__23_res_0x7f080398"
+        android:pathData="M79.427,66.79c0.611,-1.999 1.752,-3.55 3.412,-4.609l0.317,-0.192c3.705,-2.14 8.455,-0.896 10.583,2.792 1.995,3.455 1.77,5.872 -1.105,13.192l-0.596,1.496 -1.532,3.754a2.5,2.5 0,0 1,-2.651 1.531l-4.568,-0.628c-8.625,-1.24 -10.935,-2.186 -13.016,-5.792 -2.128,-3.687 -0.83,-8.424 2.874,-10.564 1.808,-1.043 3.825,-1.311 5.999,-0.824l0.222,0.055z"/>
+</vector>

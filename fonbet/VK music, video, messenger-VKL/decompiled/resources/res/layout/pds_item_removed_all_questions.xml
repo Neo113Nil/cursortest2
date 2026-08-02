@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_question_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+    <com.vk.core.view.components.cell.VkCell
+        android:id="@+id/removed_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.divider.VkDivider
+        android:id="@+id/question_separator"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:dividerHeight="1dp"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/remove_all_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="16dp"
+        app:buttonAppearance="negative"
+        app:buttonMode="link"
+        app:buttonSizeType="medium"
+        app:icon="@drawable/vk_icon_delete_outline_20"
+        app:text="@string/questions_remove_all_questions"/>
+</LinearLayout>

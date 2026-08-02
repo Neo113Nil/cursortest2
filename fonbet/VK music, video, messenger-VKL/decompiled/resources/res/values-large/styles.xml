@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseStyle.PopupIfTablet" parent="@style/BaseStyle.Dialog">
+    </style>
+    <style name="PostingAttachScreenTheme" parent="@style/BaseStyle.PopupIfTablet">
+    </style>
+</resources>

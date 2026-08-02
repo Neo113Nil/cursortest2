@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/voip_watch_movie_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="fitCenter"/>
+    <com.vk.voip.ui.watchmovie.player.VoipWatchMoviePlayerControlView
+        android:layout_gravity="bottom"
+        android:id="@+id/voip_watch_move_player"
+        android:background="@drawable/voip_movie_player_bg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"/>
+</merge>

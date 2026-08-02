@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.mediapicker.views.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/camera_container"
+    android:background="@drawable/ds_camera_cell_holder_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/ds_camera_cell_content_description">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/camera_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_camera_outline_36"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center"
+        android:id="@+id/camera_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ds_camera_cell_text"
+        style="@style/VkUiTypography.FootnoteMedium"/>
+</com.vk.core.view.mediapicker.views.AspectRatioLinearLayout>

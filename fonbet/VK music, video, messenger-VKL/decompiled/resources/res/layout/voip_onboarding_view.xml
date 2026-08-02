@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/voip_onboarding_view_pager"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginBottom="12dp"
+        android:importantForAccessibility="no"/>
+    <com.vk.voip.ui.groupcalls.grid.dots.GridPaginationDotsView
+        android:id="@+id/voip_onboarding_dots"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="12dp"/>
+</merge>

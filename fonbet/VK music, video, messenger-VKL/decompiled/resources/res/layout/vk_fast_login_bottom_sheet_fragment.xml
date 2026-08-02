@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <com.vk.superapp.ui.toolbar.VkAuthToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            app:titleTextAppearance="@style/VkAuth.FastLoginToolbarTitleTextAppearance"/>
+        <com.vk.auth.ui.fastlogin.VkFastLoginView
+            android:id="@+id/fast_login_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-12dp"
+            android:layout_marginBottom="8dp"
+            app:vk_disable_auto_load="true"
+            app:vk_hide_vk_connect_logo="true"
+            app:vk_nice_background_enabled="false"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

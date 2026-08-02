@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/method_selector_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:paddingHorizontal="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/method_selector_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:id="@+id/method_selector_cancel_button"
+            android:background="@drawable/vk_auth_ripple_circle_highlight"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:contentDescription="@string/vk_auth_accessibility_close"
+            app:srcCompat="@drawable/vk_icon_cancel_outline_28"
+            app:tint="?attr/vk_ui_icon_accent_themed"/>
+        <com.vk.auth.ui.VkAuthTextView
+            android:textColor="?attr/vk_ui_text_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vk_otp_method_selection_verification_methods_title"
+            android:maxLines="1"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            style="@style/VkUiTypography.DisplayTitle2SemiBold"/>
+    </LinearLayout>
+    <com.vk.method.selector.impl.MethodSelectorView
+        android:id="@+id/method_selector_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"/>
+</LinearLayout>

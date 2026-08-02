@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/vk_ui_spacing_size2_xs">
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/community_time_cell_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="69dp"
+        android:layout_marginStart="48dp"
+        style="@style/VkUiTypography.Paragraph"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/community_time_cell_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/vk_ui_spacing_size_s"
+        android:layout_marginEnd="@dimen/vk_ui_base_padding_horizontal"
+        style="@style/VkUiTypography.Paragraph"/>
+</merge>

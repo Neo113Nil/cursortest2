@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.image.VkEnhancedImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/photo_image_view"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:layout_margin="1dp"
+    android:maxWidth="200dp"
+    app:ev_fadeDuration="300"
+    app:ev_imageScaleType="center_crop"
+    app:layout_maxWidth="100dp"
+    app:placeholder="@drawable/vkim_attach_photo_placeholder"/>

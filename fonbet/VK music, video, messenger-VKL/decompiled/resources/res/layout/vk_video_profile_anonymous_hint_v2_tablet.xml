@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_video_profile_anonym_hint_title"
+        style="@style/VkUiTypography.Title2Medium"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:maxWidth="547dp"
+        android:text="@string/vk_video_profile_anonym_hint_subtitle"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:id="@+id/video_profile_v2_anonymous_hint_btn_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_video_profile_anonym_hint_btn_sign_in"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="small"/>
+</LinearLayout>

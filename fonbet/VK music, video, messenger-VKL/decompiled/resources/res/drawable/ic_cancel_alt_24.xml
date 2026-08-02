@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/vk_red_call"
+        android:pathData="m6.5364,5.2636c-0.3515,-0.3515 -0.9213,-0.3515 -1.2728,0 -0.3515,0.3515 -0.3515,0.9213 0,1.2728l5.4636,5.4636 -5.4636,5.4636c-0.3515,0.3515 -0.3515,0.9213 0,1.2728 0.3515,0.3515 0.9213,0.3515 1.2728,0l5.4636,-5.4636 5.4636,5.4636c0.3515,0.3515 0.9213,0.3515 1.2728,0s0.3515,-0.9213 0,-1.2728l-5.4636,-5.4636 5.4636,-5.4636c0.3515,-0.3515 0.3515,-0.9213 0,-1.2728 -0.3515,-0.3515 -0.9213,-0.3515 -1.2728,0l-5.4636,5.4636z"/>
+    <path
+        android:fillColor="@color/vk_red_call"
+        android:pathData="m6,6 l12,12m0,-12 l-12,12"
+        android:strokeColor="@color/vk_red_call"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"/>
+</vector>

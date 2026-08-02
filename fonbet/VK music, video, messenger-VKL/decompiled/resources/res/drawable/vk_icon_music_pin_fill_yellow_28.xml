@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="28dp"
+    android:width="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_music_pin_fill_yellow_28__0_res_0x7f08055e"
+        android:pathData="M19.594,20.213c2.658,-1.79 4.406,-4.82 4.406,-8.255C24,6.458 19.523,2 14,2S4,6.458 4,11.958c0,3.435 1.748,6.465 4.406,8.255H8.4c0.828,0.579 1.621,1.584 2.394,2.563C11.89,24.164 12.944,25.5 14,25.5c1.055,0 2.11,-1.336 3.206,-2.724 0.773,-0.98 1.566,-1.984 2.394,-2.563h-0.006Z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="M15.002,14.156c0,2.378 -2.838,3.601 -4.016,2.338 -0.307,-0.33 -0.475,-0.713 -0.485,-1.103 -0.03,-1.157 1.169,-2.38 2.999,-2.478V9.501c-0.013,-0.975 0.515,-1.668 1.353,-1.968l0.164,-0.054c0.345,-0.108 0.932,-0.262 1.773,-0.466 0.27,-0.066 0.661,0.131 0.702,0.415l0.006,0.08v1.066c0,0.779 -0.59,1.466 -1.266,1.722l-0.129,0.042 -1.102,0.45v3.368Z"/>
+</vector>

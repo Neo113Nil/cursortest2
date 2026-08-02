@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/poll_bg_view_holder_width"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/poll_background_small_image"
+        android:layout_width="@dimen/poll_bg_view_holder_width"
+        android:layout_height="@dimen/poll_bg_small_height"/>
+    <com.vk.core.view.ColorProgressBar
+        android:layout_gravity="top|center_horizontal"
+        android:id="@+id/poll_upload_progress"
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:color="@color/vk_white"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/poll_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="4dp"
+        android:importantForAccessibility="no"
+        style="@android:style/Widget.CompoundButton.RadioButton"/>
+</FrameLayout>

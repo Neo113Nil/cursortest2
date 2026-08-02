@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple android:color="?attr/vk_ui_transparent_active">
+            <item
+                android:id="@android:id/mask"
+                android:drawable="@drawable/ds_internal_form_item_dropdown_ripple_mask"/>
+            <item android:drawable="@drawable/ds_internal_form_item_input_bg_state_normal"/>
+        </ripple>
+    </item>
+</selector>

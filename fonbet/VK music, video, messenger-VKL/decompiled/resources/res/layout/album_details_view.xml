@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/gradient_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/toolbars_container"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+        <com.vk.content.design.view.photo.flow.PhotoFlowToolbarView
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.vk.content.design.view.photo.flow.PhotoFlowToolbarView
+            android:id="@+id/toolbar_with_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.vk.photos.root.albumdetails.presentation.views.AlbumDetailsRecyclerPaginatedView
+        android:id="@+id/content_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

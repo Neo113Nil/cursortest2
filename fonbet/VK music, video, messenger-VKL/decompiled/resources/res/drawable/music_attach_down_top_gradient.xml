@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="?attr/vk_legacy_background_light"
+        android:endColor="@color/vk_clear"
+        android:angle="90"/>
+</shape>

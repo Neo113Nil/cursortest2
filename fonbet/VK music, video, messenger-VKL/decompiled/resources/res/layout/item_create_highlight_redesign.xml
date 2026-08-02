@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="72dp"
+    android:layout_height="match_parent">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cover_image_view"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="14dp"
+        android:text="@string/highlight_create_redesign"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_image_view"
+        style="@style/VkUiTypography.Caption1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

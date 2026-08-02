@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="?attr/vk_ui_background_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:paddingHorizontal="@dimen/vk_ui_spacing_size2_xl">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/action_delete"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_s"
+        app:buttonAppearance="negative"
+        app:buttonBackgroundCornerRadius="@dimen/vk_ui_border_radius_rounded"
+        app:buttonMode="secondary"
+        app:buttonSizeType="medium"
+        app:icon="@drawable/vk_icon_delete_outline_20"
+        app:iconSize="20dp"
+        app:text="@string/vkim_msg_action_delete"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/action_forward"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="1"
+        app:buttonAppearance="accent"
+        app:buttonBackgroundCornerRadius="@dimen/vk_ui_border_radius_rounded"
+        app:buttonMode="secondary"
+        app:buttonSizeType="medium"
+        app:icon="@drawable/vk_icon_arrow_right_outline_20"
+        app:iconSize="20dp"
+        app:text="@string/vkim_msg_action_forward"/>
+</LinearLayout>

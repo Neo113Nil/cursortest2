@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.group.header.VkGroupHeader
+        android:id="@+id/title_group_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.NestedScrollableRecyclerView
+        android:id="@+id/recycler"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:buttonMode="tertiary"
+        app:buttonSizeType="large"
+        app:iconSize="16dp"
+        app:text="@string/item_birthday_show_all_gifts"
+        app:trailingIcon="@drawable/vk_icon_chevron_16"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mentions_cl"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/divider"
+    android:layout_below="@+id/dialog_header_container">
+    <FrameLayout
+        android:id="@+id/mentions_container"
+        android:background="?attr/vk_legacy_modal_card_background"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:layout_behavior="com.vk.core.ui.bottomsheet.internal.VkBottomSheetBehavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

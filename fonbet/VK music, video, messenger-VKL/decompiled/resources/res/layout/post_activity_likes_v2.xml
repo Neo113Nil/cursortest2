@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_post_activity_likes"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="@drawable/highlight"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <com.vk.feed.design.view.newsfeed.avatar_stack.AvatarAnimatedStack
+        android:id="@+id/user_stack_animated_like"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.userstack.VkUserStack
+        android:id="@+id/user_stack"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1.2dp"
+        app:vkAvatarSize="small"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vk.prefui.views.MaterialSwitchPreference
+        android:persistent="false"
+        android:layout="@layout/item_preference"
+        android:title="@string/unread_counters_settings_count_all"
+        android:key="unread_counter"
+        app:singleLine="false"/>
+    <com.vk.prefui.views.MaterialSwitchPreference
+        android:persistent="false"
+        android:layout="@layout/item_preference"
+        android:title="@string/unread_counters_settings_count_channels"
+        android:key="include_channel_notifications"
+        app:singleLine="false"/>
+</androidx.preference.PreferenceScreen>

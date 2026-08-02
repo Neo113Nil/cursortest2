@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="126dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+    <View
+        android:background="@drawable/vk_bg_skeleton_v2_14dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.vk.core.view.shimmer.ShimmerFrameLayout>

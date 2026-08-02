@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/im_chat_clips_main_container"/>
+    <ViewStub
+        android:layout_gravity="bottom"
+        android:id="@+id/im_chat_clips_fast_rec_recom_stub"
+        android:layout="@layout/im_chat_clips_recom_reply_container"
+        android:inflatedId="@+id/im_chat_clips_recom_root"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</FrameLayout>

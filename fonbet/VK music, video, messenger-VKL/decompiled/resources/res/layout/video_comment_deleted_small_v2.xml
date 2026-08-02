@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/deleted_comment_container"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="46dp"
+    android:paddingEnd="@dimen/post_side_padding">
+    <com.vk.core.view.components.cell.rich.VkRichCell
+        android:id="@+id/vk_rich_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

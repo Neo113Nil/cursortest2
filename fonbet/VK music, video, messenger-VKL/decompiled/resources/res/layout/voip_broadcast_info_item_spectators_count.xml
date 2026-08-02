@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="13sp"
+    android:textColor="?attr/vk_ui_text_primary"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:fontFamily="@font/vk_roboto_regular"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:letterSpacing="0.02"/>

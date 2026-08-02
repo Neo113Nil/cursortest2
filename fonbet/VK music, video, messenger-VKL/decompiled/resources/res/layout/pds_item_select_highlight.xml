@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="72dp"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimaryDark">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:id="@+id/cover_image"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_marginEnd="8dp"
+        android:translationZ="10dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cover_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CircleCheckBox"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/highlight_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="14dp"
+        android:lines="1"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cover_image"
+        style="@style/VkUiTypography.Caption1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

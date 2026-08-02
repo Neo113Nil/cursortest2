@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:duplicateParentState="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:scaleX="-1"
+    android:importantForAccessibility="no"
+    app:srcCompat="@drawable/vk_icon_sound_wave_outline_36"
+    app:tint="@color/vk_sak_sound_captcha_wave"/>

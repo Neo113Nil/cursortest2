@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:contentDescription="@null"
+        android:layout_marginStart="4dp"
+        app:srcCompat="@drawable/vk_icon_search_24"
+        app:tint="?attr/vk_legacy_accent"/>
+    <TextView
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="?attr/vk_legacy_accent"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_search_in_msgs"
+        android:lines="1"
+        android:lineSpacingExtra="3sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="16dp"/>
+</FrameLayout>

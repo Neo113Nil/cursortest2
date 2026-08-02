@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.fresco.VKEnhancedImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:contentDescription="@string/vkim_accessibility_doc_preview"
+        app:imageScaleType="center_crop"/>
+    <com.vk.core.view.ProgressView
+        android:layout_gravity="center"
+        android:id="@+id/upload"
+        style="@style/VkIm.MsgPart.UploadIndicator.Default"/>
+    <TextView
+        android:textAppearance="@style/VkIm.MsgPart.Label.TextContrast"
+        android:gravity="center_vertical"
+        android:layout_gravity="top|left"
+        android:id="@+id/label_default"
+        android:background="?attr/im_msg_part_label_contrast_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:lines="1"/>
+    <TextView
+        android:textAppearance="@style/VkIm.MsgPart.Label.TextContrast"
+        android:gravity="center_vertical"
+        android:layout_gravity="top|left"
+        android:id="@+id/label_play"
+        android:background="@drawable/vkim_bg_video_mosaic_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:lines="1"/>
+</FrameLayout>

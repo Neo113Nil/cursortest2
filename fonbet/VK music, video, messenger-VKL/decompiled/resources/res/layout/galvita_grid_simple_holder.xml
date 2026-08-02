@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.stories.tool.view.SimpleStackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.attachpicker.stickers.post.attach.StoryAttachImageView
+        android:id="@+id/image"
+        android:background="?attr/vk_ui_image_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:id="@+id/overlay"
+        android:background="@drawable/restriction_galvita_image_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+    <com.vk.attachpicker.stickers.post.attach.StoryAttachImageView
+        android:id="@+id/restriction_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:tint="@color/vk_white"
+        android:layout_centerInParent="true"/>
+</com.vk.stories.tool.view.SimpleStackLayout>

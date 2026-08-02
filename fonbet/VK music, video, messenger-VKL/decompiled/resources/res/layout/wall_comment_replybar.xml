@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.disableable.DisableableFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:paddingStart="@dimen/post_side_padding"
+    android:paddingEnd="@dimen/post_side_padding">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:layout_gravity="center_vertical"
+        android:id="@+id/photo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/comment_reply_margin_start"
+        app:placeholderImage="@drawable/user_placeholder"
+        app:placeholderImageScaleType="fitXY"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="?attr/vk_ui_image_border_alpha"
+        app:roundingBorderWidth="0.5dp"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment"
+        android:contentDescription="@string/accessibility_add_comment"
+        android:layout_marginStart="@dimen/comment_reply_bar_margin_start"/>
+</com.vk.core.view.disableable.DisableableFrameLayout>

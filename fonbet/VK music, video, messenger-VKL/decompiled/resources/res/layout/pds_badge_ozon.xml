@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.picture.VkImageSimple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/badge"
+    android:background="@drawable/ozon_badge_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vk_icon_logo_ozon_14h"
+    android:tint="@color/vk_white"
+    android:paddingHorizontal="6dp"
+    android:paddingVertical="2dp"/>

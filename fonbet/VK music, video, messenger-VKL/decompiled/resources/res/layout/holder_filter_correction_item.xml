@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="2dp">
+    <View
+        android:id="@+id/stroke"
+        android:background="@drawable/correction_filter_select_stroke"
+        android:layout_width="@dimen/correction_filter_item_width"
+        android:layout_height="@dimen/correction_filter_item_height"
+        android:alpha="0"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="center"
+        android:id="@+id/preview"
+        android:background="@drawable/correction_filter_item_radius_12dp"
+        android:layout_width="@dimen/correction_filter_item_photo_width"
+        android:layout_height="@dimen/correction_filter_item_photo_height"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/accessibility_filter"/>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/shadow"
+        android:background="@drawable/correction_filter_shadow"
+        android:layout_width="@dimen/correction_filter_item_photo_width"
+        android:layout_height="@dimen/correction_filter_item_photo_height"
+        android:alpha="0"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_gravity="center"
+        android:id="@+id/intensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        style="@style/VkUiTypography.ParagraphNormal"/>
+</FrameLayout>

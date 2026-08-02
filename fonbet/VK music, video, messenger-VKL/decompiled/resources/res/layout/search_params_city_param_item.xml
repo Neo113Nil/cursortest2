@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/search_params_city_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/search_params_city_subtitle"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:lines="1"
+        app:layout_constraintTop_toBottomOf="@+id/search_params_city_title"
+        style="@style/VkUiTypography.Footnote"/>
+</LinearLayout>

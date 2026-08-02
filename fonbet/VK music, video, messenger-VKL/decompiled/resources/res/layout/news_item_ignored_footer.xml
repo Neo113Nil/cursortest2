@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/item_ignored_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newsfeed_item_ignored_cancel"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="medium"/>
+</FrameLayout>

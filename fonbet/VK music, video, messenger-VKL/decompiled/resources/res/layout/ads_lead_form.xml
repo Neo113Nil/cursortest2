@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.RatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ratio_layout"
+    android:padding="@dimen/paddingXXS"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:orientation="horizontal">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.vk.core.tool.view.RatioFrameLayout>

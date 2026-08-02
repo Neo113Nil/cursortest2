@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/ds_tab_regular_height">
+    <FrameLayout
+        android:layout_gravity="center"
+        android:id="@+id/ds_secondary_tab_indicator"
+        android:background="@drawable/ds_tab_indicator_background_secondary"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="@dimen/ds_tab_regular_height"/>
+</merge>

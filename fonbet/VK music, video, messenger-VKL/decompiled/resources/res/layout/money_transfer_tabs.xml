@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.tabs.SkeletonTabLayout
+        android:id="@+id/money_transfer_tabs"
+        android:background="?attr/vk_legacy_header_background"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:tabIndicator="?attr/tabBarIndicator"
+        app:tabIndicatorColor="?attr/vk_legacy_header_tint"
+        app:tabPaddingEnd="16dp"
+        app:tabPaddingStart="16dp"
+        app:tabSelectedTextColor="?attr/vk_legacy_header_tab_active_text"
+        app:tabTextAppearance="@style/TabBarTheme.TabTextAppearance"
+        app:tabTextColor="?attr/vk_legacy_header_tab_inactive_text"
+        style="?attr/tabBarTheme"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/money_transfer_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no"/>
+</LinearLayout>

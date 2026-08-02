@@ -1,0 +1,40 @@
+package xsna;
+
+import com.yandex.div.data.Hashable;
+import com.yandex.div.json.JSONSerializable;
+import com.yandex.div.json.expressions.Expression;
+import com.yandex.div.serialization.BuiltInParserKt;
+import com.yandex.div.serialization.ParsingContext;
+import org.json.JSONObject;
+
+/* compiled from: DictVariable.kt */
+/* loaded from: classes8.dex */
+public final class ywm implements JSONSerializable, Hashable {
+    public final String a;
+    public final Expression<JSONObject> b;
+    public Integer c;
+
+    public ywm(Expression expression, String str) {
+        this.a = str;
+        this.b = expression;
+    }
+
+    @Override // com.yandex.div.data.Hashable
+    public final int hash() {
+        Integer num = this.c;
+        if (num != null) {
+            return num.intValue();
+        }
+        int hashCode = this.b.hashCode() + this.a.hashCode() + fpf0.a(ywm.class).hashCode();
+        this.c = Integer.valueOf(hashCode);
+        return hashCode;
+    }
+
+    @Override // com.yandex.div.json.JSONSerializable
+    public final JSONObject writeToJSON() {
+        zwm zwmVar = (zwm) BuiltInParserKt.getBuiltInParserComponent().B.getValue();
+        ParsingContext builtInParsingContext = BuiltInParserKt.getBuiltInParsingContext();
+        zwmVar.getClass();
+        return zwm.b(builtInParsingContext, this);
+    }
+}

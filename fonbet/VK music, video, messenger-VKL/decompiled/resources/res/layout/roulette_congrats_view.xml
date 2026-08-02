@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.vas.design.view.VKStickerPackView
+        android:layout_gravity="center"
+        android:id="@+id/pack_image"
+        android:layout_width="@dimen/roulette_pack_img_small_size"
+        android:layout_height="@dimen/roulette_pack_img_small_size"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="@color/vk_ui_text_title_color"
+        android:gravity="center_horizontal"
+        android:id="@+id/dialog_title_text"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="?attr/vk_ui_typography_title2_medium"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_subhead"
+        android:gravity="center_horizontal"
+        android:id="@+id/dialog_message_text"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="?attr/vk_ui_typography_subhead"/>
+</LinearLayout>

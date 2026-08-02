@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="friend_request_notification_description">@color/vk_gray_500</color>
+    <color name="friend_request_notification_subhead">@color/vk_gray_400</color>
+    <color name="kids_profile_top_bar_gradient_end_color">@color/vk_gray_900</color>
+    <color name="kids_profile_top_bar_gradient_start_color">#002869</color>
+    <color name="notification_icon_secondary">@color/vk_gray_500</color>
+    <color name="notification_text_accent">@color/vk_sky_300</color>
+    <color name="notification_text_primary">@color/vk_gray_100</color>
+    <color name="notification_text_secondary">@color/vk_gray_500</color>
+    <color name="placeholder_icon_background_system_theme">@color/vk_white_alpha8</color>
+    <color name="splash_background">#1b1c1e</color>
+    <color name="vkworkout_widget_error_icon_color">@color/vk_gray_100</color>
+    <color name="vkworkout_widget_error_text_color">@color/vk_gray_500</color>
+    <color name="vkworkout_widget_skeleton_filler_color">@color/vk_gray_800</color>
+    <color name="vkworkout_widget_subtitle_color">@color/vk_gray_500</color>
+    <color name="vkworkout_widget_title_color">@color/vk_white</color>
+</resources>

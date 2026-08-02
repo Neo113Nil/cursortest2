@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="@style/VkUiTypography.Text"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/tv_qr_scanner_prompt"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_ui_qr_scanner_info"
+        android:singleLine="true"
+        android:drawablePadding="@dimen/camera_target_bottom_margin"
+        app:drawableTopCompat="@drawable/vk_qr_scanner"/>
+    <FrameLayout
+        android:id="@+id/qr_dynamic_corners_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include
+        android:id="@+id/qr_my_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/camera_my_qr_view"/>
+    <com.vk.core.view.components.segmented.control.VkSegmentedControl
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/qr_scanner_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="56dp"/>
+</merge>

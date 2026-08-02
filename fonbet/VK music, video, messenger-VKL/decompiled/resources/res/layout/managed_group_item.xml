@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@drawable/vkim_ripple_dark"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <com.vk.im.ui.views.dialogs.DialogItemView
+        android:id="@+id/managed_group_dialog_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        style="?attr/im_dialogs_item_style"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="end|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vk_icon_chevron_compact_right_24"
+        android:tint="?attr/vk_ui_icon_tertiary"
+        android:paddingEnd="18dp"
+        android:layout_marginStart="-8dp"/>
+</LinearLayout>

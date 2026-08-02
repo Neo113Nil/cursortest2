@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="28dp"
+    android:width="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_sticker_energy_sale_product_28__0_res_0x7f080591"
+        android:pathData="M14,14m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="M9.252,10.505a1.252,1.252 0,1 0,0 -2.505,1.252 1.252,0 0,0 0,2.505ZM9.252,12.505a3.252,3.252 0,1 0,0 -6.505,3.252 3.252,0 0,0 0,6.505ZM18.75,20a1.252,1.252 0,1 0,0 -2.505,1.252 1.252,0 0,0 0,2.505ZM18.75,22a3.252,3.252 0,1 0,0 -6.505,3.252 3.252,0 0,0 0,6.505ZM19.08,7.876a1.25,1.25 0,1 0,-2.168 -1.244L9.169,20.128a1.25,1.25 0,1 0,2.169 1.244L19.08,7.876Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="path_3"
+        android:fillColor="#fff"
+        android:pathData="M9.252,10.505a1.252,1.252 0,1 0,0 -2.505,1.252 1.252,0 0,0 0,2.505ZM9.252,12.505a3.252,3.252 0,1 0,0 -6.505,3.252 3.252,0 0,0 0,6.505ZM18.75,20a1.252,1.252 0,1 0,0 -2.505,1.252 1.252,0 0,0 0,2.505ZM18.75,22a3.252,3.252 0,1 0,0 -6.505,3.252 3.252,0 0,0 0,6.505ZM19.08,7.876a1.25,1.25 0,1 0,-2.168 -1.244L9.169,20.128a1.25,1.25 0,1 0,2.169 1.244L19.08,7.876Z"
+        android:fillType="evenOdd"/>
+</vector>

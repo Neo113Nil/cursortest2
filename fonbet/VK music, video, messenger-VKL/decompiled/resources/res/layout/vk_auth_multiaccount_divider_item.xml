@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/multi_account_divider_item"
+    android:background="?attr/vk_ui_separator_primary"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_marginBottom="7.5dp"
+    android:layout_marginStart="@dimen/vk_ui_base_padding_horizontal"
+    android:layout_marginEnd="@dimen/vk_ui_base_padding_horizontal"/>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/vk_bg_card_elevation_8_cropped_full"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/vk_icon_chain_outline_28"
+        android:importantForAccessibility="no"
+        app:tint="?attr/vk_ui_icon_accent"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/voip_add_room_to_call_title"
+        android:layout_marginHorizontal="16dp"
+        style="@style/VkLegacyTypography.Title2.Medium"/>
+    <EditText
+        android:id="@+id/insert_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:hint="@string/voip_add_room_to_call_link_hint"
+        android:maxLines="1"
+        android:inputType="textUri"
+        android:imeOptions="actionDone"
+        android:layout_marginHorizontal="16dp"
+        style="@style/VKUIEditText"/>
+    <TextView
+        android:id="@+id/continue_btn"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/voip_add_room_to_call_continue"
+        android:layout_marginHorizontal="16dp"
+        style="@style/VkLegacyButton.Primary.Big"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="16dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/logo"
+        android:layout_width="192dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/vk_icon_illustration_communities_120h"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center_horizontal"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/community_check_list_subscribe_vk_business_bottom_sheet_title"
+        style="@style/VkUiTypography.Title2Medium"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center_horizontal"
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/community_check_list_subscribe_vk_business_bottom_sheet_description"
+        style="@style/VkUiTypography.Subhead"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:id="@+id/go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/community_check_list_subscribe_vk_business_bottom_sheet_button"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="medium"/>
+</LinearLayout>

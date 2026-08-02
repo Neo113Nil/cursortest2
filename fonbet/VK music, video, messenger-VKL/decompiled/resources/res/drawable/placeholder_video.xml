@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/vk_black_blue24_alpha8"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item android:gravity="clip_vertical|center|clip_horizontal">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_ic_video_36"
+            android:tint="@color/vk_black_blue24_alpha24"/>
+    </item>
+</layer-list>

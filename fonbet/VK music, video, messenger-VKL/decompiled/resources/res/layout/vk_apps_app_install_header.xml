@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="32dp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/vk_apps_icon_cancel"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="center"
+        android:contentDescription="@string/vk_accessibility_close"
+        app:srcCompat="@drawable/vk_icon_cancel_16"
+        app:tint="@color/vk_white"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="@color/vk_white"
+        android:layout_gravity="center"
+        android:id="@+id/vk_apps_game_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/VkUiTypography.Caption1Medium"/>
+</FrameLayout>

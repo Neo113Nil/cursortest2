@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/music_selectable_bg_corner_4"
+    android:paddingBottom="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:id="@+id/avatar"
+        android:layout_width="@dimen/catalog_app_slider_content_item_width"
+        android:layout_height="@dimen/catalog_app_slider_content_item_width"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="6dp"
+        app:actualImageScaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderImage="@drawable/user_placeholder"
+        app:roundAsCircle="true"
+        app:roundingBorderColor="@color/vk_black_alpha8"
+        app:roundingBorderWidth="@dimen/catalog_border_width"/>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="@style/VkUiTypography.Caption1"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:maxLines="2"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

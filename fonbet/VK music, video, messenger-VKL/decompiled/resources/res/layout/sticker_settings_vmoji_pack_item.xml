@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vk_highlight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/photo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:actualImageScaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderImage="@drawable/sticker_placeholder"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/sticker_settings_vmoji_title"
+        android:layout_marginStart="12dp"
+        android:letterSpacing="0.01"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/more"
+        app:layout_constraintStart_toEndOf="@+id/photo"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/more"
+        android:background="@drawable/vk_highlight_circle"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:src="@drawable/vk_icon_more_vertical_16"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="?attr/vk_ui_icon_tertiary"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

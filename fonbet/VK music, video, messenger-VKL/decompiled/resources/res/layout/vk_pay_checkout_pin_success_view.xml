@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="16dp"
+    android:indeterminateTint="?attr/vk_legacy_overlay_status_icon">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/vk_pay_checkout_pin_success_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/vk_icon_done_outline_28"
+        app:tint="?attr/vk_legacy_overlay_status_icon"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/vk_pay_checkout_pin_success_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:lines="2"
+        style="@style/VkLegacyTypography.Subhead.Regular"/>
+</merge>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.content.design.view.photo.flow.PhotoFlowToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.vk.photos.root.photoflow.settings.presentation.view.PhotoFlowSettingsSkeletonView
+            android:id="@+id/albums_skeleton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.vk.photos.root.photoflow.settings.presentation.view.PhotoFlowSettingsRecyclerPaginatedView
+            android:id="@+id/albums_recycler"
+            android:visibility="gone"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            app:vk_errorFitCenter="true"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/online_composite_background">
+        <shape
+            android:gravity="center"
+            android:tint="?attr/vk_legacy_background_content"
+            android:shape="oval">
+            <size
+                android:height="26dp"
+                android:width="26dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:drawable="@drawable/vk_icon_cake_circle_fill_purple_20"/>
+</layer-list>

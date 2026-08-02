@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/music_selectable_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:paddingStart="@dimen/music_thumbs_offset"
+    android:paddingEnd="@dimen/music_thumbs_offset">
+    <ImageView
+        android:id="@+id/icon"
+        android:background="@drawable/bg_rounded_4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="center"
+        android:backgroundTint="?attr/vk_ui_background_secondary"
+        app:tint="?attr/vk_ui_icon_accent"/>
+    <TextView
+        android:textStyle="normal"
+        android:textColor="?attr/vk_ui_background_accent_themed"
+        android:gravity="center_vertical"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingStart="12dp"
+        style="@style/VkUiTypography.Headline1Normal"/>
+</LinearLayout>

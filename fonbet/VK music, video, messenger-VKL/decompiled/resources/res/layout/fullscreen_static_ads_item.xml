@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fullscreen_static_ads_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.ui.themes.VKReplacerView
+        android:id="@+id/fullscreen_static_ads_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ViewStub
+        android:id="@+id/fullscreen_static_ads_item_controls_stub"
+        android:inflatedId="@+id/fullscreen_static_ads_item_controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

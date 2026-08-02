@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/post_side_padding"
+    android:paddingEnd="@dimen/post_side_padding">
+    <TextView
+        android:enabled="false"
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/variants"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:gravity="start"
+        android:id="@+id/show_all_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/good_property_show_all"
+        app:buttonAppearance="accent"
+        app:buttonMode="tertiary"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:height="32dp"
+                android:width="32dp"/>
+            <solid android:color="@color/vk_azure_300"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_ic_ghost_20"
+            android:tint="@color/vk_white"/>
+    </item>
+</layer-list>

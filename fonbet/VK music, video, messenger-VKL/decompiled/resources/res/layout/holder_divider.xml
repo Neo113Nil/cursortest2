@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/divider"
+    android:background="?attr/vk_ui_separator_primary_alpha"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/newsfeed_separator_height"
+    android:layout_marginStart="@dimen/post_side_padding"
+    android:layout_marginEnd="@dimen/post_side_padding"/>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="275dp">
+    <com.vk.core.view.fresco.VKEnhancedImageView
+        android:id="@+id/gift_banner_image"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:scaleType="center"
+        android:layout_centerVertical="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/accessibility_close"
+        android:layout_marginStart="-12dp"
+        app:layout_constraintStart_toEndOf="@+id/gift_banner_image"
+        app:layout_constraintTop_toTopOf="@+id/gift_banner_image"
+        app:srcCompat="@drawable/vk_icon_dismiss_dark_24"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:id="@+id/gift_banner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-28dp"
+        android:singleLine="true"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="medium"
+        app:layout_constraintEnd_toEndOf="@+id/gift_banner_image"
+        app:layout_constraintStart_toStartOf="@+id/gift_banner_image"
+        app:layout_constraintTop_toBottomOf="@+id/gift_banner_image"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

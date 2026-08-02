@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="14sp"
+    android:textColor="?attr/vk_legacy_button_primary_foreground"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:background="@drawable/vkim_bg_dialog_bar_button_primary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="30dp"
+    android:maxLines="1"
+    android:includeFontPadding="false"
+    android:fontFamily="@string/font_family_medium"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"/>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="36dp"
+    android:width="66dp"
+    android:viewportWidth="66"
+    android:viewportHeight="36">
+    <group>
+        <clip-path android:pathData="M0 0H66V36H0V0Z"/>
+        <group
+            android:pivotX="33"
+            android:pivotY="18"
+            android:scaleX="1.32"
+            android:scaleY="2.431"
+            android:rotation="39.732"
+            android:translateX="0.344"
+            android:translateY="-0.268">
+            <path
+                android:fillColor="@drawable/_one_video_shimmer__0_res_0x7f08017c"
+                android:pathData="M0 0V36H66V0"/>
+        </group>
+    </group>
+</vector>

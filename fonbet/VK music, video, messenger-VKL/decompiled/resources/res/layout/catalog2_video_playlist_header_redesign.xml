@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.NonBouncedAppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_playlist_app_bar_layout"
+    android:visibility="gone"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:expanded="false"
+    app:layout_behavior="com.google.android.material.appbar.NonBounceAppBarBlockableBehavior">
+    <com.google.android.material.appbar.NonBouncedCollapsingToolbarLayout
+        android:id="@+id/collapsing_layout"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentScrim="?attr/vk_ui_header_background"
+        app:layout_scrollFlags="snap|exitUntilCollapsed|scroll"
+        app:statusBarScrim="@android:color/transparent"
+        app:titleEnabled="false"
+        app:toolbarId="@+id/video_playlist_toolbar_container">
+        <FrameLayout
+            android:id="@+id/video_playlist_toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"/>
+    </com.google.android.material.appbar.NonBouncedCollapsingToolbarLayout>
+</com.google.android.material.appbar.NonBouncedAppBarLayout>

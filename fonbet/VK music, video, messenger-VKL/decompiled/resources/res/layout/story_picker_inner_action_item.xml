@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.attachpicker.widget.AspectRatioLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?attr/vk_ui_field_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_action_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:srcCompat="@drawable/vk_icon_camera_outline_56"
+        app:tint="?attr/vk_ui_icon_accent_themed"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_accent_themed"
+        android:layout_gravity="center"
+        android:id="@+id/tv_action_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        style="@style/VkUiTypography.Footnote"/>
+</com.vk.attachpicker.widget.AspectRatioLinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:background="@drawable/ds_selected_preview_bg"
+    android:layout_width="match_parent"
+    android:layout_height="68dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/preview_images_recycler_view"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:overScrollMode="never"
+        android:paddingStart="@dimen/vk_ui_spacing_size_xl"
+        android:layout_marginEnd="64dp"
+        android:paddingVertical="@dimen/vk_ui_spacing_size_xl"/>
+    <View
+        android:layout_gravity="end"
+        android:id="@+id/right_shadow"
+        android:background="@drawable/ds_preview_shadow"
+        android:layout_width="44dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="64dp"/>
+    <com.vk.core.view.components.button.VkButton
+        android:layout_gravity="end"
+        android:id="@+id/next_action_button"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:contentDescription="@string/ds_next_action_content_description"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_xl"
+        android:layout_marginVertical="@dimen/vk_ui_spacing_size_xl"
+        app:buttonAppearance="neutral"
+        app:buttonMode="primary"
+        app:buttonSizeType="large"
+        app:icon="@drawable/vk_icon_arrow_right_outline_24"/>
+</FrameLayout>

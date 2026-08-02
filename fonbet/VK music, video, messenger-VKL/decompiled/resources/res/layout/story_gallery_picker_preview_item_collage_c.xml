@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/story_gallery_picker_preview_background_new"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:paddingHorizontal="@dimen/vk_ui_base_padding_vertical"
+    android:paddingVertical="@dimen/vk_ui_base_padding_horizontal">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/button_collage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vk_ui_spacing_size2_xl"
+        app:buttonAppearance="neutral"
+        app:buttonMode="primary"
+        app:buttonSizeType="large"
+        app:icon="@drawable/vk_icon_screen_grid_tile_outline_28"
+        app:layout_constraintBottom_toTopOf="@+id/button_editor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="@string/story_picker_add_to_collage"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/button_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:buttonAppearance="accent"
+        app:buttonMode="secondary"
+        app:buttonSizeType="large"
+        app:icon="@drawable/vk_icon_cards_2_outline_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</LinearLayout>

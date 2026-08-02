@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.VKTabLayout
+        android:id="@+id/vkim_tabs"
+        android:background="?attr/vk_legacy_header_background"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toTopOf="@+id/vkim_theme_recycler_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicator="?attr/tabBarIndicator"
+        app:tabIndicatorColor="?attr/vk_legacy_header_tint"
+        app:tabIndicatorFullWidth="true"
+        app:tabPaddingBottom="14dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="20dp"
+        app:tabSelectedTextColor="?attr/vk_legacy_header_tab_active_text"
+        app:tabTextAppearance="@style/TabBarTheme.TabTextAppearance"
+        app:tabTextColor="?attr/vk_legacy_header_tab_inactive_text"
+        style="?attr/tabBarTheme"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/vkim_theme_recycler_view"
+        android:padding="6dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="92dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vkim_tabs"
+        app:layout_constraintVertical_bias="1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

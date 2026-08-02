@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.components.picture.VkImage
+            android:layout_gravity="center_vertical"
+            android:id="@+id/audio_custom_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            app:roundedCornerRadius="6dp"/>
+        <com.vk.core.view.components.picture.VkImage
+            android:id="@+id/audio_playing_indicator"
+            android:background="@drawable/music_dark_round_rect_6dp"
+            android:visibility="gone"
+            android:layout_width="64dp"
+            android:layout_height="64dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp">
+        <com.vk.core.view.components.text.VkText
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="end"
+            android:id="@+id/audio_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            style="@style/VkUiTypography.Headline1Normal"/>
+        <com.vk.core.view.components.text.VkText
+            android:textColor="?attr/vk_ui_text_secondary"
+            android:id="@+id/audio_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="16dp"
+            style="@style/VkUiTypography.Footnote"/>
+    </LinearLayout>
+</merge>

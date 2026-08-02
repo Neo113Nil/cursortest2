@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.DisplayTitle2"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_album_name"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="12dp"
+        android:lineSpacingMultiplier="0"
+        android:importantForAccessibility="yes"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.vk.photos.root.albumdetails.presentation.views.AlbumDetailsDescriptionView
+        android:gravity="center"
+        android:id="@+id/tv_album_description"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="20sp"
+        android:lineSpacingMultiplier="0"
+        android:importantForAccessibility="yes"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/PhotosRoot.AlbumDescriptionTextStyle"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+</LinearLayout>

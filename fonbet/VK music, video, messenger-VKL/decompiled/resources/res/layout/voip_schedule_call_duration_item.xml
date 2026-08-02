@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?attr/vk_ui_text_accent"
+    android:id="@+id/tv_duration"
+    android:background="@drawable/voip_scheduled_call_duration_button_selected_background"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:includeFontPadding="false"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:letterSpacing="0.01"
+    style="@style/VkLegacyTypography.Subhead1.Medium"/>

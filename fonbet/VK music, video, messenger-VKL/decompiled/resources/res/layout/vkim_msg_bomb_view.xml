@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_modal_background_with_round_corner"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:minWidth="26dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/bomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bomb_outline_12"
+        android:contentDescription="@string/accessibility_disappearing_icon"/>
+    <TextView
+        android:textAppearance="@style/VkIm.MsgPart.Time.TextContrast"
+        android:textSize="11dp"
+        android:textColor="@color/vk_red"
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:contentDescription="@string/accessibility_disappearing_timer"/>
+</FrameLayout>

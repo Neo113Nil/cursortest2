@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="76dp">
+    <com.google.android.material.textview.MaterialTextView
+        android:textSize="15sp"
+        android:textColor="?attr/vk_ui_text_subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="@string/photo_flow_setting_public_header"
+        android:maxLines="2"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="2sp"
+        android:translationY="-1.21sp"
+        android:fontFamily="@font/vk_roboto_regular"
+        android:letterSpacing="0.01"
+        app:lineHeight="20sp"/>
+</FrameLayout>

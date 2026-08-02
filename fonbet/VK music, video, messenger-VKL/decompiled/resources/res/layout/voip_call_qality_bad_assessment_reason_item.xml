@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="?attr/selectableItemBackground"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <TextView
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:layout_weight="1"
+        android:lineSpacingExtra="5sp"
+        android:fontFamily="@string/font_family_regular"
+        android:layout_marginEnd="16dp"
+        android:letterSpacing="0.01"/>
+    <ImageView
+        android:id="@+id/check_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vk_icon_done_24"
+        app:tint="?attr/vk_ui_icon_accent"/>
+</LinearLayout>

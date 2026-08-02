@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_list_selector"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:id="@+id/collection_item_link_photo"
+        android:src="@drawable/vk_icon_deprecated_ic_att_link_48dp"
+        app:tint="@color/vk_blue_300"
+        style="@style/UserSmallPhoto"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.HeadlineNormal.Unscaled"
+            android:textColor="?attr/vk_ui_text_muted"
+            android:ellipsize="marquee"
+            android:id="@+id/collection_item_link_title"
+            android:duplicateParentState="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_link"
+            android:singleLine="true"
+            android:drawablePadding="10dp"
+            android:layout_marginEnd="16dp"/>
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.Subhead"
+            android:textColor="?attr/vk_ui_text_secondary"
+            android:ellipsize="marquee"
+            android:id="@+id/collection_item_link_subtitle"
+            android:duplicateParentState="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="12dp"
+            android:singleLine="true"
+            android:drawablePadding="10dp"/>
+    </LinearLayout>
+</LinearLayout>

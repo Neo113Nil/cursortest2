@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/bls_container"
+    android:background="@drawable/my_target_survey_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginHorizontal="8dp">
+    <com.vk.core.view.components.placeholder.main.VkPlaceholder
+        android:layout_gravity="center"
+        android:id="@+id/finished_placeholder"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.vk.feed.design.view.newsfeed.ads_mytarget.bls.MyTargetAdSurveyPageView
+        android:id="@+id/page_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.vk.feed.design.view.newsfeed.ads_mytarget.bls.MyTargetAdSurveyFadeView
+        android:layout_gravity="bottom"
+        android:id="@+id/fade_container"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginHorizontal="1dp"/>
+</FrameLayout>

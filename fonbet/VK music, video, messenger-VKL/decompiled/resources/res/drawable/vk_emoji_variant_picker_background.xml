@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?attr/vk_ui_background_modal"/>
+    <corners android:radius="12dp"/>
+    <padding
+        android:left="@dimen/vk_emoji_variants_picker_view_padding"
+        android:top="@dimen/vk_emoji_variants_picker_view_padding"
+        android:right="@dimen/vk_emoji_variants_picker_view_padding"
+        android:bottom="@dimen/vk_emoji_variants_picker_view_padding"/>
+</shape>

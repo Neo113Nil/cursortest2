@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_focused="true"
+        android:color="?attr/vk_ui_text_accent"/>
+    <item
+        android:state_focused="false"
+        android:color="?attr/vk_ui_field_border_alpha"/>
+</selector>

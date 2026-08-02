@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/liveRecommendedBacker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/liveRecommendedHolder"
+        android:background="@drawable/bg_live_recommended_bottom"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.vk.libvideo.live.impl.views.gifts.LiveBottomSheetBehavior">
+        <View
+            android:background="@drawable/bg_live_recommended_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"/>
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.Headline1.Unscaled"
+            android:textColor="@color/vk_white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/live_recommendations"/>
+        <com.vk.libvideo.design.view.recommended.RecommendedView
+            android:id="@+id/liveRecommendedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"/>
+    </FrameLayout>
+</merge>

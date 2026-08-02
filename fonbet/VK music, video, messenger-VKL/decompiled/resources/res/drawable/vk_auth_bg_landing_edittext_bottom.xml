@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-0.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/vk_ui_field_background"/>
+            <corners
+                android:bottomLeftRadius="8dp"
+                android:bottomRightRadius="8dp"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="?attr/vk_ui_field_border_alpha"/>
+        </shape>
+    </item>
+</layer-list>

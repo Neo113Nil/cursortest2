@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/vkui_bg_button_white"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vkim_bot_button_min_height"
+    android:layout_margin="@dimen/vkim_bot_button_margin">
+    <com.vk.core.view.TintTextView
+        android:textSize="16dp"
+        android:textColor="?attr/vk_legacy_text_muted"
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:id="@+id/vkim_bot_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:singleLine="true"
+        android:includeFontPadding="false"
+        android:drawablePadding="8dp"
+        app:drawableTint="?attr/vk_legacy_accent"/>
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/vkim_ic_link"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_margin="1dp"
+        app:srcCompat="@drawable/vk_icon_link_24"
+        app:tint="?attr/vk_legacy_text_muted"/>
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/vkim_progress_bar"
+        android:visibility="gone"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:indeterminateTint="?attr/vk_legacy_activity_indicator_tint"/>
+</FrameLayout>

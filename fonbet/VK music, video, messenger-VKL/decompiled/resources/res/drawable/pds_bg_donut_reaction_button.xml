@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/vk_ui_vkontakte_background_hover_alpha">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/vk_ui_background_warning"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/post_side_padding"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium"
+        android:textColor="@color/vk_blue_400"
+        android:gravity="start|center_vertical"
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48dp"
+        android:layout_marginStart="@dimen/community_text_offset"
+        android:layout_marginEnd="16dp"/>
+</FrameLayout>

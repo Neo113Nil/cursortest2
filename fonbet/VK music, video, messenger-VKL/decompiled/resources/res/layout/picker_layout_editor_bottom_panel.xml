@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/fl_center_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/picker_bottom_button_height"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp">
+        <TextView
+            android:textAppearance="@style/VkUiTypography.ParagraphMedium"
+            android:textColor="?attr/vk_ui_text_muted"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_gravity="start|bottom"
+        android:id="@+id/iv_cancel"
+        android:background="@drawable/white_ripple_unbounded"
+        android:layout_width="@dimen/picker_bottom_button_height"
+        android:layout_height="@dimen/picker_bottom_button_height"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/accessibility_close"
+        app:srcCompat="@drawable/vk_icon_cancel_24"
+        app:tint="?attr/vk_ui_icon_medium"/>
+    <ImageView
+        android:layout_gravity="end|bottom"
+        android:id="@+id/iv_apply"
+        android:background="@drawable/white_ripple_unbounded"
+        android:layout_width="@dimen/picker_bottom_button_height"
+        android:layout_height="@dimen/picker_bottom_button_height"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/picker_done"
+        app:srcCompat="@drawable/vk_icon_done_24"
+        app:tint="?attr/vk_ui_icon_medium"/>
+    <View
+        android:id="@+id/divider"
+        android:background="?attr/vk_ui_separator_primary_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+</merge>

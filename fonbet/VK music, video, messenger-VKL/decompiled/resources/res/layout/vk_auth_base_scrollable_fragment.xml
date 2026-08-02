@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/coordinator_layout_background_image"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/base_auth_scrollable_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ViewStub
+            android:id="@+id/base_auth_content_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar_layout"
+        android:background="?attr/vk_ui_background_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/VKAppBar">
+        <com.vk.superapp.ui.toolbar.VkAuthToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationContentDescription="@string/vk_auth_accessibility_close"
+            app:navigationIcon="@drawable/vk_icon_arrow_left_outline_28"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.vk.core.view.AppBarShadowView
+        android:id="@+id/appbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

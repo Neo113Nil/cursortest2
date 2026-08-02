@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="100dp"
+    android:width="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="100">
+    <group>
+        <clip-path android:pathData="M0,0h120v100H0z"/>
+        <path
+            android:name="path_1"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__0_res_0x7f080480"
+            android:pathData="m13.938,131.187 l42.767,16.433c6.525,2.507 13.846,-0.75 16.353,-7.275L113.18,35.919c2.507,-6.525 -0.75,-13.846 -7.274,-16.353L63.139,3.134c-6.524,-2.507 -13.845,0.75 -16.352,7.274L6.663,114.835c-2.507,6.524 0.75,13.845 7.275,16.352Z"/>
+        <path
+            android:name="path_2"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__1_res_0x7f080481"
+            android:pathData="m9.388,129.435 l42.768,16.433c6.525,2.507 13.846,-0.75 16.352,-7.275l40.124,-104.426c2.507,-6.525 -0.75,-13.846 -7.274,-16.353L58.59,1.382c-6.524,-2.507 -13.846,0.75 -16.352,7.274L2.114,113.083c-2.507,6.524 0.75,13.845 7.274,16.352Z"/>
+        <path
+            android:name="path_3"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__2_res_0x7f08048c"
+            android:pathData="m10.823,126.057 l42.243,16.231a8.384,8.384 0,0 0,10.834 -4.82l40.225,-104.69a8.385,8.385 0,0 0,-4.82 -10.834L57.063,5.714a8.384,8.384 0,0 0,-10.834 4.819L6.004,115.223a8.385,8.385 0,0 0,4.82 10.834Z"/>
+        <path
+            android:name="path_4"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__3_res_0x7f08048d"
+            android:pathData="m57.67,4.965 l41.244,15.84c4.712,1.814 7.062,7.1 5.257,11.813l-34.245,89.138 -29.253,-98.025 5.193,-13.509c1.813,-4.712 7.1,-7.062 11.813,-5.257h-0.008Z"/>
+        <path
+            android:name="path_5"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__4_res_0x7f08048e"
+            android:pathData="m69.632,19.134 l10.916,4.194a2.231,2.231 0,0 0,2.884 -1.283l0.131,-0.342a2.231,2.231 0,0 0,-1.283 -2.883l-10.916,-4.194a2.231,2.231 0,0 0,-2.883 1.282l-0.131,0.342a2.231,2.231 0,0 0,1.282 2.884Z"/>
+        <path
+            android:name="path_6"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__5_res_0x7f08048f"
+            android:pathData="M44.369,104.29a5.676,5.676 0,1 0,0.807 -11.323,5.676 5.676,0 0,0 -0.807,11.323Z"/>
+        <path
+            android:name="path_7"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__6_res_0x7f080490"
+            android:pathData="M51.968,41.91a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_8"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__7_res_0x7f080491"
+            android:pathData="M66.137,47.352a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_9"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__8_res_0x7f080492"
+            android:pathData="M80.306,52.796a5.358,5.358 0,1 0,0.762 -10.69,5.358 5.358,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_10"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__9_res_0x7f080493"
+            android:pathData="M46.554,56.007a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_11"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__10_res_0x7f080482"
+            android:pathData="M60.723,61.45a5.358,5.358 0,1 0,0.762 -10.69,5.358 5.358,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_12"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__11_res_0x7f080483"
+            android:pathData="M74.892,66.894a5.358,5.358 0,1 0,0.762 -10.69,5.358 5.358,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_13"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__12_res_0x7f080484"
+            android:pathData="M41.14,70.104a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_14"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__13_res_0x7f080485"
+            android:pathData="M55.309,75.548a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_15"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__14_res_0x7f080486"
+            android:pathData="M69.478,80.991a5.358,5.358 0,1 0,0.762 -10.69,5.358 5.358,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_16"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__15_res_0x7f080487"
+            android:pathData="M35.726,84.202a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_17"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__16_res_0x7f080488"
+            android:pathData="M49.896,89.637a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_18"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__17_res_0x7f080489"
+            android:pathData="M64.065,95.08a5.359,5.359 0,1 0,0.762 -10.69,5.359 5.359,0 0,0 -0.762,10.69Z"/>
+        <path
+            android:name="path_19"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__18_res_0x7f08048a"
+            android:pathData="m59.93,11.14 l-4.37,-1.68a1.116,1.116 0,0 0,-1.442 0.642l-0.067,0.175c-0.221,0.575 0.066,1.22 0.641,1.442l4.371,1.68a1.116,1.116 0,0 0,1.442 -0.642l0.067,-0.175a1.116,1.116 0,0 0,-0.641 -1.442Z"/>
+        <path
+            android:name="path_20"
+            android:fillColor="@drawable/_vk_icon_illustration_phone_actual_number_100h__19_res_0x7f08048b"
+            android:pathData="m98.717,26.053 l-4.371,-1.68a1.116,1.116 0,0 0,-1.442 0.642l-0.067,0.175c-0.221,0.575 0.066,1.22 0.641,1.442l4.371,1.68a1.116,1.116 0,0 0,1.442 -0.642l0.067,-0.175a1.116,1.116 0,0 0,-0.641 -1.442Z"/>
+    </group>
+</vector>

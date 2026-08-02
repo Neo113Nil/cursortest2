@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.im.ui.views.msg.MsgPartTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="@dimen/vkim_msg_part_text_body"
+    android:textStyle="normal"
+    android:textColor="?attr/vk_legacy_text_primary"
+    android:textColorLink="?attr/vk_legacy_link_alternate"
+    android:gravity="top|left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:lineSpacingExtra="2sp"
+    android:importantForAccessibility="no"
+    android:fontFamily="@string/font_family_regular"
+    app:vkim_timeSpaceX="8dp"
+    app:vkim_timeSpaceY="5dp"
+    app:vkim_timeText=""
+    app:vkim_timeTextAppearance="@style/VkIm.MsgPart.Time.TextSimple"/>

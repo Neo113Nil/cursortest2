@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.ui.VKToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="noScroll"
+        app:navigationContentDescription="@string/accessibility_toolbar_back"
+        app:navigationIcon="@drawable/vk_icon_back_24"
+        app:popupTheme="?attr/actionBarPopupTheme"
+        app:theme="?attr/actionBarTheme"
+        style="@style/VkIm.Toolbar.Style.LargeWithBack">
+        <TextView
+            android:id="@+id/voip_schedule_call_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/voip_scheduled_call_settings_item_title"
+            style="@style/ToolbarTitle"/>
+    </com.vk.core.ui.VKToolbar>
+    <View
+        android:layout_gravity="bottom"
+        android:background="?attr/vk_ui_separator_primary"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="16dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/voip_scheduled_call_settings_recycler"
+        android:paddingBottom="16dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@+id/vertical_text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="30dp"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/horizontal_text_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="24dp"/>
+    <ImageView
+        android:id="@+id/attach_icon"
+        android:layout_width="@dimen/camera_icon_size"
+        android:layout_height="@dimen/camera_icon_size"
+        android:src="@drawable/vk_icon_attach_outline_large_48"
+        android:scaleType="center"
+        android:contentDescription="@string/story_accessibility_add_attachments"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textColor="@color/vk_black"
+        android:ellipsize="none"
+        android:gravity="center"
+        android:id="@+id/attach_icon_counter"
+        android:background="@drawable/attach_with_count_text_selector"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="18dp"
+        android:minHeight="18dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_text_guideline"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/vertical_text_guideline"
+        style="@style/VkUiTypography.Subhead"/>
+</merge>

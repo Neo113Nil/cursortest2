@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/video_about_similar_videos_title"
+        style="@style/VkUiTypography.Headline1"/>
+</FrameLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.catalog2.common.ui.core.design.tools.view.BannersFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="108dp"
+    app:maxWidth="@dimen/match_parent"
+    app:widthPadding="20dp">
+    <com.vk.core.view.components.banner.VkBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.vk.catalog2.common.ui.core.design.tools.view.BannersFrameLayout>

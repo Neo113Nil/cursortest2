@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical">
+    <com.vk.superapp.ui.VkTextFieldView
+        android:id="@+id/bind_card_number_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:vk_caption="@string/vk_pay_checkout_bind_card_enter_card_number_caption"
+        app:vk_hint="@string/vk_pay_checkout_bind_card_enter_card_number_hint"
+        app:vk_ime_options="actionNext"
+        app:vk_input_type="number|text"
+        app:vk_nextFocusForward="@+id/bind_card_expiration_date_view"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <com.vk.superapp.ui.VkTextFieldView
+            android:id="@+id/bind_card_expiration_date_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:vk_caption="@string/vk_pay_checkout_bind_card_expiration_date_caption"
+            app:vk_hint="@string/vk_pay_checkout_bind_card_expiration_date_hint"
+            app:vk_ime_options="actionNext"
+            app:vk_input_type="number|text"
+            app:vk_max_length="5"
+            app:vk_nextFocusForward="@+id/bind_card_cvc_view"/>
+        <com.vk.superapp.ui.VkTextFieldView
+            android:id="@+id/bind_card_cvc_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            app:vk_caption="@string/vk_pay_checkout_bind_card_cvc_caption"
+            app:vk_hint="@string/vk_pay_checkout_bind_card_cvc_hint"
+            app:vk_ime_options="actionDone"
+            app:vk_input_type="numberPassword"
+            app:vk_max_length="3"
+            app:vk_right_icon="@drawable/vk_icon_info_24"
+            app:vk_right_icon_padding="10dp"
+            app:vk_right_icon_tint="?attr/vk_legacy_text_placeholder"/>
+    </LinearLayout>
+</merge>

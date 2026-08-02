@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_discover_grid_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/discover_grid_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:actualImageScaleType="centerCrop"/>
+</merge>

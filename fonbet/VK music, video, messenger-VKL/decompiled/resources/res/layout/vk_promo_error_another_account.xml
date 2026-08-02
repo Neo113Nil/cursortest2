@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Title2Medium"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_promo_ok_has_link"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.TextNormal"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/vk_promo_ok_has_link_description"/>
+    <Button
+        android:textAppearance="@style/VkUiTypography.Headline2"
+        android:textColor="?attr/vk_ui_text_accent_themed"
+        android:layout_gravity="end"
+        android:id="@+id/positive_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/close"
+        style="@style/VKID.View.Button.Tertiary"/>
+</LinearLayout>

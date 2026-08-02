@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.feed.design.view.newsfeed.ads_mytarget.MyTargetAdHideReasonsView
+        android:id="@+id/hide_reasons_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.feed.design.view.newsfeed.header.VkFeedPostHeaderView
+            android:id="@+id/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:paddingHorizontal="@dimen/post_side_padding_small"/>
+        <FrameLayout
+            android:id="@+id/video_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:id="@+id/cta_button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.vk.feed.design.view.newsfeed.ads_mytarget.MyTargetAdDescriptionView
+            android:id="@+id/description_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

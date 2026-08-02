@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.TintTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="?attr/vk_ui_text_secondary"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:text="@string/clips_privacy_more"
+    android:drawablePadding="16dp"
+    android:paddingHorizontal="16dp"
+    app:drawableStartCompat="@drawable/vk_icon_chevron_down_outline_28"
+    app:drawableStartTint="?attr/vk_ui_text_secondary"
+    style="@style/VkUiTypography.Headline1Normal"/>

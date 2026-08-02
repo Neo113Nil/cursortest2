@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/vk_corner_background_16"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:layout_marginBottom="8dp">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/vk_exchange_user_avatar"
+        android:background="@drawable/vk_exchange_circle_background"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/vk_icon_add_outline_28"
+        app:tint="?attr/vk_ui_icon_accent"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/container"
+        android:padding="12dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <TextView
+            android:textColor="?attr/vk_ui_accent_blue"
+            android:gravity="center_vertical"
+            android:id="@+id/vk_exchange_new_user_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vk_auth_use_another_account"
+            style="@style/VkUiTypography.Headline1Normal"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/sticker_nav_image"
+        android:background="@drawable/sticker_tab"
+        android:padding="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerInside"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/sticker_popup_badge"
+        android:visibility="gone"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/vk_icon_play_circle_fill_gray_16"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/sticker_nav_new_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_stickers_new_style_badge_large"
+        android:layout_marginEnd="10dp"/>
+</FrameLayout>

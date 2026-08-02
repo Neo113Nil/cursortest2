@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_suggest"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:paddingStart="@dimen/sticker_suggest_horizontal_padding"
+    android:paddingEnd="@dimen/sticker_suggest_horizontal_padding"
+    android:layout_marginEnd="4dp">
+    <TextView
+        android:textSize="15sp"
+        android:textColor="@color/vk_white"
+        android:id="@+id/word"
+        android:paddingTop="3dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/vk_roboto_medium"
+        android:paddingEnd="28dp"
+        android:letterSpacing="0.01"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/remove"
+        android:background="@drawable/vk_highlight_circle"
+        android:paddingTop="4dp"
+        android:paddingBottom="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vk_icon_cancel_20"
+        android:importantForAccessibility="no"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:tint="@color/vk_white"/>
+</FrameLayout>

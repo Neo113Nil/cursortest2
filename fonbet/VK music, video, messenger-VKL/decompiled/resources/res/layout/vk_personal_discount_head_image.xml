@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/personal_discount_new_confetti_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_discount_new_user_avatar_view"
+        app:layout_constraintEnd_toEndOf="@+id/personal_discount_new_user_avatar_view"
+        app:layout_constraintStart_toStartOf="@+id/personal_discount_new_user_avatar_view"
+        app:layout_constraintTop_toTopOf="@+id/personal_discount_new_user_avatar_view"
+        app:srcCompat="@drawable/vk_icon_illustration_donut_confetti_64h"/>
+    <com.vk.core.ui.themes.VKReplacerView
+        android:id="@+id/personal_discount_new_user_avatar_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/personal_discount_new_badge_view"
+        android:padding="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="-2dp"
+        android:contentDescription="@null"
+        android:layout_marginEnd="-2dp"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/personal_discount_new_user_avatar_view"
+        app:layout_constraintEnd_toEndOf="@+id/personal_discount_new_user_avatar_view"
+        app:srcCompat="@drawable/vk_icon_gift_circle_fill_yellow_20"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

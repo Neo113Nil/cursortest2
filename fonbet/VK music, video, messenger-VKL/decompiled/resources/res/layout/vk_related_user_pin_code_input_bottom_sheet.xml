@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/related_user_pin_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_ic_logo_vkid_composite"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_illustration_confirmation_password_correct_120h"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/related_user_pin_enter_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/VkUiTypography.Title2SemiBold"/>
+    <com.vk.auth.verification.base.ui.VkCheckEditText
+        android:id="@+id/related_user_pin_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"/>
+    <Button
+        android:id="@+id/related_user_pin_button_dont_remember_pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:stateListAnimator="@null"
+        android:layout_marginHorizontal="16dp"
+        style="@style/VkLegacyButton.Tertiary.Big"/>
+</LinearLayout>

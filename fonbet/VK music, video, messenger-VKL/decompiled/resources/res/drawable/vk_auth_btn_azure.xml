@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple android:color="?attr/vk_ui_text_contrast_themed">
+            <item>
+                <shape>
+                    <solid android:color="@color/vk_azure_A100"/>
+                    <corners android:radius="@dimen/vk_button_corner_big_radius"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="?attr/vk_legacy_button_primary_background_disabled"/>
+            <corners android:radius="@dimen/vk_button_corner_big_radius"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/error_layout"
+    android:background="?attr/vk_ui_background_content"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/rlottie_view_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/vk_catalog_network_error_description"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:srcCompat="@drawable/vk_icon_illustration_antenna_light_56"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center"
+        android:id="@+id/error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/vk_common_network_error_redesign"
+        style="@style/VkUiTypography.Headline1Normal"/>
+    <TextView
+        android:textSize="15sp"
+        android:textColor="?attr/vk_ui_text_accent_themed"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/error_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/vk_common_retry_redesign"
+        android:paddingHorizontal="12dp"
+        app:fontFamily="@font/vk_roboto_medium"
+        style="@style/VkLegacyButton.Tertiary"/>
+</LinearLayout>

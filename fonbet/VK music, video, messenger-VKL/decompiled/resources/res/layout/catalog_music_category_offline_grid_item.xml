@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/catalog_link_music_category_margin">
+    <include
+        android:id="@+id/container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/catalog_music_category_grid_item"/>
+    <com.vk.core.view.components.badge.VkContentBadge
+        android:id="@+id/music_badge_new"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-3dp"
+        android:layout_marginStart="12dp"
+        android:elevation="@dimen/catalog_link_music_category_elevation"
+        app:contentBadgeMode="primary"
+        app:contentBadgeSize="medium"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="parent"
+        app:text="@string/music_new_badge"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

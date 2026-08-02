@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="?attr/vk_ui_header_background"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/ic_cancel_black"
+        app:title="@string/avp_pick_photo_title"
+        app:titleTextColor="?attr/vk_ui_text_primary"/>
+    <com.vk.photogallery.PhotoGalleryView
+        android:id="@+id/gallery_view"
+        android:background="?attr/vk_ui_background_content"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:accentColor="?attr/vk_ui_text_accent"
+        app:galleryProviderClasses="com.vk.photogallery.LocalPhotoGalleryProvider"
+        app:itemPadding="3dp"/>
+</FrameLayout>

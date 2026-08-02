@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="?attr/vk_ui_vkontakte_color_tabbar_background"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/logo_max_x_sferum_80"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="start"
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_msg_write_disabled_moved_to_max"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"/>
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/chevron"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/vk_icon_chevron_right_20"
+        android:tint="?attr/vk_ui_icon_accent_themed"/>
+</LinearLayout>

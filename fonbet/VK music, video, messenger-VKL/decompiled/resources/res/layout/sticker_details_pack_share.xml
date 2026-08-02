@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="4dp"
+    android:paddingEnd="16dp">
+    <com.vk.core.view.TintTextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/share"
+        android:background="@drawable/highlight"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stickers_pack_share"
+        android:drawablePadding="4dp"
+        app:drawableStartCompat="@drawable/vk_icon_share_outline_24"
+        app:drawableTint="?attr/vk_ui_icon_secondary"/>
+    <com.vk.core.view.links.LinkedTextView
+        android:textAppearance="@style/VkUiTypography.Footnote"
+        android:textColor="?attr/vk_ui_text_tertiary"
+        android:gravity="end"
+        android:linksClickable="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/copyrights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

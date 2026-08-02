@@ -1,0 +1,15 @@
+package xsna;
+
+import androidx.fragment.app.Fragment;
+import com.vk.clips.favorites.impl.ui.folders.list.ClipsFavoriteFoldersListFragment;
+
+/* compiled from: ClipsFavoriteFoldersListFragmentClassHolder.kt */
+/* loaded from: classes.dex */
+public final class t3e extends fqa {
+    public final Class<? extends Fragment> c = ClipsFavoriteFoldersListFragment.class;
+
+    @Override // xsna.fqa
+    public final Class<? extends Fragment> f() {
+        return this.c;
+    }
+}

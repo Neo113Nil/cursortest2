@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.text.links.VkLinkedText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?attr/vk_ui_text_primary"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:maxLines="6"
+    android:paddingHorizontal="@dimen/vk_ui_base_padding_horizontal"
+    android:paddingVertical="@dimen/vk_ui_spacing_size_m"
+    style="@style/VkUiTypography.Paragraph"/>

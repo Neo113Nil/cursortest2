@@ -1,0 +1,40 @@
+package com.vk.stat.scheme;
+
+import com.vk.stat.scheme.SchemeStat$TypeClick;
+import xsna.epx;
+import xsna.pmi0;
+
+/* compiled from: MobileOfficialAppsFeedStat.kt */
+/* loaded from: classes5.dex */
+public final class MobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist implements SchemeStat$TypeClick.b {
+
+    @pmi0("audio_item")
+    private final MobileOfficialAppsFeedStat$FeedPostAudioItem audioItem;
+
+    @pmi0("autoplay_mode")
+    private final MobileOfficialAppsFeedStat$FeedPostAudioPlayMode autoplayMode;
+
+    public MobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist(MobileOfficialAppsFeedStat$FeedPostAudioPlayMode mobileOfficialAppsFeedStat$FeedPostAudioPlayMode, MobileOfficialAppsFeedStat$FeedPostAudioItem mobileOfficialAppsFeedStat$FeedPostAudioItem) {
+        this.autoplayMode = mobileOfficialAppsFeedStat$FeedPostAudioPlayMode;
+        this.audioItem = mobileOfficialAppsFeedStat$FeedPostAudioItem;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof MobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist)) {
+            return false;
+        }
+        MobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist mobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist = (MobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist) obj;
+        return this.autoplayMode == mobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist.autoplayMode && epx.f(this.audioItem, mobileOfficialAppsFeedStat$TypeFeedPostAddedPlaylist.audioItem);
+    }
+
+    public final int hashCode() {
+        return this.audioItem.hashCode() + (this.autoplayMode.hashCode() * 31);
+    }
+
+    public final String toString() {
+        return "TypeFeedPostAddedPlaylist(autoplayMode=" + this.autoplayMode + ", audioItem=" + this.audioItem + ')';
+    }
+}

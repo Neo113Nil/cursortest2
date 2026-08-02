@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="144dp">
+    <com.vk.core.ui.themes.VKReplacerView
+        android:layout_gravity="start|top"
+        android:id="@+id/icon"
+        android:background="@drawable/vk_expandable_menu_bg_stub_16"
+        android:layout_width="@dimen/vk_app_banner_carousel_item_image_size"
+        android:layout_height="@dimen/vk_app_banner_carousel_item_image_size"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            style="@style/VkUiTypography.Headline1"/>
+        <TextView
+            android:ellipsize="end"
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            style="@style/VkUiTypography.Footnote"/>
+    </LinearLayout>
+</FrameLayout>

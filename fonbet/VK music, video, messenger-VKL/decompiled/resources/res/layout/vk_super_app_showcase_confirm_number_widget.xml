@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.card.VkCard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vk_confirm_number_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.banner.VkBanner
+        android:id="@+id/vk_confirm_number_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.vk.core.view.components.card.VkCard>

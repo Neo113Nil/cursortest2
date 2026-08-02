@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarSize="0dp"
+    android:scrollbarThumbHorizontal="@null"
+    android:scrollbarThumbVertical="@null"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollIndicators="none">
+    <com.vk.core.view.components.placeholder.VkPlaceholder
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:id="@+id/catalog_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="480dp"/>
+</ScrollView>

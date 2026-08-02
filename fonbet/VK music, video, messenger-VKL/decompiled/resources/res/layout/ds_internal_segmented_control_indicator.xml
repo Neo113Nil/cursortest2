@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:id="@+id/segment_indicator_card"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ds_tab_regular_height"
+        android:foreground="@drawable/ds_internal_segmented_control_background"
+        android:elevation="@dimen/vk_ui_elevation_one"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/ds_segmented_control_corner_radius"/>
+</merge>

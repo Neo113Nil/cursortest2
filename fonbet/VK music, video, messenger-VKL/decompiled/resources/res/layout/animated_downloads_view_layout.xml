@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.spinner.VkSpinner
+        android:layout_gravity="center"
+        android:id="@+id/custom_progress_bar"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        app:spinnerSize="regular"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:id="@+id/download_progress_animation_view"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/downloading"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_gravity="center"
+        android:id="@+id/finished_loading_animation_view"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/finished_downloading"
+        app:lottie_repeatCount="0"/>
+</FrameLayout>

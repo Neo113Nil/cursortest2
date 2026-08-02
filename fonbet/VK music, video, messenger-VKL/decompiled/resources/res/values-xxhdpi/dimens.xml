@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vk_camera_target_bottom_margin">32dp</dimen>
+    <dimen name="vk_camera_target_size">254dp</dimen>
+    <dimen name="vk_camera_target_text_size">20sp</dimen>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="120">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__0_res_0x7f0802a2"
+        android:pathData="M99,32V18c0,-5.799 -4.701,-10.5 -10.5,-10.5S78,12.201 78,18v14a1.5,1.5 0,1 1,-3 0V18c0,-7.456 6.044,-13.5 13.5,-13.5S102,10.544 102,18v14a1.5,1.5 0,0 1,-3 0"/>
+    <path
+        android:name="path_2"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__1_res_0x7f0802a3"
+        android:pathData="M51.5,18h73v85h-73z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__2_res_0x7f0802a8"
+        android:pathData="M67.5,24v80h-16L51.5,18zM124.5,104h-16L108.5,24l16,-6z"/>
+    <path
+        android:name="path_4"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__3_res_0x7f0802a9"
+        android:pathData="M49.97,30.019a2,2 0,0 1,1.501 -1.897L67.5,24v80h-19z"/>
+    <path
+        android:name="path_5"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__4_res_0x7f0802aa"
+        android:pathData="M126,30.05a2,2 0,0 0,-1.502 -1.936L108.5,24v80H126z"/>
+    <path
+        android:name="path_6"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__5_res_0x7f0802ab"
+        android:pathData="M128.47,113.971a1,1 0,0 1,-1 1.029H48.529a1,1 0,0 1,-1 -1.029l2.442,-84.494a1,1 0,0 1,1.006 -0.971l37.712,0.238 36.333,-0.238a1,1 0,0 1,1.006 0.971z"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="path_7"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__6_res_0x7f0802ac"
+        android:pathData="M125.021,28.506a1,1 0,0 1,1.006 0.972l2.443,84.494a1,1 0,0 1,-1 1.028L48.528,115a1,1 0,0 1,-0.999 -1.028l2.443,-84.495a1,1 0,0 1,1.005 -0.971l37.711,0.238zM88.698,30.246h-0.018l-37.222,-0.235 -2.412,83.487h77.908l-2.414,-83.487z"/>
+    <path
+        android:name="path_8"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__7_res_0x7f0802ad"
+        android:pathData="M79.162,38.405a2.84,2.84 0,0 1,-2.831 2.846,2.84 2.84,0 0,1 -2.831,-2.846 2.84,2.84 0,0 1,2.83 -2.845,2.84 2.84,0 0,1 2.832,2.845"/>
+    <path
+        android:name="path_9"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__8_res_0x7f0802ae"
+        android:pathData="M79.162,38.405a2.84,2.84 0,0 0,-2.542 -2.83l-0.289,-0.015a2.84,2.84 0,0 0,-2.831 2.845l0.015,0.291a2.84,2.84 0,0 0,2.526 2.54l0.29,0.015a2.837,2.837 0,0 0,2.816 -2.555zM80.662,38.405c0,2.393 -1.932,4.346 -4.33,4.346 -2.4,0 -4.332,-1.953 -4.332,-4.346s1.932,-4.345 4.331,-4.345 4.331,1.953 4.331,4.345"/>
+    <path
+        android:name="path_10"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__9_res_0x7f0802af"
+        android:pathData="M103.358,38.405a2.84,2.84 0,0 1,-2.831 2.846,2.84 2.84,0 0,1 -2.831,-2.846 2.84,2.84 0,0 1,2.831 -2.845,2.84 2.84,0 0,1 2.831,2.845"/>
+    <path
+        android:name="path_11"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__10_res_0x7f0802a4"
+        android:pathData="M103.358,38.405a2.84,2.84 0,0 0,-2.542 -2.83l-0.289,-0.015a2.84,2.84 0,0 0,-2.831 2.845l0.014,0.291a2.84,2.84 0,0 0,2.527 2.54l0.29,0.015a2.837,2.837 0,0 0,2.816 -2.555zM104.858,38.405c0,2.393 -1.932,4.346 -4.331,4.346s-4.331,-1.953 -4.331,-4.346 1.932,-4.345 4.331,-4.345 4.331,1.953 4.331,4.345"/>
+    <path
+        android:name="path_12"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__11_res_0x7f0802a5"
+        android:pathData="M99,38V24c0,-5.799 -4.701,-10.5 -10.5,-10.5S78,18.201 78,24v14a1.5,1.5 0,1 1,-3 0V24c0,-7.456 6.044,-13.5 13.5,-13.5S102,16.544 102,24v14a1.5,1.5 0,0 1,-3 0"/>
+    <path
+        android:name="path_13"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__12_res_0x7f0802a6"
+        android:pathData="M106.369,51.249a1.72,1.72 0,0 1,1.36 -1.508,86.3 86.3,0 0,1 35.542,0 1.72,1.72 0,0 1,1.36 1.508l0.929,8.822a85.3,85.3 0,0 1,0 17.858,18.95 18.95,0 0,1 -10.022,14.788l-9.107,4.793a2,2 0,0 1,-1.862 0l-9.107,-4.793a18.95,18.95 0,0 1,-10.022 -14.788,85.3 85.3,0 0,1 0,-17.858z"/>
+    <path
+        android:name="path_14"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_bag_check_120h__13_res_0x7f0802a7"
+        android:pathData="M107.522,48.763a87.3,87.3 0,0 1,35.956 0,2.73 2.73,0 0,1 2.148,2.382l0.929,8.822a86.3,86.3 0,0 1,0 18.066,19.96 19.96,0 0,1 -10.551,15.569l-9.107,4.792a3,3 0,0 1,-2.794 0l-9.107,-4.793a19.96,19.96 0,0 1,-10.551 -15.568,86.3 86.3,0 0,1 0,-18.066l0.929,-8.822a2.73,2.73 0,0 1,2.148 -2.382m35.543,1.957a85.3,85.3 0,0 0,-35.13 0,0.73 0.73,0 0,0 -0.572,0.633l-0.928,8.823a84.2,84.2 0,0 0,0 17.648,17.95 17.95,0 0,0 9.493,14.008l9.106,4.793c0.292,0.153 0.64,0.153 0.932,0l9.106,-4.793a17.95,17.95 0,0 0,9.493 -14.008,84.2 84.2,0 0,0 0,-17.648l-0.928,-8.823a0.73,0.73 0,0 0,-0.572 -0.633"/>
+    <path
+        android:name="path_15"
+        android:fillColor="#fff"
+        android:pathData="M134.431,62.99a1.471,1.471 0,0 1,2.138 2.02l-12.272,13a1.47,1.47 0,0 1,-2.139 0l-5.727,-6.068a1.47,1.47 0,1 1,2.138 -2.018l4.658,4.933z"/>
+</vector>

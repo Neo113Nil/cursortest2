@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="48dp"
+        android:width="48dp">
+        <shape
+            android:tint="?attr/vk_ui_vkontakte_im_attach_tint"
+            android:shape="oval"/>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="24dp"
+        android:width="24dp">
+        <bitmap
+            android:src="@drawable/vk_icon_deprecated_ic_download_outline_24"
+            android:tint="@color/vk_white"/>
+    </item>
+</layer-list>

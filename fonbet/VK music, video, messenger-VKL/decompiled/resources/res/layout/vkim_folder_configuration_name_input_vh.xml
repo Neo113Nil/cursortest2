@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.formitem.VkFormField xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vkim_form_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/vk_ui_base_padding_horizontal"
+    app:label="@string/vkim_folder_configure_name_title">
+    <com.vk.core.view.components.formitem.VkInputSelect
+        android:id="@+id/vkim_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vkim_folder_configure_name_hint_with_emoji"
+        style="@style/VkInput"/>
+</com.vk.core.view.components.formitem.VkFormField>

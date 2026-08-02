@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/attach_layout"
+    android:layout_width="48dp"
+    android:layout_height="48dp">
+    <com.vk.newsfeed.impl.posting.viewpresenter.bottom.attachment.LocalPlaceholderImageView
+        android:id="@+id/icon_gallery"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        app:roundedCornerRadius="12dp"
+        app:roundingBorderColor="?attr/vk_ui_separator_primary_alpha"
+        app:roundingBorderWidth="0.5dp"/>
+    <TextView
+        android:textColor="@color/vk_white"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/video_duration"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dp"
+        android:shadowColor="@color/vk_black_alpha12"
+        android:shadowRadius="5"
+        android:paddingHorizontal="4dp"
+        app:tint="@color/vk_white"
+        style="@style/VkUiTypography.Caption3"/>
+    <FrameLayout
+        android:id="@+id/done_button"
+        android:background="@drawable/bg_black_alpha45_radius12"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vk_icon_done_outline_28"
+            app:tint="@color/vk_white"/>
+    </FrameLayout>
+</FrameLayout>

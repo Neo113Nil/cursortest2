@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tile_container"
+    android:layout_width="146dp"
+    android:layout_height="wrap_content">
+    <com.vk.ecomm.design.view.tile.MarketProductTileView
+        android:id="@+id/market_product_tile"
+        android:layout_width="146dp"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

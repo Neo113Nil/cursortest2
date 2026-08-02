@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@drawable/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.BottomConfirmButton
+            android:id="@+id/vkm_chat_invitation_broadcast_send_btn"
+            android:layout_weight="1"
+            app:bcb_divider_height="0dp"
+            app:bcb_send_text="@string/vkm_chat_invitation_broadcast_button_send"
+            style="@style/VkIm.BottomButton"/>
+        <com.vk.core.view.BottomConfirmButton
+            android:id="@+id/vkm_chat_invitation_broadcast_share_btn"
+            android:layout_weight="1"
+            app:bcb_cancel_text=""
+            app:bcb_divider_height="0dp"
+            app:bcb_send_text="@string/vkm_chat_invitation_broadcast_button_share"
+            style="@style/VkIm.BottomButton"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/vkm_chat_invitation_broadcast_share_small_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="16dp"
+            android:contentDescription="@string/accessibility_share"
+            style="@style/VkLegacyButton.Secondary"/>
+    </LinearLayout>
+</LinearLayout>

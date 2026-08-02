@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.profile.tool.view.CommunityProfileTabsContainerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vp_community_profile_content_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/community_profile_vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.vk.core.view.components.tabs.VkTabs
+        android:id="@+id/community_profile_tabs"
+        android:background="?attr/vk_ui_background_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vk_ui_spacing_size_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabsLayoutMode="tabsLayoutScrollable"
+        app:tabsMode="tabsModeAccent"/>
+    <com.vk.profile.design.view.fab.ProfileFabView
+        android:layout_gravity="bottom"
+        android:id="@+id/community_profile_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</com.vk.profile.tool.view.CommunityProfileTabsContainerLayout>

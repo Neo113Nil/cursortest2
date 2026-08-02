@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.clips.design.view.component.video.seekbar.ClipSeekBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/clip_seek_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/one_video_accessibility_rewinding"/>

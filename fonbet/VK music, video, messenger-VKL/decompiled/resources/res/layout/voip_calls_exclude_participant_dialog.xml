@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/voip_remove_participant_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        app:srcCompat="@drawable/vk_icon_cancel_circle_outline_56"
+        app:tint="@color/vk_sky_300"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/voip_remove_participant_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="5"
+        android:lineSpacingExtra="0sp"
+        android:fontFamily="@font/vk_roboto_medium"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        style="@style/VkLegacyTypography.Title1"/>
+    <CheckBox
+        android:textAppearance="@style/VkLegacyTypography.Text"
+        android:textSize="16sp"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/voip_remove_participant_ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="@string/voip_remove_participant_ban"
+        style="@style/VkCheckBoxTheme"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/exclude_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="large"
+        app:text="@string/voip_remove_participant_confirm"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textColor="@color/vk_white"
+            android:id="@+id/live_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/VkUiTypography.Headline2"/>
+        <com.vk.clips.design.view.timer.TimerView
+            android:id="@+id/live_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+        <com.vk.core.view.components.button.VkButton
+            android:id="@+id/notification_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:buttonAppearance="overlay"
+            app:buttonMode="primary"
+            app:buttonSizeType="medium"/>
+    </LinearLayout>
+</merge>

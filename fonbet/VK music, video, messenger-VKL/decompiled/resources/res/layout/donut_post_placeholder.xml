@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?attr/vk_ui_background_tertiary"
+    android:paddingTop="54dp"
+    android:paddingBottom="54dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/post_side_padding"
+    android:paddingEnd="@dimen/post_side_padding">
+    <ImageView
+        android:id="@+id/donut_post_placeholder_icon"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="17dp"
+        android:importantForAccessibility="no"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Headline1Normal"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center_horizontal"
+        android:id="@android:id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:hyphenationFrequency="none"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:id="@android:id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonMode="primary"/>
+</LinearLayout>

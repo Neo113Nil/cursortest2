@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_vk_ru_light__0_res_0x7f0805be">
+    <target
+        android:name="logo"
+        android:animation="@drawable/_vk_ru_light__1_res_0x7f0805bf"/>
+    <target
+        android:name="bg"
+        android:animation="@drawable/_vk_ru_light__2_res_0x7f0805c4"/>
+    <target
+        android:name="fg"
+        android:animation="@drawable/_vk_ru_light__3_res_0x7f0805c5"/>
+    <target
+        android:name="vk"
+        android:animation="@drawable/_vk_ru_light__4_res_0x7f0805c6"/>
+    <target
+        android:name="v"
+        android:animation="@drawable/_vk_ru_light__5_res_0x7f0805c7"/>
+    <target
+        android:name="k"
+        android:animation="@drawable/_vk_ru_light__6_res_0x7f0805c8"/>
+    <target
+        android:name="o"
+        android:animation="@drawable/_vk_ru_light__7_res_0x7f0805c9"/>
+    <target
+        android:name="n"
+        android:animation="@drawable/_vk_ru_light__8_res_0x7f0805ca"/>
+    <target
+        android:name="t"
+        android:animation="@drawable/_vk_ru_light__9_res_0x7f0805cb"/>
+    <target
+        android:name="a"
+        android:animation="@drawable/_vk_ru_light__10_res_0x7f0805c0"/>
+    <target
+        android:name="k2"
+        android:animation="@drawable/_vk_ru_light__11_res_0x7f0805c1"/>
+    <target
+        android:name="t2"
+        android:animation="@drawable/_vk_ru_light__12_res_0x7f0805c2"/>
+    <target
+        android:name="e"
+        android:animation="@drawable/_vk_ru_light__13_res_0x7f0805c3"/>
+</animated-vector>

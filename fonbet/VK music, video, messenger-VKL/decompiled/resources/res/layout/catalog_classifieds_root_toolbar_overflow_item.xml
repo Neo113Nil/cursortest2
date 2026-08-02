@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/highlight_unlimited"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_margin="4dp"
+    android:contentDescription="@string/accessibility_more">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/icon_overflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vk_icon_user_outline_28"
+        android:importantForAccessibility="no"
+        app:tint="?attr/vk_ui_icon_accent_themed"/>
+    <ImageView
+        android:textColor="?attr/vk_ui_text_contrast"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="end|top"
+        android:id="@+id/overflow_dot"
+        android:background="@drawable/catalog_bg_counter_primary_small"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="4dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:contentDescription="@string/classifieds_toolbar_dot"
+        android:backgroundTint="?attr/vk_ui_accent_red"
+        app:srcCompat="@drawable/red_dot"
+        app:tint="?attr/vk_ui_icon_accent"/>
+</FrameLayout>

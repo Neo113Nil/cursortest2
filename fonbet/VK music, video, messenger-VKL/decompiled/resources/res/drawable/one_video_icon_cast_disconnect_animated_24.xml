@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_one_video_icon_cast_disconnect_animated_24__0_res_0x7f080174">
+    <target
+        android:name="_R_G_L_5_G"
+        android:animation="@drawable/_one_video_icon_cast_disconnect_animated_24__1_res_0x7f080175"/>
+    <target
+        android:name="_R_G_L_5_G_D_0_P_0"
+        android:animation="@drawable/_one_video_icon_cast_disconnect_animated_24__7_res_0x7f08017b"/>
+</animated-vector>

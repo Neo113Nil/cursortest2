@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Caption2Normal"
+        android:textColor="?attr/vk_ui_text_tertiary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/vk_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/vk_terms_more"
+        android:background="@drawable/vk_auth_bg_tertiary_btn_small"
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textAppearance="@style/VkUiTypography.Caption2Normal"
+            android:textColor="?attr/vk_ui_text_subhead"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vk_connect_terms_more"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAlignBottom="true"
+            android:translationY="0.5dp"
+            android:importantForAccessibility="no"
+            android:layout_marginStart="2dp"
+            app:srcCompat="@drawable/vk_icon_chevron_outline_12"
+            app:tint="?attr/vk_ui_icon_medium"/>
+    </LinearLayout>
+</LinearLayout>

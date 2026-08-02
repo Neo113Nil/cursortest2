@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.clips.design.view.hsl.HslRecyclerView
+        android:id="@+id/hsl_recycler"
+        android:clipToPadding="false"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:paddingHorizontal="@dimen/hsl_horizontal_padding"
+        app:layout_constraintBottom_toTopOf="@+id/hue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.vk.clips.design.view.hsl.HslSeekView
+        android:label="@string/correction_hsl_hue"
+        android:id="@+id/hue"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/saturation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.vk.clips.design.view.hsl.HslSeekView
+        android:label="@string/correction_saturation"
+        android:id="@+id/saturation"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/brightness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <com.vk.clips.design.view.hsl.HslSeekView
+        android:label="@string/correction_hsl_brightness"
+        android:id="@+id/brightness"
+        android:focusable="true"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:paddingHorizontal="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</merge>

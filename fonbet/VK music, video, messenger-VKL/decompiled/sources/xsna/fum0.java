@@ -1,0 +1,35 @@
+package xsna;
+
+/* compiled from: SublistStorageModel.kt */
+/* loaded from: classes2.dex */
+public final class fum0 {
+    public final int a;
+    public final int b;
+
+    public fum0(int i, int i2) {
+        this.a = i;
+        this.b = i2;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof fum0)) {
+            return false;
+        }
+        fum0 fum0Var = (fum0) obj;
+        return this.a == fum0Var.a && this.b == fum0Var.b;
+    }
+
+    public final int hashCode() {
+        return Integer.hashCode(this.b) + (Integer.hashCode(this.a) * 31);
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("SublistStorageFilter(and=");
+        sb.append(this.a);
+        sb.append(", xor=");
+        return vu5.b(sb, this.b, ')');
+    }
+}

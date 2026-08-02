@@ -1,0 +1,34 @@
+package yads;
+
+/* loaded from: classes10.dex */
+public final class pp {
+    public final long a;
+    public final long b;
+    public final long c;
+    public long d;
+    public long e;
+    public long f;
+    public long g;
+    public long h;
+
+    public pp(long j, long j2, long j3, long j4, long j5, long j6, long j7) {
+        this.a = j;
+        this.b = j2;
+        this.d = j3;
+        this.e = j4;
+        this.f = j5;
+        this.g = j6;
+        this.c = j7;
+        this.h = a(j2, j3, j4, j5, j6, j7);
+    }
+
+    public static long a(long j, long j2, long j3, long j4, long j5, long j6) {
+        if (j4 + 1 >= j5 || j2 + 1 >= j3) {
+            return j4;
+        }
+        long j7 = (long) ((j - j2) * ((j5 - j4) / (j3 - j2)));
+        long j8 = j7 / 20;
+        int i = mc3.a;
+        return Math.max(j4, Math.min(((j7 + j4) - j6) - j8, j5 - 1));
+    }
+}

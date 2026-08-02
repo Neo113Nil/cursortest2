@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_selected="true"
+        android:color="@color/vk_white">
+        <shape android:shape="rectangle">
+            <corners android:radius="19dp"/>
+            <solid android:color="@color/vk_gray_800"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/vk_white"/>
+        </shape>
+    </item>
+    <item android:color="?attr/vk_ui_text_subhead">
+        <shape android:shape="rectangle">
+            <corners android:radius="19dp"/>
+            <solid android:color="@color/vk_gray_800"/>
+        </shape>
+    </item>
+</selector>

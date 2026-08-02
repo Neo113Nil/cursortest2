@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.ConstrainedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_masks_message"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    app:vk_max_width="500dp">
+    <TextView
+        android:textColor="@color/vk_white"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/error_text"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="@string/liblists_err_text"
+        android:singleLine="true"
+        android:freezesText="true"
+        android:layout_weight="1"
+        style="@style/VkUiTypography.Text"/>
+    <TextView
+        android:textColor="@color/vk_blue_200_muted"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/error_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/liblists_retry"
+        android:textAllCaps="true"
+        android:fontFamily="@string/font_family_medium"
+        style="@style/tertiary_button"/>
+</com.vk.core.view.ConstrainedLinearLayout>

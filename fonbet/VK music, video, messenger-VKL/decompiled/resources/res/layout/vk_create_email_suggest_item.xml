@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/VkUiTypography.Subhead"
+    android:textColor="?attr/vk_ui_text_accent"
+    android:id="@+id/vk_create_email_suggest_item_text"
+    android:background="@drawable/vk_auth_bg_email_suggest"
+    android:paddingTop="8.5dp"
+    android:paddingBottom="9dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"/>

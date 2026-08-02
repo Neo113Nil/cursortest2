@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.feed.design.view.newsfeed.link.EnhancedFeedLinkCard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enhanced_link_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>

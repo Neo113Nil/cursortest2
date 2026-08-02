@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/vk_icon_done_24"
+        android:id="@+id/vkim_done"
+        android:title="@string/vkim_ok"
+        app:iconTint="?attr/vk_legacy_header_tint"
+        app:showAsAction="always"/>
+</menu>

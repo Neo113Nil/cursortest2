@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/donut_post_video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_icon_contrast"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/donut_post_video_duration"
+        android:background="@drawable/bg_donut_post_video_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vk_ui_spacing_size_m"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_m"
+        android:paddingHorizontal="@dimen/vk_ui_spacing_size_xs"
+        android:paddingVertical="@dimen/vk_ui_spacing_size2_xs"
+        style="@style/VkUiTypography.Caption2"/>
+    <com.vk.core.view.components.badge.VkContentBadge
+        android:layout_gravity="start|bottom"
+        android:id="@+id/donut_post_video_support_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/vk_ui_spacing_size_xl"
+        android:layout_marginStart="@dimen/vk_ui_spacing_size_xl"
+        android:elevation="@dimen/vk_ui_elevation_one"/>
+</merge>

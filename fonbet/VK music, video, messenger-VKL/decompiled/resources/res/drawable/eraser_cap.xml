@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="65dp"
+    android:width="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="65">
+    <group>
+        <clip-path android:pathData="M44,-7l-44,0l-0,72l44,0z"/>
+        <path
+            android:fillColor="#fc624b"
+            android:pathData="M11,9.6C11,6.24 11,4.56 11.654,3.276C12.229,2.147 13.147,1.229 14.276,0.654C15.559,0 17.24,0 20.6,0H23.4C26.76,0 28.441,0 29.724,0.654C30.853,1.229 31.771,2.147 32.346,3.276C33,4.56 33,6.24 33,9.6V14H11V9.6Z"/>
+        <path
+            android:fillColor="@drawable/_eraser_cap__0_res_0x7f0800fd"
+            android:pathData="M11,9.6C11,6.24 11,4.56 11.654,3.276C12.229,2.147 13.147,1.229 14.276,0.654C15.559,0 17.24,0 20.6,0H23.4C26.76,0 28.441,0 29.724,0.654C30.853,1.229 31.771,2.147 32.346,3.276C33,4.56 33,6.24 33,9.6V14H11V9.6Z"/>
+        <path
+            android:fillColor="@drawable/_eraser_cap__1_res_0x7f0800fe"
+            android:pathData="M11,9.6C11,6.24 11,4.56 11.654,3.276C12.229,2.147 13.147,1.229 14.276,0.654C15.559,0 17.24,0 20.6,0H23.4C26.76,0 28.441,0 29.724,0.654C30.853,1.229 31.771,2.147 32.346,3.276C33,4.56 33,6.24 33,9.6V14H11V9.6Z"/>
+        <path
+            android:fillColor="@drawable/_eraser_cap__2_res_0x7f0800ff"
+            android:pathData="M11,9.6C11,6.24 11,4.56 11.654,3.276C12.229,2.147 13.147,1.229 14.276,0.654C15.559,0 17.24,0 20.6,0H23.4C26.76,0 28.441,0 29.724,0.654C30.853,1.229 31.771,2.147 32.346,3.276C33,4.56 33,6.24 33,9.6V14H11V9.6Z"/>
+    </group>
+</vector>

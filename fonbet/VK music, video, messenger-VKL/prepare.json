@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "apks": [
+    "com.vkontakte.android.apk"
+  ],
+  "base_apk": "com.vkontakte.android.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "0581 (81%)\nINFO  - progress: 73982 of 90581 (81%)\nINFO  - progress: 74214 of 90581 (81%)\nINFO  - progress: 74459 of 90581 (82%)\nINFO  - progress: 74873 of 90581 (82%)\nINFO  - progress: 75180 of 90581 (82%)\nINFO  - progress: 75489 of 90581 (83%)\nINFO  - progress: 75805 of 90581 (83%)\nINFO  - progress: 76230 of 90581 (84%)\nINFO  - progress: 76434 of 90581 (84%)\nINFO  - progress: 76776 of 90581 (84%)\nINFO  - progress: 76989 of 90581 (84%)\nINFO  - progress: 77086 of 90581 (85%)\nINFO  - progress: 77189 of 90581 (85%)\nINFO  - progress: 77508 of 90581 (85%)\nINFO  - progress: 77917 of 90581 (86%)\nINFO  - progress: 78133 of 90581 (86%)\nINFO  - progress: 78350 of 90581 (86%)\nINFO  - progress: 78624 of 90581 (86%)\nINFO  - progress: 78893 of 90581 (87%)\nINFO  - progress: 79241 of 90581 (87%)\nINFO  - progress: 79517 of 90581 (87%)\nINFO  - progress: 79800 of 90581 (88%)\nINFO  - progress: 80080 of 90581 (88%)\nINFO  - progress: 80360 of 90581 (88%)\nINFO  - progress: 80455 of 90581 (88%)\nINFO  - progress: 80511 of 90581 (88%)\nINFO  - progress: 80550 of 90581 (88%)\nINFO  - progress: 80697 of 90581 (89%)\nINFO  - progress: 80929 of 90581 (89%)\nINFO  - progress: 81258 of 90581 (89%)\nINFO  - progress: 81510 of 90581 (89%)\nINFO  - progress: 81711 of 90581 (90%)\nINFO  - progress: 81758 of 90581 (90%)\nINFO  - progress: 81796 of 90581 (90%)\nINFO  - progress: 81801 of 90581 (90%)\nINFO  - progress: 81801 of 90581 (90%)\nINFO  - progress: 81801 of 90581 (90%)\nINFO  - progress: 81838 of 90581 (90%)\nINFO  - progress: 82315 of 90581 (90%)\nINFO  - progress: 82741 of 90581 (91%)\nINFO  - progress: 82900 of 90581 (91%)\nINFO  - progress: 83064 of 90581 (91%)\nINFO  - progress: 83202 of 90581 (91%)\nINFO  - progress: 83351 of 90581 (92%)\nINFO  - progress: 83478 of 90581 (92%)\nINFO  - progress: 83595 of 90581 (92%)\nINFO  - progress: 83863 of 90581 (92%)\nINFO  - progress: 84008 of 90581 (92%)\nINFO  - progress: 84229 of 90581 (92%)\nINFO  - progress: 84422 of 90581 (93%)\nINFO  - progress: 84615 of 90581 (93%)\nINFO  - progress: 84777 of 90581 (93%)\nINFO  - progress: 84923 of 90581 (93%)\nINFO  - progress: 85122 of 90581 (93%)\nINFO  - progress: 85442 of 90581 (94%)\nINFO  - progress: 85784 of 90581 (94%)\nINFO  - progress: 86174 of 90581 (95%)\nINFO  - progress: 86499 of 90581 (95%)\nINFO  - progress: 86778 of 90581 (95%)\nINFO  - progress: 86952 of 90581 (95%)\nINFO  - progress: 87288 of 90581 (96%)\nINFO  - progress: 87529 of 90581 (96%)\nINFO  - progress: 87833 of 90581 (96%)\nINFO  - progress: 88024 of 90581 (97%)\nINFO  - progress: 88308 of 90581 (97%)\nINFO  - progress: 88354 of 90581 (97%)\nINFO  - progress: 88403 of 90581 (97%)\nINFO  - progress: 88481 of 90581 (97%)\nINFO  - progress: 88676 of 90581 (97%)\nINFO  - progress: 89068 of 90581 (98%)\nINFO  - progress: 89431 of 90581 (98%)\nINFO  - progress: 89788 of 90581 (99%)\nINFO  - progress: 90199 of 90581 (99%)\nINFO  - progress: 90483 of 90581 (99%)\n                                                             \nERROR - finished with errors, count: 408\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/fonbet/VK music, video, messenger-VKL/decompiled",
+    "skipped": false,
+    "base_apk": "com.vkontakte.android.apk"
+  },
+  "analysis_files": [
+    "com.vkontakte.android.apk",
+    "apk/com.vkontakte.android.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/app/",
+    "decompiled/sources/bolts/",
+    "decompiled/sources/com/",
+    "decompiled/sources/core/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/gatewayprotocol/",
+    "decompiled/sources/internal/",
+    "decompiled/sources/io/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/me/",
+    "decompiled/sources/okcalls/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/one/",
+    "decompiled/sources/org/",
+    "decompiled/sources/pub/",
+    "decompiled/sources/receivers/"
+  ]
+}

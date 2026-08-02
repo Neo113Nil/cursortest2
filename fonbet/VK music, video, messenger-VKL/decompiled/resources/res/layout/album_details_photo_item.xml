@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.AspectRatioFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/photo_flow_item_accessibility"
+        app:actualImageScaleType="centerCrop"/>
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:layout_gravity="end|top"
+        android:id="@+id/checkbox_photo"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        style="@style/PhotosRoot.CircleCheckBox"/>
+</com.vk.core.tool.view.AspectRatioFrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:visibility="gone"
+        layout="@layout/fullscreen_ads_main_overlay"/>
+    <include
+        android:visibility="gone"
+        layout="@layout/fullscreen_ads_item_end_overlay"/>
+    <View
+        android:id="@+id/fullscreen_static_ads_unfocused_blackout"
+        android:background="@color/clip_unfocused_blackout_background"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,10 @@
+package xsna;
+
+import java.io.IOException;
+import org.xmlpull.v1.XmlPullParserException;
+
+/* compiled from: com.google.android.play:feature-delivery@@2.1.0 */
+/* loaded from: classes13.dex */
+public interface ws01 {
+    void zza() throws IOException, XmlPullParserException;
+}

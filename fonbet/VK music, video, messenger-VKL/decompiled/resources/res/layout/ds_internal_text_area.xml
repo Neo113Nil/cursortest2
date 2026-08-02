@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/before_icon"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_m"/>
+    <com.vk.core.view.components.formitem.VkTextField
+        android:gravity="center_vertical"
+        android:id="@+id/edit_text"
+        android:background="@null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@drawable/ds_internal_form_item_input_cursor"/>
+    <ImageView
+        android:id="@+id/after_icon"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@null"
+        android:layout_marginStart="@dimen/vk_ui_spacing_size_m"/>
+    <ImageView
+        android:id="@+id/clear_icon"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/vk_icon_cancel_24"
+        android:contentDescription="@null"
+        android:layout_marginStart="@dimen/vk_ui_spacing_size_m"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+</merge>

@@ -1,0 +1,19 @@
+package sg.bigo.ads.api;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+/* loaded from: classes9.dex */
+public interface AdLoader<T> {
+
+    public interface Builder<T extends Ad, S extends Builder, U extends AdLoader> {
+        @NonNull
+        U build();
+
+        @NonNull
+        S withAdLoadListener(@Nullable AdLoadListener<T> adLoadListener);
+
+        @NonNull
+        S withExt(String str);
+    }
+}

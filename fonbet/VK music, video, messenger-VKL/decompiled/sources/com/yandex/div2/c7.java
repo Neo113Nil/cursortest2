@@ -1,0 +1,68 @@
+package com.yandex.div2;
+
+import com.yandex.div.data.Hashable;
+import com.yandex.div.json.JSONSerializable;
+import com.yandex.div.serialization.BuiltInParserKt;
+import kotlin.NoWhenBranchMatchedException;
+import org.json.JSONObject;
+import xsna.fpf0;
+
+/* compiled from: DivPageTransformation.kt */
+/* loaded from: classes8.dex */
+public abstract class c7 implements JSONSerializable, Hashable {
+    public Integer a;
+
+    /* compiled from: DivPageTransformation.kt */
+    public static final class a extends c7 {
+        public final g7 b;
+
+        public a(g7 g7Var) {
+            this.b = g7Var;
+        }
+    }
+
+    /* compiled from: DivPageTransformation.kt */
+    public static final class b extends c7 {
+        public final j7 b;
+
+        public b(j7 j7Var) {
+            this.b = j7Var;
+        }
+    }
+
+    public final Object a() {
+        if (this instanceof b) {
+            return ((b) this).b;
+        }
+        if (this instanceof a) {
+            return ((a) this).b;
+        }
+        throw new NoWhenBranchMatchedException();
+    }
+
+    @Override // com.yandex.div.data.Hashable
+    public final int hash() {
+        int hash;
+        Integer num = this.a;
+        if (num != null) {
+            return num.intValue();
+        }
+        int hashCode = fpf0.a(getClass()).hashCode();
+        if (this instanceof b) {
+            hash = ((b) this).b.hash();
+        } else {
+            if (!(this instanceof a)) {
+                throw new NoWhenBranchMatchedException();
+            }
+            hash = ((a) this).b.hash();
+        }
+        int i = hashCode + hash;
+        this.a = Integer.valueOf(i);
+        return i;
+    }
+
+    @Override // com.yandex.div.json.JSONSerializable
+    public final JSONObject writeToJSON() {
+        return ((d7) BuiltInParserKt.getBuiltInParserComponent().t5.getValue()).serialize(BuiltInParserKt.getBuiltInParsingContext(), this);
+    }
+}

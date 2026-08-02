@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vkim_selection_list"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Footnote"
+        android:textColor="?attr/vk_ui_text_subhead"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/vkim_empty_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_empty_selection_hint"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</FrameLayout>

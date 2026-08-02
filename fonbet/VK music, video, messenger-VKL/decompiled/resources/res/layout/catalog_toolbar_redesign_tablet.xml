@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vk_app_bar"
+    android:background="@drawable/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/VKAppBar">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.components.topbar.VkTopBar
+            android:id="@+id/toolbar"
+            android:background="@drawable/transparent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:collapseIcon="@null"
+            app:contentInsetEnd="8dp"
+            app:contentInsetEndWithActions="0dp"
+            app:contentInsetStart="11dp"
+            app:contentInsetStartWithNavigation="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="enterAlways"
+            app:logo="@null"
+            app:navigationContentDescription="@string/vkim_accessibility_toolbar_back_exit"
+            app:navigationIcon="@null"
+            app:subtitle="@null"
+            app:title="@null"
+            app:titleMarginStart="0dp"
+            style="@style/VkIm.Toolbar.Style"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>

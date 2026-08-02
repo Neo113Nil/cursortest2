@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/reaction_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/reaction_image"
+        android:layout_width="@dimen/vkim_reactions_icon_size"
+        android:layout_height="@dimen/vkim_reactions_icon_size"
+        android:layout_marginLeft="@dimen/vkim_reactions_margin_before_reaction_icon"
+        android:layout_marginVertical="2dp"/>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/reaction_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vkim_reactions_margin_before_counter"
+        android:layout_marginRight="@dimen/vkim_reactions_margin_after_counter"
+        style="@style/VkLegacyTypography.Caption1.Medium"/>
+    <com.vk.im.ui.views.avatars.StackAvatarView
+        android:layout_gravity="center"
+        android:id="@+id/stack_avatar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vkim_reactions_margin_before_stack_avatar_view"
+        android:layout_marginRight="@dimen/vkim_reactions_margin_after_stack_avatar_view"
+        app:vkim_drawingOrder="reversed"
+        app:vkim_iconOffset="@dimen/vkim_reactions_avatar_offset"
+        app:vkim_iconSize="@dimen/vkim_reactions_avatar_size"
+        app:vkim_strokeColor="@color/vk_gray_A150"
+        app:vkim_strokeWidth="@dimen/vkim_reactions_avatar_stroke_width"/>
+</LinearLayout>

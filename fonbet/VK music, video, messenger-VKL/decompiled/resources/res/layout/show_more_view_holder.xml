@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/comments_thread_show_more_container"
+    android:paddingTop="7dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="46dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        app:srcCompat="@drawable/vk_icon_minus_16"
+        app:tint="?attr/vk_ui_icon_accent"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_link"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/show_more_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_more_text"
+        android:layout_marginStart="12dp"
+        style="@style/VkUiTypography.FootnoteMedium"/>
+</LinearLayout>

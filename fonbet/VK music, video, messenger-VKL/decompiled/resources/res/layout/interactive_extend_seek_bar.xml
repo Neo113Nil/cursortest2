@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frames_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/time_border"
+        android:background="@color/one_video_white"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textColor="@color/vk_white"
+            android:gravity="center"
+            android:id="@+id/extend_seek_full_additional_text"
+            android:background="@color/vk_black_alpha45"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/interactive_videos_seek_not_available"
+            android:paddingHorizontal="12dp"
+            style="@style/VkUiTypography.Caption1SemiBold"/>
+    </FrameLayout>
+</merge>

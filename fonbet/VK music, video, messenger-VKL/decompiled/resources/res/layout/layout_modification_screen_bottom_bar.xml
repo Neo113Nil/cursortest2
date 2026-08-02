@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="14dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.checkbox.VkCheckboxItem
+        android:ellipsize="end"
+        android:id="@+id/apply_to_all_checkbox"
+        android:visibility="invisible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/editor_volume_done"
+        android:contentDescription="@string/editor_volume_done"
+        android:layout_marginEnd="16dp"
+        app:buttonAppearance="overlay"
+        app:buttonMode="primary"
+        app:buttonSizeType="medium"/>
+</LinearLayout>

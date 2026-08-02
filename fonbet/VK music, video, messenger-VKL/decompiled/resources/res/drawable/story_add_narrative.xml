@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="?attr/vk_ui_background_secondary"/>
+            <size
+                android:height="@dimen/story_editor_avatar_size_big"
+                android:width="@dimen/story_editor_avatar_size_big"/>
+            <stroke
+                android:width="0.5dp"
+                android:color="?attr/vk_ui_image_border_alpha"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/add_outline_28"
+        android:height="28dp"
+        android:width="28dp"
+        android:drawable="@drawable/vk_icon_add_outline_28"/>
+</layer-list>

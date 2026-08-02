@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/graffiti_drawing_top_panel_height"
+    android:animateLayoutChanges="true">
+    <ImageButton
+        android:id="@+id/button_draw_undo"
+        android:background="@drawable/ripple_50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/vk_icon_arrow_uturn_left_outline_28"
+        android:contentDescription="@string/graffiti_undo"
+        android:alpha="0.4"
+        app:tint="@color/vk_white"/>
+    <ImageButton
+        android:id="@+id/button_draw_redo"
+        android:background="@drawable/ripple_50dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/vk_icon_arrow_uturn_right_outline_28"
+        android:contentDescription="@string/graffiti_redo"
+        android:alpha="0.4"
+        app:tint="@color/vk_white"/>
+</LinearLayout>

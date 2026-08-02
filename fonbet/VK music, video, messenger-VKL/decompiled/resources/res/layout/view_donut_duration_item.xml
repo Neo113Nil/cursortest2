@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textColor="?attr/vk_ui_text_primary"
+    android:background="@drawable/bg_donut_duration_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp"
+    style="@style/VkUiTypography.Footnote"/>

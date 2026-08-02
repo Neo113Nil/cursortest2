@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Vk.Theme.VkApp.space_gray_generated"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.view.components.formitem.VkInputSelect
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/clips_tech_bugreport_describe_problem_hint"
+        android:maxLines="10"
+        android:lines="5"
+        android:minLines="1"
+        android:maxLength="512"
+        android:inputType="textMultiLine"
+        app:inputSize="textArea"
+        style="@style/VkInput"/>
+</LinearLayout>

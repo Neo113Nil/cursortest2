@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_config_prefDialogWidth">440dp</dimen>
+    <dimen name="abc_dialog_min_width_major">55%</dimen>
+    <dimen name="abc_dialog_min_width_minor">80%</dimen>
+    <dimen name="community_text_offset">64dp</dimen>
+    <dimen name="picker_emoji_size">86dp</dimen>
+    <dimen name="picker_graffiti_size">200dp</dimen>
+    <dimen name="picker_item_long_size_image">145dp</dimen>
+    <dimen name="picker_item_size_image">130dp</dimen>
+    <dimen name="picker_sticker_size">150dp</dimen>
+    <dimen name="post_attach_thumbs_height">720dp</dimen>
+    <dimen name="post_side_padding_menu">12dp</dimen>
+    <dimen name="subtitles_bottom_margin">16dp</dimen>
+    <dimen name="subtitles_horizontal_margin_percent">0.12</dimen>
+    <dimen name="subtitles_text_size">18sp</dimen>
+    <dimen name="vk_post_side_padding">24dp</dimen>
+    <dimen name="vk_standard_list_item_padding">24dp</dimen>
+</resources>

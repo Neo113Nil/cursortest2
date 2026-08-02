@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:ordering="together">
+    <objectAnimator
+        android:interpolator="@drawable/_ds_internal_check_box_on_off_transition__6_res_0x7f080052"
+        android:duration="250"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleX"/>
+    <objectAnimator
+        android:interpolator="@drawable/_ds_internal_check_box_on_off_transition__7_res_0x7f080053"
+        android:duration="250"
+        android:startOffset="0"
+        android:valueFrom="1"
+        android:valueTo="0"
+        android:valueType="floatType"
+        android:propertyName="scaleY"/>
+</set>

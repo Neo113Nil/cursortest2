@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#6cd97e"
+                android:endColor="#12b212"
+                android:angle="315"/>
+            <size
+                android:height="32dp"
+                android:width="32dp"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="clip_vertical|center|clip_horizontal"
+        android:id="@+id/entry_point_base_icon"
+        android:drawable="@drawable/vk_icon_phone_20"/>
+</layer-list>

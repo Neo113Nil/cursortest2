@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/UserSmallRoot">
+    <com.vk.imageloader.view.VKCircleImageView
+        android:id="@+id/photo"
+        android:layout_marginRight="12dp"
+        app:placeholderImage="@drawable/ic_checkin_place_not_selected"
+        style="@style/UserSmallPhoto"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_marginTop="4dp"
+        android:layout_toLeftOf="@+id/info"
+        style="@style/UserMediumTitle"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="marquee"
+        android:id="@+id/subtitle"
+        android:duplicateParentState="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="12dp"
+        android:singleLine="true"
+        android:drawablePadding="10dp"
+        android:layout_toLeftOf="@+id/info"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_below="@+id/title"
+        style="@style/VkUiTypography.Subhead"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Caption1.Unscaled"
+        android:textColor="?attr/vk_ui_text_tertiary"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:drawablePadding="2dp"
+        android:layout_alignBottom="@+id/subtitle"
+        android:layout_alignParentRight="true"
+        app:drawableRightCompat="@drawable/vk_icon_user_16"
+        app:drawableTint="?attr/vk_ui_icon_tertiary"/>
+</RelativeLayout>

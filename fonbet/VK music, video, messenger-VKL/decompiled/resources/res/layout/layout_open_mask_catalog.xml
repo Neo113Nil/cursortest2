@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/camera_masks_delete_button_space"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="106dp"
+    android:foreground="@drawable/mask_tab_bg_dark"
+    android:importantForAccessibility="no">
+    <View
+        android:id="@+id/view_background"
+        android:background="@drawable/bg_mask_catalog"
+        android:layout_width="@dimen/camera_masks_item_size"
+        android:layout_height="@dimen/camera_masks_item_size"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/vk_icon_search_stars_outline_28"
+        app:tint="@color/vk_pink"/>
+</FrameLayout>

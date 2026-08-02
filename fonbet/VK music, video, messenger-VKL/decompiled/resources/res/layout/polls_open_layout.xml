@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.formitem.VkTextArea
+        android:id="@+id/polls_open_question_edittext"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_margin="16dp"
+        android:maxHeight="184dp"/>
+</merge>

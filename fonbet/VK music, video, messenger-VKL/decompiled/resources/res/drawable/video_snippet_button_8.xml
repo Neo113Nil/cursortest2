@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/vk_ui_transparent_active">
+    <item>
+        <shape>
+            <solid android:color="?attr/vk_ui_background_contrast_secondary_alpha"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</ripple>

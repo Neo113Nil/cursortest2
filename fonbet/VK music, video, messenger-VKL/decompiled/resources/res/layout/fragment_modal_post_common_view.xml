@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.view.MaxHeightSaveFrameLayout
+        android:id="@+id/modal_post_common_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/modal_post_common_content_container"
+        android:focusable="true"
+        android:fitsSystemWindows="true"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/modal_post_common_fragment_container"
+            android:background="?attr/vk_ui_background_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

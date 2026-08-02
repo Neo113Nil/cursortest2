@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/blur_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/vk_ui_spacing_size2_xl"
+        android:layout_marginVertical="@dimen/vk_ui_spacing_size_m">
+        <com.vk.core.tool.view.vkblur.VkBlurView
+            android:id="@+id/blur_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:id="@+id/pin_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="62dp"
+            android:paddingHorizontal="@dimen/vk_ui_spacing_size_xl"
+            android:paddingVertical="@dimen/vk_ui_spacing_size_xl">
+            <com.vk.im.design.view.pagination.ImPaginationSegment
+                android:id="@+id/pagination_segment"
+                android:visibility="gone"
+                android:layout_width="4dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="@dimen/vk_ui_spacing_size_xl"
+                app:im_ipv_indicator_color="?attr/vk_ui_icon_contrast"
+                app:im_ipv_indicator_width="4dp"
+                app:im_ipv_vertical_space="0dp"/>
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"/>
+            <com.vk.core.view.components.picture.VkImageSimple
+                android:layout_gravity="center_vertical"
+                android:id="@+id/pin_icon"
+                android:visibility="gone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:layout_marginStart="@dimen/vk_ui_spacing_size_xl"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

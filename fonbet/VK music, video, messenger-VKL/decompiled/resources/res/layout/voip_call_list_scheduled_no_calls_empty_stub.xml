@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="130dp">
+    <ImageView
+        android:id="@+id/scheduled_call_calendar_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vk_icon_calendar_outline_56"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toTopOf="@+id/scheduled_call_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:tint="?attr/vk_ui_icon_tertiary"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/scheduled_call_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/voip_call_list_scheduled_calls_empty_stub_title"
+        app:layout_constraintBottom_toTopOf="@+id/scheduled_call_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduled_call_calendar_icon"
+        style="@style/VkLegacyTypography.Headline.Medium"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/scheduled_call_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/voip_call_list_scheduled_calls_empty_stub_subtitle"
+        android:lines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduled_call_title"
+        style="@style/VkLegacyTypography.Subhead.Regular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

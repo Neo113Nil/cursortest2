@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="120">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__0_res_0x7f0802f1"
+        android:pathData="M16.611,12a2,2 0,0 1,2 -2h85.722a2,2 0,0 1,2 2v76.563H18.611a2,2 0,0 1,-2 -2z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__1_res_0x7f0802f2"
+        android:pathData="M104.533,12a0.2,0.2 0,0 0,-0.199 -0.2H18.611a0.2,0.2 0,0 0,-0.2 0.2v74.563c0,0.11 0.09,0.2 0.2,0.2v1.8a2,2 0,0 1,-2 -2V12a2,2 0,0 1,2 -2h85.723l0.204,0.01a2,2 0,0 1,1.796 1.99v76.563H18.611v-1.8h85.922z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__2_res_0x7f0802fc"
+        android:pathData="M16.611,74.761h89.722v13.802H18.611a2,2 0,0 1,-2 -2z"/>
+    <path
+        android:name="path_4"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__3_res_0x7f0802fd"
+        android:pathData="M106.333,37.184a1.5,1.5 0,0 1,1.5 -1.5h28.291a18,18 0,0 1,14.632 7.516l10.264,14.324a18,18 0,0 1,3.369 10.484v19.259a1.5,1.5 0,0 1,-1.5 1.5h-56.556z"/>
+    <path
+        android:name="path_5"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__4_res_0x7f0802fe"
+        android:pathData="M162.589,68.009c0,-3.385 -1.061,-6.685 -3.032,-9.437l-10.264,-14.324a16.2,16.2 0,0 0,-13.169 -6.764h-27.991v49.483h54.456zM164.389,87.267 L164.381,87.42a1.5,1.5 0,0 1,-1.339 1.339l-0.153,0.008h-56.556L106.333,37.184a1.5,1.5 0,0 1,1.5 -1.5h28.291a18,18 0,0 1,14.632 7.515l10.265,14.326a18,18 0,0 1,3.368 10.484z"/>
+    <path
+        android:name="path_6"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__5_res_0x7f0802ff"
+        android:pathData="M14.5,91.563a3,3 0,0 1,3 -3h146a3,3 0,0 1,3 3v1.431a3,3 0,0 1,-3 3h-146a3,3 0,0 1,-3 -3z"/>
+    <path
+        android:name="path_7"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__6_res_0x7f080300"
+        android:pathData="M163.5,94.794v1.2h-146v-1.2zM165.3,92.994v-1.431a1.8,1.8 0,0 0,-1.8 -1.8h-146a1.8,1.8 0,0 0,-1.8 1.8v1.431a1.8,1.8 0,0 0,1.8 1.8v1.2l-0.154,-0.003a3,3 0,0 1,-2.842 -2.842l-0.004,-0.154v-1.432a3,3 0,0 1,3 -3h146a3,3 0,0 1,3 3v1.431l-0.004,0.155a3,3 0,0 1,-2.842 2.842l-0.154,0.004v-1.2a1.8,1.8 0,0 0,1.8 -1.8"/>
+    <path
+        android:name="path_8"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__7_res_0x7f080301"
+        android:pathData="M146.5,95c0,8.284 -6.716,15 -15,15s-15,-6.716 -15,-15 6.716,-15 15,-15 15,6.716 15,15"/>
+    <path
+        android:name="path_9"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__8_res_0x7f080302"
+        android:pathData="M145.9,95c0,-7.953 -6.447,-14.4 -14.4,-14.4s-14.4,6.447 -14.4,14.4 6.447,14.4 14.4,14.4 14.4,-6.447 14.4,-14.4m1.2,0c0,8.616 -6.984,15.6 -15.6,15.6s-15.6,-6.984 -15.6,-15.6 6.984,-15.6 15.6,-15.6 15.6,6.984 15.6,15.6"/>
+    <path
+        android:name="path_10"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__9_res_0x7f080303"
+        android:pathData="M138.5,95a7,7 0,1 1,-14 0,7 7,0 0,1 14,0"/>
+    <path
+        android:name="path_11"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__10_res_0x7f0802f3"
+        android:pathData="M138,95a6.5,6.5 0,1 0,-13 0,6.5 6.5,0 0,0 13,0m1,0a7.5,7.5 0,1 1,-15 0,7.5 7.5,0 0,1 15,0"/>
+    <path
+        android:name="path_12"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__11_res_0x7f0802f4"
+        android:pathData="M68.5,95c0,8.284 -6.716,15 -15,15s-15,-6.716 -15,-15 6.716,-15 15,-15 15,6.716 15,15"/>
+    <path
+        android:name="path_13"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__12_res_0x7f0802f5"
+        android:pathData="M67.9,95c0,-7.953 -6.447,-14.4 -14.4,-14.4S39.1,87.047 39.1,95s6.447,14.4 14.4,14.4 14.4,-6.447 14.4,-14.4m1.2,0c0,8.616 -6.984,15.6 -15.6,15.6S37.9,103.616 37.9,95s6.984,-15.6 15.6,-15.6S69.1,86.384 69.1,95"/>
+    <path
+        android:name="path_14"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__13_res_0x7f0802f6"
+        android:pathData="M60.5,95a7,7 0,1 1,-14 0,7 7,0 0,1 14,0"/>
+    <path
+        android:name="path_15"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__14_res_0x7f0802f7"
+        android:pathData="M60,95a6.5,6.5 0,1 0,-13 0,6.5 6.5,0 0,0 13,0m1,0a7.5,7.5 0,1 1,-15 0,7.5 7.5,0 0,1 15,0"/>
+    <path
+        android:name="path_16"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__15_res_0x7f0802f8"
+        android:pathData="M158.055,79.212a4.247,4.247 0,0 1,4.247 -4.247h2.087v8.493h-2.087a4.247,4.247 0,0 1,-4.247 -4.246"/>
+    <path
+        android:name="path_17"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__16_res_0x7f0802f9"
+        android:pathData="M114.778,70.657a1,1 0,0 1,1 -1h9.611a1,1 0,0 1,1 1v2.308a2,2 0,0 1,-2 2h-7.611a2,2 0,0 1,-2 -2z"/>
+    <path
+        android:name="path_18"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__17_res_0x7f0802fa"
+        android:pathData="M138.069,44.177a6,6 0,0 1,4.891 2.526l12.918,18.19a1,1 0,0 1,-0.815 1.579h-39.285a1,1 0,0 1,-1 -1V45.177a1,1 0,0 1,1 -1z"/>
+    <path
+        android:name="path_19"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_120h__18_res_0x7f0802fb"
+        android:pathData="M114.778,65.472V45.177a1,1 0,0 1,1 -1h22.291a6,6 0,0 1,4.891 2.526l12.918,18.19a1,1 0,0 1,-0.815 1.579v-1l-12.918,-18.19a5,5 0,0 0,-3.773 -2.096l-0.303,-0.009h-22.291v21.295a1,1 0,0 1,-1 -1m40.285,0v1h-39.285v-1z"/>
+</vector>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
+    android:paddingBottom="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp">
+    <com.vk.voip.ui.avatars.VoipAvatarViewContainer
+        android:id="@+id/avatar"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:translationY="-1dp"
+        android:importantForAccessibility="no"
+        app:roundAvatarSize="56dp"
+        style="@style/VkIm.AvatarView"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/selected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="36dp"
+        android:scaleType="centerInside"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="38dp"
+        app:srcCompat="@drawable/vk_icon_check_circle_filled_blue_24"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:lines="2"
+        android:includeFontPadding="false"
+        android:translationY="-2dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="6dp"
+        android:letterSpacing="0.02"/>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.content.design.view.photo.flow.PhotoFlowToolbarView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="top"
+        android:id="@+id/archive_description"
+        android:focusable="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/photo_archive_description"
+        android:translationY="-0.8sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:lineHeight="18sp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.vk.content.design.view.photo.archive.ArchiveSkeletonView
+            android:id="@+id/skeleton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <com.vk.photos.root.archive.presentation.view.ArchiveRecyclerPaginatedView
+            android:id="@+id/rpv_photo_flow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"/>
+    </FrameLayout>
+</LinearLayout>

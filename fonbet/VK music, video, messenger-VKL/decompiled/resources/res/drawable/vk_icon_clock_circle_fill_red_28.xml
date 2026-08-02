@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="28dp"
+    android:width="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_clock_circle_fill_red_28__0_res_0x7f080247"
+        android:pathData="M14,14m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="M14,7a7,7 0,1 1,0 14,7 7,0 0,1 0,-14m0,3a0.9,0.9 0,0 0,-0.9 0.9V14a0.9,0.9 0,0 0,0.08 0.37l0.025,0.053 0.012,0.021 0.013,0.022a1,1 0,0 0,0.112 0.148l0.01,0.011 2.012,2.011 0.092,0.08a0.9,0.9 0,0 0,1.18 -0.08l0.08,-0.092a0.9,0.9 0,0 0,-0.08 -1.18L14.9,13.626V10.9a0.9,0.9 0,0 0,-0.9 -0.9"/>
+</vector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/vk_scrim_bottom"
+            android:tint="?attr/vk_ui_background_modal"
+            android:alpha="0.7"/>
+    </item>
+</selector>

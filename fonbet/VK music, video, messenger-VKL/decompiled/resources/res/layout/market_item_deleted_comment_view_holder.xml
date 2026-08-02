@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+    <com.vk.imageloader.view.VKCircleImageView
+        android:id="@+id/user_photo_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:placeholderImage="@drawable/vk_icon_avatar_placeholder_anonim_150"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_subhead"
+        android:id="@+id/deleted_comment_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comment_has_been_deleted"
+        android:singleLine="true"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_photo_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Subhead"/>
+    <com.vk.core.view.components.button.VkSimpleButton
+        android:id="@+id/restore_comment_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/restore_deleted_comment"
+        android:singleLine="true"
+        android:layout_marginStart="6dp"
+        app:buttonAppearance="accent"
+        app:buttonMode="tertiary"
+        app:buttonSizeType="medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/deleted_comment_message"
+        app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

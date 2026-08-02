@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    android:paddingBottom="8dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/restore_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="small"
+        app:text="@string/comment_restore"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/blacklist_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="small"
+        app:text="@string/comment_action_add_to_blacklist"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/report_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:buttonAppearance="neutral"
+        app:buttonMode="secondary"
+        app:buttonSizeType="small"
+        app:text="@string/report_content"/>
+</LinearLayout>

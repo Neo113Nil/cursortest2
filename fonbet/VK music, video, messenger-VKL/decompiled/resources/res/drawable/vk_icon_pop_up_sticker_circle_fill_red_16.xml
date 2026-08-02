@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="16dp"
+    android:width="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <group>
+        <clip-path android:pathData="M0,0h16v16H0z"/>
+        <path
+            android:name="path_1"
+            android:fillColor="@drawable/_vk_icon_pop_up_sticker_circle_fill_red_16__0_res_0x7f08056d"
+            android:pathData="M8,16A8,8 0,1 0,8 0a8,8 0,0 0,0 16Z"
+            android:fillType="evenOdd"/>
+        <path
+            android:name="path_2"
+            android:fillColor="#fff"
+            android:pathData="M5.318,4.994a0.323,0.323 0,0 0,-0.323 0.324v2.695a0.75,0.75 0,1 1,-1.5 0L3.495,5.318c0,-1.007 0.817,-1.823 1.823,-1.823h2.691a0.75,0.75 0,0 1,0 1.5L5.318,4.995ZM11.746,7.224a0.75,0.75 0,0 1,0.75 0.75v2.699a1.822,1.822 0,0 1,-1.822 1.822L7.996,12.495a0.75,0.75 0,0 1,0 -1.499h2.678a0.323,0.323 0,0 0,0.323 -0.323v-2.7a0.75,0.75 0,0 1,0.75 -0.749Z"
+            android:fillType="evenOdd"/>
+        <path
+            android:name="path_3"
+            android:fillColor="#fff"
+            android:pathData="M9,8a1,1 0,1 1,-2 0,1 1,0 0,1 2,0Z"/>
+    </group>
+</vector>

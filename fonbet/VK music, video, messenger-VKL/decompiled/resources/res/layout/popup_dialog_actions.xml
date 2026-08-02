@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/actionsBackground"
+        android:background="?attr/vk_ui_overlay_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"
+        android:importantForAccessibility="no"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/vk_accessibility_actions"
+        android:overScrollMode="never"/>
+</FrameLayout>

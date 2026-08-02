@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <one.video.controls.view.seekbar.ProgressSeekBarView
+        android:id="@+id/progress_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <one.video.controls.view.seekbar.ThumbSeekBarView
+        android:id="@+id/thumb_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

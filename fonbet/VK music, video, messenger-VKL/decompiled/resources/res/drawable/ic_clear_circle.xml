@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="fill">
+        <shape android:shape="oval">
+            <solid android:color="#1e99a2ad"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_vk_ic_close_16"
+            android:tint="?attr/vk_ui_icon_medium"/>
+    </item>
+    <item>
+        <ripple android:color="?attr/vk_ui_transparent_active">
+            <item android:id="@android:id/mask">
+                <shape android:shape="oval">
+                    <solid android:color="#000000"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+</layer-list>

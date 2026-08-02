@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp">
+    <ImageView
+        android:layout_gravity="top|right"
+        android:id="@+id/dismiss_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/vk_icon_dismiss_dark_24"
+        android:contentDescription="@string/accessibility_dismiss"
+        android:layout_marginEnd="16dp"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center"
+        android:id="@+id/collapsed_status"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/catalog_offline_status"
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/vk_icon_globe_cross_outline_20"
+        app:drawableTint="?attr/vk_ui_icon_secondary"
+        style="@style/VkUiTypography.Subhead"/>
+    <include
+        android:id="@+id/expanded_container"
+        layout="@layout/offline_music_catalog_placeholder_view"/>
+</FrameLayout>

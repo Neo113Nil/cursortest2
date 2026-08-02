@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true">
+        <ripple android:color="?attr/vk_ui_text_contrast_themed">
+            <item android:id="@android:id/mask">
+                <shape>
+                    <solid android:color="#52000000"/>
+                    <corners android:radius="@dimen/vk_button_corner_big_radius"/>
+                </shape>
+            </item>
+            <item>
+                <shape>
+                    <solid android:color="?attr/vk_ui_background_accent_themed"/>
+                    <corners android:radius="@dimen/vk_button_corner_big_radius"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item>
+        <shape android:tint="?attr/vk_ui_background_accent_themed">
+            <solid android:color="@color/vk_ui_disabled_alpha_mask"/>
+            <corners android:radius="@dimen/vk_button_corner_big_radius"/>
+        </shape>
+    </item>
+</selector>

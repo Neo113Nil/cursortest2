@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.text.VkFadeText
+        android:id="@+id/feed_lego_banner_title"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.text.VkFadeText
+        android:id="@+id/feed_lego_banner_subtitle"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.text.VkFadeText
+        android:id="@+id/feed_lego_banner_description"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/feed_lego_banner_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vk_ui_spacing_size_l"/>
+</merge>

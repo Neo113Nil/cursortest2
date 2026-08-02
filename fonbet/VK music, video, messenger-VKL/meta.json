@@ -1,0 +1,36 @@
+{
+  "app_id": "com.vkontakte.android",
+  "title": "VK music, video, messenger",
+  "developer": "VKL",
+  "score": 2.9124055,
+  "icon": "https://play-lh.googleusercontent.com/oCQAavUULT3r2vWbt1e4xm8ETArEeYZ-ggqvRl-IvLPL5zcpnFpcwAwmHUB1oYXFYdE-AsjZLPGRtk8rs_cn7A",
+  "url": "https://play.google.com/store/apps/details?id=com.vkontakte.android&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "VKL",
+  "released": "Jun 14, 2011",
+  "updated": "2026-07-15",
+  "version": "8.185",
+  "summary": "Social network: text messaging, live chatting, calls. Music and video, messenger",
+  "folder": "VK music, video, messenger-VKL",
+  "path": "fonbet/VK music, video, messenger-VKL",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.vkontakte.android.apk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/VK music, video, messenger-VKL",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.vkontakte.android...\ncom.vkontakte.android downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.vkontakte.android...\ncom.vkontakte.android downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

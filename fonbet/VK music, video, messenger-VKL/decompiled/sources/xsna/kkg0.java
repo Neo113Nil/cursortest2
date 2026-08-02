@@ -1,0 +1,98 @@
+package xsna;
+
+import androidx.compose.runtime.a;
+import com.vk.core.compose.component.semantics.SemanticsConfiguration;
+import com.vkontakte.android.R;
+import xsna.q630;
+import xsna.tlh0;
+
+/* compiled from: RightMarusiaImpl.kt */
+/* loaded from: classes17.dex */
+public final class kkg0 implements tlh0.b {
+    public final wh50 a;
+    public final wh50 b;
+    public final wh50 c;
+    public final wh50<zhf0> d;
+    public final wh50 e;
+
+    public kkg0() {
+        this(null, null);
+    }
+
+    @Override // xsna.tlh0
+    public final void a(int i, androidx.compose.runtime.a aVar) {
+        int i2;
+        androidx.compose.runtime.a M = aVar.M(-621447088);
+        int i3 = i & 48;
+        q630.a aVar2 = q630.a.a;
+        if (i3 == 0) {
+            i2 = (M.J(aVar2) ? 32 : 16) | i;
+        } else {
+            i2 = i;
+        }
+        if ((i & 384) == 0) {
+            i2 |= M.J(this) ? 256 : 128;
+        }
+        if (M.t(i2 & 1, (i2 & 145) != 144)) {
+            if (androidx.compose.runtime.b.d()) {
+                androidx.compose.runtime.b.f(-621447088, i2, -1, "com.vk.core.compose.component.search.RightMarusiaImpl.Content (RightMarusiaImpl.kt:27)");
+            }
+            q630 H = cdi.H(aVar2, this.d);
+            gzs<s3q0> b = b();
+            if (b == null) {
+                M.K(2074015888);
+                Object x = M.x();
+                if (x == a.C0011a.a) {
+                    x = new jkg0(0);
+                    M.R(x);
+                }
+                b = (gzs) x;
+            } else {
+                M.K(-210191267);
+            }
+            M.j();
+            gzs<s3q0> gzsVar = b;
+            if (androidx.compose.runtime.b.d()) {
+                androidx.compose.runtime.b.f(-870318124, 0, -1, "com.vk.core.compose.icons.generated.VkSdkIcons.<get-Marusia28> (VkSdkIcons.kt:2516)");
+            }
+            lg90 a = pg90.a(R.drawable.vk_icon_marusia_28, 0, M);
+            if (androidx.compose.runtime.b.d()) {
+                androidx.compose.runtime.b.e();
+            }
+            div0.a(a, gzsVar, H, l5g.k, c(), (SemanticsConfiguration) ((zak0) this.c).getValue(), M, 3080, 0);
+            if (androidx.compose.runtime.b.d()) {
+                androidx.compose.runtime.b.e();
+            }
+        } else {
+            M.h();
+        }
+        androidx.compose.runtime.f s = M.s();
+        if (s != null) {
+            s.d = new w1f0(this, i);
+        }
+    }
+
+    @Override // xsna.tlh0.b
+    public final gzs<s3q0> b() {
+        return (gzs) ((zak0) this.b).getValue();
+    }
+
+    @Override // xsna.tlh0.b
+    public final String c() {
+        return (String) ((zak0) this.a).getValue();
+    }
+
+    @Override // xsna.rzb0
+    public final zhf0 d() {
+        return (zhf0) ((zak0) this.e).getValue();
+    }
+
+    public kkg0(String str, gzs gzsVar) {
+        this.a = androidx.compose.runtime.k.b(str);
+        this.b = androidx.compose.runtime.k.b(gzsVar);
+        this.c = androidx.compose.runtime.k.b(null);
+        wh50<zhf0> b = androidx.compose.runtime.k.b(zhf0.e);
+        this.d = b;
+        this.e = b;
+    }
+}

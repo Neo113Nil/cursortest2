@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.spinner.VkSpinner
+        android:layout_gravity="center"
+        android:id="@+id/targets_loader"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminateTint="?attr/vk_ui_icon_medium"
+        app:spinnerSize="regular"/>
+</FrameLayout>

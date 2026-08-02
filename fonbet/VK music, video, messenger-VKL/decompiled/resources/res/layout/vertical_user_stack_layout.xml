@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.vas.design.view.FriendsBirthdayBannerVerticalUserStack xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vertical_user_stack"
+    android:layout_width="48dp"
+    android:layout_height="48dp"/>

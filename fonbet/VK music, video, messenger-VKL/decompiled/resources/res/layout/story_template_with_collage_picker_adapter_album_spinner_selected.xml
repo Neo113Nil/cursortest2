@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_stories_toolbar_spinner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/vk_ui_spacing_size_l"
+    android:paddingVertical="@dimen/vk_ui_spacing_size_m">
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_contrast"
+        android:ellipsize="end"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size_m"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_row_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Subhead"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="center"
+        android:id="@+id/spinner_row_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:paddingStart="@dimen/vk_ui_spacing_size_s"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vk_icon_dropdown_16"
+        app:tint="?attr/vk_ui_icon_contrast"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

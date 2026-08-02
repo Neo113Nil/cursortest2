@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/voip_load_progress"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="22dp"
+        android:indeterminate="true"
+        android:indeterminateTint="?attr/vk_ui_icon_tertiary"
+        android:indeterminateTintMode="src_in"/>
+    <TextView
+        android:id="@+id/voip_select_video_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voip_watch_video_list_loading"
+        style="@style/VkLegacyTypography.Text.Regular"/>
+</LinearLayout>

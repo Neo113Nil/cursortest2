@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_icons_blur_container"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/first_blur_image_view"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:importantForAccessibility="no"/>
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/second_blur_image_view"
+        android:layout_width="136dp"
+        android:layout_height="82dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="38dp"/>
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/third_blur_image_view"
+        android:layout_width="82dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="38dp"
+        android:importantForAccessibility="no"/>
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/fourth_blur_image_view"
+        android:layout_width="136dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="38dp"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="38dp"/>
+</FrameLayout>

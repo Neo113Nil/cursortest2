@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.avatar.VkAvatar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_author_avatar"
+    android:layout_width="46dp"
+    android:layout_height="46dp"
+    app:borderStrokeWidth="1dp"
+    app:borderWidth="3dp"
+    app:contourOverlayEnabled="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:roundAsCircle="true"
+    app:roundAvatarSize="40dp"
+    app:roundingBorderColor="?attr/vk_ui_image_border_alpha"
+    app:roundingBorderWidth="1.5dp"/>

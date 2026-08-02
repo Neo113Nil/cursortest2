@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/paddingS"
+    android:paddingVertical="@dimen/paddingXXS">
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:id="@+id/info_terms_icon"
+        android:layout_width="@dimen/clip_grid_challenge_detailed_info_terms_link_icon_size"
+        android:layout_height="@dimen/clip_grid_challenge_detailed_info_terms_link_icon_size"
+        android:scaleType="centerInside"
+        app:tint="?attr/vk_ui_icon_medium"/>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="@style/VkUiTypography.Headline2"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/info_terms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/attachment"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/clip_grid_challenge_detailed_info_terms_link_text_margin_start"/>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/info_terms_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/clip_grid_challenge_detailed_info_terms_link_link_margin_top"
+        android:text="@string/attach_link"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/clip_grid_challenge_detailed_info_terms_link_text_margin_start"/>
+</FrameLayout>

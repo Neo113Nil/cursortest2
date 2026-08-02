@@ -1,0 +1,6 @@
+package yads;
+
+/* loaded from: classes10.dex */
+public interface et {
+    void cancel();
+}

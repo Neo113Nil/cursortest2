@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.tool.view.FrameLayoutWithTouchInterceptor xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="bottom"
+    android:id="@+id/bottom_gradient_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.music.ui.bottomsheet.BottomNavigationGradientComposeView
+        android:id="@+id/bottom_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_navigation_gradient_height"
+        android:layout_marginBottom="@dimen/vk_bottom_navigation_height"/>
+</com.vk.core.tool.view.FrameLayoutWithTouchInterceptor>

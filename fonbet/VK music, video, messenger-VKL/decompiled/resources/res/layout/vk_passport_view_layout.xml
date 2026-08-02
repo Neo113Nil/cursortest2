@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:layout_gravity="center_vertical"
+            android:id="@+id/vk_passport_view_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_profile_dashboard_content"/>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/vk_new_passport_view_loading"/>
+    </FrameLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/vk_passport_view_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_common_retry"
+        style="@style/VkLegacyButton.Muted"/>
+</merge>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/voip_join_as_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/voip_change_name_toolbar_close"
+        android:background="@drawable/vk_highlight_unlimited"
+        android:padding="10dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/close"
+        app:srcCompat="@drawable/vk_icon_cancel_outline_28"
+        app:tint="?attr/vk_ui_icon_accent_themed"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/voip_change_name_toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/voip_change_name_dialog_default_toolbar_title"
+        android:maxLines="1"
+        android:layout_marginStart="56dp"
+        style="@style/VkUiTypography.Title2Medium"/>
+</FrameLayout>

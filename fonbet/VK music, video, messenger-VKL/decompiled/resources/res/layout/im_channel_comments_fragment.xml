@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/Vk.Theme.Appbar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/vkim_channel_comments_title"
+            app:titleTextAppearance="@style/VkUiTypography.DisplayTitle2"
+            app:titleTextColor="?attr/vk_ui_text_primary"
+            style="@style/VkIm.Toolbar.Style.LargeWithBack"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ViewStub
+        android:id="@+id/channel_comments_stub"
+        android:inflatedId="@+id/im_channel_comments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_layout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

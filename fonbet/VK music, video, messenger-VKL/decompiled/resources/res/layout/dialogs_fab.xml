@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vkim_fab"
+    android:padding="14dp"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_marginBottom="16dp"
+    android:tint="?attr/vk_legacy_accent"
+    android:contentDescription="@string/vkim_accessibility_write_msg"
+    android:layout_marginEnd="16dp"
+    app:backgroundTint="?attr/vk_legacy_modal_card_background"
+    app:elevation="8dp"
+    app:fabCustomSize="56dp"
+    app:layout_anchorGravity="end|bottom"
+    app:layout_behavior="com.vk.core.ui.VkFabBehaviour"
+    app:maxImageSize="28dp"
+    app:srcCompat="@drawable/vk_icon_write_square_outline_28"/>

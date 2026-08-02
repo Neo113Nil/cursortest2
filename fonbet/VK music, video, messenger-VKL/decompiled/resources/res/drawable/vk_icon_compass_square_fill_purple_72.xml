@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="72dp"
+    android:width="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_compass_square_fill_purple_72__0_res_0x7f08024f"
+        android:pathData="M24,0L48,0A24,24 0,0 1,72 24L72,48A24,24 0,0 1,48 72L24,72A24,24 0,0 1,0 48L0,24A24,24 0,0 1,24 0z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="M37.414,37.414a2,2 0,1 1,-2.828 -2.828,2 2,0 0,1 2.828,2.828Z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="#fff"
+        android:pathData="M25.393,46.607c5.858,5.858 15.356,5.858 21.214,0 5.858,-5.858 5.858,-15.356 0,-21.214 -5.858,-5.858 -15.356,-5.858 -21.214,0 -5.858,5.858 -5.858,15.356 0,21.214ZM33.503,31.321 L42.101,29.171a0.6,0.6 0,0 1,0.727 0.728l-2.149,8.597a3,3 0,0 1,-2.183 2.183L29.9,42.83a0.6,0.6 0,0 1,-0.727 -0.728l2.149,-8.597a3,3 0,0 1,2.183 -2.183Z"
+        android:fillType="evenOdd"/>
+</vector>

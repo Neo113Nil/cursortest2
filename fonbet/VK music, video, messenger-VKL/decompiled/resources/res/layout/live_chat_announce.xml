@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:id="@+id/liveAnnounceUserPic"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:scaleType="centerCrop"/>
+    <com.vk.core.view.components.text.links.VkLinkedText
+        android:textAppearance="@style/VkUiTypography.Subhead.Unscaled"
+        android:textColor="@color/vk_white"
+        android:gravity="left"
+        android:id="@+id/liveAnnounceText"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="1dp"
+        android:alpha="0.7"
+        android:elevation="@dimen/vk_ui_elevation_two"/>
+</merge>

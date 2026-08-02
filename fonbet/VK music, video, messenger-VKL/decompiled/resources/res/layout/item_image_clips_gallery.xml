@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:clickable="true"
+    android:clipToPadding="false"
+    android:layout_width="@dimen/effect_list_item_size"
+    android:layout_height="@dimen/effect_list_item_size">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/item_preview_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/effect_list_item_margin_dp"
+        android:scaleType="centerCrop"/>
+    <View
+        android:id="@+id/view_selected_foreground"
+        android:background="@drawable/bg_group_effect_border"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/effect_list_item_margin_dp"/>
+</FrameLayout>

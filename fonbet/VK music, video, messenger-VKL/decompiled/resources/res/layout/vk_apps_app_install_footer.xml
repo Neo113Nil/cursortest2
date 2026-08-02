@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/vk_apps_footer_container"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="@dimen/vk_install_horizontal_margin"
+        android:layout_marginVertical="12dp">
+        <com.vk.core.view.components.button.VkSimpleButton
+            android:id="@+id/vk_apps_install_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/vk_apps_install_screen_install_game_button"
+            app:buttonAppearance="accent"
+            app:buttonMode="primary"
+            app:buttonSizeType="large"/>
+        <com.vk.core.view.components.spinner.VkSpinner
+            android:layout_gravity="center"
+            android:id="@+id/vk_apps_install_spinner"
+            android:visibility="gone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminateTint="?attr/vk_ui_icon_contrast_themed"
+            android:indeterminateTintMode="src_in"/>
+    </FrameLayout>
+    <com.vk.core.view.components.text.VkText
+        android:textAppearance="@style/VkUiTypography.Caption1"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/vk_apps_install_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:layout_marginHorizontal="@dimen/vk_install_horizontal_margin"/>
+</LinearLayout>

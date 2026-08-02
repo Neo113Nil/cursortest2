@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/vk_black_alpha35"/>
+        </shape>
+    </item>
+    <item>
+        <ripple android:color="?attr/vk_legacy_separator_alpha">
+            <item android:id="@android:id/mask">
+                <shape android:shape="oval">
+                    <solid android:color="@color/vk_black"/>
+                </shape>
+            </item>
+        </ripple>
+    </item>
+    <item android:gravity="center">
+        <bitmap
+            android:src="@drawable/vk_icon_deprecated_ic_camera_outline_28"
+            android:tint="@color/vk_white"/>
+    </item>
+</layer-list>

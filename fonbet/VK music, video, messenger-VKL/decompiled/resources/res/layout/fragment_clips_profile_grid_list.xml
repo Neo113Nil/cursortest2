@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.clips.viewer.impl.grid.lists.ClipsGridPaginatedView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clips_grid_list_paginated_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:vk_enableItemAnimations="true"
+    app:vk_errorBackgroundColor="?attr/vk_ui_background_content"
+    app:vk_errorFitCenter="true"/>

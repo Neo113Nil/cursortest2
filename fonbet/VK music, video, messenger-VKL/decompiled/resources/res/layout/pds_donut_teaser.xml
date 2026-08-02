@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/donut_teaser_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/donut_teaser_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="18dp">
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.Text"
+            android:textColor="?attr/vk_ui_text_contrast"
+            android:ellipsize="end"
+            android:id="@+id/donut_teaser_text"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:maxWidth="400dp"
+            android:maxLines="4"
+            android:layout_weight="1"
+            android:textAlignment="center"/>
+        <com.vk.core.view.components.button.VkButton
+            android:id="@+id/donut_teaser_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:buttonAppearance="overlay"
+            app:buttonMode="primary"
+            app:buttonSizeType="small"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.ui.CircularProgressView
+        android:layout_gravity="center"
+        android:id="@+id/download_progress_view"
+        android:background="@drawable/bg_black_circle_alpha_35"
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:cpv_animAutostart="true"
+        app:cpv_animSwoopDuration="0"
+        app:cpv_color="@color/vk_white"
+        app:cpv_indeterminate="false"
+        app:cpv_maxProgress="1"
+        app:cpv_thickness="2.5dp"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/download_progress_action_view"
+        android:padding="1dp"
+        android:visibility="gone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/vk_icon_cancel_24"
+        android:contentDescription="@string/clips_accessibility_cancel_upload"
+        app:tint="@color/vk_white"/>
+</merge>

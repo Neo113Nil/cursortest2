@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.FootnoteCapsMedium"
+        android:textStyle="normal"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/pack_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stickers_keyboard_ugc"
+        android:maxLines="1"
+        android:layout_alignBaseline="@+id/left_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+    <ImageButton
+        android:id="@+id/left_button"
+        android:background="@drawable/rounded_list_selector"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/stickers_ugc"
+        android:layout_toEndOf="@+id/pack_name"
+        app:srcCompat="@drawable/vk_icon_info_circle_outline_20"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <ImageButton
+        android:id="@+id/dots_button"
+        android:background="@drawable/rounded_list_selector"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/stickers_ugc_content_description_report_stickers"
+        android:paddingEnd="4dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/vk_icon_more_vertical_24"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+</RelativeLayout>

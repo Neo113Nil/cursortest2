@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/post_badge_container"
+    android:background="@drawable/badge_background"
+    android:focusable="true"
+    android:focusableInTouchMode="false"
+    android:visibility="visible"
+    android:layout_width="wrap_content"
+    android:layout_height="116dp"
+    android:layout_marginTop="7dp">
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/badge_image"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        app:actualImageScaleType="centerInside"/>
+    <TextView
+        android:textColor="@color/vk_white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/badge_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="@style/VkUiTypography.Title2"/>
+</merge>

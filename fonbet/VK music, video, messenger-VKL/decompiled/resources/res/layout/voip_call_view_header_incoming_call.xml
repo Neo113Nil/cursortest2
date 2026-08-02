@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/incoming_call_header_container"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_header_vk_logo"
+        android:visibility="visible"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vk_icon_new_logo_vk_28"
+        app:tint="@color/vk_white"/>
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/vk_white"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_header_peer_name"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:shadowColor="#1e000000"
+        android:shadowRadius="12"
+        android:drawablePadding="6dp"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/vk_white"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/header_subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:shadowColor="#1e000000"
+        android:shadowRadius="12"
+        android:alpha="0.8"
+        android:letterSpacing="-0.02"/>
+</LinearLayout>

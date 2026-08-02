@@ -1,0 +1,28 @@
+package xsna;
+
+import com.vk.clips.sdk.shared.item.ads.events.AdsItemViewEvent;
+
+/* compiled from: AdsItemViewEvent.kt */
+/* loaded from: classes17.dex */
+public final class n01 implements AdsItemViewEvent {
+    public final rlh0 b;
+
+    public n01(rlh0 rlh0Var) {
+        this.b = rlh0Var;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof n01) && epx.f(this.b, ((n01) obj).b);
+    }
+
+    public final int hashCode() {
+        return this.b.hashCode();
+    }
+
+    public final String toString() {
+        return "OnVideoSizeChanged(videoSize=" + this.b + ')';
+    }
+}

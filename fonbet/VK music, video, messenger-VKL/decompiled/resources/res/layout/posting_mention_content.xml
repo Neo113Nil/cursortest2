@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/post_mention_container"
+    android:background="?attr/vk_ui_background_content"
+    android:paddingBottom="48dp"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mention_recycler"
+        android:background="?attr/vk_ui_background_content"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingVertical="4dp"/>
+    <com.vk.core.view.components.spinner.VkScreenSpinner
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mention_loading_error"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spinnerMode="dialog"
+        app:spinnerSize="regular"
+        app:spinnerState="error"
+        app:subtitle="@string/mention_loading_error"/>
+    <com.vk.core.view.components.spinner.VkScreenSpinner
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/loading_mention_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spinnerMode="dialog"
+        app:spinnerSize="regular"
+        app:spinnerState="loading"
+        app:subtitle="@string/mention_loading_info_message"/>
+    <com.vk.feed.design.view.posting.divider.PostingDivider
+        android:id="@+id/mention_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

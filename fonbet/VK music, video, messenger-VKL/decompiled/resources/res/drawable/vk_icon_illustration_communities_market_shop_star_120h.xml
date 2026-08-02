@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="120">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__0_res_0x7f0802b0"
+        android:pathData="M89.14,3.865c9.41,0 17.04,7.63 17.04,17.041q0,0.505 -0.03,1.002h24.089a4.01,4.01 0,0 1,4.01 4.01v14.034a4.01,4.01 0,0 1,-4.01 4.009H48.042a4.01,4.01 0,0 1,-4.01 -4.009V25.918a4.01,4.01 0,0 1,4.01 -4.01h24.086q-0.03,-0.497 -0.03,-1.002c0,-9.411 7.63,-17.04 17.041,-17.04"/>
+    <path
+        android:name="path_2"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__1_res_0x7f0802b1"
+        android:pathData="M130.239,42.459v1.502L48.042,43.961v-1.502zM132.747,39.952L132.747,25.918a2.51,2.51 0,0 0,-2.251 -2.495l-0.257,-0.013h-25.68l0.092,-1.589q0.027,-0.459 0.027,-0.915c0,-8.582 -6.957,-15.539 -15.539,-15.539S73.6,12.324 73.6,20.907q0,0.455 0.027,0.914l0.092,1.589L48.042,23.41a2.51,2.51 0,0 0,-2.508 2.508v14.034a2.507,2.507 0,0 0,2.508 2.507v1.502a4.01,4.01 0,0 1,-4.01 -4.009L44.032,25.918a4.01,4.01 0,0 1,4.01 -4.01h24.086q-0.03,-0.497 -0.03,-1.002c0,-9.411 7.63,-17.04 17.041,-17.04s17.041,7.629 17.041,17.04q0,0.505 -0.03,1.002h24.089a4.01,4.01 0,0 1,4.01 4.01v14.034a4.01,4.01 0,0 1,-4.01 4.009v-1.502a2.51,2.51 0,0 0,2.495 -2.251z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__2_res_0x7f0802bc"
+        android:pathData="M42.529,44.005c0,-1.107 0.897,-2.004 2.004,-2.004h88.212c1.107,0 2.005,0.897 2.005,2.004v54.13a2.005,2.005 0,0 1,-2.005 2.005H44.533a2.005,2.005 0,0 1,-2.004 -2.005z"/>
+    <path
+        android:name="path_4"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__3_res_0x7f0802c0"
+        android:pathData="M132.745,98.266v1.874L44.534,100.14v-1.874zM132.876,98.136v-54.13a0.13,0.13 0,0 0,-0.131 -0.131L44.534,43.875a0.13,0.13 0,0 0,-0.131 0.13v54.13a0.13,0.13 0,0 0,0.13 0.131v1.874l-0.205,-0.01a2.006,2.006 0,0 1,-1.789 -1.79l-0.01,-0.205v-54.13c0,-1.038 0.788,-1.891 1.8,-1.994l0.204,-0.01h88.212l0.205,0.01c1.011,0.103 1.8,0.957 1.8,1.994v54.13l-0.01,0.206a2.006,2.006 0,0 1,-1.79 1.789l-0.205,0.01v-1.874a0.13,0.13 0,0 0,0.131 -0.13"/>
+    <path
+        android:name="path_5"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__4_res_0x7f0802c1"
+        android:pathData="M88.292,11.687a0.937,0.937 0,0 1,1.696 0l1.94,4.132 4.431,0.677a0.937,0.937 0,0 1,0.53 1.58l-3.238,3.319 1.034,4.57a0.937,0.937 0,0 1,-1.343 1.039l-4.202,-2.163 -4.203,2.163a0.937,0.937 0,0 1,-1.342 -1.04l1.034,-4.569 -3.238,-3.318a0.937,0.937 0,0 1,0.53 -1.58l4.431,-0.678z"/>
+    <path
+        android:name="path_6"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__5_res_0x7f0802c2"
+        android:pathData="M39.02,57.995a3.007,3.007 0,0 1,3.007 -3.007h94.226a3.007,3.007 0,0 1,3.007 3.007v54.13a3.007,3.007 0,0 1,-3.007 3.007H42.027a3.007,3.007 0,0 1,-3.007 -3.007z"/>
+    <path
+        android:name="path_7"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__6_res_0x7f0802c3"
+        android:pathData="M124.224,115.133L105.18,115.133L105.18,84.56h19.044zM102.172,84.56v30.573h-25.06L77.112,84.56zM74.104,84.56v30.573L54.056,115.133L54.056,84.56zM121.217,66.015a3.007,3.007 0,0 1,3.007 3.007v12.53L105.18,81.552L105.18,66.015zM74.104,66.015v15.537L54.056,81.552v-12.53a3.007,3.007 0,0 1,3.007 -3.007zM102.172,66.015v15.537h-25.06L77.112,66.015z"/>
+    <path
+        android:name="path_8"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__7_res_0x7f0802c4"
+        android:pathData="M74.104,84.56v30.573L54.056,115.133L54.056,84.56zM102.172,84.56v30.573h-25.06L77.112,84.56zM124.224,84.56v30.573L105.18,115.133L105.18,84.56zM106.383,113.93h16.638L123.021,85.763h-16.638zM78.315,113.93h22.654L100.969,85.763L78.315,85.763zM55.259,113.93h17.642L72.901,85.763L55.259,85.763zM74.104,66.015v15.537L54.056,81.552v-12.53a3.007,3.007 0,0 1,3.007 -3.007zM102.172,66.015v15.537h-25.06L77.112,66.015zM123.021,69.022c0,-0.997 -0.808,-1.804 -1.804,-1.804h-14.834v13.13h16.638zM78.315,80.349h22.654L100.969,67.218L78.315,67.218zM55.259,80.349h17.642L72.901,67.218L57.063,67.218c-0.996,0 -1.804,0.807 -1.804,1.803zM124.224,81.552L105.18,81.552L105.18,66.015h16.037a3.007,3.007 0,0 1,3.007 3.007z"/>
+    <path
+        android:name="path_9"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__8_res_0x7f0802c5"
+        android:pathData="m39.02,101.099 l100.24,-24.905V65.012H39.02z"/>
+    <path
+        android:name="path_10"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__9_res_0x7f0802c6"
+        android:pathData="M136.301,34.792a3.01,3.01 0,0 0,-2.629 -1.546h-11.038l6.896,19.491h16.747z"/>
+    <path
+        android:name="path_11"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__10_res_0x7f0802b2"
+        android:pathData="M42.054,34.784a3.01,3.01 0,0 1,2.624 -1.538h10.968L48.75,52.737H32.003z"/>
+    <path
+        android:name="path_12"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__11_res_0x7f0802b3"
+        android:pathData="M108.843,33.246H95.052l1.97,19.491h16.747z"/>
+    <path
+        android:name="path_13"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__12_res_0x7f0802b4"
+        android:pathData="M69.437,33.246h13.792l-1.97,19.491H64.413z"/>
+    <path
+        android:name="path_14"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__13_res_0x7f0802b5"
+        android:pathData="M95.052,33.246H83.231l-1.97,19.491h15.761z"/>
+    <path
+        android:name="path_15"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__14_res_0x7f0802b6"
+        android:pathData="M122.634,33.246h-13.792l4.926,19.491h15.762z"/>
+    <path
+        android:name="path_16"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__15_res_0x7f0802b7"
+        android:pathData="M55.647,33.246h13.791l-4.925,19.491H48.75z"/>
+    <path
+        android:name="path_17"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__16_res_0x7f0802b8"
+        android:pathData="M113.769,52.737h15.762V68.33h-15.762z"/>
+    <path
+        android:name="path_18"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__17_res_0x7f0802b9"
+        android:pathData="M64.51,52.737H48.748V68.33H64.51z"/>
+    <path
+        android:name="path_19"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__18_res_0x7f0802ba"
+        android:pathData="M113.769,52.737H97.022V68.33h16.747z"/>
+    <path
+        android:name="path_20"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__19_res_0x7f0802bb"
+        android:pathData="M64.51,52.737h16.747V68.33H64.51z"/>
+    <path
+        android:name="path_21"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__20_res_0x7f0802bd"
+        android:pathData="M146.277,52.737H129.53V68.33h13.74a3.007,3.007 0,0 0,3.007 -3.007z"/>
+    <path
+        android:name="path_22"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__21_res_0x7f0802be"
+        android:pathData="M32.003,52.737H48.75V68.33H35.01a3.007,3.007 0,0 1,-3.007 -3.007z"/>
+    <path
+        android:name="path_23"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_market_shop_star_120h__22_res_0x7f0802bf"
+        android:pathData="M81.258,52.737H97.02V68.33H81.258z"/>
+</vector>

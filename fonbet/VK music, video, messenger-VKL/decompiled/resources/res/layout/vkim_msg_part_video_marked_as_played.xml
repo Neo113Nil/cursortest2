@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/vkim_marked_as_played_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/vkim_open_clips_recom_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/vkim_find_clip_in_response"
+        android:paddingHorizontal="12dp"
+        app:buttonAppearance="overlay"
+        app:buttonMode="primary"
+        app:buttonSizeType="medium"
+        app:icon="@drawable/vk_icon_logo_clips_outline_20"/>
+    <com.vk.core.view.components.button.VkButton
+        android:id="@+id/vkim_play_again_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vkim_watch_again"
+        app:buttonAppearance="overlay"
+        app:buttonMode="tertiary"
+        app:buttonSizeType="small"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vk_community_place_info_item"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="28dp">
+    <com.vk.core.view.components.cell.VkMiniInfoCell
+        android:id="@+id/place_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/all_places_button"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="wrap"/>
+    <com.vk.core.view.components.text.VkText
+        android:textColor="?attr/vk_ui_text_link"
+        android:id="@+id/all_places_button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="-8dp"
+        android:layout_marginEnd="@dimen/vk_ui_spacing_size2_xl"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/place_info"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Paragraph"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

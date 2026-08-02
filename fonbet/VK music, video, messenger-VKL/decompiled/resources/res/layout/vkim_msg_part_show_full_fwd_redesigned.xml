@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_rounded_8"
+    android:paddingTop="@dimen/fwd_button_show_all_padding_vertical"
+    android:paddingBottom="@dimen/fwd_button_show_all_padding_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/vkim_msg_list_fwd_show_all"
+    android:paddingStart="@dimen/fwd_button_show_all_padding_horizontal"
+    android:paddingEnd="@dimen/fwd_button_show_all_padding_horizontal"
+    android:backgroundTint="?attr/vk_ui_background_secondary"
+    android:backgroundTintMode="multiply">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_gravity="center"
+        android:id="@+id/vkim_fwd_message_show_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:fontFamily="@font/vk_roboto_regular"
+        style="@style/VkUiTypography.Headline2"/>
+</FrameLayout>

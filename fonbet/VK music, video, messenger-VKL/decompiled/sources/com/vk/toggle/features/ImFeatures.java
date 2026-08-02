@@ -1,0 +1,324 @@
+package com.vk.toggle.features;
+
+import com.vk.toggle.b;
+import xsna.asp;
+import xsna.gd6;
+import xsna.zrp;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: ImFeatures.kt */
+/* loaded from: classes11.dex */
+public final class ImFeatures implements gd6 {
+    private static final /* synthetic */ zrp $ENTRIES;
+    private static final /* synthetic */ ImFeatures[] $VALUES;
+    public static final ImFeatures ALL_FOLDER_HIDE_CHANNELS;
+    public static final ImFeatures ANIMATED_SHARING_CONTROL;
+    public static final ImFeatures ANTISPAM_MODAL;
+    public static final ImFeatures BACKGROUND_LOSS_FIX;
+    public static final ImFeatures BACKPRESSURE_DETECTOR;
+    public static final ImFeatures BIRTHDAYS_BANNER_REDESIGN;
+    public static final ImFeatures BLUR_POST;
+    public static final ImFeatures BUSINESS_FOLDER;
+    public static final ImFeatures CHANNELS_FOLDER_FORCED_ANY;
+    public static final ImFeatures CHANNELS_FOLDER_FORCED_UNMUTED;
+    public static final ImFeatures CHANNELS_IN_ALL_FOLDER;
+    public static final ImFeatures CHANNELS_SUBSCRIBERS_COUNT;
+    public static final ImFeatures CHANNEL_MSG_SEARCH;
+    public static final ImFeatures CHAT_FOOTER_BAN_VISIBILITY;
+    public static final ImFeatures CHAT_STORY_MENTION_REPOST;
+    public static final ImFeatures CLIPS_MSG_PAGINATION;
+    public static final ImFeatures CONTACTS_BANNER_PRIORITY;
+    public static final ImFeatures DB_CURSOR_DEVNULL_REPORT;
+    public static final ImFeatures DB_QUERIES_STAT;
+    public static final ImFeatures DISABLE_CHANNELS_FOLDER_STANDALONE;
+    public static final ImFeatures DISABLE_GEO;
+    public static final ImFeatures DONUTS_EASY_FLOW_IN_CHANNEL;
+    public static final ImFeatures DONUTS_EASY_FLOW_IN_CHANNEL_EMPTY_STATE;
+    public static final ImFeatures EDU_LOCAL_CONTACTS_SEARCH;
+    public static final ImFeatures EDU_OPEN_ORGANIZATION_MINI_APP;
+    public static final ImFeatures EDU_SCHEDULE;
+    public static final ImFeatures EDU_SORT_CHAT_MEMBERS_CONTACT;
+    public static final ImFeatures ENGINE_WATCHDOG;
+    public static final ImFeatures ERROR_COMMANDS_FAILFAST;
+    public static final ImFeatures FEATURE_CHAT_MEMBER_NAME_ORDER;
+    public static final ImFeatures FEATURE_DIFF_SYNC_MULTIPLE_LAST_MESSAGES;
+    public static final ImFeatures FEATURE_DIFF_SYNC_PRIORITY;
+    public static final ImFeatures FEATURE_DIFF_SYNC_WARMUP_ALL;
+    public static final ImFeatures FEATURE_DIFF_SYNC_WARMUP_ARCHIVED_REACTIONS;
+    public static final ImFeatures FEATURE_DIFF_SYNC_WARMUP_RANGE;
+    public static final ImFeatures FEATURE_IM_EDU_GLOBAL_SEARCH_FOR_TEACHER;
+    public static final ImFeatures FEATURE_IM_PERF_CONFIG;
+    public static final ImFeatures FIX_DOUBLE_GET_CONVERSATIONS;
+    public static final ImFeatures FIX_GET_CONVERSATION_LOOP;
+    public static final ImFeatures FOLDER_NOT_FOUND_FIX;
+    public static final ImFeatures FS_TRANSFER_RECOM_PAYLOAD;
+    public static final ImFeatures GRID_SHARING_CREATE_CHAT;
+    public static final ImFeatures GRID_SHARING_ENABLED;
+    public static final ImFeatures GROUPS_MESSENGER_DISABLED;
+    public static final ImFeatures GROUP_TAGS;
+    public static final ImFeatures HUAWEI_PUSH_VENDOR_CHOICE_FIX;
+    public static final ImFeatures IM_CANCEL_DB_QUERY;
+    public static final ImFeatures IM_CHANNELS_STICKERS;
+    public static final ImFeatures IM_CHANNEL_WS_QUERY_USERAGENT;
+    public static final ImFeatures IM_CHATS_SKELETONS_REDESIGN;
+    public static final ImFeatures IM_CHAT_EMPTY_STATES_REDESIGN;
+    public static final ImFeatures IM_CHAT_MAKE_LINK_REDESIGN;
+    public static final ImFeatures IM_CHAT_MODALS_REDESIGN;
+    public static final ImFeatures IM_CHAT_PROFILE_ATTACHES;
+    public static final ImFeatures IM_CHAT_PROFILE_MEMBERS_COMPONENT_REDESIGN;
+    public static final ImFeatures IM_CHAT_PROFILE_REDESIGN;
+    public static final ImFeatures IM_CHAT_SETTINGS_REDESIGN;
+    public static final ImFeatures IM_CHAT_TOOLBAR_REDESIGN;
+    public static final ImFeatures IM_CMD_SHUTDOWN_CANCEL;
+    public static final ImFeatures IM_DB_NO_CKPT_ON_CLOSE;
+    public static final ImFeatures IM_DROP_CACHE_WITHOUT_ENGINE_RESTART;
+    public static final ImFeatures IM_ENGINE_SWITCH_ACCOUNT_FIX;
+    public static final ImFeatures IM_FOLDERS_LAZY_LOADING;
+    public static final ImFeatures IM_IMPORT_FROM_TG;
+    public static final ImFeatures IM_INFO_BANNER_ICON_TINT;
+    public static final ImFeatures IM_INTERRUPTIBLE_CMD;
+    public static final ImFeatures IM_MULTIPLE_VIDEO_MSG_PLAY_FIX;
+    public static final ImFeatures IM_REVALIDATE_CAN_WRITE;
+    public static final ImFeatures IM_SELECT_CONTACTS_FR_REDESIGN;
+    public static final ImFeatures IM_SHACKBAR_INSTEAD_TOAST;
+    public static final ImFeatures IM_START_CHAT_REDESIGN;
+    public static final ImFeatures IM_TRACER_SYSTRACE_PROFILER_CONFIG;
+    public static final ImFeatures LP_DIALOG_TRANSITION_DATA;
+    public static final ImFeatures LP_SYNC_THREAD_PRIORITY_INCREASE;
+    public static final ImFeatures MAX_AD_BANNER;
+    public static final ImFeatures MISSED_CALL_SETTINGS_SNIPPET;
+    public static final ImFeatures MSG_VIDEO_FWD_ASR_DISABLE;
+    public static final ImFeatures MUSIC_IN_VKME;
+    public static final ImFeatures NEW_CONTACT_NOTIFICATION;
+    public static final ImFeatures PERSONAL_CHANNEL_CREATION_ONBOARDING;
+    public static final ImFeatures QUICK_STICKER_SUGGEST_POST;
+    public static final ImFeatures READ_ALL_IN_ALL;
+    public static final ImFeatures REDESIGN_DIALOG_LIST_ITEM;
+    public static final ImFeatures REDESIGN_TOPBAR_VKUI;
+    public static final ImFeatures REDUCE_GET_RECENT_STICKERS_CALLS;
+    public static final ImFeatures SHOW_VISUAL_MESSAGE_DEBUG_INFO;
+    public static final ImFeatures STALLS_REPORTER;
+    public static final ImFeatures VIDEO_SIZE_DEPENDS_ON_ORIENTATION;
+    public static final ImFeatures VKME_FIX_FB_INIT_ANR;
+    public static final ImFeatures VKM_CHANNEL_DONUT_REACTION;
+    public static final ImFeatures VKM_DIALOGS_NONEXPIRED_FIX;
+    public static final ImFeatures VKM_LOAD_ACTUAL_DIALOG_HEADER;
+    private final String key;
+
+    static {
+        ImFeatures imFeatures = new ImFeatures("ENGINE_WATCHDOG", 0, "vkm_engine_watchdog");
+        ENGINE_WATCHDOG = imFeatures;
+        ImFeatures imFeatures2 = new ImFeatures("DB_CURSOR_DEVNULL_REPORT", 1, "vkm_cursor_devnull_reports");
+        DB_CURSOR_DEVNULL_REPORT = imFeatures2;
+        ImFeatures imFeatures3 = new ImFeatures("BACKPRESSURE_DETECTOR", 2, "vkm_backpressuredetector");
+        BACKPRESSURE_DETECTOR = imFeatures3;
+        ImFeatures imFeatures4 = new ImFeatures("GROUP_TAGS", 3, "vkm_group_tags");
+        GROUP_TAGS = imFeatures4;
+        ImFeatures imFeatures5 = new ImFeatures("DB_QUERIES_STAT", 4, "vkm_db_queries_stat");
+        DB_QUERIES_STAT = imFeatures5;
+        ImFeatures imFeatures6 = new ImFeatures("ERROR_COMMANDS_FAILFAST", 5, "vkm_me_commands_failfast");
+        ERROR_COMMANDS_FAILFAST = imFeatures6;
+        ImFeatures imFeatures7 = new ImFeatures("GROUPS_MESSENGER_DISABLED", 6, "vkm_groups_newim_disabled");
+        GROUPS_MESSENGER_DISABLED = imFeatures7;
+        ImFeatures imFeatures8 = new ImFeatures("BUSINESS_FOLDER", 7, "vkm_business_folder");
+        BUSINESS_FOLDER = imFeatures8;
+        ImFeatures imFeatures9 = new ImFeatures("FEATURE_IM_PERF_CONFIG", 8, "vkm_perf_config");
+        FEATURE_IM_PERF_CONFIG = imFeatures9;
+        ImFeatures imFeatures10 = new ImFeatures("FEATURE_DIFF_SYNC_WARMUP_ARCHIVED_REACTIONS", 9, "vkm_diff_sync_wrmp_arcrctns");
+        FEATURE_DIFF_SYNC_WARMUP_ARCHIVED_REACTIONS = imFeatures10;
+        ImFeatures imFeatures11 = new ImFeatures("FEATURE_DIFF_SYNC_WARMUP_ALL", 10, "vkm_diff_sync_wrmp_all");
+        FEATURE_DIFF_SYNC_WARMUP_ALL = imFeatures11;
+        ImFeatures imFeatures12 = new ImFeatures("FEATURE_DIFF_SYNC_PRIORITY", 11, "vkm_diff_sync_priority");
+        FEATURE_DIFF_SYNC_PRIORITY = imFeatures12;
+        ImFeatures imFeatures13 = new ImFeatures("FEATURE_DIFF_SYNC_WARMUP_RANGE", 12, "vkm_diff_sync_warmup_range");
+        FEATURE_DIFF_SYNC_WARMUP_RANGE = imFeatures13;
+        ImFeatures imFeatures14 = new ImFeatures("FEATURE_DIFF_SYNC_MULTIPLE_LAST_MESSAGES", 13, "vkm_diff_sync_mltpl_last_msgs");
+        FEATURE_DIFF_SYNC_MULTIPLE_LAST_MESSAGES = imFeatures14;
+        ImFeatures imFeatures15 = new ImFeatures("CHANNELS_SUBSCRIBERS_COUNT", 14, "vkm_channels_subscribers_count");
+        CHANNELS_SUBSCRIBERS_COUNT = imFeatures15;
+        ImFeatures imFeatures16 = new ImFeatures("PERSONAL_CHANNEL_CREATION_ONBOARDING", 15, "vkm_pers_chan_creation_onb");
+        PERSONAL_CHANNEL_CREATION_ONBOARDING = imFeatures16;
+        ImFeatures imFeatures17 = new ImFeatures("LP_SYNC_THREAD_PRIORITY_INCREASE", 16, "vkm_sync_thread_priority");
+        LP_SYNC_THREAD_PRIORITY_INCREASE = imFeatures17;
+        ImFeatures imFeatures18 = new ImFeatures("FEATURE_IM_EDU_GLOBAL_SEARCH_FOR_TEACHER", 17, "vkm_edu_global_search");
+        FEATURE_IM_EDU_GLOBAL_SEARCH_FOR_TEACHER = imFeatures18;
+        ImFeatures imFeatures19 = new ImFeatures("STALLS_REPORTER", 18, "vkm_stalls_reporter");
+        STALLS_REPORTER = imFeatures19;
+        ImFeatures imFeatures20 = new ImFeatures("MUSIC_IN_VKME", 19, "vkm_music");
+        MUSIC_IN_VKME = imFeatures20;
+        ImFeatures imFeatures21 = new ImFeatures("FEATURE_CHAT_MEMBER_NAME_ORDER", 20, "vkm_chat_member_name_order");
+        FEATURE_CHAT_MEMBER_NAME_ORDER = imFeatures21;
+        ImFeatures imFeatures22 = new ImFeatures("ANTISPAM_MODAL", 21, "vkm_antispam_modal");
+        ANTISPAM_MODAL = imFeatures22;
+        ImFeatures imFeatures23 = new ImFeatures("IM_INFO_BANNER_ICON_TINT", 22, "vkm_info_banner_icon_tint");
+        IM_INFO_BANNER_ICON_TINT = imFeatures23;
+        ImFeatures imFeatures24 = new ImFeatures("HUAWEI_PUSH_VENDOR_CHOICE_FIX", 23, "vkm_huawei_push_fix");
+        HUAWEI_PUSH_VENDOR_CHOICE_FIX = imFeatures24;
+        ImFeatures imFeatures25 = new ImFeatures("IM_SHACKBAR_INSTEAD_TOAST", 24, "vkm_snackbar_instead_toast");
+        IM_SHACKBAR_INSTEAD_TOAST = imFeatures25;
+        ImFeatures imFeatures26 = new ImFeatures("EDU_SORT_CHAT_MEMBERS_CONTACT", 25, "vkm_sort_chat_members_contact");
+        EDU_SORT_CHAT_MEMBERS_CONTACT = imFeatures26;
+        ImFeatures imFeatures27 = new ImFeatures("EDU_LOCAL_CONTACTS_SEARCH", 26, "vkm_edu_local_contacts_search");
+        EDU_LOCAL_CONTACTS_SEARCH = imFeatures27;
+        ImFeatures imFeatures28 = new ImFeatures("EDU_SCHEDULE", 27, "vkm_edu_schedule");
+        EDU_SCHEDULE = imFeatures28;
+        ImFeatures imFeatures29 = new ImFeatures("EDU_OPEN_ORGANIZATION_MINI_APP", 28, "vkm_open_org_mini_app");
+        EDU_OPEN_ORGANIZATION_MINI_APP = imFeatures29;
+        ImFeatures imFeatures30 = new ImFeatures("NEW_CONTACT_NOTIFICATION", 29, "vkm_new_contact_notification");
+        NEW_CONTACT_NOTIFICATION = imFeatures30;
+        ImFeatures imFeatures31 = new ImFeatures("IM_ENGINE_SWITCH_ACCOUNT_FIX", 30, "vkm_engine_switch_account_fix");
+        IM_ENGINE_SWITCH_ACCOUNT_FIX = imFeatures31;
+        ImFeatures imFeatures32 = new ImFeatures("SHOW_VISUAL_MESSAGE_DEBUG_INFO", 31, "vkm_show_visual_msg_debug_info");
+        SHOW_VISUAL_MESSAGE_DEBUG_INFO = imFeatures32;
+        ImFeatures imFeatures33 = new ImFeatures("VKM_LOAD_ACTUAL_DIALOG_HEADER", 32, "vkm_load_actual_dialog_header");
+        VKM_LOAD_ACTUAL_DIALOG_HEADER = imFeatures33;
+        ImFeatures imFeatures34 = new ImFeatures("ANIMATED_SHARING_CONTROL", 33, "vkm_clip_anim_sharing_control");
+        ANIMATED_SHARING_CONTROL = imFeatures34;
+        ImFeatures imFeatures35 = new ImFeatures("CLIPS_MSG_PAGINATION", 34, "clips_message_pagination");
+        CLIPS_MSG_PAGINATION = imFeatures35;
+        ImFeatures imFeatures36 = new ImFeatures("DISABLE_CHANNELS_FOLDER_STANDALONE", 35, "vkm_disable_channels_folder");
+        DISABLE_CHANNELS_FOLDER_STANDALONE = imFeatures36;
+        ImFeatures imFeatures37 = new ImFeatures("DISABLE_GEO", 36, "vkm_disable_geo");
+        DISABLE_GEO = imFeatures37;
+        ImFeatures imFeatures38 = new ImFeatures("LP_DIALOG_TRANSITION_DATA", 37, "vkm_lp_dialog_transition_data");
+        LP_DIALOG_TRANSITION_DATA = imFeatures38;
+        ImFeatures imFeatures39 = new ImFeatures("MAX_AD_BANNER", 38, "vkm_max_ad_banner");
+        MAX_AD_BANNER = imFeatures39;
+        ImFeatures imFeatures40 = new ImFeatures("FS_TRANSFER_RECOM_PAYLOAD", 39, "vkm_transfer_recom_payload");
+        FS_TRANSFER_RECOM_PAYLOAD = imFeatures40;
+        ImFeatures imFeatures41 = new ImFeatures("FOLDER_NOT_FOUND_FIX", 40, "vkm_folder_not_found_fix");
+        FOLDER_NOT_FOUND_FIX = imFeatures41;
+        ImFeatures imFeatures42 = new ImFeatures("QUICK_STICKER_SUGGEST_POST", 41, "vkm_quick_sticker_suggest_post");
+        QUICK_STICKER_SUGGEST_POST = imFeatures42;
+        ImFeatures imFeatures43 = new ImFeatures("MSG_VIDEO_FWD_ASR_DISABLE", 42, "vkm_msg_video_fwd_asr_disable");
+        MSG_VIDEO_FWD_ASR_DISABLE = imFeatures43;
+        ImFeatures imFeatures44 = new ImFeatures("VIDEO_SIZE_DEPENDS_ON_ORIENTATION", 43, "vkm_correct_video_target_size");
+        VIDEO_SIZE_DEPENDS_ON_ORIENTATION = imFeatures44;
+        ImFeatures imFeatures45 = new ImFeatures("GRID_SHARING_ENABLED", 44, "vkm_grid_sharing_enabled");
+        GRID_SHARING_ENABLED = imFeatures45;
+        ImFeatures imFeatures46 = new ImFeatures("GRID_SHARING_CREATE_CHAT", 45, "vkm_grid_sharing_create_chat");
+        GRID_SHARING_CREATE_CHAT = imFeatures46;
+        ImFeatures imFeatures47 = new ImFeatures("CHAT_STORY_MENTION_REPOST", 46, "vkm_chat_story_mention_repost");
+        CHAT_STORY_MENTION_REPOST = imFeatures47;
+        ImFeatures imFeatures48 = new ImFeatures("MISSED_CALL_SETTINGS_SNIPPET", 47, "vkm_missed_call_snippet");
+        MISSED_CALL_SETTINGS_SNIPPET = imFeatures48;
+        ImFeatures imFeatures49 = new ImFeatures("CHANNELS_FOLDER_FORCED_ANY", 48, "vkm_ch_folder_forced_any");
+        CHANNELS_FOLDER_FORCED_ANY = imFeatures49;
+        ImFeatures imFeatures50 = new ImFeatures("CHANNELS_FOLDER_FORCED_UNMUTED", 49, "vkm_ch_folder_forced_unmuted");
+        CHANNELS_FOLDER_FORCED_UNMUTED = imFeatures50;
+        ImFeatures imFeatures51 = new ImFeatures("IM_DROP_CACHE_WITHOUT_ENGINE_RESTART", 50, "vkm_drop_cache_without_restart");
+        IM_DROP_CACHE_WITHOUT_ENGINE_RESTART = imFeatures51;
+        ImFeatures imFeatures52 = new ImFeatures("IM_TRACER_SYSTRACE_PROFILER_CONFIG", 51, "vkm_tracer_systrace_profiler");
+        IM_TRACER_SYSTRACE_PROFILER_CONFIG = imFeatures52;
+        ImFeatures imFeatures53 = new ImFeatures("CHANNELS_IN_ALL_FOLDER", 52, "vkm_channels_in_all_folder");
+        CHANNELS_IN_ALL_FOLDER = imFeatures53;
+        ImFeatures imFeatures54 = new ImFeatures("CHANNEL_MSG_SEARCH", 53, "vkm_channel_msg_search");
+        CHANNEL_MSG_SEARCH = imFeatures54;
+        ImFeatures imFeatures55 = new ImFeatures("READ_ALL_IN_ALL", 54, "vkm_read_all_in_all");
+        READ_ALL_IN_ALL = imFeatures55;
+        ImFeatures imFeatures56 = new ImFeatures("ALL_FOLDER_HIDE_CHANNELS", 55, "vkm_all_folder_hide_channels");
+        ALL_FOLDER_HIDE_CHANNELS = imFeatures56;
+        ImFeatures imFeatures57 = new ImFeatures("CONTACTS_BANNER_PRIORITY", 56, "vkm_contacts_banner_priority");
+        CONTACTS_BANNER_PRIORITY = imFeatures57;
+        ImFeatures imFeatures58 = new ImFeatures("CHAT_FOOTER_BAN_VISIBILITY", 57, "vkm_chat_footer_ban_visibility");
+        CHAT_FOOTER_BAN_VISIBILITY = imFeatures58;
+        ImFeatures imFeatures59 = new ImFeatures("VKME_FIX_FB_INIT_ANR", 58, "vkm_vkme_fb_routine_anr_fix");
+        VKME_FIX_FB_INIT_ANR = imFeatures59;
+        ImFeatures imFeatures60 = new ImFeatures("REDESIGN_TOPBAR_VKUI", 59, "vkm_redesign_topbar_vkui");
+        REDESIGN_TOPBAR_VKUI = imFeatures60;
+        ImFeatures imFeatures61 = new ImFeatures("FIX_GET_CONVERSATION_LOOP", 60, "vkm_fix_get_conversations_loop");
+        FIX_GET_CONVERSATION_LOOP = imFeatures61;
+        ImFeatures imFeatures62 = new ImFeatures("FIX_DOUBLE_GET_CONVERSATIONS", 61, "vkm_fix_double_get_convers");
+        FIX_DOUBLE_GET_CONVERSATIONS = imFeatures62;
+        ImFeatures imFeatures63 = new ImFeatures("REDESIGN_DIALOG_LIST_ITEM", 62, "vkm_dialog_list_item_redesign");
+        REDESIGN_DIALOG_LIST_ITEM = imFeatures63;
+        ImFeatures imFeatures64 = new ImFeatures("BIRTHDAYS_BANNER_REDESIGN", 63, "vkm_birthdays_banner_redesign");
+        BIRTHDAYS_BANNER_REDESIGN = imFeatures64;
+        ImFeatures imFeatures65 = new ImFeatures("REDUCE_GET_RECENT_STICKERS_CALLS", 64, "vkm_reduce_recent_stckrs");
+        REDUCE_GET_RECENT_STICKERS_CALLS = imFeatures65;
+        ImFeatures imFeatures66 = new ImFeatures("IM_CHATS_SKELETONS_REDESIGN", 65, "vkm_chat_skeleton_redesign");
+        IM_CHATS_SKELETONS_REDESIGN = imFeatures66;
+        ImFeatures imFeatures67 = new ImFeatures("BLUR_POST", 66, "vkm_channels_blur_post");
+        BLUR_POST = imFeatures67;
+        ImFeatures imFeatures68 = new ImFeatures("IM_CHAT_TOOLBAR_REDESIGN", 67, "vkm_cnv_toolbar_redesign");
+        IM_CHAT_TOOLBAR_REDESIGN = imFeatures68;
+        ImFeatures imFeatures69 = new ImFeatures("IM_CANCEL_DB_QUERY", 68, "vkm_cancel_db_query");
+        IM_CANCEL_DB_QUERY = imFeatures69;
+        ImFeatures imFeatures70 = new ImFeatures("IM_CHAT_PROFILE_ATTACHES", 69, "vkm_chat_profile_attaches");
+        IM_CHAT_PROFILE_ATTACHES = imFeatures70;
+        ImFeatures imFeatures71 = new ImFeatures("DONUTS_EASY_FLOW_IN_CHANNEL", 70, "vkm_donuts_easy_flow");
+        DONUTS_EASY_FLOW_IN_CHANNEL = imFeatures71;
+        ImFeatures imFeatures72 = new ImFeatures("DONUTS_EASY_FLOW_IN_CHANNEL_EMPTY_STATE", 71, "vkm_donuts_easy_flow_empty_btn");
+        DONUTS_EASY_FLOW_IN_CHANNEL_EMPTY_STATE = imFeatures72;
+        ImFeatures imFeatures73 = new ImFeatures("IM_CHAT_PROFILE_MEMBERS_COMPONENT_REDESIGN", 72, "vkm_chat_profile_members_compo");
+        IM_CHAT_PROFILE_MEMBERS_COMPONENT_REDESIGN = imFeatures73;
+        ImFeatures imFeatures74 = new ImFeatures("IM_START_CHAT_REDESIGN", 73, "vkm_start_chat_redesign");
+        IM_START_CHAT_REDESIGN = imFeatures74;
+        ImFeatures imFeatures75 = new ImFeatures("IM_DB_NO_CKPT_ON_CLOSE", 74, "vkm_db_no_ckpt_on_close");
+        IM_DB_NO_CKPT_ON_CLOSE = imFeatures75;
+        ImFeatures imFeatures76 = new ImFeatures("IM_MULTIPLE_VIDEO_MSG_PLAY_FIX", 75, "vkm_multi_videomsg_play_fix");
+        IM_MULTIPLE_VIDEO_MSG_PLAY_FIX = imFeatures76;
+        ImFeatures imFeatures77 = new ImFeatures("IM_CHANNEL_WS_QUERY_USERAGENT", 76, "vkm_channel_ws_query_useragent");
+        IM_CHANNEL_WS_QUERY_USERAGENT = imFeatures77;
+        ImFeatures imFeatures78 = new ImFeatures("IM_CHAT_PROFILE_REDESIGN", 77, "vkm_chat_profile_redesign");
+        IM_CHAT_PROFILE_REDESIGN = imFeatures78;
+        ImFeatures imFeatures79 = new ImFeatures("IM_CHAT_MAKE_LINK_REDESIGN", 78, "vkm_chat_make_link_redesign");
+        IM_CHAT_MAKE_LINK_REDESIGN = imFeatures79;
+        ImFeatures imFeatures80 = new ImFeatures("IM_SELECT_CONTACTS_FR_REDESIGN", 79, "vkm_select_contacts_redesign");
+        IM_SELECT_CONTACTS_FR_REDESIGN = imFeatures80;
+        ImFeatures imFeatures81 = new ImFeatures("IM_CHAT_EMPTY_STATES_REDESIGN", 80, "vkm_chat_empty_states_redesign");
+        IM_CHAT_EMPTY_STATES_REDESIGN = imFeatures81;
+        ImFeatures imFeatures82 = new ImFeatures("IM_INTERRUPTIBLE_CMD", 81, "vkm_interruptible_cmd");
+        IM_INTERRUPTIBLE_CMD = imFeatures82;
+        ImFeatures imFeatures83 = new ImFeatures("IM_IMPORT_FROM_TG", 82, "vkm_channel_import_from_tg");
+        IM_IMPORT_FROM_TG = imFeatures83;
+        ImFeatures imFeatures84 = new ImFeatures("IM_CHANNELS_STICKERS", 83, "vkm_channels_stickers");
+        IM_CHANNELS_STICKERS = imFeatures84;
+        ImFeatures imFeatures85 = new ImFeatures("VKM_CHANNEL_DONUT_REACTION", 84, "vkm_channel_donut_reaction");
+        VKM_CHANNEL_DONUT_REACTION = imFeatures85;
+        ImFeatures imFeatures86 = new ImFeatures("IM_CHAT_SETTINGS_REDESIGN", 85, "vkm_chat_settings_redesign");
+        IM_CHAT_SETTINGS_REDESIGN = imFeatures86;
+        ImFeatures imFeatures87 = new ImFeatures("IM_CHAT_MODALS_REDESIGN", 86, "vkm_chat_modals_redesign");
+        IM_CHAT_MODALS_REDESIGN = imFeatures87;
+        ImFeatures imFeatures88 = new ImFeatures("IM_CMD_SHUTDOWN_CANCEL", 87, "vkm_cmd_shutdown_cancel");
+        IM_CMD_SHUTDOWN_CANCEL = imFeatures88;
+        ImFeatures imFeatures89 = new ImFeatures("VKM_DIALOGS_NONEXPIRED_FIX", 88, "vkm_dialogs_nonexpired_fix");
+        VKM_DIALOGS_NONEXPIRED_FIX = imFeatures89;
+        ImFeatures imFeatures90 = new ImFeatures("IM_FOLDERS_LAZY_LOADING", 89, "vkm_folders_lazy_loading");
+        IM_FOLDERS_LAZY_LOADING = imFeatures90;
+        ImFeatures imFeatures91 = new ImFeatures("BACKGROUND_LOSS_FIX", 90, "vkm_background_loss_fix");
+        BACKGROUND_LOSS_FIX = imFeatures91;
+        ImFeatures imFeatures92 = new ImFeatures("IM_REVALIDATE_CAN_WRITE", 91, "vkm_revalidate_can_write");
+        IM_REVALIDATE_CAN_WRITE = imFeatures92;
+        ImFeatures[] imFeaturesArr = {imFeatures, imFeatures2, imFeatures3, imFeatures4, imFeatures5, imFeatures6, imFeatures7, imFeatures8, imFeatures9, imFeatures10, imFeatures11, imFeatures12, imFeatures13, imFeatures14, imFeatures15, imFeatures16, imFeatures17, imFeatures18, imFeatures19, imFeatures20, imFeatures21, imFeatures22, imFeatures23, imFeatures24, imFeatures25, imFeatures26, imFeatures27, imFeatures28, imFeatures29, imFeatures30, imFeatures31, imFeatures32, imFeatures33, imFeatures34, imFeatures35, imFeatures36, imFeatures37, imFeatures38, imFeatures39, imFeatures40, imFeatures41, imFeatures42, imFeatures43, imFeatures44, imFeatures45, imFeatures46, imFeatures47, imFeatures48, imFeatures49, imFeatures50, imFeatures51, imFeatures52, imFeatures53, imFeatures54, imFeatures55, imFeatures56, imFeatures57, imFeatures58, imFeatures59, imFeatures60, imFeatures61, imFeatures62, imFeatures63, imFeatures64, imFeatures65, imFeatures66, imFeatures67, imFeatures68, imFeatures69, imFeatures70, imFeatures71, imFeatures72, imFeatures73, imFeatures74, imFeatures75, imFeatures76, imFeatures77, imFeatures78, imFeatures79, imFeatures80, imFeatures81, imFeatures82, imFeatures83, imFeatures84, imFeatures85, imFeatures86, imFeatures87, imFeatures88, imFeatures89, imFeatures90, imFeatures91, imFeatures92};
+        $VALUES = imFeaturesArr;
+        $ENTRIES = new asp(imFeaturesArr);
+    }
+
+    public ImFeatures(String str, int i, String str2) {
+        this.key = str2;
+    }
+
+    public static zrp<ImFeatures> i() {
+        return $ENTRIES;
+    }
+
+    public static ImFeatures valueOf(String str) {
+        return (ImFeatures) Enum.valueOf(ImFeatures.class, str);
+    }
+
+    public static ImFeatures[] values() {
+        return (ImFeatures[]) $VALUES.clone();
+    }
+
+    @Override // com.vk.toggle.b.a
+    public final String getKey() {
+        return this.key;
+    }
+
+    @Override // xsna.gd6, com.vk.toggle.b.a
+    public final boolean h() {
+        return b.A.a(this);
+    }
+}

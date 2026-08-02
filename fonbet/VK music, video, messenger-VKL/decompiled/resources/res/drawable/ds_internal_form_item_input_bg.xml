@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:drawable="@drawable/ds_internal_form_item_input_bg_state_error"
+        app:formItemStateError="true"/>
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/ds_internal_form_item_input_bg_state_active"/>
+    <item
+        android:drawable="@drawable/ds_internal_form_item_input_bg_state_active"
+        app:formItemStateActive="true"/>
+    <item
+        android:drawable="@drawable/ds_internal_form_item_input_bg_state_valid"
+        app:formItemStateValid="true"/>
+    <item
+        android:drawable="@drawable/ds_internal_form_item_input_bg_state_hover"
+        android:state_hovered="true"/>
+    <item android:drawable="@drawable/ds_internal_form_item_input_bg_state_normal"/>
+</selector>

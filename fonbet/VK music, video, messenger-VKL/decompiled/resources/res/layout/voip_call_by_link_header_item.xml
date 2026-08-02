@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/call_by_link_header_image"
+        android:background="@drawable/voip_blue_gradient_circle"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/vk_icon_phone_add_outline_28"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/vk_white"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/call_by_link_header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/voip_call_by_link_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_by_link_header_image"
+        style="@style/VkLegacyTypography.Title2"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/call_by_link_header_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/voip_call_by_link_subtitle"
+        android:lines="2"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/call_by_link_header_title"
+        style="@style/VkLegacyTypography.Subhead.Regular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

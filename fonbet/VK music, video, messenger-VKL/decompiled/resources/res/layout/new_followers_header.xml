@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingHorizontal="@dimen/post_side_padding">
+    <TextView
+        android:textColor="@color/vk_ui_text_title_color"
+        android:id="@+id/new_followers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_followers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Headline1"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_contrast"
+        android:id="@+id/followers_count"
+        android:background="@drawable/followers_counter_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="8dp"
+        android:minHeight="18dp"
+        android:maxLines="1"
+        android:layout_marginStart="6dp"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_followers_title"
+        app:layout_constraintStart_toEndOf="@+id/new_followers_title"
+        app:layout_constraintTop_toTopOf="@+id/new_followers_title"
+        style="@style/VkUiTypography.Footnote"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_accent"
+        android:id="@+id/all_new_followers_button"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_all_new_followers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.Paragraph"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

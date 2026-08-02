@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.fresco.FrescoImageView
+        android:id="@+id/vkim_carousel_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:vkim_aspectRatio="1.625"
+        app:vkim_scaleType="center_crop"/>
+    <TextView
+        android:textSize="15sp"
+        android:textColor="?attr/vk_legacy_text_primary"
+        android:ellipsize="end"
+        android:id="@+id/vkim_carousel_title"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:fontFamily="@font/vk_roboto_medium"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="?attr/vk_legacy_text_secondary"
+        android:ellipsize="end"
+        android:id="@+id/vkim_carousel_description"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+    <FrameLayout
+        android:id="@+id/vkim_carousel_kbd_container"
+        android:paddingBottom="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"/>
+</LinearLayout>

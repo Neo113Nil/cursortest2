@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.im.design.view.pagination.pin.ImPinView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/channel_pinned_msgs"
+    android:background="?attr/vk_ui_background_content"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>

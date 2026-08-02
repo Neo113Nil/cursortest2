@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="4dp">
+    <com.vk.core.view.components.banner.VkBanner
+        android:id="@+id/downloads_banner"
+        android:clipChildren="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ProgressBar
+        android:id="@+id/loading_progress_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="26dp"
+        android:indeterminate="true"
+        android:layout_marginStart="26dp"
+        android:progressTint="?attr/vk_ui_icon_contrast"
+        android:indeterminateTint="?attr/vk_ui_icon_contrast"
+        android:indeterminateTintMode="src_in"/>
+</FrameLayout>

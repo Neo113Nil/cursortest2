@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/vk_green"/>
+            <stroke
+                android:width="2dp"
+                android:color="?attr/vk_ui_vkontakte_color_snippet_background"/>
+        </shape>
+    </item>
+    <item android:gravity="clip_vertical|center|clip_horizontal">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/vk_icon_deprecated_ic_place_16"/>
+    </item>
+</layer-list>

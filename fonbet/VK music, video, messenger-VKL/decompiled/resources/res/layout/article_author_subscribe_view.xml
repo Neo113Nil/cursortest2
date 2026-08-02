@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:textAppearance="@style/VkUiTypography.HeadlineNormal"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+    <com.vk.core.view.components.button.VkButton
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:buttonAppearance="accent"
+        app:buttonMode="primary"
+        app:buttonSizeType="medium"/>
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="?attr/tabBarTabPadding"
+        android:top="0dp"
+        android:right="?attr/tabBarTabPadding"
+        android:bottom="@dimen/catalog_first_pinned_tabs_indicator_bottom_margin">
+        <shape>
+            <corners android:radius="2dp"/>
+            <size android:height="2dp"/>
+        </shape>
+    </item>
+</layer-list>

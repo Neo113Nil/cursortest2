@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.button.VkButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:text="@string/calls_promo_item_try_button"
+    app:buttonAppearance="accent"
+    app:buttonMode="primary"
+    app:buttonSizeType="large"
+    app:trailingIcon="@drawable/vkui_ic_voip_call_24"/>

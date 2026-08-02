@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textAppearance="@style/VkUiTypography.TextMedium"
+        android:textColor="?attr/vk_ui_text_primary"
+        android:textColorHint="?attr/vk_ui_text_secondary"
+        android:gravity="start|center_vertical"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/poll_text_view"
+        android:padding="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLength="500"
+        android:layout_weight="1"
+        android:inputType="textCapSentences"
+        android:layout_marginStart="16dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/poll_remove_item_btn"
+        android:background="@drawable/vkim_ripple_circle_highlight"
+        android:padding="4dp"
+        android:visibility="visible"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:contentDescription="@string/accessibility_delete"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/vk_icon_cancel_24"
+        app:tint="@color/vk_steel_gray_300"/>
+</merge>

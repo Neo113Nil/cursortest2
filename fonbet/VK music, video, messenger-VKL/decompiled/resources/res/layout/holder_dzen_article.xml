@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.card.VkCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container_dzen_article"
+    android:background="?attr/vk_ui_background_secondary"
+    android:layout_width="@dimen/dzen_article_item_width"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.vk.core.view.image.VkEnhancedImageView
+            android:id="@+id/image_dzen_article"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dzen_article_image_height"/>
+        <com.vk.core.view.components.text.VkText
+            android:textAppearance="@style/VkUiTypography.Headline1Normal"
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="end"
+            android:id="@+id/text_dzen_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lines="2"
+            android:layout_marginHorizontal="12dp"/>
+        <com.vk.core.view.components.button.VkButton
+            android:id="@+id/button_dzen_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            app:buttonAppearance="overlay"
+            app:buttonMode="primary"
+            app:buttonSizeType="small"
+            app:text="@string/article_read"/>
+    </LinearLayout>
+</com.vk.core.view.components.card.VkCard>

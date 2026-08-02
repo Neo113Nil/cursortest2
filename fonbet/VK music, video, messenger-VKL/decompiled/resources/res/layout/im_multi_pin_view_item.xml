@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <com.vk.core.view.components.text.VkFadeText
+            android:textColor="?attr/vk_ui_text_contrast"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/VkUiTypography.Lego.Text"/>
+        <com.vk.core.view.components.text.VkFadeText
+            android:textColor="?attr/vk_ui_text_contrast"
+            android:id="@+id/subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vk_ui_spacing_size2_xs"
+            android:singleLine="true"
+            style="@style/VkUiTypography.Lego.Paragraph"/>
+    </LinearLayout>
+</LinearLayout>

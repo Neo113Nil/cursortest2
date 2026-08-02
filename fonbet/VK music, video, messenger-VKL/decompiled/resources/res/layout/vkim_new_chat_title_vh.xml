@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp">
+    <com.vk.core.view.components.avatar.VkAvatar
+        android:id="@+id/vkim_avatar"
+        android:layout_width="@dimen/vkim_new_chat_title_avatar"
+        android:layout_height="@dimen/vkim_new_chat_title_avatar"
+        android:contentDescription="@string/vkim_accessibility_avatar_chat"/>
+    <com.vk.core.view.components.formitem.VkFormField
+        android:id="@+id/vkim_title_form_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:caption="@string/vkim_chat_title_hint">
+        <com.vk.core.view.components.formitem.VkInputSelect
+            android:id="@+id/vkim_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/vkim_chat_settings_title_hint"
+            android:lines="1"
+            android:maxLength="100"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionDone"
+            app:inputSize="singleLine"
+            style="@style/VkInput"/>
+    </com.vk.core.view.components.formitem.VkFormField>
+</LinearLayout>

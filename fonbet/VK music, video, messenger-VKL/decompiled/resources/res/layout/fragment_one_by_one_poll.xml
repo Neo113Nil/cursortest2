@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="72dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="8dp">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/poll_progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        style="@style/VkUiTypography.Subhead"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/poll_current_question"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-8dp"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

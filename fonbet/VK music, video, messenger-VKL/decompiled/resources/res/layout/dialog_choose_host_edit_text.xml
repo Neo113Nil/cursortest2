@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <AutoCompleteTextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/auto_complete_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="@drawable/vk_bg_modal_dialog"
+        android:paddingEnd="48dp"
+        android:backgroundTint="?attr/vk_ui_field_border_alpha"/>
+    <ImageView
+        android:layout_gravity="end"
+        android:id="@+id/show_all_iv"
+        android:background="@drawable/vkim_ripple_circle_highlight"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="centerInside"
+        android:rotation="90"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/vk_icon_chevron_24"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+</FrameLayout>

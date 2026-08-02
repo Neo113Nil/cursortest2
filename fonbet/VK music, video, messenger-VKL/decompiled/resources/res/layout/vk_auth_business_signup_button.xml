@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/create_business_community_button"
+    android:visibility="gone"
+    android:layout_width="0dp"
+    android:layout_height="44dp"
+    android:text="@string/vk_auth_create_business_community"
+    android:contentDescription="@string/vk_auth_create_business_community"
+    app:layout_goneMarginBottom="16dp"
+    app:tint="?attr/vk_legacy_landing_secondary_button_foreground"
+    style="@style/VkAuth.Button.Landing.Secondary.Outline"/>

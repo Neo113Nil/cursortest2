@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="0.5dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="48dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <com.vk.imageloader.view.VKImageView
+        android:layout_gravity="center"
+        android:id="@+id/icon"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="8dp"
+        app:placeholderImage="@drawable/user_placeholder"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Headline1.Unscaled"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center"
+        android:id="@android:id/text1"
+        android:focusable="false"
+        android:clickable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"/>
+</LinearLayout>

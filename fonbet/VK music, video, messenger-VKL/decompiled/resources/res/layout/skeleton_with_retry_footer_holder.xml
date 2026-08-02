@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.shimmer.ShimmerFrameLayout
+        android:id="@+id/skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="48dp">
+        <View
+            android:layout_gravity="center"
+            android:background="@drawable/feed_skeleton_6dp"
+            android:layout_width="160dp"
+            android:layout_height="16dp"/>
+    </com.vk.core.view.shimmer.ShimmerFrameLayout>
+    <FrameLayout
+        android:id="@+id/digest_button"
+        android:background="@drawable/highlight"
+        android:paddingBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp">
+        <com.vk.core.view.TintTextView
+            android:textAppearance="@style/VkUiTypography.Subhead"
+            android:textColor="?attr/vk_ui_text_accent"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:id="@+id/digest_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:singleLine="true"
+            android:paddingStart="@dimen/story_setting_vertical_padding_14"
+            android:paddingEnd="@dimen/story_setting_vertical_padding_14"/>
+    </FrameLayout>
+</FrameLayout>

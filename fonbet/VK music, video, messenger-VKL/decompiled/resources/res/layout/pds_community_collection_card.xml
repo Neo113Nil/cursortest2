@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_radius_16_with_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.picture.VkImage
+        android:id="@+id/community_collection_card_cover"
+        android:background="?attr/vk_ui_icon_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actualImageScaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="?attr/vk_ui_text_contrast"
+            android:ellipsize="end"
+            android:id="@+id/community_collection_card_title"
+            android:paddingTop="@dimen/vk_ui_spacing_size2_xl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingHorizontal="@dimen/vk_ui_spacing_size2_xl"
+            style="@style/VkUiTypography.Headline1"/>
+        <TextView
+            android:textColor="?attr/vk_ui_text_contrast"
+            android:ellipsize="end"
+            android:id="@+id/community_collection_card_subtitle"
+            android:paddingTop="@dimen/vk_ui_spacing_size_xs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingHorizontal="@dimen/vk_ui_spacing_size2_xl"
+            style="@style/VkUiTypography.Footnote"/>
+    </LinearLayout>
+</merge>

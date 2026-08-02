@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_edu_schedule_badge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="5dp">
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_notification_disable_outline_28"
+        app:tint="?attr/vk_ui_icon_contrast"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_contrast"
+        android:id="@+id/scheduleHint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp"
+        style="@style/VkUiTypography.FootnoteNormal"/>
+    <ImageView
+        android:id="@+id/scheduleChevron"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_chevron_compact_right_24"
+        app:tint="?attr/vk_ui_icon_contrast"/>
+</LinearLayout>

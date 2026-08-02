@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.view.VKTabLayout
+        android:id="@+id/vkim_chat_profile_tabs__tab_layout"
+        android:paddingTop="4dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/vkim_chat_profile_tabs__viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabBarTextSize="?attr/tabBarTextSize"
+        app:tabIndicator="@drawable/vkim_chat_profile_tab_indicator"
+        app:tabIndicatorAnimationMode="linear"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorGravity="center"
+        app:tabIndicatorHeight="32dp"
+        app:tabMinWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="12dp"
+        app:tabPaddingStart="12dp"
+        app:tabRippleColor="@null"
+        app:tabSelectedTextColor="?attr/vk_legacy_content_tint_background"
+        app:tabTextColor="?attr/vk_legacy_header_tab_inactive_text"/>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vkim_chat_profile_tabs__viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vkim_chat_profile_tabs__tab_layout"/>
+</merge>

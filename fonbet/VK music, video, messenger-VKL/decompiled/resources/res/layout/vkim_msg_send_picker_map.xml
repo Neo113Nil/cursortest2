@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.ui.FrameLayoutWithInterceptTouchEvent xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vkim_map_view_container"
+    android:background="#f2efe9"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vkim_picker_map_min_height"
+    android:layout_marginBottom="8dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/vkim_map_marker"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:translationY="-14dp"
+        app:srcCompat="@drawable/vk_icon_place_32"
+        app:tint="@color/vk_red_nice"/>
+</com.vk.core.ui.FrameLayoutWithInterceptTouchEvent>

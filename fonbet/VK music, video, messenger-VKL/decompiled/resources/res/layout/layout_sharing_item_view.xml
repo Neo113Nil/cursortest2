@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_list_selector"
+    android:layout_width="@dimen/sharing_actions_width"
+    android:layout_height="@dimen/sharing_actions_height">
+    <View
+        android:id="@+id/action_icon_bg"
+        android:background="@drawable/bg_sharing_action_full"
+        android:layout_width="@dimen/sharing_actions_button_size_with_raster_padding"
+        android:layout_height="@dimen/sharing_actions_button_size_with_raster_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/action_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/action_icon_bg"
+        app:layout_constraintEnd_toEndOf="@+id/action_icon_bg"
+        app:layout_constraintStart_toStartOf="@+id/action_icon_bg"
+        app:layout_constraintTop_toTopOf="@+id/action_icon_bg"/>
+    <com.vk.core.tool.view.onboarding.highlighter.VkOnboardingHighlighter
+        android:id="@+id/action_highlighter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:autoHighlight="false"
+        app:highlighterColor="lime"
+        app:highlighterType="type2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_icon_bg">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="?attr/vk_ui_typography_caption1"
+            android:textColor="?attr/vk_ui_text_primary"
+            android:ellipsize="end"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textAlignment="center"
+            android:lineHeight="14sp"/>
+    </com.vk.core.tool.view.onboarding.highlighter.VkOnboardingHighlighter>
+</androidx.constraintlayout.widget.ConstraintLayout>

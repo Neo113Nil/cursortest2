@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/ecomm_ds_internal_fg_tile_multi_image">
+    <com.vk.core.tool.view.NestedScrollableRecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/recycler_view_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <com.vk.ecomm.design.view.MarketPaginationDotsView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/pager_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="8dp"
+        android:layout_marginBottom="6dp"/>
+</merge>

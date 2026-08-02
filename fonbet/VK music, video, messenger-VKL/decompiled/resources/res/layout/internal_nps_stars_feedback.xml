@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/stars_feedback_0"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="12dp"
+        app:srcCompat="@drawable/vk_icon_favorite_outline_28"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <ImageView
+        android:id="@+id/stars_feedback_1"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="12dp"
+        app:srcCompat="@drawable/vk_icon_favorite_outline_28"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <ImageView
+        android:id="@+id/stars_feedback_2"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="12dp"
+        app:srcCompat="@drawable/vk_icon_favorite_outline_28"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <ImageView
+        android:id="@+id/stars_feedback_3"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="12dp"
+        app:srcCompat="@drawable/vk_icon_favorite_outline_28"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <ImageView
+        android:id="@+id/stars_feedback_4"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="12dp"
+        app:srcCompat="@drawable/vk_icon_favorite_outline_28"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+</merge>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textColor="@color/community_check_list_selector_color_tip"
+    android:gravity="center_vertical"
+    android:id="@+id/tip"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:maxLines="2"
+    android:drawablePadding="16dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp"
+    app:drawableStartCompat="@drawable/community_check_list_selector_tip"
+    app:drawableTint="@color/community_check_list_selector_color_check_box"
+    style="@style/VkUiTypography.Headline1Normal"/>

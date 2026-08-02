@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/bottom_container"
+        android:paddingTop="12dp"
+        android:paddingBottom="16dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:textColor="?attr/vk_ui_text_secondary"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:id="@+id/share_privacy"
+            android:background="@drawable/white_ripple_bounded_8dp"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:maxWidth="150dp"
+            android:lines="1"
+            android:drawablePadding="6dp"
+            style="@style/VkUiTypography.Footnote"/>
+        <TextView
+            android:textColor="@color/vk_white"
+            android:gravity="center"
+            android:id="@+id/share_live"
+            android:background="@drawable/white_ripple_bounded_8dp"
+            android:padding="8dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:drawablePadding="6dp"
+            app:drawableStartCompat="@drawable/vk_icon_clock_circle_dashed_outline_24"
+            app:drawableTint="@color/vk_white"
+            style="@style/VkUiTypography.Footnote"/>
+    </LinearLayout>
+</merge>

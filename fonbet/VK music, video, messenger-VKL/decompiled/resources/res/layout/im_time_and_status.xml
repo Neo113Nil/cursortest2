@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ViewStub
+        android:id="@+id/im_time_and_status__views_count_viewstub"
+        android:layout="@layout/im_time_and_status__views_count_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="8dp"/>
+    <ImageView
+        android:id="@+id/im_pin_mark"
+        android:visibility="gone"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/vk_icon_pin_16"
+        android:importantForAccessibility="no"
+        android:layout_marginEnd="4dp"
+        app:tint="?attr/vk_ui_icon_secondary"/>
+    <TextView
+        android:textAppearance="@style/VkIm.MsgPart.Time.TextContrast"
+        android:id="@+id/im_time_and_status__time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:importantForAccessibility="no"/>
+    <com.vk.im.ui.views.msg.MsgStatusViewV2
+        android:id="@+id/im_time_and_status__status"
+        android:padding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"/>
+</LinearLayout>

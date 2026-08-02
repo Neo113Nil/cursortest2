@@ -1,0 +1,223 @@
+package sg.bigo.ads.common.view;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import android.util.AttributeSet;
+import android.view.View;
+import androidx.annotation.Nullable;
+import com.unity3d.services.UnityAdsConstants;
+import sg.bigo.ads.common.utils.f;
+
+/* loaded from: classes9.dex */
+public class Indicator extends View {
+    public float a;
+    private int b;
+    private Paint c;
+    private Paint d;
+    private int e;
+    private float f;
+    private int g;
+    private float h;
+    private int i;
+    private float j;
+    private float k;
+    private int l;
+    private float m;
+
+    public Indicator(Context context) {
+        this(context, null);
+    }
+
+    public static float a(int i, float f, float f2, float f3) {
+        float f4 = i - 1;
+        return (f * f4) + (f2 * 2.0f * f4) + f3;
+    }
+
+    public float getDistance() {
+        return this.j;
+    }
+
+    public float getLengthSelected() {
+        return this.h;
+    }
+
+    public float getRadius() {
+        return this.f;
+    }
+
+    public int getType() {
+        return this.b;
+    }
+
+    @Override // android.view.View
+    public void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        if (this.b != 1) {
+            a(canvas);
+            return;
+        }
+        if (this.m > UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT) {
+            float width = canvas.getWidth();
+            float height = canvas.getHeight();
+            float f = this.m;
+            canvas.translate(((width - f) / 2.0f) + this.f, height / 2.0f);
+            a();
+            float f2 = this.f;
+            RectF rectF = new RectF(UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT, -f2, f, f2);
+            float f3 = this.f;
+            canvas.drawRoundRect(rectF, f3, f3, this.c);
+            float f4 = (f - this.h) * this.a;
+            float f5 = this.f;
+            RectF rectF2 = new RectF(f4, -f5, this.h + f4, f5);
+            float f6 = this.f;
+            canvas.drawRoundRect(rectF2, f6, f6, this.d);
+        }
+    }
+
+    @Override // android.view.View
+    public void onMeasure(int i, int i2) {
+        int size = View.MeasureSpec.getSize(i);
+        int mode = View.MeasureSpec.getMode(i);
+        int size2 = View.MeasureSpec.getSize(i2);
+        int mode2 = View.MeasureSpec.getMode(i2);
+        float f = this.f * 2.0f;
+        int i3 = this.e;
+        float paddingLeft = (this.j * (i3 - 1)) + (f * (i3 - 1)) + this.h + getPaddingLeft() + getPaddingRight();
+        float paddingTop = (this.f * 2.0f) + getPaddingTop() + getPaddingBottom();
+        if (mode == Integer.MIN_VALUE && mode2 == Integer.MIN_VALUE) {
+            setMeasuredDimension((int) paddingLeft, (int) paddingTop);
+            return;
+        }
+        if (mode == Integer.MIN_VALUE) {
+            setMeasuredDimension((int) paddingLeft, size2);
+        } else if (mode2 == Integer.MIN_VALUE) {
+            setMeasuredDimension(size, (int) paddingTop);
+        } else {
+            setMeasuredDimension(View.getDefaultSize(getSuggestedMinimumWidth(), i), View.getDefaultSize(getSuggestedMinimumHeight(), i2));
+        }
+    }
+
+    public void setColor(int i) {
+        if (this.g != i) {
+            this.g = i;
+            invalidate();
+        }
+    }
+
+    public void setColorSelected(int i) {
+        if (this.i != i) {
+            this.i = i;
+            invalidate();
+        }
+    }
+
+    public void setLineLength(float f) {
+        if (this.m != f) {
+            this.m = f;
+            requestLayout();
+            invalidate();
+        }
+    }
+
+    public void setNum(int i) {
+        if (this.e != i) {
+            this.e = i;
+            requestLayout();
+            invalidate();
+        }
+    }
+
+    public void setRadius(float f) {
+        if (f != this.f) {
+            this.f = f;
+            this.h = 8.0f * f;
+            this.j = f * 2.0f;
+            requestLayout();
+            invalidate();
+        }
+    }
+
+    public void setType(int i) {
+        if (this.b != i) {
+            this.b = i;
+            invalidate();
+        }
+    }
+
+    public Indicator(Context context, @Nullable AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+    }
+
+    private void a() {
+        Paint paint = new Paint();
+        this.c = paint;
+        paint.setStyle(Paint.Style.FILL);
+        this.c.setColor(this.g);
+        this.c.setAntiAlias(true);
+        this.c.setStrokeWidth(3.0f);
+        Paint paint2 = new Paint(this.c);
+        this.d = paint2;
+        paint2.setColor(this.i);
+    }
+
+    public Indicator(Context context, @Nullable AttributeSet attributeSet, int i) {
+        super(context, attributeSet, i);
+        this.b = 0;
+        this.g = -2130706433;
+        float a = f.a(getContext(), 2);
+        this.f = a;
+        this.i = -1;
+        this.h = 8.0f * a;
+        this.j = a * 2.0f;
+        this.e = 0;
+        this.k = UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT;
+        this.l = 0;
+    }
+
+    public final void a(float f, int i) {
+        if (i == this.l) {
+            this.k = (-f) * 2.0f;
+            invalidate();
+        }
+    }
+
+    public final void a(int i) {
+        if (this.l != i) {
+            this.l = i;
+            this.k = UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT;
+            invalidate();
+        }
+    }
+
+    private void a(Canvas canvas) {
+        float f;
+        if (this.e <= 0) {
+            return;
+        }
+        canvas.translate(((((canvas.getWidth() - getPaddingLeft()) - getPaddingRight()) - a(this.e, this.j, this.f, this.h)) / 2.0f) + getPaddingLeft() + this.f, (((canvas.getHeight() - getPaddingTop()) - getPaddingBottom()) / 2.0f) + getPaddingTop());
+        a();
+        float f2 = -this.f;
+        for (int i = 0; i < this.e; i++) {
+            if (i == this.l) {
+                float f3 = this.f;
+                canvas.drawCircle(f2 + f3, UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT, f3, this.c);
+                float f4 = this.h + f2;
+                float f5 = this.f;
+                canvas.drawCircle(f4 - f5, UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT, f5, this.c);
+                float f6 = (this.j * this.k) + f2;
+                float f7 = this.f;
+                RectF rectF = new RectF(f6, -f7, this.h + f6, f7);
+                float f8 = this.f;
+                canvas.drawRoundRect(rectF, f8, f8, this.d);
+                f = this.h;
+            } else {
+                float f9 = this.f;
+                canvas.drawCircle(f2 + f9, UnityAdsConstants.SafeGuards.InitRequestRetryPolicy.MIN_JITTER_PCT, f9, this.c);
+                f = this.f * 2.0f;
+            }
+            f2 = f2 + f + this.j;
+        }
+    }
+}

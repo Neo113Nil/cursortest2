@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/vk_ui_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:orientation="vertical"
+        android:id="@+id/call_history_appbar"
+        android:background="@drawable/voip_calls_external_action_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Vk.Theme.Appbar">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/call_history_toolbar"
+            android:background="?attr/vk_ui_header_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="16dp"
+            app:layout_scrollFlags="noScroll"
+            app:navigationContentDescription="@string/accessibility_toolbar_return_back"
+            app:navigationIcon="@drawable/vk_icon_arrow_left_outline_28"
+            app:popupTheme="?attr/actionBarPopupTheme"
+            app:theme="?attr/actionBarTheme"
+            style="?attr/actionBarTheme">
+            <TextView
+                android:id="@+id/call_history_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voip_history_root_tab_friends"
+                style="@style/ToolbarTitle"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        layout="@layout/voip_history_friends_view"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

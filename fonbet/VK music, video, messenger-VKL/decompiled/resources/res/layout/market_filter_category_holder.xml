@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/market_category_root"
+    android:background="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:adjustViewBounds="true"
+        android:tint="?attr/vk_legacy_accent"
+        android:layout_marginEnd="16dp"
+        app:actualImageScaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/category_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:layout_weight="1"
+        android:fontFamily="@string/font_family_regular"
+        android:layout_marginEnd="6dp"
+        style="@style/VkLegacyTypography.Headline.Regular"/>
+    <ImageView
+        android:id="@+id/category_pick"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:importantForAccessibility="no"
+        app:srcCompat="@drawable/vk_icon_check_circle_on_24"
+        app:tint="?attr/vk_legacy_accent"/>
+</LinearLayout>

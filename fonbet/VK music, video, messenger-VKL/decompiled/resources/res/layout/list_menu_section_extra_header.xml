@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <View
+        android:background="?attr/vk_ui_separator_primary_alpha"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="7.5dp"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium.Unscaled"
+        android:textColor="?attr/vk_ui_vkontakte_color_tabbar_tablet_text_secondary"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="start"
+        android:id="@+id/title"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:text="Friends"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.SubheadMedium.Unscaled"
+        android:textColor="?attr/vk_ui_text_accent"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="end"
+        android:id="@+id/button"
+        android:background="@drawable/highlight"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/show_all"/>
+</FrameLayout>

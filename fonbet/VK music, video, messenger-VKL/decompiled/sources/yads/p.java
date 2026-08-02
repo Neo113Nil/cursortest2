@@ -1,0 +1,42 @@
+package yads;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
+
+/* loaded from: classes10.dex */
+public final class p implements Iterator {
+    public Map.Entry b;
+    public final /* synthetic */ Iterator c;
+    public final /* synthetic */ q d;
+
+    public p(q qVar, Iterator it) {
+        this.d = qVar;
+        this.c = it;
+    }
+
+    @Override // java.util.Iterator
+    public final boolean hasNext() {
+        return this.c.hasNext();
+    }
+
+    @Override // java.util.Iterator
+    public final Object next() {
+        Map.Entry entry = (Map.Entry) this.c.next();
+        this.b = entry;
+        return entry.getKey();
+    }
+
+    @Override // java.util.Iterator
+    public final void remove() {
+        Map.Entry entry = this.b;
+        if (!(entry != null)) {
+            throw new IllegalStateException("no calls to next() since the last call to remove()");
+        }
+        Collection collection = (Collection) entry.getValue();
+        this.c.remove();
+        this.d.c.g -= collection.size();
+        collection.clear();
+        this.b = null;
+    }
+}

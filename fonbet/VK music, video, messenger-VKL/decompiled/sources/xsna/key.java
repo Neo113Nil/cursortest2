@@ -1,0 +1,48 @@
+package xsna;
+
+import io.opentelemetry.api.common.ValueType;
+import java.util.List;
+import java.util.Objects;
+
+/* compiled from: KeyValueList.java */
+/* loaded from: classes8.dex */
+public final class key implements ljr0<List<iey>> {
+    public final List<iey> a;
+
+    public key(List<iey> list) {
+        this.a = list;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof ljr0) {
+            return Objects.equals(this.a, ((ljr0) obj).getValue());
+        }
+        return false;
+    }
+
+    @Override // xsna.ljr0
+    public final ValueType getType() {
+        return ValueType.KEY_VALUE_LIST;
+    }
+
+    @Override // xsna.ljr0
+    public final List<iey> getValue() {
+        return this.a;
+    }
+
+    public final int hashCode() {
+        return this.a.hashCode();
+    }
+
+    public final String toString() {
+        StringBuilder sb = new StringBuilder("KeyValueList{");
+        StringBuilder sb2 = new StringBuilder();
+        h9y.a(sb2, this);
+        sb.append(sb2.toString());
+        sb.append("}");
+        return sb.toString();
+    }
+}

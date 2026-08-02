@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="20dp"
+    android:width="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_votest_transfer_circle_fill_turquoise_20__0_res_0x7f0805aa"
+        android:pathData="m0,10c0,-5.5229 4.4771,-10 10,-10 5.5228,0 10,4.4771 10,10 0,5.5228 -4.4772,10 -10,10 -5.5229,0 -10,-4.4772 -10,-10z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="m14.9786,12.7204c0.0142,0.0921 0.0214,0.1853 0.0214,0.2796 0,1.6569 -2.2386,3 -5,3 -2.7614,0 -5,-1.3431 -5,-3 0,-0.0943 0.0072,-0.1875 0.0214,-0.2796 1.142,1.0818 2.9471,1.7796 4.9786,1.7796 2.0206,0 3.8172,-0.6904 4.9597,-1.7613zM14.9786,9.7216c0.0142,0.092 0.0214,0.1853 0.0214,0.2795 0,1.6569 -2.2386,3 -5,3 -2.7614,0 -5,-1.3431 -5,-3 0,-0.0943 0.0072,-0.1875 0.0214,-0.2795 1.142,1.0817 2.9471,1.7795 4.9786,1.7795 2.0206,0 3.8172,-0.6903 4.9597,-1.7613zM10,4c2.7614,0 5,1.3432 5,3s-2.2386,3 -5,3c-2.7614,0 -5,-1.3432 -5,-3s2.2386,-3 5,-3z"/>
+</vector>

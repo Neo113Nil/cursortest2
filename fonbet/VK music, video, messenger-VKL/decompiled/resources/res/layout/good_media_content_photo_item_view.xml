@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.view.components.picture.VkImage
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/accessibility_photo"/>
+    <com.vk.core.view.components.picture.VkImageSimple
+        android:layout_gravity="end|top"
+        android:id="@+id/badge_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"/>
+</FrameLayout>

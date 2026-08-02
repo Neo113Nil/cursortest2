@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/vk_black"/>
+    <gradient
+        android:startColor="?attr/vk_ui_background_secondary_alpha"
+        android:endColor="?attr/vk_ui_background_secondary_alpha"
+        android:angle="0"
+        android:centerColor="@color/vk_white_alpha40"/>
+</shape>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingTop="10dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="10dp"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.components.skeleton.VkSkeleton
+        android:id="@+id/tab_icon_skeleton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:importantForAccessibility="no"/>
+    <com.vk.core.view.components.skeleton.VkTextSkeleton
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tab_text_skeleton"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="6dp"/>
+</LinearLayout>

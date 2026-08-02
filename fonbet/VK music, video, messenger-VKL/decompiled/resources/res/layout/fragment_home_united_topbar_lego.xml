@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.tool.view.vkblur.VkBlurContentView
+        android:id="@+id/blur_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/appkit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/appkit_tabs"/>
+    </com.vk.core.tool.view.vkblur.VkBlurContentView>
+    <com.vk.core.tool.view.vkblur.VkBlurView
+        android:id="@+id/blur_view"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.vk.home.HomeFragment2$BlurBackdropBehavior"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:background="?attr/vk_ui_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:statusBarForeground="@android:color/transparent"
+        style="@style/VKAppBar">
+        <com.vk.feed.design.view.newsfeed.topbar.FeedTopBar
+            android:id="@+id/feed_home_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="snap|enterAlways|scroll"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.vk.core.view.AppBarShadowView
+        android:id="@+id/shadow_view"
+        style="@style/AppBarShadow"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.catalog2.common.ui.core.video.view.FirstPinnedTabLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_pinned_tabs"
+    android:background="?attr/vk_ui_header_background"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/catalog_first_pinned_tabs_height"
+    app:layout_scrollFlags="snap"/>

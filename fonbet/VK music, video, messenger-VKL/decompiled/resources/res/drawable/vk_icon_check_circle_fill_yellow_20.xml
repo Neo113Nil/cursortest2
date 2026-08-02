@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="20dp"
+    android:width="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_check_circle_fill_yellow_20__0_res_0x7f080243"
+        android:pathData="m0,10c0,-5.5229 4.4771,-10 10,-10 5.5228,0 10,4.4771 10,10 0,5.5228 -4.4772,10 -10,10 -5.5229,0 -10,-4.4772 -10,-10z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="#fff"
+        android:pathData="m6.7071,9.2929c-0.3905,-0.3905 -1.0237,-0.3905 -1.4142,0 -0.3905,0.3905 -0.3905,1.0237 0,1.4142l3,3c0.3905,0.3905 1.0237,0.3905 1.4142,0l5.5,-5.5c0.3905,-0.3905 0.3905,-1.0237 0,-1.4142 -0.3905,-0.3905 -1.0237,-0.3905 -1.4142,0l-4.7929,4.7929z"/>
+</vector>

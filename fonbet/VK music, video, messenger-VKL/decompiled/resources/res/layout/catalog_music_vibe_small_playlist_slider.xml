@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/music_selectable_bg"
+    android:layout_width="198dp"
+    android:layout_height="58dp">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/playlist_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyImagePlaceholder="@drawable/playlist_mood_cover_placeholder"
+        app:roundedCornerRadius="12dp"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.vk.music.view.MusicRoundPlayView
+            android:layout_gravity="start"
+            android:id="@+id/play_view"
+            android:layout_width="20dp"
+            android:layout_height="24dp"
+            android:contentDescription="@string/music_talkback_play"
+            android:paddingEnd="4dp"
+            android:layout_marginEnd="4dp"
+            app:mrp_compact_progess_bar="true"
+            app:mrp_pause_icon="@drawable/vk_icon_pause_16"
+            app:mrp_play_icon="@drawable/vk_icon_play_16"
+            app:mrp_play_icon_tint="?attr/vk_ui_icon_contrast"
+            app:mrp_rounded_background="false"/>
+        <TextView
+            android:textColor="@color/vk_white"
+            android:ellipsize="end"
+            android:id="@+id/playlist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            style="@style/VkUiTypography.DisplayTitle4"/>
+    </LinearLayout>
+</FrameLayout>

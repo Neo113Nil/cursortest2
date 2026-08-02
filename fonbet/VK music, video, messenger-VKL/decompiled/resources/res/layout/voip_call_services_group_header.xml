@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/vk_ui_spacing_size2_xl"
+    android:paddingVertical="@dimen/vk_ui_spacing_size_xl">
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/VkUiTypography.Headline1"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vk_ui_spacing_size_l"
+        android:textAllCaps="true"
+        style="@style/VkUiTypography.FootnoteSemiBold"/>
+</LinearLayout>

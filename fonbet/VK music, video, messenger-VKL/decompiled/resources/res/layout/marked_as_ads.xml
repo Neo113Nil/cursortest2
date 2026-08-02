@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/VkUiTypography.Subhead"
+    android:textColor="?attr/vk_ui_text_secondary"
+    android:gravity="center_vertical"
+    android:id="@+id/text"
+    android:paddingLeft="@dimen/post_side_padding"
+    android:paddingTop="8dp"
+    android:paddingRight="@dimen/post_side_padding"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="32dp"
+    android:text="@string/sponsored_post_in_group"
+    android:drawablePadding="6dp"/>

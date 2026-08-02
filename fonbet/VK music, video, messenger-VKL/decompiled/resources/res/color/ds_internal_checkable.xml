@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:color="?attr/vk_ui_icon_tertiary"
+        android:alpha="@dimen/vk_ui_disabled_alpha"/>
+    <item
+        android:state_checked="true"
+        android:color="?attr/vk_ui_icon_accent"/>
+    <item android:color="?attr/vk_ui_icon_tertiary"/>
+</selector>

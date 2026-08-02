@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/clips_camera_timer_record_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        style="@style/VkUiTypography.Subhead"/>
+    <com.vk.clips.design.view.camera.ClipsTimerTimeSelectorTimeline
+        android:id="@+id/camera_timer_time_selector"
+        android:paddingTop="6dp"
+        android:paddingBottom="8dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"/>
+</merge>

@@ -1,0 +1,68 @@
+package com.google.android.gms.internal.maps;
+
+import android.os.IInterface;
+import android.os.RemoteException;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.PatternItem;
+import java.util.List;
+import xsna.vnv;
+
+/* compiled from: com.google.android.gms:play-services-maps@@18.0.0 */
+/* loaded from: classes12.dex */
+public interface zzaa extends IInterface {
+    void zzA(float f) throws RemoteException;
+
+    boolean zzB(zzaa zzaaVar) throws RemoteException;
+
+    boolean zzC() throws RemoteException;
+
+    boolean zzD() throws RemoteException;
+
+    boolean zzE() throws RemoteException;
+
+    float zzd() throws RemoteException;
+
+    float zze() throws RemoteException;
+
+    int zzf() throws RemoteException;
+
+    int zzg() throws RemoteException;
+
+    int zzh() throws RemoteException;
+
+    int zzi() throws RemoteException;
+
+    vnv zzj() throws RemoteException;
+
+    String zzk() throws RemoteException;
+
+    List zzl() throws RemoteException;
+
+    List<LatLng> zzm() throws RemoteException;
+
+    List<PatternItem> zzn() throws RemoteException;
+
+    void zzo() throws RemoteException;
+
+    void zzp(boolean z) throws RemoteException;
+
+    void zzq(int i) throws RemoteException;
+
+    void zzr(boolean z) throws RemoteException;
+
+    void zzs(List list) throws RemoteException;
+
+    void zzt(List<LatLng> list) throws RemoteException;
+
+    void zzu(int i) throws RemoteException;
+
+    void zzv(int i) throws RemoteException;
+
+    void zzw(List<PatternItem> list) throws RemoteException;
+
+    void zzx(float f) throws RemoteException;
+
+    void zzy(vnv vnvVar) throws RemoteException;
+
+    void zzz(boolean z) throws RemoteException;
+}

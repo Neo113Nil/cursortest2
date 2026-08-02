@@ -1,0 +1,5 @@
+package com.vk.coowners.impl;
+
+/* loaded from: classes17.dex */
+public final class R$style {
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.vk.newsfeed.common.recycler.holders.videos.clips.ClipsHolderViewImpl
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clip_autoplay_height"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/skeleton"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/clip_autoplay_height">
+        <com.vk.core.view.components.skeleton.VkSkeleton
+            android:id="@+id/skeleton_clip_1"
+            android:background="@drawable/vk_bg_skeleton_8dp"
+            android:layout_width="@dimen/clip_autoplay_width"
+            android:layout_height="@dimen/clip_autoplay_height"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <com.vk.core.view.components.skeleton.VkSkeleton
+            android:id="@+id/skeleton_clip_2"
+            android:background="@drawable/vk_bg_skeleton_8dp"
+            android:layout_width="@dimen/clip_autoplay_width"
+            android:layout_height="@dimen/clip_autoplay_height"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/skeleton_clip_1"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

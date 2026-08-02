@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@drawable/select_album_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:layout_marginTop="9dp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:textSize="14sp"
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="7dp"
+        android:text="@string/photo_flow_setting_closed_profile_description"
+        android:maxLines="2"
+        android:lineSpacingExtra="2sp"
+        android:translationY="-0.8sp"
+        android:fontFamily="@font/vk_roboto_regular"
+        android:letterSpacing="0.01"
+        app:lineHeight="18sp"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/polls_checkbox_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="52dp"
+        android:layout_marginVertical="16dp"
+        style="@style/VkUiTypography.Title2"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/polls_checkbox_items"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        app:alignContent="space_around"
+        app:alignItems="center"
+        app:dividerDrawable="@drawable/poll_chips_flexbox_divider"
+        app:flexWrap="wrap"
+        app:justifyContent="center"
+        app:showDivider="middle"/>
+</merge>

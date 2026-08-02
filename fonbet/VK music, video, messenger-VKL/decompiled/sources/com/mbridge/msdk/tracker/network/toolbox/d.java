@@ -1,0 +1,25 @@
+package com.mbridge.msdk.tracker.network.toolbox;
+
+import android.text.TextUtils;
+import com.mbridge.msdk.tracker.network.t;
+import xsna.ho8;
+
+/* compiled from: Common.java */
+/* loaded from: classes14.dex */
+public class d {
+    public static String a(String str, t<?> tVar) {
+        if (TextUtils.isEmpty(str) || tVar == null) {
+            return "";
+        }
+        byte[] b = tVar.b();
+        if (b == null || b.length == 0) {
+            return str;
+        }
+        if (str.endsWith("?")) {
+            return str.concat(new String(b));
+        }
+        StringBuilder b2 = ho8.b(str, "?");
+        b2.append(new String(b));
+        return b2.toString();
+    }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fave_likes_entry_point_view"
+    android:background="@drawable/bg_rounded_8"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:foreground="@drawable/highlight_radius_8"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:layout_marginStart="@dimen/post_side_padding"
+    android:layout_marginEnd="@dimen/post_side_padding"
+    android:backgroundTint="?attr/vk_ui_background_secondary">
+    <View
+        android:layout_gravity="start|center_vertical"
+        android:background="@drawable/vk_icon_like_outline_28"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:backgroundTint="?attr/vk_ui_background_accent"/>
+    <TextView
+        android:textColor="@color/vk_ui_text_title_color"
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/text"
+        android:padding="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sett_reactions"
+        android:layout_marginStart="44dp"
+        style="@style/VkUiTypography.Headline1Normal"/>
+</FrameLayout>

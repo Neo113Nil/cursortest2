@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="top"
+    android:id="@+id/poll_select_photo_iv"
+    android:background="@drawable/poll_select_photo_bg"
+    android:layout_width="@dimen/poll_bg_width"
+    android:layout_height="@dimen/poll_bg_height"
+    android:layout_marginBottom="48dp"
+    android:contentDescription="@string/poll_accessibility_choose_background"
+    android:paddingStart="26dp"
+    android:paddingEnd="26dp"
+    app:srcCompat="@drawable/vk_icon_camera_32"
+    app:tint="@color/vk_blue_300"/>

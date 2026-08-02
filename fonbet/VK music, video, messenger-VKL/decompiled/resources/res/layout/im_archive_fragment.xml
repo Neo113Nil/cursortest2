@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/vk_legacy_background_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.vk.core.ui.AppBarLayoutWithDrawingOrderCallback
+        android:id="@+id/appbar"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/VkIm.Toolbar.Style.LargeWithBack"/>
+        <com.vk.core.view.AppBarShadowView
+            android:id="@+id/shadow"
+            android:layout_marginBottom="8dp"
+            app:layout_scrollFlags="snap|enterAlways|scroll"
+            style="@style/AppBarShadow"/>
+        <com.vk.core.view.VKTabLayout
+            android:id="@+id/vkim_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            style="?attr/tabBarTheme"/>
+    </com.vk.core.ui.AppBarLayoutWithDrawingOrderCallback>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/archive_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        app:layout_behavior="@string/vk_toolbar_behavior_scrolling"/>
+    <ViewStub
+        android:id="@+id/im_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

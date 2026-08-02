@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.imageloader.view.VKImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_rounded_6"
+    android:layout_width="18dp"
+    android:layout_height="18dp"
+    android:foreground="@drawable/stroke_radius_6_width_05_black_alpha_8"
+    android:backgroundTint="@color/vk_white_alpha15"/>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_placeholder"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/camera_placeholder_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="center"/>
+    <com.vk.im.ui.views.StencilLayout
+        android:id="@+id/camera_placeholder_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

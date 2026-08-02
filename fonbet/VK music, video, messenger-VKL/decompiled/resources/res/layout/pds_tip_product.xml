@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="9dp">
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <com.vk.imageloader.view.VKImageView
+            android:id="@+id/iv_tip_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:actualImageScaleType="centerCrop"
+            app:roundedCornerRadius="6dp"/>
+        <ImageView
+            android:id="@+id/iv_moderation_icon"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/vk_icon_hide_outline_shadow_medium_48"/>
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp">
+        <TextView
+            android:textColor="@color/vk_black"
+            android:ellipsize="end"
+            android:id="@+id/good_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxEms="25"
+            style="@style/VkUiTypography.SubheadSemiBold"/>
+        <TextView
+            android:textColor="@color/vk_black"
+            android:id="@+id/good_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/VkUiTypography.Subhead"/>
+    </LinearLayout>
+</LinearLayout>

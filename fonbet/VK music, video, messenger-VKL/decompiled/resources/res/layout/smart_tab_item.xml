@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="32dp"
+    android:layout_height="23dp"
+    android:alpha="0.4">
+    <View
+        android:id="@+id/tab_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:backgroundTint="@color/vk_gray_20"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Subhead"
+        android:textColor="@color/vk_gray_20"
+        android:gravity="center"
+        android:id="@+id/tab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:minHeight="18dp"
+        android:textAlignment="gravity"/>
+</LinearLayout>

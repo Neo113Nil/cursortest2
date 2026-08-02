@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="?attr/vk_ui_segmented_control_active">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="26dp"/>
+            <solid android:color="@color/vk_white"/>
+        </shape>
+    </item>
+</ripple>

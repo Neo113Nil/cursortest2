@@ -1,0 +1,14 @@
+package xsna;
+
+import android.content.DialogInterface;
+
+/* compiled from: R8$$SyntheticClass */
+/* loaded from: classes4.dex */
+public final /* synthetic */ class ibh implements DialogInterface.OnClickListener {
+    @Override // android.content.DialogInterface.OnClickListener
+    public final void onClick(DialogInterface dialogInterface, int i) {
+        if (dialogInterface != null) {
+            dialogInterface.dismiss();
+        }
+    }
+}

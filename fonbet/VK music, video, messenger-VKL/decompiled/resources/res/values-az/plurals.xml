@@ -1,0 +1,2147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_badges">
+        <item quantity="one">Yazının %d nişanı var</item>
+        <item quantity="other">Yazının %d nişanı var</item>
+    </plurals>
+    <plurals name="accessibility_clip_views">
+        <item quantity="one">%1$d baxış</item>
+        <item quantity="other">%1$d baxış</item>
+    </plurals>
+    <plurals name="accessibility_comments_count">
+        <item quantity="one">%s şərh</item>
+        <item quantity="other">%s şərh</item>
+    </plurals>
+    <plurals name="accessibility_likes">
+        <item quantity="one">%,d nəfər bəyənib</item>
+        <item quantity="other">%,d nəfər bəyənib</item>
+    </plurals>
+    <plurals name="accessibility_messenger_tab_hint">
+        <item quantity="one">%d oxunmamış çat</item>
+        <item quantity="other">%d oxunmamış çat</item>
+    </plurals>
+    <plurals name="accessibility_reposts">
+        <item quantity="one">%d nəfər paylaşıb</item>
+        <item quantity="other">%d nəfər paylaşıb</item>
+    </plurals>
+    <plurals name="accessibility_views">
+        <item quantity="one">%,d baxış</item>
+        <item quantity="other">%,d baxış</item>
+    </plurals>
+    <plurals name="address_minutes">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <plurals name="address_more_plurals">
+        <item quantity="one">Və daha %d ünvan</item>
+        <item quantity="other">Və daha %d ünvan</item>
+    </plurals>
+    <plurals name="address_plurals">
+        <item quantity="one">/m%d/e ünvan</item>
+        <item quantity="other">/m%d/e ünvan</item>
+    </plurals>
+    <plurals name="album_count_photos">
+        <item quantity="one">%,d foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="album_details_archive_photos">
+        <item quantity="one">%1$d foto arxivləşdirmək</item>
+        <item quantity="other">%1$d foto arxivləşdirmək</item>
+    </plurals>
+    <plurals name="album_details_delete_photos">
+        <item quantity="one">%1$d foto silmək</item>
+        <item quantity="other">%1$d foto silmək</item>
+    </plurals>
+    <plurals name="album_numphotos">
+        <item quantity="one">%,d foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="album_photos_count">
+        <item quantity="one">%,d foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="album_video_count">
+        <item quantity="one">%,d video</item>
+        <item quantity="other">%,d video</item>
+    </plurals>
+    <plurals name="albums_count">
+        <item quantity="one">%,d albom</item>
+        <item quantity="other">%,d albom</item>
+    </plurals>
+    <plurals name="and_more_n_coauthors_plural">
+        <item quantity="one">və daha %d müəllif</item>
+        <item quantity="other">və daha %d müəllif</item>
+    </plurals>
+    <plurals name="answer_count">
+        <item quantity="one">%d cavab</item>
+        <item quantity="other">%d cavab</item>
+    </plurals>
+    <plurals name="article_friends">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="article_subscribers">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="article_view_count">
+        <item quantity="one">%s baxış</item>
+        <item quantity="other">%s baxış</item>
+    </plurals>
+    <plurals name="audio_album_quantity">
+        <item quantity="one">Albom · %d trək</item>
+        <item quantity="other">Albom · %d trək</item>
+    </plurals>
+    <plurals name="audio_playlist_quantity">
+        <item quantity="one">Pleylist · %d trək</item>
+        <item quantity="other">Pleylist · %d trək</item>
+    </plurals>
+    <plurals name="author_header_subscribers_friends_count">
+        <item quantity="one">%1$s dost</item>
+        <item quantity="other">%1$s dost</item>
+    </plurals>
+    <plurals name="author_header_subscribers_profile_mutual_friends">
+        <item quantity="one">%1$s ortaq</item>
+        <item quantity="other">%1$s ortaq</item>
+    </plurals>
+    <plurals name="author_header_subscribers_subscribers_count">
+        <item quantity="one">%1$s izləyici</item>
+        <item quantity="other">%1$s izləyici</item>
+    </plurals>
+    <plurals name="balance_attempts">
+        <item quantity="one">%,d pulsuz cəhd</item>
+        <item quantity="other">%,d pulsuz cəhd</item>
+    </plurals>
+    <plurals name="balance_votes">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="best_friends_more_converations">
+        <item quantity="one">Daha %1$s çat</item>
+        <item quantity="other">Daha %1$s çat</item>
+    </plurals>
+    <plurals name="birthday_age">
+        <item quantity="one">%,d yaş</item>
+        <item quantity="other">%,d yaş</item>
+    </plurals>
+    <plurals name="bl_auto_lock_time">
+        <item quantity="one">%d dəqiqədən sonra</item>
+        <item quantity="other">%d dəqiqədən sonra</item>
+    </plurals>
+    <plurals name="bls_button_open_modal">
+        <item quantity="one">%d varianta baxmaq</item>
+        <item quantity="other">%d varianta baxmaq</item>
+    </plurals>
+    <plurals name="booking_group_service_capacity">
+        <item quantity="one">%1$d / %2$d yer qalıb</item>
+        <item quantity="other">%1$d / %2$d yer qalıb</item>
+    </plurals>
+    <plurals name="booking_service_count_plurals">
+        <item quantity="one">%d xidmət</item>
+        <item quantity="other">%d xidmət</item>
+    </plurals>
+    <plurals name="booking_votes">
+        <item quantity="one">%1$s · %2$d rəy</item>
+        <item quantity="other">%1$s · %2$d rəy</item>
+    </plurals>
+    <plurals name="catalog_album_video_seasons_count">
+        <item quantity="one">%,d sezon</item>
+        <item quantity="other">%,d sezon</item>
+    </plurals>
+    <plurals name="catalog_album_video_total">
+        <item quantity="one">Pleylistdə %,d video</item>
+        <item quantity="other">Pleylistdə %,d video</item>
+    </plurals>
+    <plurals name="catalog_album_video_total_title">
+        <item quantity="one">%,d seriya</item>
+        <item quantity="other">%,d seriya</item>
+    </plurals>
+    <plurals name="catalog_album_video_videos_count">
+        <item quantity="one">%,d video</item>
+        <item quantity="other">%,d video</item>
+    </plurals>
+    <plurals name="catalog_topshelf_playlist_items_count">
+        <item quantity="one">%s video</item>
+        <item quantity="other">%s video</item>
+    </plurals>
+    <plurals name="chat_live_snippet_clicks_count">
+        <item quantity="one">%1$d keçid</item>
+        <item quantity="other">%1$d keçid</item>
+    </plurals>
+    <plurals name="clip_counter">
+        <item quantity="one">%s klip</item>
+        <item quantity="other">%s klip</item>
+    </plurals>
+    <plurals name="clip_editor_audio_duration_text_snackbar">
+        <item quantity="one">Trəkin maksimal uzunluğu — %d  dəqiqə</item>
+        <item quantity="other">Trəkin maksimal uzunluğu — %d  dəqiqə</item>
+    </plurals>
+    <plurals name="clips_accessibility_comment_count">
+        <item quantity="one">%d şərh</item>
+        <item quantity="other">%d şərh</item>
+    </plurals>
+    <plurals name="clips_accessibility_share_count">
+        <item quantity="one">%d dəfə paylaşılıb</item>
+        <item quantity="other">%d dəfə paylaşılıb</item>
+    </plurals>
+    <plurals name="clips_author_friends">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="clips_camera_timer_stop_recording_after_munites">
+        <item quantity="one">%d dəq</item>
+        <item quantity="other">%d dəq</item>
+    </plurals>
+    <plurals name="clips_camera_timer_stop_recording_after_seconds">
+        <item quantity="one">%d san</item>
+        <item quantity="other">%d san</item>
+    </plurals>
+    <plurals name="clips_coauthors_clip_deleted_channels">
+        <item quantity="one">Həmmüəlliflikdən imtina etdiniz. Klip kanallarınızdan silindi</item>
+        <item quantity="other">Həmmüəlliflikdən imtina etdiniz. Klip kanallarınızdan silindi</item>
+    </plurals>
+    <plurals name="clips_coauthors_invite_accepted_partly">
+        <item quantity="one">Klip %d kanalınızda görünəcək. Qalanları ilə nə etmək istədiyinizi seçin</item>
+        <item quantity="other">Klip %d kanalınızda görünəcək. Qalanları ilə nə etmək istədiyinizi seçin</item>
+    </plurals>
+    <plurals name="clips_coauthors_invite_declined_partly">
+        <item quantity="one">%d kanalınız üçün dəvət rədd edildi. Qalanları ilə nə etmək istədiyinizi seçin</item>
+        <item quantity="other">%d kanalınız üçün dəvət rədd edildi. Qalanları ilə nə etmək istədiyinizi seçin</item>
+    </plurals>
+    <plurals name="clips_coauthors_selected_text">
+        <item quantity="one">%s müəllif ortağı seçilib</item>
+        <item quantity="other">%s müəllif ortağı seçilib</item>
+    </plurals>
+    <plurals name="clips_count">
+        <item quantity="one">%s klip</item>
+        <item quantity="other">%s klip</item>
+    </plurals>
+    <plurals name="clips_counter_followers">
+        <item quantity="one">izləyici</item>
+        <item quantity="other">izləyici</item>
+    </plurals>
+    <plurals name="clips_counter_likes">
+        <item quantity="one">layk</item>
+        <item quantity="other">layk</item>
+    </plurals>
+    <plurals name="clips_counter_subscribes">
+        <item quantity="one">abunə</item>
+        <item quantity="other">abunə</item>
+    </plurals>
+    <plurals name="clips_counter_views">
+        <item quantity="one">baxış</item>
+        <item quantity="other">baxış</item>
+    </plurals>
+    <plurals name="clips_editor_speed_length_minutes">
+        <item quantity="one">%d dəq</item>
+        <item quantity="other">%d dəq</item>
+    </plurals>
+    <plurals name="clips_editor_speed_length_seconds">
+        <item quantity="one">%s san</item>
+        <item quantity="other">%s san</item>
+    </plurals>
+    <plurals name="clips_favorites_clip_added_to_folder_multiple_success">
+        <item quantity="one">%s klip«%s» qovluğuna əlavə edilib</item>
+        <item quantity="other">%s klip «%s» qovluğuna əlavə edilib</item>
+    </plurals>
+    <plurals name="clips_favorites_clips_moved_to_folder">
+        <item quantity="one">%s klip «%s» qovluğuna köçürülüb</item>
+        <item quantity="other">%s klip «%s» qovluğuna köçürülüb</item>
+    </plurals>
+    <plurals name="clips_favorites_folder_content_list_add_clips_button_plural">
+        <item quantity="one">%s klip əlavə etmək</item>
+        <item quantity="other">%s klip əlavə etmək</item>
+    </plurals>
+    <plurals name="clips_favorites_folders_list_folder_description">
+        <item quantity="one">%s klip</item>
+        <item quantity="other">%s klip</item>
+    </plurals>
+    <plurals name="clips_grid_author_likes_description">
+        <item quantity="one">%s laykınız var</item>
+        <item quantity="other">%s laykınız var</item>
+    </plurals>
+    <plurals name="clips_grid_author_views_description">
+        <item quantity="one">%s baxışınız var</item>
+        <item quantity="other">%s baxışınız var</item>
+    </plurals>
+    <plurals name="clips_grid_create_counter">
+        <item quantity="one">%s klip yaradılıb</item>
+        <item quantity="other">%s klip yaradılıb</item>
+    </plurals>
+    <plurals name="clips_grid_group_author_likes_description">
+        <item quantity="one">«%s» cəmiyyətinin %s laykı var</item>
+        <item quantity="other">«%s» cəmiyyətinin %s laykı var</item>
+    </plurals>
+    <plurals name="clips_grid_group_author_views_description">
+        <item quantity="one">«%s» cəmiyyətinin %s baxışı var</item>
+        <item quantity="other">«%s» cəmiyyətinin %s baxışı var</item>
+    </plurals>
+    <plurals name="clips_grid_other_author_likes_description">
+        <item quantity="one">%s %s laykı var</item>
+        <item quantity="other">%s %s laykı var</item>
+    </plurals>
+    <plurals name="clips_playlist_ui_clips">
+        <item quantity="one">%s klip</item>
+        <item quantity="other">%s klip</item>
+    </plurals>
+    <plurals name="clips_playlist_ui_likes">
+        <item quantity="one">%s layk</item>
+        <item quantity="other">%s layk</item>
+    </plurals>
+    <plurals name="clips_playlist_ui_views">
+        <item quantity="one">%s baxış</item>
+        <item quantity="other">%s baxış</item>
+    </plurals>
+    <plurals name="clips_publish_add_market_item_count_goods_title">
+        <item quantity="one">%d mal</item>
+        <item quantity="other">%d mal</item>
+    </plurals>
+    <plurals name="clips_publish_easy_promote_settings_subtitle">
+        <item quantity="one">%1$d gün hərəsi %2$d ₽</item>
+        <item quantity="other">%1$d gün hərəsi %2$d ₽</item>
+    </plurals>
+    <plurals name="clips_seekbar_percent">
+        <item quantity="one">%1$d faiz</item>
+        <item quantity="other">%1$d faiz</item>
+    </plurals>
+    <plurals name="clips_stat_story_group_likes">
+        <item quantity="one">VK Klipdə cəmiyyətin [%s laykı] var</item>
+        <item quantity="other">VK Klipdə cəmiyyətin [%s laykı] var</item>
+    </plurals>
+    <plurals name="clips_stat_story_group_views">
+        <item quantity="one">VK Klipdə cəmiyyətin [%s baxışı] var</item>
+        <item quantity="other">VK Klipdə cəmiyyətin [%s baxışı] var</item>
+    </plurals>
+    <plurals name="clips_stat_story_likes">
+        <item quantity="one">VK Klipdə [%s laykım] var</item>
+        <item quantity="other">VK Klipdə [%s laykım] var</item>
+    </plurals>
+    <plurals name="clips_stat_story_views">
+        <item quantity="one">VK Klipdə [%s baxışım] var</item>
+        <item quantity="other">VK Klipdə [%s baxışım] var</item>
+    </plurals>
+    <plurals name="coauthors_first_author_name_and_other_authors_count">
+        <item quantity="one"> və daha %d müəllif</item>
+        <item quantity="other"> və daha %d müəllif</item>
+    </plurals>
+    <plurals name="collection_link_limit_plural">
+        <item quantity="one">Yalnız %1$d əlavəyə icazə var</item>
+        <item quantity="other">Yalnız %1$d əlavəyə icazə var</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="one">%s şərh</item>
+        <item quantity="other">%s şərh</item>
+    </plurals>
+    <plurals name="communities">
+        <item quantity="one">%1$d cəmiyyət</item>
+        <item quantity="other">%1$d cəmiyyət</item>
+    </plurals>
+    <plurals name="community_friends">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="community_market_friends">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="community_market_subscribers">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="community_members">
+        <item quantity="one">%s iştirakçı</item>
+        <item quantity="other">%s iştirakçı</item>
+    </plurals>
+    <plurals name="community_name_history_times">
+        <item quantity="one">%s dəfə</item>
+        <item quantity="other">%s dəfə</item>
+    </plurals>
+    <plurals name="community_primary_block_goods_album_item_count_goods">
+        <item quantity="one">%s məhsul</item>
+        <item quantity="other">%s məhsul</item>
+    </plurals>
+    <plurals name="community_profile_article_reading_time_hours">
+        <item quantity="one">%1$d saat oxunuş</item>
+        <item quantity="other">%1$d saat oxunuş</item>
+    </plurals>
+    <plurals name="community_profile_coauthors_invitations">
+        <item quantity="one">müəllif ortaqlığına %1$d dəvət</item>
+        <item quantity="other">müəllif ortaqlığına %1$d dəvət</item>
+    </plurals>
+    <plurals name="community_profile_video_count">
+        <item quantity="one">%1$d video</item>
+        <item quantity="other">%1$d video</item>
+    </plurals>
+    <plurals name="community_referrers_recommend_short">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="community_reply_minutes">
+        <item quantity="one">%d dəqiqəyə cavab verir</item>
+        <item quantity="other">%d dəqiqəyə cavab verir</item>
+    </plurals>
+    <plurals name="community_review_count">
+        <item quantity="one">%s rəy</item>
+        <item quantity="other">%s rəy</item>
+    </plurals>
+    <plurals name="community_review_marks_statistics_reviews_count">
+        <item quantity="one">%1$d qiymətləndirməni %2$d alıcı qoyub</item>
+        <item quantity="other">%1$d qiymətləndirməni %2$d alıcı qoyub</item>
+    </plurals>
+    <plurals name="community_reviews_friend_count_plurals">
+        <item quantity="one">%1$d dost qiymətləndirib</item>
+        <item quantity="other">%1$d dost qiymətləndirib</item>
+    </plurals>
+    <plurals name="community_reviews_rating_snippet_review_count">
+        <item quantity="one">%1$d rəy</item>
+        <item quantity="other">%1$d rəy</item>
+    </plurals>
+    <plurals name="community_reviews_statistic_count">
+        <item quantity="one">%1$d rəy</item>
+        <item quantity="other">%1$d rəy</item>
+    </plurals>
+    <plurals name="community_subscribers">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="coowners_and_authors">
+        <item quantity="one"> və daha %s müəllif</item>
+        <item quantity="other"> və daha %s müəllif</item>
+    </plurals>
+    <plurals name="counter_likes">
+        <item quantity="one">%s layk</item>
+        <item quantity="other">%s layk</item>
+    </plurals>
+    <plurals name="counter_views">
+        <item quantity="one">%s baxış</item>
+        <item quantity="other">%s baxış</item>
+    </plurals>
+    <plurals name="date_ago_mins">
+        <item quantity="one">%,d dəqiqə əvvəl</item>
+        <item quantity="other">%,d dəqiqə əvvəl</item>
+    </plurals>
+    <plurals name="date_ago_secs">
+        <item quantity="one">%,d saniyə əvvəl</item>
+        <item quantity="other">%,d saniyə əvvəl</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="donors">
+        <item quantity="one">%s ianəçi</item>
+        <item quantity="other">%s ianəçi</item>
+    </plurals>
+    <plurals name="download_photos_error">
+        <item quantity="one">Foto yükləmək alınmadı</item>
+        <item quantity="other">Foto yükləmək alınmadı</item>
+    </plurals>
+    <plurals name="download_photos_success">
+        <item quantity="one">Foto cihazda saxlanılıb</item>
+        <item quantity="other">Foto cihazda saxlanılıb</item>
+    </plurals>
+    <plurals name="duration_accessibility_hours">
+        <item quantity="one">%s saat</item>
+        <item quantity="other">%s saat</item>
+    </plurals>
+    <plurals name="duration_accessibility_minutes">
+        <item quantity="one">%s dəqiqə</item>
+        <item quantity="other">%s dəqiqə</item>
+    </plurals>
+    <plurals name="duration_accessibility_seconds">
+        <item quantity="one">%s saniyə</item>
+        <item quantity="other">%s saniyə</item>
+    </plurals>
+    <plurals name="ecomm_cart_page_products_amount">
+        <item quantity="one">Daha %1$d mal göstərmək</item>
+        <item quantity="other">Daha %1$d mal göstərmək</item>
+    </plurals>
+    <plurals name="ecomm_cart_products_amount">
+        <item quantity="one">Cəmi %1$d mal:</item>
+        <item quantity="other">Cəmi %1$d mal:</item>
+    </plurals>
+    <plurals name="ecomm_checkout_reviews_number">
+        <item quantity="one"> · %1$d rəy</item>
+        <item quantity="other"> · %1$d rəy</item>
+    </plurals>
+    <plurals name="ecomm_order_product_amount_description">
+        <item quantity="one">səbətdə %1$d mal var</item>
+        <item quantity="other">səbətdə %1$d mal var</item>
+    </plurals>
+    <plurals name="ecomm_order_product_summary_description">
+        <item quantity="one">%2$s qiymətinə %1$s ədəd</item>
+        <item quantity="other">%2$s qiymətinə %1$s ədəd</item>
+    </plurals>
+    <plurals name="ecomm_top_bar_cart_with_counter">
+        <item quantity="one">Səbətdə %1$d mal var.</item>
+        <item quantity="other">Səbətdə %1$d mal var.</item>
+    </plurals>
+    <plurals name="ecomm_top_bar_fave_with_counter">
+        <item quantity="one">Qatlamalarda %1$d mal var.</item>
+        <item quantity="other">Qatlamalarda %1$d mal var.</item>
+    </plurals>
+    <plurals name="editor_seekbar_percent">
+        <item quantity="one">%1$d faiz</item>
+        <item quantity="other">%1$d faiz</item>
+    </plurals>
+    <plurals name="episode_liked_friends">
+        <item quantity="one">%d dost</item>
+        <item quantity="other">%d dost</item>
+    </plurals>
+    <plurals name="equalizer_band_value_long_label_dB">
+        <item quantity="one">%d detsibel</item>
+        <item quantity="other">%d detsibel</item>
+    </plurals>
+    <plurals name="fave_tags_add_successful">
+        <item quantity="one">Nişan əlavə edilib</item>
+        <item quantity="other">Nişanlar əlavə edilib</item>
+    </plurals>
+    <plurals name="followers_count">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="followers_tab_title">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="for_votes">
+        <item quantity="one">%,d səs əvəzində</item>
+        <item quantity="other">%,d səs əvəzində</item>
+    </plurals>
+    <plurals name="friends_catalog_and_more_people">
+        <item quantity="one">%s və daha %s nəfər</item>
+        <item quantity="other">%s və daha %s nəfər</item>
+    </plurals>
+    <plurals name="friends_catalog_birthday_more_people">
+        <item quantity="one">%1$s, %2$s və daha %3$d</item>
+        <item quantity="other">%1$s, %2$s və daha %3$d</item>
+    </plurals>
+    <plurals name="friends_catalog_mutual_friends">
+        <item quantity="one">ümumi %,d dost</item>
+        <item quantity="other">ümumi %,d dost</item>
+    </plurals>
+    <plurals name="friends_catalog_mutual_friends_2">
+        <item quantity="one">%,d ortaq</item>
+        <item quantity="other">%,d ortaq</item>
+    </plurals>
+    <plurals name="friends_cleanup_cell_mutual_friends">
+        <item quantity="one">%s ümumi dost</item>
+        <item quantity="other">%s ümumi dost</item>
+    </plurals>
+    <plurals name="friends_cleanup_delete_all_suggested_friends_dialog">
+        <item quantity="one">Siz doğurdanda dostlardan və izləyicilərdən %s nəfər silmək istəyirsiniz?</item>
+        <item quantity="other">Siz doğurdanda dostlardan və izləyicilərdən %s nəfər silmək istəyirsiniz?</item>
+    </plurals>
+    <plurals name="friends_count">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="friends_mutual">
+        <item quantity="one">%,d ümumi</item>
+        <item quantity="other">%,d ümumi</item>
+    </plurals>
+    <plurals name="friends_quantity">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="friends_review_count_dialog_count_title">
+        <item quantity="one">%1$d nəfər</item>
+        <item quantity="other">%1$d nəfər</item>
+    </plurals>
+    <plurals name="friends_tab_all">
+        <item quantity="one">%,d dost</item>
+        <item quantity="other">%,d dost</item>
+    </plurals>
+    <plurals name="friends_tab_online">
+        <item quantity="one">%,d onlayn</item>
+        <item quantity="other">%,d onlayn</item>
+    </plurals>
+    <plurals name="friends_tab_title">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="good_preview_review_count">
+        <item quantity="one">%s rəy</item>
+        <item quantity="other">%s rəy</item>
+    </plurals>
+    <plurals name="goods_count">
+        <item quantity="one">%,d mal</item>
+        <item quantity="other">%,d mal</item>
+    </plurals>
+    <plurals name="group_chats_members">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="group_chats_members_active">
+        <item quantity="one">%d iştirakçı söhbət edir</item>
+        <item quantity="other">%d iştirakçı söhbət edir</item>
+    </plurals>
+    <plurals name="group_friends_donors_count">
+        <item quantity="one">%s ianəçi</item>
+        <item quantity="other">%s ianəçi</item>
+    </plurals>
+    <plurals name="group_friends_members_count">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="group_joined_three_more">
+        <item quantity="one">%1$s, %2$s, %3$s \nvə daha %4$s nəfər</item>
+        <item quantity="other">%1$s, %2$s, %3$s \nvə daha %4$s nəfər</item>
+    </plurals>
+    <plurals name="group_members_search">
+        <item quantity="one">%s iştirakçı</item>
+        <item quantity="other">%s iştirakçı</item>
+    </plurals>
+    <plurals name="group_subscribers_search">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="groups_followers">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="highlight_multiple_stories_added_in_one_highlight">
+        <item quantity="one">%1$d hekayə «%2$s» anına əlavə edilib</item>
+        <item quantity="other">%1$d hekayə «%2$s» anına əlavə edilib</item>
+    </plurals>
+    <plurals name="highlight_one_story_added_in_multiple_highlights_redesign">
+        <item quantity="one">%d ana əlavə edilib</item>
+        <item quantity="other">%d ana əlavə edilib</item>
+    </plurals>
+    <plurals name="highlight_one_story_delete_in_multiple_highlights_redesign">
+        <item quantity="one">%d andan silinib</item>
+        <item quantity="other">%d andan silinib</item>
+    </plurals>
+    <plurals name="highlights_count">
+        <item quantity="one">%d an</item>
+        <item quantity="other">%d an</item>
+    </plurals>
+    <plurals name="highlights_stories_count">
+        <item quantity="one">%d hekayə</item>
+        <item quantity="other">%d hekayə</item>
+    </plurals>
+    <plurals name="hijacking_apps_text">
+        <item quantity="one">%s applikasiyası VK hesabınızın sındırılması üçün istifadə edilə bilər</item>
+        <item quantity="other">%s applikasiyaları VK hesabınızın sındırılması üçün istifadə edilə bilər</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="hours_end_date">
+        <item quantity="one">%1$d saat qalıb</item>
+        <item quantity="other">%1$d saat qalıb</item>
+    </plurals>
+    <plurals name="hours_end_date_short">
+        <item quantity="one">%1$d saat</item>
+        <item quantity="other">%1$d saat</item>
+    </plurals>
+    <plurals name="im_message_views_count">
+        <item quantity="one">%s baxış</item>
+        <item quantity="other">%s baxış</item>
+    </plurals>
+    <plurals name="im_msg_reacted_users_content_description_female">
+        <item quantity="one">%1$s mesajınıza «%2$s» reaksiyası verib</item>
+        <item quantity="other">%1$s mesajınıza «%2$s» reaksiyası veriblər</item>
+    </plurals>
+    <plurals name="im_msg_reacted_users_content_description_male">
+        <item quantity="one">%1$s mesajınıza «%2$s» reaksiyası verib</item>
+        <item quantity="other">%1$s mesajınıza «%2$s» reaksiyası veriblər</item>
+    </plurals>
+    <plurals name="im_msg_reacted_users_count_content_description">
+        <item quantity="one">%1$d nəfər mesajınıza «%2$s» reaksiyası verib</item>
+        <item quantity="other">%1$d nəfər mesajınıza «%2$s» reaksiyası veriblər</item>
+    </plurals>
+    <plurals name="im_reacted_peers_count">
+        <item quantity="one">%s reaksiya</item>
+        <item quantity="other">%s reaksiya</item>
+    </plurals>
+    <plurals name="invite_friends_invites_send_count">
+        <item quantity="one">%d dəvət göndərilib</item>
+        <item quantity="other">%d dəvət göndərilib</item>
+    </plurals>
+    <plurals name="invite_link_usage">
+        <item quantity="one">%1$d/%2$d istifadə</item>
+        <item quantity="other">%1$d/%2$d istifadə</item>
+    </plurals>
+    <plurals name="last_seen_female_minutes_ago">
+        <item quantity="one">%d dəqiqə əvvəl olub</item>
+        <item quantity="other">%d dəqiqə əvvəl olub</item>
+    </plurals>
+    <plurals name="last_seen_male_minutes_ago">
+        <item quantity="one">%d dəqiqə əvvəl olub</item>
+        <item quantity="other">%d dəqiqə əvvəl olub</item>
+    </plurals>
+    <plurals name="likes">
+        <item quantity="one">layk</item>
+        <item quantity="other">layk</item>
+    </plurals>
+    <plurals name="listeners_of_artist">
+        <item quantity="one">dinləyici</item>
+        <item quantity="other">dinləyici</item>
+    </plurals>
+    <plurals name="lists_friends_quantity">
+        <item quantity="one">%s siyahı</item>
+        <item quantity="other">%s siyahı</item>
+    </plurals>
+    <plurals name="live_people_dat">
+        <item quantity="one">%d nəfər</item>
+        <item quantity="other">%d nəfər</item>
+    </plurals>
+    <plurals name="live_people_dat_many">
+        <item quantity="one">%d nəfərə</item>
+        <item quantity="other">%d nəfərə</item>
+    </plurals>
+    <plurals name="live_viewers_more_users">
+        <item quantity="one">və daha %d istifadəçi</item>
+        <item quantity="other">və daha %d istifadəçi</item>
+    </plurals>
+    <plurals name="market_in_stock_quantity">
+        <item quantity="one">%d ədəd mövcuddur</item>
+        <item quantity="other">%d ədəd mövcuddur</item>
+    </plurals>
+    <plurals name="market_item_comments_count">
+        <item quantity="one">%d şərh</item>
+        <item quantity="other">%d şərh</item>
+    </plurals>
+    <plurals name="media_picker_album_numphotos">
+        <item quantity="one">%,d foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="members_count">
+        <item quantity="one">%s iştirakçı</item>
+        <item quantity="other">%s iştirakçı</item>
+    </plurals>
+    <plurals name="message_snippet_for_products_subtitle">
+        <item quantity="one">və daha %1$d məhsul</item>
+        <item quantity="other">və daha %1$d məhsul</item>
+    </plurals>
+    <plurals name="message_snippet_for_services_subtitle">
+        <item quantity="one">va daha %1$d xidmət</item>
+        <item quantity="other">va daha %1$d xidmət</item>
+    </plurals>
+    <plurals name="messages">
+        <item quantity="one">mesaj</item>
+        <item quantity="other">mesaj</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <plurals name="minutes_end_date">
+        <item quantity="one">%1$d dəqiqə qalıb</item>
+        <item quantity="other">%1$d dəqiqə qalıb</item>
+    </plurals>
+    <plurals name="minutes_end_date_short">
+        <item quantity="one">%1$d dəqiqə</item>
+        <item quantity="other">%1$d dəqiqə</item>
+    </plurals>
+    <plurals name="money_transfer_backers">
+        <item quantity="one">%s nəfər</item>
+        <item quantity="other">%s nəfər</item>
+    </plurals>
+    <plurals name="movie_info_composers">
+        <item quantity="one">Bəstəkar</item>
+        <item quantity="other">Bəstəkarlar</item>
+    </plurals>
+    <plurals name="movie_info_countries">
+        <item quantity="one">Ölkə</item>
+        <item quantity="other">Ölkələr</item>
+    </plurals>
+    <plurals name="movie_info_directors">
+        <item quantity="one">Rejissor</item>
+        <item quantity="other">Rejissorlar</item>
+    </plurals>
+    <plurals name="movie_info_genres">
+        <item quantity="one">Janr</item>
+        <item quantity="other">Janrlar</item>
+    </plurals>
+    <plurals name="movie_info_operators">
+        <item quantity="one">Operator</item>
+        <item quantity="other">Operatorlar</item>
+    </plurals>
+    <plurals name="movie_info_screen_writers">
+        <item quantity="one">Ssenarist</item>
+        <item quantity="other">Ssenaristlər</item>
+    </plurals>
+    <plurals name="movie_seasons_count">
+        <item quantity="one">%1$d sezon</item>
+        <item quantity="other">%1$d sezon</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildiriş</item>
+        <item quantity="other">%d yeni bildiriş</item>
+    </plurals>
+    <plurals name="musc_bmsb_title_month">
+        <item quantity="one">%d ayı pulsuz almaq</item>
+        <item quantity="other">%d ayı pulsuz almaq</item>
+    </plurals>
+    <plurals name="music_bmsb_introductory_subtitle_month">
+        <item quantity="one">%d aylıq, sonra ayda %s</item>
+        <item quantity="other">%d aylıq, sonra ayda %s</item>
+    </plurals>
+    <plurals name="music_hours">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="music_hours_left">
+        <item quantity="one">%s qalıb</item>
+        <item quantity="other">%s qalıb</item>
+    </plurals>
+    <plurals name="music_minutes">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <plurals name="music_minutes_left">
+        <item quantity="one">%s qalıb</item>
+        <item quantity="other">%s qalıb</item>
+    </plurals>
+    <plurals name="music_my_audios_snackbar_downloading_progress_info">
+        <item quantity="one">%1$d trək · %2$s%%</item>
+        <item quantity="other">%1$d trək · %2$s%%</item>
+    </plurals>
+    <plurals name="music_my_audios_snackbar_downloading_success">
+        <item quantity="one">%d trək yüklənilib</item>
+        <item quantity="other">%d trək yüklənilib</item>
+    </plurals>
+    <plurals name="music_picker_audio_max_count_reached">
+        <item quantity="one">%d qədər trək bərkitmək olar</item>
+        <item quantity="other">%d qədər trək bərkitmək olar</item>
+    </plurals>
+    <plurals name="music_player_talkback_minutes">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <plurals name="music_player_talkback_minutes_header_remaining">
+        <item quantity="one">%s qalıb</item>
+        <item quantity="other">%s qalıb</item>
+    </plurals>
+    <plurals name="music_player_talkback_seconds">
+        <item quantity="one">%d saniyə</item>
+        <item quantity="other">%d saniyə</item>
+    </plurals>
+    <plurals name="music_playlist_show_all_tracks">
+        <item quantity="one">Daha %d trək</item>
+        <item quantity="other">Daha %d trək</item>
+    </plurals>
+    <plurals name="music_seconds">
+        <item quantity="one">%d saniyə</item>
+        <item quantity="other">%d saniyə</item>
+    </plurals>
+    <plurals name="music_snippet_listenings">
+        <item quantity="one">%s dinləmə</item>
+        <item quantity="other">%s dinləmə</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_day">
+        <item quantity="one">%d gün əvvəl yenilənib</item>
+        <item quantity="other">%d gün əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_hour">
+        <item quantity="one">%d saat əvvəl yenilənib</item>
+        <item quantity="other">%d saat əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_minute">
+        <item quantity="one">%d dəqiqə əvvəl yenilənib</item>
+        <item quantity="other">%d dəqiqə əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_month">
+        <item quantity="one">%d ay əvvəl yenilənib</item>
+        <item quantity="other">%d ay əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_week">
+        <item quantity="one">%d həftə əvvəl yenilənib</item>
+        <item quantity="other">%d həftə əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_snippet_uptime_year">
+        <item quantity="one">%d il əvvəl yenilənib</item>
+        <item quantity="other">%d il əvvəl yenilənib</item>
+    </plurals>
+    <plurals name="music_songs">
+        <item quantity="one">%d audioyazı</item>
+        <item quantity="other">%d audioyazı</item>
+    </plurals>
+    <plurals name="music_title_audio_book_chapters">
+        <item quantity="one">%1$d Fəsil · %2$s</item>
+        <item quantity="other">%1$d Fəsil · %2$s</item>
+    </plurals>
+    <plurals name="music_title_podcast_episodes">
+        <item quantity="one">%1$d Epizod · %2$s</item>
+        <item quantity="other">%1$d Epizod · %2$s</item>
+    </plurals>
+    <plurals name="music_title_several_albums">
+        <item quantity="one">%1$d Albom · %2$s</item>
+        <item quantity="other">%1$d Albom · %2$s</item>
+    </plurals>
+    <plurals name="music_title_several_audio_book_chapters">
+        <item quantity="one">%1$d fəsil</item>
+        <item quantity="other">%1$d fəsil</item>
+    </plurals>
+    <plurals name="music_title_several_audio_books">
+        <item quantity="one">%1$d Audio kitab · %2$s</item>
+        <item quantity="other">%1$d Audio kitab · %2$s</item>
+    </plurals>
+    <plurals name="music_title_several_playlist">
+        <item quantity="one">%1$d Pleylist · %2$s</item>
+        <item quantity="other">%1$d Pleylist · %2$s</item>
+    </plurals>
+    <plurals name="music_title_several_podcast_episodes">
+        <item quantity="one">%1$d epizod</item>
+        <item quantity="other">%1$d epizod</item>
+    </plurals>
+    <plurals name="music_title_several_podcast_episodes_with_duration">
+        <item quantity="one">%1$d Epizod · %2$s</item>
+        <item quantity="other">%1$d Epizod · %2$s</item>
+    </plurals>
+    <plurals name="music_title_several_tracks">
+        <item quantity="one">%1$d Trək · %2$s</item>
+        <item quantity="other">%1$d Trək · %2$s</item>
+    </plurals>
+    <plurals name="mutual_count">
+        <item quantity="one">%s ümumi</item>
+        <item quantity="other">%s ümumi</item>
+    </plurals>
+    <plurals name="n_donuts_gifted">
+        <item quantity="one">%d ianə göndəriblər</item>
+        <item quantity="other">%d ianə göndəriblər</item>
+    </plurals>
+    <plurals name="narrative_quantity">
+        <item quantity="one">An · %d hekayə</item>
+        <item quantity="other">An · %d hekayə</item>
+    </plurals>
+    <plurals name="newposter_ndonuts_send">
+        <item quantity="one">%1$d ianə</item>
+        <item quantity="other">%1$d ianə</item>
+    </plurals>
+    <plurals name="newsfeed_filtered_groups">
+        <item quantity="one">%s cəmiyyət</item>
+        <item quantity="other">%s cəmiyyət</item>
+    </plurals>
+    <plurals name="newsfeed_filtered_users">
+        <item quantity="one">%s istifadəçi</item>
+        <item quantity="other">%s istifadəçi</item>
+    </plurals>
+    <plurals name="newsfeed_msg_post_shared_count">
+        <item quantity="one">%1$s nəfər bu yazını mesajla paylaşıb</item>
+        <item quantity="other">%1$s nəfər bu yazını mesajla paylaşıb</item>
+    </plurals>
+    <plurals name="newsfeed_msg_video_shared_count">
+        <item quantity="one">%1$s nəfər bu video ilə mesajda paylaşıb</item>
+        <item quantity="other">%1$s nəfər bu video ilə mesajda paylaşıb</item>
+    </plurals>
+    <plurals name="not_name_and_n_more_people">
+        <item quantity="one">%1$s və daha %2$d nəfər</item>
+        <item quantity="other">%1$s və daha %2$d nəfər</item>
+    </plurals>
+    <plurals name="not_sources">
+        <item quantity="one">%s mənbə</item>
+        <item quantity="other">%s mənbə</item>
+    </plurals>
+    <plurals name="notification_business_notify_unread">
+        <item quantity="one">%d biznes bildiriş</item>
+        <item quantity="other">%d biznes bildiriş</item>
+    </plurals>
+    <plurals name="notification_dialogs_unread">
+        <item quantity="one">oxunmamış %d dialoq</item>
+        <item quantity="other">oxunmamış %d dialoq</item>
+    </plurals>
+    <plurals name="notification_msg_unread">
+        <item quantity="one">oxunmamış %d mesaj</item>
+        <item quantity="other">oxunmamış %d mesaj</item>
+    </plurals>
+    <plurals name="num_attach_article_short">
+        <item quantity="one">məqalə</item>
+        <item quantity="other">məqalə</item>
+    </plurals>
+    <plurals name="num_attach_artist_short">
+        <item quantity="one">ifaçı</item>
+        <item quantity="other">ifaçı</item>
+    </plurals>
+    <plurals name="num_attach_audio">
+        <item quantity="one">Audioyazı</item>
+        <item quantity="other">%,d audioyazı</item>
+    </plurals>
+    <plurals name="num_attach_audio_short">
+        <item quantity="one">audio</item>
+        <item quantity="other">audio</item>
+    </plurals>
+    <plurals name="num_attach_doc_short">
+        <item quantity="one">fayl</item>
+        <item quantity="other">fayl</item>
+    </plurals>
+    <plurals name="num_attach_document">
+        <item quantity="one">Fayl</item>
+        <item quantity="other">%,d fayl</item>
+    </plurals>
+    <plurals name="num_attach_event_short">
+        <item quantity="one">görüş</item>
+        <item quantity="other">görüş</item>
+    </plurals>
+    <plurals name="num_attach_geo">
+        <item quantity="one">Yerləşmə</item>
+        <item quantity="other">Yerləşmə</item>
+    </plurals>
+    <plurals name="num_attach_geo_short">
+        <item quantity="one">yerləşmə</item>
+        <item quantity="other">yerləşmə</item>
+    </plurals>
+    <plurals name="num_attach_graffiti_short">
+        <item quantity="one">qraffiti</item>
+        <item quantity="other">qraffiti</item>
+    </plurals>
+    <plurals name="num_attach_link_short">
+        <item quantity="one">istinad</item>
+        <item quantity="other">istinad</item>
+    </plurals>
+    <plurals name="num_attach_market_short">
+        <item quantity="one">mal</item>
+        <item quantity="other">mal</item>
+    </plurals>
+    <plurals name="num_attach_narrative_short">
+        <item quantity="one">an</item>
+        <item quantity="other">an</item>
+    </plurals>
+    <plurals name="num_attach_other">
+        <item quantity="one">Əlavə</item>
+        <item quantity="other">%,d əlavə</item>
+    </plurals>
+    <plurals name="num_attach_photo">
+        <item quantity="one">Foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="num_attach_photo_album_short">
+        <item quantity="one">albom</item>
+        <item quantity="other">albom</item>
+    </plurals>
+    <plurals name="num_attach_photo_short">
+        <item quantity="one">foto</item>
+        <item quantity="other">foto</item>
+    </plurals>
+    <plurals name="num_attach_playlist_short">
+        <item quantity="one">pleylist</item>
+        <item quantity="other">pleylist</item>
+    </plurals>
+    <plurals name="num_attach_podcast_short">
+        <item quantity="one">podkast</item>
+        <item quantity="other">podkast</item>
+    </plurals>
+    <plurals name="num_attach_poll">
+        <item quantity="one">Sorğu</item>
+        <item quantity="other">%,d sorğu</item>
+    </plurals>
+    <plurals name="num_attach_poll_short">
+        <item quantity="one">sorğu</item>
+        <item quantity="other">sorğu</item>
+    </plurals>
+    <plurals name="num_attach_short">
+        <item quantity="one">əlavə</item>
+        <item quantity="other">əlavə</item>
+    </plurals>
+    <plurals name="num_attach_stereo_room_short">
+        <item quantity="one">otaq</item>
+        <item quantity="other">otaq</item>
+    </plurals>
+    <plurals name="num_attach_video">
+        <item quantity="one">Videoyazı</item>
+        <item quantity="other">%,d videoyazı</item>
+    </plurals>
+    <plurals name="num_attach_video_short">
+        <item quantity="one">video</item>
+        <item quantity="other">video</item>
+    </plurals>
+    <plurals name="num_mutual_contacts">
+        <item quantity="one">%,d ümumi əlaqə</item>
+        <item quantity="other">%,d ümumi əlaqə</item>
+    </plurals>
+    <plurals name="num_mutual_friends">
+        <item quantity="one">%,d ümumi dost</item>
+        <item quantity="other">%,d ümumi dost</item>
+    </plurals>
+    <plurals name="num_poll_votes">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="on_media_tracks_count_plural">
+        <item quantity="one">və daha %d trək</item>
+        <item quantity="other">və daha %d trək</item>
+    </plurals>
+    <plurals name="once_more_products">
+        <item quantity="one">və daha %d mal</item>
+        <item quantity="other">və daha %d mal</item>
+    </plurals>
+    <plurals name="orders">
+        <item quantity="one">%s sifariş</item>
+        <item quantity="other">%s sifariş</item>
+    </plurals>
+    <plurals name="pack_price">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="photo_album_count">
+        <item quantity="one">%1$d albom</item>
+        <item quantity="other">%1$d albom</item>
+    </plurals>
+    <plurals name="photo_album_quantity">
+        <item quantity="one">Albom · %d foto</item>
+        <item quantity="other">Albom · %d foto</item>
+    </plurals>
+    <plurals name="photo_archive_unarchive_error">
+        <item quantity="one">Fotonu arxivdən çıxarmaq alınmadı</item>
+        <item quantity="other">Fotoları arxivdən çıxarmaq alınmadı</item>
+    </plurals>
+    <plurals name="photo_flow_header_dialog_archive_multiple">
+        <item quantity="one">%1$d foto arxivləşdirmək</item>
+        <item quantity="other">%1$d foto arxivləşdirmək</item>
+    </plurals>
+    <plurals name="photo_flow_header_dialog_delete_multiple">
+        <item quantity="one">%1$d foto silmək</item>
+        <item quantity="other">%1$d foto silmək</item>
+    </plurals>
+    <plurals name="photo_tags_multiple_friends_confirm">
+        <item quantity="one">%d dost qeyd etmisiniz</item>
+        <item quantity="other">%d dost qeyd etmisiniz</item>
+    </plurals>
+    <plurals name="photos_count">
+        <item quantity="one">%,d foto</item>
+        <item quantity="other">%,d foto</item>
+    </plurals>
+    <plurals name="photos_delete_multiple_title2">
+        <item quantity="one">%1$d foto silinsin?</item>
+        <item quantity="other">%1$d foto silinsin?</item>
+    </plurals>
+    <plurals name="picker_share_photo_plural">
+        <item quantity="one">Foto ilə paylaşmaq</item>
+        <item quantity="other">Fotolarla paylaşmaq</item>
+    </plurals>
+    <plurals name="picker_trim_video_length_multi_minutes">
+        <item quantity="one">Ən çoxu %d dəqiqə uzunluğunda video seçmək olar</item>
+        <item quantity="other">Ən çoxu %d dəqiqə uzunluğunda video seçmək olar</item>
+    </plurals>
+    <plurals name="picker_trim_video_length_multi_seconds">
+        <item quantity="one">Ən çoxu %d saniyə uzunluğunda video seçmək olar</item>
+        <item quantity="other">Ən çoxu %d saniyə uzunluğunda video seçmək olar</item>
+    </plurals>
+    <plurals name="pinned_photos_be_hidden">
+        <item quantity="one">Albomdan bərkidilən %1$d foto «Foto» əlavəsində göstəriləməyəcək</item>
+        <item quantity="other">Albomdan bərkidilən fotolar «Foto» əlavəsində göstəriləməyəcək</item>
+    </plurals>
+    <plurals name="poll_extra_options">
+        <item quantity="one">Daha %d variant</item>
+        <item quantity="other">Daha %d variant</item>
+    </plurals>
+    <plurals name="poll_friends">
+        <item quantity="one">%d dost</item>
+        <item quantity="other">%d dost</item>
+    </plurals>
+    <plurals name="poll_v3_voters">
+        <item quantity="one">%s nəfər</item>
+        <item quantity="other">%s nəfər</item>
+    </plurals>
+    <plurals name="poll_voters">
+        <item quantity="one">%d nəfər səs verib</item>
+        <item quantity="other">%d nəfər səs verib</item>
+    </plurals>
+    <plurals name="poll_votes">
+        <item quantity="one">%d səs</item>
+        <item quantity="other">%d səs</item>
+    </plurals>
+    <plurals name="post_comments_modal_likes_count">
+        <item quantity="one">%s nəfər qiymət verib</item>
+        <item quantity="other">%s nəfər qiymət verib</item>
+    </plurals>
+    <plurals name="post_comments_modal_views_count">
+        <item quantity="one">%s baxış</item>
+        <item quantity="other">%s baxış</item>
+    </plurals>
+    <plurals name="post_comments_thread_show_more">
+        <item quantity="one">Daha %d cavabı göstərmək</item>
+        <item quantity="other">Daha %d cavabı göstərmək</item>
+    </plurals>
+    <plurals name="post_people_dat">
+        <item quantity="one">%d nəfərə</item>
+        <item quantity="other">%d nəfərə</item>
+    </plurals>
+    <plurals name="post_people_dat_many">
+        <item quantity="one">%d nəfərə</item>
+        <item quantity="other">%d nəfərə</item>
+    </plurals>
+    <plurals name="post_reactions_modal_messenger_reposts">
+        <item quantity="one">%1$d nəfər bu yazını \nmesajda paylaşıb</item>
+        <item quantity="other">%1$d nəfər bu yazını \nmesajda paylaşıb</item>
+    </plurals>
+    <plurals name="post_reactions_modal_reposts_count">
+        <item quantity="one">%1$d Paylaşıb</item>
+        <item quantity="other">%1$d Paylaşıb</item>
+    </plurals>
+    <plurals name="post_reposted_community">
+        <item quantity="one">%d cəmiyyət paylaşıb</item>
+        <item quantity="other">%d cəmiyyət paylaşıb</item>
+    </plurals>
+    <plurals name="post_reposted_community_more">
+        <item quantity="one">%d cəmiyyət və daha %d paylaşıblar</item>
+        <item quantity="other">%d cəmiyyət və daha %d paylaşıblar</item>
+    </plurals>
+    <plurals name="post_reposted_people">
+        <item quantity="one">%d nəfər paylaşıb</item>
+        <item quantity="other">%d nəfər paylaşıb</item>
+    </plurals>
+    <plurals name="post_sticker_attachment_additional_count">
+        <item quantity="one">Daha %d əlavə</item>
+        <item quantity="other">Daha %d əlavə</item>
+    </plurals>
+    <plurals name="posting_music_and_more_n_audios_plural">
+        <item quantity="one">və daha %d trək</item>
+        <item quantity="other">və daha %d trək</item>
+    </plurals>
+    <plurals name="privacy_clip_forbidden_friends">
+        <item quantity="one">%1$s dosta</item>
+        <item quantity="other">%1$s dosta</item>
+    </plurals>
+    <plurals name="privacy_clip_forbidden_friends_lists">
+        <item quantity="one">%1$s siyahıya</item>
+        <item quantity="other">%1$s siyahıya</item>
+    </plurals>
+    <plurals name="privacy_live_camera_will_see_plurals">
+        <item quantity="one">Canlı efiri görəcək</item>
+        <item quantity="other">Canlı efiri görəcəklər</item>
+    </plurals>
+    <plurals name="privacy_live_friends_can_not_see_count">
+        <item quantity="one">%1$s dost</item>
+        <item quantity="other">%1$s dost</item>
+    </plurals>
+    <plurals name="privacy_live_friends_can_see_count">
+        <item quantity="one">%1$s dost</item>
+        <item quantity="other">%1$s dost</item>
+    </plurals>
+    <plurals name="privacy_live_friends_lists_can_not_see_count">
+        <item quantity="one">%1$s siyahı</item>
+        <item quantity="other">%1$s siyahı</item>
+    </plurals>
+    <plurals name="privacy_live_friends_lists_can_see_count">
+        <item quantity="one">%1$s siyahı</item>
+        <item quantity="other">%1$s siyahı</item>
+    </plurals>
+    <plurals name="privacy_selection_friends_count">
+        <item quantity="one">%1$s dost</item>
+        <item quantity="other">%1$s dost</item>
+    </plurals>
+    <plurals name="privacy_selection_friends_lists_count">
+        <item quantity="one">%1$s siyahı</item>
+        <item quantity="other">%1$s siyahı</item>
+    </plurals>
+    <plurals name="privacy_settings_friends_quantity">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="product_card_cart_quantity">
+        <item quantity="one">Səbətdə %1$d ədəd var</item>
+        <item quantity="other">Səbətdə %1$d ədəd var</item>
+    </plurals>
+    <plurals name="product_selection_topbar_cart_item_count_description">
+        <item quantity="one">səbətdə %1$d mal var</item>
+        <item quantity="other">səbətdə %1$d mal var</item>
+    </plurals>
+    <plurals name="profile_common_discussion_comments_count">
+        <item quantity="one">%,d şərh</item>
+        <item quantity="other">%,d şərh</item>
+    </plurals>
+    <plurals name="profile_content_chat_members_count">
+        <item quantity="one">%s iştirakçı</item>
+        <item quantity="other">%s iştirakçı</item>
+    </plurals>
+    <plurals name="profile_content_clips_coauthors_invitation_count">
+        <item quantity="one">müəllif ortaqlığına %1$d dəvət</item>
+        <item quantity="other">müəllif ortaqlığına %1$d dəvət</item>
+    </plurals>
+    <plurals name="profile_content_clips_in_playlist_count">
+        <item quantity="one">%1$d klip</item>
+        <item quantity="other">%1$d klip</item>
+    </plurals>
+    <plurals name="profile_content_invitation_count">
+        <item quantity="one">%1$d dəvət</item>
+        <item quantity="other">%1$d dəvət</item>
+    </plurals>
+    <plurals name="profile_content_photos_in_album_count">
+        <item quantity="one">%1$d foto</item>
+        <item quantity="other">%1$d foto</item>
+    </plurals>
+    <plurals name="profile_friends_more_friends_lists">
+        <item quantity="one">Daha %1$s siyahı</item>
+        <item quantity="other">Daha %1$s siyahı</item>
+    </plurals>
+    <plurals name="profile_gifts_votes">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="profile_photo_tags_count">
+        <item quantity="one">fotoda %1$d nişan</item>
+        <item quantity="other">fotoda %1$d nişan</item>
+    </plurals>
+    <plurals name="push_sync_msg_send_text_normal">
+        <item quantity="one">%d mesaj göndərilməsi</item>
+        <item quantity="other">%d mesaj göndərilməsi</item>
+    </plurals>
+    <plurals name="questions_list_amount">
+        <item quantity="one">%d sual</item>
+        <item quantity="other">%d sual</item>
+    </plurals>
+    <plurals name="rating_bar_accessibility">
+        <item quantity="one">%1$d/%2$d ulduz seçilib</item>
+        <item quantity="other">%1$d/%2$d ulduz seçilib</item>
+    </plurals>
+    <plurals name="rating_star_accessibility">
+        <item quantity="one">%1$d ulduz</item>
+        <item quantity="other">%1$d ulduz</item>
+    </plurals>
+    <plurals name="reactions_friends_tab">
+        <item quantity="one">%,d dost</item>
+        <item quantity="other">%,d dost</item>
+    </plurals>
+    <plurals name="reactions_shares_tab">
+        <item quantity="one">%,d paylaşıb</item>
+        <item quantity="other">%,d paylaşıb</item>
+    </plurals>
+    <plurals name="remove_tracks_title">
+        <item quantity="one">%1$d trək</item>
+        <item quantity="other">%1$d trək</item>
+    </plurals>
+    <plurals name="review_count">
+        <item quantity="one">%s rəy</item>
+        <item quantity="other">%s rəy</item>
+    </plurals>
+    <plurals name="reviews_count">
+        <item quantity="one">%1$d rəy</item>
+        <item quantity="other">%1$d rəy</item>
+    </plurals>
+    <plurals name="reviews_review_count">
+        <item quantity="one">%1$d rəy əsasında</item>
+        <item quantity="other">%1$d rəy əsasında</item>
+    </plurals>
+    <plurals name="seconds">
+        <item quantity="one">%d saniyə</item>
+        <item quantity="other">%d saniyə</item>
+    </plurals>
+    <plurals name="services_count">
+        <item quantity="one">%,d xidmət</item>
+        <item quantity="other">%,d xidmət</item>
+    </plurals>
+    <plurals name="stickers_bonus_catalog_points_expire_2">
+        <item quantity="one">Enerji %1$d gündən sonra yanacaq. Güllələrə yığmağa hələ vaxtınız olacaq!</item>
+        <item quantity="other">Enerji %1$d gündən sonra yanacaq. Güllələrə yığmağa hələ vaxtınız olacaq!</item>
+    </plurals>
+    <plurals name="stickers_bonus_catalog_points_expire_3">
+        <item quantity="one">Enerji %1$d gündən sonra yanacaq. Onu xərcləməyə tələsin!</item>
+        <item quantity="other">Enerji %1$d gündən sonra yanacaq. Onu xərcləməyə tələsin!</item>
+    </plurals>
+    <plurals name="stickers_bonus_catalog_points_expire_days">
+        <item quantity="one">%1$d gündən sonra</item>
+        <item quantity="other">%1$d gündən sonra</item>
+    </plurals>
+    <plurals name="stickers_bonus_catalog_points_expire_hint">
+        <item quantity="one">%2$d enerji xalı %1$s yanacaq. %3$s</item>
+        <item quantity="other">%2$d enerji xalı %1$s yanacaq. %3$s</item>
+    </plurals>
+    <plurals name="stickers_bonus_catalog_points_join_status_with_points">
+        <item quantity="one">Hələlik %1$d enerji xalınız var, amma onu yenidən yığmağa başlaya bilərsiniz</item>
+        <item quantity="other">Hələlik %1$d enerji xalınız var, amma onu yenidən yığmağa başlaya bilərsiniz</item>
+    </plurals>
+    <plurals name="stickers_buy_confirm_price">
+        <item quantity="one">Hesabınızdan %1$d səs silinəcək</item>
+        <item quantity="other">Hesabınızdan %1$d səs silinəcək</item>
+    </plurals>
+    <plurals name="stickers_catalog_bonus_points_accessibility">
+        <item quantity="one">%d enerji xalı</item>
+        <item quantity="other">%d enerji xalı</item>
+    </plurals>
+    <plurals name="stories_count">
+        <item quantity="one">%s hekayə</item>
+        <item quantity="other">%s hekayə</item>
+    </plurals>
+    <plurals name="stories_template_count">
+        <item quantity="one">%d hekayə</item>
+        <item quantity="other">%d hekayə</item>
+    </plurals>
+    <plurals name="story_answers_counted">
+        <item quantity="one">%1$d cavab</item>
+        <item quantity="other">%1$d cavab</item>
+    </plurals>
+    <plurals name="story_likes_counted">
+        <item quantity="one">%1$d reaksiya</item>
+        <item quantity="other">%1$d reaksiya</item>
+    </plurals>
+    <plurals name="story_picker_create_stories">
+        <item quantity="one">Hekayə yaratmaq</item>
+        <item quantity="other">%d hekayə yaratmaq</item>
+    </plurals>
+    <plurals name="story_question_max_selection">
+        <item quantity="one">Ən çoxu %d fikir seçmək olar</item>
+        <item quantity="other">Ən çoxu %d fikir seçmək olar</item>
+    </plurals>
+    <plurals name="story_statistics_not_selected_story">
+        <item quantity="one">Hekayə, %1$d baxış</item>
+        <item quantity="other">Hekayə, %1$d baxış</item>
+    </plurals>
+    <plurals name="story_statistics_selected_story">
+        <item quantity="one">Seçilmiş hekayə, %1$d baxış</item>
+        <item quantity="other">Seçilmiş hekayə, %1$d baxış</item>
+    </plurals>
+    <plurals name="story_statistics_stickers_poll_option_count">
+        <item quantity="one">%1$d səs</item>
+        <item quantity="other">%1$d səs</item>
+    </plurals>
+    <plurals name="story_statistics_stickers_poll_subtitle_votes_count">
+        <item quantity="one">%1$s nəfər</item>
+        <item quantity="other">%1$s nəfər</item>
+    </plurals>
+    <plurals name="story_statistics_stickers_title_questions">
+        <item quantity="one">%1$d fikir</item>
+        <item quantity="other">%1$d fikir</item>
+    </plurals>
+    <plurals name="story_statistics_viewers_reactions_counted">
+        <item quantity="one">%1$d reaksiya</item>
+        <item quantity="other">%1$d reaksiya</item>
+    </plurals>
+    <plurals name="story_statistics_viewers_replies_counted">
+        <item quantity="one">%1$d cavab</item>
+        <item quantity="other">%1$d cavab</item>
+    </plurals>
+    <plurals name="story_statistics_viewers_views_counted">
+        <item quantity="one">%1$d baxış</item>
+        <item quantity="other">%1$d baxış</item>
+    </plurals>
+    <plurals name="story_views_counted">
+        <item quantity="one">%1$d baxış</item>
+        <item quantity="other">%1$d baxış</item>
+    </plurals>
+    <plurals name="styles_to_purchase">
+        <item quantity="one">%,d stil</item>
+        <item quantity="other">%,d stil</item>
+    </plurals>
+    <plurals name="tabbar_settings_accessibility_managed_communities_available">
+        <item quantity="one">Daha %1$d cəmiyyət var</item>
+        <item quantity="other">Daha %1$d cəmiyyət var</item>
+    </plurals>
+    <plurals name="time_ago_day">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="time_ago_day_full">
+        <item quantity="one">%d gün</item>
+        <item quantity="other">%d gün</item>
+    </plurals>
+    <plurals name="time_ago_day_middle">
+        <item quantity="one">%d g</item>
+        <item quantity="other">%d g</item>
+    </plurals>
+    <plurals name="time_ago_hour">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="time_ago_hour_full">
+        <item quantity="one">%d saat</item>
+        <item quantity="other">%d saat</item>
+    </plurals>
+    <plurals name="time_ago_hour_middle">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="time_ago_minute">
+        <item quantity="one">%d dəq</item>
+        <item quantity="other">%d dəq</item>
+    </plurals>
+    <plurals name="time_ago_minute_full">
+        <item quantity="one">%d dəqiqə</item>
+        <item quantity="other">%d dəqiqə</item>
+    </plurals>
+    <plurals name="time_ago_minute_middle">
+        <item quantity="one">%d dəq</item>
+        <item quantity="other">%d dəq</item>
+    </plurals>
+    <plurals name="time_ago_month">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+    <plurals name="time_ago_month_full">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+    <plurals name="time_ago_month_middle">
+        <item quantity="one">%d ay</item>
+        <item quantity="other">%d ay</item>
+    </plurals>
+    <plurals name="time_ago_second_middle">
+        <item quantity="one">%d s</item>
+        <item quantity="other">%d s</item>
+    </plurals>
+    <plurals name="time_ago_week">
+        <item quantity="one">%d həf</item>
+        <item quantity="other">%d həf</item>
+    </plurals>
+    <plurals name="time_ago_week_full">
+        <item quantity="one">%d həftə</item>
+        <item quantity="other">%d həftə</item>
+    </plurals>
+    <plurals name="time_ago_week_middle">
+        <item quantity="one">%d həf</item>
+        <item quantity="other">%d həf</item>
+    </plurals>
+    <plurals name="time_ago_year">
+        <item quantity="one">%d il</item>
+        <item quantity="other">%d il</item>
+    </plurals>
+    <plurals name="time_ago_year_full">
+        <item quantity="one">%d il</item>
+        <item quantity="other">%d il</item>
+    </plurals>
+    <plurals name="time_ago_year_middle">
+        <item quantity="one">%d il</item>
+        <item quantity="other">%d il</item>
+    </plurals>
+    <plurals name="time_seconds">
+        <item quantity="one">%d san</item>
+        <item quantity="other">%d san</item>
+    </plurals>
+    <plurals name="topic_posts">
+        <item quantity="one">%,d mesaj</item>
+        <item quantity="other">%,d mesaj</item>
+    </plurals>
+    <plurals name="user_age_years">
+        <item quantity="one">%d il</item>
+        <item quantity="other">%d il</item>
+    </plurals>
+    <plurals name="user_profile_celebrity_friends_count_following">
+        <item quantity="one">%s dost yazılıb</item>
+        <item quantity="other">%s dost yazılıb</item>
+    </plurals>
+    <plurals name="user_profile_celebrity_friends_following">
+        <item quantity="one">%1$s və daha %2$s dost yazılıb</item>
+        <item quantity="other">%1$s və daha %2$s dost yazılıb</item>
+    </plurals>
+    <plurals name="user_profile_followers_mode_friends_mutual">
+        <item quantity="one">%s ümumi dost</item>
+        <item quantity="other">%s ümumi dost</item>
+    </plurals>
+    <plurals name="user_profile_friend_requests">
+        <item quantity="one">%s müraciət</item>
+        <item quantity="other">%s müraciət</item>
+    </plurals>
+    <plurals name="user_profile_friend_requests_extended">
+        <item quantity="one">dostluğa %s müraciət</item>
+        <item quantity="other">dostluğa %s müraciət</item>
+    </plurals>
+    <plurals name="user_profile_mutual_friends_text">
+        <item quantity="one">%1$s, %2$s və daha %3$s ümumi</item>
+        <item quantity="other">%1$s, %2$s və daha %3$s ümumi</item>
+    </plurals>
+    <plurals name="users_discover_mutual_friends">
+        <item quantity="one">%s və daha %,d ümumi dost</item>
+        <item quantity="other">%s və daha %,d ümumi dost</item>
+    </plurals>
+    <plurals name="users_quantity">
+        <item quantity="one">%d istifadəçi</item>
+        <item quantity="other">%d istifadəçi</item>
+    </plurals>
+    <plurals name="video_download_progress_snack">
+        <item quantity="one">%d video · %s Mb</item>
+        <item quantity="other">%d video · %s Mb</item>
+    </plurals>
+    <plurals name="video_episodes_count">
+        <item quantity="one">%d epizod</item>
+        <item quantity="other">%d epizod</item>
+    </plurals>
+    <plurals name="video_product_attach_badge">
+        <item quantity="one">%1$d mal</item>
+        <item quantity="other">%1$d mal</item>
+    </plurals>
+    <plurals name="video_season_episodes_count">
+        <item quantity="one">%,d seriya</item>
+        <item quantity="other">%,d seriya</item>
+    </plurals>
+    <plurals name="video_seasons_count">
+        <item quantity="one">%,d sezon</item>
+        <item quantity="other">%,d sezon</item>
+    </plurals>
+    <plurals name="video_spectators_count">
+        <item quantity="one">%1$d tamaşaçı</item>
+        <item quantity="other">%1$d tamaşaçı</item>
+    </plurals>
+    <plurals name="video_total_title">
+        <item quantity="one">%,d video</item>
+        <item quantity="other">%,d video</item>
+    </plurals>
+    <plurals name="video_upload_error">
+        <item quantity="one">(%d xəta)</item>
+        <item quantity="other">(%d xəta)</item>
+    </plurals>
+    <plurals name="video_upload_progress_snack">
+        <item quantity="one">%d video · %s</item>
+        <item quantity="other">%d video · %s</item>
+    </plurals>
+    <plurals name="video_upload_progress_snack_with_error">
+        <item quantity="one">%d video%s · %s</item>
+        <item quantity="other">%d video%s · %s</item>
+    </plurals>
+    <plurals name="video_videos_count">
+        <item quantity="one">%,d video</item>
+        <item quantity="other">%,d video</item>
+    </plurals>
+    <plurals name="video_views">
+        <item quantity="one">%,d baxış</item>
+        <item quantity="other">%,d baxış</item>
+    </plurals>
+    <plurals name="views">
+        <item quantity="one">baxış</item>
+        <item quantity="other">baxış</item>
+    </plurals>
+    <plurals name="views_count">
+        <item quantity="one">%,d baxış</item>
+        <item quantity="other">%,d baxış</item>
+    </plurals>
+    <plurals name="vk_apps_install_screen_members">
+        <item quantity="one">%,d oyunçu</item>
+        <item quantity="other">%,d oyunçu</item>
+    </plurals>
+    <plurals name="vk_apps_time_hours">
+        <item quantity="one">saat</item>
+        <item quantity="other">saat</item>
+    </plurals>
+    <plurals name="vk_apps_time_minutes">
+        <item quantity="one">dəqiqə</item>
+        <item quantity="other">dəqiqə</item>
+    </plurals>
+    <plurals name="vk_auth_call_reset_hint">
+        <item quantity="one">%d rəqəmi daxil edin</item>
+        <item quantity="other">%d rəqəmi daxil edin</item>
+    </plurals>
+    <plurals name="vk_auth_call_reset_title">
+        <item quantity="one">son %d rəqəmini</item>
+        <item quantity="other">son %d rəqəmini</item>
+    </plurals>
+    <plurals name="vk_banner_ad_app_votes">
+        <item quantity="one">%1$d rəy</item>
+        <item quantity="other">%1$d rəy</item>
+    </plurals>
+    <plurals name="vk_date_ago_mins">
+        <item quantity="one">%,d dəqiqə əvvəl</item>
+        <item quantity="other">%,d dəqiqə əvvəl</item>
+    </plurals>
+    <plurals name="vk_date_ago_secs">
+        <item quantity="one">%,d saniyə əvvəl</item>
+        <item quantity="other">%,d saniyə əvvəl</item>
+    </plurals>
+    <plurals name="vk_expandable_menu_counter_accesibility">
+        <item quantity="one">%1$s yeni hadisə</item>
+        <item quantity="other">%1$s yeni hadisə</item>
+    </plurals>
+    <plurals name="vk_games_level">
+        <item quantity="one">səviyyə %,d</item>
+        <item quantity="other">səviyyə %,d</item>
+    </plurals>
+    <plurals name="vk_games_points">
+        <item quantity="one">%,d xal</item>
+        <item quantity="other">%,d xal</item>
+    </plurals>
+    <plurals name="vk_htmlgame_leaderboard_you_got_points">
+        <item quantity="one">%1$s xal yğımısınız</item>
+        <item quantity="other">%1$s xal yğımısınız</item>
+    </plurals>
+    <plurals name="vk_notification_count_talkback">
+        <item quantity="one">%,d bildiriş</item>
+        <item quantity="other">%,d bildiriş</item>
+    </plurals>
+    <plurals name="vk_pay_checkout_attempts_left">
+        <item quantity="one">%1$d cəhd qalıb</item>
+        <item quantity="other">%1$d cəhd qalıb</item>
+    </plurals>
+    <plurals name="vk_subscription_every_days">
+        <item quantity="one">hər %1$d gün</item>
+        <item quantity="other">hər %1$d gün</item>
+    </plurals>
+    <plurals name="vk_subscription_free_days">
+        <item quantity="one">İlk %1$d gün pulsuzdur</item>
+        <item quantity="other">İlk %1$d gün pulsuzdur</item>
+    </plurals>
+    <plurals name="vk_video_counter_followers">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="vk_video_counter_videos">
+        <item quantity="one">%s video</item>
+        <item quantity="other">%s video</item>
+    </plurals>
+    <plurals name="vk_video_live_category_counter_plurals_template">
+        <item quantity="one">%s</item>
+        <item quantity="other">%s</item>
+    </plurals>
+    <plurals name="vk_votes_plural">
+        <item quantity="one">%1$d səs</item>
+        <item quantity="other">%1$d səs</item>
+    </plurals>
+    <plurals name="vk_workout_widget_small_workouts">
+        <item quantity="one">%d məşq</item>
+        <item quantity="other">%d məşq</item>
+    </plurals>
+    <plurals name="vkim_accessibility_managed_groups_event_item_name_with_count">
+        <item quantity="one">%1$s %2$s tədbiri %3$d oxunmamış çat</item>
+        <item quantity="other">%1$s %2$s tədbiri %3$d oxunmamış çat</item>
+    </plurals>
+    <plurals name="vkim_accessibility_managed_groups_item_name_with_count">
+        <item quantity="one">%2$s mövzusu ilə %1$s cəmiyyət %3$d oxunmamış çat</item>
+        <item quantity="other">%2$s mövzusu ilə %1$s cəmiyyət %3$d oxunmamış çat</item>
+    </plurals>
+    <plurals name="vkim_accessibility_msg_list_scroll_to_bottom_has_unread">
+        <item quantity="one">aşağıda %d yeni mesaj</item>
+        <item quantity="other">aşağıda %d yeni mesaj</item>
+    </plurals>
+    <plurals name="vkim_accessibility_msg_list_scroll_to_mention_has_unread">
+        <item quantity="one">aşağıda %d ad çəkilmə</item>
+        <item quantity="other">aşağıda %d ad çəkilmə</item>
+    </plurals>
+    <plurals name="vkim_accessibility_msg_list_scroll_to_reaction_has_unread">
+        <item quantity="one">%d yeni reaksiya</item>
+        <item quantity="other">%d yeni reaksiya</item>
+    </plurals>
+    <plurals name="vkim_business_notify_count_many">
+        <item quantity="one">%d biznes bildiriş</item>
+        <item quantity="other">%d biznes bildiriş</item>
+    </plurals>
+    <plurals name="vkim_channel_comments_date_formatter_hours_ago">
+        <item quantity="one">%d saat əvvəl</item>
+        <item quantity="other">%d saat əvvəl</item>
+    </plurals>
+    <plurals name="vkim_channel_comments_date_formatter_minutes_ago">
+        <item quantity="one">%d dəqiqə əvvəl</item>
+        <item quantity="other">%d dəqiqə əvvəl</item>
+    </plurals>
+    <plurals name="vkim_channel_subscribers_count">
+        <item quantity="one">%s izləyici</item>
+        <item quantity="other">%s izləyici</item>
+    </plurals>
+    <plurals name="vkim_channels_donut_support_name_error_max_length">
+        <item quantity="one">Maksimum %d simvol</item>
+        <item quantity="other">Maksimum %d simvol</item>
+    </plurals>
+    <plurals name="vkim_channels_reaction_quantity_selector_accept_btn">
+        <item quantity="one">%1$d reaksiya qoy · %2$d ₽</item>
+        <item quantity="other">%1$d reaksiya qoy · %2$d ₽</item>
+    </plurals>
+    <plurals name="vkim_chat_invite_members_count">
+        <item quantity="one">%s və daha %d nəfər</item>
+        <item quantity="other">%s və daha %d nəfər</item>
+    </plurals>
+    <plurals name="vkim_chat_settings_invites_count">
+        <item quantity="one">%d dəvət</item>
+        <item quantity="other">%d dəvət</item>
+    </plurals>
+    <plurals name="vkim_chat_settings_members_count">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="vkim_clip_of_coauthors_shortened">
+        <item quantity="one"> və daha %d müəllif</item>
+        <item quantity="other"> və daha %d müəllif</item>
+    </plurals>
+    <plurals name="vkim_comments_count">
+        <item quantity="one">%s şərh</item>
+        <item quantity="other">%s şərh</item>
+    </plurals>
+    <plurals name="vkim_contacts_label">
+        <item quantity="one">Əlaqələr siyahısından %s nəfər artıq VK-dədirlər. Onlara yazın!</item>
+        <item quantity="other">Əlaqələr siyahısından %s nəfər artıq VK-dədirlər. Onlara yazın!</item>
+    </plurals>
+    <plurals name="vkim_contacts_show_more">
+        <item quantity="one">Və daha %s əlaqə</item>
+        <item quantity="other">Və daha %s əlaqə</item>
+    </plurals>
+    <plurals name="vkim_contacts_show_new_users">
+        <item quantity="one">%s əlaqəyə baxmaq</item>
+        <item quantity="other">%s əlaqəyə baxmaq</item>
+    </plurals>
+    <plurals name="vkim_create_chat_failed_add_members_more_5">
+        <item quantity="one">%d nəfər əlavə etmək alınmadı</item>
+        <item quantity="other">%d nəfər əlavə etmək alınmadı</item>
+    </plurals>
+    <plurals name="vkim_dialogs_list_empty_shared_chats_count">
+        <item quantity="one">%d ümumi çat</item>
+        <item quantity="other">%d ümumi çat</item>
+    </plurals>
+    <plurals name="vkim_donut_snippet_donors">
+        <item quantity="one">%s ianəçi</item>
+        <item quantity="other">%s ianəçi</item>
+    </plurals>
+    <plurals name="vkim_donut_snippet_friends">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="vkim_edu_max_members_counter">
+        <item quantity="one">%1$d/%2$d iştirakçı artıq MAX-dadır</item>
+        <item quantity="other">%1$d/%2$d iştirakçı artıq MAX-dadır</item>
+    </plurals>
+    <plurals name="vkim_history_attaches_video_views">
+        <item quantity="one">%d baxış</item>
+        <item quantity="other">%d baxış</item>
+    </plurals>
+    <plurals name="vkim_msg_album_multiple">
+        <item quantity="one">%d albom</item>
+        <item quantity="other">%d albom</item>
+    </plurals>
+    <plurals name="vkim_msg_article_multiple">
+        <item quantity="one">%d məqalə</item>
+        <item quantity="other">%d məqalə</item>
+    </plurals>
+    <plurals name="vkim_msg_artist_renamed_multiple">
+        <item quantity="one">%d ifaçı</item>
+        <item quantity="other">%d ifaçı</item>
+    </plurals>
+    <plurals name="vkim_msg_attach_multiple">
+        <item quantity="one">%d əlavə</item>
+        <item quantity="other">%d əlavə</item>
+    </plurals>
+    <plurals name="vkim_msg_audio_multiple">
+        <item quantity="one">%d audioyazı</item>
+        <item quantity="other">%d audioyazı</item>
+    </plurals>
+    <plurals name="vkim_msg_audiomsg_multiple">
+        <item quantity="one">%d səsli mesaj</item>
+        <item quantity="other">%d səsli mesaj</item>
+    </plurals>
+    <plurals name="vkim_msg_call_multiple">
+        <item quantity="one">%d zəng</item>
+        <item quantity="other">%d zəng</item>
+    </plurals>
+    <plurals name="vkim_msg_channel_message_multiple">
+        <item quantity="one">Kanaldan olan %d yazı</item>
+        <item quantity="other">Kanaldan olan %d yazı</item>
+    </plurals>
+    <plurals name="vkim_msg_clip_multiple">
+        <item quantity="one">%d klip</item>
+        <item quantity="other">%d klip</item>
+    </plurals>
+    <plurals name="vkim_msg_curator_multiple">
+        <item quantity="one">%d kurator</item>
+        <item quantity="other">%d kurator</item>
+    </plurals>
+    <plurals name="vkim_msg_doc_multiple">
+        <item quantity="one">%d fayl</item>
+        <item quantity="other">%d fayl</item>
+    </plurals>
+    <plurals name="vkim_msg_expired">
+        <item quantity="one">Mesaj yox olub</item>
+        <item quantity="other">%d mesaj yox olub</item>
+    </plurals>
+    <plurals name="vkim_msg_fwd_multiple">
+        <item quantity="one">ötürülmüş %d mesaj</item>
+        <item quantity="other">ötürülmüş %d mesaj</item>
+    </plurals>
+    <plurals name="vkim_msg_game_multiple">
+        <item quantity="one">%d oyun</item>
+        <item quantity="other">%d oyun</item>
+    </plurals>
+    <plurals name="vkim_msg_gif_multiple">
+        <item quantity="one">%d GIF şəkil</item>
+        <item quantity="other">%d GIF şəkil</item>
+    </plurals>
+    <plurals name="vkim_msg_gift_simple_multiple">
+        <item quantity="one">%d hədiyyə</item>
+        <item quantity="other">%d hədiyyə</item>
+    </plurals>
+    <plurals name="vkim_msg_graffiti_multiple">
+        <item quantity="one">%d qraffiti</item>
+        <item quantity="other">%d qraffiti</item>
+    </plurals>
+    <plurals name="vkim_msg_header_channel_count">
+        <item quantity="one">%d izləyici</item>
+        <item quantity="other">%d izləyici</item>
+    </plurals>
+    <plurals name="vkim_msg_header_chat_count">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="vkim_msg_header_chat_count_with_online">
+        <item quantity="one">%d iştirakçı, %d onlaydır</item>
+        <item quantity="other">%d iştirakçı, %d onlaydır</item>
+    </plurals>
+    <plurals name="vkim_msg_link_multiple">
+        <item quantity="one">%d istinad</item>
+        <item quantity="other">%d istinad</item>
+    </plurals>
+    <plurals name="vkim_msg_link_review_multiple">
+        <item quantity="one">%d rəy</item>
+        <item quantity="other">%d rəy</item>
+    </plurals>
+    <plurals name="vkim_msg_list_empty_common_friends_count">
+        <item quantity="one">%d ümumi dost</item>
+        <item quantity="other">%d ümumi dost</item>
+    </plurals>
+    <plurals name="vkim_msg_list_empty_community_friends_count">
+        <item quantity="one">%s dost</item>
+        <item quantity="other">%s dost</item>
+    </plurals>
+    <plurals name="vkim_msg_list_forward_header_num_messages">
+        <item quantity="one">%,d ötürülmüş mesaj</item>
+        <item quantity="other">%,d ötürülmüş mesaj</item>
+    </plurals>
+    <plurals name="vkim_msg_list_fwd_show_all_num_messages">
+        <item quantity="one">%d mesaj göstərmək</item>
+        <item quantity="other">%d mesaj göstərmək</item>
+    </plurals>
+    <plurals name="vkim_msg_list_gift_votes">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="vkim_msg_list_group_call_subtitle">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="vkim_msg_list_nested_forward_show_all_num_messages">
+        <item quantity="one">Daha %d mesaj</item>
+        <item quantity="other">Daha %d mesaj</item>
+    </plurals>
+    <plurals name="vkim_msg_list_playlist_tracks">
+        <item quantity="one">%d trək</item>
+        <item quantity="other">%d trək</item>
+    </plurals>
+    <plurals name="vkim_msg_map_multiple">
+        <item quantity="one">%d yerləşmə</item>
+        <item quantity="other">%d yerləşmə</item>
+    </plurals>
+    <plurals name="vkim_msg_market_multiple">
+        <item quantity="one">%d mal</item>
+        <item quantity="other">%d mal</item>
+    </plurals>
+    <plurals name="vkim_msg_market_service_multiple">
+        <item quantity="one">%d xidmət</item>
+        <item quantity="other">%d xidmət</item>
+    </plurals>
+    <plurals name="vkim_msg_mini_app_multiple">
+        <item quantity="one">%d mini applikasiya</item>
+        <item quantity="other">%d mini applikasiya</item>
+    </plurals>
+    <plurals name="vkim_msg_narrative_multiple">
+        <item quantity="one">%d an</item>
+        <item quantity="other">%d an</item>
+    </plurals>
+    <plurals name="vkim_msg_photo_multiple">
+        <item quantity="one">%d foto</item>
+        <item quantity="other">%d foto</item>
+    </plurals>
+    <plurals name="vkim_msg_playlist_multiple">
+        <item quantity="one">%d pleylist</item>
+        <item quantity="other">%d pleylist</item>
+    </plurals>
+    <plurals name="vkim_msg_podcast_episode_multiple">
+        <item quantity="one">%d podkast</item>
+        <item quantity="other">%d podkast</item>
+    </plurals>
+    <plurals name="vkim_msg_poll_multiple">
+        <item quantity="one">%d sorğu</item>
+        <item quantity="other">%d sorğu</item>
+    </plurals>
+    <plurals name="vkim_msg_product_orders">
+        <item quantity="one">%s sifariş</item>
+        <item quantity="other">%s sifariş</item>
+    </plurals>
+    <plurals name="vkim_msg_reply_multiple">
+        <item quantity="one">%d cavab</item>
+        <item quantity="other">%d cavab</item>
+    </plurals>
+    <plurals name="vkim_msg_request_label">
+        <item quantity="one">%s dəvət</item>
+        <item quantity="other">%s dəvət</item>
+    </plurals>
+    <plurals name="vkim_msg_room_multiple">
+        <item quantity="one">%d otaq</item>
+        <item quantity="other">%d otaq</item>
+    </plurals>
+    <plurals name="vkim_msg_sticker_multiple">
+        <item quantity="one">%d stiker</item>
+        <item quantity="other">%d stiker</item>
+    </plurals>
+    <plurals name="vkim_msg_story_multiple">
+        <item quantity="one">%d hekayə</item>
+        <item quantity="other">%d hekayə</item>
+    </plurals>
+    <plurals name="vkim_msg_textlive_multiple">
+        <item quantity="one">%d reportaj</item>
+        <item quantity="other">%d reportaj</item>
+    </plurals>
+    <plurals name="vkim_msg_video_msg_multiple">
+        <item quantity="one">%d video mesaj</item>
+        <item quantity="other">%d video mesaj</item>
+    </plurals>
+    <plurals name="vkim_msg_video_multiple">
+        <item quantity="one">%d videoyazı</item>
+        <item quantity="other">%d videoyazı</item>
+    </plurals>
+    <plurals name="vkim_msg_wall_multiple">
+        <item quantity="one">divarda %d yazı</item>
+        <item quantity="other">divarda %d yazı</item>
+    </plurals>
+    <plurals name="vkim_msg_wall_reply_multiple">
+        <item quantity="one">divarda %d şərh</item>
+        <item quantity="other">divarda %d şərh</item>
+    </plurals>
+    <plurals name="vkim_msg_widget_multiple">
+        <item quantity="one">%d vicet</item>
+        <item quantity="other">%d vicet</item>
+    </plurals>
+    <plurals name="vkim_new_contact_hint_count">
+        <item quantity="one">%d yeni əlaqəniz var</item>
+        <item quantity="other">%d yeni əlaqəniz var</item>
+    </plurals>
+    <plurals name="vkim_new_contacts_notfy_title">
+        <item quantity="one">%d yeni VK siması</item>
+        <item quantity="other">%d yeni VK siması</item>
+    </plurals>
+    <plurals name="vkim_pin_dialog_limit_exceded_msg">
+        <item quantity="one">Bir çatdan artıq bərkidə bilməzsiniz</item>
+        <item quantity="other">%d çatdan artıq bərkidə bilməzsiniz</item>
+    </plurals>
+    <plurals name="vkim_pin_im_item_limit_exceded_msg">
+        <item quantity="one">1-dən çox chat və kanal bərkitmək olmaz</item>
+        <item quantity="other">%d-dən çox chat və kanal bərkitmək olmaz</item>
+    </plurals>
+    <plurals name="vkim_pinned_channels_limit_exceeded">
+        <item quantity="one">Ən çoxu bir kanal bərkidə bilərsiniz</item>
+        <item quantity="other">Ən çoxu %d kanal bərkidə bilərsiniz</item>
+    </plurals>
+    <plurals name="vkim_popup_msg_delete_submit_desc">
+        <item quantity="one">Siz doğurdanda %d mesajı silmək istəyirsiniz?</item>
+        <item quantity="other">Siz doğurdanda %d mesajı silmək istəyirsiniz?</item>
+    </plurals>
+    <plurals name="vkim_post_comments_thread_show_more">
+        <item quantity="one">Daha %d cavab göstərmək</item>
+        <item quantity="other">Daha %d cavab göstərmək</item>
+    </plurals>
+    <plurals name="vkim_selected_call_users_counter">
+        <item quantity="one">%1$d iştirakçı seçilib</item>
+        <item quantity="other">%1$d iştirakçı seçilib</item>
+    </plurals>
+    <plurals name="vkim_typing_many">
+        <item quantity="one">%1$s və daha %2$d nəfər</item>
+        <item quantity="other">%1$s və daha %2$d nəfər</item>
+    </plurals>
+    <plurals name="vkim_wall_post_see_more">
+        <item quantity="one">və daha %d əlavə</item>
+        <item quantity="other">və daha %d əlavə</item>
+    </plurals>
+    <plurals name="vkm_chat_invitation_broadcast_subtitle_plurals">
+        <item quantity="one">%1$d özünü çatlara əlavə etməyi qadağan edib.</item>
+        <item quantity="other">%1$d özünü çatlara əlavə etməyi qadağan edib.</item>
+    </plurals>
+    <plurals name="vmoji_character_buy_container_votes">
+        <item quantity="one">%,d səs</item>
+        <item quantity="other">%,d səs</item>
+    </plurals>
+    <plurals name="vmoji_cost_count">
+        <item quantity="one">%1$d səs silinib</item>
+        <item quantity="other">%1$d səs silinib</item>
+    </plurals>
+    <plurals name="vmoji_votes_count">
+        <item quantity="one">%1$d səs</item>
+        <item quantity="other">%1$d səs</item>
+    </plurals>
+    <plurals name="voip_accessibility_reactions_plural">
+        <item quantity="one">%d iştirakçı %s münasibətini bildirib</item>
+        <item quantity="other">%d iştirakçı %s münasibətini bildirib</item>
+    </plurals>
+    <plurals name="voip_accessibility_record_start_plural">
+        <item quantity="one">%d iştirakçı zəng yazısına başladılar</item>
+        <item quantity="other">%d iştirakçı zəng yazısına başladılar</item>
+    </plurals>
+    <plurals name="voip_accessibility_record_stop_plural">
+        <item quantity="one">%d iştirakçı zəng yazısını dayandırıb</item>
+        <item quantity="other">%d iştirakçı zəng yazısını dayandırıb</item>
+    </plurals>
+    <plurals name="voip_accessibility_screencast_start_plural">
+        <item quantity="one">%d iştirakçı ekran nümayişini işə salıb</item>
+        <item quantity="other">%d iştirakçı ekran nümayişini işə salıblar</item>
+    </plurals>
+    <plurals name="voip_accessibility_screencast_stop_plural">
+        <item quantity="one">%d iştirakçı ekran nümayişini dayandırıb</item>
+        <item quantity="other">%d iştirakçı ekran nümayişini dayandırıblar</item>
+    </plurals>
+    <plurals name="voip_accessibility_stream_start_plural">
+        <item quantity="one">%d iştirakçı canlı yayıma başlayıb</item>
+        <item quantity="other">%d iştirakçı canlı yayıma başlayıblar</item>
+    </plurals>
+    <plurals name="voip_accessibility_stream_stop_plural">
+        <item quantity="one">%d iştirakçı canlı yayımı dayandırıb</item>
+        <item quantity="other">%d iştirakçı canlı yayımı dayandırıblar</item>
+    </plurals>
+    <plurals name="voip_accessibility_users_hand_lowered_plural">
+        <item quantity="one">%d iştirakçı əlini aşağı salıb</item>
+        <item quantity="other">%d iştirakçı əlini aşağı salıb</item>
+    </plurals>
+    <plurals name="voip_accessibility_users_hand_raised_plural">
+        <item quantity="one">%d iştirakçı əlini qaldırıb</item>
+        <item quantity="other">%d iştirakçı əlini qaldırıb</item>
+    </plurals>
+    <plurals name="voip_accessibility_users_joined_plural">
+        <item quantity="one">Zəngə %d iştirakçı qoşulub</item>
+        <item quantity="other">Zəngə %d iştirakçı qoşulub</item>
+    </plurals>
+    <plurals name="voip_accessibility_users_left_plural">
+        <item quantity="one">Zəngdən %d iştirakçı çıxıb</item>
+        <item quantity="other">Zəngdən %d iştirakçı çıxıb</item>
+    </plurals>
+    <plurals name="voip_accessibility_watch_together_start_plural">
+        <item quantity="one">%d iştirakçı birgə baxmağa başladı</item>
+        <item quantity="other">%d iştirakçı birgə baxmağa başladı</item>
+    </plurals>
+    <plurals name="voip_accessibility_watch_together_stop_plural">
+        <item quantity="one">%d iştirakçı birgə baxmağı dayandırdılar</item>
+        <item quantity="other">%d iştirakçı birgə baxmağı dayandırdılar</item>
+    </plurals>
+    <plurals name="voip_broadcast_elapsed_time_days_long">
+        <item quantity="one">Yayım %s gündən \nsonra başlayacaq</item>
+        <item quantity="other">Yayım %s gündən \nsonra başlayacaq</item>
+    </plurals>
+    <plurals name="voip_broadcast_elapsed_time_days_short">
+        <item quantity="one">%s gün</item>
+        <item quantity="other">%s gün</item>
+    </plurals>
+    <plurals name="voip_broadcast_spectators_count">
+        <item quantity="one">%s tamaşaçı</item>
+        <item quantity="other">%s tamaşaçı</item>
+    </plurals>
+    <plurals name="voip_broadcast_viewers_when_friends_and_others">
+        <item quantity="one">%s və daha %s nəfər yayımınıza baxıb</item>
+        <item quantity="other">%s və daha %s nəfər yayımınıza baxıb</item>
+    </plurals>
+    <plurals name="voip_broadcast_viewers_when_friends_only">
+        <item quantity="one">%s yayımınıza baxıb</item>
+        <item quantity="other">%s yayımınıza baxıb</item>
+    </plurals>
+    <plurals name="voip_broadcast_viewers_when_others_only">
+        <item quantity="one">%s nəfər yayımınıza baxıb</item>
+        <item quantity="other">%s nəfər yayımınıza baxıb</item>
+    </plurals>
+    <plurals name="voip_history_ongoing_call_participants_count">
+        <item quantity="one">Zəngdə %s iştirakçı var</item>
+        <item quantity="other">Zəngdə %s iştirakçı var</item>
+    </plurals>
+    <plurals name="voip_participants_title_participant_count">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="voip_session_room_admin_spread_participants_randomly_count">
+        <item quantity="one">Hər zalda %d iştirakçı</item>
+        <item quantity="other">Hər zalda %d iştirakçı</item>
+    </plurals>
+    <plurals name="voip_session_room_participant_count">
+        <item quantity="one">%d iştirakçı</item>
+        <item quantity="other">%d iştirakçı</item>
+    </plurals>
+    <plurals name="voip_session_room_participant_count_with_assistance_request_tail">
+        <item quantity="one"> · %d iştirakçı</item>
+        <item quantity="other"> · %d iştirakçı</item>
+    </plurals>
+    <plurals name="voip_vkapp_services_search_count">
+        <item quantity="one">%1$d nəfər</item>
+        <item quantity="other">%1$d nəfər</item>
+    </plurals>
+    <plurals name="wallview_comments">
+        <item quantity="one">Daha %,d şərh göstərmək</item>
+        <item quantity="other">Daha %,d şərh göstərmək</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:layout_margin="4dp"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp">
+    <com.vk.imageloader.view.VKImageView
+        android:id="@+id/item_podcast_category_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.DisplayTitle4"
+        android:textColor="@color/vk_white"
+        android:ellipsize="end"
+        android:layout_gravity="start|top"
+        android:id="@+id/item_podcast_category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.p003switch.VkSwitchItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/settings_switch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    app:subtitle="@string/censored_sett_description"
+    app:title="@string/censored_sett_title"/>

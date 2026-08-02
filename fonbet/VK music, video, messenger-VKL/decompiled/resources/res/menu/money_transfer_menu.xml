@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/vk_icon_money_send_outline_28"
+        android:id="@+id/money_transfer_send"
+        android:title="@string/money_transfer_send_money"
+        app:menuTint="?attr/vk_legacy_accent"/>
+    <item
+        android:icon="@drawable/vk_icon_money_request_outline_28"
+        android:id="@+id/money_transfer_request"
+        android:title="@string/money_transfer_send_request"
+        app:menuTint="?attr/vk_legacy_accent"/>
+    <item
+        android:icon="@drawable/vk_icon_link_circle_outline_28"
+        android:id="@+id/money_transfer_link"
+        android:title="@string/money_transfer_link"
+        app:menuTint="?attr/vk_legacy_accent"/>
+</menu>

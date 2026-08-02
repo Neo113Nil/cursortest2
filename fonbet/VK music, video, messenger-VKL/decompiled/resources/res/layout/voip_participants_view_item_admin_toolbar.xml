@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:paddingHorizontal="16dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/mute_microphones_for_all_btn"
+            android:text="@string/voip_call_participants_mute_microphones_for_all"
+            android:drawablePadding="4dp"
+            app:drawableStartCompat="@drawable/vk_icon_microphone_2_slash_outline_28"
+            style="@style/VoipParticipantsAdminToolbarButton"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/turn_off_cameras_for_all_btn"
+            android:text="@string/voip_call_participants_turn_off_cameras_for_all"
+            android:drawablePadding="4dp"
+            android:layout_marginStart="14dp"
+            app:drawableStartCompat="@drawable/vk_icon_videocam_2_slash_outline_28"
+            style="@style/VoipParticipantsAdminToolbarButton"/>
+        <ImageView
+            android:id="@+id/lower_hands_for_all_btn"
+            android:src="@drawable/vk_icon_hand_2_slash_outline_28"
+            android:contentDescription="@string/voip_call_request_lower_hand_for_all_content_description"
+            android:layout_marginStart="14dp"
+            style="@style/VoipParticipantsAdminToolbarButton"/>
+        <ImageView
+            android:id="@+id/request_media_for_all_btn"
+            android:src="@drawable/vk_icon_megaphone_outline_28"
+            android:contentDescription="@string/voip_call_request_media_for_all_content_description"
+            android:layout_marginStart="14dp"
+            style="@style/VoipParticipantsAdminToolbarButton"/>
+        <ImageView
+            android:id="@+id/end_call_for_all_btn"
+            android:src="@drawable/vk_icon_phone_cross_outline_28"
+            android:contentDescription="@string/voip_call_finish_call_for_all_content_description"
+            android:layout_marginStart="14dp"
+            android:backgroundTint="?attr/vk_ui_background_negative"
+            style="@style/VoipParticipantsAdminToolbarButton"/>
+    </LinearLayout>
+</HorizontalScrollView>

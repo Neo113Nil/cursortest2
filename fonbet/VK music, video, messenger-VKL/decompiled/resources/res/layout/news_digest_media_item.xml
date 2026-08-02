@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <com.vk.core.view.fresco.FrescoImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/iv_amp"
+        android:background="@drawable/vk_icon_deprecated_ic_longreads_amp_24"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+    <TextView
+        android:textAppearance="@style/VkUiTypography.Caption2.Unscaled"
+        android:textColor="@color/vk_white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/duration"
+        android:background="@drawable/bg_video_duration_label_old"
+        android:paddingTop="4dp"
+        android:paddingBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:maxLines="1"
+        android:drawablePadding="2dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:drawableStartCompat="@drawable/vk_icon_play_16"
+        app:drawableTint="@color/vk_white"/>
+</FrameLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group android:name="_R_G">
+        <group
+            android:name="_R_G_L_1_G"
+            android:pivotX="12"
+            android:pivotY="12"
+            android:scaleX="1"
+            android:scaleY="1">
+            <path
+                android:name="_R_G_L_1_G_D_0_P_0"
+                android:fillColor="@android:color/black"
+                android:pathData=" M12 3 C7.03,3 3,7.03 3,12 C3,16.97 7.03,21 12,21 C16.97,21 21,16.97 21,12 C21,7.03 16.97,3 12,3c  M12 1 C18.08,1 23,5.93 23,12 C23,18.08 18.08,23 12,23 C5.93,23 1,18.08 1,12 C1,5.93 5.93,1 12,1c "
+                android:fillAlpha="1"
+                android:fillType="nonZero"/>
+        </group>
+        <group
+            android:name="_R_G_L_0_G"
+            android:pivotX="12"
+            android:pivotY="12"
+            android:scaleX="0"
+            android:scaleY="0">
+            <path
+                android:name="_R_G_L_0_G_D_0_P_0"
+                android:fillColor="@android:color/black"
+                android:pathData=" M12 5 C15.87,5 19,8.13 19,12 C19,15.87 15.87,19 12,19 C8.13,19 5,15.87 5,12 C5,8.13 8.13,5 12,5c "
+                android:fillAlpha="1"
+                android:fillType="nonZero"/>
+        </group>
+    </group>
+    <group android:name="time_group"/>
+</vector>

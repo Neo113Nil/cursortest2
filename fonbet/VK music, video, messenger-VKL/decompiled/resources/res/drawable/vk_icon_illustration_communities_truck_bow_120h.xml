@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="180dp"
+    android:viewportWidth="180"
+    android:viewportHeight="120">
+    <path
+        android:name="path_1"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__0_res_0x7f080304"
+        android:pathData="M20.5,18a2,2 0,0 1,2 -2h81a2,2 0,0 1,2 2v72h-83a2,2 0,0 1,-2 -2z"/>
+    <path
+        android:name="path_2"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__1_res_0x7f080305"
+        android:pathData="M103.7,18a0.2,0.2 0,0 0,-0.2 -0.2h-81a0.2,0.2 0,0 0,-0.2 0.2v70c0,0.11 0.09,0.2 0.2,0.2V90l-0.204,-0.01A2,2 0,0 1,20.5 88V18a2,2 0,0 1,2 -2h81a2,2 0,0 1,2 2v72h-83v-1.8h81.2z"/>
+    <path
+        android:name="path_3"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__2_res_0x7f080310"
+        android:pathData="M105.5,41.692a1.5,1.5 0,0 1,1.5 -1.5h26.268a18,18 0,0 1,14.603 7.476l9.232,12.81a18,18 0,0 1,3.397 10.524v17.69a1.5,1.5 0,0 1,-1.5 1.5h-53.5z"/>
+    <path
+        android:name="path_4"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__3_res_0x7f080316"
+        android:pathData="M158.7,71.003c0,-3.4 -1.07,-6.714 -3.057,-9.472l-9.233,-12.81a16.2,16.2 0,0 0,-13.142 -6.73L107.3,41.991v46.401h51.4zM160.5,88.692a1.5,1.5 0,0 1,-1.5 1.5h-53.5v-48.5a1.5,1.5 0,0 1,1.5 -1.5h26.268a18,18 0,0 1,14.602 7.476l9.233,12.81a18,18 0,0 1,3.397 10.525z"/>
+    <path
+        android:name="path_5"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__4_res_0x7f080317"
+        android:pathData="M18.5,93a3,3 0,0 1,3 -3h138a3,3 0,0 1,3 3v1a3,3 0,0 1,-3 3h-138a3,3 0,0 1,-3 -3z"/>
+    <path
+        android:name="path_6"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__5_res_0x7f080318"
+        android:pathData="M159.5,95.8L159.5,97h-138v-1.2zM161.3,94v-1a1.8,1.8 0,0 0,-1.8 -1.8h-138a1.8,1.8 0,0 0,-1.8 1.8v1a1.8,1.8 0,0 0,1.8 1.8L21.5,97l-0.154,-0.004A3,3 0,0 1,18.5 94v-1a3,3 0,0 1,3 -3h138a3,3 0,0 1,3 3v1a3,3 0,0 1,-3 3v-1.2a1.8,1.8 0,0 0,1.8 -1.8"/>
+    <path
+        android:name="path_7"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__6_res_0x7f080319"
+        android:pathData="M143.5,96.192c0,7.732 -6.268,14 -14,14s-14,-6.268 -14,-14 6.268,-14 14,-14 14,6.268 14,14"/>
+    <path
+        android:name="path_8"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__7_res_0x7f08031a"
+        android:pathData="M142.9,96.192c0,-7.4 -5.999,-13.4 -13.4,-13.4s-13.4,6 -13.4,13.4 5.999,13.4 13.4,13.4 13.4,-5.999 13.4,-13.4m1.2,0c0,8.063 -6.537,14.6 -14.6,14.6s-14.6,-6.537 -14.6,-14.6 6.537,-14.6 14.6,-14.6 14.6,6.537 14.6,14.6"/>
+    <path
+        android:name="path_9"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__8_res_0x7f08031b"
+        android:pathData="M136.5,96.192a7,7 0,1 1,-14 0,7 7,0 0,1 14,0"/>
+    <path
+        android:name="path_10"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__9_res_0x7f08031c"
+        android:pathData="M136,96.192a6.5,6.5 0,1 0,-13 0,6.5 6.5,0 0,0 13,0m1,0a7.5,7.5 0,1 1,-15 0,7.5 7.5,0 0,1 15,0"/>
+    <path
+        android:name="path_11"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__10_res_0x7f080306"
+        android:pathData="M154.5,81.192a4,4 0,0 1,4 -4h2v8h-2a4,4 0,0 1,-4 -4"/>
+    <path
+        android:name="path_12"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__11_res_0x7f080307"
+        android:pathData="M113.5,73.192a1,1 0,0 1,1 -1h9a1,1 0,0 1,1 1v2a2,2 0,0 1,-2 2h-7a2,2 0,0 1,-2 -2z"/>
+    <path
+        android:name="path_13"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__12_res_0x7f080308"
+        android:pathData="M135.412,48.192a6,6 0,0 1,4.883 2.513L152.37,67.61a1,1 0,0 1,-0.813 1.581H114.5a1,1 0,0 1,-1 -1v-19a1,1 0,0 1,1 -1z"/>
+    <path
+        android:name="path_14"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__13_res_0x7f080309"
+        android:pathData="M113.5,68.192v-19a1,1 0,0 1,1 -1h20.912a6,6 0,0 1,4.883 2.513L152.37,67.61a1,1 0,0 1,-0.813 1.581v-1l-12.075,-16.906a5,5 0,0 0,-4.07 -2.094H114.5v20a1,1 0,0 1,-1 -1m38.057,0v1H114.5v-1z"/>
+    <path
+        android:name="path_15"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__14_res_0x7f08030a"
+        android:pathData="M105.5,71.095 L86.596,90L68.21,90l37.29,-37.29zM49.797,45.145 L43.279,50.214L20.5,87.487v-24.22l16.43,-14.47 8.623,-8.623L66.733,16h25.355z"/>
+    <path
+        android:name="path_16"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__15_res_0x7f08030b"
+        android:pathData="M52.62,8.817c0.345,-2.235 3.022,-3.166 4.653,-1.618L87.732,36.11c1.593,1.513 0.921,4.209 -1.19,4.777l-26.438,7.11 -0.015,0.017 -7.005,7.16a1,1 0,0 1,-0.292 0.206L46.97,82.913c-0.457,2.16 -3.024,2.98 -4.582,1.463L11.867,54.66c-1.625,-1.582 -0.848,-4.398 1.341,-4.857l27.737,-5.816a2.04,2.04 0,0 1,0.505 -1.321l5.53,-6.28a1.95,1.95 0,0 1,1.484 -0.667z"
+        android:fillType="evenOdd"/>
+    <path
+        android:name="path_17"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__16_res_0x7f08030c"
+        android:pathData="m49.65,51.334 l-9.714,-9.713 -30.673,6.292c-1.581,0.325 -2.143,2.315 -0.97,3.433l31.733,30.221c1.126,1.072 2.98,0.493 3.31,-1.033z"/>
+    <path
+        android:name="path_18"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__17_res_0x7f08030d"
+        android:pathData="M9.105,47.126c-2.213,0.454 -3,3.24 -1.358,4.804L39.48,82.152c1.576,1.5 4.17,0.69 4.633,-1.447l6.407,-29.631 -0.31,-0.31 -10.015,-10.016zM8.84,50.76c-0.705,-0.67 -0.367,-1.865 0.581,-2.06l30.258,-6.207 9.099,9.1 -6.22,28.767c-0.198,0.916 -1.31,1.264 -1.986,0.621z"/>
+    <path
+        android:name="path_19"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__18_res_0x7f08030e"
+        android:pathData="m54.947,45.153 l-8.83,-9.712 4.71,-29.834c0.25,-1.58 2.184,-2.238 3.362,-1.144L85.858,33.87c1.15,1.069 0.666,2.974 -0.859,3.375z"/>
+    <path
+        android:name="path_20"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__19_res_0x7f08030f"
+        android:pathData="M50.034,5.484c0.349,-2.21 3.056,-3.132 4.705,-1.601l31.669,29.406c1.61,1.496 0.933,4.163 -1.202,4.725l-30.528,8.034 -9.158,-10.075 -0.256,-0.281zM53.639,5.044c-0.707,-0.657 -1.867,-0.261 -2.017,0.686L46.97,35.19l8.245,9.069 29.578,-7.783a1.19,1.19 0,0 0,0.515 -2.025z"/>
+    <path
+        android:name="path_21"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__20_res_0x7f080311"
+        android:pathData="M38.524,42.692a2,2 0,0 1,-0.12 -2.798l5.79,-6.434a2,2 0,0 1,2.888 -0.09l10.664,10.468a1,1 0,0 1,0.006 1.42l-7.287,7.287a1,1 0,0 1,-1.39 0.023z"/>
+    <path
+        android:name="path_22"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__21_res_0x7f080312"
+        android:pathData="M69.5,96.192c0,7.732 -6.268,14 -14,14s-14,-6.268 -14,-14 6.268,-14 14,-14 14,6.268 14,14"/>
+    <path
+        android:name="path_23"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__22_res_0x7f080313"
+        android:pathData="M68.9,96.192c0,-7.4 -6,-13.4 -13.4,-13.4s-13.4,6 -13.4,13.4 6,13.4 13.4,13.4 13.4,-5.999 13.4,-13.4m1.2,0c0,8.063 -6.537,14.6 -14.6,14.6s-14.6,-6.537 -14.6,-14.6 6.537,-14.6 14.6,-14.6 14.6,6.537 14.6,14.6"/>
+    <path
+        android:name="path_24"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__23_res_0x7f080314"
+        android:pathData="M62.5,96.192a7,7 0,1 1,-14 0,7 7,0 0,1 14,0"/>
+    <path
+        android:name="path_25"
+        android:fillColor="@drawable/_vk_icon_illustration_communities_truck_bow_120h__24_res_0x7f080315"
+        android:pathData="M62,96.192a6.5,6.5 0,1 0,-13 0,6.5 6.5,0 0,0 13,0m1,0a7.5,7.5 0,1 1,-15 0,7.5 7.5,0 0,1 15,0"/>
+</vector>

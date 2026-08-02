@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/vk_legacy_modal_card_background"
+    android:paddingBottom="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp">
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:id="@+id/part_media_permission_warning_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_permissions_storage_part_media_warning"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/part_media_permission_warning_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.SubheadNormal"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_accent_themed"
+        android:gravity="center_vertical"
+        android:id="@+id/part_media_permission_warning_button"
+        android:background="@drawable/ripple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vk_permissions_part_media_warning_change"
+        android:paddingStart="12dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/VkUiTypography.ParagraphNormal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

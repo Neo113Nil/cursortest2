@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:paddingTop="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp">
+    <com.google.android.material.textview.MaterialTextView
+        android:textSize="20sp"
+        android:textColor="?attr/vk_ui_text_accent_themed"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="-1sp"
+        android:fontFamily="@font/vk_sans_text_medium"
+        app:lineHeight="16dp"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:paddingStart="6dp"
+        app:srcCompat="@drawable/vk_icon_dropdown_20"
+        app:tint="?attr/vk_ui_icon_accent"/>
+</LinearLayout>

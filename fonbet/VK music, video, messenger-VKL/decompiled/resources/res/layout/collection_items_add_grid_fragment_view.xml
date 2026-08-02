@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.vk.lists.RecyclerPaginatedView
+        android:id="@+id/collection_items_add_grid_fragment_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.vk.clips.design.view.actionlinks.holders.tip.ItemTipView
+        android:layout_gravity="center"
+        android:id="@+id/collection_items_add_grid_fragment_tip"
+        android:background="?attr/vk_ui_background_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-24dp"/>
+</FrameLayout>

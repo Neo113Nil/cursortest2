@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textColor="?attr/vk_ui_text_secondary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/oauth_container_layout_header"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        style="@style/VkUiTypography.FootnoteNormal"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/oauth_container_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</merge>

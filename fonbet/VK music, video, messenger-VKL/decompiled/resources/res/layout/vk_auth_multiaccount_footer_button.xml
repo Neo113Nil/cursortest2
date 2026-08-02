@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/footer_view"
+    android:background="@drawable/vk_multiaccount_switcher_item_ripple"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/footer_button_icon_view"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="22dp"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/footer_button_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        style="@style/VkUiTypography.Paragraph"/>
+</LinearLayout>

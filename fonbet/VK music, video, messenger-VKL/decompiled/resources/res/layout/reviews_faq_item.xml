@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vk.core.view.components.button.VkButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/show_faq_review_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/community_reviews_faq_btn"
+    app:buttonAppearance="accent"
+    app:buttonMode="secondary"
+    app:buttonSizeType="medium"
+    app:trailingIcon="@drawable/vk_icon_chevron_compact_right_24"/>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/music_offline_empty_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/empty_downloads_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/vk_icon_illustration_save_music_200h"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:layout_marginHorizontal="32dp"/>
+    <TextView
+        android:textColor="?attr/vk_ui_text_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/music_offline_mode_empty_title"
+        android:layout_marginHorizontal="16dp"
+        style="@style/VkUiTypography.DisplayTitle1"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/reasons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"/>
+</LinearLayout>
