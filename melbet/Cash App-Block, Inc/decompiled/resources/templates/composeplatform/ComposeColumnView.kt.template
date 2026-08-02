@@ -1,0 +1,25 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.layout.Column
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import {{NODE_PACKAGE}}.ComposePlatform
+
+/** Renders a ComposePlatform.Column proto as a vertical stack. */
+@Composable
+internal fun ComposeColumnView(column: ComposePlatform.Column, modifier: Modifier = Modifier) {
+  val viewState = LocalGenieViewState.current
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val spacing = resolveDp(column.spacing, evaluator, viewState)
+  val verticalArrangement = resolveVerticalArrangement(column.vertical_arrangement, evaluator, viewState, spacing)
+  val horizontalAlignment = resolveHorizontalAlignment(column.horizontal_alignment, evaluator, viewState)
+
+  Column(modifier = modifier, verticalArrangement = verticalArrangement, horizontalAlignment = horizontalAlignment) {
+    // Position is a stable key: container children are positional and can't be
+    // added or removed at runtime — inclusion is toggled via Node.is_included,
+    // which doesn't shift indices.
+    column.children.forEach { child -> GenieNodeView(child, Modifier) }
+  }
+}

@@ -1,0 +1,49 @@
+package com.google.android.gms.internal.measurement;
+
+import sun.misc.Unsafe;
+
+/* loaded from: classes4.dex */
+public final class zzagd extends zzyf {
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final void zza(Object obj, long j, byte b) {
+        if (zzagg.zzb) {
+            zzagg.zzC(obj, j, b);
+        } else {
+            zzagg.zzD(obj, j, b);
+        }
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final boolean zzb(Object obj, long j) {
+        return zzagg.zzb ? zzagg.zzt(obj, j) : zzagg.zzu(obj, j);
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final void zzc(Object obj, long j, boolean z) {
+        if (zzagg.zzb) {
+            zzagg.zzC(obj, j, z ? (byte) 1 : (byte) 0);
+        } else {
+            zzagg.zzD(obj, j, z ? (byte) 1 : (byte) 0);
+        }
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final float zzd(Object obj, long j) {
+        return Float.intBitsToFloat(((Unsafe) this.zza).getInt(obj, j));
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final void zze(Object obj, long j, float f) {
+        ((Unsafe) this.zza).putInt(obj, j, Float.floatToIntBits(f));
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final double zzf(Object obj, long j) {
+        return Double.longBitsToDouble(((Unsafe) this.zza).getLong(obj, j));
+    }
+
+    @Override // com.google.android.gms.internal.measurement.zzyf
+    public final void zzg(Object obj, long j, double d) {
+        ((Unsafe) this.zza).putLong(obj, j, Double.doubleToLongBits(d));
+    }
+}

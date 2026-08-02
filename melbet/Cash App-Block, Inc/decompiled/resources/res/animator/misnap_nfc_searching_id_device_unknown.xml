@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationInitial"
+        android:valueFrom="170"
+        android:valueTo="100"
+        android:valueType="floatType"
+        android:propertyName="translateY"/>
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationInitial"
+        android:valueFrom="210"
+        android:valueTo="120"
+        android:valueType="floatType"
+        android:propertyName="translateX"/>
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationRepeated"
+        android:startOffset="@integer/misnapWorkflowNfcAnimationOffsetSearchingDeviceUnknownTranslationRepeated"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="100"
+        android:valueTo="5"
+        android:valueType="floatType"
+        android:propertyName="translateY"/>
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationRepeated"
+        android:startOffset="@integer/misnapWorkflowNfcAnimationOffsetSearchingDeviceUnknownTranslationRepeated"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="120"
+        android:valueTo="-15"
+        android:valueType="floatType"
+        android:propertyName="translateX"/>
+</set>

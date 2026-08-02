@@ -1,0 +1,71 @@
+package com.withpersona.sdk2.inquiry.steps.ui.components;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
+import androidx.constraintlayout.widget.Guideline;
+import androidx.viewbinding.ViewBindings;
+import bo.app.a$$ExternalSyntheticBUOutline0;
+import com.squareup.cash.R;
+import com.stripe.android.uicore.utils.StateFlowsKt$$ExternalSyntheticLambda2;
+import com.withpersona.sdk2.inquiry.network.dto.ui.components.ClickableStack;
+import com.withpersona.sdk2.inquiry.network.dto.ui.styling.StyleElements;
+import com.withpersona.sdk2.inquiry.shared.ExtensionsKt;
+import com.withpersona.sdk2.inquiry.steps.ui.databinding.Pi2UiSecureTextBinding;
+import io.noties.markwon.MarkwonImpl;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import kotlin.collections.CollectionsKt__IterablesKt;
+
+/* loaded from: classes9.dex */
+public abstract class ClickableStackComponentKt {
+    public static final ConstraintLayout makeView(ClickableStackComponent clickableStackComponent, MarkwonImpl markwonImpl, ArrayList arrayList, List list, ClickableStack clickableStack) {
+        StyleElements.Axis axis;
+        StyleElements.Size gapValue;
+        Double dp;
+        list.getClass();
+        View inflate = ((LayoutInflater) markwonImpl.visitorFactory).inflate(R.layout.pi2_ui_clickable_stack, (ViewGroup) null, false);
+        int i = R.id.left_guideline;
+        if (((Guideline) ViewBindings.findChildViewById(inflate, R.id.left_guideline)) != null) {
+            i = R.id.right_guideline;
+            if (((Guideline) ViewBindings.findChildViewById(inflate, R.id.right_guideline)) != null) {
+                ConstraintLayout constraintLayout = (ConstraintLayout) inflate;
+                Pi2UiSecureTextBinding pi2UiSecureTextBinding = new Pi2UiSecureTextBinding(constraintLayout, 1);
+                ConstraintSet constraintSet = new ConstraintSet();
+                constraintSet.clone(constraintLayout);
+                List<View> list2 = list;
+                ArrayList arrayList2 = new ArrayList(CollectionsKt__IterablesKt.collectionSizeOrDefault(list2, 10));
+                for (View view : list2) {
+                    view.setId(View.generateViewId());
+                    view.setSaveEnabled(false);
+                    constraintLayout.addView(view);
+                    arrayList2.add(Integer.valueOf(view.getId()));
+                }
+                ClickableStack.ClickableStackComponentStyle styles = clickableStack.getStyles();
+                int dpToPx = (int) ExtensionsKt.getDpToPx((styles == null || (gapValue = styles.getGapValue()) == null || (dp = gapValue.getDp()) == null) ? 16.0d : dp.doubleValue());
+                if (styles == null || (axis = styles.getAxisValue()) == null) {
+                    axis = StyleElements.Axis.HORIZONTAL;
+                }
+                StyleElements.Axis axis2 = StyleElements.Axis.HORIZONTAL;
+                ConstraintLayout constraintLayout2 = (ConstraintLayout) pi2UiSecureTextBinding.rootView;
+                if (axis == axis2) {
+                    constraintLayout2.getClass();
+                    StacksKt.setupHorizontalStack(constraintLayout2, constraintSet, arrayList, arrayList2, styles != null ? styles.getChildSizesValue() : null, styles != null ? styles.getAlignmentValue() : null, dpToPx);
+                } else {
+                    constraintLayout2.getClass();
+                    StacksKt.setupVerticalStack(constraintLayout2, constraintSet, arrayList, arrayList2, styles != null ? styles.getAlignmentValue() : null, dpToPx);
+                }
+                if (styles != null) {
+                    ((LinkedList) markwonImpl.plugins).add(new StateFlowsKt$$ExternalSyntheticLambda2(20, pi2UiSecureTextBinding, styles));
+                }
+                constraintSet.applyTo(constraintLayout);
+                return constraintLayout;
+            }
+        }
+        a$$ExternalSyntheticBUOutline0.m$2("Missing required view with ID: ".concat(inflate.getResources().getResourceName(i)));
+        return null;
+    }
+}

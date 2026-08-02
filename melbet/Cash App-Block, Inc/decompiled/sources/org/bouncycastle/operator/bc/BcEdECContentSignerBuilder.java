@@ -1,0 +1,25 @@
+package org.bouncycastle.operator.bc;
+
+import bo.app.a$$ExternalSyntheticBUOutline0;
+import org.bouncycastle.asn1.ASN1Primitive;
+import org.bouncycastle.asn1.edec.EdECObjectIdentifiers;
+import org.bouncycastle.asn1.nist.NISTObjectIdentifiers;
+import org.bouncycastle.asn1.x509.AlgorithmIdentifier;
+import org.bouncycastle.crypto.Signer;
+import org.bouncycastle.crypto.signers.Ed25519Signer;
+
+/* loaded from: classes9.dex */
+public class BcEdECContentSignerBuilder extends BcContentSignerBuilder {
+    public BcEdECContentSignerBuilder(AlgorithmIdentifier algorithmIdentifier) {
+        super(algorithmIdentifier, new AlgorithmIdentifier(NISTObjectIdentifiers.id_sha512));
+    }
+
+    @Override // org.bouncycastle.operator.bc.BcContentSignerBuilder
+    public Signer createSigner(AlgorithmIdentifier algorithmIdentifier, AlgorithmIdentifier algorithmIdentifier2) {
+        if (algorithmIdentifier.getAlgorithm().equals((ASN1Primitive) EdECObjectIdentifiers.id_Ed25519)) {
+            return new Ed25519Signer();
+        }
+        a$$ExternalSyntheticBUOutline0.m$1("unknown signature type");
+        return null;
+    }
+}

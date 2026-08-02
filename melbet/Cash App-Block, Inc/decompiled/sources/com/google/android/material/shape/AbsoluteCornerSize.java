@@ -1,0 +1,34 @@
+package com.google.android.material.shape;
+
+import android.graphics.RectF;
+import androidx.camera.video.Recorder$$ExternalSyntheticOutline1;
+import java.util.Arrays;
+
+/* loaded from: classes4.dex */
+public final class AbsoluteCornerSize implements CornerSize {
+    public final float size;
+
+    public AbsoluteCornerSize(float f) {
+        this.size = f;
+    }
+
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        return (obj instanceof AbsoluteCornerSize) && this.size == ((AbsoluteCornerSize) obj).size;
+    }
+
+    @Override // com.google.android.material.shape.CornerSize
+    public final float getCornerSize(RectF rectF) {
+        return this.size;
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{Float.valueOf(this.size)});
+    }
+
+    public final String toString() {
+        return Recorder$$ExternalSyntheticOutline1.m(this.size, "px", new StringBuilder());
+    }
+}

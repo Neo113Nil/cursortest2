@@ -1,0 +1,6 @@
+package bo.app;
+
+/* loaded from: classes3.dex */
+public final class cf {
+    public static final cf a = new cf();
+}

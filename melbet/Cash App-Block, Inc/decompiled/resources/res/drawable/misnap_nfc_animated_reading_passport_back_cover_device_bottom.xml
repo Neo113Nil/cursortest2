@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/misnap_nfc_reading_passport_back_cover">
+    <target
+        android:name="deviceGroup"
+        android:animation="@animator/misnap_nfc_reading_passport_back_cover_device_bottom"/>
+    <target
+        android:name="field1"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field2"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field3"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field4"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field5"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field6"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="field7"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="photoBackdrop"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="photoLeft"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+    <target
+        android:name="photoRight"
+        android:animation="@animator/misnap_nfc_reading_device"/>
+</animated-vector>

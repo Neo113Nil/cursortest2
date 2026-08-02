@@ -1,0 +1,20 @@
+package com.squareup.cash.mosaic.personalization.api.v1;
+
+import com.squareup.cash.mosaic.personalization.api.v1.Entity;
+import com.squareup.wire.EnumAdapter;
+import com.squareup.wire.WireEnum;
+
+/* loaded from: classes6.dex */
+public final class Entity$Type$Companion$ADAPTER$1 extends EnumAdapter {
+    @Override // com.squareup.wire.EnumAdapter
+    public final WireEnum fromValue(int i) {
+        Entity.Type.Companion.getClass();
+        if (i == 0) {
+            return Entity.Type.TYPE_UNSPECIFIED;
+        }
+        if (i != 1) {
+            return null;
+        }
+        return Entity.Type.TYPE_PAYMENT;
+    }
+}

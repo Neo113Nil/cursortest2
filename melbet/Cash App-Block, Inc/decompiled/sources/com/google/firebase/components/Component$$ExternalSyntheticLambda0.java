@@ -1,0 +1,20 @@
+package com.google.firebase.components;
+
+import com.google.android.gms.internal.measurement.zzlj;
+
+/* loaded from: classes.dex */
+public final /* synthetic */ class Component$$ExternalSyntheticLambda0 implements ComponentFactory {
+    public final /* synthetic */ int $r8$classId;
+    public final /* synthetic */ Object f$0;
+
+    public /* synthetic */ Component$$ExternalSyntheticLambda0(Object obj, int i) {
+        this.$r8$classId = i;
+        this.f$0 = obj;
+    }
+
+    @Override // com.google.firebase.components.ComponentFactory
+    public final Object create(zzlj zzljVar) {
+        int i = this.$r8$classId;
+        return this.f$0;
+    }
+}

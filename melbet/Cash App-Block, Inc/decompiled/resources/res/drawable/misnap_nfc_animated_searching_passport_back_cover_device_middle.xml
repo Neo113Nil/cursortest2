@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" android:drawable="@drawable/misnap_nfc_searching_passport_back_cover">
+    <target
+        android:name="deviceGroup"
+        android:animation="@animator/misnap_nfc_searching_passport_back_cover_device_middle"/>
+    <target
+        android:name="circle1"
+        android:animation="@animator/misnap_nfc_searching_device"/>
+    <target
+        android:name="circle2"
+        android:animation="@animator/misnap_nfc_searching_device"/>
+    <target
+        android:name="circle3"
+        android:animation="@animator/misnap_nfc_searching_device"/>
+</animated-vector>

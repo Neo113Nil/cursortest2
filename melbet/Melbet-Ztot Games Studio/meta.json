@@ -32,5 +32,107 @@
   ],
   "stdout": "Downloading com.adventuretime.superstorm...\ncom.adventuretime.superstorm downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "да",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "Melbet"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.5.2"
+      },
+      {
+        "param": "minSdk",
+        "value": "21"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да (Kotlin 1.9.0 + kotlinx-coroutines 1.7.3)"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "AdMob / Google Mobile Ads (баннер, interstitial, rewarded; adapter com.buildbox.adapter.admob), Google User Messaging Platform / consent (com.google.android.ump); в списке согласия BuildBox также указан Vungle (adbox-vungle), отдельного SDK Vungle в пакете нет"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Google Play Services Measurement (measurement-base / measurement-sdk-api через стек AdMob), Google datatransport / CCT; полноценного Firebase Analytics / Crashlytics / AppsFlyer / Adjust / OneSignal в коде приложения нет"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.permission.INTERNET, com.google.android.gms.permission.AD_ID, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, com.android.vending.BILLING, android.permission.ACCESS_ADSERVICES_AD_ID, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.WAKE_LOCK, android.permission.FOREGROUND_SERVICE, c om.adventuretime.superstorm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSI ON"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat 1.7.0, androidx.activity 1.10.1 (+ktx), androidx.fragment (+ktx), androidx.core 1.13.1 (+ktx, viewtree), androidx.browser 1.4.0 (Custom Tabs), androidx.webkit 1.12.1, androidx.constraintlayout, androidx.coordinatorlayout, androidx.swiperefreshlayout 1.1.0, androidx.recyclerview, androidx.preference, androidx.lifecycle, androidx.room, androidx.sqlite, androidx.work 2.7.0, androidx.startup, androidx.emoji2, androidx.multidex, androidx.profileinstaller, androidx.window, androidx.privacysandbox.ads, Kotlin 1.9.0 + kotlinx-coroutines 1.7.3, OkHttp + Okio + Retrofit2 (в зависимостях; клоака их не вызывает), Dagger (annotations), Gson, Google Play Services (ads 23.3.0, ads-identifier, appset, auth, base, basement, fido, games, location, measurement, tasks, drive stubs), Google Play Billing 7.0.0, Google UMP, Firebase encoders (stubs; без полного Analytics SDK), BuildBox (com.buildbox.* / bb_version 2.24.3, AdIntegratorManager, consent), SecretHQ (com.secrethq.store / utils), Cocos2d-x (org.cocos2dx.lib), nineoldandroids"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "landsadvpiratesss.biz, config.ru, sdks.api.8cell.com, winimage.com"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "h8w3_k4memo — флаг stop_gate (пропустить «ворота» и сразу открыть обычное приложение); PreferenceManager default — ключи согласия рекламных сетей (admob_CONSENT_KEY, adbox-vungle_CONSENT_KEY); локальные preferences PTPlayer — GooglePlayServiceSignInError"
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "да Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "stop_gate, gate, landsadvpiratesss.biz/runtime, loadUrl, WebView, pp-decline-cta, k4-n5v8cz://close, Apostala, Melbet, location.replace / redirect, native_return, h8w3_k4memo, q7m2k_p4x.html Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "landsadvpiratesss.biz",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: NAMECHEAP INC"
+      },
+      {
+        "domain": "config.ru",
+        "redirects_to": "нет",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "sdks.api.8cell.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: GANDI SAS"
+      },
+      {
+        "domain": "winimage.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      }
+    ],
+    "collected_data": [
+      "строка «как представился браузер» → стандартная подпись встроенного окна сайта",
+      "(User-Agent): модель телефона, версия Android и версия движка страниц; уходит сама при",
+      "открытии внешнего адреса, без отдельного поля в коде приложения",
+      "язык телефона → язык и регион из настроек телефона уходят в заголовке Accept-Language",
+      "при загрузке страницы «ворот»; по нему удалённый сайт часто решает, что показать",
+      "файлы cookie → приложение явно включает приём cookie, в том числе сторонних; сайт",
+      "«ворот» может сохранить и потом узнать это же устройство",
+      "интернет-адрес устройства → сервер сам видит IP телефона при запросе; по нему часто",
+      "определяют страну и отсекают проверки магазина",
+      "адрес открытой страницы → зашитый путь /runtime на домене landsadvpiratesss.biz — это",
+      "вход на проверку «что показать этому человеку»"
+    ],
+    "cloaking": "да",
+    "cloaking_brief": "Какие данные собираются:\n• строка «как представился браузер» → стандартная подпись встроенного окна сайта\n• (User-Agent): модель телефона, версия Android и версия движка страниц; уходит сама при\n• открытии внешнего адреса, без отдельного поля в коде приложения\n• язык телефона → язык и регион из настроек телефона уходят в заголовке Accept-Language\n• при загрузке страницы «ворот»; по нему удалённый сайт часто решает, что показать\n• файлы cookie → приложение явно включает приём cookie, в том числе сторонних; сайт\n• «ворот» может сохранить и потом узнать это же устройство\n• интернет-адрес устройства → сервер сам видит IP телефона при запросе; по нему часто\n• определяют страну и отсекают проверки магазина\n• адрес открытой страницы → зашитый путь /runtime на домене landsadvpiratesss.biz — это\n• вход на проверку «что показать этому человеку»\n\nКак собираются: Сразу при открытии запускается главный экран PTPlayer. Он смотрит в памяти приложения файл настроек h8w3_k4memo: если флага stop_gate ещё нет, программа не показывает обычную игру, а сразу переключает человека на скрытый экран PlumeCanvasActivity и закрывает себя. На этом экране создаётся встроенное окно сайта. В него грузится локальная страница q7m2k_p4x.html (заставка «Loading»). Примерно через полсекунды страница сама, без нажатий, переводит окно на https://landsadvpiratesss.biz/runtime. Отдельного сбора рекламного номера, имени пакета или модели в виде списка полей приложение на телефонe не делает: сведения уходят так, как обычно уходит любой запрос страницы (подпись браузера, язык,…\n\nКуда отправляются: Тихий переход ведёт на точный адрес https://landsadvpiratesss.biz/runtime. Адрес зашит целиком в локальном файле q7m2k_p4x.html внутри приложения; запасных «ворот» в коде не видно. Это не показ рекламного блока сети на экране игры, а проверка и дальнейшая выдача страницы внутри того же встроенного окна сайта. Результат «пропустить ворота навсегда» хранится локально: ключ stop_gate в файле настроек h8w3_k4memo. Отдельно, уже не как клоака, BuildBox может сходить на https://sdks.api.8cell.com/zones/network_priority.json — это приоритет рекламных сетей движка, а не решение «оффер или белая версия».\n\nКак фильтруются…"
+  }
 }

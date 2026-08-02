@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationRepeated"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="10"
+        android:valueTo="40"
+        android:valueType="floatType"
+        android:propertyName="translateY"/>
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSearchingDeviceUnknownTranslationRepeated"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="105"
+        android:valueTo="-55"
+        android:valueType="floatType"
+        android:propertyName="translateX"/>
+</set>

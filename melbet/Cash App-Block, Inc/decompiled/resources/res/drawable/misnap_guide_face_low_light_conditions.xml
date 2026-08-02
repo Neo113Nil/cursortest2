@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="105dp"
+    android:width="70dp"
+    android:viewportWidth="383.46"
+    android:viewportHeight="550">
+    <path
+        android:fillColor="@color/colorGuideViewVignetteLowLightConditions"
+        android:pathData="M0,0L0,550L383.46,550L383.46,0ZM189.97,21.5c80.31,-0 167.41,92.12 167.41,253 -0,158.37 -87.1,258.5 -167.41,258.5C109.67,532.99 25.57,435.87 25.57,274.49 25.57,128.62 109.67,21.5 189.97,21.5Z"
+        android:strokeWidth="3.7179"/>
+    <path
+        android:pathData="M 23.56,275.68 A 168,258 0,1,1 23.56,275.69 z"
+        android:strokeColor="@color/color_face_session_guide_low_light_conditions"
+        android:strokeWidth="8"/>
+    <path
+        android:pathData="M 19.56,275.68 A 172,263 0,1,1 19.56,275.69 z"
+        android:strokeColor="@color/colorGuideViewBorder"
+        android:strokeWidth="1"/>
+    <path
+        android:pathData="M 27.56,275.68 A 164,254 0,1,1 27.56,275.69 z"
+        android:strokeColor="@color/colorGuideViewBorder"
+        android:strokeWidth="1"/>
+</vector>

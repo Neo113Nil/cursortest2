@@ -1,0 +1,45 @@
+{{PACKAGE}}
+
+import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import xyz.block.genie.expressions.evalString
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import xyz.block.genie.state.rememberStringBinding
+import {{NODE_PACKAGE}}.ComposePlatform
+
+@Composable
+internal fun TextFieldView(textField: ComposePlatform.TextField, style: ResolvedStyle, modifier: Modifier) {
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val state = LocalGenieViewState.current
+  val label = evaluator.evalString(textField.label, state, default = "")
+  val placeholder = evaluator.evalString(textField.placeholder, state)
+  val binding = rememberStringBinding(textField.binding)
+  // OutlinedTextField wraps each text slot with its own LocalContentColor provider, so the only way
+  // to honor `style.contentColor` is through the `colors` parameter — fanning the override across
+  // text, label, and placeholder slots in both focused and unfocused states.
+  val colors =
+    style.contentColor?.let { c ->
+      OutlinedTextFieldDefaults.colors(
+        focusedTextColor = c,
+        unfocusedTextColor = c,
+        focusedLabelColor = c,
+        unfocusedLabelColor = c,
+        focusedPlaceholderColor = c,
+        unfocusedPlaceholderColor = c,
+      )
+    } ?: OutlinedTextFieldDefaults.colors()
+  OutlinedTextField(
+    value = binding.value,
+    onValueChange = { binding.value = it },
+    label = { Text(label) },
+    placeholder = placeholder?.let { { Text(it) } },
+    textStyle = style.textStyle ?: LocalTextStyle.current,
+    colors = colors,
+    modifier = modifier,
+  )
+}

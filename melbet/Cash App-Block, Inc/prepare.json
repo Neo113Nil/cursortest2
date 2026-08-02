@@ -1,0 +1,50 @@
+{
+  "ok": true,
+  "apks": [
+    "com.squareup.cash.apk",
+    "config.arm64_v8a.apk",
+    "config.en.apk",
+    "config.xxhdpi.apk"
+  ],
+  "base_apk": "com.squareup.cash.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": "4446 (62%)\nINFO  - progress: 28195 of 44446 (63%)\nINFO  - progress: 28493 of 44446 (64%)\nINFO  - progress: 28951 of 44446 (65%)\nINFO  - progress: 29550 of 44446 (66%)\nINFO  - progress: 29873 of 44446 (67%)\nINFO  - progress: 30098 of 44446 (67%)\nINFO  - progress: 30315 of 44446 (68%)\nINFO  - progress: 30735 of 44446 (69%)\nINFO  - progress: 30779 of 44446 (69%)\nINFO  - progress: 30791 of 44446 (69%)\nINFO  - progress: 30793 of 44446 (69%)\nINFO  - progress: 30823 of 44446 (69%)\nINFO  - progress: 30836 of 44446 (69%)\nINFO  - progress: 30840 of 44446 (69%)\nINFO  - progress: 30885 of 44446 (69%)\nINFO  - progress: 30901 of 44446 (69%)\nINFO  - progress: 30927 of 44446 (69%)\nINFO  - progress: 31093 of 44446 (69%)\nINFO  - progress: 31596 of 44446 (71%)\nINFO  - progress: 32158 of 44446 (72%)\nINFO  - progress: 32715 of 44446 (73%)\nINFO  - progress: 33052 of 44446 (74%)\nINFO  - progress: 33356 of 44446 (75%)\nINFO  - progress: 33457 of 44446 (75%)\nINFO  - progress: 33842 of 44446 (76%)\nINFO  - progress: 34111 of 44446 (76%)\nINFO  - progress: 34226 of 44446 (77%)\nINFO  - progress: 34303 of 44446 (77%)\nINFO  - progress: 34489 of 44446 (77%)\nINFO  - progress: 34878 of 44446 (78%)\nINFO  - progress: 35299 of 44446 (79%)\nINFO  - progress: 35578 of 44446 (80%)\nINFO  - progress: 35860 of 44446 (80%)\nINFO  - progress: 36137 of 44446 (81%)\nINFO  - progress: 36463 of 44446 (82%)\nINFO  - progress: 36557 of 44446 (82%)\nINFO  - progress: 36569 of 44446 (82%)\nINFO  - progress: 36604 of 44446 (82%)\nINFO  - progress: 36623 of 44446 (82%)\nINFO  - progress: 36922 of 44446 (83%)\nINFO  - progress: 37003 of 44446 (83%)\nINFO  - progress: 37174 of 44446 (83%)\nINFO  - progress: 37321 of 44446 (83%)\nINFO  - progress: 37371 of 44446 (84%)\nINFO  - progress: 37525 of 44446 (84%)\nINFO  - progress: 37653 of 44446 (84%)\nINFO  - progress: 37877 of 44446 (85%)\nINFO  - progress: 38297 of 44446 (86%)\nINFO  - progress: 38461 of 44446 (86%)\nINFO  - progress: 38677 of 44446 (87%)\nINFO  - progress: 38860 of 44446 (87%)\nINFO  - progress: 39083 of 44446 (87%)\nINFO  - progress: 39244 of 44446 (88%)\nINFO  - progress: 39444 of 44446 (88%)\nINFO  - progress: 39785 of 44446 (89%)\nINFO  - progress: 40405 of 44446 (90%)\nINFO  - progress: 40850 of 44446 (91%)\nINFO  - progress: 41395 of 44446 (93%)\nINFO  - progress: 41609 of 44446 (93%)\nINFO  - progress: 42011 of 44446 (94%)\nINFO  - progress: 42302 of 44446 (95%)\nINFO  - progress: 42485 of 44446 (95%)\nINFO  - progress: 42646 of 44446 (95%)\nINFO  - progress: 42801 of 44446 (96%)\nINFO  - progress: 42884 of 44446 (96%)\nINFO  - progress: 42926 of 44446 (96%)\nINFO  - progress: 42959 of 44446 (96%)\nINFO  - progress: 42989 of 44446 (96%)\nINFO  - progress: 43141 of 44446 (97%)\nINFO  - progress: 43394 of 44446 (97%)\nINFO  - progress: 43435 of 44446 (97%)\nINFO  - progress: 43982 of 44446 (98%)\nINFO  - progress: 44183 of 44446 (99%)\nINFO  - progress: 44372 of 44446 (99%)\n                                                             \nERROR - finished with errors, count: 214\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/melbet/Cash App-Block, Inc/decompiled",
+    "skipped": false,
+    "base_apk": "com.squareup.cash.apk"
+  },
+  "analysis_files": [
+    "com.squareup.cash.xapk",
+    "apk/config.arm64_v8a.apk",
+    "apk/com.squareup.cash.apk",
+    "apk/config.xxhdpi.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/app/",
+    "decompiled/sources/array/",
+    "decompiled/sources/bo/",
+    "decompiled/sources/coil3/",
+    "decompiled/sources/com/",
+    "decompiled/sources/comsquareupcashexchangedatadb/",
+    "decompiled/sources/curtains/",
+    "decompiled/sources/dagger/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/designsystem/",
+    "decompiled/sources/dev/",
+    "decompiled/sources/encoding/",
+    "decompiled/sources/evaluation/",
+    "decompiled/sources/format/",
+    "decompiled/sources/io/",
+    "decompiled/sources/j$/",
+    "decompiled/sources/javax/"
+  ]
+}

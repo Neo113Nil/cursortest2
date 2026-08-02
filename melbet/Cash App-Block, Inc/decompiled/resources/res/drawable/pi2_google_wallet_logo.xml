@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="26dp"
+    android:width="30dp"
+    android:viewportWidth="30"
+    android:viewportHeight="26">
+    <path
+        android:fillColor="#34a853"
+        android:pathData="M30,10L0,10L0,5C0,2.285 2.202,0 4.816,0L25.183,0C27.798,0 30,2.285 30,5L30,10Z"
+        android:strokeWidth="1"/>
+    <path
+        android:fillColor="#fbbc04"
+        android:pathData="M30,14.053L0,14.053L0,9.053C0,6.339 2.202,4.053 4.816,4.053L25.183,4.053C27.798,4.053 30,6.339 30,9.053L30,14.053Z"
+        android:strokeWidth="1"/>
+    <path
+        android:fillColor="#ea4335"
+        android:pathData="M30,18.246L0,18.246L0,13.246C0,10.532 2.202,8.246 4.816,8.246L25.183,8.246C27.798,8.246 30,10.532 30,13.246L30,18.246Z"
+        android:strokeWidth="1"/>
+    <path
+        android:fillColor="@drawable/_pi2_google_wallet_logo__0_res_0x7f08009d"
+        android:pathData="M0,11.275L19.041,15.679C21.233,16.229 23.699,15.679 25.479,14.302L30,11L30,21.321C30,23.935 27.808,26 25.205,26L4.794,26C2.192,26 0,23.935 0,21.321L0,11.275Z"
+        android:strokeWidth="1"/>
+</vector>

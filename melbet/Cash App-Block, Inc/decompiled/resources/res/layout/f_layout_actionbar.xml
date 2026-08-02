@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+    <RelativeLayout
+        android:id="@+id/f_menu_burger"
+        android:layout_width="48dp"
+        android:layout_height="48dp">
+        <ImageButton
+            android:id="@+id/f_menu_burger_image"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/f_menu_buger"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <ImageView
+        android:textSize="24sp"
+        android:id="@+id/f_logo"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/com_fillr_navbarlogowhite"
+        android:layout_toRightOf="@+id/f_menu_burger"
+        android:layout_centerVertical="true"/>
+    <net.oneformapp.view.TextViewPlus
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:id="@+id/f_txt_title"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/fillr_actionbar_title"
+        android:layout_toRightOf="@+id/f_menu_burger"
+        android:layout_centerVertical="true"
+        app:fontVariant="roboto_medium"/>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.LocalContentColor
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import xyz.block.genie.expressions.evalString
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import xyz.block.genie.state.rememberStringBinding
+import {{NODE_PACKAGE}}.ComposePlatform
+
+@Composable
+internal fun DropdownMenuView(menu: ComposePlatform.DropdownMenu, style: ResolvedStyle, modifier: Modifier) {
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val state = LocalGenieViewState.current
+  val label = evaluator.evalString(menu.label, state, default = "")
+  val options = menu.options
+  val binding = rememberStringBinding(menu.binding, default = options.firstOrNull() ?: "")
+  var expanded by remember { mutableStateOf(false) }
+  val textStyle = style.textStyle ?: MaterialTheme.typography.labelLarge
+
+  CompositionLocalProvider(LocalContentColor provides (style.contentColor ?: LocalContentColor.current)) {
+    Box(modifier = modifier) {
+      TextButton(onClick = { expanded = true }) {
+        Text(text = if (label.isNotBlank()) "$label: ${binding.value}" else binding.value, style = textStyle)
+      }
+      DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }) {
+        options.forEach { option ->
+          DropdownMenuItem(
+            text = { Text(text = option, style = textStyle) },
+            onClick = {
+              binding.value = option
+              expanded = false
+            },
+          )
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "provisioning_failure",
+  "timings": [0, 80, 60, 80, 60, 80],
+  "amplitudes": [0, 180, 0, 180, 0, 180],
+  "repeat": -1
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/gift_card_image"
+        android:visibility="visible"
+        android:layout_width="@dimen/sqip_small_card_width"
+        android:layout_height="@dimen/sqip_small_card_height"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/sqip_gift_card_image_description"
+        android:layout_marginEnd="@dimen/sqip_card_editor_children_margin_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <sqip.internal.EditTextCursorWatcher
+        android:id="@+id/card_number"
+        android:background="@null"
+        android:paddingTop="@dimen/sqip_card_editor_card_number_padding_except_end"
+        android:paddingBottom="@dimen/sqip_card_editor_card_number_padding_except_end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/sqip_touch_target_size"
+        android:hint="@string/sqip_gift_card_number"
+        android:ems="10"
+        android:singleLine="true"
+        android:digits="0123456789 "
+        android:layout_weight="1"
+        android:inputType="number"
+        android:imeOptions="flagNoExtractUi|actionNext"
+        android:paddingStart="@dimen/sqip_card_editor_card_number_padding_start"
+        android:paddingEnd="@dimen/sqip_card_editor_card_number_padding_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gift_card_image"
+        app:layout_constraintTop_toTopOf="parent"/>
+</merge>

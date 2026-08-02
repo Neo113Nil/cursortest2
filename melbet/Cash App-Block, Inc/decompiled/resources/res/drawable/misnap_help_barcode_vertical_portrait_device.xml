@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="200dp"
+    android:width="196dp"
+    android:viewportWidth="818.69"
+    android:viewportHeight="850.9164">
+    <path
+        android:fillColor="@color/colorHelpDocumentOutline"
+        android:pathData="m261.8,213.576a21.22,21.22 0,0 1,16 -2.16,20.91 20.91,0 0,1 12.76,9.74l102,176.72a20.85,20.85 0,0 1,2 15.91,21.21 21.21,0 0,1 -9.79,12.79l-101.61,58.63a21.21,21.21 0,0 1,-16 2.15,20.86 20.86,0 0,1 -12.76,-9.73l-102,-176.72c-2.77,-4.81 -1.5,-10.32 0.78,-17.66 1.4,-4.48 4.39,-9.42 9.24,-12.22 26.46,-15.27 72.95,-42.2 99.41,-57.48z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentBackground"
+        android:pathData="m262.14,213.456a20.63,20.63 0,0 1,28.18 7.55c22.87,39.62 77.62,134.46 100.5,174.08a20.62,20.62 0,0 1,-7.55 28.17l-99.27,57.32a20.6,20.6 0,0 1,-28.17 -7.55c-22.88,-39.62 -77.63,-134.45 -100.51,-174.08a20.63,20.63 0,0 1,7.55 -28.18z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M246.94,275.786l-10.44,-18.09l-58.32,33.68l10.44,18.08z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M255.75,291.046l-4.93,-8.54l-58.08,33.53l4.93,8.54z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M272.03,319.226l-10.45,-18.08l-58.08,33.53l10.45,18.09z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M281.46,335.566l-5.82,-10.07l-58.08,33.53l5.82,10.07z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M292.48,354.666l-5.81,-10.07l-58.08,33.53l5.82,10.07z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentHighlight"
+        android:pathData="M307.03,379.856l-10.45,-18.09l-58.32,33.67l10.45,18.09z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDevice"
+        android:pathData="m299.48,112.666a22.62,22.62 0,0 1,8.28 -30.89l136.4,-78.75a22.64,22.64 0,0 1,30.9 8.27l175.29,303.61a22.63,22.63 0,0 1,-8.28 30.9l-136.4,78.77a22.63,22.63 0,0 1,-30.89 -8.27z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDeviceGlare"
+        android:pathData="m388.03,254.226 l-82.39,-140.85c-7.81,-10.95 -4.15,-24 7.73,-29.24l129.7,-73.89v0c11.23,-7.92 24.61,-4.69 29.51,8v0l26,44.45z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDeviceDocumentBackground"
+        android:pathData="m469.08,87.486a20.63,20.63 0,0 1,28.18 7.55l100.5,174.07a20.63,20.63 0,0 1,-7.55 28.18l-99.26,57.29a20.63,20.63 0,0 1,-28.18 -7.55l-100.5,-174.05a20.63,20.63 0,0 1,7.55 -28.18z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M453.89,149.816l-10.44,-18.09l-58.32,33.67l10.44,18.09z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M462.7,165.066l-4.93,-8.53l-58.08,33.53l4.93,8.53z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M478.97,193.256l-10.44,-18.08l-58.08,33.53l10.44,18.08z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M488.4,209.586l-5.81,-10.07l-58.08,33.54l5.82,10.07z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentContent"
+        android:pathData="M499.43,228.696l-5.81,-10.08l-58.08,33.54l5.81,10.07z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@color/colorHelpDocumentHighlight"
+        android:pathData="M513.97,253.876l-10.44,-18.08l-58.32,33.67l10.44,18.09z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_misnap_help_barcode_vertical_portrait_device__0_res_0x7f08003d"
+        android:pathData="m806.48,592.396 l1,1.71 -41.12,45.87v0l-58.71,38c0,0 -56.42,-108.9 -110,-154.6 -21.28,-18.14 -80.15,-47.44 -108.4,-52.25 -26.57,-4.52 -42.93,-22.22 -52.62,-33.23 -9.56,-10.86 -29.36,-44 -29.36,-44 -4.52,-6.19 -1.89,-14.86 5.62,-16.38 13.28,-2.68 36.94,-2.8 52.24,25.69 8.86,16.5 39,19.71 58.09,14.79 11.11,-2.87 47.69,-46.49 54.58,-60.24 19.54,-39 37,-55.12 35.6,-75.65 0,-0.32 -9.42,-49.74 -9.48,-49.75l-25.51,-44.2 13.55,1.91c8.89,1.07 24.38,9.7 39,20.23 7.56,-2 23,-4.8 34.19,1.37 15.37,8.48 41.25,54.53 41.25,54.53l16.08,27.14 13,18.38a37.47,37.47 0,0 1,3.71 36.65c-12.52,28.61 0.18,94 14.55,122.78 20.15,40.28 64.95,105.43 64.95,105.43z"/>
+    <path
+        android:fillColor="@drawable/_misnap_help_barcode_vertical_portrait_device__1_res_0x7f08003e"
+        android:pathData="m766.34,639.976 l-58.71,38c0,0 -56.42,-108.9 -110,-154.6 -21.28,-18.14 -80.15,-47.44 -108.4,-52.25 -26.57,-4.52 -42.93,-22.22 -52.62,-33.23 -9.56,-10.86 -29.36,-44 -29.36,-44 -4.52,-6.19 -1.89,-14.86 5.62,-16.38 13.28,-2.68 36.94,-2.8 52.24,25.69 8.86,16.5 39,19.71 58.09,14.79 11.11,-2.87 47.77,-46.45 54.58,-60.24 18.13,-36.67 37.4,-54.72 35.6,-75.65 0,-0.32 -9.42,-49.74 -9.48,-49.75l-25.51,-44.2 13.55,1.91c18.46,2.23 65.42,37.06 73.56,53.78l17.17,58.59 25.74,23.34c0,0 -5.99,82.18 14.07,120.43 31.53,60 85,147.9 85,147.9l-41.12,45.87z"/>
+    <path
+        android:fillColor="@drawable/_misnap_help_barcode_vertical_portrait_device__2_res_0x7f08003f"
+        android:pathData="m340.66,472.036c-7.19,-5.73 -14.39,-7.85 -21.6,-7.56l-35.9,20.73a21.23,21.23 0,0 1,-13.23 2.66,149 149,0 0,1 -47.31,15.62c-29,4 -68.57,-15.58 -71.56,-81.52 -0.23,-5.28 -0.5,-10.3 -0.78,-15.08v-0.06c0,0 26.19,-14.87 45,-31.64l-42.89,-74.28c-2.74,-4.76 -1.53,-10.2 0.71,-17.43l-15.17,7.18c5.42,-13.78 45.43,-32.73 45.87,-32l0.09,-0.05c15.83,-12 16,-37.71 3.2,-47.92 -21.29,7.82 -56.06,26.16 -87.82,43 -15.28,11.4 -16.92,41 -17.19,63.38l-21.7,10.24a44.66,44.66 0,0 0,-25.45 37l-34.93,455.48c57.2,29 100.43,36.28 133.56,27.84v0l0.29,-0.07a126,126 0,0 0,17.21 -5.35l-0.4,-227.35 0.4,-0.34c57.22,-5.56 111,-75.57 132.13,-81.85 29.73,-8.82 32.58,-21.27 57.76,-41.59a12.1,12.1 0,0 0,-0.29 -19z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_misnap_help_barcode_vertical_portrait_device__3_res_0x7f080040"
+        android:pathData="m0,819.756c57.2,29 100.43,36.28 133.56,27.84 0,0 -11,-99.1 -6,-174.51 2,-30.59 13.28,-50.23 23.46,-58.6 57.22,-5.56 111,-75.57 132.13,-81.85 29.73,-8.82 32.58,-21.27 57.76,-41.59a12.1,12.1 0,0 0,-0.29 -19c-12.11,-9.65 -24.25,-9.05 -36.42,-4 -24.69,14 -45,29.78 -81.62,35.44 -29,4 -68.57,-15.58 -71.56,-81.52 -3.94,-87.26 -14.17,-103.63 -13.56,-126.92 -3.64,-13.75 46.31,-37.45 46.29,-36.37 15.91,-11.93 16.07,-37.75 3.28,-48 -21.29,7.82 -56.06,26.16 -87.82,43 -20.48,15.28 -16.47,63.29 -17.47,82.68 -0.07,1.25 -24.35,8 -24.27,45.14l-29.22,238.08 -28.25,200.16z"
+        android:fillType="evenOdd"/>
+</vector>

@@ -1,0 +1,37 @@
+{{PACKAGE}}
+
+import androidx.compose.material3.Slider
+import androidx.compose.material3.SliderDefaults
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import xyz.block.genie.expressions.evalDouble
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import xyz.block.genie.state.rememberDoubleBinding
+import {{NODE_PACKAGE}}.ComposePlatform
+
+@Composable
+internal fun SliderView(slider: ComposePlatform.Slider, style: ResolvedStyle, modifier: Modifier) {
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val state = LocalGenieViewState.current
+  val rawMin = evaluator.evalDouble(slider.minimum, state, default = 0.0).toFloat()
+  val rawMax = evaluator.evalDouble(slider.maximum, state, default = 1.0).toFloat()
+  // Normalize so `min <= max`; both `coerceIn(min, max)` and `min..max` throw on inverted bounds,
+  // and an LLM-generated fixture can easily produce them. Mirrors iOS's swap-on-construction.
+  val min = minOf(rawMin, rawMax)
+  val max = maxOf(rawMin, rawMax)
+  // Proto `steps` and Compose `Slider(steps=…)` share the same definition: number of discrete
+  // intermediate stops between min and max. 0 (or unset) renders a continuous slider.
+  val steps = (evaluator.evalDouble(slider.steps, state)?.toInt() ?: 0).coerceAtLeast(0)
+  val binding = rememberDoubleBinding(slider.binding, default = min.toDouble())
+  val colors =
+    style.contentColor?.let { SliderDefaults.colors(thumbColor = it, activeTrackColor = it) } ?: SliderDefaults.colors()
+  Slider(
+    value = binding.value.toFloat().coerceIn(min, max),
+    onValueChange = { binding.value = it.toDouble() },
+    valueRange = min..max,
+    steps = steps,
+    colors = colors,
+    modifier = modifier,
+  )
+}

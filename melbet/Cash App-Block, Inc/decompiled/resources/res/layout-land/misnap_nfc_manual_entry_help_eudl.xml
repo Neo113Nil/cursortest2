@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mrzHelpLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/mrzHelpEuDlBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/misnapWorkflowNfcMrz1LineManualEntryFragmentHelpDescriptionDls"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/misnap_nfc_eudl_manual_entry_help_land"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="vertical"
+        android:id="@+id/guidelineStartMrzHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.79"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/guidelineTopMrzHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.35"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/guidelineBottomMrzHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.65"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/misnapWorkflowNfcMrz1LineManualEntryFragmentHelpMrz"
+        app:layout_constraintBottom_toBottomOf="@+id/guidelineBottomMrzHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineStartMrzHint"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopMrzHint"
+        style="@style/MiSnapTheme.TextAppearance.NfcHelp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

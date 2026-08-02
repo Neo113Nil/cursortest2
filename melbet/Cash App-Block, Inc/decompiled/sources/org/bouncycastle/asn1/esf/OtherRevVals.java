@@ -1,0 +1,65 @@
+package org.bouncycastle.asn1.esf;
+
+import bo.app.a$$ExternalSyntheticBUOutline0;
+import java.io.IOException;
+import okio.Path$$ExternalSyntheticBUOutline0;
+import org.bouncycastle.asn1.ASN1Encodable;
+import org.bouncycastle.asn1.ASN1EncodableVector;
+import org.bouncycastle.asn1.ASN1Encoding;
+import org.bouncycastle.asn1.ASN1Object;
+import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.bouncycastle.asn1.ASN1Primitive;
+import org.bouncycastle.asn1.ASN1Sequence;
+import org.bouncycastle.asn1.DERSequence;
+import org.bouncycastle.asn1.cmc.GetCert$$ExternalSyntheticOutline0;
+
+/* loaded from: classes9.dex */
+public class OtherRevVals extends ASN1Object {
+    private ASN1ObjectIdentifier otherRevValType;
+    private ASN1Encodable otherRevVals;
+
+    private OtherRevVals(ASN1Sequence aSN1Sequence) {
+        if (aSN1Sequence.size() != 2) {
+            a$$ExternalSyntheticBUOutline0.m$3(GetCert$$ExternalSyntheticOutline0.m(aSN1Sequence, new StringBuilder("Bad sequence size: ")));
+            throw null;
+        }
+        this.otherRevValType = (ASN1ObjectIdentifier) aSN1Sequence.getObjectAt(0);
+        try {
+            this.otherRevVals = ASN1Primitive.fromByteArray(aSN1Sequence.getObjectAt(1).toASN1Primitive().getEncoded(ASN1Encoding.DER));
+        } catch (IOException unused) {
+            Path$$ExternalSyntheticBUOutline0.m();
+            throw null;
+        }
+    }
+
+    public static OtherRevVals getInstance(Object obj) {
+        if (obj instanceof OtherRevVals) {
+            return (OtherRevVals) obj;
+        }
+        if (obj != null) {
+            return new OtherRevVals(ASN1Sequence.getInstance(obj));
+        }
+        return null;
+    }
+
+    public ASN1ObjectIdentifier getOtherRevValType() {
+        return this.otherRevValType;
+    }
+
+    public ASN1Encodable getOtherRevVals() {
+        return this.otherRevVals;
+    }
+
+    @Override // org.bouncycastle.asn1.ASN1Object, org.bouncycastle.asn1.ASN1Encodable
+    public ASN1Primitive toASN1Primitive() {
+        ASN1EncodableVector aSN1EncodableVector = new ASN1EncodableVector(2);
+        aSN1EncodableVector.add(this.otherRevValType);
+        aSN1EncodableVector.add(this.otherRevVals);
+        return new DERSequence(aSN1EncodableVector);
+    }
+
+    public OtherRevVals(ASN1ObjectIdentifier aSN1ObjectIdentifier, ASN1Encodable aSN1Encodable) {
+        this.otherRevValType = aSN1ObjectIdentifier;
+        this.otherRevVals = aSN1Encodable;
+    }
+}

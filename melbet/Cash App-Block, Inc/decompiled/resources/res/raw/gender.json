@@ -1,0 +1,16 @@
+{
+    "Titles": [
+        {
+            "Title": "Male",
+            "Variants": [
+                "M"
+            ]
+        },
+        {
+            "Title": "Female",
+            "Variants": [
+                "F"
+            ]
+        }
+    ]
+}

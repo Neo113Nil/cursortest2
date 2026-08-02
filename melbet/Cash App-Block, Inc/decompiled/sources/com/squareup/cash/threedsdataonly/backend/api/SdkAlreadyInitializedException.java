@@ -1,0 +1,11 @@
+package com.squareup.cash.threedsdataonly.backend.api;
+
+import kotlin.Metadata;
+
+@Metadata(d1 = {"\u0000\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00060\u0001j\u0002`\u0002¨\u0006\u0003"}, d2 = {"Lcom/squareup/cash/threedsdataonly/backend/api/SdkAlreadyInitializedException;", "Ljava/lang/RuntimeException;", "Lkotlin/RuntimeException;", "api"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public final class SdkAlreadyInitializedException extends RuntimeException {
+    public SdkAlreadyInitializedException(String str, Throwable th) {
+        super(str, th);
+    }
+}

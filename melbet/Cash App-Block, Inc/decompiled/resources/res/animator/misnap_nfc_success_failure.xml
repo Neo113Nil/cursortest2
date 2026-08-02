@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <objectAnimator
+        android:interpolator="@android:anim/linear_interpolator"
+        android:duration="@integer/misnapWorkflowNfcAnimationDurationSuccessFailureAlpha"
+        android:repeatCount="@integer/misnapWorkflowNfcAnimationRepeatCountSuccessFailureAlpha"
+        android:repeatMode="reverse"
+        android:valueFrom="@integer/misnapWorkflowNfcAnimationSuccessFailureAlphaFrom"
+        android:valueTo="@integer/misnapWorkflowNfcAnimationSuccessFailureAlphaTo"
+        android:valueType="floatType"
+        android:propertyName="alpha"/>
+</set>

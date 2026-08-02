@@ -1,0 +1,33 @@
+package org.bouncycastle.cert.crmf;
+
+import org.bouncycastle.asn1.ASN1Encodable;
+import org.bouncycastle.asn1.ASN1ObjectIdentifier;
+import org.bouncycastle.asn1.ASN1UTF8String;
+import org.bouncycastle.asn1.DERUTF8String;
+import org.bouncycastle.asn1.crmf.CRMFObjectIdentifiers;
+
+/* loaded from: classes9.dex */
+public class AuthenticatorControl implements Control {
+
+    /* renamed from: type, reason: collision with root package name */
+    private static final ASN1ObjectIdentifier f1569type = CRMFObjectIdentifiers.id_regCtrl_authenticator;
+    private final ASN1UTF8String token;
+
+    public AuthenticatorControl(String str) {
+        this.token = new DERUTF8String(str);
+    }
+
+    @Override // org.bouncycastle.cert.crmf.Control
+    public ASN1ObjectIdentifier getType() {
+        return f1569type;
+    }
+
+    @Override // org.bouncycastle.cert.crmf.Control
+    public ASN1Encodable getValue() {
+        return this.token;
+    }
+
+    public AuthenticatorControl(ASN1UTF8String aSN1UTF8String) {
+        this.token = aSN1UTF8String;
+    }
+}

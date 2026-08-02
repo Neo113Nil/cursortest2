@@ -1,0 +1,27 @@
+package com.squareup.cash.activity.backend.offline;
+
+import com.squareup.protos.cash.activity.api.v1.ActivityItemGlobalId;
+import com.squareup.protos.cash.activity.api.v1.ActivityItemId;
+import com.squareup.protos.cash.activity.api.v1.ActivityItemType;
+import com.squareup.protos.cash.activity.api.v1.ActivityProductClassifier;
+import com.squareup.protos.cash.activity.api.v1.ActivityToken;
+import com.squareup.protos.franklin.api.Role;
+import com.squareup.protos.franklin.app.InitiatePaymentRequest;
+import com.squareup.protos.franklin.ui.PaymentHistoryData;
+import com.squareup.protos.franklin.ui.UiCustomer;
+import com.squareup.protos.franklin.ui.UiPayment;
+import kotlin.collections.SetsKt__SetsJVMKt;
+
+/* loaded from: classes5.dex */
+public final class OfflinePaymentActivityItem extends OfflineFormattedActivityItem {
+    public final UiCustomer getter;
+    public final InitiatePaymentRequest initiatePaymentRequest;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public OfflinePaymentActivityItem(String str, UiPayment uiPayment, PaymentHistoryData paymentHistoryData, UiCustomer uiCustomer, UiCustomer uiCustomer2, ActivityItemType activityItemType, Role role, InitiatePaymentRequest initiatePaymentRequest, UiCustomer uiCustomer3) {
+        super(new ActivityItemGlobalId(new ActivityItemGlobalId.ActivityId.ActivityItemId(new ActivityItemId(str, activityItemType, 4)), (ActivityToken) null, 6), uiPayment, paymentHistoryData, uiCustomer, uiCustomer2, role, null, SetsKt__SetsJVMKt.setOf(ActivityProductClassifier.APC_P2P));
+        activityItemType.getClass();
+        this.initiatePaymentRequest = initiatePaymentRequest;
+        this.getter = uiCustomer3;
+    }
+}

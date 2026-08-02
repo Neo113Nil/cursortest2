@@ -1,0 +1,8 @@
+package com.google.android.libraries.places.internal;
+
+/* loaded from: classes4.dex */
+public class zzbpe {
+    public zzbph zza() {
+        throw null;
+    }
+}

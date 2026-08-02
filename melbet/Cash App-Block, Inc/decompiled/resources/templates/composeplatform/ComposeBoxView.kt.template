@@ -1,0 +1,23 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import {{NODE_PACKAGE}}.ComposePlatform
+
+/** Renders a ComposePlatform.Box proto as a z-axis stack. */
+@Composable
+internal fun ComposeBoxView(box: ComposePlatform.Box, modifier: Modifier = Modifier) {
+  val viewState = LocalGenieViewState.current
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val contentAlignment = resolveAlignment(box.content_alignment, evaluator, viewState)
+
+  Box(modifier = modifier, contentAlignment = contentAlignment) {
+    // Position is a stable key: container children are positional and can't be
+    // added or removed at runtime — inclusion is toggled via Node.is_included,
+    // which doesn't shift indices.
+    box.children.forEach { child -> GenieNodeView(child, Modifier) }
+  }
+}

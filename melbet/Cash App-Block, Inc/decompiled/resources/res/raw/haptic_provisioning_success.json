@@ -1,0 +1,6 @@
+{
+  "name": "provisioning_success",
+  "timings": [0, 40, 80, 30, 60, 40],
+  "amplitudes": [0, 200, 0, 255, 80, 0],
+  "repeat": -1
+}

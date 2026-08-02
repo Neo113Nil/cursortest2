@@ -1,0 +1,30 @@
+package com.squareup.cash.agents.applets.views;
+
+import android.content.Context;
+import android.view.ViewGroup;
+import app.cash.broadway.screen.Screen;
+import app.cash.broadway.ui.UiFactory;
+import com.squareup.cash.agents.applets.screens.AgentsHomeScreen;
+import dev.zacsweers.metro.internal.Factory;
+
+/* loaded from: classes.dex */
+public final class AgentsUiFactory implements UiFactory {
+
+    public final class MetroFactory implements Factory {
+        public static final MetroFactory INSTANCE = new MetroFactory();
+
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            return new AgentsUiFactory();
+        }
+    }
+
+    @Override // app.cash.broadway.ui.UiFactory
+    public final UiFactory.ScreenUi createUi(Screen screen, Context context, ViewGroup viewGroup) {
+        context.getClass();
+        if (screen instanceof AgentsHomeScreen) {
+            return new UiFactory.ComposeUi(AgentsHomeViewKt.lambda$575935469);
+        }
+        return null;
+    }
+}

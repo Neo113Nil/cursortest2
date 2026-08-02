@@ -1,0 +1,41 @@
+package com.nimbusds.jose;
+
+import com.nimbusds.jose.jwk.JWK$$ExternalSyntheticBUOutline0;
+import com.nimbusds.jose.util.Base64URL;
+import java.io.Serializable;
+
+/* loaded from: classes8.dex */
+public abstract class JOSEObject implements Serializable {
+    public Payload payload = null;
+
+    public static Base64URL[] split(String str) {
+        String trim = str.trim();
+        int indexOf = trim.indexOf(".");
+        if (indexOf == -1) {
+            JWK$$ExternalSyntheticBUOutline0.m$1("Invalid serialized unsecured/JWS/JWE object: Missing part delimiters");
+            return null;
+        }
+        int i = indexOf + 1;
+        int indexOf2 = trim.indexOf(".", i);
+        if (indexOf2 == -1) {
+            JWK$$ExternalSyntheticBUOutline0.m$1("Invalid serialized unsecured/JWS/JWE object: Missing second delimiter");
+            return null;
+        }
+        int i2 = indexOf2 + 1;
+        int indexOf3 = trim.indexOf(".", i2);
+        if (indexOf3 == -1) {
+            return new Base64URL[]{new Base64URL(trim.substring(0, indexOf)), new Base64URL(trim.substring(i, indexOf2)), new Base64URL(trim.substring(i2))};
+        }
+        int i3 = indexOf3 + 1;
+        int indexOf4 = trim.indexOf(".", i3);
+        if (indexOf4 == -1) {
+            JWK$$ExternalSyntheticBUOutline0.m$1("Invalid serialized JWE object: Missing fourth delimiter");
+            return null;
+        }
+        if (indexOf4 == -1 || trim.indexOf(".", indexOf4 + 1) == -1) {
+            return new Base64URL[]{new Base64URL(trim.substring(0, indexOf)), new Base64URL(trim.substring(i, indexOf2)), new Base64URL(trim.substring(i2, indexOf3)), new Base64URL(trim.substring(i3, indexOf4)), new Base64URL(trim.substring(indexOf4 + 1))};
+        }
+        JWK$$ExternalSyntheticBUOutline0.m$1("Invalid serialized unsecured/JWS/JWE object: Too many part delimiters");
+        return null;
+    }
+}

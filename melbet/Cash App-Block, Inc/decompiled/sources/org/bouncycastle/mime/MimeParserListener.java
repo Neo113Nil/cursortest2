@@ -1,0 +1,10 @@
+package org.bouncycastle.mime;
+
+import java.io.InputStream;
+
+/* loaded from: classes8.dex */
+public interface MimeParserListener {
+    MimeContext createContext(MimeParserContext mimeParserContext, Headers headers);
+
+    void object(MimeParserContext mimeParserContext, Headers headers, InputStream inputStream);
+}

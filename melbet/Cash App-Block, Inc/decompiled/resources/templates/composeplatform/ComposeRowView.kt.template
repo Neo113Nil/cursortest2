@@ -1,0 +1,25 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.layout.Row
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import {{NODE_PACKAGE}}.ComposePlatform
+
+/** Renders a ComposePlatform.Row proto as a horizontal stack. */
+@Composable
+internal fun ComposeRowView(row: ComposePlatform.Row, modifier: Modifier = Modifier) {
+  val viewState = LocalGenieViewState.current
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val spacing = resolveDp(row.spacing, evaluator, viewState)
+  val horizontalArrangement = resolveHorizontalArrangement(row.horizontal_arrangement, evaluator, viewState, spacing)
+  val verticalAlignment = resolveVerticalAlignment(row.vertical_alignment, evaluator, viewState)
+
+  Row(modifier = modifier, horizontalArrangement = horizontalArrangement, verticalAlignment = verticalAlignment) {
+    // Position is a stable key: container children are positional and can't be
+    // added or removed at runtime — inclusion is toggled via Node.is_included,
+    // which doesn't shift indices.
+    row.children.forEach { child -> GenieNodeView(child, Modifier) }
+  }
+}

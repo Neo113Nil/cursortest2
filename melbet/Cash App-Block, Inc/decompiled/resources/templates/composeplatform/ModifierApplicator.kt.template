@@ -1,0 +1,252 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.sizeIn
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.wrapContentHeight
+import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Typography
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.Dp
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import xyz.block.genie.expressions.ExpressionEvaluator
+import xyz.block.genie.expressions.evalBool
+import xyz.block.genie.expressions.evalDouble
+import xyz.block.genie.expressions.evalEnum
+import xyz.block.genie.state.GenieViewState
+import xyz.block.genie.state.LocalGenieExpressionEvaluator
+import xyz.block.genie.state.LocalGenieViewState
+import {{NODE_PACKAGE}}.ComposePlatform.Alignment as AlignmentEnum
+import {{NODE_PACKAGE}}.ComposePlatform.FontWeight as FontWeightEnum
+import {{NODE_PACKAGE}}.ComposePlatform.Modifier as ModifierProto
+import {{NODE_PACKAGE}}.ComposePlatform.TextAlign as TextAlignEnum
+import {{NODE_PACKAGE}}.ComposePlatform.Typography as TypographyEnum
+import {{NODE_PACKAGE}}.Node
+
+/**
+ * Per-view styling slots derived from a `ComposePlatform.Modifier` proto chain.
+ *
+ * - [textStyle] — merged `TextStyle` if any `text_style` modifiers were present.
+ * - [contentColor] — `content_color`'s color, applied as a foreground tint on text/icon content.
+ * - [tint] — `tint`'s color, applied to Image (icon-style assets).
+ *
+ * Compose lacks a SwiftUI-style `ViewModifier` for typography/foreground tint, so these slots are threaded through
+ * composition rather than stacked onto a Modifier chain. Layout/decoration (size, padding, background, …) and the
+ * overlay child are kept off this struct so views can't accidentally re-apply them — those are owned by the dispatcher.
+ */
+internal data class ResolvedStyle(val textStyle: TextStyle?, val contentColor: Color?, val tint: Color?) {
+  companion object {
+    val Empty: ResolvedStyle = ResolvedStyle(textStyle = null, contentColor = null, tint = null)
+  }
+}
+
+/**
+ * Full resolved form of a `ComposePlatform.Modifier` proto chain. Used by the dispatcher only:
+ *
+ * - [modifier] — layout/decoration Compose `Modifier` that wraps the binding view.
+ * - [style] — per-view styling slots passed down to each view; see [ResolvedStyle].
+ * - [overlay] — child Node painted on top of the view (drawn by the dispatcher's overlay path).
+ */
+internal data class ResolvedModifiers(val modifier: Modifier, val style: ResolvedStyle, val overlay: Node?)
+
+@Composable
+internal fun resolveComposePlatformModifiers(modifiers: List<ModifierProto>): ResolvedModifiers {
+  if (modifiers.isEmpty()) return ResolvedModifiers(Modifier, ResolvedStyle.Empty, null)
+  val evaluator = LocalGenieExpressionEvaluator.current
+  val state = LocalGenieViewState.current
+
+  var modifier: Modifier = Modifier
+  var textStyle: TextStyle? = null
+  var contentColor: Color? = null
+  var tint: Color? = null
+  var overlay: Node? = null
+
+  for (proto in modifiers) {
+    proto.size?.let { modifier = modifier.sizeModifier(it, evaluator, state) }
+    proto.padding?.let { modifier = modifier.paddingModifier(it, evaluator, state) }
+    proto.background?.let {
+      val c = resolveColor(it.color, evaluator, state) ?: return@let
+      modifier = modifier.then(Modifier.background(c))
+    }
+    proto.alpha?.let {
+      val a = evaluator.evalDouble(it.alpha, state, default = 1.0).toFloat()
+      modifier = modifier.then(Modifier.alpha(a))
+    }
+    proto.clip?.let {
+      val r = evaluator.evalDouble(it.corner_radius, state, default = 0.0).dp
+      modifier = modifier.then(Modifier.clip(RoundedCornerShape(r)))
+    }
+    proto.border?.let {
+      val c = resolveColor(it.color, evaluator, state) ?: return@let
+      val w = evaluator.evalDouble(it.width, state, default = 1.0).dp
+      val r = evaluator.evalDouble(it.corner_radius, state, default = 0.0).dp
+      modifier = modifier.then(Modifier.clip(RoundedCornerShape(r))).then(Modifier.border(w, c, RoundedCornerShape(r)))
+    }
+    proto.wrap_content_size?.let {
+      val h = evaluator.evalBool(it.horizontal, state, default = true)
+      val v = evaluator.evalBool(it.vertical, state, default = true)
+      modifier =
+        modifier.then(
+          when {
+            h && v -> Modifier.wrapContentSize()
+            h -> Modifier.wrapContentWidth()
+            v -> Modifier.wrapContentHeight()
+            else -> Modifier
+          }
+        )
+    }
+    proto.text_style?.let { textStyle = mergeTextStyle(base = textStyle, proto = it, evaluator, state) }
+    proto.content_color?.let { contentColor = resolveColor(it.color, evaluator, state) ?: contentColor }
+    proto.tint?.let { tint = resolveColor(it.color, evaluator, state) ?: tint }
+    proto.overlay?.let { overlay = it.content }
+  }
+
+  return ResolvedModifiers(modifier, ResolvedStyle(textStyle, contentColor, tint), overlay)
+}
+
+private fun Modifier.sizeModifier(size: ModifierProto.Size, evaluator: ExpressionEvaluator, state: GenieViewState): Modifier {
+  var modifier: Modifier = this
+
+  val width = evaluator.evalDouble(size.width, state)?.dp
+  val height = evaluator.evalDouble(size.height, state)?.dp
+  modifier =
+    when {
+      width != null && height != null -> modifier.size(width, height)
+      width != null -> modifier.width(width)
+      height != null -> modifier.height(height)
+      else -> modifier
+    }
+
+  val minWidth = evaluator.evalDouble(size.min_width, state)?.dp
+  val maxWidth = evaluator.evalDouble(size.max_width, state)?.dp
+  val minHeight = evaluator.evalDouble(size.min_height, state)?.dp
+  val maxHeight = evaluator.evalDouble(size.max_height, state)?.dp
+  if (minWidth != null || maxWidth != null || minHeight != null || maxHeight != null) {
+    modifier =
+      modifier.sizeIn(
+        minWidth = minWidth ?: Dp.Unspecified,
+        maxWidth = maxWidth ?: Dp.Unspecified,
+        minHeight = minHeight ?: Dp.Unspecified,
+        maxHeight = maxHeight ?: Dp.Unspecified,
+      )
+  }
+
+  if (evaluator.evalBool(size.fill_max_width, state, default = false)) modifier = modifier.fillMaxWidth()
+  if (evaluator.evalBool(size.fill_max_height, state, default = false)) modifier = modifier.fillMaxHeight()
+  return modifier
+}
+
+private fun Modifier.paddingModifier(
+  padding: ModifierProto.Padding,
+  evaluator: ExpressionEvaluator,
+  state: GenieViewState,
+): Modifier {
+  evaluator.evalDouble(padding.all, state)?.let {
+    return this.padding(it.dp)
+  }
+  val top = evaluator.evalDouble(padding.top, state, default = 0.0).dp
+  val start = evaluator.evalDouble(padding.start, state, default = 0.0).dp
+  val bottom = evaluator.evalDouble(padding.bottom, state, default = 0.0).dp
+  val end = evaluator.evalDouble(padding.end, state, default = 0.0).dp
+  return this.padding(start = start, top = top, end = end, bottom = bottom)
+}
+
+@Composable
+private fun mergeTextStyle(
+  base: TextStyle?,
+  proto: ModifierProto.TextStyle,
+  evaluator: ExpressionEvaluator,
+  state: GenieViewState,
+): TextStyle {
+  val typo = evaluator.evalEnum<TypographyEnum>(proto.typography, state)
+  val typography = MaterialTheme.typography
+  val starting = base ?: typo?.toTextStyle(typography) ?: TextStyle.Default
+  val sized = evaluator.evalDouble(proto.size, state)?.let { starting.copy(fontSize = it.sp) } ?: starting
+  val weighted =
+    evaluator.evalEnum<FontWeightEnum>(proto.weight, state)?.toFontWeight()?.let { sized.copy(fontWeight = it) }
+      ?: sized
+  val aligned =
+    evaluator.evalEnum<TextAlignEnum>(proto.text_align, state)?.toTextAlign()?.let { weighted.copy(textAlign = it) }
+      ?: weighted
+  return aligned
+}
+
+internal fun TypographyEnum.toTextStyle(typography: Typography): TextStyle =
+  when (this) {
+    TypographyEnum.TYPOGRAPHY_DISPLAY_LARGE -> typography.displayLarge
+    TypographyEnum.TYPOGRAPHY_DISPLAY_MEDIUM -> typography.displayMedium
+    TypographyEnum.TYPOGRAPHY_DISPLAY_SMALL -> typography.displaySmall
+    TypographyEnum.TYPOGRAPHY_HEADLINE_LARGE -> typography.headlineLarge
+    TypographyEnum.TYPOGRAPHY_HEADLINE_MEDIUM -> typography.headlineMedium
+    TypographyEnum.TYPOGRAPHY_HEADLINE_SMALL -> typography.headlineSmall
+    TypographyEnum.TYPOGRAPHY_TITLE_LARGE -> typography.titleLarge
+    TypographyEnum.TYPOGRAPHY_TITLE_MEDIUM -> typography.titleMedium
+    TypographyEnum.TYPOGRAPHY_TITLE_SMALL -> typography.titleSmall
+    TypographyEnum.TYPOGRAPHY_BODY_LARGE -> typography.bodyLarge
+    TypographyEnum.TYPOGRAPHY_BODY_MEDIUM -> typography.bodyMedium
+    TypographyEnum.TYPOGRAPHY_BODY_SMALL -> typography.bodySmall
+    TypographyEnum.TYPOGRAPHY_LABEL_LARGE -> typography.labelLarge
+    TypographyEnum.TYPOGRAPHY_LABEL_MEDIUM -> typography.labelMedium
+    TypographyEnum.TYPOGRAPHY_LABEL_SMALL -> typography.labelSmall
+    TypographyEnum.TYPOGRAPHY_UNSPECIFIED -> typography.bodyMedium
+  }
+
+internal fun FontWeightEnum.toFontWeight(): FontWeight? =
+  when (this) {
+    FontWeightEnum.FONT_WEIGHT_THIN -> FontWeight.Thin
+    FontWeightEnum.FONT_WEIGHT_EXTRA_LIGHT -> FontWeight.ExtraLight
+    FontWeightEnum.FONT_WEIGHT_LIGHT -> FontWeight.Light
+    FontWeightEnum.FONT_WEIGHT_NORMAL -> FontWeight.Normal
+    FontWeightEnum.FONT_WEIGHT_MEDIUM -> FontWeight.Medium
+    FontWeightEnum.FONT_WEIGHT_SEMI_BOLD -> FontWeight.SemiBold
+    FontWeightEnum.FONT_WEIGHT_BOLD -> FontWeight.Bold
+    FontWeightEnum.FONT_WEIGHT_EXTRA_BOLD -> FontWeight.ExtraBold
+    FontWeightEnum.FONT_WEIGHT_BLACK -> FontWeight.Black
+    FontWeightEnum.FONT_WEIGHT_UNSPECIFIED -> null
+  }
+
+internal fun TextAlignEnum.toTextAlign(): TextAlign? =
+  when (this) {
+    TextAlignEnum.TEXT_ALIGN_START -> TextAlign.Start
+    TextAlignEnum.TEXT_ALIGN_END -> TextAlign.End
+    TextAlignEnum.TEXT_ALIGN_CENTER -> TextAlign.Center
+    TextAlignEnum.TEXT_ALIGN_JUSTIFY -> TextAlign.Justify
+    TextAlignEnum.TEXT_ALIGN_UNSPECIFIED -> null
+  }
+
+internal fun resolveAlignment(alignment: AlignmentEnum?, default: Alignment = Alignment.Center): Alignment =
+  when (alignment) {
+    AlignmentEnum.ALIGNMENT_CENTER -> Alignment.Center
+    AlignmentEnum.ALIGNMENT_START,
+    AlignmentEnum.ALIGNMENT_CENTER_START -> Alignment.CenterStart
+    AlignmentEnum.ALIGNMENT_END,
+    AlignmentEnum.ALIGNMENT_CENTER_END -> Alignment.CenterEnd
+    AlignmentEnum.ALIGNMENT_TOP,
+    AlignmentEnum.ALIGNMENT_TOP_CENTER -> Alignment.TopCenter
+    AlignmentEnum.ALIGNMENT_BOTTOM,
+    AlignmentEnum.ALIGNMENT_BOTTOM_CENTER -> Alignment.BottomCenter
+    AlignmentEnum.ALIGNMENT_TOP_START -> Alignment.TopStart
+    AlignmentEnum.ALIGNMENT_TOP_END -> Alignment.TopEnd
+    AlignmentEnum.ALIGNMENT_BOTTOM_START -> Alignment.BottomStart
+    AlignmentEnum.ALIGNMENT_BOTTOM_END -> Alignment.BottomEnd
+    AlignmentEnum.ALIGNMENT_UNSPECIFIED,
+    null -> default
+  }

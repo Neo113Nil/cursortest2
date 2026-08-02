@@ -1,0 +1,36 @@
+{
+  "app_id": "com.squareup.cash",
+  "title": "Cash App",
+  "developer": "Block, Inc",
+  "score": 4.7035894,
+  "icon": "https://play-lh.googleusercontent.com/pBe5_NoQ0uojR_XLb_5f2mMxVOnFczommOo5Ho297TYnkqt6I26YM3X2cpKtowkLsxe27IdhP1gQz-Mq4OSQ",
+  "url": "https://play.google.com/store/apps/details?id=com.squareup.cash&hl=en&gl=us",
+  "keyword": "melbet",
+  "developer_id": "4878871734928263649",
+  "released": "Oct 15, 2013",
+  "updated": "2026-07-31",
+  "version": "5.62.0",
+  "summary": "Send money and bitcoin easily. Invest, bank and do more with your money",
+  "folder": "Cash App-Block, Inc",
+  "path": "melbet/Cash App-Block, Inc",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.squareup.cash.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/melbet/Cash App-Block, Inc",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.squareup.cash...\ncom.squareup.cash downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.squareup.cash...\ncom.squareup.cash downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,1164 @@
+package com.google.protobuf;
+
+import bo.app.a$$ExternalSyntheticBUOutline0;
+import com.google.firebase.components.OptionalProvider$$ExternalSyntheticLambda0;
+import com.google.protobuf.FieldSet.FieldDescriptorLite;
+import com.google.protobuf.Internal;
+import com.google.protobuf.LazyField;
+import com.google.protobuf.MessageLite;
+import com.google.protobuf.WireFormat;
+import com.nimbusds.jose.jwk.JWK$$ExternalSyntheticBUOutline0;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+/* loaded from: classes4.dex */
+final class FieldSet<T extends FieldDescriptorLite<T>> {
+    private static final int DEFAULT_FIELD_MAP_ARRAY_SIZE = 16;
+    private static final FieldSet DEFAULT_INSTANCE = new FieldSet(true);
+    private final SmallSortedMap<T, Object> fields;
+    private boolean hasLazyField;
+    private boolean isImmutable;
+
+    /* renamed from: com.google.protobuf.FieldSet$1, reason: invalid class name */
+    public static /* synthetic */ class AnonymousClass1 {
+        static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
+        static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$JavaType;
+
+        static {
+            int[] iArr = new int[WireFormat.FieldType.values().length];
+            $SwitchMap$com$google$protobuf$WireFormat$FieldType = iArr;
+            try {
+                iArr[WireFormat.FieldType.DOUBLE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.FLOAT.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.INT64.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.UINT64.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.INT32.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.FIXED64.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.FIXED32.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.BOOL.ordinal()] = 8;
+            } catch (NoSuchFieldError unused8) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.GROUP.ordinal()] = 9;
+            } catch (NoSuchFieldError unused9) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.MESSAGE.ordinal()] = 10;
+            } catch (NoSuchFieldError unused10) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.STRING.ordinal()] = 11;
+            } catch (NoSuchFieldError unused11) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.BYTES.ordinal()] = 12;
+            } catch (NoSuchFieldError unused12) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.UINT32.ordinal()] = 13;
+            } catch (NoSuchFieldError unused13) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.SFIXED32.ordinal()] = 14;
+            } catch (NoSuchFieldError unused14) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.SFIXED64.ordinal()] = 15;
+            } catch (NoSuchFieldError unused15) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.SINT32.ordinal()] = 16;
+            } catch (NoSuchFieldError unused16) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.SINT64.ordinal()] = 17;
+            } catch (NoSuchFieldError unused17) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$FieldType[WireFormat.FieldType.ENUM.ordinal()] = 18;
+            } catch (NoSuchFieldError unused18) {
+            }
+            int[] iArr2 = new int[WireFormat.JavaType.values().length];
+            $SwitchMap$com$google$protobuf$WireFormat$JavaType = iArr2;
+            try {
+                iArr2[WireFormat.JavaType.INT.ordinal()] = 1;
+            } catch (NoSuchFieldError unused19) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.LONG.ordinal()] = 2;
+            } catch (NoSuchFieldError unused20) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.FLOAT.ordinal()] = 3;
+            } catch (NoSuchFieldError unused21) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.DOUBLE.ordinal()] = 4;
+            } catch (NoSuchFieldError unused22) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.BOOLEAN.ordinal()] = 5;
+            } catch (NoSuchFieldError unused23) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.STRING.ordinal()] = 6;
+            } catch (NoSuchFieldError unused24) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.BYTE_STRING.ordinal()] = 7;
+            } catch (NoSuchFieldError unused25) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.ENUM.ordinal()] = 8;
+            } catch (NoSuchFieldError unused26) {
+            }
+            try {
+                $SwitchMap$com$google$protobuf$WireFormat$JavaType[WireFormat.JavaType.MESSAGE.ordinal()] = 9;
+            } catch (NoSuchFieldError unused27) {
+            }
+        }
+    }
+
+    public interface FieldDescriptorLite<T extends FieldDescriptorLite<T>> extends Comparable<T> {
+        Internal.EnumLiteMap<?> getEnumType();
+
+        WireFormat.JavaType getLiteJavaType();
+
+        WireFormat.FieldType getLiteType();
+
+        int getNumber();
+
+        MessageLite.Builder internalMergeFrom(MessageLite.Builder builder, MessageLite messageLite);
+
+        boolean isPacked();
+
+        boolean isRepeated();
+    }
+
+    private FieldSet() {
+        this.fields = SmallSortedMap.newFieldMap(16);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static <T extends FieldDescriptorLite<T>> SmallSortedMap<T, Object> cloneAllFieldsMap(SmallSortedMap<T, Object> smallSortedMap, boolean z) {
+        SmallSortedMap<T, Object> newFieldMap = SmallSortedMap.newFieldMap(16);
+        for (int i = 0; i < smallSortedMap.getNumArrayEntries(); i++) {
+            cloneFieldEntry(newFieldMap, smallSortedMap.getArrayEntryAt(i), z);
+        }
+        Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+        while (it.hasNext()) {
+            cloneFieldEntry(newFieldMap, it.next(), z);
+        }
+        return newFieldMap;
+    }
+
+    private static <T extends FieldDescriptorLite<T>> void cloneFieldEntry(Map<T, Object> map, Map.Entry<T, Object> entry, boolean z) {
+        T key = entry.getKey();
+        Object value = entry.getValue();
+        if (value instanceof LazyField) {
+            map.put(key, ((LazyField) value).getValue());
+        } else if (z && (value instanceof List)) {
+            map.put(key, new ArrayList((List) value));
+        } else {
+            map.put(key, value);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static Object cloneIfMutable(Object obj) {
+        if (!(obj instanceof byte[])) {
+            return obj;
+        }
+        byte[] bArr = (byte[]) obj;
+        byte[] bArr2 = new byte[bArr.length];
+        System.arraycopy(bArr, 0, bArr2, 0, bArr.length);
+        return bArr2;
+    }
+
+    public static int computeElementSize(WireFormat.FieldType fieldType, int i, Object obj) {
+        int computeTagSize = CodedOutputStream.computeTagSize(i);
+        if (fieldType == WireFormat.FieldType.GROUP) {
+            computeTagSize *= 2;
+        }
+        return computeTagSize + computeElementSizeNoTag(fieldType, obj);
+    }
+
+    public static int computeElementSizeNoTag(WireFormat.FieldType fieldType, Object obj) {
+        switch (AnonymousClass1.$SwitchMap$com$google$protobuf$WireFormat$FieldType[fieldType.ordinal()]) {
+            case 1:
+                return CodedOutputStream.computeDoubleSizeNoTag(((Double) obj).doubleValue());
+            case 2:
+                return CodedOutputStream.computeFloatSizeNoTag(((Float) obj).floatValue());
+            case 3:
+                return CodedOutputStream.computeInt64SizeNoTag(((Long) obj).longValue());
+            case 4:
+                return CodedOutputStream.computeUInt64SizeNoTag(((Long) obj).longValue());
+            case 5:
+                return CodedOutputStream.computeInt32SizeNoTag(((Integer) obj).intValue());
+            case 6:
+                return CodedOutputStream.computeFixed64SizeNoTag(((Long) obj).longValue());
+            case 7:
+                return CodedOutputStream.computeFixed32SizeNoTag(((Integer) obj).intValue());
+            case 8:
+                return CodedOutputStream.computeBoolSizeNoTag(((Boolean) obj).booleanValue());
+            case 9:
+                return CodedOutputStream.computeGroupSizeNoTag((MessageLite) obj);
+            case 10:
+                return obj instanceof LazyField ? CodedOutputStream.computeLazyFieldSizeNoTag((LazyField) obj) : CodedOutputStream.computeMessageSizeNoTag((MessageLite) obj);
+            case 11:
+                return obj instanceof ByteString ? CodedOutputStream.computeBytesSizeNoTag((ByteString) obj) : CodedOutputStream.computeStringSizeNoTag((String) obj);
+            case 12:
+                return obj instanceof ByteString ? CodedOutputStream.computeBytesSizeNoTag((ByteString) obj) : CodedOutputStream.computeByteArraySizeNoTag((byte[]) obj);
+            case 13:
+                return CodedOutputStream.computeUInt32SizeNoTag(((Integer) obj).intValue());
+            case 14:
+                return CodedOutputStream.computeSFixed32SizeNoTag(((Integer) obj).intValue());
+            case 15:
+                return CodedOutputStream.computeSFixed64SizeNoTag(((Long) obj).longValue());
+            case 16:
+                return CodedOutputStream.computeSInt32SizeNoTag(((Integer) obj).intValue());
+            case 17:
+                return CodedOutputStream.computeSInt64SizeNoTag(((Long) obj).longValue());
+            case 18:
+                return obj instanceof Internal.EnumLite ? CodedOutputStream.computeEnumSizeNoTag(((Internal.EnumLite) obj).getNumber()) : CodedOutputStream.computeEnumSizeNoTag(((Integer) obj).intValue());
+            default:
+                OptionalProvider$$ExternalSyntheticLambda0.m$1("There is no way to get here, but the compiler thinks otherwise.");
+                return 0;
+        }
+    }
+
+    public static int computeFieldSize(FieldDescriptorLite<?> fieldDescriptorLite, Object obj) {
+        WireFormat.FieldType liteType = fieldDescriptorLite.getLiteType();
+        int number = fieldDescriptorLite.getNumber();
+        if (!fieldDescriptorLite.isRepeated()) {
+            return computeElementSize(liteType, number, obj);
+        }
+        List list = (List) obj;
+        int i = 0;
+        if (!fieldDescriptorLite.isPacked()) {
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                i += computeElementSize(liteType, number, it.next());
+            }
+            return i;
+        }
+        if (list.isEmpty()) {
+            return 0;
+        }
+        Iterator it2 = list.iterator();
+        while (it2.hasNext()) {
+            i += computeElementSizeNoTag(liteType, it2.next());
+        }
+        return CodedOutputStream.computeUInt32SizeNoTag(i) + CodedOutputStream.computeTagSize(number) + i;
+    }
+
+    public static <T extends FieldDescriptorLite<T>> FieldSet<T> emptySet() {
+        return DEFAULT_INSTANCE;
+    }
+
+    private int getMessageSetSerializedSize(Map.Entry<T, Object> entry) {
+        T key = entry.getKey();
+        Object value = entry.getValue();
+        return (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE || key.isRepeated() || key.isPacked()) ? computeFieldSize(key, value) : value instanceof LazyField ? CodedOutputStream.computeLazyFieldMessageSetExtensionSize(entry.getKey().getNumber(), (LazyField) value) : CodedOutputStream.computeMessageSetExtensionSize(entry.getKey().getNumber(), (MessageLite) value);
+    }
+
+    public static int getWireFormatForFieldType(WireFormat.FieldType fieldType, boolean z) {
+        if (z) {
+            return 2;
+        }
+        return fieldType.getWireType();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static <T extends FieldDescriptorLite<T>> boolean isInitialized(Map.Entry<T, Object> entry) {
+        T key = entry.getKey();
+        if (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE) {
+            return true;
+        }
+        if (!key.isRepeated()) {
+            return isMessageFieldValueInitialized(entry.getValue());
+        }
+        Iterator it = ((List) entry.getValue()).iterator();
+        while (it.hasNext()) {
+            if (!isMessageFieldValueInitialized(it.next())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private static boolean isMessageFieldValueInitialized(Object obj) {
+        if (obj instanceof MessageLiteOrBuilder) {
+            return ((MessageLiteOrBuilder) obj).isInitialized();
+        }
+        if (obj instanceof LazyField) {
+            return true;
+        }
+        a$$ExternalSyntheticBUOutline0.m$3("Wrong object type used with protocol message reflection.");
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static boolean isValidType(WireFormat.FieldType fieldType, Object obj) {
+        Internal.checkNotNull(obj);
+        switch (AnonymousClass1.$SwitchMap$com$google$protobuf$WireFormat$JavaType[fieldType.getJavaType().ordinal()]) {
+            case 7:
+                if ((obj instanceof ByteString) || (obj instanceof byte[])) {
+                }
+                break;
+            case 8:
+                if ((obj instanceof Integer) || (obj instanceof Internal.EnumLite)) {
+                }
+                break;
+            case 9:
+                if ((obj instanceof MessageLite) || (obj instanceof LazyField)) {
+                }
+                break;
+        }
+        return false;
+    }
+
+    private void mergeFromField(Map.Entry<T, Object> entry) {
+        T key = entry.getKey();
+        Object value = entry.getValue();
+        if (value instanceof LazyField) {
+            value = ((LazyField) value).getValue();
+        }
+        if (key.isRepeated()) {
+            Object field = getField(key);
+            if (field == null) {
+                field = new ArrayList();
+            }
+            Iterator it = ((List) value).iterator();
+            while (it.hasNext()) {
+                ((List) field).add(cloneIfMutable(it.next()));
+            }
+            this.fields.put((SmallSortedMap<T, Object>) key, (T) field);
+            return;
+        }
+        if (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE) {
+            this.fields.put((SmallSortedMap<T, Object>) key, (T) cloneIfMutable(value));
+            return;
+        }
+        Object field2 = getField(key);
+        if (field2 == null) {
+            this.fields.put((SmallSortedMap<T, Object>) key, (T) cloneIfMutable(value));
+        } else {
+            this.fields.put((SmallSortedMap<T, Object>) key, (T) key.internalMergeFrom(((MessageLite) field2).toBuilder(), (MessageLite) value).build());
+        }
+    }
+
+    public static <T extends FieldDescriptorLite<T>> Builder<T> newBuilder() {
+        return new Builder<>((AnonymousClass1) null);
+    }
+
+    public static <T extends FieldDescriptorLite<T>> FieldSet<T> newFieldSet() {
+        return new FieldSet<>();
+    }
+
+    public static Object readPrimitiveField(CodedInputStream codedInputStream, WireFormat.FieldType fieldType, boolean z) {
+        return z ? WireFormat.readPrimitiveField(codedInputStream, fieldType, WireFormat.Utf8Validation.STRICT) : WireFormat.readPrimitiveField(codedInputStream, fieldType, WireFormat.Utf8Validation.LOOSE);
+    }
+
+    private void verifyType(T t, Object obj) {
+        if (isValidType(t.getLiteType(), obj)) {
+            return;
+        }
+        JWK$$ExternalSyntheticBUOutline0.m("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", new Object[]{Integer.valueOf(t.getNumber()), t.getLiteType().getJavaType(), obj.getClass().getName()});
+    }
+
+    public static void writeElement(CodedOutputStream codedOutputStream, WireFormat.FieldType fieldType, int i, Object obj) {
+        if (fieldType == WireFormat.FieldType.GROUP) {
+            codedOutputStream.writeGroup(i, (MessageLite) obj);
+        } else {
+            codedOutputStream.writeTag(i, getWireFormatForFieldType(fieldType, false));
+            writeElementNoTag(codedOutputStream, fieldType, obj);
+        }
+    }
+
+    public static void writeElementNoTag(CodedOutputStream codedOutputStream, WireFormat.FieldType fieldType, Object obj) {
+        switch (AnonymousClass1.$SwitchMap$com$google$protobuf$WireFormat$FieldType[fieldType.ordinal()]) {
+            case 1:
+                codedOutputStream.writeDoubleNoTag(((Double) obj).doubleValue());
+                break;
+            case 2:
+                codedOutputStream.writeFloatNoTag(((Float) obj).floatValue());
+                break;
+            case 3:
+                codedOutputStream.writeInt64NoTag(((Long) obj).longValue());
+                break;
+            case 4:
+                codedOutputStream.writeUInt64NoTag(((Long) obj).longValue());
+                break;
+            case 5:
+                codedOutputStream.writeInt32NoTag(((Integer) obj).intValue());
+                break;
+            case 6:
+                codedOutputStream.writeFixed64NoTag(((Long) obj).longValue());
+                break;
+            case 7:
+                codedOutputStream.writeFixed32NoTag(((Integer) obj).intValue());
+                break;
+            case 8:
+                codedOutputStream.writeBoolNoTag(((Boolean) obj).booleanValue());
+                break;
+            case 9:
+                codedOutputStream.writeGroupNoTag((MessageLite) obj);
+                break;
+            case 10:
+                codedOutputStream.writeMessageNoTag((MessageLite) obj);
+                break;
+            case 11:
+                if (!(obj instanceof ByteString)) {
+                    codedOutputStream.writeStringNoTag((String) obj);
+                    break;
+                } else {
+                    codedOutputStream.writeBytesNoTag((ByteString) obj);
+                    break;
+                }
+            case 12:
+                if (!(obj instanceof ByteString)) {
+                    codedOutputStream.writeByteArrayNoTag((byte[]) obj);
+                    break;
+                } else {
+                    codedOutputStream.writeBytesNoTag((ByteString) obj);
+                    break;
+                }
+            case 13:
+                codedOutputStream.writeUInt32NoTag(((Integer) obj).intValue());
+                break;
+            case 14:
+                codedOutputStream.writeSFixed32NoTag(((Integer) obj).intValue());
+                break;
+            case 15:
+                codedOutputStream.writeSFixed64NoTag(((Long) obj).longValue());
+                break;
+            case 16:
+                codedOutputStream.writeSInt32NoTag(((Integer) obj).intValue());
+                break;
+            case 17:
+                codedOutputStream.writeSInt64NoTag(((Long) obj).longValue());
+                break;
+            case 18:
+                if (!(obj instanceof Internal.EnumLite)) {
+                    codedOutputStream.writeEnumNoTag(((Integer) obj).intValue());
+                    break;
+                } else {
+                    codedOutputStream.writeEnumNoTag(((Internal.EnumLite) obj).getNumber());
+                    break;
+                }
+        }
+    }
+
+    public static void writeField(FieldDescriptorLite<?> fieldDescriptorLite, Object obj, CodedOutputStream codedOutputStream) {
+        WireFormat.FieldType liteType = fieldDescriptorLite.getLiteType();
+        int number = fieldDescriptorLite.getNumber();
+        if (!fieldDescriptorLite.isRepeated()) {
+            if (obj instanceof LazyField) {
+                writeElement(codedOutputStream, liteType, number, ((LazyField) obj).getValue());
+                return;
+            } else {
+                writeElement(codedOutputStream, liteType, number, obj);
+                return;
+            }
+        }
+        List list = (List) obj;
+        if (!fieldDescriptorLite.isPacked()) {
+            Iterator it = list.iterator();
+            while (it.hasNext()) {
+                writeElement(codedOutputStream, liteType, number, it.next());
+            }
+        } else {
+            if (list.isEmpty()) {
+                return;
+            }
+            codedOutputStream.writeTag(number, 2);
+            Iterator it2 = list.iterator();
+            int i = 0;
+            while (it2.hasNext()) {
+                i += computeElementSizeNoTag(liteType, it2.next());
+            }
+            codedOutputStream.writeUInt32NoTag(i);
+            Iterator it3 = list.iterator();
+            while (it3.hasNext()) {
+                writeElementNoTag(codedOutputStream, liteType, it3.next());
+            }
+        }
+    }
+
+    private void writeMessageSetTo(Map.Entry<T, Object> entry, CodedOutputStream codedOutputStream) {
+        T key = entry.getKey();
+        if (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE || key.isRepeated() || key.isPacked()) {
+            writeField(key, entry.getValue(), codedOutputStream);
+            return;
+        }
+        Object value = entry.getValue();
+        if (!(value instanceof LazyField)) {
+            codedOutputStream.writeMessageSetExtension(entry.getKey().getNumber(), (MessageLite) value);
+        } else {
+            codedOutputStream.writeRawMessageSetExtension(entry.getKey().getNumber(), ((LazyField) value).toByteString());
+        }
+    }
+
+    public void addRepeatedField(T t, Object obj) {
+        List list;
+        if (!t.isRepeated()) {
+            a$$ExternalSyntheticBUOutline0.m$3("addRepeatedField() can only be called on repeated fields.");
+            return;
+        }
+        verifyType(t, obj);
+        Object field = getField(t);
+        if (field == null) {
+            list = new ArrayList();
+            this.fields.put((SmallSortedMap<T, Object>) t, (T) list);
+        } else {
+            list = (List) field;
+        }
+        list.add(obj);
+    }
+
+    public void clear() {
+        this.fields.clear();
+        this.hasLazyField = false;
+    }
+
+    public void clearField(T t) {
+        this.fields.remove(t);
+        if (this.fields.isEmpty()) {
+            this.hasLazyField = false;
+        }
+    }
+
+    /* renamed from: clone, reason: merged with bridge method [inline-methods] */
+    public FieldSet<T> m2084clone() {
+        SmallSortedMap<T, Object> smallSortedMap;
+        FieldSet<T> newFieldSet = newFieldSet();
+        int i = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            Map.Entry<T, Object> arrayEntryAt = smallSortedMap.getArrayEntryAt(i);
+            newFieldSet.setField(arrayEntryAt.getKey(), arrayEntryAt.getValue());
+            i++;
+        }
+        for (Map.Entry<T, Object> entry : smallSortedMap.getOverflowEntries()) {
+            newFieldSet.setField(entry.getKey(), entry.getValue());
+        }
+        newFieldSet.hasLazyField = this.hasLazyField;
+        return newFieldSet;
+    }
+
+    public Iterator<Map.Entry<T, Object>> descendingIterator() {
+        boolean z = this.hasLazyField;
+        SmallSortedMap<T, Object> smallSortedMap = this.fields;
+        return z ? new LazyField.LazyIterator(smallSortedMap.descendingEntrySet().iterator()) : smallSortedMap.descendingEntrySet().iterator();
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof FieldSet) {
+            return this.fields.equals(((FieldSet) obj).fields);
+        }
+        return false;
+    }
+
+    public Map<T, Object> getAllFields() {
+        boolean z = this.hasLazyField;
+        SmallSortedMap<T, Object> smallSortedMap = this.fields;
+        if (!z) {
+            boolean isImmutable = smallSortedMap.isImmutable();
+            SmallSortedMap<T, Object> smallSortedMap2 = this.fields;
+            return isImmutable ? smallSortedMap2 : Collections.unmodifiableMap(smallSortedMap2);
+        }
+        SmallSortedMap cloneAllFieldsMap = cloneAllFieldsMap(smallSortedMap, false);
+        if (this.fields.isImmutable()) {
+            cloneAllFieldsMap.makeImmutable();
+        }
+        return cloneAllFieldsMap;
+    }
+
+    public Object getField(T t) {
+        Object obj = this.fields.get(t);
+        return obj instanceof LazyField ? ((LazyField) obj).getValue() : obj;
+    }
+
+    public Object getRepeatedField(T t, int i) {
+        if (!t.isRepeated()) {
+            a$$ExternalSyntheticBUOutline0.m$3("getRepeatedField() can only be called on repeated fields.");
+            return null;
+        }
+        Object field = getField(t);
+        if (field != null) {
+            return ((List) field).get(i);
+        }
+        JWK$$ExternalSyntheticBUOutline0.m2173m();
+        return null;
+    }
+
+    public int getRepeatedFieldCount(T t) {
+        if (!t.isRepeated()) {
+            a$$ExternalSyntheticBUOutline0.m$3("getRepeatedField() can only be called on repeated fields.");
+            return 0;
+        }
+        Object field = getField(t);
+        if (field == null) {
+            return 0;
+        }
+        return ((List) field).size();
+    }
+
+    public int getSerializedSize() {
+        SmallSortedMap<T, Object> smallSortedMap;
+        int i = 0;
+        int i2 = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            Map.Entry<T, Object> arrayEntryAt = smallSortedMap.getArrayEntryAt(i);
+            i2 += computeFieldSize(arrayEntryAt.getKey(), arrayEntryAt.getValue());
+            i++;
+        }
+        for (Map.Entry<T, Object> entry : smallSortedMap.getOverflowEntries()) {
+            i2 += computeFieldSize(entry.getKey(), entry.getValue());
+        }
+        return i2;
+    }
+
+    public boolean hasField(T t) {
+        if (!t.isRepeated()) {
+            return this.fields.get(t) != null;
+        }
+        a$$ExternalSyntheticBUOutline0.m$3("hasField() can only be called on non-repeated fields.");
+        return false;
+    }
+
+    public int hashCode() {
+        return this.fields.hashCode();
+    }
+
+    public boolean isEmpty() {
+        return this.fields.isEmpty();
+    }
+
+    public boolean isImmutable() {
+        return this.isImmutable;
+    }
+
+    public Iterator<Map.Entry<T, Object>> iterator() {
+        boolean z = this.hasLazyField;
+        SmallSortedMap<T, Object> smallSortedMap = this.fields;
+        return z ? new LazyField.LazyIterator(smallSortedMap.entrySet().iterator()) : smallSortedMap.entrySet().iterator();
+    }
+
+    public void makeImmutable() {
+        if (this.isImmutable) {
+            return;
+        }
+        int i = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            SmallSortedMap<T, Object> smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                smallSortedMap.makeImmutable();
+                this.isImmutable = true;
+                return;
+            } else {
+                Map.Entry<T, Object> arrayEntryAt = smallSortedMap.getArrayEntryAt(i);
+                if (arrayEntryAt.getValue() instanceof GeneratedMessageLite) {
+                    ((GeneratedMessageLite) arrayEntryAt.getValue()).makeImmutable();
+                }
+                i++;
+            }
+        }
+    }
+
+    public void mergeFrom(FieldSet<T> fieldSet) {
+        SmallSortedMap<T, Object> smallSortedMap;
+        int i = 0;
+        while (true) {
+            int numArrayEntries = fieldSet.fields.getNumArrayEntries();
+            smallSortedMap = fieldSet.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            mergeFromField(smallSortedMap.getArrayEntryAt(i));
+            i++;
+        }
+        Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+        while (it.hasNext()) {
+            mergeFromField(it.next());
+        }
+    }
+
+    public void setField(T t, Object obj) {
+        if (!t.isRepeated()) {
+            verifyType(t, obj);
+        } else {
+            if (!(obj instanceof List)) {
+                a$$ExternalSyntheticBUOutline0.m$3("Wrong object type used with protocol message reflection.");
+                return;
+            }
+            ArrayList arrayList = new ArrayList();
+            arrayList.addAll((List) obj);
+            Iterator it = arrayList.iterator();
+            while (it.hasNext()) {
+                verifyType(t, it.next());
+            }
+            obj = arrayList;
+        }
+        if (obj instanceof LazyField) {
+            this.hasLazyField = true;
+        }
+        this.fields.put((SmallSortedMap<T, Object>) t, (T) obj);
+    }
+
+    public void setRepeatedField(T t, int i, Object obj) {
+        if (!t.isRepeated()) {
+            a$$ExternalSyntheticBUOutline0.m$3("getRepeatedField() can only be called on repeated fields.");
+            return;
+        }
+        Object field = getField(t);
+        if (field == null) {
+            JWK$$ExternalSyntheticBUOutline0.m2173m();
+        } else {
+            verifyType(t, obj);
+            ((List) field).set(i, obj);
+        }
+    }
+
+    public void writeTo(CodedOutputStream codedOutputStream) {
+        SmallSortedMap<T, Object> smallSortedMap;
+        int i = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            Map.Entry<T, Object> arrayEntryAt = smallSortedMap.getArrayEntryAt(i);
+            writeField(arrayEntryAt.getKey(), arrayEntryAt.getValue(), codedOutputStream);
+            i++;
+        }
+        for (Map.Entry<T, Object> entry : smallSortedMap.getOverflowEntries()) {
+            writeField(entry.getKey(), entry.getValue(), codedOutputStream);
+        }
+    }
+
+    public static final class Builder<T extends FieldDescriptorLite<T>> {
+        private SmallSortedMap<T, Object> fields;
+        private boolean hasLazyField;
+        private boolean hasNestedBuilders;
+        private boolean isMutable;
+
+        private Builder() {
+            this(SmallSortedMap.newFieldMap(16));
+        }
+
+        private FieldSet<T> buildImpl(boolean z) {
+            if (this.fields.isEmpty()) {
+                return FieldSet.emptySet();
+            }
+            this.isMutable = false;
+            SmallSortedMap<T, Object> smallSortedMap = this.fields;
+            if (this.hasNestedBuilders) {
+                smallSortedMap = FieldSet.cloneAllFieldsMap(smallSortedMap, false);
+                replaceBuilders(smallSortedMap, z);
+            }
+            FieldSet<T> fieldSet = new FieldSet<>(smallSortedMap, null);
+            ((FieldSet) fieldSet).hasLazyField = this.hasLazyField;
+            return fieldSet;
+        }
+
+        private void ensureIsMutable() {
+            if (this.isMutable) {
+                return;
+            }
+            this.fields = FieldSet.cloneAllFieldsMap(this.fields, true);
+            this.isMutable = true;
+        }
+
+        public static <T extends FieldDescriptorLite<T>> Builder<T> fromFieldSet(FieldSet<T> fieldSet) {
+            Builder<T> builder = new Builder<>(FieldSet.cloneAllFieldsMap(((FieldSet) fieldSet).fields, true));
+            ((Builder) builder).hasLazyField = ((FieldSet) fieldSet).hasLazyField;
+            return builder;
+        }
+
+        private void mergeFromField(Map.Entry<T, Object> entry) {
+            T key = entry.getKey();
+            Object value = entry.getValue();
+            if (value instanceof LazyField) {
+                value = ((LazyField) value).getValue();
+            }
+            if (key.isRepeated()) {
+                List list = (List) getFieldAllowBuilders(key);
+                if (list == null) {
+                    list = new ArrayList();
+                    this.fields.put((SmallSortedMap<T, Object>) key, (T) list);
+                }
+                Iterator it = ((List) value).iterator();
+                while (it.hasNext()) {
+                    list.add(FieldSet.cloneIfMutable(it.next()));
+                }
+                return;
+            }
+            if (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE) {
+                this.fields.put((SmallSortedMap<T, Object>) key, (T) FieldSet.cloneIfMutable(value));
+                return;
+            }
+            Object fieldAllowBuilders = getFieldAllowBuilders(key);
+            if (fieldAllowBuilders == null) {
+                this.fields.put((SmallSortedMap<T, Object>) key, (T) FieldSet.cloneIfMutable(value));
+            } else if (fieldAllowBuilders instanceof MessageLite.Builder) {
+                key.internalMergeFrom((MessageLite.Builder) fieldAllowBuilders, (MessageLite) value);
+            } else {
+                this.fields.put((SmallSortedMap<T, Object>) key, (T) key.internalMergeFrom(((MessageLite) fieldAllowBuilders).toBuilder(), (MessageLite) value).build());
+            }
+        }
+
+        private static Object replaceBuilder(Object obj, boolean z) {
+            if (!(obj instanceof MessageLite.Builder)) {
+                return obj;
+            }
+            MessageLite.Builder builder = (MessageLite.Builder) obj;
+            return z ? builder.buildPartial() : builder.build();
+        }
+
+        private static <T extends FieldDescriptorLite<T>> Object replaceBuilders(T t, Object obj, boolean z) {
+            if (obj == null || t.getLiteJavaType() != WireFormat.JavaType.MESSAGE) {
+                return obj;
+            }
+            if (!t.isRepeated()) {
+                return replaceBuilder(obj, z);
+            }
+            if (!(obj instanceof List)) {
+                a$$ExternalSyntheticBUOutline0.m$2(obj.getClass(), "Repeated field should contains a List but actually contains type: ");
+                return null;
+            }
+            List list = (List) obj;
+            for (int i = 0; i < list.size(); i++) {
+                Object obj2 = list.get(i);
+                Object replaceBuilder = replaceBuilder(obj2, z);
+                if (replaceBuilder != obj2) {
+                    if (list == obj) {
+                        list = new ArrayList(list);
+                    }
+                    list.set(i, replaceBuilder);
+                }
+            }
+            return list;
+        }
+
+        private void verifyType(T t, Object obj) {
+            if (FieldSet.isValidType(t.getLiteType(), obj)) {
+                return;
+            }
+            if (t.getLiteType().getJavaType() == WireFormat.JavaType.MESSAGE && (obj instanceof MessageLite.Builder)) {
+                return;
+            }
+            JWK$$ExternalSyntheticBUOutline0.m("Wrong object type used with protocol message reflection.\nField number: %d, field java type: %s, value type: %s\n", new Object[]{Integer.valueOf(t.getNumber()), t.getLiteType().getJavaType(), obj.getClass().getName()});
+        }
+
+        public void addRepeatedField(T t, Object obj) {
+            List list;
+            ensureIsMutable();
+            if (!t.isRepeated()) {
+                a$$ExternalSyntheticBUOutline0.m$3("addRepeatedField() can only be called on repeated fields.");
+                return;
+            }
+            this.hasNestedBuilders = this.hasNestedBuilders || (obj instanceof MessageLite.Builder);
+            verifyType(t, obj);
+            Object fieldAllowBuilders = getFieldAllowBuilders(t);
+            if (fieldAllowBuilders == null) {
+                list = new ArrayList();
+                this.fields.put((SmallSortedMap<T, Object>) t, (T) list);
+            } else {
+                list = (List) fieldAllowBuilders;
+            }
+            list.add(obj);
+        }
+
+        public FieldSet<T> build() {
+            return buildImpl(false);
+        }
+
+        public FieldSet<T> buildPartial() {
+            return buildImpl(true);
+        }
+
+        public void clearField(T t) {
+            ensureIsMutable();
+            this.fields.remove(t);
+            if (this.fields.isEmpty()) {
+                this.hasLazyField = false;
+            }
+        }
+
+        public Map<T, Object> getAllFields() {
+            boolean z = this.hasLazyField;
+            SmallSortedMap<T, Object> smallSortedMap = this.fields;
+            if (!z) {
+                boolean isImmutable = smallSortedMap.isImmutable();
+                SmallSortedMap<T, Object> smallSortedMap2 = this.fields;
+                return isImmutable ? smallSortedMap2 : Collections.unmodifiableMap(smallSortedMap2);
+            }
+            SmallSortedMap cloneAllFieldsMap = FieldSet.cloneAllFieldsMap(smallSortedMap, false);
+            if (this.fields.isImmutable()) {
+                cloneAllFieldsMap.makeImmutable();
+                return cloneAllFieldsMap;
+            }
+            replaceBuilders(cloneAllFieldsMap, true);
+            return cloneAllFieldsMap;
+        }
+
+        public Object getField(T t) {
+            return replaceBuilders(t, getFieldAllowBuilders(t), true);
+        }
+
+        public Object getFieldAllowBuilders(T t) {
+            Object obj = this.fields.get(t);
+            return obj instanceof LazyField ? ((LazyField) obj).getValue() : obj;
+        }
+
+        public Object getRepeatedField(T t, int i) {
+            if (this.hasNestedBuilders) {
+                ensureIsMutable();
+            }
+            return replaceBuilder(getRepeatedFieldAllowBuilders(t, i), true);
+        }
+
+        public Object getRepeatedFieldAllowBuilders(T t, int i) {
+            if (!t.isRepeated()) {
+                a$$ExternalSyntheticBUOutline0.m$3("getRepeatedField() can only be called on repeated fields.");
+                return null;
+            }
+            Object fieldAllowBuilders = getFieldAllowBuilders(t);
+            if (fieldAllowBuilders != null) {
+                return ((List) fieldAllowBuilders).get(i);
+            }
+            JWK$$ExternalSyntheticBUOutline0.m2173m();
+            return null;
+        }
+
+        public int getRepeatedFieldCount(T t) {
+            if (!t.isRepeated()) {
+                a$$ExternalSyntheticBUOutline0.m$3("getRepeatedFieldCount() can only be called on repeated fields.");
+                return 0;
+            }
+            Object fieldAllowBuilders = getFieldAllowBuilders(t);
+            if (fieldAllowBuilders == null) {
+                return 0;
+            }
+            return ((List) fieldAllowBuilders).size();
+        }
+
+        public boolean hasField(T t) {
+            if (!t.isRepeated()) {
+                return this.fields.get(t) != null;
+            }
+            a$$ExternalSyntheticBUOutline0.m$3("hasField() can only be called on non-repeated fields.");
+            return false;
+        }
+
+        public boolean isInitialized() {
+            int i = 0;
+            while (true) {
+                int numArrayEntries = this.fields.getNumArrayEntries();
+                SmallSortedMap<T, Object> smallSortedMap = this.fields;
+                if (i >= numArrayEntries) {
+                    Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+                    while (it.hasNext()) {
+                        if (!FieldSet.isInitialized(it.next())) {
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                if (!FieldSet.isInitialized(smallSortedMap.getArrayEntryAt(i))) {
+                    return false;
+                }
+                i++;
+            }
+        }
+
+        public void mergeFrom(FieldSet<T> fieldSet) {
+            ensureIsMutable();
+            for (int i = 0; i < ((FieldSet) fieldSet).fields.getNumArrayEntries(); i++) {
+                mergeFromField(((FieldSet) fieldSet).fields.getArrayEntryAt(i));
+            }
+            Iterator it = ((FieldSet) fieldSet).fields.getOverflowEntries().iterator();
+            while (it.hasNext()) {
+                mergeFromField((Map.Entry) it.next());
+            }
+        }
+
+        public void setField(T t, Object obj) {
+            ensureIsMutable();
+            if (!t.isRepeated()) {
+                verifyType(t, obj);
+            } else {
+                if (!(obj instanceof List)) {
+                    a$$ExternalSyntheticBUOutline0.m$3("Wrong object type used with protocol message reflection.");
+                    return;
+                }
+                ArrayList arrayList = new ArrayList((List) obj);
+                Iterator it = arrayList.iterator();
+                while (it.hasNext()) {
+                    Object next = it.next();
+                    verifyType(t, next);
+                    this.hasNestedBuilders = this.hasNestedBuilders || (next instanceof MessageLite.Builder);
+                }
+                obj = arrayList;
+            }
+            if (obj instanceof LazyField) {
+                this.hasLazyField = true;
+            }
+            this.hasNestedBuilders = this.hasNestedBuilders || (obj instanceof MessageLite.Builder);
+            this.fields.put((SmallSortedMap<T, Object>) t, (T) obj);
+        }
+
+        public void setRepeatedField(T t, int i, Object obj) {
+            ensureIsMutable();
+            if (!t.isRepeated()) {
+                a$$ExternalSyntheticBUOutline0.m$3("getRepeatedField() can only be called on repeated fields.");
+                return;
+            }
+            this.hasNestedBuilders = this.hasNestedBuilders || (obj instanceof MessageLite.Builder);
+            Object fieldAllowBuilders = getFieldAllowBuilders(t);
+            if (fieldAllowBuilders == null) {
+                JWK$$ExternalSyntheticBUOutline0.m2173m();
+            } else {
+                verifyType(t, obj);
+                ((List) fieldAllowBuilders).set(i, obj);
+            }
+        }
+
+        public /* synthetic */ Builder(AnonymousClass1 anonymousClass1) {
+            this();
+        }
+
+        private Builder(SmallSortedMap<T, Object> smallSortedMap) {
+            this.fields = smallSortedMap;
+            this.isMutable = true;
+        }
+
+        private static <T extends FieldDescriptorLite<T>> void replaceBuilders(Map.Entry<T, Object> entry, boolean z) {
+            entry.setValue(replaceBuilders(entry.getKey(), entry.getValue(), z));
+        }
+
+        private static <T extends FieldDescriptorLite<T>> void replaceBuilders(SmallSortedMap<T, Object> smallSortedMap, boolean z) {
+            for (int i = 0; i < smallSortedMap.getNumArrayEntries(); i++) {
+                replaceBuilders(smallSortedMap.getArrayEntryAt(i), z);
+            }
+            Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+            while (it.hasNext()) {
+                replaceBuilders(it.next(), z);
+            }
+        }
+    }
+
+    public /* synthetic */ FieldSet(SmallSortedMap smallSortedMap, AnonymousClass1 anonymousClass1) {
+        this(smallSortedMap);
+    }
+
+    private FieldSet(boolean z) {
+        this(SmallSortedMap.newFieldMap(0));
+        makeImmutable();
+    }
+
+    private FieldSet(SmallSortedMap<T, Object> smallSortedMap) {
+        this.fields = smallSortedMap;
+        makeImmutable();
+    }
+
+    public boolean isInitialized() {
+        int i = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            SmallSortedMap<T, Object> smallSortedMap = this.fields;
+            if (i < numArrayEntries) {
+                if (!isInitialized(smallSortedMap.getArrayEntryAt(i))) {
+                    return false;
+                }
+                i++;
+            } else {
+                Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+                while (it.hasNext()) {
+                    if (!isInitialized(it.next())) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+        }
+    }
+
+    public int getMessageSetSerializedSize() {
+        SmallSortedMap<T, Object> smallSortedMap;
+        int i = 0;
+        int i2 = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            i2 += getMessageSetSerializedSize(smallSortedMap.getArrayEntryAt(i));
+            i++;
+        }
+        Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+        while (it.hasNext()) {
+            i2 += getMessageSetSerializedSize(it.next());
+        }
+        return i2;
+    }
+
+    public void writeMessageSetTo(CodedOutputStream codedOutputStream) {
+        SmallSortedMap<T, Object> smallSortedMap;
+        int i = 0;
+        while (true) {
+            int numArrayEntries = this.fields.getNumArrayEntries();
+            smallSortedMap = this.fields;
+            if (i >= numArrayEntries) {
+                break;
+            }
+            writeMessageSetTo(smallSortedMap.getArrayEntryAt(i), codedOutputStream);
+            i++;
+        }
+        Iterator<Map.Entry<T, Object>> it = smallSortedMap.getOverflowEntries().iterator();
+        while (it.hasNext()) {
+            writeMessageSetTo(it.next(), codedOutputStream);
+        }
+    }
+}

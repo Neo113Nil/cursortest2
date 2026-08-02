@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textview.MaterialTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/misnap_list_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    style="@style/MiSnapTheme.TextAppearance.FailoverReason"/>

@@ -1,0 +1,6 @@
+{
+  "name": "nfc_connect_pop",
+  "timings": [0, 35, 30, 20],
+  "amplitudes": [0, 255, 60, 0],
+  "repeat": -1
+}

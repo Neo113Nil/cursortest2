@@ -1,0 +1,62 @@
+package app.cash.mooncake.values;
+
+import app.cash.arcade.values.ImageResource;
+
+/* loaded from: classes3.dex */
+public abstract class MooncakeImages {
+    public static final ImageResource.Id activityUnreadBadge = new ImageResource.Id(856001);
+    public static final ImageResource.Id paymentRollupCard = new ImageResource.Id(856002);
+    public static final ImageResource.Id paymentRollupInvesting = new ImageResource.Id(856003);
+    public static final ImageResource.Id referralCodePlaceholderAvatar = new ImageResource.Id(856004);
+    public static final ImageResource.Id formIconLoyaltyCheckmark = new ImageResource.Id(856006);
+    public static final ImageResource.Id cardControlQuestion = new ImageResource.Id(856007);
+    public static final ImageResource.Id recurringIcon = new ImageResource.Id(856008);
+    public static final ImageResource.Id loyaltyStar = new ImageResource.Id(856009);
+    public static final ImageResource.Id linkedIcon = new ImageResource.Id(856010);
+    public static final ImageResource.Id roundUps10dpWith14dpPadding = new ImageResource.Id(856011);
+    public static final ImageResource.Id activityHeart = new ImageResource.Id(856012);
+    public static final ImageResource.Id mooncakeSpinner = new ImageResource.Id(856013);
+    public static final ImageResource.Id iconBusiness = new ImageResource.Id(856014);
+    public static final ImageResource.Id iconNote = new ImageResource.Id(856015);
+    public static final ImageResource.Id iconCard = new ImageResource.Id(856016);
+    public static final ImageResource.Id iconOnline = new ImageResource.Id(856017);
+    public static final ImageResource.Id iconNoSymbol = new ImageResource.Id(856018);
+    public static final ImageResource.Id iconAlert = new ImageResource.Id(856019);
+    public static final ImageResource.Id iconReturned = new ImageResource.Id(856020);
+    public static final ImageResource.Id iconRecurring = new ImageResource.Id(856021);
+    public static final ImageResource.Id iconDirectDeposit = new ImageResource.Id(856022);
+    public static final ImageResource.Id iconDirectDebit = new ImageResource.Id(856023);
+    public static final ImageResource.Id iconShield = new ImageResource.Id(856024);
+    public static final ImageResource.Id iconInvesting = new ImageResource.Id(856025);
+    public static final ImageResource.Id iconClock = new ImageResource.Id(856026);
+    public static final ImageResource.Id iconVerified = new ImageResource.Id(856027);
+    public static final ImageResource.Id iconDoubleChevron = new ImageResource.Id(856028);
+    public static final ImageResource.Id iconAlertProminent = new ImageResource.Id(856029);
+    public static final ImageResource.Id iconQr_code = new ImageResource.Id(856030);
+    public static final ImageResource.Id iconShieldCheckmark = new ImageResource.Id(856031);
+    public static final ImageResource.Id iconInProgress = new ImageResource.Id(856032);
+    public static final ImageResource.Id iconPayWithCash = new ImageResource.Id(856033);
+    public static final ImageResource.Id toolbarButtonOverflow = new ImageResource.Id(856036);
+    public static final ImageResource.Id toolbarButtonClose = new ImageResource.Id(856037);
+    public static final ImageResource.Id lightningBoltAvatarBadge = new ImageResource.Id(856038);
+    public static final ImageResource.Id headerIconCheckmark = new ImageResource.Id(856040);
+    public static final ImageResource.Id headerIconError = new ImageResource.Id(856041);
+    public static final ImageResource.Id headerIconInstant = new ImageResource.Id(856042);
+    public static final ImageResource.Id headerIconWaiting = new ImageResource.Id(856043);
+    public static final ImageResource.Id headerIconReported = new ImageResource.Id(856044);
+    public static final ImageResource.Id headerIconSecurityShield = new ImageResource.Id(856045);
+    public static final ImageResource.Id headerIconSkipped = new ImageResource.Id(856046);
+    public static final ImageResource.Id headerIconBlocked = new ImageResource.Id(856047);
+    public static final ImageResource.Id headerIconAlertFilled = new ImageResource.Id(856048);
+    public static final ImageResource.Id receiptButtonIconCheck = new ImageResource.Id(856049);
+    public static final ImageResource.Id receiptButtonIconHeart = new ImageResource.Id(856050);
+    public static final ImageResource.Id receiptButtonIconInstant = new ImageResource.Id(856051);
+    public static final ImageResource.Id receiptButtonIconSecurity = new ImageResource.Id(856052);
+    public static final ImageResource.Id receiptButtonIconSkipped = new ImageResource.Id(856053);
+    public static final ImageResource.Id receiptButtonIconBlocked = new ImageResource.Id(856054);
+    public static final ImageResource.Id sparkleIconGreen = new ImageResource.Id(856055);
+    public static final ImageResource.Id sparkleIconWhite = new ImageResource.Id(856056);
+    public static final ImageResource.Id blockedProminent = new ImageResource.Id(856058);
+    public static final ImageResource.Id iconPaymentPlan = new ImageResource.Id(856059);
+    public static final ImageResource.Id paymentPlanOverlay = new ImageResource.Id(856060);
+}

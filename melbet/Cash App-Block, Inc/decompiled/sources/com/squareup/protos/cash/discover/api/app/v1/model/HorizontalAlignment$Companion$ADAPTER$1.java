@@ -1,0 +1,14 @@
+package com.squareup.protos.cash.discover.api.app.v1.model;
+
+import com.squareup.protos.cash.genericelements.ui.Alignment;
+import com.squareup.wire.EnumAdapter;
+import com.squareup.wire.WireEnum;
+
+/* loaded from: classes7.dex */
+public final class HorizontalAlignment$Companion$ADAPTER$1 extends EnumAdapter {
+    @Override // com.squareup.wire.EnumAdapter
+    public final WireEnum fromValue(int i) {
+        HorizontalAlignment.Companion.getClass();
+        return Alignment.Companion.m3859fromValue(i);
+    }
+}

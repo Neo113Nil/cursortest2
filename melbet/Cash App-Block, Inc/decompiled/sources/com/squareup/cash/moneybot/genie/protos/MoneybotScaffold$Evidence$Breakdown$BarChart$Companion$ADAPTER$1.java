@@ -1,0 +1,65 @@
+package com.squareup.cash.moneybot.genie.protos;
+
+import androidx.room.TransactorKt;
+import bo.app.re$$ExternalSyntheticOutline0;
+import com.squareup.cash.moneybot.genie.protos.MoneybotScaffold;
+import com.squareup.wire.ProtoAdapter;
+import com.squareup.wire.ProtoReader;
+import com.squareup.wire.ProtoWriter;
+import com.squareup.wire.ReverseProtoWriter;
+import java.util.ArrayList;
+import okio.ByteString;
+
+/* loaded from: classes6.dex */
+public final class MoneybotScaffold$Evidence$Breakdown$BarChart$Companion$ADAPTER$1 extends ProtoAdapter {
+    @Override // com.squareup.wire.ProtoAdapter
+    public final Object decode(ProtoReader protoReader) {
+        ArrayList m = re$$ExternalSyntheticOutline0.m(protoReader);
+        long beginMessage = protoReader.beginMessage();
+        while (true) {
+            int nextTag = protoReader.nextTag();
+            if (nextTag == -1) {
+                return new MoneybotScaffold.Evidence.Breakdown.BarChart(m, protoReader.endMessageAndGetUnknownFields(beginMessage));
+            }
+            if (nextTag == 1) {
+                m.add(MoneybotScaffold.Evidence.Breakdown.BarChart.Bar.ADAPTER.decode(protoReader));
+            } else {
+                protoReader.readUnknownField(nextTag);
+            }
+        }
+    }
+
+    @Override // com.squareup.wire.ProtoAdapter
+    public final void encode(ReverseProtoWriter reverseProtoWriter, Object obj) {
+        MoneybotScaffold.Evidence.Breakdown.BarChart barChart = (MoneybotScaffold.Evidence.Breakdown.BarChart) obj;
+        reverseProtoWriter.getClass();
+        barChart.getClass();
+        reverseProtoWriter.writeBytes(barChart.unknownFields());
+        MoneybotScaffold.Evidence.Breakdown.BarChart.Bar.ADAPTER.asRepeated().encodeWithTag(reverseProtoWriter, 1, barChart.bars);
+    }
+
+    @Override // com.squareup.wire.ProtoAdapter
+    public final int encodedSize(Object obj) {
+        MoneybotScaffold.Evidence.Breakdown.BarChart barChart = (MoneybotScaffold.Evidence.Breakdown.BarChart) obj;
+        barChart.getClass();
+        return MoneybotScaffold.Evidence.Breakdown.BarChart.Bar.ADAPTER.asRepeated().encodedSizeWithTag(1, barChart.bars) + barChart.unknownFields().getSize$okio();
+    }
+
+    @Override // com.squareup.wire.ProtoAdapter
+    public final Object redact(Object obj) {
+        MoneybotScaffold.Evidence.Breakdown.BarChart barChart = (MoneybotScaffold.Evidence.Breakdown.BarChart) obj;
+        barChart.getClass();
+        ArrayList m1169redactElements = TransactorKt.m1169redactElements(barChart.bars, MoneybotScaffold.Evidence.Breakdown.BarChart.Bar.ADAPTER);
+        ByteString byteString = ByteString.EMPTY;
+        byteString.getClass();
+        return new MoneybotScaffold.Evidence.Breakdown.BarChart(m1169redactElements, byteString);
+    }
+
+    @Override // com.squareup.wire.ProtoAdapter
+    public final void encode(ProtoWriter protoWriter, Object obj) {
+        MoneybotScaffold.Evidence.Breakdown.BarChart barChart = (MoneybotScaffold.Evidence.Breakdown.BarChart) obj;
+        barChart.getClass();
+        MoneybotScaffold.Evidence.Breakdown.BarChart.Bar.ADAPTER.asRepeated().encodeWithTag(protoWriter, 1, barChart.bars);
+        protoWriter.writeBytes(barChart.unknownFields());
+    }
+}

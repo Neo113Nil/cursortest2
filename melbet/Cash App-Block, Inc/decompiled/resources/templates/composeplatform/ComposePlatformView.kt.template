@@ -1,0 +1,68 @@
+{{PACKAGE}}
+
+import androidx.compose.foundation.layout.Box
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import {{NODE_PACKAGE}}.ComposePlatform
+
+/**
+ * Renders a `ComposePlatform` proto by dispatching its `view` oneof to the matching primitive Composable, then layering
+ * the proto's modifier chain over the result. Mirrors iOS's `SwiftUIPlatform.View` (the entry point copied per-consumer
+ * by GenieBuild).
+ *
+ * The dispatcher source is copied into the generated consumer package so consumers don't have to wire each primitive.
+ * The codegen plugin auto-adds `ComposePlatform` to the merged Node oneof and the generated per-consumer
+ * `GenieNodeView(node)` calls into [ComposePlatformView] for those nodes.
+ */
+@Composable
+fun ComposePlatformView(node: ComposePlatform, modifier: Modifier = Modifier) {
+  val resolved = resolveComposePlatformModifiers(node.modifiers)
+  val combined = modifier.then(resolved.modifier)
+
+  // overlay { content } proto wraps the content with a child node painted on top. We use
+  // Compose's Box stack rather than `Modifier.drawWithContent` so the overlay node can itself
+  // be a full GenieNode tree (Row/Column/custom nodes are valid).
+  if (resolved.overlay != null) {
+    Box(modifier = combined) {
+      InnerView(node = node, style = resolved.style, modifier = Modifier)
+      GenieNodeView(resolved.overlay, Modifier)
+    }
+  } else {
+    InnerView(node = node, style = resolved.style, modifier = combined)
+  }
+}
+
+@Composable
+private fun InnerView(node: ComposePlatform, style: ResolvedStyle, modifier: Modifier) {
+  // `view` is a oneof; Wire enforces "at most one" with a require() in the constructor, but the
+  // generated accessors are independent nullable fields. Returning from the first matching branch
+  // makes the precedence explicit and prevents accidental double-rendering if a fixture violates
+  // the invariant.
+  // Layout containers (column/row/box) ignore [style] — typography/colour resolution doesn't apply to a stack;
+  // the platform [modifier] still flows through so the proto's modifier chain reaches the layout root.
+  return when {
+    node.column != null -> ComposeColumnView(node.column!!, modifier)
+    node.row != null -> ComposeRowView(node.row!!, modifier)
+    node.box != null -> ComposeBoxView(node.box!!, modifier)
+    node.text != null -> TextView(node.text!!, style, modifier)
+    node.image != null -> ImageView(node.image!!, style, modifier)
+    node.button != null -> ButtonView(node.button!!, style, modifier)
+    node.text_field != null -> TextFieldView(node.text_field!!, style, modifier)
+    node.switch_control != null -> SwitchView(node.switch_control!!, style, modifier)
+    node.slider != null -> SliderView(node.slider!!, style, modifier)
+    node.dropdown_menu != null -> DropdownMenuView(node.dropdown_menu!!, style, modifier)
+    node.date_picker != null -> DatePickerView(node.date_picker!!, style, modifier)
+    node.progress_indicator != null -> ProgressIndicatorView(node.progress_indicator!!, style, modifier)
+    else -> Unit
+  }
+}
+
+internal fun ComposePlatform.containsAction(): Boolean {
+  if (button?.action != null) return true
+  if (button?.label?.containsAction() == true) return true
+  column?.children?.forEach { if (it.containsAction()) return true }
+  row?.children?.forEach { if (it.containsAction()) return true }
+  box?.children?.forEach { if (it.containsAction()) return true }
+  modifiers.forEach { modifier -> if (modifier.overlay?.content?.containsAction() == true) return true }
+  return false
+}
