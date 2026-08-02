@@ -1,0 +1,6 @@
+package defpackage;
+
+/* loaded from: classes.dex */
+public final class f3c extends c3c {
+    public static final long serialVersionUID = 1;
+}

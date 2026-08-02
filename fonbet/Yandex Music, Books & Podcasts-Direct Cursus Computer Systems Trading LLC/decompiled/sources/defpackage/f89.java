@@ -1,0 +1,23 @@
+package defpackage;
+
+import org.json.JSONObject;
+
+/* loaded from: classes3.dex */
+public final class f89 implements u1f {
+    public final szb a;
+    public final szb b;
+    public Integer c;
+
+    public f89(szb szbVar, szb szbVar2) {
+        this.a = szbVar;
+        this.b = szbVar2;
+    }
+
+    @Override // defpackage.u1f
+    public final JSONObject r() {
+        h89 h89Var = (h89) rj3.b.e5.getValue();
+        pt0 pt0Var = rj3.a;
+        h89Var.getClass();
+        return h89.c(pt0Var, this);
+    }
+}

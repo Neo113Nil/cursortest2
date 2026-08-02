@@ -1,0 +1,23 @@
+package defpackage;
+
+import kotlin.coroutines.Continuation;
+
+/* loaded from: classes4.dex */
+public final class a4l extends cg6 {
+    public /* synthetic */ Object j;
+    public int k;
+    public final /* synthetic */ bgj l;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public a4l(bgj bgjVar, Continuation continuation) {
+        super(continuation);
+        this.l = bgjVar;
+    }
+
+    @Override // defpackage.kq2
+    public final Object invokeSuspend(Object obj) {
+        this.j = obj;
+        this.k |= Integer.MIN_VALUE;
+        return this.l.emit(null, this);
+    }
+}

@@ -1,0 +1,426 @@
+package defpackage;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.Rect;
+import android.text.Layout;
+import android.util.DisplayMetrics;
+import com.yandex.div.core.util.text.DivBackgroundSpan;
+import java.util.Arrays;
+import kotlin.ranges.a;
+
+/* loaded from: classes3.dex */
+public final class lq4 extends ut9 {
+    public final Context b;
+    public final xzb c;
+    public final Path d = new Path();
+    public final Paint e = new Paint();
+
+    public lq4(Context context, xzb xzbVar) {
+        this.b = context;
+        this.c = xzbVar;
+    }
+
+    public static void c(int[] iArr, int i) {
+        boolean z;
+        int i2 = 0;
+        do {
+            a A = i2 % 2 == 0 ? xz0.A(iArr) : yhn.k(xz0.A(iArr));
+            int i3 = A.a;
+            int i4 = A.b;
+            int i5 = A.c;
+            if ((i5 > 0 && i3 <= i4) || (i5 < 0 && i4 <= i3)) {
+                z = false;
+                while (true) {
+                    int i6 = i3 == 0 ? 0 : iArr[i3 - 1] - iArr[i3];
+                    int i7 = i3 == iArr.length - 1 ? 0 : iArr[i3 + 1] - iArr[i3];
+                    if ((i6 <= 0 || i6 >= i) && (i7 <= 0 || i7 >= i)) {
+                        if (i3 != 0 && i6 < 0 && Math.abs(i6) < i) {
+                            iArr[i3 - 1] = iArr[i3];
+                            z = true;
+                        }
+                        if (i3 != iArr.length - 1 && i7 < 0 && Math.abs(i7) < i) {
+                            iArr[i3 + 1] = iArr[i3];
+                            z = true;
+                        }
+                    }
+                    if (i3 == i4) {
+                        break;
+                    } else {
+                        i3 += i5;
+                    }
+                }
+            } else {
+                z = false;
+            }
+            i2++;
+        } while (z);
+    }
+
+    @Override // defpackage.ut9
+    public final void a(Canvas canvas, Layout layout, int i, int i2, int i3, int i4, DivBackgroundSpan divBackgroundSpan) {
+        jk9 jk9Var;
+        Rect[] rectArr;
+        int i5;
+        int i6;
+        szb szbVar;
+        szb szbVar2;
+        szb szbVar3;
+        szb szbVar4;
+        szb szbVar5;
+        cs9 cs9Var = divBackgroundSpan.b;
+        Object a = cs9Var != null ? cs9Var.a() : null;
+        fr8 fr8Var = a instanceof fr8 ? (fr8) a : null;
+        if (fr8Var == null) {
+            return;
+        }
+        DisplayMetrics displayMetrics = this.b.getResources().getDisplayMetrics();
+        szb szbVar6 = fr8Var.a;
+        xzb xzbVar = this.c;
+        int intValue = ((Number) szbVar6.a(xzbVar)).intValue();
+        int w = bg3.w((Long) fr8Var.b.a(xzbVar), displayMetrics);
+        ix8 ix8Var = fr8Var.c;
+        if (ix8Var == null || (szbVar5 = ix8Var.g) == null || (jk9Var = (jk9) szbVar5.a(xzbVar)) == null) {
+            jk9Var = jk9.DP;
+        }
+        Rect rect = new Rect((ix8Var == null || (szbVar4 = ix8Var.c) == null) ? 0 : bg3.m0(Long.valueOf(((Number) szbVar4.a(xzbVar)).longValue()), displayMetrics, jk9Var), (ix8Var == null || (szbVar3 = ix8Var.f) == null) ? 0 : bg3.m0(Long.valueOf(((Number) szbVar3.a(xzbVar)).longValue()), displayMetrics, jk9Var), (ix8Var == null || (szbVar2 = ix8Var.d) == null) ? 0 : bg3.m0(Long.valueOf(((Number) szbVar2.a(xzbVar)).longValue()), displayMetrics, jk9Var), (ix8Var == null || (szbVar = ix8Var.a) == null) ? 0 : bg3.m0(Long.valueOf(((Number) szbVar.a(xzbVar)).longValue()), displayMetrics, jk9Var));
+        int i7 = i2 - i;
+        int i8 = i7 + 1;
+        if (i8 == 0) {
+            rectArr = new Rect[0];
+        } else {
+            Rect[] rectArr2 = new Rect[i8];
+            int i9 = 0;
+            while (i9 < i8) {
+                int i10 = i + i9;
+                rectArr2[i9] = new Rect((i9 == 0 ? i3 : eeh.b(layout.getLineLeft(i + i9))) - rect.left, layout.getLineTop(i10) - rect.top, (i9 == i7 ? i4 : eeh.b(layout.getLineRight(i10))) + rect.right, layout.getLineBottom(i10) + rect.bottom);
+                i9++;
+            }
+            int i11 = ((Rect) xz0.y(rectArr2)).left;
+            int i12 = ((Rect) xz0.y(rectArr2)).top;
+            int i13 = 0;
+            while (i13 < i8) {
+                Rect rect2 = rectArr2[i13];
+                int i14 = rect2.bottom - i12;
+                i13++;
+                for (int i15 = i13; i15 < i8; i15++) {
+                    Rect rect3 = rectArr2[i15];
+                    int i16 = rect3.top;
+                    int i17 = rect2.bottom;
+                    if (i16 >= i17) {
+                        break;
+                    }
+                    i6 = rect3.left;
+                    if (i6 <= rect2.left) {
+                        i14 -= i17 - i16;
+                        break;
+                    }
+                }
+                i6 = Integer.MIN_VALUE;
+                if (i14 <= 0) {
+                    rect2.left = Math.max(i11, i6);
+                    i14 = 0;
+                } else {
+                    i11 = rect2.left;
+                }
+                i12 += i14;
+            }
+            int i18 = ((Rect) xz0.y(rectArr2)).right;
+            int i19 = ((Rect) xz0.y(rectArr2)).top;
+            int i20 = 0;
+            while (i20 < i8) {
+                Rect rect4 = rectArr2[i20];
+                int i21 = rect4.bottom - i19;
+                i20++;
+                for (int i22 = i20; i22 < i8; i22++) {
+                    Rect rect5 = rectArr2[i22];
+                    int i23 = rect5.top;
+                    int i24 = rect4.bottom;
+                    if (i23 >= i24) {
+                        break;
+                    }
+                    i5 = rect5.right;
+                    if (i5 >= rect4.right) {
+                        i21 -= i24 - i23;
+                        break;
+                    }
+                }
+                i5 = Integer.MAX_VALUE;
+                if (i21 <= 0) {
+                    rect4.right = Math.min(i18, i5);
+                    i21 = 0;
+                } else {
+                    i18 = rect4.right;
+                }
+                i19 += i21;
+            }
+            int[] iArr = new int[i8];
+            int[] iArr2 = new int[i8];
+            for (int i25 = 0; i25 < i8; i25++) {
+                Rect rect6 = rectArr2[i25];
+                iArr[i25] = -rect6.left;
+                iArr2[i25] = rect6.right;
+            }
+            int i26 = w * 2;
+            c(iArr, i26);
+            c(iArr2, i26);
+            for (int i27 = 0; i27 < i8; i27++) {
+                Rect rect7 = rectArr2[i27];
+                rect7.left = -iArr[i27];
+                rect7.right = iArr2[i27];
+            }
+            rectArr = rectArr2;
+        }
+        if (rectArr.length < 2) {
+            d(canvas, rectArr, 0, rectArr.length, w, intValue);
+            return;
+        }
+        int length = rectArr.length - 1;
+        int i28 = 1;
+        int i29 = 0;
+        int i30 = 0;
+        while (i29 < length) {
+            int i31 = i29 + 1;
+            if (rectArr[i29].left > rectArr[i31].right) {
+                d(canvas, rectArr, i30, i28, w, intValue);
+                i28 = 0;
+                i30 = i31;
+            }
+            i28++;
+            i29 = i31;
+        }
+        d(canvas, rectArr, i30, i28, w, intValue);
+    }
+
+    public final void d(Canvas canvas, Rect[] rectArr, int i, int i2, int i3, int i4) {
+        int i5;
+        Rect rect;
+        int i6;
+        int i7;
+        int[] copyOf;
+        char c;
+        int[] copyOf2;
+        int i8;
+        float f;
+        float f2;
+        float f3;
+        float f4;
+        int i9 = i;
+        int i10 = 1;
+        if (i2 < 1) {
+            return;
+        }
+        Rect rect2 = rectArr[i9];
+        int i11 = (i9 + i2) - 1;
+        Rect rect3 = rectArr[i11];
+        if (i2 == 1) {
+            copyOf = new int[]{rect3.width(), -rectArr[i11].height()};
+            rect = rect3;
+            i6 = 2;
+        } else {
+            int i12 = rect3.left;
+            int i13 = rect3.bottom;
+            int[] iArr = new int[i2 * 2];
+            if (i9 <= i11) {
+                int i14 = i11;
+                i7 = 0;
+                while (true) {
+                    Rect rect4 = rectArr[i14];
+                    int i15 = rect4.left;
+                    if (i15 != i12) {
+                        iArr[i7 * 2] = i15 - i12;
+                        i7++;
+                        i12 = i15;
+                    }
+                    int i16 = rect4.top - i13;
+                    int i17 = i14 - 1;
+                    i6 = 2;
+                    while (true) {
+                        if (i17 < i9) {
+                            i5 = i10;
+                            rect = rect3;
+                            break;
+                        }
+                        Rect rect5 = rectArr[i17];
+                        i5 = i10;
+                        int i18 = rect5.bottom;
+                        rect = rect3;
+                        int i19 = rect4.top;
+                        if (i18 <= i19) {
+                            break;
+                        }
+                        if (rect5.left <= rect4.left) {
+                            i16 -= i19 - i18;
+                            break;
+                        } else {
+                            i17--;
+                            i10 = i5;
+                            rect3 = rect;
+                        }
+                    }
+                    if (i16 > 0) {
+                        i16 = 0;
+                    }
+                    int i20 = (i7 * 2) + 1;
+                    iArr[i20] = iArr[i20] + i16;
+                    i13 += i16;
+                    if (i14 == i9) {
+                        break;
+                    }
+                    i14--;
+                    i10 = i5;
+                    rect3 = rect;
+                }
+            } else {
+                i5 = 1;
+                rect = rect3;
+                i6 = 2;
+                i7 = 0;
+            }
+            iArr[i7 * 2] = rectArr[i9].width();
+            copyOf = Arrays.copyOf(iArr, (i7 + 1) * 2);
+            i10 = i5;
+        }
+        if (i2 == i10) {
+            copyOf2 = new int[]{-rectArr[i9].width(), rectArr[i9].height()};
+            c = 1;
+        } else {
+            Rect rect6 = rectArr[i9];
+            int i21 = rect6.right;
+            int i22 = rect6.top;
+            int[] iArr2 = new int[i2 * 2];
+            int i23 = 0;
+            if (i9 <= i11) {
+                while (true) {
+                    Rect rect7 = rectArr[i9];
+                    int i24 = rect7.right;
+                    if (i24 != i21) {
+                        iArr2[i23 * 2] = i24 - i21;
+                        i23++;
+                        i21 = i24;
+                    }
+                    int i25 = rect7.bottom - i22;
+                    int i26 = i9 + 1;
+                    int i27 = i26;
+                    while (i27 <= i11) {
+                        Rect rect8 = rectArr[i27];
+                        int i28 = rect8.top;
+                        int i29 = rect7.bottom;
+                        if (i28 >= i29) {
+                            break;
+                        }
+                        i8 = i22;
+                        if (rect8.right >= rect7.right) {
+                            i25 -= i29 - i28;
+                            break;
+                        } else {
+                            i27++;
+                            i22 = i8;
+                        }
+                    }
+                    i8 = i22;
+                    if (i25 < 0) {
+                        i25 = 0;
+                    }
+                    int i30 = (i23 * 2) + 1;
+                    iArr2[i30] = iArr2[i30] + i25;
+                    i22 = i8 + i25;
+                    if (i9 == i11) {
+                        break;
+                    } else {
+                        i9 = i26;
+                    }
+                }
+            }
+            iArr2[i23 * 2] = -rectArr[i11].width();
+            c = 1;
+            copyOf2 = Arrays.copyOf(iArr2, (i23 + 1) * 2);
+        }
+        Path path = this.d;
+        path.reset();
+        float f5 = i3;
+        float f6 = 2.0f;
+        float min = Math.min(f5, Math.min(rect2.width() / 2.0f, copyOf2[c] / 2.0f));
+        path.moveTo(rect2.right - min, rect2.top);
+        float f7 = 0.9f;
+        float f8 = 0.1f;
+        path.rQuadTo(min * 0.9f, min * 0.1f, min, min);
+        int i31 = i6;
+        int s = hag.s(0, copyOf2.length - 1, i31);
+        if (s >= 0) {
+            int i32 = 0;
+            while (true) {
+                boolean z = i32 >= copyOf2.length - i31;
+                float f9 = copyOf2[i32];
+                float f10 = copyOf2[i32 + 1];
+                float f11 = z ? 0.0f : copyOf2[i32 + 3];
+                f = f7;
+                f2 = f6;
+                f4 = Math.min(f5, Math.min(Math.abs(f9) / f6, f10 / f2));
+                path.rLineTo(0.0f, (f10 - min) - f4);
+                f3 = f8;
+                path.rQuadTo(Math.signum(f9) * min * f8, f4 * f, Math.signum(f9) * f4, f4);
+                if (!z) {
+                    min = Math.min(f5, Math.min(Math.abs(f9) / f2, f11 / f2));
+                    path.rLineTo(f9 - (Math.signum(f9) * (min + f4)), 0.0f);
+                    path.rQuadTo(Math.signum(f9) * min * f, min * f3, Math.signum(f9) * min, min);
+                }
+                if (i32 == s) {
+                    break;
+                }
+                i32 += 2;
+                f7 = f;
+                f6 = f2;
+                f8 = f3;
+                i31 = 2;
+            }
+        } else {
+            f = 0.9f;
+            f2 = 2.0f;
+            f3 = 0.1f;
+            f4 = 0.0f;
+        }
+        float min2 = Math.min(f5, Math.min(rect.width() / f2, (-copyOf[1]) / f2));
+        path.rLineTo((-rect.width()) + f4 + min2, 0.0f);
+        float f12 = -0.9f;
+        float f13 = -0.1f;
+        float f14 = -min2;
+        path.rQuadTo(min2 * (-0.9f), min2 * (-0.1f), f14, f14);
+        boolean z2 = false;
+        int i33 = 2;
+        int s2 = hag.s(0, copyOf.length - 1, 2);
+        if (s2 >= 0) {
+            int i34 = 0;
+            while (true) {
+                boolean z3 = i34 >= copyOf.length - i33 ? true : z2;
+                float f15 = copyOf[i34];
+                float f16 = copyOf[i34 + 1];
+                float f17 = z3 ? 0.0f : copyOf[i34 + 3];
+                float f18 = f12;
+                float f19 = f13;
+                float min3 = Math.min(f5, Math.min(Math.abs(f15) / f2, (-f16) / f2));
+                path.rLineTo(0.0f, f16 + min2 + min3);
+                path.rQuadTo(Math.signum(f15) * min3 * f3, min3 * f18, Math.signum(f15) * min3, -min3);
+                if (!z3) {
+                    min2 = Math.min(f5, Math.min(Math.abs(f15) / f2, (-f17) / f2));
+                    path.rLineTo(f15 - (Math.signum(f15) * (min3 + min2)), 0.0f);
+                    path.rQuadTo(Math.signum(f15) * min2 * f, min2 * f19, Math.signum(f15) * min2, -min2);
+                }
+                if (i34 == s2) {
+                    break;
+                }
+                i34 += 2;
+                f12 = f18;
+                f13 = f19;
+                z2 = false;
+                i33 = 2;
+            }
+        }
+        path.close();
+        Paint paint = this.e;
+        paint.setColor(i4);
+        canvas.drawPath(path, paint);
+    }
+}

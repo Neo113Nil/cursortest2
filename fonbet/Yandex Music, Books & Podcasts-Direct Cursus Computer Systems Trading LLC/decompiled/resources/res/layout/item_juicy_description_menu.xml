@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/catalog_description_container"
+    android:background="@drawable/ripple_juicy_primary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+    <ru.yandex.music.ui.view.EllipsizingTextView
+        android:ellipsize="end"
+        android:id="@+id/catalog_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="3"
+        android:textAlignment="viewStart"
+        style="@style/PhonotekaTitle"/>
+</FrameLayout>

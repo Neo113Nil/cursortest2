@@ -1,0 +1,128 @@
+package com.google.android.gms.location;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.os.SystemClock;
+import androidx.annotation.NonNull;
+import com.google.android.gms.common.internal.ReflectedParcelable;
+import defpackage.k2x;
+import defpackage.l9;
+import defpackage.o8g;
+import java.util.Arrays;
+
+/* loaded from: classes.dex */
+public final class LocationRequest extends l9 implements ReflectedParcelable {
+
+    @NonNull
+    public static final Parcelable.Creator<LocationRequest> CREATOR = new k2x(18);
+    public int a;
+    public long b;
+    public long c;
+    public boolean d;
+    public long e;
+    public int f;
+    public float g;
+    public long h;
+    public boolean i;
+
+    public final boolean equals(Object obj) {
+        if (!(obj instanceof LocationRequest)) {
+            return false;
+        }
+        LocationRequest locationRequest = (LocationRequest) obj;
+        if (this.a != locationRequest.a) {
+            return false;
+        }
+        long j = this.b;
+        long j2 = locationRequest.b;
+        if (j != j2 || this.c != locationRequest.c || this.d != locationRequest.d || this.e != locationRequest.e || this.f != locationRequest.f || this.g != locationRequest.g) {
+            return false;
+        }
+        long j3 = this.h;
+        if (j3 >= j) {
+            j = j3;
+        }
+        long j4 = locationRequest.h;
+        if (j4 >= j2) {
+            j2 = j4;
+        }
+        return j == j2 && this.i == locationRequest.i;
+    }
+
+    public final int hashCode() {
+        return Arrays.hashCode(new Object[]{Integer.valueOf(this.a), Long.valueOf(this.b), Float.valueOf(this.g), Long.valueOf(this.h)});
+    }
+
+    public final String toString() {
+        int i = this.f;
+        float f = this.g;
+        long j = this.h;
+        StringBuilder sb = new StringBuilder("Request[");
+        int i2 = this.a;
+        sb.append(i2 != 100 ? i2 != 102 ? i2 != 104 ? i2 != 105 ? "???" : "PRIORITY_NO_POWER" : "PRIORITY_LOW_POWER" : "PRIORITY_BALANCED_POWER_ACCURACY" : "PRIORITY_HIGH_ACCURACY");
+        if (this.a != 105) {
+            sb.append(" requested=");
+            sb.append(this.b);
+            sb.append("ms");
+        }
+        sb.append(" fastest=");
+        sb.append(this.c);
+        sb.append("ms");
+        if (j > this.b) {
+            sb.append(" maxWait=");
+            sb.append(j);
+            sb.append("ms");
+        }
+        if (f > 0.0f) {
+            sb.append(" smallestDisplacement=");
+            sb.append(f);
+            sb.append("m");
+        }
+        long j2 = this.e;
+        if (j2 != Long.MAX_VALUE) {
+            long elapsedRealtime = SystemClock.elapsedRealtime();
+            sb.append(" expireIn=");
+            sb.append(j2 - elapsedRealtime);
+            sb.append("ms");
+        }
+        if (i != Integer.MAX_VALUE) {
+            sb.append(" num=");
+            sb.append(i);
+        }
+        sb.append(']');
+        return sb.toString();
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(Parcel parcel, int i) {
+        int o0 = o8g.o0(parcel, 20293);
+        int i2 = this.a;
+        o8g.q0(1, 4, parcel);
+        parcel.writeInt(i2);
+        long j = this.b;
+        o8g.q0(2, 8, parcel);
+        parcel.writeLong(j);
+        long j2 = this.c;
+        o8g.q0(3, 8, parcel);
+        parcel.writeLong(j2);
+        boolean z = this.d;
+        o8g.q0(4, 4, parcel);
+        parcel.writeInt(z ? 1 : 0);
+        long j3 = this.e;
+        o8g.q0(5, 8, parcel);
+        parcel.writeLong(j3);
+        int i3 = this.f;
+        o8g.q0(6, 4, parcel);
+        parcel.writeInt(i3);
+        float f = this.g;
+        o8g.q0(7, 4, parcel);
+        parcel.writeFloat(f);
+        long j4 = this.h;
+        o8g.q0(8, 8, parcel);
+        parcel.writeLong(j4);
+        boolean z2 = this.i;
+        o8g.q0(9, 4, parcel);
+        parcel.writeInt(z2 ? 1 : 0);
+        o8g.p0(parcel, o0);
+    }
+}

@@ -1,0 +1,23 @@
+package defpackage;
+
+import java.io.Serializable;
+
+/* loaded from: classes.dex */
+public enum b2f {
+    VOID(Void.class, null),
+    INT(Integer.class, 0),
+    LONG(Long.class, 0L),
+    FLOAT(Float.class, Float.valueOf(0.0f)),
+    DOUBLE(Double.class, Double.valueOf(0.0d)),
+    BOOLEAN(Boolean.class, Boolean.FALSE),
+    STRING(String.class, ""),
+    BYTE_STRING(qn3.class, qn3.b),
+    ENUM(Integer.class, null),
+    MESSAGE(Object.class, null);
+
+    public final Object a;
+
+    b2f(Class cls, Serializable serializable) {
+        this.a = serializable;
+    }
+}

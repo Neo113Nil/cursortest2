@@ -1,0 +1,70 @@
+package defpackage;
+
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.jvm.functions.Function2;
+import ru.yandex.video.m3.player.impl.tracking.a;
+import ru.yandex.video.m3.player.impl.tracking.event.DefaultEventData;
+import ru.yandex.video.m3.player.impl.tracking.event.Event;
+import ru.yandex.video.m3.player.impl.tracking.event.EventDefault;
+import ru.yandex.video.m3.player.impl.tracking.event.EventType;
+
+/* loaded from: classes6.dex */
+public final class njb extends aur implements Function2 {
+    public /* synthetic */ Object j;
+    public final /* synthetic */ bjb k;
+    public final /* synthetic */ a l;
+    public final /* synthetic */ boolean m;
+    public final /* synthetic */ cjb n;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public njb(bjb bjbVar, Continuation continuation, a aVar, boolean z, cjb cjbVar) {
+        super(2, continuation);
+        this.k = bjbVar;
+        this.l = aVar;
+        this.m = z;
+        this.n = cjbVar;
+    }
+
+    @Override // defpackage.kq2
+    public final Continuation create(Object obj, Continuation continuation) {
+        njb njbVar = new njb(this.k, continuation, this.l, this.m, this.n);
+        njbVar.j = obj;
+        return njbVar;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(Object obj, Object obj2) {
+        return ((njb) create((mm6) obj, (Continuation) obj2)).invokeSuspend(Unit.a);
+    }
+
+    @Override // defpackage.kq2
+    public final Object invokeSuspend(Object obj) {
+        nm6 nm6Var = nm6.a;
+        qgg.h0(obj);
+        try {
+            r7o r7oVar = z7o.b;
+            a aVar = this.l;
+            Event event = Event.STOP;
+            EventType eventType = EventType.EVENT;
+            aVar.g.getClass();
+            eventType.getClass();
+            boolean z = aVar.l;
+            ylr ylrVar = aVar.a;
+            cjb cjbVar = this.n;
+            boolean z2 = this.m;
+            bjb bjbVar = this.k;
+            a aVar2 = this.l;
+            if (z) {
+                EventDefault h = a.h(aVar2, bjbVar, event, null, null, null, new DefaultEventData("{\"keepDecoders\":" + z2 + '}'), cjbVar, 14);
+                ylrVar.getClass();
+                ylrVar.c(h);
+            } else {
+                ylrVar.b(a.h(aVar2, bjbVar, event, null, null, null, new DefaultEventData("{\"keepDecoders\":" + z2 + '}'), cjbVar, 14));
+            }
+        } catch (Throwable unused) {
+            r7o r7oVar2 = z7o.b;
+        }
+        return Unit.a;
+    }
+}

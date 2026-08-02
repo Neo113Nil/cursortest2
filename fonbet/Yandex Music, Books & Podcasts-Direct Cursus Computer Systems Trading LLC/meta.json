@@ -1,0 +1,36 @@
+{
+  "app_id": "ru.yandex.music",
+  "title": "Yandex Music, Books & Podcasts",
+  "developer": "Direct Cursus Computer Systems Trading LLC",
+  "score": 2.9185667,
+  "icon": "https://play-lh.googleusercontent.com/Jk0Nrh3alWIZSCbkPqRJaDm5ewxiwfOuQdD1hcGs_bNm1Zi4t1LQrUiUSIHY8y6g-AzrRwdQC6ZBFMb7dZxuUCE",
+  "url": "https://play.google.com/store/apps/details?id=ru.yandex.music&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "7231550417352417242",
+  "released": "Dec 5, 2016",
+  "updated": "2026-07-28",
+  "version": "Varies with device",
+  "summary": "Songs, playlists, podcasts, audiobooks, offline",
+  "folder": "Yandex Music, Books & Podcasts-Direct Cursus Computer Systems Trading LLC",
+  "path": "fonbet/Yandex Music, Books & Podcasts-Direct Cursus Computer Systems Trading LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "ru.yandex.music.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/Yandex Music, Books & Podcasts-Direct Cursus Computer Systems Trading LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading ru.yandex.music...\nru.yandex.music downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading ru.yandex.music...\nru.yandex.music downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

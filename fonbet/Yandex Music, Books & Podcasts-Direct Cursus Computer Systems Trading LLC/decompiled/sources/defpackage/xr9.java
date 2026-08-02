@@ -1,0 +1,216 @@
+package defpackage;
+
+import com.connectsdk.device.ConnectableDevice;
+import com.connectsdk.service.webos.lgcast.remotecamera.service.CameraProperty;
+import io.appmetrica.analytics.impl.C0479n3;
+import io.appmetrica.analytics.rtm.internal.Constants;
+import org.json.JSONObject;
+
+/* loaded from: classes3.dex */
+public final class xr9 implements gip, r8s {
+    public final t6f a;
+
+    public xr9(t6f t6fVar) {
+        this.a = t6fVar;
+    }
+
+    @Override // defpackage.r8s, defpackage.py7
+    public final /* bridge */ /* synthetic */ d7f a(t7k t7kVar, JSONObject jSONObject) {
+        return c(t7kVar, null, jSONObject);
+    }
+
+    public final zt9 c(t7k t7kVar, zt9 zt9Var, JSONObject jSONObject) {
+        boolean d = t7kVar.d();
+        hzj Y = y1g.Y(t7kVar);
+        c9c c9cVar = zt9Var != null ? zt9Var.a : null;
+        t6f t6fVar = this.a;
+        c9c N = y2x.N(Y, jSONObject, "accessibility", d, c9cVar, t6fVar.I);
+        c9c N2 = y2x.N(Y, jSONObject, Constants.KEY_ACTION, d, zt9Var != null ? zt9Var.b : null, t6fVar.u1);
+        c9c N3 = y2x.N(Y, jSONObject, "action_animation", d, zt9Var != null ? zt9Var.c : null, t6fVar.A1);
+        c9c R = y2x.R(Y, jSONObject, "actions", d, zt9Var != null ? zt9Var.d : null, t6fVar.u1);
+        tct tctVar = zr9.r;
+        c9c c9cVar2 = zt9Var != null ? zt9Var.e : null;
+        va8 va8Var = va8.x0;
+        ns9 ns9Var = bcx.h;
+        c9c P = y2x.P(Y, jSONObject, "alignment_horizontal", tctVar, d, c9cVar2, va8Var, ns9Var);
+        tct tctVar2 = zr9.s;
+        c9c c9cVar3 = zt9Var != null ? zt9Var.f : null;
+        va8 va8Var2 = va8.z0;
+        c9c P2 = y2x.P(Y, jSONObject, "alignment_vertical", tctVar2, d, c9cVar3, va8Var2, ns9Var);
+        ox8 ox8Var = vct.d;
+        c9c c9cVar4 = zt9Var != null ? zt9Var.g : null;
+        kzj kzjVar = kzj.E;
+        c9c P3 = y2x.P(Y, jSONObject, "alpha", ox8Var, d, c9cVar4, kzjVar, zr9.B);
+        c9c R2 = y2x.R(Y, jSONObject, "animators", d, zt9Var != null ? zt9Var.h : null, t6fVar.D1);
+        ox8 ox8Var2 = vct.a;
+        c9c c9cVar5 = zt9Var != null ? zt9Var.i : null;
+        kzj kzjVar2 = kzj.B;
+        c9c P4 = y2x.P(Y, jSONObject, "auto_ellipsize", ox8Var2, d, c9cVar5, kzjVar2, ns9Var);
+        c9c R3 = y2x.R(Y, jSONObject, C0479n3.g, d, zt9Var != null ? zt9Var.j : null, t6fVar.P1);
+        c9c N4 = y2x.N(Y, jSONObject, "border", d, zt9Var != null ? zt9Var.k : null, t6fVar.V1);
+        c9c P5 = y2x.P(Y, jSONObject, "capture_focus_on_action", ox8Var2, d, zt9Var != null ? zt9Var.l : null, kzjVar2, ns9Var);
+        ox8 ox8Var3 = vct.b;
+        c9c c9cVar6 = zt9Var != null ? zt9Var.m : null;
+        kzj kzjVar3 = kzj.F;
+        c9c P6 = y2x.P(Y, jSONObject, "column_span", ox8Var3, d, c9cVar6, kzjVar3, zr9.C);
+        c9c R4 = y2x.R(Y, jSONObject, "disappear_actions", d, zt9Var != null ? zt9Var.n : null, t6fVar.Z2);
+        c9c R5 = y2x.R(Y, jSONObject, "doubletap_actions", d, zt9Var != null ? zt9Var.o : null, t6fVar.u1);
+        c9c N5 = y2x.N(Y, jSONObject, "ellipsis", d, zt9Var != null ? zt9Var.p : null, t6fVar.Z8);
+        c9c R6 = y2x.R(Y, jSONObject, "extensions", d, zt9Var != null ? zt9Var.q : null, t6fVar.l3);
+        c9c N6 = y2x.N(Y, jSONObject, "focus", d, zt9Var != null ? zt9Var.r : null, t6fVar.M3);
+        ox8 ox8Var4 = vct.f;
+        c9c c9cVar7 = zt9Var != null ? zt9Var.s : null;
+        kzj kzjVar4 = kzj.G;
+        c9c P7 = y2x.P(Y, jSONObject, "focused_text_color", ox8Var4, d, c9cVar7, kzjVar4, ns9Var);
+        ox8 ox8Var5 = vct.c;
+        c9c c9cVar8 = zt9Var != null ? zt9Var.t : null;
+        s3f s3fVar = bcx.i;
+        c9c P8 = y2x.P(Y, jSONObject, "font_family", ox8Var5, d, c9cVar8, s3fVar, ns9Var);
+        c9c P9 = y2x.P(Y, jSONObject, "font_feature_settings", ox8Var5, d, zt9Var != null ? zt9Var.u : null, s3fVar, ns9Var);
+        c9c P10 = y2x.P(Y, jSONObject, "font_size", ox8Var3, d, zt9Var != null ? zt9Var.v : null, kzjVar3, zr9.D);
+        c9c P11 = y2x.P(Y, jSONObject, "font_size_unit", zr9.t, d, zt9Var != null ? zt9Var.w : null, gd9.w0, ns9Var);
+        c9c P12 = y2x.P(Y, jSONObject, "font_variation_settings", vct.h, d, zt9Var != null ? zt9Var.x : null, s3fVar, ns9Var);
+        c9c P13 = y2x.P(Y, jSONObject, "font_weight", zr9.u, d, zt9Var != null ? zt9Var.y : null, vv8.B, ns9Var);
+        c9c P14 = y2x.P(Y, jSONObject, "font_weight_value", ox8Var3, d, zt9Var != null ? zt9Var.z : null, kzjVar3, zr9.E);
+        c9c R7 = y2x.R(Y, jSONObject, "functions", d, zt9Var != null ? zt9Var.A : null, t6fVar.V3);
+        c9c N7 = y2x.N(Y, jSONObject, CameraProperty.HEIGHT, d, zt9Var != null ? zt9Var.B : null, t6fVar.r7);
+        c9c R8 = y2x.R(Y, jSONObject, "hover_end_actions", d, zt9Var != null ? zt9Var.C : null, t6fVar.u1);
+        c9c R9 = y2x.R(Y, jSONObject, "hover_start_actions", d, zt9Var != null ? zt9Var.D : null, t6fVar.u1);
+        c9c O = y2x.O(Y, jSONObject, ConnectableDevice.KEY_ID, d, zt9Var != null ? zt9Var.E : null, s3fVar);
+        c9c R10 = y2x.R(Y, jSONObject, "images", d, zt9Var != null ? zt9Var.F : null, t6fVar.T8);
+        c9c N8 = y2x.N(Y, jSONObject, "layout_provider", d, zt9Var != null ? zt9Var.G : null, t6fVar.Z4);
+        c9c P15 = y2x.P(Y, jSONObject, "letter_spacing", ox8Var, d, zt9Var != null ? zt9Var.H : null, kzjVar, ns9Var);
+        c9c P16 = y2x.P(Y, jSONObject, "line_height", ox8Var3, d, zt9Var != null ? zt9Var.I : null, kzjVar3, zr9.F);
+        c9c R11 = y2x.R(Y, jSONObject, "longtap_actions", d, zt9Var != null ? zt9Var.J : null, t6fVar.u1);
+        c9c N9 = y2x.N(Y, jSONObject, "margins", d, zt9Var != null ? zt9Var.K : null, t6fVar.i3);
+        c9c P17 = y2x.P(Y, jSONObject, "max_lines", ox8Var3, d, zt9Var != null ? zt9Var.L : null, kzjVar3, zr9.G);
+        c9c P18 = y2x.P(Y, jSONObject, "min_hidden_lines", ox8Var3, d, zt9Var != null ? zt9Var.M : null, kzjVar3, zr9.H);
+        c9c N10 = y2x.N(Y, jSONObject, "paddings", d, zt9Var != null ? zt9Var.N : null, t6fVar.i3);
+        c9c R12 = y2x.R(Y, jSONObject, "press_end_actions", d, zt9Var != null ? zt9Var.O : null, t6fVar.u1);
+        c9c R13 = y2x.R(Y, jSONObject, "press_start_actions", d, zt9Var != null ? zt9Var.P : null, t6fVar.u1);
+        c9c R14 = y2x.R(Y, jSONObject, "ranges", d, zt9Var != null ? zt9Var.Q : null, t6fVar.Q8);
+        c9c P19 = y2x.P(Y, jSONObject, "reuse_id", ox8Var5, d, zt9Var != null ? zt9Var.R : null, s3fVar, ns9Var);
+        c9c P20 = y2x.P(Y, jSONObject, "row_span", ox8Var3, d, zt9Var != null ? zt9Var.S : null, kzjVar3, zr9.I);
+        c9c P21 = y2x.P(Y, jSONObject, "selectable", ox8Var2, d, zt9Var != null ? zt9Var.T : null, kzjVar2, ns9Var);
+        c9c R15 = y2x.R(Y, jSONObject, "selected_actions", d, zt9Var != null ? zt9Var.U : null, t6fVar.u1);
+        tct tctVar3 = zr9.v;
+        c9c c9cVar9 = zt9Var != null ? zt9Var.V : null;
+        i49 i49Var = i49.D;
+        c9c P22 = y2x.P(Y, jSONObject, "strike", tctVar3, d, c9cVar9, i49Var, ns9Var);
+        c9c J = y2x.J(Y, jSONObject, "text", ox8Var5, d, zt9Var != null ? zt9Var.W : null);
+        c9c P23 = y2x.P(Y, jSONObject, "text_alignment_horizontal", zr9.w, d, zt9Var != null ? zt9Var.X : null, va8Var, ns9Var);
+        c9c P24 = y2x.P(Y, jSONObject, "text_alignment_vertical", zr9.x, d, zt9Var != null ? zt9Var.Y : null, va8Var2, ns9Var);
+        c9c P25 = y2x.P(Y, jSONObject, "text_color", ox8Var4, d, zt9Var != null ? zt9Var.Z : null, kzjVar4, ns9Var);
+        c9c N11 = y2x.N(Y, jSONObject, "text_gradient", d, zt9Var != null ? zt9Var.a0 : null, t6fVar.t8);
+        c9c N12 = y2x.N(Y, jSONObject, "text_shadow", d, zt9Var != null ? zt9Var.b0 : null, t6fVar.f7);
+        c9c P26 = y2x.P(Y, jSONObject, "tighten_width", ox8Var2, d, zt9Var != null ? zt9Var.c0 : null, kzjVar2, ns9Var);
+        c9c R16 = y2x.R(Y, jSONObject, "tooltips", d, zt9Var != null ? zt9Var.d0 : null, t6fVar.o9);
+        c9c N13 = y2x.N(Y, jSONObject, "transform", d, zt9Var != null ? zt9Var.e0 : null, t6fVar.r9);
+        c9c R17 = y2x.R(Y, jSONObject, "transformations", d, zt9Var != null ? zt9Var.f0 : null, t6fVar.u9);
+        c9c N14 = y2x.N(Y, jSONObject, "transition_change", d, zt9Var != null ? zt9Var.g0 : null, t6fVar.e2);
+        c9c N15 = y2x.N(Y, jSONObject, "transition_in", d, zt9Var != null ? zt9Var.h0 : null, t6fVar.J1);
+        c9c N16 = y2x.N(Y, jSONObject, "transition_out", d, zt9Var != null ? zt9Var.i0 : null, t6fVar.J1);
+        c9c c9cVar10 = zt9Var != null ? zt9Var.j0 : null;
+        y19 y19Var = zr9.J;
+        y19Var.getClass();
+        return new zt9(N, N2, N3, R, P, P2, P3, R2, P4, R3, N4, P5, P6, R4, R5, N5, R6, N6, P7, P8, P9, P10, P11, P12, P13, P14, R7, N7, R8, R9, O, R10, N8, P15, P16, R11, N9, P17, P18, N10, R12, R13, R14, P19, P20, P21, R15, P22, J, P23, P24, P25, N11, N12, P26, R16, N13, R17, N14, N15, N16, y2x.S(Y, jSONObject, d, c9cVar10, y19Var), y2x.P(Y, jSONObject, "truncate", zr9.y, d, zt9Var != null ? zt9Var.k0 : null, rk9.B0, ns9Var), y2x.P(Y, jSONObject, "underline", zr9.z, d, zt9Var != null ? zt9Var.l0 : null, i49Var, ns9Var), y2x.R(Y, jSONObject, "variable_triggers", d, zt9Var != null ? zt9Var.m0 : null, t6fVar.D9), y2x.R(Y, jSONObject, "variables", d, zt9Var != null ? zt9Var.n0 : null, t6fVar.J9), y2x.P(Y, jSONObject, "visibility", zr9.A, d, zt9Var != null ? zt9Var.o0 : null, jx9.z, ns9Var), y2x.N(Y, jSONObject, "visibility_action", d, zt9Var != null ? zt9Var.p0 : null, t6fVar.V9), y2x.R(Y, jSONObject, "visibility_actions", d, zt9Var != null ? zt9Var.q0 : null, t6fVar.V9), y2x.N(Y, jSONObject, CameraProperty.WIDTH, d, zt9Var != null ? zt9Var.r0 : null, t6fVar.r7));
+    }
+
+    @Override // defpackage.gip
+    /* renamed from: d, reason: merged with bridge method [inline-methods] */
+    public final JSONObject b(t7k t7kVar, zt9 zt9Var) {
+        JSONObject jSONObject = new JSONObject();
+        c9c c9cVar = zt9Var.a;
+        t6f t6fVar = this.a;
+        y2x.i0(t7kVar, jSONObject, "accessibility", c9cVar, t6fVar.I);
+        c9c c9cVar2 = zt9Var.b;
+        jyr jyrVar = t6fVar.u1;
+        y2x.i0(t7kVar, jSONObject, Constants.KEY_ACTION, c9cVar2, jyrVar);
+        y2x.i0(t7kVar, jSONObject, "action_animation", zt9Var.c, t6fVar.A1);
+        y2x.k0(t7kVar, jSONObject, "actions", zt9Var.d, jyrVar);
+        c9c c9cVar3 = zt9Var.e;
+        va8 va8Var = va8.y0;
+        y2x.e0(c9cVar3, t7kVar, "alignment_horizontal", va8Var, jSONObject);
+        c9c c9cVar4 = zt9Var.f;
+        va8 va8Var2 = va8.A0;
+        y2x.e0(c9cVar4, t7kVar, "alignment_vertical", va8Var2, jSONObject);
+        y2x.f0(t7kVar, jSONObject, "alpha", zt9Var.g);
+        y2x.k0(t7kVar, jSONObject, "animators", zt9Var.h, t6fVar.D1);
+        y2x.f0(t7kVar, jSONObject, "auto_ellipsize", zt9Var.i);
+        y2x.k0(t7kVar, jSONObject, C0479n3.g, zt9Var.j, t6fVar.P1);
+        y2x.i0(t7kVar, jSONObject, "border", zt9Var.k, t6fVar.V1);
+        y2x.f0(t7kVar, jSONObject, "capture_focus_on_action", zt9Var.l);
+        y2x.f0(t7kVar, jSONObject, "column_span", zt9Var.m);
+        y2x.k0(t7kVar, jSONObject, "disappear_actions", zt9Var.n, t6fVar.Z2);
+        y2x.k0(t7kVar, jSONObject, "doubletap_actions", zt9Var.o, jyrVar);
+        y2x.i0(t7kVar, jSONObject, "ellipsis", zt9Var.p, t6fVar.Z8);
+        y2x.k0(t7kVar, jSONObject, "extensions", zt9Var.q, t6fVar.l3);
+        y2x.i0(t7kVar, jSONObject, "focus", zt9Var.r, t6fVar.M3);
+        c9c c9cVar5 = zt9Var.s;
+        kzj kzjVar = kzj.D;
+        y2x.e0(c9cVar5, t7kVar, "focused_text_color", kzjVar, jSONObject);
+        y2x.f0(t7kVar, jSONObject, "font_family", zt9Var.t);
+        y2x.f0(t7kVar, jSONObject, "font_feature_settings", zt9Var.u);
+        y2x.f0(t7kVar, jSONObject, "font_size", zt9Var.v);
+        y2x.e0(zt9Var.w, t7kVar, "font_size_unit", gd9.x0, jSONObject);
+        y2x.f0(t7kVar, jSONObject, "font_variation_settings", zt9Var.x);
+        y2x.e0(zt9Var.y, t7kVar, "font_weight", vv8.C, jSONObject);
+        y2x.f0(t7kVar, jSONObject, "font_weight_value", zt9Var.z);
+        y2x.k0(t7kVar, jSONObject, "functions", zt9Var.A, t6fVar.V3);
+        c9c c9cVar6 = zt9Var.B;
+        jyr jyrVar2 = t6fVar.r7;
+        y2x.i0(t7kVar, jSONObject, CameraProperty.HEIGHT, c9cVar6, jyrVar2);
+        y2x.k0(t7kVar, jSONObject, "hover_end_actions", zt9Var.C, jyrVar);
+        y2x.k0(t7kVar, jSONObject, "hover_start_actions", zt9Var.D, jyrVar);
+        y2x.h0(t7kVar, jSONObject, ConnectableDevice.KEY_ID, zt9Var.E);
+        y2x.k0(t7kVar, jSONObject, "images", zt9Var.F, t6fVar.T8);
+        y2x.i0(t7kVar, jSONObject, "layout_provider", zt9Var.G, t6fVar.Z4);
+        y2x.f0(t7kVar, jSONObject, "letter_spacing", zt9Var.H);
+        y2x.f0(t7kVar, jSONObject, "line_height", zt9Var.I);
+        y2x.k0(t7kVar, jSONObject, "longtap_actions", zt9Var.J, jyrVar);
+        c9c c9cVar7 = zt9Var.K;
+        jyr jyrVar3 = t6fVar.i3;
+        y2x.i0(t7kVar, jSONObject, "margins", c9cVar7, jyrVar3);
+        y2x.f0(t7kVar, jSONObject, "max_lines", zt9Var.L);
+        y2x.f0(t7kVar, jSONObject, "min_hidden_lines", zt9Var.M);
+        y2x.i0(t7kVar, jSONObject, "paddings", zt9Var.N, jyrVar3);
+        y2x.k0(t7kVar, jSONObject, "press_end_actions", zt9Var.O, jyrVar);
+        y2x.k0(t7kVar, jSONObject, "press_start_actions", zt9Var.P, jyrVar);
+        y2x.k0(t7kVar, jSONObject, "ranges", zt9Var.Q, t6fVar.Q8);
+        y2x.f0(t7kVar, jSONObject, "reuse_id", zt9Var.R);
+        y2x.f0(t7kVar, jSONObject, "row_span", zt9Var.S);
+        y2x.f0(t7kVar, jSONObject, "selectable", zt9Var.T);
+        y2x.k0(t7kVar, jSONObject, "selected_actions", zt9Var.U, jyrVar);
+        c9c c9cVar8 = zt9Var.V;
+        i49 i49Var = i49.E;
+        y2x.e0(c9cVar8, t7kVar, "strike", i49Var, jSONObject);
+        y2x.f0(t7kVar, jSONObject, "text", zt9Var.W);
+        y2x.e0(zt9Var.X, t7kVar, "text_alignment_horizontal", va8Var, jSONObject);
+        y2x.e0(zt9Var.Y, t7kVar, "text_alignment_vertical", va8Var2, jSONObject);
+        y2x.e0(zt9Var.Z, t7kVar, "text_color", kzjVar, jSONObject);
+        y2x.i0(t7kVar, jSONObject, "text_gradient", zt9Var.a0, t6fVar.t8);
+        y2x.i0(t7kVar, jSONObject, "text_shadow", zt9Var.b0, t6fVar.f7);
+        y2x.f0(t7kVar, jSONObject, "tighten_width", zt9Var.c0);
+        y2x.k0(t7kVar, jSONObject, "tooltips", zt9Var.d0, t6fVar.o9);
+        y2x.i0(t7kVar, jSONObject, "transform", zt9Var.e0, t6fVar.r9);
+        y2x.k0(t7kVar, jSONObject, "transformations", zt9Var.f0, t6fVar.u9);
+        y2x.i0(t7kVar, jSONObject, "transition_change", zt9Var.g0, t6fVar.e2);
+        c9c c9cVar9 = zt9Var.h0;
+        jyr jyrVar4 = t6fVar.J1;
+        y2x.i0(t7kVar, jSONObject, "transition_in", c9cVar9, jyrVar4);
+        y2x.i0(t7kVar, jSONObject, "transition_out", zt9Var.i0, jyrVar4);
+        y2x.j0(t7kVar, jSONObject, zt9Var.j0);
+        y2x.e0(zt9Var.k0, t7kVar, "truncate", vq9.s, jSONObject);
+        etn.l0(t7kVar, jSONObject, "type", "text");
+        y2x.e0(zt9Var.l0, t7kVar, "underline", i49Var, jSONObject);
+        y2x.k0(t7kVar, jSONObject, "variable_triggers", zt9Var.m0, t6fVar.D9);
+        y2x.k0(t7kVar, jSONObject, "variables", zt9Var.n0, t6fVar.J9);
+        y2x.e0(zt9Var.o0, t7kVar, "visibility", jx9.A, jSONObject);
+        c9c c9cVar10 = zt9Var.p0;
+        jyr jyrVar5 = t6fVar.V9;
+        y2x.i0(t7kVar, jSONObject, "visibility_action", c9cVar10, jyrVar5);
+        y2x.k0(t7kVar, jSONObject, "visibility_actions", zt9Var.q0, jyrVar5);
+        y2x.i0(t7kVar, jSONObject, CameraProperty.WIDTH, zt9Var.r0, jyrVar2);
+        return jSONObject;
+    }
+}

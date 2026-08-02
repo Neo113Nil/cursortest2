@@ -1,0 +1,18 @@
+package com.yandex.plus.pay.ui.feature.tarifficator.mobile.internal.domain.counter_offers;
+
+import com.yandex.plus.home.internal.di.y;
+
+/* loaded from: classes5.dex */
+public final class c {
+    public final y a;
+    public final com.yandex.plus.pay.ui.feature.tarifficator.mobile.internal.common.navigation.a b;
+    public final com.yandex.plus.log.api.b c;
+
+    public c(y yVar, com.yandex.plus.pay.ui.feature.tarifficator.mobile.internal.common.navigation.a aVar, com.yandex.plus.log.api.b bVar) {
+        aVar.getClass();
+        bVar.getClass();
+        this.a = yVar;
+        this.b = aVar;
+        this.c = bVar;
+    }
+}

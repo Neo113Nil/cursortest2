@@ -1,0 +1,92 @@
+package com.yandex.plus.pay.ui.core.internal.tarifficator;
+
+import android.content.Context;
+import com.yandex.plus.core.benchmark.x;
+import com.yandex.plus.domain.auth.impl.i;
+import com.yandex.plus.experiments.impl.providers.h;
+import com.yandex.plus.home.internal.di.y;
+import com.yandex.plus.metrica.utils.z;
+import com.yandex.plus.pay.internal.g;
+import com.yandex.plus.pay.log.impl.b;
+import com.yandex.plus.pay.reporter.api.f;
+import defpackage.cdk;
+import defpackage.gdk;
+
+/* loaded from: classes5.dex */
+public final class a {
+    public final g A;
+    public final String a;
+    public final String b;
+    public final String c;
+    public final com.yandex.plus.core.strings.a d;
+    public final String e;
+    public final String f;
+    public final Context g;
+    public final com.yandex.plus.core.config.a h;
+    public final i i;
+    public final com.yandex.plus.core.locale.a j;
+    public final b k;
+    public final f l;
+    public final h m;
+    public final z n;
+    public final com.yandex.plus.core.dispatcher.b o;
+    public final com.yandex.plus.core.imageloader.b p;
+    public final com.yandex.plus.home.plaque.plugin.internal.proxy.a q;
+    public final com.yandex.plus.core.location.a r;
+    public final com.yandex.plus.metrica.utils.i s;
+    public final com.yandex.plus.pay.ui.core.internal.common.f t;
+    public final x u;
+    public final com.yandex.plus.pay.ui.core.internal.di.g v;
+    public final y w;
+    public final cdk x;
+    public final gdk y;
+    public final com.yandex.plus.pay.a z;
+
+    public a(String str, String str2, String str3, com.yandex.plus.core.strings.a aVar, String str4, String str5, Context context, com.yandex.plus.core.config.a aVar2, i iVar, com.yandex.plus.core.locale.a aVar3, b bVar, f fVar, h hVar, z zVar, com.yandex.plus.core.dispatcher.b bVar2, com.yandex.plus.core.imageloader.b bVar3, com.yandex.plus.home.plaque.plugin.internal.proxy.a aVar4, com.yandex.plus.core.location.a aVar5, com.yandex.plus.metrica.utils.i iVar2, com.yandex.plus.pay.ui.core.internal.common.f fVar2, x xVar, com.yandex.plus.pay.ui.core.internal.di.g gVar, y yVar, cdk cdkVar, gdk gdkVar, com.yandex.plus.pay.a aVar6, g gVar2) {
+        str.getClass();
+        str2.getClass();
+        aVar.getClass();
+        context.getClass();
+        aVar2.getClass();
+        aVar3.getClass();
+        bVar.getClass();
+        fVar.getClass();
+        hVar.getClass();
+        zVar.getClass();
+        bVar2.getClass();
+        bVar3.getClass();
+        iVar2.getClass();
+        fVar2.getClass();
+        gVar.getClass();
+        cdkVar.getClass();
+        gdkVar.getClass();
+        aVar6.getClass();
+        this.a = str;
+        this.b = str2;
+        this.c = str3;
+        this.d = aVar;
+        this.e = str4;
+        this.f = str5;
+        this.g = context;
+        this.h = aVar2;
+        this.i = iVar;
+        this.j = aVar3;
+        this.k = bVar;
+        this.l = fVar;
+        this.m = hVar;
+        this.n = zVar;
+        this.o = bVar2;
+        this.p = bVar3;
+        this.q = aVar4;
+        this.r = aVar5;
+        this.s = iVar2;
+        this.t = fVar2;
+        this.u = xVar;
+        this.v = gVar;
+        this.w = yVar;
+        this.x = cdkVar;
+        this.y = gdkVar;
+        this.z = aVar6;
+        this.A = gVar2;
+    }
+}

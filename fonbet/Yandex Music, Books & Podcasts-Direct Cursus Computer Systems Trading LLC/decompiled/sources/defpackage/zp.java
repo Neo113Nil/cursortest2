@@ -1,0 +1,33 @@
+package defpackage;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+
+/* loaded from: classes4.dex */
+public final /* synthetic */ class zp implements Function0 {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ owu b;
+    public final /* synthetic */ sdr c;
+
+    public /* synthetic */ zp(owu owuVar, aqi aqiVar, int i) {
+        this.a = i;
+        this.b = owuVar;
+        this.c = aqiVar;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public final Object invoke() {
+        switch (this.a) {
+            case 0:
+                this.b.b((qmu) this.c.getValue());
+                break;
+            case 1:
+                this.b.b((qmu) this.c.getValue());
+                break;
+            default:
+                this.b.b((qmu) this.c.getValue());
+                break;
+        }
+        return Unit.a;
+    }
+}

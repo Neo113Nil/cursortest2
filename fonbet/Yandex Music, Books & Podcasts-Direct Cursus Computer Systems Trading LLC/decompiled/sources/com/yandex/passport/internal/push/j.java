@@ -1,0 +1,23 @@
+package com.yandex.passport.internal.push;
+
+import defpackage.cg6;
+
+/* loaded from: classes4.dex */
+public final class j extends cg6 {
+    public /* synthetic */ Object j;
+    public final /* synthetic */ m k;
+    public int l;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public j(m mVar, cg6 cg6Var) {
+        super(cg6Var);
+        this.k = mVar;
+    }
+
+    @Override // defpackage.kq2
+    public final Object invokeSuspend(Object obj) {
+        this.j = obj;
+        this.l |= Integer.MIN_VALUE;
+        return m.a(this.k, null, this);
+    }
+}

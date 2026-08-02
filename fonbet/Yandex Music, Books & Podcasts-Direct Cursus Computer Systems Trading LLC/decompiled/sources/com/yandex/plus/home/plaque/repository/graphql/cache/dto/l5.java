@@ -1,0 +1,12 @@
+package com.yandex.plus.home.plaque.repository.graphql.cache.dto;
+
+import defpackage.t9f;
+import org.jetbrains.annotations.NotNull;
+
+/* loaded from: classes5.dex */
+public final class l5 {
+    @NotNull
+    public final t9f serializer() {
+        return k5.a;
+    }
+}

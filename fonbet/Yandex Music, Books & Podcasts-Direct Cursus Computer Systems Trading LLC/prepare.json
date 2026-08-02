@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "apks": [
+    "ru.yandex.music.apk",
+    "config.armeabi_v7a.apk",
+    "config.en.apk",
+    "config.mdpi.apk",
+    "config.ru.apk"
+  ],
+  "base_apk": "ru.yandex.music.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 1,
+    "stdout": ": 7569 of 37028 (20%)\nINFO  - progress: 7701 of 37028 (20%)\nINFO  - progress: 8021 of 37028 (21%)\nINFO  - progress: 8177 of 37028 (22%)\nINFO  - progress: 8270 of 37028 (22%)\nINFO  - progress: 8580 of 37028 (23%)\nINFO  - progress: 8710 of 37028 (23%)\nINFO  - progress: 8834 of 37028 (23%)\nINFO  - progress: 9036 of 37028 (24%)\nINFO  - progress: 9352 of 37028 (25%)\nINFO  - progress: 9753 of 37028 (26%)\nINFO  - progress: 10380 of 37028 (28%)\nINFO  - progress: 11185 of 37028 (30%)\nINFO  - progress: 11451 of 37028 (30%)\nINFO  - progress: 11904 of 37028 (32%)\nINFO  - progress: 12229 of 37028 (33%)\nINFO  - progress: 12520 of 37028 (33%)\nINFO  - progress: 12813 of 37028 (34%)\nINFO  - progress: 13008 of 37028 (35%)\nINFO  - progress: 13449 of 37028 (36%)\nINFO  - progress: 13897 of 37028 (37%)\nINFO  - progress: 14347 of 37028 (38%)\nINFO  - progress: 14891 of 37028 (40%)\nINFO  - progress: 15452 of 37028 (41%)\nINFO  - progress: 15972 of 37028 (43%)\nINFO  - progress: 16416 of 37028 (44%)\nINFO  - progress: 16670 of 37028 (45%)\nINFO  - progress: 17129 of 37028 (46%)\nINFO  - progress: 17492 of 37028 (47%)\nINFO  - progress: 17840 of 37028 (48%)\nINFO  - progress: 18108 of 37028 (48%)\nINFO  - progress: 18502 of 37028 (49%)\nINFO  - progress: 18816 of 37028 (50%)\nINFO  - progress: 19193 of 37028 (51%)\nINFO  - progress: 19653 of 37028 (53%)\nINFO  - progress: 20181 of 37028 (54%)\nINFO  - progress: 20497 of 37028 (55%)\nINFO  - progress: 20740 of 37028 (56%)\nINFO  - progress: 21147 of 37028 (57%)\nINFO  - progress: 21466 of 37028 (57%)\nINFO  - progress: 21955 of 37028 (59%)\nINFO  - progress: 22305 of 37028 (60%)\nINFO  - progress: 22590 of 37028 (61%)\nINFO  - progress: 22799 of 37028 (61%)\nINFO  - progress: 23260 of 37028 (62%)\nINFO  - progress: 23558 of 37028 (63%)\nINFO  - progress: 24006 of 37028 (64%)\nINFO  - progress: 24787 of 37028 (66%)\nINFO  - progress: 25092 of 37028 (67%)\nINFO  - progress: 25735 of 37028 (69%)\nINFO  - progress: 26198 of 37028 (70%)\nINFO  - progress: 26636 of 37028 (71%)\nINFO  - progress: 26999 of 37028 (72%)\nINFO  - progress: 27478 of 37028 (74%)\nINFO  - progress: 27790 of 37028 (75%)\nINFO  - progress: 28211 of 37028 (76%)\nINFO  - progress: 28650 of 37028 (77%)\nINFO  - progress: 28975 of 37028 (78%)\nINFO  - progress: 29493 of 37028 (79%)\nINFO  - progress: 29747 of 37028 (80%)\nINFO  - progress: 30029 of 37028 (81%)\nINFO  - progress: 30432 of 37028 (82%)\nINFO  - progress: 30849 of 37028 (83%)\nINFO  - progress: 31135 of 37028 (84%)\nINFO  - progress: 31456 of 37028 (84%)\nINFO  - progress: 31785 of 37028 (85%)\nINFO  - progress: 32382 of 37028 (87%)\nINFO  - progress: 33139 of 37028 (89%)\nINFO  - progress: 34035 of 37028 (91%)\nINFO  - progress: 34499 of 37028 (93%)\nINFO  - progress: 35034 of 37028 (94%)\nINFO  - progress: 35446 of 37028 (95%)\nINFO  - progress: 36028 of 37028 (97%)\nINFO  - progress: 36542 of 37028 (98%)\nINFO  - progress: 37027 of 37028 (99%)\n                                                             \nERROR - finished with errors, count: 95\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/fonbet/Yandex Music, Books & Podcasts-Direct Cursus Computer Systems Trading LLC/decompiled",
+    "skipped": false,
+    "base_apk": "ru.yandex.music.apk"
+  },
+  "analysis_files": [
+    "ru.yandex.music.xapk",
+    "apk/config.mdpi.apk",
+    "apk/ru.yandex.music.apk",
+    "apk/config.ru.apk",
+    "apk/config.armeabi_v7a.apk",
+    "apk/config.en.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/_COROUTINE/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/coil/",
+    "decompiled/sources/com/",
+    "decompiled/sources/de/",
+    "decompiled/sources/defpackage/",
+    "decompiled/sources/dev/",
+    "decompiled/sources/io/",
+    "decompiled/sources/j$/",
+    "decompiled/sources/javax/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/net/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/okio/",
+    "decompiled/sources/org/",
+    "decompiled/sources/retrofit2/",
+    "decompiled/sources/ru/",
+    "decompiled/sources/timber/"
+  ]
+}

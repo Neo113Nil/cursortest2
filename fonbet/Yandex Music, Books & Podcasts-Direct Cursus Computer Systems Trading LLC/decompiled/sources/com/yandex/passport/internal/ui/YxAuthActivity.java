@@ -1,0 +1,63 @@
+package com.yandex.passport.internal.ui;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import com.yandex.passport.R;
+import com.yandex.passport.internal.analytics.w;
+import com.yandex.passport.internal.di.component.PassportProcessGlobalComponent;
+import com.yandex.passport.internal.ui.domik.DomikActivity;
+import defpackage.oba;
+import defpackage.uah;
+import io.appmetrica.analytics.rtm.internal.Constants;
+import kotlin.Pair;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.text.StringsKt;
+
+/* loaded from: classes4.dex */
+public final class YxAuthActivity extends c {
+    public static final /* synthetic */ int d = 0;
+
+    @Override // com.yandex.passport.internal.ui.c, androidx.fragment.app.t, defpackage.hn5, androidx.core.app.i, android.app.Activity
+    public final void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        Intent intent = getIntent();
+        Uri data = intent != null ? intent.getData() : null;
+        if (com.yandex.passport.common.logger.a.a.isEnabled()) {
+            com.yandex.passport.common.logger.a.c(com.yandex.passport.common.logger.b.b, null, "uri: " + data, 8);
+        }
+        PassportProcessGlobalComponent a = com.yandex.passport.internal.di.a.a();
+        w analyticsTrackerWrapper = a.getAnalyticsTrackerWrapper();
+        Pair pair = new Pair("uri", String.valueOf(data));
+        analyticsTrackerWrapper.b(com.yandex.passport.internal.analytics.c.c, uah.g(pair));
+        if (data == null) {
+            analyticsTrackerWrapper.b(com.yandex.passport.internal.analytics.c.e, uah.g(pair, new Pair(Constants.KEY_MESSAGE, "Uri is empty")));
+            finish();
+            return;
+        }
+        String queryParameter = data.getQueryParameter("D");
+        String d2 = a.getAnalyticsHelper().d();
+        if (d2 == null) {
+            d2 = null;
+        }
+        if (queryParameter == null || StringsKt.U(queryParameter) || Intrinsics.d(d2, queryParameter)) {
+            Intent intent2 = new Intent(this, (Class<?>) DomikActivity.class);
+            intent2.addFlags(67108864);
+            Intent intent3 = getIntent();
+            intent2.setData(intent3 != null ? intent3.getData() : null);
+            analyticsTrackerWrapper.b(com.yandex.passport.internal.analytics.c.d, uah.g(pair));
+            startActivity(intent2);
+            return;
+        }
+        analyticsTrackerWrapper.b(com.yandex.passport.internal.analytics.c.e, uah.g(pair, new Pair(Constants.KEY_MESSAGE, "DeviceId came from another device, applink ignored")));
+        if (com.yandex.passport.common.logger.a.a.isEnabled()) {
+            com.yandex.passport.common.logger.a.c(com.yandex.passport.common.logger.b.b, null, "DeviceId came from another device, applink ignored", 8);
+        }
+        i iVar = new i(this);
+        iVar.e = getString(R.string.passport_error_magiclink_wrong_device);
+        iVar.b = false;
+        iVar.c = false;
+        iVar.c(R.string.passport_required_web_error_ok_button, new oba(2, this));
+        iVar.a().show();
+    }
+}
