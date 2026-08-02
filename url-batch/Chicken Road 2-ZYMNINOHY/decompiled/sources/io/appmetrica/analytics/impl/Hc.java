@@ -1,0 +1,24 @@
+package io.appmetrica.analytics.impl;
+
+import android.location.Location;
+
+/* loaded from: classes.dex */
+public interface Hc {
+    void a(Location location);
+
+    void a(String str);
+
+    void a(String str, String str2);
+
+    void a(boolean z);
+
+    void a(boolean z, boolean z4);
+
+    void clearAppEnvironment();
+
+    void putAppEnvironmentValue(String str, String str2);
+
+    void setDataSendingEnabled(boolean z);
+
+    void setUserProfileID(String str);
+}

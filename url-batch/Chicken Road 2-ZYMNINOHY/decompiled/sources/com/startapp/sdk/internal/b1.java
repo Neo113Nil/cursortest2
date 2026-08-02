@@ -1,0 +1,17 @@
+package com.startapp.sdk.internal;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+/* loaded from: classes.dex */
+public final class b1 implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final Object createFromParcel(Parcel parcel) {
+        return new c1(parcel);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final Object[] newArray(int i4) {
+        return new c1[i4];
+    }
+}
