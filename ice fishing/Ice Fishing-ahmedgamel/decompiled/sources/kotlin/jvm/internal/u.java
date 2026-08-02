@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.Collection;
 import u7.InterfaceC5085c;
 

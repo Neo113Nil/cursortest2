@@ -4,7 +4,7 @@ import android.text.TextUtils;
 import com.anythink.core.common.h.ai;
 import com.anythink.core.common.h.ak;
 import com.anythink.core.common.h.al;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.List;
 import java.util.Map;
 

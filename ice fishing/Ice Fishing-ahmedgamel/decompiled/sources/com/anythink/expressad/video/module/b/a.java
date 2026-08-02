@@ -7,7 +7,7 @@ import com.anythink.core.common.e.g;
 import com.anythink.expressad.foundation.d.d;
 import com.anythink.expressad.foundation.g.f.h.b;
 import com.anythink.expressad.videocommon.c.c;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -51,10 +51,10 @@ public class LicenseClient implements ServiceConnection {
     protected static boolean eventualShutdownEnabled = true;
     public static boolean gracefulShutdownEnabled = true;
     private static final Handler handler;
-    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsGy4zDcEOdJV1C7P+12K0B0uZj5/Ch3HXukU1Pq8lhnQ/Dtdp9yib8kiblIAafuMy54937NjC0dAcxQhv4mVWH3p7MXGcsVJ7tKubF2c6VXnBoL6DZH2YGVIO0vyIlrCls7fqo6a11LKM7Zd4M2hXSppJItQcvQgjb1q7m1S7+mFa0NE1J7WJMk8q+IaIubyY43YOzmzRRJJBGm62PT7aTzhSfw/Bl/oplNON11gkjsi9BW7xmk6WJYorP8hQgFTw3Los8Y4+zyt4LusjAMeKxbkurx4izLOTqVHsNH5sGl4Q0J2q+4SdTgh53owGvTk/qTnKdDhta2QNVf7clXNnwIDAQAB";
+    protected static String licensePubKey = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtpxiA2uQK77ppbtYkFrXk/3BARbk/qOhqrTr8KDOsNKAu+qlp25Alroiusx5xGUmyuhGQ8NlaGIMI9EoDLEnzUPZqDnMgG2pz4UWzB5rHsVPW+0ebTXXVNJQ577y1D9yAGAP31oVYnQFEFQT+MsR3Bzrk6LjEgTZ2JYE4KAyALxCUUw620woAVPbT3EXKWzPp0iuLlImjchq4RnF+X+4Af0i4bGzlb9jh5B3+/X3xkxljRrl2Xb6t8E5T7yVLOHy2LbUBgH+4awC8l8Ql/IWXJOfOCM4mYQs5JDDXZK2mELqA5yw2W46FuIW8C+OuhStbua82gOevHFqIeN2cfcBtwIDAQAB";
     protected static boolean localCheckEnabled = true;
     protected static ImmediateTaskExecutor mainThreadRunner = null;
-    protected static String packageName = "com.icefishing.icefishingbigwin";
+    protected static String packageName = "com.icefishingapp.icefishing";
     protected static boolean repeatedCheckEnabled = true;
     private static Bundle responsePayload;
     private final Context context;

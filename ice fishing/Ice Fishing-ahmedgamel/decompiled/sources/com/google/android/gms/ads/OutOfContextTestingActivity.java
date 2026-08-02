@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.widget.LinearLayout;
 import com.google.android.gms.internal.ads.BinderC3464kd;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import q2.C4876d;
 import q2.C4896n;
 import q2.C4900p;

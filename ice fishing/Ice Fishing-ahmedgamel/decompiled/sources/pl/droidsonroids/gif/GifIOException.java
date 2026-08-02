@@ -1,6 +1,6 @@
 package pl.droidsonroids.gif;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.IOException;
 import java.util.Locale;
 

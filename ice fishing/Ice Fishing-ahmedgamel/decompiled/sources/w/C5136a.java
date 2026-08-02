@@ -1,6 +1,6 @@
 package w;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import u.AbstractC5049e;
 import u.C5046b;
 import u.C5047c;

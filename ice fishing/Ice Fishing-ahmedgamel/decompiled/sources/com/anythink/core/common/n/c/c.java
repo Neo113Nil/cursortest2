@@ -1,6 +1,6 @@
 package com.anythink.core.common.n.c;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.Closeable;
 import java.io.EOFException;
 import java.io.InputStream;

@@ -13,7 +13,7 @@ import com.anythink.basead.exoplayer.k.o;
 import com.anythink.basead.exoplayer.k.p;
 import com.anythink.basead.exoplayer.k.s;
 import com.anythink.basead.exoplayer.t;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayDeque;

@@ -21,7 +21,7 @@ import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 import android.widget.ThemedSpinnerAdapter;
 import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g.AbstractC4518a;
 import k.C4617d;
 import l.ViewTreeObserverOnGlobalLayoutListenerC4647d;

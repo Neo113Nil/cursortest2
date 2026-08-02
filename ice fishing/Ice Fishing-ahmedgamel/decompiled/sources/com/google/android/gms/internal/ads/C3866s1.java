@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.ads;
 
 import O.C0344t;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Arrays;

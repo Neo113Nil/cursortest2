@@ -6,7 +6,7 @@ import android.media.MediaCodecInfo;
 import android.os.Build;
 import android.util.Pair;
 import android.util.Range;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;

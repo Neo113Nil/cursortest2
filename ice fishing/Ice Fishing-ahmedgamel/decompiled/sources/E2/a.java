@@ -28,7 +28,7 @@ import com.google.android.gms.internal.ads.LD;
 import com.google.android.gms.internal.ads.UC;
 import com.google.android.gms.internal.ads.Ux;
 import com.google.android.gms.internal.ads.WC;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import h.LayoutInflaterFactory2C4533A;
 import java.io.File;
 import java.nio.ByteBuffer;

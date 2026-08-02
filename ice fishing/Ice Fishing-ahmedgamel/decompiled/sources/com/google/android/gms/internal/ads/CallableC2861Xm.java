@@ -6,7 +6,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import com.anythink.core.c.b.e;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

@@ -1,6 +1,6 @@
 package e8;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.List;
 import v7.C5135p;
 

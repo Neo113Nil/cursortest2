@@ -5,7 +5,7 @@ import android.util.Pair;
 import com.anythink.basead.ui.BaseATView;
 import com.anythink.basead.ui.animplayerview.scale.AlbumScaleMainView;
 import com.anythink.core.common.d.j;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

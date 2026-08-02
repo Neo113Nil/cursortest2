@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.FrameLayout;
 import androidx.appcompat.widget.ActionBarContextView;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.lang.reflect.Method;
 import java.util.WeakHashMap;
 import m.e1;

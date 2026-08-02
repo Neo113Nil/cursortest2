@@ -1,24 +1,26 @@
 {
   "ok": true,
   "apks": [
-    "com.icefishinggame.icefishinggamemultigames.apk",
+    "com.icefishingapp.icefishing.apk",
     "config.arm64_v8a.apk",
     "config.en.apk",
     "config.mdpi.apk",
+    "com.icefishinggame.icefishinggamemultigames.apk",
     "com.icefishing.icefishingmoney.apk",
     "com.icefishing.icefishingbigwin.apk"
   ],
-  "base_apk": "com.icefishing.icefishingbigwin.apk",
+  "base_apk": "com.icefishingapp.icefishing.apk",
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9189 (0%)\nINFO  - progress: 1139 of 9189 (12%)\nINFO  - progress: 1375 of 9189 (14%)\nINFO  - progress: 1395 of 9189 (15%)\nINFO  - progress: 1421 of 9189 (15%)\nINFO  - progress: 1461 of 9189 (15%)\nINFO  - progress: 1657 of 9189 (18%)\nINFO  - progress: 2047 of 9189 (22%)\nINFO  - progress: 2436 of 9189 (26%)\nINFO  - progress: 2767 of 9189 (30%)\nINFO  - progress: 3023 of 9189 (32%)\nINFO  - progress: 3257 of 9189 (35%)\nINFO  - progress: 3476 of 9189 (37%)\nINFO  - progress: 3654 of 9189 (39%)\nINFO  - progress: 3969 of 9189 (43%)\nINFO  - progress: 4446 of 9189 (48%)\nINFO  - progress: 4714 of 9189 (51%)\nINFO  - progress: 4949 of 9189 (53%)\nINFO  - progress: 5144 of 9189 (55%)\nINFO  - progress: 5405 of 9189 (58%)\nINFO  - progress: 5649 of 9189 (61%)\nINFO  - progress: 5940 of 9189 (64%)\nINFO  - progress: 6161 of 9189 (67%)\nINFO  - progress: 6383 of 9189 (69%)\nINFO  - progress: 6608 of 9189 (71%)\nINFO  - progress: 6838 of 9189 (74%)\nINFO  - progress: 6985 of 9189 (76%)\nINFO  - progress: 7159 of 9189 (77%)\nINFO  - progress: 7263 of 9189 (79%)\nINFO  - progress: 7486 of 9189 (81%)\nINFO  - progress: 7813 of 9189 (85%)\nINFO  - progress: 8129 of 9189 (88%)\nINFO  - progress: 8428 of 9189 (91%)\nINFO  - progress: 8700 of 9189 (94%)\nINFO  - progress: 8925 of 9189 (97%)\nINFO  - progress: 9102 of 9189 (99%)\n                                                             \nERROR - finished with errors, count: 21\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9189 (0%)\nINFO  - progress: 1374 of 9189 (14%)\nINFO  - progress: 1384 of 9189 (15%)\nINFO  - progress: 1412 of 9189 (15%)\nINFO  - progress: 1447 of 9189 (15%)\nINFO  - progress: 1523 of 9189 (16%)\nINFO  - progress: 2046 of 9189 (22%)\nINFO  - progress: 2479 of 9189 (26%)\nINFO  - progress: 2767 of 9189 (30%)\nINFO  - progress: 3068 of 9189 (33%)\nINFO  - progress: 3353 of 9189 (36%)\nINFO  - progress: 3592 of 9189 (39%)\nINFO  - progress: 3850 of 9189 (41%)\nINFO  - progress: 4290 of 9189 (46%)\nINFO  - progress: 4525 of 9189 (49%)\nINFO  - progress: 4805 of 9189 (52%)\nINFO  - progress: 5032 of 9189 (54%)\nINFO  - progress: 5225 of 9189 (56%)\nINFO  - progress: 5427 of 9189 (59%)\nINFO  - progress: 5688 of 9189 (61%)\nINFO  - progress: 5958 of 9189 (64%)\nINFO  - progress: 6232 of 9189 (67%)\nINFO  - progress: 6428 of 9189 (69%)\nINFO  - progress: 6585 of 9189 (71%)\nINFO  - progress: 6797 of 9189 (73%)\nINFO  - progress: 6923 of 9189 (75%)\nINFO  - progress: 7140 of 9189 (77%)\nINFO  - progress: 7326 of 9189 (79%)\nINFO  - progress: 7694 of 9189 (83%)\nINFO  - progress: 7965 of 9189 (86%)\nINFO  - progress: 8337 of 9189 (90%)\nINFO  - progress: 8764 of 9189 (95%)\nINFO  - progress: 8999 of 9189 (97%)\nINFO  - progress: 9144 of 9189 (99%)\n                                                             \nERROR - finished with errors, count: 43\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ahmedgamel/decompiled",
     "skipped": false,
-    "base_apk": "com.icefishing.icefishingbigwin.apk"
+    "base_apk": "com.icefishingapp.icefishing.apk"
   },
   "analysis_files": [
+    "com.icefishingapp.icefishing.xapk",
     "com.icefishinggame.icefishinggamemultigames.xapk",
     "com.icefishing.icefishingmoney.xapk",
     "com.icefishing.icefishingbigwin.xapk",
@@ -27,6 +29,7 @@
     "apk/config.mdpi.apk",
     "apk/com.icefishing.icefishingbigwin.apk",
     "apk/config.en.apk",
+    "apk/com.icefishingapp.icefishing.apk",
     "apk/com.icefishinggame.icefishinggamemultigames.apk",
     "report.pdf",
     "meta.json",

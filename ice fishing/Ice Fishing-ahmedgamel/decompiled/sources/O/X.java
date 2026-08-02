@@ -15,7 +15,7 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package com.anythink.basead.exoplayer.b;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 

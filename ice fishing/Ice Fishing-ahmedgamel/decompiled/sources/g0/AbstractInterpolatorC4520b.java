@@ -1,7 +1,7 @@
 package g0;
 
 import android.view.animation.Interpolator;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* renamed from: g0.b, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.anythink.basead.exoplayer.k.p;
 import com.google.android.gms.internal.ads.C2501Ce;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import d1.C4445c;
 import g1.C4522b;
 import g1.C4523c;

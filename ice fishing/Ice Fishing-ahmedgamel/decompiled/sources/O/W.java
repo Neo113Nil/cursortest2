@@ -3,7 +3,7 @@ package O;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.WeakHashMap;

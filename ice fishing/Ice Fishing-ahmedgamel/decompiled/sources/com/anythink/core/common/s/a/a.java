@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.os.Looper;
 import com.anythink.core.common.s.a.b;
 import com.anythink.core.common.s.a.e;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;

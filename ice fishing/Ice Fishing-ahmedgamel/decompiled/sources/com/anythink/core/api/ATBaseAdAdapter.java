@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import com.anythink.core.api.ATAdConst;
 import com.anythink.core.common.l.d.b;
 import com.anythink.expressad.foundation.g.a;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.Map;
 
 /* loaded from: classes.dex */

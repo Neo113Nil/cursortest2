@@ -8,7 +8,7 @@ import android.os.Looper;
 import android.os.RemoteException;
 import android.view.Display;
 import com.facebook.ads.AdError;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;

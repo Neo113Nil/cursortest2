@@ -5,7 +5,7 @@ import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.core.common.v.af;
 import com.anythink.core.common.v.q;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.Map;
 
 /* loaded from: classes.dex */

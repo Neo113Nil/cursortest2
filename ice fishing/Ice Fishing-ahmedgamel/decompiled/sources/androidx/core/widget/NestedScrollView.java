@@ -43,7 +43,7 @@ import android.widget.EdgeEffect;
 import android.widget.FrameLayout;
 import android.widget.OverScroller;
 import com.anythink.basead.exoplayer.k.p;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Map;

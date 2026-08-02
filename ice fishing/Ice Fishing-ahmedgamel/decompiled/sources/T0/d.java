@@ -10,7 +10,7 @@ import androidx.work.impl.WorkDatabase_Impl;
 import androidx.work.impl.background.systemalarm.RescheduleReceiver;
 import androidx.work.impl.workers.ConstraintTrackingWorker;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

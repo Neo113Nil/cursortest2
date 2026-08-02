@@ -14,7 +14,7 @@ import com.google.android.gms.internal.ads.C2780Sl;
 import com.google.android.gms.internal.ads.C3675oP;
 import com.google.android.gms.internal.ads.C4085w4;
 import com.google.android.gms.internal.ads.SO;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.Arrays;
 import java.util.WeakHashMap;
 import t0.AbstractC4990E;

@@ -11,8 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.AbstractC4404f;
+import com.icefishingapp.icefishing.C5275R;
 import g1.C4523c;
 
 /* renamed from: androidx.fragment.app.n, reason: case insensitive filesystem */

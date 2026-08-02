@@ -5,7 +5,7 @@ import android.graphics.Rect;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityNodeInfo;
 import com.google.android.material.chip.Chip;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.ArrayList;
 
 /* loaded from: classes2.dex */

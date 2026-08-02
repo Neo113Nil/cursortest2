@@ -25,7 +25,7 @@ import android.widget.ImageView;
 import com.google.android.gms.internal.ads.LD;
 import com.google.android.play.core.hsdp.service.HsdpLoadingPanelContainer;
 import com.google.android.play.core.hsdp.service.HsdpShimActivity;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g1.C4522b;
 import java.util.HashMap;
 import java.util.Map;

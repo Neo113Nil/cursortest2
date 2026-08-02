@@ -14,7 +14,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 import com.google.android.material.textfield.TextInputLayout;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.WeakHashMap;
 import l3.AbstractC4661a;
 

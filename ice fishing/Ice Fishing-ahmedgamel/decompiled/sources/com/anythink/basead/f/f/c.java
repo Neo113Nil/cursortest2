@@ -6,7 +6,7 @@ import com.anythink.core.common.h.bk;
 import com.anythink.core.common.h.w;
 import com.anythink.core.common.h.y;
 import com.anythink.core.common.v.af;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;

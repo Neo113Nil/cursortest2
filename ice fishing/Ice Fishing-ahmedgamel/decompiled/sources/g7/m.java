@@ -11,7 +11,7 @@ import com.google.android.gms.internal.ads.RunnableC3973u0;
 import com.google.android.gms.internal.ads.Su;
 import com.google.android.gms.internal.ads.Ux;
 import com.google.android.gms.internal.ads.Wu;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import e4.C4463a;
 import j7.EnumC4613b;
 import java.util.ArrayList;

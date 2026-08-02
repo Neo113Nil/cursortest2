@@ -4,7 +4,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import c1.C0533a;
 import com.anythink.basead.exoplayer.k.p;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import e1.k;
 import java.util.ArrayList;
 

@@ -1,6 +1,6 @@
 package com.onesignal.session.internal.outcomes.impl;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import com.onesignal.common.g;
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -4,7 +4,7 @@ import B0.c;
 import B1.z;
 import S0.l;
 import com.anythink.core.common.d.j;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.EOFException;
 import x.C5176n;
 import y8.e;

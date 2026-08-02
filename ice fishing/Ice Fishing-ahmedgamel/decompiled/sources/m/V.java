@@ -16,7 +16,7 @@ import android.util.TypedValue;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.TextView;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import g.AbstractC4518a;
 import java.lang.ref.WeakReference;
 import java.util.Arrays;

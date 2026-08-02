@@ -1,7 +1,7 @@
 package k3;
 
 import android.R;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: k3.a, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

@@ -24,7 +24,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.AbstractActivityC0480x;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g1.C4522b;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

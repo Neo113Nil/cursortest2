@@ -44,7 +44,7 @@ public final class RunnableC5078i implements Runnable {
         if (this.f41287w) {
             k9.setNeutralButton("Dismiss", (DialogInterface.OnClickListener) null);
         } else {
-            k9.setPositiveButton("Learn More", new com.icefishing.icefishingbigwin.D(this, context));
+            k9.setPositiveButton("Learn More", new com.icefishingapp.icefishing.D(this, context));
             k9.setNegativeButton("Dismiss", (DialogInterface.OnClickListener) null);
         }
         k9.create().show();

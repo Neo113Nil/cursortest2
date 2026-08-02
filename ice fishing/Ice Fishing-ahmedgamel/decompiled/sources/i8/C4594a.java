@@ -1,6 +1,6 @@
 package i8;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.net.ProxySelector;
 import java.util.List;
 import java.util.Objects;

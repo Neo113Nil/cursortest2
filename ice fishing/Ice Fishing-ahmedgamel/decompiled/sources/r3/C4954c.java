@@ -5,7 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.carousel.CarouselLayoutManager;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;

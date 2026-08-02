@@ -2,7 +2,7 @@ package com.anythink.expressad.foundation.e;
 
 import android.text.TextUtils;
 import com.anythink.expressad.foundation.d.d;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;

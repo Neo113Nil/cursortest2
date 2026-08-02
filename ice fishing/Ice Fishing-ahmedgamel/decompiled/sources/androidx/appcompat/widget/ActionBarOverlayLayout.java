@@ -32,7 +32,7 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.widget.OverScroller;
 import com.bumptech.glide.g;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.WeakHashMap;
 import k.C4624k;
 import l.m;

@@ -14,7 +14,7 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.widget.AutoCompleteTextView;
 import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: m.o, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

@@ -8,7 +8,7 @@ import com.anythink.core.common.h.x;
 import com.anythink.core.common.res.a;
 import com.anythink.core.common.v.o;
 import com.anythink.core.common.v.w;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

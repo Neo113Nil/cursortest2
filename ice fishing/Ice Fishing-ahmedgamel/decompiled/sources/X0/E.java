@@ -1,6 +1,6 @@
 package X0;
 
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* loaded from: classes.dex */
 public abstract class E {

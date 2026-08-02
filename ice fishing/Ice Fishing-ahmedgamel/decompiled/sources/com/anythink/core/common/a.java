@@ -17,7 +17,7 @@ import com.anythink.core.common.h.bv;
 import com.anythink.core.common.h.bw;
 import com.anythink.core.common.v.aj;
 import com.anythink.core.common.v.ak;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;

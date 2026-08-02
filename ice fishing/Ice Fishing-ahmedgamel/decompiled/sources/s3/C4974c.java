@@ -28,7 +28,7 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.autofill.AutofillManager;
 import android.widget.CompoundButton;
 import com.anythink.expressad.foundation.h.k;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import j4.g;
 import java.util.ArrayList;
 import java.util.Arrays;

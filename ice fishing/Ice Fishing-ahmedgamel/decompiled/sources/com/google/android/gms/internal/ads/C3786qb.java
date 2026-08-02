@@ -4,7 +4,7 @@ import a3.AbstractC0432a;
 import android.net.Uri;
 import android.os.IBinder;
 import android.os.Parcel;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.HashMap;
 import java.util.Map;
 

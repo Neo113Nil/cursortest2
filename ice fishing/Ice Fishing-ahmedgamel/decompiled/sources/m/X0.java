@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import androidx.appcompat.widget.Toolbar;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g.AbstractC4518a;
 
 /* loaded from: classes.dex */

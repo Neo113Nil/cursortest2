@@ -11,7 +11,7 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.internal.NavigationMenuItemView;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* loaded from: classes.dex */
 public final class g extends C0323b {

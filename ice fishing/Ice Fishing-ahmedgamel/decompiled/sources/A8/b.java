@@ -41,7 +41,7 @@ import com.bumptech.glide.l;
 import com.bumptech.glide.load.data.k;
 import com.google.android.gms.internal.ads.C2941aq;
 import com.google.android.gms.internal.ads.Wt;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import g1.C4522b;
 import java.io.File;
 import java.io.IOException;

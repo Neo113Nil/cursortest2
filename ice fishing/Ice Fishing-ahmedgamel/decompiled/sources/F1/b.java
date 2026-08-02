@@ -7,7 +7,7 @@ import android.util.Log;
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
 import com.google.android.gms.internal.ads.C2941aq;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import s1.EnumC4966a;

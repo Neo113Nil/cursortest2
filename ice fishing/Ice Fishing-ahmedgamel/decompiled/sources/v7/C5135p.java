@@ -1,6 +1,6 @@
 package v7;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;

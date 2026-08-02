@@ -4,7 +4,7 @@ import O.G;
 import O.X;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.WeakHashMap;
 import t0.AbstractC5003S;
 

@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.ArrayList;
 
 /* loaded from: classes.dex */

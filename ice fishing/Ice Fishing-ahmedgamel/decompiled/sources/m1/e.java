@@ -20,7 +20,7 @@ import com.anythink.nativead.api.ATNativePrepareInfo;
 import com.anythink.nativead.api.NativeAd;
 import com.google.android.gms.internal.ads.C3279h5;
 import com.google.android.gms.internal.ads.InterfaceC3225g5;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -9,7 +9,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.core.common.e.n;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.List;
 import m5.InterfaceC4733a;

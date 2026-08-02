@@ -46,14 +46,14 @@ import com.google.android.gms.internal.ads.C3675oP;
 import com.google.android.gms.internal.ads.InterfaceC4055vb;
 import com.google.android.gms.internal.ads.Nw;
 import com.google.android.gms.internal.ads.QC;
-import com.icefishing.icefishingbigwin.AgeSelection;
-import com.icefishing.icefishingbigwin.C5275R;
-import com.icefishing.icefishingbigwin.GameCategoriesActivity;
-import com.icefishing.icefishingbigwin.MainActivity;
-import com.icefishing.icefishingbigwin.SplashActivity;
-import com.icefishing.icefishingbigwin.ViewOnClickListenerC4399a;
-import com.icefishing.icefishingbigwin.ViewOnClickListenerC4402d;
-import com.icefishing.icefishingbigwin.r;
+import com.icefishingapp.icefishing.AgeSelection;
+import com.icefishingapp.icefishing.C5275R;
+import com.icefishingapp.icefishing.GameCategoriesActivity;
+import com.icefishingapp.icefishing.MainActivity;
+import com.icefishingapp.icefishing.SplashActivity;
+import com.icefishingapp.icefishing.ViewOnClickListenerC4399a;
+import com.icefishingapp.icefishing.ViewOnClickListenerC4402d;
+import com.icefishingapp.icefishing.r;
 import e.C4455a;
 import e.InterfaceC4456b;
 import h.AbstractC4541a;
@@ -459,7 +459,7 @@ public class C4522b implements f, AD, o, InterfaceC0325c, l, V7.b, u, InterfaceC
                 rVar.f36934v.finish();
                 break;
             default:
-                MainActivity mainActivity = ((com.icefishing.icefishingbigwin.x) this.f37625u).f36946u.f36949c;
+                MainActivity mainActivity = ((com.icefishingapp.icefishing.x) this.f37625u).f36946u.f36949c;
                 mainActivity.startActivity(mainActivity.f36844S);
                 break;
         }

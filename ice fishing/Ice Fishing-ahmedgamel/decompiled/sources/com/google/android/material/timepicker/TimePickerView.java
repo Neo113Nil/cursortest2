@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.chip.Chip;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* loaded from: classes2.dex */
 class TimePickerView extends ConstraintLayout {

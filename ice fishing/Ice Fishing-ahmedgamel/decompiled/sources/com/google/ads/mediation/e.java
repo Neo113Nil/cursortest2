@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.google.android.gms.internal.ads.C4274ze;
 import com.google.android.gms.internal.ads.InterfaceC3841rd;
 import com.google.android.gms.internal.ads.Qx;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.Random;
 import k2.n;
 import pl.droidsonroids.gif.GifImageView;

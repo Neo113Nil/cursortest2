@@ -26,7 +26,12 @@ public final class C0907Fp extends AbstractC1188Qq<FY> {
     public final C1785fp A0G;
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 18 out of bounds for length 18
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     public C0907Fp(C1840gi c1840gi, List<C1678e5> list, AbstractC2005jd abstractC2005jd, VA va, C1246Sx c1246Sx, C1785fp c1785fp, Y2 y22, InterfaceC1381Yh interfaceC1381Yh, String str, int i, int i6, int i9, int i10, C0916Fy c0916Fy, AbstractC1375Yb abstractC1375Yb) {
         this.A0C = c1840gi;

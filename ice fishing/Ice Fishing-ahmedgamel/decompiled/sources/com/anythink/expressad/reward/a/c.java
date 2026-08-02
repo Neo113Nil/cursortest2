@@ -25,7 +25,7 @@ import com.anythink.expressad.video.bt.module.AnythinkBTRootLayout;
 import com.anythink.expressad.videocommon.a;
 import com.anythink.expressad.videocommon.b.i;
 import com.anythink.expressad.videocommon.b.n;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;

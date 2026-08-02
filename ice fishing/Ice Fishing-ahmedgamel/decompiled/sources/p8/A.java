@@ -1,6 +1,6 @@
 package p8;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.ArrayList;

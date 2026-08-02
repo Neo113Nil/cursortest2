@@ -1,7 +1,7 @@
 package A;
 
 import android.R;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* loaded from: classes.dex */
 public abstract class a {

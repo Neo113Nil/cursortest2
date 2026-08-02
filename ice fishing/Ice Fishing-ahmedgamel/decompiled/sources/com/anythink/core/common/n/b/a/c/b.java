@@ -4,7 +4,7 @@ import com.anythink.core.common.n.b.ad;
 import com.anythink.core.common.n.b.af;
 import com.anythink.core.common.n.b.w;
 import com.anythink.core.common.n.c.n;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.net.ProtocolException;
 
 /* loaded from: classes.dex */

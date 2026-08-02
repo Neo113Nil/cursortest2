@@ -13,7 +13,7 @@ import android.os.IBinder;
 import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import d6.c;
 import j4.q;
 import java.util.HashMap;

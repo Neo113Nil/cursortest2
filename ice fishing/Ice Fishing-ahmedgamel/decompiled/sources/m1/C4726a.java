@@ -27,7 +27,7 @@ import com.google.android.gms.internal.ads.C3090de;
 import com.google.android.gms.internal.ads.C3143ee;
 import com.google.android.gms.internal.ads.W4;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;

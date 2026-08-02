@@ -10,7 +10,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import com.anythink.basead.exoplayer.h.o;
 import com.bumptech.glide.j;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import s1.InterfaceC4970e;
 import s1.h;
 import s1.l;

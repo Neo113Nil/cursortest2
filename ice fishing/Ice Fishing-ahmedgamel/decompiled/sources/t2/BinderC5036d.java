@@ -48,7 +48,7 @@ import com.google.android.gms.internal.ads.Tv;
 import com.google.android.gms.internal.ads.Uv;
 import com.google.android.gms.internal.ads.Vr;
 import com.google.android.gms.internal.ads.Yv;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.Collections;
 import java.util.concurrent.ScheduledFuture;
 import org.json.JSONException;

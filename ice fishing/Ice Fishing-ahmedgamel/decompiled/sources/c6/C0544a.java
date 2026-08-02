@@ -1,6 +1,6 @@
 package c6;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import g1.C4523c;
 import java.io.EOFException;
 import java.io.IOException;

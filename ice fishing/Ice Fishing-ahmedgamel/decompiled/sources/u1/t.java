@@ -1,7 +1,7 @@
 package u1;
 
 import android.util.Log;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;

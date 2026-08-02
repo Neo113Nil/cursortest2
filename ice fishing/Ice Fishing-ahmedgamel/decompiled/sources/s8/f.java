@@ -2,7 +2,7 @@ package s8;
 
 import android.os.Build;
 import android.util.Log;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import i8.r;
 import java.net.InetSocketAddress;
 import java.net.Socket;

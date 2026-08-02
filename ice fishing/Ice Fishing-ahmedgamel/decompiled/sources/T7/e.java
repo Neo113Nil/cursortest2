@@ -12,7 +12,7 @@ import X7.o;
 import android.os.Handler;
 import android.os.Looper;
 import com.google.android.gms.internal.ads.LD;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.concurrent.CancellationException;
 import kotlin.jvm.internal.h;
 import z7.InterfaceC5272i;

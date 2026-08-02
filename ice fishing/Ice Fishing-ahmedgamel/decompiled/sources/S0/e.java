@@ -77,7 +77,7 @@ import com.google.android.gms.internal.ads.WP;
 import com.google.android.gms.internal.ads.YG;
 import com.google.android.gms.internal.ads.Z8;
 import com.google.android.gms.internal.ads.ZG;
-import com.icefishing.icefishingbigwin.GzopArcadegamesActivity;
+import com.icefishingapp.icefishing.GzopArcadegamesActivity;
 import h.LayoutInflaterFactory2C4533A;
 import java.io.IOException;
 import java.nio.charset.Charset;

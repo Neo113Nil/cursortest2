@@ -15,7 +15,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.URLUtil;
 import android.webkit.WebView;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.ArrayList;

@@ -10,7 +10,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.GridView;
 import android.widget.ListAdapter;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* loaded from: classes2.dex */
 final class MaterialCalendarGridView extends GridView {

@@ -1,6 +1,6 @@
 package com.google.android.gms.internal.consent_sdk;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* renamed from: com.google.android.gms.internal.consent_sdk.g2, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

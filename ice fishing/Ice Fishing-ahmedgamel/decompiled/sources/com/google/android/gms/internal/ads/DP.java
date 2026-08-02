@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.ads;
 
 import android.text.TextUtils;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

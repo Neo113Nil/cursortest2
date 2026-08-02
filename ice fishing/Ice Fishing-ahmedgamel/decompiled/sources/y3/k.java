@@ -11,7 +11,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.TextView;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.ArrayList;
 import java.util.WeakHashMap;
 import k3.AbstractC4632a;

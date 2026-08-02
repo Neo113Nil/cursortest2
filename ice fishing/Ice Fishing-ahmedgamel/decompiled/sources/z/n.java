@@ -15,7 +15,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.anythink.basead.ui.animplayerview.scale.AlbumScaleMainView;
 import com.anythink.core.common.d.j;
 import com.anythink.expressad.foundation.h.p;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -3,7 +3,7 @@ package com.anythink.core.common.n.b.a.e;
 import com.anythink.core.api.ATCustomRuleKeys;
 import com.anythink.core.common.n.c.w;
 import com.anythink.expressad.atsignalcommon.commonwebview.ToolBar;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

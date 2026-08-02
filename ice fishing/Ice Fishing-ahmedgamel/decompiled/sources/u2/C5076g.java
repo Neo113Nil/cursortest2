@@ -320,8 +320,8 @@ public final class C5076g {
         AlertDialog.Builder k9 = D.k(context);
         final AtomicInteger atomicInteger = new AtomicInteger(i);
         k9.setTitle("Setup gesture");
-        k9.setSingleChoiceItems((CharSequence[]) arrayList.toArray(new String[0]), i, new com.icefishing.icefishingbigwin.D(1, atomicInteger));
-        k9.setNegativeButton("Dismiss", new com.icefishing.icefishingbigwin.D(2, this));
+        k9.setSingleChoiceItems((CharSequence[]) arrayList.toArray(new String[0]), i, new com.icefishingapp.icefishing.D(1, atomicInteger));
+        k9.setNegativeButton("Dismiss", new com.icefishingapp.icefishing.D(2, this));
         k9.setPositiveButton("Save", new DialogInterface.OnClickListener() { // from class: u2.d
             @Override // android.content.DialogInterface.OnClickListener
             public final void onClick(DialogInterface dialogInterface, int i6) {

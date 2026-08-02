@@ -4,7 +4,7 @@ import a.AbstractC0422a;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Trace;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;

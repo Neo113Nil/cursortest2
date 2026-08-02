@@ -1,6 +1,6 @@
 package L5;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

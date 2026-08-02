@@ -29,7 +29,7 @@ import android.widget.Button;
 import android.widget.Checkable;
 import android.widget.CompoundButton;
 import com.bumptech.glide.g;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g1.C4523c;
 import java.util.Iterator;
 import java.util.LinkedHashSet;

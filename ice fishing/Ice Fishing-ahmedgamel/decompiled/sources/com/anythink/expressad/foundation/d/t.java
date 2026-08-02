@@ -3,7 +3,7 @@ package com.anythink.expressad.foundation.d;
 import android.content.Context;
 import android.text.TextUtils;
 import com.anythink.expressad.foundation.h.v;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Iterator;

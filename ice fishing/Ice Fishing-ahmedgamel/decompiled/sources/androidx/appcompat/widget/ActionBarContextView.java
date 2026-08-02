@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.bumptech.glide.g;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g.AbstractC4518a;
 import k.AbstractC4615b;
 import l.InterfaceC4639A;

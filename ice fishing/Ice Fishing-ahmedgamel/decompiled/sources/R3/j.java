@@ -1,6 +1,6 @@
 package R3;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* loaded from: classes2.dex */
 public final class j {

@@ -1,7 +1,7 @@
 package g;
 
 import android.R;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: g.a, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

@@ -1,6 +1,6 @@
 package z0;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* renamed from: z0.e, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

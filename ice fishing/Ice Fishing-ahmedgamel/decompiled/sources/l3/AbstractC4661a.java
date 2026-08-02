@@ -2,7 +2,7 @@ package l3;
 
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.LinearInterpolator;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import g0.C4519a;
 
 /* renamed from: l3.a, reason: case insensitive filesystem */

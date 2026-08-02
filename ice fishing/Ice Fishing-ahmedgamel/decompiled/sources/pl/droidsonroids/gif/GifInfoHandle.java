@@ -8,7 +8,7 @@ import android.os.Build;
 import android.system.Os;
 import android.util.Log;
 import com.anythink.core.common.d.j;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.File;
 import java.io.FileDescriptor;
 import java.io.FileNotFoundException;

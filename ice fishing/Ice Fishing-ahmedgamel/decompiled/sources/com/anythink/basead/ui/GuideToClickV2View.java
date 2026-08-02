@@ -12,7 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.anythink.basead.ui.WaveAnimImageView;
 import com.anythink.core.common.v.q;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public class GuideToClickV2View extends RelativeLayout {

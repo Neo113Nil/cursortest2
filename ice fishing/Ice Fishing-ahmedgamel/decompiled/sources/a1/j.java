@@ -2,7 +2,7 @@ package a1;
 
 import android.graphics.PointF;
 import com.google.android.gms.internal.ads.C2991bm;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import j1.AbstractC4603g;
 import java.util.List;
 import k1.C4629a;

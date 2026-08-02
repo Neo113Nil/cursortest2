@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import com.anythink.basead.exoplayer.b;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g.AbstractC4518a;
 import j4.g;
 import l.m;

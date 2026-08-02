@@ -7,7 +7,7 @@ import android.os.SystemClock;
 import android.util.Log;
 import com.bumptech.glide.i;
 import com.bumptech.glide.j;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;

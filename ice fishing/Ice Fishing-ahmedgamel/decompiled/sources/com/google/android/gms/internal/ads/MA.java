@@ -109,6 +109,10 @@ public abstract class MA {
     /* renamed from: I, reason: collision with root package name */
     public static final byte[] f26257I = {-19, -45, -11, 92, 26, 99, 18, 88, -42, -100, -9, -94, -34, -7, -34, 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16};
 
+    public /* synthetic */ MA(int i) {
+        this.f26264n = i;
+    }
+
     public static void A(Bundle bundle, String str, int i, boolean z3) {
         if (z3) {
             bundle.putInt(str, i);

@@ -22,8 +22,8 @@ import com.google.android.gms.internal.ads.AbstractC2968bG;
 import com.google.android.gms.internal.ads.C2993bo;
 import com.google.android.gms.internal.ads.OK;
 import com.google.android.gms.internal.consent_sdk.C4331i2;
-import com.icefishing.icefishingbigwin.GzopActiongamesActivity;
-import com.icefishing.icefishingbigwin.GzopAdventuregamesActivity;
+import com.icefishingapp.icefishing.GzopActiongamesActivity;
+import com.icefishingapp.icefishing.GzopAdventuregamesActivity;
 import java.util.HashMap;
 
 /* loaded from: classes.dex */

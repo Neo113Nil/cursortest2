@@ -57,7 +57,7 @@ import androidx.lifecycle.C0505x;
 import androidx.lifecycle.EnumC0497o;
 import androidx.lifecycle.InterfaceC0503v;
 import com.facebook.ads.AdError;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g.AbstractC4518a;
 import g1.C4523c;
 import java.lang.ref.WeakReference;

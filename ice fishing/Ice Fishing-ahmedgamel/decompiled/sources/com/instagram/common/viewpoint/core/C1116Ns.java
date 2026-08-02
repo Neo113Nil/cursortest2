@@ -18,16 +18,36 @@ public final class C1116Ns implements Serializable {
     public final String A09;
 
     public C1116Ns(C1115Nr c1115Nr) {
-        this.A06 = c1115Nr.A06;
-        this.A09 = c1115Nr.A09;
-        this.A08 = c1115Nr.A08;
-        this.A07 = c1115Nr.A07;
-        this.A04 = c1115Nr.A04;
-        this.A03 = c1115Nr.A03;
-        this.A05 = c1115Nr.A05;
-        this.A00 = c1115Nr.A00;
-        this.A02 = c1115Nr.A02;
-        this.A01 = c1115Nr.A01;
+        String str;
+        String str2;
+        String str3;
+        String str4;
+        String str5;
+        String str6;
+        String str7;
+        int i;
+        String str8;
+        String str9;
+        str = c1115Nr.A06;
+        this.A06 = str;
+        str2 = c1115Nr.A09;
+        this.A09 = str2;
+        str3 = c1115Nr.A08;
+        this.A08 = str3;
+        str4 = c1115Nr.A07;
+        this.A07 = str4;
+        str5 = c1115Nr.A04;
+        this.A04 = str5;
+        str6 = c1115Nr.A03;
+        this.A03 = str6;
+        str7 = c1115Nr.A05;
+        this.A05 = str7;
+        i = c1115Nr.A00;
+        this.A00 = i;
+        str8 = c1115Nr.A02;
+        this.A02 = str8;
+        str9 = c1115Nr.A01;
+        this.A01 = str9;
     }
 
     public final int A00() {

@@ -19,7 +19,7 @@ import android.view.WindowManager;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.TextView;
 import com.facebook.ads.AdError;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.lang.reflect.Method;
 import java.util.WeakHashMap;
 

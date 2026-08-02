@@ -9,7 +9,7 @@ import android.text.InputFilter;
 import android.util.AttributeSet;
 import android.widget.RadioButton;
 import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: m.B, reason: case insensitive filesystem */
 /* loaded from: classes.dex */

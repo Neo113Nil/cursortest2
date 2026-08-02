@@ -28,7 +28,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.anythink.expressad.advanced.js.NativeAdvancedJsUtils;
 import com.google.android.gms.ads.internal.overlay.AdOverlayInfoParcel;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;

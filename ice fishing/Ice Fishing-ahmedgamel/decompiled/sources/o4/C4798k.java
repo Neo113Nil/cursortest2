@@ -11,7 +11,7 @@ import com.facebook.ads.AdError;
 import com.facebook.ads.NativeAd;
 import com.facebook.ads.NativeAdListener;
 import com.facebook.ads.NativeAdView;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.util.Random;
 import pl.droidsonroids.gif.GifImageView;
 

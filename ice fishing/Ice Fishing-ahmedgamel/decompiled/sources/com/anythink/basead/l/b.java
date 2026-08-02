@@ -1,6 +1,6 @@
 package com.anythink.basead.l;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 
 /* loaded from: classes.dex */
 public final class b extends Exception {

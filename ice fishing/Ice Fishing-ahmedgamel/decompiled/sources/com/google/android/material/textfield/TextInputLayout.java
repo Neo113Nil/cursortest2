@@ -70,7 +70,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.anythink.basead.exoplayer.k.p;
 import com.google.android.material.internal.CheckableImageButton;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import d6.c;
 import java.util.Iterator;
 import java.util.LinkedHashSet;

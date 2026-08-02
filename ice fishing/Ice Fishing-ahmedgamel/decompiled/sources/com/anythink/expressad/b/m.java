@@ -8,7 +8,7 @@ import android.webkit.URLUtil;
 import com.anythink.expressad.b.l;
 import com.anythink.expressad.foundation.g.h.a;
 import com.anythink.expressad.foundation.h.u;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.net.URI;
 import java.util.concurrent.Semaphore;
 

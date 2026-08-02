@@ -1,6 +1,6 @@
 package u;
 
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import j4.g;
 import java.util.Arrays;
 

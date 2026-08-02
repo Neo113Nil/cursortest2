@@ -2,7 +2,7 @@ package h1;
 
 import android.graphics.Color;
 import android.graphics.PointF;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import i1.AbstractC4579a;
 import java.util.ArrayList;
 import u.AbstractC5049e;

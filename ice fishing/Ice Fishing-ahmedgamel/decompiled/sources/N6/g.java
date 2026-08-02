@@ -1,6 +1,6 @@
 package N6;
 
-import com.icefishing.icefishingbigwin.StartActivity;
+import com.icefishingapp.icefishing.StartActivity;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;

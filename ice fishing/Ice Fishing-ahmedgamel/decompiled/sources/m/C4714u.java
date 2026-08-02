@@ -28,7 +28,7 @@ import android.view.textclassifier.TextClassifier;
 import android.widget.EditText;
 import android.widget.TextView;
 import com.google.android.gms.internal.ads.C2712Ol;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import g1.C4522b;
 
 /* renamed from: m.u, reason: case insensitive filesystem */

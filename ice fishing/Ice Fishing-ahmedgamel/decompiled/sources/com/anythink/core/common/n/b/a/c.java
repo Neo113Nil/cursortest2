@@ -11,7 +11,7 @@ import com.anythink.core.common.n.b.x;
 import com.anythink.core.common.n.c.f;
 import com.anythink.core.common.n.c.o;
 import com.anythink.core.common.n.c.w;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.Closeable;
 import java.io.IOException;
 import java.io.InterruptedIOException;

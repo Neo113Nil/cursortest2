@@ -4,7 +4,7 @@ import Q7.i;
 import Q7.q;
 import com.anythink.basead.exoplayer.k.p;
 import com.anythink.core.common.d.j;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.io.EOFException;
 import java.text.Normalizer;
 import java.util.ArrayList;

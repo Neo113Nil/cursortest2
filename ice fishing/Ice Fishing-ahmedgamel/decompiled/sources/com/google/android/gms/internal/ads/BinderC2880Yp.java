@@ -27,7 +27,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.core.graphics.drawable.IconCompat;
 import com.anythink.expressad.advanced.js.NativeAdvancedJsUtils;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;

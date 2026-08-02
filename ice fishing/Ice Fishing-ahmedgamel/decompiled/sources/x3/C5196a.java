@@ -2,7 +2,7 @@ package x3;
 
 import L3.F;
 import android.content.Context;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: x3.a, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

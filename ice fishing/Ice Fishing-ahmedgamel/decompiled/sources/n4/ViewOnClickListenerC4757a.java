@@ -2,7 +2,7 @@ package n4;
 
 import android.view.View;
 import android.view.animation.AnimationUtils;
-import com.icefishing.icefishingbigwin.C5275R;
+import com.icefishingapp.icefishing.C5275R;
 
 /* renamed from: n4.a, reason: case insensitive filesystem */
 /* loaded from: classes2.dex */

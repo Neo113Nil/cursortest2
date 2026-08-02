@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import com.bumptech.glide.load.ImageHeaderParser$ImageType;
 import com.google.android.gms.internal.ads.C2941aq;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import i8.u;
 import i8.v;
 import i8.x;

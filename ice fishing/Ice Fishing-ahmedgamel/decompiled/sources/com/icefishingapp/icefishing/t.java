@@ -1,0 +1,12 @@
+package com.icefishingapp.icefishing;
+
+import android.content.DialogInterface;
+
+/* loaded from: classes2.dex */
+public final /* synthetic */ class t implements DialogInterface.OnClickListener {
+    @Override // android.content.DialogInterface.OnClickListener
+    public final void onClick(DialogInterface dialogInterface, int i) {
+        int i6 = MainActivity.f36809a1;
+        dialogInterface.dismiss();
+    }
+}

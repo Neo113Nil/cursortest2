@@ -9,7 +9,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 import com.anythink.core.api.ErrorCode;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;

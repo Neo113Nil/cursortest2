@@ -10,7 +10,7 @@ import S7.h0;
 import S7.p0;
 import S7.q0;
 import S7.w0;
-import com.icefishing.icefishingbigwin.AbstractC4404f;
+import com.icefishingapp.icefishing.AbstractC4404f;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.CancellationException;
