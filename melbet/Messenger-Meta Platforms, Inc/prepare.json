@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "apks": [
+    "com.facebook.orca.apk"
+  ],
+  "base_apk": "com.facebook.orca.apk",
+  "jadx": {
+    "ok": true,
+    "note": "self-prepared via apkeep+jadx after missing prepare commit; resources.arsc decode failed, sources decompiled with 209 errors; finished near 100%"
+  },
+  "source": "apkeep:apk-pure",
+  "analysis_files": [
+    "com.facebook.orca.apk",
+    "apk/com.facebook.orca.apk",
+    "meta.json",
+    "domain_checks.json",
+    "domain_checks.md",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/sources/",
+    "decompiled/sources/X/",
+    "decompiled/sources/android/",
+    "decompiled/sources/androidx/",
+    "decompiled/sources/com/",
+    "decompiled/sources/exoplayer2/",
+    "decompiled/sources/fx/",
+    "decompiled/sources/fxcache/",
+    "decompiled/sources/io/",
+    "decompiled/sources/kotlin/",
+    "decompiled/sources/kotlinx/",
+    "decompiled/sources/libraries/",
+    "decompiled/sources/lid_odin_android/",
+    "decompiled/sources/messenger_psi_odin_model_checker_android/",
+    "decompiled/sources/meta/",
+    "decompiled/sources/ner_odin_android/",
+    "decompiled/sources/okhttp3/",
+    "decompiled/sources/org/",
+    "decompiled/sources/psi_odin_android/",
+    "decompiled/sources/redex/",
+    "decompiled/sources/secondary/"
+  ]
+}
