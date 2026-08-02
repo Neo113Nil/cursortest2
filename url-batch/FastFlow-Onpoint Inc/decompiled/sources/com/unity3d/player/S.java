@@ -1,0 +1,17 @@
+package com.unity3d.player;
+
+/* loaded from: classes.dex */
+public final class S implements Runnable {
+    public final /* synthetic */ UnityPlayer a;
+
+    public S(UnityPlayer unityPlayer) {
+        this.a = unityPlayer;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        this.a.setupUnityToBePaused();
+        this.a.windowFocusChanged(false);
+        this.a.m_UnityPlayerLifecycleEvents.onUnityPlayerUnloaded();
+    }
+}

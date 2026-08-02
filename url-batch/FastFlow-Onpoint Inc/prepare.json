@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "apks": [
+    "com.onpoint.visionsaverapp.apk",
+    "config.armeabi_v7a.apk"
+  ],
+  "base_apk": "com.onpoint.visionsaverapp.apk",
+  "jadx": {
+    "ok": true,
+    "exit_code": 0,
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 158 (0%)\nINFO  - progress: 116 of 158 (73%)\n                                                             \nINFO  - done\n",
+    "stderr": "",
+    "out_dir": "/root/play-collector/загрузки/url-batch/FastFlow-Onpoint Inc/decompiled",
+    "skipped": false,
+    "base_apk": "com.onpoint.visionsaverapp.apk"
+  },
+  "analysis_files": [
+    "com.onpoint.visionsaverapp.xapk",
+    "apk/com.onpoint.visionsaverapp.apk",
+    "apk/config.armeabi_v7a.apk",
+    "meta.json",
+    "decompiled/resources/AndroidManifest.xml",
+    "decompiled/resources/res/values/strings.xml",
+    "decompiled/sources/",
+    "decompiled/sources/bitter/",
+    "decompiled/sources/com/",
+    "decompiled/sources/org/"
+  ]
+}

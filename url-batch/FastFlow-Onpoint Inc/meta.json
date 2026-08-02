@@ -1,0 +1,36 @@
+{
+  "app_id": "com.onpoint.visionsaverapp",
+  "title": "FastFlow",
+  "developer": "Onpoint Inc",
+  "developer_id": "6491268962016720038",
+  "icon": "https://play-lh.googleusercontent.com/VUZLrjwsGTnAG_fDY1k4cuve2_63y4cARbWdy8k5oEK3zg3kd700-WuLXQ8QNDBQSx-lnv31NvXBApTdfCHI",
+  "url": "https://play.google.com/store/apps/details?id=com.onpoint.visionsaverapp&hl=en&gl=us",
+  "score": null,
+  "released": "Oct 18, 2022",
+  "updated": "Jul 14, 2026",
+  "version": "Varies with device",
+  "summary": "Clean, sleek, and intuitive data usage calculator.",
+  "keyword": "url-batch",
+  "folder": "FastFlow-Onpoint Inc",
+  "path": "url-batch/FastFlow-Onpoint Inc",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "com.onpoint.visionsaverapp.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/url-batch/FastFlow-Onpoint Inc",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading com.onpoint.visionsaverapp...\ncom.onpoint.visionsaverapp downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading com.onpoint.visionsaverapp...\ncom.onpoint.visionsaverapp downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

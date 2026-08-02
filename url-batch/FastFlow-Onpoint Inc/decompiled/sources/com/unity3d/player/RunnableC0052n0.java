@@ -1,0 +1,33 @@
+package com.unity3d.player;
+
+import android.text.InputFilter;
+import android.widget.EditText;
+
+/* renamed from: com.unity3d.player.n0, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class RunnableC0052n0 implements Runnable {
+    public final /* synthetic */ int a;
+    public final /* synthetic */ UnityPlayerForActivityOrService b;
+
+    public RunnableC0052n0(UnityPlayerForActivityOrService unityPlayerForActivityOrService, int i) {
+        this.b = unityPlayerForActivityOrService;
+        this.a = i;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        AbstractC0060s abstractC0060s;
+        abstractC0060s = this.b.mSoftInput;
+        if (abstractC0060s != null) {
+            int i = this.a;
+            EditText editText = abstractC0060s.c;
+            if (editText != null) {
+                if (i > 0) {
+                    editText.setFilters(new InputFilter[]{new InputFilter.LengthFilter(i)});
+                } else {
+                    editText.setFilters(new InputFilter[0]);
+                }
+            }
+        }
+    }
+}
