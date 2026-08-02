@@ -5,6 +5,7 @@
     "config.arm64_v8a.apk",
     "config.en.apk",
     "config.mdpi.apk",
+    "com.icefishinglive.icefishing.apk",
     "com.icefishinggame.icefishinggamemultigames.apk",
     "com.icefishing.icefishingmoney.apk",
     "com.icefishing.icefishingbigwin.apk"
@@ -13,7 +14,7 @@
   "jadx": {
     "ok": true,
     "exit_code": 1,
-    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9189 (0%)\nINFO  - progress: 1374 of 9189 (14%)\nINFO  - progress: 1384 of 9189 (15%)\nINFO  - progress: 1412 of 9189 (15%)\nINFO  - progress: 1447 of 9189 (15%)\nINFO  - progress: 1523 of 9189 (16%)\nINFO  - progress: 2046 of 9189 (22%)\nINFO  - progress: 2479 of 9189 (26%)\nINFO  - progress: 2767 of 9189 (30%)\nINFO  - progress: 3068 of 9189 (33%)\nINFO  - progress: 3353 of 9189 (36%)\nINFO  - progress: 3592 of 9189 (39%)\nINFO  - progress: 3850 of 9189 (41%)\nINFO  - progress: 4290 of 9189 (46%)\nINFO  - progress: 4525 of 9189 (49%)\nINFO  - progress: 4805 of 9189 (52%)\nINFO  - progress: 5032 of 9189 (54%)\nINFO  - progress: 5225 of 9189 (56%)\nINFO  - progress: 5427 of 9189 (59%)\nINFO  - progress: 5688 of 9189 (61%)\nINFO  - progress: 5958 of 9189 (64%)\nINFO  - progress: 6232 of 9189 (67%)\nINFO  - progress: 6428 of 9189 (69%)\nINFO  - progress: 6585 of 9189 (71%)\nINFO  - progress: 6797 of 9189 (73%)\nINFO  - progress: 6923 of 9189 (75%)\nINFO  - progress: 7140 of 9189 (77%)\nINFO  - progress: 7326 of 9189 (79%)\nINFO  - progress: 7694 of 9189 (83%)\nINFO  - progress: 7965 of 9189 (86%)\nINFO  - progress: 8337 of 9189 (90%)\nINFO  - progress: 8764 of 9189 (95%)\nINFO  - progress: 8999 of 9189 (97%)\nINFO  - progress: 9144 of 9189 (99%)\n                                                             \nERROR - finished with errors, count: 43\n",
+    "stdout": "INFO  - loading ...\nINFO  - processing ...\nINFO  - progress: 0 of 9189 (0%)\nINFO  - progress: 1374 of 9189 (14%)\nINFO  - progress: 1416 of 9189 (15%)\nINFO  - progress: 1476 of 9189 (16%)\nINFO  - progress: 1766 of 9189 (19%)\nINFO  - progress: 2113 of 9189 (22%)\nINFO  - progress: 2758 of 9189 (30%)\nINFO  - progress: 3012 of 9189 (32%)\nINFO  - progress: 3350 of 9189 (36%)\nINFO  - progress: 3657 of 9189 (39%)\nINFO  - progress: 4018 of 9189 (43%)\nINFO  - progress: 4406 of 9189 (47%)\nINFO  - progress: 4692 of 9189 (51%)\nINFO  - progress: 4984 of 9189 (54%)\nINFO  - progress: 5231 of 9189 (56%)\nINFO  - progress: 5526 of 9189 (60%)\nINFO  - progress: 5904 of 9189 (64%)\nINFO  - progress: 6196 of 9189 (67%)\nINFO  - progress: 6427 of 9189 (69%)\nINFO  - progress: 6662 of 9189 (72%)\nINFO  - progress: 6883 of 9189 (74%)\nINFO  - progress: 7029 of 9189 (76%)\nINFO  - progress: 7210 of 9189 (78%)\nINFO  - progress: 7589 of 9189 (82%)\nINFO  - progress: 7905 of 9189 (86%)\nINFO  - progress: 8155 of 9189 (88%)\nINFO  - progress: 8580 of 9189 (93%)\nINFO  - progress: 8948 of 9189 (97%)\nINFO  - progress: 9094 of 9189 (98%)\n                                                             \nERROR - finished with errors, count: 21\n",
     "stderr": "",
     "out_dir": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ahmedgamel/decompiled",
     "skipped": false,
@@ -21,12 +22,14 @@
   },
   "analysis_files": [
     "com.icefishingapp.icefishing.xapk",
+    "com.icefishinglive.icefishing.xapk",
     "com.icefishinggame.icefishinggamemultigames.xapk",
     "com.icefishing.icefishingmoney.xapk",
     "com.icefishing.icefishingbigwin.xapk",
     "apk/com.icefishing.icefishingmoney.apk",
     "apk/config.arm64_v8a.apk",
     "apk/config.mdpi.apk",
+    "apk/com.icefishinglive.icefishing.apk",
     "apk/com.icefishing.icefishingbigwin.apk",
     "apk/config.en.apk",
     "apk/com.icefishingapp.icefishing.apk",

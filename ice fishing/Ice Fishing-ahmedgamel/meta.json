@@ -1,16 +1,16 @@
 {
-  "app_id": "com.icefishingapp.icefishing",
+  "app_id": "com.icefishinglive.icefishing",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/eFHnRkxbv_BOzbOjCwLe430c8daJ04w3ucLQ3xh566HA_1uF-ds2bpfia_FRCpByXpr16Iyuo6m7PJZEJymI_g",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishingapp.icefishing&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/Pos09SuDnwRYQ-BFjzFhW8Dndo1sTMb4ImBxA65iV-qJpLf1V5G12lwoCcPCvz0Nc4uM1blluIcmkUlcM9qu1Q",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishinglive.icefishing&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Ice Fishing puzzle challenge on a fragile frozen trail",
+  "summary": "Melt ice fast and climb through tougher levels each run.",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
@@ -20,7 +20,8 @@
     "com.icefishing.icefishingbigwin.xapk",
     "com.icefishing.icefishingmoney.xapk",
     "com.icefishingapp.icefishing.xapk",
-    "com.icefishinggame.icefishinggamemultigames.xapk"
+    "com.icefishinggame.icefishinggamemultigames.xapk",
+    "com.icefishinglive.icefishing.xapk"
   ],
   "target": "/root/play-collector/загрузки/ice fishing/Ice Fishing-ahmedgamel",
   "attempts": [
@@ -29,11 +30,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishingapp.icefishing...\ncom.icefishingapp.icefishing downloaded successfully!\n",
+      "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishingapp.icefishing...\ncom.icefishingapp.icefishing downloaded successfully!\n",
+  "stdout": "Downloading com.icefishinglive.icefishing...\ncom.icefishinglive.icefishing downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }
