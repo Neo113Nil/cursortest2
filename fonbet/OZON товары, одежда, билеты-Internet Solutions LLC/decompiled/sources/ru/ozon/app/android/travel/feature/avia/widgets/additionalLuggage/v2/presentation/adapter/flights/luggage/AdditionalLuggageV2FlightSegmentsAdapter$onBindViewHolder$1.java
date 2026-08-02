@@ -1,0 +1,37 @@
+package ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggage.v2.presentation.adapter.flights.luggage;
+
+import androidx.recyclerview.widget.RecyclerView;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.AbstractC7737t;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggage.v2.presentation.AdditionalLuggageV2VO;
+
+@Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes10.dex */
+final class AdditionalLuggageV2FlightSegmentsAdapter$onBindViewHolder$1 extends AbstractC7737t implements Function1<Boolean, Unit> {
+    final /* synthetic */ RecyclerView.C $holder;
+    final /* synthetic */ AdditionalLuggageV2VO.LuggageOptionItem $item;
+    final /* synthetic */ AdditionalLuggageV2FlightSegmentsAdapter this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    AdditionalLuggageV2FlightSegmentsAdapter$onBindViewHolder$1(AdditionalLuggageV2FlightSegmentsAdapter additionalLuggageV2FlightSegmentsAdapter, RecyclerView.C c11, AdditionalLuggageV2VO.LuggageOptionItem luggageOptionItem) {
+        super(1);
+        this.this$0 = additionalLuggageV2FlightSegmentsAdapter;
+        this.$holder = c11;
+        this.$item = luggageOptionItem;
+    }
+
+    @Override // kotlin.jvm.functions.Function1
+    public /* bridge */ /* synthetic */ Unit invoke(Boolean bool) {
+        invoke(bool.booleanValue());
+        return Unit.f71690a;
+    }
+
+    public final void invoke(boolean z11) {
+        Function2 function2;
+        function2 = this.this$0.onLuggageOptionClicked;
+        function2.invoke(Integer.valueOf(this.$holder.getAdapterPosition()), this.$item);
+    }
+}

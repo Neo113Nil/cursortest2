@@ -1,0 +1,37 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "addItem",
+        "model": {
+          "item": {
+            "id": "newGroup",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 165637445255824,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chatGroup",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "name": "Новая группа",
+                    "chatType": "Support",
+                    "icon": {
+                      "image": "ic_m_plane",
+                      "tintColor": "textPrimary"
+                    },
+                    "unreadCount": "10"
+                  }
+                }
+              ]
+            }
+          },
+          "place": "group"
+        }
+      }
+    ]
+  }
+}

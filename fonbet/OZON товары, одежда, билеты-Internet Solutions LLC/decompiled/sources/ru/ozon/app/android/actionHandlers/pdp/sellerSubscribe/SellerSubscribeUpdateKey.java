@@ -1,0 +1,31 @@
+package ru.ozon.app.android.actionHandlers.pdp.sellerSubscribe;
+
+import A00.a;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+
+@Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\t\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0004¢\u0006\u0004\b\u0006\u0010\u0007R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\b\u001a\u0004\b\t\u0010\nR\u0017\u0010\u0005\u001a\u00020\u00048\u0006¢\u0006\f\n\u0004\b\u0005\u0010\u000b\u001a\u0004\b\u0005\u0010\f¨\u0006\r"}, d2 = {"Lru/ozon/app/android/actionHandlers/pdp/sellerSubscribe/SellerSubscribeUpdateKey;", "LA00/a$J$a;", "", "sellerId", "", "isSubscribed", "<init>", "(Ljava/lang/String;Z)V", "Ljava/lang/String;", "getSellerId", "()Ljava/lang/String;", "Z", "()Z", "action-handlers_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public final class SellerSubscribeUpdateKey implements a.J.InterfaceC0007a {
+    private final boolean isSubscribed;
+
+    @NotNull
+    private final String sellerId;
+
+    public SellerSubscribeUpdateKey(@NotNull String sellerId, boolean z11) {
+        Intrinsics.checkNotNullParameter(sellerId, "sellerId");
+        this.sellerId = sellerId;
+        this.isSubscribed = z11;
+    }
+
+    @NotNull
+    public final String getSellerId() {
+        return this.sellerId;
+    }
+
+    /* renamed from: isSubscribed, reason: from getter */
+    public final boolean getIsSubscribed() {
+        return this.isSubscribed;
+    }
+}

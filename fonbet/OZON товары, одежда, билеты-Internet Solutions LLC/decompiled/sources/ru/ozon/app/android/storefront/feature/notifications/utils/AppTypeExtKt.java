@@ -1,0 +1,15 @@
+package ru.ozon.app.android.storefront.feature.notifications.utils;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.utils.AppType;
+
+@Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\u001a\f\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0000¨\u0006\u0003"}, d2 = {"isPushHeaderEnabled", "", "Lru/ozon/app/android/utils/AppType;", "notifications_prodGoogleAllVendorsRelease"}, k = 2, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public final class AppTypeExtKt {
+    public static final boolean isPushHeaderEnabled(@NotNull AppType appType) {
+        Intrinsics.checkNotNullParameter(appType, "<this>");
+        return appType == AppType.f94580BX || appType == AppType.SELECT;
+    }
+}

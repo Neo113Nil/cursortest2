@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="32dp"
+    android:width="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="32">
+    <path
+        android:name="toggle_track"
+        android:fillColor="?attr/bgActionPrimary"
+        android:pathData="M14,2L30,2A14,14 0,0 1,44 16L44,16A14,14 0,0 1,30 30L14,30A14,14 0,0 1,0 16L0,16A14,14 0,0 1,14 2z"/>
+    <group android:name="toggle_thumb_group">
+        <path
+            android:name="toggle_thumb_path"
+            android:fillColor="?attr/graphicLightKey"
+            android:pathData="M30,28C36.627,28 42,22.627 42,16C42,9.373 36.627,4 30,4C23.373,4 18,9.373 18,16C18,22.627 23.373,28 30,28Z"
+            android:fillType="evenOdd"/>
+        <path
+            android:name="toggle_thumb_path_dynamic"
+            android:fillColor="?attr/graphicPrimaryDynamic"
+            android:pathData="M30,28C36.627,28 42,22.627 42,16C42,9.373 36.627,4 30,4C23.373,4 18,9.373 18,16C18,22.627 23.373,28 30,28Z"
+            android:fillType="evenOdd"/>
+        <group android:name="toggle_thumb_icon_group">
+            <path
+                android:name="toggle_thumb_icon_path"
+                android:fillColor="?attr/textTertiaryOnLight"
+                android:pathData="M26,14C26,11.791 27.791,10 30,10C32.209,10 34,11.791 34,14C34.552,14 35,14.448 35,15V18C35,19.657 33.657,21 32,21H28C26.343,21 25,19.657 25,18V15C25,14.448 25.448,14 26,14ZM28,14H32C32,12.895 31.105,12 30,12C28.895,12 28,12.895 28,14ZM31,17C31,16.448 30.552,16 30,16C29.448,16 29,16.448 29,17C29,17.552 29.448,18 30,18C30.552,18 31,17.552 31,17Z"/>
+        </group>
+    </group>
+</vector>

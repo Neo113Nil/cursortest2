@@ -1,0 +1,149 @@
+package ru.ozon.fintech.features.camera.presentation.camera;
+
+import Ae.InterfaceC2395h;
+import Ae.InterfaceC2397i;
+import Sc.s;
+import androidx.fragment.app.ComponentCallbacksC5392m;
+import androidx.lifecycle.AbstractC5434v;
+import androidx.lifecycle.C5412d0;
+import androidx.lifecycle.J;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.d;
+import kotlin.coroutines.jvm.internal.e;
+import kotlin.coroutines.jvm.internal.j;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import ru.ozon.fintech.features.camera.databinding.CameraFragmentBinding;
+import ru.ozon.fintech.features.camera.databinding.CameraViewLayoutBinding;
+import ru.ozon.fintech.features.camera.presentation.camera.CameraViewModel;
+import xe.M;
+import xe.N;
+
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Lxe/M;", "", "<anonymous>", "(Lxe/M;)V"}, k = 3, mv = {2, 0, 0})
+@e(c = "ru.ozon.fintech.features.camera.presentation.camera.CameraFragment$onViewCreated$lambda$27$$inlined$observe$5", f = "CameraFragment.kt", l = {33}, m = "invokeSuspend")
+/* loaded from: classes3.dex */
+public final class CameraFragment$onViewCreated$lambda$27$$inlined$observe$5 extends j implements Function2<M, d<? super Unit>, Object> {
+    final /* synthetic */ ComponentCallbacksC5392m $fragment;
+    final /* synthetic */ InterfaceC2395h $this_observe;
+    private /* synthetic */ Object L$0;
+    int label;
+    final /* synthetic */ CameraFragment this$0;
+
+    @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0002\u001a\u00020\u0001*\u00020\u0000H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"Lxe/M;", "", "<anonymous>", "(Lxe/M;)V"}, k = 3, mv = {2, 0, 0})
+    @e(c = "ru.ozon.fintech.features.camera.presentation.camera.CameraFragment$onViewCreated$lambda$27$$inlined$observe$5$1", f = "CameraFragment.kt", l = {34}, m = "invokeSuspend")
+    /* renamed from: ru.ozon.fintech.features.camera.presentation.camera.CameraFragment$onViewCreated$lambda$27$$inlined$observe$5$1, reason: invalid class name */
+    public static final class AnonymousClass1 extends j implements Function2<M, d<? super Unit>, Object> {
+        final /* synthetic */ InterfaceC2395h $this_observe;
+        int label;
+        final /* synthetic */ CameraFragment this$0;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        public AnonymousClass1(InterfaceC2395h interfaceC2395h, d dVar, CameraFragment cameraFragment) {
+            super(2, dVar);
+            this.$this_observe = interfaceC2395h;
+            this.this$0 = cameraFragment;
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final d<Unit> create(Object obj, d<?> dVar) {
+            return new AnonymousClass1(this.$this_observe, dVar, this.this$0);
+        }
+
+        @Override // kotlin.coroutines.jvm.internal.a
+        public final Object invokeSuspend(Object obj) {
+            Wc.a aVar = Wc.a.COROUTINE_SUSPENDED;
+            int i11 = this.label;
+            if (i11 == 0) {
+                s.b(obj);
+                InterfaceC2395h interfaceC2395h = this.$this_observe;
+                final CameraFragment cameraFragment = this.this$0;
+                InterfaceC2397i interfaceC2397i = new InterfaceC2397i() { // from class: ru.ozon.fintech.features.camera.presentation.camera.CameraFragment$onViewCreated$lambda$27$.inlined.observe.5.1.1
+                    /* JADX WARN: Code restructure failed: missing block: B:3:0x000e, code lost:
+                    
+                        r4 = r1.binding;
+                     */
+                    /* JADX WARN: Multi-variable type inference failed */
+                    @Override // Ae.InterfaceC2397i
+                    /*
+                        Code decompiled incorrectly, please refer to instructions dump.
+                    */
+                    public final Object emit(T t2, d<? super Unit> dVar) {
+                        CameraViewModel viewModel;
+                        CameraFragmentBinding cameraFragmentBinding;
+                        CameraViewLayoutBinding cameraViewLayoutBinding;
+                        CameraViewModel.ScannerBorderPhotoState scannerBorderPhotoState = (CameraViewModel.ScannerBorderPhotoState) t2;
+                        viewModel = CameraFragment.this.getViewModel();
+                        if (viewModel.isQrScannerFlow() && cameraFragmentBinding != null && (cameraViewLayoutBinding = cameraFragmentBinding.cameraLayout) != null) {
+                            cameraViewLayoutBinding.qrView.updateBoarderStrokeColor(scannerBorderPhotoState.getColor());
+                            boolean z11 = scannerBorderPhotoState != CameraViewModel.ScannerBorderPhotoState.NOT_FOUND;
+                            cameraViewLayoutBinding.captureButton.setEnabled(z11);
+                            cameraViewLayoutBinding.captureButton.setActivated(z11);
+                        }
+                        return Unit.f71690a;
+                    }
+                };
+                this.label = 1;
+                if (interfaceC2395h.collect(interfaceC2397i, this) == aVar) {
+                    return aVar;
+                }
+            } else {
+                if (i11 != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                s.b(obj);
+            }
+            return Unit.f71690a;
+        }
+
+        @Override // kotlin.jvm.functions.Function2
+        public final Object invoke(M m11, d<? super Unit> dVar) {
+            return ((AnonymousClass1) create(m11, dVar)).invokeSuspend(Unit.f71690a);
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CameraFragment$onViewCreated$lambda$27$$inlined$observe$5(ComponentCallbacksC5392m componentCallbacksC5392m, InterfaceC2395h interfaceC2395h, d dVar, CameraFragment cameraFragment) {
+        super(2, dVar);
+        this.$fragment = componentCallbacksC5392m;
+        this.$this_observe = interfaceC2395h;
+        this.this$0 = cameraFragment;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.a
+    public final d<Unit> create(Object obj, d<?> dVar) {
+        CameraFragment$onViewCreated$lambda$27$$inlined$observe$5 cameraFragment$onViewCreated$lambda$27$$inlined$observe$5 = new CameraFragment$onViewCreated$lambda$27$$inlined$observe$5(this.$fragment, this.$this_observe, dVar, this.this$0);
+        cameraFragment$onViewCreated$lambda$27$$inlined$observe$5.L$0 = obj;
+        return cameraFragment$onViewCreated$lambda$27$$inlined$observe$5;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.a
+    public final Object invokeSuspend(Object obj) {
+        Wc.a aVar = Wc.a.COROUTINE_SUSPENDED;
+        int i11 = this.label;
+        if (i11 == 0) {
+            s.b(obj);
+            if (N.f((M) this.L$0)) {
+                J viewLifecycleOwner = this.$fragment.getViewLifecycleOwner();
+                Intrinsics.checkNotNullExpressionValue(viewLifecycleOwner, "getViewLifecycleOwner(...)");
+                AbstractC5434v.b bVar = AbstractC5434v.b.STARTED;
+                AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.$this_observe, null, this.this$0);
+                this.label = 1;
+                if (C5412d0.b(viewLifecycleOwner, bVar, anonymousClass1, this) == aVar) {
+                    return aVar;
+                }
+            }
+            return Unit.f71690a;
+        }
+        if (i11 != 1) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        s.b(obj);
+        return Unit.f71690a;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(M m11, d<? super Unit> dVar) {
+        return ((CameraFragment$onViewCreated$lambda$27$$inlined$observe$5) create(m11, dVar)).invokeSuspend(Unit.f71690a);
+    }
+}

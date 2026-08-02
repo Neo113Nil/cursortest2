@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/highlightProductContainer"
+    android:layout_width="36dp"
+    android:layout_height="36dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_gravity="start|bottom"
+        android:id="@+id/highlightProductImage"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:elevation="0dp"
+        android:outlineProvider="background"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/highlightIcon"
+        android:visibility="gone"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@null"
+        android:layout_marginEnd="2dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="end|top"
+        android:id="@+id/highlightProductBadgeContainer"
+        android:visibility="gone"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:cardCornerRadius="12dp">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/highlightProductBadge"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:contentDescription="@null"/>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,87 @@
+package spay.sdk.data.dto.response.binding;
+
+import J8.b;
+import V.e;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import spay.sdk.data.dto.response.DataDtoInterface;
+import spay.sdk.domain.model.response.binding.PayBindingResponseBody;
+
+@Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\b\u0080\b\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0019\u0012\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0004¢\u0006\u0002\u0010\u0006J\u000b\u0010\n\u001a\u0004\u0018\u00010\u0004HÆ\u0003J\u000b\u0010\u000b\u001a\u0004\u0018\u00010\u0004HÆ\u0003J!\u0010\f\u001a\u00020\u00002\n\b\u0002\u0010\u0003\u001a\u0004\u0018\u00010\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0004HÆ\u0001J\u0013\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010HÖ\u0003J\t\u0010\u0011\u001a\u00020\u0012HÖ\u0001J\b\u0010\u0013\u001a\u00020\u0002H\u0016J\t\u0010\u0014\u001a\u00020\u0004HÖ\u0001R\u0018\u0010\u0005\u001a\u0004\u0018\u00010\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0018\u0010\u0003\u001a\u0004\u0018\u00010\u00048\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\b¨\u0006\u0015"}, d2 = {"Lspay/sdk/data/dto/response/binding/PayBindingResponseBodyDto;", "Lspay/sdk/data/dto/response/DataDtoInterface;", "Lspay/sdk/domain/model/response/binding/PayBindingResponseBody;", "result", "", "formUrl", "(Ljava/lang/String;Ljava/lang/String;)V", "getFormUrl", "()Ljava/lang/String;", "getResult", "component1", "component2", "copy", "equals", "", "other", "", "hashCode", "", "toModel", "toString", "SPaySDK_baseRelease"}, k = 1, mv = {1, 8, 0}, xi = 48)
+/* loaded from: classes4.dex */
+public final /* data */ class PayBindingResponseBodyDto implements DataDtoInterface<PayBindingResponseBody> {
+
+    @b("formUrl")
+    private final String formUrl;
+
+    @b("result")
+    private final String result;
+
+    public PayBindingResponseBodyDto(String str, String str2) {
+        this.result = str;
+        this.formUrl = str2;
+    }
+
+    public static /* synthetic */ PayBindingResponseBodyDto copy$default(PayBindingResponseBodyDto payBindingResponseBodyDto, String str, String str2, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            str = payBindingResponseBodyDto.result;
+        }
+        if ((i11 & 2) != 0) {
+            str2 = payBindingResponseBodyDto.formUrl;
+        }
+        return payBindingResponseBodyDto.copy(str, str2);
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final String getResult() {
+        return this.result;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final String getFormUrl() {
+        return this.formUrl;
+    }
+
+    @NotNull
+    public final PayBindingResponseBodyDto copy(String result, String formUrl) {
+        return new PayBindingResponseBodyDto(result, formUrl);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof PayBindingResponseBodyDto)) {
+            return false;
+        }
+        PayBindingResponseBodyDto payBindingResponseBodyDto = (PayBindingResponseBodyDto) other;
+        return Intrinsics.d(this.result, payBindingResponseBodyDto.result) && Intrinsics.d(this.formUrl, payBindingResponseBodyDto.formUrl);
+    }
+
+    public final String getFormUrl() {
+        return this.formUrl;
+    }
+
+    public final String getResult() {
+        return this.result;
+    }
+
+    public int hashCode() {
+        String str = this.result;
+        int hashCode = (str == null ? 0 : str.hashCode()) * 31;
+        String str2 = this.formUrl;
+        return hashCode + (str2 != null ? str2.hashCode() : 0);
+    }
+
+    @NotNull
+    public String toString() {
+        return e.a("PayBindingResponseBodyDto(result=", this.result, ", formUrl=", this.formUrl, ")");
+    }
+
+    @Override // spay.sdk.data.dto.response.DataDtoInterface
+    @NotNull
+    public PayBindingResponseBody toModel() {
+        return new PayBindingResponseBody(this.result, this.formUrl);
+    }
+}

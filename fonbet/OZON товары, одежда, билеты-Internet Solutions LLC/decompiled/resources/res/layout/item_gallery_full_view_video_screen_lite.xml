@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/videoBackgroundIv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.app.android.pdpvideomolecule.presentation.view.VideoMoleculeLiteView
+        android:layout_gravity="center"
+        android:id="@+id/ozonVideoMoleculeV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_gravity="end|center_vertical"
+        android:id="@+id/ozonVideoVolumeIv"
+        android:background="@drawable/ic_gradieng_shadow"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:foregroundGravity="center"
+        android:layout_marginEnd="16dp"
+        android:foregroundTint="?attr/textLightKey"/>
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/ozonVideoPb"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        style="?android:attr/progressBarStyleInverse"/>
+</FrameLayout>

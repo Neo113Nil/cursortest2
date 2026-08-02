@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/currency"
+        app:layout_constraintEnd_toStartOf="@+id/rightIconCenter"
+        app:layout_constraintStart_toStartOf="@+id/currency"
+        app:layout_constraintTop_toTopOf="@+id/currency"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:ellipsize="end"
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/rightIcon"
+        app:layout_constraintEnd_toStartOf="@+id/rightIcon"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rightIcon"
+        style="@style/Text.Body.Large"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/rightIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currency"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/rightIconCenter"
+        android:visibility="invisible"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rightIcon"
+        app:layout_constraintEnd_toEndOf="@+id/rightIcon"
+        app:layout_constraintStart_toStartOf="@+id/rightIcon"
+        app:layout_constraintTop_toTopOf="@+id/rightIcon"/>
+</merge>

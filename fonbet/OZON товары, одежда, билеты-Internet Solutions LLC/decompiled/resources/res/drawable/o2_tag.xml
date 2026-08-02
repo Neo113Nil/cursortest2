@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:state_selected="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/tag_corner_radius"/>
+            <solid android:color="?attr/bgPrimary"/>
+        </shape>
+    </item>
+    <item
+        android:state_enabled="true"
+        android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/tag_corner_radius"/>
+                    <solid android:color="?attr/bgPrimary"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ripple_rect_round_bluewave_tag"/>
+        </layer-list>
+    </item>
+    <item
+        android:state_enabled="false"
+        android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/tag_corner_radius"/>
+            <solid android:color="?attr/oz_semantic_accent_primary_light"/>
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/tag_corner_radius"/>
+                    <solid android:color="?attr/bgActionPrimary"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ripple_rect_round_blue_whitewave_tag"/>
+        </layer-list>
+    </item>
+</selector>

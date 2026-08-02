@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/toursHotelInfoRoot"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:id="@+id/toursHotelInfoTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAppearance="@style/TextStyle.Body.M"
+        android:textColor="?attr/textSecondary"
+        android:id="@+id/toursHotelInfoDescriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/toursHotelInfoFeaturesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:flexDirection="row"
+        app:flexWrap="wrap"/>
+    <ru.ozon.uni.atoms.af.layout.VerticalAtomsLayout
+        android:id="@+id/toursHotelInfoCellLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

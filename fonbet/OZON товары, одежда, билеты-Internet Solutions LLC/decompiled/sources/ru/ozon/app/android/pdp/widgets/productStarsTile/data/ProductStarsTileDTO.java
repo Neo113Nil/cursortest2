@@ -1,0 +1,257 @@
+package ru.ozon.app.android.pdp.widgets.productStarsTile.data;
+
+import D3.g;
+import Ns.b;
+import Ul.C4070a;
+import com.squareup.moshi.j;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.android.tokenized.model.TokenizedTrackingInfo;
+import ru.ozon.app.android.ugc.widgets.selectionItemForm.data.SelectionItemFormDTO;
+import ru.ozon.uni.atoms.data.icon.IconDTO;
+import ru.ozon.uni.atoms.data.text.TextDTO;
+
+@j(generateAdapter = true)
+@Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0081\b\u0018\u00002\u00020\u0001:\u0001\u001eB7\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0014\u0010\u0007\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\t\u0018\u00010\b¢\u0006\u0004\b\n\u0010\u000bJ\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\u0017\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\t\u0018\u00010\bHÆ\u0003JA\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0016\b\u0002\u0010\u0007\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\t\u0018\u00010\bHÆ\u0001J\u0013\u0010\u0018\u001a\u00020\u00192\b\u0010\u001a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001b\u001a\u00020\u001cHÖ\u0001J\t\u0010\u001d\u001a\u00020\u0006HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\rR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u001f\u0010\u0007\u001a\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\t\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012¨\u0006\u001f"}, d2 = {"Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO;", "", "firstBlock", "Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO$BlockDTO;", "secondBlock", "backgroundColor", "", "trackingInfo", "", "Lru/ozon/android/tokenized/model/TokenizedTrackingInfo;", "<init>", "(Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO$BlockDTO;Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO$BlockDTO;Ljava/lang/String;Ljava/util/Map;)V", "getFirstBlock", "()Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO$BlockDTO;", "getSecondBlock", "getBackgroundColor", "()Ljava/lang/String;", "getTrackingInfo", "()Ljava/util/Map;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "", "toString", "BlockDTO", "pdp_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final /* data */ class ProductStarsTileDTO {
+    public static final int $stable = 8;
+    private final String backgroundColor;
+
+    @NotNull
+    private final BlockDTO firstBlock;
+
+    @NotNull
+    private final BlockDTO secondBlock;
+    private final Map<String, TokenizedTrackingInfo> trackingInfo;
+
+    @j(generateAdapter = true)
+    @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B)\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b¢\u0006\u0004\b\t\u0010\nJ\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u0006HÆ\u0003J\t\u0010\u0015\u001a\u00020\bHÆ\u0003J3\u0010\u0016\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010\u0007\u001a\u00020\bHÆ\u0001J\u0013\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001J\t\u0010\u001c\u001a\u00020\u0006HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\fR\u0013\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011¨\u0006\u001d"}, d2 = {"Lru/ozon/app/android/pdp/widgets/productStarsTile/data/ProductStarsTileDTO$BlockDTO;", "", SelectionItemFormDTO.TITLE_FIELD_NAME, "Lru/ozon/uni/atoms/data/text/TextDTO;", "subtitle", "backgroundColor", "", "icon", "Lru/ozon/uni/atoms/data/icon/IconDTO;", "<init>", "(Lru/ozon/uni/atoms/data/text/TextDTO;Lru/ozon/uni/atoms/data/text/TextDTO;Ljava/lang/String;Lru/ozon/uni/atoms/data/icon/IconDTO;)V", "getTitle", "()Lru/ozon/uni/atoms/data/text/TextDTO;", "getSubtitle", "getBackgroundColor", "()Ljava/lang/String;", "getIcon", "()Lru/ozon/uni/atoms/data/icon/IconDTO;", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "", "toString", "pdp_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    public static final /* data */ class BlockDTO {
+        public static final int $stable = IconDTO.$stable;
+        private final String backgroundColor;
+
+        @NotNull
+        private final IconDTO icon;
+
+        @NotNull
+        private final TextDTO subtitle;
+
+        @NotNull
+        private final TextDTO title;
+
+        public BlockDTO(@NotNull TextDTO title, @NotNull TextDTO subtitle, String str, @NotNull IconDTO icon) {
+            Intrinsics.checkNotNullParameter(title, "title");
+            Intrinsics.checkNotNullParameter(subtitle, "subtitle");
+            Intrinsics.checkNotNullParameter(icon, "icon");
+            this.title = title;
+            this.subtitle = subtitle;
+            this.backgroundColor = str;
+            this.icon = icon;
+        }
+
+        public static /* synthetic */ BlockDTO copy$default(BlockDTO blockDTO, TextDTO textDTO, TextDTO textDTO2, String str, IconDTO iconDTO, int i11, Object obj) {
+            if ((i11 & 1) != 0) {
+                textDTO = blockDTO.title;
+            }
+            if ((i11 & 2) != 0) {
+                textDTO2 = blockDTO.subtitle;
+            }
+            if ((i11 & 4) != 0) {
+                str = blockDTO.backgroundColor;
+            }
+            if ((i11 & 8) != 0) {
+                iconDTO = blockDTO.icon;
+            }
+            return blockDTO.copy(textDTO, textDTO2, str, iconDTO);
+        }
+
+        @NotNull
+        /* renamed from: component1, reason: from getter */
+        public final TextDTO getTitle() {
+            return this.title;
+        }
+
+        @NotNull
+        /* renamed from: component2, reason: from getter */
+        public final TextDTO getSubtitle() {
+            return this.subtitle;
+        }
+
+        /* renamed from: component3, reason: from getter */
+        public final String getBackgroundColor() {
+            return this.backgroundColor;
+        }
+
+        @NotNull
+        /* renamed from: component4, reason: from getter */
+        public final IconDTO getIcon() {
+            return this.icon;
+        }
+
+        @NotNull
+        public final BlockDTO copy(@NotNull TextDTO title, @NotNull TextDTO subtitle, String backgroundColor, @NotNull IconDTO icon) {
+            Intrinsics.checkNotNullParameter(title, "title");
+            Intrinsics.checkNotNullParameter(subtitle, "subtitle");
+            Intrinsics.checkNotNullParameter(icon, "icon");
+            return new BlockDTO(title, subtitle, backgroundColor, icon);
+        }
+
+        public boolean equals(Object other) {
+            if (this == other) {
+                return true;
+            }
+            if (!(other instanceof BlockDTO)) {
+                return false;
+            }
+            BlockDTO blockDTO = (BlockDTO) other;
+            return Intrinsics.d(this.title, blockDTO.title) && Intrinsics.d(this.subtitle, blockDTO.subtitle) && Intrinsics.d(this.backgroundColor, blockDTO.backgroundColor) && Intrinsics.d(this.icon, blockDTO.icon);
+        }
+
+        public final String getBackgroundColor() {
+            return this.backgroundColor;
+        }
+
+        @NotNull
+        public final IconDTO getIcon() {
+            return this.icon;
+        }
+
+        @NotNull
+        public final TextDTO getSubtitle() {
+            return this.subtitle;
+        }
+
+        @NotNull
+        public final TextDTO getTitle() {
+            return this.title;
+        }
+
+        public int hashCode() {
+            int a11 = b.a(this.subtitle, this.title.hashCode() * 31, 31);
+            String str = this.backgroundColor;
+            return this.icon.hashCode() + ((a11 + (str == null ? 0 : str.hashCode())) * 31);
+        }
+
+        @NotNull
+        public String toString() {
+            TextDTO textDTO = this.title;
+            TextDTO textDTO2 = this.subtitle;
+            String str = this.backgroundColor;
+            IconDTO iconDTO = this.icon;
+            StringBuilder g10 = g.g("BlockDTO(title=", textDTO, ", subtitle=", textDTO2, ", backgroundColor=");
+            g10.append(str);
+            g10.append(", icon=");
+            g10.append(iconDTO);
+            g10.append(")");
+            return g10.toString();
+        }
+    }
+
+    public ProductStarsTileDTO(@NotNull BlockDTO firstBlock, @NotNull BlockDTO secondBlock, String str, Map<String, TokenizedTrackingInfo> map) {
+        Intrinsics.checkNotNullParameter(firstBlock, "firstBlock");
+        Intrinsics.checkNotNullParameter(secondBlock, "secondBlock");
+        this.firstBlock = firstBlock;
+        this.secondBlock = secondBlock;
+        this.backgroundColor = str;
+        this.trackingInfo = map;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static /* synthetic */ ProductStarsTileDTO copy$default(ProductStarsTileDTO productStarsTileDTO, BlockDTO blockDTO, BlockDTO blockDTO2, String str, Map map, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            blockDTO = productStarsTileDTO.firstBlock;
+        }
+        if ((i11 & 2) != 0) {
+            blockDTO2 = productStarsTileDTO.secondBlock;
+        }
+        if ((i11 & 4) != 0) {
+            str = productStarsTileDTO.backgroundColor;
+        }
+        if ((i11 & 8) != 0) {
+            map = productStarsTileDTO.trackingInfo;
+        }
+        return productStarsTileDTO.copy(blockDTO, blockDTO2, str, map);
+    }
+
+    @NotNull
+    /* renamed from: component1, reason: from getter */
+    public final BlockDTO getFirstBlock() {
+        return this.firstBlock;
+    }
+
+    @NotNull
+    /* renamed from: component2, reason: from getter */
+    public final BlockDTO getSecondBlock() {
+        return this.secondBlock;
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final String getBackgroundColor() {
+        return this.backgroundColor;
+    }
+
+    public final Map<String, TokenizedTrackingInfo> component4() {
+        return this.trackingInfo;
+    }
+
+    @NotNull
+    public final ProductStarsTileDTO copy(@NotNull BlockDTO firstBlock, @NotNull BlockDTO secondBlock, String backgroundColor, Map<String, TokenizedTrackingInfo> trackingInfo) {
+        Intrinsics.checkNotNullParameter(firstBlock, "firstBlock");
+        Intrinsics.checkNotNullParameter(secondBlock, "secondBlock");
+        return new ProductStarsTileDTO(firstBlock, secondBlock, backgroundColor, trackingInfo);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof ProductStarsTileDTO)) {
+            return false;
+        }
+        ProductStarsTileDTO productStarsTileDTO = (ProductStarsTileDTO) other;
+        return Intrinsics.d(this.firstBlock, productStarsTileDTO.firstBlock) && Intrinsics.d(this.secondBlock, productStarsTileDTO.secondBlock) && Intrinsics.d(this.backgroundColor, productStarsTileDTO.backgroundColor) && Intrinsics.d(this.trackingInfo, productStarsTileDTO.trackingInfo);
+    }
+
+    public final String getBackgroundColor() {
+        return this.backgroundColor;
+    }
+
+    @NotNull
+    public final BlockDTO getFirstBlock() {
+        return this.firstBlock;
+    }
+
+    @NotNull
+    public final BlockDTO getSecondBlock() {
+        return this.secondBlock;
+    }
+
+    public final Map<String, TokenizedTrackingInfo> getTrackingInfo() {
+        return this.trackingInfo;
+    }
+
+    public int hashCode() {
+        int hashCode = (this.secondBlock.hashCode() + (this.firstBlock.hashCode() * 31)) * 31;
+        String str = this.backgroundColor;
+        int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
+        Map<String, TokenizedTrackingInfo> map = this.trackingInfo;
+        return hashCode2 + (map != null ? map.hashCode() : 0);
+    }
+
+    @NotNull
+    public String toString() {
+        BlockDTO blockDTO = this.firstBlock;
+        BlockDTO blockDTO2 = this.secondBlock;
+        String str = this.backgroundColor;
+        Map<String, TokenizedTrackingInfo> map = this.trackingInfo;
+        StringBuilder sb2 = new StringBuilder("ProductStarsTileDTO(firstBlock=");
+        sb2.append(blockDTO);
+        sb2.append(", secondBlock=");
+        sb2.append(blockDTO2);
+        sb2.append(", backgroundColor=");
+        return C4070a.a(sb2, str, ", trackingInfo=", map, ")");
+    }
+}

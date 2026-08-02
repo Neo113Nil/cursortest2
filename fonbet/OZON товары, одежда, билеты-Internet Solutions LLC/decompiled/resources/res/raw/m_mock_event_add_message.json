@@ -1,0 +1,50 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "addItem",
+        "model": {
+          "place": "messages",
+          "item": {
+            "id": "12345",
+            "type": "message",
+            "version": 1,
+            "orderBy": 100500,
+            "model": {
+              "chatId": "mock",
+              "createdAt": "2021-01-02T00:00:00Z",
+              "isRead": false,
+              "isMine": false,
+              "layout": "Message",
+              "author": {
+                "id": "operator",
+                "name": "Operator",
+                "avatar": {
+                  "initials": "alo",
+                  "backgroundColor": "#155678",
+                  "theme": "THEME_TYPE_X_SMALL"
+                }
+              },
+              "blocks": [
+                {
+                  "name": "text",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "id": "32",
+                    "text": [{
+                      "data": "Сообщение с эвента",
+                      "type": "text"
+                    }]
+                  }
+                }
+              ]
+            }
+          },
+          "id": "mock"
+        }
+      }
+    ]
+  }
+}

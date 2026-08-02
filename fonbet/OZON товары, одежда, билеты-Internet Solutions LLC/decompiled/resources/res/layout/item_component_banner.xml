@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bannerFl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.storefrontcommonwidgets.core.views.AspectRatioImageView
+        android:id="@+id/bannerImageIv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+</FrameLayout>

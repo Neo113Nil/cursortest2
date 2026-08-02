@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/previewGroup"
+    android:background="@drawable/pdp_gallery_full_view_miniature_ugc_selector"
+    android:layout_width="86dp"
+    android:layout_height="64dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/previewIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:id="@+id/previewTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

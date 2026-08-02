@@ -1,0 +1,31 @@
+package J0;
+
+import S0.InterfaceC3967k;
+import a1.C4912a;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.AbstractC7737t;
+
+/* loaded from: classes8.dex */
+final class L0 extends AbstractC7737t implements Function2<InterfaceC3967k, Integer, Unit> {
+
+    /* renamed from: b, reason: collision with root package name */
+    final /* synthetic */ C4912a f12893b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    L0(C4912a c4912a) {
+        super(2);
+        this.f12893b = c4912a;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Unit invoke(InterfaceC3967k interfaceC3967k, Integer num) {
+        InterfaceC3967k interfaceC3967k2 = interfaceC3967k;
+        if ((num.intValue() & 3) == 2 && interfaceC3967k2.b()) {
+            interfaceC3967k2.j();
+        } else {
+            u3.a(((D3) interfaceC3967k2.m(E3.c())).c(), a1.c.c(-1567914264, new K0(this.f12893b), interfaceC3967k2), interfaceC3967k2, 48);
+        }
+        return Unit.f71690a;
+    }
+}

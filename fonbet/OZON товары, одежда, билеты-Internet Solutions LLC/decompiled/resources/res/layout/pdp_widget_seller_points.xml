@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sellerPointsRootCl"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:divider="@drawable/pdp_seller_points_divider"
+    android:showDividers="middle"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <include
+        android:id="@+id/firstBlockInclude"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        layout="@layout/pdp_layout_seller_points_labels_block"/>
+    <include
+        android:id="@+id/secondBlockInclude"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        layout="@layout/pdp_layout_seller_points_labels_block"/>
+</LinearLayout>

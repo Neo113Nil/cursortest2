@@ -1,0 +1,35 @@
+package com.yandex.mapkit.map.internal;
+
+import androidx.annotation.NonNull;
+import com.yandex.mapkit.map.Callback;
+import com.yandex.mapkit.map.CompositeIcon;
+import com.yandex.mapkit.map.Icon;
+import com.yandex.mapkit.map.IconStyle;
+import com.yandex.runtime.NativeObject;
+import com.yandex.runtime.image.ImageProvider;
+
+/* loaded from: classes9.dex */
+public class CompositeIconBinding extends PlacemarkPresentationBinding implements CompositeIcon {
+    protected CompositeIconBinding(NativeObject nativeObject) {
+        super(nativeObject);
+    }
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    @NonNull
+    public native Icon icon(@NonNull String str);
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    public native void removeAll();
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    public native void removeIcon(@NonNull String str);
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    public native void setIcon(@NonNull String str, @NonNull ImageProvider imageProvider, @NonNull IconStyle iconStyle);
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    public native void setIcon(@NonNull String str, @NonNull ImageProvider imageProvider, @NonNull IconStyle iconStyle, @NonNull Callback callback);
+
+    @Override // com.yandex.mapkit.map.CompositeIcon
+    public native void setIconStyle(@NonNull String str, @NonNull IconStyle iconStyle);
+}

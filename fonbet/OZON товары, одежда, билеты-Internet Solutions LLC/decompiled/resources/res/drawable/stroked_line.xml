@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="178"
+            android:toDegrees="178"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape
+                android:shape="line"
+                android:top="1dp">
+                <stroke
+                    android:width="1dp"
+                    android:color="?attr/oz_semantic_accent_alert"/>
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

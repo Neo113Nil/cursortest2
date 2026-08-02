@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.android.messenger.blocks.snackbar.view.SnackbarContainer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snackbarContainer"
+    android:paddingBottom="@dimen/dimen_8"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/dimen_8">
+    <ru.ozon.android.messenger.blocks.snackbar.view.SnackbarView
+        android:id="@+id/snackbar"
+        android:background="@drawable/m_snackbar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56"/>
+</ru.ozon.android.messenger.blocks.snackbar.view.SnackbarContainer>

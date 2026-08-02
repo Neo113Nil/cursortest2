@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/legendIconImageView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.atom.badge.BadgeView
+        android:id="@+id/legendBadgeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/legendIconImageView"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:id="@+id/legendTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintEnd_toStartOf="@+id/legendBadgeView"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/legendSeatTypeContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        app:layout_constraintEnd_toEndOf="@+id/legendBadgeView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/legendTitleTextView"/>
+</merge>

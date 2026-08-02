@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hotelsGalleryDotsSpi"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:spi_dotColor="?attr/layerActiveSurfaceInverted"
+    app:spi_dotSelectedColor="?attr/bgPrimary"
+    app:spi_dotSelectedSize="8dp"
+    app:spi_dotSize="8dp"
+    app:spi_dotSpacing="3dp"
+    app:spi_visibleDotCount="5"/>

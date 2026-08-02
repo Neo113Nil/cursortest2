@@ -1,0 +1,25 @@
+package ru.ozon.app.android.search.widgets.modalButton.presentation;
+
+import android.view.View;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.C7735q;
+import kotlin.jvm.internal.Intrinsics;
+import ru.ozon.app.android.composer.ComposerReferences;
+
+@Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes7.dex */
+/* synthetic */ class ModalButtonViewMapper$holderProducer$1 extends C7735q implements Function2<View, ComposerReferences, ModalButtonWidgetViewHolder> {
+    public static final ModalButtonViewMapper$holderProducer$1 INSTANCE = new ModalButtonViewMapper$holderProducer$1();
+
+    ModalButtonViewMapper$holderProducer$1() {
+        super(2, ModalButtonWidgetViewHolder.class, "<init>", "<init>(Landroid/view/View;Lru/ozon/app/android/composer/ComposerReferences;)V", 0);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final ModalButtonWidgetViewHolder invoke(View p02, ComposerReferences p12) {
+        Intrinsics.checkNotNullParameter(p02, "p0");
+        Intrinsics.checkNotNullParameter(p12, "p1");
+        return new ModalButtonWidgetViewHolder(p02, p12);
+    }
+}

@@ -1,0 +1,798 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "response": {
+      "jsonrpc": "2.0",
+      "result": {
+        "items": [
+          {
+            "id": "26bd552a-9f31-44c2-a1ea-026d171a06fd",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1671007843257,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Моменты",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "icon": {
+                        "image": "https://cdn-stg.ozonru.me/s3/messenger-public/e340dd40-bb25-11ec-abbf-c270f4ea1321.png",
+                        "tintColor": "textSecondary"
+                      },
+                      "initials": "М",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Сообщение",
+                      "date": "2022-12-14T08:50:43.257624Z"
+                    },
+                    "trustIcon": {
+                      "image": "ic_s_confirmed_filled_compact",
+                      "tintColor": "textAction"
+                    },
+                    "deeplink": "/communications/chats/chat?id=26bd552a-9f31-44c2-a1ea-026d171a06fd\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "bace5118-d360-4dc2-801e-78ea12c9f7cc",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1670577869435,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Ирина И.",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "И",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "3777777373737373737473747373737747474747473737377373737373737473773737378474747474737737373738283837377777737373737373747374737373774747474747373737737373737373747377373737847474747473773737373828383737777773737373737374737473737377474747474737373773737373737374737737373784747474747377373737382838373777777373737373737473747373737747474747473737377373737373737473773737378474747474737737373738283837377777737373737373747374737373774747474747373737737373737373747377373737847474747473773737373828383737777773737373737374737473737377474747474737373773737373737374737737373784747474747377373737382838373777777373737373737473747373737747474747473737377373737373737473773737378474747474737737373738283837377777737373737373747374737373774747474747373737737373737373747377373737847474747473773737373828383737777773737373737374737473737377474747474737373773737373737374737737373784747474747377373737382838373777777373737373737473747373737747474747473737377373737373737473773737378474747474737737373738283837",
+                      "date": "2022-12-09T09:24:29.435683Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=bace5118-d360-4dc2-801e-78ea12c9f7cc\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "b8adee39-d7d5-405f-9504-a9b1e7d725c0",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1670492582202,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Поддержка Ozon",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "icon": {
+                        "image": "https://cdn-stg.ozonru.me/s3/messenger-public/1301c9db-c7aa-11ec-abbf-c270f4ea1321.png",
+                        "tintColor": "textSecondary"
+                      },
+                      "initials": "П",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Норм текст ( болд текст ссылки ) норм текст текст ссылки2 болд2  Bobobold text!",
+                      "date": "2022-12-08T09:43:02.202561Z"
+                    },
+                    "trustIcon": {
+                      "image": "ic_s_confirmed_filled_compact",
+                      "tintColor": "textAction"
+                    },
+                    "deeplink": "/communications/chats/chat?id=b8adee39-d7d5-405f-9504-a9b1e7d725c0\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "edb3a643-c805-4601-9205-f17d86d8f3b1",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1668498325660,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Proffi",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "icon": {
+                        "image": "https://cdn-stg.ozonru.me/s3/marketing-api/banners-staging/kr/yl/krylV0LVv5voaGj2Bf7OPY7KCPZGJ1jt.png",
+                        "tintColor": "textSecondary"
+                      },
+                      "initials": "P",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Напоминаем, что до окончания действия скидки остался 1 час, потом она сгорит.\nУспейте купить \"Коробка для хранения PROFFI Диспенсер для ватных палочек \"Grande\", PH9446, прозрачный\", пока действует скидка: https://www.ozon.ru/product/147524728/",
+                      "date": "2022-11-15T07:45:25.660367Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=edb3a643-c805-4601-9205-f17d86d8f3b1\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "7d956014-cec4-49ef-a0b5-296dcc284ea8",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1668492801271,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Defender",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "D",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Выписка из реестра аккредитованных организаций.pdf",
+                      "icon": {
+                        "image": "ic_s_document_filled",
+                        "tintColor": "textOriginalpriceAvailable"
+                      },
+                      "date": "2022-11-15T06:13:21.271404Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=7d956014-cec4-49ef-a0b5-296dcc284ea8\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "0e62b3b3-3bf3-4698-9f4e-d8db4513e498",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578995547,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "РОСМЭН",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "icon": {
+                        "image": "https://cdn1.ozone.ru/s3/marketing-api/banners/cZ/50/cZ50vnM0F6PlE0YiPpPwYiQgqqz6dx4x.jpg",
+                        "tintColor": "textSecondary"
+                      },
+                      "initials": "Р",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Adwwd",
+                      "date": "2022-10-12T12:49:55.547918Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=0e62b3b3-3bf3-4698-9f4e-d8db4513e498\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "2373db1c-6c8c-45f3-b564-28fb57c79b71",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578988868,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Клавторг",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "icon": {
+                        "image": "https://cdn1.ozone.ru/s3/marketing-api/banners/mz/EG/mzEGeFV9Z12dyuwT5Rk5jTk7bWu2eX5H.png",
+                        "tintColor": "textSecondary"
+                      },
+                      "initials": "К",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Aaaa",
+                      "date": "2022-10-12T12:49:48.868310Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=2373db1c-6c8c-45f3-b564-28fb57c79b71\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "6a74160e-e89a-4403-8d4f-35524dd6c5e4",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578983672,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "SVEN",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "title": "SVEN",
+                    "avatar": {
+                      "initials": "S",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Aaaa",
+                      "date": "2022-10-12T12:49:43.672994Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=6a74160e-e89a-4403-8d4f-35524dd6c5e4\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "64aa7fd3-85ec-47c3-b0a9-8c0bdda12319",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578980170,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Эльдорадо",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "Э",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Aaaaaa",
+                      "date": "2022-10-12T12:49:40.170262Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=64aa7fd3-85ec-47c3-b0a9-8c0bdda12319\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "2bfd3850-9fda-492e-ac5c-2f06f62aabfa",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578964784,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Шедевр",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "Ш",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Aaa",
+                      "date": "2022-10-12T12:49:24.784191Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=2bfd3850-9fda-492e-ac5c-2f06f62aabfa\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "62c318b9-4ea6-4e87-8c7d-0be762b63818",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578958154,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "DOBE официальный поставщик",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "D",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Aaa",
+                      "date": "2022-10-12T12:49:18.154014Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=62c318b9-4ea6-4e87-8c7d-0be762b63818\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "c044894f-6870-444e-94d9-4dbef9dd77a7",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578953292,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "ELsklad.ru",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "E",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "A",
+                      "date": "2022-10-12T12:49:13.292869Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=c044894f-6870-444e-94d9-4dbef9dd77a7\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "5b40e2b4-ffc4-4a68-a2fd-264d35766abc",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1665578947975,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "Торговый Дом \"Эксмо\"",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "Т",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "A",
+                      "date": "2022-10-12T12:49:07.975341Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=5b40e2b4-ffc4-4a68-a2fd-264d35766abc\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "3e15dd34-d869-4a8b-b335-962bd8d942cf",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1655808905041,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chat",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "titleAtom": {
+                      "text": "ETH Turbo",
+                      "preset": "PRESET_CUSTOM",
+                      "typographyToken": "tsCompactControl500Medium"
+                    },
+                    "avatar": {
+                      "initials": "E",
+                      "backgroundColor": "layerSurface",
+                      "theme": "THEME_TYPE_MEDIUM"
+                    },
+                    "unreadCount": 0,
+                    "lastMessagePreview": {
+                      "text": "Ee",
+                      "date": "2022-06-21T10:55:05.041191Z"
+                    },
+                    "deeplink": "/communications/chats/chat?id=3e15dd34-d869-4a8b-b335-962bd8d942cf\u0026context=dialog_list"
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "firstPageInfo": {
+          "header": {
+            "id": "chatListHeader",
+            "type": "blockContainer",
+            "version": 1,
+            "model": {
+              "blocks": [
+                {
+                  "name": "chatListHeader",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "title": "Сообщения",
+                    "mainItem": {
+                      "type": "title",
+                      "item": {
+                        "text": "Сообщения",
+                        "leftPadding?": "PADDING_400",
+                        "rightPadding?": "PADDING_500",
+                        "preset?": "H2",
+                        "textColor?": "textPositive",
+                        "numberOfLines?": 1,
+                        "trackingInfo?": {
+                          "view": {
+                            "actionType": "view",
+                            "key": "token1"
+                          }
+                        },
+                        "action?": {
+                          "behavior": "BEHAVIOR_TYPE_REDIRECT",
+                          "link": "ozon://link",
+                          "id": "string",
+                          "params": {
+                            "param1": "value"
+                          }
+                        },
+                        "testInfo?": {
+                          "automatizationId": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "popUp": {
+            "id": "rateMessenger",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1,
+            "model": {
+              "blocks": [
+                {
+                  "name": "rateMessenger",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "cancelAction": {
+                      "behavior": "BEHAVIOR_TYPE_COMPOSER_ACTION",
+                      "id": "ratemessenger_v1_cancelrate",
+                      "link": "messenger/ratemessenger/v1/cancelrate",
+                      "params": {
+                        "nonce": "6248360774625629063",
+                        "url_sign": "nRly2vq5xIEPb035r4_pb5YON5pep1hZM8mJ9PmExiE.aacf6740.WyJ2aWV3ZWRfYXQiLCJub25jZSJd.1",
+                        "viewed_at": "1671169893"
+                      }
+                    },
+                    "description": "Какие у вас впечатления от пользования разделом Сообщения",
+                    "lexemes": {
+                      "requiredReviewTextError": "Заполните, пожалуйста, поле",
+                      "reviewSendUnfinishedError": "Не удалось отправить оценку, попробуйте ещё раз",
+                      "reviewTextLengthError": "Превышено количество символов"
+                    },
+                    "message": {
+                      "maxCharacters": 1000,
+                      "placeholder": "Ваш комментарий"
+                    },
+                    "rates": [
+                      {
+                        "rate": 1,
+                        "reasons": [
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/messages_blocked.png",
+                            "isMessageRequired": false,
+                            "text": "Сообщения блокируются"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/lots_of_notifications.png",
+                            "isMessageRequired": false,
+                            "text": "Много уведомлений"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/no_answer.png",
+                            "isMessageRequired": false,
+                            "text": "Мне не отвечают"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/long_time_answer.png",
+                            "isMessageRequired": false,
+                            "text": "Отвечают долго"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/i_was_blocked.png",
+                            "isMessageRequired": false,
+                            "text": "Меня заблокировали"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/messages_hidden.png",
+                            "isMessageRequired": false,
+                            "text": "Сообщения скрываются"
+                          }
+                        ],
+                        "text": "Расскажите, что вас разочаровало?"
+                      },
+                      {
+                        "rate": 2,
+                        "reasons": [
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/lots_of_notifications.png",
+                            "isMessageRequired": false,
+                            "text": "Много уведомлений"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/i_was_blocked.png",
+                            "isMessageRequired": false,
+                            "text": "Меня заблокировали"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/no_answer.png",
+                            "isMessageRequired": false,
+                            "text": "Мне не отвечают"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/messages_hidden.png",
+                            "isMessageRequired": false,
+                            "text": "Сообщения скрываются"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/long_time_answer.png",
+                            "isMessageRequired": false,
+                            "text": "Отвечают долго"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/messages_blocked.png",
+                            "isMessageRequired": false,
+                            "text": "Сообщения блокируются"
+                          }
+                        ],
+                        "text": "Расскажите, что вас разочаровало?"
+                      },
+                      {
+                        "rate": 3,
+                        "reasons": [
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/notifications_not_coming.png",
+                            "isMessageRequired": false,
+                            "text": "Не приходят уведомления"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/fix_the_error.png",
+                            "isMessageRequired": true,
+                            "text": "Исправить ошибку"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/add_feature.png",
+                            "isMessageRequired": true,
+                            "text": "Добавить опцию"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/refine_interface.png",
+                            "isMessageRequired": true,
+                            "text": "Доработать интерфейс"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/response_speed.png",
+                            "isMessageRequired": false,
+                            "text": "Скорость ответа"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/hard_to_find.png",
+                            "isMessageRequired": false,
+                            "text": "Чат сложно найти"
+                          }
+                        ],
+                        "text": "Что можно улучшить?"
+                      },
+                      {
+                        "rate": 4,
+                        "reasons": [
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/fix_the_error.png",
+                            "isMessageRequired": true,
+                            "text": "Исправить ошибку"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/add_feature.png",
+                            "isMessageRequired": true,
+                            "text": "Добавить опцию"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/hard_to_find.png",
+                            "isMessageRequired": false,
+                            "text": "Чат сложно найти"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/notifications_not_coming.png",
+                            "isMessageRequired": false,
+                            "text": "Не приходят уведомления"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/refine_interface.png",
+                            "isMessageRequired": true,
+                            "text": "Доработать интерфейс"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/response_speed.png",
+                            "isMessageRequired": false,
+                            "text": "Скорость ответа"
+                          }
+                        ],
+                        "text": "Что можно улучшить?"
+                      },
+                      {
+                        "rate": 5,
+                        "reasons": [
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/notification_channels.png",
+                            "isMessageRequired": false,
+                            "text": "Каналы уведомлений"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/user_friendly_interface.png",
+                            "isMessageRequired": true,
+                            "text": "Удобный интерфейс"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/support.png",
+                            "isMessageRequired": false,
+                            "text": "Общение с поддержкой"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/contact_with_seller.png",
+                            "isMessageRequired": false,
+                            "text": "Общение с продавцом"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/chat_features.png",
+                            "isMessageRequired": true,
+                            "text": "Возможности чата"
+                          },
+                          {
+                            "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/response_speed.png",
+                            "isMessageRequired": false,
+                            "text": "Скорость ответа"
+                          }
+                        ],
+                        "text": "Что вам понравилось?"
+                      }
+                    ],
+                    "sendButton": {
+                      "action": {
+                        "behavior": "BEHAVIOR_TYPE_COMPOSER_ACTION",
+                        "id": "ratemessenger_v1_sendrate",
+                        "link": "messenger/ratemessenger/v1/sendrate",
+                        "params": {
+                          "nonce": "6248360774625629063",
+                          "url_sign": "nRly2vq5xIEPb035r4_pb5YON5pep1hZM8mJ9PmExiE.aacf6740.WyJ2aWV3ZWRfYXQiLCJub25jZSJd.1",
+                          "viewed_at": "1671169893"
+                        }
+                      },
+                      "text": "Готово",
+                      "theme": "STYLE_TYPE_PRIMARY"
+                    },
+                    "successState": {
+                      "button": {
+                        "text": "Вернуться к диалогам",
+                        "theme": "STYLE_TYPE_PRIMARY"
+                      },
+                      "description": "Вы помогаете нам становиться лучше, повышать качество сервиса и продукта",
+                      "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/chat/courier_love.png",
+                      "title": "Спасибо за обратную связь"
+                    },
+                    "title": "Оцените Ozon Сообщения"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      "id": "c8dc98cb-45d5-4602-98f1-f4551c4c61ed"
+    }
+  }
+}

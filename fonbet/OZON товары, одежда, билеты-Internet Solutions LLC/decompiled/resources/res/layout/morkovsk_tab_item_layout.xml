@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tabCL"
+    android:paddingTop="@dimen/dimen_4"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/dimen_4">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tabBgImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tabImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tabTitleTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ru.ozon.app.android.regulardraw.ui.OutlinedTextView
+        android:textAppearance="@style/Text.Body"
+        android:textSize="10dp"
+        android:textColor="@color/tabbar_text_light_yellow"
+        android:id="@+id/tabTitleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/dimen_4"
+        android:lineHeight="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ru.ozon.app.android.regulardraw.ui.indicator.IndicatorView
+        android:id="@+id/tabIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/tabImageView"
+        app:layout_constraintTop_toTopOf="@+id/tabImageView"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

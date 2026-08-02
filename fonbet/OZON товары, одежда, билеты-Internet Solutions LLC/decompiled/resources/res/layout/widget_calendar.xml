@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.travel.feature.general.main.widgets.calendar.v1.view.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/travelCalendarProgressBar"
+        android:focusable="true"
+        android:visibility="gone"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:layout_gravity="center"
+            style="@style/ProgressBarStyle"/>
+    </FrameLayout>
+</FrameLayout>

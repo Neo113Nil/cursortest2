@@ -1,0 +1,26 @@
+package ru.ozon.app.android.fresh.feature.b2b.widgets.addConsignee.di;
+
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.AbstractC7737t;
+import ru.ozon.app.android.fresh.feature.b2b.widgets.addConsignee.data.AddConsigneeRepositoryImpl;
+import ru.ozon.app.android.fresh.feature.b2b.widgets.addConsignee.data.api.AddConsigneeApi;
+
+@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Lru/ozon/app/android/fresh/feature/b2b/widgets/addConsignee/data/AddConsigneeRepositoryImpl;", "invoke"}, k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes12.dex */
+final class AddConsigneeComponent$Companion$create$1$1$addConsigneeRepository$2 extends AbstractC7737t implements Function0<AddConsigneeRepositoryImpl> {
+    final /* synthetic */ AddConsigneeComponent$Companion$create$1$1 this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    AddConsigneeComponent$Companion$create$1$1$addConsigneeRepository$2(AddConsigneeComponent$Companion$create$1$1 addConsigneeComponent$Companion$create$1$1) {
+        super(0);
+        this.this$0 = addConsigneeComponent$Companion$create$1$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public final AddConsigneeRepositoryImpl invoke() {
+        AddConsigneeApi addConsigneeApi;
+        addConsigneeApi = this.this$0.getAddConsigneeApi();
+        return new AddConsigneeRepositoryImpl(addConsigneeApi);
+    }
+}

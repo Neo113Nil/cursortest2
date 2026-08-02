@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="32dp"
+        android:width="32dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/bg_overlap"/>
+        </shape>
+    </item>
+    <item android:gravity="center">
+        <vector
+            android:height="16dp"
+            android:width="16dp"
+            android:viewportWidth="16"
+            android:viewportHeight="16">
+            <path
+                android:fillColor="?attr/graphicSecondary"
+                android:pathData="M2.533,2.533C3.021,2.045 3.812,2.045 4.301,2.533L8,6.232L11.7,2.533C12.188,2.045 12.979,2.045 13.467,2.533C13.955,3.021 13.955,3.812 13.467,4.301L9.768,8L13.467,11.7C13.955,12.188 13.955,12.979 13.467,13.467C12.979,13.955 12.188,13.955 11.7,13.467L8,9.768L4.301,13.467C3.812,13.955 3.021,13.955 2.533,13.467C2.045,12.979 2.045,12.188 2.533,11.7L6.232,8L2.533,4.301C2.045,3.812 2.045,3.021 2.533,2.533Z"/>
+        </vector>
+    </item>
+</layer-list>

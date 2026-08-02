@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.ozon.uni.android.atom.image.Image
+        android:layout_gravity="center"
+        android:id="@+id/imageIv"
+        android:visibility="gone"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+    <ru.ozon.uni.android.atom.productMedia.ProductMediaView
+        android:layout_gravity="center"
+        android:id="@+id/productMediaPmv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/adultIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/overlay"
+        android:visibility="gone"
+        android:layout_width="64dp"
+        android:layout_height="64dp"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/counterTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/eyeIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_m_non_visibility_filled"
+        app:tint="@color/graphic_primary_on_light"/>
+    <ru.ozon.uni.android.atom.badge.BadgeView
+        android:layout_gravity="start|bottom"
+        android:id="@+id/counterBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"/>
+</FrameLayout>

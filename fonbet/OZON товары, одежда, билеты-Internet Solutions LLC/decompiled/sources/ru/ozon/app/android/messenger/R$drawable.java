@@ -1,0 +1,52 @@
+package ru.ozon.app.android.messenger;
+
+/* loaded from: classes12.dex */
+public final class R$drawable {
+    public static int bg_badge_view = 2131231219;
+    public static int ic_m_confirmed = 2131232572;
+    public static int ic_m_cross = 2131232595;
+    public static int ic_m_cross_compact = 2131232596;
+    public static int ic_m_danger_filled = 2131232610;
+    public static int ic_m_disclosure_back_filled = 2131232662;
+    public static int ic_m_exclamation = 2131232747;
+    public static int ic_m_exclamation_filled = 2131232748;
+    public static int ic_m_info = 2131233200;
+    public static int ic_m_kebab = 2131233227;
+    public static int ic_notification_warning = 2131234245;
+    public static int ic_s_check = 2131234502;
+    public static int ic_s_check_seen = 2131234505;
+    public static int ic_s_cross_filled = 2131234607;
+    public static int ic_s_reload_filled = 2131235231;
+    public static int m_bg_bottom_actions_rounded_top = 2131235658;
+    public static int m_bg_button_message = 2131235659;
+    public static int m_bg_button_rounded = 2131235662;
+    public static int m_bg_button_select_message = 2131235663;
+    public static int m_bg_disclaimer_modal = 2131235673;
+    public static int m_bg_flashbar = 2131235675;
+    public static int m_bg_my_coupon_left = 2131235680;
+    public static int m_bg_my_coupon_right = 2131235681;
+    public static int m_bg_my_message = 2131235682;
+    public static int m_bg_notification_image_blur = 2131235686;
+    public static int m_bg_other_coupon_left = 2131235688;
+    public static int m_bg_other_coupon_right = 2131235689;
+    public static int m_bg_other_message = 2131235690;
+    public static int m_bg_popup_menu_layout_selection_chat = 2131235693;
+    public static int m_bg_popup_menu_layout_selection_mine = 2131235694;
+    public static int m_bg_popup_menu_layout_selection_not_mine = 2131235695;
+    public static int m_bg_popup_menu_rounded = 2131235696;
+    public static int m_bg_time_status = 2131235702;
+    public static int m_bg_wide_message = 2131235705;
+    public static int m_chat_buttons_flex_decorator = 2131235710;
+    public static int m_fg_notification_image_blur = 2131235719;
+    public static int m_fg_rounded_layer_overlay_paranja = 2131235721;
+    public static int m_ic_m_alert_input_filled_compact_accent = 2131235731;
+    public static int m_letter_blue_m = 2131235736;
+    public static int m_message_crack_lighting_m = 2131235737;
+    public static int m_notification_image_placeholder = 2131235739;
+    public static int m_order_counter_bg = 2131235740;
+    public static int m_ripple_rect_round_select = 2131235744;
+    public static int m_search_m = 2131235748;
+    public static int m_snackbar_ripple = 2131235751;
+    public static int m_wifi_off_m = 2131235753;
+    public static int ripple_rect_round_whitewave = 2131236224;
+}

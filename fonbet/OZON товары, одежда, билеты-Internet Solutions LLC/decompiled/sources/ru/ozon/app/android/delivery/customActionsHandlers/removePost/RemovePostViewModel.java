@@ -1,0 +1,39 @@
+package ru.ozon.app.android.delivery.customActionsHandlers.removePost;
+
+import androidx.lifecycle.V;
+import androidx.lifecycle.w0;
+import androidx.lifecycle.x0;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.utils.Result;
+import ru.ozon.app.android.utils.livedata.SingleLiveEvent;
+import xe.C10727i;
+
+@Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u00002\u00020\u0001B\u0011\b\u0007\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u001f\u0010\n\u001a\u00020\t2\u0006\u0010\u0007\u001a\u00020\u00062\b\u0010\b\u001a\u0004\u0018\u00010\u0006¢\u0006\u0004\b\n\u0010\u000bR\u0014\u0010\u0003\u001a\u00020\u00028\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0003\u0010\fR#\u0010\u000f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\t0\u000e0\r8\u0006¢\u0006\f\n\u0004\b\u000f\u0010\u0010\u001a\u0004\b\u0011\u0010\u0012¨\u0006\u0013"}, d2 = {"Lru/ozon/app/android/delivery/customActionsHandlers/removePost/RemovePostViewModel;", "Landroidx/lifecycle/w0;", "Lru/ozon/app/android/delivery/customActionsHandlers/removePost/PostRepository;", "repository", "<init>", "(Lru/ozon/app/android/delivery/customActionsHandlers/removePost/PostRepository;)V", "", "actionName", "postInfo", "", "removePost", "(Ljava/lang/String;Ljava/lang/String;)V", "Lru/ozon/app/android/delivery/customActionsHandlers/removePost/PostRepository;", "Landroidx/lifecycle/V;", "Lru/ozon/app/android/utils/Result;", "removePostResult", "Landroidx/lifecycle/V;", "getRemovePostResult", "()Landroidx/lifecycle/V;", "custom-action-handlers_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes11.dex */
+public final class RemovePostViewModel extends w0 {
+
+    @NotNull
+    private final V<Result<Unit>> removePostResult;
+
+    @NotNull
+    private final PostRepository repository;
+
+    public RemovePostViewModel(@NotNull PostRepository repository) {
+        Intrinsics.checkNotNullParameter(repository, "repository");
+        this.repository = repository;
+        this.removePostResult = new SingleLiveEvent();
+    }
+
+    @NotNull
+    public final V<Result<Unit>> getRemovePostResult() {
+        return this.removePostResult;
+    }
+
+    public final void removePost(@NotNull String actionName, String postInfo) {
+        Intrinsics.checkNotNullParameter(actionName, "actionName");
+        C10727i.c(x0.a(this), null, null, new RemovePostViewModel$removePost$1(this, actionName, postInfo, null), 3);
+    }
+}

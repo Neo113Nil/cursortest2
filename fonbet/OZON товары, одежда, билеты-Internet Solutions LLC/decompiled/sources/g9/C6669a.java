@@ -1,0 +1,62 @@
+package g9;
+
+import androidx.annotation.NonNull;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzdf;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzds;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzeh;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzeo;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzer;
+import com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzfn;
+
+/* renamed from: g9.a, reason: case insensitive filesystem */
+/* loaded from: classes9.dex */
+public final class C6669a extends zzeh<C6669a, t> implements zzfn {
+    private static final C6669a zzb;
+    private int zzd;
+    private int zzf;
+    private byte zzi = 2;
+    private zzeo zze = zzeh.zzP();
+    private String zzg = "";
+    private zzdf zzh = zzdf.zzb;
+
+    static {
+        C6669a c6669a = new C6669a();
+        zzb = c6669a;
+        zzeh.zzV(C6669a.class, c6669a);
+    }
+
+    private C6669a() {
+    }
+
+    public static C6669a b(byte[] bArr, zzds zzdsVar) throws zzer {
+        return (C6669a) zzeh.zzL(zzb, bArr, zzdsVar);
+    }
+
+    @NonNull
+    public final zzeo c() {
+        return this.zze;
+    }
+
+    @Override // com.google.android.gms.internal.mlkit_vision_barcode_bundled.zzeh
+    @NonNull
+    protected final Object zzg(int i11, @NonNull Object obj, @NonNull Object obj2) {
+        int i12 = i11 - 1;
+        if (i12 == 0) {
+            return Byte.valueOf(this.zzi);
+        }
+        if (i12 == 2) {
+            return zzeh.zzS(zzb, "\u0004\u0004\u0000\u0001\u0001\u0004\u0004\u0000\u0001\u0002\u0001Л\u0002ᴌ\u0000\u0003ဈ\u0001\u0004ည\u0002", new Object[]{"zzd", "zze", q.class, "zzf", C6678j.f64113a, "zzg", "zzh"});
+        }
+        if (i12 == 3) {
+            return new C6669a();
+        }
+        if (i12 == 4) {
+            return new t();
+        }
+        if (i12 == 5) {
+            return zzb;
+        }
+        this.zzi = obj == null ? (byte) 0 : (byte) 1;
+        return null;
+    }
+}

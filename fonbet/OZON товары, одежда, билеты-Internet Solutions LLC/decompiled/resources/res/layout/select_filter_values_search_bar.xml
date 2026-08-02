@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SearchView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selectFilterValuesSearchBar"
+    android:background="@color/layer_active_floor_0_select"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:imeOptions="actionSearch"
+    android:overScrollMode="always"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="6dp"
+    app:iconifiedByDefault="false"
+    app:layout="@layout/select_search_view_layout"
+    app:queryBackground="@null"
+    app:searchIcon="@drawable/ic_s_search_filled"
+    app:theme="@style/SelectSearchViewStyle"/>

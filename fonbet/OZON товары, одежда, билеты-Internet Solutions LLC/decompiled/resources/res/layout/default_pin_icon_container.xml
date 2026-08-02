@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="4dp"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.geo.map.presentation.mapicons.ElevationImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pin_container"
+        android:layout_width="32dp"
+        android:layout_height="55dp"
+        android:src="@drawable/base_pin_background"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pin_image"
+        android:padding="2dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/text_light_key"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/pins_count"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="2dp"
+        style="@style/OzonTextAppearance.BodyControl.300xsmall"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/pin_dot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginBottom="2dp"/>
+</FrameLayout>

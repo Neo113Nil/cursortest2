@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/dimen_32">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageIV"
+        android:layout_width="168dp"
+        android:layout_height="168dp"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:textAppearance="@style/TextStyle.Head.L"
+        android:textColor="?attr/textPrimary"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/titleTAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:textColor="?attr/textPrimary"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/messageTAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+</LinearLayout>

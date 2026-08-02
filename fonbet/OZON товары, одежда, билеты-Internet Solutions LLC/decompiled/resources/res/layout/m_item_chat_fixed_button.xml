@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.android.messenger.blocks.buttons.presentation.fixed.ChatButtonFixedLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatButtonOL"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="232dp"/>

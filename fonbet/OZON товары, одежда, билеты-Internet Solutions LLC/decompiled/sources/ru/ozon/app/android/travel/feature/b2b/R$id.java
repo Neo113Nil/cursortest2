@@ -1,0 +1,54 @@
+package ru.ozon.app.android.travel.feature.b2b;
+
+/* loaded from: classes12.dex */
+public final class R$id {
+    public static int accountBalanceBar = 2131361872;
+    public static int accountBalanceInfoButton = 2131361874;
+    public static int accountBalanceInfoRecyclerView = 2131361875;
+    public static int accountBalanceInfoTitleTextView = 2131361876;
+    public static int agreementTextView = 2131362192;
+    public static int allDocumentsCard = 2131362217;
+    public static int annotationAtom = 2131362252;
+    public static int b2bContactUsBannerCells = 2131362590;
+    public static int b2bContactUsBannerLogo = 2131362591;
+    public static int b2bContactUsBannerRoot = 2131362592;
+    public static int b2bContactUsBannerSubtitle = 2131362593;
+    public static int b2bContactUsBannerTitle = 2131362594;
+    public static int b2bContactUsTitle = 2131362595;
+    public static int bannerDescriptionTAV = 2131362660;
+    public static int bannerImageAPTV = 2131362665;
+    public static int bannerTitleTAV = 2131362676;
+    public static int descriptionTextView = 2131363843;
+    public static int documentCl = 2131363962;
+    public static int documentsRv = 2131363964;
+    public static int documentsToEmailHeaderAnnotation = 2131363965;
+    public static int documentsToEmailHeaderEmailToggle = 2131363966;
+    public static int documentsToEmailList = 2131363967;
+    public static int documentsToEmailListEditText = 2131363968;
+    public static int documentsToEmailListErrorTextView = 2131363969;
+    public static int documentsToEmailListInputLayout = 2131363970;
+    public static int documentsToEmailListLargeButton = 2131363971;
+    public static int documentsToEmailListSmallButton = 2131363972;
+    public static int documentsToEmailListTitle = 2131363973;
+    public static int downloadBtn = 2131363986;
+    public static int emailIcon = 2131364051;
+    public static int emailTitle = 2131364052;
+    public static int errorView = 2131364142;
+    public static int inputLayout = 2131365211;
+    public static int modalPersonalManagerBackgroundView = 2131365781;
+    public static int modalPersonalManagerButtonsVAL = 2131365782;
+    public static int modalPersonalManagerContentListRV = 2131365783;
+    public static int modalPersonalManagerLogoIV = 2131365784;
+    public static int modalPersonalManagerNotificationTAV = 2131365785;
+    public static int modalPersonalManagerTitleTAV = 2131365786;
+    public static int nameTv = 2131365856;
+    public static int promoBannerB2BListRV = 2131366693;
+    public static int promoBannerB2BTitleTAV = 2131366694;
+    public static int separatorV = 2131367525;
+    public static int submitButton = 2131368296;
+    public static int sumEditText = 2131368354;
+    public static int tagList = 2131368445;
+    public static int titleView = 2131368720;
+    public static int travelModalPersonalBulletTV = 2131369001;
+    public static int travelModalPersonalTextTAV = 2131369002;
+}

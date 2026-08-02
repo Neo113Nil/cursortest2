@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.app.android.uikit.view.input.MobilizationTextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/describeProblemTil"
+    android:background="@drawable/bg_describe_problem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="20dp"
+    android:minHeight="48dp"
+    android:layout_marginHorizontal="16dp"
+    app:mtil_hint="@string/cs_orders_describe_problem"
+    app:mtil_hintPosition="top"
+    app:mtil_isMultiline="true">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:gravity="start|top"
+        android:id="@+id/describeProblemEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="400"
+        android:inputType="textMultiLine"/>
+</ru.ozon.app.android.uikit.view.input.MobilizationTextInputLayout>

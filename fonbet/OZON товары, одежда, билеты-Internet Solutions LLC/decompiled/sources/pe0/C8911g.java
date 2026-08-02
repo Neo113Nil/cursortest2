@@ -1,0 +1,102 @@
+package pe0;
+
+import Ae.InterfaceC2395h;
+import Ae.InterfaceC2397i;
+import Sc.s;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import kotlin.Pair;
+import kotlin.Unit;
+import org.jetbrains.annotations.NotNull;
+
+/* renamed from: pe0.g, reason: case insensitive filesystem */
+/* loaded from: classes3.dex */
+public final class C8911g implements InterfaceC2395h<Pair<Object, ? extends Long>> {
+
+    /* renamed from: a, reason: collision with root package name */
+    final /* synthetic */ InterfaceC2395h f80454a;
+
+    /* renamed from: pe0.g$a */
+    public static final class a<T> implements InterfaceC2397i {
+
+        /* renamed from: a, reason: collision with root package name */
+        final /* synthetic */ InterfaceC2397i f80455a;
+
+        @kotlin.coroutines.jvm.internal.e(c = "ru.ozon.mapsdk.common.locationcontroller.userLocationManager.LocationInterpolatorImpl$withDelay$$inlined$map$1$2", f = "LocationInterpolatorImpl.kt", l = {223}, m = "emit")
+        /* renamed from: pe0.g$a$a, reason: collision with other inner class name */
+        public static final class C1359a extends kotlin.coroutines.jvm.internal.c {
+
+            /* renamed from: d, reason: collision with root package name */
+            /* synthetic */ Object f80456d;
+
+            /* renamed from: e, reason: collision with root package name */
+            int f80457e;
+
+            public C1359a(kotlin.coroutines.d dVar) {
+                super(dVar);
+            }
+
+            @Override // kotlin.coroutines.jvm.internal.a
+            public final Object invokeSuspend(@NotNull Object obj) {
+                this.f80456d = obj;
+                this.f80457e |= LinearLayoutManager.INVALID_OFFSET;
+                return a.this.emit(null, this);
+            }
+        }
+
+        public a(InterfaceC2397i interfaceC2397i) {
+            this.f80455a = interfaceC2397i;
+        }
+
+        /* JADX WARN: Removed duplicated region for block: B:15:0x002f  */
+        /* JADX WARN: Removed duplicated region for block: B:8:0x0021  */
+        @Override // Ae.InterfaceC2397i
+        /*
+            Code decompiled incorrectly, please refer to instructions dump.
+        */
+        public final Object emit(Object obj, @NotNull kotlin.coroutines.d dVar) {
+            C1359a c1359a;
+            int i11;
+            if (dVar instanceof C1359a) {
+                c1359a = (C1359a) dVar;
+                int i12 = c1359a.f80457e;
+                if ((i12 & LinearLayoutManager.INVALID_OFFSET) != 0) {
+                    c1359a.f80457e = i12 - LinearLayoutManager.INVALID_OFFSET;
+                    Object obj2 = c1359a.f80456d;
+                    Wc.a aVar = Wc.a.COROUTINE_SUSPENDED;
+                    i11 = c1359a.f80457e;
+                    if (i11 != 0) {
+                        s.b(obj2);
+                        Pair pair = new Pair(obj, new Long(10L));
+                        c1359a.f80457e = 1;
+                        if (this.f80455a.emit(pair, c1359a) == aVar) {
+                            return aVar;
+                        }
+                    } else {
+                        if (i11 != 1) {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        s.b(obj2);
+                    }
+                    return Unit.f71690a;
+                }
+            }
+            c1359a = new C1359a(dVar);
+            Object obj22 = c1359a.f80456d;
+            Wc.a aVar2 = Wc.a.COROUTINE_SUSPENDED;
+            i11 = c1359a.f80457e;
+            if (i11 != 0) {
+            }
+            return Unit.f71690a;
+        }
+    }
+
+    public C8911g(InterfaceC2395h interfaceC2395h) {
+        this.f80454a = interfaceC2395h;
+    }
+
+    @Override // Ae.InterfaceC2395h
+    public final Object collect(@NotNull InterfaceC2397i<? super Pair<Object, ? extends Long>> interfaceC2397i, @NotNull kotlin.coroutines.d dVar) {
+        Object collect = this.f80454a.collect(new a(interfaceC2397i), dVar);
+        return collect == Wc.a.COROUTINE_SUSPENDED ? collect : Unit.f71690a;
+    }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/spay_fro_llc_root"
+    android:paddingBottom="@dimen/spay_16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/spay_552dp"
+    android:transitionName="reviewOtpTransition"
+    android:paddingHorizontal="@dimen/spay_large_margin">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spay_176dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <spay.sdk.view.SPayTextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/spay_fro_actv_title"
+            android:layout_marginTop="@dimen/spay_title_padding_top"
+            app:spay_font="semibold"
+            style="@style/SpayHeaderTextStyle"/>
+        <spay.sdk.view.SPayTextView
+            android:textColor="@color/spay_main_card_content_text_color"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/spay_fro_actv_message"
+            android:paddingTop="@dimen/spay_fro_message_padding_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/SpayBottomSheet.MainTextStyle"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <spay.sdk.view.SPayMaterialButton
+        android:id="@+id/spay_fro_mb_confirm"
+        style="@style/SpayGreenButton"/>
+    <spay.sdk.view.SPayMaterialButton
+        android:id="@+id/spay_fro_mb_cancel"
+        style="@style/SpayButtonBlank"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

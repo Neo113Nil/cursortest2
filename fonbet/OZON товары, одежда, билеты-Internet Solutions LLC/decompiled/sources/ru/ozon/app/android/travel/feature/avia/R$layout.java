@@ -1,0 +1,52 @@
+package ru.ozon.app.android.travel.feature.avia;
+
+/* loaded from: classes7.dex */
+public final class R$layout {
+    public static int fragment_avia_search_result = 2131558697;
+    public static int item_additional_luggage_base_tariff_info_v2 = 2131558806;
+    public static int item_additional_luggage_info_v2 = 2131558807;
+    public static int item_additional_luggage_tab_v2 = 2131558808;
+    public static int item_additional_luggage_v2_skeleton = 2131558809;
+    public static int item_avia_search_result_v3 = 2131558819;
+    public static int item_avia_search_result_v4_flight_shimmer = 2131558820;
+    public static int item_complex_route = 2131558835;
+    public static int item_flight_check_tariff_direction_v2 = 2131558887;
+    public static int item_flight_seats_legend = 2131558888;
+    public static int item_flight_seats_scheme_seat_price_info = 2131558889;
+    public static int item_help_insurance_step = 2131558907;
+    public static int item_help_insurance_tab = 2131558908;
+    public static int item_insurance_panel_benefit = 2131558926;
+    public static int item_insurance_panel_selector = 2131558927;
+    public static int item_luggage_header_v2 = 2131558931;
+    public static int item_luggage_option_v2 = 2131558932;
+    public static int item_luggage_transportation_v2 = 2131558933;
+    public static int item_service_pack_selection_v3 = 2131559017;
+    public static int placeholder_buy_together = 2131559408;
+    public static int view_additional_service_card = 2131559651;
+    public static int view_avia_flight_info_placeholder_v3 = 2131559655;
+    public static int view_avia_search_bonus_toggle = 2131559656;
+    public static int view_avia_search_item_placeholder_v3 = 2131559657;
+    public static int view_avia_search_progress_v3 = 2131559658;
+    public static int view_flight_check_tariff = 2131559677;
+    public static int view_flight_details_segment = 2131559678;
+    public static int view_flight_scheme_order_details = 2131559679;
+    public static int view_legend = 2131559692;
+    public static int view_luggage_requirements = 2131559693;
+    public static int view_luggage_tab_v3 = 2131559694;
+    public static int view_order_total = 2131559697;
+    public static int view_return_policy = 2131559715;
+    public static int view_service_pack_v3 = 2131559720;
+    public static int widget_additional_luggage_total = 2131559774;
+    public static int widget_additional_luggage_v2 = 2131559775;
+    public static int widget_additional_service_card = 2131559778;
+    public static int widget_flight_check_tariff_v2 = 2131559965;
+    public static int widget_help_insurance = 2131559981;
+    public static int widget_insurance_panel = 2131560003;
+    public static int widget_luggage_requirements_v2 = 2131560017;
+    public static int widget_order_flight_info = 2131560068;
+    public static int widget_return_policy = 2131560144;
+    public static int widget_service_pack_selection_v3 = 2131560190;
+    public static int widget_service_package_selection = 2131560191;
+    public static int widget_tariff_luggage_v2 = 2131560217;
+    public static int widget_travel_service_package_selected_v3 = 2131560270;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/radiobutton_unchecked_500">
+    <target
+        android:name="radiobutton_icon_group"
+        android:animation="@drawable/_radiobutton_unchecked_to_checked_500__0_res_0x7f080114"/>
+    <target
+        android:name="radiobutton_icon_path"
+        android:animation="@drawable/_radiobutton_unchecked_to_checked_500__1_res_0x7f080115"/>
+    <target
+        android:name="radiobutton_icon_path_dynamic"
+        android:animation="@drawable/_radiobutton_unchecked_to_checked_500__2_res_0x7f080116"/>
+    <target
+        android:name="radiobutton_outer"
+        android:animation="@drawable/_radiobutton_unchecked_to_checked_500__3_res_0x7f080117"/>
+    <target
+        android:name="radiobutton_stroke"
+        android:animation="@drawable/_radiobutton_unchecked_to_checked_500__4_res_0x7f080118"/>
+</animated-vector>

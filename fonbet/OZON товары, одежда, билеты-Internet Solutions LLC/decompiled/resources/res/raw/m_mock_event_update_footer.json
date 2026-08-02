@@ -1,0 +1,425 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "updateItem",
+        "model": {
+          "item": {
+            "id": "footerId",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1,
+            "model": {
+              "blocks": [
+                {
+                  "name": "footerInput",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "isDisabled": false,
+                    "text": "Обновленный инпут hint",
+                    "chatId": "e6a2e7ca-b406-46ff-ab15-1704fee33ffb",
+                    "config": {
+                      "acceptedMimeTypes": "image/jpeg, image/jpg, image/png, image/gif, image/heic, text/plain, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document, application/pdf",
+                      "maxFileSize": 20971520,
+                      "maxFilesCount": 20,
+                      "uploadUrl": "https://ozon.ru/chat/file/upload"
+                    },
+                    "actionCurtain": {
+                      "title": {
+                        "text": "Действия",
+                        "textColor": "textPrimary",
+                        "preset": "PRESET_CUSTOM",
+                        "topPadding": "PADDING_500",
+                        "bottomPadding": "PADDING_300",
+                        "leftPadding": "PADDING_500",
+                        "rightPadding": "PADDING_500",
+                        "typographyToken": "tsHeadline700XLarge"
+                      },
+                      "cells": [
+                        {
+                          "settings": {
+                            "topPadding": "PADDING_400",
+                            "bottomPadding": "PADDING_400",
+                            "leftPadding": "PADDING_500",
+                            "rightPadding": "PADDING_300"
+                          },
+                          "leftBlock": {
+                            "alignment": "ALIGNMENT_TOP",
+                            "rightPadding": "PADDING_300",
+                            "icon": {
+                              "size": "SIZE_500",
+                              "shape": "SHAPE_NONE",
+                              "icon": {
+                                "icon": "ic_m_gallery_filled",
+                                "tintColor": "graphicTertiary"
+                              }
+                            }
+                          },
+                          "centerBlock": {
+                            "title": {
+                              "text": "Выбрать из галереи",
+                              "typographyToken": "tsCompact500Medium",
+                              "textColor": "textPrimary"
+                            }
+                          },
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "id": "selectFromGalleryMenuAction"
+                            }
+                          }
+                        },
+                        {
+                          "settings": {
+                            "topPadding": "PADDING_400",
+                            "bottomPadding": "PADDING_400",
+                            "leftPadding": "PADDING_500",
+                            "rightPadding": "PADDING_300"
+                          },
+                          "leftBlock": {
+                            "alignment": "ALIGNMENT_TOP",
+                            "rightPadding": "PADDING_300",
+                            "icon": {
+                              "size": "SIZE_500",
+                              "shape": "SHAPE_NONE",
+                              "icon": {
+                                "icon": "ic_m_photo_filled",
+                                "tintColor": "graphicTertiary"
+                              }
+                            }
+                          },
+                          "centerBlock": {
+                            "title": {
+                              "text": "Сделать фото",
+                              "typographyToken": "tsCompact500Medium",
+                              "textColor": "textPrimary"
+                            }
+                          },
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "id": "takePhotoMenuAction"
+                            }
+                          }
+                        },
+                        {
+                          "settings": {
+                            "topPadding": "PADDING_400",
+                            "bottomPadding": "PADDING_400",
+                            "leftPadding": "PADDING_500",
+                            "rightPadding": "PADDING_300"
+                          },
+                          "leftBlock": {
+                            "alignment": "ALIGNMENT_TOP",
+                            "rightPadding": "PADDING_300",
+                            "icon": {
+                              "size": "SIZE_500",
+                              "shape": "SHAPE_NONE",
+                              "icon": {
+                                "icon": "ic_m_document_add_filled",
+                                "tintColor": "graphicTertiary"
+                              }
+                            }
+                          },
+                          "centerBlock": {
+                            "title": {
+                              "text": "Выбрать файл",
+                              "typographyToken": "tsCompact500Medium",
+                              "textColor": "textPrimary"
+                            }
+                          },
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "id": "selectFileMenuAction"
+                            }
+                          }
+                        },
+                        {
+                          "settings": {
+                            "topPadding": "PADDING_400",
+                            "bottomPadding": "PADDING_400",
+                            "leftPadding": "PADDING_500",
+                            "rightPadding": "PADDING_300",
+                            "disableSeparator": true
+                          },
+                          "leftBlock": {
+                            "alignment": "ALIGNMENT_TOP",
+                            "rightPadding": "PADDING_300",
+                            "icon": {
+                              "size": "SIZE_500",
+                              "shape": "SHAPE_NONE",
+                              "icon": {
+                                "icon": "ic_m_tabbar_answer_increased",
+                                "tintColor": "graphicTertiary"
+                              }
+                            }
+                          },
+                          "centerBlock": {
+                            "title": {
+                              "text": "Быстрый ответ",
+                              "typographyToken": "tsCompact500Medium",
+                              "textColor": "textPrimary"
+                            }
+                          },
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "id": "fastAnswerMenuAction"
+                            }
+                          }
+                        }
+                      ],
+                      "buttons": [
+                        {
+                          "title": "Отмена",
+                          "styleType": "ACTION_SECONDARY",
+                          "size": "SIZE_600",
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "id": "cancelMenuAction"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "name": "recommendations",
+                  "version": 1,
+                  "vertical": "messenger",
+                  "state": {
+                    "title": {
+                      "text": "Специально для вас 11sdfasdfdasfsafdsfsafsdafdsafsdafsdafsdafsadfasd",
+                      "textColor": "textPrimary",
+                      "typographyToken": "tsHeadline400Small",
+                      "preset": "PRESET_CUSTOM",
+                      "numberOfLines": "1"
+                    },
+                    "subtitle": {
+                      "text": "Количество ",
+                      "textColor": "textPrimary",
+                      "typographyToken": "tsBody400Small",
+                      "preset": "PRESET_CUSTOM",
+                      "numberOfLines": "10"
+                    },
+                    "badges": [
+                      {
+                        "badge": {
+                          "text": "Акция!",
+                          "size": "SIZE_400",
+                          "style": "NEUTRAL_SECONDARY"
+                        }
+                      },
+                      {
+                        "badge": {
+                          "text": "timer",
+                          "size": "SIZE_400",
+                          "style": "NEUTRAL_SECONDARY"
+                        },
+                        "expirationDate": "2023-10-24T01:30:15.01Z"
+                      },
+                      {
+                        "badge": {
+                          "text": "timer",
+                          "size": "SIZE_400",
+                          "style": "NEUTRAL_SECONDARY"
+                        },
+                        "expirationDate": "2023-10-24T01:30:15.01Z"
+                      },
+                      {
+                        "badge": {
+                          "text": "timer",
+                          "size": "SIZE_400",
+                          "style": "NEUTRAL_SECONDARY"
+                        },
+                        "expirationDate": "2023-10-24T01:30:15.01Z"
+                      },
+                      {
+                        "badge": {
+                          "text": "timer",
+                          "size": "SIZE_400",
+                          "style": "NEUTRAL_SECONDARY"
+                        },
+                        "expirationDate": "2023-10-24T01:30:15.01Z"
+                      }
+                    ],
+                    "buttonBadge": {
+                      "text": "Ещё",
+                      "size": "SIZE_500",
+                      "style": "NEUTRAL_PRIMARY",
+                      "common": {
+                        "action": {
+                          "behavior": "BEHAVIOR_TYPE_REDIRECT",
+                          "link": "link",
+                          "id": "id"
+                        },
+                        "trackingInfo": {}
+                      }
+                    },
+                    "products": {
+                      "list": [
+                        {
+                          "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/support.png",
+                          "title": {
+                            "text": "Смартфон ITEL Unisoc  4000 mAh камера 5 2022",
+                            "textColor": "textPrimary",
+                            "typographyToken": "tsBody300XSmall",
+                            "preset": "PRESET_CUSTOM",
+                            "numberOfLines": "10"
+                          },
+                          "price": {
+                            "price": [
+                              {
+                                "text": "645 ₽",
+                                "textStyle": "PRICE"
+                              },
+                              {
+                                "text": "1 367 ₽",
+                                "textStyle": "ORIGINAL_PRICE"
+                              }
+                            ],
+                            "priceStyle": {
+                              "styleType": "CARD_PRICE"
+                            },
+                            "preset": "SIZE_400"
+                          },
+                          "button": {
+                            "preset": "SIZE_400",
+                            "style": "ACTION_PRIMARY",
+                            "icon": "ic_s_grocery_cart_filled",
+                            "common": {
+                              "action": {
+                                "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                                "id": "addToCart",
+                                "params": {
+                                  "id": "100500",
+                                  "quantity": "1"
+                                }
+                              },
+                              "trackingInfo": {}
+                            }
+                          },
+                          "action": {
+                            "behavior": "BEHAVIOR_TYPE_REDIRECT",
+                            "link": "link",
+                            "id": "id"
+                          },
+                          "trackingInfo": {}
+                        },
+                        {
+                          "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/support.png",
+                          "title": {
+                            "text": "Смартфон ITEL Unisoc  4000 mAh камера 5 2022",
+                            "textColor": "textPrimary",
+                            "typographyToken": "tsBody300XSmall",
+                            "preset": "PRESET_CUSTOM",
+                            "numberOfLines": "10"
+                          },
+                          "price": {
+                            "price": [
+                              {
+                                "text": "645 ₽",
+                                "textStyle": "PRICE"
+                              },
+                              {
+                                "text": "1 367 ₽",
+                                "textStyle": "ORIGINAL_PRICE"
+                              }
+                            ],
+                            "priceStyle": {
+                              "styleType": "CARD_PRICE"
+                            },
+                            "preset": "SIZE_400"
+                          },
+                          "icon": {
+                            "size": "SIZE_400",
+                            "hasShape": true,
+                            "shape": "SQUIRCLE",
+                            "icon": {
+                              "icon": "ic_s_confirmed_filled",
+                              "tintColor": "graphicPrimaryOnDark"
+                            },
+                            "backgroundColor": "bgPositivePrimary"
+                          },
+                          "action": {
+                            "behavior": "BEHAVIOR_TYPE_REDIRECT",
+                            "link": "link",
+                            "id": "id"
+                          },
+                          "trackingInfo": {}
+                        },
+                        {
+                          "imageUrl": "https://cdn1.ozone.ru/s3/messenger-public/reasons/support.png",
+                          "title": {
+                            "text": "Смартфон ITEL Unisoc  4000 mAh камера 5 2022",
+                            "textColor": "textPrimary",
+                            "typographyToken": "tsBody300XSmall",
+                            "preset": "PRESET_CUSTOM",
+                            "numberOfLines": "10"
+                          },
+                          "price": {
+                            "price": [
+                              {
+                                "text": "645 ₽",
+                                "textStyle": "PRICE"
+                              },
+                              {
+                                "text": "1 367 ₽",
+                                "textStyle": "ORIGINAL_PRICE"
+                              }
+                            ],
+                            "priceStyle": {
+                              "styleType": "CARD_PRICE"
+                            },
+                            "preset": "SIZE_400"
+                          },
+                          "button": {
+                            "preset": "SIZE_400",
+                            "style": "ACTION_PRIMARY",
+                            "icon": "ic_s_grocery_cart_filled",
+                            "common": {
+                              "action": {
+                                "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                                "id": "addToCart",
+                                "params": {
+                                  "id": "100500",
+                                  "quantity": "1"
+                                }
+                              },
+                              "trackingInfo": {}
+                            }
+                          },
+                          "action": {
+                            "behavior": "BEHAVIOR_TYPE_REDIRECT",
+                            "link": "link",
+                            "id": "id"
+                          },
+                          "trackingInfo": {}
+                        }
+                      ]
+                    },
+                    "updateBlockAction": {
+                      "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                      "link": "link",
+                      "id": "messenger_v1_updateblock"
+                    },
+                    "lexemes": {
+                      "actionError": "Что-то пошло не так. Пожалуйста, попробуйте снова"
+                    },
+                    "trackingInfo": {},
+                    "place": "FOOTE"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

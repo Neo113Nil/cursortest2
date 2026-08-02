@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/rect_round_white2"/>
+    <item>
+        <selector>
+            <item android:state_enabled="false">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/design_default_radius"/>
+                    <solid android:color="@color/background_button_disabled_color"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ripple_rect_round_bluewave"/>
+        </selector>
+    </item>
+</layer-list>

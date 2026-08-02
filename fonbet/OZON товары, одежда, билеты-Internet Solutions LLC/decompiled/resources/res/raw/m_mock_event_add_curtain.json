@@ -1,0 +1,118 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "addItem",
+        "model": {
+          "item": {
+            "id": "headerId",
+            "type": "blockContainer",
+            "version": 1,
+            "orderBy": 1,
+            "model": {
+              "blocks": [
+                {
+                  "vertical": "messenger",
+                  "state": {
+                    "curtain": {
+                      "image": {
+                        "image": "https://cdn1.ozone.ru/s3/common-image-storage/bx/hand-bell_m.png",
+                        "aspectRatio": "RATIO_1_1",
+                        "hasParanja": false,
+                        "layoutPaddingLeft": "NONE",
+                        "layoutPaddingRight": "NONE",
+                        "layoutPaddingTop": "NONE",
+                        "layoutPaddingBottom": "NONE",
+                        "imageType": "FIX"
+                      },
+                      "title": {
+                        "text": "У вас отключены уведомления",
+                        "numberOfLines": 0,
+                        "textColor": "textPrimary",
+                        "typographyToken": "tsHeadline700XLarge",
+                        "preset": "PRESET_CUSTOM",
+                        "topPadding": "NONE",
+                        "bottomPadding": "NONE",
+                        "leftPadding": "NONE",
+                        "rightPadding": "NONE",
+                        "textAlignment": "LEADING"
+                      },
+                      "message": {
+                        "text": "Если их включить, сможете узнавать об ответах в чатах, заказах и скидках",
+                        "numberOfLines": 0,
+                        "textColor": "textSecondary",
+                        "typographyToken": "tsBody500Medium",
+                        "preset": "PRESET_CUSTOM",
+                        "topPadding": "NONE",
+                        "bottomPadding": "NONE",
+                        "leftPadding": "NONE",
+                        "rightPadding": "NONE",
+                        "textAlignment": "LEADING"
+                      },
+                      "buttons": [
+                        {
+                          "styleType": "ACTION_PRIMARY",
+                          "size": "SIZE_600",
+                          "title": "Включить все",
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "link": "ozon://link",
+                              "id": "enable_notifications_v2",
+                              "params": {
+                                "redirectUrl": "ozon://travel/main?miniapp=travel"
+                              }
+                            },
+                            "trackingInfo": {
+                              "view": {
+                                "actionType": "view",
+                                "key": "curtain_view_2"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "styleType": "ACTION_SECONDARY",
+                          "size": "SIZE_600",
+                          "title": "Только заказы и чаты",
+                          "common": {
+                            "action": {
+                              "behavior": "BEHAVIOR_TYPE_CUSTOM",
+                              "link": "ozon://link",
+                              "id": "enable_notifications_v2"
+                            },
+                            "trackingInfo": {
+                              "view": {
+                                "actionType": "view",
+                                "key": "curtain_view_3"
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "trackingInfo": {
+                        "view": {
+                          "actionType": "view",
+                          "key": "curtain_view_1"
+                        },
+                        "close": {
+                          "actionType": "close",
+                          "key": "curtain_close_1"
+                        }
+                      }
+                    }
+                  },
+                  "name": "curtain",
+                  "version": 1
+                }
+              ]
+            }
+          },
+          "place": "curtain",
+          "id": "mock"
+        }
+      }
+    ]
+  }
+}

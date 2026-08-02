@@ -1,0 +1,271 @@
+package ru.ozon.app.android.fresh.unsorted.widgets.bottomCartWidget.presentation;
+
+import A00.a;
+import F3.G;
+import WZ.t;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.uni.atoms.data.controls.button.ButtonV3DTO;
+
+@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u000f\b\u0081\b\u0018\u00002\u00060\u0001j\u0002`\u00022\u00020\u0003:\u0001&B1\u0012\u0006\u0010\u0005\u001a\u00020\u0004\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\u000e\u0010\f\u001a\n\u0018\u00010\nj\u0004\u0018\u0001`\u000b¢\u0006\u0004\b\r\u0010\u000eJB\u0010\u000f\u001a\u00020\u00002\b\b\u0002\u0010\u0005\u001a\u00020\u00042\b\b\u0002\u0010\u0007\u001a\u00020\u00062\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\u0010\b\u0002\u0010\f\u001a\n\u0018\u00010\nj\u0004\u0018\u0001`\u000bHÆ\u0001¢\u0006\u0004\b\u000f\u0010\u0010J\u0010\u0010\u0011\u001a\u00020\bHÖ\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\u0010\u0010\u0014\u001a\u00020\u0013HÖ\u0001¢\u0006\u0004\b\u0014\u0010\u0015J\u001a\u0010\u0019\u001a\u00020\u00182\b\u0010\u0017\u001a\u0004\u0018\u00010\u0016HÖ\u0003¢\u0006\u0004\b\u0019\u0010\u001aR\u001a\u0010\u0005\u001a\u00020\u00048\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0005\u0010\u001b\u001a\u0004\b\u001c\u0010\u001dR\u0017\u0010\u0007\u001a\u00020\u00068\u0006¢\u0006\f\n\u0004\b\u0007\u0010\u001e\u001a\u0004\b\u001f\u0010 R\u0019\u0010\t\u001a\u0004\u0018\u00010\b8\u0006¢\u0006\f\n\u0004\b\t\u0010!\u001a\u0004\b\"\u0010\u0012R\u001f\u0010\f\u001a\n\u0018\u00010\nj\u0004\u0018\u0001`\u000b8\u0006¢\u0006\f\n\u0004\b\f\u0010#\u001a\u0004\b$\u0010%¨\u0006'"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO;", "Ll20/c;", "Lru/ozon/app/android/composer/view/ViewObject;", "LA00/a$J$a;", "", "id", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "viewState", "", "asyncData", "LWZ/t;", "Lru/ozon/app/android/analytics/modules/tokenized/TokenizedEvent;", "tokenizedEvent", "<init>", "(JLru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;Ljava/lang/String;LWZ/t;)V", "copy", "(JLru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;Ljava/lang/String;LWZ/t;)Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO;", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "J", "getId", "()J", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "getViewState", "()Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "Ljava/lang/String;", "getAsyncData", "LWZ/t;", "getTokenizedEvent", "()LWZ/t;", "ViewState", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public final /* data */ class BottomCartWidgetVO implements l20.c, a.J.InterfaceC0007a {
+    private final String asyncData;
+    private final long id;
+    private final t tokenizedEvent;
+
+    @NotNull
+    private final ViewState viewState;
+
+    @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b7\u0018\u00002\u00020\u0001:\u0004\u0004\u0005\u0006\u0007B\t\b\u0004¢\u0006\u0004\b\u0002\u0010\u0003\u0082\u0001\u0004\b\t\n\u000b¨\u0006\f"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "", "<init>", "()V", "NoButtonsState", "CartButtonState", "CatalogButtonState", "TwoButtonState", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$CartButtonState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$CatalogButtonState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$NoButtonsState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$TwoButtonState;", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    /* loaded from: classes12.dex */
+    public static abstract class ViewState {
+
+        @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\b\u0087\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0007\u001a\u00020\u0006HÖ\u0001¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\n\u0010\u000bJ\u001a\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fHÖ\u0003¢\u0006\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$CartButtonState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "cartButton", "<init>", "(Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;)V", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "getCartButton", "()Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+        public static final /* data */ class CartButtonState extends ViewState {
+
+            @NotNull
+            private final ButtonV3DTO cartButton;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            public CartButtonState(@NotNull ButtonV3DTO cartButton) {
+                super(null);
+                Intrinsics.checkNotNullParameter(cartButton, "cartButton");
+                this.cartButton = cartButton;
+            }
+
+            public boolean equals(Object other) {
+                if (this == other) {
+                    return true;
+                }
+                return (other instanceof CartButtonState) && Intrinsics.d(this.cartButton, ((CartButtonState) other).cartButton);
+            }
+
+            @NotNull
+            public final ButtonV3DTO getCartButton() {
+                return this.cartButton;
+            }
+
+            public int hashCode() {
+                return this.cartButton.hashCode();
+            }
+
+            @NotNull
+            public String toString() {
+                return G.b(this.cartButton, "CartButtonState(cartButton=", ")");
+            }
+        }
+
+        @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\b\u0087\b\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005J\u0010\u0010\u0007\u001a\u00020\u0006HÖ\u0001¢\u0006\u0004\b\u0007\u0010\bJ\u0010\u0010\n\u001a\u00020\tHÖ\u0001¢\u0006\u0004\b\n\u0010\u000bJ\u001a\u0010\u000f\u001a\u00020\u000e2\b\u0010\r\u001a\u0004\u0018\u00010\fHÖ\u0003¢\u0006\u0004\b\u000f\u0010\u0010R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0011\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$CatalogButtonState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "catalogButton", "<init>", "(Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;)V", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "getCatalogButton", "()Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+        public static final /* data */ class CatalogButtonState extends ViewState {
+
+            @NotNull
+            private final ButtonV3DTO catalogButton;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            public CatalogButtonState(@NotNull ButtonV3DTO catalogButton) {
+                super(null);
+                Intrinsics.checkNotNullParameter(catalogButton, "catalogButton");
+                this.catalogButton = catalogButton;
+            }
+
+            public boolean equals(Object other) {
+                if (this == other) {
+                    return true;
+                }
+                return (other instanceof CatalogButtonState) && Intrinsics.d(this.catalogButton, ((CatalogButtonState) other).catalogButton);
+            }
+
+            @NotNull
+            public final ButtonV3DTO getCatalogButton() {
+                return this.catalogButton;
+            }
+
+            public int hashCode() {
+                return this.catalogButton.hashCode();
+            }
+
+            @NotNull
+            public String toString() {
+                return G.b(this.catalogButton, "CatalogButtonState(catalogButton=", ")");
+            }
+        }
+
+        @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÇ\n\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0013\u0010\u0004\u001a\u00020\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u0007HÖ\u0003J\t\u0010\b\u001a\u00020\tHÖ\u0001J\t\u0010\n\u001a\u00020\u000bHÖ\u0001¨\u0006\f"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$NoButtonsState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "<init>", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+        public static final /* data */ class NoButtonsState extends ViewState {
+
+            @NotNull
+            public static final NoButtonsState INSTANCE = new NoButtonsState();
+
+            private NoButtonsState() {
+                super(null);
+            }
+
+            public boolean equals(Object other) {
+                return this == other || (other instanceof NoButtonsState);
+            }
+
+            public int hashCode() {
+                return -1458391342;
+            }
+
+            @NotNull
+            public String toString() {
+                return "NoButtonsState";
+            }
+        }
+
+        @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\b\u0087\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002¢\u0006\u0004\b\u0005\u0010\u0006J\u0010\u0010\b\u001a\u00020\u0007HÖ\u0001¢\u0006\u0004\b\b\u0010\tJ\u0010\u0010\u000b\u001a\u00020\nHÖ\u0001¢\u0006\u0004\b\u000b\u0010\fJ\u001a\u0010\u0010\u001a\u00020\u000f2\b\u0010\u000e\u001a\u0004\u0018\u00010\rHÖ\u0003¢\u0006\u0004\b\u0010\u0010\u0011R\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0004\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0004\u0010\u0012\u001a\u0004\b\u0015\u0010\u0014¨\u0006\u0016"}, d2 = {"Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState$TwoButtonState;", "Lru/ozon/app/android/fresh/unsorted/widgets/bottomCartWidget/presentation/BottomCartWidgetVO$ViewState;", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "cartButton", "catalogButton", "<init>", "(Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;)V", "", "toString", "()Ljava/lang/String;", "", "hashCode", "()I", "", "other", "", "equals", "(Ljava/lang/Object;)Z", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "getCartButton", "()Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "getCatalogButton", "widgets-unsorted_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+        public static final /* data */ class TwoButtonState extends ViewState {
+
+            @NotNull
+            private final ButtonV3DTO cartButton;
+
+            @NotNull
+            private final ButtonV3DTO catalogButton;
+
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            public TwoButtonState(@NotNull ButtonV3DTO cartButton, @NotNull ButtonV3DTO catalogButton) {
+                super(null);
+                Intrinsics.checkNotNullParameter(cartButton, "cartButton");
+                Intrinsics.checkNotNullParameter(catalogButton, "catalogButton");
+                this.cartButton = cartButton;
+                this.catalogButton = catalogButton;
+            }
+
+            public boolean equals(Object other) {
+                if (this == other) {
+                    return true;
+                }
+                if (!(other instanceof TwoButtonState)) {
+                    return false;
+                }
+                TwoButtonState twoButtonState = (TwoButtonState) other;
+                return Intrinsics.d(this.cartButton, twoButtonState.cartButton) && Intrinsics.d(this.catalogButton, twoButtonState.catalogButton);
+            }
+
+            @NotNull
+            public final ButtonV3DTO getCartButton() {
+                return this.cartButton;
+            }
+
+            @NotNull
+            public final ButtonV3DTO getCatalogButton() {
+                return this.catalogButton;
+            }
+
+            public int hashCode() {
+                return this.catalogButton.hashCode() + (this.cartButton.hashCode() * 31);
+            }
+
+            @NotNull
+            public String toString() {
+                return "TwoButtonState(cartButton=" + this.cartButton + ", catalogButton=" + this.catalogButton + ")";
+            }
+        }
+
+        public /* synthetic */ ViewState(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private ViewState() {
+        }
+    }
+
+    public BottomCartWidgetVO(long j11, @NotNull ViewState viewState, String str, t tVar) {
+        Intrinsics.checkNotNullParameter(viewState, "viewState");
+        this.id = j11;
+        this.viewState = viewState;
+        this.asyncData = str;
+        this.tokenizedEvent = tVar;
+    }
+
+    public static /* synthetic */ BottomCartWidgetVO copy$default(BottomCartWidgetVO bottomCartWidgetVO, long j11, ViewState viewState, String str, t tVar, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            j11 = bottomCartWidgetVO.id;
+        }
+        long j12 = j11;
+        if ((i11 & 2) != 0) {
+            viewState = bottomCartWidgetVO.viewState;
+        }
+        ViewState viewState2 = viewState;
+        if ((i11 & 4) != 0) {
+            str = bottomCartWidgetVO.asyncData;
+        }
+        String str2 = str;
+        if ((i11 & 8) != 0) {
+            tVar = bottomCartWidgetVO.tokenizedEvent;
+        }
+        return bottomCartWidgetVO.copy(j12, viewState2, str2, tVar);
+    }
+
+    @NotNull
+    public final BottomCartWidgetVO copy(long id2, @NotNull ViewState viewState, String asyncData, t tokenizedEvent) {
+        Intrinsics.checkNotNullParameter(viewState, "viewState");
+        return new BottomCartWidgetVO(id2, viewState, asyncData, tokenizedEvent);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof BottomCartWidgetVO)) {
+            return false;
+        }
+        BottomCartWidgetVO bottomCartWidgetVO = (BottomCartWidgetVO) other;
+        return this.id == bottomCartWidgetVO.id && Intrinsics.d(this.viewState, bottomCartWidgetVO.viewState) && Intrinsics.d(this.asyncData, bottomCartWidgetVO.asyncData) && Intrinsics.d(this.tokenizedEvent, bottomCartWidgetVO.tokenizedEvent);
+    }
+
+    public final String getAsyncData() {
+        return this.asyncData;
+    }
+
+    @Override // l20.c
+    public long getId() {
+        return this.id;
+    }
+
+    @Override // l20.c
+    public Integer getScrollWidgetKey() {
+        return null;
+    }
+
+    public final t getTokenizedEvent() {
+        return this.tokenizedEvent;
+    }
+
+    @Override // l20.c
+    public int getViewItemKey() {
+        return hashCode();
+    }
+
+    @NotNull
+    public final ViewState getViewState() {
+        return this.viewState;
+    }
+
+    public int hashCode() {
+        int hashCode = (this.viewState.hashCode() + (Long.hashCode(this.id) * 31)) * 31;
+        String str = this.asyncData;
+        int hashCode2 = (hashCode + (str == null ? 0 : str.hashCode())) * 31;
+        t tVar = this.tokenizedEvent;
+        return hashCode2 + (tVar != null ? tVar.hashCode() : 0);
+    }
+
+    @NotNull
+    public String toString() {
+        long j11 = this.id;
+        ViewState viewState = this.viewState;
+        String str = this.asyncData;
+        t tVar = this.tokenizedEvent;
+        StringBuilder sb2 = new StringBuilder("BottomCartWidgetVO(id=");
+        sb2.append(j11);
+        sb2.append(", viewState=");
+        sb2.append(viewState);
+        Bi.a.f(sb2, ", asyncData=", str, ", tokenizedEvent=", tVar);
+        sb2.append(")");
+        return sb2.toString();
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/background_fresh_splash"/>
+    </item>
+    <item
+        android:gravity="center"
+        android:height="288dp"
+        android:width="288dp"
+        android:drawable="@drawable/logo_splash_fresh"/>
+</layer-list>

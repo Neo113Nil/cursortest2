@@ -1,0 +1,25 @@
+package c1;
+
+import org.jetbrains.annotations.NotNull;
+
+/* renamed from: c1.j, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public final class C5719j {
+    public static final int a(@NotNull int[] iArr, int i11) {
+        int length = iArr.length - 1;
+        int i12 = 0;
+        while (i12 <= length) {
+            int i13 = (i12 + length) >>> 1;
+            int i14 = iArr[i13];
+            if (i11 > i14) {
+                i12 = i13 + 1;
+            } else {
+                if (i11 >= i14) {
+                    return i13;
+                }
+                length = i13 - 1;
+            }
+        }
+        return -(i12 + 1);
+    }
+}

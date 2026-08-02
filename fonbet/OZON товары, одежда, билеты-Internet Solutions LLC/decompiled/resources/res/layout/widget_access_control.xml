@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp">
+    <ImageView
+        android:id="@+id/iconIV"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Body.L.Bold"
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iconIV"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Body.M"
+        android:id="@+id/subtitleTv"
+        android:paddingBottom="12dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titleTv"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv"/>
+    <ru.ozon.uni.android.uikit.view.atoms.buttons.usual.SmallButtonView
+        android:id="@+id/smallButtonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/subtitleTv"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleTv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

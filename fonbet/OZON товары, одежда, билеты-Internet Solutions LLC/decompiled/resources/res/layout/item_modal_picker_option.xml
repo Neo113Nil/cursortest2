@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_white_ripple_blue"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+    <View
+        android:layout_gravity="start|center_vertical"
+        android:id="@+id/selectorV"
+        android:background="@drawable/selector_radio"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"/>
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/optionNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:includeFontPadding="false"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="16dp"/>
+</FrameLayout>

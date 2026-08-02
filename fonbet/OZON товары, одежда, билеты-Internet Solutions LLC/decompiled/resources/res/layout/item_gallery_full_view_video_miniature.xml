@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/previewGroup"
+    android:layout_width="86dp"
+    android:layout_height="64dp"
+    android:layerType="software"
+    android:elevation="0dp"
+    app:cardCornerRadius="8dp"
+    app:rippleColor="@color/transparent"
+    app:strokeColor="?attr/graphicActionPrimary">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/previewIv"
+        android:background="?attr/bgLightKey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?attr/layerOverlayParanja"/>
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/play"
+        android:background="@drawable/ic_play_circle_gallery_full_view"
+        android:layout_width="32dp"
+        android:layout_height="32dp"/>
+</com.google.android.material.card.MaterialCardView>

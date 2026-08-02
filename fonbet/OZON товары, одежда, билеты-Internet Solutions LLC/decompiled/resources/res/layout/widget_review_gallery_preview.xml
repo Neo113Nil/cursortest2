@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/default_margin">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:textAppearance="@style/TextStyle.Body.L.Bold"
+        android:id="@+id/reviewGalleryPreviewTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"/>
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/reviewGalleryListFl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerDrawable="@drawable/tile_builder_divider"
+        app:flexWrap="nowrap"
+        app:showDivider="middle"/>
+</LinearLayout>

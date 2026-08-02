@@ -1,0 +1,98 @@
+{
+  "id": "snackbar_vpn_warning",
+  "type": "SNACK",
+  "version": 1,
+  "inWindow": true,
+  "atTop": true,
+  "topPadding": 0,
+  "bottomPadding": 0,
+  "swipeable": true,
+  "main": [
+    {
+      "type": "ROW",
+      "id": "ROW_VPN",
+      "width": -1,
+      "height": -2,
+      "backgroundColor": "layerFloor1Inverted",
+      "backgroundRadius": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "paddings": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "widgets": [
+        {
+          "type": "IMAGE",
+          "id": "IMAGE_VPN",
+          "width": 44,
+          "height": 44,
+          "backgroundColor": "bgActionSecondary",
+          "backgroundRadius": [
+            12,
+            12,
+            12,
+            12
+          ],
+          "margins": [
+            0,
+            0,
+            8,
+            0
+          ],
+          "icon": "ic_m_key_filled",
+          "iconColor": "graphicActionPrimary"
+        },
+        {
+          "type": "COLUMN",
+          "id": "COLUMN_VPN_TEXT",
+          "width": -2,
+          "height": -2,
+          "layoutGravity": [
+            "center",
+            "center"
+          ],
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "widgets": [
+            {
+              "type": "TEXTATOM",
+              "id": "TEXT_VPN_TITLE",
+              "width": -2,
+              "height": -2,
+              "text": "У вас включён VPN",
+              "textColor": "layerFloor0",
+              "textStyle": "tsCompactControl500Medium",
+              "maxLines": 1
+            },
+            {
+              "type": "TEXTATOM",
+              "id": "TEXT_VPN_DESCRIPTION",
+              "width": -2,
+              "height": -2,
+              "margins": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "text": "Он может мешать работе приложения",
+              "textColor": "textOriginalpriceAvailable",
+              "textStyle": "tsBody400Small",
+              "maxLines": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

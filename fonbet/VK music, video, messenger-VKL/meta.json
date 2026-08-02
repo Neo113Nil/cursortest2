@@ -32,5 +32,115 @@
   ],
   "stdout": "Downloading com.vkontakte.android...\ncom.vkontakte.android downloaded successfully!\n",
   "stderr": "",
-  "exit_code": 0
+  "exit_code": 0,
+  "cloaking": "нет",
+  "brief_report": {
+    "table": [
+      {
+        "param": "Название приложения",
+        "value": "VK music, video, messenger (VK), com.vkontakte.android, версия 8.188.1 (versionCode 56120), разработчик VKL"
+      },
+      {
+        "param": "Android Gradle Plugin",
+        "value": "8.11.1"
+      },
+      {
+        "param": "minSdk",
+        "value": "28"
+      },
+      {
+        "param": "targetSdk",
+        "value": "35"
+      },
+      {
+        "param": "Kotlin",
+        "value": "да, 2.2.10"
+      },
+      {
+        "param": "Web View",
+        "value": "да"
+      },
+      {
+        "param": "Custom Tabs",
+        "value": "да"
+      },
+      {
+        "param": "Рекламные сети",
+        "value": "Google AdMob (play-services-ads), Unity Ads, ironSource / LevelPlay, Mintegral (mBridge), Vungle / Liftoff, Fyber / Inneractive (DT Exchange), Bigo Ads, myTarget, Yandex Mobile Ads (yads), Digital Turbine Ignite, IAB Open Measurement (OMID), VK Ads / SuperApp advertisement, one.video.ad (реклама в видеоплеере)"
+      },
+      {
+        "param": "Аналитика",
+        "value": "Firebase Analytics, Firebase Crashlytics, Firebase Cloud Messaging / Installations / Datatransport, AppMetrica (Yandex), myTracker, VK Stat (com.vk.stat), OK Tracer (ru.ok.tracer), OneLog (ru.ok.android.onelog), Google Play Install Referrer, Huawei HMS analytics/metrics, RuStore SDK stats Параметр Значение"
+      },
+      {
+        "param": "Permissions",
+        "value": "android.gms.permission.ACTIVITY_RECOGNITION, android.permission.ACCESS_ADSERVICES_ATTRIBUTION, android.permission.ACCESS_ADSERVICES_TOPICS, android.permission.ACCESS_COARSE_LOCATION, android.permission.ACCESS_FINE_LOCATION, android.permission.ACCESS_MEDIA_LOCATION, android.permission.ACCESS_NETWORK_STATE, android.permission.ACCESS_WIFI_STATE, android.permission.ACTIVITY_RECOGNITION, android.permission.AUTHENTICATE_ACCOUNTS, android.permission.BLUETOOTH, android.permission.CALL_PHONE, android.permission.CAMERA, android.permission.CHANGE_NETWORK_STATE, android.permission.CHANGE_WIFI_STATE, android.permission.DETECT_SCREEN_CAPTURE, android.permission.FOREGROUND_SERVICE, android.permission.FOREGROUND_SERVICE_DATA_SYNC, android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK, android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION, android.permission.FOREGROUND_SERVICE_MICROPHONE, android.permission.GET_ACCOUNTS, android.permission.INTERNET, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.POST_NOTIFICATIONS, android.permission.QUICKBOOT_POWERON, android.permission.READ_APP_BADGE, android.permission.READ_CALENDAR, android.permission.READ_CALL_LOG, android.permission.READ_CONTACT…"
+      },
+      {
+        "param": "Libraries",
+        "value": "androidx.appcompat, androidx.activity, androidx.fragment, androidx.core, androidx.browser (Custom Tabs), androidx.webkit, androidx.media3 (ExoPlayer, DASH), androidx.media, androidx.mediarouter, androidx.camera, androidx.car, androidx.compose, androidx.constraintlayout, androidx.coordinatorlayout, androidx.recyclerview, androidx.viewpager2, androidx.lifecycle, androidx.room, androidx.work, androidx.datastore, androidx.preference, androidx.biometric, androidx.credentials, androidx.security, androidx.startup, androidx.profileinstaller, androidx.window, androidx.health, androidx.emoji2, androidx.ads (Privacy Sandbox), com.google.android.material, Google Play Services (ads, ads-identifier, auth, base, basement, location, maps, measurement, tasks, cast, cloud-messaging, fido), Firebase (analytics, crashlytics, messaging, datatransport, installations), Kotlin stdlib 2.2.10, kotlinx-coroutines, kotlinx-serialization, OkHttp3, Okio, RxJava3, bolts, Facebook Fresco (image pipeline, не Audience Network), Glide (com.bumptech), Lottie (com.airbnb), WebRTC (org.webrtc), OpenCV, TensorFlow Lite, jsoup, msgpack, Chromium Cronet / support_lib_boundary, mp4parser, ZXing, Huawei HMS, RuStore SDK, Ma…"
+      },
+      {
+        "param": "Подозрительные домены",
+        "value": "akm.ssacdn.com, aomedia.org, api.vk.com, cdn.prod.website-files.com, cncn.ssacdn.com, com.wildberries.ru, company.rt.ru, dashif.org"
+      },
+      {
+        "param": "SharedPreferences",
+        "value": "Основное хранилище настроек через com.vk.core.preference.Preference (файл вида com.vkontakte.android_preferences): флаг useChromeCustomTabs (открывать внешние ссылки во вкладках Chrome), trackInstalledApps и last_sent_apps (сбор/отправка списка установленных приложений), device_token{userId} (токен устройства для проверки), xsrf_secret (защита переходов по ссылкам), companion_device_id_requested, multi_account_migration_completed, core_stat_device_ads_id (переключатель статистики по рекламному номеру), anon_token / анонимный токен API, а также обычные пользовательские и сессионные настройки VK (аккаунт, тема, уведомления). Отдельных ключей с URL оффера / gate / white-page в SharedPreferences нет."
+      },
+      {
+        "param": "Есть ли клоака",
+        "value": "нет Параметр Значение"
+      },
+      {
+        "param": "Подозрительные слова",
+        "value": "offer (подписки VK Video / cast / music), redirect (LinkRedirActivity, OAuth redirect_uri), landing (темы экрана входа vk_*_landing_*), blacklist / whitelist (чёрные списки в клипах и настройках), slots (рекламные слоты AdSlots), roulette (стикеры StickersRoulette), affiliate / click_id / clickid (аналитика кнопок магазина / SDK), payout (выплаты каналов), deposit / withdraw (денежные сценарии VK), bot (обфусцированные имена классов, не антибот-фильтр), gate (делегаты Kotlin / платёжный gateway, не cloaking-gate) Проверка подозрительных доменов Данные ниже взяты как есть из готовых проверок пайплайна (domain_checks.json / domain_checks.md): сводка VirusTotal, полный список Security vendors' analysis и три дополнительных пункта в конце."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "akm.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: Amazon Registrar, Inc."
+      },
+      {
+        "domain": "aomedia.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Squarespace Domains II LLC"
+      },
+      {
+        "domain": "api.vk.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор: Regional Network Information Center, JSC dba RU-CENTER"
+      },
+      {
+        "domain": "cdn.prod.website-files.com",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "нет данных"
+      },
+      {
+        "domain": "cncn.ssacdn.com",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      },
+      {
+        "domain": "com.wildberries.ru",
+        "redirects_to": "нет (DNS не резолвится)",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "company.rt.ru",
+        "redirects_to": "https://www.company.rt.ru/",
+        "parked_at": "регистратор: RU-CENTER-RU"
+      },
+      {
+        "domain": "dashif.org",
+        "redirects_to": "нет (без редиректа)",
+        "parked_at": "регистратор/whois связан с парковкой: godaddy"
+      }
+    ],
+    "collected_data": [],
+    "cloaking": "нет",
+    "cloaking_brief": ""
+  }
 }

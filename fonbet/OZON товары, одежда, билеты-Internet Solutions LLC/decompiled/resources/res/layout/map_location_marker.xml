@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textColor="@color/text_light_key"
+        android:ellipsize="middle"
+        android:gravity="center"
+        android:id="@+id/tooltipTV"
+        android:background="@drawable/location_tooltip"
+        android:paddingTop="12dp"
+        android:paddingBottom="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:maxWidth="304dp"
+        android:minWidth="89dp"
+        android:maxLines="1"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/OzonTextAppearance.Compact.500medium"/>
+    <ru.ozon.app.android.geo.map.presentation.mapicons.ElevationImageView
+        android:id="@+id/iconIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="2dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tooltipTV"/>
+</merge>

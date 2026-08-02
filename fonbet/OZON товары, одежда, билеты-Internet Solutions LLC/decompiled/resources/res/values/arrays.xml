@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="bx_prod_native_domains">
+        <item>ozon.ru</item>
+        <item>ozon.kz</item>
+        <item>ozon.tm</item>
+        <item>ozon.by</item>
+        <item>ozon.com</item>
+        <item>ozon.uz</item>
+        <item>am.ozon.com</item>
+        <item>uz.ozon.com</item>
+        <item>mn.ozon.com</item>
+    </array>
+    <array name="calendar_day_short_names">
+        <item>@string/calendar_monday</item>
+        <item>@string/calendar_tuesday</item>
+        <item>@string/calendar_wednesday</item>
+        <item>@string/calendar_thursday</item>
+        <item>@string/calendar_friday</item>
+        <item>@string/calendar_saturday</item>
+        <item>@string/calendar_sunday</item>
+    </array>
+    <array name="calendar_month_names">
+        <item>@string/calendar_january</item>
+        <item>@string/calendar_february</item>
+        <item>@string/calendar_march</item>
+        <item>@string/calendar_april</item>
+        <item>@string/calendar_may</item>
+        <item>@string/calendar_june</item>
+        <item>@string/calendar_july</item>
+        <item>@string/calendar_august</item>
+        <item>@string/calendar_september</item>
+        <item>@string/calendar_october</item>
+        <item>@string/calendar_november</item>
+        <item>@string/calendar_december</item>
+    </array>
+    <array name="calendar_short_month_names">
+        <item>@string/calendar_january_abbr</item>
+        <item>@string/calendar_february_abbr</item>
+        <item>@string/calendar_march_abbr</item>
+        <item>@string/calendar_april_abbr</item>
+        <item>@string/calendar_may_abbr</item>
+        <item>@string/calendar_june_abbr</item>
+        <item>@string/calendar_july_abbr</item>
+        <item>@string/calendar_august_abbr</item>
+        <item>@string/calendar_september_abbr</item>
+        <item>@string/calendar_october_abbr</item>
+        <item>@string/calendar_november_abbr</item>
+        <item>@string/calendar_december_abbr</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </array>
+    <array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </array>
+    <array name="messenger_file_extensions">
+        <item>@string/messenger_file_extensions_byte</item>
+        <item>@string/messenger_file_extensions_kilobyte</item>
+        <item>@string/messenger_file_extensions_megabyte</item>
+    </array>
+    <array name="prod_extra_headers_whitelist">
+        <item>x-o3-internal-headers-token</item>
+        <item>x-o3-test-id</item>
+        <item>x-o3-localization</item>
+        <item>x-o3-test-name</item>
+        <item>x-o3-gds-mock</item>
+        <item>x-o3-show-courier-on-map-button</item>
+        <item>x-o3-mock-courier-on-map-car-model</item>
+        <item>x-o3-mock-courier-on-map-car-number</item>
+        <item>x-o3-mock-courier-on-map</item>
+        <item>x-o3-mock-courier-on-map-lat-begin</item>
+        <item>x-o3-mock-courier-on-map-long-begin</item>
+        <item>x-o3-mock-courier-on-map-lat-end</item>
+        <item>x-o3-mock-courier-on-map-long-end</item>
+        <item>x-o3-md-order-time</item>
+        <item>x-o3-mock-courier-on-map-begin-time</item>
+        <item>x-o3-mock-courier-on-map-end-time</item>
+        <item>x-o3-mock-courier-on-map-arrival-time</item>
+        <item>x-o3-inapppush</item>
+        <item>x-o3-layout-custom</item>
+        <item>x-o3-test-antibot</item>
+        <item>x-o3-template-nocache</item>
+        <item>x-o3-force-template-id</item>
+        <item>x-o3-email-not-verified</item>
+        <item>x-o3-no-email</item>
+        <item>x-o3-bf-campaign-id</item>
+        <item>x-o3-bf-date</item>
+        <item>x-o3-resolve-override</item>
+        <item>x-o3-ab-variants</item>
+    </array>
+    <array name="prod_network_request_domains">
+        <item>ozon.ru</item>
+        <item>ozon.kz</item>
+        <item>ozon.tm</item>
+        <item>ozon.by</item>
+        <item>ozon.com</item>
+        <item>ozon.uz</item>
+        <item>ozon.travel</item>
+        <item>ozone.ru</item>
+        <item>ozonusercontent.com</item>
+        <item>o3.ru</item>
+    </array>
+    <array name="select_prod_native_domains">
+        <item>select.ozon.ru</item>
+        <item>se.ozon.ru</item>
+    </array>
+    <array name="updatewall_update_steps">
+        <item>Скачайте apk-файл с приложением</item>
+        <item>Кликните на него и разрешите установку</item>
+        <item>Обновление установится, и приложение будет работать лучше</item>
+    </array>
+    <array name="web_bank_server_entries">
+        <item>PRODUCTION</item>
+        <item>STAGE</item>
+        <item>LOCALHOST</item>
+        <item>Ручками</item>
+    </array>
+    <array name="web_bank_server_values">
+        <item>Production</item>
+        <item>Stage</item>
+        <item>Localhost</item>
+        <item>Hands</item>
+    </array>
+</resources>

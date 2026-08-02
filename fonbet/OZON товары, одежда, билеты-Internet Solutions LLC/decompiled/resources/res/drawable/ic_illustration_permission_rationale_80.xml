@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="83dp"
+    android:width="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="83">
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__0_res_0x7f080094"
+        android:pathData="M28,6L52,6A18,18 0,0 1,70 24L70,41A18,18 0,0 1,52 59L28,59A18,18 0,0 1,10 41L10,24A18,18 0,0 1,28 6z"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__1_res_0x7f080095"
+        android:pathData="M28,6L52,6A18,18 0,0 1,70 24L70,41A18,18 0,0 1,52 59L28,59A18,18 0,0 1,10 41L10,24A18,18 0,0 1,28 6z"/>
+    <path
+        android:fillColor="#8aadf1"
+        android:pathData="M18.139,23H15.778C10.377,23 6,27.378 6,32.778V61C6,68.18 11.82,74 19,74H61C68.18,74 74,68.18 74,61V32.969C74,27.463 69.537,23 64.031,23H61.433C56.091,23 51.761,27.33 51.761,32.672C51.761,37.013 48.243,40.531 43.902,40.531H35.67C31.33,40.531 27.811,37.013 27.811,32.672C27.811,27.33 23.481,23 18.139,23Z"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="#719bec"
+        android:pathData="M18.139,22.5H15.778C10.101,22.5 5.5,27.101 5.5,32.778V61C5.5,68.456 11.544,74.5 19,74.5H61C68.456,74.5 74.5,68.456 74.5,61V32.969C74.5,27.187 69.813,22.5 64.031,22.5H61.433C55.815,22.5 51.261,27.054 51.261,32.672C51.261,36.737 47.966,40.031 43.902,40.031H35.67C31.606,40.031 28.311,36.737 28.311,32.672C28.311,27.054 23.757,22.5 18.139,22.5Z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__2_res_0x7f080099"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__3_res_0x7f08009a"
+        android:pathData="M32,64L49,64A2,2 0,0 1,51 66L51,66A2,2 0,0 1,49 68L32,68A2,2 0,0 1,30 66L30,66A2,2 0,0 1,32 64z"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M32,64.25L49,64.25A1.75,1.75 0,0 1,50.75 66L50.75,66A1.75,1.75 0,0 1,49 67.75L32,67.75A1.75,1.75 0,0 1,30.25 66L30.25,66A1.75,1.75 0,0 1,32 64.25z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__4_res_0x7f08009b"
+        android:strokeWidth="0.5"/>
+    <path
+        android:fillColor="#8fb2f4"
+        android:pathData="M60.257,17.461L36.617,9.282C28.895,6.611 24.543,8.998 21.593,17.524L12.57,43.606C9.62,52.132 11.566,56.698 19.288,59.369L42.929,67.548C50.651,70.22 54.928,67.983 57.877,59.457L66.955,33.218C69.905,24.692 67.979,20.133 60.257,17.461Z"
+        android:fillAlpha="1"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__5_res_0x7f08009c"
+        android:pathData="M31.636,16.024L59.987,25.833A1,1 49.655,0 1,60.605 27.105L60.605,27.105A1,1 80.9,0 1,59.333 27.723L30.982,17.914A1,1 103.879,0 1,30.364 16.642L30.364,16.642A1,1 78.062,0 1,31.636 16.024z"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M31.554,16.261L59.905,26.069A0.75,0.75 104.593,0 1,60.369 27.023L60.369,27.023A0.75,0.75 104.593,0 1,59.415 27.487L31.064,17.678A0.75,0.75 97.947,0 1,30.6 16.724L30.6,16.724A0.75,0.75 97.947,0 1,31.554 16.261z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__6_res_0x7f08009d"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__7_res_0x7f08009e"
+        android:pathData="M29.674,21.695L54.245,30.195A1,1 75.872,0 1,54.863 31.467L54.863,31.467A1,1 75.872,0 1,53.591 32.085L29.02,23.585A1,1 71.565,0 1,28.402 22.313L28.402,22.313A1,1 71.565,0 1,29.674 21.695z"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29.592,21.931L54.163,30.432A0.75,0.75 103.595,0 1,54.627 31.386L54.627,31.386A0.75,0.75 103.595,0 1,53.673 31.849L29.102,23.348A0.75,0.75 84.793,0 1,28.638 22.394L28.638,22.394A0.75,0.75 84.793,0 1,29.592 21.931z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__8_res_0x7f08009f"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__9_res_0x7f0800a0"
+        android:pathData="M27.712,27.365L56.063,37.173A1,1 130.935,0 1,56.682 38.445L56.682,38.445A1,1 130.935,0 1,55.41 39.063L27.058,29.255A1,1 122.296,0 1,26.44 27.983L26.44,27.983A1,1 122.296,0 1,27.712 27.365z"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M27.63,27.601L55.982,37.41A0.75,0.75 104.593,0 1,56.445 38.364L56.445,38.364A0.75,0.75 104.593,0 1,55.491 38.827L27.14,29.019A0.75,0.75 81.052,0 1,26.676 28.065L26.676,28.065A0.75,0.75 81.052,0 1,27.63 27.601z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__10_res_0x7f080096"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="@drawable/_ic_illustration_permission_rationale_80__11_res_0x7f080097"
+        android:pathData="M25.751,33.035L54.102,42.844A1,1 64.33,0 1,54.72 44.116L54.72,44.116A1,1 64.33,0 1,53.448 44.734L25.097,34.925A1,1 50.591,0 1,24.479 33.653L24.479,33.653A1,1 50.591,0 1,25.751 33.035z"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M25.669,33.271L54.02,43.08A0.75,0.75 80.378,0 1,54.484 44.034L54.484,44.034A0.75,0.75 80.378,0 1,53.53 44.497L25.178,34.689A0.75,0.75 64.032,0 1,24.715 33.735L24.715,33.735A0.75,0.75 64.032,0 1,25.669 33.271z"
+        android:strokeColor="@drawable/_ic_illustration_permission_rationale_80__12_res_0x7f080098"
+        android:strokeWidth="0.5"
+        android:strokeAlpha="0.5"
+        android:fillAlpha="0.5"/>
+</vector>

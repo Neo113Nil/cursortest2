@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.app.android.uikit.view.refresh.ColoredSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:background="?attr/oz_semantic_bg_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ru.ozon.app.android.miniapp.webview.MiniAppWebView
+            android:id="@+id/webView"
+            android:paddingTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:gravity="end"
+            android:id="@+id/navBar"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:id="@+id/closeMiniApp"
+                android:background="@drawable/ripple_rect_bluewave"
+                android:padding="@dimen/padding_medium_small"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_m_cross"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <ImageView
+                android:id="@+id/backMiniApp"
+                android:background="@drawable/ripple_rect_bluewave"
+                android:padding="@dimen/padding_medium_small"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_back_black"
+                android:scaleType="centerInside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</ru.ozon.app.android.uikit.view.refresh.ColoredSwipeRefreshLayout>

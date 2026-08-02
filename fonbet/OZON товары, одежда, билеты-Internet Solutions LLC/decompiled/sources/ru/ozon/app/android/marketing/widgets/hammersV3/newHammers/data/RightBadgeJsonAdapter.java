@@ -1,0 +1,157 @@
+package ru.ozon.app.android.marketing.widgets.hammersV3.newHammers.data;
+
+import Ak.b;
+import Y9.c;
+import com.google.android.gms.measurement.api.AppMeasurementSdk;
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+import com.squareup.moshi.n;
+import com.squareup.moshi.x;
+import kotlin.Metadata;
+import kotlin.collections.M;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.uni.atoms.data.icon.IconDTO;
+import ru.ozon.uni.atoms.data.text.TextDTO;
+
+@Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0007\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u001c\u0010\u0018\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\u001c\u0010\u001b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001a0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0019R\u001a\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u00070\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001c\u0010\u0019R\u001a\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u001d0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001e\u0010\u0019¨\u0006\u001f"}, d2 = {"Lru/ozon/app/android/marketing/widgets/hammersV3/newHammers/data/RightBadgeJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lru/ozon/app/android/marketing/widgets/hammersV3/newHammers/data/RightBadge;", "Lcom/squareup/moshi/Moshi;", "moshi", "<init>", "(Lcom/squareup/moshi/Moshi;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/n;", "reader", "fromJson", "(Lcom/squareup/moshi/n;)Lru/ozon/app/android/marketing/widgets/hammersV3/newHammers/data/RightBadge;", "Lcom/squareup/moshi/x;", "writer", AppMeasurementSdk.ConditionalUserProperty.VALUE, "", "toJson", "(Lcom/squareup/moshi/x;Lru/ozon/app/android/marketing/widgets/hammersV3/newHammers/data/RightBadge;)V", "Lcom/squareup/moshi/n$a;", "options", "Lcom/squareup/moshi/n$a;", "Lru/ozon/uni/atoms/data/text/TextDTO;", "nullableTextDTOAdapter", "Lcom/squareup/moshi/JsonAdapter;", "", "nullableLongAdapter", "stringAdapter", "Lru/ozon/uni/atoms/data/icon/IconDTO;", "iconDTOAdapter", "marketing_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public final class RightBadgeJsonAdapter extends JsonAdapter<RightBadge> {
+    public static final int $stable = 8;
+
+    @NotNull
+    private final JsonAdapter<IconDTO> iconDTOAdapter;
+
+    @NotNull
+    private final JsonAdapter<Long> nullableLongAdapter;
+
+    @NotNull
+    private final JsonAdapter<TextDTO> nullableTextDTOAdapter;
+
+    @NotNull
+    private final n.a options;
+
+    @NotNull
+    private final JsonAdapter<String> stringAdapter;
+
+    public RightBadgeJsonAdapter(@NotNull Moshi moshi) {
+        Intrinsics.checkNotNullParameter(moshi, "moshi");
+        this.options = n.a.C0918a.a("badgeText", "secondsLeft", "onExpiredText", "leftBgColor", "rightBgColor", "leftTextColor", "rightTextColor", "chevron");
+        M m11 = M.f71699a;
+        this.nullableTextDTOAdapter = moshi.f(TextDTO.class, m11, "badgeText");
+        this.nullableLongAdapter = moshi.f(Long.class, m11, "secondsLeft");
+        this.stringAdapter = moshi.f(String.class, m11, "leftBgColor");
+        this.iconDTOAdapter = moshi.f(IconDTO.class, m11, "chevron");
+    }
+
+    @NotNull
+    public String toString() {
+        return b.c(32, "GeneratedJsonAdapter(RightBadge)", "toString(...)");
+    }
+
+    @Override // com.squareup.moshi.JsonAdapter
+    @NotNull
+    public RightBadge fromJson(@NotNull n reader) {
+        Intrinsics.checkNotNullParameter(reader, "reader");
+        reader.beginObject();
+        TextDTO textDTO = null;
+        Long l11 = null;
+        TextDTO textDTO2 = null;
+        String str = null;
+        String str2 = null;
+        String str3 = null;
+        String str4 = null;
+        IconDTO iconDTO = null;
+        while (reader.hasNext()) {
+            switch (reader.v(this.options)) {
+                case -1:
+                    reader.y();
+                    reader.skipValue();
+                    break;
+                case 0:
+                    textDTO = this.nullableTextDTOAdapter.fromJson(reader);
+                    break;
+                case 1:
+                    l11 = this.nullableLongAdapter.fromJson(reader);
+                    break;
+                case 2:
+                    textDTO2 = this.nullableTextDTOAdapter.fromJson(reader);
+                    break;
+                case 3:
+                    str = this.stringAdapter.fromJson(reader);
+                    if (str == null) {
+                        throw c.q("leftBgColor", "leftBgColor", reader);
+                    }
+                    break;
+                case 4:
+                    str2 = this.stringAdapter.fromJson(reader);
+                    if (str2 == null) {
+                        throw c.q("rightBgColor", "rightBgColor", reader);
+                    }
+                    break;
+                case 5:
+                    str3 = this.stringAdapter.fromJson(reader);
+                    if (str3 == null) {
+                        throw c.q("leftTextColor", "leftTextColor", reader);
+                    }
+                    break;
+                case 6:
+                    str4 = this.stringAdapter.fromJson(reader);
+                    if (str4 == null) {
+                        throw c.q("rightTextColor", "rightTextColor", reader);
+                    }
+                    break;
+                case 7:
+                    iconDTO = this.iconDTOAdapter.fromJson(reader);
+                    if (iconDTO == null) {
+                        throw c.q("chevron", "chevron", reader);
+                    }
+                    break;
+            }
+        }
+        reader.endObject();
+        if (str == null) {
+            throw c.j("leftBgColor", "leftBgColor", reader);
+        }
+        if (str2 == null) {
+            throw c.j("rightBgColor", "rightBgColor", reader);
+        }
+        if (str3 == null) {
+            throw c.j("leftTextColor", "leftTextColor", reader);
+        }
+        if (str4 == null) {
+            throw c.j("rightTextColor", "rightTextColor", reader);
+        }
+        if (iconDTO != null) {
+            return new RightBadge(textDTO, l11, textDTO2, str, str2, str3, str4, iconDTO);
+        }
+        throw c.j("chevron", "chevron", reader);
+    }
+
+    @Override // com.squareup.moshi.JsonAdapter
+    /* renamed from: toJson, reason: avoid collision after fix types in other method and merged with bridge method [inline-methods] */
+    public void mo44toJson(@NotNull x writer, RightBadge value) {
+        Intrinsics.checkNotNullParameter(writer, "writer");
+        if (value == null) {
+            throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
+        }
+        writer.j();
+        writer.w("badgeText");
+        this.nullableTextDTOAdapter.mo44toJson(writer, (x) value.getBadgeText());
+        writer.w("secondsLeft");
+        this.nullableLongAdapter.mo44toJson(writer, (x) value.getSecondsLeft());
+        writer.w("onExpiredText");
+        this.nullableTextDTOAdapter.mo44toJson(writer, (x) value.getOnExpiredText());
+        writer.w("leftBgColor");
+        this.stringAdapter.mo44toJson(writer, (x) value.getLeftBgColor());
+        writer.w("rightBgColor");
+        this.stringAdapter.mo44toJson(writer, (x) value.getRightBgColor());
+        writer.w("leftTextColor");
+        this.stringAdapter.mo44toJson(writer, (x) value.getLeftTextColor());
+        writer.w("rightTextColor");
+        this.stringAdapter.mo44toJson(writer, (x) value.getRightTextColor());
+        writer.w("chevron");
+        this.iconDTOAdapter.mo44toJson(writer, (x) value.getChevron());
+        writer.p();
+    }
+}

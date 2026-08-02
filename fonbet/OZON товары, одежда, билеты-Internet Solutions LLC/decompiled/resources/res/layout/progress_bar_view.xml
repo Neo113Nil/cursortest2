@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.uikit.view.progress.OzProgressBar
+        android:id="@+id/progressBarView"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"/>
+</merge>

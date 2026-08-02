@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.uni.android.atom.aspect.AspectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dateAspectView"
+    android:padding="@dimen/dimen_6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/dimen_10"
+        android:paddingVertical="@dimen/dimen_4">
+        <ru.ozon.uni.android.atom.text.TextAtomV2View
+            android:layout_gravity="center"
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ru.ozon.uni.android.atom.text.TextAtomV2View
+            android:layout_gravity="center"
+            android:id="@+id/weekDayTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ru.ozon.uni.android.atom.aspect.AspectView>

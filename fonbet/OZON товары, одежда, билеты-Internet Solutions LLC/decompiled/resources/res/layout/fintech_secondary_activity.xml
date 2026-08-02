@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fintech_nav_host_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.fintech.ui.screenstate.ScreenStateView
+        android:id="@+id/screen_state"
+        android:visibility="gone"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineProvider="none"/>
+    <androidx.fragment.app.FragmentContainerView
+        android:name="ru.ozon.fintech.features.tabber.presentation.base.OverFragment"
+        android:id="@+id/over_host_fragment"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

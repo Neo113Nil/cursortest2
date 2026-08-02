@@ -1,0 +1,89 @@
+{
+  "id": "snackbar_retry_code",
+  "type": "SNACK",
+  "version": 1,
+  "inWindow": false,
+  "atTop": true,
+  "topPadding": 0,
+  "bottomPadding": 0,
+  "swipeable": false,
+  "main": [
+    {
+      "type": "ROW",
+      "id": "ROW_MAIN",
+      "width": -1,
+      "height": -2,
+      "backgroundColor": "bgSecondary",
+      "backgroundRadius": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "paddings": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "widgets": [
+        {
+          "type": "IMAGE",
+          "id": "IMAGE_WARNING",
+          "width": 48,
+          "height": 48,
+          "backgroundColor": "bgExpressSecondary",
+          "backgroundRadius": [
+            16,
+            16,
+            16,
+            16
+          ],
+          "icon": "ic_m_exclamation",
+          "iconColor": "bgExpressPrimary"
+        },
+        {
+          "type": "BOX",
+          "id": "BOX_SPACER_HORIZONTAL",
+          "width": 8,
+          "height": 0
+        },
+        {
+          "type": "COLUMN",
+          "id": "COLUMN_TEXT",
+          "width": -2,
+          "height": -2,
+          "layoutWeight": 1,
+          "widgets": [
+            {
+              "type": "TEXTATOM",
+              "id": "TEXT_TITLE",
+              "width": -2,
+              "height": -2,
+              "text": "Повторите попытку через 5 минут",
+              "textColor": "textPrimary",
+              "textStyle": "tsBodyLBold",
+              "maxLines": 1
+            },
+            {
+              "type": "BOX",
+              "id": "BOX_SPACER_VERTICAL",
+              "width": 0,
+              "height": 2
+            },
+            {
+              "type": "TEXTATOM",
+              "id": "TEXT_DESCRIPTION",
+              "width": -2,
+              "height": -2,
+              "text": "Код-пароль введен неверно несколько раз",
+              "textColor": "textSecondary",
+              "textStyle": "tsBodyS",
+              "maxLines": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

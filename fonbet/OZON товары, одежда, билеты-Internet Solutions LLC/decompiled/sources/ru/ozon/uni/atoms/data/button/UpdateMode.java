@@ -1,0 +1,51 @@
+package ru.ozon.uni.atoms.data.button;
+
+import Xc.a;
+import Xc.b;
+import com.squareup.moshi.i;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, d2 = {"Lru/ozon/uni/atoms/data/button/UpdateMode;", "", "<init>", "(Ljava/lang/String;I)V", "UPDATE_MODE_INVALID", "UPDATE_MODE_MIN_ITEMS", "UPDATE_MODE_STEP", "uni_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes4.dex */
+public final class UpdateMode {
+    private static final /* synthetic */ a $ENTRIES;
+    private static final /* synthetic */ UpdateMode[] $VALUES;
+
+    @i(name = "UPDATE_MODE_INVALID")
+    public static final UpdateMode UPDATE_MODE_INVALID = new UpdateMode("UPDATE_MODE_INVALID", 0);
+
+    @i(name = "UPDATE_MODE_MIN_ITEMS")
+    public static final UpdateMode UPDATE_MODE_MIN_ITEMS = new UpdateMode("UPDATE_MODE_MIN_ITEMS", 1);
+
+    @i(name = "UPDATE_MODE_STEP")
+    public static final UpdateMode UPDATE_MODE_STEP = new UpdateMode("UPDATE_MODE_STEP", 2);
+
+    private static final /* synthetic */ UpdateMode[] $values() {
+        return new UpdateMode[]{UPDATE_MODE_INVALID, UPDATE_MODE_MIN_ITEMS, UPDATE_MODE_STEP};
+    }
+
+    static {
+        UpdateMode[] $values = $values();
+        $VALUES = $values;
+        $ENTRIES = b.a($values);
+    }
+
+    private UpdateMode(String str, int i11) {
+    }
+
+    @NotNull
+    public static a<UpdateMode> getEntries() {
+        return $ENTRIES;
+    }
+
+    public static UpdateMode valueOf(String str) {
+        return (UpdateMode) Enum.valueOf(UpdateMode.class, str);
+    }
+
+    public static UpdateMode[] values() {
+        return (UpdateMode[]) $VALUES.clone();
+    }
+}

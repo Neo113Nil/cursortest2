@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/videoView"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:auto_show="false"
+        app:keep_content_on_player_reset="true"
+        app:resize_mode="zoom"
+        app:shutter_background_color="@color/transparent"
+        app:surface_type="texture_view"
+        app:use_artwork="false"
+        app:use_controller="false"/>
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/paranjaImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:textColor="@color/black"
+        android:ellipsize="end"
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/labelImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/titleTextView"
+        android:layout_marginHorizontal="@dimen/dimen_8"/>
+    <ru.ozon.uni.android.atom.badge.BadgeView
+        android:id="@+id/badgeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

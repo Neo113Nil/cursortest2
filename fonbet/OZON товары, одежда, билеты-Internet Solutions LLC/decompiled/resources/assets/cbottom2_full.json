@@ -1,0 +1,105 @@
+{
+  "id": "fullid",
+  "type": "FULL",
+  "version": 1,
+  "disableNightMode": true,
+  "lightStatusBar": false,
+  "canClose": true,
+  "animated": false,
+  "scrollable": false,
+  "imageUrl": "https://images.rawpixel.com/image_social_landscape/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L25zMTQ2NTEtaW1hZ2Uta3d2eWQybmIuanBn.jpg",
+  "backgroundColor": "ozRed",
+  "header": [
+    {
+      "type": "textAtom",
+      "id": "textAtom_0_1",
+      "text": "Создаем счет",
+      "textColor": "ozbgprimary",
+      "textStyle": "tsHeadL",
+      "gravity": "center",
+      "paddings": [
+        56,
+        24,
+        56,
+        0
+      ]
+    },
+    {
+      "type": "textAtom",
+      "id": "textAtom_0_2",
+      "text": "Бесплатное открытие и обслуживание, кешбэк до 25% и скидки",
+      "textColor": "ozbgprimary",
+      "textStyle": "tsBodyL",
+      "gravity": "center",
+      "paddings": [
+        36,
+        12,
+        36,
+        0
+      ]
+    }
+  ],
+  "main": [
+    {
+      "type": "image",
+      "id": "image2",
+      "ratioW": 1,
+      "percentW": 0.6,
+      "ratioH": 1,
+      "infinity": true,
+      "iconSrc": "https://ir.ozone.ru/s3/multimedia-1-n/wc1000/7026876983.jpg",
+      "paddings": [
+        16,
+        40,
+        16,
+        12
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "type": "TEXTATOM",
+      "id": "TEXTATOMV20",
+      "version": 1,
+      "width": -1,
+      "height": -2,
+      "clickable": true,
+      "ratioW": null,
+      "ratioH": null,
+      "percentW": null,
+      "layoutWeight": null,
+      "layoutGravity": null,
+      "backgroundColor": "ozGreenUi",
+      "backgroundRadius": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "backgroundGradient": null,
+      "backgroundGradientOrientation": null,
+      "strokeColor": "ozOrange",
+      "strokeWidth": 5,
+      "dashWidth": 4,
+      "dashGap": 3,
+      "elevation": 5,
+      "paddings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text": "Футер",
+      "textColor": "ozTextPrimary",
+      "textStyle": "tsHeadL",
+      "gravity": "center",
+      "maxLines": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.app.android.videomolecule.presentation.view.VideoMoleculeView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/moleculeView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.ozon.app.android.storefront.core.socialAtoms.iconButton.SocialIconButtonView
+        android:id="@+id/playVideoCloseButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.app.android.storefront.widgets.playvideo.presentation.mute.MuteButtonView
+        android:id="@+id/muteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightPannel"/>
+    <ru.ozon.app.android.storefront.core.socialAtoms.rightPanel.RightPanelListView
+        android:id="@+id/rightPannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rightPanelGuidline"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:orientation="horizontal"
+        android:id="@+id/rightPanelGuidline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.46"/>
+</ru.ozon.app.android.videomolecule.presentation.view.VideoMoleculeView>

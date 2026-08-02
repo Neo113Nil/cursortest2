@@ -1,0 +1,47 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "updateItem",
+        "item": {
+          "id": "4",
+          "type": "message",
+          "version": 1,
+          "orderBy": 1,
+          "model": {
+            "chatId": "mock",
+            "createdAt": "2021-01-01T00:00:00Z",
+            "isRead": true,
+            "isMine": false,
+            "layout": "AvatarMessage",
+            "author": {
+              "id": "operator",
+              "name": "Operator",
+              "avatar": {
+                "initials": "alo",
+                "backgroundColor": "#155678",
+                "theme": "THEME_TYPE_X_SMALL"
+              }
+            },
+            "blocks": [
+              {
+                "name": "text",
+                "version": 1,
+                "vertical": "messenger",
+                "state": {
+                  "text": [
+                    {
+                      "type": "text",
+                      "data": "This message was updated"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

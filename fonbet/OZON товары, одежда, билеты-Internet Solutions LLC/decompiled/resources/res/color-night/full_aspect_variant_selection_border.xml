@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_selected="true"
+        android:color="?attr/textAction"/>
+    <item
+        android:state_selected="false"
+        android:color="@color/graphic_solid_neutral"
+        app:state_variant_available="true"/>
+    <item android:color="@color/transparent"/>
+</selector>

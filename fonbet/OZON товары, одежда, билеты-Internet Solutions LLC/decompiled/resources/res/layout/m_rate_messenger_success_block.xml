@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/success_sheet_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/successImageView"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_margin="@dimen/dimen_8"
+        android:scaleType="fitXY"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textColor="@color/text_primary"
+        android:id="@+id/titleTextAtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        style="@style/TextStyle.Head.L"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textColor="@color/text_secondary"
+        android:id="@+id/descriptionTextAtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"
+        android:layout_marginVertical="@dimen/dimen_8"
+        style="@style/TextStyle.Body.L"/>
+    <ru.ozon.uni.android.uikit.view.atoms.buttons.usual.LargeButtonView
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+</LinearLayout>

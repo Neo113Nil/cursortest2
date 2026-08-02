@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp">
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Head.M"
+        android:textColor="@color/oz_semantic_text_primary"
+        android:id="@+id/titleTextAtomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:textColor="@color/oz_semantic_text_secondary"
+        android:id="@+id/subtitleTextAtomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

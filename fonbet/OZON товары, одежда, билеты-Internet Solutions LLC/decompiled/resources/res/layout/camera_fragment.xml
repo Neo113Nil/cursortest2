@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/oz_semantic_bg_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/camera_layout"
+        layout="@layout/camera_view_layout"/>
+    <include
+        android:id="@+id/confirm_layout"
+        layout="@layout/confirm_photo_layout"/>
+    <ru.ozon.fintech.permissions.ui.PermissionsScreenStateView
+        android:id="@+id/permissions_screen_state"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.fintech.features.camera.ui.ScannerErrorResultView
+        android:id="@+id/scanner_error"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.fintech.ui.screenstate.ScreenStateView
+        android:id="@+id/screen_state"
+        android:background="@color/black_transparent_800"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:errorTextColor="@color/oz_white_1"
+        app:progressColor="@color/oz_white_1"/>
+</FrameLayout>

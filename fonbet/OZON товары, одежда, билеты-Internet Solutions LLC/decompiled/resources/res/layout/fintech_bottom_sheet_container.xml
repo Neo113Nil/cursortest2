@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/bottom_sheet_container"
+    android:background="@drawable/background_rounded_semantic_bg_secondary_16"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="160dp">
+    <View
+        android:layout_gravity="center"
+        android:id="@+id/base_bottom_sheet_dragger"
+        android:background="@drawable/bottom_sheet_drag_icon"
+        android:visibility="visible"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"/>
+    <FrameLayout
+        android:id="@+id/bottom_sheet_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

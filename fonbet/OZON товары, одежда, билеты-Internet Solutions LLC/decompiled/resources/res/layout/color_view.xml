@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.uikit.view.atoms.color.ColorCircleView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/colorCircleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAppearance="@style/TextStyle.Body.M"
+        android:textColor="?attr/oz_semantic_text_secondary"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/countTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"/>
+</merge>

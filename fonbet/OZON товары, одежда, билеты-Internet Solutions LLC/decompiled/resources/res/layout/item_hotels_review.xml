@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_rounded_secondary_20"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.uni.android.uikit.view.atoms.avatar.AvatarView
+        android:id="@+id/hotelsReviewAvatarAv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:id="@+id/hotelsReviewNameTav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hotelsReviewAvatarAv"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:id="@+id/hotelsReviewDateTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/hotelsReviewNameTav"
+        app:layout_constraintTop_toBottomOf="@+id/hotelsReviewNameTav"/>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/hotelsReviewHeaderBottomBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="hotelsReviewAvatarAv,hotelsReviewDateTav"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hotelsReviewBlocksRv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelsReviewHeaderBottomBarrier"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

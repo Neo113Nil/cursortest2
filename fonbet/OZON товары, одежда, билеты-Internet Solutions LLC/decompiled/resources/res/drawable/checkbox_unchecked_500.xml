@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="@dimen/dimen_24"
+    android:width="@dimen/dimen_24"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:name="checkbox_outer"
+        android:fillColor="?attr/bgPrimary"
+        android:pathData="M8,2L16,2A6,6 0,0 1,22 8L22,16A6,6 0,0 1,16 22L8,22A6,6 0,0 1,2 16L2,8A6,6 0,0 1,8 2z"/>
+    <path
+        android:name="checkbox_stroke"
+        android:fillColor="#00000000"
+        android:pathData="M8,2.5L16,2.5A5.5,5.5 0,0 1,21.5 8L21.5,16A5.5,5.5 0,0 1,16 21.5L8,21.5A5.5,5.5 0,0 1,2.5 16L2.5,8A5.5,5.5 0,0 1,8 2.5z"
+        android:strokeColor="?attr/graphicNeutral"
+        android:strokeWidth="1"/>
+    <group android:name="checkbox_icon_checked_group">
+        <path
+            android:name="checkbox_icon_checked_path"
+            android:fillColor="?attr/graphicLightKey"
+            android:pathData="M16.707,9.293C17.098,9.683 17.098,10.317 16.707,10.707L11.707,15.707C11.317,16.098 10.683,16.098 10.293,15.707L7.293,12.707C6.902,12.317 6.902,11.683 7.293,11.293C7.683,10.902 8.317,10.902 8.707,11.293L11,13.586L15.293,9.293C15.683,8.902 16.317,8.902 16.707,9.293Z"
+            android:fillAlpha="0"/>
+        <path
+            android:name="checkbox_icon_checked_path_dynamic"
+            android:fillColor="?attr/graphicPrimaryDynamic"
+            android:pathData="M16.707,9.293C17.098,9.683 17.098,10.317 16.707,10.707L11.707,15.707C11.317,16.098 10.683,16.098 10.293,15.707L7.293,12.707C6.902,12.317 6.902,11.683 7.293,11.293C7.683,10.902 8.317,10.902 8.707,11.293L11,13.586L15.293,9.293C15.683,8.902 16.317,8.902 16.707,9.293Z"
+            android:fillAlpha="0"/>
+    </group>
+    <group android:name="checkbox_icon_indeterminate_group">
+        <path
+            android:name="checkbox_icon_indeterminate_path"
+            android:fillColor="?attr/graphicLightKey"
+            android:pathData="M8,12C8,11.448 8.448,11 9,11H15C15.552,11 16,11.448 16,12C16,12.552 15.552,13 15,13H9C8.448,13 8,12.552 8,12Z"
+            android:fillAlpha="0"/>
+        <path
+            android:name="checkbox_icon_indeterminate_path_dynamic"
+            android:fillColor="?attr/graphicPrimaryDynamic"
+            android:pathData="M8,12C8,11.448 8.448,11 9,11H15C15.552,11 16,11.448 16,12C16,12.552 15.552,13 15,13H9C8.448,13 8,12.552 8,12Z"
+            android:fillAlpha="0"/>
+    </group>
+</vector>

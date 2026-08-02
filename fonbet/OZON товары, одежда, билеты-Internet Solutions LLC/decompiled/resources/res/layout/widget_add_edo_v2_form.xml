@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginEnd="@dimen/dimen_32"/>
+    <ru.ozon.uni.android.cell.text.TextFieldCellView
+        android:id="@+id/addEdoTextFieldCellView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+    <ru.ozon.app.android.atoms.v3.molecules.DisclaimerContainer
+        android:id="@+id/addEdoAnnotation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginHorizontal="16dp"/>
+</LinearLayout>

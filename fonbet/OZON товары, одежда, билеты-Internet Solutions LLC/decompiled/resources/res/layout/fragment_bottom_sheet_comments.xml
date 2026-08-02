@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentBottomSheetComments"
+    android:background="@drawable/bg_white_top_big_rounded"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CommentsBehavior">
+    <FrameLayout
+        android:id="@+id/commentsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_20"/>
+</FrameLayout>

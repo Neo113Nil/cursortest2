@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/o2_selector_rect_round_important_round"/>
+    <item>
+        <layer-list>
+            <item android:drawable="@drawable/o2_selector_rect_round_important_round"/>
+            <item android:drawable="@drawable/ripple_rect_round_bluewave_round"/>
+        </layer-list>
+    </item>
+</selector>

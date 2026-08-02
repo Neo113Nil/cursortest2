@@ -1,0 +1,43 @@
+package io.sentry.android.core.internal.tombstone;
+
+import com.google.protobuf.GeneratedMessageLite;
+
+/* loaded from: classes10.dex */
+final /* synthetic */ class c {
+
+    /* renamed from: a, reason: collision with root package name */
+    static final /* synthetic */ int[] f67174a;
+
+    static {
+        int[] iArr = new int[GeneratedMessageLite.b.values().length];
+        f67174a = iArr;
+        try {
+            iArr[GeneratedMessageLite.b.NEW_MUTABLE_INSTANCE.ordinal()] = 1;
+        } catch (NoSuchFieldError unused) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.NEW_BUILDER.ordinal()] = 2;
+        } catch (NoSuchFieldError unused2) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.BUILD_MESSAGE_INFO.ordinal()] = 3;
+        } catch (NoSuchFieldError unused3) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.GET_DEFAULT_INSTANCE.ordinal()] = 4;
+        } catch (NoSuchFieldError unused4) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.GET_PARSER.ordinal()] = 5;
+        } catch (NoSuchFieldError unused5) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.GET_MEMOIZED_IS_INITIALIZED.ordinal()] = 6;
+        } catch (NoSuchFieldError unused6) {
+        }
+        try {
+            f67174a[GeneratedMessageLite.b.SET_MEMOIZED_IS_INITIALIZED.ordinal()] = 7;
+        } catch (NoSuchFieldError unused7) {
+        }
+    }
+}

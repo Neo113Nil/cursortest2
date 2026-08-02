@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="?attr/oz_semantic_bg_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@drawable/shadow_from_bottom_to_top"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"/>
+    <ru.ozon.uni.android.uikit.view.atoms.buttons.usual.LargeButtonView
+        android:id="@+id/deleteAccountDescriptionStickyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        style="@style/LargeButton.Secondary"/>
+</LinearLayout>

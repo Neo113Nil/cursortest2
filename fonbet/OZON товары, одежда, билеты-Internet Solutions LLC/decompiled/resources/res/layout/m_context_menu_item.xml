@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/contextMenuButton"
+    android:layout_width="@dimen/dimen_80"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_gravity="center"
+        android:id="@+id/menuIcon"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"/>
+    <TextView
+        android:textAppearance="@style/OzonTextAppearance.Body.300xsmall"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:id="@+id/menuLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="8dp"/>
+</LinearLayout>

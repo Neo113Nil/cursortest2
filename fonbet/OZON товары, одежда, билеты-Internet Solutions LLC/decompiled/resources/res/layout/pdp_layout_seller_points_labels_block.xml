@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:id="@+id/sellerPointsBlockRoot"
+    android:background="@drawable/bg_seller_points_block"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:backgroundTintMode="src_over">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sellerPointsBlockTitleTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:includeFontPadding="false"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/sellerPointsBlockSubtitleTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:singleLine="true"
+        android:includeFontPadding="false"/>
+</LinearLayout>

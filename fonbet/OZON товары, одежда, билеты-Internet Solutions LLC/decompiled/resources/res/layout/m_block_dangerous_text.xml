@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/dangerousTextRootCl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/dangerousTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ru.ozon.android.messenger.framework.presentation.common.view.timestatus.TimeStatusView
+        android:layout_gravity="end"
+        android:id="@+id/timeStatusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_6"/>
+</LinearLayout>

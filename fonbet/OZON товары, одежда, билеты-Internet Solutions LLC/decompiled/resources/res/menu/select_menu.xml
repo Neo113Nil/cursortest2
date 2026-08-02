@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_m_tabbar_home_increased"
+        android:id="@+id/menu_main"
+        android:title="@string/tabs_menu_main"/>
+    <item
+        android:icon="@drawable/ic_m_tabbar_catalog_increased"
+        android:id="@+id/menu_catalog"
+        android:title="@string/common_menu_catalog"/>
+    <item
+        android:icon="@drawable/ic_m_tabbar_finance_increased"
+        android:id="@+id/menu_bank"
+        android:title="@string/tabs_menu_bank"/>
+    <item
+        android:icon="@drawable/ic_m_tabbar_favourite_increased"
+        android:id="@+id/menu_favorites"
+        android:title="@string/common_menu_favorites"/>
+    <item
+        android:icon="@drawable/ic_m_tabbar_select_cart_increased"
+        android:id="@+id/menu_cart"
+        android:title="@string/common_menu_cart"/>
+    <item
+        android:icon="@drawable/ic_m_tabbar_profile_increased"
+        android:id="@+id/menu_profile"
+        android:title="@string/common_menu_profile"/>
+</menu>

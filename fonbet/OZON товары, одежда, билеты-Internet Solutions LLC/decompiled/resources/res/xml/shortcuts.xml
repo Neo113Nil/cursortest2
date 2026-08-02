@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:icon="@drawable/ic_search_shortcut"
+        android:shortcutId="search"
+        android:shortcutShortLabel="@string/search_shortcut_label_android"
+        android:shortcutLongLabel="@string/search_shortcut_long_label_android">
+        <intent
+            android:targetPackage="ru.ozon.app.android"
+            android:action="android.intent.action.VIEW"
+            android:data="ozon://searchSuggestions"
+            android:targetClass="ru.ozon.app.android.deeplinks.DeeplinkActivity"/>
+    </shortcut>
+</shortcuts>

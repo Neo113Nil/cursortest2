@@ -1,0 +1,29 @@
+package ru.ozon.app.android.travel.feature.oldwidgets.di;
+
+import Jb.e;
+import Jb.j;
+import java.util.Set;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.reportDocument.data.ReportDocumentConfig;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.reportDocument.presentation.ReportDocumentViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelModalPriceDetailInformation.v1.data.TravelModalPriceDetailInformationConfig;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelModalPriceDetailInformation.v1.presentation.header.TravelModalPriceDetailInformationHeaderViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelModalPriceDetailInformation.v1.presentation.sections.TravelModalPriceDetailInformationViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelPriceDetailInformation.v1.data.TravelPriceDetailInformationConfig;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelPriceDetailInformation.v1.presentation.TravelPriceDetailInformationViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelPriceDetailInformation.v1.presentation.sticky.TravelPriceDetailInformationNoUiViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelScrollPriceCalendar.v1.data.TravelScrollPriceCalendarConfig;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelScrollPriceCalendar.v1.presentation.TravelScrollPriceCalendarViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelScrollPriceCalendar.v2.data.TravelScrollPriceCalendarV2Config;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelScrollPriceCalendar.v2.presentation.TravelScrollPriceCalendarV2ViewMapper;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelSorting.data.TravelSortingConfig;
+import ru.ozon.app.android.travel.feature.oldwidgets.widgets.travelSorting.presentation.TravelSortingViewMapper;
+
+/* loaded from: classes7.dex */
+public final class TravelOldWidgetsWidgetV2Module_Companion_ProvideWidgets$old_widgets_prodGoogleAllVendorsReleaseFactory implements e<Set<Widget2>> {
+    public static Set<Widget2> provideWidgets$old_widgets_prodGoogleAllVendorsRelease(ReportDocumentConfig reportDocumentConfig, ReportDocumentViewMapper reportDocumentViewMapper, TravelModalPriceDetailInformationConfig travelModalPriceDetailInformationConfig, TravelModalPriceDetailInformationHeaderViewMapper travelModalPriceDetailInformationHeaderViewMapper, TravelModalPriceDetailInformationViewMapper travelModalPriceDetailInformationViewMapper, TravelScrollPriceCalendarV2Config travelScrollPriceCalendarV2Config, TravelScrollPriceCalendarV2ViewMapper travelScrollPriceCalendarV2ViewMapper, TravelPriceDetailInformationConfig travelPriceDetailInformationConfig, TravelPriceDetailInformationViewMapper travelPriceDetailInformationViewMapper, TravelPriceDetailInformationNoUiViewMapper travelPriceDetailInformationNoUiViewMapper, TravelSortingConfig travelSortingConfig, TravelSortingViewMapper travelSortingViewMapper, TravelScrollPriceCalendarConfig travelScrollPriceCalendarConfig, TravelScrollPriceCalendarViewMapper travelScrollPriceCalendarViewMapper) {
+        Set<Widget2> provideWidgets$old_widgets_prodGoogleAllVendorsRelease = TravelOldWidgetsWidgetV2Module.INSTANCE.provideWidgets$old_widgets_prodGoogleAllVendorsRelease(reportDocumentConfig, reportDocumentViewMapper, travelModalPriceDetailInformationConfig, travelModalPriceDetailInformationHeaderViewMapper, travelModalPriceDetailInformationViewMapper, travelScrollPriceCalendarV2Config, travelScrollPriceCalendarV2ViewMapper, travelPriceDetailInformationConfig, travelPriceDetailInformationViewMapper, travelPriceDetailInformationNoUiViewMapper, travelSortingConfig, travelSortingViewMapper, travelScrollPriceCalendarConfig, travelScrollPriceCalendarViewMapper);
+        j.d(provideWidgets$old_widgets_prodGoogleAllVendorsRelease);
+        return provideWidgets$old_widgets_prodGoogleAllVendorsRelease;
+    }
+}

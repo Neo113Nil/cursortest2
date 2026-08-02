@@ -1,0 +1,193 @@
+{
+  "id": "cbottom_biometrics_password_changed",
+  "type": "SHEET",
+  "version": 1,
+  "headerPaddings": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "mainPaddings": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "footerPaddings": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "main": [
+    {
+      "id": "biometricsPasswordChangedColumn",
+      "version": 1,
+      "type": "COLUMN",
+      "paddings": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "margins": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "layoutGravity": [
+        "START",
+        "START"
+      ],
+      "backgroundRadius": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "backgroundGradientOrientation": "TOP_BOTTOM",
+      "skeletonable": false,
+      "disableHighlightAnimation": false,
+      "widgets": [
+        {
+          "id": "biometricsPasswordChangedTitle",
+          "version": 1,
+          "type": "TEXTATOM",
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "layoutGravity": [
+            "CENTER",
+            "CENTER"
+          ],
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradientOrientation": "TOP_BOTTOM",
+          "skeletonable": false,
+          "disableHighlightAnimation": false,
+          "text": "Пароль для входа был изменён",
+          "textStyle": "tsHeadXL",
+          "textColor": "textPrimary",
+          "gravity": "CENTER"
+        },
+        {
+          "id": "biometricsPasswordChangedDescription",
+          "version": 1,
+          "type": "TEXTATOM",
+          "paddings": [
+            8,
+            8,
+            8,
+            8
+          ],
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "layoutGravity": [
+            "CENTER",
+            "CENTER"
+          ],
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradientOrientation": "TOP_BOTTOM",
+          "skeletonable": false,
+          "disableHighlightAnimation": false,
+          "text": "Пожалуйста, введите его вручную",
+          "textStyle": "tsBodyL",
+          "textColor": "textSecondary",
+          "gravity": "CENTER"
+        },
+        {
+          "id": "biometricsPasswordChangedSpacer",
+          "version": 1,
+          "type": "BOX",
+          "height": 32,
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "layoutGravity": [
+            "START",
+            "START"
+          ],
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradientOrientation": "TOP_BOTTOM",
+          "skeletonable": false,
+          "disableHighlightAnimation": false
+        },
+        {
+          "id": "biometrics_password_changed confirm",
+          "version": 1,
+          "type": "BUTTON",
+          "clickable": true,
+          "layoutWeight": 1,
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "layoutGravity": [
+            "START",
+            "START"
+          ],
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradientOrientation": "TOP_BOTTOM",
+          "skeletonable": false,
+          "disableHighlightAnimation": false,
+          "preset": "SIZE_600",
+          "style": "ACTION_PRIMARY",
+          "title": {
+            "text": "Хорошо"
+          }
+        }
+      ]
+    }
+  ]
+}

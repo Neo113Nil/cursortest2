@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_m_asterisk"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:id="@+id/markerTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_message_bullet"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleTav"/>
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/markerBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="iconIv, markerTav"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:textAppearance="@style/TextStyle.Body.L.Bold"
+        android:id="@+id/titleTav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/markerBarrier"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.ozon.app.android.atoms.v3.containers.VerticalRecyclerContainer
+        android:id="@+id/listElementAtomsVRC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/markerBarrier"
+        app:layout_constraintTop_toBottomOf="@+id/titleTav"/>
+    <View
+        android:id="@+id/separator"
+        android:background="@color/oz_parandja_hover"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/listElementAtomsVRC"
+        app:layout_constraintTop_toBottomOf="@+id/listElementAtomsVRC"/>
+</merge>

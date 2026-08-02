@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/switch_logos_btn_select_inactive"
+        android:state_activated="false"/>
+    <item
+        android:drawable="@drawable/switch_logos_btn_select_active"
+        android:state_activated="true"/>
+</selector>

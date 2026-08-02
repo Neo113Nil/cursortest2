@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragmentRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/rootContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="ru.ozon.app.android.tabbar.ui.behavior.FragmentContainerBehavior"/>
+        <ru.ozon.app.android.tabbar.ui.OzonBottomNavigationView
+            android:theme="@style/BottomNavigationView"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottomNavigation"
+            android:background="?attr/layerFloor1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_navigation_height"
+            app:itemIconTint="@color/bottomnavigation_icon_color"
+            app:itemTextColor="@color/bottomnavigation_text_color"
+            app:menu="@menu/menu_ozon_travel"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSelect"
+        android:background="?attr/bgDarkKey"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        app:navigationIcon="@drawable/ic_m_disclosure_back_filled"
+        style="@style/Widget.MyApp.ToolBar">
+        <TextView
+            android:textAppearance="@style/TextStyle.Body.L.Bold"
+            android:textColor="?attr/textPrimaryOnDark"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_toolbar_title_android"
+            android:maxLines="1"
+            android:layout_marginEnd="?attr/actionBarSize"/>
+    </androidx.appcompat.widget.Toolbar>
+    <ru.ozon.android.composerCommonViewKit.islandSeparator.presentation.IslandSeparatorView
+        android:id="@+id/roundedSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

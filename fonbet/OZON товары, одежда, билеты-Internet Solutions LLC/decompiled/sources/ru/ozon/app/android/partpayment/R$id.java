@@ -1,0 +1,51 @@
+package ru.ozon.app.android.partpayment;
+
+/* loaded from: classes13.dex */
+public final class R$id {
+    public static int actionBtn = 2131361896;
+    public static int actionRv = 2131361927;
+    public static int addressRv = 2131362154;
+    public static int appBarAbl = 2131362269;
+    public static int changeBtn = 2131363199;
+    public static int checkbox = 2131363244;
+    public static int checkboxContainer = 2131363249;
+    public static int checkerRv = 2131363263;
+    public static int completeTv = 2131363457;
+    public static int container = 2131363503;
+    public static int descriptionTv = 2131363845;
+    public static int detailsRv = 2131363858;
+    public static int disclosureIv = 2131363937;
+    public static int dotsPiv = 2131363978;
+    public static int errorBtn = 2131364117;
+    public static int fieldEt = 2131364288;
+    public static int fieldTil = 2131364304;
+    public static int fieldsRv = 2131364306;
+    public static int finishBtn = 2131364396;
+    public static int formTitleTv = 2131364533;
+    public static int hintTv = 2131364834;
+    public static int inputEt = 2131365201;
+    public static int inputTil = 2131365224;
+    public static int layoutBackgroundProgressBar = 2131365401;
+    public static int listRv = 2131365486;
+    public static int logoIv = 2131365525;
+    public static int maxValueHintTv = 2131365648;
+    public static int maxValueTv = 2131365649;
+    public static int messageTv = 2131365717;
+    public static int optionNameTv = 2131365990;
+    public static int pageFormWidgetCl = 2131366153;
+    public static int paymentIconIv = 2131366219;
+    public static int periodHintTv = 2131366308;
+    public static int periodTv = 2131366309;
+    public static int pinEt = 2131366344;
+    public static int radioGroup = 2131366750;
+    public static int selectorIv = 2131367420;
+    public static int selectorV = 2131367422;
+    public static int sendBtn = 2131367491;
+    public static int separator = 2131367518;
+    public static int statusIv = 2131368210;
+    public static int subMessageTv = 2131368288;
+    public static int subtitleTv = 2131368335;
+    public static int titleTv = 2131368718;
+    public static int toolbarT = 2131368742;
+    public static int valueTv = 2131369384;
+}

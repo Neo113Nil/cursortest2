@@ -1,0 +1,103 @@
+package ru.ozon.app.android.fresh.chat.widgets.textInput.data;
+
+import Ql.c;
+import T7.P;
+import com.squareup.moshi.j;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.android.tokenized.model.TokenizedTrackingInfo;
+import ru.ozon.app.android.marketing.widgets.hammersV3.newHammers.data.HammersV3BodyDTO;
+import ru.ozon.uni.atoms.data.AtomActionDTO;
+
+@j(generateAdapter = true)
+@Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0081\b\u0018\u0000 \u001b2\u00020\u0001:\u0001\u001bB1\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0014\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007¢\u0006\u0004\b\t\u0010\nJ\u000b\u0010\u0011\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u0017\u0010\u0013\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007HÆ\u0003J9\u0010\u0014\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\u0016\b\u0002\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007HÆ\u0001J\u0013\u0010\u0015\u001a\u00020\u00162\b\u0010\u0017\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0018\u001a\u00020\u0019HÖ\u0001J\t\u0010\u001a\u001a\u00020\u0003HÖ\u0001R\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u001f\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\b\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u001c"}, d2 = {"Lru/ozon/app/android/fresh/chat/widgets/textInput/data/TextInputDTO;", "", HammersV3BodyDTO.PLACEHOLDER, "", "sendAction", "Lru/ozon/uni/atoms/data/AtomActionDTO;", "trackingInfo", "", "Lru/ozon/android/tokenized/model/TokenizedTrackingInfo;", "<init>", "(Ljava/lang/String;Lru/ozon/uni/atoms/data/AtomActionDTO;Ljava/util/Map;)V", "getPlaceholder", "()Ljava/lang/String;", "getSendAction", "()Lru/ozon/uni/atoms/data/AtomActionDTO;", "getTrackingInfo", "()Ljava/util/Map;", "component1", "component2", "component3", "copy", "equals", "", "other", "hashCode", "", "toString", "Companion", "chat_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes12.dex */
+public final /* data */ class TextInputDTO {
+
+    @NotNull
+    public static final String PAYLOAD_TEXT = "text";
+    private final String placeholder;
+    private final AtomActionDTO sendAction;
+    private final Map<String, TokenizedTrackingInfo> trackingInfo;
+    public static final int $stable = 8;
+
+    public TextInputDTO(String str, AtomActionDTO atomActionDTO, Map<String, TokenizedTrackingInfo> map) {
+        this.placeholder = str;
+        this.sendAction = atomActionDTO;
+        this.trackingInfo = map;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    public static /* synthetic */ TextInputDTO copy$default(TextInputDTO textInputDTO, String str, AtomActionDTO atomActionDTO, Map map, int i11, Object obj) {
+        if ((i11 & 1) != 0) {
+            str = textInputDTO.placeholder;
+        }
+        if ((i11 & 2) != 0) {
+            atomActionDTO = textInputDTO.sendAction;
+        }
+        if ((i11 & 4) != 0) {
+            map = textInputDTO.trackingInfo;
+        }
+        return textInputDTO.copy(str, atomActionDTO, map);
+    }
+
+    /* renamed from: component1, reason: from getter */
+    public final String getPlaceholder() {
+        return this.placeholder;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final AtomActionDTO getSendAction() {
+        return this.sendAction;
+    }
+
+    public final Map<String, TokenizedTrackingInfo> component3() {
+        return this.trackingInfo;
+    }
+
+    @NotNull
+    public final TextInputDTO copy(String placeholder, AtomActionDTO sendAction, Map<String, TokenizedTrackingInfo> trackingInfo) {
+        return new TextInputDTO(placeholder, sendAction, trackingInfo);
+    }
+
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof TextInputDTO)) {
+            return false;
+        }
+        TextInputDTO textInputDTO = (TextInputDTO) other;
+        return Intrinsics.d(this.placeholder, textInputDTO.placeholder) && Intrinsics.d(this.sendAction, textInputDTO.sendAction) && Intrinsics.d(this.trackingInfo, textInputDTO.trackingInfo);
+    }
+
+    public final String getPlaceholder() {
+        return this.placeholder;
+    }
+
+    public final AtomActionDTO getSendAction() {
+        return this.sendAction;
+    }
+
+    public final Map<String, TokenizedTrackingInfo> getTrackingInfo() {
+        return this.trackingInfo;
+    }
+
+    public int hashCode() {
+        String str = this.placeholder;
+        int hashCode = (str == null ? 0 : str.hashCode()) * 31;
+        AtomActionDTO atomActionDTO = this.sendAction;
+        int hashCode2 = (hashCode + (atomActionDTO == null ? 0 : atomActionDTO.hashCode())) * 31;
+        Map<String, TokenizedTrackingInfo> map = this.trackingInfo;
+        return hashCode2 + (map != null ? map.hashCode() : 0);
+    }
+
+    @NotNull
+    public String toString() {
+        String str = this.placeholder;
+        AtomActionDTO atomActionDTO = this.sendAction;
+        return P.f(c.c("TextInputDTO(placeholder=", str, ", sendAction=", atomActionDTO, ", trackingInfo="), this.trackingInfo, ")");
+    }
+}

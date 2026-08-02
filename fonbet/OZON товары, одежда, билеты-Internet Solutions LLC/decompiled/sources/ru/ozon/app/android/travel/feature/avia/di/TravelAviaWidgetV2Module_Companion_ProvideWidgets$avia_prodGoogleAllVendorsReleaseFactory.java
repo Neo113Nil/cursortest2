@@ -1,0 +1,76 @@
+package ru.ozon.app.android.travel.feature.avia.di;
+
+import Jb.e;
+import Jb.j;
+import java.util.Set;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggage.v2.data.AdditionalLuggageV2Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggage.v2.presentation.AdditionalLuggageV2ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggageTotal.data.AdditionalLuggageTotalShadedConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalLuggageTotal.presentation.AdditionalLuggageTotalViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalServiceCard.data.AdditionalServiceCardConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.additionalServiceCard.presentation.AdditionalServiceCardViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaBookedTicketInfo.data.AviaBookedTicketInfoConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaBookedTicketInfo.presentation.AviaBookedTicketInfoViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffs.data.AviaCheckTariffsConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffs.presentation.flights.AviaCheckTariffsViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffs.presentation.luggageCell.AviaCheckTariffsLuggageCellViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffs.presentation.subtitle.AviaCheckTariffsSubtitleViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffs.presentation.title.AviaCheckTariffsTitleViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffsPriceDetails.data.AviaCheckTariffsPriceDetailsConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaCheckTariffsPriceDetails.presentation.AviaCheckTariffsPriceDetailsViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaComplexSearchForm.data.AviaComplexSearchFormConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaComplexSearchForm.presentation.AviaComplexSearchFormViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaDetailedInfo.v3.data.AviaDetailedInfoV3Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaDetailedInfo.v3.presentation.content.AviaDetailedInfoV3ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaDetailedInfo.v3.presentation.tabs.AviaDetailedInfoV3TabsViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaSearchResult.legacy.data.v3.AviaSearchResultV3Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.aviaSearchResult.legacy.presentation.AviaSearchResultV3ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.buyTogether.data.BuyTogetherConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.buyTogether.presentation.BuyTogetherViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.directFlightsDropdown.v1.data.DirectFlightsDropdownConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.directFlightsDropdown.v1.presentation.DirectFlightsDropdownViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightRouteDetails.data.FlightRouteDetailsConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightRouteDetails.presentation.annotation.FlightRouteDetailsAnnotationViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightRouteDetails.presentation.flight.FlightRouteDetailsViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsLegend.v1.data.FlightSeatsLegendConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsLegend.v1.presentation.FlightSeatsLegendViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsScheme.v1.data.FlightSeatsSchemeConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsScheme.v1.presentation.passengers.FlightSeatsSchemePassengersBlockStickyViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsScheme.v1.presentation.schemeItems.FlightSeatsSchemeBlockViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.flightSeatsScheme.v1.presentation.total.FlightSeatsSchemeTotalStickyViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.helpInsurance.data.HelpInsuranceConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.helpInsurance.presentation.HelpInsuranceViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.insurancePanel.data.InsurancePanelConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.insurancePanel.presentation.InsurancePanelViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.luggageRequirements.v2.data.LuggageRequirementsV2Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.luggageRequirements.v2.presentation.LuggageRequirementsV2ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.orderFlightInfo.data.OrderFlightInfoConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.orderFlightInfo.presentation.OrderFlightInfoViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.passengersLuggageSelection.data.PassengersLuggageSelectionConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.passengersLuggageSelection.presentation.PassengersLuggageSelectionViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.returnPolicy.data.ReturnPolicyConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.returnPolicy.presentation.ReturnPolicyViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.servicePackageSelection.data.ServicePackageSelectionConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.servicePackageSelection.presentation.ServicePackageSelectionViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.servicePackageSelection.presentation.button.ServicePackageSelectionButtonNoUiViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.stepper.data.StepperConfig;
+import ru.ozon.app.android.travel.feature.avia.widgets.stepper.presentation.StepperViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.tariffLuggage.v2.data.TariffLuggageV2Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.tariffLuggage.v2.presentation.TariffLuggageV2ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelFlightCheckTariff.v2.data.TravelFlightCheckTariffV2Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelFlightCheckTariff.v2.presentation.TravelFlightCheckTariffV2ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelServicePackageIndMobileAddToOrder.v3.data.ServicePackSelectionV3Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelServicePackageIndMobileAddToOrder.v3.presentation.ServicePackSelectionV3ViewMapper;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelServicePackageSelected.v3.data.TravelServicePackageSelectedV3Config;
+import ru.ozon.app.android.travel.feature.avia.widgets.travelServicePackageSelected.v3.presentation.TravelServicePackageSelectedV3ViewMapper;
+import ru.ozon.app.android.travel.utils.listtracking.ListTrackingViewMapper;
+
+/* loaded from: classes7.dex */
+public final class TravelAviaWidgetV2Module_Companion_ProvideWidgets$avia_prodGoogleAllVendorsReleaseFactory implements e<Set<Widget2>> {
+    public static Set<Widget2> provideWidgets$avia_prodGoogleAllVendorsRelease(OrderFlightInfoConfig orderFlightInfoConfig, OrderFlightInfoViewMapper orderFlightInfoViewMapper, ServicePackSelectionV3Config servicePackSelectionV3Config, ServicePackSelectionV3ViewMapper servicePackSelectionV3ViewMapper, ServicePackageSelectionConfig servicePackageSelectionConfig, ServicePackageSelectionViewMapper servicePackageSelectionViewMapper, ServicePackageSelectionButtonNoUiViewMapper servicePackageSelectionButtonNoUiViewMapper, TravelServicePackageSelectedV3Config travelServicePackageSelectedV3Config, TravelServicePackageSelectedV3ViewMapper travelServicePackageSelectedV3ViewMapper, FlightSeatsLegendConfig flightSeatsLegendConfig, FlightSeatsLegendViewMapper flightSeatsLegendViewMapper, InsurancePanelConfig insurancePanelConfig, InsurancePanelViewMapper insurancePanelViewMapper, HelpInsuranceConfig helpInsuranceConfig, HelpInsuranceViewMapper helpInsuranceViewMapper, TravelFlightCheckTariffV2Config travelFlightCheckTariffV2Config, TravelFlightCheckTariffV2ViewMapper travelFlightCheckTariffV2ViewMapper, LuggageRequirementsV2Config luggageRequirementsV2Config, LuggageRequirementsV2ViewMapper luggageRequirementsV2ViewMapper, AdditionalLuggageTotalShadedConfig additionalLuggageTotalShadedConfig, AdditionalLuggageTotalViewMapper additionalLuggageTotalViewMapper, TariffLuggageV2Config tariffLuggageV2Config, TariffLuggageV2ViewMapper tariffLuggageV2ViewMapper, AdditionalServiceCardConfig additionalServiceCardConfig, AdditionalServiceCardViewMapper additionalServiceCardViewMapper, StepperConfig stepperConfig, StepperViewMapper stepperViewMapper, AdditionalLuggageV2Config additionalLuggageV2Config, AdditionalLuggageV2ViewMapper additionalLuggageV2ViewMapper, AviaSearchResultV3ViewMapper aviaSearchResultV3ViewMapper, AviaSearchResultV3Config aviaSearchResultV3Config, AviaCheckTariffsConfig aviaCheckTariffsConfig, AviaCheckTariffsViewMapper aviaCheckTariffsViewMapper, AviaCheckTariffsTitleViewMapper aviaCheckTariffsTitleViewMapper, AviaCheckTariffsPriceDetailsConfig aviaCheckTariffsPriceDetailsConfig, AviaCheckTariffsSubtitleViewMapper aviaCheckTariffsSubtitleViewMapper, AviaCheckTariffsLuggageCellViewMapper aviaCheckTariffsLuggageCellViewMapper, AviaCheckTariffsPriceDetailsViewMapper aviaCheckTariffsPriceDetailsViewMapper, AviaBookedTicketInfoConfig aviaBookedTicketInfoConfig, AviaBookedTicketInfoViewMapper aviaBookedTicketInfoViewMapper, FlightSeatsSchemeConfig flightSeatsSchemeConfig, FlightSeatsSchemeBlockViewMapper flightSeatsSchemeBlockViewMapper, FlightSeatsSchemeTotalStickyViewMapper flightSeatsSchemeTotalStickyViewMapper, FlightSeatsSchemePassengersBlockStickyViewMapper flightSeatsSchemePassengersBlockStickyViewMapper, AviaDetailedInfoV3Config aviaDetailedInfoV3Config, AviaDetailedInfoV3TabsViewMapper aviaDetailedInfoV3TabsViewMapper, AviaDetailedInfoV3ViewMapper aviaDetailedInfoV3ViewMapper, FlightRouteDetailsConfig flightRouteDetailsConfig, FlightRouteDetailsViewMapper flightRouteDetailsViewMapper, FlightRouteDetailsAnnotationViewMapper flightRouteDetailsAnnotationViewMapper, ListTrackingViewMapper listTrackingViewMapper, BuyTogetherConfig buyTogetherConfig, BuyTogetherViewMapper buyTogetherViewMapper, AviaComplexSearchFormConfig aviaComplexSearchFormConfig, AviaComplexSearchFormViewMapper aviaComplexSearchFormViewMapper, PassengersLuggageSelectionConfig passengersLuggageSelectionConfig, PassengersLuggageSelectionViewMapper passengersLuggageSelectionViewMapper, ReturnPolicyConfig returnPolicyConfig, ReturnPolicyViewMapper returnPolicyViewMapper, DirectFlightsDropdownConfig directFlightsDropdownConfig, DirectFlightsDropdownViewMapper directFlightsDropdownViewMapper) {
+        Set<Widget2> provideWidgets$avia_prodGoogleAllVendorsRelease = TravelAviaWidgetV2Module.INSTANCE.provideWidgets$avia_prodGoogleAllVendorsRelease(orderFlightInfoConfig, orderFlightInfoViewMapper, servicePackSelectionV3Config, servicePackSelectionV3ViewMapper, servicePackageSelectionConfig, servicePackageSelectionViewMapper, servicePackageSelectionButtonNoUiViewMapper, travelServicePackageSelectedV3Config, travelServicePackageSelectedV3ViewMapper, flightSeatsLegendConfig, flightSeatsLegendViewMapper, insurancePanelConfig, insurancePanelViewMapper, helpInsuranceConfig, helpInsuranceViewMapper, travelFlightCheckTariffV2Config, travelFlightCheckTariffV2ViewMapper, luggageRequirementsV2Config, luggageRequirementsV2ViewMapper, additionalLuggageTotalShadedConfig, additionalLuggageTotalViewMapper, tariffLuggageV2Config, tariffLuggageV2ViewMapper, additionalServiceCardConfig, additionalServiceCardViewMapper, stepperConfig, stepperViewMapper, additionalLuggageV2Config, additionalLuggageV2ViewMapper, aviaSearchResultV3ViewMapper, aviaSearchResultV3Config, aviaCheckTariffsConfig, aviaCheckTariffsViewMapper, aviaCheckTariffsTitleViewMapper, aviaCheckTariffsPriceDetailsConfig, aviaCheckTariffsSubtitleViewMapper, aviaCheckTariffsLuggageCellViewMapper, aviaCheckTariffsPriceDetailsViewMapper, aviaBookedTicketInfoConfig, aviaBookedTicketInfoViewMapper, flightSeatsSchemeConfig, flightSeatsSchemeBlockViewMapper, flightSeatsSchemeTotalStickyViewMapper, flightSeatsSchemePassengersBlockStickyViewMapper, aviaDetailedInfoV3Config, aviaDetailedInfoV3TabsViewMapper, aviaDetailedInfoV3ViewMapper, flightRouteDetailsConfig, flightRouteDetailsViewMapper, flightRouteDetailsAnnotationViewMapper, listTrackingViewMapper, buyTogetherConfig, buyTogetherViewMapper, aviaComplexSearchFormConfig, aviaComplexSearchFormViewMapper, passengersLuggageSelectionConfig, passengersLuggageSelectionViewMapper, returnPolicyConfig, returnPolicyViewMapper, directFlightsDropdownConfig, directFlightsDropdownViewMapper);
+        j.d(provideWidgets$avia_prodGoogleAllVendorsRelease);
+        return provideWidgets$avia_prodGoogleAllVendorsRelease;
+    }
+}

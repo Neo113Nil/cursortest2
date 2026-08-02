@@ -1,0 +1,45 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "response": {
+      "jsonrpc": "2.0",
+      "result": {
+        "item": {
+          "id": "mock",
+          "type": "blockContainer",
+          "version": 1,
+          "orderBy": 1640772427228,
+          "model": {
+            "blocks": [
+              {
+                "name": "chat",
+                "version": 1,
+                "vertical": "messenger",
+                "state": {
+                  "titleAtom": {
+                    "text": "Chat title",
+                    "preset": "PRESET_CUSTOM",
+                    "typographyToken": "tsCompactControl500Medium"
+                  },
+                  "deeplink": "asdsadsad",
+                  "unreadCountIndicator": {
+                    "value": 5,
+                    "type": "Active"
+                  },
+                  "firstUnreadMessageId": "7"
+                }
+              }
+            ]
+          }
+        },
+        "trackingInfo": {
+          "view": {
+            "actionType": "view",
+            "key": "Qkt926Qq3ckoGkAvTM7RVzJc1MlPY1HonglXQIp4yxyL"
+          }
+        }
+      },
+      "id": "c92ca7e1-af51-4a87-9323-01c6b3949a34"
+    }
+  }
+}

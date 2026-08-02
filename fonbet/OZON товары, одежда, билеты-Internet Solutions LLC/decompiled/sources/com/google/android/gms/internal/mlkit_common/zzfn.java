@@ -1,0 +1,23 @@
+package com.google.android.gms.internal.mlkit_common;
+
+import Ds.C2880a;
+import java.io.IOException;
+import r8.c;
+import r8.d;
+
+/* loaded from: classes9.dex */
+final class zzfn implements d {
+    static final zzfn zza = new zzfn();
+
+    static {
+        a.b(2, C2880a.b(1, c.a("errorCode"), "options"));
+    }
+
+    private zzfn() {
+    }
+
+    @Override // r8.d
+    public final /* bridge */ /* synthetic */ void encode(Object obj, Object obj2) throws IOException {
+        throw null;
+    }
+}

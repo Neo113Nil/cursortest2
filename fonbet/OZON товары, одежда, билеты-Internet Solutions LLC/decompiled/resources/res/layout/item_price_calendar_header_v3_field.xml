@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.uni.android.atom.aspect.AspectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="6dp"
+        android:paddingVertical="4dp">
+        <ru.ozon.uni.android.atom.text.TextAtomV2View
+            android:id="@+id/priceCalendarHeaderFieldTitleTav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginVertical="2dp"/>
+        <ru.ozon.uni.android.controls.buttonV3.IconButtonV3View
+            android:id="@+id/priceCalendarHeaderFieldButtonIbv"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</ru.ozon.uni.android.atom.aspect.AspectView>

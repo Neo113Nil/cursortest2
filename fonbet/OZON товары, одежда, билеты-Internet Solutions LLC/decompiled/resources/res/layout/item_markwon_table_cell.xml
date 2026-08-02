@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAppearance="@style/OzonTextAppearance.Body.400small"
+    android:textColor="@color/text_primary"
+    android:gravity="start|top"
+    android:linksClickable="true"
+    android:background="@android:color/transparent"
+    android:paddingTop="10dp"
+    android:paddingBottom="12dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxWidth="132dp"
+    android:singleLine="false"
+    android:textIsSelectable="true"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"/>

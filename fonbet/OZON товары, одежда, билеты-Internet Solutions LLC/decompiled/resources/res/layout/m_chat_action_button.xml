@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.uni.android.controls.buttonV3.IconButtonV3View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/actionButton"
+    android:layout_width="@dimen/dimen_32"
+    android:layout_height="@dimen/dimen_32"
+    android:layout_marginBottom="@dimen/dimen_12"
+    android:elevation="@dimen/dimen_6"
+    android:layout_marginHorizontal="@dimen/dimen_16"/>

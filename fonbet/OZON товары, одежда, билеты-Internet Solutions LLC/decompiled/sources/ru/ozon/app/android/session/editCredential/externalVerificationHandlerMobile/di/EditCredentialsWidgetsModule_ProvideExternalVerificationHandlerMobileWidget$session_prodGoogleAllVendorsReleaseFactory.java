@@ -1,0 +1,16 @@
+package ru.ozon.app.android.session.editCredential.externalVerificationHandlerMobile.di;
+
+import Jb.e;
+import Jb.j;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.session.editCredential.externalVerificationHandlerMobile.core.ExternalVerificationHandlerMobileConfig;
+import ru.ozon.app.android.session.editCredential.externalVerificationHandlerMobile.presentation.ExternalVerificationHandlerMobileViewMapperNoUi;
+
+/* loaded from: classes7.dex */
+public final class EditCredentialsWidgetsModule_ProvideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsReleaseFactory implements e<Widget2> {
+    public static Widget2 provideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsRelease(EditCredentialsWidgetsModule editCredentialsWidgetsModule, ExternalVerificationHandlerMobileConfig externalVerificationHandlerMobileConfig, ExternalVerificationHandlerMobileViewMapperNoUi externalVerificationHandlerMobileViewMapperNoUi) {
+        Widget2 provideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsRelease = editCredentialsWidgetsModule.provideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsRelease(externalVerificationHandlerMobileConfig, externalVerificationHandlerMobileViewMapperNoUi);
+        j.d(provideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsRelease);
+        return provideExternalVerificationHandlerMobileWidget$session_prodGoogleAllVendorsRelease;
+    }
+}

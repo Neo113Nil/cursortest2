@@ -1,0 +1,40 @@
+package ru.ozon.app.android.travel.feature.railway.di;
+
+import Jb.e;
+import Jb.j;
+import java.util.Set;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.travel.feature.railway.widgets.availablePromotion.data.AvailablePromotionConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.availablePromotion.presentation.AvailablePromotionViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.railwayStepsHeader.data.RailwayStepsHeaderConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.railwayStepsHeader.presentation.RailwayStepsHeaderViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.railwayTrainInformation.data.RailwayTrainInformationConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.railwayTrainInformation.presentation.RailwayTrainInformationViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageDetails.data.TravelCarriageDetailsConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageDetails.presentation.TravelCarriageDetailsViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageSelect.v3.data.TravelCarriageSelectV3Config;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageSelect.v3.presentation.TravelCarriageSelectV3ViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageTypeSelect.v2.data.TravelCarriageTypeSelectV2Config;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelCarriageTypeSelect.v2.presentation.TravelCarriageTypeSelectV2ViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelNavTrain.data.TravelNavTrainConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelNavTrain.presentation.TravelNavTrainViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelRailwaySeatSelectWithScheme.v2.data.TravelRailwaySeatSelectWithSchemeV2Config;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelRailwaySeatSelectWithScheme.v2.presentation.button.TravelRailwaySeatSelectStickyButtonViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelRailwaySeatSelectWithScheme.v2.presentation.footer.TravelRailwaySeatSelectFooterViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelRailwaySeatSelectWithScheme.v2.presentation.scheme.TravelRailwaySeatSelectWithSchemeV2ViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainCheckIn.data.TravelTrainCheckInConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainCheckIn.presentation.TravelTrainCheckInViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainRoute.v2.data.TravelTrainRouteConfig;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainRoute.v2.presentation.TravelTrainRouteViewMapper;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainSeatInfo.v2.data.TravelTrainSeatInfoV2Config;
+import ru.ozon.app.android.travel.feature.railway.widgets.travelTrainSeatInfo.v2.presentation.TravelTrainSeatInfoV2ViewMapper;
+import ru.ozon.app.android.travel.utils.listtracking.ListTrackingViewMapper;
+
+/* loaded from: classes7.dex */
+public final class TravelRailwayWidgetV2Module_Companion_ProvideWidget$railway_prodGoogleAllVendorsReleaseFactory implements e<Set<Widget2>> {
+    public static Set<Widget2> provideWidget$railway_prodGoogleAllVendorsRelease(TravelCarriageDetailsConfig travelCarriageDetailsConfig, TravelCarriageDetailsViewMapper travelCarriageDetailsViewMapper, TravelTrainCheckInConfig travelTrainCheckInConfig, TravelTrainCheckInViewMapper travelTrainCheckInViewMapper, TravelCarriageSelectV3Config travelCarriageSelectV3Config, TravelCarriageSelectV3ViewMapper travelCarriageSelectV3ViewMapper, ListTrackingViewMapper listTrackingViewMapper, TravelTrainSeatInfoV2Config travelTrainSeatInfoV2Config, TravelTrainSeatInfoV2ViewMapper travelTrainSeatInfoV2ViewMapper, TravelCarriageTypeSelectV2Config travelCarriageTypeSelectV2Config, TravelCarriageTypeSelectV2ViewMapper travelCarriageTypeSelectV2ViewMapper, TravelRailwaySeatSelectFooterViewMapper travelRailwaySeatSelectFooterViewMapper, TravelRailwaySeatSelectStickyButtonViewMapper travelRailwaySeatSelectStickyButtonViewMapper, TravelRailwaySeatSelectWithSchemeV2Config travelRailwaySeatSelectWithSchemeV2Config, TravelRailwaySeatSelectWithSchemeV2ViewMapper travelRailwaySeatSelectWithSchemeV2ViewMapper, TravelNavTrainConfig travelNavTrainConfig, TravelNavTrainViewMapper travelNavTrainViewMapper, TravelTrainRouteConfig travelTrainRouteConfig, TravelTrainRouteViewMapper travelTrainRouteViewMapper, RailwayTrainInformationConfig railwayTrainInformationConfig, RailwayTrainInformationViewMapper railwayTrainInformationViewMapper, AvailablePromotionConfig availablePromotionConfig, AvailablePromotionViewMapper availablePromotionViewMapper, RailwayStepsHeaderConfig railwayStepsHeaderConfig, RailwayStepsHeaderViewMapper railwayStepsHeaderViewMapper) {
+        Set<Widget2> provideWidget$railway_prodGoogleAllVendorsRelease = TravelRailwayWidgetV2Module.INSTANCE.provideWidget$railway_prodGoogleAllVendorsRelease(travelCarriageDetailsConfig, travelCarriageDetailsViewMapper, travelTrainCheckInConfig, travelTrainCheckInViewMapper, travelCarriageSelectV3Config, travelCarriageSelectV3ViewMapper, listTrackingViewMapper, travelTrainSeatInfoV2Config, travelTrainSeatInfoV2ViewMapper, travelCarriageTypeSelectV2Config, travelCarriageTypeSelectV2ViewMapper, travelRailwaySeatSelectFooterViewMapper, travelRailwaySeatSelectStickyButtonViewMapper, travelRailwaySeatSelectWithSchemeV2Config, travelRailwaySeatSelectWithSchemeV2ViewMapper, travelNavTrainConfig, travelNavTrainViewMapper, travelTrainRouteConfig, travelTrainRouteViewMapper, railwayTrainInformationConfig, railwayTrainInformationViewMapper, availablePromotionConfig, availablePromotionViewMapper, railwayStepsHeaderConfig, railwayStepsHeaderViewMapper);
+        j.d(provideWidget$railway_prodGoogleAllVendorsRelease);
+        return provideWidget$railway_prodGoogleAllVendorsRelease;
+    }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fieldTil"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:errorEnabled="true"
+    style="@style/OzTextInput.Layout">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/fieldEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionNext"
+        style="@style/OzTextInput.EditText"/>
+</com.google.android.material.textfield.TextInputLayout>

@@ -1,0 +1,349 @@
+{
+  "id": "onboarding",
+  "type": "ONBOARDING",
+  "onboardingOptions": {
+    "selectedFrame": 0,
+    "widgetName": "fintech.onboarding",
+    "frames": [
+      {
+        "id": "frame_0",
+        "imageUrl": null,
+        "background": "ozBGPrimary",
+        "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_card.jpg",
+        "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_card_new.mp4",
+        "topWidgets": [
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_0_1",
+            "text": "Выгодная карта",
+            "textColor": "ozTextPrimary",
+            "textStyle": "tsHeadL",
+            "gravity": "center",
+            "paddings": [
+              56,
+              0,
+              56,
+              0
+            ]
+          },
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_0_2",
+            "text": "Бесплатное открытие и обслуживание, кешбэк&nbsp;до&nbsp;25%&nbsp;и&nbsp;скидки",
+            "textColor": "ozTextSecondary",
+            "textStyle": "tsBodyL",
+            "gravity": "center",
+            "paddings": [
+              36,
+              12,
+              36,
+              0
+            ]
+          }
+        ],
+        "bottomWidgets": [
+          {
+            "type": "button",
+            "actionId": "login_0_1",
+            "actionBehavior": "close",
+            "preset": "SIZE_500",
+            "style": "ACTION_TERTIARY",
+            "title": {
+              "text": "Войти в Ozon Банк"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              4
+            ]
+          },
+          {
+            "type": "button",
+            "actionId": "next_0_1",
+            "actionBehavior": "keep",
+            "preset": "SIZE_500",
+            "style": "ACTION_PRIMARY",
+            "title": {
+              "text": "Далее"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "id": "frame_1",
+        "imageUrl": null,
+        "background": "ozBGPrimary",
+        "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_transfer.jpg",
+        "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_transfer.mp4",
+        "topWidgets": [
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_1_1",
+            "text": "Переводы&nbsp;и&nbsp;пополнения без&nbsp;комиссии",
+            "textColor": "ozTextPrimary",
+            "textStyle": "tsHeadL",
+            "gravity": "center",
+            "paddings": [
+              24,
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_1_2",
+            "text": "Через СБП и&nbsp;по&nbsp;реквизитам&nbsp;счёта",
+            "textColor": "ozTextSecondary",
+            "textStyle": "tsBodyL",
+            "gravity": "center",
+            "paddings": [
+              36,
+              12,
+              36,
+              0
+            ]
+          }
+        ],
+        "bottomWidgets": [
+          {
+            "type": "button",
+            "actionId": "login_1_1",
+            "actionBehavior": "close",
+            "preset": "SIZE_500",
+            "style": "ACTION_TERTIARY",
+            "title": {
+              "text": "Войти в Ozon Банк"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              4
+            ]
+          },
+          {
+            "type": "button",
+            "actionId": "next_1_1",
+            "actionBehavior": "keep",
+            "preset": "SIZE_500",
+            "style": "ACTION_PRIMARY",
+            "title": {
+              "text": "Далее"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "id": "frame_2",
+        "imageUrl": null,
+        "background": "ozBGPrimary",
+        "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_limits.jpg",
+        "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_limits.mp4",
+        "topWidgets": [
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_2_1",
+            "text": "До&nbsp;300&nbsp;000&nbsp;₽\nна&nbsp;ваши&nbsp;планы ",
+            "textColor": "ozTextPrimary",
+            "textStyle": "tsHeadL",
+            "gravity": "center",
+            "paddings": [
+              24,
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_2_2",
+            "text": "Покупайте&nbsp;на&nbsp;Ozon&nbsp;в&nbsp;рассрочку или выводите лимит на Ozon Карту и тратьте в любых магазинах",
+            "textColor": "ozTextSecondary",
+            "textStyle": "tsBodyL",
+            "gravity": "center",
+            "paddings": [
+              36,
+              12,
+              36,
+              0
+            ]
+          }
+        ],
+        "bottomWidgets": [
+          {
+            "type": "button",
+            "actionId": "login_2_2",
+            "actionBehavior": "close",
+            "preset": "SIZE_500",
+            "style": "ACTION_TERTIARY",
+            "title": {
+              "text": "Войти в Ozon Банк"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              4
+            ]
+          },
+          {
+            "type": "button",
+            "actionId": "next_2_1",
+            "actionBehavior": "keep",
+            "preset": "SIZE_500",
+            "style": "ACTION_PRIMARY",
+            "title": {
+              "text": "Далее"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "id": "frame_3",
+        "imageUrl": null,
+        "background": "ozBGPrimary",
+        "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_deposits.mp4",
+        "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_deposits.jpg",
+        "topWidgets": [
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_3_1",
+            "text": "Доходность\nдо 15.2% годовых",
+            "textColor": "ozTextPrimary",
+            "textStyle": "tsHeadL",
+            "gravity": "center",
+            "paddings": [
+              24,
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_3_2",
+            "text": "Копите и смотрите, как растет сумма на вкладах и накопительных счетах",
+            "textColor": "ozTextSecondary",
+            "textStyle": "tsBodyL",
+            "gravity": "center",
+            "paddings": [
+              36,
+              12,
+              36,
+              0
+            ]
+          }
+        ],
+        "bottomWidgets": [
+          {
+            "type": "button",
+            "actionId": "login_3_2",
+            "actionBehavior": "close",
+            "preset": "SIZE_500",
+            "style": "ACTION_TERTIARY",
+            "title": {
+              "text": "Войти в Ozon Банк"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              4
+            ]
+          },
+          {
+            "type": "button",
+            "actionId": "next_3_1",
+            "actionBehavior": "keep",
+            "preset": "SIZE_500",
+            "style": "ACTION_PRIMARY",
+            "title": {
+              "text": "Далее"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              16
+            ]
+          }
+        ]
+      },
+      {
+        "id": "frame_5",
+        "imageUrl": null,
+        "background": "ozBGPrimary",
+        "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_security.mp4",
+        "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_safety.jpg",
+        "topWidgets": [
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_5_1",
+            "text": "Гарантированная\nбезопасность",
+            "textColor": "ozTextPrimary",
+            "textStyle": "tsHeadL",
+            "gravity": "center",
+            "paddings": [
+              24,
+              0,
+              24,
+              0
+            ]
+          },
+          {
+            "type": "textAtom",
+            "actionId": "textAtom_5_2",
+            "text": "Участвуем&nbsp;в&nbsp;системе&nbsp;обязательного страхования вкладов и защищаем ваши&nbsp;данные",
+            "textColor": "ozTextSecondary",
+            "textStyle": "tsBodyL",
+            "gravity": "center",
+            "paddings": [
+              36,
+              12,
+              36,
+              0
+            ]
+          }
+        ],
+        "bottomWidgets": [
+          {
+            "type": "button",
+            "actionId": "login_5_1",
+            "actionBehavior": "close",
+            "preset": "SIZE_500",
+            "style": "ACTION_PRIMARY",
+            "title": {
+              "text": "Войти в Ozon Банк"
+            },
+            "paddings": [
+              16,
+              4,
+              16,
+              16
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

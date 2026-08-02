@@ -1,0 +1,42 @@
+package ru.ozon.app.android.marketing.widgets.highlightProducts.presentation.adapter;
+
+import android.content.Context;
+import androidx.core.content.a;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.AbstractC7737t;
+import ru.ozon.app.android.storefrontcommonwidgets.core.appType.AppTypeResolver;
+import ru.ozon.uni.R$attr;
+import ru.ozon.uni.R$color;
+import ru.ozon.uni.android.uikit.extensions.ThemeExtKt;
+
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Integer;"}, k = 3, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes12.dex */
+final class ItemDecorator$dividerColor$2 extends AbstractC7737t implements Function0<Integer> {
+    final /* synthetic */ ItemDecorator this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    ItemDecorator$dividerColor$2(ItemDecorator itemDecorator) {
+        super(0);
+        this.this$0 = itemDecorator;
+    }
+
+    /* JADX WARN: Can't rename method to resolve collision */
+    @Override // kotlin.jvm.functions.Function0
+    public final Integer invoke() {
+        Context context;
+        Context context2;
+        int color;
+        Context context3;
+        AppTypeResolver appTypeResolver = AppTypeResolver.INSTANCE;
+        context = this.this$0.context;
+        if (appTypeResolver.isSelect(context)) {
+            context3 = this.this$0.context;
+            color = ThemeExtKt.themeColor(context3, R$attr.graphicNeutralOnDark);
+        } else {
+            context2 = this.this$0.context;
+            color = a.getColor(context2, R$color.graphic_neutral);
+        }
+        return Integer.valueOf(color);
+    }
+}

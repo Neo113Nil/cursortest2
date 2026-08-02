@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.ozon.fintech.ui.progress.circle.ProgressCircleView
+        android:layout_gravity="center"
+        android:id="@+id/circle_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView
+        android:layout_gravity="center"
+        android:id="@+id/digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextStyle.Body.L.Bold"/>
+</merge>

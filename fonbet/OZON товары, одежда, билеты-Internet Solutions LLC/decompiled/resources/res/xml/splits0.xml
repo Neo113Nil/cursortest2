@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splits>
+    <module name="">
+        <language>
+            <entry
+                key="ar"
+                split=""/>
+            <entry
+                key="az"
+                split=""/>
+            <entry
+                key="en"
+                split=""/>
+            <entry
+                key="hy"
+                split=""/>
+            <entry
+                key="kk"
+                split=""/>
+            <entry
+                key="mn"
+                split=""/>
+            <entry
+                key="ru"
+                split=""/>
+            <entry
+                key="sw"
+                split=""/>
+            <entry
+                key="tk"
+                split=""/>
+            <entry
+                key="uz"
+                split=""/>
+            <entry
+                key="zh"
+                split=""/>
+        </language>
+    </module>
+</splits>

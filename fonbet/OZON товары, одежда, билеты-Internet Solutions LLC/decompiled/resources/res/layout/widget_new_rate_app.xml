@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    android:background="@drawable/bg_rate_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:layout_gravity="center"
+        android:id="@+id/titleTAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ru.ozon.uni.android.atom.rating.RatingView
+        android:layout_gravity="center"
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_marginBottom="@dimen/dimen_12"
+        android:layout_marginStart="@dimen/dimen_6"/>
+</LinearLayout>

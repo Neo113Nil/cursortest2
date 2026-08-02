@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/uWidgetFooterCl"
+    android:background="@drawable/bg_white_ripple_blue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.L.Blue"
+        android:ellipsize="end"
+        android:id="@+id/uWidgetFooterTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:maxLines="1"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/margin"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/uWidgetFooterDisclosureIv"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_goneMarginEnd="@dimen/default_margin"/>
+    <ImageView
+        android:id="@+id/uWidgetFooterDisclosureIv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginEnd="@dimen/margin_medium_small"
+        app:layout_constraintBottom_toBottomOf="@+id/uWidgetFooterTitleTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uWidgetFooterTitleTv"
+        app:srcCompat="@drawable/ic_disclosure_blue"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

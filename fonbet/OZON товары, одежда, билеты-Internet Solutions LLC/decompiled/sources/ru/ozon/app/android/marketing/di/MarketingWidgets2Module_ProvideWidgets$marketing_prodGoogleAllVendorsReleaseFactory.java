@@ -1,0 +1,61 @@
+package ru.ozon.app.android.marketing.di;
+
+import Jb.e;
+import Jb.j;
+import java.util.Set;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.marketing.ui.trustfactors.core.TrustFactorsConfig;
+import ru.ozon.app.android.marketing.ui.trustfactors.core.TrustFactorsViewMapper;
+import ru.ozon.app.android.marketing.widgets.actionProgress.core.ActionProgressConfig;
+import ru.ozon.app.android.marketing.widgets.actionProgress.core.ActionProgressOverlayViewMapper;
+import ru.ozon.app.android.marketing.widgets.actionProgress.core.ActionProgressViewMapper;
+import ru.ozon.app.android.marketing.widgets.badgeTimer.data.BadgeTimerConfig;
+import ru.ozon.app.android.marketing.widgets.badgeTimer.presentation.BadgeTimerViewMapper;
+import ru.ozon.app.android.marketing.widgets.cartButton.core.CartButtonViewMapper;
+import ru.ozon.app.android.marketing.widgets.coupon.core.CouponConfig;
+import ru.ozon.app.android.marketing.widgets.coupon.core.CouponViewMapper;
+import ru.ozon.app.android.marketing.widgets.coupon.core.HighlightsCouponOverlayViewMapper;
+import ru.ozon.app.android.marketing.widgets.enableNotifications.core.EnableNotificationsConfig;
+import ru.ozon.app.android.marketing.widgets.enableNotifications.core.EnableNotificationsViewMapper;
+import ru.ozon.app.android.marketing.widgets.highlightProducts.core.HighlightProductsConfig;
+import ru.ozon.app.android.marketing.widgets.highlightProducts.core.HighlightProductsOverlayViewMapper;
+import ru.ozon.app.android.marketing.widgets.highlightProducts.core.HighlightProductsViewMapper;
+import ru.ozon.app.android.marketing.widgets.highlightsWrapper.core.HighlightsWrapperConfig;
+import ru.ozon.app.android.marketing.widgets.notificationssettings.core.NotificationsSettingsConfig;
+import ru.ozon.app.android.marketing.widgets.notificationssettings.core.NotificationsSettingsSelectorConfig;
+import ru.ozon.app.android.marketing.widgets.notificationssettings.core.cell.NotificationsSettingsCellViewMapper;
+import ru.ozon.app.android.marketing.widgets.notificationssettings.core.selector.NotificationsSettingsSelectorViewMapper;
+import ru.ozon.app.android.marketing.widgets.notificationssettings.core.title.NotificationsSettingsTitleViewMapper;
+import ru.ozon.app.android.marketing.widgets.pdpCouponListV2.core.PdpCouponListV2Config;
+import ru.ozon.app.android.marketing.widgets.pdpCouponListV2.core.PdpCouponListV2ViewMapper;
+import ru.ozon.app.android.marketing.widgets.promoStickyBubble.core.PromoStickyBubbleConfig;
+import ru.ozon.app.android.marketing.widgets.promoStickyBubble.presentation.PromoStickyBubbleViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsLadder.core.SellerActionLadderConfig;
+import ru.ozon.app.android.marketing.widgets.sellerActionsLadder.core.SellerActionLadderViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.SellerActionPreviewConfig;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.async.SellerActionPreviewAsyncViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.dsCell.SellerActionPreviewDsCellViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.progressLadder.SellerActionPreviewProgressLadderViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.progressLadderCell.SellerActionPreviewProgressLadderCellViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerActionsPreview.core.separator.SellerActionPreviewSeparatorViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerTransparencyProfile.core.SellerTransparencyProfileConfig;
+import ru.ozon.app.android.marketing.widgets.sellerTransparencyProfile.core.SellerTransparencyProfileViewMapper;
+import ru.ozon.app.android.marketing.widgets.sellerTransparencyV3.core.SellerTransparencyV3Config;
+import ru.ozon.app.android.marketing.widgets.sellerTransparencyV3.core.SellerTransparencyV3ViewMapper;
+import ru.ozon.app.android.marketing.widgets.shopButtons.core.ShopButtonsConfig;
+import ru.ozon.app.android.marketing.widgets.shopButtons.presentation.ShopButtonsViewMapper;
+import ru.ozon.app.android.marketing.widgets.stickyLadder.core.StickyLadderConfig;
+import ru.ozon.app.android.marketing.widgets.stickyLadder.core.StickyLadderViewMapper;
+import ru.ozon.app.android.marketing.widgets.wannaDiscountDecision.core.WannaDiscountDecisionConfig;
+import ru.ozon.app.android.marketing.widgets.wannaDiscountDecision.core.WannaDiscountDecisionViewMapper;
+import ru.ozon.app.android.marketing.widgets.wannaDiscountV2.core.WannaDiscountV2Config;
+import ru.ozon.app.android.marketing.widgets.wannaDiscountV2.core.WannaDiscountV2ViewMapper;
+
+/* loaded from: classes6.dex */
+public final class MarketingWidgets2Module_ProvideWidgets$marketing_prodGoogleAllVendorsReleaseFactory implements e<Set<Widget2>> {
+    public static Set<Widget2> provideWidgets$marketing_prodGoogleAllVendorsRelease(MarketingWidgets2Module marketingWidgets2Module, PdpCouponListV2Config pdpCouponListV2Config, PdpCouponListV2ViewMapper pdpCouponListV2ViewMapper, WannaDiscountDecisionConfig wannaDiscountDecisionConfig, WannaDiscountDecisionViewMapper wannaDiscountDecisionViewMapper, WannaDiscountV2Config wannaDiscountV2Config, WannaDiscountV2ViewMapper wannaDiscountV2ViewMapper, SellerTransparencyProfileConfig sellerTransparencyProfileConfig, SellerTransparencyProfileViewMapper sellerTransparencyProfileViewMapper, SellerTransparencyV3ViewMapper sellerTransparencyV3ViewMapper, SellerTransparencyV3Config sellerTransparencyV3Config, BadgeTimerConfig badgeTimerConfig, BadgeTimerViewMapper badgeTimerViewMapper, EnableNotificationsConfig enableNotificationsConfig, EnableNotificationsViewMapper enableNotificationsViewMapper, NotificationsSettingsConfig notificationsSettingsConfig, NotificationsSettingsCellViewMapper notificationsSettingsCellViewMapper, NotificationsSettingsTitleViewMapper notificationsSettingsTitleViewMapper, NotificationsSettingsSelectorConfig notificationsSettingsSelectorConfig, NotificationsSettingsSelectorViewMapper notificationsSettingsSelectorViewMapper, HighlightProductsConfig highlightProductsConfig, HighlightProductsOverlayViewMapper highlightProductsOverlayViewMapper, HighlightProductsViewMapper highlightProductsViewMapper, HighlightsWrapperConfig highlightsWrapperConfig, HighlightsCouponOverlayViewMapper highlightsCouponOverlayViewMapper, PromoStickyBubbleConfig promoStickyBubbleConfig, PromoStickyBubbleViewMapper promoStickyBubbleViewMapper, CartButtonViewMapper cartButtonViewMapper, CouponConfig couponConfig, CouponViewMapper couponViewMapper, ActionProgressConfig actionProgressConfig, ActionProgressOverlayViewMapper actionProgressOverlayViewMapper, ActionProgressViewMapper actionProgressViewMapper, TrustFactorsViewMapper trustFactorsViewMapper, TrustFactorsConfig trustFactorsConfig, ShopButtonsConfig shopButtonsConfig, ShopButtonsViewMapper shopButtonsViewMapper, SellerActionLadderConfig sellerActionLadderConfig, SellerActionLadderViewMapper sellerActionLadderViewMapper, SellerActionPreviewConfig sellerActionPreviewConfig, SellerActionPreviewDsCellViewMapper sellerActionPreviewDsCellViewMapper, SellerActionPreviewSeparatorViewMapper sellerActionPreviewSeparatorViewMapper, SellerActionPreviewProgressLadderViewMapper sellerActionPreviewProgressLadderViewMapper, SellerActionPreviewProgressLadderCellViewMapper sellerActionPreviewProgressLadderCellViewMapper, SellerActionPreviewAsyncViewMapper sellerActionPreviewAsyncViewMapper, StickyLadderConfig stickyLadderConfig, StickyLadderViewMapper stickyLadderViewMapper) {
+        Set<Widget2> provideWidgets$marketing_prodGoogleAllVendorsRelease = marketingWidgets2Module.provideWidgets$marketing_prodGoogleAllVendorsRelease(pdpCouponListV2Config, pdpCouponListV2ViewMapper, wannaDiscountDecisionConfig, wannaDiscountDecisionViewMapper, wannaDiscountV2Config, wannaDiscountV2ViewMapper, sellerTransparencyProfileConfig, sellerTransparencyProfileViewMapper, sellerTransparencyV3ViewMapper, sellerTransparencyV3Config, badgeTimerConfig, badgeTimerViewMapper, enableNotificationsConfig, enableNotificationsViewMapper, notificationsSettingsConfig, notificationsSettingsCellViewMapper, notificationsSettingsTitleViewMapper, notificationsSettingsSelectorConfig, notificationsSettingsSelectorViewMapper, highlightProductsConfig, highlightProductsOverlayViewMapper, highlightProductsViewMapper, highlightsWrapperConfig, highlightsCouponOverlayViewMapper, promoStickyBubbleConfig, promoStickyBubbleViewMapper, cartButtonViewMapper, couponConfig, couponViewMapper, actionProgressConfig, actionProgressOverlayViewMapper, actionProgressViewMapper, trustFactorsViewMapper, trustFactorsConfig, shopButtonsConfig, shopButtonsViewMapper, sellerActionLadderConfig, sellerActionLadderViewMapper, sellerActionPreviewConfig, sellerActionPreviewDsCellViewMapper, sellerActionPreviewSeparatorViewMapper, sellerActionPreviewProgressLadderViewMapper, sellerActionPreviewProgressLadderCellViewMapper, sellerActionPreviewAsyncViewMapper, stickyLadderConfig, stickyLadderViewMapper);
+        j.d(provideWidgets$marketing_prodGoogleAllVendorsRelease);
+        return provideWidgets$marketing_prodGoogleAllVendorsRelease;
+    }
+}

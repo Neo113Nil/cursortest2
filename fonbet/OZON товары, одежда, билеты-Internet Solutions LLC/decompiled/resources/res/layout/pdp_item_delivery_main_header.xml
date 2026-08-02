@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootCl"
+    android:background="?attr/layerFloor1"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:textAppearance="@style/TextStyle.Head.M"
+        android:ellipsize="end"
+        android:id="@+id/titleTAV"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/anotherSellerBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <ru.ozon.uni.android.uikit.view.atoms.buttons.borderless.SmallBorderlessButtonView
+        android:ellipsize="end"
+        android:id="@+id/anotherSellerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        app:layout_constraintBottom_toTopOf="@+id/titleTAV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTAV"/>
+    <ru.ozon.app.android.atoms.v3.molecules.DisclaimerContainer
+        android:id="@+id/annotationAtom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anotherSellerBtn"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,87 @@
+package ru.ozon.app.android.partpayment.formpage.view.vh;
+
+import Ax.ViewOnClickListenerC2451a;
+import android.text.method.LinkMovementMethod;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.appcompat.widget.AppCompatTextView;
+import androidx.recyclerview.widget.RecyclerView;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.partpayment.databinding.ItemDynamicFormFieldButtonBinding;
+import ru.ozon.app.android.partpayment.formpage.view.vo.FormPageVO;
+import ru.ozon.uni.android.uikit.extensions.view.TextViewExtKt;
+import ru.ozon.uni.atoms.utils.OzonSpannableString;
+
+@Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u00012\u00020\u0002B#\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ\u0017\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u000eH\u0016¢\u0006\u0004\b\u0010\u0010\u0011R\u0017\u0010\u0004\u001a\u00020\u00038\u0006¢\u0006\f\n\u0004\b\u0004\u0010\u0012\u001a\u0004\b\u0013\u0010\u0014R \u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00060\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010\u0015R\u0014\u0010\u0017\u001a\u00020\u00168\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0017\u0010\u0018¨\u0006\u0019"}, d2 = {"Lru/ozon/app/android/partpayment/formpage/view/vh/ValidateButtonVH;", "Lru/ozon/app/android/partpayment/formpage/view/vh/DynamicFormFieldVH;", "Lru/ozon/app/android/partpayment/formpage/view/vh/MeasureVH;", "Landroid/view/View;", "containerView", "Lkotlin/Function1;", "", "onButtonClicked", "<init>", "(Landroid/view/View;Lkotlin/jvm/functions/Function1;)V", "Lru/ozon/app/android/partpayment/formpage/view/vo/FormPageVO$Field;", "item", "bind", "(Lru/ozon/app/android/partpayment/formpage/view/vo/FormPageVO$Field;)V", "Landroidx/recyclerview/widget/RecyclerView;", "parent", "onViewMeasured", "(Landroidx/recyclerview/widget/RecyclerView;)V", "Landroid/view/View;", "getContainerView", "()Landroid/view/View;", "Lkotlin/jvm/functions/Function1;", "Lru/ozon/app/android/partpayment/databinding/ItemDynamicFormFieldButtonBinding;", "binding", "Lru/ozon/app/android/partpayment/databinding/ItemDynamicFormFieldButtonBinding;", "homecredit_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes13.dex */
+public final class ValidateButtonVH extends DynamicFormFieldVH implements MeasureVH {
+
+    @NotNull
+    private final ItemDynamicFormFieldButtonBinding binding;
+
+    @NotNull
+    private final View containerView;
+
+    @NotNull
+    private final Function1<DynamicFormFieldVH, Unit> onButtonClicked;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public ValidateButtonVH(@NotNull View containerView, @NotNull Function1<? super DynamicFormFieldVH, Unit> onButtonClicked) {
+        super(containerView);
+        Intrinsics.checkNotNullParameter(containerView, "containerView");
+        Intrinsics.checkNotNullParameter(onButtonClicked, "onButtonClicked");
+        this.containerView = containerView;
+        this.onButtonClicked = onButtonClicked;
+        ItemDynamicFormFieldButtonBinding bind = ItemDynamicFormFieldButtonBinding.bind(containerView);
+        Intrinsics.checkNotNullExpressionValue(bind, "bind(...)");
+        this.binding = bind;
+        bind.finishBtn.setOnClickListener(new ViewOnClickListenerC2451a(this, 9));
+        bind.descriptionTv.setMovementMethod(LinkMovementMethod.getInstance());
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void lambda$1$lambda$0(ValidateButtonVH validateButtonVH, View view) {
+        validateButtonVH.onButtonClicked.invoke(validateButtonVH);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // ru.ozon.app.android.partpayment.formpage.view.vh.DynamicFormFieldVH
+    public void bind(@NotNull FormPageVO.Field item) {
+        Intrinsics.checkNotNullParameter(item, "item");
+        super.bind(item);
+        FormPageVO.Field.ValidateButton validateButton = (FormPageVO.Field.ValidateButton) item;
+        ItemDynamicFormFieldButtonBinding itemDynamicFormFieldButtonBinding = this.binding;
+        itemDynamicFormFieldButtonBinding.finishBtn.setText(validateButton.getTitle());
+        itemDynamicFormFieldButtonBinding.finishBtn.setContentDescription(validateButton.getTitle());
+        FormPageVO.Field.ButtonField buttonField = item instanceof FormPageVO.Field.ButtonField ? (FormPageVO.Field.ButtonField) item : null;
+        OzonSpannableString description = buttonField != null ? buttonField.getDescription() : null;
+        AppCompatTextView descriptionTv = itemDynamicFormFieldButtonBinding.descriptionTv;
+        Intrinsics.checkNotNullExpressionValue(descriptionTv, "descriptionTv");
+        TextViewExtKt.setTextOrGone(descriptionTv, description);
+        itemDynamicFormFieldButtonBinding.descriptionTv.setContentDescription(description);
+    }
+
+    @Override // ru.ozon.app.android.partpayment.formpage.view.vh.MeasureVH
+    public void onViewMeasured(@NotNull RecyclerView parent) {
+        Intrinsics.checkNotNullParameter(parent, "parent");
+        ViewGroup.LayoutParams layoutParams = this.itemView.getLayoutParams();
+        Intrinsics.g(layoutParams, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+        int i11 = ((ViewGroup.MarginLayoutParams) layoutParams).topMargin;
+        Integer valueOf = Integer.valueOf(((parent.getHeight() - this.itemView.getTop()) - this.itemView.getHeight()) + i11);
+        if (valueOf.intValue() <= 0) {
+            valueOf = null;
+        }
+        int intValue = valueOf != null ? valueOf.intValue() : 0;
+        if (intValue != i11) {
+            ViewGroup.LayoutParams layoutParams2 = this.itemView.getLayoutParams();
+            Intrinsics.g(layoutParams2, "null cannot be cast to non-null type android.view.ViewGroup.MarginLayoutParams");
+            ((ViewGroup.MarginLayoutParams) layoutParams2).setMargins(0, intValue, 0, 0);
+            this.itemView.requestLayout();
+        }
+    }
+}

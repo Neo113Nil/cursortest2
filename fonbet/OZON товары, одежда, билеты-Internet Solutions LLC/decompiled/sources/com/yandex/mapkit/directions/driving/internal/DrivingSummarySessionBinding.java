@@ -1,0 +1,20 @@
+package com.yandex.mapkit.directions.driving.internal;
+
+import androidx.annotation.NonNull;
+import com.yandex.mapkit.directions.driving.DrivingSummarySession;
+import com.yandex.runtime.NativeObject;
+
+/* loaded from: classes9.dex */
+public class DrivingSummarySessionBinding implements DrivingSummarySession {
+    private final NativeObject nativeObject;
+
+    protected DrivingSummarySessionBinding(NativeObject nativeObject) {
+        this.nativeObject = nativeObject;
+    }
+
+    @Override // com.yandex.mapkit.directions.driving.DrivingSummarySession
+    public native void cancel();
+
+    @Override // com.yandex.mapkit.directions.driving.DrivingSummarySession
+    public native void retry(@NonNull DrivingSummarySession.DrivingSummaryListener drivingSummaryListener);
+}

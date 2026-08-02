@@ -1,0 +1,36 @@
+{
+  "app_id": "ru.ozon.app.android",
+  "title": "OZON товары, одежда, билеты",
+  "developer": "Internet Solutions LLC",
+  "score": 3.6741364,
+  "icon": "https://play-lh.googleusercontent.com/iZhyKvRs1otTwl4NyHzX_6GT3AUO6vBuvBQaf56VtZsDteoQ-ceNr5fwzYQjHxBISZtobnB1zVu1avuU41ParQ",
+  "url": "https://play.google.com/store/apps/details?id=ru.ozon.app.android&hl=en&gl=us",
+  "keyword": "fonbet",
+  "developer_id": "6341061843515923110",
+  "released": "Dec 28, 2011",
+  "updated": "2026-07-27",
+  "version": "19.28.0",
+  "summary": "Shop millions of products with discounts and fast delivery starting from one day!",
+  "folder": "OZON товары, одежда, билеты-Internet Solutions LLC",
+  "path": "fonbet/OZON товары, одежда, билеты-Internet Solutions LLC",
+  "updates_count": 1,
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "ru.ozon.app.android.xapk"
+  ],
+  "target": "/root/play-collector/загрузки/fonbet/OZON товары, одежда, билеты-Internet Solutions LLC",
+  "attempts": [
+    {
+      "method": "apkeep",
+      "try": 1,
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "Downloading ru.ozon.app.android...\nru.ozon.app.android downloaded successfully!\n",
+      "stderr": ""
+    }
+  ],
+  "stdout": "Downloading ru.ozon.app.android...\nru.ozon.app.android downloaded successfully!\n",
+  "stderr": "",
+  "exit_code": 0
+}

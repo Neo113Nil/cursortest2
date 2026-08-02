@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.ozon.app.android.fresh.main.widgets.product.imagesswipeview.LoopedRecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/itemsRv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+        android:id="@+id/pagerIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:spi_dotColor="@color/oz_gray_80"
+        app:spi_dotSelectedColor="@color/oz_blue"
+        app:spi_dotSelectedSize="4dp"
+        app:spi_dotSize="4dp"
+        app:spi_dotSpacing="2dp"
+        app:spi_visibleDotCount="7"/>
+</merge>

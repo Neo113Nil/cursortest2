@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.storefront.widgets.cms.bannercarousel.carousel.CarouselViewPager
+        android:orientation="horizontal"
+        android:id="@+id/carouselVp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:autoScroll="true"
+        app:duration="3000"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/pageIndicatorPiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/carouselVp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spi_dotColor="@color/oz_semantic_separator"
+        app:spi_dotSelectedColor="@color/oz_white_1"
+        app:spi_dotSelectedSize="8dp"
+        app:spi_dotSize="8dp"
+        app:spi_dotSpacing="6dp"
+        app:spi_visibleDotCount="5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

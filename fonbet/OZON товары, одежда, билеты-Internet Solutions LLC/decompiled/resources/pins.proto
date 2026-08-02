@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package ru.ozon.app.android.geo;
+
+option java_outer_classname = "PinsProto";
+
+import "google/protobuf/wrappers.proto";
+
+message Pins {
+  repeated Pin pins = 1; // required
+  PinStyleType style_type = 2;
+  map<uint32, CustomPinStyle> custom_pin_styles = 3;
+  map<uint32, string> images = 4;
+  map<uint32, AdditionalPinContent> custom_text_content = 5;
+}
+
+message Pin {
+  google.protobuf.UInt64Value id = 1; // required
+  Coordinates coordinates = 2; // required
+  google.protobuf.Int32Value z_priority = 3; // required
+  uint32 provider_id = 4; // required
+  google.protobuf.BoolValue is_click_enabled = 5;
+  uint32 additional_content_key = 6;
+  uint32 pin_style_key = 7;
+  uint32 pin_image_key = 8;
+  uint32 pins_count = 9;
+}
+
+message Coordinates {
+  double latitude = 1;
+  double longitude = 2;
+}
+
+enum PinStyleType {
+  DEFAULT = 0;
+}
+
+message CustomPinStyle {
+  string tint_color = 1;
+  string text_color = 2;
+  string icon_tint_color = 3;
+  string border_color = 4;
+  string pins_count_color = 5;
+}
+
+message AdditionalPinContent {
+  string text = 1;
+  string icon = 2;
+}

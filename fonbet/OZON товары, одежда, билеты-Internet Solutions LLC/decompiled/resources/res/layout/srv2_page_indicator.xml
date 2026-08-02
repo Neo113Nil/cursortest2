@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pagerIndicator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:spi_dotColor="@color/graphic_solid_neutral"
+    app:spi_dotSelectedColor="?attr/graphicActionPrimary"
+    app:spi_dotSelectedSize="4dp"
+    app:spi_dotSize="4dp"
+    app:spi_dotSpacing="2dp"
+    app:spi_visibleDotCount="7"/>

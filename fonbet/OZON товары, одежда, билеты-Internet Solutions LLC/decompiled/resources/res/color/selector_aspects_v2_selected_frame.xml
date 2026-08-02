@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:state_selected="true"
+        android:color="?attr/graphicActionPrimary"
+        app:state_partially_disabled="true"/>
+    <item
+        android:state_enabled="true"
+        android:state_selected="true"
+        android:color="?attr/graphicKey"
+        app:state_partially_disabled="true"/>
+    <item
+        android:color="@color/transparent"
+        app:state_partially_disabled="false"/>
+</selector>

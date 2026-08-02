@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetLeft="@dimen/margin_extra_extra_large">
+    <shape>
+        <size android:height="@dimen/one_dp"/>
+        <solid android:color="@color/graphic_neutral"/>
+    </shape>
+</inset>

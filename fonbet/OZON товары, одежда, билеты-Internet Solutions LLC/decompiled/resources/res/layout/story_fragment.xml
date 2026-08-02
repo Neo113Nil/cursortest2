@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/story_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ru.ozon.fintech.ui.storyprogress.StoryProgressView
+        android:id="@+id/story_progress"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:story_progress_color_disable="@color/graphic_disabled_on_light"
+        app:story_progress_color_enable="@color/graphic_light_key"
+        app:story_progress_delay="6dp"
+        app:story_progress_height="2dp"/>
+    <ImageView
+        android:layout_gravity="end|top"
+        android:id="@+id/close"
+        android:background="@drawable/background_round_button_48"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_m_cross_filled"
+        android:scaleType="center"
+        android:layout_marginEnd="8dp"
+        app:tint="@color/oz_white_1"/>
+</FrameLayout>

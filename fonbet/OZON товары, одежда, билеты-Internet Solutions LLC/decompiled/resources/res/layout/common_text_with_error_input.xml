@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.pdp.utils.views.input.PdpTextInputLayout
+        android:id="@+id/inputTIL"
+        android:background="@drawable/bg_common_text_with_error_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pdptil_corner_radius="12dp"
+        app:pdptil_disabledBackgroundColor="@color/transparent"
+        app:pdptil_enabledBackgroundColor="@color/transparent"
+        app:pdptil_enabledHintColor="?attr/textOriginalpriceAvailable"
+        app:pdptil_unfocusedHintSize="16">
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/inputET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+    </ru.ozon.app.android.pdp.utils.views.input.PdpTextInputLayout>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAppearance="@style/TextStyle.Body.M"
+        android:textColor="?attr/textNegative"
+        android:id="@+id/inputTextErrorTV"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4"
+        android:layout_marginHorizontal="@dimen/dimen_12"/>
+</merge>

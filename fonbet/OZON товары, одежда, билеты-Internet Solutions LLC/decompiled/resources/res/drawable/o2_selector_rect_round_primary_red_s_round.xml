@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/o2_shape_rect_round_disabled_s_round"/>
+    <item android:drawable="@drawable/o2_shape_rect_round_primary_red_s_round"/>
+</selector>

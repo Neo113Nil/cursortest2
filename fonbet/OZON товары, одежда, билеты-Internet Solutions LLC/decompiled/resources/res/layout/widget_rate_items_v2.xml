@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@null"
+    android:focusable="true"
+    android:fitsSystemWindows="false"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/rate_items_v2_widget_bottom_behavior"
+    style="@style/RateItemsV2WidgetBehavior">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rateItemContainer"
+        android:background="@drawable/bg_white_top_24_rounded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="190dp">
+        <ru.ozon.uni.android.atom.text.TextAtomV2View
+            android:id="@+id/title"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/closeSheetIconButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ru.ozon.uni.android.controls.buttonV3.IconButtonV3View
+            android:id="@+id/closeSheetIconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:orientation="horizontal"
+            android:id="@+id/productsRv"
+            android:clipToPadding="false"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

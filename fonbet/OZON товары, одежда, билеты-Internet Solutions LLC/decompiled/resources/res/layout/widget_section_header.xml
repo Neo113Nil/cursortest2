@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="?attr/oz_semantic_bg_primary"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:weightSum="1">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:textAppearance="@style/TextStyle.Caption.AC"
+        android:textColor="?attr/oz_semantic_text_secondary"
+        android:id="@+id/headerTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="10dp"/>
+    <ru.ozon.uni.android.atom.badge.BadgeView
+        android:id="@+id/sectionHeaderBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"/>
+</LinearLayout>

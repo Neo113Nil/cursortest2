@@ -1,0 +1,18 @@
+package com.google.android.gms.internal.mlkit_vision_text_bundled_common;
+
+/* loaded from: classes9.dex */
+public final class zbado extends zbtz implements zbvn {
+    private zbado() {
+        throw null;
+    }
+
+    /* JADX WARN: Illegal instructions before constructor call */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    /* synthetic */ zbado(zbadn zbadnVar) {
+        super(r1);
+        zbadp zbadpVar;
+        zbadpVar = zbadp.zbb;
+    }
+}

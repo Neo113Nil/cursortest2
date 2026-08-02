@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/atom_tag_height"
+    android:paddingStart="5.5dp"
+    android:paddingEnd="8dp">
+    <View
+        android:id="@+id/colorView"
+        android:background="@drawable/bg_cross_color_tag"
+        android:layout_width="21dp"
+        android:layout_height="21dp"/>
+    <ImageView
+        android:id="@+id/crossCircleIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_s_cross_circle"
+        android:layout_marginStart="12dp"
+        android:tintMode="src_in"
+        app:tint="?attr/graphicSecondaryInverted"/>
+</merge>

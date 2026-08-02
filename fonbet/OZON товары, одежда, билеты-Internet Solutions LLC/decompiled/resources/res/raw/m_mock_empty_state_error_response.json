@@ -1,0 +1,45 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "response": {
+      "jsonrpc": "2.0",
+      "result": {
+        "item": {
+          "id": "emptyState",
+          "type": "blockContainer",
+          "version": 1,
+          "orderBy": 1,
+          "model": {
+            "blocks": [
+              {
+                "name": "emptyStateBlock",
+                "version": 1,
+                "vertical": "messenger",
+                "state": {
+                  "imageUrl": "https://cdn1.ozone.ru/s3/cms/18/tbc/wc400/covidlogo150_true.png",
+                  "title": {
+                    "text": "Такого чата не существует",
+                    "textColor": "textPrimary",
+                    "textStyle": "tsBodyLBold"
+                  },
+                  "description": {
+                    "text": "Скорее всего, вы перешли по неправильной ссылке. Выберите существующий чат",
+                    "textColor": "textPrimary",
+                    "textStyle": "tsBodyM"
+                  },
+                  "button": {
+                    "text": "Вернуться к списку чатов",
+                    "style": "STYLE_TYPE_PRIMARY_SMALL",
+                    "action": {
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "id": "c7cceac9-718f-4f8e-b9af-26df4c8d6363"
+    }
+  }
+}

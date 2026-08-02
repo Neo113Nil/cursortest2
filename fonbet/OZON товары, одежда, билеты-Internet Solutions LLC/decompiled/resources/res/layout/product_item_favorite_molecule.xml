@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.app.android.favorites.ui.favoritebutton.favoriteproduct.ui.buttonview.ProductFavoriteMoleculeButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/productFavMoleculeButton"
+    android:background="@drawable/bg_white_ripple_blue_round"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/ic_m_fav_tiles_normal"/>

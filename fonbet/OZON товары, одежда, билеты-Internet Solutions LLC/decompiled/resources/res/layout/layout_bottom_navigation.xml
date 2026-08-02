@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.ozon.app.android.tabbar.ui.OzonBottomNavigationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/BottomNavigationView"
+    android:layout_gravity="bottom|center_horizontal"
+    android:id="@+id/bottomNavigation"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottom_navigation_height"
+    android:layout_alignParentBottom="true"
+    app:itemIconTint="@color/bottomnavigation_icon_color"
+    app:itemTextColor="@color/bottomnavigation_text_color"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:menu="@menu/bottom_menu"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/selector_rect_round_green"/>
+    <item>
+        <selector>
+            <item
+                android:state_enabled="false"
+                android:drawable="@color/background_button_disabled_color"/>
+            <item android:drawable="@drawable/ripple_rect_round_whitewave"/>
+        </selector>
+    </item>
+</layer-list>

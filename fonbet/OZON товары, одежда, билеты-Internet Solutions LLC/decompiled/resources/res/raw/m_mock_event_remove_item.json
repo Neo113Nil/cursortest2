@@ -1,0 +1,13 @@
+{
+  "namespace": "CHAT",
+  "payload": {
+    "events": [
+      {
+        "type": "removeItem",
+        "model": {
+          "id": "5"
+        }
+      }
+    ]
+  }
+}

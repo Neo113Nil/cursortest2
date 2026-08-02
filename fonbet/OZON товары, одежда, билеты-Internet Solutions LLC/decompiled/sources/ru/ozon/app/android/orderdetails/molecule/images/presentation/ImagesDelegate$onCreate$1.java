@@ -1,0 +1,81 @@
+package ru.ozon.app.android.orderdetails.molecule.images.presentation;
+
+import Sc.s;
+import androidx.recyclerview.widget.RecyclerView;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.coroutines.d;
+import kotlin.coroutines.jvm.internal.e;
+import kotlin.coroutines.jvm.internal.j;
+import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import ru.ozon.app.android.cscore.orderdetails.molecule.images.presentation.ImageVO;
+import ru.ozon.app.android.cscore.orderdetails.molecule.images.presentation.ImagesView;
+import ru.ozon.app.android.cscore.orderdetails.molecule.images.presentation.adapter.ImagesAdapter;
+
+@Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n"}, d2 = {"<anonymous>", "", "it", "", "Lru/ozon/app/android/cscore/orderdetails/molecule/images/presentation/ImageVO;", "kotlin.jvm.PlatformType"}, k = 3, mv = {2, 0, 0}, xi = 48)
+@e(c = "ru.ozon.app.android.orderdetails.molecule.images.presentation.ImagesDelegate$onCreate$1", f = "ImagesDelegate.kt", l = {}, m = "invokeSuspend")
+/* loaded from: classes13.dex */
+final class ImagesDelegate$onCreate$1 extends j implements Function2<List<? extends ImageVO>, d<? super Unit>, Object> {
+    /* synthetic */ Object L$0;
+    int label;
+    final /* synthetic */ ImagesDelegate this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    ImagesDelegate$onCreate$1(ImagesDelegate imagesDelegate, d<? super ImagesDelegate$onCreate$1> dVar) {
+        super(2, dVar);
+        this.this$0 = imagesDelegate;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void invokeSuspend$lambda$0(ImagesDelegate imagesDelegate) {
+        ImagesView imagesView;
+        ImagesAdapter imagesAdapter;
+        imagesView = imagesDelegate.view;
+        RecyclerView recyclerView = imagesView.getRecyclerView();
+        imagesAdapter = imagesDelegate.imagesAdapter;
+        recyclerView.setAdapter(imagesAdapter);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.a
+    public final d<Unit> create(Object obj, d<?> dVar) {
+        ImagesDelegate$onCreate$1 imagesDelegate$onCreate$1 = new ImagesDelegate$onCreate$1(this.this$0, dVar);
+        imagesDelegate$onCreate$1.L$0 = obj;
+        return imagesDelegate$onCreate$1;
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public /* bridge */ /* synthetic */ Object invoke(List<? extends ImageVO> list, d<? super Unit> dVar) {
+        return invoke2((List<ImageVO>) list, dVar);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.a
+    public final Object invokeSuspend(Object obj) {
+        ImagesAdapter imagesAdapter;
+        List cropWithCounter;
+        Wc.a aVar = Wc.a.COROUTINE_SUSPENDED;
+        if (this.label != 0) {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        s.b(obj);
+        List list = (List) this.L$0;
+        imagesAdapter = this.this$0.imagesAdapter;
+        ImagesDelegate imagesDelegate = this.this$0;
+        Intrinsics.f(list);
+        cropWithCounter = imagesDelegate.cropWithCounter(list);
+        final ImagesDelegate imagesDelegate2 = this.this$0;
+        imagesAdapter.submitList(cropWithCounter, new Runnable() { // from class: ru.ozon.app.android.orderdetails.molecule.images.presentation.a
+            @Override // java.lang.Runnable
+            public final void run() {
+                ImagesDelegate$onCreate$1.invokeSuspend$lambda$0(ImagesDelegate.this);
+            }
+        });
+        return Unit.f71690a;
+    }
+
+    /* renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final Object invoke2(List<ImageVO> list, d<? super Unit> dVar) {
+        return ((ImagesDelegate$onCreate$1) create(list, dVar)).invokeSuspend(Unit.f71690a);
+    }
+}

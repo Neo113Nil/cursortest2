@@ -1,0 +1,117 @@
+package ru.ozon.app.android.fresh.feature.b2b.widgets.legals.addLegalInnMobile.presentation;
+
+import Ar.d;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.i;
+import androidx.recyclerview.widget.t;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.fresh.feature.b2b.R$layout;
+import ru.ozon.app.android.fresh.feature.b2b.databinding.WidgetAddLegalInnMobileLegalItemBinding;
+import ru.ozon.uni.android.uikit.extensions.view.ViewGroupExtKt;
+
+@Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u000b\b\u0001\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001:\u0002\u0015\u0016B\u001b\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\u0004\b\b\u0010\tJ\u001f\u0010\u000e\u001a\u00020\u00032\u0006\u0010\u000b\u001a\u00020\n2\u0006\u0010\r\u001a\u00020\fH\u0016¢\u0006\u0004\b\u000e\u0010\u000fJ\u001f\u0010\u0012\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u00032\u0006\u0010\u0011\u001a\u00020\fH\u0016¢\u0006\u0004\b\u0012\u0010\u0013R \u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010\u0014¨\u0006\u0017"}, d2 = {"Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter;", "Landroidx/recyclerview/widget/t;", "Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;", "Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter$ViewHolder;", "Lkotlin/Function1;", "", "", "onClickListener", "<init>", "(Lkotlin/jvm/functions/Function1;)V", "Landroid/view/ViewGroup;", "parent", "", "viewType", "onCreateViewHolder", "(Landroid/view/ViewGroup;I)Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter$ViewHolder;", "holder", "position", "onBindViewHolder", "(Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter$ViewHolder;I)V", "Lkotlin/jvm/functions/Function1;", "DiffUtilItemCallback", "ViewHolder", "b2b_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes12.dex */
+public final class LegalsAdapter extends t<LegalVO, ViewHolder> {
+
+    @NotNull
+    private final Function1<String, Unit> onClickListener;
+
+    @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0004\bÇ\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0003\u0010\u0004J\u001f\u0010\b\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\b\u0010\tJ\u001f\u0010\n\u001a\u00020\u00072\u0006\u0010\u0005\u001a\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\n\u0010\t¨\u0006\u000b"}, d2 = {"Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter$DiffUtilItemCallback;", "Landroidx/recyclerview/widget/i$d;", "Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;", "<init>", "()V", "oldItem", "newItem", "", "areItemsTheSame", "(Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;)Z", "areContentsTheSame", "b2b_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    public static final class DiffUtilItemCallback extends i.d<LegalVO> {
+
+        @NotNull
+        public static final DiffUtilItemCallback INSTANCE = new DiffUtilItemCallback();
+
+        private DiffUtilItemCallback() {
+        }
+
+        @Override // androidx.recyclerview.widget.i.d
+        public boolean areContentsTheSame(@NotNull LegalVO oldItem, @NotNull LegalVO newItem) {
+            Intrinsics.checkNotNullParameter(oldItem, "oldItem");
+            Intrinsics.checkNotNullParameter(newItem, "newItem");
+            return Intrinsics.d(oldItem, newItem);
+        }
+
+        @Override // androidx.recyclerview.widget.i.d
+        public boolean areItemsTheSame(@NotNull LegalVO oldItem, @NotNull LegalVO newItem) {
+            Intrinsics.checkNotNullParameter(oldItem, "oldItem");
+            Intrinsics.checkNotNullParameter(newItem, "newItem");
+            return Intrinsics.d(oldItem, newItem);
+        }
+    }
+
+    @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004¢\u0006\u0004\b\b\u0010\tJ\u0015\u0010\f\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\n¢\u0006\u0004\b\f\u0010\rR\u0017\u0010\u0003\u001a\u00020\u00028\u0006¢\u0006\f\n\u0004\b\u0003\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010R \u0010\u0007\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u00048\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0007\u0010\u0011R\u0014\u0010\u0013\u001a\u00020\u00128\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0013\u0010\u0014R\u0016\u0010\u000b\u001a\u00020\n8\u0002@\u0002X\u0082.¢\u0006\u0006\n\u0004\b\u000b\u0010\u0015¨\u0006\u0016"}, d2 = {"Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalsAdapter$ViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$C;", "Landroid/view/View;", "containerView", "Lkotlin/Function1;", "", "", "onClickListener", "<init>", "(Landroid/view/View;Lkotlin/jvm/functions/Function1;)V", "Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;", "item", "bind", "(Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;)V", "Landroid/view/View;", "getContainerView", "()Landroid/view/View;", "Lkotlin/jvm/functions/Function1;", "Lru/ozon/app/android/fresh/feature/b2b/databinding/WidgetAddLegalInnMobileLegalItemBinding;", "binding", "Lru/ozon/app/android/fresh/feature/b2b/databinding/WidgetAddLegalInnMobileLegalItemBinding;", "Lru/ozon/app/android/fresh/feature/b2b/widgets/legals/addLegalInnMobile/presentation/LegalVO;", "b2b_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    public static final class ViewHolder extends RecyclerView.C {
+
+        @NotNull
+        private final WidgetAddLegalInnMobileLegalItemBinding binding;
+
+        @NotNull
+        private final View containerView;
+        private LegalVO item;
+
+        @NotNull
+        private final Function1<String, Unit> onClickListener;
+
+        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* JADX WARN: Multi-variable type inference failed */
+        public ViewHolder(@NotNull View containerView, @NotNull Function1<? super String, Unit> onClickListener) {
+            super(containerView);
+            Intrinsics.checkNotNullParameter(containerView, "containerView");
+            Intrinsics.checkNotNullParameter(onClickListener, "onClickListener");
+            this.containerView = containerView;
+            this.onClickListener = onClickListener;
+            WidgetAddLegalInnMobileLegalItemBinding bind = WidgetAddLegalInnMobileLegalItemBinding.bind(containerView);
+            Intrinsics.checkNotNullExpressionValue(bind, "bind(...)");
+            this.binding = bind;
+            containerView.setOnClickListener(new d(this, 8));
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public static final void _init_$lambda$0(ViewHolder viewHolder, View view) {
+            Function1<String, Unit> function1 = viewHolder.onClickListener;
+            LegalVO legalVO = viewHolder.item;
+            if (legalVO != null) {
+                function1.invoke(legalVO.getDeeplink());
+            } else {
+                Intrinsics.n("item");
+                throw null;
+            }
+        }
+
+        public final void bind(@NotNull LegalVO item) {
+            Intrinsics.checkNotNullParameter(item, "item");
+            this.item = item;
+            this.binding.titleTv.setText(item.getTitle());
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public LegalsAdapter(@NotNull Function1<? super String, Unit> onClickListener) {
+        super(DiffUtilItemCallback.INSTANCE);
+        Intrinsics.checkNotNullParameter(onClickListener, "onClickListener");
+        this.onClickListener = onClickListener;
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    public void onBindViewHolder(@NotNull ViewHolder holder, int position) {
+        Intrinsics.checkNotNullParameter(holder, "holder");
+        LegalVO item = getItem(position);
+        Intrinsics.checkNotNullExpressionValue(item, "getItem(...)");
+        holder.bind(item);
+    }
+
+    @Override // androidx.recyclerview.widget.RecyclerView.g
+    @NotNull
+    public ViewHolder onCreateViewHolder(@NotNull ViewGroup parent, int viewType) {
+        Intrinsics.checkNotNullParameter(parent, "parent");
+        return new ViewHolder(ViewGroupExtKt.inflate(parent, R$layout.widget_add_legal_inn_mobile_legal_item), this.onClickListener);
+    }
+}

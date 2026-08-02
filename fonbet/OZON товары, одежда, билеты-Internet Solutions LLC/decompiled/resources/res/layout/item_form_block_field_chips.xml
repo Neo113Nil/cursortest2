@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <HorizontalScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ru.ozon.app.android.atoms.af.layout.HorizontalAtomsLayout
+            android:id="@+id/chipsHAL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressNameTil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        app:boxStrokeWidth="@dimen/dimen_0"
+        app:boxStrokeWidthFocused="@dimen/dimen_0"
+        style="@style/OzTextInput.Layout">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            style="@style/OzTextInput.EditText"/>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

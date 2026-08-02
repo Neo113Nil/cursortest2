@@ -1,0 +1,601 @@
+{
+  "id": "onboarding",
+  "type": "ONBOARDING",
+  "version": 2,
+  "selectedFrame": 0,
+  "canClose": true,
+  "widgetName": "fintech.onboarding",
+  "ratio": "0.98",
+  "frames": [
+    {
+      "id": "frame_0",
+      "imageUrl": null,
+      "background": "ozBGPrimary",
+      "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_card.jpg",
+      "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_card_new.mp4",
+      "footerPaddings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "mainPaddings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "headerPaddings": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "header": [
+        {
+          "id": "row_id_00",
+          "type": "ROW",
+          "version": 1,
+          "clickable": true,
+          "width": -1,
+          "height": 48,
+          "ratioW": null,
+          "ratioH": null,
+          "percentW": null,
+          "layoutGravity": [
+            "start",
+            "start"
+          ],
+          "layoutWeight": null,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundColor": null,
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradient": null,
+          "backgroundGradientOrientation": null,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "dashWidth": null,
+          "dashGap": null,
+          "elevation": null,
+          "widgets": [
+            {
+              "id": "textatom_id_00",
+              "type": "TEXTATOM",
+              "version": 1,
+              "clickable": true,
+              "width": -2,
+              "height": -2,
+              "ratioW": null,
+              "ratioH": null,
+              "percentW": null,
+              "layoutGravity": [
+                "center",
+                "center"
+              ],
+              "layoutWeight": 1,
+              "margins": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "paddings": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "backgroundColor": null,
+              "backgroundRadius": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "backgroundGradient": null,
+              "backgroundGradientOrientation": null,
+              "strokeColor": null,
+              "strokeWidth": null,
+              "dashWidth": null,
+              "dashGap": null,
+              "elevation": null,
+              "text": "Пропустить",
+              "textColor": "ozBlue",
+              "textStyle": "tsBodyLBold",
+              "maxLines": 1,
+              "gravity": "START"
+            }
+          ]
+        }
+      ],
+      "main": [
+        {
+          "type": "image",
+          "id": "xxxd",
+          "clickable": true,
+          "iconSrc": "https://ir.ozone.ru/s3/multimedia-t/wc600/6493586561.jpg",
+          "iconColor": null,
+          "layoutGravity": [
+            "center",
+            "center"
+          ],
+          "width": 100,
+          "height": 100,
+          "backgroundColor": "ozRed",
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "margins": [
+            20,
+            0,
+            20,
+            20
+          ]
+        },
+        {
+          "type": "textAtom",
+          "id": "textAtom_0_1",
+          "text": "Выгодная карта",
+          "backgroundColor": "ozGreenUi",
+          "backgroundRadius": [
+            20,
+            20,
+            20,
+            20
+          ],
+          "backgroundGradient": null,
+          "backgroundGradientOrientation": null,
+          "strokeColor": "ozOrange",
+          "strokeWidth": 5,
+          "dashWidth": 4,
+          "dashGap": 3,
+          "textColor": "ozTextPrimary",
+          "textStyle": "tsHeadL",
+          "gravity": "center",
+          "paddings": [
+            56,
+            0,
+            56,
+            0
+          ]
+        },
+        {
+          "type": "textAtom",
+          "id": "textAtom_0_2",
+          "text": "Бесплатное открытие и обслуживание, кешбэк до 25% и скидки",
+          "textColor": "ozTextSecondary",
+          "textStyle": "tsBodyL",
+          "gravity": "center",
+          "paddings": [
+            36,
+            12,
+            36,
+            0
+          ]
+        },
+        {
+          "type": "textAtom",
+          "id": "textAtom_0_3",
+          "text": "Поэтому предел последовательности просветляет ритм. Ритм, в первом приближении, охватывает лист Мёбиуса. Культурная аура произведения отражает метод последовательных приближений, что неудивительно. Несмотря на сложности, диониссийское начало поддерживает экспериментальный Наибольший Общий Делитель (НОД). Используя таблицу интегралов элементарных функций, получим: поле направлений оправдывает горизонт ожидания, это же положение обосновывал Ж.Польти в книге 'Тридцать шесть драматических ситуаций'",
+          "textColor": "ozTextSecondary",
+          "textStyle": "tsBodyL",
+          "gravity": "center",
+          "paddings": [
+            36,
+            12,
+            36,
+            0
+          ]
+        }
+      ],
+      "footer": [
+        {
+          "id": "row_id_01",
+          "type": "ROW",
+          "version": 1,
+          "clickable": true,
+          "width": -1,
+          "height": -2,
+          "ratioW": null,
+          "ratioH": null,
+          "percentW": null,
+          "layoutGravity": [
+            "start",
+            "start"
+          ],
+          "layoutWeight": null,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundColor": null,
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradient": null,
+          "backgroundGradientOrientation": null,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "dashWidth": null,
+          "dashGap": null,
+          "elevation": null,
+          "widgets": [
+            {
+              "type": "button",
+              "width": -1,
+              "height": -2,
+              "layoutWeight": 1,
+              "clickable": true,
+              "id": "login_0_1",
+              "preset": "SIZE_500",
+              "style": "ACTION_TERTIARY",
+              "title": {
+                "text": "Войти"
+              },
+              "paddings": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "type": "button",
+              "id": "next_0_1",
+              "clickable": true,
+              "width": -1,
+              "height": -2,
+              "layoutWeight": 1,
+              "preset": "SIZE_500",
+              "style": "ACTION_PRIMARY",
+              "title": {
+                "text": "Далее"
+              },
+              "paddings": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame_1",
+      "imageUrl": null,
+      "background": "ozBGPrimary",
+      "previewUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/preview_transfer.jpg",
+      "videoUrl": "https://st.ozone.ru/s3/ob-frontend/prod/assets/stories/onboarding/Onboarding_transfer.mp4",
+      "footerPaddings": [
+        0,
+        0,
+        0,
+        12
+      ],
+      "mainPaddings": [
+        0,
+        8,
+        0,
+        16
+      ],
+      "headerPaddings": [
+        12,
+        0,
+        0,
+        0
+      ],
+      "header": [
+        {
+          "id": "row_id_01",
+          "type": "ROW",
+          "version": 1,
+          "clickable": true,
+          "width": -1,
+          "height": 48,
+          "ratioW": null,
+          "ratioH": null,
+          "percentW": null,
+          "layoutGravity": [
+            "start",
+            "start"
+          ],
+          "layoutWeight": null,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundColor": null,
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradient": null,
+          "backgroundGradientOrientation": null,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "dashWidth": null,
+          "dashGap": null,
+          "elevation": null,
+          "widgets": [
+            {
+              "id": "textatom_id_01",
+              "type": "TEXTATOM",
+              "version": 1,
+              "clickable": true,
+              "width": -2,
+              "height": -2,
+              "ratioW": null,
+              "ratioH": null,
+              "percentW": null,
+              "layoutGravity": [
+                "center",
+                "center"
+              ],
+              "layoutWeight": 1,
+              "margins": [
+                0,
+                24,
+                16,
+                0
+              ],
+              "paddings": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "backgroundColor": null,
+              "backgroundRadius": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "backgroundGradient": null,
+              "backgroundGradientOrientation": null,
+              "strokeColor": null,
+              "strokeWidth": null,
+              "dashWidth": null,
+              "dashGap": null,
+              "elevation": null,
+              "text": "Пропустить",
+              "textColor": "ozBlue",
+              "textStyle": "tsBodyLBold",
+              "maxLines": 1,
+              "gravity": "END"
+            }
+          ]
+        }
+      ],
+      "main": [
+        {
+          "type": "textAtom",
+          "id": "textAtom_1_1",
+          "text": "Переводы и пополнения без комиссии",
+          "textColor": "ozTextPrimary",
+          "textStyle": "tsHeadL",
+          "gravity": "center",
+          "paddings": [
+            24,
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "type": "textAtom",
+          "id": "textAtom_1_2",
+          "text": "Через СБП и по реквизитам счёта",
+          "textColor": "ozTextSecondary",
+          "textStyle": "tsBodyL",
+          "gravity": "center",
+          "paddings": [
+            36,
+            12,
+            36,
+            0
+          ]
+        }
+      ],
+      "footer": [
+        {
+          "id": "row_id_02",
+          "type": "ROW",
+          "version": 1,
+          "clickable": true,
+          "width": -1,
+          "height": -2,
+          "ratioW": null,
+          "ratioH": null,
+          "percentW": null,
+          "layoutGravity": [
+            "start",
+            "start"
+          ],
+          "layoutWeight": null,
+          "margins": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "paddings": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundColor": null,
+          "backgroundRadius": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "backgroundGradient": null,
+          "backgroundGradientOrientation": null,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "dashWidth": null,
+          "dashGap": null,
+          "elevation": null,
+          "widgets": [
+            {
+              "type": "button",
+              "width": -1,
+              "height": -2,
+              "layoutWeight": 1,
+              "id": "login_1_0",
+              "preset": "SIZE_500",
+              "style": "ACTION_TERTIARY",
+              "title": {
+                "text": "Войти"
+              },
+              "paddings": [
+                16,
+                4,
+                8,
+                4
+              ]
+            },
+            {
+              "type": "button",
+              "id": "next_1_1",
+              "width": -1,
+              "height": -2,
+              "layoutWeight": 1,
+              "preset": "SIZE_500",
+              "style": "ACTION_PRIMARY",
+              "title": {
+                "text": "Далее"
+              },
+              "paddings": [
+                8,
+                4,
+                16,
+                16
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame_2",
+      "imageUrl": null,
+      "background": "ozBGPrimary",
+      "videoUrl": "https://cdn1.ozone.ru/s3/ob-loader/static/stories/onboarding/Onboarding_security.mp4",
+      "previewUrl": "https://cdn1.ozone.ru/s3/ob-loader/static/stories/onboarding/preview_safety.jpg",
+      "footerPaddings": [
+        0,
+        0,
+        0,
+        24
+      ],
+      "mainPaddings": [
+        0,
+        8,
+        0,
+        16
+      ],
+      "headerPaddings": [
+        0,
+        16,
+        0,
+        0
+      ],
+      "main": [
+        {
+          "type": "textAtom",
+          "id": "textAtom_5_1",
+          "text": "Гарантированная безопасность",
+          "textColor": "ozTextPrimary",
+          "textStyle": "tsHeadL",
+          "gravity": "center",
+          "paddings": [
+            24,
+            0,
+            24,
+            0
+          ]
+        },
+        {
+          "type": "textAtom",
+          "id": "textAtom_5_2",
+          "text": "Участвуем в системе обязательного страхования вкладов и защищаем ваши данные",
+          "textColor": "ozTextSecondary",
+          "textStyle": "tsBodyL",
+          "gravity": "center",
+          "paddings": [
+            36,
+            12,
+            36,
+            0
+          ]
+        }
+      ],
+      "footer": [
+        {
+          "type": "button",
+          "id": "next_2_1",
+          "width": -1,
+          "height": -2,
+          "layoutWeight": 1,
+          "preset": "SIZE_500",
+          "style": "ACTION_TERTIARY",
+          "title": {
+            "text": "Войти в Ozon Bank"
+          },
+          "paddings": [
+            16,
+            4,
+            16,
+            16
+          ]
+        }
+      ]
+    }
+  ]
+}

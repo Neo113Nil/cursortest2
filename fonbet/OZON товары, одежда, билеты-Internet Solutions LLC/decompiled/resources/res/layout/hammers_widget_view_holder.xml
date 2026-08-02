@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hammerWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/bgImage"
+        android:background="@drawable/hammers_image_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="@+id/hammerContainer"
+        app:layout_constraintEnd_toEndOf="@+id/hammerContainer"
+        app:layout_constraintStart_toStartOf="@+id/hammerContainer"
+        app:layout_constraintTop_toTopOf="@+id/hammerContainer"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/hammerContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/hammer_header"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hammersRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp"/>
+        <include layout="@layout/hammer_footer"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

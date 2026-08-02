@@ -1,0 +1,176 @@
+package ru.ozon.app.android.uikit.view.atoms.cells.subtitled;
+
+import GW.a;
+import Hj.C3143a;
+import Sc.InterfaceC3999a;
+import android.content.Context;
+import android.graphics.Outline;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewOutlineProvider;
+import android.widget.ImageView;
+import androidx.constraintlayout.widget.d;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.uikit.R$id;
+import ru.ozon.app.android.uikit.R$layout;
+import ru.ozon.app.android.uikit.databinding.CellWithSubtitle40iconBinding;
+import ru.ozon.app.android.uikit.view.atoms.cells.BaseCellWithSubtitleView;
+import ru.ozon.app.android.uikit.view.atoms.cells.DisclosureCell;
+import ru.ozon.uni.R$color;
+import ru.ozon.uni.R$drawable;
+import ru.ozon.uni.android.ds.UniGlobalConfigKt;
+import ru.ozon.uni.android.uikit.extensions.ResourceExtKt;
+import ru.ozon.uni.android.uikit.extensions.ThemeExtKt;
+import ru.ozon.uni.android.uikit.view.atoms.AtomView;
+import ru.ozon.uni.android.uikit.view.atoms.texts.TextAtomView;
+
+@InterfaceC3999a
+@Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u0000 52\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u00015B'\b\u0007\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0007\u0012\b\b\u0002\u0010\n\u001a\u00020\t¢\u0006\u0004\b\u000b\u0010\fJ\u0017\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u000e\u001a\u00020\rH\u0016¢\u0006\u0004\b\u0010\u0010\u0011J\u000f\u0010\u0012\u001a\u00020\u000fH\u0016¢\u0006\u0004\b\u0012\u0010\u0013J\u000f\u0010\u0014\u001a\u00020\u000fH\u0016¢\u0006\u0004\b\u0014\u0010\u0013J\u001b\u0010\u0016\u001a\u00020\u000f2\n\b\u0001\u0010\u0015\u001a\u0004\u0018\u00010\tH\u0016¢\u0006\u0004\b\u0016\u0010\u0017J\u000f\u0010\u0019\u001a\u00020\u0018H\u0016¢\u0006\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\t8\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u001b\u0010\u001c\u001a\u0004\b\u001d\u0010\u001eR*\u0010 \u001a\n\u0012\u0004\u0012\u00020\u000f\u0018\u00010\u001f8\u0006@\u0006X\u0086\u000e¢\u0006\u0012\n\u0004\b \u0010!\u001a\u0004\b\"\u0010#\"\u0004\b$\u0010%R\u0014\u0010'\u001a\u00020&8\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b'\u0010(R\u0014\u0010,\u001a\u00020)8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b*\u0010+R\u0014\u0010.\u001a\u00020)8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b-\u0010+R\u0014\u00102\u001a\u00020/8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b0\u00101R\u0014\u00104\u001a\u00020\u00188VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b3\u0010\u001a¨\u00066"}, d2 = {"Lru/ozon/app/android/uikit/view/atoms/cells/subtitled/CellWithSubtitle40IconView;", "Lru/ozon/app/android/uikit/view/atoms/cells/BaseCellWithSubtitleView;", "Lru/ozon/uni/android/uikit/view/atoms/AtomView;", "", "Lru/ozon/app/android/uikit/view/atoms/cells/DisclosureCell;", "Landroid/content/Context;", "context", "Landroid/util/AttributeSet;", "attrs", "", "defStyleAttr", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "", "isEnabled", "", "setEnabled", "(Z)V", "alignActionViewTopVertical", "()V", "alignActionViewCenterVertical", "color", "setTintColor", "(Ljava/lang/Integer;)V", "Landroid/widget/ImageView;", "getIcon", "()Landroid/widget/ImageView;", "actionViewId", "I", "getActionViewId", "()I", "Lkotlin/Function0;", "onClickListener", "Lkotlin/jvm/functions/Function0;", "getOnClickListener", "()Lkotlin/jvm/functions/Function0;", "setOnClickListener", "(Lkotlin/jvm/functions/Function0;)V", "Lru/ozon/app/android/uikit/databinding/CellWithSubtitle40iconBinding;", "binding", "Lru/ozon/app/android/uikit/databinding/CellWithSubtitle40iconBinding;", "Lru/ozon/uni/android/uikit/view/atoms/texts/TextAtomView;", "getTitleTextAtomView", "()Lru/ozon/uni/android/uikit/view/atoms/texts/TextAtomView;", "titleTextAtomView", "getSubtitleTextAtomView", "subtitleTextAtomView", "Landroid/view/View;", "getSeparatorView", "()Landroid/view/View;", "separatorView", "getDisclosureImageView", "disclosureImageView", "Companion", "ui-kit_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+public final class CellWithSubtitle40IconView extends BaseCellWithSubtitleView implements AtomView, DisclosureCell {
+    private final int actionViewId;
+
+    @NotNull
+    private final CellWithSubtitle40iconBinding binding;
+    private Function0<Unit> onClickListener;
+
+    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    public CellWithSubtitle40IconView(@NotNull Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0, 4, null);
+        Intrinsics.checkNotNullParameter(context, "context");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void _init_$lambda$0(CellWithSubtitle40IconView cellWithSubtitle40IconView, View view) {
+        Function0<Unit> function0;
+        if (!cellWithSubtitle40IconView.isEnabled() || (function0 = cellWithSubtitle40IconView.onClickListener) == null) {
+            return;
+        }
+        function0.invoke();
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView
+    public void alignActionViewCenterVertical() {
+        super.alignActionViewCenterVertical();
+        d dVar = new d();
+        dVar.p(this);
+        dVar.e0(R$id.iconIv, 3, 0);
+        dVar.s(R$id.iconIv, 4, 0, 4);
+        fixTextsMargins(dVar, ResourceExtKt.toPx(12));
+        dVar.f(this);
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView
+    public void alignActionViewTopVertical() {
+        super.alignActionViewTopVertical();
+        d dVar = new d();
+        dVar.p(this);
+        dVar.e0(R$id.iconIv, 3, ResourceExtKt.toPx(6));
+        dVar.o(R$id.iconIv, 4);
+        fixTextsMargins(dVar, ResourceExtKt.toPx(8));
+        dVar.f(this);
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView
+    public int getActionViewId() {
+        return this.actionViewId;
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.DisclosureCell
+    @NotNull
+    public ImageView getDisclosureImageView() {
+        ImageView disclosureIv = this.binding.disclosureIv;
+        Intrinsics.checkNotNullExpressionValue(disclosureIv, "disclosureIv");
+        return disclosureIv;
+    }
+
+    @NotNull
+    public ImageView getIcon() {
+        ImageView iconIv = this.binding.iconIv;
+        Intrinsics.checkNotNullExpressionValue(iconIv, "iconIv");
+        return iconIv;
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView
+    @NotNull
+    /* renamed from: getSeparatorView */
+    public View getSeparator() {
+        View separator = this.binding.separator;
+        Intrinsics.checkNotNullExpressionValue(separator, "separator");
+        return separator;
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellWithSubtitleView
+    @NotNull
+    /* renamed from: getSubtitleTextAtomView */
+    public TextAtomView getSubtitleTav() {
+        TextAtomView subtitleTav = this.binding.subtitleTav;
+        Intrinsics.checkNotNullExpressionValue(subtitleTav, "subtitleTav");
+        return subtitleTav;
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView
+    @NotNull
+    /* renamed from: getTitleTextAtomView */
+    public TextAtomView getTitleTav() {
+        TextAtomView titleTav = this.binding.titleTav;
+        Intrinsics.checkNotNullExpressionValue(titleTav, "titleTav");
+        return titleTav;
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.DisclosureCell
+    public void hideDisclosure(boolean z11) {
+        DisclosureCell.DefaultImpls.hideDisclosure(this, z11);
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.DisclosureCell
+    public void setDisclosureTintColor(@NotNull String str) {
+        DisclosureCell.DefaultImpls.setDisclosureTintColor(this, str);
+    }
+
+    @Override // ru.ozon.app.android.uikit.view.atoms.cells.BaseCellWithSubtitleView, ru.ozon.app.android.uikit.view.atoms.cells.BaseCellView, android.view.View
+    public void setEnabled(boolean isEnabled) {
+        super.setEnabled(isEnabled);
+        setBackgroundResource(isEnabled ? R$drawable.ripple_rect_white_bluewave : R$color.oz_white_1);
+    }
+
+    public final void setOnClickListener(Function0<Unit> function0) {
+        this.onClickListener = function0;
+    }
+
+    public void setTintColor(Integer color) {
+        ImageView iconIv = this.binding.iconIv;
+        Intrinsics.checkNotNullExpressionValue(iconIv, "iconIv");
+        ThemeExtKt.tint(iconIv, color);
+    }
+
+    public /* synthetic */ CellWithSubtitle40IconView(Context context, AttributeSet attributeSet, int i11, int i12, DefaultConstructorMarker defaultConstructorMarker) {
+        this(context, (i12 & 2) != 0 ? null : attributeSet, (i12 & 4) != 0 ? 0 : i11);
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public CellWithSubtitle40IconView(@NotNull Context context, AttributeSet attributeSet, int i11) {
+        super(context, attributeSet, i11);
+        Intrinsics.checkNotNullParameter(context, "context");
+        this.actionViewId = R$id.disclosureIv;
+        CellWithSubtitle40iconBinding bind = CellWithSubtitle40iconBinding.bind(View.inflate(context, R$layout.cell_with_subtitle_40icon, this));
+        this.binding = bind;
+        setBackgroundResource(R$color.oz_white_1);
+        setOnClickListener(new a(this, 7));
+        if (UniGlobalConfigKt.getRoundCornersFlag(context)) {
+            ImageView imageView = bind.iconIv;
+            imageView.setClipToOutline(true);
+            imageView.setOutlineProvider(new ViewOutlineProvider() { // from class: ru.ozon.app.android.uikit.view.atoms.cells.subtitled.CellWithSubtitle40IconView$2$1
+                @Override // android.view.ViewOutlineProvider
+                public void getOutline(View view, Outline outline) {
+                    outline.setRoundRect(0, 0, C3143a.f(view, "view", outline, "outline"), view.getHeight(), ResourceExtKt.toPxF(99));
+                }
+            });
+        }
+    }
+}

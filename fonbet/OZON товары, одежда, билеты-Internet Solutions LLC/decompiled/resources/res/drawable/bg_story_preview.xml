@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/storyBg"
+        android:left="4dp"
+        android:top="4dp"
+        android:right="4dp"
+        android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/widget_story_outer_corner_radius"/>
+            <solid android:color="@color/oz_semantic_text_primary"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,63 @@
+package ru.ozon.app.android.travel.feature.general.common.widgets.emptyState.v1.presentation.overlay;
+
+import android.view.View;
+import android.view.ViewGroup;
+import d20.AbstractC6065b;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import l10.i;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.action.ActionHandler;
+import ru.ozon.app.android.travel.feature.general.common.widgets.emptyState.v1.presentation.EmptyStateWidgetVO;
+import ru.ozon.app.android.travel.molecules.view.emptyState.v1.EmptyStateView;
+import ru.ozon.uni.atoms.af.AtomAction;
+
+@Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0017\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005¢\u0006\u0004\b\u0007\u0010\bJ\u000f\u0010\n\u001a\u00020\tH\u0016¢\u0006\u0004\b\n\u0010\u000bJ\u0017\u0010\r\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\u0002H\u0016¢\u0006\u0004\b\r\u0010\u000eJ\u000f\u0010\u000f\u001a\u00020\tH\u0016¢\u0006\u0004\b\u000f\u0010\u000bR\u0014\u0010\u0006\u001a\u00020\u00058\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0006\u0010\u0010R\u0014\u0010\u0012\u001a\u00020\u00118\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0013R \u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\t0\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0016\u0010\u0017R\u001a\u0010\u0019\u001a\u00020\u00188\u0016X\u0096\u0004¢\u0006\f\n\u0004\b\u0019\u0010\u001a\u001a\u0004\b\u001b\u0010\u001c¨\u0006\u001d"}, d2 = {"Lru/ozon/app/android/travel/feature/general/common/widgets/emptyState/v1/presentation/overlay/EmptyStateOverlayWidgetHolder;", "Ld20/b;", "Lru/ozon/app/android/travel/feature/general/common/widgets/emptyState/v1/presentation/EmptyStateWidgetVO;", "Ll10/i;", "container", "Lru/ozon/app/android/travel/molecules/view/emptyState/v1/EmptyStateView;", "view", "<init>", "(Ll10/i;Lru/ozon/app/android/travel/molecules/view/emptyState/v1/EmptyStateView;)V", "", "addView", "()V", "item", "bind", "(Lru/ozon/app/android/travel/feature/general/common/widgets/emptyState/v1/presentation/EmptyStateWidgetVO;)V", "removeView", "Lru/ozon/app/android/travel/molecules/view/emptyState/v1/EmptyStateView;", "Landroid/view/ViewGroup;", "composerRoot", "Landroid/view/ViewGroup;", "Lkotlin/Function1;", "Lru/ozon/uni/atoms/af/AtomAction;", "actionHandler", "Lkotlin/jvm/functions/Function1;", "Landroid/view/View;", "metricView", "Landroid/view/View;", "getMetricView", "()Landroid/view/View;", "common_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes3.dex */
+public final class EmptyStateOverlayWidgetHolder extends AbstractC6065b<EmptyStateWidgetVO> {
+
+    @NotNull
+    private final Function1<AtomAction, Unit> actionHandler;
+
+    @NotNull
+    private final ViewGroup composerRoot;
+
+    @NotNull
+    private final View metricView;
+
+    @NotNull
+    private final EmptyStateView view;
+
+    public EmptyStateOverlayWidgetHolder(@NotNull i container, @NotNull EmptyStateView view) {
+        Intrinsics.checkNotNullParameter(container, "container");
+        Intrinsics.checkNotNullParameter(view, "view");
+        this.view = view;
+        this.composerRoot = container.Z();
+        this.actionHandler = new ActionHandler.Builder(container, this).buildHandler();
+        this.metricView = view;
+    }
+
+    @Override // d20.AbstractC6065b
+    public void addView() {
+        this.composerRoot.addView(this.view);
+    }
+
+    @Override // d20.AbstractC6065b
+    @NotNull
+    public View getMetricView() {
+        return this.metricView;
+    }
+
+    @Override // d20.AbstractC6065b
+    public void removeView() {
+        this.composerRoot.removeView(this.view);
+    }
+
+    @Override // d20.AbstractC6065b
+    public void bind(@NotNull EmptyStateWidgetVO item) {
+        Intrinsics.checkNotNullParameter(item, "item");
+        this.view.bind(item.getEmptyState(), this.actionHandler);
+    }
+}

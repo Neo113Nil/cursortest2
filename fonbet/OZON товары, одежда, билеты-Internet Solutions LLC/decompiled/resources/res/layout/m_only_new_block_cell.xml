@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp">
+    <ru.ozon.uni.android.controls.chip.ChipView
+        android:id="@+id/allChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:backgroundColor="@color/bg_secondary"
+        app:backgroundColorActive="@color/bg_secondary"
+        app:backgroundColorSelected="@color/bg_primary_inverted"
+        app:chipBorderColor="@color/transparent"
+        app:chipBorderColorActive="@color/transparent"
+        app:chipBorderColorSelected="@color/transparent"
+        app:chipSize="size_400"
+        app:mainText="@string/messenger_chat_list_filter_all"
+        app:mainTextColorActive="@color/text_premium"
+        app:mainTextColorSelected="@color/text_premium_inverted"/>
+    <ru.ozon.uni.android.controls.chip.ChipView
+        android:id="@+id/onlyNewChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundColor="@color/bg_secondary"
+        app:backgroundColorActive="@color/bg_secondary"
+        app:backgroundColorSelected="@color/bg_primary_inverted"
+        app:chipBorderColor="@color/transparent"
+        app:chipBorderColorActive="@color/transparent"
+        app:chipBorderColorSelected="@color/transparent"
+        app:chipSize="size_400"
+        app:mainText="@string/messenger_chat_list_filter_new_only"
+        app:mainTextColorActive="@color/text_premium"
+        app:mainTextColorSelected="@color/text_premium_inverted"/>
+</LinearLayout>

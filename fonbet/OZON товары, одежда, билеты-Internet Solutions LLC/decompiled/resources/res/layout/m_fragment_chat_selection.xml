@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootFl"
+    android:background="?attr/layerOverlayDimming"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/actionsLl"
+        android:background="@drawable/m_bg_disclaimer_rounded"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bg_primary"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+    <ImageView
+        android:id="@+id/cutDetailIv"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@null"/>
+</FrameLayout>

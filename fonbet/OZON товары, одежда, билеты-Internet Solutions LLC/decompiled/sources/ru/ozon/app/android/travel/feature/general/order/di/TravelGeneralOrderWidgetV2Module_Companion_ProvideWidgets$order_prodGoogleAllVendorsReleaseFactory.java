@@ -1,0 +1,49 @@
+package ru.ozon.app.android.travel.feature.general.order.di;
+
+import Jb.e;
+import Jb.j;
+import java.util.Set;
+import ru.ozon.app.android.composer.widgets.v2.Widget2;
+import ru.ozon.app.android.travel.feature.general.order.widgets.buttonsBar.data.ButtonsBarConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.buttonsBar.presentation.ButtonsBarViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.buttonsBar.presentation.sticky.ButtonsBarStickyViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.buyersContacts.data.BuyersContactsConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.buyersContacts.presentation.BuyersContactsViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.horizontalIconButtons.data.HorizontalIconButtonsConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.horizontalIconButtons.presentation.HorizontalIconButtonsViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderHeader.data.OrderHeaderConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderHeader.presentation.OrderHeaderViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderNavBar.data.OrderNavBarConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderNavBar.presentation.OrderNavBarOverlayViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderPassengersDetails.data.OrderPassengersDetailsConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderPassengersDetails.presentation.OrderPassengersDetailsViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderPaymentStatus.v1.data.OrderPaymentStatusConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderPaymentStatus.v1.presentation.OrderPaymentStatusViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.orderPaymentStatus.v1.presentation.timer.OrderPaymentStatusTimerViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.paymentDetails.data.PaymentDetailsConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.paymentDetails.presentation.PaymentDetailsViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.stepListWithScale.data.StepListWithScaleConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.stepListWithScale.presentation.StepListWithScaleViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelModalPriceDetailInformation.v3.data.TravelModalPriceDetailInformationV3Config;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelModalPriceDetailInformation.v3.presentation.TravelModalPriceDetailInformationV3ViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelModalPriceDetailInformation.v4.data.TravelModalPriceDetailInformationV4Config;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelModalPriceDetailInformation.v4.presentation.TravelModalPriceDetailInformationV4ViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderLinks.data.TravelOrderLinksConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderLinks.presentation.TravelOrderLinksViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderListMobile.data.TravelOrderListMobileConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderListMobile.presentation.TravelOrderListMobileViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderListMobile.presentation.timer.TravelOrderListTimeViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderNavContent.data.TravelOrderNavContentConfig;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelOrderNavContent.presentation.TravelOrderNavContentViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelPriceDetailInformation.v2.data.TravelPriceDetailInformationV2Config;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelPriceDetailInformation.v2.presentation.TravelPriceDetailInformationV2ViewMapper;
+import ru.ozon.app.android.travel.feature.general.order.widgets.travelPriceDetailInformation.v2.presentation.sticky.TravelPriceDetailInformationV2NoUiViewMapper;
+
+/* loaded from: classes7.dex */
+public final class TravelGeneralOrderWidgetV2Module_Companion_ProvideWidgets$order_prodGoogleAllVendorsReleaseFactory implements e<Set<Widget2>> {
+    public static Set<Widget2> provideWidgets$order_prodGoogleAllVendorsRelease(ButtonsBarConfig buttonsBarConfig, ButtonsBarViewMapper buttonsBarViewMapper, ButtonsBarStickyViewMapper buttonsBarStickyViewMapper, HorizontalIconButtonsConfig horizontalIconButtonsConfig, HorizontalIconButtonsViewMapper horizontalIconButtonsViewMapper, OrderHeaderConfig orderHeaderConfig, OrderHeaderViewMapper orderHeaderViewMapper, OrderPassengersDetailsConfig orderPassengersDetailsConfig, OrderPassengersDetailsViewMapper orderPassengersDetailsViewMapper, PaymentDetailsConfig paymentDetailsConfig, PaymentDetailsViewMapper paymentDetailsViewMapper, StepListWithScaleConfig stepListWithScaleConfig, StepListWithScaleViewMapper stepListWithScaleViewMapper, TravelOrderLinksConfig travelOrderLinksConfig, TravelOrderLinksViewMapper travelOrderLinksViewMapper, TravelOrderListMobileConfig travelOrderListMobileConfig, TravelOrderListTimeViewMapper travelOrderListTimeViewMapper, TravelOrderListMobileViewMapper travelOrderListMobileViewMapper, BuyersContactsConfig buyersContactsConfig, BuyersContactsViewMapper buyersContactsViewMapper, TravelPriceDetailInformationV2Config travelPriceDetailInformationV2Config, TravelPriceDetailInformationV2ViewMapper travelPriceDetailInformationV2ViewMapper, TravelPriceDetailInformationV2NoUiViewMapper travelPriceDetailInformationV2NoUiViewMapper, TravelModalPriceDetailInformationV3Config travelModalPriceDetailInformationV3Config, TravelModalPriceDetailInformationV3ViewMapper travelModalPriceDetailInformationV3ViewMapper, TravelModalPriceDetailInformationV4Config travelModalPriceDetailInformationV4Config, TravelModalPriceDetailInformationV4ViewMapper travelModalPriceDetailInformationV4ViewMapper, TravelOrderNavContentConfig travelOrderNavContentConfig, TravelOrderNavContentViewMapper travelOrderNavContentViewMapper, OrderPaymentStatusConfig orderPaymentStatusConfig, OrderPaymentStatusViewMapper orderPaymentStatusViewMapper, OrderPaymentStatusTimerViewMapper orderPaymentStatusTimerViewMapper, OrderNavBarConfig orderNavBarConfig, OrderNavBarOverlayViewMapper orderNavBarOverlayViewMapper) {
+        Set<Widget2> provideWidgets$order_prodGoogleAllVendorsRelease = TravelGeneralOrderWidgetV2Module.INSTANCE.provideWidgets$order_prodGoogleAllVendorsRelease(buttonsBarConfig, buttonsBarViewMapper, buttonsBarStickyViewMapper, horizontalIconButtonsConfig, horizontalIconButtonsViewMapper, orderHeaderConfig, orderHeaderViewMapper, orderPassengersDetailsConfig, orderPassengersDetailsViewMapper, paymentDetailsConfig, paymentDetailsViewMapper, stepListWithScaleConfig, stepListWithScaleViewMapper, travelOrderLinksConfig, travelOrderLinksViewMapper, travelOrderListMobileConfig, travelOrderListTimeViewMapper, travelOrderListMobileViewMapper, buyersContactsConfig, buyersContactsViewMapper, travelPriceDetailInformationV2Config, travelPriceDetailInformationV2ViewMapper, travelPriceDetailInformationV2NoUiViewMapper, travelModalPriceDetailInformationV3Config, travelModalPriceDetailInformationV3ViewMapper, travelModalPriceDetailInformationV4Config, travelModalPriceDetailInformationV4ViewMapper, travelOrderNavContentConfig, travelOrderNavContentViewMapper, orderPaymentStatusConfig, orderPaymentStatusViewMapper, orderPaymentStatusTimerViewMapper, orderNavBarConfig, orderNavBarOverlayViewMapper);
+        j.d(provideWidgets$order_prodGoogleAllVendorsRelease);
+        return provideWidgets$order_prodGoogleAllVendorsRelease;
+    }
+}

@@ -1,0 +1,7 @@
+package androidx.core.view;
+
+/* renamed from: androidx.core.view.n0, reason: case insensitive filesystem */
+/* loaded from: classes8.dex */
+public interface InterfaceC5332n0 {
+    void a();
+}

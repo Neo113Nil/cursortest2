@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ozonIdDebugRoot"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/ozonIdDebugToolbar"
+        android:background="@drawable/bg_ozon_id_debug_round_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="2dp">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:textAppearance="@style/OzonTextAppearance.CompactControl.500medium"
+            android:gravity="center"
+            android:id="@+id/ozonIdDebugTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="OzonID SDK 10.0.0"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/backButton"
+            android:background="@drawable/bg_ozon_id_navigation_back"
+            android:padding="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ozon_id_debug_back"
+            android:importantForAccessibility="no"
+            android:layout_marginStart="4dp"/>
+    </FrameLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/ozonIdDebugSwipeRefreshLayout"
+        android:background="@color/ozon_id_debug_main_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/ozonIdDebugFragmentContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <FrameLayout
+        android:id="@+id/ozonIdDebugNotifierContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"/>
+</FrameLayout>

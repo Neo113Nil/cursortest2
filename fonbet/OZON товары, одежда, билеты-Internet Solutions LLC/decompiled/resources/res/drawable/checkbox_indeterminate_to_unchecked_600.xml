@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/checkbox_indeterminate_600">
+    <target
+        android:name="checkbox_icon_indeterminate_group"
+        android:animation="@drawable/_checkbox_indeterminate_to_unchecked_600__0_res_0x7f080060"/>
+    <target
+        android:name="checkbox_icon_indeterminate_path"
+        android:animation="@drawable/_checkbox_indeterminate_to_unchecked_600__1_res_0x7f080061"/>
+    <target
+        android:name="checkbox_icon_indeterminate_path_dynamic"
+        android:animation="@drawable/_checkbox_indeterminate_to_unchecked_600__2_res_0x7f080062"/>
+    <target
+        android:name="checkbox_outer"
+        android:animation="@drawable/_checkbox_indeterminate_to_unchecked_600__3_res_0x7f080063"/>
+    <target
+        android:name="checkbox_outer_stroke"
+        android:animation="@drawable/_checkbox_indeterminate_to_unchecked_600__4_res_0x7f080064"/>
+</animated-vector>

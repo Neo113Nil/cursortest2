@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="16dp">
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:id="@+id/pdpTextDescriptionContentTav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:id="@+id/pdpTextDescriptionGradientV"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdpTextDescriptionContentTav"
+        app:layout_constraintEnd_toStartOf="@+id/pdpTextDescriptionExpandTav"
+        app:layout_constraintTop_toTopOf="@+id/pdpTextDescriptionExpandTav"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:id="@+id/pdpTextDescriptionExpandTav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdpTextDescriptionContentTav"
+        app:layout_constraintEnd_toStartOf="@+id/pdpTextDescriptionExpandIv"/>
+    <ImageView
+        android:id="@+id/pdpTextDescriptionExpandIv"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pdpTextDescriptionExpandTav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pdpTextDescriptionExpandTav"/>
+    <Space
+        android:id="@+id/pdpTextDescriptionExpandRightAnchor"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pdpTextDescriptionContentTav"/>
+    <androidx.constraintlayout.helper.widget.Layer
+        android:id="@+id/pdpTextDescriptionExpandLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="pdpTextDescriptionExpandRightAnchor,pdpTextDescriptionExpandTav,pdpTextDescriptionExpandIv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

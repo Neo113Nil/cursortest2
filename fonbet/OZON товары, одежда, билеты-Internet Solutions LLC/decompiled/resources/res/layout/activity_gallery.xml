@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/galleryContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ru.ozon.app.android.gallery.view.LockableViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="67dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_gravity="end|top"
+            android:id="@+id/closeIv"
+            android:background="@drawable/bg_pdp_gallery_modal_action"
+            android:padding="11dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="12dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_close_gray"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/textLightKey"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/previewRv"
+        android:paddingLeft="10dp"
+        android:paddingTop="12dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="12dp"
+        android:clipToPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+</FrameLayout>

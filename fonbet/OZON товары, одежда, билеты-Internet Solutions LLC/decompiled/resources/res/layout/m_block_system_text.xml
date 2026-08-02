@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/separatorTop"
+        android:background="@drawable/m_chats_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+    <ru.ozon.uni.android.atom.text.TextAtomV2View
+        android:id="@+id/systemText"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"/>
+    <View
+        android:id="@+id/separatorBottom"
+        android:background="@drawable/m_chats_divider"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:layout_marginHorizontal="@dimen/dimen_16"/>
+</LinearLayout>

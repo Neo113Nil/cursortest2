@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/itemPricesHistogramLL"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/arrowLowestPriceIV"
+        android:visibility="gone"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_s_down"
+        android:importantForAccessibility="no"/>
+    <ru.ozon.app.android.travel.feature.general.common.widgets.pricesHistogram.v1.view.PricesHistogramItemView
+        android:id="@+id/itemPricesHistogramPIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

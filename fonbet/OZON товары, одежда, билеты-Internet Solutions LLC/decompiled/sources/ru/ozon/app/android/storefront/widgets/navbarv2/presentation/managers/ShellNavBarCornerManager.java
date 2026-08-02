@@ -1,0 +1,15 @@
+package ru.ozon.app.android.storefront.widgets.navbarv2.presentation.managers;
+
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.app.android.storefront.widgets.navbarv2.presentation.vo.ShellNavBarVO;
+
+@Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\b`\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H&J\b\u0010\u0006\u001a\u00020\u0003H&J\u0018\u0010\u0007\u001a\u00020\u00032\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\tH&¨\u0006\u000b"}, d2 = {"Lru/ozon/app/android/storefront/widgets/navbarv2/presentation/managers/ShellNavBarCornerManager;", "", "onBind", "", "item", "Lru/ozon/app/android/storefront/widgets/navbarv2/presentation/vo/ShellNavBarVO;", "onViewDetached", "onNavbarOffsetChanged", "offset", "", "dy", "storefront_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes7.dex */
+public interface ShellNavBarCornerManager {
+    void onBind(@NotNull ShellNavBarVO item);
+
+    void onNavbarOffsetChanged(int offset, int dy);
+
+    void onViewDetached();
+}

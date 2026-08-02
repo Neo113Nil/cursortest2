@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="16dp"
+    android:width="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <path
+        android:fillColor="@drawable/_ic_s_multicolor_fintech_stars_compact__0_res_0x7f0800cf"
+        android:pathData="M7.132,2.537C7.296,2.208 7.632,2 8,2C8.368,2 8.704,2.208 8.868,2.537C9.329,3.458 9.71,4.807 10.451,5.549C11.193,6.291 12.542,6.671 13.463,7.132C13.792,7.296 14,7.632 14,8C14,8.368 13.792,8.704 13.463,8.868C12.542,9.329 11.193,9.71 10.451,10.451C9.71,11.193 9.329,12.542 8.868,13.463C8.704,13.792 8.368,14 8,14C7.632,14 7.296,13.792 7.132,13.463C6.671,12.542 6.291,11.193 5.549,10.451C4.807,9.71 3.458,9.329 2.537,8.868C2.208,8.704 2,8.368 2,8C2,7.632 2.208,7.296 2.537,7.132C3.458,6.671 4.807,6.291 5.549,5.549C6.291,4.807 6.671,3.458 7.132,2.537Z"/>
+</vector>

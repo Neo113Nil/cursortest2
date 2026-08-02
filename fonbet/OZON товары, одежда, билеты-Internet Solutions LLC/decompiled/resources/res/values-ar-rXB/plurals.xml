@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="address_edit_pick_up_detail_show_more_days">
+        <item quantity="zero">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="one">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮Еще‬‏ ‏‮на‬‏ ‏‮%d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="black_friday_status_plurals_days">
+        <item quantity="one">‏‮%d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="calendar_days_round_android">
+        <item quantity="zero" />
+        <item quantity="one">‏‮±%1$d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮±%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮±%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮±%1$d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮±%1$d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="calendar_nights_android">
+        <item quantity="one">‏‮%d‬‏ ‏‮ночь‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮ночи‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮ночи‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮ночей‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮ночей‬‏</item>
+    </plurals>
+    <plurals name="common_reviews">
+        <item quantity="zero">‏‮%d‬‏ ‏‮отзывов‬‏</item>
+        <item quantity="one">‏‮%d‬‏ ‏‮отзыв‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮отзыва‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮отзыва‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮отзывов‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮отзывов‬‏</item>
+    </plurals>
+    <plurals name="create_list_wrapper_selected_products_pattern">
+        <item quantity="one">‏‮Выбран‬‏ ‏‮%d‬‏ ‏‮товар‬‏</item>
+        <item quantity="two">‏‮Выбрано‬‏ ‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="few">‏‮Выбрано‬‏ ‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="many">‏‮Выбрано‬‏ ‏‮%d‬‏ ‏‮товаров‬‏</item>
+        <item quantity="other">‏‮Выбрано‬‏ ‏‮%d‬‏ ‏‮товаров‬‏</item>
+    </plurals>
+    <plurals name="delivery_parcel_photo_limit_message">
+        <item quantity="one">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файла‬‏</item>
+        <item quantity="few">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файлов‬‏</item>
+        <item quantity="other">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файлов‬‏</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">‏‮Fast‬‏ ‏‮forward‬‏ %d ‏‮second‬‏</item>
+        <item quantity="other">‏‮Fast‬‏ ‏‮forward‬‏ %d ‏‮seconds‬‏</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">‏‮Rewind‬‏ %d ‏‮second‬‏</item>
+        <item quantity="other">‏‮Rewind‬‏ %d ‏‮seconds‬‏</item>
+    </plurals>
+    <plurals name="float_cart_button_products_plural">
+        <item quantity="one">‏‮%d‬‏ ‏‮товар‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮товаров‬‏</item>
+    </plurals>
+    <plurals name="gallery_multiple_assets_limitation_title">
+        <item quantity="one">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файла‬‏</item>
+        <item quantity="few">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файлов‬‏</item>
+        <item quantity="many">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файлов‬‏</item>
+        <item quantity="other">‏‮Можно‬‏ ‏‮прикрепить‬‏ ‏‮не‬‏ ‏‮больше‬‏ ‏‮%d‬‏ ‏‮файлов‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">‏‮tomorrow‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮days‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮hour‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮hours‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮min‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮mins‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮sec‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮secs‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">‏‮yesterday‬‏</item>
+        <item quantity="other">%d ‏‮days‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮hour‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮hours‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮min‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮mins‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮sec‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮secs‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">‏‮1‬‏ ‏‮hour‬‏</item>
+        <item quantity="other">%d ‏‮hours‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">‏‮1‬‏ ‏‮minute‬‏</item>
+        <item quantity="other">%d ‏‮minutes‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">‏‮1‬‏ ‏‮second‬‏</item>
+        <item quantity="other">%d ‏‮seconds‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">‏‮tomorrow‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮days‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮hour‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮hours‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮minute‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮minutes‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">‏‮in‬‏ ‏‮1‬‏ ‏‮second‬‏</item>
+        <item quantity="other">‏‮in‬‏ %d ‏‮seconds‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">‏‮yesterday‬‏</item>
+        <item quantity="other">%d ‏‮days‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮hour‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮hours‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮minute‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮minutes‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">‏‮1‬‏ ‏‮second‬‏ ‏‮ago‬‏</item>
+        <item quantity="other">%d ‏‮seconds‬‏ ‏‮ago‬‏</item>
+    </plurals>
+    <plurals name="marketing_action_days">
+        <item quantity="zero">‏‮Завершено‬‏</item>
+        <item quantity="one">‏‮Остался‬‏ ‏‮%1$d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮Осталось‬‏ ‏‮%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮Осталось‬‏ ‏‮%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮Осталось‬‏ ‏‮%1$d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮Осталось‬‏ ‏‮%1$d‬‏ ‏‮дня‬‏</item>
+    </plurals>
+    <plurals name="marketing_seller_carousel_product_count_plural">
+        <item quantity="one">‏‮%d‬‏ ‏‮товар‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮товаров‬‏</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ‏‮new‬‏ ‏‮notification‬‏</item>
+        <item quantity="other">%d ‏‮new‬‏ ‏‮notifications‬‏</item>
+    </plurals>
+    <plurals name="nights_range_selector_nights">
+        <item quantity="one">‏‮%d‬‏ ‏‮ночь‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮ночи‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮ночи‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮ночей‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮ночей‬‏</item>
+    </plurals>
+    <plurals name="order_status_v2_estimated_minutes_plural">
+        <item quantity="one">‏‮%d‬‏ ‏‮минуту‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮минуты‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮минуты‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮минут‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮минуты‬‏</item>
+    </plurals>
+    <plurals name="pdp_cart_button_quant_count_plural_android">
+        <item quantity="one">‏‮%d‬‏ ‏‮упаковка‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮упаковки‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮упаковки‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮упаковок‬‏</item>
+    </plurals>
+    <plurals name="products_in_bot_count_plural">
+        <item quantity="one">‏‮Выбрать‬‏ ‏‮%d‬‏ ‏‮товар‬‏</item>
+        <item quantity="few">‏‮Выбрать‬‏ ‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="other">‏‮Выбрать‬‏ ‏‮%d‬‏ ‏‮товаров‬‏</item>
+    </plurals>
+    <plurals name="products_in_bot_v2_count_plural">
+        <item quantity="one">‏‮%d‬‏ ‏‮товар‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮товара‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮товаров‬‏</item>
+    </plurals>
+    <plurals name="regular_draw_days">
+        <item quantity="zero">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="one">‏‮%d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="reviews_points">
+        <item quantity="one">‏‮%d‬‏ ‏‮балл‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮балла‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮баллов‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮баллов‬‏</item>
+    </plurals>
+    <plurals name="reviews_remain_days_without_left">
+        <item quantity="zero" />
+        <item quantity="one">‏‮%d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="spay_bonuses">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮бонус‬‏</item>
+        <item quantity="few">‏‮%1$d‬‏ ‏‮бонусов‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮бонусов‬‏</item>
+    </plurals>
+    <plurals name="spay_order_compound_wallet_f">
+        <item quantity="one">‏‮и‬‏ ‏‮ещё‬‏ ‏‮%1$d‬‏</item>
+        <item quantity="few">‏‮и‬‏ ‏‮ещё‬‏ ‏‮%1$d‬‏</item>
+        <item quantity="other">‏‮и‬‏ ‏‮ещё‬‏ ‏‮%1$d‬‏</item>
+    </plurals>
+    <plurals name="spay_order_compound_wallet_old_f">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮счетом‬‏</item>
+        <item quantity="few">‏‮%1$d‬‏ ‏‮счетами‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮счетами‬‏</item>
+    </plurals>
+    <plurals name="spay_otp_secs_f">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮секунду‬‏</item>
+        <item quantity="few">‏‮%1$d‬‏ ‏‮секунды‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮секунд‬‏</item>
+    </plurals>
+    <plurals name="timer_days">
+        <item quantity="zero">‏‮%1$d‬‏ ‏‮дней‬‏</item>
+        <item quantity="one">‏‮%1$d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮%1$d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮%1$d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="timer_hours">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮часа‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮часов‬‏</item>
+    </plurals>
+    <plurals name="timer_minutes_android">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮минуты‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮минут‬‏</item>
+    </plurals>
+    <plurals name="timer_plural_days">
+        <item quantity="zero">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="one">‏‮%d‬‏ ‏‮день‬‏</item>
+        <item quantity="two">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="few">‏‮%d‬‏ ‏‮дня‬‏</item>
+        <item quantity="many">‏‮%d‬‏ ‏‮дней‬‏</item>
+        <item quantity="other">‏‮%d‬‏ ‏‮дней‬‏</item>
+    </plurals>
+    <plurals name="timer_seconds_android">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮секунды‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮секунд‬‏</item>
+    </plurals>
+    <plurals name="vkid_group_subscription_friends">
+        <item quantity="one">‏‮%1$d‬‏ ‏‮friend‬‏</item>
+        <item quantity="other">‏‮%1$d‬‏ ‏‮friends‬‏</item>
+    </plurals>
+    <plurals name="vkid_group_subscription_subscribers">
+        <item quantity="one">‏‮%1$s‬‏ ‏‮follower‬‏</item>
+        <item quantity="other">‏‮%1$s‬‏ ‏‮followers‬‏</item>
+    </plurals>
+    <plurals name="wrong_pass_throttle">
+        <item quantity="one">‏‮Неверный‬‏ ‏‮пароль.‬‏\n‏‮Осталось‬‏ ‏‮%d‬‏ ‏‮попытка‬‏</item>
+        <item quantity="other">‏‮Неверный‬‏ ‏‮пароль.‬‏\n‏‮Осталось‬‏ ‏‮%d‬‏ ‏‮попытки‬‏</item>
+    </plurals>
+    <plurals name="wrong_pass_throttle_minutes">
+        <item quantity="one">‏‮Повторите‬‏ ‏‮попытку‬‏ ‏‮через‬‏ ‏‮%d‬‏ ‏‮минуту‬‏</item>
+        <item quantity="two">‏‮Повторите‬‏ ‏‮попытку‬‏ ‏‮через‬‏ ‏‮%d‬‏ ‏‮минуты‬‏</item>
+        <item quantity="few">‏‮Повторите‬‏ ‏‮попытку‬‏ ‏‮через‬‏ ‏‮%d‬‏ ‏‮минуты‬‏</item>
+        <item quantity="many">‏‮Повторите‬‏ ‏‮попытку‬‏ ‏‮через‬‏ ‏‮%d‬‏ ‏‮минут‬‏</item>
+        <item quantity="other">‏‮Повторите‬‏ ‏‮попытку‬‏ ‏‮через‬‏ ‏‮%d‬‏ ‏‮минуты‬‏</item>
+    </plurals>
+</resources>

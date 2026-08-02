@@ -1,0 +1,134 @@
+package ru.ozon.app.android.cml.delivery.widgets.cellList.data;
+
+import Ak.b;
+import Y9.c;
+import com.google.android.gms.measurement.api.AppMeasurementSdk;
+import com.squareup.moshi.D;
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+import com.squareup.moshi.n;
+import com.squareup.moshi.x;
+import java.util.List;
+import java.util.Map;
+import kotlin.Metadata;
+import kotlin.collections.M;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import ru.ozon.android.tokenized.model.TokenizedTrackingInfo;
+import ru.ozon.app.android.cml.delivery.molecules.cellList.data.CmlCellListMoleculeDTO;
+import ru.ozon.app.android.cml.delivery.widgets.cellList.data.CmlCellListDTO;
+import ru.ozon.uni.atoms.data.common.Paddings;
+import ru.ozon.uni.atoms.data.controls.button.ButtonV3DTO;
+
+@Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0015\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0015\u0010\u0016R\u001a\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0018\u0010\u0019R\u001c\u0010\u001a\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001a\u0010\u0019R\"\u0010\u001d\u001a\u0010\u0012\f\u0012\n\u0012\u0004\u0012\u00020\u001c\u0018\u00010\u001b0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001d\u0010\u0019R(\u0010 \u001a\u0016\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u001f\u0018\u00010\u001e0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b \u0010\u0019R\u001c\u0010\"\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010!0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\"\u0010\u0019R\u001c\u0010$\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010#0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b$\u0010\u0019¨\u0006%"}, d2 = {"Lru/ozon/app/android/cml/delivery/widgets/cellList/data/CmlCellListDTOJsonAdapter;", "Lcom/squareup/moshi/JsonAdapter;", "Lru/ozon/app/android/cml/delivery/widgets/cellList/data/CmlCellListDTO;", "Lcom/squareup/moshi/Moshi;", "moshi", "<init>", "(Lcom/squareup/moshi/Moshi;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/n;", "reader", "fromJson", "(Lcom/squareup/moshi/n;)Lru/ozon/app/android/cml/delivery/widgets/cellList/data/CmlCellListDTO;", "Lcom/squareup/moshi/x;", "writer", AppMeasurementSdk.ConditionalUserProperty.VALUE, "", "toJson", "(Lcom/squareup/moshi/x;Lru/ozon/app/android/cml/delivery/widgets/cellList/data/CmlCellListDTO;)V", "Lcom/squareup/moshi/n$a;", "options", "Lcom/squareup/moshi/n$a;", "Lru/ozon/app/android/cml/delivery/molecules/cellList/data/CmlCellListMoleculeDTO;", "cmlCellListMoleculeDTOAdapter", "Lcom/squareup/moshi/JsonAdapter;", "nullableCmlCellListMoleculeDTOAdapter", "", "Lru/ozon/uni/atoms/data/controls/button/ButtonV3DTO;", "nullableListOfButtonV3DTOAdapter", "", "Lru/ozon/android/tokenized/model/TokenizedTrackingInfo;", "nullableMapOfStringTokenizedTrackingInfoAdapter", "Lru/ozon/uni/atoms/data/common/Paddings;", "nullablePaddingsAdapter", "Lru/ozon/app/android/cml/delivery/widgets/cellList/data/CmlCellListDTO$SeparatorConfig;", "nullableSeparatorConfigAdapter", "delivery_prodGoogleAllVendorsRelease"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes11.dex */
+public final class CmlCellListDTOJsonAdapter extends JsonAdapter<CmlCellListDTO> {
+
+    @NotNull
+    private final JsonAdapter<CmlCellListMoleculeDTO> cmlCellListMoleculeDTOAdapter;
+
+    @NotNull
+    private final JsonAdapter<CmlCellListMoleculeDTO> nullableCmlCellListMoleculeDTOAdapter;
+
+    @NotNull
+    private final JsonAdapter<List<ButtonV3DTO>> nullableListOfButtonV3DTOAdapter;
+
+    @NotNull
+    private final JsonAdapter<Map<String, TokenizedTrackingInfo>> nullableMapOfStringTokenizedTrackingInfoAdapter;
+
+    @NotNull
+    private final JsonAdapter<Paddings> nullablePaddingsAdapter;
+
+    @NotNull
+    private final JsonAdapter<CmlCellListDTO.SeparatorConfig> nullableSeparatorConfigAdapter;
+
+    @NotNull
+    private final n.a options;
+
+    public CmlCellListDTOJsonAdapter(@NotNull Moshi moshi) {
+        Intrinsics.checkNotNullParameter(moshi, "moshi");
+        this.options = n.a.C0918a.a("cellList", "headerCellList", "buttons", "trackingInfo", "buttonTopMargin", "islandSeparator");
+        M m11 = M.f71699a;
+        this.cmlCellListMoleculeDTOAdapter = moshi.f(CmlCellListMoleculeDTO.class, m11, "cellList");
+        this.nullableCmlCellListMoleculeDTOAdapter = moshi.f(CmlCellListMoleculeDTO.class, m11, "headerCellList");
+        this.nullableListOfButtonV3DTOAdapter = moshi.f(D.e(List.class, ButtonV3DTO.class), m11, "buttons");
+        this.nullableMapOfStringTokenizedTrackingInfoAdapter = moshi.f(D.e(Map.class, String.class, TokenizedTrackingInfo.class), m11, "trackingInfo");
+        this.nullablePaddingsAdapter = moshi.f(Paddings.class, m11, "buttonTopMargin");
+        this.nullableSeparatorConfigAdapter = moshi.f(CmlCellListDTO.SeparatorConfig.class, m11, "islandSeparator");
+    }
+
+    @NotNull
+    public String toString() {
+        return b.c(36, "GeneratedJsonAdapter(CmlCellListDTO)", "toString(...)");
+    }
+
+    @Override // com.squareup.moshi.JsonAdapter
+    @NotNull
+    public CmlCellListDTO fromJson(@NotNull n reader) {
+        Intrinsics.checkNotNullParameter(reader, "reader");
+        reader.beginObject();
+        CmlCellListMoleculeDTO cmlCellListMoleculeDTO = null;
+        CmlCellListMoleculeDTO cmlCellListMoleculeDTO2 = null;
+        List<ButtonV3DTO> list = null;
+        Map<String, TokenizedTrackingInfo> map = null;
+        Paddings paddings = null;
+        CmlCellListDTO.SeparatorConfig separatorConfig = null;
+        while (reader.hasNext()) {
+            switch (reader.v(this.options)) {
+                case -1:
+                    reader.y();
+                    reader.skipValue();
+                    break;
+                case 0:
+                    cmlCellListMoleculeDTO = this.cmlCellListMoleculeDTOAdapter.fromJson(reader);
+                    if (cmlCellListMoleculeDTO == null) {
+                        throw c.q("cellList", "cellList", reader);
+                    }
+                    break;
+                case 1:
+                    cmlCellListMoleculeDTO2 = this.nullableCmlCellListMoleculeDTOAdapter.fromJson(reader);
+                    break;
+                case 2:
+                    list = this.nullableListOfButtonV3DTOAdapter.fromJson(reader);
+                    break;
+                case 3:
+                    map = this.nullableMapOfStringTokenizedTrackingInfoAdapter.fromJson(reader);
+                    break;
+                case 4:
+                    paddings = this.nullablePaddingsAdapter.fromJson(reader);
+                    break;
+                case 5:
+                    separatorConfig = this.nullableSeparatorConfigAdapter.fromJson(reader);
+                    break;
+            }
+        }
+        reader.endObject();
+        if (cmlCellListMoleculeDTO != null) {
+            return new CmlCellListDTO(cmlCellListMoleculeDTO, cmlCellListMoleculeDTO2, list, map, paddings, separatorConfig);
+        }
+        throw c.j("cellList", "cellList", reader);
+    }
+
+    @Override // com.squareup.moshi.JsonAdapter
+    /* renamed from: toJson, reason: avoid collision after fix types in other method and merged with bridge method [inline-methods] */
+    public void mo44toJson(@NotNull x writer, CmlCellListDTO value) {
+        Intrinsics.checkNotNullParameter(writer, "writer");
+        if (value == null) {
+            throw new NullPointerException("value was null! Wrap in .nullSafe() to write nullable values.");
+        }
+        writer.j();
+        writer.w("cellList");
+        this.cmlCellListMoleculeDTOAdapter.mo44toJson(writer, (x) value.getCellList());
+        writer.w("headerCellList");
+        this.nullableCmlCellListMoleculeDTOAdapter.mo44toJson(writer, (x) value.getHeaderCellList());
+        writer.w("buttons");
+        this.nullableListOfButtonV3DTOAdapter.mo44toJson(writer, (x) value.getButtons());
+        writer.w("trackingInfo");
+        this.nullableMapOfStringTokenizedTrackingInfoAdapter.mo44toJson(writer, (x) value.getTrackingInfo());
+        writer.w("buttonTopMargin");
+        this.nullablePaddingsAdapter.mo44toJson(writer, (x) value.getButtonTopMargin());
+        writer.w("islandSeparator");
+        this.nullableSeparatorConfigAdapter.mo44toJson(writer, (x) value.getIslandSeparator());
+        writer.p();
+    }
+}

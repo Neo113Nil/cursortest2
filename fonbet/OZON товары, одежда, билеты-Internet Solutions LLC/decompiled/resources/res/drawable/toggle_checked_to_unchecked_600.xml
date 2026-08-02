@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/toggle_checked_600">
+    <target
+        android:name="toggle_thumb_group"
+        android:animation="@drawable/_toggle_checked_to_unchecked_600__0_res_0x7f080130"/>
+    <target
+        android:name="toggle_track"
+        android:animation="@drawable/_toggle_checked_to_unchecked_600__1_res_0x7f080131"/>
+</animated-vector>

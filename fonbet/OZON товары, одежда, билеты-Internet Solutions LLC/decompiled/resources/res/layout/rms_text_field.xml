@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ru.ozon.app.android.uikit.view.input.MobilizationTextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:imeOptions="flagNoEnterAction"
+            style="@style/OzTextInput.EditText"/>
+    </ru.ozon.app.android.uikit.view.input.MobilizationTextInputLayout>
+    <include
+        android:id="@+id/requiredFieldHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_16"
+        layout="@layout/required_field_hint"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="bottom|center_horizontal"
+    android:id="@+id/entryBannerWidget_Multi_Indicator_Root"
+    android:background="@drawable/bg_entry_banner_widget_indicator"
+    android:padding="@dimen/dimen_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen_4">
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+        android:id="@+id/entryBannerWidget_Multi_Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:spi_dotColor="@color/graphic_quaternary"
+        app:spi_dotSelectedColor="?attr/graphicSecondary"
+        app:spi_dotSelectedSize="@dimen/dimen_4"
+        app:spi_dotSize="@dimen/dimen_4"
+        app:spi_dotSpacing="@dimen/dimen_4"
+        app:spi_visibleDotCount="7"/>
+</FrameLayout>

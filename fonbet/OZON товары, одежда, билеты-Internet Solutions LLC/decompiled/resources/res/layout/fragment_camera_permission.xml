@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/oz_black"
+    android:padding="@dimen/default_padding"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageIV"
+        android:layout_width="120dp"
+        android:layout_height="104dp"
+        app:srcCompat="@drawable/ic_camera"/>
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.M"
+        android:textSize="@dimen/text_standard"
+        android:textColor="@color/oz_white_1"
+        android:gravity="center"
+        android:id="@+id/messageTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/scan_it_camera_permission_msg_1"
+        android:lineSpacingExtra="10sp"/>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttonB"
+        android:padding="@dimen/default_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"/>
+</LinearLayout>

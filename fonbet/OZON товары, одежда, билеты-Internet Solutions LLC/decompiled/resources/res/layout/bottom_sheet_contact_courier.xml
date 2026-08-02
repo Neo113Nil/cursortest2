@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheetContactCourier"
+    android:background="?attr/layerFloor1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/ozon_bottom_sheet_behavior">
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:id="@+id/descriptionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:lineSpacingExtra="@dimen/default_line_spacing_extra"
+        android:layout_marginStart="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/default_margin"/>
+    <View
+        android:id="@+id/descriptionDivider"
+        android:background="?attr/graphicNeutral"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/default_margin"/>
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:id="@+id/courierPhoneTv"
+        android:background="@drawable/selector_standard"
+        android:padding="@dimen/default_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/courierPhoneDivider"
+        android:background="?attr/graphicNeutral"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textAppearance="@style/TextStyle.Body.L"
+        android:id="@+id/contactCourierCancelTv"
+        android:background="@drawable/selector_standard"
+        android:padding="@dimen/default_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_button_cancel"/>
+</LinearLayout>
