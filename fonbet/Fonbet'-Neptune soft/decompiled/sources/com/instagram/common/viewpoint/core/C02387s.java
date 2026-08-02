@@ -11,12 +11,7 @@ public final class C02387s implements InterfaceC1592kk {
     public final long[] A02;
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 16 out of bounds for length 16
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static Pair<Long, Long> A00(long j, long[] jArr, long[] jArr2) {
         int A0L = AbstractC01424a.A0L(jArr, j, true, true);

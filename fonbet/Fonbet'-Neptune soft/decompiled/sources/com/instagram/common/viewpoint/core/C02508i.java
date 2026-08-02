@@ -30,12 +30,7 @@ public final class C02508i extends AbstractC1600l4 {
     public final InterfaceC0466Hc A00;
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static ApicFrame A04(C4J c4j, int i, int i2) {
         int A022;
@@ -65,12 +60,7 @@ public final class C02508i extends AbstractC1600l4 {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 20 out of bounds for length 19
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static ChapterFrame A06(C4J c4j, int i, int i2, boolean z, int i3, InterfaceC0466Hc interfaceC0466Hc) {
         int A09 = c4j.A09();
@@ -108,12 +98,7 @@ public final class C02508i extends AbstractC1600l4 {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static GeobFrame A09(C4J c4j, int i) {
         int A0I = c4j.A0I();
@@ -131,12 +116,7 @@ public final class C02508i extends AbstractC1600l4 {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 13
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:125)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     public static MlltFrame A0C(C4J c4j, int i) {
         int A0M = c4j.A0M();

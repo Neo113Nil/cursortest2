@@ -290,7 +290,7 @@ public class CLContainer extends CLElement {
     }
 
     @Override // androidx.constraintlayout.core.parser.CLElement
-    /* renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* renamed from: clone */
     public CLContainer mo59clone() {
         CLContainer cLContainer = (CLContainer) super.mo59clone();
         ArrayList<CLElement> arrayList = new ArrayList<>(this.mElements.size());

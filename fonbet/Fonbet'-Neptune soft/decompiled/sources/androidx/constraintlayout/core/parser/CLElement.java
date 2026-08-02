@@ -166,7 +166,7 @@ public class CLElement implements Cloneable {
     }
 
     @Override // 
-    /* renamed from: clone */
+    /* renamed from: clone, reason: merged with bridge method [inline-methods] */
     public CLElement mo59clone() {
         try {
             return (CLElement) super.clone();

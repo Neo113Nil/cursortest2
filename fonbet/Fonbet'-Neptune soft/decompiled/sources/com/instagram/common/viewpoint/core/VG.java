@@ -83,14 +83,14 @@ public final class VG implements US {
     }
 
     private void A06(UP up) {
-        switch (up.A06()) {
-            case A0Q:
-            case A0K:
-            case A07:
-            case A0J:
-            case A0R:
-            case A0T:
-            case A0U:
+        switch (UT.A00[up.A06().ordinal()]) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+            case 7:
                 C0767Sw c0767Sw = new C0767Sw(new Exception(A02(36, 5, 86)));
                 c0767Sw.A05(1);
                 try {

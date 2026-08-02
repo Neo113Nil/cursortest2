@@ -16,7 +16,7 @@ public final class C0329Bu extends ConnectivityManager.NetworkCallback {
     }
 
     private void A00() {
-        C0330Bv.A00(this.A02).post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bs
+        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bs
             @Override // java.lang.Runnable
             public final void run() {
                 C0329Bu.this.A02();
@@ -25,7 +25,7 @@ public final class C0329Bu extends ConnectivityManager.NetworkCallback {
     }
 
     private void A01() {
-        C0330Bv.A00(this.A02).post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bt
+        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.Bt
             @Override // java.lang.Runnable
             public final void run() {
                 C0329Bu.this.A03();

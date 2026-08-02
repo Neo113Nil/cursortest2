@@ -1,5 +1,110 @@
 # Проверка подозрительных доменов
 
+## Проверка домена: click-v4.exmainclcknew.com
+
+Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
+
+| Параметр / движок | Значение / вердикт |
+|---|---|
+| Домен | click-v4.exmainclcknew.com |
+| VirusTotal URL | https://www.virustotal.com/gui/domain/click-v4.exmainclcknew.com |
+| Детекции | 6/91 (malicious=5, suspicious=1) |
+| Security vendors' analysis | ниже построчно, как на VirusTotal |
+| ADMINUSLabs | Malicious |
+| Bkav | Malicious |
+| CRDF | Malicious |
+| Forcepoint ThreatSeeker | Malicious |
+| Gridinsoft | Suspicious |
+| Webroot | Malicious |
+| Abusix | Clean |
+| Acronis | Clean |
+| AILabs (MONITORAPP) | Clean |
+| AlienVault | Clean |
+| alphaMountain.ai | Clean |
+| Antiy-AVL | Clean |
+| BitDefender | Clean |
+| Blueliv | Clean |
+| Certego | Clean |
+| CINS Army | Clean |
+| CMC Threat Intelligence | Clean |
+| CTX AI | Clean |
+| Cyble | Clean |
+| CyRadar | Clean |
+| desenmascara.me | Clean |
+| Dr.Web | Clean |
+| EmergingThreats | Clean |
+| Emsisoft | Clean |
+| ESET | Clean |
+| ESTsecurity | Clean |
+| Fortinet | Clean |
+| G-Data | Clean |
+| Google Safe Browsing | Clean |
+| GreenSnow | Clean |
+| Heimdal Security | Clean |
+| IPsum | Clean |
+| Juniper Networks | Clean |
+| Kaspersky | Clean |
+| LevelBlue | Clean |
+| Lionic | Clean |
+| Malwared | Clean |
+| MalwarePatrol | Clean |
+| OpenPhish | Clean |
+| Phishing Database | Clean |
+| Phishtank | Clean |
+| PREBYTES | Clean |
+| Quick Heal | Clean |
+| Quttera | Clean |
+| Scantitan | Clean |
+| SCUMWARE.org | Clean |
+| Seclookup | Clean |
+| Sophos | Clean |
+| StopForumSpam | Clean |
+| Sucuri SiteCheck | Clean |
+| ThreatHive | Clean |
+| URLhaus | Clean |
+| Viettel Threat Intelligence | Clean |
+| ViriBack | Clean |
+| VX Vault | Clean |
+| Xcitium Verdict Cloud | Clean |
+| Yandex Safebrowsing | Clean |
+| ZeroCERT | Clean |
+| ZeroFox | Clean |
+| 0xSI_f33d | Unrated |
+| AlphaSOC | Unrated |
+| ArcSight Threat Intelligence | Unrated |
+| AutoShun | Unrated |
+| Axur | Unrated |
+| Bfore.Ai PreCrime | Unrated |
+| ChainPatrol | Unrated |
+| Chong Lua Dao | Unrated |
+| Cluster25 | Unrated |
+| Criminal IP | Unrated |
+| CSIS Security Group | Unrated |
+| Cyan | Unrated |
+| DNS8 | Unrated |
+| Ermes | Unrated |
+| Fortra | Unrated |
+| GCP Abuse Intelligence | Unrated |
+| GreyNoise | Unrated |
+| Guardpot | Unrated |
+| Hunt.io Intelligence | Unrated |
+| Lumu | Unrated |
+| MalwareURL | Unrated |
+| Mimecast | Unrated |
+| Netcraft | Unrated |
+| PhishFort | Unrated |
+| PrecisionSec | Unrated |
+| SafeToOpen | Unrated |
+| Sansec eComscan | Unrated |
+| SecureBrain | Unrated |
+| Snort IP sample list | Unrated |
+| SOCRadar | Unrated |
+| URLQuery | Unrated |
+| VIPRE | Unrated |
+| Куда редиректит | https://explorads.media/ |
+| Что выводит (кратко) | title: ExplorAds. ExplorAds Skip to content Main Menu Home What We Do Careers Contact Us Start To Explore The World Of Ads ExplorAds is a leading online marketing platform that connects people to the services and ads they need. Building dedicated ads placement that change the way brands reach thei |
+| Где припаркован | нет данных |
+
 ## Проверка домена: bacalgeria.com
 
 Формат как на VirusTotal → Security vendors' analysis, в конце три доп. пункта.
@@ -101,8 +206,8 @@
 | URLQuery | Unrated |
 | VIPRE | Unrated |
 | ZeroFox | Unrated |
-| Куда редиректит | http://click-v4.exmainclcknew.com/click?i=kSkf9wCdvbk_0 |
-| Что выводит (кратко) | нет |
+| Куда редиректит | нет (без редиректа) |
+| Что выводит (кратко) | title: Loading.... Loading... |
 | Где припаркован | регистратор: Dynadot Inc |
 
 ## Проверка домена: config.ru

@@ -45,10 +45,6 @@ public final class C0330Bv {
         this.A05 = requirements;
     }
 
-    public static /* synthetic */ Handler A00(C0330Bv c0330Bv) {
-        return c0330Bv.A04;
-    }
-
     /* JADX INFO: Access modifiers changed from: private */
     public void A03() {
         int A072 = this.A05.A07(this.A03);

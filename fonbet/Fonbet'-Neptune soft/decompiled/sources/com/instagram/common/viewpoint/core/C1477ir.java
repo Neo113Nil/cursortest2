@@ -62,12 +62,7 @@ public final class C1477ir implements InterfaceC0580Ln {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException: Index 23 out of bounds for length 22
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.startVar(DebugInfoParser.java:203)
-    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:135)
-    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
-    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
-    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
+    java.lang.ArrayIndexOutOfBoundsException
      */
     private void A0G(File file, boolean z, File[] fileArr, Map<String, C0585Ls> map) {
         if (fileArr == null || fileArr.length == 0) {
