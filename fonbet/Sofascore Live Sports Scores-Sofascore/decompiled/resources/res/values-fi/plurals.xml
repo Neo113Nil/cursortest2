@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Siirry eteenpäin %d sekunti</item>
+        <item quantity="other">Siirry eteenpäin %d sekuntia</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Siirry taaksepäin %d sekunti</item>
+        <item quantity="other">Siirry taaksepäin %d sekuntia</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d tapahtuma lisää</item>
+        <item quantity="other">+%1$d tapahtumaa lisää</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d uusi ilmoitus</item>
+        <item quantity="other">%d uutta ilmoitusta</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d päivä</item>
+        <item quantity="other">%1$d päivää</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d tapahtuma</item>
+        <item quantity="other">%1$d tapahtumaa</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d vuotta sitten</item>
+        <item quantity="other">%1$d vuotta sitten</item>
+    </plurals>
+</resources>

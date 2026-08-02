@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_notification_active"
+        android:id="@+id/menu_disable_notifications"
+        android:visible="false"
+        android:title="@string/mute_notifications"
+        app:iconTint="@color/on_color_primary"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_notification_mute"
+        android:id="@+id/menu_enable_notifications"
+        android:visible="false"
+        android:title="@string/allow_notifications"
+        app:iconTint="@color/on_color_primary"
+        app:showAsAction="always"/>
+    <item
+        android:icon="@drawable/ic_info"
+        android:id="@+id/menu_leaderboard_info"
+        android:title="@string/info"
+        app:iconTint="@color/on_color_primary"
+        app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+    <TextView
+        android:ellipsize="end"
+        android:layout_gravity="center"
+        android:id="@+id/empty_state_text"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="8dp"
+        style="@style/AssistiveDefault"/>
+</FrameLayout>

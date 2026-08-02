@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/info_root"
+    android:background="@color/sofaBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+    <TextView
+        android:textSize="18sp"
+        android:textColor="@color/sofaPrimaryText"
+        android:gravity="center"
+        android:id="@+id/info_header_row"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/info"
+        android:fontFamily="@font/sofascore_sans_regular"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/info_rows_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/info_blank_view"
+        android:background="@color/sofaBackground"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+</LinearLayout>

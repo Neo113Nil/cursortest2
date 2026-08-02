@@ -1,0 +1,13 @@
+package com.ironsource;
+
+import com.ironsource.mediationsdk.adunit.adapter.utility.AdInfo;
+import com.ironsource.mediationsdk.logger.IronSourceError;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* renamed from: com.ironsource.qb, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public interface InterfaceC4272qb extends InterfaceC4236ob {
+    void a(AdInfo adInfo);
+
+    void a(IronSourceError ironSourceError);
+}

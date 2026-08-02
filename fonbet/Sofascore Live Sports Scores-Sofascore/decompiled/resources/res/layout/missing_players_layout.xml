@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/surface_1"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/missing_players_title"
+        layout="@layout/main_section_center_with_icon"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/players_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/first_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/missing_players_team_layout"/>
+        <include
+            android:id="@+id/second_team"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/missing_players_team_layout"/>
+    </LinearLayout>
+</LinearLayout>

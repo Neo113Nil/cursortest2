@@ -1,0 +1,121 @@
+package com.mbridge.msdk.mbnative.listener;
+
+import android.content.Context;
+import android.text.TextUtils;
+import com.mbridge.msdk.foundation.controller.c;
+import com.mbridge.msdk.foundation.entity.CampaignEx;
+import com.mbridge.msdk.out.Campaign;
+import com.mbridge.msdk.out.Frame;
+import com.mbridge.msdk.out.NativeListener;
+import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class a implements NativeListener.NativeAdListener {
+    private NativeListener.NativeAdListener a;
+    private boolean b = false;
+    private String c;
+    private Context d;
+    private boolean e;
+
+    public a(NativeListener.NativeAdListener nativeAdListener) {
+        this.a = nativeAdListener;
+    }
+
+    public void a(CampaignEx campaignEx, String str) {
+        this.b = false;
+        NativeListener.NativeAdListener nativeAdListener = this.a;
+        if (nativeAdListener != null) {
+            nativeAdListener.onAdLoadError(str);
+            if (this.d == null) {
+                this.d = c.n().d();
+            }
+            if (TextUtils.isEmpty(this.c)) {
+                return;
+            }
+            com.mbridge.msdk.mbnative.report.a.a(this.d, str, this.c, this.e, campaignEx);
+        }
+    }
+
+    public void b() {
+        this.b = true;
+    }
+
+    @Override // com.mbridge.msdk.out.NativeListener.NativeAdListener
+    public void onAdClick(Campaign campaign) {
+        NativeListener.NativeAdListener nativeAdListener = this.a;
+        if (nativeAdListener != null) {
+            nativeAdListener.onAdClick(campaign);
+        }
+    }
+
+    @Override // com.mbridge.msdk.out.NativeListener.NativeAdListener
+    public void onAdFramesLoaded(List<Frame> list) {
+        NativeListener.NativeAdListener nativeAdListener = this.a;
+        if (nativeAdListener != null) {
+            nativeAdListener.onAdFramesLoaded(list);
+        }
+    }
+
+    @Override // com.mbridge.msdk.out.NativeListener.NativeAdListener
+    public void onAdLoadError(String str) {
+        this.b = false;
+        NativeListener.NativeAdListener nativeAdListener = this.a;
+        if (nativeAdListener != null) {
+            nativeAdListener.onAdLoadError(str);
+            if (this.d == null) {
+                this.d = c.n().d();
+            }
+            if (TextUtils.isEmpty(this.c)) {
+                return;
+            }
+            com.mbridge.msdk.mbnative.report.a.a(this.d, str, this.c, this.e, (CampaignEx) null);
+        }
+    }
+
+    @Override // com.mbridge.msdk.out.NativeListener.NativeAdListener
+    public void onAdLoaded(List<Campaign> list, int i) {
+        CopyOnWriteArrayList copyOnWriteArrayList;
+        try {
+            this.b = false;
+            synchronized (list) {
+                copyOnWriteArrayList = new CopyOnWriteArrayList(list);
+            }
+            if (this.a != null) {
+                int size = copyOnWriteArrayList.size();
+                NativeListener.NativeAdListener nativeAdListener = this.a;
+                if (size > 0) {
+                    nativeAdListener.onAdLoaded(copyOnWriteArrayList, i);
+                } else {
+                    nativeAdListener.onAdLoaded(list, i);
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override // com.mbridge.msdk.out.NativeListener.NativeAdListener
+    public void onLoggingImpression(int i) {
+        NativeListener.NativeAdListener nativeAdListener = this.a;
+        if (nativeAdListener != null) {
+            nativeAdListener.onLoggingImpression(i);
+        }
+    }
+
+    public a() {
+    }
+
+    public void a(String str) {
+        this.c = str;
+    }
+
+    public boolean a() {
+        return this.b;
+    }
+
+    public void a(boolean z) {
+        this.e = z;
+    }
+}

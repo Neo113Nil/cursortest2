@@ -1,0 +1,47 @@
+package com.bytedance.adsdk.ugeno.core;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public enum gbb {
+    UNKNOWN_EVENT("UNKNOWN_EVENT", 0),
+    TAP_EVENT("onTap", 1),
+    LONG_TAP_EVENT("onLongTap", 2),
+    SHAKE_EVENT("onShake", 3),
+    TWIST_EVENT("onTwist", 18),
+    SLIDE_EVENT("onSlide", 4),
+    EXPOSURE_EVENT("onExposure", 5),
+    SCROLL_EVENT("onScroll", 6),
+    PULL_TO_REFRESH_EVENT("onPullToRefresh", 7),
+    LOAD_MORE_EVENT("onLoadMore", 8),
+    TIMER("onTimer", 9),
+    DELAY("onDelay", 10),
+    ANIMATION("onAnimation", 11),
+    VIDEO_PROGRESS("onVideoProgress", 12),
+    VIDEO_PAUSE("onVideoPause", 13),
+    VIDEO_RESUME("onVideoResume", 14),
+    VIDEO_FINISH("onVideoFinish", 15),
+    VIDEO_PLAY("onVideoPlay", 16),
+    DOWN_EVENT("onDown", 17),
+    RENDER_SUCCESS("onRenderSuccess", 22);
+
+    private String fum;
+    private int tz;
+
+    gbb(String str, int i) {
+        this.fum = str;
+        this.tz = i;
+    }
+
+    public static gbb pcc(String str) {
+        for (gbb gbbVar : values()) {
+            if (gbbVar.fum.equals(str)) {
+                return gbbVar;
+            }
+        }
+        return UNKNOWN_EVENT;
+    }
+
+    public int pcc() {
+        return this.tz;
+    }
+}

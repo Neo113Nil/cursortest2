@@ -1,0 +1,13 @@
+package com.fyber.inneractive.sdk.model.vast;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class w {
+    public String a;
+    public String b;
+    public String c;
+
+    public final String toString() {
+        return "VTracking:  name:" + this.a + " url:" + this.b + " offset:" + this.c;
+    }
+}

@@ -1,0 +1,87 @@
+package com.unity3d.ads.core.configuration;
+
+import com.ironsource.U3;
+import com.unity3d.services.core.misc.JsonStorage;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+import org.json.JSONObject;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+@Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\u0018\u0000 \r2\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\rB\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u0015\u0010\u0007\u001a\u0004\u0018\u00010\b2\u0006\u0010\t\u001a\u00020\n¢\u0006\u0002\u0010\u000bJ\u0010\u0010\f\u001a\u0004\u0018\u00010\n2\u0006\u0010\t\u001a\u00020\n¨\u0006\u000e"}, d2 = {"Lcom/unity3d/ads/core/configuration/MediationTraitsMetadataReader;", "Lcom/unity3d/ads/core/configuration/MetadataReader;", "Lorg/json/JSONObject;", "jsonStorage", "Lcom/unity3d/services/core/misc/JsonStorage;", "<init>", "(Lcom/unity3d/services/core/misc/JsonStorage;)V", "getBooleanTrait", "", U3.i.W, "", "(Ljava/lang/String;)Ljava/lang/Boolean;", "getStringTrait", "Companion", "unity-ads_defaultRelease"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: classes6.dex */
+public final class MediationTraitsMetadataReader extends MetadataReader<JSONObject> {
+
+    @NotNull
+    public static final String BOLD_SDK_ENABLED = "boldSdkEnabled";
+
+    @NotNull
+    public static final String MEDIATION_TRAITS = "mediation.traits.value";
+
+    @NotNull
+    public static final String USE_HTTP_CLIENT = "useHttpClient";
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MediationTraitsMetadataReader(@NotNull JsonStorage jsonStorage) {
+        super(jsonStorage, MEDIATION_TRAITS);
+        jsonStorage.getClass();
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x0018, code lost:
+    
+        if (r2 == null) goto L9;
+     */
+    @Nullable
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final Boolean getBooleanTrait(@NotNull String key) {
+        key.getClass();
+        Object obj = getJsonStorage().get(getKey());
+        if (obj != null) {
+            if (!(obj instanceof JSONObject)) {
+                obj = null;
+            }
+        }
+        obj = null;
+        JSONObject jSONObject = (JSONObject) obj;
+        if (jSONObject != null) {
+            if (!jSONObject.has(key)) {
+                jSONObject = null;
+            }
+            if (jSONObject != null) {
+                return Boolean.valueOf(jSONObject.optBoolean(key));
+            }
+        }
+        return null;
+    }
+
+    /* JADX WARN: Code restructure failed: missing block: B:6:0x0018, code lost:
+    
+        if (r2 == null) goto L9;
+     */
+    @Nullable
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    public final String getStringTrait(@NotNull String key) {
+        key.getClass();
+        Object obj = getJsonStorage().get(getKey());
+        if (obj != null) {
+            if (!(obj instanceof JSONObject)) {
+                obj = null;
+            }
+        }
+        obj = null;
+        JSONObject jSONObject = (JSONObject) obj;
+        if (jSONObject != null) {
+            if (!jSONObject.has(key)) {
+                jSONObject = null;
+            }
+            if (jSONObject != null) {
+                return jSONObject.optString(key);
+            }
+        }
+        return null;
+    }
+}

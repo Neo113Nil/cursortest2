@@ -1,0 +1,68 @@
+package com.mbridge.msdk.thrid.okio;
+
+import defpackage.a70;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class i extends t {
+    private t e;
+
+    public i(t tVar) {
+        if (tVar != null) {
+            this.e = tVar;
+        } else {
+            a70.p("delegate == null");
+            throw null;
+        }
+    }
+
+    public final i a(t tVar) {
+        if (tVar != null) {
+            this.e = tVar;
+            return this;
+        }
+        a70.p("delegate == null");
+        return null;
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public t b() {
+        return this.e.b();
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public long c() {
+        return this.e.c();
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public boolean d() {
+        return this.e.d();
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public void e() throws IOException {
+        this.e.e();
+    }
+
+    public final t g() {
+        return this.e;
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public t a(long j, TimeUnit timeUnit) {
+        return this.e.a(j, timeUnit);
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public t a(long j) {
+        return this.e.a(j);
+    }
+
+    @Override // com.mbridge.msdk.thrid.okio.t
+    public t a() {
+        return this.e.a();
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_login_google"
+        android:background="@drawable/login_button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/google_login_text"
+        android:onClick="googleClick"
+        app:icon="@drawable/ic_google"
+        style="@style/LoginButton"/>
+</LinearLayout>

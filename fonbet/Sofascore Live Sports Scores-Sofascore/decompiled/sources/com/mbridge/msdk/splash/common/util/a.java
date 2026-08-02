@@ -1,0 +1,132 @@
+package com.mbridge.msdk.splash.common.util;
+
+import android.text.TextUtils;
+import com.ironsource.U3;
+import com.mbridge.msdk.foundation.controller.c;
+import com.mbridge.msdk.foundation.entity.CampaignEx;
+import com.mbridge.msdk.foundation.tools.q0;
+import com.mbridge.msdk.foundation.tools.v0;
+import java.util.Iterator;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class a {
+    private static final String a = "a";
+
+    public static CampaignEx a(String str, CampaignEx campaignEx) {
+        String str2;
+        String str3;
+        if (TextUtils.isEmpty(str)) {
+            return campaignEx;
+        }
+        if (TextUtils.isEmpty(str) && campaignEx == null) {
+            return null;
+        }
+        if (str.contains("notice")) {
+            try {
+                JSONObject campaignToJsonObject = CampaignEx.campaignToJsonObject(campaignEx);
+                JSONObject jSONObject = new JSONObject(str);
+                try {
+                    if (!jSONObject.has(CampaignEx.JSON_KEY_DEEP_LINK_URL)) {
+                        campaignToJsonObject.put(CampaignEx.JSON_KEY_DEEP_LINK_URL, "");
+                    }
+                } catch (Exception e) {
+                    q0.b(a, e.getMessage());
+                }
+                Iterator<String> keys = jSONObject.keys();
+                while (keys.hasNext()) {
+                    String next = keys.next();
+                    campaignToJsonObject.put(next, jSONObject.getString(next));
+                }
+                CampaignEx parseCampaignWithBackData = CampaignEx.parseCampaignWithBackData(campaignToJsonObject);
+                String optString = campaignToJsonObject.optString("unitId");
+                if (!TextUtils.isEmpty(optString)) {
+                    parseCampaignWithBackData.setCampaignUnitId(optString);
+                }
+                return parseCampaignWithBackData;
+            } catch (JSONException e2) {
+                q0.b(a, e2.getMessage());
+                return campaignEx;
+            }
+        }
+        try {
+            JSONObject campaignToJsonObject2 = CampaignEx.campaignToJsonObject(campaignEx);
+            CampaignEx parseCampaignWithBackData2 = CampaignEx.parseCampaignWithBackData(campaignToJsonObject2);
+            if (parseCampaignWithBackData2 == null) {
+                parseCampaignWithBackData2 = campaignEx;
+            }
+            if (!TextUtils.isEmpty(str)) {
+                String optString2 = campaignToJsonObject2.optString("unitId");
+                if (!TextUtils.isEmpty(optString2)) {
+                    parseCampaignWithBackData2.setCampaignUnitId(optString2);
+                }
+                JSONObject optJSONObject = new JSONObject(str).optJSONObject(com.mbridge.msdk.foundation.same.a.j);
+                if (optJSONObject != null) {
+                    String string = optJSONObject.getString(com.mbridge.msdk.foundation.same.a.h);
+                    String string2 = optJSONObject.getString(com.mbridge.msdk.foundation.same.a.i);
+                    if (TextUtils.isEmpty(string)) {
+                        string = "-999";
+                    }
+                    int parseInt = Integer.parseInt(string);
+                    if (TextUtils.isEmpty(string2)) {
+                        string2 = "-999";
+                    }
+                    int parseInt2 = Integer.parseInt(string2);
+                    str2 = parseInt != -999 ? String.valueOf(v0.a(c.n().d(), parseInt)) : "-999";
+                    str3 = parseInt2 != -999 ? String.valueOf(v0.a(c.n().d(), parseInt2)) : "-999";
+                } else {
+                    str2 = "-999";
+                    str3 = str2;
+                }
+                parseCampaignWithBackData2.setClickURL(com.mbridge.msdk.click.c.a(parseCampaignWithBackData2.getClickURL(), str2, str3));
+                String noticeUrl = parseCampaignWithBackData2.getNoticeUrl();
+                if (optJSONObject != null) {
+                    Iterator<String> keys2 = optJSONObject.keys();
+                    StringBuilder sb = new StringBuilder();
+                    while (keys2.hasNext()) {
+                        sb.append(U3.j.c);
+                        String next2 = keys2.next();
+                        String optString3 = optJSONObject.optString(next2);
+                        if (com.mbridge.msdk.foundation.same.a.h.equals(next2) || com.mbridge.msdk.foundation.same.a.i.equals(next2)) {
+                            if (TextUtils.isEmpty(optString3)) {
+                                optString3 = "-999";
+                            }
+                            int parseInt3 = Integer.parseInt(optString3);
+                            optString3 = parseInt3 != -999 ? String.valueOf(v0.a(c.n().d(), parseInt3)) : "-999";
+                        }
+                        sb.append(next2);
+                        sb.append(U3.j.b);
+                        sb.append(optString3);
+                    }
+                    parseCampaignWithBackData2.setNoticeUrl(noticeUrl + ((Object) sb));
+                }
+            }
+            return parseCampaignWithBackData2;
+        } catch (Throwable unused) {
+            return campaignEx;
+        }
+    }
+
+    public static String a(int i, float f, float f2) {
+        JSONObject jSONObject = new JSONObject();
+        try {
+            JSONObject jSONObject2 = new JSONObject();
+            if (i == 4) {
+                jSONObject2.put(com.mbridge.msdk.foundation.same.a.h, -999);
+                jSONObject2.put(com.mbridge.msdk.foundation.same.a.i, -999);
+            } else {
+                jSONObject2.put(com.mbridge.msdk.foundation.same.a.h, v0.b(c.n().d(), f));
+                jSONObject2.put(com.mbridge.msdk.foundation.same.a.i, v0.b(c.n().d(), f2));
+            }
+            jSONObject2.put(com.mbridge.msdk.foundation.same.a.m, i);
+            jSONObject2.put(com.mbridge.msdk.foundation.same.a.k, c.n().d().getResources().getConfiguration().orientation);
+            jSONObject2.put(com.mbridge.msdk.foundation.same.a.l, v0.d(c.n().d()));
+            jSONObject.put(com.mbridge.msdk.foundation.same.a.j, jSONObject2);
+        } catch (Exception e) {
+            q0.b(a, e.getMessage());
+        }
+        return jSONObject.toString();
+    }
+}

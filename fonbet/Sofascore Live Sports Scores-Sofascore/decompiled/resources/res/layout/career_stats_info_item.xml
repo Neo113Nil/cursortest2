@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/surface_1"
+    android:paddingTop="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="8dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_8dp_corners"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/surface_2"
+        android:paddingHorizontal="8dp">
+        <TextView
+            android:gravity="start|center_vertical"
+            android:id="@+id/text_disclaimer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/football_career_stats_data_info"
+            android:drawablePadding="8dp"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:layout_marginStart="8dp"
+            android:paddingVertical="8dp"
+            app:drawableStartCompat="@drawable/ic_info"
+            app:drawableTint="@color/n_lv_3"
+            style="@style/BodySmallParagraph"/>
+        <ImageView
+            android:id="@+id/button_dismiss"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_close_16"
+            android:layout_marginStart="8dp"
+            app:tint="@color/n_lv_1"/>
+    </LinearLayout>
+</FrameLayout>

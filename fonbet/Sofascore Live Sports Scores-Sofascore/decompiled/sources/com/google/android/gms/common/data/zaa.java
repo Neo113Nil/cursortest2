@@ -1,0 +1,38 @@
+package com.google.android.gms.common.data;
+
+import android.os.Parcel;
+import android.os.ParcelFileDescriptor;
+import android.os.Parcelable;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes3.dex */
+public final class zaa implements Parcelable.Creator {
+    @Override // android.os.Parcelable.Creator
+    public final Object createFromParcel(Parcel parcel) {
+        int B = SafeParcelReader.B(parcel);
+        int i = 0;
+        ParcelFileDescriptor parcelFileDescriptor = null;
+        int i2 = 0;
+        while (parcel.dataPosition() < B) {
+            int readInt = parcel.readInt();
+            char c = (char) readInt;
+            if (c == 1) {
+                i = SafeParcelReader.v(parcel, readInt);
+            } else if (c == 2) {
+                parcelFileDescriptor = (ParcelFileDescriptor) SafeParcelReader.h(parcel, readInt, ParcelFileDescriptor.CREATOR);
+            } else if (c != 3) {
+                SafeParcelReader.A(parcel, readInt);
+            } else {
+                i2 = SafeParcelReader.v(parcel, readInt);
+            }
+        }
+        SafeParcelReader.n(parcel, B);
+        return new BitmapTeleporter(i, parcelFileDescriptor, i2);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* synthetic */ Object[] newArray(int i) {
+        return new BitmapTeleporter[i];
+    }
+}

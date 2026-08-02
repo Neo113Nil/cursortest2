@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            android:id="@+id/toolbar_holder"
+            android:fitsSystemWindows="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppBarStyle">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_title"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <include
+            android:id="@+id/delete_reason_view"
+            layout="@layout/delete_account_reason_view"/>
+        <include
+            android:id="@+id/confirmation_view"
+            android:visibility="gone"
+            layout="@layout/delete_account_confirmation_view"/>
+    </LinearLayout>
+</ScrollView>

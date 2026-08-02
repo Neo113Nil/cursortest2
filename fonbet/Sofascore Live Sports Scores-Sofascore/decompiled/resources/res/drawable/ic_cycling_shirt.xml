@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/layer_colored"
+        android:drawable="@drawable/ic_cycling_shirt_colored"/>
+    <item
+        android:id="@+id/layer_dots"
+        android:drawable="@drawable/ic_cycling_shirt_polkadot_mask"/>
+    <item android:drawable="@drawable/ic_cycling_shirt_mask"/>
+</layer-list>

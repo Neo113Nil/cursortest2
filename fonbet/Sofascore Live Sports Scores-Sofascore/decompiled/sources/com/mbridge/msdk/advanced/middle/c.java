@@ -1,0 +1,548 @@
+package com.mbridge.msdk.advanced.middle;
+
+import android.app.Activity;
+import android.text.TextUtils;
+import android.util.Base64;
+import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
+import android.webkit.WebView;
+import com.mbridge.msdk.advanced.view.MBNativeAdvancedView;
+import com.mbridge.msdk.advanced.view.MBNativeAdvancedWebview;
+import com.mbridge.msdk.advanced.view.MBOutNativeAdvancedViewGroup;
+import com.mbridge.msdk.foundation.entity.CampaignEx;
+import com.mbridge.msdk.foundation.tools.m0;
+import com.mbridge.msdk.foundation.tools.q0;
+import com.mbridge.msdk.mbsignalcommon.windvane.f;
+import com.mbridge.msdk.out.MBridgeIds;
+import com.mbridge.msdk.out.NativeAdvancedAdListener;
+import com.mbridge.msdk.setting.i;
+import com.mbridge.msdk.setting.k;
+import com.mbridge.msdk.setting.m;
+import org.json.JSONObject;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class c {
+    private static String G = "NativeAdvancedProvider";
+    private boolean A;
+    private boolean B;
+    private boolean C;
+    private String a;
+    private String b;
+    private MBridgeIds c;
+    private com.mbridge.msdk.advanced.manager.b d;
+    private com.mbridge.msdk.advanced.manager.c e;
+    private b f;
+    private NativeAdvancedAdListener g;
+    private d h;
+    private MBNativeAdvancedView i;
+    private MBNativeAdvancedWebview j;
+    private com.mbridge.msdk.advanced.view.a k;
+    private m l;
+    private boolean m;
+    private k n;
+    private JSONObject x;
+    private MBOutNativeAdvancedViewGroup z;
+    private int o = -1;
+    private boolean p = false;
+    private int q = 0;
+    private boolean r = false;
+    private int s = 0;
+    private boolean t = false;
+    private int u = 0;
+    private int v = 0;
+    private Object w = new Object();
+    private boolean y = false;
+    private boolean D = true;
+    public boolean E = false;
+    private ViewTreeObserver.OnScrollChangedListener F = new a();
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public class a implements ViewTreeObserver.OnScrollChangedListener {
+
+        /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+        /* renamed from: com.mbridge.msdk.advanced.middle.c$a$a, reason: collision with other inner class name */
+        public class RunnableC1227a implements Runnable {
+            public RunnableC1227a() {
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                c.this.D = true;
+            }
+        }
+
+        public a() {
+        }
+
+        @Override // android.view.ViewTreeObserver.OnScrollChangedListener
+        public void onScrollChanged() {
+            if (c.this.D) {
+                c.this.D = false;
+                if (c.this.z != null) {
+                    c.this.z.postDelayed(new RunnableC1227a(), 1000L);
+                }
+                try {
+                    c.this.i();
+                } catch (Exception e) {
+                    q0.b(c.G, e.getMessage());
+                }
+            }
+        }
+    }
+
+    public c(String str, String str2, Activity activity) {
+        this.b = TextUtils.isEmpty(str) ? "" : str;
+        this.a = str2;
+        this.c = new MBridgeIds(str, str2);
+        a(activity);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Type inference failed for: r0v20, types: [android.content.Context] */
+    private void a(Activity activity) {
+        com.mbridge.msdk.advanced.view.a aVar;
+        if (this.e == null) {
+            com.mbridge.msdk.advanced.manager.c cVar = new com.mbridge.msdk.advanced.manager.c(com.mbridge.msdk.foundation.controller.c.n().d(), this.b, this.a);
+            this.e = cVar;
+            cVar.a(this);
+        }
+        if (this.j == null) {
+            try {
+                this.j = new MBNativeAdvancedWebview(com.mbridge.msdk.foundation.controller.c.n().d());
+            } catch (Exception e) {
+                q0.b(G, e.getMessage());
+            }
+            if (this.k == null) {
+                try {
+                    this.k = new com.mbridge.msdk.advanced.view.a(this.a, this.e.b(), this);
+                } catch (Exception e2) {
+                    q0.b(G, e2.getMessage());
+                }
+            }
+            MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+            if (mBNativeAdvancedWebview != null && (aVar = this.k) != null) {
+                mBNativeAdvancedWebview.setWebViewClient(aVar);
+            }
+        }
+        if (this.i == null) {
+            ?? d = com.mbridge.msdk.foundation.controller.c.n().d();
+            if (activity == null) {
+                activity = d;
+            }
+            MBNativeAdvancedView mBNativeAdvancedView = new MBNativeAdvancedView(activity);
+            this.i = mBNativeAdvancedView;
+            mBNativeAdvancedView.setAdvancedNativeWebview(this.j);
+            MBNativeAdvancedWebview mBNativeAdvancedWebview2 = this.j;
+            if (mBNativeAdvancedWebview2 != null && mBNativeAdvancedWebview2.getParent() == null) {
+                this.i.addView(this.j, new ViewGroup.LayoutParams(-1, -1));
+            }
+        }
+        if (this.z == null) {
+            this.z = new MBOutNativeAdvancedViewGroup(com.mbridge.msdk.foundation.controller.c.n().d());
+            this.z.setLayoutParams((this.u == 0 || this.v == 0) ? new ViewGroup.LayoutParams(-1, -1) : new ViewGroup.LayoutParams(this.u, this.v));
+            this.z.setProvider(this);
+            this.z.addView(this.i);
+            this.z.getViewTreeObserver().addOnScrollChangedListener(this.F);
+        }
+        k kVar = this.n;
+        if (kVar == null) {
+            kVar = new k();
+            this.n = kVar;
+        }
+        kVar.a(com.mbridge.msdk.foundation.controller.c.n().d(), com.mbridge.msdk.foundation.controller.c.n().b(), com.mbridge.msdk.foundation.controller.c.n().c(), this.a);
+    }
+
+    private void c(int i) {
+        if (this.r) {
+            this.q = i;
+            MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+            if (mBNativeAdvancedWebview == null || mBNativeAdvancedWebview.isDestoryed()) {
+                return;
+            }
+            com.mbridge.msdk.advanced.signal.a.a(this.j, "setVolume", CampaignEx.JSON_NATIVE_VIDEO_MUTE, Integer.valueOf(i));
+        }
+    }
+
+    private void e(int i) {
+        MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+        if (mBNativeAdvancedWebview == null || mBNativeAdvancedWebview.isDestoryed()) {
+            return;
+        }
+        try {
+            if (this.j != null) {
+                JSONObject jSONObject = new JSONObject();
+                jSONObject.put("netstat", i);
+                f.a().a((WebView) this.j, "onNetstatChanged", Base64.encodeToString(jSONObject.toString().getBytes(), 2));
+            }
+        } catch (Throwable th) {
+            q0.a(G, th.getMessage());
+        }
+    }
+
+    private void g(int i) {
+        if (this.t) {
+            this.s = i;
+            MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+            if (mBNativeAdvancedWebview == null || mBNativeAdvancedWebview.isDestoryed()) {
+                return;
+            }
+            com.mbridge.msdk.advanced.signal.a.a(this.j, "setVideoPlayMode", "autoPlay", Integer.valueOf(i));
+        }
+    }
+
+    private void h() {
+        com.mbridge.msdk.advanced.manager.c cVar = this.e;
+        if (cVar != null) {
+            cVar.e();
+        }
+    }
+
+    private void j() {
+        a(this.o);
+        c(this.q);
+        g(this.s);
+        a(this.x);
+        e(m0.s(com.mbridge.msdk.foundation.controller.c.n().d()));
+    }
+
+    public void b() {
+        if (this.g != null) {
+            this.g = null;
+        }
+        if (this.f != null) {
+            this.f = null;
+        }
+        if (this.h != null) {
+            this.h = null;
+        }
+        com.mbridge.msdk.advanced.manager.b bVar = this.d;
+        if (bVar != null) {
+            bVar.a((MBNativeAdvancedView) null);
+            this.d.e();
+        }
+        com.mbridge.msdk.advanced.manager.c cVar = this.e;
+        if (cVar != null) {
+            cVar.g();
+        }
+        MBNativeAdvancedView mBNativeAdvancedView = this.i;
+        if (mBNativeAdvancedView != null) {
+            mBNativeAdvancedView.destroy();
+        }
+        com.mbridge.msdk.advanced.common.c.b(this.b + this.a + e());
+        com.mbridge.msdk.advanced.view.a aVar = this.k;
+        if (aVar != null) {
+            aVar.b();
+        }
+        MBOutNativeAdvancedViewGroup mBOutNativeAdvancedViewGroup = this.z;
+        if (mBOutNativeAdvancedViewGroup != null) {
+            mBOutNativeAdvancedViewGroup.getViewTreeObserver().removeOnScrollChangedListener(this.F);
+            this.z.removeAllViews();
+            this.z = null;
+        }
+    }
+
+    public void d(String str) {
+        if (!TextUtils.isEmpty(str)) {
+            c(str);
+            return;
+        }
+        NativeAdvancedAdListener nativeAdvancedAdListener = this.g;
+        if (nativeAdvancedAdListener != null) {
+            nativeAdvancedAdListener.onLoadFailed(this.c, "bid  token is null or empty");
+        }
+    }
+
+    public void f(int i) {
+        if (i == 1) {
+            this.A = false;
+        } else if (i == 2) {
+            this.B = false;
+        } else if (i == 3) {
+            this.C = false;
+        }
+        h();
+    }
+
+    public void i(int i) {
+        if (i != 1) {
+            if (i != 2) {
+                if (i == 3) {
+                    if (this.C) {
+                        return;
+                    } else {
+                        this.C = true;
+                    }
+                }
+            } else if (this.B) {
+                return;
+            } else {
+                this.B = true;
+            }
+        } else if (this.A) {
+            return;
+        } else {
+            this.A = true;
+        }
+        try {
+            i();
+        } catch (Exception e) {
+            q0.b(G, e.getMessage());
+        }
+    }
+
+    public void h(int i) {
+        this.t = true;
+        g(i);
+    }
+
+    public MBOutNativeAdvancedViewGroup d() {
+        return this.z;
+    }
+
+    public void d(int i) {
+        this.r = true;
+        c(i);
+    }
+
+    public int f() {
+        return this.o;
+    }
+
+    public void c(String str) {
+        b bVar = new b(this, this.c);
+        this.f = bVar;
+        bVar.a(this.g);
+        this.f.a(str);
+        a(str, 2);
+    }
+
+    public boolean g() {
+        return this.m;
+    }
+
+    public String c() {
+        if (this.E) {
+            com.mbridge.msdk.advanced.manager.c cVar = this.e;
+            if (cVar != null) {
+                return cVar.a();
+            }
+            return "";
+        }
+        com.mbridge.msdk.advanced.manager.b bVar = this.d;
+        if (bVar != null) {
+            return bVar.c();
+        }
+        return "";
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void i() {
+        if (this.A && this.B && this.C) {
+            CampaignEx a2 = com.mbridge.msdk.advanced.manager.d.a(this.i, this.b, this.a, "", this.o, true, true);
+            com.mbridge.msdk.advanced.manager.c cVar = this.e;
+            if (cVar != null) {
+                cVar.f();
+            }
+            b(a2);
+        }
+    }
+
+    public String e() {
+        if (this.E) {
+            com.mbridge.msdk.advanced.manager.c cVar = this.e;
+            if (cVar != null) {
+                return cVar.c();
+            }
+            return "";
+        }
+        com.mbridge.msdk.advanced.manager.b bVar = this.d;
+        if (bVar != null) {
+            return bVar.d();
+        }
+        return "";
+    }
+
+    public void b(JSONObject jSONObject) {
+        this.y = true;
+        a(jSONObject);
+    }
+
+    public boolean b(String str) {
+        return (this.z == null || com.mbridge.msdk.advanced.manager.d.a(this.i, this.b, this.a, str, this.o, false, true) == null) ? false : true;
+    }
+
+    public void b(int i) {
+        this.p = true;
+        a(i);
+    }
+
+    public void b(int i, int i2) {
+        a(i, i2);
+    }
+
+    public void b(CampaignEx campaignEx) {
+        if (campaignEx != null) {
+            if (this.l == null) {
+                this.l = i.b().c(com.mbridge.msdk.foundation.controller.c.n().b(), this.a);
+            }
+            this.h = new d(this, this.g, campaignEx);
+            q0.a(G, "show start");
+            if (this.u != 0 && this.v != 0) {
+                a(campaignEx, false);
+                return;
+            }
+            d dVar = this.h;
+            if (dVar != null) {
+                dVar.a(this.c, "width or height is 0  or width or height is too small");
+            }
+        }
+    }
+
+    public void a(boolean z) {
+        this.m = z;
+    }
+
+    private void a(JSONObject jSONObject) {
+        if (this.y) {
+            this.x = jSONObject;
+            MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+            if (mBNativeAdvancedWebview == null || mBNativeAdvancedWebview.isDestoryed()) {
+                return;
+            }
+            com.mbridge.msdk.advanced.signal.a.a(this.j, "setStyleList", "", jSONObject);
+        }
+    }
+
+    public void a(NativeAdvancedAdListener nativeAdvancedAdListener) {
+        this.g = nativeAdvancedAdListener;
+    }
+
+    private void a(int i) {
+        if (this.p) {
+            this.o = i;
+            MBNativeAdvancedWebview mBNativeAdvancedWebview = this.j;
+            if (mBNativeAdvancedWebview == null || mBNativeAdvancedWebview.isDestoryed()) {
+                return;
+            }
+            int i2 = this.o;
+            if (i2 == 1) {
+                this.e.a(true);
+                com.mbridge.msdk.advanced.signal.a.a(this.j, "showCloseButton", "", null);
+            } else if (i2 == 0) {
+                this.e.a(false);
+                com.mbridge.msdk.advanced.signal.a.a(this.j, "hideCloseButton", "", null);
+            }
+        }
+    }
+
+    public void a(CampaignEx campaignEx, boolean z) {
+        j();
+        MBOutNativeAdvancedViewGroup mBOutNativeAdvancedViewGroup = this.z;
+        if (mBOutNativeAdvancedViewGroup == null || mBOutNativeAdvancedViewGroup.getParent() == null) {
+            return;
+        }
+        if (campaignEx != null && z) {
+            if (this.l == null) {
+                this.l = i.b().c(com.mbridge.msdk.foundation.controller.c.n().b(), this.a);
+            }
+            this.h = new d(this, this.g, campaignEx);
+        }
+        if (this.e == null) {
+            com.mbridge.msdk.advanced.manager.c cVar = new com.mbridge.msdk.advanced.manager.c(com.mbridge.msdk.foundation.controller.c.n().d(), this.b, this.a);
+            this.e = cVar;
+            cVar.a(this);
+        }
+        a(campaignEx);
+    }
+
+    private void a(CampaignEx campaignEx) {
+        if (com.mbridge.msdk.advanced.manager.d.a(this.i, campaignEx, this.b, this.a)) {
+            this.e.a(this.h);
+            q0.b(G, "start show process");
+            this.e.a(campaignEx, this.i, true);
+        }
+    }
+
+    private void a(String str, int i) {
+        boolean z;
+        this.D = true;
+        synchronized (this.w) {
+            try {
+                if (this.m) {
+                    if (this.f != null) {
+                        this.f.a(new com.mbridge.msdk.foundation.error.b(880016, "current unit is loading"), i);
+                        this.m = true;
+                    }
+                    return;
+                }
+                this.m = true;
+                if (this.u != 0 && this.v != 0) {
+                    if (this.i == null) {
+                        if (this.f != null) {
+                            this.f.a(new com.mbridge.msdk.foundation.error.b(880030), i);
+                            return;
+                        }
+                        return;
+                    }
+                    try {
+                        z = com.mbridge.msdk.mbsignalcommon.webEnvCheck.a.b(com.mbridge.msdk.foundation.controller.c.n().d());
+                    } catch (Exception e) {
+                        q0.b(G, e.getMessage());
+                        z = false;
+                    }
+                    if (!z) {
+                        if (this.f != null) {
+                            this.f.a(new com.mbridge.msdk.foundation.error.b(880029), i);
+                            return;
+                        }
+                        return;
+                    }
+                    this.i.clearResStateAndRemoveClose();
+                    m a2 = i.b().a(com.mbridge.msdk.foundation.controller.c.n().b(), this.a);
+                    this.l = a2;
+                    if (a2 == null) {
+                        this.l = m.k(this.a);
+                    }
+                    if (this.d == null) {
+                        this.d = new com.mbridge.msdk.advanced.manager.b(this.b, this.a, 0L);
+                    }
+                    b bVar = this.f;
+                    if (bVar != null) {
+                        bVar.a(str);
+                        this.d.a(this.f);
+                    }
+                    this.i.resetLoadState();
+                    this.d.a(this.i);
+                    this.d.a(this.l);
+                    this.d.a(this.u, this.v);
+                    this.d.a(this.o);
+                    this.d.b(str, i);
+                    return;
+                }
+                if (this.f != null) {
+                    this.f.a(new com.mbridge.msdk.foundation.error.b(880028), i);
+                }
+            } catch (Throwable th) {
+                throw th;
+            }
+        }
+    }
+
+    public String a(String str) {
+        com.mbridge.msdk.advanced.manager.b bVar = this.d;
+        if (bVar != null) {
+            return bVar.a(str);
+        }
+        return "";
+    }
+
+    private void a(int i, int i2) {
+        if (i <= 0 || i2 <= 0) {
+            return;
+        }
+        this.v = i;
+        this.u = i2;
+        this.z.setLayoutParams(new ViewGroup.LayoutParams(i2, i));
+    }
+}

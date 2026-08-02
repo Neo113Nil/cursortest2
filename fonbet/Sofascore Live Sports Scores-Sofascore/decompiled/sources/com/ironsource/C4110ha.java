@@ -1,0 +1,134 @@
+package com.ironsource;
+
+import com.ironsource.mediationsdk.logger.IronLog;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* renamed from: com.ironsource.ha, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public class C4110ha {
+    public static JSONObject a(Map<String, Object> map) {
+        JSONObject jSONObject = new JSONObject();
+        if (map != null) {
+            for (Map.Entry<String, Object> entry : map.entrySet()) {
+                try {
+                    jSONObject.put(entry.getKey(), b(entry.getValue()));
+                } catch (JSONException e) {
+                    C4157k4.d().a(e);
+                    IronLog.INTERNAL.error(String.format("Could not map entry to object: %s, %s", entry.getKey(), entry.getValue()));
+                }
+            }
+        }
+        return jSONObject;
+    }
+
+    public static Object b(Object obj) {
+        if (obj == null) {
+            return null;
+        }
+        if (obj instanceof JSONArray) {
+            return obj;
+        }
+        if (obj instanceof JSONObject) {
+            return obj;
+        }
+        if (obj.equals(JSONObject.NULL)) {
+            return obj;
+        }
+        try {
+            return obj instanceof Collection ? new JSONArray((Collection) obj) : obj.getClass().isArray() ? new JSONArray((Collection) Arrays.asList(obj)) : obj instanceof Map ? new JSONObject((Map) obj) : ((obj instanceof Boolean) || (obj instanceof Byte) || (obj instanceof Character) || (obj instanceof Double) || (obj instanceof Float) || (obj instanceof Integer) || (obj instanceof Long) || (obj instanceof Short)) ? obj : obj instanceof String ? obj : obj instanceof Enum ? obj.toString() : obj.getClass().getPackage().getName().startsWith("java.") ? obj.toString() : obj;
+        } catch (Exception e) {
+            C4157k4.d().a(e);
+            return null;
+        }
+    }
+
+    public static JSONObject a(JSONObject... jSONObjectArr) {
+        JSONObject jSONObject = new JSONObject();
+        if (jSONObjectArr != null) {
+            for (JSONObject jSONObject2 : jSONObjectArr) {
+                if (jSONObject2 != null) {
+                    Iterator<String> keys = jSONObject2.keys();
+                    while (keys.hasNext()) {
+                        String next = keys.next();
+                        try {
+                            jSONObject.put(next, jSONObject2.get(next));
+                        } catch (JSONException e) {
+                            C4157k4.d().a(e);
+                            IronLog.INTERNAL.error(e.toString());
+                        }
+                    }
+                }
+            }
+        }
+        return jSONObject;
+    }
+
+    @NotNull
+    public static Map<String, Object> a(JSONObject jSONObject) {
+        HashMap hashMap = new HashMap();
+        if (jSONObject != null) {
+            Iterator<String> keys = jSONObject.keys();
+            while (keys.hasNext()) {
+                String next = keys.next();
+                try {
+                    hashMap.put(next, a(jSONObject.get(next)));
+                } catch (JSONException e) {
+                    C4157k4.d().a(e);
+                    IronLog.INTERNAL.error("Could not put value in map: " + next + ", " + e.getMessage());
+                }
+            }
+        }
+        return hashMap;
+    }
+
+    public static List<Object> a(JSONArray jSONArray) {
+        ArrayList arrayList = new ArrayList(jSONArray.length());
+        for (int i = 0; i < jSONArray.length(); i++) {
+            try {
+                arrayList.add(a(jSONArray.get(i)));
+            } catch (JSONException e) {
+                C4157k4.d().a(e);
+                IronLog.INTERNAL.error("Could not put value into list: " + e.getMessage());
+            }
+        }
+        return arrayList;
+    }
+
+    private static Object a(Object obj) {
+        if (obj instanceof JSONObject) {
+            return a((JSONObject) obj);
+        }
+        return obj instanceof JSONArray ? a((JSONArray) obj) : obj;
+    }
+
+    public static boolean a(String str) {
+        try {
+            new JSONObject(str);
+            return true;
+        } catch (JSONException unused) {
+            return false;
+        }
+    }
+
+    public static List<String> b(JSONArray jSONArray) throws JSONException {
+        if (jSONArray == null) {
+            return null;
+        }
+        ArrayList arrayList = new ArrayList();
+        for (int i = 0; i < jSONArray.length(); i++) {
+            arrayList.add(jSONArray.getString(i));
+        }
+        return arrayList;
+    }
+}

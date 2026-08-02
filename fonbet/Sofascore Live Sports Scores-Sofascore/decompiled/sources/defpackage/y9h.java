@@ -1,0 +1,67 @@
+package defpackage;
+
+import java.util.Collection;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes6.dex */
+public class y9h extends x9h {
+    public static LinkedHashSet d(Set set, Object obj) {
+        set.getClass();
+        LinkedHashSet linkedHashSet = new LinkedHashSet(sub.c(set.size()));
+        boolean z = false;
+        for (Object obj2 : set) {
+            boolean z2 = true;
+            if (!z && Intrinsics.c(obj2, obj)) {
+                z = true;
+                z2 = false;
+            }
+            if (z2) {
+                linkedHashSet.add(obj2);
+            }
+        }
+        return linkedHashSet;
+    }
+
+    public static Set e(Set set, Iterable iterable) {
+        set.getClass();
+        iterable.getClass();
+        Collection<?> x = o13.x(iterable);
+        if (x.isEmpty()) {
+            return CollectionsKt.W0(set);
+        }
+        if (!(x instanceof Set)) {
+            LinkedHashSet linkedHashSet = new LinkedHashSet(set);
+            linkedHashSet.removeAll(x);
+            return linkedHashSet;
+        }
+        LinkedHashSet linkedHashSet2 = new LinkedHashSet();
+        for (Object obj : set) {
+            if (!((Set) x).contains(obj)) {
+                linkedHashSet2.add(obj);
+            }
+        }
+        return linkedHashSet2;
+    }
+
+    public static LinkedHashSet f(Set set, Iterable iterable) {
+        set.getClass();
+        iterable.getClass();
+        Integer valueOf = iterable instanceof Collection ? Integer.valueOf(((Collection) iterable).size()) : null;
+        LinkedHashSet linkedHashSet = new LinkedHashSet(sub.c(valueOf != null ? set.size() + valueOf.intValue() : set.size() * 2));
+        linkedHashSet.addAll(set);
+        o13.v(iterable, linkedHashSet);
+        return linkedHashSet;
+    }
+
+    public static LinkedHashSet g(Set set, Object obj) {
+        set.getClass();
+        LinkedHashSet linkedHashSet = new LinkedHashSet(sub.c(set.size() + 1));
+        linkedHashSet.addAll(set);
+        linkedHashSet.add(obj);
+        return linkedHashSet;
+    }
+}

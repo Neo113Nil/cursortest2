@@ -1,0 +1,13 @@
+package defpackage;
+
+import com.inmobi.ads.InMobiBanner;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class wx9 {
+    public final InMobiBanner a;
+
+    public wx9(InMobiBanner inMobiBanner) {
+        this.a = inMobiBanner;
+    }
+}

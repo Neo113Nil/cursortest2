@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="2dp"
+    app:cardBackgroundColor="@color/surface_1"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0dp">
+    <TextView
+        android:textColor="@color/primary_default"
+        android:layout_gravity="center"
+        android:id="@+id/team_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_more"
+        android:textAllCaps="true"
+        style="@style/ActionButtonPrimary"/>
+</com.google.android.material.card.MaterialCardView>

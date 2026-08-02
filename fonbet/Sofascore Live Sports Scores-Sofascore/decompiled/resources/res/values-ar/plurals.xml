@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="zero">آخر %1$d مباراة</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="zero">إخراج</item>
+        <item quantity="one">إخراج</item>
+        <item quantity="two">إخراجات</item>
+        <item quantity="few">إخراجات</item>
+        <item quantity="many">إخراجات</item>
+        <item quantity="other">إخراجات</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="zero">%1$d ألقاب</item>
+        <item quantity="one">%1$d لقب</item>
+        <item quantity="two">%1$d ألقاب</item>
+        <item quantity="few">%1$d ألقاب</item>
+        <item quantity="many">%1$d ألقاب</item>
+        <item quantity="other">%1$d ألقاب</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="zero">يوم</item>
+        <item quantity="one">يوم</item>
+        <item quantity="two">أيام</item>
+        <item quantity="few">أيام</item>
+        <item quantity="many">أيام</item>
+        <item quantity="other">أيام</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="zero">ساعة</item>
+        <item quantity="one">ساعة</item>
+        <item quantity="two">ساعات</item>
+        <item quantity="few">ساعات</item>
+        <item quantity="many">ساعات</item>
+        <item quantity="other">ساعات</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="zero">دقيقة</item>
+        <item quantity="one">دقيقة</item>
+        <item quantity="two">دقائق</item>
+        <item quantity="few">دقائق</item>
+        <item quantity="many">دقائق</item>
+        <item quantity="other">دقائق</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="zero">ثانية</item>
+        <item quantity="one">ثانية</item>
+        <item quantity="two">ثواني</item>
+        <item quantity="few">ثواني</item>
+        <item quantity="many">ثواني</item>
+        <item quantity="other">ثواني</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="zero">%1$d تسليمات (%2$dW)</item>
+        <item quantity="one">%1$d تسليم (%2$dW)</item>
+        <item quantity="two">%1$d تسليمات (%2$dW)</item>
+        <item quantity="few">%1$d تسليمات (%2$dW)</item>
+        <item quantity="many">%1$d تسليمات (%2$dW)</item>
+        <item quantity="other">%1$d تسليمات (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="zero">%1$d ركضات</item>
+        <item quantity="one">%1$d ركضة</item>
+        <item quantity="two">%1$d ركضات</item>
+        <item quantity="few">%1$d ركضات</item>
+        <item quantity="many">%1$d ركضات</item>
+        <item quantity="other">%1$d ركضات</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="zero">%1$d ويكيت</item>
+        <item quantity="one">%1$d ويكيت</item>
+        <item quantity="two">%1$d ويكيت</item>
+        <item quantity="few">%1$d ويكيت</item>
+        <item quantity="many">%1$d ويكيت</item>
+        <item quantity="other">%1$d ويكيت</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="zero">%1$s مستخدم ساهم</item>
+        <item quantity="one">%1$s مستخدم ساهم</item>
+        <item quantity="two">%1$s مستخدمين ساهموا</item>
+        <item quantity="few">%1$s مستخدمين ساهموا</item>
+        <item quantity="many">%1$s مستخدمين ساهموا</item>
+        <item quantity="other">%1$s مستخدمين ساهموا</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="zero">أفضل شوط من %1$s</item>
+        <item quantity="one">أفضل شوط من %1$s</item>
+        <item quantity="two">أفضل شوطين من %1$s</item>
+        <item quantity="few">أفضل أشواط من %1$s</item>
+        <item quantity="many">أفضل أشواط من %1$s</item>
+        <item quantity="other">أفضل أشواط من %1$s</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="zero">أفضل %1$s مجموعة</item>
+        <item quantity="one">أفضل %1$s مجموعة</item>
+        <item quantity="two">أفضل %1$s مجموعات</item>
+        <item quantity="few">أفضل %1$s مجموعات</item>
+        <item quantity="many">أفضل %1$s مجموعات</item>
+        <item quantity="other">أفضل %1$s مجموعات</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="zero">%1$d يوم متبقي</item>
+        <item quantity="one">&gt;%1$d يوم متبقي</item>
+        <item quantity="two">%1$d أيام متبقية</item>
+        <item quantity="few">%1$d أيام متبقية</item>
+        <item quantity="many">%1$d أيام متبقية</item>
+        <item quantity="other">%1$d أيام متبقية</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="zero">تم التحرير بواسطة %1$d محرر</item>
+        <item quantity="one">تم التحرير بواسطة %1$d محرر</item>
+        <item quantity="two">تم التحرير بواسطة %1$d محررين</item>
+        <item quantity="few">تم التحرير بواسطة %1$d محررين</item>
+        <item quantity="many">تم التحرير بواسطة %1$d محررين</item>
+        <item quantity="other">تم التحرير بواسطة %1$d محررين</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="zero">آخر %1$d أحداث</item>
+        <item quantity="one">آخر %1$d حدث</item>
+        <item quantity="two">آخر %1$d أحداث</item>
+        <item quantity="few">آخر %1$d أحداث</item>
+        <item quantity="many">آخر %1$d أحداث</item>
+        <item quantity="other">آخر %1$d أحداث</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="zero">إذا واصلت، فسوف تخسر (%1$d) نقطة.</item>
+        <item quantity="one">إذا واصلت، فسوف تخسر (%1$d) نقطة.</item>
+        <item quantity="two">إذا واصلت، فسوف تخسر (%1$d) نقاط.</item>
+        <item quantity="few">إذا واصلت، فسوف تخسر (%1$d) نقاط.</item>
+        <item quantity="many">إذا واصلت، فسوف تخسر (%1$d) نقاط.</item>
+        <item quantity="other">إذا واصلت، فسوف تخسر (%1$d) نقاط.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="zero">لقد حصلت على %1$d تحسين محتمل.</item>
+        <item quantity="one">لقد حصلت على %1$d تحسين محتمل.</item>
+        <item quantity="two">لقد حصلت على %1$d تحسينات محتملة.</item>
+        <item quantity="few">لقد حصلت على %1$d تحسينات محتملة.</item>
+        <item quantity="many">لقد حصلت على %1$d تحسينات محتملة.</item>
+        <item quantity="other">لقد حصلت على %1$d تحسينات محتملة.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="zero">+%1$d أحداث أكثر</item>
+        <item quantity="one">+%1$d حدث أكثر</item>
+        <item quantity="two">+%1$d أحداث أكثر</item>
+        <item quantity="few">+%1$d أحداث أكثر</item>
+        <item quantity="many">+%1$d أحداث أكثر</item>
+        <item quantity="other">+%1$d أحداث أكثر</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="zero">لكل %1$s</item>
+        <item quantity="one">لكل %1$s</item>
+        <item quantity="two">لكل %1$s</item>
+        <item quantity="few">لكل %1$s</item>
+        <item quantity="many">لكل %1$s</item>
+        <item quantity="other">لكل %1$s</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="zero">%1$d مباراة</item>
+        <item quantity="one">%1$d مباراة</item>
+        <item quantity="two">%1$d مباريات</item>
+        <item quantity="few">%1$d مباريات</item>
+        <item quantity="many">%1$d مباريات</item>
+        <item quantity="other">%1$d مباريات</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="zero">بقي %1$d يوم، لا تفوت الفرصة!</item>
+        <item quantity="one">بقي %1$d يوم، لا تفوت الفرصة!</item>
+        <item quantity="two">بقي %1$d أيام، لا تفوت الفرصة!</item>
+        <item quantity="few">بقي %1$d أيام، لا تفوت الفرصة!</item>
+        <item quantity="many">بقي %1$d أيام، لا تفوت الفرصة!</item>
+        <item quantity="other">بقي %1$d أيام، لا تفوت الفرصة!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="zero">+%1$d هدف</item>
+        <item quantity="one">+%1$d هدف</item>
+        <item quantity="two">+%1$d هدف</item>
+        <item quantity="few">+%1$d هدف</item>
+        <item quantity="many">+%1$d هدف</item>
+        <item quantity="other">+%1$d هدف</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="zero">لا توجد أموال كافية لإكمال عملية تحويل %1$d</item>
+        <item quantity="one">لا توجد أموال كافية لإكمال عملية تحويل %1$d</item>
+        <item quantity="two">لا توجد أموال كافية لإكمال عمليات تحويل %1$d</item>
+        <item quantity="few">لا توجد أموال كافية لإكمال عمليات تحويل %1$d</item>
+        <item quantity="many">لا توجد أموال كافية لإكمال عمليات تحويل %1$d</item>
+        <item quantity="other">لا توجد أموال كافية لإكمال عمليات تحويل %1$d</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="zero">آخر %1$d ساعة</item>
+        <item quantity="one">آخر %1$d ساعة</item>
+        <item quantity="two">آخر %1$d ساعات</item>
+        <item quantity="few">آخر %1$d ساعات</item>
+        <item quantity="many">آخر %1$d ساعات</item>
+        <item quantity="other">آخر %1$d ساعات</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="zero">النتيجة الأخيرة: %1$s</item>
+        <item quantity="one">النتيجة الأخيرة: %1$s</item>
+        <item quantity="two">النتائج الأخيرة: %1$s</item>
+        <item quantity="few">النتائج الأخيرة: %1$s</item>
+        <item quantity="many">النتائج الأخيرة: %1$s</item>
+        <item quantity="other">النتائج الأخيرة: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="zero">+%1$d لفة</item>
+        <item quantity="one">+%1$d لفة</item>
+        <item quantity="two">+%1$d لفات</item>
+        <item quantity="few">+%1$d لفات</item>
+        <item quantity="many">+%1$d لفات</item>
+        <item quantity="other">+%1$d لفات</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="zero">%1$d من الأيام</item>
+        <item quantity="one">%1$d يوم</item>
+        <item quantity="two">%1$d من الأيام</item>
+        <item quantity="few">%1$d من الأيام</item>
+        <item quantity="many">%1$d من الأيام</item>
+        <item quantity="other">%1$d من الأيام</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="zero">%1$d من الأحداث</item>
+        <item quantity="one">%1$d حدث</item>
+        <item quantity="two">%1$d من الأحداث</item>
+        <item quantity="few">%1$d من الأحداث</item>
+        <item quantity="many">%1$d من الأحداث</item>
+        <item quantity="other">%1$d من الأحداث</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="zero">%1$s لاعب</item>
+        <item quantity="one">%1$s لاعب</item>
+        <item quantity="two">%1$s لاعبين</item>
+        <item quantity="few">%1$s لاعبين</item>
+        <item quantity="many">%1$s لاعبين</item>
+        <item quantity="other">%1$s لاعبين</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="zero">%1$s صوت</item>
+        <item quantity="one">%1$s صوت</item>
+        <item quantity="two">%1$s أصوات</item>
+        <item quantity="few">%1$s أصوات</item>
+        <item quantity="many">%1$s أصوات</item>
+        <item quantity="other">%1$s أصوات</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="zero">أكثر من %1$s بطاقة</item>
+        <item quantity="one">أكثر من %1$s بطاقة</item>
+        <item quantity="two">أكثر من %1$s بطاقات</item>
+        <item quantity="few">أكثر من %1$s بطاقات</item>
+        <item quantity="many">أكثر من %1$s بطاقات</item>
+        <item quantity="other">أكثر من %1$s بطاقات</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="zero">أكثر من %1$s ضربة ركنية</item>
+        <item quantity="one">أكثر من %1$s ضربة ركنية</item>
+        <item quantity="two">أكثر من %1$s ضربات ركنية</item>
+        <item quantity="few">أكثر من %1$s ضربات ركنية</item>
+        <item quantity="many">أكثر من %1$s ضربات ركنية</item>
+        <item quantity="other">أكثر من %1$s ضربات ركنية</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="zero">أكثر من %1$s هدف</item>
+        <item quantity="one">أكثر من %1$s هدف</item>
+        <item quantity="two">أكثر من %1$s أهداف</item>
+        <item quantity="few">أكثر من %1$s أهداف</item>
+        <item quantity="many">أكثر من %1$s أهداف</item>
+        <item quantity="other">أكثر من %1$s أهداف</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="zero">%1$s أصوات، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+        <item quantity="one">%1$s صوت، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+        <item quantity="two">%1$s أصوات، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+        <item quantity="few">%1$s أصوات، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+        <item quantity="many">%1$s أصوات، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+        <item quantity="other">%1$s أصوات، أنت ضمن أفضل %2$s من بين جميع المتنبئين!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="zero">لقد قمت هذا العام بالمشاركة %1$s مرات في Torneo.</item>
+        <item quantity="one">لقد قمت هذا العام بالمشاركة %1$s مرة في Torneo.</item>
+        <item quantity="two">لقد قمت هذا العام بالمشاركة %1$s مرات في Torneo.</item>
+        <item quantity="few">لقد قمت هذا العام بالمشاركة %1$s مرات في Torneo.</item>
+        <item quantity="many">لقد قمت هذا العام بالمشاركة %1$s مرات في Torneo.</item>
+        <item quantity="other">لقد قمت هذا العام بالمشاركة %1$s مرات في Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="zero">لقد قمت بـ %1$s إدخالات على Torneo هذا العام</item>
+        <item quantity="one">لقد قمت بـ %1$s إدخال على Torneo هذا العام</item>
+        <item quantity="two">لقد قمت بـ %1$s إدخالات على Torneo هذا العام</item>
+        <item quantity="few">لقد قمت بـ %1$s إدخالات على Torneo هذا العام</item>
+        <item quantity="many">لقد قمت بـ %1$s إدخالات على Torneo هذا العام</item>
+        <item quantity="other">لقد قمت بـ %1$s إدخالات على Torneo هذا العام</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="zero">مع %1$s مشاهدات، كان الحدث الأبرز بالنسبة لي هو:</item>
+        <item quantity="one">مع %1$s مشاهدة، كان الحدث الأبرز بالنسبة لي هو:</item>
+        <item quantity="two">مع %1$s مشاهدات، كان الحدث الأبرز بالنسبة لي هو:</item>
+        <item quantity="few">مع %1$s مشاهدات، كان الحدث الأبرز بالنسبة لي هو:</item>
+        <item quantity="many">مع %1$s مشاهدات، كان الحدث الأبرز بالنسبة لي هو:</item>
+        <item quantity="other">مع %1$s مشاهدات، كان الحدث الأبرز بالنسبة لي هو:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="zero">في عام 2025، حضرت %1$s حدث</item>
+        <item quantity="one">في عام 2025، حضرت %1$s حدث</item>
+        <item quantity="two">في عام 2025، حضرت %1$s أحداث</item>
+        <item quantity="few">في عام 2025، حضرت %1$s أحداث</item>
+        <item quantity="many">في عام 2025، حضرت %1$s حدث</item>
+        <item quantity="other">في عام 2025، حضرت %1$s حدث</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="zero">لا عجب، لقد فتحته %1$s مرة.</item>
+        <item quantity="one">لا عجب، لقد فتحته %1$s مرة.</item>
+        <item quantity="two">لا عجب، لقد فتحته %1$s مرات.</item>
+        <item quantity="few">لا عجب، لقد فتحته %1$s مرات.</item>
+        <item quantity="many">لا عجب، لقد فتحته %1$s مرة.</item>
+        <item quantity="other">لا عجب، لقد فتحته %1$s مرة.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="zero">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعب</item>
+        <item quantity="one">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعب</item>
+        <item quantity="two">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعبين</item>
+        <item quantity="few">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعبين</item>
+        <item quantity="many">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعب</item>
+        <item quantity="other">مثل كشاف ثاقب البصر، تابعت أداء %1$s لاعب</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="zero">آخر %1$d مباريات</item>
+        <item quantity="one">آخر %1$d مباريات</item>
+        <item quantity="two">آخر %1$d مباريات</item>
+        <item quantity="few">آخر %1$d مباريات</item>
+        <item quantity="many">آخر %1$d مباريات</item>
+        <item quantity="other">آخر %1$d مباريات</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="zero">%1$d لقب</item>
+        <item quantity="one">%1$d لقب</item>
+        <item quantity="two">%1$d ألقاب</item>
+        <item quantity="few">%1$d ألقاب</item>
+        <item quantity="many">%1$d ألقاب</item>
+        <item quantity="other">%1$d ألقاب</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="zero">أنت على وشك نقل %1$d لاعب</item>
+        <item quantity="one">أنت على وشك نقل %1$d لاعب</item>
+        <item quantity="two">أنت على وشك نقل %1$d لاعبين</item>
+        <item quantity="few">أنت على وشك نقل %1$d لاعبين</item>
+        <item quantity="many">أنت على وشك نقل %1$d لاعبين</item>
+        <item quantity="other">أنت على وشك نقل %1$d لاعبين</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="zero">أقل من %1$s بطاقة</item>
+        <item quantity="one">أقل من %1$s بطاقة</item>
+        <item quantity="two">أقل من %1$s بطاقات</item>
+        <item quantity="few">أقل من %1$s بطاقات</item>
+        <item quantity="many">أقل من %1$s بطاقات</item>
+        <item quantity="other">أقل من %1$s بطاقات</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="zero">أقل من %1$s ضربة ركنية</item>
+        <item quantity="one">أقل من %1$s ضربة ركنية</item>
+        <item quantity="two">أقل من %1$s ضربات ركنية</item>
+        <item quantity="few">أقل من %1$s ضربات ركنية</item>
+        <item quantity="many">أقل من %1$s ضربات ركنية</item>
+        <item quantity="other">أقل من %1$s ضربات ركنية</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="zero">أقل من %1$s هدف</item>
+        <item quantity="one">أقل من %1$s هدف</item>
+        <item quantity="two">أقل من %1$s أهداف</item>
+        <item quantity="few">أقل من %1$s أهداف</item>
+        <item quantity="many">أقل من %1$s أهداف</item>
+        <item quantity="other">أقل من %1$s أهداف</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="zero">منذ %1$d سنة</item>
+        <item quantity="one">منذ %1$d سنة</item>
+        <item quantity="two">منذ %1$d سنوات</item>
+        <item quantity="few">منذ %1$d سنوات</item>
+        <item quantity="many">منذ %1$d سنوات</item>
+        <item quantity="other">منذ %1$d سنوات</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="zero">%1$s اسبوع</item>
+        <item quantity="one">%1$s اسبوع</item>
+        <item quantity="two">%1$s اسابيع</item>
+        <item quantity="few">%1$s اسابيع</item>
+        <item quantity="many">%1$s اسابيع</item>
+        <item quantity="other">%1$s اسابيع</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="zero">%1$s سنة</item>
+        <item quantity="one">%1$s سنة</item>
+        <item quantity="two">%1$s سنوات</item>
+        <item quantity="few">%1$s سنوات</item>
+        <item quantity="many">%1$s سنوات</item>
+        <item quantity="other">%1$s سنوات</item>
+    </plurals>
+</resources>

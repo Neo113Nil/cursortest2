@@ -1,0 +1,62 @@
+package com.google.android.gms.internal.consent_sdk;
+
+import defpackage.a5p;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes3.dex */
+public final class zzgy extends zzqm implements zzrr {
+    private static final zzgy zzb;
+    private int zzd;
+    private int zze;
+    private String zzf = "";
+    private long zzg;
+
+    static {
+        zzgy zzgyVar = new zzgy();
+        zzb = zzgyVar;
+        zzqm.m(zzgy.class, zzgyVar);
+    }
+
+    private zzgy() {
+    }
+
+    public static zzgx n() {
+        return (zzgx) zzb.h();
+    }
+
+    public static /* synthetic */ void o(zzgy zzgyVar, String str) {
+        zzgyVar.zzd |= 2;
+        zzgyVar.zzf = str;
+    }
+
+    public static /* synthetic */ void p(zzgy zzgyVar, long j) {
+        zzgyVar.zzd |= 4;
+        zzgyVar.zzg = j;
+    }
+
+    public static /* synthetic */ void q(zzgy zzgyVar, int i) {
+        zzgyVar.zze = i - 2;
+        zzgyVar.zzd |= 1;
+    }
+
+    @Override // com.google.android.gms.internal.consent_sdk.zzqm
+    public final Object f(int i) {
+        int i2 = i - 1;
+        if (i2 == 0) {
+            return (byte) 1;
+        }
+        if (i2 == 2) {
+            return new a5p(zzb, "\u0004\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဌ\u0000\u0002ለ\u0001\u0003ဂ\u0002", new Object[]{"zzd", "zze", "zzf", "zzg"});
+        }
+        if (i2 == 3) {
+            return new zzgy();
+        }
+        if (i2 == 4) {
+            return new zzgx(zzb);
+        }
+        if (i2 == 5) {
+            return zzb;
+        }
+        throw null;
+    }
+}

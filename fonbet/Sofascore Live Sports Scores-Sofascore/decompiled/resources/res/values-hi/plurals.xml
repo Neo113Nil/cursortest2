@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">आखिरी %1$d गेम</item>
+        <item quantity="other">आखिरी %1$d गेम्स</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">आखिरी %1$d गेम</item>
+        <item quantity="other">पिछले %1$d गेम</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">आउट</item>
+        <item quantity="other">आउट्स</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">आखिरी %1$d गेम</item>
+        <item quantity="other">आखिरी %1$d गेम्स</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d खिताब</item>
+        <item quantity="other">%1$d खिताब</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">दिन</item>
+        <item quantity="other">दिन</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">घंटा</item>
+        <item quantity="other">घंटे</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">मिनट</item>
+        <item quantity="other">मिनट</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">सेकंड</item>
+        <item quantity="other">सेकंड</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d डिलीवरी (%2$dW)</item>
+        <item quantity="other">%1$d डिलीवरियां (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d रन</item>
+        <item quantity="other">%1$d रन</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d विकेट</item>
+        <item quantity="other">%1$d विकेट</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">%1$s यूज़र ने योगदान दिया</item>
+        <item quantity="other">%1$s यूज़र्स ने योगदान दिया</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">%1$s लेग का सर्वश्रेष्ठ</item>
+        <item quantity="other">%1$s लेग्स का सर्वश्रेष्ठ</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">%1$s सेट का सर्वश्रेष्ठ</item>
+        <item quantity="other">%1$s सेट्स का सर्वश्रेष्ठ</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt;%1$d दिन बाकी</item>
+        <item quantity="other">%1$d दिन बाकी</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">%1$d एडिटर द्वारा एडिट</item>
+        <item quantity="other">%1$d एडिटर द्वारा एडिट</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">आखिरी %1$d ईवेंट</item>
+        <item quantity="other">आखिरी %1$d ईवेंट्स</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+        <item quantity="other">वीडियो को %d सेकंड आगे बढ़ाएं</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">वीडियो को %d सेकंड पीछे ले जाएं</item>
+        <item quantity="other">वीडियो को %d सेकंड पीछे ले जाएं</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">यदि आप जारी रखते हैं, तो आप (%1$d) अंक खो देंगे।</item>
+        <item quantity="other">यदि आप जारी रखते हैं, तो आप (%1$d) अंक खो देंगे।</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">आपके पास %1$d संभावित सुधार है।</item>
+        <item quantity="other">आपके पास %1$d संभावित सुधार हैं।</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d और इवेंट्स</item>
+        <item quantity="other">+%1$d और इवेंट्स</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">हर %1$s के लिए</item>
+        <item quantity="other">हर %1$s के लिए</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d मैच</item>
+        <item quantity="other">%1$d मैचेस</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">%1$d दिन बाकी, मौका न छोड़ें!</item>
+        <item quantity="other">%1$d दिन बाकी, मौका न छोड़ें!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d गोल</item>
+        <item quantity="other">+%1$d गोल</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">आखिरी %1$d गेम</item>
+        <item quantity="other">आखिरी %1$d गेम्स</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">%1$d ट्रांसफर पूरा करने के लिए अपर्याप्त फंड</item>
+        <item quantity="other">%1$d ट्रांसफर पूरे करने के लिए अपर्याप्त फंड</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">पिछले %1$d घंटा</item>
+        <item quantity="other">पिछले %1$d घंटे</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">हाल का परिणाम: %1$s</item>
+        <item quantity="other">हाल के परिणाम: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">+%1$d लेप</item>
+        <item quantity="other">+%1$d लेप्स</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d नई सूचनाएं</item>
+        <item quantity="other">%d नई सूचनाएं</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d दिन</item>
+        <item quantity="other">%1$d दिन</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d घटनाक्रम</item>
+        <item quantity="other">%1$d घटनाक्रम</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s खिलाड़ी</item>
+        <item quantity="other">%1$s खिलाड़ी</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s वोट</item>
+        <item quantity="other">%1$s वोट</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">%1$s कार्ड से अधिक</item>
+        <item quantity="other">%1$s कार्ड से अधिक</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">%1$s कॉर्नर के अधिक</item>
+        <item quantity="other">%1$s कॉर्नर के अधिक</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">%1$s गोल से अधिक</item>
+        <item quantity="other">%1$s गोल से अधिक</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">%1$s वोट के साथ, आप सभी प्रेडिक्टर्स के शीर्ष %2$s में हैं!</item>
+        <item quantity="other">%1$s वोटों के साथ, आप सभी प्रेडिक्टर्स के शीर्ष %2$s में हैं!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">इस साल, आपने टॉर्नेओ पर %1$s एंट्री की।</item>
+        <item quantity="other">इस साल, आपने टॉर्नेओ पर %1$s एंट्रीज़ की।</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">मैंने इस साल टॉर्नेओ पर %1$s एंट्री की</item>
+        <item quantity="other">मैंने इस साल टॉर्नेओ पर %1$s एंट्रीज़ की</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">%1$s व्यू के साथ, मेरा शीर्ष इवेंट था:</item>
+        <item quantity="other">%1$s व्यूज़ के साथ, मेरा शीर्ष इवेंट था:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">2025 में, आपने %1$s इवेंट में भाग लिया</item>
+        <item quantity="other">2025 में, आपने %1$s इवेंट्स में भाग लिया</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">कोई आश्चर्य नहीं। आपने इसे %1$s बार खोला।</item>
+        <item quantity="other">कोई आश्चर्य नहीं। आपने इसे %1$s बार खोला।</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">एक तेज़-तर्रार स्काउट की तरह, आपने %1$s खिलाड़ी पर नज़र रखी</item>
+        <item quantity="other">एक तेज़-तर्रार स्काउट की तरह, आपने %1$s खिलाड़ियों पर नज़र रखी</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">आखरी %1$d मैच</item>
+        <item quantity="other">आखरी %1$d मैच</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d खिताब</item>
+        <item quantity="other">%1$d खिताब</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">आप %1$d खिलाड़ी को ट्रांसफर करने वाले हैं</item>
+        <item quantity="other">आप %1$d खिलाड़ी को ट्रांसफर करने वाले हैं</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">%1$s कार्ड से कम</item>
+        <item quantity="other">%1$s कार्ड से कम</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">%1$s कॉर्नर के कम</item>
+        <item quantity="other">%1$s कॉर्नर के कम</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">%1$s गोल से कम</item>
+        <item quantity="other">%1$s गोल से कम</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d साल पहले</item>
+        <item quantity="other">%1$d वर्षों पहले</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s सप्ताह</item>
+        <item quantity="other">%1$s सप्ताह</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s वर्ष</item>
+        <item quantity="other">%1$s वर्ष</item>
+    </plurals>
+</resources>

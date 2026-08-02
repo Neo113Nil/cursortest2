@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_tv_item_add"
+        android:id="@+id/edit_tv_channels"
+        android:visible="true"
+        android:title="@string/edit_channels"
+        app:iconTint="@color/on_color_primary"
+        app:showAsAction="always"/>
+</menu>

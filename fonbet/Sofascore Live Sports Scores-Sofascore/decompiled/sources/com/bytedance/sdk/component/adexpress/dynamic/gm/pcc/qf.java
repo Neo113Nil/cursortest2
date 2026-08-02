@@ -1,0 +1,80 @@
+package com.bytedance.sdk.component.adexpress.dynamic.gm.pcc;
+
+import android.graphics.RectF;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import java.lang.ref.SoftReference;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public class qf implements View.OnTouchListener {
+    private static int gm = 10;
+    private com.bytedance.sdk.component.adexpress.dynamic.gm.kj oo;
+    private float pcc;
+    private float sf;
+    private int vj;
+    private RectF wh = new RectF();
+    private long qf = 0;
+    private final int kj = 200;
+    private final int vy = 3;
+    private SoftReference<View> ork = new SoftReference<>(null);
+
+    public qf(com.bytedance.sdk.component.adexpress.dynamic.gm.kj kjVar, int i, final ViewGroup viewGroup) {
+        this.vj = gm;
+        this.oo = kjVar;
+        if (i > 0) {
+            this.vj = i;
+        }
+        if (viewGroup != null) {
+            viewGroup.post(new Runnable() { // from class: com.bytedance.sdk.component.adexpress.dynamic.gm.pcc.qf.1
+                @Override // java.lang.Runnable
+                public void run() {
+                    View findViewById = viewGroup.findViewById(2097610746);
+                    qf.this.ork = new SoftReference(findViewById);
+                }
+            });
+        }
+    }
+
+    private RectF pcc(View view) {
+        if (view == null) {
+            return new RectF();
+        }
+        int[] iArr = new int[2];
+        view.getLocationOnScreen(iArr);
+        return new RectF(iArr[0], iArr[1], view.getWidth() + r1, view.getHeight() + iArr[1]);
+    }
+
+    @Override // android.view.View.OnTouchListener
+    public boolean onTouch(View view, MotionEvent motionEvent) {
+        com.bytedance.sdk.component.adexpress.dynamic.gm.kj kjVar;
+        com.bytedance.sdk.component.adexpress.dynamic.gm.kj kjVar2;
+        int action = motionEvent.getAction();
+        if (action == 0) {
+            this.wh = pcc(this.ork.get());
+            this.pcc = motionEvent.getRawX();
+            this.sf = motionEvent.getRawY();
+            this.qf = System.currentTimeMillis();
+        } else if (action == 1) {
+            RectF rectF = this.wh;
+            if (rectF != null && !rectF.contains(this.pcc, this.sf)) {
+                return false;
+            }
+            float rawX = motionEvent.getRawX();
+            float rawY = motionEvent.getRawY();
+            float abs = Math.abs(rawX - this.pcc);
+            float abs2 = Math.abs(rawY - this.sf);
+            int sf = com.bytedance.sdk.component.adexpress.oo.qf.sf(com.bytedance.sdk.component.adexpress.oo.pcc(), Math.abs(rawX - this.pcc));
+            int i = gm;
+            if (abs < i || abs2 < i) {
+                if ((System.currentTimeMillis() - this.qf < 200 || (abs < 3.0f && abs2 < 3.0f)) && (kjVar = this.oo) != null) {
+                    kjVar.pcc();
+                }
+            } else if (rawX > this.pcc && sf > this.vj && (kjVar2 = this.oo) != null) {
+                kjVar2.pcc();
+            }
+        }
+        return true;
+    }
+}

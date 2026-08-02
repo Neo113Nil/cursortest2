@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/surface_0"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sofascore.results.event.details.view.predictions.adapter.NestedScrollableHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager2.widget.ViewPager2
+            android:orientation="horizontal"
+            android:id="@+id/predictions_view_pager"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.sofascore.results.event.details.view.predictions.adapter.NestedScrollableHost>
+    <com.google.android.material.tabs.TabLayout
+        android:layout_gravity="center"
+        android:id="@+id/tab_layout"
+        android:background="@color/surface_0"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="2dp"
+        app:tabBackground="@drawable/predictions_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicator="@null"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="8dp"
+        app:tabRippleColor="@android:color/transparent"/>
+</LinearLayout>

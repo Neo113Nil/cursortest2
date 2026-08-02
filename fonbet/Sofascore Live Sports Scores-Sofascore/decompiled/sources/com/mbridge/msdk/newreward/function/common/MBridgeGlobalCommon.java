@@ -1,0 +1,34 @@
+package com.mbridge.msdk.newreward.function.common;
+
+import android.content.Context;
+import android.text.TextUtils;
+import com.mbridge.msdk.foundation.controller.c;
+import com.mbridge.msdk.foundation.tools.y0;
+import com.mbridge.msdk.video.bt.module.orglistener.h;
+import defpackage.dmi;
+import java.util.HashMap;
+import java.util.Map;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class MBridgeGlobalCommon {
+    public static String SESSION_ID = "";
+    public static Map<String, h> showRewardListenerMap = new HashMap();
+
+    public static void setAlertDialogText(String str, String str2, String str3, String str4, String str5) {
+        Context d = c.n().d();
+        if (!TextUtils.isEmpty(str2)) {
+            y0.b(d, dmi.q("MBridge_ConfirmTitle", str), str2.trim());
+        }
+        if (!TextUtils.isEmpty(str3)) {
+            y0.b(d, dmi.q("MBridge_ConfirmContent", str), str3.trim());
+        }
+        if (!TextUtils.isEmpty(str5)) {
+            y0.b(d, dmi.q("MBridge_CancelText", str), str5.trim());
+        }
+        if (TextUtils.isEmpty(str4)) {
+            return;
+        }
+        y0.b(d, dmi.q("MBridge_ConfirmText", str), str4.trim());
+    }
+}

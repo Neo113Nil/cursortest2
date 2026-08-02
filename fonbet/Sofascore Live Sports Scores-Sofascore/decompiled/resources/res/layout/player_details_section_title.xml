@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/surface_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/team_section"
+        app:layout_constraintTop_toTopOf="parent"
+        layout="@layout/main_section_center_with_icon"/>
+    <TextView
+        android:textColor="@color/n_lv_3"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:id="@+id/national_team_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/match_appearances"
+        android:maxLines="1"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_section"
+        style="@style/BodySmall"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">out</item>
+        <item quantity="other">outs</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d titel</item>
+        <item quantity="other">%1$d titlar</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">Dag</item>
+        <item quantity="other">Dagar</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Timme</item>
+        <item quantity="other">Timmar</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Minut</item>
+        <item quantity="other">Minuter</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Sekund</item>
+        <item quantity="other">Sekunder</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">Boll %1$d (%2$dW)</item>
+        <item quantity="other">%1$d bollar (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d run</item>
+        <item quantity="other">%1$d runs</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d wicket</item>
+        <item quantity="other">%1$d wickets</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">%1$s användare bidrog</item>
+        <item quantity="other">%1$s användare bidrog</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">Bäst av %1$s leg</item>
+        <item quantity="other">Bäst av %1$s legs</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">Bäst av %1$s set</item>
+        <item quantity="other">Bäst av %1$s set</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt;%1$d dag kvar</item>
+        <item quantity="other">%1$d dagar kvar</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">Redigerat av %1$d redaktör</item>
+        <item quantity="other">Redigerat av %1$d redaktörer</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">Senaste %1$d evenemanget</item>
+        <item quantity="other">Senaste %1$d evenemangen</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Spola framåt %d sekund</item>
+        <item quantity="other">Spola framåt %d sekunder</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Spola tillbaka %d sekund</item>
+        <item quantity="other">Spola tillbaka %d sekunder</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">Om du fortsätter kommer du att förlora (%1$d) poäng.</item>
+        <item quantity="other">Om du fortsätter kommer du att förlora (%1$d) poäng.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">Du har %1$d potentiell förbättring.</item>
+        <item quantity="other">Du har %1$d potentiella förbättringar.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">%1$d Fler evenemang</item>
+        <item quantity="other">%1$d Fler evenemang</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">För var %1$se</item>
+        <item quantity="other">För var %1$se</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d match</item>
+        <item quantity="other">%1$d matcher</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">%1$d dag kvar, missa inte chansen!</item>
+        <item quantity="other">%1$d dagar kvar, missa inte chansen!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d mål</item>
+        <item quantity="other">+%1$d mål</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">Ej tillräckligt med pengar för att genomföra %1$d övergång</item>
+        <item quantity="other">Ej tillräckligt med pengar för att genomföra %1$d övergångar</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">Senaste %1$d timmen</item>
+        <item quantity="other">Senaste %1$d timmarna</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Senaste resultat: %1$s</item>
+        <item quantity="other">Senaste resultaten: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">+%1$d varv</item>
+        <item quantity="other">+%1$d varv</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ny avisering</item>
+        <item quantity="other">%d nya aviseringar</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d Dag</item>
+        <item quantity="other">%1$d Dagar</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d event</item>
+        <item quantity="other">%1$d events</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s Spelare</item>
+        <item quantity="other">%1$s Spelare</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s röst</item>
+        <item quantity="other">%1$s röster</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">Över %1$s kort</item>
+        <item quantity="other">Över %1$s kort</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">Över %1$s hörna</item>
+        <item quantity="other">Över %1$s hörnor</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">Över %1$s mål</item>
+        <item quantity="other">Över %1$s mål</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">Med %1$s röst är du bland de bästa %2$s av alla tippare!</item>
+        <item quantity="other">Med %1$s röster är du bland de bästa %2$s av alla tippare!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">I år har du gjort %1$s inlägg i Torneo.</item>
+        <item quantity="other">I år har du gjort %1$s inlägg i Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">Jag gjorde %1$s inlägg på Torneo i år</item>
+        <item quantity="other">Jag gjorde %1$s inlägg på Torneo i år</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">Med %1$s visningar var mina favoritevenemang:</item>
+        <item quantity="other">Med %1$s visningar var mina favoritevenemang:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">Under 2025 var du på %1$s evenemang</item>
+        <item quantity="other">Under 2025 var du på %1$s evenemang</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">Inte konstigt. Du öppnade den %1$s gång.</item>
+        <item quantity="other">Inte konstigt. Du öppnade den %1$s gånger.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">Som en scout med falkögon har du haft koll på %1$s spelare</item>
+        <item quantity="other">Som en scout med falkögon har du haft koll på %1$s spelare</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">Senaste %1$d matchen</item>
+        <item quantity="other">Senaste %1$d matcherna</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d titel</item>
+        <item quantity="other">%1$d titlar</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">Du är på väg att byta %1$d spelare</item>
+        <item quantity="other">Du är på väg att byta %1$d spelare</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">Under %1$s kort</item>
+        <item quantity="other">Under %1$s kort</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">Under %1$s hörna</item>
+        <item quantity="other">Under %1$s hörnor</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">Under %1$s mål</item>
+        <item quantity="other">Under %1$s mål</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d år sedan</item>
+        <item quantity="other">%1$d år sedan</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s vecka</item>
+        <item quantity="other">%1$s veckor</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s år</item>
+        <item quantity="other">%1$s år</item>
+    </plurals>
+</resources>

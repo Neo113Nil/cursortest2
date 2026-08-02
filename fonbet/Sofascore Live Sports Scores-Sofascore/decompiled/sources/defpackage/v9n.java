@@ -1,0 +1,215 @@
+package defpackage;
+
+import com.google.android.gms.internal.pal.zzade;
+import com.google.android.gms.internal.pal.zzadf;
+import com.google.android.gms.internal.pal.zzadg;
+import java.nio.charset.Charset;
+import java.util.AbstractList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.RandomAccess;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes3.dex */
+public final class v9n extends y6n implements RandomAccess, zzade {
+    public static final v9n d;
+    public int[] b;
+    public int c;
+
+    static {
+        v9n v9nVar = new v9n(new int[0], 0);
+        d = v9nVar;
+        v9nVar.a = false;
+    }
+
+    public v9n(int[] iArr, int i) {
+        this.b = iArr;
+        this.c = i;
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final void add(int i, Object obj) {
+        int i2;
+        int intValue = ((Integer) obj).intValue();
+        c();
+        if (i < 0 || i > (i2 = this.c)) {
+            zzl.r(dmi.k(i, this.c, "Index:", ", Size:"));
+            return;
+        }
+        int[] iArr = this.b;
+        if (i2 < iArr.length) {
+            System.arraycopy(iArr, i, iArr, i + 1, i2 - i);
+        } else {
+            int[] iArr2 = new int[vxd.c(i2, 3, 2, 1)];
+            System.arraycopy(iArr, 0, iArr2, 0, i);
+            System.arraycopy(this.b, i, iArr2, i + 1, this.c - i);
+            this.b = iArr2;
+        }
+        this.b[i] = intValue;
+        this.c++;
+        ((AbstractList) this).modCount++;
+    }
+
+    @Override // defpackage.y6n, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean addAll(Collection collection) {
+        c();
+        Charset charset = zzadg.a;
+        collection.getClass();
+        if (!(collection instanceof v9n)) {
+            return super.addAll(collection);
+        }
+        v9n v9nVar = (v9n) collection;
+        int i = v9nVar.c;
+        if (i == 0) {
+            return false;
+        }
+        int i2 = this.c;
+        if (Integer.MAX_VALUE - i2 < i) {
+            throw new OutOfMemoryError();
+        }
+        int i3 = i2 + i;
+        int[] iArr = this.b;
+        if (i3 > iArr.length) {
+            iArr = Arrays.copyOf(iArr, i3);
+            this.b = iArr;
+        }
+        System.arraycopy(v9nVar.b, 0, iArr, this.c, v9nVar.c);
+        this.c = i3;
+        ((AbstractList) this).modCount++;
+        return true;
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final boolean contains(Object obj) {
+        return indexOf(obj) != -1;
+    }
+
+    public final void d(int i) {
+        c();
+        int i2 = this.c;
+        int[] iArr = this.b;
+        if (i2 == iArr.length) {
+            int[] iArr2 = new int[vxd.c(i2, 3, 2, 1)];
+            System.arraycopy(iArr, 0, iArr2, 0, i2);
+            this.b = iArr2;
+            iArr = iArr2;
+        }
+        int i3 = this.c;
+        this.c = i3 + 1;
+        iArr[i3] = i;
+    }
+
+    @Override // defpackage.y6n, java.util.AbstractList, java.util.Collection, java.util.List
+    public final boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof v9n)) {
+            return super.equals(obj);
+        }
+        v9n v9nVar = (v9n) obj;
+        if (this.c == v9nVar.c) {
+            int[] iArr = v9nVar.b;
+            for (int i = 0; i < this.c; i++) {
+                if (this.b[i] == iArr[i]) {
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final /* synthetic */ Object get(int i) {
+        h(i);
+        return Integer.valueOf(this.b[i]);
+    }
+
+    public final void h(int i) {
+        if (i < 0 || i >= this.c) {
+            zzl.r(dmi.k(i, this.c, "Index:", ", Size:"));
+        }
+    }
+
+    @Override // defpackage.y6n, java.util.AbstractList, java.util.Collection, java.util.List
+    public final int hashCode() {
+        int i = 1;
+        for (int i2 = 0; i2 < this.c; i2++) {
+            i = (i * 31) + this.b[i2];
+        }
+        return i;
+    }
+
+    @Override // com.google.android.gms.internal.pal.zzadf
+    public final /* bridge */ /* synthetic */ zzadf i(int i) {
+        if (i >= this.c) {
+            return new v9n(Arrays.copyOf(this.b, i), this.c);
+        }
+        ilg.c();
+        return null;
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final int indexOf(Object obj) {
+        if (!(obj instanceof Integer)) {
+            return -1;
+        }
+        int intValue = ((Integer) obj).intValue();
+        int i = this.c;
+        for (int i2 = 0; i2 < i; i2++) {
+            if (this.b[i2] == intValue) {
+                return i2;
+            }
+        }
+        return -1;
+    }
+
+    @Override // defpackage.y6n, java.util.AbstractList, java.util.List
+    public final /* bridge */ /* synthetic */ Object remove(int i) {
+        c();
+        h(i);
+        int[] iArr = this.b;
+        int i2 = iArr[i];
+        if (i < this.c - 1) {
+            System.arraycopy(iArr, i + 1, iArr, i, (r2 - i) - 1);
+        }
+        this.c--;
+        ((AbstractList) this).modCount++;
+        return Integer.valueOf(i2);
+    }
+
+    @Override // java.util.AbstractList
+    public final void removeRange(int i, int i2) {
+        c();
+        if (i2 < i) {
+            zzl.r("toIndex < fromIndex");
+            return;
+        }
+        int[] iArr = this.b;
+        System.arraycopy(iArr, i2, iArr, i, this.c - i2);
+        this.c -= i2 - i;
+        ((AbstractList) this).modCount++;
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final /* bridge */ /* synthetic */ Object set(int i, Object obj) {
+        int intValue = ((Integer) obj).intValue();
+        c();
+        h(i);
+        int[] iArr = this.b;
+        int i2 = iArr[i];
+        iArr[i] = intValue;
+        return Integer.valueOf(i2);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.c;
+    }
+
+    @Override // defpackage.y6n, java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final /* bridge */ /* synthetic */ boolean add(Object obj) {
+        d(((Integer) obj).intValue());
+        return true;
+    }
+}

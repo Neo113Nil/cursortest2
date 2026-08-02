@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/cricket_table_root"
+    android:background="@color/surface_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/table_inning_score_1"
+            layout="@layout/details_table_cricket_row"/>
+        <include
+            android:id="@+id/table_inning_score_2"
+            layout="@layout/details_table_cricket_row"/>
+        <include
+            android:id="@+id/table_current_run_rate"
+            android:visibility="gone"
+            layout="@layout/details_table_cricket_row"/>
+        <include
+            android:id="@+id/table_target_run_rate"
+            android:visibility="gone"
+            layout="@layout/details_table_cricket_row"/>
+    </LinearLayout>
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/table_cricket_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        style="@style/TableMedium"/>
+</LinearLayout>

@@ -1,0 +1,57 @@
+package com.fyber.inneractive.sdk.protobuf;
+
+import java.util.AbstractList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.RandomAccess;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class r3 extends AbstractList implements q1, RandomAccess {
+    public final q1 a;
+
+    public r3(q1 q1Var) {
+        this.a = q1Var;
+    }
+
+    @Override // com.fyber.inneractive.sdk.protobuf.q1
+    public final Object a(int i) {
+        return this.a.a(i);
+    }
+
+    @Override // com.fyber.inneractive.sdk.protobuf.q1
+    public final List b() {
+        return this.a.b();
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final Object get(int i) {
+        return (String) this.a.get(i);
+    }
+
+    @Override // java.util.AbstractList, java.util.AbstractCollection, java.util.Collection, java.lang.Iterable, java.util.List
+    public final Iterator iterator() {
+        return new q3(this);
+    }
+
+    @Override // java.util.AbstractList, java.util.List
+    public final ListIterator listIterator(int i) {
+        return new p3(this, i);
+    }
+
+    @Override // java.util.AbstractCollection, java.util.Collection, java.util.List
+    public final int size() {
+        return this.a.size();
+    }
+
+    @Override // com.fyber.inneractive.sdk.protobuf.q1
+    public final q1 a() {
+        return this;
+    }
+
+    @Override // com.fyber.inneractive.sdk.protobuf.q1
+    public final void a(s sVar) {
+        throw new UnsupportedOperationException();
+    }
+}

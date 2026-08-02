@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen">
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:enforceNavigationBarContrast">true</item>
+    </style>
+    <style name="SofaTextStyle" parent="@style/Widget.MaterialComponents.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:hyphenationFrequency">normalFast</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sofascore.results.redesign.emptystateblocks.GraphicLarge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:graphicLargeButtonText="@string/show_upcoming"
+    app:graphicLargeDrawable="@drawable/no_events_1"
+    app:graphicLargeSubtitle="@string/empty_no_events_date_sport_body_text"
+    app:graphicLargeTitle="@string/empty_no_events_header"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>

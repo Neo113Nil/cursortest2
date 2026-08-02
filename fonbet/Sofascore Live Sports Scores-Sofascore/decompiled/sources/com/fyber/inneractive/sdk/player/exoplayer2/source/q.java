@@ -1,0 +1,71 @@
+package com.fyber.inneractive.sdk.player.exoplayer2.source;
+
+import android.net.Uri;
+import android.os.Handler;
+import com.fyber.inneractive.sdk.player.controller.b0;
+import com.mbridge.msdk.playercommon.exoplayer2.C;
+import defpackage.ilg;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class q implements u, t {
+    public final Uri a;
+    public final com.fyber.inneractive.sdk.player.exoplayer2.upstream.g b;
+    public final com.fyber.inneractive.sdk.player.exoplayer2.extractor.k c;
+    public final int d;
+    public final Handler e;
+    public final b0 f;
+    public final com.fyber.inneractive.sdk.player.exoplayer2.v g = new com.fyber.inneractive.sdk.player.exoplayer2.v();
+    public t h;
+    public boolean i;
+
+    public q(Uri uri, com.fyber.inneractive.sdk.player.exoplayer2.upstream.g gVar, com.fyber.inneractive.sdk.player.exoplayer2.extractor.c cVar, int i, Handler handler, b0 b0Var) {
+        this.a = uri;
+        this.b = gVar;
+        this.c = cVar;
+        this.d = i;
+        this.e = handler;
+        this.f = b0Var;
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.u
+    public final s a(int i, com.fyber.inneractive.sdk.player.exoplayer2.upstream.b bVar, long j) {
+        if (i == 0) {
+            return new p(this.a, this.b.a(), this.c.a(), this.d, this.e, this.f, this, bVar);
+        }
+        ilg.c();
+        return null;
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.u
+    public final void b() {
+        this.h = null;
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.u
+    public final void a(t tVar) {
+        this.h = tVar;
+        tVar.a(new x(C.TIME_UNSET, C.TIME_UNSET, 0L, 0L, false, false), null);
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.u
+    public final void a() {
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.u
+    public final void a(s sVar) {
+        p pVar = (p) sVar;
+        pVar.i.a(new k(pVar, pVar.j));
+        pVar.n.removeCallbacksAndMessages(null);
+        pVar.G = true;
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.source.t
+    public final void a(x xVar, com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.g gVar) {
+        boolean z = xVar.a(0, this.g, false).d != C.TIME_UNSET;
+        if (!this.i || z) {
+            this.i = z;
+            this.h.a(xVar, null);
+        }
+    }
+}

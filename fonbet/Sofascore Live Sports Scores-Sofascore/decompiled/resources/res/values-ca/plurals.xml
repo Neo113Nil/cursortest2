@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">Últim %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">Últim %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">Dia</item>
+        <item quantity="other">Dies</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Hora</item>
+        <item quantity="other">Hores</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Minut</item>
+        <item quantity="other">Minuts</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Segon</item>
+        <item quantity="other">Segons</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d Entrega (%2$dW)</item>
+        <item quantity="other">%1$d Entregues (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d carrera</item>
+        <item quantity="other">%1$d carreres</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d porticó</item>
+        <item quantity="other">%1$d porticons</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">Editat per %1$d editor</item>
+        <item quantity="other">Editat pels %1$d editors</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">Últims %1$d esdeveniment</item>
+        <item quantity="other">Últims %1$d esdeveniments</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Avança ràpidament %d segon</item>
+        <item quantity="other">Avança ràpidament %d segons</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rebobina %d segon</item>
+        <item quantity="other">Rebobina %d segons</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d esdeveniments més</item>
+        <item quantity="other">+%1$d esdeveniments més</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d gol</item>
+        <item quantity="other">+%1$d gols</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">Diners insuficients per a completar %1$d la transferència</item>
+        <item quantity="other">Diners insuficients per a completar %1$d les transferències</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Resultat recent: %1$s</item>
+        <item quantity="other">Resultats recents: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">+%1$d volta</item>
+        <item quantity="other">+%1$d voltàs</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d notificació nova</item>
+        <item quantity="other">%d notificacions noves</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d Dia</item>
+        <item quantity="other">%1$d Dies</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">esdeveniment %1$d</item>
+        <item quantity="other">esdeveniments %1$d</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s jugador</item>
+        <item quantity="other">%1$s jugadors</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">Més d&apos;%1$s targeta</item>
+        <item quantity="other">Més de %1$s targetes</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">Més d&apos;%1$s còrner</item>
+        <item quantity="other">Més de %1$s córners</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">Més d&apos;%1$s gol</item>
+        <item quantity="other">Més de %1$s gols</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">Últims %1$d partit</item>
+        <item quantity="other">Últims %1$d partits</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">Estàs a punt de transferir %1$d jugador</item>
+        <item quantity="other">Estàs a punt de transferir %1$d jugadors</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">Menys d&apos;%1$s targeta</item>
+        <item quantity="other">Menys de %1$s targetes</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">Menys d&apos;%1$s còrner</item>
+        <item quantity="other">Més de %1$s còrners</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">Menys d&apos;%1$s gol</item>
+        <item quantity="other">Menys de %1$s gols</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d any anterior</item>
+        <item quantity="other">%1$d anys passats</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s jornada</item>
+        <item quantity="other">%1$s jornades</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s any</item>
+        <item quantity="other">%1$s anys</item>
+    </plurals>
+</resources>

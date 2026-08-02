@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:drawable="@drawable/_chat_icon__0_res_0x7f080037">
+    <target
+        android:name="_R_G_L_2_G"
+        android:animation="@drawable/_chat_icon__1_res_0x7f080038"/>
+    <target
+        android:name="_R_G_L_1_G"
+        android:animation="@drawable/_chat_icon__8_res_0x7f080052"/>
+    <target
+        android:name="_R_G_L_1_G_N_4_T_0"
+        android:animation="@drawable/_chat_icon__17_res_0x7f080040"/>
+    <target
+        android:name="_R_G_L_0_G"
+        android:animation="@drawable/_chat_icon__18_res_0x7f080041"/>
+    <target
+        android:name="_R_G_L_0_G_N_4_T_0"
+        android:animation="@drawable/_chat_icon__27_res_0x7f08004b"/>
+    <target
+        android:name="time_group"
+        android:animation="@drawable/_chat_icon__28_res_0x7f08004c"/>
+</animated-vector>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">out</item>
+        <item quantity="other">outs</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d título</item>
+        <item quantity="other">%1$d títulos</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">Día</item>
+        <item quantity="other">Días</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Hora</item>
+        <item quantity="other">Horas</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Minuto</item>
+        <item quantity="other">Minutos</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Segundo</item>
+        <item quantity="other">Segundos</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d entrega (%2$dW)</item>
+        <item quantity="other">%1$d entregas (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d carrera</item>
+        <item quantity="other">%1$d carreras</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d wicket</item>
+        <item quantity="other">%1$d wickets</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">Ha contribuido %1$s usuario</item>
+        <item quantity="other">Han contribuido %1$s usuarios</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">Al mejor de %1$s leg</item>
+        <item quantity="other">Al mejor de %1$s legs</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">Al mejor de%1$s set</item>
+        <item quantity="other">Al mejor de %1$s sets</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt; Queda %1$d día</item>
+        <item quantity="other">Quedan %1$d días</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">Editado por %1$d editor</item>
+        <item quantity="other">Editado por %1$d editores</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">%1$d último evento</item>
+        <item quantity="other">%1$d últimos eventos</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">Si continúas, perderás (%1$d) punto.</item>
+        <item quantity="other">Si continúas, perderás (%1$d) puntos.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">Tienes %1$d mejora potencial.</item>
+        <item quantity="other">Tienes %1$d mejoras potenciales.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d evento más</item>
+        <item quantity="other">+%1$d eventos más</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">Por cada %1$s</item>
+        <item quantity="other">Por cada %1$s</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d partido</item>
+        <item quantity="other">%1$d partidos</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">Queda %1$d día, ¡no te lo pierdas!</item>
+        <item quantity="other">Quedan %1$d días, ¡no te lo pierdas!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d gol</item>
+        <item quantity="other">+%1$d goles</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">Fondos insuficientes para finalizar %1$d transferencia</item>
+        <item quantity="other">Fondos insuficientes para finalizar %1$d transferencias</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">Última %1$d hora</item>
+        <item quantity="other">Últimas %1$d horas</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Resultado reciente: %1$s</item>
+        <item quantity="other">Resultados recientes: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">%1$d vuelta</item>
+        <item quantity="other">%1$d vuelta</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d Día</item>
+        <item quantity="other">%1$d días</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d evento</item>
+        <item quantity="other">%1$d eventos</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s jugador</item>
+        <item quantity="other">%1$s jugadores</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s voto</item>
+        <item quantity="other">%1$s votos</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">Más de%1$s tarjeta</item>
+        <item quantity="other">Más de %1$s tarjetas</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">Más de %1$s córner</item>
+        <item quantity="other">Más de %1$s córneres</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">Más de %1$s gol</item>
+        <item quantity="other">Más de %1$s goles</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">Con %1$s voto, ¡estás en el %2$s de los mejores pronosticadores!</item>
+        <item quantity="other">Con %1$s votos, ¡estás en el %2$s de los mejores pronosticadores!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">Este año, escribiste %1$s entrada en Torneo.</item>
+        <item quantity="other">Este año, escribiste %1$s entradas en Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">Escribí %1$s entrada en Torneo este año</item>
+        <item quantity="other">Escribí %1$s entradas en Torneo este año</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">Con %1$s visita, mi evento favorito fue:</item>
+        <item quantity="other">Con %1$s visitas, mi evento favorito fue:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">En 2025, asististe a %1$s evento</item>
+        <item quantity="other">En 2025, asististe a %1$s eventos</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">No es de extrañar. Lo abriste %1$s vez.</item>
+        <item quantity="other">No es de extrañar. Lo abriste %1$s veces.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">Como un ojeador profesional, estuviste pendiente de %1$s jugador</item>
+        <item quantity="other">Como un ojeador profesional, estuviste pendiente de %1$s jugadores</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">%1$d último partido</item>
+        <item quantity="other">%1$d últimos partidos</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d título</item>
+        <item quantity="other">%1$d títulos</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">Estás a punto de transferir %1$d jugador</item>
+        <item quantity="other">Estás a punto de transferir %1$d jugadores</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">Menos de %1$s tarjeta</item>
+        <item quantity="other">Menos de %1$s tarjetas</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">Menos de %1$s córner</item>
+        <item quantity="other">Menos de %1$s córneres</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">Menos de %1$s gol</item>
+        <item quantity="other">Menos de %1$s goles</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">hace %1$d año</item>
+        <item quantity="other">hace %1$d años</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s semana</item>
+        <item quantity="other">%1$s semanas</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s año</item>
+        <item quantity="other">%1$s años</item>
+    </plurals>
+</resources>

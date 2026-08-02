@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="end|center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_bottom_divider_surface_1"
+    android:paddingTop="16dp"
+    android:paddingBottom="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:paddingHorizontal="16dp">
+    <TextView
+        android:textColor="@color/live"
+        android:id="@+id/live_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/standings_live"
+        android:drawablePadding="4dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="4dp"
+        app:drawableStartCompat="@drawable/live_circle"
+        app:drawableTint="@color/live"
+        style="@style/BodySmall"/>
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:layout_marginStart="4dp"
+        style="@style/BodySmall"/>
+</LinearLayout>

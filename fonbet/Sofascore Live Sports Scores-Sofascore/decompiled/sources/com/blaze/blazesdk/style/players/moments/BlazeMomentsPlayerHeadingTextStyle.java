@@ -1,0 +1,254 @@
+package com.blaze.blazesdk.style.players.moments;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import androidx.annotation.Keep;
+import com.blaze.blazesdk.style.players.IPlayerItemTextStyle;
+import com.blaze.blazesdk.utils.BlazeParcelable;
+import com.fyber.inneractive.sdk.external.NativeAdContent;
+import com.ironsource.C4018c8;
+import defpackage.b6a;
+import defpackage.g7a;
+import defpackage.gz8;
+import defpackage.jp5;
+import defpackage.l4a;
+import defpackage.lnb;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+@Keep
+@Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b \n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u00002\u00020\u00012\u00020\u0002:\u00015B7\b\u0000\u0012\n\b\u0001\u0010\u0003\u001a\u0004\u0018\u00010\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\b\b\u0001\u0010\u0007\u001a\u00020\u0004\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b¢\u0006\u0004\b\f\u0010\rJ\u0010\u0010\"\u001a\u0004\u0018\u00010\u0004HÆ\u0003¢\u0006\u0002\u0010\u000fJ\t\u0010#\u001a\u00020\u0006HÆ\u0003J\t\u0010$\u001a\u00020\u0004HÆ\u0003J\t\u0010%\u001a\u00020\tHÆ\u0003J\t\u0010&\u001a\u00020\u000bHÆ\u0003JB\u0010'\u001a\u00020\u00002\n\b\u0003\u0010\u0003\u001a\u0004\u0018\u00010\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0003\u0010\u0007\u001a\u00020\u00042\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000bHÆ\u0001¢\u0006\u0002\u0010(J\u0006\u0010)\u001a\u00020\u0004J\u0013\u0010*\u001a\u00020\u000b2\b\u0010+\u001a\u0004\u0018\u00010,HÖ\u0003J\t\u0010-\u001a\u00020\u0004HÖ\u0001J\t\u0010.\u001a\u00020/HÖ\u0001J\u0016\u00100\u001a\u0002012\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u00020\u0004R\u001e\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0096\u000e¢\u0006\u0010\n\u0002\u0010\u0012\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0005\u001a\u00020\u0006X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u001a\u0010\u0007\u001a\u00020\u0004X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\b\u001a\u00020\tX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u001a\u0010\n\u001a\u00020\u000bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u001f\"\u0004\b \u0010!¨\u00066"}, d2 = {"Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle;", "Lcom/blaze/blazesdk/style/players/IPlayerItemTextStyle;", "Lcom/blaze/blazesdk/utils/BlazeParcelable;", "fontResId", "", "textSize", "", "textColor", "contentSource", "Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;", C4018c8.k, "", "<init>", "(Ljava/lang/Integer;FILcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;Z)V", "getFontResId", "()Ljava/lang/Integer;", "setFontResId", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "getTextSize", "()F", "setTextSize", "(F)V", "getTextColor", "()I", "setTextColor", "(I)V", "getContentSource", "()Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;", "setContentSource", "(Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;)V", "()Z", "setVisible", "(Z)V", "component1", "component2", "component3", "component4", "component5", "copy", "(Ljava/lang/Integer;FILcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;Z)Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle;", "describeContents", "equals", "other", "", "hashCode", "toString", "", "writeToParcel", "", "dest", "Landroid/os/Parcel;", "flags", "BlazeContentSource", "blazesdk_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: classes2.dex */
+public final /* data */ class BlazeMomentsPlayerHeadingTextStyle implements IPlayerItemTextStyle, BlazeParcelable {
+    public static final int $stable = 8;
+
+    @NotNull
+    public static final Parcelable.Creator<BlazeMomentsPlayerHeadingTextStyle> CREATOR = new a();
+
+    @NotNull
+    private BlazeContentSource contentSource;
+
+    @Nullable
+    private Integer fontResId;
+    private boolean isVisible;
+    private int textColor;
+    private float textSize;
+
+    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    @Keep
+    @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0087\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"}, d2 = {"Lcom/blaze/blazesdk/style/players/moments/BlazeMomentsPlayerHeadingTextStyle$BlazeContentSource;", "", "<init>", "(Ljava/lang/String;I)V", NativeAdContent.ViewTag.AD_TITLE, "SUBTITLE", "blazesdk_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+    /* loaded from: classes.dex */
+    public static final class BlazeContentSource {
+        private static final /* synthetic */ jp5 $ENTRIES;
+        private static final /* synthetic */ BlazeContentSource[] $VALUES;
+        public static final BlazeContentSource TITLE = new BlazeContentSource(NativeAdContent.ViewTag.AD_TITLE, 0);
+        public static final BlazeContentSource SUBTITLE = new BlazeContentSource("SUBTITLE", 1);
+
+        private static final /* synthetic */ BlazeContentSource[] $values() {
+            return new BlazeContentSource[]{TITLE, SUBTITLE};
+        }
+
+        static {
+            BlazeContentSource[] $values = $values();
+            $VALUES = $values;
+            $ENTRIES = gz8.G($values);
+        }
+
+        private BlazeContentSource(String str, int i) {
+        }
+
+        @NotNull
+        public static jp5 getEntries() {
+            return $ENTRIES;
+        }
+
+        public static BlazeContentSource valueOf(String str) {
+            return (BlazeContentSource) Enum.valueOf(BlazeContentSource.class, str);
+        }
+
+        public static BlazeContentSource[] values() {
+            return (BlazeContentSource[]) $VALUES.clone();
+        }
+    }
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public static final class a implements Parcelable.Creator {
+        @Override // android.os.Parcelable.Creator
+        public final Object createFromParcel(Parcel parcel) {
+            parcel.getClass();
+            return new BlazeMomentsPlayerHeadingTextStyle(parcel.readInt() == 0 ? null : Integer.valueOf(parcel.readInt()), parcel.readFloat(), parcel.readInt(), BlazeContentSource.valueOf(parcel.readString()), parcel.readInt() != 0);
+        }
+
+        @Override // android.os.Parcelable.Creator
+        public final Object[] newArray(int i) {
+            return new BlazeMomentsPlayerHeadingTextStyle[i];
+        }
+    }
+
+    public BlazeMomentsPlayerHeadingTextStyle(@Nullable Integer num, float f, int i, @NotNull BlazeContentSource blazeContentSource, boolean z) {
+        blazeContentSource.getClass();
+        this.fontResId = num;
+        this.textSize = f;
+        this.textColor = i;
+        this.contentSource = blazeContentSource;
+        this.isVisible = z;
+    }
+
+    public static /* synthetic */ BlazeMomentsPlayerHeadingTextStyle copy$default(BlazeMomentsPlayerHeadingTextStyle blazeMomentsPlayerHeadingTextStyle, Integer num, float f, int i, BlazeContentSource blazeContentSource, boolean z, int i2, Object obj) {
+        if ((i2 & 1) != 0) {
+            num = blazeMomentsPlayerHeadingTextStyle.fontResId;
+        }
+        if ((i2 & 2) != 0) {
+            f = blazeMomentsPlayerHeadingTextStyle.textSize;
+        }
+        if ((i2 & 4) != 0) {
+            i = blazeMomentsPlayerHeadingTextStyle.textColor;
+        }
+        if ((i2 & 8) != 0) {
+            blazeContentSource = blazeMomentsPlayerHeadingTextStyle.contentSource;
+        }
+        if ((i2 & 16) != 0) {
+            z = blazeMomentsPlayerHeadingTextStyle.isVisible;
+        }
+        boolean z2 = z;
+        int i3 = i;
+        return blazeMomentsPlayerHeadingTextStyle.copy(num, f, i3, blazeContentSource, z2);
+    }
+
+    @Nullable
+    /* renamed from: component1, reason: from getter */
+    public final Integer getFontResId() {
+        return this.fontResId;
+    }
+
+    /* renamed from: component2, reason: from getter */
+    public final float getTextSize() {
+        return this.textSize;
+    }
+
+    /* renamed from: component3, reason: from getter */
+    public final int getTextColor() {
+        return this.textColor;
+    }
+
+    @NotNull
+    /* renamed from: component4, reason: from getter */
+    public final BlazeContentSource getContentSource() {
+        return this.contentSource;
+    }
+
+    /* renamed from: component5, reason: from getter */
+    public final boolean getIsVisible() {
+        return this.isVisible;
+    }
+
+    @NotNull
+    public final BlazeMomentsPlayerHeadingTextStyle copy(@Nullable Integer fontResId, float textSize, int textColor, @NotNull BlazeContentSource contentSource, boolean isVisible) {
+        contentSource.getClass();
+        return new BlazeMomentsPlayerHeadingTextStyle(fontResId, textSize, textColor, contentSource, isVisible);
+    }
+
+    @Override // android.os.Parcelable
+    public final int describeContents() {
+        return 0;
+    }
+
+    public boolean equals(@Nullable Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (!(other instanceof BlazeMomentsPlayerHeadingTextStyle)) {
+            return false;
+        }
+        BlazeMomentsPlayerHeadingTextStyle blazeMomentsPlayerHeadingTextStyle = (BlazeMomentsPlayerHeadingTextStyle) other;
+        return Intrinsics.c(this.fontResId, blazeMomentsPlayerHeadingTextStyle.fontResId) && Float.compare(this.textSize, blazeMomentsPlayerHeadingTextStyle.textSize) == 0 && this.textColor == blazeMomentsPlayerHeadingTextStyle.textColor && this.contentSource == blazeMomentsPlayerHeadingTextStyle.contentSource && this.isVisible == blazeMomentsPlayerHeadingTextStyle.isVisible;
+    }
+
+    @NotNull
+    public final BlazeContentSource getContentSource() {
+        return this.contentSource;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    @Nullable
+    public Integer getFontResId() {
+        return this.fontResId;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    public int getTextColor() {
+        return this.textColor;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    public float getTextSize() {
+        return this.textSize;
+    }
+
+    public int hashCode() {
+        Integer num = this.fontResId;
+        return Boolean.hashCode(this.isVisible) + ((this.contentSource.hashCode() + l4a.e(this.textColor, g7a.o(this.textSize, (num == null ? 0 : num.hashCode()) * 31))) * 31);
+    }
+
+    public final boolean isVisible() {
+        return this.isVisible;
+    }
+
+    public final void setContentSource(@NotNull BlazeContentSource blazeContentSource) {
+        blazeContentSource.getClass();
+        this.contentSource = blazeContentSource;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    public void setFontResId(@Nullable Integer num) {
+        this.fontResId = num;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    public void setTextColor(int i) {
+        this.textColor = i;
+    }
+
+    @Override // com.blaze.blazesdk.style.players.IPlayerItemTextStyle
+    public void setTextSize(float f) {
+        this.textSize = f;
+    }
+
+    public final void setVisible(boolean z) {
+        this.isVisible = z;
+    }
+
+    @NotNull
+    public String toString() {
+        StringBuilder sb = new StringBuilder("BlazeMomentsPlayerHeadingTextStyle(fontResId=");
+        sb.append(this.fontResId);
+        sb.append(", textSize=");
+        sb.append(this.textSize);
+        sb.append(", textColor=");
+        sb.append(this.textColor);
+        sb.append(", contentSource=");
+        sb.append(this.contentSource);
+        sb.append(", isVisible=");
+        return lnb.r(sb, this.isVisible, ')');
+    }
+
+    @Override // android.os.Parcelable
+    public final void writeToParcel(@NotNull Parcel dest, int flags) {
+        dest.getClass();
+        Integer num = this.fontResId;
+        if (num == null) {
+            dest.writeInt(0);
+        } else {
+            b6a.h(dest, num);
+        }
+        dest.writeFloat(this.textSize);
+        dest.writeInt(this.textColor);
+        dest.writeString(this.contentSource.name());
+        dest.writeInt(this.isVisible ? 1 : 0);
+    }
+}

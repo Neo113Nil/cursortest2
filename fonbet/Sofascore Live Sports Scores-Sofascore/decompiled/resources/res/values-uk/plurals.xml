@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">Остання %1$d гра</item>
+        <item quantity="few">Останні %1$d гри</item>
+        <item quantity="many">Останні %1$d ігор</item>
+        <item quantity="other">Останні %1$d ігор</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">Остання %1$d гра</item>
+        <item quantity="few">Останні %1$d гри</item>
+        <item quantity="many">Останні %1$d ігор</item>
+        <item quantity="other">Останні %1$d ігор</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">вилучення</item>
+        <item quantity="few">вилучення</item>
+        <item quantity="many">вилучень</item>
+        <item quantity="other">вилучення</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">Остання %1$d гра</item>
+        <item quantity="few">Останні %1$d гри</item>
+        <item quantity="many">Останні %1$d ігор</item>
+        <item quantity="other">Останні %1$d ігор</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d титули</item>
+        <item quantity="few">%1$d титула</item>
+        <item quantity="many">%1$d титулів</item>
+        <item quantity="other">%1$d титулів</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">День</item>
+        <item quantity="few">Дні</item>
+        <item quantity="many">Днів</item>
+        <item quantity="other">Дні</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Година</item>
+        <item quantity="few">Години</item>
+        <item quantity="many">Годин</item>
+        <item quantity="other">Годин</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Хвилини</item>
+        <item quantity="few">Хвилини</item>
+        <item quantity="many">Хвилин</item>
+        <item quantity="other">Хвилин</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Секунда</item>
+        <item quantity="few">Секунди</item>
+        <item quantity="many">Секунд</item>
+        <item quantity="other">Секунд</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d Подача (%2$d)</item>
+        <item quantity="few">%1$d Подачі (%2$dп)</item>
+        <item quantity="many">%1$d Подачі (%2$dп)</item>
+        <item quantity="other">%1$d Подачі (%2$dп)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d біг</item>
+        <item quantity="few">%1$d біжать</item>
+        <item quantity="many">%1$d Біжать</item>
+        <item quantity="other">%1$d біжить</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d хвіртка</item>
+        <item quantity="few">%1$d хвіртки</item>
+        <item quantity="many">%1$d хвірток</item>
+        <item quantity="other">%1$d хвірток</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">Внесок від %1$s користувача</item>
+        <item quantity="few">Внесок від %1$s користувачів</item>
+        <item quantity="many">Внесок від %1$s користувачів</item>
+        <item quantity="other">Внесок від %1$s користувача</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">Найкращий з %1$s лег</item>
+        <item quantity="few">Найкращий з %1$s лег</item>
+        <item quantity="many">Найкращий з %1$s лег</item>
+        <item quantity="other">Найкращий з %1$s лег</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">Найкращий з %1$s раунду</item>
+        <item quantity="few">Найкращий з %1$s раундів</item>
+        <item quantity="many">Найкращий з %1$s раундів</item>
+        <item quantity="other">Найкращий з %1$s раундів</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt;%1$d день залишився</item>
+        <item quantity="few">%1$d дні залишилось</item>
+        <item quantity="many">%1$d днів залишилось</item>
+        <item quantity="other">%1$d днів залишилось</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">Відредаговано %1$d редактором</item>
+        <item quantity="few">Відредаговано %1$d редакторами</item>
+        <item quantity="many">Відредаговано %1$d редакторами</item>
+        <item quantity="other">Відредаговано %1$d редактором(-ми)</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">Остання %1$d подія</item>
+        <item quantity="few">Останні %1$d події</item>
+        <item quantity="many">Останні %1$d подій</item>
+        <item quantity="other">Останні %1$d подій</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Перемотати вперед на %d секунду</item>
+        <item quantity="few">Перемотати вперед на %d секунди</item>
+        <item quantity="many">Перемотати вперед на %d секунд</item>
+        <item quantity="other">Перемотати вперед на %d секунди</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Перемотати назад на %d секунду</item>
+        <item quantity="few">Перемотати назад на %d секунди</item>
+        <item quantity="many">Перемотати назад на %d секунд</item>
+        <item quantity="other">Перемотати назад на %d секунди</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">Якщо ви продовжите, ви втратите (%1$d) очко.</item>
+        <item quantity="few">Якщо ви продовжите, ви втратите (%1$d) очки.</item>
+        <item quantity="many">Якщо ви продовжите, ви втратите (%1$d) очків.</item>
+        <item quantity="other">Якщо ви продовжите, ви втратите (%1$d) очок.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">У вас є %1$d потенційне покращення.</item>
+        <item quantity="few">У вас є %1$d потенційних покращень.</item>
+        <item quantity="many">У вас є %1$d потенційних покращень.</item>
+        <item quantity="other">У вас є %1$d потенційних покращень.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d Більше подій</item>
+        <item quantity="few">+%1$d Більше подій</item>
+        <item quantity="many">+%1$d багато подій</item>
+        <item quantity="other">+%1$d Більше подій</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">Для кожного %1$s</item>
+        <item quantity="few">Для кожного %1$s</item>
+        <item quantity="many">Для кожного %1$s</item>
+        <item quantity="other">Для кожного(-их) %1$s</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d матч</item>
+        <item quantity="few">%1$d матчі</item>
+        <item quantity="many">%1$d матчів</item>
+        <item quantity="other">%1$d матчі</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">%1$d день залишився, не пропустіть!</item>
+        <item quantity="few">%1$d дні залишилось, не пропустіть!</item>
+        <item quantity="many">%1$d днів залишилось, не пропустіть!</item>
+        <item quantity="other">%1$d днів залишилось, не пропустіть!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d гол</item>
+        <item quantity="few">+%1$d голи</item>
+        <item quantity="many">+%1$d голів</item>
+        <item quantity="other">+%1$d голи (-ів)</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">Остання %1$d гра</item>
+        <item quantity="few">Останні %1$d гри</item>
+        <item quantity="many">Останні %1$d ігор</item>
+        <item quantity="other">Останні %1$d ігор</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">Недостатньо коштів для здійснення %1$d трансферу</item>
+        <item quantity="few">Недостатньо коштів для здійснення %1$d переходів</item>
+        <item quantity="many">Недостатньо коштів для здійснення %1$d переходів</item>
+        <item quantity="other">Недостатньо коштів для здійснення %1$d переходів</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">За останню (%1$d) годину</item>
+        <item quantity="few">За останні %1$d години</item>
+        <item quantity="many">За останні %1$d годин</item>
+        <item quantity="other">За останні %1$d годин(-ни)</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Нещодавній результат:%1$s</item>
+        <item quantity="few">Нещодавні результати: %1$s</item>
+        <item quantity="many">Нещодавні результати: %1$s</item>
+        <item quantity="other">Нещодавній результат(-ти): %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">+%1$d коло</item>
+        <item quantity="few">+%1$d кола</item>
+        <item quantity="many">+%1$d колів</item>
+        <item quantity="other">+%1$d колів</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+        <item quantity="other">%d нового сповіщення</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d День</item>
+        <item quantity="few">%1$d Дні</item>
+        <item quantity="many">%1$d Днів</item>
+        <item quantity="other">%1$d Днів</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d подія</item>
+        <item quantity="few">%1$d події</item>
+        <item quantity="many">%1$d подій</item>
+        <item quantity="other">%1$d подій</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s гравець</item>
+        <item quantity="few">%1$s гравці</item>
+        <item quantity="many">%1$s гравців</item>
+        <item quantity="other">%1$s гравці(-ів)</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s голос</item>
+        <item quantity="few">%1$s голоси</item>
+        <item quantity="many">%1$s голосів</item>
+        <item quantity="other">%1$s голосів</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">Більше %1$s картки</item>
+        <item quantity="few">Більше %1$s карток</item>
+        <item quantity="many">Більше %1$s карточок</item>
+        <item quantity="other">Більше %1$s карток</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">Більше %1$s кутового</item>
+        <item quantity="few">Більше %1$s кутових</item>
+        <item quantity="many">Більше %1$s кутових</item>
+        <item quantity="other">Більше %1$s кутових</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">Більше ніж %1$s гол</item>
+        <item quantity="few">Більше ніж %1$s голи</item>
+        <item quantity="many">Більше ніж %1$s голів</item>
+        <item quantity="other">Більше ніж %1$s голів</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">З %1$s голосом ви входите в топ %2$s всіх прогнозистів!</item>
+        <item quantity="few">З %1$s голосами ви входите в топ %2$s всіх прогнозистів!</item>
+        <item quantity="many">З %1$s голосом ви входите в топ %2$s всіх прогнозистів!</item>
+        <item quantity="other">З %1$s голосом ви входите в топ %2$s всіх прогнозистів!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">Цього року ви зробили %1$s запис на Torneo.</item>
+        <item quantity="few">Цього року ви зробили %1$s записів на Torneo.</item>
+        <item quantity="many">Цього року ви зробили %1$s запис на Torneo.</item>
+        <item quantity="other">Цього року ви зробили %1$s запис на Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">Я зробив %1$s запис на Torneo цього року</item>
+        <item quantity="few">Я зробив %1$s записів на Torneo цього року</item>
+        <item quantity="many">Я зробив %1$s запис на Torneo цього року</item>
+        <item quantity="other">Я зробив %1$s запис на Torneo цього року</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">З %1$s переглядом, моєю найпопулярнішою подією було:</item>
+        <item quantity="few">З %1$s переглядами, моєю найпопулярнішою подією було:</item>
+        <item quantity="many">З %1$s переглядом, моєю найпопулярнішою подією було:</item>
+        <item quantity="other">З %1$s переглядом, моєю найпопулярнішою подією було:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">У 2025 році ви відвідали %1$s подію</item>
+        <item quantity="few">У 2025 році ви відвідали %1$s події</item>
+        <item quantity="many">У 2025 році ви відвідали %1$s події</item>
+        <item quantity="other">У 2025 році ви відвідали %1$s подій</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">Не дивно. Ви відкривали його %1$s раз.</item>
+        <item quantity="few">Не дивно. Ви відкривали його %1$s рази.</item>
+        <item quantity="many">Не дивно. Ви відкривали його %1$s рази.</item>
+        <item quantity="other">Не дивно. Ви відкривали його %1$s разів.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">Як пильний скаут, ви стежили за %1$s гравцем</item>
+        <item quantity="few">Як пильний скаут, ви стежили за %1$s гравцями</item>
+        <item quantity="many">Як пильний скаут, ви стежили за %1$s гравцем</item>
+        <item quantity="other">Як пильний скаут, ви стежили за %1$s гравцем</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">Останній %1$d матч</item>
+        <item quantity="few">Останні %1$d матчі</item>
+        <item quantity="many">Останні %1$d матчів</item>
+        <item quantity="other">Останні %1$d матчів</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d титули</item>
+        <item quantity="few">%1$d титула</item>
+        <item quantity="many">%1$d титулів</item>
+        <item quantity="other">%1$d титулів</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">Ви збираєтеся здійснити перехід %1$d гравця</item>
+        <item quantity="few">Ви збираєтеся здійснити трнасфер %1$d гравців</item>
+        <item quantity="many">Ви збираєтеся здійснити трансфер %1$d гравців</item>
+        <item quantity="other">Ви збираєтеся здійснити трансфер %1$d гравців</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">Менше %1$s картки</item>
+        <item quantity="few">Менше %1$s карток</item>
+        <item quantity="many">Менше %1$s карточок</item>
+        <item quantity="other">Менше %1$s карток</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">Менше як %1$s кутового</item>
+        <item quantity="few">Менш як %1$s кутових</item>
+        <item quantity="many">Менше як %1$s кутових</item>
+        <item quantity="other">Менше як %1$s кутових</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">Менше як %1$s гол</item>
+        <item quantity="few">Менше як %1$s голи</item>
+        <item quantity="many">Менше як %1$s голів</item>
+        <item quantity="other">Менше як %1$s голів</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d рік тому</item>
+        <item quantity="few">%1$d роки тому</item>
+        <item quantity="many">%1$d років тому</item>
+        <item quantity="other">%1$d років(-и) тому</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s тиждень</item>
+        <item quantity="few">%1$s тижні</item>
+        <item quantity="many">%1$s тижнів</item>
+        <item quantity="other">%1$s тижнів(-я)</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s рік</item>
+        <item quantity="few">%1$s роки</item>
+        <item quantity="many">%1$s років</item>
+        <item quantity="other">%1$s років</item>
+    </plurals>
+</resources>

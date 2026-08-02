@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_surface_level_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_vertical"
+    android:showDividers="middle"
+    android:dividerPadding="8dp"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp">
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:paddingTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:alignmentMode="alignBounds"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/details"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

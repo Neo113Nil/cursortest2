@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="@+id/container"
+    app:layout_constraintEnd_toStartOf="@+id/wagon_wheel"
+    app:layout_constraintStart_toStartOf="@+id/container">
+    <TextView
+        android:textColor="@color/n_lv_3"
+        android:id="@+id/zone_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        style="@style/AssistiveDefault"/>
+    <TextView
+        android:id="@+id/zone_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/DisplayMedium"/>
+</LinearLayout>

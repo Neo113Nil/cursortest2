@@ -1,0 +1,71 @@
+package com.sofascore.results.bettingtips.view;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import com.sofascore.results.R;
+import defpackage.bv1;
+import defpackage.nq8;
+import defpackage.o8;
+import defpackage.yhk;
+import kotlin.Metadata;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+@Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\b\u0003\b\u0007\u0018\u00002\u00020\u0001J\u000f\u0010\u0003\u001a\u00020\u0002H\u0014¢\u0006\u0004\b\u0003\u0010\u0004¨\u0006\u0005"}, d2 = {"Lcom/sofascore/results/bettingtips/view/TopH2HStreakView;", "Lo8;", "", "getLayoutId", "()I", "mobile_release"}, k = 1, mv = {2, 3, 0}, xi = 48)
+/* loaded from: classes5.dex */
+public final class TopH2HStreakView extends o8 {
+    public final bv1 d;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public TopH2HStreakView(@NotNull Context context, @Nullable AttributeSet attributeSet) {
+        super(context, attributeSet, 0);
+        context.getClass();
+        View root = getRoot();
+        int i = R.id.first_team_logo;
+        ImageView imageView = (ImageView) nq8.B(R.id.first_team_logo, root);
+        if (imageView != null) {
+            i = R.id.first_team_name;
+            TextView textView = (TextView) nq8.B(R.id.first_team_name, root);
+            if (textView != null) {
+                i = R.id.first_team_wins;
+                TextView textView2 = (TextView) nq8.B(R.id.first_team_wins, root);
+                if (textView2 != null) {
+                    i = R.id.number_of_draws;
+                    TextView textView3 = (TextView) nq8.B(R.id.number_of_draws, root);
+                    if (textView3 != null) {
+                        i = R.id.second_team_logo;
+                        ImageView imageView2 = (ImageView) nq8.B(R.id.second_team_logo, root);
+                        if (imageView2 != null) {
+                            i = R.id.second_team_name;
+                            TextView textView4 = (TextView) nq8.B(R.id.second_team_name, root);
+                            if (textView4 != null) {
+                                i = R.id.second_team_wins;
+                                TextView textView5 = (TextView) nq8.B(R.id.second_team_wins, root);
+                                if (textView5 != null) {
+                                    i = R.id.sport_icon;
+                                    ImageView imageView3 = (ImageView) nq8.B(R.id.sport_icon, root);
+                                    if (imageView3 != null) {
+                                        this.d = new bv1((ConstraintLayout) root, imageView, textView, textView2, textView3, imageView2, textView4, textView5, imageView3);
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        yhk.s("Missing required view with ID: ".concat(root.getResources().getResourceName(i)));
+        throw null;
+    }
+
+    @Override // defpackage.o8
+    public int getLayoutId() {
+        return R.layout.betting_tips_top_h2h_item;
+    }
+}

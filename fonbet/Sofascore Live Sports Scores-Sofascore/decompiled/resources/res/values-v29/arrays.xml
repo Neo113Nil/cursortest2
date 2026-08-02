@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="app_theme_entries">
+        <item>@string/theme_option_system</item>
+        <item>@string/theme_option_light</item>
+        <item>@string/theme_option_dark</item>
+    </array>
+    <array name="app_theme_values">
+        <item>SYSTEM</item>
+        <item>LIGHT</item>
+        <item>DARK</item>
+    </array>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/surface_P"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.sofascore.results.view.typeheader.TypeHeaderView
+        android:id="@+id/player_position_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/category_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:background="@color/n_lv_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_thickness"/>
+</LinearLayout>

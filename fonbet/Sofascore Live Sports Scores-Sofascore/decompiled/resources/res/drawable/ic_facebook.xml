@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <group>
+        <clip-path android:pathData="M0,0h16v15.9h-16z"/>
+        <path
+            android:fillColor="@color/facebook_icon"
+            android:pathData="M8,0C3.58,0 0,3.58 0,8C0,11.99 2.93,15.3 6.75,15.9V10.31H4.72V8H6.75V6.24C6.75,4.23 7.94,3.13 9.77,3.13C10.65,3.13 11.56,3.29 11.56,3.29V5.26H10.55C9.56,5.26 9.25,5.88 9.25,6.51V8.01H11.47L11.12,10.32H9.26V15.91C13.08,15.31 16.01,12 16.01,8.01C16,3.58 12.42,0 8,0Z"/>
+    </group>
+</vector>

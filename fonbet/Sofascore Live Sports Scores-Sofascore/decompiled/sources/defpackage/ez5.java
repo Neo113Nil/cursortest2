@@ -1,0 +1,175 @@
+package defpackage;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes5.dex */
+public final class ez5 {
+    public static final ez5 A;
+    public static final ez5 B;
+    public static final ez5 C;
+    public static final ez5 D;
+    public static final ez5 E;
+    public static final ez5 F;
+    public static final ez5 G;
+    public static final ez5 H;
+    public static final ez5 I;
+    public static final ez5 J;
+    public static final ez5 K;
+    public static final ez5 L;
+    public static final ez5 M;
+    public static final ez5 N;
+    public static final ez5 O;
+    public static final ez5 P;
+    public static final ez5 Q;
+    public static final ez5 R;
+    public static final ez5 S;
+    public static final ez5 T;
+    public static final ez5 U;
+    public static final ez5 V;
+    public static final ez5 W;
+    public static final ez5 X;
+    public static final ez5 Y;
+    public static final /* synthetic */ ez5[] Z;
+    public static final ez5 a;
+    public static final ez5 b;
+    public static final ez5 c;
+    public static final ez5 d;
+    public static final ez5 e;
+    public static final ez5 f;
+    public static final ez5 g;
+    public static final ez5 h;
+    public static final ez5 i;
+    public static final ez5 j;
+    public static final ez5 k;
+    public static final ez5 l;
+    public static final ez5 m;
+    public static final ez5 n;
+    public static final ez5 o;
+    public static final ez5 p;
+    public static final ez5 q;
+    public static final ez5 r;
+    public static final ez5 s;
+    public static final ez5 t;
+    public static final ez5 u;
+    public static final ez5 v;
+    public static final ez5 w;
+    public static final ez5 x;
+    public static final ez5 y;
+    public static final ez5 z;
+
+    static {
+        ez5 ez5Var = new ez5("CROWDSOURCING_CREATED_BY", 0);
+        a = ez5Var;
+        ez5 ez5Var2 = new ez5("TOURNAMENT_INFO_HEADER", 1);
+        b = ez5Var2;
+        ez5 ez5Var3 = new ez5("EVENT_INFORMATION", 2);
+        c = ez5Var3;
+        ez5 ez5Var4 = new ez5("COVERAGE_DOWNGRADE", 3);
+        ez5 ez5Var5 = new ez5("MMA_POSTMATCH_VOTING", 4);
+        d = ez5Var5;
+        ez5 ez5Var6 = new ez5("MMA_POSITION", 5);
+        e = ez5Var6;
+        ez5 ez5Var7 = new ez5("FEATURED_ODDS", 6);
+        f = ez5Var7;
+        ez5 ez5Var8 = new ez5("ODDS_BUTTON", 7);
+        g = ez5Var8;
+        ez5 ez5Var9 = new ez5("BANNER_AD", 8);
+        h = ez5Var9;
+        ez5 ez5Var10 = new ez5("STREAM_VIDEO", 9);
+        i = ez5Var10;
+        ez5 ez5Var11 = new ez5("LIVE_ACTION_WIDGET", 10);
+        j = ez5Var11;
+        ez5 ez5Var12 = new ez5("PENALTY_SHOOTOUT", 11);
+        k = ez5Var12;
+        ez5 ez5Var13 = new ez5("HIGHLIGHTED_MEDIA_ITEM", 12);
+        l = ez5Var13;
+        ez5 ez5Var14 = new ez5("PREDICTIONS", 13);
+        m = ez5Var14;
+        ez5 ez5Var15 = new ez5("PREMATCH_H2H", 14);
+        n = ez5Var15;
+        ez5 ez5Var16 = new ez5("PREMATCH_STANDINGS", 15);
+        o = ez5Var16;
+        ez5 ez5Var17 = new ez5("EVENT_PROGRESS", 16);
+        p = ez5Var17;
+        ez5 ez5Var18 = new ez5("ATTACK_MOMENTUM", 17);
+        q = ez5Var18;
+        ez5 ez5Var19 = new ez5("TENNIS_POWER", 18);
+        r = ez5Var19;
+        ez5 ez5Var20 = new ez5("TABLE_VIEW", 19);
+        s = ez5Var20;
+        ez5 ez5Var21 = new ez5("AMERICAN_FOOTBALL_GRAPH", 20);
+        t = ez5Var21;
+        ez5 ez5Var22 = new ez5("CRICKET_RUNS_PER_OVER_GRAPH", 21);
+        u = ez5Var22;
+        ez5 ez5Var23 = new ez5("CRICKET_WHEEL_GRAPH", 22);
+        v = ez5Var23;
+        ez5 ez5Var24 = new ez5("FIRST_LEG_AGG", 23);
+        w = ez5Var24;
+        ez5 ez5Var25 = new ez5("PREGAME_FORM", 24);
+        x = ez5Var25;
+        ez5 ez5Var26 = new ez5("BEST_PLAYERS", 25);
+        y = ez5Var26;
+        ez5 ez5Var27 = new ez5("DUAL_BEST_PLAYERS", 26);
+        z = ez5Var27;
+        ez5 ez5Var28 = new ez5("GAME_STARS", 27);
+        A = ez5Var28;
+        ez5 ez5Var29 = new ez5("STATISTICS_SUMMARY", 28);
+        B = ez5Var29;
+        ez5 ez5Var30 = new ez5("ICE_HOCKEY_INCIDENTS", 29);
+        C = ez5Var30;
+        ez5 ez5Var31 = new ez5("TOP_RATED_PLAYERS", 30);
+        D = ez5Var31;
+        ez5 ez5Var32 = new ez5("NBA_BANNER", 31);
+        E = ez5Var32;
+        ez5 ez5Var33 = new ez5("PROMOTION_BANNER", 32);
+        F = ez5Var33;
+        ez5 ez5Var34 = new ez5("TV_CHANNELS", 33);
+        G = ez5Var34;
+        ez5 ez5Var35 = new ez5("COMPARE_TEAMS", 34);
+        H = ez5Var35;
+        ez5 ez5Var36 = new ez5("COMPARE_TROPHIES", 35);
+        I = ez5Var36;
+        ez5 ez5Var37 = new ez5("TENNIS_COMPARE", 36);
+        J = ez5Var37;
+        ez5 ez5Var38 = new ez5("MMA_PREMATCH_FORM", 37);
+        K = ez5Var38;
+        ez5 ez5Var39 = new ez5("MMA_STRIKE_ZONES", 38);
+        L = ez5Var39;
+        ez5 ez5Var40 = new ez5("MMA_COMPARISON_INFO", 39);
+        M = ez5Var40;
+        ez5 ez5Var41 = new ez5("PLAYER_OF_THE_MATCH_INFO", 40);
+        N = ez5Var41;
+        ez5 ez5Var42 = new ez5("MATCH_INFO", 41);
+        O = ez5Var42;
+        ez5 ez5Var43 = new ez5("ESPORTS_INFO", 42);
+        P = ez5Var43;
+        ez5 ez5Var44 = new ez5("FEATURED_PLAYERS", 43);
+        Q = ez5Var44;
+        ez5 ez5Var45 = new ez5("EDITOR_COMMUNITY_CORNER", 44);
+        R = ez5Var45;
+        ez5 ez5Var46 = new ez5("TENNIS_RANKING", 45);
+        S = ez5Var46;
+        ez5 ez5Var47 = new ez5("VOLLEYBALL_GRAPH", 46);
+        T = ez5Var47;
+        ez5 ez5Var48 = new ez5("BASEBALL_WIN_PROBABILITY_GRAPH", 47);
+        U = ez5Var48;
+        ez5 ez5Var49 = new ez5("BASEBALL_HOME_AWAY_BUBBLE", 48);
+        V = ez5Var49;
+        ez5 ez5Var50 = new ez5("BASEBALL_TOP_PERFORMERS", 49);
+        W = ez5Var50;
+        ez5 ez5Var51 = new ez5("AI_INSIGHTS_WC_BANNER", 50);
+        X = ez5Var51;
+        ez5 ez5Var52 = new ez5("OFFERS_BANNER", 51);
+        Y = ez5Var52;
+        Z = new ez5[]{ez5Var, ez5Var2, ez5Var3, ez5Var4, ez5Var5, ez5Var6, ez5Var7, ez5Var8, ez5Var9, ez5Var10, ez5Var11, ez5Var12, ez5Var13, ez5Var14, ez5Var15, ez5Var16, ez5Var17, ez5Var18, ez5Var19, ez5Var20, ez5Var21, ez5Var22, ez5Var23, ez5Var24, ez5Var25, ez5Var26, ez5Var27, ez5Var28, ez5Var29, ez5Var30, ez5Var31, ez5Var32, ez5Var33, ez5Var34, ez5Var35, ez5Var36, ez5Var37, ez5Var38, ez5Var39, ez5Var40, ez5Var41, ez5Var42, ez5Var43, ez5Var44, ez5Var45, ez5Var46, ez5Var47, ez5Var48, ez5Var49, ez5Var50, ez5Var51, ez5Var52};
+    }
+
+    public static ez5 valueOf(String str) {
+        return (ez5) Enum.valueOf(ez5.class, str);
+    }
+
+    public static ez5[] values() {
+        return (ez5[]) Z.clone();
+    }
+}

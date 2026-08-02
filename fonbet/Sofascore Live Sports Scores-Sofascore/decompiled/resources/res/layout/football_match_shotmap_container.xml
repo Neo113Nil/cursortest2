@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/shotmap_frame"
+        android:padding="16dp"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/football_shotmap_lines"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="312dp"/>
+    <com.sofascore.results.event.statistics.view.football.FootballShotmapView
+        android:id="@+id/shotmap"
+        android:background="@color/terrain_football"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shotmap_frame"
+        app:layout_constraintEnd_toEndOf="@+id/shotmap_frame"
+        app:layout_constraintStart_toStartOf="@+id/shotmap_frame"
+        app:layout_constraintTop_toTopOf="@+id/shotmap_frame"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

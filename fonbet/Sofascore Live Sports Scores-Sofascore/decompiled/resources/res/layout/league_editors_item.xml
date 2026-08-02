@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/editor_profile_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="editor profile image"/>
+    <TextView
+        android:textColor="@color/n_lv_1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:layout_gravity="center"
+        android:id="@+id/editor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginStart="8dp"
+        style="@style/BodySmall"/>
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_chevron_right_large_16"
+        android:contentDescription="chevron right"
+        app:tint="@color/primary_default"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+package com.inmobi.media;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* renamed from: com.inmobi.media.c0, reason: case insensitive filesystem */
+/* loaded from: classes4.dex */
+public final class C3328c0 {
+    public long a;
+    public long b;
+    public long c;
+    public long d;
+    public long e;
+    public long f;
+    public long g;
+    public long h;
+}

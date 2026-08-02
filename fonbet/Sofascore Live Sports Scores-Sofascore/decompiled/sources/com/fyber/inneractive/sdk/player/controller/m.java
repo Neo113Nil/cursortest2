@@ -1,0 +1,59 @@
+package com.fyber.inneractive.sdk.player.controller;
+
+import com.fyber.inneractive.sdk.util.IAlog;
+import java.util.Iterator;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class m implements Runnable {
+    public final /* synthetic */ com.fyber.inneractive.sdk.player.enums.b a;
+    public final /* synthetic */ q b;
+
+    public m(q qVar, com.fyber.inneractive.sdk.player.enums.b bVar) {
+        this.b = qVar;
+        this.a = bVar;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        q qVar;
+        com.fyber.inneractive.sdk.player.enums.b bVar;
+        try {
+            try {
+                Iterator it = this.b.b.iterator();
+                while (it.hasNext()) {
+                    ((p) it.next()).a(this.a);
+                }
+                bVar = this.a;
+            } catch (Exception e) {
+                if (IAlog.a <= 3) {
+                    q qVar2 = this.b;
+                    qVar2.getClass();
+                    IAlog.a("%sonPlayerStateChanged callback threw an exception!", e, IAlog.a(qVar2));
+                }
+                com.fyber.inneractive.sdk.player.enums.b bVar2 = this.a;
+                if (bVar2 != com.fyber.inneractive.sdk.player.enums.b.Idle && bVar2 != com.fyber.inneractive.sdk.player.enums.b.Error) {
+                    return;
+                }
+                com.fyber.inneractive.sdk.util.v.a(this.b.j);
+                qVar = this.b;
+                qVar.j = null;
+            }
+            if (bVar == com.fyber.inneractive.sdk.player.enums.b.Idle || bVar == com.fyber.inneractive.sdk.player.enums.b.Error) {
+                com.fyber.inneractive.sdk.util.v.a(this.b.j);
+                qVar = this.b;
+                qVar.j = null;
+                qVar.k = null;
+            }
+        } catch (Throwable th) {
+            com.fyber.inneractive.sdk.player.enums.b bVar3 = this.a;
+            if (bVar3 == com.fyber.inneractive.sdk.player.enums.b.Idle || bVar3 == com.fyber.inneractive.sdk.player.enums.b.Error) {
+                com.fyber.inneractive.sdk.util.v.a(this.b.j);
+                q qVar3 = this.b;
+                qVar3.j = null;
+                qVar3.k = null;
+            }
+            throw th;
+        }
+    }
+}

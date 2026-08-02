@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/layer_base">
+        <shape android:shape="rectangle">
+            <solid android:color="#00000000"/>
+        </shape>
+    </item>
+    <item
+        android:gravity="center"
+        android:id="@+id/layer_highlight">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_highlight"/>
+            <size android:height="32sp"/>
+        </shape>
+    </item>
+</layer-list>

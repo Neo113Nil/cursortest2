@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:background="@color/surface_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="48dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+    <ImageView
+        android:id="@android:id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:importantForAccessibility="no"
+        app:tint="@color/n_lv_1"/>
+    <TextView
+        android:textColor="@color/n_lv_1"
+        android:ellipsize="end"
+        android:id="@android:id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_weight="1"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="16dp"
+        style="@style/BodyMedium"/>
+    <TextView
+        android:textColor="@color/primary_default"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:id="@android:id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        app:drawableEndCompat="@drawable/ic_chevron_right_small_16"
+        app:drawableTint="@color/primary_default"
+        style="@style/AssistiveDefault"/>
+    <LinearLayout
+        android:gravity="end|center_vertical"
+        android:orientation="vertical"
+        android:id="@android:id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"/>
+</LinearLayout>

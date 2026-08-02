@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/surface_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/title_header"
+        layout="@layout/main_section_left_with_icon"/>
+    <com.sofascore.results.view.typeheader.TypeHeaderView
+        android:id="@+id/innings_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.sofascore.results.event.details.view.cricket.runsperover.CricketRunsPerOverGraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleX="@integer/drawable_scaleX_normal"/>
+    <include
+        android:id="@+id/legend_home"
+        layout="@layout/legend_item_row"/>
+    <include
+        android:id="@+id/legend_away"
+        layout="@layout/legend_item_row"/>
+    <com.sofascore.results.redesign.dividers.SofaDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dividerVisible="false"/>
+</LinearLayout>

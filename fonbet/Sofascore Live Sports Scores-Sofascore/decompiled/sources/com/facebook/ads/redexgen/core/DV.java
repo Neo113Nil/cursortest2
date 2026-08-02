@@ -1,0 +1,23 @@
+package com.facebook.ads.redexgen.core;
+
+import android.graphics.drawable.Drawable;
+import android.view.View;
+
+/* loaded from: assets/audience_network/classes2.dex */
+public class DV extends AbstractRunnableC2139Wc {
+    public final /* synthetic */ DS A00;
+
+    public DV(DS ds) {
+        this.A00 = ds;
+    }
+
+    @Override // com.facebook.ads.redexgen.core.AbstractRunnableC2139Wc
+    public final void A07() {
+        View view;
+        Drawable drawable;
+        this.A00.A02 = EnumC2565fJ.A04;
+        view = this.A00.A07;
+        drawable = this.A00.A05;
+        YB.A0V(view, drawable);
+    }
+}

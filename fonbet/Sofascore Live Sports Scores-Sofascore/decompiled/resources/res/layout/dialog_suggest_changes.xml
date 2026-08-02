@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/surface_P"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:liftOnScroll="true">
+        <FrameLayout
+            android:background="@color/surface_P"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="2dp">
+            <ViewStub
+                android:id="@+id/action_banner"
+                android:visibility="gone"
+                android:layout="@layout/action_banner_view"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="?attr/actionBarSize"/>
+            <include
+                android:id="@+id/header"
+                layout="@layout/dialog_suggest_changes_header"/>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

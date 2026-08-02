@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_surface_level_3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:divider="@drawable/divider_horizontal_on_highlight_1"
+    android:showDividers="middle"
+    android:backgroundTint="@color/on_color_highlight_2"
+    android:paddingVertical="8dp">
+    <include
+        android:id="@+id/days"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/item_featured_tournament_countdown"/>
+    <include
+        android:id="@+id/hours"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/item_featured_tournament_countdown"/>
+    <include
+        android:id="@+id/minutes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/item_featured_tournament_countdown"/>
+    <include
+        android:id="@+id/seconds"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        layout="@layout/item_featured_tournament_countdown"/>
+</LinearLayout>

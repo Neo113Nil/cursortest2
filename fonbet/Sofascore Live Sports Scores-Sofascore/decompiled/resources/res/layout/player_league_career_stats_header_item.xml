@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textSize="14dp"
+    android:textColor="@color/n_lv_3"
+    android:gravity="center"
+    android:layout_width="@dimen/player_career_stats_column_width"
+    android:layout_height="wrap_content"
+    android:maxLines="1"
+    android:textAllCaps="true"
+    android:paddingHorizontal="1dp"
+    style="@style/TableMedium"/>

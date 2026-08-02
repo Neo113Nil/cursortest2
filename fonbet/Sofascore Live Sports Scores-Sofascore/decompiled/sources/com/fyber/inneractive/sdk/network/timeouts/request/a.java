@@ -1,0 +1,53 @@
+package com.fyber.inneractive.sdk.network.timeouts.request;
+
+import com.fyber.inneractive.sdk.config.global.features.k;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public abstract class a extends com.fyber.inneractive.sdk.network.timeouts.a {
+    public int h;
+    public int i;
+    public int j;
+    public int k;
+    public final String l;
+
+    public a(String str, k kVar, String str2) {
+        this.l = str2;
+        d(kVar, str);
+    }
+
+    public int a(int i) {
+        return 0;
+    }
+
+    public abstract int a(k kVar);
+
+    public abstract int a(k kVar, String str);
+
+    public int b() {
+        return 0;
+    }
+
+    public abstract int b(k kVar, String str);
+
+    public int c() {
+        return 0;
+    }
+
+    public abstract int c(k kVar, String str);
+
+    public void d(k kVar, String str) {
+        int b = b(kVar, "read");
+        int b2 = b(kVar, "conn");
+        int a = a(kVar, str);
+        this.f = a(kVar);
+        this.j = c(kVar, "read");
+        int c = c(kVar, "conn");
+        this.k = c;
+        int i = (this.j * a) / 100;
+        this.h = i;
+        this.i = (a * c) / 100;
+        this.h = Math.max(b, i);
+        this.i = Math.max(b2, this.i);
+    }
+}

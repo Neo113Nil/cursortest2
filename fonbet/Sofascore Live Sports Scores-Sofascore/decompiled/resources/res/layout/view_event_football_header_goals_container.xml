@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/goals_container"
+    android:padding="8dp"
+    android:visibility="gone"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="vertical"
+        android:id="@+id/home_team_goals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <ImageView
+        android:id="@+id/ic_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:src="@drawable/ic_goal_incidents"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:tint="@color/secondary_default"/>
+    <LinearLayout
+        android:gravity="start"
+        android:orientation="vertical"
+        android:id="@+id/away_team_goals"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>

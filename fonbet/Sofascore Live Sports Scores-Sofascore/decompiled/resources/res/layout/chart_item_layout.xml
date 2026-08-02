@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="8dp"
+    android:layout_width="140dp"
+    android:layout_height="wrap_content"
+    android:minHeight="104dp"
+    android:paddingHorizontal="8dp">
+    <com.sofascore.results.team.details.view.PieChartView
+        android:id="@+id/chart_item_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <TextView
+            android:ellipsize="end"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/chart_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/DisplaySmall"/>
+    </FrameLayout>
+    <TextView
+        android:textColor="@color/n_lv_3"
+        android:ellipsize="end"
+        android:gravity="top|center_horizontal"
+        android:id="@+id/chart_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:maxLines="2"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        style="@style/AssistiveDefault"/>
+</LinearLayout>

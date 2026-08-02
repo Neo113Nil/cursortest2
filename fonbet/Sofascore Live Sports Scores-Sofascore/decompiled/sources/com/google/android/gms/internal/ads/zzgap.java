@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes3.dex */
+public abstract class zzgap extends SQLiteOpenHelper {
+    public zzgap(Context context, String str, int i) {
+        super(context, true == str.equals("") ? null : str, (SQLiteDatabase.CursorFactory) null, i);
+    }
+}

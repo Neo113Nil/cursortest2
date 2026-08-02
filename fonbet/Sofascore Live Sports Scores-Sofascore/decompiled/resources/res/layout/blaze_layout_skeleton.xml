@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:id="@+id/blaze_skeleton_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/blaze_skeleton_image_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineSpotShadowColor="@color/blaze_transparent"
+        android:outlineAmbientShadowColor="@color/blaze_transparent"
+        app:cardElevation="0dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/blaze_skeleton_widget_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/blaze_skeleton_background"/>
+        <View
+            android:id="@+id/blaze_skeleton_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    <com.blaze.blazesdk.custom_views.BlazeTextView
+        android:id="@+id/blaze_skeleton_title"
+        android:background="@drawable/blaze_drawable_skeleton"
+        android:layout_width="0dp"
+        android:layout_height="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="16dp"
+    android:width="16dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <path
+        android:fillColor="#000000"
+        android:pathData="M2.286,6.708V15.488H13.714V6.708L15.36,5.726L14.369,1.568L10.713,0.578C10.061,1.078 9.053,1.356 8,1.356C6.947,1.356 5.939,1.078 5.287,0.578L1.631,1.568L0.64,5.726L2.286,6.708ZM0,5.959L1.143,1.166L5.448,0C5.918,0.501 6.884,0.844 8,0.844C9.116,0.844 10.082,0.501 10.552,0L14.857,1.166L16,5.959L14.286,6.982V15.488C14.286,15.771 14.03,16 13.714,16H2.286C1.97,16 1.714,15.771 1.714,15.488V6.982L0,5.959Z"
+        android:fillAlpha="0.25"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_ic_cycling_shirt_mask__0_res_0x7f08005c"
+        android:pathData="M1.714,12H14.286V15C14.286,15.552 13.838,16 13.286,16H2.714C2.162,16 1.714,15.552 1.714,15V12Z"/>
+    <path
+        android:fillColor="@drawable/_ic_cycling_shirt_mask__1_res_0x7f08005d"
+        android:pathData="M14.286,6.989L13.714,7.312L13.714,0.854L14.86,1.168L15.996,5.949L14.286,6.989Z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_ic_cycling_shirt_mask__2_res_0x7f08005e"
+        android:pathData="M1.727,6.989L2.286,7.309V0.855L1.137,1.165L-0.002,5.953L1.727,6.989Z"
+        android:fillType="evenOdd"/>
+</vector>

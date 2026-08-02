@@ -1,0 +1,93 @@
+package com.mbridge.msdk.foundation.same.net.wrapper;
+
+import android.os.Handler;
+import android.os.Looper;
+import com.mbridge.msdk.foundation.tools.q0;
+import com.mbridge.msdk.tracker.network.b0;
+import com.mbridge.msdk.tracker.network.j;
+import com.mbridge.msdk.tracker.network.q;
+import com.mbridge.msdk.tracker.network.v;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class i<T> implements j<T> {
+    private final com.mbridge.msdk.foundation.same.net.b<T> a;
+    private final Handler b = new Handler(Looper.getMainLooper());
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public class a implements Runnable {
+        final /* synthetic */ v a;
+        final /* synthetic */ q b;
+
+        public a(v vVar, q qVar) {
+            this.a = vVar;
+            this.b = qVar;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            try {
+                if (i.this.a != null) {
+                    i.this.a.onSuccess(i.this.a(this.a, this.b));
+                }
+            } catch (Exception e) {
+                q0.b("MBridgeRequestListenerWrapper", "onResponseSuccess error", e);
+            }
+        }
+    }
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public class b implements Runnable {
+        final /* synthetic */ v a;
+        final /* synthetic */ q b;
+
+        public b(v vVar, q qVar) {
+            this.a = vVar;
+            this.b = qVar;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            try {
+                if (i.this.a != null) {
+                    i.this.a.onError(i.this.a(this.a.c, this.b));
+                }
+            } catch (Exception e) {
+                q0.b("MBridgeRequestListenerWrapper", "onResponseError error", e);
+            }
+        }
+    }
+
+    public i(com.mbridge.msdk.foundation.same.net.b<T> bVar) {
+        this.a = bVar;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public com.mbridge.msdk.foundation.same.net.exception.a a(b0 b0Var, q qVar) {
+        if (b0Var == null) {
+            return null;
+        }
+        com.mbridge.msdk.foundation.same.net.toolbox.a aVar = qVar != null ? new com.mbridge.msdk.foundation.same.net.toolbox.a(qVar.a, qVar.b, qVar.d) : new com.mbridge.msdk.foundation.same.net.toolbox.a(0, null, null);
+        return b0Var.d() == 0 ? new com.mbridge.msdk.foundation.same.net.exception.a(2, aVar, b0Var.getMessage()) : b0Var.d() == 1 ? new com.mbridge.msdk.foundation.same.net.exception.a(6, aVar, b0Var.getMessage()) : b0Var.d() == 2 ? new com.mbridge.msdk.foundation.same.net.exception.a(8, aVar, b0Var.getMessage()) : b0Var.d() == 4 ? new com.mbridge.msdk.foundation.same.net.exception.a(880041, aVar, b0Var.getMessage()) : b0Var.d() == 5 ? new com.mbridge.msdk.foundation.same.net.exception.a(8, aVar, b0Var.getMessage()) : b0Var.d() == 6 ? new com.mbridge.msdk.foundation.same.net.exception.a(15, aVar, b0Var.getMessage()) : b0Var.d() == 7 ? new com.mbridge.msdk.foundation.same.net.exception.a(7, aVar, b0Var.getMessage()) : b0Var.d() == 8 ? new com.mbridge.msdk.foundation.same.net.exception.a(10, aVar, b0Var.getMessage()) : b0Var.d() == 9 ? new com.mbridge.msdk.foundation.same.net.exception.a(4, aVar, b0Var.getMessage()) : new com.mbridge.msdk.foundation.same.net.exception.a(2, aVar, b0Var.getMessage());
+    }
+
+    @Override // com.mbridge.msdk.tracker.network.j
+    public void b(com.mbridge.msdk.tracker.network.h<T> hVar, v<T> vVar, q qVar) {
+        q0.a("MBridgeRequestListenerWrapper", "onResponseError: " + vVar.c.d() + " " + vVar.c.getMessage());
+        this.b.post(new b(vVar, qVar));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public com.mbridge.msdk.foundation.same.net.e a(v<T> vVar, q qVar) {
+        if (vVar == null) {
+            return null;
+        }
+        return com.mbridge.msdk.foundation.same.net.e.a(vVar.a, new com.mbridge.msdk.foundation.same.net.toolbox.a(qVar.a, qVar.b, qVar.d));
+    }
+
+    @Override // com.mbridge.msdk.tracker.network.j
+    public void a(com.mbridge.msdk.tracker.network.h<T> hVar, v<T> vVar, q qVar) {
+        q0.a("MBridgeRequestListenerWrapper", "onResponseSuccess: " + vVar.a);
+        this.b.post(new a(vVar, qVar));
+    }
+}

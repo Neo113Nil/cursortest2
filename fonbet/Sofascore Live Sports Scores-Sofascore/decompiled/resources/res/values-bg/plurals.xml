@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">Последната %1$d игра</item>
+        <item quantity="other">Последните %1$d игри</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">Последен %1$d мач</item>
+        <item quantity="other">Последни %1$d мача</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">Последната %1$d игра</item>
+        <item quantity="other">Последните %1$d игри</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">контузен</item>
+        <item quantity="other">излизания</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">Последната %1$d игра</item>
+        <item quantity="other">Последните %1$d игри</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d титла</item>
+        <item quantity="other">%1$d титли</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">Ден</item>
+        <item quantity="other">дни</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Час</item>
+        <item quantity="other">Часа</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Минута</item>
+        <item quantity="other">Минути</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Секунда</item>
+        <item quantity="other">Секунди</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d Доставка (%2$dW)</item>
+        <item quantity="other">%1$d Доставки (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d рън</item>
+        <item quantity="other">%1$d рънове</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d уикет</item>
+        <item quantity="other">%1$d уикета</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">%1$s потребител е допринесъл</item>
+        <item quantity="other">%1$s потребители са допринесли</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">Най-добър от %1$s лега</item>
+        <item quantity="other">Най-добър от %1$s лега</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">Най-добър от %1$s сет</item>
+        <item quantity="other">Най-добър от %1$s сета</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">Последен %1$d мач</item>
+        <item quantity="other">Последни %1$d мача</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt;%1$d ден остава</item>
+        <item quantity="other">%1$d дни остават</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">Редактирано от %1$d редактор</item>
+        <item quantity="other">Редактирано от %1$d редактори</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">Последно %1$d събитие</item>
+        <item quantity="other">Последни %1$d събития</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Превъртане с %d секунда напред</item>
+        <item quantity="other">Превъртане с(ъс) %d секунди напред</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Превъртане с %d секунда назад</item>
+        <item quantity="other">Превъртане с(ъс) %d секунди назад</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">Ако продължите, ще загубите (%1$d) точка.</item>
+        <item quantity="other">Ако продължите, ще загубите (%1$d) точки.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">Имате %1$d потенциално подобрение.</item>
+        <item quantity="other">Имате %1$d потенциални подобрения.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">+%1$d още събитие</item>
+        <item quantity="other">+%1$d още събития</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">За всеки %1$s</item>
+        <item quantity="other">За всякакви %1$s</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">Последен %1$d мач</item>
+        <item quantity="other">Последни %1$d мача</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d мач</item>
+        <item quantity="other">%1$d мача</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">Остава %1$d ден, не изпускайте!</item>
+        <item quantity="other">Остават %1$d дни, не изпускайте!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">%1$d гол</item>
+        <item quantity="other">%1$d гола</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">Последната %1$d игра</item>
+        <item quantity="other">Последните %1$d игри</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">Недостатъчни средства за извършване на %1$d трансфер</item>
+        <item quantity="other">Недостатъчни средства за извършване на %1$d трансфера</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">Последен %1$d час</item>
+        <item quantity="other">Последни %1$d часа</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Последен резултат: %1$s</item>
+        <item quantity="other">Последни резултати: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">%1$d обиколка</item>
+        <item quantity="other">%1$d обиколки</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d ново известие</item>
+        <item quantity="other">%d нови известия</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d Ден</item>
+        <item quantity="other">%1$d Дни</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d събитие</item>
+        <item quantity="other">%1$d cъбития</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s играч</item>
+        <item quantity="other">%1$s играчи</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s глас</item>
+        <item quantity="other">%1$s гласа</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">Над %1$s карта</item>
+        <item quantity="other">Повече от %1$s карти</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">Повече от %1$s корнер</item>
+        <item quantity="other">Повече от %1$s корнери</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">Над %1$s гол</item>
+        <item quantity="other">Над %1$s голове</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">С %1$s глас, вие сте в топ %2$s на всички Прогнозисти!</item>
+        <item quantity="other">С %1$s гласове, вие сте в топ %2$s на всички Прогнозисти!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">Тази година направихте %1$s участие на Torneo.</item>
+        <item quantity="other">Тази година направихте %1$s участия на Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">Аз направих %1$s участие на Torneo тази година</item>
+        <item quantity="other">Аз направих %1$s участия на Torneo тази година</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">С %1$s преглед, моето топ събитие беше:</item>
+        <item quantity="other">С %1$s прегледи, моето топ събитие беше:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">През 2025 г. участвахте в %1$s събитие</item>
+        <item quantity="other">През 2025 г. участвахте в %1$s събития</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">Неслучайно. Отворихте го %1$s път.</item>
+        <item quantity="other">Неслучайно. Отворихте го %1$s пъти.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">Като скаут с остър поглед, вие следихте %1$s играч</item>
+        <item quantity="other">Като скаут с остър поглед, вие следихте %1$s играчи</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">Последен %1$d мач</item>
+        <item quantity="other">Последни %1$d мача</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">Последен %1$d мач</item>
+        <item quantity="other">Последни %1$d мача</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">Последният %1$d мач</item>
+        <item quantity="other">Последните %1$d мача</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d титла</item>
+        <item quantity="other">%1$d титли</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">Ще направите трансфер на %1$d играч</item>
+        <item quantity="other">Ще направите трансфер на %1$d играчи</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">Под %1$s карта</item>
+        <item quantity="other">Под %1$s карти</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">Под %1$s корнер</item>
+        <item quantity="other">Под %1$s корнера</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">Под %1$s гол</item>
+        <item quantity="other">Под %1$s голове</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">Преди %1$d година</item>
+        <item quantity="other">%1$d преди години</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s седмица</item>
+        <item quantity="other">%1$s седмици</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s год</item>
+        <item quantity="other">%1$s год</item>
+    </plurals>
+</resources>

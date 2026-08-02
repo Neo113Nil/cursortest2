@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="other">rời sân</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="other">%1$d Danh hiệu</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="other">Ngày</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="other">Giờ</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="other">Phút</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="other">Giây</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="other">%1$d Luân chuyển (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="other">%1$d run</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="other">%1$d wicket</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="other">%1$s người dùng đã đóng góp</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="other">Thắng %1$s ván</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="other">Thắng %1$s set</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="other">Còn %1$d ngày</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="other">Chỉnh sửa bởi %1$d biên tập viên</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="other">Sự kiện gần nhất %1$d</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Tua nhanh %d giây</item>
+        <item quantity="other">Tua nhanh %d giây</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Tua lại %d giây</item>
+        <item quantity="other">Tua lại %d giây</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="other">Nếu tiếp tục, bạn sẽ mất (%1$d) điểm.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="other">Bạn có %1$d vị trí có thể nâng cấp.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="other">+%1$dthêm sự kiện</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="other">Cứ mỗi %1$s</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="other">%1$d trận đấu</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="other">Còn %1$d ngày, đừng bỏ lỡ!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="other">+%1$d bàn</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="other">Không đủ tiền để thực hiện %1$d giao dịch</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="other">%1$d giờ qua</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="other">Kết quả gần đây: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="other">+%1$d vòng</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d thông báo mới</item>
+        <item quantity="other">%d thông báo mới</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="other">%1$d Ngày</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="other">%1$d sự kiện</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="other">Cầu thủ %1$s</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="other">%1$s phiếu</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="other">Trên %1$s thẻ phạt</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="other">Trên %1$s quả phạt góc</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="other">Trên %1$s bàn thắng</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="other">Với %1$s bình chọn, bạn sẽ lọt top %2$s người dự đoán hàng đầu!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="other">Năm nay, bạn đã tham gia %1$s lượt trên Torneo.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="other">Tôi đã tham gia %1$s lượt trên Torneo năm nay</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="other">Với %1$s lượt xem, sự kiện hàng đầu của tôi là:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="other">Năm 2025, bạn đã tham dự %1$s sự kiện</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="other">Không có gì lạ. Bạn đã mở nó %1$s lần.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="other">Như một bậc thầy trinh sát, bạn gần như theo sát %1$s cầu thủ</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="other">Trận gần nhất %1$d</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="other">%1$d Danh hiệu</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="other">Bạn sắp chuyển nhượng %1$d cầu thủ</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="other">Dưới %1$s thẻ phạt</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="other">Dưới %1$s quả phạt góc</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="other">Dưới %1$s bàn thắng</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="other">%1$d năm trước</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="other">%1$s tuần</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="other">%1$s năm</item>
+    </plurals>
+</resources>

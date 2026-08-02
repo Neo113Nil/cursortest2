@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/n_lv_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:ellipsize="end"
+        android:id="@+id/sub_section_title"
+        android:paddingTop="14dp"
+        android:paddingBottom="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/legend"
+        android:maxLines="1"
+        android:drawablePadding="4dp"
+        android:textDirection="locale"
+        android:paddingHorizontal="16dp"
+        style="@style/DisplaySmall"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/legend_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

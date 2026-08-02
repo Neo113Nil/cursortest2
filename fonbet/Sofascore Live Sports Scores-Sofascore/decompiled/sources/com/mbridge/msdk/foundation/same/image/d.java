@@ -1,0 +1,346 @@
+package com.mbridge.msdk.foundation.same.image;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Handler;
+import android.os.Looper;
+import android.text.TextUtils;
+import com.mbridge.msdk.MBridgeConstans;
+import com.mbridge.msdk.foundation.download.DownloadError;
+import com.mbridge.msdk.foundation.download.DownloadMessage;
+import com.mbridge.msdk.foundation.download.DownloadPriority;
+import com.mbridge.msdk.foundation.download.DownloadResourceType;
+import com.mbridge.msdk.foundation.download.MBDownloadManager;
+import com.mbridge.msdk.foundation.download.OnDownloadStateListener;
+import com.mbridge.msdk.foundation.download.core.DownloadRequest;
+import com.mbridge.msdk.foundation.tools.o0;
+import com.mbridge.msdk.foundation.tools.q0;
+import com.mbridge.msdk.playercommon.exoplayer2.source.chunk.ChunkedTrackBlacklistUtil;
+import defpackage.mz1;
+import defpackage.w1l;
+import java.io.File;
+import java.util.concurrent.ThreadPoolExecutor;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class d {
+    private final ThreadPoolExecutor a;
+    private final Handler b;
+    private final String c;
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public class a implements Runnable {
+        final /* synthetic */ String a;
+        final /* synthetic */ com.mbridge.msdk.foundation.same.image.c b;
+
+        /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+        /* renamed from: com.mbridge.msdk.foundation.same.image.d$a$a, reason: collision with other inner class name */
+        public class RunnableC1253a implements Runnable {
+            public RunnableC1253a() {
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                a aVar = a.this;
+                aVar.b.onFailedLoad("create download request error", aVar.a);
+            }
+        }
+
+        public a(String str, g gVar, com.mbridge.msdk.foundation.same.image.c cVar) {
+            this.a = str;
+            this.b = cVar;
+        }
+
+        @Override // java.lang.Runnable
+        public void run() {
+            DownloadRequest a = d.this.a(o0.d(this.a), this.a, null, this.b);
+            if (a != null) {
+                a.start();
+                return;
+            }
+            if (MBridgeConstans.DEBUG) {
+                q0.b("CommonImageLoaderRefactor", "createDownloadRequest error");
+            }
+            if (this.b == null) {
+                return;
+            }
+            d.this.b.post(new RunnableC1253a());
+        }
+    }
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public static final class b {
+        private static final d a = new d(null);
+    }
+
+    private d() {
+        this.b = new Handler(Looper.getMainLooper());
+        this.c = com.mbridge.msdk.foundation.same.directory.e.b(com.mbridge.msdk.foundation.same.directory.c.MBRIDGE_700_IMG) + File.separator;
+        this.a = f.b();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public DownloadRequest<?> a(String str, String str2, g gVar, com.mbridge.msdk.foundation.same.image.c cVar) {
+        try {
+            return MBDownloadManager.getInstance().download(new DownloadMessage<>(new Object(), str2, str, 100, DownloadResourceType.DOWNLOAD_RESOURCE_TYPE_IMAGE)).withReadTimeout(com.mbridge.msdk.foundation.same.a.u).withConnectTimeout(com.mbridge.msdk.foundation.same.a.t).withWriteTimeout(com.mbridge.msdk.foundation.same.a.s).withDownloadPriority(DownloadPriority.LOW).withHttpRetryCounter(1).withDirectoryPathInternal(this.c).withDownloadStateListener(new c(this.b, this.a, str2, this.c, str, gVar, cVar)).with("download_scene", "download_image").withProgressStateListener(null).withTimeout(ChunkedTrackBlacklistUtil.DEFAULT_TRACK_BLACKLIST_MS).with("do_us_fi_re", Boolean.FALSE.toString()).build();
+        } catch (Exception e) {
+            if (MBridgeConstans.DEBUG) {
+                q0.b("CommonImageLoaderRefactor", "createDownloadRequest error", e);
+            }
+            return null;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static Bitmap b(String str) {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(str, options);
+        options.inJustDecodeBounds = false;
+        options.inPurgeable = true;
+        options.inInputShareable = true;
+        options.inDither = true;
+        return BitmapFactory.decodeFile(str, options);
+    }
+
+    public Bitmap c(String str) {
+        if (MBridgeConstans.DEBUG) {
+            w1l.x("getImageBitmapByUrl imageUrl = ", str, "CommonImageLoaderRefactor");
+        }
+        if (TextUtils.isEmpty(str)) {
+            return null;
+        }
+        String o = mz1.o(new StringBuilder(), this.c, o0.d(str));
+        File file = new File(o);
+        if (file.isFile() && file.exists()) {
+            try {
+                return b(o);
+            } catch (Exception e) {
+                if (MBridgeConstans.DEBUG) {
+                    q0.b("CommonImageLoaderRefactor", "getImageBitmapByUrl error", e);
+                }
+            }
+        }
+        return null;
+    }
+
+    public boolean d(String str) {
+        File file;
+        if (MBridgeConstans.DEBUG) {
+            w1l.x("isImageFileExists imageUrl = ", str, "CommonImageLoaderRefactor");
+        }
+        if (TextUtils.isEmpty(str)) {
+            return false;
+        }
+        try {
+            try {
+                file = new File(this.c + o0.d(str));
+            } catch (Exception e) {
+                if (MBridgeConstans.DEBUG) {
+                    q0.b("CommonImageLoaderRefactor", "isImageFileExists error", e);
+                }
+                file = null;
+            }
+            if (file == null || !file.isFile()) {
+                return false;
+            }
+            return file.exists();
+        } catch (Exception e2) {
+            if (MBridgeConstans.DEBUG) {
+                q0.b("CommonImageLoaderRefactor", "isImageFileExists error", e2);
+            }
+            return false;
+        }
+    }
+
+    /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+    public static final class c implements OnDownloadStateListener<Object> {
+        private final ThreadPoolExecutor a;
+        private final Handler b;
+        private final String c;
+        private final String d;
+        private final String e;
+        private final com.mbridge.msdk.foundation.same.image.c f;
+
+        /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+        public class a implements Runnable {
+            public a() {
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                c.this.a();
+            }
+        }
+
+        /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+        public class b implements Runnable {
+            final /* synthetic */ String a;
+
+            public b(String str) {
+                this.a = str;
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                try {
+                    c.this.f.onFailedLoad(c.this.e, this.a);
+                } catch (Exception e) {
+                    if (MBridgeConstans.DEBUG) {
+                        q0.b("CommonImageLoaderRefactor", "callbackForFailed error", e);
+                    }
+                }
+            }
+        }
+
+        /* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+        /* renamed from: com.mbridge.msdk.foundation.same.image.d$c$c, reason: collision with other inner class name */
+        public class RunnableC1254c implements Runnable {
+            final /* synthetic */ Bitmap a;
+
+            public RunnableC1254c(Bitmap bitmap) {
+                this.a = bitmap;
+            }
+
+            @Override // java.lang.Runnable
+            public void run() {
+                try {
+                    c.this.f.onSuccessLoad(this.a, c.this.e);
+                } catch (Exception e) {
+                    if (MBridgeConstans.DEBUG) {
+                        q0.b("CommonImageLoaderRefactor", "callbackForSuccess error", e);
+                    }
+                }
+            }
+        }
+
+        public c(Handler handler, ThreadPoolExecutor threadPoolExecutor, String str, String str2, String str3, g gVar, com.mbridge.msdk.foundation.same.image.c cVar) {
+            this.b = handler;
+            this.a = threadPoolExecutor;
+            this.e = str;
+            this.c = str2;
+            this.d = str3;
+            this.f = cVar;
+        }
+
+        /* JADX INFO: Access modifiers changed from: private */
+        public void a() {
+            if (this.f == null) {
+                return;
+            }
+            try {
+                Bitmap b2 = d.b(this.c + this.d);
+                if (b2 == null) {
+                    a("bitmap decode failed");
+                    return;
+                }
+                Bitmap a2 = a(b2, null);
+                if (a2 == null) {
+                    a("bitmap transformation failed");
+                } else {
+                    a(a2);
+                }
+            } catch (Exception e) {
+                if (MBridgeConstans.DEBUG) {
+                    q0.a("CommonImageLoaderRefactor", "onDownloadComplete decodeBitmap error = " + e.getLocalizedMessage());
+                }
+                a("bitmap decode failed");
+            }
+        }
+
+        private void b() {
+            File file;
+            if (MBridgeConstans.DEBUG) {
+                q0.a("CommonImageLoaderRefactor", "onDownloadComplete imageUrl = " + this.e + " imagePath = " + this.c + this.d);
+                try {
+                    file = new File(this.c + this.d);
+                } catch (Exception e) {
+                    if (MBridgeConstans.DEBUG) {
+                        q0.b("CommonImageLoaderRefactor", "onDownloadComplete error", e);
+                    }
+                    file = null;
+                }
+                if (file == null || !file.isFile() || !file.exists()) {
+                    q0.b("CommonImageLoaderRefactor", "onDownloadComplete file not exist");
+                    return;
+                }
+                q0.a("CommonImageLoaderRefactor", "onDownloadComplete file size = " + file.length());
+            }
+        }
+
+        @Override // com.mbridge.msdk.foundation.download.OnDownloadStateListener
+        public void onDownloadComplete(DownloadMessage<Object> downloadMessage) {
+            b();
+            this.a.execute(new a());
+        }
+
+        @Override // com.mbridge.msdk.foundation.download.OnDownloadStateListener
+        public void onDownloadError(DownloadMessage<Object> downloadMessage, DownloadError downloadError) {
+            if (MBridgeConstans.DEBUG) {
+                q0.a("CommonImageLoaderRefactor", "onDownloadError imageUrl = " + downloadError.getException().getLocalizedMessage());
+            }
+            a(downloadError.getException().getLocalizedMessage());
+        }
+
+        @Override // com.mbridge.msdk.foundation.download.OnDownloadStateListener
+        public void onCancelDownload(DownloadMessage<Object> downloadMessage) {
+        }
+
+        @Override // com.mbridge.msdk.foundation.download.OnDownloadStateListener
+        public void onDownloadStart(DownloadMessage<Object> downloadMessage) {
+        }
+
+        @Override // com.mbridge.msdk.foundation.download.OnDownloadStateListener
+        public void onResponseStart(DownloadMessage<Object> downloadMessage) {
+        }
+
+        private void a(String str) {
+            if (this.f == null) {
+                return;
+            }
+            this.b.post(new b(str));
+        }
+
+        private Bitmap a(Bitmap bitmap, g gVar) {
+            if (gVar != null) {
+                try {
+                    return gVar.a(bitmap);
+                } catch (Exception e) {
+                    if (MBridgeConstans.DEBUG) {
+                        q0.b("CommonImageLoaderRefactor", "handlerImageTransformation error", e);
+                    }
+                }
+            }
+            return bitmap;
+        }
+
+        private void a(Bitmap bitmap) {
+            if (this.f == null) {
+                return;
+            }
+            this.b.post(new RunnableC1254c(bitmap));
+        }
+    }
+
+    public void b(String str, g gVar, com.mbridge.msdk.foundation.same.image.c cVar) {
+        try {
+            this.a.execute(a(str, gVar, cVar));
+        } catch (Exception e) {
+            if (MBridgeConstans.DEBUG) {
+                q0.b("CommonImageLoaderRefactor", "loadImage error", e);
+            }
+        }
+    }
+
+    public /* synthetic */ d(a aVar) {
+        this();
+    }
+
+    public static d a() {
+        return b.a;
+    }
+
+    private Runnable a(String str, g gVar, com.mbridge.msdk.foundation.same.image.c cVar) {
+        return new a(str, gVar, cVar);
+    }
+}

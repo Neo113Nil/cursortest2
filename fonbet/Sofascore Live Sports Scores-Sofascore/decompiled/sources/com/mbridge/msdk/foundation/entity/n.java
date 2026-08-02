@@ -1,0 +1,512 @@
+package com.mbridge.msdk.foundation.entity;
+
+import android.content.Context;
+import android.text.TextUtils;
+import androidx.annotation.NonNull;
+import com.ironsource.C4427z5;
+import com.ironsource.U3;
+import com.mbridge.msdk.foundation.tools.m0;
+import defpackage.lnb;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.HashMap;
+import java.util.Map;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes4.dex */
+public class n {
+    public static int N = 1;
+    public static int O;
+    private String A;
+    private String B;
+    private int C;
+    private String D;
+    private String E;
+    private String G;
+    private String H;
+    private String I;
+    private int J;
+    private long K;
+    private String L;
+    private int M;
+    private String b;
+    private int c;
+    private int e;
+    private String f;
+    private String g;
+    private String h;
+    private String i;
+    private String j;
+    private String k;
+    private String l;
+    private String m;
+    private String n;
+    private String o;
+    private int p;
+    private String q;
+    private String r;
+    private String s;
+    private int u;
+    private String v;
+    private String w;
+    private String x;
+    private String y;
+    private String z;
+    private Map<String, String> a = null;
+    private int d = 0;
+    private int t = 0;
+    private int F = 0;
+
+    public n(Context context, CampaignEx campaignEx, int i, String str, long j, int i2) {
+        if (i2 == 1 || i2 == 287 || i2 == 94) {
+            this.q = "m_download_end";
+        } else if (i2 == 95) {
+            this.q = "2000025";
+        }
+        int s = m0.s(context);
+        this.u = s;
+        this.v = m0.a(context, s);
+        this.J = campaignEx.getVideoLength();
+        this.y = campaignEx.getRequestId();
+        this.z = campaignEx.getRequestIdNotice();
+        if (!TextUtils.isEmpty(this.w)) {
+            try {
+                this.w = URLEncoder.encode(campaignEx.getNoticeUrl() == null ? campaignEx.getClickURL() : campaignEx.getNoticeUrl(), C4427z5.O);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+        this.C = i;
+        this.i = str;
+        this.K = j == 0 ? campaignEx.getVideoSize() : j;
+    }
+
+    public String A() {
+        return this.H;
+    }
+
+    public String B() {
+        return this.I;
+    }
+
+    public int C() {
+        return this.J;
+    }
+
+    public long D() {
+        return this.K;
+    }
+
+    public String E() {
+        return this.L;
+    }
+
+    public int F() {
+        return this.M;
+    }
+
+    public String a(String str, String str2) {
+        Map<String, String> map;
+        if (!TextUtils.isEmpty(str) && (map = this.a) != null) {
+            try {
+                String str3 = map.get(str);
+                if (!TextUtils.isEmpty(str3)) {
+                    return str3;
+                }
+            } catch (Exception unused) {
+            }
+        }
+        return str2;
+    }
+
+    public void b(String str, String str2) {
+        if (TextUtils.isEmpty(str) || TextUtils.isEmpty(str2)) {
+            return;
+        }
+        Map map = this.a;
+        if (map == null) {
+            map = new HashMap();
+            this.a = map;
+        }
+        try {
+            map.put(str, str2);
+        } catch (Exception unused) {
+        }
+    }
+
+    public void c(String str) {
+        if (TextUtils.isEmpty(str)) {
+            return;
+        }
+        this.g = URLEncoder.encode(str);
+    }
+
+    public String d() {
+        return this.f;
+    }
+
+    public String e() {
+        return this.g;
+    }
+
+    public String f() {
+        return this.h;
+    }
+
+    public void g(String str) {
+        try {
+            if (TextUtils.isEmpty(str)) {
+                return;
+            }
+            this.k = URLEncoder.encode(str, C4427z5.O);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String h() {
+        return this.j;
+    }
+
+    public void i(String str) {
+        try {
+            if (TextUtils.isEmpty(str)) {
+                return;
+            }
+            this.o = URLEncoder.encode(str, C4427z5.O);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void j(String str) {
+        this.q = str;
+    }
+
+    public String k() {
+        return this.m;
+    }
+
+    public void l(String str) {
+        this.v = str;
+    }
+
+    public void m(String str) {
+        this.x = str;
+    }
+
+    public String n() {
+        return this.q;
+    }
+
+    public void o(String str) {
+        this.z = str;
+    }
+
+    public void p(String str) {
+        this.A = str;
+    }
+
+    public int q() {
+        return this.u;
+    }
+
+    public String r() {
+        return this.v;
+    }
+
+    public String s() {
+        return this.w;
+    }
+
+    public void t(String str) {
+        try {
+            if (TextUtils.isEmpty(str)) {
+                return;
+            }
+            this.G = URLEncoder.encode(str, C4427z5.O);
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @NonNull
+    public String toString() {
+        StringBuilder sb = new StringBuilder("RewardReportData [key=");
+        sb.append(this.q);
+        sb.append(", networkType=");
+        sb.append(this.u);
+        sb.append(", isCompleteView=");
+        sb.append(this.p);
+        sb.append(", watchedMillis=");
+        sb.append(this.M);
+        sb.append(", videoLength=");
+        sb.append(this.J);
+        sb.append(", offerUrl=");
+        sb.append(this.w);
+        sb.append(", reason=");
+        sb.append(this.x);
+        sb.append(", result=");
+        sb.append(this.C);
+        sb.append(", duration=");
+        sb.append(this.i);
+        sb.append(", videoSize=");
+        return lnb.l(this.K, U3.j.e, sb);
+    }
+
+    public void u(String str) {
+        this.I = str;
+    }
+
+    public void v(String str) {
+        try {
+            if (TextUtils.isEmpty(str)) {
+                return;
+            }
+            this.L = URLEncoder.encode(str, C4427z5.O);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public String w() {
+        return this.A;
+    }
+
+    public int x() {
+        return this.C;
+    }
+
+    public int y() {
+        return this.F;
+    }
+
+    public String z() {
+        return this.G;
+    }
+
+    public void d(String str) {
+        this.h = str;
+    }
+
+    public void e(String str) {
+        this.i = str;
+    }
+
+    public void f(String str) {
+        this.j = str;
+    }
+
+    public void h(String str) {
+        this.l = str;
+    }
+
+    public String j() {
+        return this.l;
+    }
+
+    public void k(String str) {
+        this.s = str;
+    }
+
+    public String l() {
+        return this.o;
+    }
+
+    public int m() {
+        return this.p;
+    }
+
+    public void n(String str) {
+        this.y = str;
+    }
+
+    public String o() {
+        return this.r;
+    }
+
+    public int p() {
+        return this.t;
+    }
+
+    public void q(String str) {
+        this.B = str;
+    }
+
+    public void r(String str) {
+        this.D = str;
+    }
+
+    public void s(String str) {
+        this.E = str;
+    }
+
+    public String u() {
+        return this.y;
+    }
+
+    public void d(int i) {
+        this.C = i;
+    }
+
+    public void e(int i) {
+        this.F = i;
+    }
+
+    public void c(int i) {
+        this.u = i;
+    }
+
+    public int c() {
+        return this.e;
+    }
+
+    public String g() {
+        return this.i;
+    }
+
+    public String i() {
+        return this.k;
+    }
+
+    public String t() {
+        return TextUtils.isEmpty(this.x) ? "" : this.x;
+    }
+
+    public String v() {
+        return this.z;
+    }
+
+    public void a(String str) {
+        this.b = str;
+    }
+
+    public void a(int i) {
+        this.c = i;
+    }
+
+    public int b() {
+        return this.c;
+    }
+
+    public String a() {
+        return this.b;
+    }
+
+    public void b(int i) {
+        this.t = i;
+    }
+
+    public void b(String str) {
+        this.f = str;
+    }
+
+    public n() {
+    }
+
+    public n(String str, int i, String str2, String str3, String str4) {
+        this.q = str;
+        this.v = str4;
+        this.u = i;
+        if (!TextUtils.isEmpty(str2)) {
+            try {
+                this.w = URLEncoder.encode(str2, C4427z5.O);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+        this.x = str3;
+    }
+
+    public n(String str, int i, int i2, String str2, int i3, String str3, int i4, String str4) {
+        this.q = str;
+        this.u = i;
+        this.v = str4;
+        this.J = i2;
+        if (!TextUtils.isEmpty(str2)) {
+            try {
+                this.w = URLEncoder.encode(str2, C4427z5.O);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        }
+        this.C = i3;
+        this.i = str3;
+        this.K = i4;
+    }
+
+    public n(String str, int i, int i2, int i3, int i4, String str2, String str3, int i5, String str4, int i6, String str5) {
+        this.q = str;
+        this.u = i;
+        this.v = str5;
+        this.p = i2;
+        this.M = i3;
+        this.J = i4;
+        try {
+            if (!TextUtils.isEmpty(str2)) {
+                this.w = URLEncoder.encode(str2, C4427z5.O);
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        this.x = str3;
+        this.C = i5;
+        this.i = str4;
+        this.K = i6;
+    }
+
+    public n(String str, String str2, String str3, String str4, String str5, String str6, int i, String str7) {
+        this.q = str;
+        this.m = str2;
+        this.H = str3;
+        this.r = str4;
+        this.I = str5;
+        this.f = str6;
+        this.u = i;
+        this.v = str7;
+    }
+
+    public n(String str) {
+        this.n = str;
+    }
+
+    public n(String str, int i, String str2, String str3, String str4, String str5, String str6, String str7) {
+        this.q = str;
+        this.C = i;
+        this.i = str2;
+        try {
+            if (!TextUtils.isEmpty(str3)) {
+                this.k = URLEncoder.encode(str3, C4427z5.O);
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        this.f = str4;
+        this.I = str5;
+        this.x = str6;
+        this.j = str7;
+        if (Integer.valueOf(str2).intValue() > com.mbridge.msdk.foundation.same.a.L) {
+            this.C = 2;
+        }
+    }
+
+    public n(String str, String str2, String str3, String str4, String str5, int i) {
+        this.q = str;
+        this.f = str2;
+        this.y = str3;
+        this.z = str4;
+        this.I = str5;
+        this.u = i;
+    }
+
+    public n(String str, String str2, String str3, String str4, String str5, int i, int i2, String str6) {
+        this.q = str;
+        this.f = str2;
+        this.y = str3;
+        this.z = str4;
+        this.I = str5;
+        this.u = i;
+        this.x = str6;
+        this.e = i2;
+    }
+}

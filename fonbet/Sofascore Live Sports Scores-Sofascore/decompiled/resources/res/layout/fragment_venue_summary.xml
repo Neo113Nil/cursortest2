@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:paddingBottom="48dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.sofascore.results.venue.summary.venueinfo.VenueInfoView
+                android:id="@+id/venue_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.sofascore.results.view.FeatureMatchCardView
+                android:id="@+id/featured_match_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.sofascore.results.venue.summary.venueinfo.VenueHighlightsView
+                android:id="@+id/venue_highlights_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <com.sofascore.results.view.SuggestEditView
+                android:id="@+id/venue_details_suggest_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

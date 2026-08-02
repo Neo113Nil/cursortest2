@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/league_header"
+        layout="@layout/tournament_header_cell"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/event_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground">
+        <include
+            android:id="@+id/date_header"
+            layout="@layout/mma_match_header"/>
+        <include
+            android:id="@+id/content"
+            layout="@layout/mma_event_small"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:background="@drawable/odds_featured_tournament_selector"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingEnd="4dp"
+    android:paddingVertical="4dp">
+    <TextView
+        android:textColor="@color/n_lv_3"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:id="@+id/odds_choice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        style="@style/AssistiveDefault"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minWidth="8dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/odds_choice_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        style="@style/DisplayMicro"/>
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_position_arrow_up_8"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="4dp"/>
+</LinearLayout>

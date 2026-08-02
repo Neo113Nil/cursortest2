@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="cricket_delivery">
+        <item quantity="other">%1$d投球(%2$dW)</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="other">由%1$d 号编辑器编辑</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">快进 %d 秒</item>
+        <item quantity="other">快进 %d 秒</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">快退 %d 秒</item>
+        <item quantity="other">快退 %d 秒</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="other">剩余%1$d场比赛</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="other">+%1$d 进球</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d 条新通知</item>
+        <item quantity="other">%d 条新通知</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="other">%1$d 天</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="other">%1$d赛事</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="other">%1$s 球员</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="other">%1$d 年前</item>
+    </plurals>
+</resources>

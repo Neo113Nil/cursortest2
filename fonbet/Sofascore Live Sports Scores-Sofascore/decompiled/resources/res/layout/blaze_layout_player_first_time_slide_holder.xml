@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blaze_firstTimeSlide_item_rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="32dp">
+    <ImageView
+        android:id="@+id/blaze_firstTimeSlideIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/blaze_firstTimeSlideDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/blaze_firstTimeSlideHeader"/>
+    <com.blaze.blazesdk.custom_views.BlazeTextView
+        android:textStyle="bold"
+        android:textColor="@color/blaze_first_time_slide_header_color"
+        android:id="@+id/blaze_firstTimeSlideHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blaze_firstTimeSlideIcon"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.blaze.blazesdk.custom_views.BlazeTextView
+        android:textColor="@color/blaze_first_time_slide_description_color"
+        android:id="@+id/blaze_firstTimeSlideDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/blaze_firstTimeSlideHeader"
+        app:layout_constraintTop_toBottomOf="@+id/blaze_firstTimeSlideHeader"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

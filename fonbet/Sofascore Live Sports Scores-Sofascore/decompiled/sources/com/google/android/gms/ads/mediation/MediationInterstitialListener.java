@@ -1,0 +1,24 @@
+package com.google.android.gms.ads.mediation;
+
+import androidx.annotation.NonNull;
+import com.google.android.gms.ads.AdError;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+@Deprecated
+/* loaded from: classes3.dex */
+public interface MediationInterstitialListener {
+    void onAdClicked(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter);
+
+    void onAdClosed(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter);
+
+    @Deprecated
+    void onAdFailedToLoad(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter, int i);
+
+    void onAdFailedToLoad(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter, @NonNull AdError adError);
+
+    void onAdLeftApplication(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter);
+
+    void onAdLoaded(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter);
+
+    void onAdOpened(@NonNull MediationInterstitialAdapter mediationInterstitialAdapter);
+}

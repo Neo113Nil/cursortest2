@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="161dp"
+    android:width="161dp"
+    android:viewportWidth="161"
+    android:viewportHeight="161">
+    <path
+        android:fillColor="@drawable/_season_logomark__0_res_0x7f0800dd"
+        android:pathData="M160.8,0.8c0,0 -0.3,-0.8 -0.8,-0.8H0.8C0.8,0 0,0.3 0,0.8v79c0,0 0.3,0.8 0.8,0.8h38.7c0,0 0.8,-0.3 0.8,-0.8V41c0,0 0.3,-0.8 0.8,-0.8h119.1c0,0 0.8,-0.3 0.8,-0.8L160.8,0.8L160.8,0.8z"
+        android:fillType="evenOdd"/>
+    <path
+        android:fillColor="@drawable/_season_logomark__1_res_0x7f0800de"
+        android:pathData="M121.3,80.4c0,0 -0.8,0.3 -0.8,0.8v38.7c0,0 -0.3,0.8 -0.8,0.8H0.8c0,0 -0.8,0.3 -0.8,0.8v38.7c0,0 0.3,0.8 0.8,0.8h159.3c0,0 0.8,-0.3 0.8,-0.8v-79c0,0 -0.3,-0.8 -0.8,-0.8H121.3z"
+        android:fillType="evenOdd"/>
+</vector>

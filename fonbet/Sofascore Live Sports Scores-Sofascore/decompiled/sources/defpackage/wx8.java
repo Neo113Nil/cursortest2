@@ -1,0 +1,12 @@
+package defpackage;
+
+import android.os.Build;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes.dex */
+public final class wx8 implements mm4 {
+    @Override // defpackage.mm4
+    public final zl4 a() {
+        return Build.VERSION.SDK_INT >= 28 ? new w60() : new ux8();
+    }
+}

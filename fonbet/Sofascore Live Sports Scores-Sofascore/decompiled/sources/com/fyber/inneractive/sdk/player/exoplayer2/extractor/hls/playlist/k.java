@@ -1,0 +1,122 @@
+package com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.playlist;
+
+import android.net.Uri;
+import android.os.Handler;
+import android.os.SystemClock;
+import com.fyber.inneractive.sdk.player.exoplayer2.o;
+import com.fyber.inneractive.sdk.player.exoplayer2.r;
+import com.fyber.inneractive.sdk.player.exoplayer2.upstream.b0;
+import com.fyber.inneractive.sdk.player.exoplayer2.upstream.d0;
+import com.fyber.inneractive.sdk.player.exoplayer2.upstream.x;
+import com.fyber.inneractive.sdk.player.exoplayer2.upstream.z;
+import com.mbridge.msdk.playercommon.exoplayer2.C;
+import com.mbridge.msdk.playercommon.exoplayer2.util.MimeTypes;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.List;
+
+/* compiled from: r8-map-id-820aebbf04e3f76f83859749e000e999e94bc7aa15ea120a09e9f3ed9aa09d5a */
+/* loaded from: classes2.dex */
+public final class k implements x {
+    public final com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.b a;
+    public final com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.j f;
+    public final com.fyber.inneractive.sdk.player.exoplayer2.source.f i;
+    public b j;
+    public a k;
+    public d l;
+    public boolean m;
+    public final int c = 3;
+    public final ArrayList g = new ArrayList();
+    public final b0 h = new b0("HlsPlaylistTracker:MasterPlaylist");
+    public final g b = new g();
+    public final IdentityHashMap d = new IdentityHashMap();
+    public final Handler e = new Handler();
+
+    public k(Uri uri, com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.b bVar, com.fyber.inneractive.sdk.player.exoplayer2.source.f fVar, com.fyber.inneractive.sdk.player.exoplayer2.extractor.hls.j jVar) {
+        this.a = bVar;
+        this.i = fVar;
+        this.f = jVar;
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.upstream.x
+    public final void a(z zVar, long j, long j2) {
+        b bVar;
+        d0 d0Var = (d0) zVar;
+        e eVar = d0Var.d;
+        boolean z = eVar instanceof d;
+        if (z) {
+            List singletonList = Collections.singletonList(new a(eVar.a, new o("0", MimeTypes.APPLICATION_M3U8, null, null, -1, -1, -1, -1, -1.0f, -1, -1.0f, null, -1, null, -1, -1, -1, -1, -1, 0, null, -1, Long.MAX_VALUE, null, null, null)));
+            List list = Collections.EMPTY_LIST;
+            bVar = new b(null, singletonList, list, list, null, null);
+        } else {
+            bVar = (b) eVar;
+        }
+        this.j = bVar;
+        this.k = (a) bVar.b.get(0);
+        ArrayList arrayList = new ArrayList();
+        arrayList.addAll(bVar.b);
+        arrayList.addAll(bVar.c);
+        arrayList.addAll(bVar.d);
+        int size = arrayList.size();
+        long elapsedRealtime = SystemClock.elapsedRealtime();
+        for (int i = 0; i < size; i++) {
+            a aVar = (a) arrayList.get(i);
+            this.d.put(aVar, new h(this, aVar, elapsedRealtime));
+        }
+        h hVar = (h) this.d.get(this.k);
+        if (z) {
+            hVar.a((d) eVar);
+        } else {
+            hVar.b();
+        }
+        com.fyber.inneractive.sdk.player.exoplayer2.source.f fVar = this.i;
+        com.fyber.inneractive.sdk.player.exoplayer2.upstream.k kVar = d0Var.a;
+        long j3 = d0Var.f;
+        if (fVar.b != null) {
+            fVar.a.post(new com.fyber.inneractive.sdk.player.exoplayer2.source.b(fVar, kVar, 4, -1, null, 0, null, C.TIME_UNSET, C.TIME_UNSET, j, j2, j3));
+        }
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.upstream.x
+    public final void a(z zVar, long j, long j2, boolean z) {
+        d0 d0Var = (d0) zVar;
+        com.fyber.inneractive.sdk.player.exoplayer2.source.f fVar = this.i;
+        com.fyber.inneractive.sdk.player.exoplayer2.upstream.k kVar = d0Var.a;
+        long j3 = d0Var.f;
+        if (fVar.b != null) {
+            fVar.a.post(new com.fyber.inneractive.sdk.player.exoplayer2.source.c(fVar, kVar, 4, -1, null, 0, null, C.TIME_UNSET, C.TIME_UNSET, j, j2, j3));
+        }
+    }
+
+    @Override // com.fyber.inneractive.sdk.player.exoplayer2.upstream.x
+    public final int a(z zVar, long j, long j2, IOException iOException) {
+        boolean z;
+        d0 d0Var = (d0) zVar;
+        boolean z2 = iOException instanceof r;
+        com.fyber.inneractive.sdk.player.exoplayer2.source.f fVar = this.i;
+        com.fyber.inneractive.sdk.player.exoplayer2.upstream.k kVar = d0Var.a;
+        long j3 = d0Var.f;
+        if (fVar.b != null) {
+            z = z2;
+            fVar.a.post(new com.fyber.inneractive.sdk.player.exoplayer2.source.d(fVar, kVar, 4, -1, null, 0, null, C.TIME_UNSET, C.TIME_UNSET, j, j2, j3, iOException, z));
+        } else {
+            z = z2;
+        }
+        return z ? 3 : 0;
+    }
+
+    public final d a(a aVar) {
+        d dVar;
+        h hVar = (h) this.d.get(aVar);
+        hVar.getClass();
+        hVar.g = SystemClock.elapsedRealtime();
+        d dVar2 = hVar.d;
+        if (dVar2 != null && this.j.b.contains(aVar) && (((dVar = this.l) == null || !dVar.j) && ((h) this.d.get(this.k)).g - SystemClock.elapsedRealtime() > 15000)) {
+            this.k = aVar;
+            ((h) this.d.get(aVar)).b();
+        }
+        return dVar2;
+    }
+}

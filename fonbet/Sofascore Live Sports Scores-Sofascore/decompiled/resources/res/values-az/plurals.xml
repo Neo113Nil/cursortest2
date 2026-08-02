@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="am_football_last_x_games">
+        <item quantity="one">Son %1$d oyun</item>
+        <item quantity="other">Son %1$d oyun</item>
+    </plurals>
+    <plurals name="badminton_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="baseball_last_x_games">
+        <item quantity="one">Son %1$d oyun</item>
+        <item quantity="other">Son %1$d oyun</item>
+    </plurals>
+    <plurals name="baseball_outs_counter">
+        <item quantity="one">aut</item>
+        <item quantity="other">aut</item>
+    </plurals>
+    <plurals name="basketball_last_x_games">
+        <item quantity="one">Son %1$d oyun</item>
+        <item quantity="other">Son %1$d oyun</item>
+    </plurals>
+    <plurals name="basketball_number_of_titles">
+        <item quantity="one">%1$d titul</item>
+        <item quantity="other">%1$d titul</item>
+    </plurals>
+    <plurals name="countdown_days">
+        <item quantity="one">Gün</item>
+        <item quantity="other">Gün</item>
+    </plurals>
+    <plurals name="countdown_hours">
+        <item quantity="one">Saat</item>
+        <item quantity="other">Saat</item>
+    </plurals>
+    <plurals name="countdown_minutes">
+        <item quantity="one">Dəqiqə</item>
+        <item quantity="other">Dəqiqə</item>
+    </plurals>
+    <plurals name="countdown_seconds">
+        <item quantity="one">Saniyə</item>
+        <item quantity="other">Saniyə</item>
+    </plurals>
+    <plurals name="cricket_delivery">
+        <item quantity="one">%1$d Çatdırma (%2$dW)</item>
+        <item quantity="other">%1$d Çatdırma (%2$dW)</item>
+    </plurals>
+    <plurals name="cricket_runs">
+        <item quantity="one">%1$d qaçış</item>
+        <item quantity="other">%1$d qaçış</item>
+    </plurals>
+    <plurals name="cricket_wickets">
+        <item quantity="one">%1$d qapı</item>
+        <item quantity="other">%1$d qapı</item>
+    </plurals>
+    <plurals name="crowdsourcing_users_contribution_counter">
+        <item quantity="one">%1$s istifadəçi töhfə verdi</item>
+        <item quantity="other">%1$s istifadəçi töhfə verdi</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_legs">
+        <item quantity="one">%1$s matçın ən yaxşısı</item>
+        <item quantity="other">%1$s leg-in ən yaxşısı</item>
+    </plurals>
+    <plurals name="darts_best_of_number_of_sets">
+        <item quantity="one">%1$s setin ən yaxşısı</item>
+        <item quantity="other">%1$s setin ən yaxşısı</item>
+    </plurals>
+    <plurals name="darts_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="days_left">
+        <item quantity="one">&gt;%1$d gün qaldı</item>
+        <item quantity="other">%1$d gün qaldı</item>
+    </plurals>
+    <plurals name="edited_by_more_editors">
+        <item quantity="one">%1$d redaktor düzəliş etdi</item>
+        <item quantity="other">%1$d redaktor düzəliş etdi</item>
+    </plurals>
+    <plurals name="esports_last_x_events">
+        <item quantity="one">Son %1$d tədbir</item>
+        <item quantity="other">Son %1$d tədbir</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d saniyə irəli çəkin</item>
+        <item quantity="other">%d saniyə irəli çəkin</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d saniyə geri çəkin</item>
+        <item quantity="other">%d saniyə geri çəkin</item>
+    </plurals>
+    <plurals name="fantasy_confirm_addition_transfers_body_1">
+        <item quantity="one">Davam etsəniz, (%1$d) xal itirəcəksiniz.</item>
+        <item quantity="other">Davam etsəniz, (%1$d) xal itirəcəksiniz.</item>
+    </plurals>
+    <plurals name="fantasy_optimise_your_lineup_text_2">
+        <item quantity="one">%1$d potensial yaxşılaşdırmanız var.</item>
+        <item quantity="other">%1$d potensial yaxşılaşdırmanız var.</item>
+    </plurals>
+    <plurals name="football_plus_x_events_in_match">
+        <item quantity="one">Daha %1$d tədbir</item>
+        <item quantity="other">Daha %1$d tədbir</item>
+    </plurals>
+    <plurals name="for_every_n">
+        <item quantity="one">Hər %1$s dənəsi üçün</item>
+        <item quantity="other">Hər %1$s dənəsi üçün</item>
+    </plurals>
+    <plurals name="general_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="general_number_of_matches">
+        <item quantity="one">%1$d matç</item>
+        <item quantity="other">%1$d matç</item>
+    </plurals>
+    <plurals name="half_price_discount_bullet_2">
+        <item quantity="one">%1$d gün qaldı, fürsəti qaçırmayın!</item>
+        <item quantity="other">%1$d gün qaldı, fürsəti qaçırmayın!</item>
+    </plurals>
+    <plurals name="header_football_additional_goals">
+        <item quantity="one">+%1$d qol</item>
+        <item quantity="other">+%1$d qol</item>
+    </plurals>
+    <plurals name="ice_hockey_last_x_games">
+        <item quantity="one">Son %1$d oyun</item>
+        <item quantity="other">Son %1$d oyun</item>
+    </plurals>
+    <plurals name="insufficient_funds_plural_info">
+        <item quantity="one">%1$d transferi tamamlamaq üçün vəsait yetərsizdir</item>
+        <item quantity="other">%1$d transferi tamamlamaq üçün vəsait yetərsizdir</item>
+    </plurals>
+    <plurals name="last_hours">
+        <item quantity="one">Son %1$d saat</item>
+        <item quantity="other">Son %1$d saat</item>
+    </plurals>
+    <plurals name="last_x_matches">
+        <item quantity="one">Güncəl nəticə: %1$s</item>
+        <item quantity="other">Güncəl nəticələr: %1$s</item>
+    </plurals>
+    <plurals name="motorsport_laps_behind">
+        <item quantity="one">+%1$d dövrə</item>
+        <item quantity="other">+%1$d dövrə</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d yeni bildiriş</item>
+        <item quantity="other">%d yeni bildiriş</item>
+    </plurals>
+    <plurals name="number_of_days">
+        <item quantity="one">%1$d Gün</item>
+        <item quantity="other">%1$d Gün</item>
+    </plurals>
+    <plurals name="number_of_events">
+        <item quantity="one">%1$d tədbir</item>
+        <item quantity="other">%1$d tədbir</item>
+    </plurals>
+    <plurals name="number_of_players">
+        <item quantity="one">%1$s oyunçu</item>
+        <item quantity="other">%1$s oyunçu</item>
+    </plurals>
+    <plurals name="number_of_votes">
+        <item quantity="one">%1$s səs</item>
+        <item quantity="other">%1$s səs</item>
+    </plurals>
+    <plurals name="over_cards">
+        <item quantity="one">%1$s kartdan çox</item>
+        <item quantity="other">%1$s kartdan çox</item>
+    </plurals>
+    <plurals name="over_corners">
+        <item quantity="one">%1$s künc zərbəsindən çox</item>
+        <item quantity="other">%1$s künc zərbəsindən çox</item>
+    </plurals>
+    <plurals name="over_goals">
+        <item quantity="one">%1$s qoldan çox</item>
+        <item quantity="other">%1$s qoldan çox</item>
+    </plurals>
+    <plurals name="season_25_bonus_predictor_header">
+        <item quantity="one">%1$s səslə, bütün Proqnozçuların ən yaxşı %2$s-i içindəsiniz!</item>
+        <item quantity="other">%1$s səslə, bütün Proqnozçuların ən yaxşı %2$s-i içindəsiniz!</item>
+    </plurals>
+    <plurals name="season_25_bonus_torneo_header">
+        <item quantity="one">Bu il, Torneo-ya %1$s dəfə giriş etmisiniz.</item>
+        <item quantity="other">Bu il, Torneo-ya %1$s dəfə giriş etmisiniz.</item>
+    </plurals>
+    <plurals name="season_25_share_bonus_torneo_header">
+        <item quantity="one">Bu il Torneo-ya %1$s dəfə giriş etdim</item>
+        <item quantity="other">Bu il Torneo-ya %1$s dəfə giriş etdim</item>
+    </plurals>
+    <plurals name="season_25_share_top_events_remember_subheader">
+        <item quantity="one">%1$s baxışla ən bəyəndiyim tədbir:</item>
+        <item quantity="other">%1$s baxışla ən bəyəndiyim tədbir:</item>
+    </plurals>
+    <plurals name="season_25_top_events_intro_header">
+        <item quantity="one">2025-ci ildə %1$s tədbirdə iştirak etmisiniz</item>
+        <item quantity="other">2025-ci ildə %1$s tədbirdə iştirak etmisiniz</item>
+    </plurals>
+    <plurals name="season_25_top_events_remember_subheader">
+        <item quantity="one">Təəccüblü deyil. Bunu %1$s dəfə açmısınız.</item>
+        <item quantity="other">Təəccüblü deyil. Bunu %1$s dəfə açmısınız.</item>
+    </plurals>
+    <plurals name="season_25_top_player_intro_header">
+        <item quantity="one">İti gözlü skaut kimi, %1$s oyunçunu izləmisiniz</item>
+        <item quantity="other">İti gözlü skaut kimi, %1$s oyunçunu izləmisiniz</item>
+    </plurals>
+    <plurals name="snooker_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="table_tennis_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="tennis_last_x_matches">
+        <item quantity="one">Son %1$d matç</item>
+        <item quantity="other">Son %1$d matç</item>
+    </plurals>
+    <plurals name="tennis_number_of_titles">
+        <item quantity="one">%1$d titul</item>
+        <item quantity="other">%1$d titul</item>
+    </plurals>
+    <plurals name="transfer_player_info">
+        <item quantity="one">%1$d oyunçunu transfer etmək üzrəsiniz</item>
+        <item quantity="other">%1$d oyunçunu transfer etmək üzrəsiniz</item>
+    </plurals>
+    <plurals name="under_cards">
+        <item quantity="one">%1$s kartdan az</item>
+        <item quantity="other">%1$s kartdan az</item>
+    </plurals>
+    <plurals name="under_corners">
+        <item quantity="one">%1$s künc zərbəsindən az</item>
+        <item quantity="other">%1$s künc zərbəsindən az</item>
+    </plurals>
+    <plurals name="under_goals">
+        <item quantity="one">%1$s qoldan az</item>
+        <item quantity="other">%1$s qoldan az</item>
+    </plurals>
+    <plurals name="venue_opened_years_ago">
+        <item quantity="one">%1$d il əvvəl</item>
+        <item quantity="other">%1$d il əvvəl</item>
+    </plurals>
+    <plurals name="weekly_streak_counter">
+        <item quantity="one">%1$s həftə</item>
+        <item quantity="other">%1$s həftə</item>
+    </plurals>
+    <plurals name="years_short">
+        <item quantity="one">%1$s yaş</item>
+        <item quantity="other">%1$s yaş</item>
+    </plurals>
+</resources>
