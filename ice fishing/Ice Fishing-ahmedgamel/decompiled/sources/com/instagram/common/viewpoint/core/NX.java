@@ -21,10 +21,6 @@ public class NX {
     public String A0G;
     public String A0H;
 
-    public static /* synthetic */ String A0B(NX nx) {
-        return nx.A04;
-    }
-
     public final NX A0I(String str) {
         this.A00 = NW.A00(str);
         return this;

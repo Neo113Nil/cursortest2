@@ -8,10 +8,6 @@ public class C1129Nl {
     public String A02;
     public String A03;
 
-    public static /* synthetic */ String A00(C1129Nl c1129Nl) {
-        return c1129Nl.A02;
-    }
-
     public final C1129Nl A04(String str) {
         this.A00 = str;
         return this;

@@ -13,15 +13,11 @@ public final class C1130Nm implements Serializable {
 
     public C1130Nm(C1129Nl c1129Nl) {
         String str;
-        String str2;
-        String str3;
-        this.A02 = C1129Nl.A00(c1129Nl);
-        str = c1129Nl.A01;
-        this.A01 = str;
-        str2 = c1129Nl.A00;
-        this.A00 = str2;
-        str3 = c1129Nl.A03;
-        this.A03 = str3;
+        this.A02 = c1129Nl.A02;
+        this.A01 = c1129Nl.A01;
+        this.A00 = c1129Nl.A00;
+        str = c1129Nl.A03;
+        this.A03 = str;
     }
 
     public final String A00() {

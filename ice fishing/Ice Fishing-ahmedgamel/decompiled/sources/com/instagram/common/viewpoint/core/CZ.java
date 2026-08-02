@@ -39,7 +39,11 @@ public final class CZ implements InterfaceC1842gQ {
     }
 
     /* JADX WARN: Failed to parse debug info
-    java.lang.ArrayIndexOutOfBoundsException
+    java.lang.ArrayIndexOutOfBoundsException: Index 9 out of bounds for length 9
+    	at jadx.plugins.input.dex.sections.debuginfo.DebugInfoParser.process(DebugInfoParser.java:147)
+    	at jadx.plugins.input.dex.sections.DexCodeReader.getDebugInfo(DexCodeReader.java:122)
+    	at jadx.core.dex.nodes.MethodNode.getDebugInfo(MethodNode.java:636)
+    	at jadx.core.dex.visitors.debuginfo.DebugInfoAttachVisitor.visit(DebugInfoAttachVisitor.java:38)
      */
     @Override // com.instagram.common.viewpoint.core.InterfaceC1842gQ
     public final synchronized void A6b(int i) {
