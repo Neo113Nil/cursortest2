@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" android:layoutDirection="rtl">
+    <item
+        android:icon="@drawable/ic_all_colors"
+        android:id="@+id/item_all"
+        android:title="الكل"
+        android:layoutDirection="rtl"/>
+    <item
+        android:icon="@drawable/ic_note_cornflowerblue"
+        android:id="@+id/item_cornflowerblue"
+        android:title="Cornflower blue"
+        android:layoutDirection="ltr"/>
+    <item
+        android:icon="@drawable/ic_note_marigold"
+        android:id="@+id/item_marigold"
+        android:title="Marigold"
+        android:layoutDirection="ltr"/>
+    <item
+        android:icon="@drawable/ic_note_feiryrose"
+        android:id="@+id/item_feiryrose"
+        android:title="Fairy rose"
+        android:layoutDirection="ltr"/>
+    <item
+        android:icon="@drawable/ic_note_bluejeans"
+        android:id="@+id/item_bluejeans"
+        android:title="Blue jeans"
+        android:layoutDirection="ltr"/>
+    <item
+        android:icon="@drawable/ic_note_tartorange"
+        android:id="@+id/item_tartorange"
+        android:title="Tart orange"
+        android:layoutDirection="ltr"/>
+</menu>

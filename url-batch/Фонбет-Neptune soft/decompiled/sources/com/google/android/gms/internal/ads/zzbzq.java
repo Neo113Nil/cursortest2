@@ -1,0 +1,20 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+/* loaded from: classes2.dex */
+final class zzbzq implements zzgcf {
+    final /* synthetic */ String zza;
+
+    zzbzq(String str) {
+        this.zza = str;
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgcf
+    public final void zza(Throwable th) {
+        com.google.android.gms.ads.internal.zzu.zzo().zzv(th, this.zza);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgcf
+    public final void zzb(Object obj) {
+    }
+}

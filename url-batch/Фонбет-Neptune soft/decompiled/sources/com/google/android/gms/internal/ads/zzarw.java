@@ -1,0 +1,55 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads@@23.3.0 */
+/* loaded from: classes2.dex */
+public final class zzarw extends zzgxy implements zzgzk {
+    private static final zzarw zza;
+    private static volatile zzgzr zzb;
+    private int zzc;
+    private long zzd = -1;
+    private int zze = 1000;
+    private int zzf = 1000;
+
+    static {
+        zzarw zzarwVar = new zzarw();
+        zza = zzarwVar;
+        zzgxy.zzcb(zzarw.class, zzarwVar);
+    }
+
+    private zzarw() {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzgxy
+    protected final Object zzde(zzgxx zzgxxVar, Object obj, Object obj2) {
+        zzarn zzarnVar = null;
+        switch (zzgxxVar) {
+            case GET_MEMOIZED_IS_INITIALIZED:
+                return (byte) 1;
+            case SET_MEMOIZED_IS_INITIALIZED:
+                return null;
+            case BUILD_MESSAGE_INFO:
+                zzgye zzgyeVar = zzasp.zza;
+                return zzbS(zza, "\u0001\u0003\u0000\u0001\u0001\u0003\u0003\u0000\u0000\u0000\u0001ဂ\u0000\u0002᠌\u0001\u0003᠌\u0002", new Object[]{"zzc", "zzd", "zze", zzgyeVar, "zzf", zzgyeVar});
+            case NEW_MUTABLE_INSTANCE:
+                return new zzarw();
+            case NEW_BUILDER:
+                return new zzarv(zzarnVar);
+            case GET_DEFAULT_INSTANCE:
+                return zza;
+            case GET_PARSER:
+                zzgzr zzgzrVar = zzb;
+                if (zzgzrVar == null) {
+                    synchronized (zzarw.class) {
+                        zzgzrVar = zzb;
+                        if (zzgzrVar == null) {
+                            zzgzrVar = new zzgxt(zza);
+                            zzb = zzgzrVar;
+                        }
+                    }
+                }
+                return zzgzrVar;
+            default:
+                throw new UnsupportedOperationException();
+        }
+    }
+}
