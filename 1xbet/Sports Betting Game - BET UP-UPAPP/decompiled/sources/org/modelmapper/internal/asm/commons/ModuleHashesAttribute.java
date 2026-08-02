@@ -1,0 +1,67 @@
+package org.modelmapper.internal.asm.commons;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.modelmapper.internal.asm.Attribute;
+import org.modelmapper.internal.asm.ByteVector;
+import org.modelmapper.internal.asm.ClassReader;
+import org.modelmapper.internal.asm.ClassWriter;
+import org.modelmapper.internal.asm.Label;
+
+/* loaded from: classes4.dex */
+public final class ModuleHashesAttribute extends Attribute {
+    public String algorithm;
+    public List<byte[]> hashes;
+    public List<String> modules;
+
+    public ModuleHashesAttribute(String str, List<String> list, List<byte[]> list2) {
+        super("ModuleHashes");
+        this.algorithm = str;
+        this.modules = list;
+        this.hashes = list2;
+    }
+
+    public ModuleHashesAttribute() {
+        this(null, null, null);
+    }
+
+    @Override // org.modelmapper.internal.asm.Attribute
+    protected Attribute read(ClassReader classReader, int i, int i2, char[] cArr, int i3, Label[] labelArr) {
+        String readUTF8 = classReader.readUTF8(i, cArr);
+        int readUnsignedShort = classReader.readUnsignedShort(i + 2);
+        int i4 = i + 4;
+        ArrayList arrayList = new ArrayList(readUnsignedShort);
+        ArrayList arrayList2 = new ArrayList(readUnsignedShort);
+        for (int i5 = 0; i5 < readUnsignedShort; i5++) {
+            arrayList.add(classReader.readModule(i4, cArr));
+            int readUnsignedShort2 = classReader.readUnsignedShort(i4 + 2);
+            i4 += 4;
+            byte[] bArr = new byte[readUnsignedShort2];
+            for (int i6 = 0; i6 < readUnsignedShort2; i6++) {
+                bArr[i6] = (byte) (classReader.readByte(i4) & 255);
+                i4++;
+            }
+            arrayList2.add(bArr);
+        }
+        return new ModuleHashesAttribute(readUTF8, arrayList, arrayList2);
+    }
+
+    @Override // org.modelmapper.internal.asm.Attribute
+    protected ByteVector write(ClassWriter classWriter, byte[] bArr, int i, int i2, int i3) {
+        ByteVector byteVector = new ByteVector();
+        byteVector.putShort(classWriter.newUTF8(this.algorithm));
+        List<String> list = this.modules;
+        if (list == null) {
+            byteVector.putShort(0);
+        } else {
+            int size = list.size();
+            byteVector.putShort(size);
+            for (int i4 = 0; i4 < size; i4++) {
+                String str = this.modules.get(i4);
+                byte[] bArr2 = this.hashes.get(i4);
+                byteVector.putShort(classWriter.newModule(str)).putShort(bArr2.length).putByteArray(bArr2, 0, bArr2.length);
+            }
+        }
+        return byteVector;
+    }
+}

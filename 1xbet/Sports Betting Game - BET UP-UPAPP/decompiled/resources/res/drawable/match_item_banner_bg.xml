@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@color/match_list_gradient_secondary_banner_stroke_bg"
+                android:endColor="@color/match_list_gradient_primary_banner_stroke_bg"
+                android:angle="90"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <item
+        android:left="1dp"
+        android:top="1dp"
+        android:right="1dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/match_list_primary_banner_bg"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

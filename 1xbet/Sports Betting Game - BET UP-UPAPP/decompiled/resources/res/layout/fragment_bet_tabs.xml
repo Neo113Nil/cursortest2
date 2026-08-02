@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/pagesListContainer"
+        android:background="@color/mirageDark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/betExpandButton"
+            android:padding="2dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/expand_bets"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            app:tint="@color/DarkGray"/>
+        <org.betup.ui.views.PagerSlidingTabStrip
+            android:id="@+id/pages"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:pstsIndicatorHeight="3dp"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/blackCyan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pagesListContainer"/>
+    <TextView
+        android:textSize="@dimen/font_size_big"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:id="@+id/no_bets"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_bets"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

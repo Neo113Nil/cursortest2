@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      width: 100%; height: 100%; background: transparent;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #F9FAFD; overflow: hidden;
+    }
+    .card {
+      position: relative; width: 100%; height: 100%; min-height: 160px;
+      border-radius: 16px; overflow: hidden;
+      background: linear-gradient(180deg, #24252D 0%, #1C1B20 100%);
+      border: 2.5px solid transparent;
+      border-image: linear-gradient(180deg, {{borderColor}} 0%, transparent 100%) 1;
+      display: flex; flex-direction: column; padding: 12px 12px 0;
+    }
+    .card-inner { flex: 1; display: flex; flex-direction: column; position: relative; }
+    .eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 1px; color: #FFB03A; text-transform: uppercase; }
+    .headline { font-size: 22px; font-weight: 900; color: #FFB03A; line-height: 1.1; margin-top: 4px; }
+    .subtitle { font-size: 11px; color: #B8B3C7; margin-top: 4px; line-height: 1.35; white-space: pre-line; }
+    .coins { font-size: 18px; font-weight: 700; color: #FFB03A; margin-top: 8px; }
+    .badge {
+      position: absolute; top: 0; right: 0;
+      background: #FFB03A; color: #131217; font-size: 10px; font-weight: 800;
+      padding: 3px 8px; border-radius: 4px;
+    }
+    .timer { position: absolute; top: 0; right: 0; font-size: 10px; color: #757186; }
+    .hero-img {
+      position: absolute; right: -4px; bottom: 44px; max-width: 45%; max-height: 55%;
+      object-fit: contain; pointer-events: none;
+    }
+    .cta {
+      margin-top: auto; width: 100%; border: none; border-radius: 0 0 14px 14px;
+      background: linear-gradient(180deg, #FFD392 0%, #FFB03A 100%);
+      color: #131217; font-size: 14px; font-weight: 700; padding: 12px;
+      cursor: pointer;
+    }
+    .cta-row { display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .old-price { text-decoration: line-through; opacity: 0.55; font-size: 12px; }
+    .discount { font-size: 11px; font-weight: 800; color: #131217; }
+    .bullets { margin-top: 8px; padding-right: 40%; }
+    .bullet { font-size: 11px; font-weight: 700; margin-bottom: 4px; color: #F9FAFD; }
+    .bullet::before { content: '› '; color: #FFB03A; }
+    .days-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 8px;
+      background: rgba(255, 176, 58, 0.2); color: #FFB03A;
+      font-size: 16px; font-weight: 800; margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" data-section="{{section}}">
+    <div class="card-inner">
+      <div class="eyebrow">{{eyebrow}}</div>
+      <div class="headline">{{headline}}</div>
+      <div class="subtitle">{{subtitle}}</div>
+      <div class="bullets">{{bulletsHtml}}</div>
+      <div class="coins">{{betcoins}}</div>
+      <div class="days-badge" id="daysBadge" style="display:{{daysDisplay}}">{{packageDays}}</div>
+      <span class="badge" style="display:{{badgeDisplay}}">{{badge}}</span>
+      <span class="timer" style="display:{{timerDisplay}}">{{timer}}</span>
+      <img class="hero-img" src="{{iconUrl}}" alt="" onerror="this.style.display='none'" />
+    </div>
+    <button type="button" class="cta" onclick="Android.purchase('{{storeCode}}')">
+      <div class="cta-row">
+        <span class="discount" style="display:{{discountDisplay}}">{{discount}}</span>
+        <span class="old-price" style="display:{{oldPriceDisplay}}">{{oldPrice}}</span>
+        <span>{{buyLabel}}</span>
+      </div>
+    </button>
+  </div>
+</body>
+</html>

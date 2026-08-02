@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns:kbgzbf="http://www.w3.org/2000/svg"
+    fill="none"
+    height="101"
+    viewBox="0 0 100 101"
+    width="100">
+    <g id="Pointer">
+        <g id="Pointer_2">
+            <path
+                d="M0 0H100L93.75 8H87.5H75H50H25H12.5H6.25L0 0Z"
+                fill="#1167cd"
+                id="Rectangle 2936"/>
+            <path
+                d="M44 8H56L50 20L44 8Z"
+                fill="#1167cd"
+                id="Rectangle 2937"/>
+        </g>
+        <g id="Pointer_3">
+            <path
+                d="M0 101H100L93.75 93H87.5H75H50H25H12.5H6.25L0 101Z"
+                fill="#1167cd"
+                id="Rectangle 2936_2"/>
+            <path
+                d="M44 93H56L50 81L44 93Z"
+                fill="#1167cd"
+                id="Rectangle 2937_2"/>
+        </g>
+    </g>
+</svg>

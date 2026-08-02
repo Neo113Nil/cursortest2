@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:background="@color/drawer_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/title"
+        android:background="@color/stats_league_background"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:textAllCaps="true"/>
+    <View
+        android:background="@color/drawer_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</LinearLayout>

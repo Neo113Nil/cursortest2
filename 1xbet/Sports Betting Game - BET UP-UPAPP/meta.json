@@ -1,0 +1,20 @@
+{
+  "app_id": "org.betup",
+  "title": "Sports Betting Game - BET UP",
+  "developer": "UPAPP",
+  "score": null,
+  "url": "https://play.google.com/store/apps/details?id=org.betup&hl=en&gl=us",
+  "keyword": "1xbet",
+  "developer_id": "UPAPP",
+  "version": "3.3.5",
+  "version_code": 3606,
+  "summary": "BETUP fantasy sports betting game (in-app name BETUP)",
+  "folder": "Sports Betting Game - BET UP-UPAPP",
+  "path": "1xbet/Sports Betting Game - BET UP-UPAPP",
+  "ok": true,
+  "source": "apkeep:apk-pure",
+  "files": [
+    "org.betup.xapk"
+  ],
+  "cloaking": "нет"
+}

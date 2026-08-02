@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/default_button_secondary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/default_gap"
+    android:layout_marginEnd="@dimen/default_gap"
+    android:paddingVertical="10dp"
+    app:layout_constraintDimensionRatio="1:1">
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="@dimen/medium_plus_icon"
+        android:layout_height="@dimen/medium_plus_icon"
+        android:src="@drawable/ic_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/active_text"
+        android:gravity="center"
+        android:id="@+id/btn_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_icon_gap"
+        android:text="@string/battles"
+        android:maxLines="2"
+        android:breakStrategy="high_quality"
+        android:hyphenationFrequency="fullFast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_iv"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

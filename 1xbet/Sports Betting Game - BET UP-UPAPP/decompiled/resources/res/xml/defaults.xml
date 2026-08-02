@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>liveVideoMinApplicationVersion
+        </key>
+        <value>18
+        </value>
+    </entry>
+    <entry>
+        <key>videoSports
+        </key>
+        <value>16,35
+        </value>
+    </entry>
+    <entry>
+        <key>displayLiveVideo
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>totoAvailable
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>videoLink
+        </key>
+        <value>http://185.56.139.122/hls-live/xmlive/_definst_/{videoId}/{videoId}.m3u8
+        </value>
+    </entry>
+    <entry>
+        <key>tourSportId
+        </key>
+        <value>16
+        </value>
+    </entry>
+    <entry>
+        <key>tourSportId
+        </key>
+        <value>16
+        </value>
+    </entry>
+    <entry>
+        <key>tourLeagueId
+        </key>
+        <value>20256
+        </value>
+    </entry>
+    <entry>
+        <key> tourEnabled 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> welcomeBonus 
+        </key>
+        <value> 10000 
+        </value>
+    </entry>
+    <entry>
+        <key> avatarUploadSize 
+        </key>
+        <value> 340 
+        </value>
+    </entry>
+    <entry>
+        <key> sortLeagues 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> sortSports 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> defaultInviteLink 
+        </key>
+        <value> http://betup.org/share_api/invite/%s 
+        </value>
+    </entry>
+    <entry>
+        <key> defaultMatchLink 
+        </key>
+        <value> http://betup.org/share_api/matches/%s/%s/%s.png 
+        </value>
+    </entry>
+    <entry>
+        <key> defaultMatchPoster 
+        </key>
+        <value> http://betup.org/share_api/posters/%d.png 
+        </value>
+    </entry>
+    <entry>
+        <key> displayXZone 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> XZoneMinAPI 
+        </key>
+        <value> 19 
+        </value>
+    </entry>
+    <entry>
+        <key> minAndroidVersion 
+        </key>
+        <value> 2 
+        </value>
+    </entry>
+    <entry>
+        <key> androidAppLink 
+        </key>
+        <value> market://details?id=org.betup 
+        </value>
+    </entry>
+    <entry>
+        <key> unlock_bets_sku 
+        </key>
+        <value> unlock_bet_groups 
+        </value>
+    </entry>
+    <entry>
+        <key> unlock_bets_sku_new 
+        </key>
+        <value> unlock_bet_groups_new 
+        </value>
+    </entry>
+    <entry>
+        <key> unlock_bet_amount_sku 
+        </key>
+        <value> unlock_bet_amount 
+        </value>
+    </entry>
+    <entry>
+        <key> unlock_bets_day_sku 
+        </key>
+        <value> increase_betting_limit 
+        </value>
+    </entry>
+    <entry>
+        <key> max_bets_day 
+        </key>
+        <value> 30 
+        </value>
+    </entry>
+    <entry>
+        <key> custom_match_poster 
+        </key>
+        <value> http://betup.org/share_api/posters/%s/%d.png 
+        </value>
+    </entry>
+    <entry>
+        <key> guestLoginAvailable 
+        </key>
+        <value> false 
+        </value>
+    </entry>
+    <entry>
+        <key> afterTourPromoEnabled 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> globalPromoEnabled 
+        </key>
+        <value> true 
+        </value>
+    </entry>
+    <entry>
+        <key> maxBetLimit 
+        </key>
+        <value> 1000000000 
+        </value>
+    </entry>
+    <entry>
+        <key> challenge_tour_config 
+        </key>
+        <value> {&quot;en&quot;:[{&quot;title&quot;:&quot;Play against friends&quot;,&quot;subtitle&quot;:&quot;One match\\n 2 players\\n Winner takes\10            all!&quot;,&quot;iconUrl&quot;:&quot;https://betup.org/uploads_api/achiev/bets_20.png&quot;},{&quot;title&quot;:&quot;Improve\10            your betting skills&quot;,&quot;subtitle&quot;:&quot;Challenge by challenge improve your\10            skills&quot;,&quot;iconUrl&quot;:&quot;https://betup.org/uploads_api/achiev/3-lose_bet.png&quot;},{&quot;title&quot;:&quot;Become\10            #1&quot;,&quot;subtitle&quot;:&quot;Achieve the leadership in BETUP\10            ratings!&quot;,&quot;iconUrl&quot;:&quot;https://betup.org/uploads_api/achiev/loyal.png&quot;}]} 
+        </value>
+    </entry>
+    <entry>
+        <key> jockeyIconsCount 
+        </key>
+        <value>14
+        </value>
+    </entry>
+    <entry>
+        <key>jockeyIconPath
+        </key>
+        <value>https://betup.org/uploads_api/jockey/%s.png
+        </value>
+    </entry>
+    <entry>
+        <key> dogIconsCount 
+        </key>
+        <value>8
+        </value>
+    </entry>
+    <entry>
+        <key>dogIconPath
+        </key>
+        <value>https://betup.org/uploads_api/dog/greyhound%s.png
+        </value>
+    </entry>
+    <entry>
+        <key>ballIconPath
+        </key>
+        <value>https://betup.org/uploads_api/ball/%s.png
+        </value>
+    </entry>
+    <entry>
+        <key>ballIconsCount
+        </key>
+        <value>3
+        </value>
+    </entry>
+    <entry>
+        <key> ticketBonus 
+        </key>
+        <value> 10 
+        </value>
+    </entry>
+    <entry>
+        <key>offer_tickets
+        </key>
+        <value>50
+        </value>
+    </entry>
+    <entry>
+        <key>offer_betcoins
+        </key>
+        <value>100000
+        </value>
+    </entry>
+    <entry>
+        <key>isCompetitionActive
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>ticketBetlistFee
+        </key>
+        <value>1
+        </value>
+    </entry>
+    <entry>
+        <key>ticketBetlistWon
+        </key>
+        <value>{&quot;odds&quot;:1.8,&quot;bonus&quot;:1}
+        </value>
+    </entry>
+    <entry>
+        <key>isWinterStyleEnable
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>unlocked_users_share
+        </key>
+        <value>0
+        </value>
+    </entry>
+    <entry>
+        <key>tips_enabled
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>star_divider
+        </key>
+        <value>2.0
+        </value>
+    </entry>
+    <entry>
+        <key>star_log_base
+        </key>
+        <value>2.5
+        </value>
+    </entry>
+    <entry>
+        <key>enableOffers
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>enableTickets
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>miniGamesInterstitialInterval
+        </key>
+        <value>5
+        </value>
+    </entry>
+    <entry>
+        <key>miniGamesVideoInterval
+        </key>
+        <value>20
+        </value>
+    </entry>
+    <entry>
+        <key>webGameWinDoubleDialogInterval
+        </key>
+        <value>3
+        </value>
+    </entry>
+    <entry>
+        <key>google_sign_in_legacy_manufacturers
+        </key>
+        <value>Xiaomi,Redmi,POCO
+        </value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="160dp"
+    android:width="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M80,14 A66,66 0,0 1,146 80"
+        android:strokeColor="@drawable/_battle_result_active_ring__0_res_0x7f0800da"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M146,80 A66,66 0,0 1,80 146"
+        android:strokeColor="#aaffb92e"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M80,146 A66,66 0,0 1,14 80"
+        android:strokeColor="#66ffdc73"
+        android:strokeWidth="2.8"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M14,80 A66,66 0,0 1,80 14"
+        android:strokeColor="#33ffdc73"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M80,80m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0"
+        android:strokeColor="#44ffdc73"
+        android:strokeWidth="1.2"/>
+</vector>

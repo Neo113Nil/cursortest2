@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shareMatchRowButton"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    android:padding="@dimen/match_share_button_padding"
+    android:focusable="true"
+    android:visibility="gone"
+    android:clickable="true"
+    android:layout_width="@dimen/match_share_button_size"
+    android:layout_height="@dimen/match_share_button_size"
+    android:src="@drawable/share_ic_new"
+    android:scaleType="fitCenter"
+    android:contentDescription="@string/cd_share_match_card"
+    android:elevation="@dimen/match_share_button_elevation"/>

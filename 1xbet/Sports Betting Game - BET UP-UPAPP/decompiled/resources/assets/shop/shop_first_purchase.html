@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" class="shop-first-purchase-card">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- Design ratio {{aspectRatio}} | vector scale: root font-size = % of card height (vh) -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      width: 100%; height: 100%; background: transparent; overflow: hidden;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #F9FAFD;
+    }
+    .shop-root { width: 100%; height: 100%; display: flex; min-height: 0; overflow: hidden; }
+    .card {
+      position: relative; flex: 1; width: 100%; height: 100%; min-height: 0;
+      border-radius: 1em; overflow: hidden;
+      border: 0.14em solid transparent;
+      background:
+        linear-gradient(145deg, rgba(14, 14, 18, 0.58) 0%, rgba(8, 8, 12, 0.68) 100%) padding-box,
+        linear-gradient(180deg, {{borderColor}} 0%, {{borderColor}} 9%, rgba(212, 160, 86, 0.28) 30%, transparent 66%) border-box;
+      box-shadow:
+        0 0 0.65em rgba(212, 160, 86, 0.24),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        0 0.5em 1.5em rgba(0, 0, 0, 0.36);
+      display: grid; grid-template-columns: 1.05fr 0.95fr;
+      column-gap: 0.58em;
+      grid-template-rows: minmax(0, 1fr);
+      opacity: {{cardOpacity}};
+    }
+    .card::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 7% 7%;
+    }
+    .left {
+      position: relative; z-index: 2; min-width: 0; min-height: 0;
+      display: flex; flex-direction: column; justify-content: space-between;
+      padding: 0.62em 0.52em 0.52em 0.58em; overflow: hidden;
+    }
+    .copy {
+      display: flex; flex-direction: column; gap: 0.18em;
+      min-width: 0; min-height: 0; flex: 1 1 auto; overflow: hidden;
+    }
+    .eyebrow {
+      font-size: 0.78em; font-weight: 600; letter-spacing: 0.05em;
+      color: rgba(249, 250, 253, 0.95); text-transform: uppercase; line-height: 1.12;
+      overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      min-width: 0;
+    }
+    .headline {
+      font-size: 2.1em; font-weight: 900; font-style: italic; line-height: 0.92;
+      letter-spacing: -0.02em;
+      background: linear-gradient(180deg, #FFF0C8 0%, #FFD07A 40%, #FF9F2E 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 2px 6px rgba(255, 150, 40, 0.48));
+      overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+      min-width: 0;
+    }
+    .coins-row {
+      display: flex; align-items: center; gap: 0.36em; margin-top: 0.14em; min-width: 0;
+    }
+    .coins {
+      font-size: 1.42em; font-weight: 800; color: #FFFFFF; letter-spacing: -0.03em;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0;
+    }
+    .cta-wrap { flex-shrink: 0; padding-top: 0.28em; max-width: 100%; }
+    .cta {
+      position: relative; border: none; border-radius: 999px; padding: 0.62em 0.88em; width: 100%; max-width: 100%;
+      background: linear-gradient(180deg, #F5D08A 0%, #E8B04A 50%, #D4A056 100%);
+      color: #1C1814; font-size: 0.98em; font-weight: 800; cursor: pointer;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      box-shadow: 0 0.25em 0.75em rgba(212, 160, 86, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+      touch-action: manipulation; -webkit-user-select: none; user-select: none;
+      transition: transform 0.14s ease, filter 0.14s ease, box-shadow 0.14s ease;
+    }
+    .cta::after {
+      content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.32) 0%, transparent 68%);
+      opacity: 0; transition: opacity 0.1s ease;
+    }
+    .cta:active {
+      transform: scale(0.965); filter: brightness(0.93);
+      box-shadow: 0 0.12em 0.4em rgba(212, 160, 86, 0.32), inset 0 2px 4px rgba(0, 0, 0, 0.12);
+    }
+    .cta:active::after { opacity: 1; }
+    .right {
+      position: relative; z-index: 1; min-width: 0; min-height: 0; height: 100%;
+      overflow: hidden; isolation: isolate;
+      padding-left: 0.32em;
+    }
+    /*
+     * Fixed hero glow — only in the right column, anchored to card bottom.
+     * Height/mask are % of the card, not tied to text length; fades out upward near CTA top.
+     */
+    .hero-glow {
+      position: absolute;
+      right: -8%;
+      bottom: 0;
+      width: 115%;
+      height: 68%;
+      z-index: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse 72% 68% at 68% 88%,
+        rgba(255, 176, 58, 0.34) 0%,
+        rgba(255, 176, 58, 0.12) 42%,
+        transparent 72%
+      );
+      -webkit-mask-image: linear-gradient(to top, #000 0%, #000 38%, transparent 100%);
+      mask-image: linear-gradient(to top, #000 0%, #000 38%, transparent 100%);
+    }
+    .hero-img {
+      position: absolute; right: 0; bottom: 0; width: 110%; max-height: 100%;
+      object-fit: contain; object-position: right bottom; pointer-events: none;
+      z-index: 1;
+    }
+    .timer-chip {
+      position: absolute; right: 6%; bottom: 8%;
+      display: {{timerDisplay}}; align-items: center; gap: 0.32em;
+      background: rgba(18, 17, 22, 0.92); border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 0.45em; padding: 0.36em 0.54em;
+      font-size: 0.92em; font-weight: 700; font-variant-numeric: tabular-nums; color: #F9FAFD;
+      box-shadow: 0 0.25em 0.75em rgba(0, 0, 0, 0.45); z-index: 4;
+      max-width: 46%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .timer-icon { color: #FFB03A; font-size: 1em; line-height: 1; flex-shrink: 0; }
+    .timer-value { line-height: 1; }
+  </style>
+</head>
+<body>
+  <div class="shop-root">
+    <div class="card" data-section="{{section}}">
+      <div class="left">
+        <div class="copy">
+          <div class="eyebrow">{{eyebrow}}</div>
+          <div class="headline">{{headline}}</div>
+          <div class="coins-row">
+            <span class="coins">{{betcoins}}</span>
+            <img class="coin-icon coin-icon-sm" src="https://qbetapp.info/uploads_api/shop/component_betcoin.svg" alt="" />
+          </div>
+        </div>
+        <div class="cta-wrap">
+          <button type="button" class="cta" onclick="handleCta()">{{buyLabel}}</button>
+        </div>
+      </div>
+      <div class="right">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <img class="hero-img" style="display:{{heroDisplay}}" src="{{iconUrl}}" alt="" onerror="this.style.display='none'" />
+        <div class="timer-chip" id="timerChip">
+          <span class="timer-icon">⏱</span>
+          <span class="timer-value" id="timerValue">{{timer}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var expiresAt = {{offerExpiresAtMillis}};
+      var chip = document.getElementById('timerChip');
+      var valueEl = document.getElementById('timerValue');
+      if (!chip || !valueEl || !expiresAt || expiresAt <= 0) {
+        if (chip) chip.style.display = 'none';
+        return;
+      }
+      function pad(n) { return n < 10 ? '0' + n : String(n); }
+      function formatRemaining(ms) {
+        var total = Math.max(0, Math.floor(ms / 1000));
+        var h = Math.floor(total / 3600);
+        var m = Math.floor((total % 3600) / 60);
+        var s = total % 60;
+        return pad(h) + ':' + pad(m) + ':' + pad(s);
+      }
+      function tick() {
+        var remaining = expiresAt - Date.now();
+        if (remaining <= 0) {
+          chip.style.display = 'none';
+          return;
+        }
+        chip.style.display = 'flex';
+        valueEl.textContent = formatRemaining(remaining);
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
+    function handleCta() {
+      if ({{ctaDisabled}}) return;
+      Android.purchase('{{storeCode}}');
+    }
+  </script>
+</body>
+</html>

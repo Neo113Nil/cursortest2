@@ -1,0 +1,147 @@
+<!--
+  SKU: new_shop_no_ads
+  Section: DAILY_DEALS
+  Daily Deals | effect X10 × 7d + no ads + 250k | POPULAR
+  Dashboard: paste this entire file into product HTML content (keep {{placeholders}}).
+  Vector scale: html class shop-*-card + sizes in em; border fades color → transparent.
+  Card aspect on device: 360×196 (Compose shopHtmlAspectRatio).
+-->
+<!DOCTYPE html>
+<html lang="en" class="shop-daily-deals-card">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- Design ratio {{aspectRatio}} | vector scale: root font-size = % of card height (vh) -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body {
+      width: 100%; height: 100%; background: transparent; overflow: hidden;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #F9FAFD;
+    }
+    .shop-root { width: 100%; height: 100%; display: flex; min-height: 0; overflow: hidden; }
+    .card {
+      position: relative; flex: 1; width: 100%; height: 100%; min-height: 0;
+      border-radius: 1.1em; overflow: hidden;
+      border: 0.14em solid {{borderColor}};
+      background: linear-gradient(145deg, rgba(22, 22, 28, 0.96) 0%, rgba(12, 12, 16, 0.98) 100%);
+      box-shadow:
+        0 0 0.55em rgba(255, 176, 58, 0.22),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05),
+        0 0.45em 1.4em rgba(0, 0, 0, 0.45);
+      opacity: {{cardOpacity}};
+    }
+    .card::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+      background-size: 8% 8%;
+    }
+    .body {
+      position: relative; z-index: 1; width: 100%; height: 100%; min-height: 0;
+      display: grid; grid-template-columns: 1.08fr 0.92fr; align-items: center;
+      column-gap: 0.68em;
+      padding: 0.82em 0.68em 0.78em 0.88em;
+    }
+    .content {
+      min-width: 0; min-height: 0; display: flex; flex-direction: column;
+      justify-content: space-between; padding-right: 0.62em;
+    }
+    .bullets { min-height: 0; overflow: hidden; }
+    .bullet {
+      font-size: 1.02em; font-weight: 600; margin-bottom: 0.36em;
+      color: #F3F4F8; line-height: 1.28;
+    }
+    .bullet::before { content: '› '; color: #FFB03A; font-weight: 900; font-size: 1.14em; }
+    .hl { color: #FFB03A; font-weight: 800; }
+    .coin-line .coin-icon-inline { vertical-align: -0.12em; }
+    .bottom-row {
+      display: flex; flex-direction: column; align-items: flex-start; gap: 0.4em;
+      flex-shrink: 0; margin-top: 0.28em; max-width: 100%;
+    }
+    .price-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.4em; }
+    .discount {
+      color: #4ADE80; font-size: 1.05em; font-weight: 800; display: {{discountDisplay}};
+    }
+    .old-price {
+      color: #9E9AA8; font-size: 0.96em; text-decoration: line-through; display: {{oldPriceDisplay}};
+    }
+    .cta {
+      position: relative; border: none; border-radius: 999px; cursor: pointer; max-width: 100%; width: 100%;
+      padding: 0.72em 1.05em;
+      background: linear-gradient(180deg, #FFD392 0%, #FFB03A 55%, #E89A28 100%);
+      color: #131217; font-size: 1.12em; font-weight: 800;
+      box-shadow: 0 0.25em 0.75em rgba(255, 176, 58, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+      touch-action: manipulation; -webkit-user-select: none; user-select: none;
+      transition: transform 0.14s ease, filter 0.14s ease, box-shadow 0.14s ease;
+    }
+    .cta::after {
+      content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+      background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.3) 0%, transparent 68%);
+      opacity: 0; transition: opacity 0.1s ease;
+    }
+    .cta:active {
+      transform: scale(0.965); filter: brightness(0.93);
+      box-shadow: 0 0.12em 0.4em rgba(255, 176, 58, 0.28), inset 0 2px 4px rgba(0, 0, 0, 0.12);
+    }
+    .cta:active::after { opacity: 1; }
+    .right {
+      position: relative; min-width: 0; min-height: 0; height: 100%;
+      overflow: hidden; isolation: isolate;
+      padding-left: 0.32em;
+    }
+    .hero-glow {
+      position: absolute;
+      right: -8%;
+      bottom: 0;
+      width: 115%;
+      height: 72%;
+      z-index: 0;
+      pointer-events: none;
+      background: radial-gradient(
+        ellipse 72% 68% at 68% 82%,
+        rgba(255, 176, 58, 0.32) 0%,
+        rgba(255, 176, 58, 0.11) 42%,
+        transparent 72%
+      );
+      -webkit-mask-image: linear-gradient(to top, #000 0%, #000 40%, transparent 100%);
+      mask-image: linear-gradient(to top, #000 0%, #000 40%, transparent 100%);
+    }
+    .hero-img {
+      position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+      width: 110%; max-height: 96%; object-fit: contain; object-position: right center;
+      pointer-events: none; z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="shop-root">
+    <div class="card" data-section="{{section}}">
+      <div class="body">
+        <div class="content">
+          <div class="bullets">{{bulletsHtml}}</div>
+          <div class="bottom-row">
+            <div class="price-row">
+              <span class="discount">{{discount}}</span>
+              <span class="old-price">{{oldPrice}}</span>
+            </div>
+            <button type="button" class="cta" onclick="handleCta()">{{buyLabel}}</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img class="hero-img" style="display:{{heroDisplay}}" src="{{iconUrl}}" alt="" onerror="this.style.display='none'" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function handleCta() {
+      if ({{ctaDisabled}}) return;
+      Android.purchase('{{storeCode}}');
+    }
+  </script>
+</body>
+</html>

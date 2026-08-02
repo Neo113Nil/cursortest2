@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/mini_game_black"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <item
+        android:top="2dp"
+        android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp"/>
+            <gradient
+                android:startColor="@color/war_game_scene_center_color_green"
+                android:endColor="@color/mini_game_black"
+                android:angle="270"
+                android:gradientRadius="60dp"/>
+        </shape>
+    </item>
+</layer-list>

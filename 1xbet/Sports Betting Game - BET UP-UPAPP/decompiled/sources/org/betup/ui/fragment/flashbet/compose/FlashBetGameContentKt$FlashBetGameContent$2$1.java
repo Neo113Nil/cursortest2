@@ -1,0 +1,64 @@
+package org.betup.ui.fragment.flashbet.compose;
+
+import androidx.compose.runtime.State;
+import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugMetadata;
+import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.CoroutineScope;
+import org.betup.games.flashbet.model.FlashBetGameSessionDto;
+import org.betup.ui.common.compose.HapticFeedbackEffect;
+import org.betup.ui.common.compose.HapticFeedbackType;
+
+/* compiled from: FlashBetGameContent.kt */
+@Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {2, 1, 0}, xi = 48)
+@DebugMetadata(c = "org.betup.ui.fragment.flashbet.compose.FlashBetGameContentKt$FlashBetGameContent$2$1", f = "FlashBetGameContent.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {})
+/* loaded from: classes4.dex */
+final class FlashBetGameContentKt$FlashBetGameContent$2$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
+    final /* synthetic */ Function1<HapticFeedbackType, Unit> $performHaptic;
+    final /* synthetic */ State<FlashBetGameSessionDto> $session$delegate;
+    int label;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    FlashBetGameContentKt$FlashBetGameContent$2$1(State<FlashBetGameSessionDto> state, Function1<? super HapticFeedbackType, Unit> function1, Continuation<? super FlashBetGameContentKt$FlashBetGameContent$2$1> continuation) {
+        super(2, continuation);
+        this.$session$delegate = state;
+        this.$performHaptic = function1;
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Continuation<Unit> create(Object obj, Continuation<?> continuation) {
+        return new FlashBetGameContentKt$FlashBetGameContent$2$1(this.$session$delegate, this.$performHaptic, continuation);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    public final Object invoke(CoroutineScope coroutineScope, Continuation<? super Unit> continuation) {
+        return ((FlashBetGameContentKt$FlashBetGameContent$2$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
+    }
+
+    @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
+    public final Object invokeSuspend(Object obj) {
+        FlashBetGameSessionDto FlashBetGameContent$lambda$1;
+        String result;
+        IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        if (this.label == 0) {
+            ResultKt.throwOnFailure(obj);
+            FlashBetGameContent$lambda$1 = FlashBetGameContentKt.FlashBetGameContent$lambda$1(this.$session$delegate);
+            if (FlashBetGameContent$lambda$1 == null || (result = FlashBetGameContent$lambda$1.getResult()) == null) {
+                return Unit.INSTANCE;
+            }
+            HapticFeedbackType forFlashBetResult = HapticFeedbackEffect.forFlashBetResult(result);
+            if (forFlashBetResult != null) {
+                this.$performHaptic.invoke(forFlashBetResult);
+            }
+            return Unit.INSTANCE;
+        }
+        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+    }
+}

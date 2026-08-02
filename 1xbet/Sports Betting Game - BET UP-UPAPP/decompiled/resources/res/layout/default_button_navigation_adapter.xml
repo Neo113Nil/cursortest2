@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/small_gap"
+    android:layout_marginEnd="@dimen/small_gap">
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_width="@dimen/medium_icon"
+        android:layout_height="@dimen/medium_icon"
+        android:src="@drawable/ic_calendar"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"/>
+    <TextView
+        android:textSize="@dimen/font_size_small_10"
+        android:textColor="@color/active_text"
+        android:gravity="center"
+        android:id="@+id/btn_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/default_icon_gap"
+        android:text="Daily Bonus"
+        android:maxLines="2"
+        android:breakStrategy="high_quality"
+        android:hyphenationFrequency="fullFast"/>
+</LinearLayout>

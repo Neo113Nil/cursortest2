@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Super Offer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+    :root {
+      /* BetUp Figma design tokens */
+      --betup-bg: #131217;
+      --betup-light-yellow: #FFD392;
+      --betup-gold: #FFB03A;
+      --betup-dark-yellow: #9F6815;
+      --betup-white: #F9FAFD;
+      --betup-grey: #757186;
+      --betup-input-stroke: #403D49;
+      --betup-fill: #1C1B20;
+      /* Text pe bandă aurie: nu negru, puțin mai deschis */
+      --banner-text: #5c5668;
+      /* Aceeași diagonală 45°: bandă + triunghiuri (laturi egale = ipotenuză la 45°) */
+      --offer-diagonal-deg: 45deg;
+      --corner-gold-size: 110px;
+    }
+
+    /*
+     * Blur pe html::before — NU pe .overlay. Pe Android WebView, backdrop-filter pe un strămoș
+     * al conținutului rupe position:fixed pentru bandă / triunghiuri (în browser desktop merge).
+     */
+    html {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: transparent;
+    }
+    html::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      pointer-events: none;
+    }
+
+    body {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      animation: fadeIn 0.3s ease;
+      background: transparent;
+    }
+
+    /* overflow: visible — în WebView, overflow:hidden pe .dialog tăia banda diagonală (fixed + rotate) */
+    .dialog {
+      position: relative;
+      width: 100%; height: 100%;
+      max-width: none;
+      background: transparent;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 24px;
+      text-align: center;
+      animation: fadeIn 0.3s ease;
+      overflow: visible;
+    }
+
+    /*
+     * Bandă diagonală: mai jos, mai groasă; culoare plată; umbră doar în afară (box-shadow).
+     */
+    .banner-diagonal {
+      position: fixed;
+      left: 50%;
+      top: 20vh;
+      width: 180vmin;
+      height: 68px;
+      background: var(--betup-gold);
+      transform: translate(-50%, -50%) rotate(var(--offer-diagonal-deg));
+      transform-origin: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+      /* În spatele conținutului (cufăr, prețuri etc.) */
+      z-index: 2;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .banner-diagonal .banner-text {
+      font-family: 'Outfit', 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+      color: var(--banner-text);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-shadow: none;
+      -webkit-font-smoothing: antialiased;
+      white-space: nowrap;
+      padding: 0 16px;
+    }
+
+    /* Colț stânga-jos: ipotenuză la 45° (laturi egale ca banda) */
+    .triangle-bottom-left {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-bottom: var(--corner-gold-size) solid var(--betup-gold);
+      border-right: var(--corner-gold-size) solid transparent;
+      opacity: 0.9;
+      z-index: 3;
+    }
+
+    /* Colț dreapta-sus: aceeași unghi 45° — border-top = border-left transparent */
+    .triangle-top-right {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-top: var(--corner-gold-size) solid var(--betup-gold);
+      border-left: var(--corner-gold-size) solid transparent;
+      opacity: 0.9;
+      z-index: 4;
+    }
+
+    /* Close button - top right over gold */
+    .close-btn {
+      position: fixed; top: 20px; right: 20px;
+      width: 36px; height: 36px;
+      border: none; border-radius: 50%;
+      background: var(--betup-bg);
+      color: var(--betup-white);
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s, background 0.2s;
+      z-index: 15;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    .close-btn:hover { background: #202229; transform: scale(1.05); }
+    .close-btn:active { transform: scale(0.95); }
+    .close-btn svg { width: 18px; height: 18px; }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      padding: 24px 20px 32px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .hero-image {
+      width: 200px; height: 200px;
+      margin: 0 auto 16px;
+      object-fit: contain;
+      border-radius: 8px;
+      filter: drop-shadow(2.5px 2.5px 5px rgba(0, 0, 0, 0.25)) drop-shadow(0 0 30px rgba(255, 176, 58, 0.25));
+    }
+
+    .coin-row {
+      display: flex; align-items: center; justify-content: center;
+      gap: 12px; margin-bottom: 16px;
+    }
+    .coin-amount {
+      font-family: 'Outfit', 'Montserrat', sans-serif;
+      font-size: 48px; font-weight: 900;
+      color: var(--betup-gold);
+      letter-spacing: -2px;
+      line-height: 1;
+      text-shadow: 0 2px 12px rgba(255, 176, 58, 0.35);
+    }
+    .coin-icon {
+      width: 48px; height: 48px;
+      flex-shrink: 0;
+      filter: drop-shadow(2.5px 2.5px 5px rgba(0, 0, 0, 0.25));
+    }
+
+    .description {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px; font-weight: 500;
+      color: var(--betup-white);
+      line-height: 1.4;
+      margin-bottom: 24px;
+      padding: 0 8px;
+    }
+
+    .purchase-btn {
+      display: block;
+      width: 100%;
+      padding: 18px 24px;
+      border: 1px solid rgba(255, 176, 58, 0.3);
+      border-radius: 8px;
+      background: linear-gradient(180deg, var(--betup-light-yellow) 0%, var(--betup-gold) 100%);
+      color: var(--betup-bg);
+      font-family: 'Outfit', 'Montserrat', sans-serif;
+      font-size: 16px; font-weight: 900;
+      cursor: pointer;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
+      box-shadow: 0 4px 12px rgba(255, 176, 58, 0.35), 0 0 4px 1px rgba(244, 187, 84, 0.3);
+      position: relative;
+    }
+    .purchase-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(255, 176, 58, 0.45);
+    }
+    .purchase-btn:active {
+      transform: translateY(0) scale(0.98);
+      filter: brightness(0.95);
+    }
+    .purchase-btn .btn-prices {
+      display: flex; align-items: center; justify-content: center;
+      gap: 10px; margin-top: 6px;
+    }
+    .purchase-btn .btn-old {
+      font-size: 12px; font-weight: 600;
+      text-decoration: line-through;
+      color: rgba(19, 18, 23, 0.6);
+    }
+    .purchase-btn .btn-new {
+      font-size: 16px; font-weight: 900;
+      color: var(--betup-bg);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @media (max-width: 360px) {
+      .content { padding: 20px 16px 28px; }
+      .coin-amount { font-size: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="Overlay">
+  <div class="dialog" role="dialog" aria-modal="true">
+
+    <div class="banner-diagonal" aria-hidden="true">
+      <span class="banner-text">Super Offer Super Offer Super Offer Super Offer Super Offer Super Offer Super Offer</span>
+    </div>
+    <div class="triangle-bottom-left"></div>
+    <div class="triangle-top-right"></div>
+
+    <button class="close-btn" id="closeBtn" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <line x1="6" y1="6" x2="18" y2="18" />
+        <line x1="18" y1="6" x2="6" y2="18" />
+      </svg>
+    </button>
+
+    <div class="content">
+      <img class="hero-image" id="heroImage" src="{{iconUrl}}" alt="Offer" />
+
+      <div class="coin-row">
+        <span class="coin-amount" id="coinAmount">{{betcoins}}</span>
+        <svg class="coin-icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFD392"/>
+              <stop offset="50%" stop-color="#FFB03A"/>
+              <stop offset="100%" stop-color="#9F6815"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="28" fill="url(#g)" stroke="#9F6815" stroke-width="2"/>
+          <text x="32" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#131217">B</text>
+        </svg>
+      </div>
+
+      <p class="description" id="description">Recompensas legendarias, precios imbatibles – ¡actúa rápido!</p>
+
+      <button class="purchase-btn" id="purchaseBtn">
+        <span>Comprar ahora</span>
+        <div class="btn-prices">
+          <span class="btn-old" id="btnOldPrice">{{oldPrice}}</span>
+          <span class="btn-new" id="btnNewPrice">{{newPrice}}</span>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  /* Doar integrare Android: închidere dialog + cumpărare Google (SKU din app după semnătură). */
+  document.getElementById('closeBtn').addEventListener('click', function () {
+    if (window.Android && typeof window.Android.close === 'function') {
+      window.Android.close();
+    }
+  });
+  document.getElementById('purchaseBtn').addEventListener('click', function () {
+    if (window.Android && typeof window.Android.purchase === 'function') {
+      window.Android.purchase();
+    }
+  });
+</script>
+
+</body>
+</html>

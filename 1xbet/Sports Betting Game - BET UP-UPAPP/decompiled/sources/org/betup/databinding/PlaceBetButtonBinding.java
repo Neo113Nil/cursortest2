@@ -1,0 +1,44 @@
+package org.betup.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import androidx.viewbinding.ViewBinding;
+import org.betup.R;
+
+/* loaded from: classes2.dex */
+public final class PlaceBetButtonBinding implements ViewBinding {
+    public final LinearLayout placeBetButton;
+    private final LinearLayout rootView;
+
+    private PlaceBetButtonBinding(LinearLayout rootView, LinearLayout placeBetButton) {
+        this.rootView = rootView;
+        this.placeBetButton = placeBetButton;
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    public LinearLayout getRoot() {
+        return this.rootView;
+    }
+
+    public static PlaceBetButtonBinding inflate(LayoutInflater inflater) {
+        return inflate(inflater, null, false);
+    }
+
+    public static PlaceBetButtonBinding inflate(LayoutInflater inflater, ViewGroup parent, boolean attachToParent) {
+        View inflate = inflater.inflate(R.layout.place_bet_button, parent, false);
+        if (attachToParent) {
+            parent.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    public static PlaceBetButtonBinding bind(View rootView) {
+        if (rootView == null) {
+            throw new NullPointerException("rootView");
+        }
+        LinearLayout linearLayout = (LinearLayout) rootView;
+        return new PlaceBetButtonBinding(linearLayout, linearLayout);
+    }
+}

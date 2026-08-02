@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="160dp"
+    android:width="160dp"
+    android:viewportWidth="160"
+    android:viewportHeight="160">
+    <path
+        android:fillColor="@drawable/_battle_result_glow_finished__0_res_0x7f0800e2"
+        android:pathData="M80,80m-58,0a58,58 0,1 1,116 0a58,58 0,1 1,-116 0"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M80,80m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"
+        android:strokeColor="#445cb8ff"
+        android:strokeWidth="1.2"/>
+</vector>

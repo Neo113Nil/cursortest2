@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="120dp"
+    android:width="88dp"
+    android:viewportWidth="88"
+    android:viewportHeight="120">
+    <path
+        android:fillColor="@drawable/_battle_result_wing__0_res_0x7f0800f2"
+        android:pathData="M44,108 C18,98 4,72 6,48 C8,28 22,14 44,8 C40,24 36,44 38,64 C40,82 42,96 44,108 Z"/>
+    <path
+        android:fillColor="#33ffffff"
+        android:pathData="M44,100 C24,92 12,70 14,50 C16,34 28,20 44,14 C42,30 40,48 42,66 C43,80 44,92 44,100 Z"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M10,56 C22,48 34,40 44,36 M12,68 C24,62 36,56 44,52 M14,80 C26,74 38,68 44,64"
+        android:strokeColor="#66ffffff"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M44,108 C18,98 4,72 6,48 C8,28 22,14 44,8"
+        android:strokeColor="#99ffd166"
+        android:strokeWidth="1.5"/>
+    <path
+        android:fillColor="#ccfff3d6"
+        android:pathData="M6,44 L18,38 L14,52 Z M8,58 L22,50 L16,64 Z M10,72 L24,66 L18,78 Z"/>
+</vector>

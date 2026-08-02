@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="433dp"
+    android:width="412dp"
+    android:viewportWidth="412"
+    android:viewportHeight="433">
+    <path
+        android:fillColor="@drawable/_lights_battle_preview__0_res_0x7f080297"
+        android:pathData="M409.39,135.77C426.43,178.19 429.61,224.92 418.47,269.26L208.5,216.5L409.39,135.77Z"
+        android:strokeAlpha="0.2"
+        android:fillAlpha="0.2"/>
+    <path
+        android:fillColor="@drawable/_lights_battle_preview__1_res_0x7f080298"
+        android:pathData="M308.7,24.58C349.23,45.75 382.02,79.19 402.37,120.14L208.5,216.5L308.7,24.58Z"
+        android:strokeAlpha="0.2"
+        android:fillAlpha="0.2"/>
+    <path
+        android:fillColor="@drawable/_lights_battle_preview__2_res_0x7f080299"
+        android:pathData="M147.18,8.86C191.03,-4.08 237.85,-2.82 280.94,12.48L208.5,216.5L147.18,8.86Z"
+        android:strokeAlpha="0.2"
+        android:fillAlpha="0.2"/>
+    <path
+        android:fillColor="@drawable/_lights_battle_preview__3_res_0x7f08029a"
+        android:pathData="M18.87,112.04C40.93,71.99 75.1,39.96 116.49,20.53L208.5,216.5L18.87,112.04Z"
+        android:strokeAlpha="0.2"
+        android:fillAlpha="0.2"/>
+    <path
+        android:fillColor="@drawable/_lights_battle_preview__4_res_0x7f08029b"
+        android:pathData="M-3.49,260.46C-12.77,215.69 -7.65,169.13 11.16,127.46L208.5,216.5L-3.49,260.46Z"
+        android:strokeAlpha="0.2"
+        android:fillAlpha="0.2"/>
+</vector>

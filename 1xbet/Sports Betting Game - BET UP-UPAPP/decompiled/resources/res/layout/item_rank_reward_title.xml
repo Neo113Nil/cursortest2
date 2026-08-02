@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.betup.ui.views.GradientTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:text="@string/rank_day"
+    android:maxLines="3"
+    android:textAllCaps="true"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:centerColor="@color/goldenLight"
+    app:mainColor="@color/colorAccent"
+    app:outlineColor="@color/Black"
+    app:outlineWidth="1dp"/>

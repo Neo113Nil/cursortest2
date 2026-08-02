@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:height="112dp"
+    android:width="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="112">
+    <path
+        android:fillColor="@drawable/_battle_result_hourglass_pending__0_res_0x7f0800e8"
+        android:pathData="M14,10h68l-10,16H24z"/>
+    <path
+        android:fillColor="@drawable/_battle_result_hourglass_pending__1_res_0x7f0800e9"
+        android:pathData="M14,102h68l-10,-16H24z"/>
+    <path
+        android:fillColor="#ff9a6310"
+        android:pathData="M24,26h48v4H24z"/>
+    <path
+        android:fillColor="#ff9a6310"
+        android:pathData="M24,82h48v4H24z"/>
+    <path
+        android:fillColor="@drawable/_battle_result_hourglass_pending__2_res_0x7f0800ea"
+        android:pathData="M28,30 L68,30 L48,56 L28,30 Z"/>
+    <path
+        android:fillColor="@drawable/_battle_result_hourglass_pending__3_res_0x7f0800eb"
+        android:pathData="M28,82 L68,82 L48,56 L28,82 Z"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M28,30 L68,30 L48,56 L28,30 Z M28,82 L68,82 L48,56 L28,82 Z"
+        android:strokeColor="#ccffffff"
+        android:strokeWidth="2.2"
+        android:strokeLineJoin="round"/>
+    <path
+        android:fillColor="#66ffffff"
+        android:pathData="M32,34 L44,34 L48,48 L32,34 Z"/>
+    <path
+        android:fillColor="#44ffffff"
+        android:pathData="M52,64 L64,64 L48,48 L52,64 Z"/>
+    <path
+        android:fillColor="#ffeee6ff"
+        android:pathData="M46,54 L50,54 L48,58 Z"/>
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M14,10h68l-10,16H24z M14,102h68l-10,-16H24z"
+        android:strokeColor="#99ffffff"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round"/>
+</vector>
