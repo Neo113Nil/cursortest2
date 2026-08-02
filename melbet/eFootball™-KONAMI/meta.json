@@ -1,0 +1,13 @@
+{
+  "package": "jp.konami.pesam",
+  "name": "eFootball™",
+  "developer": "KONAMI",
+  "version_name": "10.5.1",
+  "version_code": "310050101",
+  "min_sdk": 24,
+  "target_sdk": 35,
+  "agp": "8.9.0",
+  "kotlin": "1.9.22",
+  "cloak": false,
+  "source_note": "APK via apkeep after prepare delay; domain_checks from pipeline VT data."
+}
