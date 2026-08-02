@@ -1,16 +1,16 @@
 {
-  "app_id": "com.icefishing.icefishingmoney",
+  "app_id": "com.icefishingapp.icefishing",
   "title": "Ice Fishing",
   "developer": "ahmedgamel",
   "score": null,
-  "icon": "https://play-lh.googleusercontent.com/-QuPNAy7NEKD1g_Lm9Lxr4fzs90uwNVnZ0ZgFKcOczxvk1dAJW887PFNnda_Ia5xXu7ZRLesulHihCAG5OdAig",
-  "url": "https://play.google.com/store/apps/details?id=com.icefishing.icefishingmoney&hl=en&gl=us",
+  "icon": "https://play-lh.googleusercontent.com/eFHnRkxbv_BOzbOjCwLe430c8daJ04w3ucLQ3xh566HA_1uF-ds2bpfia_FRCpByXpr16Iyuo6m7PJZEJymI_g",
+  "url": "https://play.google.com/store/apps/details?id=com.icefishingapp.icefishing&hl=en&gl=us",
   "keyword": "ice fishing",
   "developer_id": "ahmedgamel",
   "released": "",
   "updated": "Jun 22, 2026",
   "version": "Varies with device",
-  "summary": "Assemble winter fishing puzzles and earn rewards in Ice Fishing!",
+  "summary": "Ice Fishing puzzle challenge on a fragile frozen trail",
   "folder": "Ice Fishing-ahmedgamel",
   "path": "ice fishing/Ice Fishing-ahmedgamel",
   "updates_count": 1,
@@ -37,11 +37,11 @@
       "try": 1,
       "ok": true,
       "exit_code": 0,
-      "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
+      "stdout": "Downloading com.icefishingapp.icefishing...\ncom.icefishingapp.icefishing downloaded successfully!\n",
       "stderr": ""
     }
   ],
-  "stdout": "Downloading com.icefishing.icefishingmoney...\ncom.icefishing.icefishingmoney downloaded successfully!\n",
+  "stdout": "Downloading com.icefishingapp.icefishing...\ncom.icefishingapp.icefishing downloaded successfully!\n",
   "stderr": "",
   "exit_code": 0
 }

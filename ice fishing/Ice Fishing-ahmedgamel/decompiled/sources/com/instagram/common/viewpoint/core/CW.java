@@ -3,7 +3,6 @@ package com.instagram.common.viewpoint.core;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkCapabilities;
-import android.os.Handler;
 
 /* loaded from: assets/audience_network/classes2.dex */
 public final class CW extends ConnectivityManager.NetworkCallback {
@@ -16,9 +15,7 @@ public final class CW extends ConnectivityManager.NetworkCallback {
     }
 
     private void A00() {
-        Handler handler;
-        handler = this.A02.A04;
-        handler.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.CU
+        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.CU
             @Override // java.lang.Runnable
             public final void run() {
                 CW.this.A02();
@@ -27,9 +24,7 @@ public final class CW extends ConnectivityManager.NetworkCallback {
     }
 
     private void A01() {
-        Handler handler;
-        handler = this.A02.A04;
-        handler.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.CV
+        this.A02.A04.post(new Runnable() { // from class: com.facebook.ads.redexgen.X.CV
             @Override // java.lang.Runnable
             public final void run() {
                 CW.this.A03();
@@ -38,18 +33,14 @@ public final class CW extends ConnectivityManager.NetworkCallback {
     }
 
     public final /* synthetic */ void A02() {
-        CW cw;
-        cw = this.A02.A02;
-        if (cw == null) {
+        if (this.A02.A02 == null) {
             return;
         }
         this.A02.A03();
     }
 
     public final /* synthetic */ void A03() {
-        CW cw;
-        cw = this.A02.A02;
-        if (cw == null) {
+        if (this.A02.A02 == null) {
             return;
         }
         this.A02.A04();

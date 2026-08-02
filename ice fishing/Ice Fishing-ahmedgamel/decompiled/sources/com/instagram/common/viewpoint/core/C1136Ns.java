@@ -24,28 +24,30 @@ public final class C1136Ns implements Serializable {
         String str4;
         String str5;
         String str6;
-        int i;
         String str7;
+        int i;
         String str8;
-        this.A06 = c1135Nr.A06;
-        str = c1135Nr.A09;
-        this.A09 = str;
-        str2 = c1135Nr.A08;
-        this.A08 = str2;
-        str3 = c1135Nr.A07;
-        this.A07 = str3;
-        str4 = c1135Nr.A04;
-        this.A04 = str4;
-        str5 = c1135Nr.A03;
-        this.A03 = str5;
-        str6 = c1135Nr.A05;
-        this.A05 = str6;
+        String str9;
+        str = c1135Nr.A06;
+        this.A06 = str;
+        str2 = c1135Nr.A09;
+        this.A09 = str2;
+        str3 = c1135Nr.A08;
+        this.A08 = str3;
+        str4 = c1135Nr.A07;
+        this.A07 = str4;
+        str5 = c1135Nr.A04;
+        this.A04 = str5;
+        str6 = c1135Nr.A03;
+        this.A03 = str6;
+        str7 = c1135Nr.A05;
+        this.A05 = str7;
         i = c1135Nr.A00;
         this.A00 = i;
-        str7 = c1135Nr.A02;
-        this.A02 = str7;
-        str8 = c1135Nr.A01;
-        this.A01 = str8;
+        str8 = c1135Nr.A02;
+        this.A02 = str8;
+        str9 = c1135Nr.A01;
+        this.A01 = str9;
     }
 
     public final int A00() {
